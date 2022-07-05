@@ -51,7 +51,7 @@ public class Config
 	public static final String OTHER_CONFIG_FILE = "config/mod/other.ini";
 	public static final String RESIDENCE_CONFIG_FILE = "config/residence.ini";
 	public static final String SPOIL_CONFIG_FILE = "config/spoil.ini";
-	public static final String ALT_SETTINGS_FILE = "config/altsettings.ini";
+
 	public static final String FORMULAS_CONFIGURATION_FILE = "config/formulas.ini";
 
 	public static final String TELNET_CONFIGURATION_FILE = "config/telnet.ini";
@@ -184,45 +184,13 @@ public class Config
 	public static int CHATFILTER_MIN_LEVEL = 0;
 	public static int CHATFILTER_WORK_TYPE = 1;
 
-	public static int CHATS_REQUIRED_LEVEL;
-	public static int PM_REQUIRED_LEVEL;
-	public static int SHOUT_REQUIRED_LEVEL;
-	public static int ALT_MAIL_MIN_LVL;
-
 	public static boolean RECORD_WROTE_CHAT_MSGS_COUNT;
 
 	public static int ANNOUNCE_VOTE_DELAY;
 
-	public static boolean SAVING_SPS;
-	public static boolean MANAHEAL_SPS_BONUS;
-
-	public static int ALT_ADD_RECIPES;
-	public static int ALT_MAX_ALLY_SIZE;
-
-	public static int ALT_LEVEL_DIFFERENCE_PROTECTION;
-
-	public static int ALT_PARTY_DISTRIBUTION_RANGE;
-	public static double[] ALT_PARTY_BONUS;
 	public static double ALT_ABSORB_DAMAGE_MODIFIER;
-	public static boolean ALT_ALL_PHYS_SKILLS_OVERHIT;
 
 	public static double ALT_POLE_DAMAGE_MODIFIER;
-
-	public static boolean ALT_REMOVE_SKILLS_ON_DELEVEL;
-	public static boolean ALT_USE_BOW_REUSE_MODIFIER;
-
-	public static boolean ALT_VITALITY_ENABLED;
-	public static double ALT_VITALITY_RATE;
-	public static double ALT_VITALITY_CONSUME_RATE;
-	public static int ALT_VITALITY_RAID_BONUS;
-	public static final int[] VITALITY_LEVELS =
-	{
-		240,
-		2000,
-		13000,
-		17000,
-		20000
-	};
 
 	// Donation Store
 
@@ -305,27 +273,10 @@ public class Config
 	public static int DONATE_NOBLESS_SELL_ITEM;
 	public static long DONATE_NOBLESS_SELL_PRICE;
 
-	public static boolean ALT_TELEPORTS_ONLY_FOR_GIRAN;
-
-	/** Ancient Herb */
-	public static int ANCIENT_HERB_SPAWN_RADIUS;
-	public static int ANCIENT_HERB_SPAWN_CHANCE;
-	public static int ANCIENT_HERB_SPAWN_COUNT;
-	public static int ANCIENT_HERB_RESPAWN_TIME;
-	public static int ANCIENT_HERB_DESPAWN_TIME;
-	public static List<Location> HEIN_FIELDS_LOCATIONS = new ArrayList<Location>();
-
 	public static int DRAGONKNIGHT_2ND_D_CHANCE;
 	public static int DRAGONKNIGHT_3ND_D_CHANCE;
 
 	public static int LOA_CIRCLE_MOB_UNSPAWN_TIME;
-
-	public static int VITAMIN_PETS_FOOD_ID;
-	public static int VITAMIN_DESELOT_FOOD_ID;
-	public static int VITAMIN_SUPERPET_FOOD_ID;
-
-	public static boolean ALLOW_PET_ATTACK_MASTER;
-	public static boolean TELEPORT_PET_TO_MASTER;
 
 	// Scheme Buffer
 	public static boolean NpcBuffer_VIP;
@@ -369,13 +320,6 @@ public class Config
 	public static List<int[]> NpcBuffer_BuffSetSupport = new ArrayList<int[]>();
 	public static List<int[]> NpcBuffer_BuffSetTank = new ArrayList<int[]>();
 	public static List<int[]> NpcBuffer_BuffSetArcher = new ArrayList<int[]>();
-
-	public static boolean ENABLE_AUCTION_SYSTEM;
-	public static long AUCTION_FEE;
-	public static int AUCTION_INACTIVITY_DAYS_TO_DELETE;
-	public static boolean ALLOW_AUCTION_OUTSIDE_TOWN;
-	public static int SECONDS_BETWEEN_ADDING_AUCTIONS;
-	public static boolean AUCTION_PRIVATE_STORE_AUTO_ADDED;
 
 	public static boolean AllowBBSSubManager;
 
@@ -440,19 +384,10 @@ public class Config
 
 	public static boolean RETURN_WARDS_WHEN_TW_STARTS;
 
-	public static boolean ALT_PCBANG_POINTS_ENABLED;
-	public static double ALT_PCBANG_POINTS_BONUS_DOUBLE_CHANCE;
-	public static int ALT_PCBANG_POINTS_BONUS;
-	public static int ALT_PCBANG_POINTS_DELAY;
-	public static int ALT_PCBANG_POINTS_MIN_LVL;
-
 	public static boolean ALT_DEBUG_ENABLED;
 	public static boolean ALT_DEBUG_PVP_ENABLED;
 	public static boolean ALT_DEBUG_PVP_DUEL_ONLY;
 	public static boolean ALT_DEBUG_PVE_ENABLED;
-
-	public static double CRAFT_MASTERWORK_CHANCE;
-	public static double CRAFT_DOUBLECRAFT_CHANCE;
 
 	/** Thread pools size */
 	public static int SCHEDULED_THREAD_POOL_SIZE;
@@ -462,15 +397,6 @@ public class Config
 
 	/** Network settings */
 	public static SelectorConfig SELECTOR_CONFIG = new SelectorConfig();
-
-	public static boolean AUTO_LOOT;
-	public static boolean AUTO_LOOT_HERBS;
-	public static boolean AUTO_LOOT_ONLY_ADENA;
-	public static boolean AUTO_LOOT_INDIVIDUAL;
-	public static boolean AUTO_LOOT_FROM_RAIDS;
-
-	/** Auto-loot for/from players with karma also? */
-	public static boolean AUTO_LOOT_PK;
 
 	public static int CNAME_MAXLEN = 32;
 
@@ -497,55 +423,6 @@ public class Config
 
 	public static boolean ENABLE_VOTE;
 	public static String VOTE_ADDRESS;
-
-	public static double ALT_RAID_RESPAWN_MULTIPLIER;
-
-	public static boolean ALT_ALLOW_AUGMENT_ALL;
-	public static boolean ALT_ALLOW_DROP_AUGMENTED;
-
-	public static boolean ALT_GAME_UNREGISTER_RECIPE;
-
-	/** Delay for announce SS period (in minutes) */
-	public static int SS_ANNOUNCE_PERIOD;
-
-	/** Petition manager */
-	public static boolean PETITIONING_ALLOWED;
-	public static int MAX_PETITIONS_PER_PLAYER;
-	public static int MAX_PETITIONS_PENDING;
-
-	/** Show mob stats/droplist to players? */
-	public static boolean ALT_GAME_SHOW_DROPLIST;
-	public static boolean ALT_FULL_NPC_STATS_PAGE;
-	public static boolean ALLOW_NPC_SHIFTCLICK;
-
-	public static boolean ALT_ALLOW_SELL_COMMON;
-	public static boolean ALT_ALLOW_SHADOW_WEAPONS;
-	public static int[] ALT_DISABLED_MULTISELL;
-	public static int[] ALT_SHOP_PRICE_LIMITS;
-	public static int[] ALT_SHOP_UNALLOWED_ITEMS;
-
-	public static int[] ALT_ALLOWED_PET_POTIONS;
-
-	public static double SKILLS_CHANCE_MOD;
-	public static double SKILLS_CHANCE_MIN;
-	public static double SKILLS_CHANCE_POW;
-	public static double SKILLS_CHANCE_CAP;
-	public static double SKILLS_MOB_CHANCE;
-	public static double SKILLS_DEBUFF_MOB_CHANCE;
-	public static boolean SHIELD_SLAM_BLOCK_IS_MUSIC;
-	public static boolean ALT_SAVE_UNSAVEABLE;
-	public static int ALT_SAVE_EFFECTS_REMAINING_TIME;
-	public static boolean ALT_SHOW_REUSE_MSG;
-	public static boolean ALT_DELETE_SA_BUFFS;
-	public static int SKILLS_CAST_TIME_MIN;
-	public static double SKILLS_DELTA_MOD_MULT;
-	public static double SKILLS_ATTACKER_WEAPON_MOD;
-	public static double SKILLS_M_ATK_MOD_MAX;
-	public static double SKILLS_M_ATK_MOD_MIN;
-	public static double SKILLS_ELEMENT_MOD_MULT;
-	public static double SKILLS_ELEMENT_MOD_MAX;
-	public static double SKILLS_ELEMENT_MOD_MIN;
-	public static boolean SKILLS_CALC_STAT_MOD;
 
 	/** ÐšÐ¾Ð½Ñ„Ð¸Ð³ÑƒÑ€Ð°Ñ†Ð¸Ñ� Ð¸Ñ�Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ� Ð¸Ñ‚ÐµÐ¼Ð¾Ð² Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ Ð¿Ð¾ÑƒÑˆÐµÐ½Ñ‹ */
 	public static int[] ITEM_USE_LIST_ID;
@@ -576,59 +453,6 @@ public class Config
 	public static boolean FIGHT_CLUB_ANNOUNCE_START_TO_SCREEN;
 	public static boolean FIGHT_CLUB_ANNOUNCE_TOP_KILLER;
 	public static boolean FIGHT_CLUB_SUMMON_LOSE_BUFFS_ON_DEATH;
-
-	/** Ð¢Ð¸Ñ‚ÑƒÐ» Ð¿Ñ€Ð¸ Ñ�Ð¾Ð·Ð´Ð°Ð½Ð¸Ð¸ Ñ‡Ð°Ñ€Ð° */
-	public static boolean CHAR_TITLE;
-	public static String ADD_CHAR_TITLE;
-
-	/** Ð¢Ð°Ð¹Ð¼Ð°ÑƒÑ‚ Ð½Ð° Ð¸Ñ�Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ social action */
-	public static boolean ALT_SOCIAL_ACTION_REUSE;
-
-	/** ÐžÑ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ ÐºÐ½Ð¸Ð³ Ð´Ð»Ñ� Ð¸Ð·ÑƒÑ‡ÐµÐ½Ð¸Ñ� Ñ�ÐºÐ¸Ð»Ð¾Ð² */
-	public static boolean ALT_DISABLE_SPELLBOOKS;
-
-	/** Alternative gameing - loss of XP on death */
-	public static boolean ALT_GAME_DELEVEL;
-
-	/** Ð Ð°Ð·Ñ€ÐµÑˆÐ°Ñ‚ÑŒ Ð»Ð¸ Ð½Ð° Ð°Ñ€ÐµÐ½Ðµ Ð±Ð¾Ð¸ Ð·Ð° Ð¾Ð¿Ñ‹Ñ‚ */
-	public static boolean ALT_ARENA_EXP;
-	public static boolean AUTO_SOUL_CRYSTAL_QUEST;
-
-	public static boolean ALT_GAME_SUBCLASS_WITHOUT_QUESTS;
-	public static boolean ALT_ALLOW_SUBCLASS_WITHOUT_BAIUM;
-	public static int ALT_GAME_START_LEVEL_TO_SUBCLASS;
-	public static int ALT_GAME_LEVEL_TO_GET_SUBCLASS;
-	public static int ALT_MAX_LEVEL;
-	public static int ALT_MAX_SUB_LEVEL;
-	public static int ALT_GAME_SUB_ADD;
-	public static boolean ALT_GAME_SUB_BOOK;
-	public static boolean ALT_NO_LASTHIT;
-	public static boolean ALT_KAMALOKA_NIGHTMARES_PREMIUM_ONLY;
-	public static boolean ALT_KAMALOKA_NIGHTMARE_REENTER;
-	public static boolean ALT_KAMALOKA_ABYSS_REENTER;
-	public static boolean ALT_KAMALOKA_LAB_REENTER;
-	public static boolean ALT_PET_HEAL_BATTLE_ONLY;
-
-	public static boolean ALT_SIMPLE_SIGNS;
-	public static boolean ALT_TELE_TO_CATACOMBS;
-	public static boolean ALT_BS_CRYSTALLIZE;
-	public static int ALT_MAMMON_EXCHANGE;
-	public static int ALT_MAMMON_UPGRADE;
-	public static boolean ALT_ALLOW_TATTOO;
-
-	public static int ALT_BUFF_LIMIT;
-
-	public static int MULTISELL_SIZE;
-
-	public static boolean ALT_ALLOW_OTHERS_WITHDRAW_FROM_CLAN_WAREHOUSE;
-	public static boolean ALT_ALLOW_CLAN_COMMAND_ONLY_FOR_CLAN_LEADER;
-	public static boolean ALT_GAME_REQUIRE_CLAN_CASTLE;
-	public static boolean ALT_GAME_REQUIRE_CASTLE_DAWN;
-	public static boolean ALT_GAME_ALLOW_ADENA_DAWN;
-	public static boolean RETAIL_SS;
-
-	public static long NONOWNER_ITEM_PICKUP_DELAY;
-	public static long NONOWNER_ITEM_PICKUP_DELAY_RAIDS;
 
 	/** Logging Chat Window */
 	public static boolean LOG_CHAT;
@@ -695,25 +519,6 @@ public class Config
 	/** Datapack root directory */
 	public static File DATAPACK_ROOT;
 
-	public static double CLANHALL_BUFFTIME_MODIFIER;
-	public static double SONGDANCETIME_MODIFIER;
-
-	public static double MAXLOAD_MODIFIER;
-	public static double GATEKEEPER_MODIFIER;
-	public static boolean ALT_IMPROVED_PETS_LIMITED_USE;
-	public static int GATEKEEPER_FREE;
-	public static int CRUMA_GATEKEEPER_LVL;
-
-	public static double ALT_CHAMPION_CHANCE1;
-	public static double ALT_CHAMPION_CHANCE2;
-	public static boolean ALT_CHAMPION_CAN_BE_AGGRO;
-	public static boolean ALT_CHAMPION_CAN_BE_SOCIAL;
-	public static boolean ALT_CHAMPION_DROP_HERBS;
-	public static boolean ALT_SHOW_MONSTERS_LVL;
-	public static boolean ALT_SHOW_MONSTERS_AGRESSION;
-	public static int ALT_CHAMPION_TOP_LEVEL;
-	public static int ALT_CHAMPION_MIN_LEVEL;
-
 	public static boolean ALLOW_DISCARDITEM;
 	public static boolean ALLOW_DISCARDITEM_AT_PEACE;
 	public static boolean ALLOW_MAIL;
@@ -721,7 +526,7 @@ public class Config
 	public static boolean ALLOW_WATER;
 	public static boolean ALLOW_CURSED_WEAPONS;
 	public static boolean DROP_CURSED_WEAPONS_ON_KICK;
-	public static boolean ALLOW_NOBLE_TP_TO_ALL;
+
 	public static boolean ALLOW_ENTER_INSTANCE;
 	public static boolean ALLOW_PRIVATE_STORES;
 	public static boolean ALLOW_TALK_TO_NPCS;
@@ -743,8 +548,6 @@ public class Config
 	/** random animation interval */
 	public static int MIN_NPC_ANIMATION;
 	public static int MAX_NPC_ANIMATION;
-
-	public static double[] AUGMENTATION_CHANCE_MOD;
 
 	public static String RESTART_AT_TIME;
 	public static boolean BACKUP_DURING_AUTO_RESTART;
@@ -793,9 +596,6 @@ public class Config
 	public static double MANOR_DIFF_PLAYER_TARGET_PENALTY;
 	public static int MANOR_DIFF_SEED_TARGET;
 	public static double MANOR_DIFF_SEED_TARGET_PENALTY;
-
-	/** Karma Punishment */
-	public static boolean ALT_GAME_KARMA_PLAYER_CAN_SHOP;
 
 	/** Chance that an item will succesfully be enchanted */
 	public static int ENCHANT_CHANCE_WEAPON;
@@ -854,7 +654,6 @@ public class Config
 
 	public static boolean FRINTEZZA_ALL_MEMBERS_NEED_SCROLL;
 
-	public static double ALT_PK_DEATH_RATE;
 	public static int STARTING_ADENA;
 
 	public static int STARTING_LVL;
@@ -892,11 +691,6 @@ public class Config
 	public static boolean SENDSTATUS_TRADE_JUST_OFFLINE;
 	public static double SENDSTATUS_TRADE_MOD;
 	public static boolean SHOW_OFFLINE_MODE_IN_ONLINE;
-
-	public static boolean ALLOW_CH_DOOR_OPEN_ON_CLICK;
-	public static boolean ALT_CH_ALL_BUFFS;
-	public static boolean ALT_CH_ALLOW_1H_BUFFS;
-	public static boolean ALT_CH_SIMPLE_DIALOG;
 
 	public static int CH_BID_GRADE1_MINCLANLEVEL;
 	public static int CH_BID_GRADE1_MINCLANMEMBERS;
@@ -961,19 +755,9 @@ public class Config
 
 	}
 
-	public static boolean ALT_DEATH_PENALTY;
-	public static boolean ALLOW_DEATH_PENALTY_C5;
-	public static int ALT_DEATH_PENALTY_C5_CHANCE;
-	public static boolean ALT_DEATH_PENALTY_C5_CHAOTIC_RECOVERY;
-	public static int ALT_DEATH_PENALTY_C5_EXPERIENCE_PENALTY;
-	public static int ALT_DEATH_PENALTY_C5_KARMA_PENALTY;
-
 	public static boolean HIDE_GM_STATUS;
 	public static boolean SHOW_GM_LOGIN;
 	public static boolean SAVE_GM_EFFECTS; // Silence, gmspeed, etc...
-
-	public static boolean AUTO_LEARN_SKILLS;
-	public static boolean AUTO_LEARN_FORGOTTEN_SKILLS;
 
 	public static int MOVE_PACKET_DELAY;
 	public static int ATTACK_PACKET_DELAY;
@@ -1033,44 +817,6 @@ public class Config
 	public static boolean WEDDING_FORMALWEAR;
 	public static int WEDDING_DIVORCE_COSTS;
 
-	/** Augmentations **/
-	public static int AUGMENTATION_NG_SKILL_CHANCE; // Chance to get a skill while using a NoGrade Life Stone
-	public static int AUGMENTATION_NG_GLOW_CHANCE; // Chance to get a Glow effect while using a NoGrade Life Stone(only if you get a skill)
-	public static int AUGMENTATION_MID_SKILL_CHANCE; // Chance to get a skill while using a MidGrade Life Stone
-	public static int AUGMENTATION_MID_GLOW_CHANCE; // Chance to get a Glow effect while using a MidGrade Life Stone(only if you get a skill)
-	public static int AUGMENTATION_HIGH_SKILL_CHANCE; // Chance to get a skill while using a HighGrade Life Stone
-	public static int AUGMENTATION_HIGH_GLOW_CHANCE; // Chance to get a Glow effect while using a HighGrade Life Stone
-	public static int AUGMENTATION_TOP_SKILL_CHANCE; // Chance to get a skill while using a TopGrade Life Stone
-	public static int AUGMENTATION_TOP_GLOW_CHANCE; // Chance to get a Glow effect while using a TopGrade Life Stone
-	public static int AUGMENTATION_BASESTAT_CHANCE; // Chance to get a BaseStatModifier in the augmentation process
-	public static int AUGMENTATION_ACC_SKILL_CHANCE;
-
-	public static int FOLLOW_RANGE;
-
-	public static boolean ALT_ENABLE_MULTI_PROFA;
-
-	public static boolean ALT_ITEM_AUCTION_ENABLED;
-	public static boolean ALT_ITEM_AUCTION_CAN_REBID;
-	public static boolean ALT_ITEM_AUCTION_START_ANNOUNCE;
-	public static int ALT_ITEM_AUCTION_BID_ITEM_ID;
-	public static long ALT_ITEM_AUCTION_MAX_BID;
-	public static int ALT_ITEM_AUCTION_MAX_CANCEL_TIME_IN_MILLIS;
-
-	public static boolean ALT_FISH_CHAMPIONSHIP_ENABLED;
-	public static int ALT_FISH_CHAMPIONSHIP_REWARD_ITEM;
-	public static int ALT_FISH_CHAMPIONSHIP_REWARD_1;
-	public static int ALT_FISH_CHAMPIONSHIP_REWARD_2;
-	public static int ALT_FISH_CHAMPIONSHIP_REWARD_3;
-	public static int ALT_FISH_CHAMPIONSHIP_REWARD_4;
-	public static int ALT_FISH_CHAMPIONSHIP_REWARD_5;
-
-	public static boolean ALT_ENABLE_BLOCK_CHECKER_EVENT;
-	public static int ALT_MIN_BLOCK_CHECKER_TEAM_MEMBERS;
-	public static double ALT_RATE_COINS_REWARD_BLOCK_CHECKER;
-	public static boolean ALT_HBCE_FAIR_PLAY;
-	public static int ALT_PET_INVENTORY_LIMIT;
-	public static int ALT_CLAN_LEVEL_CREATE;
-
 	/** limits of stats **/
 	public static int LIM_PATK;
 	public static int LIM_MATK;
@@ -1098,55 +844,6 @@ public class Config
 	public static int SAFE_ENCHANT_COMMON;
 	public static int SAFE_ENCHANT_FULL_BODY;
 	public static int SAFE_ENCHANT_LVL;
-
-	public static int FESTIVAL_MIN_PARTY_SIZE;
-	public static double FESTIVAL_RATE_PRICE;
-
-	public static boolean ENABLE_POLL_SYSTEM;
-	public static int ANNOUNCE_POLL_EVERY_X_MIN;
-
-	/** DimensionalRift Config **/
-	public static int RIFT_MIN_PARTY_SIZE;
-	public static int RIFT_SPAWN_DELAY; // Time in ms the party has to wait until the mobs spawn
-	public static int RIFT_MAX_JUMPS;
-	public static int RIFT_AUTO_JUMPS_TIME;
-	public static int RIFT_AUTO_JUMPS_TIME_RAND;
-	public static int RIFT_ENTER_COST_RECRUIT;
-	public static int RIFT_ENTER_COST_SOLDIER;
-	public static int RIFT_ENTER_COST_OFFICER;
-	public static int RIFT_ENTER_COST_CAPTAIN;
-	public static int RIFT_ENTER_COST_COMMANDER;
-	public static int RIFT_ENTER_COST_HERO;
-
-	public static boolean ALLOW_TALK_WHILE_SITTING;
-
-	public static boolean PARTY_LEADER_ONLY_CAN_INVITE;
-
-	/** Ð Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ñ‹ Ð»Ð¸ ÐºÐ»Ð°Ð½Ð¾Ð²Ñ‹Ðµ Ñ�ÐºÐ¸Ð»Ñ‹? **/
-	public static boolean ALLOW_CLANSKILLS;
-
-	/** Ð Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¾ Ð»Ð¸ Ð¸Ð·ÑƒÑ‡ÐµÐ½Ð¸Ðµ Ñ�ÐºÐ¸Ð»Ð¾Ð² Ñ‚Ñ€Ð°Ð½Ñ�Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸ Ð¸ Ñ�Ð°Ð± ÐºÐ»Ð°Ñ�Ñ�Ð¾Ð² Ð±ÐµÐ· Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ñ� Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½Ð¾Ð³Ð¾ ÐºÐ²ÐµÑ�Ñ‚Ð° */
-	public static boolean ALLOW_LEARN_TRANS_SKILLS_WO_QUEST;
-
-	/** Allow Manor system */
-	public static boolean ALLOW_MANOR;
-
-	/** Manor Refresh Starting time */
-	public static int MANOR_REFRESH_TIME;
-
-	/** Manor Refresh Min */
-	public static int MANOR_REFRESH_MIN;
-
-	/** Manor Next Period Approve Starting time */
-	public static int MANOR_APPROVE_TIME;
-
-	/** Manor Next Period Approve Min */
-	public static int MANOR_APPROVE_MIN;
-
-	/** Manor Maintenance Time */
-	public static int MANOR_MAINTENANCE_PERIOD;
-
-	public static boolean ALT_OPEN_CLOAK_SLOT;
 
 	public static boolean DEBUG;
 
@@ -1215,40 +912,6 @@ public class Config
 	public static int RANDOMINTERVALOFSAILRENSPAWN;
 	public static int MIN_PLAYERS_TO_SPAWN_BELETH;
 
-	public static int CLAN_LEVEL_6_COST;
-	public static int CLAN_LEVEL_7_COST;
-	public static int CLAN_LEVEL_8_COST;
-	public static int CLAN_LEVEL_9_COST;
-	public static int CLAN_LEVEL_10_COST;
-	public static int CLAN_LEVEL_11_COST;
-
-	public static int CLAN_LEVEL_6_REQUIREMEN;
-	public static int CLAN_LEVEL_7_REQUIREMEN;
-	public static int CLAN_LEVEL_8_REQUIREMEN;
-	public static int CLAN_LEVEL_9_REQUIREMEN;
-	public static int CLAN_LEVEL_10_REQUIREMEN;
-	public static int CLAN_LEVEL_11_REQUIREMEN;
-
-	public static int BLOOD_OATHS;
-	public static int BLOOD_PLEDGES;
-	public static int MIN_ACADEM_POINT;
-	public static int MAX_ACADEM_POINT;
-
-	public static boolean ZONE_PVP_COUNT;
-	public static boolean SIEGE_PVP_COUNT;
-	public static boolean EPIC_EXPERTISE_PENALTY;
-	public static boolean EXPERTISE_PENALTY;
-
-	// Remove dance and songs shot click
-	public static boolean ALT_DISPEL_MUSIC;
-
-	public static int ALT_MUSIC_LIMIT;
-	public static int ALT_DEBUFF_LIMIT;
-	public static int ALT_TRIGGER_LIMIT;
-	public static boolean ENABLE_MODIFY_SKILL_DURATION;
-	public static boolean ALT_TIME_MODE_SKILL_DURATION;
-	public static TIntIntHashMap SKILL_DURATION_LIST;
-
 	public static boolean COMMUNITYBOARD_BOARD_ALT_ENABLED;
 	public static int COMMUNITYBOARD_BUFF_PICE_NG;
 	public static int COMMUNITYBOARD_BUFF_PICE_D;
@@ -1303,14 +966,6 @@ public class Config
 	public static int[] START_ITEMS_MAGE_COUNT;
 	public static int[] START_ITEMS_FITHER;
 	public static int[] START_ITEMS_FITHER_COUNT;
-
-	public static int HELLBOUND_LEVEL;
-
-	public static int CLAN_LEAVE_PENALTY;
-	public static int ALLY_LEAVE_PENALTY;
-	public static int DISSOLVED_ALLY_PENALTY;
-	public static int DISSOLVED_CLAN_PENALTY;
-	public static int CLAN_DISBAND_TIME;
 
 	public static boolean COMMUNITYBOARD_ENCHANT_ENABLED;
 	public static boolean ALLOW_BBS_ENCHANT_ELEMENTAR;
@@ -1559,6 +1214,10 @@ public class Config
 			"57"
 		});
 	}
+
+	public static int CHATS_REQUIRED_LEVEL;
+	public static int PM_REQUIRED_LEVEL;
+	public static int SHOUT_REQUIRED_LEVEL;
 
 	public static void loadChatConfig()
 	{
@@ -2120,6 +1779,8 @@ public class Config
 		SERVER_SIDE_NPC_TITLE_ETC = npcSettings.getProperty("ServerSideNpcTitleEtc", false);
 	}
 
+	public static int MULTISELL_SIZE;
+
 	public static void loadOtherConfig()
 	{
 		ExProperties otherSettings = load(OTHER_CONFIG_FILE);
@@ -2286,6 +1947,24 @@ public class Config
 		ALLOW_MACROS_ENCHANT_BUG = otherSettings.getProperty("AllowMacrosEnchantBug", false);
 	}
 
+	/** Allow Manor system */
+	public static boolean ALLOW_MANOR;
+
+	/** Manor Refresh Starting time */
+	public static int MANOR_REFRESH_TIME;
+
+	/** Manor Refresh Min */
+	public static int MANOR_REFRESH_MIN;
+
+	/** Manor Next Period Approve Starting time */
+	public static int MANOR_APPROVE_TIME;
+
+	/** Manor Next Period Approve Min */
+	public static int MANOR_APPROVE_MIN;
+
+	/** Manor Maintenance Time */
+	public static int MANOR_MAINTENANCE_PERIOD;
+
 	public static void loadSpoilConfig()
 	{
 		ExProperties spoilSettings = load(SPOIL_CONFIG_FILE);
@@ -2341,6 +2020,22 @@ public class Config
 
 		ALLOW_DUALBOX_EPIC = epicBossSettings.getProperty("AllowDualBoxEpic", true);
 	}
+
+	public static double SKILLS_CHANCE_MOD;
+	public static double SKILLS_CHANCE_MIN;
+	public static double SKILLS_CHANCE_POW;
+	public static double SKILLS_CHANCE_CAP;
+	public static double SKILLS_MOB_CHANCE;
+	public static double SKILLS_DEBUFF_MOB_CHANCE;
+	public static int SKILLS_CAST_TIME_MIN;
+	public static double SKILLS_DELTA_MOD_MULT;
+	public static double SKILLS_ATTACKER_WEAPON_MOD;
+	public static double SKILLS_M_ATK_MOD_MAX;
+	public static double SKILLS_M_ATK_MOD_MIN;
+	public static double SKILLS_ELEMENT_MOD_MULT;
+	public static double SKILLS_ELEMENT_MOD_MAX;
+	public static double SKILLS_ELEMENT_MOD_MIN;
+	public static boolean SKILLS_CALC_STAT_MOD;
 
 	public static void loadFormulasConfig()
 	{
@@ -2551,103 +2246,379 @@ public class Config
 		SMS_PAYMENT_REWARD = paymentSettings.getProperty("SMSPaymentReward", new int[0]);
 	}
 
+	public static final String ALT_SETTINGS_FILE = "config/altsettings.ini";
+	/** Ð Ð°Ð·Ñ€ÐµÑˆÐ°Ñ‚ÑŒ Ð»Ð¸ Ð½Ð° Ð°Ñ€ÐµÐ½Ðµ Ð±Ð¾Ð¸ Ð·Ð° Ð¾Ð¿Ñ‹Ñ‚ */
+	public static boolean ALT_ARENA_EXP;
+	public static boolean AUTO_SOUL_CRYSTAL_QUEST;
+
+	public static boolean ALT_GAME_SUBCLASS_WITHOUT_QUESTS;
+	public static boolean ALT_ALLOW_SUBCLASS_WITHOUT_BAIUM;
+	public static int ALT_GAME_START_LEVEL_TO_SUBCLASS;
+	public static int ALT_GAME_LEVEL_TO_GET_SUBCLASS;
+	public static int ALT_MAX_LEVEL;
+	public static int ALT_MAX_SUB_LEVEL;
+	public static int ALT_GAME_SUB_ADD;
+	public static boolean ALT_GAME_SUB_BOOK;
+	public static boolean ALT_NO_LASTHIT;
+	public static boolean ALT_KAMALOKA_NIGHTMARES_PREMIUM_ONLY;
+	public static boolean ALT_KAMALOKA_NIGHTMARE_REENTER;
+	public static boolean ALT_KAMALOKA_ABYSS_REENTER;
+	public static boolean ALT_KAMALOKA_LAB_REENTER;
+	public static boolean ALT_PET_HEAL_BATTLE_ONLY;
+
+	public static boolean ALT_SIMPLE_SIGNS;
+	public static boolean ALT_TELE_TO_CATACOMBS;
+	public static boolean ALT_BS_CRYSTALLIZE;
+	public static int ALT_MAMMON_EXCHANGE;
+	public static int ALT_MAMMON_UPGRADE;
+	public static boolean ALT_ALLOW_TATTOO;
+
+	public static int ALT_BUFF_LIMIT;
+
+	public static boolean ALT_ALLOW_OTHERS_WITHDRAW_FROM_CLAN_WAREHOUSE;
+	public static boolean ALT_ALLOW_CLAN_COMMAND_ONLY_FOR_CLAN_LEADER;
+	public static boolean ALT_GAME_REQUIRE_CLAN_CASTLE;
+	public static boolean ALT_GAME_REQUIRE_CASTLE_DAWN;
+	public static boolean ALT_GAME_ALLOW_ADENA_DAWN;
+	public static boolean RETAIL_SS;
+
+	/** Alternative gameing - loss of XP on death */
+	public static boolean ALT_GAME_DELEVEL;
+	public static int ALT_MAIL_MIN_LVL;
+	public static int VITAMIN_PETS_FOOD_ID;
+	public static int VITAMIN_DESELOT_FOOD_ID;
+	public static int VITAMIN_SUPERPET_FOOD_ID;
+	public static boolean ALT_TELEPORTS_ONLY_FOR_GIRAN;
+
+	public static double ALT_RAID_RESPAWN_MULTIPLIER;
+	public static boolean ALT_ALLOW_AUGMENT_ALL;
+	public static boolean ALT_ALLOW_DROP_AUGMENTED;
+	public static boolean ALT_GAME_UNREGISTER_RECIPE;
+
+	/** Delay for announce SS period (in minutes) */
+	public static int SS_ANNOUNCE_PERIOD;
+
+	/** Petition manager */
+	public static boolean PETITIONING_ALLOWED;
+	public static int MAX_PETITIONS_PER_PLAYER;
+	public static int MAX_PETITIONS_PENDING;
+
+	/** Show mob stats/droplist to players? */
+	public static boolean ALT_GAME_SHOW_DROPLIST;
+	public static boolean ALT_FULL_NPC_STATS_PAGE;
+	public static boolean ALLOW_NPC_SHIFTCLICK;
+
+	public static boolean ALT_ALLOW_SELL_COMMON;
+	public static boolean ALT_ALLOW_SHADOW_WEAPONS;
+	public static int[] ALT_DISABLED_MULTISELL;
+	public static int[] ALT_SHOP_PRICE_LIMITS;
+	public static int[] ALT_SHOP_UNALLOWED_ITEMS;
+	public static int[] ALT_ALLOWED_PET_POTIONS;
+	public static boolean SHIELD_SLAM_BLOCK_IS_MUSIC;
+	public static boolean ALT_SAVE_UNSAVEABLE;
+	public static int ALT_SAVE_EFFECTS_REMAINING_TIME;
+
+	public static boolean ALLOW_PET_ATTACK_MASTER;
+	public static boolean TELEPORT_PET_TO_MASTER;
+	public static boolean ALT_SHOW_REUSE_MSG;
+	public static boolean ALT_DELETE_SA_BUFFS;
+	public static boolean AUTO_LOOT;
+	public static boolean AUTO_LOOT_HERBS;
+	public static boolean AUTO_LOOT_ONLY_ADENA;
+	public static boolean AUTO_LOOT_INDIVIDUAL;
+	public static boolean AUTO_LOOT_FROM_RAIDS;
+
+	/** Auto-loot for/from players with karma also? */
+	public static boolean AUTO_LOOT_PK;
+	/** Karma Punishment */
+	public static boolean ALT_GAME_KARMA_PLAYER_CAN_SHOP;
+	public static boolean SAVING_SPS;
+	public static boolean MANAHEAL_SPS_BONUS;
+	public static double CRAFT_MASTERWORK_CHANCE;
+	public static double CRAFT_DOUBLECRAFT_CHANCE;
+	public static double[] AUGMENTATION_CHANCE_MOD;
+	public static int ALT_ADD_RECIPES;
+	public static boolean AUTO_LEARN_SKILLS;
+	public static boolean AUTO_LEARN_FORGOTTEN_SKILLS;
+	/** Ð¢Ð°Ð¹Ð¼Ð°ÑƒÑ‚ Ð½Ð° Ð¸Ñ�Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ðµ social action */
+	public static boolean ALT_SOCIAL_ACTION_REUSE;
+
+	/** ÐžÑ‚ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ ÐºÐ½Ð¸Ð³ Ð´Ð»Ñ� Ð¸Ð·ÑƒÑ‡ÐµÐ½Ð¸Ñ� Ñ�ÐºÐ¸Ð»Ð¾Ð² */
+	public static boolean ALT_DISABLE_SPELLBOOKS;
+
+	public static boolean ALT_DEATH_PENALTY;
+	public static boolean ALLOW_DEATH_PENALTY_C5;
+	public static int ALT_DEATH_PENALTY_C5_CHANCE;
+	public static boolean ALT_DEATH_PENALTY_C5_CHAOTIC_RECOVERY;
+	public static int ALT_DEATH_PENALTY_C5_EXPERIENCE_PENALTY;
+	public static int ALT_DEATH_PENALTY_C5_KARMA_PENALTY;
+	public static double ALT_PK_DEATH_RATE;
+	public static long NONOWNER_ITEM_PICKUP_DELAY;
+	public static long NONOWNER_ITEM_PICKUP_DELAY_RAIDS;
+	// Remove dance and songs shot click
+	public static boolean ALT_DISPEL_MUSIC;
+	/** Ð¢Ð¸Ñ‚ÑƒÐ» Ð¿Ñ€Ð¸ Ñ�Ð¾Ð·Ð´Ð°Ð½Ð¸Ð¸ Ñ‡Ð°Ñ€Ð° */
+	public static boolean CHAR_TITLE;
+	public static String ADD_CHAR_TITLE;
+
+	public static int FESTIVAL_MIN_PARTY_SIZE;
+	public static double FESTIVAL_RATE_PRICE;
+	public static boolean ENABLE_POLL_SYSTEM;
+	public static int ANNOUNCE_POLL_EVERY_X_MIN;
+	/** DimensionalRift Config **/
+	public static int RIFT_MIN_PARTY_SIZE;
+	public static int RIFT_SPAWN_DELAY; // Time in ms the party has to wait until the mobs spawn
+	public static int RIFT_MAX_JUMPS;
+	public static int RIFT_AUTO_JUMPS_TIME;
+	public static int RIFT_AUTO_JUMPS_TIME_RAND;
+	public static int RIFT_ENTER_COST_RECRUIT;
+	public static int RIFT_ENTER_COST_SOLDIER;
+	public static int RIFT_ENTER_COST_OFFICER;
+	public static int RIFT_ENTER_COST_CAPTAIN;
+	public static int RIFT_ENTER_COST_COMMANDER;
+	public static int RIFT_ENTER_COST_HERO;
+
+	public static boolean ALLOW_TALK_WHILE_SITTING;
+
+	public static boolean PARTY_LEADER_ONLY_CAN_INVITE;
+
+	/** Ð Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ñ‹ Ð»Ð¸ ÐºÐ»Ð°Ð½Ð¾Ð²Ñ‹Ðµ Ñ�ÐºÐ¸Ð»Ñ‹? **/
+	public static boolean ALLOW_CLANSKILLS;
+
+	/** Ð Ð°Ð·Ñ€ÐµÑˆÐµÐ½Ð¾ Ð»Ð¸ Ð¸Ð·ÑƒÑ‡ÐµÐ½Ð¸Ðµ Ñ�ÐºÐ¸Ð»Ð¾Ð² Ñ‚Ñ€Ð°Ð½Ñ�Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ð¸ Ð¸ Ñ�Ð°Ð± ÐºÐ»Ð°Ñ�Ñ�Ð¾Ð² Ð±ÐµÐ· Ð½Ð°Ð»Ð¸Ñ‡Ð¸Ñ� Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð½Ð¾Ð³Ð¾ ÐºÐ²ÐµÑ�Ñ‚Ð° */
+	public static boolean ALLOW_LEARN_TRANS_SKILLS_WO_QUEST;
+
+	public static double ALT_CHAMPION_CHANCE1;
+	public static double ALT_CHAMPION_CHANCE2;
+	public static boolean ALT_CHAMPION_CAN_BE_AGGRO;
+	public static boolean ALT_CHAMPION_CAN_BE_SOCIAL;
+	public static boolean ALT_CHAMPION_DROP_HERBS;
+	public static boolean ALT_SHOW_MONSTERS_LVL;
+	public static boolean ALT_SHOW_MONSTERS_AGRESSION;
+	public static int ALT_CHAMPION_TOP_LEVEL;
+	public static int ALT_CHAMPION_MIN_LEVEL;
+	public static boolean ALLOW_NOBLE_TP_TO_ALL;
+	public static double CLANHALL_BUFFTIME_MODIFIER;
+	public static double SONGDANCETIME_MODIFIER;
+
+	public static double MAXLOAD_MODIFIER;
+	public static double GATEKEEPER_MODIFIER;
+	public static boolean ALT_IMPROVED_PETS_LIMITED_USE;
+	public static int GATEKEEPER_FREE;
+	public static int CRUMA_GATEKEEPER_LVL;
+	public static boolean ALT_VITALITY_ENABLED;
+	public static double ALT_VITALITY_RATE;
+	public static double ALT_VITALITY_CONSUME_RATE;
+	public static int ALT_VITALITY_RAID_BONUS;
+	public static final int[] VITALITY_LEVELS =
+	{
+		240,
+		2000,
+		13000,
+		17000,
+		20000
+	};
+	public static boolean ALT_PCBANG_POINTS_ENABLED;
+	public static double ALT_PCBANG_POINTS_BONUS_DOUBLE_CHANCE;
+	public static int ALT_PCBANG_POINTS_BONUS;
+	public static int ALT_PCBANG_POINTS_DELAY;
+	public static int ALT_PCBANG_POINTS_MIN_LVL;
+	public static int ALT_MAX_ALLY_SIZE;
+	public static int ALT_PARTY_DISTRIBUTION_RANGE;
+	public static double[] ALT_PARTY_BONUS;
+	public static int ALT_LEVEL_DIFFERENCE_PROTECTION;
+	public static boolean ALT_ALL_PHYS_SKILLS_OVERHIT;
+	public static boolean ALT_REMOVE_SKILLS_ON_DELEVEL;
+	public static boolean ALT_USE_BOW_REUSE_MODIFIER;
+
+	public static boolean ALLOW_CH_DOOR_OPEN_ON_CLICK;
+	public static boolean ALT_CH_ALL_BUFFS;
+	public static boolean ALT_CH_ALLOW_1H_BUFFS;
+	public static boolean ALT_CH_SIMPLE_DIALOG;
+	/** Augmentations **/
+	public static int AUGMENTATION_NG_SKILL_CHANCE; // Chance to get a skill while using a NoGrade Life Stone
+	public static int AUGMENTATION_NG_GLOW_CHANCE; // Chance to get a Glow effect while using a NoGrade Life Stone(only if you get a skill)
+	public static int AUGMENTATION_MID_SKILL_CHANCE; // Chance to get a skill while using a MidGrade Life Stone
+	public static int AUGMENTATION_MID_GLOW_CHANCE; // Chance to get a Glow effect while using a MidGrade Life Stone(only if you get a skill)
+	public static int AUGMENTATION_HIGH_SKILL_CHANCE; // Chance to get a skill while using a HighGrade Life Stone
+	public static int AUGMENTATION_HIGH_GLOW_CHANCE; // Chance to get a Glow effect while using a HighGrade Life Stone
+	public static int AUGMENTATION_TOP_SKILL_CHANCE; // Chance to get a skill while using a TopGrade Life Stone
+	public static int AUGMENTATION_TOP_GLOW_CHANCE; // Chance to get a Glow effect while using a TopGrade Life Stone
+	public static int AUGMENTATION_BASESTAT_CHANCE; // Chance to get a BaseStatModifier in the augmentation process
+	public static int AUGMENTATION_ACC_SKILL_CHANCE;
+	public static boolean ALT_OPEN_CLOAK_SLOT;
+	public static int FOLLOW_RANGE;
+	public static boolean ALT_ENABLE_MULTI_PROFA;
+
+	public static boolean ALT_ITEM_AUCTION_ENABLED;
+	public static boolean ALT_ITEM_AUCTION_CAN_REBID;
+	public static boolean ALT_ITEM_AUCTION_START_ANNOUNCE;
+	public static int ALT_ITEM_AUCTION_BID_ITEM_ID;
+	public static long ALT_ITEM_AUCTION_MAX_BID;
+	public static int ALT_ITEM_AUCTION_MAX_CANCEL_TIME_IN_MILLIS;
+
+	public static boolean ALT_FISH_CHAMPIONSHIP_ENABLED;
+	public static int ALT_FISH_CHAMPIONSHIP_REWARD_ITEM;
+	public static int ALT_FISH_CHAMPIONSHIP_REWARD_1;
+	public static int ALT_FISH_CHAMPIONSHIP_REWARD_2;
+	public static int ALT_FISH_CHAMPIONSHIP_REWARD_3;
+	public static int ALT_FISH_CHAMPIONSHIP_REWARD_4;
+	public static int ALT_FISH_CHAMPIONSHIP_REWARD_5;
+
+	public static boolean ALT_ENABLE_BLOCK_CHECKER_EVENT;
+	public static int ALT_MIN_BLOCK_CHECKER_TEAM_MEMBERS;
+	public static double ALT_RATE_COINS_REWARD_BLOCK_CHECKER;
+	public static boolean ALT_HBCE_FAIR_PLAY;
+	public static int ALT_PET_INVENTORY_LIMIT;
+	public static int ALT_CLAN_LEVEL_CREATE;
+
+	public static boolean ENABLE_AUCTION_SYSTEM;
+	public static long AUCTION_FEE;
+	public static int AUCTION_INACTIVITY_DAYS_TO_DELETE;
+	public static boolean ALLOW_AUCTION_OUTSIDE_TOWN;
+	public static int SECONDS_BETWEEN_ADDING_AUCTIONS;
+	public static boolean AUCTION_PRIVATE_STORE_AUTO_ADDED;
+
+	public static int CLAN_LEVEL_6_COST;
+	public static int CLAN_LEVEL_7_COST;
+	public static int CLAN_LEVEL_8_COST;
+	public static int CLAN_LEVEL_9_COST;
+	public static int CLAN_LEVEL_10_COST;
+	public static int CLAN_LEVEL_11_COST;
+
+	public static int CLAN_LEVEL_6_REQUIREMEN;
+	public static int CLAN_LEVEL_7_REQUIREMEN;
+	public static int CLAN_LEVEL_8_REQUIREMEN;
+	public static int CLAN_LEVEL_9_REQUIREMEN;
+	public static int CLAN_LEVEL_10_REQUIREMEN;
+	public static int CLAN_LEVEL_11_REQUIREMEN;
+	public static int BLOOD_OATHS;
+	public static int BLOOD_PLEDGES;
+	public static int MIN_ACADEM_POINT;
+	public static int MAX_ACADEM_POINT;
+
+	public static boolean ZONE_PVP_COUNT;
+	public static boolean SIEGE_PVP_COUNT;
+	public static boolean EPIC_EXPERTISE_PENALTY;
+	public static boolean EXPERTISE_PENALTY;
+	public static int HELLBOUND_LEVEL;
+	public static int CLAN_LEAVE_PENALTY;
+	public static int ALLY_LEAVE_PENALTY;
+	public static int DISSOLVED_ALLY_PENALTY;
+	public static int DISSOLVED_CLAN_PENALTY;
+	public static int CLAN_DISBAND_TIME;
+	public static int ALT_MUSIC_LIMIT;
+	public static int ALT_DEBUFF_LIMIT;
+	public static int ALT_TRIGGER_LIMIT;
+	public static boolean ENABLE_MODIFY_SKILL_DURATION;
+	public static boolean ALT_TIME_MODE_SKILL_DURATION;
+	public static TIntIntHashMap SKILL_DURATION_LIST;
+
+	/** Ancient Herb */
+	public static int ANCIENT_HERB_SPAWN_RADIUS;
+	public static int ANCIENT_HERB_SPAWN_CHANCE;
+	public static int ANCIENT_HERB_SPAWN_COUNT;
+	public static int ANCIENT_HERB_RESPAWN_TIME;
+	public static int ANCIENT_HERB_DESPAWN_TIME;
+	public static List<Location> HEIN_FIELDS_LOCATIONS = new ArrayList<Location>();
+
 	public static void loadAltSettings()
 	{
-		ExProperties altSettings = load(ALT_SETTINGS_FILE);
-		ALT_ARENA_EXP = altSettings.getProperty("ArenaExp", true);
-		AUTO_SOUL_CRYSTAL_QUEST = altSettings.getProperty("AutoSoulCrystalQuest", true);
-		ALT_GAME_DELEVEL = altSettings.getProperty("Delevel", true);
-		ALT_MAIL_MIN_LVL = altSettings.getProperty("MinLevelToSendMail", 0);
-		VITAMIN_PETS_FOOD_ID = altSettings.getProperty("VitaminPetsFoodID", -1);
-		VITAMIN_DESELOT_FOOD_ID = altSettings.getProperty("VitaminDeselotFoodID", -1);
-		ALT_TELEPORTS_ONLY_FOR_GIRAN = altSettings.getProperty("AllScrollsSoEToGiran", false);
-		VITAMIN_SUPERPET_FOOD_ID = altSettings.getProperty("VitaminSuperPetID", -1);
-		ALT_SAVE_UNSAVEABLE = altSettings.getProperty("AltSaveUnsaveable", false);
-		SHIELD_SLAM_BLOCK_IS_MUSIC = altSettings.getProperty("ShieldSlamBlockIsMusic", false);
-		ALT_SAVE_EFFECTS_REMAINING_TIME = altSettings.getProperty("AltSaveEffectsRemainingTime", 5);
-		ALLOW_PET_ATTACK_MASTER = altSettings.getProperty("allowPetAttackMaster", true);
-		TELEPORT_PET_TO_MASTER = altSettings.getProperty("TeleportPetToMaster", false);
-		ALT_SHOW_REUSE_MSG = altSettings.getProperty("AltShowSkillReuseMessage", true);
-		ALT_DELETE_SA_BUFFS = altSettings.getProperty("AltDeleteSABuffs", false);
-		AUTO_LOOT = altSettings.getProperty("AutoLoot", false);
-		AUTO_LOOT_ONLY_ADENA = altSettings.getProperty("AutoLootOnlyAdena", false);
-		AUTO_LOOT_HERBS = altSettings.getProperty("AutoLootHerbs", false);
-		AUTO_LOOT_INDIVIDUAL = altSettings.getProperty("AutoLootIndividual", false);
-		AUTO_LOOT_FROM_RAIDS = altSettings.getProperty("AutoLootFromRaids", false);
-		AUTO_LOOT_PK = altSettings.getProperty("AutoLootPK", false);
-		ALT_GAME_KARMA_PLAYER_CAN_SHOP = altSettings.getProperty("AltKarmaPlayerCanShop", false);
-		SAVING_SPS = altSettings.getProperty("SavingSpS", false);
-		MANAHEAL_SPS_BONUS = altSettings.getProperty("ManahealSpSBonus", false);
-		CRAFT_MASTERWORK_CHANCE = altSettings.getProperty("CraftMasterworkChance", 3.);
-		CRAFT_DOUBLECRAFT_CHANCE = altSettings.getProperty("CraftDoubleCraftChance", 3.);
-		ALT_RAID_RESPAWN_MULTIPLIER = altSettings.getProperty("AltRaidRespawnMultiplier", 1.0);
-		ALT_ALLOW_AUGMENT_ALL = altSettings.getProperty("AugmentAll", false);
-		ALT_ALLOW_DROP_AUGMENTED = altSettings.getProperty("AlowDropAugmented", false);
-		ALT_GAME_UNREGISTER_RECIPE = altSettings.getProperty("AltUnregisterRecipe", true);
-		ALT_GAME_SHOW_DROPLIST = altSettings.getProperty("AltShowDroplist", true);
-		ALLOW_NPC_SHIFTCLICK = altSettings.getProperty("AllowShiftClick", true);
-		ALT_FULL_NPC_STATS_PAGE = altSettings.getProperty("AltFullStatsPage", false);
-		ALT_GAME_SUBCLASS_WITHOUT_QUESTS = altSettings.getProperty("AltAllowSubClassWithoutQuest", false);
-		ALT_ALLOW_SUBCLASS_WITHOUT_BAIUM = altSettings.getProperty("AltAllowSubClassWithoutBaium", true);
-		ALT_GAME_LEVEL_TO_GET_SUBCLASS = altSettings.getProperty("AltLevelToGetSubclass", 75);
-		ALT_GAME_START_LEVEL_TO_SUBCLASS = altSettings.getProperty("AltStartLevelToSubclass", 40);
-		ALT_GAME_SUB_ADD = altSettings.getProperty("AltSubAdd", 0);
-		ALT_GAME_SUB_BOOK = altSettings.getProperty("AltSubBook", false);
-		ALT_MAX_LEVEL = Math.min(altSettings.getProperty("AltMaxLevel", 85), Experience.LEVEL.length - 1);
-		ALT_MAX_SUB_LEVEL = Math.min(altSettings.getProperty("AltMaxSubLevel", 80), Experience.LEVEL.length - 1);
-		ALT_ALLOW_OTHERS_WITHDRAW_FROM_CLAN_WAREHOUSE = altSettings.getProperty("AltAllowOthersWithdrawFromClanWarehouse", false);
-		ALT_ALLOW_CLAN_COMMAND_ONLY_FOR_CLAN_LEADER = altSettings.getProperty("AltAllowClanCommandOnlyForClanLeader", true);
-		AUGMENTATION_CHANCE_MOD = altSettings.getProperty("AugmentChance", new double[]
+		final ExProperties altSettings = load(ALT_SETTINGS_FILE);
+		Config.ALT_ARENA_EXP = altSettings.getProperty("ArenaExp", true);
+		Config.AUTO_SOUL_CRYSTAL_QUEST = altSettings.getProperty("AutoSoulCrystalQuest", true);
+		Config.ALT_GAME_DELEVEL = altSettings.getProperty("Delevel", true);
+		Config.ALT_MAIL_MIN_LVL = altSettings.getProperty("MinLevelToSendMail", 0);
+		Config.VITAMIN_PETS_FOOD_ID = altSettings.getProperty("VitaminPetsFoodID", -1);
+		Config.VITAMIN_DESELOT_FOOD_ID = altSettings.getProperty("VitaminDeselotFoodID", -1);
+		Config.ALT_TELEPORTS_ONLY_FOR_GIRAN = altSettings.getProperty("AllScrollsSoEToGiran", false);
+		Config.VITAMIN_SUPERPET_FOOD_ID = altSettings.getProperty("VitaminSuperPetID", -1);
+		Config.ALT_SAVE_UNSAVEABLE = altSettings.getProperty("AltSaveUnsaveable", false);
+		Config.SHIELD_SLAM_BLOCK_IS_MUSIC = altSettings.getProperty("ShieldSlamBlockIsMusic", false);
+		Config.ALT_SAVE_EFFECTS_REMAINING_TIME = altSettings.getProperty("AltSaveEffectsRemainingTime", 5);
+		Config.ALLOW_PET_ATTACK_MASTER = altSettings.getProperty("allowPetAttackMaster", true);
+		Config.TELEPORT_PET_TO_MASTER = altSettings.getProperty("TeleportPetToMaster", false);
+		Config.ALT_SHOW_REUSE_MSG = altSettings.getProperty("AltShowSkillReuseMessage", true);
+		Config.ALT_DELETE_SA_BUFFS = altSettings.getProperty("AltDeleteSABuffs", false);
+		Config.AUTO_LOOT = altSettings.getProperty("AutoLoot", false);
+		Config.AUTO_LOOT_ONLY_ADENA = altSettings.getProperty("AutoLootOnlyAdena", false);
+		Config.AUTO_LOOT_HERBS = altSettings.getProperty("AutoLootHerbs", false);
+		Config.AUTO_LOOT_INDIVIDUAL = altSettings.getProperty("AutoLootIndividual", false);
+		Config.AUTO_LOOT_FROM_RAIDS = altSettings.getProperty("AutoLootFromRaids", false);
+		Config.AUTO_LOOT_PK = altSettings.getProperty("AutoLootPK", false);
+		Config.ALT_GAME_KARMA_PLAYER_CAN_SHOP = altSettings.getProperty("AltKarmaPlayerCanShop", false);
+		Config.SAVING_SPS = altSettings.getProperty("SavingSpS", false);
+		Config.MANAHEAL_SPS_BONUS = altSettings.getProperty("ManahealSpSBonus", false);
+		Config.CRAFT_MASTERWORK_CHANCE = altSettings.getProperty("CraftMasterworkChance", 3.);
+		Config.CRAFT_DOUBLECRAFT_CHANCE = altSettings.getProperty("CraftDoubleCraftChance", 3.);
+		Config.ALT_RAID_RESPAWN_MULTIPLIER = altSettings.getProperty("AltRaidRespawnMultiplier", 1.0);
+		Config.ALT_ALLOW_AUGMENT_ALL = altSettings.getProperty("AugmentAll", false);
+		Config.ALT_ALLOW_DROP_AUGMENTED = altSettings.getProperty("AlowDropAugmented", false);
+		Config.ALT_GAME_UNREGISTER_RECIPE = altSettings.getProperty("AltUnregisterRecipe", true);
+		Config.ALT_GAME_SHOW_DROPLIST = altSettings.getProperty("AltShowDroplist", true);
+		Config.ALLOW_NPC_SHIFTCLICK = altSettings.getProperty("AllowShiftClick", true);
+		Config.ALT_FULL_NPC_STATS_PAGE = altSettings.getProperty("AltFullStatsPage", false);
+		Config.ALT_GAME_SUBCLASS_WITHOUT_QUESTS = altSettings.getProperty("AltAllowSubClassWithoutQuest", false);
+		Config.ALT_ALLOW_SUBCLASS_WITHOUT_BAIUM = altSettings.getProperty("AltAllowSubClassWithoutBaium", true);
+		Config.ALT_GAME_LEVEL_TO_GET_SUBCLASS = altSettings.getProperty("AltLevelToGetSubclass", 75);
+		Config.ALT_GAME_START_LEVEL_TO_SUBCLASS = altSettings.getProperty("AltStartLevelToSubclass", 40);
+		Config.ALT_GAME_SUB_ADD = altSettings.getProperty("AltSubAdd", 0);
+		Config.ALT_GAME_SUB_BOOK = altSettings.getProperty("AltSubBook", false);
+		Config.ALT_MAX_LEVEL = Math.min(altSettings.getProperty("AltMaxLevel", 85), Experience.LEVEL.length - 1);
+		Config.ALT_MAX_SUB_LEVEL = Math.min(altSettings.getProperty("AltMaxSubLevel", 80), Experience.LEVEL.length - 1);
+		Config.ALT_ALLOW_OTHERS_WITHDRAW_FROM_CLAN_WAREHOUSE = altSettings.getProperty("AltAllowOthersWithdrawFromClanWarehouse", false);
+		Config.ALT_ALLOW_CLAN_COMMAND_ONLY_FOR_CLAN_LEADER = altSettings.getProperty("AltAllowClanCommandOnlyForClanLeader", true);
+		Config.AUGMENTATION_CHANCE_MOD = altSettings.getProperty("AugmentChance", new double[]
 		{
 			1.0D,
 			1.0D
 		});
-		ALT_GAME_REQUIRE_CLAN_CASTLE = altSettings.getProperty("AltRequireClanCastle", false);
-		ALT_GAME_REQUIRE_CASTLE_DAWN = altSettings.getProperty("AltRequireCastleDawn", true);
-		ALT_GAME_ALLOW_ADENA_DAWN = altSettings.getProperty("AltAllowAdenaDawn", true);
-		RETAIL_SS = altSettings.getProperty("Retail_SevenSigns", true);
-		ALT_ADD_RECIPES = altSettings.getProperty("AltAddRecipes", 0);
-		SS_ANNOUNCE_PERIOD = altSettings.getProperty("SSAnnouncePeriod", 0);
-		PETITIONING_ALLOWED = altSettings.getProperty("PetitioningAllowed", true);
-		MAX_PETITIONS_PER_PLAYER = altSettings.getProperty("MaxPetitionsPerPlayer", 5);
-		MAX_PETITIONS_PENDING = altSettings.getProperty("MaxPetitionsPending", 25);
-		AUTO_LEARN_SKILLS = altSettings.getProperty("AutoLearnSkills", false);
-		AUTO_LEARN_FORGOTTEN_SKILLS = altSettings.getProperty("AutoLearnForgottenSkills", false);
-		ALT_SOCIAL_ACTION_REUSE = altSettings.getProperty("AltSocialActionReuse", false);
-		ALT_DISABLE_SPELLBOOKS = altSettings.getProperty("AltDisableSpellbooks", false);
-		ALT_SIMPLE_SIGNS = altSettings.getProperty("PushkinSignsOptions", false);
-		ALT_TELE_TO_CATACOMBS = altSettings.getProperty("TeleToCatacombs", false);
-		ALT_BS_CRYSTALLIZE = altSettings.getProperty("BSCrystallize", false);
-		ALT_MAMMON_UPGRADE = altSettings.getProperty("MammonUpgrade", 6680500);
-		ALT_MAMMON_EXCHANGE = altSettings.getProperty("MammonExchange", 10091400);
-		ALT_ALLOW_TATTOO = altSettings.getProperty("AllowTattoo", false);
-		ALT_BUFF_LIMIT = altSettings.getProperty("BuffLimit", 20);
-		ALT_DEATH_PENALTY = altSettings.getProperty("EnableAltDeathPenalty", false);
-		ALLOW_DEATH_PENALTY_C5 = altSettings.getProperty("EnableDeathPenaltyC5", true);
-		ALT_DEATH_PENALTY_C5_CHANCE = altSettings.getProperty("DeathPenaltyC5Chance", 10);
-		ALT_DEATH_PENALTY_C5_CHAOTIC_RECOVERY = altSettings.getProperty("ChaoticCanUseScrollOfRecovery", false);
-		ALT_DEATH_PENALTY_C5_EXPERIENCE_PENALTY = altSettings.getProperty("DeathPenaltyC5RateExpPenalty", 1);
-		ALT_DEATH_PENALTY_C5_KARMA_PENALTY = altSettings.getProperty("DeathPenaltyC5RateKarma", 1);
-		ALT_PK_DEATH_RATE = altSettings.getProperty("AltPKDeathRate", 0.);
-		NONOWNER_ITEM_PICKUP_DELAY = altSettings.getProperty("NonOwnerItemPickupDelay", 15L) * 1000L;
-		NONOWNER_ITEM_PICKUP_DELAY_RAIDS = altSettings.getProperty("NonOwnerItemPickupDelayRaids", 285L) * 1000L;
-		ALT_NO_LASTHIT = altSettings.getProperty("NoLasthitOnRaid", false);
-		ALT_DISPEL_MUSIC = altSettings.getProperty("AltDispelDanceSong", false);
-		ALT_KAMALOKA_NIGHTMARES_PREMIUM_ONLY = altSettings.getProperty("KamalokaNightmaresPremiumOnly", false);
-		ALT_KAMALOKA_NIGHTMARE_REENTER = altSettings.getProperty("SellReenterNightmaresTicket", true);
-		ALT_KAMALOKA_ABYSS_REENTER = altSettings.getProperty("SellReenterAbyssTicket", true);
-		ALT_KAMALOKA_LAB_REENTER = altSettings.getProperty("SellReenterLabyrinthTicket", true);
-		ALT_PET_HEAL_BATTLE_ONLY = altSettings.getProperty("PetsHealOnlyInBattle", true);
-		CHAR_TITLE = altSettings.getProperty("CharTitle", false);
-		ADD_CHAR_TITLE = altSettings.getProperty("CharAddTitle", "");
+		Config.ALT_GAME_REQUIRE_CLAN_CASTLE = altSettings.getProperty("AltRequireClanCastle", false);
+		Config.ALT_GAME_REQUIRE_CASTLE_DAWN = altSettings.getProperty("AltRequireCastleDawn", true);
+		Config.ALT_GAME_ALLOW_ADENA_DAWN = altSettings.getProperty("AltAllowAdenaDawn", true);
+		Config.RETAIL_SS = altSettings.getProperty("Retail_SevenSigns", true);
+		Config.ALT_ADD_RECIPES = altSettings.getProperty("AltAddRecipes", 0);
+		Config.SS_ANNOUNCE_PERIOD = altSettings.getProperty("SSAnnouncePeriod", 0);
+		Config.PETITIONING_ALLOWED = altSettings.getProperty("PetitioningAllowed", true);
+		Config.MAX_PETITIONS_PER_PLAYER = altSettings.getProperty("MaxPetitionsPerPlayer", 5);
+		Config.MAX_PETITIONS_PENDING = altSettings.getProperty("MaxPetitionsPending", 25);
+		Config.AUTO_LEARN_SKILLS = altSettings.getProperty("AutoLearnSkills", false);
+		Config.AUTO_LEARN_FORGOTTEN_SKILLS = altSettings.getProperty("AutoLearnForgottenSkills", false);
+		Config.ALT_SOCIAL_ACTION_REUSE = altSettings.getProperty("AltSocialActionReuse", false);
+		Config.ALT_DISABLE_SPELLBOOKS = altSettings.getProperty("AltDisableSpellbooks", false);
+		Config.ALT_SIMPLE_SIGNS = altSettings.getProperty("PushkinSignsOptions", false);
+		Config.ALT_TELE_TO_CATACOMBS = altSettings.getProperty("TeleToCatacombs", false);
+		Config.ALT_BS_CRYSTALLIZE = altSettings.getProperty("BSCrystallize", false);
+		Config.ALT_MAMMON_UPGRADE = altSettings.getProperty("MammonUpgrade", 6680500);
+		Config.ALT_MAMMON_EXCHANGE = altSettings.getProperty("MammonExchange", 10091400);
+		Config.ALT_ALLOW_TATTOO = altSettings.getProperty("AllowTattoo", false);
+		Config.ALT_BUFF_LIMIT = altSettings.getProperty("BuffLimit", 20);
+		Config.ALT_DEATH_PENALTY = altSettings.getProperty("EnableAltDeathPenalty", false);
+		Config.ALLOW_DEATH_PENALTY_C5 = altSettings.getProperty("EnableDeathPenaltyC5", true);
+		Config.ALT_DEATH_PENALTY_C5_CHANCE = altSettings.getProperty("DeathPenaltyC5Chance", 10);
+		Config.ALT_DEATH_PENALTY_C5_CHAOTIC_RECOVERY = altSettings.getProperty("ChaoticCanUseScrollOfRecovery", false);
+		Config.ALT_DEATH_PENALTY_C5_EXPERIENCE_PENALTY = altSettings.getProperty("DeathPenaltyC5RateExpPenalty", 1);
+		Config.ALT_DEATH_PENALTY_C5_KARMA_PENALTY = altSettings.getProperty("DeathPenaltyC5RateKarma", 1);
+		Config.ALT_PK_DEATH_RATE = altSettings.getProperty("AltPKDeathRate", 0.);
+		Config.NONOWNER_ITEM_PICKUP_DELAY = altSettings.getProperty("NonOwnerItemPickupDelay", 15L) * 1000L;
+		Config.NONOWNER_ITEM_PICKUP_DELAY_RAIDS = altSettings.getProperty("NonOwnerItemPickupDelayRaids", 285L) * 1000L;
+		Config.ALT_NO_LASTHIT = altSettings.getProperty("NoLasthitOnRaid", false);
+		Config.ALT_DISPEL_MUSIC = altSettings.getProperty("AltDispelDanceSong", false);
+		Config.ALT_KAMALOKA_NIGHTMARES_PREMIUM_ONLY = altSettings.getProperty("KamalokaNightmaresPremiumOnly", false);
+		Config.ALT_KAMALOKA_NIGHTMARE_REENTER = altSettings.getProperty("SellReenterNightmaresTicket", true);
+		Config.ALT_KAMALOKA_ABYSS_REENTER = altSettings.getProperty("SellReenterAbyssTicket", true);
+		Config.ALT_KAMALOKA_LAB_REENTER = altSettings.getProperty("SellReenterLabyrinthTicket", true);
+		Config.ALT_PET_HEAL_BATTLE_ONLY = altSettings.getProperty("PetsHealOnlyInBattle", true);
+		Config.CHAR_TITLE = altSettings.getProperty("CharTitle", false);
+		Config.ADD_CHAR_TITLE = altSettings.getProperty("CharAddTitle", "");
 
-		ALT_ALLOW_SELL_COMMON = altSettings.getProperty("AllowSellCommon", true);
-		ALT_ALLOW_SHADOW_WEAPONS = altSettings.getProperty("AllowShadowWeapons", true);
-		ALT_DISABLED_MULTISELL = altSettings.getProperty("DisabledMultisells", ArrayUtils.EMPTY_INT_ARRAY);
-		ALT_SHOP_PRICE_LIMITS = altSettings.getProperty("ShopPriceLimits", ArrayUtils.EMPTY_INT_ARRAY);
-		ALT_SHOP_UNALLOWED_ITEMS = altSettings.getProperty("ShopUnallowedItems", ArrayUtils.EMPTY_INT_ARRAY);
+		Config.ALT_ALLOW_SELL_COMMON = altSettings.getProperty("AllowSellCommon", true);
+		Config.ALT_ALLOW_SHADOW_WEAPONS = altSettings.getProperty("AllowShadowWeapons", true);
+		Config.ALT_DISABLED_MULTISELL = altSettings.getProperty("DisabledMultisells", ArrayUtils.EMPTY_INT_ARRAY);
+		Config.ALT_SHOP_PRICE_LIMITS = altSettings.getProperty("ShopPriceLimits", ArrayUtils.EMPTY_INT_ARRAY);
+		Config.ALT_SHOP_UNALLOWED_ITEMS = altSettings.getProperty("ShopUnallowedItems", ArrayUtils.EMPTY_INT_ARRAY);
 
-		ALT_ALLOWED_PET_POTIONS = altSettings.getProperty("AllowedPetPotions", new int[]
+		Config.ALT_ALLOWED_PET_POTIONS = altSettings.getProperty("AllowedPetPotions", new int[]
 		{
 			735,
 			1060,
@@ -2661,62 +2632,62 @@ public class Config
 			6036
 		});
 
-		FESTIVAL_MIN_PARTY_SIZE = altSettings.getProperty("FestivalMinPartySize", 5);
-		FESTIVAL_RATE_PRICE = altSettings.getProperty("FestivalRatePrice", 1.0);
+		Config.FESTIVAL_MIN_PARTY_SIZE = altSettings.getProperty("FestivalMinPartySize", 5);
+		Config.FESTIVAL_RATE_PRICE = altSettings.getProperty("FestivalRatePrice", 1.0);
 
-		ENABLE_POLL_SYSTEM = altSettings.getProperty("EnablePoll", true);
-		ANNOUNCE_POLL_EVERY_X_MIN = altSettings.getProperty("AnnounceToVoteInMin", 10);
+		Config.ENABLE_POLL_SYSTEM = altSettings.getProperty("EnablePoll", true);
+		Config.ANNOUNCE_POLL_EVERY_X_MIN = altSettings.getProperty("AnnounceToVoteInMin", 10);
 
-		RIFT_MIN_PARTY_SIZE = altSettings.getProperty("RiftMinPartySize", 5);
-		RIFT_SPAWN_DELAY = altSettings.getProperty("RiftSpawnDelay", 10000);
-		RIFT_MAX_JUMPS = altSettings.getProperty("MaxRiftJumps", 4);
-		RIFT_AUTO_JUMPS_TIME = altSettings.getProperty("AutoJumpsDelay", 8);
-		RIFT_AUTO_JUMPS_TIME_RAND = altSettings.getProperty("AutoJumpsDelayRandom", 120000);
+		Config.RIFT_MIN_PARTY_SIZE = altSettings.getProperty("RiftMinPartySize", 5);
+		Config.RIFT_SPAWN_DELAY = altSettings.getProperty("RiftSpawnDelay", 10000);
+		Config.RIFT_MAX_JUMPS = altSettings.getProperty("MaxRiftJumps", 4);
+		Config.RIFT_AUTO_JUMPS_TIME = altSettings.getProperty("AutoJumpsDelay", 8);
+		Config.RIFT_AUTO_JUMPS_TIME_RAND = altSettings.getProperty("AutoJumpsDelayRandom", 120000);
 
-		RIFT_ENTER_COST_RECRUIT = altSettings.getProperty("RecruitFC", 18);
-		RIFT_ENTER_COST_SOLDIER = altSettings.getProperty("SoldierFC", 21);
-		RIFT_ENTER_COST_OFFICER = altSettings.getProperty("OfficerFC", 24);
-		RIFT_ENTER_COST_CAPTAIN = altSettings.getProperty("CaptainFC", 27);
-		RIFT_ENTER_COST_COMMANDER = altSettings.getProperty("CommanderFC", 30);
-		RIFT_ENTER_COST_HERO = altSettings.getProperty("HeroFC", 33);
-		ALLOW_CLANSKILLS = altSettings.getProperty("AllowClanSkills", true);
-		ALLOW_LEARN_TRANS_SKILLS_WO_QUEST = altSettings.getProperty("AllowLearnTransSkillsWOQuest", false);
-		PARTY_LEADER_ONLY_CAN_INVITE = altSettings.getProperty("PartyLeaderOnlyCanInvite", true);
-		ALLOW_TALK_WHILE_SITTING = altSettings.getProperty("AllowTalkWhileSitting", true);
-		ALLOW_NOBLE_TP_TO_ALL = altSettings.getProperty("AllowNobleTPToAll", false);
+		Config.RIFT_ENTER_COST_RECRUIT = altSettings.getProperty("RecruitFC", 18);
+		Config.RIFT_ENTER_COST_SOLDIER = altSettings.getProperty("SoldierFC", 21);
+		Config.RIFT_ENTER_COST_OFFICER = altSettings.getProperty("OfficerFC", 24);
+		Config.RIFT_ENTER_COST_CAPTAIN = altSettings.getProperty("CaptainFC", 27);
+		Config.RIFT_ENTER_COST_COMMANDER = altSettings.getProperty("CommanderFC", 30);
+		Config.RIFT_ENTER_COST_HERO = altSettings.getProperty("HeroFC", 33);
+		Config.ALLOW_CLANSKILLS = altSettings.getProperty("AllowClanSkills", true);
+		Config.ALLOW_LEARN_TRANS_SKILLS_WO_QUEST = altSettings.getProperty("AllowLearnTransSkillsWOQuest", false);
+		Config.PARTY_LEADER_ONLY_CAN_INVITE = altSettings.getProperty("PartyLeaderOnlyCanInvite", true);
+		Config.ALLOW_TALK_WHILE_SITTING = altSettings.getProperty("AllowTalkWhileSitting", true);
+		Config.ALLOW_NOBLE_TP_TO_ALL = altSettings.getProperty("AllowNobleTPToAll", false);
 
-		CLANHALL_BUFFTIME_MODIFIER = altSettings.getProperty("ClanHallBuffTimeModifier", 1.0);
-		SONGDANCETIME_MODIFIER = altSettings.getProperty("SongDanceTimeModifier", 1.0);
-		MAXLOAD_MODIFIER = altSettings.getProperty("MaxLoadModifier", 1.0);
-		GATEKEEPER_MODIFIER = altSettings.getProperty("GkCostMultiplier", 1.0);
-		GATEKEEPER_FREE = altSettings.getProperty("GkFree", 40);
-		CRUMA_GATEKEEPER_LVL = altSettings.getProperty("GkCruma", 65);
-		ALT_IMPROVED_PETS_LIMITED_USE = altSettings.getProperty("ImprovedPetsLimitedUse", false);
+		Config.CLANHALL_BUFFTIME_MODIFIER = altSettings.getProperty("ClanHallBuffTimeModifier", 1.0);
+		Config.SONGDANCETIME_MODIFIER = altSettings.getProperty("SongDanceTimeModifier", 1.0);
+		Config.MAXLOAD_MODIFIER = altSettings.getProperty("MaxLoadModifier", 1.0);
+		Config.GATEKEEPER_MODIFIER = altSettings.getProperty("GkCostMultiplier", 1.0);
+		Config.GATEKEEPER_FREE = altSettings.getProperty("GkFree", 40);
+		Config.CRUMA_GATEKEEPER_LVL = altSettings.getProperty("GkCruma", 65);
+		Config.ALT_IMPROVED_PETS_LIMITED_USE = altSettings.getProperty("ImprovedPetsLimitedUse", false);
 
-		ALT_CHAMPION_CHANCE1 = altSettings.getProperty("AltChampionChance1", 0.);
-		ALT_CHAMPION_CHANCE2 = altSettings.getProperty("AltChampionChance2", 0.);
-		ALT_CHAMPION_CAN_BE_AGGRO = altSettings.getProperty("AltChampionAggro", false);
-		ALT_CHAMPION_CAN_BE_SOCIAL = altSettings.getProperty("AltChampionSocial", false);
-		ALT_CHAMPION_DROP_HERBS = altSettings.getProperty("AltChampionDropHerbs", false);
-		ALT_SHOW_MONSTERS_AGRESSION = altSettings.getProperty("AltShowMonstersAgression", false);
-		ALT_SHOW_MONSTERS_LVL = altSettings.getProperty("AltShowMonstersLvL", false);
-		ALT_CHAMPION_TOP_LEVEL = altSettings.getProperty("AltChampionTopLevel", 75);
-		ALT_CHAMPION_MIN_LEVEL = altSettings.getProperty("AltChampionMinLevel", 20);
+		Config.ALT_CHAMPION_CHANCE1 = altSettings.getProperty("AltChampionChance1", 0.);
+		Config.ALT_CHAMPION_CHANCE2 = altSettings.getProperty("AltChampionChance2", 0.);
+		Config.ALT_CHAMPION_CAN_BE_AGGRO = altSettings.getProperty("AltChampionAggro", false);
+		Config.ALT_CHAMPION_CAN_BE_SOCIAL = altSettings.getProperty("AltChampionSocial", false);
+		Config.ALT_CHAMPION_DROP_HERBS = altSettings.getProperty("AltChampionDropHerbs", false);
+		Config.ALT_SHOW_MONSTERS_AGRESSION = altSettings.getProperty("AltShowMonstersAgression", false);
+		Config.ALT_SHOW_MONSTERS_LVL = altSettings.getProperty("AltShowMonstersLvL", false);
+		Config.ALT_CHAMPION_TOP_LEVEL = altSettings.getProperty("AltChampionTopLevel", 75);
+		Config.ALT_CHAMPION_MIN_LEVEL = altSettings.getProperty("AltChampionMinLevel", 20);
 
-		ALT_VITALITY_ENABLED = altSettings.getProperty("AltVitalityEnabled", true);
-		ALT_VITALITY_RATE = altSettings.getProperty("AltVitalityRate", 1.);
-		ALT_VITALITY_CONSUME_RATE = altSettings.getProperty("AltVitalityConsumeRate", 1.);
-		ALT_VITALITY_RAID_BONUS = altSettings.getProperty("AltVitalityRaidBonus", 2000);
+		Config.ALT_VITALITY_ENABLED = altSettings.getProperty("AltVitalityEnabled", true);
+		Config.ALT_VITALITY_RATE = altSettings.getProperty("AltVitalityRate", 1.);
+		Config.ALT_VITALITY_CONSUME_RATE = altSettings.getProperty("AltVitalityConsumeRate", 1.);
+		Config.ALT_VITALITY_RAID_BONUS = altSettings.getProperty("AltVitalityRaidBonus", 2000);
 
-		ALT_PCBANG_POINTS_ENABLED = altSettings.getProperty("AltPcBangPointsEnabled", false);
-		ALT_PCBANG_POINTS_BONUS_DOUBLE_CHANCE = altSettings.getProperty("AltPcBangPointsDoubleChance", 10.);
-		ALT_PCBANG_POINTS_BONUS = altSettings.getProperty("AltPcBangPointsBonus", 0);
-		ALT_PCBANG_POINTS_DELAY = altSettings.getProperty("AltPcBangPointsDelay", 20);
-		ALT_PCBANG_POINTS_MIN_LVL = altSettings.getProperty("AltPcBangPointsMinLvl", 1);
+		Config.ALT_PCBANG_POINTS_ENABLED = altSettings.getProperty("AltPcBangPointsEnabled", false);
+		Config.ALT_PCBANG_POINTS_BONUS_DOUBLE_CHANCE = altSettings.getProperty("AltPcBangPointsDoubleChance", 10.);
+		Config.ALT_PCBANG_POINTS_BONUS = altSettings.getProperty("AltPcBangPointsBonus", 0);
+		Config.ALT_PCBANG_POINTS_DELAY = altSettings.getProperty("AltPcBangPointsDelay", 20);
+		Config.ALT_PCBANG_POINTS_MIN_LVL = altSettings.getProperty("AltPcBangPointsMinLvl", 1);
 
-		ALT_MAX_ALLY_SIZE = altSettings.getProperty("AltMaxAllySize", 3);
-		ALT_PARTY_DISTRIBUTION_RANGE = altSettings.getProperty("AltPartyDistributionRange", 1500);
-		ALT_PARTY_BONUS = altSettings.getProperty("AltPartyBonus", new double[]
+		Config.ALT_MAX_ALLY_SIZE = altSettings.getProperty("AltMaxAllySize", 3);
+		Config.ALT_PARTY_DISTRIBUTION_RANGE = altSettings.getProperty("AltPartyDistributionRange", 1500);
+		Config.ALT_PARTY_BONUS = altSettings.getProperty("AltPartyBonus", new double[]
 		{
 			1.00,
 			1.10,
@@ -2729,97 +2700,97 @@ public class Config
 			2.20
 		});
 
-		ALT_LEVEL_DIFFERENCE_PROTECTION = altSettings.getProperty("LevelDifferenceProtection", -100);
+		Config.ALT_LEVEL_DIFFERENCE_PROTECTION = altSettings.getProperty("LevelDifferenceProtection", -100);
 
-		ALT_ALL_PHYS_SKILLS_OVERHIT = altSettings.getProperty("AltAllPhysSkillsOverhit", true);
-		ALT_REMOVE_SKILLS_ON_DELEVEL = altSettings.getProperty("AltRemoveSkillsOnDelevel", true);
-		ALT_USE_BOW_REUSE_MODIFIER = altSettings.getProperty("AltUseBowReuseModifier", true);
-		ALLOW_CH_DOOR_OPEN_ON_CLICK = altSettings.getProperty("AllowChDoorOpenOnClick", true);
-		ALT_CH_ALL_BUFFS = altSettings.getProperty("AltChAllBuffs", false);
-		ALT_CH_ALLOW_1H_BUFFS = altSettings.getProperty("AltChAllowHourBuff", false);
-		ALT_CH_SIMPLE_DIALOG = altSettings.getProperty("AltChSimpleDialog", false);
+		Config.ALT_ALL_PHYS_SKILLS_OVERHIT = altSettings.getProperty("AltAllPhysSkillsOverhit", true);
+		Config.ALT_REMOVE_SKILLS_ON_DELEVEL = altSettings.getProperty("AltRemoveSkillsOnDelevel", true);
+		Config.ALT_USE_BOW_REUSE_MODIFIER = altSettings.getProperty("AltUseBowReuseModifier", true);
+		Config.ALLOW_CH_DOOR_OPEN_ON_CLICK = altSettings.getProperty("AllowChDoorOpenOnClick", true);
+		Config.ALT_CH_ALL_BUFFS = altSettings.getProperty("AltChAllBuffs", false);
+		Config.ALT_CH_ALLOW_1H_BUFFS = altSettings.getProperty("AltChAllowHourBuff", false);
+		Config.ALT_CH_SIMPLE_DIALOG = altSettings.getProperty("AltChSimpleDialog", false);
 
-		AUGMENTATION_NG_SKILL_CHANCE = altSettings.getProperty("AugmentationNGSkillChance", 15);
-		AUGMENTATION_NG_GLOW_CHANCE = altSettings.getProperty("AugmentationNGGlowChance", 0);
-		AUGMENTATION_MID_SKILL_CHANCE = altSettings.getProperty("AugmentationMidSkillChance", 30);
-		AUGMENTATION_MID_GLOW_CHANCE = altSettings.getProperty("AugmentationMidGlowChance", 40);
-		AUGMENTATION_HIGH_SKILL_CHANCE = altSettings.getProperty("AugmentationHighSkillChance", 45);
-		AUGMENTATION_HIGH_GLOW_CHANCE = altSettings.getProperty("AugmentationHighGlowChance", 70);
-		AUGMENTATION_TOP_SKILL_CHANCE = altSettings.getProperty("AugmentationTopSkillChance", 60);
-		AUGMENTATION_TOP_GLOW_CHANCE = altSettings.getProperty("AugmentationTopGlowChance", 100);
-		AUGMENTATION_BASESTAT_CHANCE = altSettings.getProperty("AugmentationBaseStatChance", 1);
-		AUGMENTATION_ACC_SKILL_CHANCE = altSettings.getProperty("AugmentationAccSkillChance", 10);
+		Config.AUGMENTATION_NG_SKILL_CHANCE = altSettings.getProperty("AugmentationNGSkillChance", 15);
+		Config.AUGMENTATION_NG_GLOW_CHANCE = altSettings.getProperty("AugmentationNGGlowChance", 0);
+		Config.AUGMENTATION_MID_SKILL_CHANCE = altSettings.getProperty("AugmentationMidSkillChance", 30);
+		Config.AUGMENTATION_MID_GLOW_CHANCE = altSettings.getProperty("AugmentationMidGlowChance", 40);
+		Config.AUGMENTATION_HIGH_SKILL_CHANCE = altSettings.getProperty("AugmentationHighSkillChance", 45);
+		Config.AUGMENTATION_HIGH_GLOW_CHANCE = altSettings.getProperty("AugmentationHighGlowChance", 70);
+		Config.AUGMENTATION_TOP_SKILL_CHANCE = altSettings.getProperty("AugmentationTopSkillChance", 60);
+		Config.AUGMENTATION_TOP_GLOW_CHANCE = altSettings.getProperty("AugmentationTopGlowChance", 100);
+		Config.AUGMENTATION_BASESTAT_CHANCE = altSettings.getProperty("AugmentationBaseStatChance", 1);
+		Config.AUGMENTATION_ACC_SKILL_CHANCE = altSettings.getProperty("AugmentationAccSkillChance", 10);
 
-		ALT_OPEN_CLOAK_SLOT = altSettings.getProperty("OpenCloakSlot", false);
+		Config.ALT_OPEN_CLOAK_SLOT = altSettings.getProperty("OpenCloakSlot", false);
 
-		FOLLOW_RANGE = altSettings.getProperty("FollowRange", 100);
+		Config.FOLLOW_RANGE = altSettings.getProperty("FollowRange", 100);
 
-		ALT_ENABLE_MULTI_PROFA = altSettings.getProperty("AltEnableMultiProfa", false);
+		Config.ALT_ENABLE_MULTI_PROFA = altSettings.getProperty("AltEnableMultiProfa", false);
 
-		ALT_ITEM_AUCTION_ENABLED = altSettings.getProperty("AltItemAuctionEnabled", true);
-		ALT_ITEM_AUCTION_CAN_REBID = altSettings.getProperty("AltItemAuctionCanRebid", false);
-		ALT_ITEM_AUCTION_START_ANNOUNCE = altSettings.getProperty("AltItemAuctionAnnounce", true);
-		ALT_ITEM_AUCTION_BID_ITEM_ID = altSettings.getProperty("AltItemAuctionBidItemId", 57);
-		ALT_ITEM_AUCTION_MAX_BID = altSettings.getProperty("AltItemAuctionMaxBid", 1000000L);
-		ALT_ITEM_AUCTION_MAX_CANCEL_TIME_IN_MILLIS = altSettings.getProperty("AltItemAuctionMaxCancelTimeInMillis", 604800000);
+		Config.ALT_ITEM_AUCTION_ENABLED = altSettings.getProperty("AltItemAuctionEnabled", true);
+		Config.ALT_ITEM_AUCTION_CAN_REBID = altSettings.getProperty("AltItemAuctionCanRebid", false);
+		Config.ALT_ITEM_AUCTION_START_ANNOUNCE = altSettings.getProperty("AltItemAuctionAnnounce", true);
+		Config.ALT_ITEM_AUCTION_BID_ITEM_ID = altSettings.getProperty("AltItemAuctionBidItemId", 57);
+		Config.ALT_ITEM_AUCTION_MAX_BID = altSettings.getProperty("AltItemAuctionMaxBid", 1000000L);
+		Config.ALT_ITEM_AUCTION_MAX_CANCEL_TIME_IN_MILLIS = altSettings.getProperty("AltItemAuctionMaxCancelTimeInMillis", 604800000);
 
-		ENABLE_AUCTION_SYSTEM = altSettings.getProperty("EnableAuctionSystem", true);
-		AUCTION_FEE = Integer.parseInt(altSettings.getProperty("AuctionFee", "100000"));
-		AUCTION_INACTIVITY_DAYS_TO_DELETE = Integer.parseInt(altSettings.getProperty("AuctionInactivityDaysToDelete", "7"));
-		ALLOW_AUCTION_OUTSIDE_TOWN = altSettings.getProperty("AuctionOutsideTown", false);
-		SECONDS_BETWEEN_ADDING_AUCTIONS = Integer.parseInt(altSettings.getProperty("AuctionAddDelay", "30"));
-		AUCTION_PRIVATE_STORE_AUTO_ADDED = altSettings.getProperty("AuctionPrivateStoreAutoAdded", true);
+		Config.ENABLE_AUCTION_SYSTEM = altSettings.getProperty("EnableAuctionSystem", true);
+		Config.AUCTION_FEE = Integer.parseInt(altSettings.getProperty("AuctionFee", "100000"));
+		Config.AUCTION_INACTIVITY_DAYS_TO_DELETE = Integer.parseInt(altSettings.getProperty("AuctionInactivityDaysToDelete", "7"));
+		Config.ALLOW_AUCTION_OUTSIDE_TOWN = altSettings.getProperty("AuctionOutsideTown", false);
+		Config.SECONDS_BETWEEN_ADDING_AUCTIONS = Integer.parseInt(altSettings.getProperty("AuctionAddDelay", "30"));
+		Config.AUCTION_PRIVATE_STORE_AUTO_ADDED = altSettings.getProperty("AuctionPrivateStoreAutoAdded", true);
 
-		ALT_FISH_CHAMPIONSHIP_ENABLED = altSettings.getProperty("AltFishChampionshipEnabled", true);
-		ALT_FISH_CHAMPIONSHIP_REWARD_ITEM = altSettings.getProperty("AltFishChampionshipRewardItemId", 57);
-		ALT_FISH_CHAMPIONSHIP_REWARD_1 = altSettings.getProperty("AltFishChampionshipReward1", 800000);
-		ALT_FISH_CHAMPIONSHIP_REWARD_2 = altSettings.getProperty("AltFishChampionshipReward2", 500000);
-		ALT_FISH_CHAMPIONSHIP_REWARD_3 = altSettings.getProperty("AltFishChampionshipReward3", 300000);
-		ALT_FISH_CHAMPIONSHIP_REWARD_4 = altSettings.getProperty("AltFishChampionshipReward4", 200000);
-		ALT_FISH_CHAMPIONSHIP_REWARD_5 = altSettings.getProperty("AltFishChampionshipReward5", 100000);
+		Config.ALT_FISH_CHAMPIONSHIP_ENABLED = altSettings.getProperty("AltFishChampionshipEnabled", true);
+		Config.ALT_FISH_CHAMPIONSHIP_REWARD_ITEM = altSettings.getProperty("AltFishChampionshipRewardItemId", 57);
+		Config.ALT_FISH_CHAMPIONSHIP_REWARD_1 = altSettings.getProperty("AltFishChampionshipReward1", 800000);
+		Config.ALT_FISH_CHAMPIONSHIP_REWARD_2 = altSettings.getProperty("AltFishChampionshipReward2", 500000);
+		Config.ALT_FISH_CHAMPIONSHIP_REWARD_3 = altSettings.getProperty("AltFishChampionshipReward3", 300000);
+		Config.ALT_FISH_CHAMPIONSHIP_REWARD_4 = altSettings.getProperty("AltFishChampionshipReward4", 200000);
+		Config.ALT_FISH_CHAMPIONSHIP_REWARD_5 = altSettings.getProperty("AltFishChampionshipReward5", 100000);
 
-		ALT_ENABLE_BLOCK_CHECKER_EVENT = altSettings.getProperty("EnableBlockCheckerEvent", true);
-		ALT_MIN_BLOCK_CHECKER_TEAM_MEMBERS = Math.min(Math.max(altSettings.getProperty("BlockCheckerMinTeamMembers", 1), 1), 6);
-		ALT_RATE_COINS_REWARD_BLOCK_CHECKER = altSettings.getProperty("BlockCheckerRateCoinReward", 1.);
+		Config.ALT_ENABLE_BLOCK_CHECKER_EVENT = altSettings.getProperty("EnableBlockCheckerEvent", true);
+		Config.ALT_MIN_BLOCK_CHECKER_TEAM_MEMBERS = Math.min(Math.max(altSettings.getProperty("BlockCheckerMinTeamMembers", 1), 1), 6);
+		Config.ALT_RATE_COINS_REWARD_BLOCK_CHECKER = altSettings.getProperty("BlockCheckerRateCoinReward", 1.);
 
-		ALT_HBCE_FAIR_PLAY = altSettings.getProperty("HBCEFairPlay", false);
+		Config.ALT_HBCE_FAIR_PLAY = altSettings.getProperty("HBCEFairPlay", false);
 
-		ALT_PET_INVENTORY_LIMIT = altSettings.getProperty("AltPetInventoryLimit", 12);
-		ALT_CLAN_LEVEL_CREATE = altSettings.getProperty("ClanLevelCreate", 0);
-		CLAN_LEVEL_6_COST = altSettings.getProperty("ClanLevel6Cost", 5000);
-		CLAN_LEVEL_7_COST = altSettings.getProperty("ClanLevel7Cost", 10000);
-		CLAN_LEVEL_8_COST = altSettings.getProperty("ClanLevel8Cost", 20000);
-		CLAN_LEVEL_9_COST = altSettings.getProperty("ClanLevel9Cost", 40000);
-		CLAN_LEVEL_10_COST = altSettings.getProperty("ClanLevel10Cost", 40000);
-		CLAN_LEVEL_11_COST = altSettings.getProperty("ClanLevel11Cost", 75000);
-		CLAN_LEVEL_6_REQUIREMEN = altSettings.getProperty("ClanLevel6Requirement", 30);
-		CLAN_LEVEL_7_REQUIREMEN = altSettings.getProperty("ClanLevel7Requirement", 50);
-		CLAN_LEVEL_8_REQUIREMEN = altSettings.getProperty("ClanLevel8Requirement", 80);
-		CLAN_LEVEL_9_REQUIREMEN = altSettings.getProperty("ClanLevel9Requirement", 120);
-		CLAN_LEVEL_10_REQUIREMEN = altSettings.getProperty("ClanLevel10Requirement", 140);
-		CLAN_LEVEL_11_REQUIREMEN = altSettings.getProperty("ClanLevel11Requirement", 170);
-		BLOOD_OATHS = altSettings.getProperty("BloodOaths", 150);
-		BLOOD_PLEDGES = altSettings.getProperty("BloodPledges", 5);
-		MIN_ACADEM_POINT = altSettings.getProperty("MinAcademPoint", 190);
-		MAX_ACADEM_POINT = altSettings.getProperty("MaxAcademPoint", 650);
+		Config.ALT_PET_INVENTORY_LIMIT = altSettings.getProperty("AltPetInventoryLimit", 12);
+		Config.ALT_CLAN_LEVEL_CREATE = altSettings.getProperty("ClanLevelCreate", 0);
+		Config.CLAN_LEVEL_6_COST = altSettings.getProperty("ClanLevel6Cost", 5000);
+		Config.CLAN_LEVEL_7_COST = altSettings.getProperty("ClanLevel7Cost", 10000);
+		Config.CLAN_LEVEL_8_COST = altSettings.getProperty("ClanLevel8Cost", 20000);
+		Config.CLAN_LEVEL_9_COST = altSettings.getProperty("ClanLevel9Cost", 40000);
+		Config.CLAN_LEVEL_10_COST = altSettings.getProperty("ClanLevel10Cost", 40000);
+		Config.CLAN_LEVEL_11_COST = altSettings.getProperty("ClanLevel11Cost", 75000);
+		Config.CLAN_LEVEL_6_REQUIREMEN = altSettings.getProperty("ClanLevel6Requirement", 30);
+		Config.CLAN_LEVEL_7_REQUIREMEN = altSettings.getProperty("ClanLevel7Requirement", 50);
+		Config.CLAN_LEVEL_8_REQUIREMEN = altSettings.getProperty("ClanLevel8Requirement", 80);
+		Config.CLAN_LEVEL_9_REQUIREMEN = altSettings.getProperty("ClanLevel9Requirement", 120);
+		Config.CLAN_LEVEL_10_REQUIREMEN = altSettings.getProperty("ClanLevel10Requirement", 140);
+		Config.CLAN_LEVEL_11_REQUIREMEN = altSettings.getProperty("ClanLevel11Requirement", 170);
+		Config.BLOOD_OATHS = altSettings.getProperty("BloodOaths", 150);
+		Config.BLOOD_PLEDGES = altSettings.getProperty("BloodPledges", 5);
+		Config.MIN_ACADEM_POINT = altSettings.getProperty("MinAcademPoint", 190);
+		Config.MAX_ACADEM_POINT = altSettings.getProperty("MaxAcademPoint", 650);
 
-		HELLBOUND_LEVEL = altSettings.getProperty("HellboundLevel", 0);
+		Config.HELLBOUND_LEVEL = altSettings.getProperty("HellboundLevel", 0);
 
-		CLAN_LEAVE_PENALTY = altSettings.getProperty("ClanLeavePenalty", 24);
-		ALLY_LEAVE_PENALTY = altSettings.getProperty("AllyLeavePenalty", 24);
-		DISSOLVED_ALLY_PENALTY = altSettings.getProperty("DissolveAllyPenalty", 24);
-		DISSOLVED_CLAN_PENALTY = altSettings.getProperty("DissolvedClanPenalty", 24);
-		CLAN_DISBAND_TIME = altSettings.getProperty("DisbanClanTime", 48);
+		Config.CLAN_LEAVE_PENALTY = altSettings.getProperty("ClanLeavePenalty", 24);
+		Config.ALLY_LEAVE_PENALTY = altSettings.getProperty("AllyLeavePenalty", 24);
+		Config.DISSOLVED_ALLY_PENALTY = altSettings.getProperty("DissolveAllyPenalty", 24);
+		Config.DISSOLVED_CLAN_PENALTY = altSettings.getProperty("DissolvedClanPenalty", 24);
+		Config.CLAN_DISBAND_TIME = altSettings.getProperty("DisbanClanTime", 48);
 
-		SIEGE_PVP_COUNT = altSettings.getProperty("SiegePvpCount", false);
-		ZONE_PVP_COUNT = altSettings.getProperty("ZonePvpCount", false);
-		EPIC_EXPERTISE_PENALTY = altSettings.getProperty("EpicExpertisePenalty", true);
-		EXPERTISE_PENALTY = altSettings.getProperty("ExpertisePenalty", true);
-		ALT_MUSIC_LIMIT = altSettings.getProperty("MusicLimit", 12);
-		ALT_DEBUFF_LIMIT = altSettings.getProperty("DebuffLimit", 8);
-		ALT_TRIGGER_LIMIT = altSettings.getProperty("TriggerLimit", 12);
-		ENABLE_MODIFY_SKILL_DURATION = altSettings.getProperty("EnableSkillDuration", false);
-		if (ENABLE_MODIFY_SKILL_DURATION)
+		Config.SIEGE_PVP_COUNT = altSettings.getProperty("SiegePvpCount", false);
+		Config.ZONE_PVP_COUNT = altSettings.getProperty("ZonePvpCount", false);
+		Config.EPIC_EXPERTISE_PENALTY = altSettings.getProperty("EpicExpertisePenalty", true);
+		Config.EXPERTISE_PENALTY = altSettings.getProperty("ExpertisePenalty", true);
+		Config.ALT_MUSIC_LIMIT = altSettings.getProperty("MusicLimit", 12);
+		Config.ALT_DEBUFF_LIMIT = altSettings.getProperty("DebuffLimit", 8);
+		Config.ALT_TRIGGER_LIMIT = altSettings.getProperty("TriggerLimit", 12);
+		Config.ENABLE_MODIFY_SKILL_DURATION = altSettings.getProperty("EnableSkillDuration", false);
+		if (Config.ENABLE_MODIFY_SKILL_DURATION)
 		{
 			String[] propertySplit = altSettings.getProperty("SkillDurationList", "").split(";");
 			SKILL_DURATION_LIST = new TIntIntHashMap(propertySplit.length);
@@ -2846,13 +2817,13 @@ public class Config
 				}
 			}
 		}
-		ALT_TIME_MODE_SKILL_DURATION = altSettings.getProperty("AltTimeModeSkillDuration", false);
+		Config.ALT_TIME_MODE_SKILL_DURATION = altSettings.getProperty("AltTimeModeSkillDuration", false);
 
-		ANCIENT_HERB_SPAWN_RADIUS = altSettings.getProperty("AncientHerbSpawnRadius", 600);
-		ANCIENT_HERB_SPAWN_CHANCE = altSettings.getProperty("AncientHerbSpawnChance", 3);
-		ANCIENT_HERB_SPAWN_COUNT = altSettings.getProperty("AncientHerbSpawnCount", 5);
-		ANCIENT_HERB_RESPAWN_TIME = altSettings.getProperty("AncientHerbRespawnTime", 60) * 1000;
-		ANCIENT_HERB_DESPAWN_TIME = altSettings.getProperty("AncientHerbDespawnTime", 60) * 1000;
+		Config.ANCIENT_HERB_SPAWN_RADIUS = altSettings.getProperty("AncientHerbSpawnRadius", 600);
+		Config.ANCIENT_HERB_SPAWN_CHANCE = altSettings.getProperty("AncientHerbSpawnChance", 3);
+		Config.ANCIENT_HERB_SPAWN_COUNT = altSettings.getProperty("AncientHerbSpawnCount", 5);
+		Config.ANCIENT_HERB_RESPAWN_TIME = altSettings.getProperty("AncientHerbRespawnTime", 60) * 1000;
+		Config.ANCIENT_HERB_DESPAWN_TIME = altSettings.getProperty("AncientHerbDespawnTime", 60) * 1000;
 		String[] locs = altSettings.getProperty("AncientHerbSpawnPoints", "").split(";");
 		if (locs != null)
 		{
@@ -2864,7 +2835,7 @@ public class Config
 					int x = Integer.parseInt(cords[0]);
 					int y = Integer.parseInt(cords[1]);
 					int z = Integer.parseInt(cords[2]);
-					HEIN_FIELDS_LOCATIONS.add(new Location(x, y, z));
+					Config.HEIN_FIELDS_LOCATIONS.add(new Location(x, y, z));
 				}
 			}
 		}
