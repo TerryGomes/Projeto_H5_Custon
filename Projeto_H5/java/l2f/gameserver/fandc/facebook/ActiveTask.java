@@ -16,8 +16,7 @@ public class ActiveTask
 	private final String requestedMessage;
 	private final long takenDate;
 
-	public ActiveTask(int playerId, FacebookIdentityType identityType, String identityValue, FacebookActionType actionType, @Nullable final OfficialPost father, @NotNull final String requestedMessage,
-				long takenDate)
+	public ActiveTask(int playerId, FacebookIdentityType identityType, String identityValue, FacebookActionType actionType, @Nullable final OfficialPost father, @NotNull final String requestedMessage, long takenDate)
 	{
 		this.playerId = playerId;
 		this.identityType = identityType;
@@ -82,7 +81,6 @@ public class ActiveTask
 	@Override
 	public String toString()
 	{
-		return "ActiveTask{playerId=" + playerId + ", identityType=" + identityType + ", identityValue='" + identityValue + '\'' + ", actionType=" + actionType + ", father=" + father + ", requestedMessage='"
-					+ requestedMessage + '\'' + ", takenDate=" + takenDate + '}';
+		return "ActiveTask{playerId=" + playerId + ", identityType=" + identityType + ", identityValue='" + identityValue + '\'' + ", actionType=" + actionType + ", father=" + father + ", requestedMessage='" + requestedMessage + '\'' + ", takenDate=" + takenDate + '}';
 	}
 }

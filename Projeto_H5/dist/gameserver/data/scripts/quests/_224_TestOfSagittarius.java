@@ -284,8 +284,7 @@ public class _224_TestOfSagittarius extends Quest implements ScriptFile
 		{
 			htmltext = "30717-04.htm";
 		}
-		else if (npcId == 30717 && st.getCond() == 11 && st.getQuestItemsCount(STAKATO_CHITIN_ID) > 0 && st.getQuestItemsCount(MITHRIL_CLIP_ID) > 0 && st.getQuestItemsCount(ST_BOWSTRING_ID) > 0
-					&& st.getQuestItemsCount(MANASHENS_HORN_ID) > 0)
+		else if (npcId == 30717 && st.getCond() == 11 && st.getQuestItemsCount(STAKATO_CHITIN_ID) > 0 && st.getQuestItemsCount(MITHRIL_CLIP_ID) > 0 && st.getQuestItemsCount(ST_BOWSTRING_ID) > 0 && st.getQuestItemsCount(MANASHENS_HORN_ID) > 0)
 		{
 			htmltext = "30717-02.htm";
 			st.takeItems(MITHRIL_CLIP_ID, st.getQuestItemsCount(MITHRIL_CLIP_ID));

@@ -32,8 +32,7 @@ public class EffectNegateEffects extends Effect
 	{
 		for (Effect e : _effected.getEffectList().getAllEffects())
 		{
-			if (!e.getStackType().equals(EffectTemplate.NO_STACK) && (e.getStackType().equals(getStackType()) || e.getStackType().equals(getStackType2()))
-						|| !e.getStackType2().equals(EffectTemplate.NO_STACK) && (e.getStackType2().equals(getStackType()) || e.getStackType2().equals(getStackType2())))
+			if (!e.getStackType().equals(EffectTemplate.NO_STACK) && (e.getStackType().equals(getStackType()) || e.getStackType().equals(getStackType2())) || !e.getStackType2().equals(EffectTemplate.NO_STACK) && (e.getStackType2().equals(getStackType()) || e.getStackType2().equals(getStackType2())))
 			{
 				if (e.getStackOrder() <= getStackOrder())
 				{

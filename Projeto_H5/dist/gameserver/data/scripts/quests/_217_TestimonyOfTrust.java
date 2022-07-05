@@ -331,8 +331,7 @@ public class _217_TestimonyOfTrust extends Quest implements ScriptFile
 			{
 				htmltext = "magister_clayton_q0217_02.htm";
 			}
-			else if (cond == 7 && st.getQuestItemsCount(ORDER_OF_CLAYTON_ID) > 0
-						&& st.getQuestItemsCount(STAKATO_ICHOR_ID) + st.getQuestItemsCount(HONEY_DEW_ID) + st.getQuestItemsCount(BASILISK_PLASMA_ID) == 3)
+			else if (cond == 7 && st.getQuestItemsCount(ORDER_OF_CLAYTON_ID) > 0 && st.getQuestItemsCount(STAKATO_ICHOR_ID) + st.getQuestItemsCount(HONEY_DEW_ID) + st.getQuestItemsCount(BASILISK_PLASMA_ID) == 3)
 			{
 				st.takeItems(ORDER_OF_CLAYTON_ID, 1);
 				st.setCond(8);

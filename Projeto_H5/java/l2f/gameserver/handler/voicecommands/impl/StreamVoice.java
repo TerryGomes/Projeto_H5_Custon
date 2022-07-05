@@ -338,8 +338,7 @@ public class StreamVoice extends Functions implements IVoicedCommandHandler
 				errorMsg = StringHolder.getNotNull(player, "Twitch.CantConnect.AttachedOtherServer", ConfigHolder.getString("ServerName"));
 			}
 			useStreamBypass(player, "errorConnectToStream", errorMsg);
-			Log.logStream("Player " + player + " tried to connect to Stream: " + streamName + ". It is attached already to " + stream.getAttachedPlayerId() + " on SubServer: " + stream.getAttachedPlayerServer()
-						+ "!");
+			Log.logStream("Player " + player + " tried to connect to Stream: " + streamName + ". It is attached already to " + stream.getAttachedPlayerId() + " on SubServer: " + stream.getAttachedPlayerServer() + "!");
 		}
 		else
 		{

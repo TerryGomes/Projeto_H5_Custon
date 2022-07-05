@@ -34,8 +34,7 @@ public class CharacterDAO
 
 	public void markTooOldChars()
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("UPDATE characters SET characters.deletetime=1 WHERE characters.onlinetime < 3600 and characters.lastAccess < 1376610861 LIMIT 500"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("UPDATE characters SET characters.deletetime=1 WHERE characters.onlinetime < 3600 and characters.lastAccess < 1376610861 LIMIT 500"))
 		{
 			statement.executeUpdate();
 		}
@@ -249,8 +248,7 @@ public class CharacterDAO
 	{
 		try (Connection con = DatabaseFactory.getInstance().getConnection())
 		{
-			try (PreparedStatement statement = con.prepareStatement(
-						"INSERT INTO `characters` (account_name, obj_Id, char_name, face, hairStyle, hairColor, sex, karma, pvpkills, pkkills, clanid, createtime, deletetime, title, accesslevel, online, leaveclan, deleteclan, nochannel, pledge_type, pledge_rank, lvl_joined_academy, apprentice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))
+			try (PreparedStatement statement = con.prepareStatement("INSERT INTO `characters` (account_name, obj_Id, char_name, face, hairStyle, hairColor, sex, karma, pvpkills, pkkills, clanid, createtime, deletetime, title, accesslevel, online, leaveclan, deleteclan, nochannel, pledge_type, pledge_rank, lvl_joined_academy, apprentice) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))
 			{
 				statement.setString(1, player.getAccountName());
 				statement.setInt(2, player.getObjectId());
@@ -278,8 +276,7 @@ public class CharacterDAO
 				statement.executeUpdate();
 			}
 
-			try (PreparedStatement statement = con.prepareStatement(
-						"INSERT INTO character_subclasses (char_obj_id, class_id, exp, sp, curHp, curMp, curCp, maxHp, maxMp, maxCp, level, active, isBase, death_penalty, certification) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))
+			try (PreparedStatement statement = con.prepareStatement("INSERT INTO character_subclasses (char_obj_id, class_id, exp, sp, curHp, curMp, curCp, maxHp, maxMp, maxCp, level, active, isBase, death_penalty, certification) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))
 			{
 				statement.setInt(1, player.getObjectId());
 				statement.setInt(2, player.getTemplate().classId.getId());
@@ -533,9 +530,7 @@ public class CharacterDAO
 
 		if (ConfigHolder.getBool("EnableMerge"))
 		{
-			try (Connection con = MergeDatabaseFactory.getInstance().getConnection();
-						PreparedStatement statement = con.prepareStatement(
-									"SELECT COUNT(old_login) FROM merge_data WHERE finished=0 AND new_char_name_1 = ? OR new_char_name_2 = ? OR new_char_name_3 = ? OR new_char_name_4 = ? OR new_char_name_5 = ? OR new_char_name_6 = ? OR new_char_name_7 = ? OR new_char_name_8 = ?"))
+			try (Connection con = MergeDatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT COUNT(old_login) FROM merge_data WHERE finished=0 AND new_char_name_1 = ? OR new_char_name_2 = ? OR new_char_name_3 = ? OR new_char_name_4 = ? OR new_char_name_5 = ? OR new_char_name_6 = ? OR new_char_name_7 = ? OR new_char_name_8 = ?"))
 			{
 				statement.setString(1, name);
 				statement.setString(2, name);

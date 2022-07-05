@@ -207,8 +207,7 @@ public class BookMarkList
 			return;
 		}
 
-		try (PreparedStatement statement = con.prepareStatement("SELECT * FROM `character_bookmarks` WHERE `char_Id`=" + owner.getObjectId() + " ORDER BY `idx` LIMIT " + capacity);
-					ResultSet rs = statement.executeQuery())
+		try (PreparedStatement statement = con.prepareStatement("SELECT * FROM `character_bookmarks` WHERE `char_Id`=" + owner.getObjectId() + " ORDER BY `idx` LIMIT " + capacity); ResultSet rs = statement.executeQuery())
 		{
 			elementData.clear();
 			while (rs.next())

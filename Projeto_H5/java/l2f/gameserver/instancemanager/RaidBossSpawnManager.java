@@ -127,8 +127,7 @@ public class RaidBossSpawnManager
 		info.set("date_of_death", (long) (System.currentTimeMillis() / 1000L));
 		info.set("last_killer", killer);
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("REPLACE INTO `raidboss_status` (id, current_hp, current_mp, respawn_delay, date_of_death, last_killer) VALUES (?,?,?,?,?,?)"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("REPLACE INTO `raidboss_status` (id, current_hp, current_mp, respawn_delay, date_of_death, last_killer) VALUES (?,?,?,?,?,?)"))
 		{
 			statement.setInt(1, id);
 			statement.setDouble(2, info.getDouble("current_hp"));
@@ -164,8 +163,7 @@ public class RaidBossSpawnManager
 			return;
 		}
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("REPLACE INTO `raidboss_status` (id, current_hp, current_mp, respawn_delay, date_of_death) VALUES (?,?,?,?,?)"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("REPLACE INTO `raidboss_status` (id, current_hp, current_mp, respawn_delay, date_of_death) VALUES (?,?,?,?,?)"))
 		{
 			statement.setInt(1, id);
 			statement.setDouble(2, info.getDouble("current_hp"));
@@ -317,9 +315,7 @@ public class RaidBossSpawnManager
 		pointsLock.lock();
 		_points = new ConcurrentHashMap<Integer, Map<Integer, Integer>>();
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("SELECT owner_id, boss_id, points FROM `raidboss_points` ORDER BY owner_id ASC");
-					ResultSet rset = statement.executeQuery())
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT owner_id, boss_id, points FROM `raidboss_points` ORDER BY owner_id ASC"); ResultSet rset = statement.executeQuery())
 		{
 			int currentOwner = 0;
 			Map<Integer, Integer> score = null;

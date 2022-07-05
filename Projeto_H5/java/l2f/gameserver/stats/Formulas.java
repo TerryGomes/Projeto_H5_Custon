@@ -1405,8 +1405,7 @@ public class Formulas
 			return false;
 		}
 
-		if ((activeChar.getSkillLevel(331) > 0 && activeChar.calcStat(Stats.SKILL_MASTERY, activeChar.getINT(), null, skill) >= Rnd.get(1000))
-					|| ((activeChar.getSkillLevel(330) > 0) && (activeChar.calcStat(Stats.SKILL_MASTERY, activeChar.getSTR(), null, skill) >= Rnd.get(1000))))
+		if ((activeChar.getSkillLevel(331) > 0 && activeChar.calcStat(Stats.SKILL_MASTERY, activeChar.getINT(), null, skill) >= Rnd.get(1000)) || ((activeChar.getSkillLevel(330) > 0) && (activeChar.calcStat(Stats.SKILL_MASTERY, activeChar.getSTR(), null, skill) >= Rnd.get(1000))))
 		{
 			return true;
 		}
@@ -1471,8 +1470,7 @@ public class Formulas
 			pAttacker.sendMessage("Element: " + element.name());
 			pAttacker.sendMessage("Attack: " + attacker.calcStat(element.getAttack(), power, defender, skill));
 			pAttacker.sendMessage("Defence: " + defender.calcStat(element.getDefence(), 0., attacker, skill));
-			pAttacker.sendMessage("Modifier: " + getElementMod(attacker.calcStat(element.getAttack(), power, defender, skill), defender.calcStat(element.getDefence(), 0., attacker, skill),
-						attacker.isPlayer() && defender.isPlayer()));
+			pAttacker.sendMessage("Modifier: " + getElementMod(attacker.calcStat(element.getAttack(), power, defender, skill), defender.calcStat(element.getDefence(), 0., attacker, skill), attacker.isPlayer() && defender.isPlayer()));
 		}
 
 		return value * getElementMod(attacker.calcStat(element.getAttack(), power, defender, skill), defender.calcStat(element.getDefence(), 0., attacker, skill), attacker.isPlayer() && defender.isPlayer());

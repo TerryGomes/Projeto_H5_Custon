@@ -196,22 +196,19 @@ public class RequestExTryToPutEnchantTargetItem extends L2GameClientPacket
 			switch (itemType)
 			{
 			case ItemTemplate.TYPE2_WEAPON:
-				if ((isDivineScroll && Config.ENCHANT_MAX_DIVINE_SCROLL_WEAPON > 0 && itemToEnchant.getEnchantLevel() >= Config.ENCHANT_MAX_DIVINE_SCROLL_WEAPON)
-							|| (!isDivineScroll && Config.ENCHANT_MAX_WEAPON > 0 && itemToEnchant.getEnchantLevel() >= Config.ENCHANT_MAX_WEAPON))
+				if ((isDivineScroll && Config.ENCHANT_MAX_DIVINE_SCROLL_WEAPON > 0 && itemToEnchant.getEnchantLevel() >= Config.ENCHANT_MAX_DIVINE_SCROLL_WEAPON) || (!isDivineScroll && Config.ENCHANT_MAX_WEAPON > 0 && itemToEnchant.getEnchantLevel() >= Config.ENCHANT_MAX_WEAPON))
 				{
 					fail = true;
 				}
 				break;
 			case ItemTemplate.TYPE2_SHIELD_ARMOR:
-				if ((isDivineScroll && Config.ENCHANT_MAX_DIVINE_SCROLL_ARMOR > 0 && itemToEnchant.getEnchantLevel() >= Config.ENCHANT_MAX_DIVINE_SCROLL_ARMOR)
-							|| (!isDivineScroll && Config.ENCHANT_MAX_ARMOR > 0 && itemToEnchant.getEnchantLevel() >= Config.ENCHANT_MAX_ARMOR))
+				if ((isDivineScroll && Config.ENCHANT_MAX_DIVINE_SCROLL_ARMOR > 0 && itemToEnchant.getEnchantLevel() >= Config.ENCHANT_MAX_DIVINE_SCROLL_ARMOR) || (!isDivineScroll && Config.ENCHANT_MAX_ARMOR > 0 && itemToEnchant.getEnchantLevel() >= Config.ENCHANT_MAX_ARMOR))
 				{
 					fail = true;
 				}
 				break;
 			case ItemTemplate.TYPE2_ACCESSORY:
-				if ((isDivineScroll && Config.ENCHANT_MAX_DIVINE_SCROLL_JEWELRY > 0 && itemToEnchant.getEnchantLevel() >= Config.ENCHANT_MAX_DIVINE_SCROLL_JEWELRY)
-							|| (!isDivineScroll && Config.ENCHANT_MAX_JEWELRY > 0 && itemToEnchant.getEnchantLevel() >= Config.ENCHANT_MAX_JEWELRY))
+				if ((isDivineScroll && Config.ENCHANT_MAX_DIVINE_SCROLL_JEWELRY > 0 && itemToEnchant.getEnchantLevel() >= Config.ENCHANT_MAX_DIVINE_SCROLL_JEWELRY) || (!isDivineScroll && Config.ENCHANT_MAX_JEWELRY > 0 && itemToEnchant.getEnchantLevel() >= Config.ENCHANT_MAX_JEWELRY))
 				{
 					fail = true;
 				}

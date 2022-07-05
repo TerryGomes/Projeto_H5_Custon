@@ -98,8 +98,7 @@ public class ShortCutList
 		}
 		catch (SQLException e)
 		{
-			_log.error("Could not store shortcuts player:" + player + " slot:" + shortcut.getSlot() + " page:" + shortcut.getPage() + " type:" + shortcut.getType() + " id:" + shortcut.getId() + " level:"
-						+ shortcut.getLevel() + " CharType:" + shortcut.getCharacterType(), e);
+			_log.error("Could not store shortcuts player:" + player + " slot:" + shortcut.getSlot() + " page:" + shortcut.getPage() + " type:" + shortcut.getType() + " id:" + shortcut.getId() + " level:" + shortcut.getLevel() + " CharType:" + shortcut.getCharacterType(), e);
 		}
 		finally
 		{

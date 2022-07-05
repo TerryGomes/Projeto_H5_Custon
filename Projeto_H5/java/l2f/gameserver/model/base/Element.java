@@ -6,8 +6,7 @@ import l2f.gameserver.stats.Stats;
 
 public enum Element
 {
-	FIRE(0, Stats.ATTACK_FIRE, Stats.DEFENCE_FIRE), WATER(1, Stats.ATTACK_WATER, Stats.DEFENCE_WATER), WIND(2, Stats.ATTACK_WIND, Stats.DEFENCE_WIND), EARTH(3, Stats.ATTACK_EARTH, Stats.DEFENCE_EARTH),
-	HOLY(4, Stats.ATTACK_HOLY, Stats.DEFENCE_HOLY), UNHOLY(5, Stats.ATTACK_UNHOLY, Stats.DEFENCE_UNHOLY), NONE(-2, null, null);
+	FIRE(0, Stats.ATTACK_FIRE, Stats.DEFENCE_FIRE), WATER(1, Stats.ATTACK_WATER, Stats.DEFENCE_WATER), WIND(2, Stats.ATTACK_WIND, Stats.DEFENCE_WIND), EARTH(3, Stats.ATTACK_EARTH, Stats.DEFENCE_EARTH), HOLY(4, Stats.ATTACK_HOLY, Stats.DEFENCE_HOLY), UNHOLY(5, Stats.ATTACK_UNHOLY, Stats.DEFENCE_UNHOLY), NONE(-2, null, null);
 
 	/** Массив элементов без NONE **/
 	public final static Element[] VALUES = Arrays.copyOf(values(), 6);

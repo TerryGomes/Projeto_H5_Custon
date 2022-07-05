@@ -146,8 +146,7 @@ public class RequestAuthLogin extends L2LoginClientPacket
 
 		if (!passwordCorrect)
 		{
-			_log.warn("IP: " + client.getConnection().getSocket().getInetAddress() + " wrote Wrong Password(Written: " + password + ", Current: " + account.getPasswordHash() + ") Password to Account: "
-						+ account.getLogin());
+			_log.warn("IP: " + client.getConnection().getSocket().getInetAddress() + " wrote Wrong Password(Written: " + password + ", Current: " + account.getPasswordHash() + ") Password to Account: " + account.getLogin());
 			final SendablePacket wrongPasswordPacket = new OnWrongAccountPassword(account.getLogin(), password);
 			for (GameServer gs : GameServerManager.getInstance().getGameServers())
 			{

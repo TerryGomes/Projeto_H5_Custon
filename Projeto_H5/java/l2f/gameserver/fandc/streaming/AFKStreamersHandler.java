@@ -82,8 +82,7 @@ public class AFKStreamersHandler
 
 		private static void sendAFKMessage(Player player)
 		{
-			player.sendPacket(new Say2(0, ConfigHolder.getChatType("StreamingAFKSystemMsgType"), StringHolder.getNotNull(player, "Twitch.Stream", new Object[0]),
-						StringHolder.getNotNull(player, "Twitch.AFKMessage", new Object[0])));
+			player.sendPacket(new Say2(0, ConfigHolder.getChatType("StreamingAFKSystemMsgType"), StringHolder.getNotNull(player, "Twitch.Stream", new Object[0]), StringHolder.getNotNull(player, "Twitch.AFKMessage", new Object[0])));
 		}
 	}
 }

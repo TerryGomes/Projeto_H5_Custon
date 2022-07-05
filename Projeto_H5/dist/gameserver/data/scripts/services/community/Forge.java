@@ -134,12 +134,8 @@ public class Forge implements ScriptFile, ICommunityBoardHandler
 				data.put(Integer.valueOf(1), ForgeElement.generateEnchant(rear, Config.BBS_FORGE_ENCHANT_MAX[2], 1, player));
 
 				data.put(Integer.valueOf(7), ForgeElement.generateEnchant(rhand, Config.BBS_FORGE_ENCHANT_MAX[0], 7, player));
-				if (rhand != null && (rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGBLUNT || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BOW
-							|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUALDAGGER || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.ANCIENTSWORD
-							|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.CROSSBOW || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGBLUNT
-							|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGSWORD || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUALFIST
-							|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUAL || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.POLE
-							|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.FIST))
+				if (rhand != null && (rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGBLUNT || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BOW || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUALDAGGER || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.ANCIENTSWORD || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.CROSSBOW || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGBLUNT
+							|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGSWORD || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUALFIST || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUAL || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.POLE || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.FIST))
 				{
 					data.put(Integer.valueOf(8), new String[]
 					{
@@ -231,11 +227,7 @@ public class Forge implements ScriptFile, ICommunityBoardHandler
 					}
 					block = button_tm;
 					block = block.replace("{link}", new StringBuilder().append("bypass _bbsforge:enchant:").append(i * item).append(":").append(item).toString());
-					block = block.replace("{value}",
-								new StringBuilder().append("+").append(level[i]).append(" (")
-											.append(_item.getTemplate().isArmor() ? Config.BBS_FORGE_ENCHANT_PRICE_ARMOR[i]
-														: _item.getTemplate().isWeapon() ? Config.BBS_FORGE_ENCHANT_PRICE_WEAPON[i] : Config.BBS_FORGE_ENCHANT_PRICE_JEWELS[i])
-											.append(" ").append(name).append(")").toString());
+					block = block.replace("{value}", new StringBuilder().append("+").append(level[i]).append(" (").append(_item.getTemplate().isArmor() ? Config.BBS_FORGE_ENCHANT_PRICE_ARMOR[i] : _item.getTemplate().isWeapon() ? Config.BBS_FORGE_ENCHANT_PRICE_WEAPON[i] : Config.BBS_FORGE_ENCHANT_PRICE_JEWELS[i]).append(" ").append(name).append(")").toString());
 					button = new StringBuilder().append(button).append(block).toString();
 				}
 
@@ -277,12 +269,8 @@ public class Forge implements ScriptFile, ICommunityBoardHandler
 				data.put(Integer.valueOf(1), ForgeElement.generateFoundation(rear, 1, player));
 
 				data.put(Integer.valueOf(7), ForgeElement.generateFoundation(rhand, 7, player));
-				if (rhand != null && (rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGBLUNT || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BOW
-							|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUALDAGGER || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.ANCIENTSWORD
-							|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.CROSSBOW || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGBLUNT
-							|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGSWORD || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUALFIST
-							|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUAL || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.POLE
-							|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.FIST))
+				if (rhand != null && (rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGBLUNT || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BOW || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUALDAGGER || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.ANCIENTSWORD || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.CROSSBOW || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGBLUNT
+							|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGSWORD || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUALFIST || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUAL || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.POLE || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.FIST))
 				{
 					data.put(Integer.valueOf(8), new String[]
 					{
@@ -430,8 +418,7 @@ public class Forge implements ScriptFile, ICommunityBoardHandler
 						return;
 					}
 
-					int price = _item.getTemplate().isArmor() ? Config.BBS_FORGE_ENCHANT_PRICE_ARMOR[conversion]
-								: _item.isWeapon() ? Config.BBS_FORGE_ENCHANT_PRICE_WEAPON[conversion] : Config.BBS_FORGE_ENCHANT_PRICE_JEWELS[conversion];
+					int price = _item.getTemplate().isArmor() ? Config.BBS_FORGE_ENCHANT_PRICE_ARMOR[conversion] : _item.isWeapon() ? Config.BBS_FORGE_ENCHANT_PRICE_WEAPON[conversion] : Config.BBS_FORGE_ENCHANT_PRICE_JEWELS[conversion];
 
 					if (Util.getPay(player, Config.BBS_FORGE_ENCHANT_ITEM, price, true))
 					{
@@ -482,18 +469,13 @@ public class Forge implements ScriptFile, ICommunityBoardHandler
 					data.put(Integer.valueOf(1), ForgeElement.generateAttribution(rear, 1, player, true));
 
 					data.put(Integer.valueOf(7), ForgeElement.generateAttribution(rhand, 7, player, true));
-					if (rhand != null && (rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGBLUNT || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BOW
-								|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUALDAGGER || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.ANCIENTSWORD
-								|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.CROSSBOW || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGBLUNT
-								|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGSWORD || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUALFIST
-								|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUAL || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.POLE
-								|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.FIST))
+					if (rhand != null && (rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGBLUNT || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BOW || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUALDAGGER || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.ANCIENTSWORD || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.CROSSBOW || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGBLUNT
+								|| rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.BIGSWORD || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUALFIST || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.DUAL || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.POLE || rhand.getTemplate().getItemType() == WeaponTemplate.WeaponType.FIST))
 					{
 						data.put(Integer.valueOf(8), new String[]
 						{
 							rhand.getTemplate().getIcon(),
-							new StringBuilder().append(rhand.getName()).append(" ").append(rhand.getEnchantLevel() > 0 ? new StringBuilder().append("+").append(rhand.getEnchantLevel()).toString() : "")
-										.toString(),
+							new StringBuilder().append(rhand.getName()).append(" ").append(rhand.getEnchantLevel() > 0 ? new StringBuilder().append("+").append(rhand.getEnchantLevel()).toString() : "").toString(),
 							"<font color=\"FF0000\">...</font>",
 							"L2UI_CT1.ItemWindow_DF_SlotBox_Disable"
 						});
@@ -562,18 +544,12 @@ public class Forge implements ScriptFile, ICommunityBoardHandler
 					content = HtmCache.getInstance().getNotNull(new StringBuilder().append(Config.BBS_HOME_DIR).append("forge/attribute.htm").toString(), player);
 
 					String slotclose = "<img src=\"L2UI_CT1.ItemWindow_DF_SlotBox_Disable\" width=\"32\" height=\"32\">";
-					String buttonFire = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:element:0:").append(item)
-								.append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>").toString();
-					String buttonWater = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:element:1:").append(item)
-								.append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>").toString();
-					String buttonWind = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:element:2:").append(item)
-								.append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>").toString();
-					String buttonEarth = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:element:3:").append(item)
-								.append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>").toString();
-					String buttonHoly = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:element:4:").append(item)
-								.append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>").toString();
-					String buttonUnholy = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:element:5:").append(item)
-								.append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>").toString();
+					String buttonFire = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:element:0:").append(item).append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>").toString();
+					String buttonWater = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:element:1:").append(item).append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>").toString();
+					String buttonWind = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:element:2:").append(item).append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>").toString();
+					String buttonEarth = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:element:3:").append(item).append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>").toString();
+					String buttonHoly = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:element:4:").append(item).append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>").toString();
+					String buttonUnholy = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:element:5:").append(item).append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>").toString();
 
 					if (_item.isWeapon())
 					{
@@ -789,10 +765,8 @@ public class Forge implements ScriptFile, ICommunityBoardHandler
 							continue;
 						}
 						block = button_tm;
-						block = block.replace("{link}",
-									String.valueOf(new StringBuilder().append("bypass _bbsforge:attribute:").append(i * item).append(":").append(item).append(":").append(element).toString()));
-						block = block.replace("{value}", new StringBuilder().append("+").append(_item.isWeapon() ? Config.BBS_FORGE_ATRIBUTE_LVL_WEAPON[i] : Config.BBS_FORGE_ATRIBUTE_LVL_ARMOR[i]).append(" (")
-									.append(_item.isWeapon() ? Config.BBS_FORGE_ATRIBUTE_PRICE_WEAPON[i] : Config.BBS_FORGE_ATRIBUTE_PRICE_ARMOR[i]).append(" ").append(name).append(")").toString());
+						block = block.replace("{link}", String.valueOf(new StringBuilder().append("bypass _bbsforge:attribute:").append(i * item).append(":").append(item).append(":").append(element).toString()));
+						block = block.replace("{value}", new StringBuilder().append("+").append(_item.isWeapon() ? Config.BBS_FORGE_ATRIBUTE_LVL_WEAPON[i] : Config.BBS_FORGE_ATRIBUTE_LVL_ARMOR[i]).append(" (").append(_item.isWeapon() ? Config.BBS_FORGE_ATRIBUTE_PRICE_WEAPON[i] : Config.BBS_FORGE_ATRIBUTE_PRICE_ARMOR[i]).append(" ").append(name).append(")").toString());
 						button.append(block);
 					}
 

@@ -178,8 +178,7 @@ public class RPCTable
 				if (rpc.getDbStatus() == DBStatus.UPDATED)
 				{
 					rpc.setDbStatus(DBStatus.NONE);
-					statement.addBatch("UPDATE rank_pvp_system_rpc SET player_id=" + rpc.getPlayerId() + ", rpc_total=" + rpc.getRpcTotal() + ", rpc_current=" + rpc.getRpcCurrent() + " WHERE player_id="
-								+ rpc.getPlayerId());
+					statement.addBatch("UPDATE rank_pvp_system_rpc SET player_id=" + rpc.getPlayerId() + ", rpc_total=" + rpc.getRpcTotal() + ", rpc_current=" + rpc.getRpcCurrent() + " WHERE player_id=" + rpc.getPlayerId());
 				}
 				else if (rpc.getDbStatus() == DBStatus.INSERTED)
 				{

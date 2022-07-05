@@ -582,8 +582,7 @@ public class Clan implements Iterable<UnitMember>
 		try
 		{
 			con = DatabaseFactory.getInstance().getConnection();
-			statement = con.prepareStatement(
-						"UPDATE clan_data SET ally_id=?,reputation_score=?,expelled_member=?,leaved_ally=?,dissolved_ally=?,clan_level=?,warehouse=?,airship=?,dissolved_clan=?,disband_penalty=? WHERE clan_id=?");
+			statement = con.prepareStatement("UPDATE clan_data SET ally_id=?,reputation_score=?,expelled_member=?,leaved_ally=?,dissolved_ally=?,clan_level=?,warehouse=?,airship=?,dissolved_clan=?,disband_penalty=? WHERE clan_id=?");
 			statement.setInt(1, getAllyId());
 			statement.setInt(2, getReputationScore());
 			statement.setLong(3, getExpelledMemberTime() / 1000);
@@ -614,8 +613,7 @@ public class Clan implements Iterable<UnitMember>
 		try
 		{
 			con = DatabaseFactory.getInstance().getConnection();
-			statement = con.prepareStatement(
-						"INSERT INTO clan_data (clan_id,clan_level,hasCastle,hasFortress,hasHideout,ally_id,expelled_member,leaved_ally,dissolved_ally,dissolved_clan,disband_penalty,airship) values (?,?,?,?,?,?,?,?,?,?,?,?)");
+			statement = con.prepareStatement("INSERT INTO clan_data (clan_id,clan_level,hasCastle,hasFortress,hasHideout,ally_id,expelled_member,leaved_ally,dissolved_ally,dissolved_clan,disband_penalty,airship) values (?,?,?,?,?,?,?,?,?,?,?,?)");
 			statement.setInt(1, _clanId);
 			statement.setInt(2, _level);
 			statement.setInt(3, _hasCastle);
@@ -672,8 +670,7 @@ public class Clan implements Iterable<UnitMember>
 		try
 		{
 			con1 = DatabaseFactory.getInstance().getConnection();
-			statement1 = con1.prepareStatement(
-						"SELECT clan_level,hasCastle,hasFortress,hasHideout,ally_id,reputation_score,expelled_member,leaved_ally,dissolved_ally,dissolved_clan,disband_penalty,warehouse,airship FROM clan_data where clan_id=?");
+			statement1 = con1.prepareStatement("SELECT clan_level,hasCastle,hasFortress,hasHideout,ally_id,reputation_score,expelled_member,leaved_ally,dissolved_ally,dissolved_clan,disband_penalty,warehouse,airship FROM clan_data where clan_id=?");
 			statement1.setInt(1, clanId);
 			clanData = statement1.executeQuery();
 
@@ -1625,8 +1622,7 @@ public class Clan implements Iterable<UnitMember>
 						return;
 					}
 					final SubUnit unit = clan.getSubUnit(unitType);
-					final UnitMember member = new UnitMember(clan, rset.getString("char_name"), rset.getString("title"), rset.getInt("level"), rset.getInt("classid"), rset.getInt("obj_Id"), unitType,
-								rset.getInt("pledge_rank"), rset.getInt("apprentice"), rset.getInt("sex"), -128);
+					final UnitMember member = new UnitMember(clan, rset.getString("char_name"), rset.getString("title"), rset.getInt("level"), rset.getInt("classid"), rset.getInt("obj_Id"), unitType, rset.getInt("pledge_rank"), rset.getInt("apprentice"), rset.getInt("sex"), -128);
 					unit.addUnitMember(member);
 				}
 			}
@@ -1647,8 +1643,7 @@ public class Clan implements Iterable<UnitMember>
 			return;
 		}
 
-		UnitMember member = new UnitMember(this, player.getName(), player.getTitle(), player.getLevel(), player.getClassId().getId(), player.getObjectId(), pledgeType, player.getPowerGrade(),
-					player.getApprentice(), player.getSex(), Clan.SUBUNIT_NONE);
+		UnitMember member = new UnitMember(this, player.getName(), player.getTitle(), player.getLevel(), player.getClassId().getId(), player.getObjectId(), pledgeType, player.getPowerGrade(), player.getApprentice(), player.getSex(), Clan.SUBUNIT_NONE);
 		subUnit.addUnitMember(member);
 
 		player.setPledgeType(pledgeType);
@@ -1746,8 +1741,7 @@ public class Clan implements Iterable<UnitMember>
 	{
 		try (Connection con = DatabaseFactory.getInstance().getConnection())
 		{
-			try (PreparedStatement statement = con.prepareStatement("INSERT INTO clan_requiements VALUES(" + getClanId()
-						+ ",0,'','','','','','','','','') ON DUPLICATE KEY UPDATE recruting=?,classes=?,question1=?,question2=?,question3=?,question4=?,question5=?,question6=?,question7=?,question8=?"))
+			try (PreparedStatement statement = con.prepareStatement("INSERT INTO clan_requiements VALUES(" + getClanId() + ",0,'','','','','','','','','') ON DUPLICATE KEY UPDATE recruting=?,classes=?,question1=?,question2=?,question3=?,question4=?,question5=?,question6=?,question7=?,question8=?"))
 			{
 				statement.setInt(1, (_recruting == true ? 1 : 0));
 				statement.setString(2, getClassesForData());

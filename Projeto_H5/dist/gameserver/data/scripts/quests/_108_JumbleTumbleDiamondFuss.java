@@ -117,8 +117,7 @@ public class _108_JumbleTumbleDiamondFuss extends Quest implements ScriptFile
 			{
 				htmltext = "collector_gouph_q0108_04.htm";
 			}
-			else if (cond > 1 && cond < 7
-						&& (st.getQuestItemsCount(REEPS_CONTRACT) > 0 || st.getQuestItemsCount(ELVEN_WINE) > 0 || st.getQuestItemsCount(BRONPS_DICE) > 0 || st.getQuestItemsCount(BRONPS_CONTRACT) > 0))
+			else if (cond > 1 && cond < 7 && (st.getQuestItemsCount(REEPS_CONTRACT) > 0 || st.getQuestItemsCount(ELVEN_WINE) > 0 || st.getQuestItemsCount(BRONPS_DICE) > 0 || st.getQuestItemsCount(BRONPS_CONTRACT) > 0))
 			{
 				htmltext = "collector_gouph_q0108_05.htm";
 			}
@@ -129,8 +128,7 @@ public class _108_JumbleTumbleDiamondFuss extends Quest implements ScriptFile
 				st.giveItems(COAL_PIECE, 1);
 				st.setCond(8);
 			}
-			else if (cond > 7 && cond < 12
-						&& (st.getQuestItemsCount(BRONPS_LETTER) > 0 || st.getQuestItemsCount(COAL_PIECE) > 0 || st.getQuestItemsCount(BERRY_TART) > 0 || st.getQuestItemsCount(BAT_DIAGRAM) > 0))
+			else if (cond > 7 && cond < 12 && (st.getQuestItemsCount(BRONPS_LETTER) > 0 || st.getQuestItemsCount(COAL_PIECE) > 0 || st.getQuestItemsCount(BERRY_TART) > 0 || st.getQuestItemsCount(BAT_DIAGRAM) > 0))
 			{
 				htmltext = "collector_gouph_q0108_07.htm";
 			}

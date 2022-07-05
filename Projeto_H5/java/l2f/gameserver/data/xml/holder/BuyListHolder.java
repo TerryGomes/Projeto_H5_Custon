@@ -132,8 +132,7 @@ public class BuyListHolder
 														}
 														counterItems++;
 
-														long price = i.getAttributes().getNamedItem("price") != null ? Long.parseLong(i.getAttributes().getNamedItem("price").getNodeValue())
-																	: Math.round(template.getReferencePrice() * markup);
+														long price = i.getAttributes().getNamedItem("price") != null ? Long.parseLong(i.getAttributes().getNamedItem("price").getNodeValue()) : Math.round(template.getReferencePrice() * markup);
 														TradeItem item = new TradeItem();
 														item.setItemId(itemId);
 														final int itemCount = i.getAttributes().getNamedItem("count") != null ? Integer.parseInt(i.getAttributes().getNamedItem("count").getNodeValue()) : 0;

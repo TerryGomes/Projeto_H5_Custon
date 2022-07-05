@@ -223,10 +223,8 @@ public class DataMerge
 
 	private static void mergeSubclassesTable(int oldCharId, Connection oldServerCon, int newCharId, Connection newServerCon)
 	{
-		try (PreparedStatement oldServerStatement = oldServerCon
-					.prepareStatement("SELECT class_id, level, exp, sp, curHp, curMp, curCp, maxHp, maxMp, maxCp, active, isBase, death_penalty, certification from character_subclasses WHERE char_obj_id = ?");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement(
-								"INSERT INTO character_subclasses (char_obj_id, class_id, level, exp, sp, curHp, curMp, curCp, maxHp, maxMp, maxCp, active, isBase, death_penalty, certification) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT class_id, level, exp, sp, curHp, curMp, curCp, maxHp, maxMp, maxCp, active, isBase, death_penalty, certification from character_subclasses WHERE char_obj_id = ?");
+					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO character_subclasses (char_obj_id, class_id, level, exp, sp, curHp, curMp, curCp, maxHp, maxMp, maxCp, active, isBase, death_penalty, certification) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))
 		{
 			oldServerStatement.setInt(1, oldCharId);
 			try (ResultSet rset = oldServerStatement.executeQuery())
@@ -261,8 +259,7 @@ public class DataMerge
 
 	private static void mergeHennasTable(int oldCharId, Connection oldServerCon, int newCharId, Connection newServerCon)
 	{
-		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT symbol_id, slot, class_index FROM character_hennas WHERE char_obj_id = ?");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO character_hennas (char_obj_id, symbol_id, slot, class_index) VALUES (?,?,?,?)"))
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT symbol_id, slot, class_index FROM character_hennas WHERE char_obj_id = ?"); PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO character_hennas (char_obj_id, symbol_id, slot, class_index) VALUES (?,?,?,?)"))
 		{
 			oldServerStatement.setInt(1, oldCharId);
 			try (ResultSet rset = oldServerStatement.executeQuery())
@@ -286,8 +283,7 @@ public class DataMerge
 
 	private static void mergeMacrosesTable(int oldCharId, Connection oldServerCon, int newCharId, Connection newServerCon)
 	{
-		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT id, icon, name, descr, acronym, commands FROM character_macroses WHERE char_obj_id = ?");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO character_macroses (char_obj_id, id, icon, name, descr, acronym, commands) VALUES (?,?,?,?,?,?,?)"))
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT id, icon, name, descr, acronym, commands FROM character_macroses WHERE char_obj_id = ?"); PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO character_macroses (char_obj_id, id, icon, name, descr, acronym, commands) VALUES (?,?,?,?,?,?,?)"))
 		{
 			oldServerStatement.setInt(1, oldCharId);
 			try (ResultSet rset = oldServerStatement.executeQuery())
@@ -314,8 +310,7 @@ public class DataMerge
 
 	private static void mergeQuestsTable(int oldCharId, Connection oldServerCon, int newCharId, Connection newServerCon)
 	{
-		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT name, var, value FROM character_quests WHERE char_id = ?");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO character_quests (char_id, name, var, value) VALUES (?,?,?,?)"))
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT name, var, value FROM character_quests WHERE char_id = ?"); PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO character_quests (char_id, name, var, value) VALUES (?,?,?,?)"))
 		{
 			oldServerStatement.setInt(1, oldCharId);
 			try (ResultSet rset = oldServerStatement.executeQuery())
@@ -339,9 +334,7 @@ public class DataMerge
 
 	private static void mergeShortcutsTable(int oldCharId, Connection oldServerCon, int newCharId, Connection newServerCon)
 	{
-		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT slot, page, type, shortcut_id, level, class_index, character_type FROM character_shortcuts WHERE object_id = ?");
-					PreparedStatement newServerStatement = newServerCon
-								.prepareStatement("INSERT INTO character_shortcuts (object_id, slot, page, type, shortcut_id, level, class_index, character_type) VALUES (?,?,?,?,?,?,?,?)"))
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT slot, page, type, shortcut_id, level, class_index, character_type FROM character_shortcuts WHERE object_id = ?"); PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO character_shortcuts (object_id, slot, page, type, shortcut_id, level, class_index, character_type) VALUES (?,?,?,?,?,?,?,?)"))
 		{
 			oldServerStatement.setInt(1, oldCharId);
 			try (ResultSet rset = oldServerStatement.executeQuery())
@@ -369,8 +362,7 @@ public class DataMerge
 
 	private static void mergeSkillsTable(int oldCharId, Connection oldServerCon, int newCharId, Connection newServerCon)
 	{
-		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT skill_id, skill_level, class_index FROM character_skills WHERE char_obj_id = ?");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO character_skills (char_obj_id, skill_id, skill_level, class_index) VALUES (?,?,?,?)"))
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT skill_id, skill_level, class_index FROM character_skills WHERE char_obj_id = ?"); PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO character_skills (char_obj_id, skill_id, skill_level, class_index) VALUES (?,?,?,?)"))
 		{
 			oldServerStatement.setInt(1, oldCharId);
 			try (ResultSet rset = oldServerStatement.executeQuery())
@@ -394,8 +386,7 @@ public class DataMerge
 
 	private static void mergeVariablesTable(int oldCharId, Connection oldServerCon, int newCharId, Connection newServerCon)
 	{
-		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT type, name, value, expire_time FROM character_variables WHERE obj_id = ?");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO character_variables (obj_id, type, name, value, expire_time) VALUES (?,?,?,?,?)"))
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT type, name, value, expire_time FROM character_variables WHERE obj_id = ?"); PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO character_variables (obj_id, type, name, value, expire_time) VALUES (?,?,?,?,?)"))
 		{
 			oldServerStatement.setInt(1, oldCharId);
 			try (ResultSet rset = oldServerStatement.executeQuery())
@@ -421,10 +412,8 @@ public class DataMerge
 	private static void mergeOlympiadNoblessTable(int oldCharId, Connection oldServerCon, int newCharId, Connection newServerCon)
 	{
 		boolean isNoble = false;
-		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement(
-					"SELECT class_id, olympiad_points, olympiad_points_past, olympiad_points_past_static, competitions_done, competitions_win, competitions_loose, game_classes_count, game_noclasses_count, game_team_count FROM olympiad_nobles WHERE char_id = ?");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement(
-								"INSERT INTO olympiad_nobles (char_id, class_id, olympiad_points, olympiad_points_past, olympiad_points_past_static, competitions_done, competitions_win, competitions_loose, game_classes_count, game_noclasses_count, game_team_count) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)"))
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT class_id, olympiad_points, olympiad_points_past, olympiad_points_past_static, competitions_done, competitions_win, competitions_loose, game_classes_count, game_noclasses_count, game_team_count FROM olympiad_nobles WHERE char_id = ?");
+					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO olympiad_nobles (char_id, class_id, olympiad_points, olympiad_points_past, olympiad_points_past_static, competitions_done, competitions_win, competitions_loose, game_classes_count, game_noclasses_count, game_team_count) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)"))
 		{
 			oldServerStatement.setInt(1, oldCharId);
 			try (ResultSet rset = oldServerStatement.executeQuery())
@@ -468,8 +457,7 @@ public class DataMerge
 		int count = -1;
 		int active = -1;
 		int played = -1;
-		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT count, active, played, message FROM heroes WHERE char_id = ?");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO heroes (char_id, count, active, played, message) VALUES (?,?,?,?,?)"))
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT count, active, played, message FROM heroes WHERE char_id = ?"); PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO heroes (char_id, count, active, played, message) VALUES (?,?,?,?,?)"))
 		{
 			oldServerStatement.setInt(1, oldCharId);
 			try (ResultSet rset = oldServerStatement.executeQuery())
@@ -501,10 +489,8 @@ public class DataMerge
 
 	protected static void mergeItemsTable(int oldOwnerId, Connection oldServerCon, int newOwnerId, Connection newServerCon)
 	{
-		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement(
-					"SELECT item_id, count, enchant_level, loc, loc_data, life_time, augmentation_id, attribute_fire, attribute_water, attribute_wind, attribute_earth, attribute_holy, attribute_unholy, custom_type1, custom_type2, custom_flags, agathion_energy, visual_item_id FROM items WHERE owner_id = ?");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement(
-								"INSERT INTO items (object_id, owner_id, item_id, count, enchant_level, loc, loc_data, life_time, augmentation_id, attribute_fire, attribute_water, attribute_wind, attribute_earth, attribute_holy, attribute_unholy, custom_type1, custom_type2, custom_flags, agathion_energy, visual_item_id) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT item_id, count, enchant_level, loc, loc_data, life_time, augmentation_id, attribute_fire, attribute_water, attribute_wind, attribute_earth, attribute_holy, attribute_unholy, custom_type1, custom_type2, custom_flags, agathion_energy, visual_item_id FROM items WHERE owner_id = ?");
+					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO items (object_id, owner_id, item_id, count, enchant_level, loc, loc_data, life_time, augmentation_id, attribute_fire, attribute_water, attribute_wind, attribute_earth, attribute_holy, attribute_unholy, custom_type1, custom_type2, custom_flags, agathion_energy, visual_item_id) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))
 		{
 			oldServerStatement.setInt(1, oldOwnerId);
 			try (ResultSet rset = oldServerStatement.executeQuery())
@@ -517,8 +503,7 @@ public class DataMerge
 						continue;
 					}
 
-					final int enchantLevel = ConfigHolder.getInt("MergeItemsMaxEnchant") >= 0 ? Math.min(rset.getInt("enchant_level"), ConfigHolder.getInt("MergeItemsMaxEnchant"))
-								: rset.getInt("enchant_level");
+					final int enchantLevel = ConfigHolder.getInt("MergeItemsMaxEnchant") >= 0 ? Math.min(rset.getInt("enchant_level"), ConfigHolder.getInt("MergeItemsMaxEnchant")) : rset.getInt("enchant_level");
 					final long count = checkCountMultiply(itemId, rset.getLong("count"));
 					if (count <= 0L)
 					{

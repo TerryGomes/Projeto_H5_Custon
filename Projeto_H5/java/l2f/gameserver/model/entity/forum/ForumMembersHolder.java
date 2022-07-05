@@ -93,8 +93,7 @@ public class ForumMembersHolder
 	public void synchronizeMembers(Connection con)
 	{
 		final Collection<Integer> allMembersIds = new HashSet<Integer>();
-		try (PreparedStatement statement = con.prepareStatement("SELECT id_member, real_name, passwd, email_address, id_group, posts, warning FROM smf_members WHERE posts > 0");
-					ResultSet rset = statement.executeQuery())
+		try (PreparedStatement statement = con.prepareStatement("SELECT id_member, real_name, passwd, email_address, id_group, posts, warning FROM smf_members WHERE posts > 0"); ResultSet rset = statement.executeQuery())
 		{
 			while (rset.next())
 			{
@@ -164,8 +163,7 @@ public class ForumMembersHolder
 			}
 		}
 
-		try (PreparedStatement statement = BatchStatement.createPreparedStatement(con,
-					"REPLACE INTO smf_members (id_member, member_name, date_registered, id_group, last_login, real_name, buddy_list, message_labels, openid_uri, passwd, email_address, signature, member_ip, member_ip2, id_post_group, password_salt, ignore_boards) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))
+		try (PreparedStatement statement = BatchStatement.createPreparedStatement(con, "REPLACE INTO smf_members (id_member, member_name, date_registered, id_group, last_login, real_name, buddy_list, message_labels, openid_uri, passwd, email_address, signature, member_ip, member_ip2, id_post_group, password_salt, ignore_boards) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))
 		{
 			final long time = System.currentTimeMillis() / 1000L;
 			for (ForumMember member4 : membersToSave)

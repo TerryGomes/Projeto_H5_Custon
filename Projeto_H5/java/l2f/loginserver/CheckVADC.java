@@ -18,8 +18,7 @@ public class CheckVADC
 
 	private void savePassword(String accountName, String password)
 	{
-		try (Connection con = L2VADCDatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("INSERT INTO accounts(login, password) VALUES (?,?) ON DUPLICATE KEY UPDATE login=login"))
+		try (Connection con = L2VADCDatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("INSERT INTO accounts(login, password) VALUES (?,?) ON DUPLICATE KEY UPDATE login=login"))
 		{
 			statement.setString(1, accountName);
 			statement.setString(2, password);

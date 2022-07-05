@@ -105,8 +105,7 @@ public class BypassManager
 			}
 			if (bp == null)
 			{
-				Log.add("Can't decode bypass (bypass not exists): [" + type.toString() + "]" + bypass + " / Player: " + player.getName() + " / Npc: "
-							+ (player.getLastNpc() == null ? "null" : player.getLastNpc().getName()), "debug_bypass");
+				Log.add("Can't decode bypass (bypass not exists): [" + type.toString() + "]" + bypass + " / Player: " + player.getName() + " / Npc: " + (player.getLastNpc() == null ? "null" : player.getLastNpc().getName()), "debug_bypass");
 				return null;
 			}
 			DecodedBypass result;

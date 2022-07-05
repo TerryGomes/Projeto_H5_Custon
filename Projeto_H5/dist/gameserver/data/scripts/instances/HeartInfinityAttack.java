@@ -67,8 +67,7 @@ public class HeartInfinityAttack extends Reflection
 		invoker = leader;
 		for (Player p : getPlayers())
 		{
-			p.sendPacket(new ExShowScreenMessage(NpcString.YOU_WILL_PARTICIPATE_IN_S1_S2_SHORTLY, 8000, ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false,
-						"#" + NpcString.HEART_OF_IMMORTALITY.getId(), "#" + NpcString.ATTACK.getId()));
+			p.sendPacket(new ExShowScreenMessage(NpcString.YOU_WILL_PARTICIPATE_IN_S1_S2_SHORTLY, 8000, ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false, "#" + NpcString.HEART_OF_IMMORTALITY.getId(), "#" + NpcString.ATTACK.getId()));
 		}
 		ThreadPoolManager.getInstance().schedule(new RunnableImpl()
 		{
@@ -127,8 +126,7 @@ public class HeartInfinityAttack extends Reflection
 		getDoor(14240102).openMe();
 		for (Player p : getPlayers())
 		{
-			p.sendPacket(new ExShowScreenMessage(NpcString.YOU_CAN_HEAR_THE_UNDEAD_OF_EKIMUS_RUSHING_TOWARD_YOU, 8000, ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false,
-						"#" + NpcString.HEART_OF_IMMORTALITY.getId(), "#" + NpcString.ATTACK.getId()));
+			p.sendPacket(new ExShowScreenMessage(NpcString.YOU_CAN_HEAR_THE_UNDEAD_OF_EKIMUS_RUSHING_TOWARD_YOU, 8000, ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false, "#" + NpcString.HEART_OF_IMMORTALITY.getId(), "#" + NpcString.ATTACK.getId()));
 		}
 		if (invoker != null)
 		{
@@ -241,8 +239,7 @@ public class HeartInfinityAttack extends Reflection
 				}
 				for (Player p : getPlayers())
 				{
-					p.sendPacket(new ExShowScreenMessage(NpcString.S1_MINUTES_ARE_REMAINING, 8000, ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false,
-								String.valueOf((startTime + 25 * 60 * 1000L - System.currentTimeMillis()) / 60000)));
+					p.sendPacket(new ExShowScreenMessage(NpcString.S1_MINUTES_ARE_REMAINING, 8000, ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false, String.valueOf((startTime + 25 * 60 * 1000L - System.currentTimeMillis()) / 60000)));
 				}
 			}
 		}
@@ -259,16 +256,14 @@ public class HeartInfinityAttack extends Reflection
 			}
 			for (Player p : getPlayers())
 			{
-				p.sendPacket(new ExShowScreenMessage(NpcString.WITH_ALL_CONNECTIONS_TO_THE_TUMOR_SEVERED_EKIMUS_HAS_LOST_ITS_POWER_TO_CONTROL_THE_FERAL_HOUND, 8000,
-							ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false));
+				p.sendPacket(new ExShowScreenMessage(NpcString.WITH_ALL_CONNECTIONS_TO_THE_TUMOR_SEVERED_EKIMUS_HAS_LOST_ITS_POWER_TO_CONTROL_THE_FERAL_HOUND, 8000, ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false));
 			}
 		}
 		else
 		{
 			for (Player p : getPlayers())
 			{
-				p.sendPacket(new ExShowScreenMessage(NpcString.THE_TUMOR_INSIDE_S1_THAT_HAS_PROVIDED_ENERGY_N_TO_EKIMUS_IS_DESTROYED, 8000, ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1,
-							false, "#" + NpcString.HEART_OF_IMMORTALITY.getId()));
+				p.sendPacket(new ExShowScreenMessage(NpcString.THE_TUMOR_INSIDE_S1_THAT_HAS_PROVIDED_ENERGY_N_TO_EKIMUS_IS_DESTROYED, 8000, ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false, "#" + NpcString.HEART_OF_IMMORTALITY.getId()));
 			}
 		}
 		handleEkimusStats();
@@ -285,16 +280,14 @@ public class HeartInfinityAttack extends Reflection
 			}
 			for (Player p : getPlayers())
 			{
-				p.sendPacket(new ExShowScreenMessage(NpcString.WITH_THE_CONNECTION_TO_THE_TUMOR_RESTORED_EKIMUS_HAS_REGAINED_CONTROL_OVER_THE_FERAL_HOUND, 8000,
-							ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false));
+				p.sendPacket(new ExShowScreenMessage(NpcString.WITH_THE_CONNECTION_TO_THE_TUMOR_RESTORED_EKIMUS_HAS_REGAINED_CONTROL_OVER_THE_FERAL_HOUND, 8000, ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false));
 			}
 		}
 		else
 		{
 			for (Player p : getPlayers())
 			{
-				p.sendPacket(new ExShowScreenMessage(NpcString.THE_TUMOR_INSIDE_S1_HAS_BEEN_COMPLETELY_RESURRECTED_N_AND_STARTED_TO_ENERGIZE_EKIMUS_AGAIN, 8000,
-							ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false, "#" + NpcString.HEART_OF_IMMORTALITY.getId()));
+				p.sendPacket(new ExShowScreenMessage(NpcString.THE_TUMOR_INSIDE_S1_HAS_BEEN_COMPLETELY_RESURRECTED_N_AND_STARTED_TO_ENERGIZE_EKIMUS_AGAIN, 8000, ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false, "#" + NpcString.HEART_OF_IMMORTALITY.getId()));
 			}
 		}
 		handleEkimusStats();
@@ -396,8 +389,7 @@ public class HeartInfinityAttack extends Reflection
 		for (Player p : getPlayers())
 		{
 			p.sendPacket(new SystemMessage2(SystemMsg.THIS_DUNGEON_WILL_EXPIRE_IN_S1_MINUTES).addInteger(15));
-			p.sendPacket(new ExShowScreenMessage(win ? NpcString.CONGRATULATIONS_YOU_HAVE_SUCCEEDED_AT_S1_S2_THE_INSTANCE_WILL_SHORTLY_EXPIRE : NpcString.YOU_HAVE_FAILED_AT_S1_S2, 8000,
-						ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false, "#" + NpcString.HEART_OF_IMMORTALITY.getId(), "#" + NpcString.ATTACK.getId()));
+			p.sendPacket(new ExShowScreenMessage(win ? NpcString.CONGRATULATIONS_YOU_HAVE_SUCCEEDED_AT_S1_S2_THE_INSTANCE_WILL_SHORTLY_EXPIRE : NpcString.YOU_HAVE_FAILED_AT_S1_S2, 8000, ExShowScreenMessage.ScreenMessageAlign.MIDDLE_CENTER, false, 1, -1, false, "#" + NpcString.HEART_OF_IMMORTALITY.getId(), "#" + NpcString.ATTACK.getId()));
 			p.showQuestMovie(win ? ExStartScenePlayer.SCENE_ECHMUS_SUCCESS : ExStartScenePlayer.SCENE_ECHMUS_FAIL);
 		}
 		for (NpcInstance npc : getNpcs())

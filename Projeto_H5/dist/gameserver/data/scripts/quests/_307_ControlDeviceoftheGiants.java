@@ -68,8 +68,7 @@ public class _307_ControlDeviceoftheGiants extends Quest implements ScriptFile
 		}
 		else if (event.equalsIgnoreCase("summon_rb"))
 		{
-			if (ServerVariables.getLong("HekatonPrimeRespawn", 0) < System.currentTimeMillis() && st.getQuestItemsCount(CaveExplorationText1Sheet) >= 1 && st.getQuestItemsCount(CaveExplorationText2Sheet) >= 1
-						&& st.getQuestItemsCount(CaveExplorationText3Sheet) >= 1)
+			if (ServerVariables.getLong("HekatonPrimeRespawn", 0) < System.currentTimeMillis() && st.getQuestItemsCount(CaveExplorationText1Sheet) >= 1 && st.getQuestItemsCount(CaveExplorationText2Sheet) >= 1 && st.getQuestItemsCount(CaveExplorationText3Sheet) >= 1)
 			{
 				st.takeItems(CaveExplorationText1Sheet, 1);
 				st.takeItems(CaveExplorationText2Sheet, 1);

@@ -60,8 +60,7 @@ public class EndFightByTimeThread extends RunnableImpl
 				}
 				ActiveBattleManager.showScreenMsgAll(_battle, msgToShow);
 			}
-			final ScheduledFuture<?> thread = ThreadPoolManager.getInstance().schedule(new EndFightByTimeThread(_remainingTimeSeconds - secondsToAwait, _battle, true),
-						TimeUnit.SECONDS.toMillis(secondsToAwait));
+			final ScheduledFuture<?> thread = ThreadPoolManager.getInstance().schedule(new EndFightByTimeThread(_remainingTimeSeconds - secondsToAwait, _battle, true), TimeUnit.SECONDS.toMillis(secondsToAwait));
 			_battle.setStopFightThread(thread);
 		}
 	}

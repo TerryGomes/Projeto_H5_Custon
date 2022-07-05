@@ -262,8 +262,7 @@ public class RequestProcureCropList extends L2GameClientPacket
 					continue;
 				}
 
-				activeChar.sendPacket(new SystemMessage2(SystemMsg.TRADED_S2_OF_S1_CROPS).addItemName(cropId).addInteger(count), SystemMessage2.removeItems(cropId, count),
-							SystemMessage2.obtainItems(rewardItemId, rewardItemCount, 0));
+				activeChar.sendPacket(new SystemMessage2(SystemMsg.TRADED_S2_OF_S1_CROPS).addItemName(cropId).addInteger(count), SystemMessage2.removeItems(cropId, count), SystemMessage2.obtainItems(rewardItemId, rewardItemCount, 0));
 				if (fee > 0L)
 				{
 					activeChar.sendPacket(new SystemMessage2(SystemMsg.S1_ADENA_HAS_BEEN_WITHDRAWN_TO_PAY_FOR_PURCHASING_FEES).addInteger(fee));

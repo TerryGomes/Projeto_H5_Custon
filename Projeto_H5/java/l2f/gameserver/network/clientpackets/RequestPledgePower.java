@@ -39,8 +39,7 @@ public class RequestPledgePower extends L2GameClientPacket
 			{
 				if (_rank == 9) // Академикам оставляем только перечисленные ниже права
 				{
-					_privs = (_privs & Clan.CP_CL_WAREHOUSE_SEARCH) + (_privs & Clan.CP_CH_ENTRY_EXIT) + (_privs & Clan.CP_CS_ENTRY_EXIT) + (_privs & Clan.CP_CH_USE_FUNCTIONS)
-								+ (_privs & Clan.CP_CS_USE_FUNCTIONS);
+					_privs = (_privs & Clan.CP_CL_WAREHOUSE_SEARCH) + (_privs & Clan.CP_CH_ENTRY_EXIT) + (_privs & Clan.CP_CS_ENTRY_EXIT) + (_privs & Clan.CP_CH_USE_FUNCTIONS) + (_privs & Clan.CP_CS_USE_FUNCTIONS);
 				}
 				activeChar.getClan().setRankPrivs(_rank, _privs);
 				activeChar.getClan().updatePrivsForRank(_rank);

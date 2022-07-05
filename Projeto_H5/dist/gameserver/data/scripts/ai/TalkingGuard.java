@@ -113,8 +113,7 @@ public class TalkingGuard extends Guard
 			{
 				if (target.isPlayer() && target.getKarma() <= 0 && (_lastNormalSay + _sayNormalPeriod < System.currentTimeMillis()) && actor.isInRange(target, 250L))
 				{
-					Functions.npcSay(actor, target.getPlayer().getSex() == 0 ? _sayNormalTextM[Rnd.get(_sayNormalTextM.length)].replace("{name}", target.getName())
-								: _sayNormalTextF[Rnd.get(_sayNormalTextF.length)].replace("{name}", target.getName()));
+					Functions.npcSay(actor, target.getPlayer().getSex() == 0 ? _sayNormalTextM[Rnd.get(_sayNormalTextM.length)].replace("{name}", target.getName()) : _sayNormalTextF[Rnd.get(_sayNormalTextF.length)].replace("{name}", target.getName()));
 					_lastNormalSay = System.currentTimeMillis();
 				}
 			}

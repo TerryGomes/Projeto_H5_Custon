@@ -352,8 +352,7 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 			final SpawnExObject exObject = getFirstObject(ENVOY);
 			if (exObject.isSpawned())
 			{
-				info("Last siege: " + TimeUtils.toSimpleFormat(getResidence().getLastSiegeDate()) + ", own date: " + TimeUtils.toSimpleFormat(getResidence().getOwnDate()) + ", siege date: "
-							+ TimeUtils.toSimpleFormat(getResidence().getSiegeDate()));
+				info("Last siege: " + TimeUtils.toSimpleFormat(getResidence().getLastSiegeDate()) + ", own date: " + TimeUtils.toSimpleFormat(getResidence().getOwnDate()) + ", siege date: " + TimeUtils.toSimpleFormat(getResidence().getSiegeDate()));
 			}
 
 			spawnAction(ENVOY, true);
@@ -533,8 +532,7 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 			{
 				return SystemMsg.INVALID_TARGET;
 			}
-			if (attacker.isPlayer() && target.isPlayer() && attacker.getPlayer().getClan() != null && attacker.getPlayer().getClan().getAlliance() != null && target.getPlayer().getClan() != null
-						&& target.getPlayer().getClan().getAlliance() != null && attacker.getPlayer().getClan().getAlliance() == target.getPlayer().getClan().getAlliance())
+			if (attacker.isPlayer() && target.isPlayer() && attacker.getPlayer().getClan() != null && attacker.getPlayer().getClan().getAlliance() != null && target.getPlayer().getClan() != null && target.getPlayer().getClan().getAlliance() != null && attacker.getPlayer().getClan().getAlliance() == target.getPlayer().getClan().getAlliance())
 			{
 				return SystemMsg.INVALID_TARGET;
 			}
@@ -606,8 +604,7 @@ public class FortressSiegeEvent extends SiegeEvent<Fortress, SiegeClanObject>
 			{
 				return null;
 			}
-			if (attacker.isPlayer() && target.isPlayer() && attacker.getPlayer().getClan() != null && attacker.getPlayer().getClan().getAlliance() != null && target.getPlayer().getClan() != null
-						&& target.getPlayer().getClan().getAlliance() != null && attacker.getPlayer().getClan().getAlliance() == target.getPlayer().getAlliance())
+			if (attacker.isPlayer() && target.isPlayer() && attacker.getPlayer().getClan() != null && attacker.getPlayer().getClan().getAlliance() != null && target.getPlayer().getClan() != null && target.getPlayer().getClan().getAlliance() != null && attacker.getPlayer().getClan().getAlliance() == target.getPlayer().getAlliance())
 			{
 				return null;
 			}

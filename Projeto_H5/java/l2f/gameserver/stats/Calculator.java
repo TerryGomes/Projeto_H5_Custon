@@ -86,7 +86,6 @@ public final class Calculator
 	/**
 	 * Run each Func of the Calculator.<BR><BR>
 	 */
-	@SuppressWarnings("unused")
 	public void calc(Env env)
 	{
 		Func[] funcs = _functions;

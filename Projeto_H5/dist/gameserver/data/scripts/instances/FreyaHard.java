@@ -75,8 +75,7 @@ public class FreyaHard extends Reflection
 
 	private final AtomicInteger raidplayers = new AtomicInteger();
 
-	private static Territory centralRoom = new Territory().add(new Polygon().add(114264, -113672).add(113640, -114344).add(113640, -115240).add(114264, -115912).add(115176, -115912).add(115800, -115272)
-				.add(115800, -114328).add(115192, -113672).setZmax(-11225).setZmin(-11225));
+	private static Territory centralRoom = new Territory().add(new Polygon().add(114264, -113672).add(113640, -114344).add(113640, -115240).add(114264, -115912).add(115176, -115912).add(115800, -115272).add(115800, -114328).add(115192, -113672).setZmax(-11225).setZmin(-11225));
 
 	public FreyaHard()
 	{

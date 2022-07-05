@@ -134,8 +134,7 @@ public class OfflineBufferManager
 				}
 
 				// Check for conditions
-				if (player.isAlikeDead() || player.isInOlympiadMode() || player.isMounted() || player.isCastingNow() || player.getOlympiadObserveGame() != null || player.getOlympiadGame() != null
-							|| Olympiad.isRegisteredInComp(player))
+				if (player.isAlikeDead() || player.isInOlympiadMode() || player.isMounted() || player.isCastingNow() || player.getOlympiadObserveGame() != null || player.getOlympiadGame() != null || Olympiad.isRegisteredInComp(player))
 				{
 					player.sendMessage("You don't meet the required conditions to put a buff store right now");
 					break;
@@ -166,8 +165,7 @@ public class OfflineBufferManager
 
 					// Avoid warcryer skills when being a overlord
 					// Forbidden skill list
-					if ((player.getClassId().equalsOrChildOf(ClassId.dominator) && (skill.getTargetType() == SkillTargetType.TARGET_PARTY || skill.getTargetType() == SkillTargetType.TARGET_ONE))
-								|| Config.BUFF_STORE_FORBIDDEN_SKILL_LIST.contains(skill.getId()))
+					if ((player.getClassId().equalsOrChildOf(ClassId.dominator) && (skill.getTargetType() == SkillTargetType.TARGET_PARTY || skill.getTargetType() == SkillTargetType.TARGET_ONE)) || Config.BUFF_STORE_FORBIDDEN_SKILL_LIST.contains(skill.getId()))
 					{
 						continue;
 					}
@@ -306,8 +304,7 @@ public class OfflineBufferManager
 				}
 
 				// Check buffing conditions
-				if (player.getPvpFlag() > 0 || player.isInCombat() || player.getKarma() > 0 || player.isAlikeDead() || player.isJailed() || player.isInOlympiadMode() || player.isCursedWeaponEquipped()
-							|| player.isInStoreMode() || player.isInTrade() || player.getEnchantScroll() != null || player.isFishing())
+				if (player.getPvpFlag() > 0 || player.isInCombat() || player.getKarma() > 0 || player.isAlikeDead() || player.isJailed() || player.isInOlympiadMode() || player.isCursedWeaponEquipped() || player.isInStoreMode() || player.isInTrade() || player.getEnchantScroll() != null || player.isFishing())
 				{
 					player.sendMessage("You don't meet the required conditions to use the buffer right now");
 					break;
@@ -425,8 +422,7 @@ public class OfflineBufferManager
 			buffList.append("<table height=35 border=0 cellspacing=2 cellpadding=0 bgcolor=" + (changeColor ? "171612" : "23221e") + ">");
 			buffList.append("<tr>");
 			buffList.append("<td width=5></td>");
-			buffList.append("<td width=30 align=center background=" + buff.getIcon() + "><button value=\"\" action=\"bypass -h BuffStore purchasebuff " + buffer.getOwner().getObjectId() + " "
-						+ (isForPlayer ? "player" : "summon") + " " + buff.getId() + " " + currentPage + "\" width=32 height=32 back=L2UI_CT1.ItemWindow_DF_Frame_Down fore=L2UI_CT1.ItemWindow_DF_Frame></td>");
+			buffList.append("<td width=30 align=center background=" + buff.getIcon() + "><button value=\"\" action=\"bypass -h BuffStore purchasebuff " + buffer.getOwner().getObjectId() + " " + (isForPlayer ? "player" : "summon") + " " + buff.getId() + " " + currentPage + "\" width=32 height=32 back=L2UI_CT1.ItemWindow_DF_Frame_Down fore=L2UI_CT1.ItemWindow_DF_Frame></td>");
 			buffList.append("<td width=12></td>");
 			if (buff.getLevel() > baseMaxLvl)
 			{
@@ -435,15 +431,12 @@ public class OfflineBufferManager
 				enchantLvl = (buff.getLevel() - baseMaxLvl) % buff.getEnchantLevelCount();
 				enchantLvl = (enchantLvl == 0 ? buff.getEnchantLevelCount() : enchantLvl);
 
-				buffList.append(
-							"<td fixwidth=240>" + "<font name=__SYSTEMWORLDFONT color=C73232>" + buff.getName() + "<font>" + " - <font color=329231>Level</font> <font color=FFFFFF>" + baseMaxLvl + "</font>");
-				buffList.append(" <br1> › <font color=F1C101 name=__SYSTEMWORLDFONT>Enchant: </font><font color=ffd969 name=CreditTextNormal>+" + enchantLvl + " "
-							+ (enchantType >= 3 ? "Power" : (enchantType >= 2 ? "Cost" : "Time")) + "</font></td>");
+				buffList.append("<td fixwidth=240>" + "<font name=__SYSTEMWORLDFONT color=C73232>" + buff.getName() + "<font>" + " - <font color=329231>Level</font> <font color=FFFFFF>" + baseMaxLvl + "</font>");
+				buffList.append(" <br1> › <font color=F1C101 name=__SYSTEMWORLDFONT>Enchant: </font><font color=ffd969 name=CreditTextNormal>+" + enchantLvl + " " + (enchantType >= 3 ? "Power" : (enchantType >= 2 ? "Cost" : "Time")) + "</font></td>");
 			}
 			else
 			{
-				buffList.append("<td fixwidth=240>" + "<font name=__SYSTEMWORLDFONT color=C73232>" + buff.getName() + "<font>" + " - <font color=329231>Level</font> <font color=FFFFFF>" + buff.getLevel()
-							+ "</font>");
+				buffList.append("<td fixwidth=240>" + "<font name=__SYSTEMWORLDFONT color=C73232>" + buff.getName() + "<font>" + " - <font color=329231>Level</font> <font color=FFFFFF>" + buff.getLevel() + "</font>");
 				buffList.append(" <br1> › <font color=F1C101 name=__SYSTEMWORLDFONT>Enchant: </font><font color=FFFFFF name=CreditTextNormal> None</font></td>");
 
 			}
@@ -467,8 +460,7 @@ public class OfflineBufferManager
 		final String nextPageButton;
 		if (currentPage > 0)
 		{
-			previousPageButton = "<button value=\"\" width=15 height=15 action=\"bypass -h BuffStore bufflist " + buffer.getOwner().getObjectId() + " " + (isForPlayer ? "player" : "summon") + " "
-						+ (currentPage - 1) + "\" back=L2UI_CT1.ItemWindow_DF_Frame_Down fore=L2UI_CT1.ItemWindow_DF_Frame>";
+			previousPageButton = "<button value=\"\" width=15 height=15 action=\"bypass -h BuffStore bufflist " + buffer.getOwner().getObjectId() + " " + (isForPlayer ? "player" : "summon") + " " + (currentPage - 1) + "\" back=L2UI_CT1.ItemWindow_DF_Frame_Down fore=L2UI_CT1.ItemWindow_DF_Frame>";
 		}
 		else
 		{
@@ -477,8 +469,7 @@ public class OfflineBufferManager
 
 		if (currentPage < maxPage)
 		{
-			nextPageButton = "<button value=\"\" width=15 height=15 action=\"bypass -h BuffStore bufflist " + buffer.getOwner().getObjectId() + " " + (isForPlayer ? "player" : "summon") + " "
-						+ (currentPage + 1) + "\" back=L2UI_CT1.ItemWindow_DF_Frame_Down fore=L2UI_CT1.ItemWindow_DF_Frame>";
+			nextPageButton = "<button value=\"\" width=15 height=15 action=\"bypass -h BuffStore bufflist " + buffer.getOwner().getObjectId() + " " + (isForPlayer ? "player" : "summon") + " " + (currentPage + 1) + "\" back=L2UI_CT1.ItemWindow_DF_Frame_Down fore=L2UI_CT1.ItemWindow_DF_Frame>";
 		}
 		else
 		{
@@ -487,8 +478,7 @@ public class OfflineBufferManager
 
 		html.replace("%bufferId%", buffer.getOwner().getObjectId());
 		html.replace("%bufferClass%", Util.toProperCaseAll(CharTemplateHolder.getInstance().getTemplate(buffer.getOwner().getClassId(), false).className));
-		html.replace("%bufferLvl%",
-					(buffer.getOwner().getLevel() >= 76 && buffer.getOwner().getLevel() < 80 ? 76 : (buffer.getOwner().getLevel() >= 84 ? 84 : Math.round(buffer.getOwner().getLevel() / 10) * 10)));
+		html.replace("%bufferLvl%", (buffer.getOwner().getLevel() >= 76 && buffer.getOwner().getLevel() < 80 ? 76 : (buffer.getOwner().getLevel() >= 84 ? 84 : Math.round(buffer.getOwner().getLevel() / 10) * 10)));
 		html.replace("%bufferName%", buffer.getOwner().getName());
 		html.replace("%bufferMp%", (int) buffer.getOwner().getCurrentMp());
 		html.replace("%buffPrice%", Util.convertToLineagePriceFormat(buffer.getBuffPrice()));

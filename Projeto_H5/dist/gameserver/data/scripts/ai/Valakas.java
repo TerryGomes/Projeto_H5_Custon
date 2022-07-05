@@ -31,8 +31,7 @@ public class Valakas extends DefaultAI
 	final Skill s_lava_skin = getSkill(4680, 1), s_fear = getSkill(4689, 1), s_defence_down = getSkill(5864, 1), s_berserk = getSkill(5865, 1), s_regen = getSkill(4691, 1);
 
 	// Offensive damage skills
-	final Skill s_tremple_left = getSkill(4681, 1), s_tremple_right = getSkill(4682, 1), s_tail_stomp_a = getSkill(4685, 1), s_tail_lash = getSkill(4688, 1), s_meteor = getSkill(4690, 1),
-				s_breath_low = getSkill(4683, 1), s_breath_high = getSkill(4684, 1);
+	final Skill s_tremple_left = getSkill(4681, 1), s_tremple_right = getSkill(4682, 1), s_tail_stomp_a = getSkill(4685, 1), s_tail_lash = getSkill(4688, 1), s_meteor = getSkill(4690, 1), s_breath_low = getSkill(4683, 1), s_breath_high = getSkill(4684, 1);
 
 	// Offensive percentage skills
 	final Skill s_destroy_body = getSkill(5860, 1), s_destroy_soul = getSkill(5861, 1); /* s_destroy_body2 = getSkill(5862, 1), s_destroy_soul2 = getSkill(5863, 1) */
@@ -152,7 +151,6 @@ public class Valakas extends DefaultAI
 					actor.startConfused();
 					ThreadPoolManager.getInstance().schedule(new RunnableImpl()
 					{
-						@SuppressWarnings("unused")
 						@Override
 						public void runImpl() throws Exception
 						{

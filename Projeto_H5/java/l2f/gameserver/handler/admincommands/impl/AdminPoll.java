@@ -19,8 +19,7 @@ public class AdminPoll implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_poll, admin_poll_set_question, admin_poll_set_answers, admin_poll_set_time, admin_poll_start, admin_poll_end, admin_poll_current_answers, admin_poll_delete_answer, admin_poll_add_new_answer,
-		admin_poll_delete
+		admin_poll, admin_poll_set_question, admin_poll_set_answers, admin_poll_set_time, admin_poll_start, admin_poll_end, admin_poll_current_answers, admin_poll_delete_answer, admin_poll_add_new_answer, admin_poll_delete
 	}
 
 	@Override
@@ -256,8 +255,7 @@ public class AdminPoll implements IAdminCommandHandler
 
 	private static String getButton(String buttonText, String bypass)
 	{
-		return "<button value=\"" + buttonText + "\" action=\"bypass -h " + bypass + "\" width=" + (buttonText.length() > 18 ? 170 : 120)
-					+ " height=30 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">";
+		return "<button value=\"" + buttonText + "\" action=\"bypass -h " + bypass + "\" width=" + (buttonText.length() > 18 ? 170 : 120) + " height=30 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">";
 	}
 
 	@Override

@@ -156,9 +156,7 @@ public class CharacterSelectionInfo extends L2GameServerPacket
 		CharSelectInfoPackage charInfoPackage;
 		List<CharSelectInfoPackage> characterList = new ArrayList<>();
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement(
-								"SELECT obj_Id, sex, char_name, x, y, z, pkkills, pvpkills, face, hairstyle, haircolor, clanid, karma, deletetime, lastAccess, accesslevel, vitality FROM characters WHERE account_name=? LIMIT 7"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT obj_Id, sex, char_name, x, y, z, pkkills, pvpkills, face, hairstyle, haircolor, clanid, karma, deletetime, lastAccess, accesslevel, vitality FROM characters WHERE account_name=? LIMIT 7"))
 		{
 			statement.setString(1, loginName);
 

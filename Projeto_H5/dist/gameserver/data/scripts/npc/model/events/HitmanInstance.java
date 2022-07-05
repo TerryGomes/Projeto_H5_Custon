@@ -190,8 +190,7 @@ public class HitmanInstance extends NpcInstance
 
 				sb.append("<tr>");
 				sb.append("<td align=center width=120>").append("Reward:").append("</td>");
-				sb.append("<td align=center width=120><font color=\"LEVEL\">").append(order.getItemCount()).append(" ").append(ItemFunctions.createItem(order.getItemId()).getTemplate().getName())
-							.append("</font></td>");
+				sb.append("<td align=center width=120><font color=\"LEVEL\">").append(order.getItemCount()).append(" ").append(ItemFunctions.createItem(order.getItemId()).getTemplate().getName()).append("</font></td>");
 				sb.append("</tr>");
 				sb.append("</table><br><br><br>");
 			}
@@ -208,8 +207,7 @@ public class HitmanInstance extends NpcInstance
 				}
 				else
 				{
-					sb.append("<center><button value=\"").append(i).append("\" action=\"bypass -h npc_%objectId%_openpage ").append(i)
-								.append("\" width=25 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></center>&nbsp;");
+					sb.append("<center><button value=\"").append(i).append("\" action=\"bypass -h npc_%objectId%_openpage ").append(i).append("\" width=25 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></center>&nbsp;");
 				}
 			}
 

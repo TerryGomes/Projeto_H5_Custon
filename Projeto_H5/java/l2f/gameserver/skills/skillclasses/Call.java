@@ -143,8 +143,7 @@ public class Call extends Skill
 		// "At the Olympiad Stadium"
 		// "In the area of certain raid bosses and epic bosses"
 
-		if (activeChar.isInZoneBattle() || activeChar.isInZone(ZoneType.SIEGE) || activeChar.isInZone(no_restart) || activeChar.isInZone(no_summon) || activeChar.isInZone(ZoneType.epic) || activeChar.isInBoat()
-					|| activeChar.getReflection() != ReflectionManager.DEFAULT)
+		if (activeChar.isInZoneBattle() || activeChar.isInZone(ZoneType.SIEGE) || activeChar.isInZone(no_restart) || activeChar.isInZone(no_summon) || activeChar.isInZone(ZoneType.epic) || activeChar.isInBoat() || activeChar.getReflection() != ReflectionManager.DEFAULT)
 		{
 			return Msg.YOU_MAY_NOT_SUMMON_FROM_YOUR_CURRENT_LOCATION;
 		}
@@ -162,8 +161,7 @@ public class Call extends Skill
 
 	public static SystemMessage canBeSummoned(Creature player, Creature target)
 	{
-		if ((target == null) || (!target.isPlayer()) || (target.getPlayer().isTerritoryFlagEquipped()) || (target.isFlying()) || (target.isInObserverMode()) || (target.getPlayer().isFestivalParticipant())
-					|| (!target.getPlayer().getPlayerAccess().UseTeleport))
+		if ((target == null) || (!target.isPlayer()) || (target.getPlayer().isTerritoryFlagEquipped()) || (target.isFlying()) || (target.isInObserverMode()) || (target.getPlayer().isFestivalParticipant()) || (!target.getPlayer().getPlayerAccess().UseTeleport))
 		{
 			return Msg.INVALID_TARGET;
 		}
@@ -171,8 +169,7 @@ public class Call extends Skill
 		{
 			return Msg.YOU_CANNOT_SUMMON_PLAYERS_WHO_ARE_CURRENTLY_PARTICIPATING_IN_THE_GRAND_OLYMPIAD;
 		}
-		if ((target.isInZoneBattle()) || (target.isInZone(ZoneType.SIEGE)) || (target.isInZone(ZoneType.no_restart)) || (target.isInZone(ZoneType.no_summon)) || target.isInZone(ZoneType.epic)
-					|| (target.getReflection() != ReflectionManager.DEFAULT) || (target.isInBoat()))
+		if ((target.isInZoneBattle()) || (target.isInZone(ZoneType.SIEGE)) || (target.isInZone(ZoneType.no_restart)) || (target.isInZone(ZoneType.no_summon)) || target.isInZone(ZoneType.epic) || (target.getReflection() != ReflectionManager.DEFAULT) || (target.isInBoat()))
 		{
 			return Msg.YOUR_TARGET_IS_IN_AN_AREA_WHICH_BLOCKS_SUMMONING;
 		}

@@ -165,8 +165,7 @@ public class ClanTable
 			_clans.put(clan.getClanId(), clan);
 			if (clan.getDissolvedClanTime() != 0)
 			{
-				LOG.info("ClanDissolve: clanId=" + clan.getClanId() + " dissolvedClanTime=" + TimeUtils.convertDateToString(clan.getDissolvedClanTime()) + " systemTime="
-							+ TimeUtils.convertDateToString(System.currentTimeMillis()));
+				LOG.info("ClanDissolve: clanId=" + clan.getClanId() + " dissolvedClanTime=" + TimeUtils.convertDateToString(clan.getDissolvedClanTime()) + " systemTime=" + TimeUtils.convertDateToString(System.currentTimeMillis()));
 				if (clan.getDissolvedClanTime() <= System.currentTimeMillis())
 				{
 					deleteClan(clan.getClanId());

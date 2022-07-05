@@ -448,7 +448,6 @@ public abstract class Effect extends RunnableImpl implements Comparable<Effect>,
 		run();
 	}
 
-	@SuppressWarnings("unused")
 	@Override
 	public final void runImpl() throws Exception
 	{

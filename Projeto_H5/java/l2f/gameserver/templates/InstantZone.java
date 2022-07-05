@@ -189,10 +189,8 @@ public class InstantZone
 
 	private final InstantZoneEntryType _entryType;
 
-	public InstantZone(int id, String name, SchedulingPattern resetReuse, int sharedReuseGroup, int timelimit, boolean dispelBuffs, int minLevel, int maxLevel, int minParty, int maxParty, int timer,
-				boolean onPartyDismiss, List<Location> tele, Location ret, int mapx, int mapy, IntObjectMap<DoorInfo> doors, Map<String, ZoneInfo> zones, Map<String, SpawnInfo2> spawns,
-				List<SpawnInfo> spawnsInfo, int collapseIfEmpty, int maxChannels, int removedItemId, int removedItemCount, boolean removedItemNecessity, int giveItemId, int givedItemCount, int requiredQuestId,
-				boolean setReuseUponEntry, StatsSet params)
+	public InstantZone(int id, String name, SchedulingPattern resetReuse, int sharedReuseGroup, int timelimit, boolean dispelBuffs, int minLevel, int maxLevel, int minParty, int maxParty, int timer, boolean onPartyDismiss, List<Location> tele, Location ret, int mapx, int mapy, IntObjectMap<DoorInfo> doors, Map<String, ZoneInfo> zones, Map<String, SpawnInfo2> spawns, List<SpawnInfo> spawnsInfo, int collapseIfEmpty, int maxChannels, int removedItemId, int removedItemCount,
+				boolean removedItemNecessity, int giveItemId, int givedItemCount, int requiredQuestId, boolean setReuseUponEntry, StatsSet params)
 	{
 		_id = id;
 		_name = name;

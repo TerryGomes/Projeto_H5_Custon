@@ -73,8 +73,7 @@ public class AntiFeedManager
 
 		// Synerge - Chequeamos diferencias de level maximo
 		// Synerge - Chequeamos si esta en el mismo clan o ally
-		if ((Config.ANTIFEED_MAX_LVL_DIFFERENCE > 0 && attackerPlayer.getLevel() - target.getLevel() > Config.ANTIFEED_MAX_LVL_DIFFERENCE)
-					|| (targetPlayer.getClanId() > 0 && targetPlayer.getClanId() == attackerPlayer.getClanId()))
+		if ((Config.ANTIFEED_MAX_LVL_DIFFERENCE > 0 && attackerPlayer.getLevel() - target.getLevel() > Config.ANTIFEED_MAX_LVL_DIFFERENCE) || (targetPlayer.getClanId() > 0 && targetPlayer.getClanId() == attackerPlayer.getClanId()))
 		{
 			return false;
 		}

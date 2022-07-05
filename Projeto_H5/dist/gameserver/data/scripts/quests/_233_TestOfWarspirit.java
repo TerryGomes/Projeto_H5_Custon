@@ -376,8 +376,7 @@ public class _233_TestOfWarspirit extends Quest implements ScriptFile
 			{
 				return "30515-01.htm";
 			}
-			if (st.getQuestItemsCount(RACOYS_TOTEM) == 0 && (st.getQuestItemsCount(KIRUNAS_REMAINS2) > 0 || st.getQuestItemsCount(WARSPIRIT_TOTEM) > 0 || st.getQuestItemsCount(BRAKIS_REMAINS2) > 0
-						|| st.getQuestItemsCount(HERMODTS_REMAINS2) > 0 || st.getQuestItemsCount(TAMLIN_ORC_HEAD) > 0 || st.getQuestItemsCount(TONARS_REMAINS2) > 0))
+			if (st.getQuestItemsCount(RACOYS_TOTEM) == 0 && (st.getQuestItemsCount(KIRUNAS_REMAINS2) > 0 || st.getQuestItemsCount(WARSPIRIT_TOTEM) > 0 || st.getQuestItemsCount(BRAKIS_REMAINS2) > 0 || st.getQuestItemsCount(HERMODTS_REMAINS2) > 0 || st.getQuestItemsCount(TAMLIN_ORC_HEAD) > 0 || st.getQuestItemsCount(TONARS_REMAINS2) > 0))
 			{
 				return "30515-05.htm";
 			}

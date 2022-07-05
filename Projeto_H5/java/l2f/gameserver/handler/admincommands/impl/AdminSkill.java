@@ -33,8 +33,7 @@ public class AdminSkill implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_show_skills, admin_remove_skills, admin_skill_list, admin_skill_index, admin_add_skill, admin_remove_skill, admin_get_skills, admin_reset_skills, admin_give_all_skills, admin_show_effects,
-		admin_debug_stats, admin_remove_cooldown, admin_resetreuse, admin_people_having_effect, admin_buff, admin_show_skill, admin_give_all_clan_skills
+		admin_show_skills, admin_remove_skills, admin_skill_list, admin_skill_index, admin_add_skill, admin_remove_skill, admin_get_skills, admin_reset_skills, admin_give_all_skills, admin_show_effects, admin_debug_stats, admin_remove_cooldown, admin_resetreuse, admin_people_having_effect, admin_buff, admin_show_skill, admin_give_all_clan_skills
 	}
 
 	private static Skill[] adminSkills;
@@ -326,8 +325,7 @@ public class AdminSkill implements IAdminCommandHandler
 		replyMSG.append("<tr><td width=80>Name:</td><td width=60>Level:</td><td width=40>Id:</td></tr>");
 		for (Skill element : skills)
 		{
-			replyMSG.append("<tr><td width=80><a action=\"bypass -h admin_remove_skill " + element.getId() + "\">" + element.getName() + "</a></td><td width=60>" + element.getLevel() + "</td><td width=40>"
-						+ element.getId() + "</td></tr>");
+			replyMSG.append("<tr><td width=80><a action=\"bypass -h admin_remove_skill " + element.getId() + "\">" + element.getName() + "</a></td><td width=60>" + element.getLevel() + "</td><td width=40>" + element.getId() + "</td></tr>");
 		}
 		replyMSG.append("</table>");
 		replyMSG.append("<br><center><table>");
@@ -335,8 +333,7 @@ public class AdminSkill implements IAdminCommandHandler
 		replyMSG.append("<tr><td>Id: </td>");
 		replyMSG.append("<td><edit var=\"id_to_remove\" width=110></td></tr>");
 		replyMSG.append("</table></center>");
-		replyMSG.append(
-					"<center><button value=\"Remove skill\" action=\"bypass -h admin_remove_skill $id_to_remove\" width=110 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></center>");
+		replyMSG.append("<center><button value=\"Remove skill\" action=\"bypass -h admin_remove_skill $id_to_remove\" width=110 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></center>");
 		replyMSG.append("<br><center><button value=\"Back\" action=\"bypass -h admin_current_player\" width=40 height=15></center>");
 		replyMSG.append("</body></html>");
 

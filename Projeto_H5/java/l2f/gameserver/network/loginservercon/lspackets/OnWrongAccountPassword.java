@@ -56,8 +56,7 @@ public class OnWrongAccountPassword extends ReceivablePacket
 				{
 					final String charName = CharacterDAO.getNameByObjectId(charId);
 					final SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy hh:mm");
-					Functions.sendSystemMail(charName, "WARNING", "Someone tried to enter your Account(at " + dateFormat.format(new Date()) + ") and wrote Wrong Password(" + passwordWrote + ")!",
-								Collections.emptyMap());
+					Functions.sendSystemMail(charName, "WARNING", "Someone tried to enter your Account(at " + dateFormat.format(new Date()) + ") and wrote Wrong Password(" + passwordWrote + ")!", Collections.emptyMap());
 				}
 			}
 			else
@@ -69,8 +68,7 @@ public class OnWrongAccountPassword extends ReceivablePacket
 					{
 						return;
 					}
-					final IStaticPacket packet = new Say2(0, Config.NORMAL_PLAYER_MSG_TYPE_ON_WRONG_ACCOUNT, StringHolder.getNotNull(onlinePlayer, "Security.SomeoneEnteringAccountPMOnlineTitle", new Object[0]),
-								StringHolder.getNotNull(onlinePlayer, "Security.SomeoneEnteringAccountPMOnlineBody", passwordWrote));
+					final IStaticPacket packet = new Say2(0, Config.NORMAL_PLAYER_MSG_TYPE_ON_WRONG_ACCOUNT, StringHolder.getNotNull(onlinePlayer, "Security.SomeoneEnteringAccountPMOnlineTitle", new Object[0]), StringHolder.getNotNull(onlinePlayer, "Security.SomeoneEnteringAccountPMOnlineBody", passwordWrote));
 					onlinePlayer.sendPacket(packet);
 				}
 				else

@@ -76,9 +76,7 @@ public final class StreamDatabaseHandler
 
 	public static void updateStream(Stream stream)
 	{
-		try (Connection con = StreamDatabaseFactory.getStreamDatabaseConnection();
-					PreparedStatement statement = con.prepareStatement(
-								"UPDATE streams SET connected_player_id=?, connected_player_server=?, ids_awaiting_approval = ?, not_rewarded_seconds = ?, total_rewarded_seconds_today = ?, punished_until_date = ? WHERE channel_name=?"))
+		try (Connection con = StreamDatabaseFactory.getStreamDatabaseConnection(); PreparedStatement statement = con.prepareStatement("UPDATE streams SET connected_player_id=?, connected_player_server=?, ids_awaiting_approval = ?, not_rewarded_seconds = ?, total_rewarded_seconds_today = ?, punished_until_date = ? WHERE channel_name=?"))
 		{
 			statement.setInt(1, stream.getAttachedPlayerId());
 			statement.setString(2, stream.getAttachedPlayerServer());
@@ -133,8 +131,7 @@ public final class StreamDatabaseHandler
 
 	public static void saveRewardTimes()
 	{
-		try (Connection con = StreamDatabaseFactory.getStreamDatabaseConnection();
-					PreparedStatement statement = con.prepareStatement("UPDATE streams SET not_rewarded_seconds = ?, total_rewarded_seconds_today = ? WHERE channel_name=?"))
+		try (Connection con = StreamDatabaseFactory.getStreamDatabaseConnection(); PreparedStatement statement = con.prepareStatement("UPDATE streams SET not_rewarded_seconds = ?, total_rewarded_seconds_today = ? WHERE channel_name=?"))
 		{
 			for (Stream stream : StreamsHolder.getInstance().getAllActiveStreamsCopy())
 			{

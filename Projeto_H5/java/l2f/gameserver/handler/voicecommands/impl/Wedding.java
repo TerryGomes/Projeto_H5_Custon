@@ -308,8 +308,7 @@ public class Wedding implements IVoicedCommandHandler
 			return false;
 		}
 
-		if (partner.isInOlympiadMode() || partner.isFestivalParticipant() || activeChar.isMovementDisabled() || activeChar.isMuted(null) || activeChar.isInOlympiadMode() || activeChar.isInDuel()
-					|| activeChar.isFestivalParticipant() || activeChar.getPlayer().isTerritoryFlagEquipped() || partner.isInZone(no_summon))
+		if (partner.isInOlympiadMode() || partner.isFestivalParticipant() || activeChar.isMovementDisabled() || activeChar.isMuted(null) || activeChar.isInOlympiadMode() || activeChar.isInDuel() || activeChar.isFestivalParticipant() || activeChar.getPlayer().isTerritoryFlagEquipped() || partner.isInZone(no_summon))
 		{
 			activeChar.sendMessage(new CustomMessage("common.TryLater", activeChar));
 			return false;
@@ -332,9 +331,7 @@ public class Wedding implements IVoicedCommandHandler
 		// "на Олимпийский стадион"
 		// "в зоны определенных рейд-боссов и эпик-боссов"
 		// в режиме обсервера или к обсерверу
-		if (partner.isInZoneBattle() || partner.isInZone(Zone.ZoneType.SIEGE) || partner.isInZone(no_restart) || partner.isInOlympiadMode() || activeChar.isInZoneBattle()
-					|| activeChar.isInZone(Zone.ZoneType.SIEGE) || activeChar.isInZone(no_restart) || activeChar.isInOlympiadMode() || partner.getReflection() != ReflectionManager.DEFAULT
-					|| partner.isInZone(no_summon) || activeChar.isInObserverMode() || partner.isInObserverMode())
+		if (partner.isInZoneBattle() || partner.isInZone(Zone.ZoneType.SIEGE) || partner.isInZone(no_restart) || partner.isInOlympiadMode() || activeChar.isInZoneBattle() || activeChar.isInZone(Zone.ZoneType.SIEGE) || activeChar.isInZone(no_restart) || activeChar.isInOlympiadMode() || partner.getReflection() != ReflectionManager.DEFAULT || partner.isInZone(no_summon) || activeChar.isInObserverMode() || partner.isInObserverMode())
 		{
 			activeChar.sendPacket(SystemMsg.YOUR_TARGET_IS_IN_AN_AREA_WHICH_BLOCKS_SUMMONING);
 			return false;

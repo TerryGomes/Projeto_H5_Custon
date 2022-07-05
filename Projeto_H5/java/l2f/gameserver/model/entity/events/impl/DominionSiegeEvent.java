@@ -106,8 +106,7 @@ public class DominionSiegeEvent extends SiegeEvent<Dominion, SiegeClanObject>
 		public void onKill(Creature actor, Creature victim)
 		{
 			final Player winner = actor.getPlayer();
-			if (winner == null || !victim.isPlayer() || winner.getLevel() < 40 || winner == victim || victim.getEvent(DominionSiegeEvent.class) == DominionSiegeEvent.this || !actor.isInZone(Zone.ZoneType.SIEGE)
-						|| !victim.isInZone(Zone.ZoneType.SIEGE))
+			if (winner == null || !victim.isPlayer() || winner.getLevel() < 40 || winner == victim || victim.getEvent(DominionSiegeEvent.class) == DominionSiegeEvent.this || !actor.isInZone(Zone.ZoneType.SIEGE) || !victim.isInZone(Zone.ZoneType.SIEGE))
 			{
 				return;
 			}
@@ -491,8 +490,7 @@ public class DominionSiegeEvent extends SiegeEvent<Dominion, SiegeClanObject>
 			{
 				return SystemMsg.YOU_CANNOT_FORCE_ATTACK_A_MEMBER_OF_THE_SAME_TERRITORY;
 			}
-			if (attacker.getPlayer().getClan() != null && attacker.getPlayer().getClan().getAlliance() != null && target.getPlayer().getClan() != null && target.getPlayer().getClan().getAlliance() != null
-						&& attacker.getPlayer().getClan().getAlliance() == target.getPlayer().getClan().getAlliance())
+			if (attacker.getPlayer().getClan() != null && attacker.getPlayer().getClan().getAlliance() != null && target.getPlayer().getClan() != null && target.getPlayer().getClan().getAlliance() != null && attacker.getPlayer().getClan().getAlliance() == target.getPlayer().getClan().getAlliance())
 			{
 				return SystemMsg.YOU_CANNOT_FORCE_ATTACK_A_MEMBER_OF_THE_SAME_TERRITORY;
 			}
@@ -545,8 +543,7 @@ public class DominionSiegeEvent extends SiegeEvent<Dominion, SiegeClanObject>
 			{
 				return false;
 			}
-			if (attacker.getPlayer().getClan() != null && attacker.getPlayer().getClan().getAlliance() != null && target.getPlayer().getClan() != null && target.getPlayer().getClan().getAlliance() != null
-						&& attacker.getPlayer().getClan().getAlliance() == target.getPlayer().getClan().getAlliance())
+			if (attacker.getPlayer().getClan() != null && attacker.getPlayer().getClan().getAlliance() != null && target.getPlayer().getClan() != null && target.getPlayer().getClan().getAlliance() != null && attacker.getPlayer().getClan().getAlliance() == target.getPlayer().getClan().getAlliance())
 			{
 				return false;
 			}

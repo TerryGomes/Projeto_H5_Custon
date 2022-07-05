@@ -120,7 +120,6 @@ public class NewYearTimer implements ScriptFile
 			this.message = message;
 		}
 
-		@SuppressWarnings("unused")
 		@Override
 		public void runImpl() throws Exception
 		{

@@ -73,8 +73,7 @@ public abstract class SiegeEvent<R extends Residence, S extends SiegeClanObject>
 		{
 			Player winner = actor.getPlayer();
 
-			if (winner == null || !victim.isPlayer() || winner.getLevel() < 40 || winner == victim || victim.getEvent(SiegeEvent.this.getClass()) != SiegeEvent.this || !checkIfInZone(actor)
-						|| !checkIfInZone(victim))
+			if (winner == null || !victim.isPlayer() || winner.getLevel() < 40 || winner == victim || victim.getEvent(SiegeEvent.this.getClass()) != SiegeEvent.this || !checkIfInZone(actor) || !checkIfInZone(victim))
 			{
 				return;
 			}

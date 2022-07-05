@@ -721,8 +721,7 @@ public class PcInventory extends Inventory
 						continue;
 					}
 
-					if (invItem.getVisualItemId() == dress.getChest() || invItem.getVisualItemId() == dress.getLegs() || invItem.getVisualItemId() == dress.getGloves()
-								|| invItem.getVisualItemId() == dress.getFeet())
+					if (invItem.getVisualItemId() == dress.getChest() || invItem.getVisualItemId() == dress.getLegs() || invItem.getVisualItemId() == dress.getGloves() || invItem.getVisualItemId() == dress.getFeet())
 					{
 						invItem.setVisualItemId(0);
 						invItem.setJdbcState(JdbcEntityState.UPDATED);
@@ -734,8 +733,7 @@ public class PcInventory extends Inventory
 				ItemFunctions.addItem(_owner, dress.getPriceId(), dress.getPriceCount(), true, "DressMeRefund");
 
 				// Send message
-				_owner.sendPacket(new Say2(_owner.getObjectId(), ChatType.CRITICAL_ANNOUNCE, "DressMe",
-							"You have destroyed a part of a dressMe set, for that you will be refunded with the original price, so you can make it again"));
+				_owner.sendPacket(new Say2(_owner.getObjectId(), ChatType.CRITICAL_ANNOUNCE, "DressMe", "You have destroyed a part of a dressMe set, for that you will be refunded with the original price, so you can make it again"));
 			}
 		}
 

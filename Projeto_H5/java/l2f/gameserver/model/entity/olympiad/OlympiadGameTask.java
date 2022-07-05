@@ -163,10 +163,8 @@ public class OlympiadGameTask extends RunnableImpl
 					{
 						final Player player1 = _game.getTeam1().getFirstPlayer();
 						final Player player2 = _game.getTeam2().getFirstPlayer();
-						_game.getTeam1().broadcast(new ExShowScreenMessage("You fight against " + player2.getName() + "(" + player2.getClassId().toPrettyString() + ")", 10000,
-									ExShowScreenMessage.ScreenMessageAlign.BOTTOM_RIGHT, true));
-						_game.getTeam2().broadcast(new ExShowScreenMessage("You fight against " + player1.getName() + "(" + player1.getClassId().toPrettyString() + ")", 10000,
-									ExShowScreenMessage.ScreenMessageAlign.BOTTOM_RIGHT, true));
+						_game.getTeam1().broadcast(new ExShowScreenMessage("You fight against " + player2.getName() + "(" + player2.getClassId().toPrettyString() + ")", 10000, ExShowScreenMessage.ScreenMessageAlign.BOTTOM_RIGHT, true));
+						_game.getTeam2().broadcast(new ExShowScreenMessage("You fight against " + player1.getName() + "(" + player1.getClassId().toPrettyString() + ")", 10000, ExShowScreenMessage.ScreenMessageAlign.BOTTOM_RIGHT, true));
 					}
 				}
 				// Synerge - Heal after 10 seconds

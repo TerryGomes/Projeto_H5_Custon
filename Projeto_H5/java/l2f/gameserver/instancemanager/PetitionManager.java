@@ -535,13 +535,8 @@ public final class PetitionManager implements IPetitionHandler
 	public void sendPendingPetitionList(Player activeChar)
 	{
 		final StringBuilder htmlContent = new StringBuilder(600 + (getPendingPetitionCount() * 300));
-		htmlContent.append("<html><body><center><table width=270><tr>"
-					+ "<td width=45><button value=\"Main\" action=\"bypass -h admin_admin\" width=45 height=21 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>"
-					+ "<td width=180><center>Petition Menu</center></td>"
-					+ "<td width=45><button value=\"Back\" action=\"bypass -h admin_admin\" width=45 height=21 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr></table><br>"
-					+ "<table width=\"270\">"
-					+ "<tr><td><table width=\"270\"><tr><td><button value=\"Reset\" action=\"bypass -h admin_reset_petitions\" width=\"80\" height=\"21\" back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>"
-					+ "<td align=right><button value=\"Refresh\" action=\"bypass -h admin_view_petitions\" width=\"80\" height=\"21\" back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr></table><br></td></tr>");
+		htmlContent.append("<html><body><center><table width=270><tr>" + "<td width=45><button value=\"Main\" action=\"bypass -h admin_admin\" width=45 height=21 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>" + "<td width=180><center>Petition Menu</center></td>" + "<td width=45><button value=\"Back\" action=\"bypass -h admin_admin\" width=45 height=21 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr></table><br>" + "<table width=\"270\">"
+					+ "<tr><td><table width=\"270\"><tr><td><button value=\"Reset\" action=\"bypass -h admin_reset_petitions\" width=\"80\" height=\"21\" back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>" + "<td align=right><button value=\"Refresh\" action=\"bypass -h admin_view_petitions\" width=\"80\" height=\"21\" back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr></table><br></td></tr>");
 
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm");
 
@@ -563,21 +558,16 @@ public final class PetitionManager implements IPetitionHandler
 				continue;
 			}
 
-			htmlContent.append("<tr><td width=\"270\"><table width=\"270\" cellpadding=\"2\" bgcolor=").append(color ? "131210" : "444444").append("><tr><td width=\"130\">")
-						.append(dateFormat.format(new Date(currPetition.getSubmitTime())));
-			htmlContent.append("</td><td width=\"140\" align=right><font color=\"").append((currPetition.getPetitioner() != null && currPetition.getPetitioner().isOnline()) ? "00FF00" : "999999").append("\">")
-						.append((currPetition.getPetitioner() != null ? currPetition.getPetitioner().getName() : CharacterDAO.getNameByObjectId(currPetition.getPetitionerObjId()))).append("</font></td></tr>");
+			htmlContent.append("<tr><td width=\"270\"><table width=\"270\" cellpadding=\"2\" bgcolor=").append(color ? "131210" : "444444").append("><tr><td width=\"130\">").append(dateFormat.format(new Date(currPetition.getSubmitTime())));
+			htmlContent.append("</td><td width=\"140\" align=right><font color=\"").append((currPetition.getPetitioner() != null && currPetition.getPetitioner().isOnline()) ? "00FF00" : "999999").append("\">").append((currPetition.getPetitioner() != null ? currPetition.getPetitioner().getName() : CharacterDAO.getNameByObjectId(currPetition.getPetitionerObjId()))).append("</font></td></tr>");
 			htmlContent.append("<tr><td width=\"130\">");
 			if (currPetition.getState() != PetitionState.In_Process)
 			{
-				htmlContent.append("<table width=\"130\" cellpadding=\"2\"><tr><td><button value=\"View\" action=\"bypass -h admin_view_petition ").append(currPetition.getId())
-							.append("\" width=\"50\" height=\"21\" back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td><td><button value=\"Reject\" action=\"bypass -h admin_reject_petition ")
-							.append(currPetition.getId()).append("\" width=\"50\" height=\"21\" back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr></table>");
+				htmlContent.append("<table width=\"130\" cellpadding=\"2\"><tr><td><button value=\"View\" action=\"bypass -h admin_view_petition ").append(currPetition.getId()).append("\" width=\"50\" height=\"21\" back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td><td><button value=\"Reject\" action=\"bypass -h admin_reject_petition ").append(currPetition.getId()).append("\" width=\"50\" height=\"21\" back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr></table>");
 			}
 			else
 			{
-				htmlContent.append("<font color=\"").append((currPetition.getResponder() != null && currPetition.getResponder().isOnline()) ? "00FF00" : "999999").append("\">")
-							.append((currPetition.getResponder() != null ? currPetition.getResponder().getName() : "Offline")).append("</font>");
+				htmlContent.append("<font color=\"").append((currPetition.getResponder() != null && currPetition.getResponder().isOnline()) ? "00FF00" : "999999").append("\">").append((currPetition.getResponder() != null ? currPetition.getResponder().getName() : "Offline")).append("</font>");
 			}
 			htmlContent.append("</td>").append(currPetition.getTypeAsString()).append("<td width=\"140\" align=right>").append(currPetition.getTypeAsString()).append("</td></tr></table></td></tr>");
 			color = !color;
@@ -683,8 +673,7 @@ public final class PetitionManager implements IPetitionHandler
 		int petitionId = getInstance().submitPetition(player, txt, id);
 
 		player.sendPacket(new SystemMessage(SystemMessage.PETITION_APPLICATION_ACCEPTED_RECEIPT_NO_IS_S1).addNumber(petitionId));
-		player.sendPacket(new SystemMessage(SystemMessage.YOU_HAVE_SUBMITTED_S1_PETITIONS_YOU_MAY_SUBMIT_S2_MORE_PETITIONS_TODAY).addNumber(totalPetitions)
-					.addNumber(Config.MAX_PETITIONS_PER_PLAYER - totalPetitions));
+		player.sendPacket(new SystemMessage(SystemMessage.YOU_HAVE_SUBMITTED_S1_PETITIONS_YOU_MAY_SUBMIT_S2_MORE_PETITIONS_TODAY).addNumber(totalPetitions).addNumber(Config.MAX_PETITIONS_PER_PLAYER - totalPetitions));
 		player.sendPacket(new SystemMessage(SystemMessage.THERE_ARE_S1_PETITIONS_PENDING).addNumber(PetitionManager.getInstance().getPendingPetitionCount()));
 	}
 }

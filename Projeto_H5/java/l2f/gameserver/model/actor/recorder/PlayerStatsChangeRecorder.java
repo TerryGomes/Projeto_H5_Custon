@@ -72,8 +72,7 @@ public final class PlayerStatsChangeRecorder extends CharStatsChangeRecorder<Pla
 		_recipeDwarven = set(16, _recipeDwarven, ((Player) _activeChar).getDwarvenRecipeLimit());
 		_recipeCommon = set(16, _recipeCommon, ((Player) _activeChar).getCommonRecipeLimit());
 		_cubicsHash = set(1, _cubicsHash, CollectionUtils.hashCode(((Player) _activeChar).getCubics()));
-		_partyRoom = set(1, _partyRoom, ((((Player) _activeChar).getMatchingRoom() != null) && (((Player) _activeChar).getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING)
-					&& (((Player) _activeChar).getMatchingRoom().getLeader() == _activeChar)) ? ((Player) _activeChar).getMatchingRoom().getId() : 0);
+		_partyRoom = set(1, _partyRoom, ((((Player) _activeChar).getMatchingRoom() != null) && (((Player) _activeChar).getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING) && (((Player) _activeChar).getMatchingRoom().getLeader() == _activeChar)) ? ((Player) _activeChar).getMatchingRoom().getId() : 0);
 		_team = ((TeamType) set(128, _team, ((Player) _activeChar).getTeam()));
 		_title = set(1, _title, ((Player) _activeChar).getTitle());
 	}

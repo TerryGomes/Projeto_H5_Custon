@@ -28,8 +28,7 @@ public final class NaiaCoreManager
 	private static Zone _zone;
 	private static boolean _active = false;
 
-	private static final Territory _coreTerritory = new Territory()
-				.add(new Polygon().add(-44789, 246305).add(-44130, 247452).add(-46092, 248606).add(-46790, 247414).add(-46139, 246304).setZmin(-14220).setZmax(-13800));
+	private static final Territory _coreTerritory = new Territory().add(new Polygon().add(-44789, 246305).add(-44130, 247452).add(-46092, 248606).add(-46790, 247414).add(-46139, 246304).setZmin(-14220).setZmax(-13800));
 
 	// Spores
 	private static final int fireSpore = 25605;

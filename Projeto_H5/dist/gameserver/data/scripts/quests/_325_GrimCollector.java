@@ -72,8 +72,7 @@ public class _325_GrimCollector extends Quest implements ScriptFile
 
 	private long pieces(QuestState st)
 	{
-		return st.getQuestItemsCount(ZOMBIE_HEAD) + st.getQuestItemsCount(SPINE) + st.getQuestItemsCount(ARM_BONE) + st.getQuestItemsCount(ZOMBIE_HEART) + st.getQuestItemsCount(ZOMBIE_LIVER)
-					+ st.getQuestItemsCount(SKULL) + st.getQuestItemsCount(RIB_BONE) + st.getQuestItemsCount(THIGH_BONE) + st.getQuestItemsCount(COMPLETE_SKELETON);
+		return st.getQuestItemsCount(ZOMBIE_HEAD) + st.getQuestItemsCount(SPINE) + st.getQuestItemsCount(ARM_BONE) + st.getQuestItemsCount(ZOMBIE_HEART) + st.getQuestItemsCount(ZOMBIE_LIVER) + st.getQuestItemsCount(SKULL) + st.getQuestItemsCount(RIB_BONE) + st.getQuestItemsCount(THIGH_BONE) + st.getQuestItemsCount(COMPLETE_SKELETON);
 	}
 
 	@Override
@@ -94,10 +93,7 @@ public class _325_GrimCollector extends Quest implements ScriptFile
 		{
 			if (pieces(st) > 0)
 			{
-				st.giveItems(ADENA_ID,
-							30 * st.getQuestItemsCount(ZOMBIE_HEAD) + 20 * st.getQuestItemsCount(ZOMBIE_HEART) + 20 * st.getQuestItemsCount(ZOMBIE_LIVER) + 50 * st.getQuestItemsCount(SKULL)
-										+ 15 * st.getQuestItemsCount(RIB_BONE) + 10 * st.getQuestItemsCount(SPINE) + 10 * st.getQuestItemsCount(ARM_BONE) + 10 * st.getQuestItemsCount(THIGH_BONE)
-										+ 2000 * st.getQuestItemsCount(COMPLETE_SKELETON));
+				st.giveItems(ADENA_ID, 30 * st.getQuestItemsCount(ZOMBIE_HEAD) + 20 * st.getQuestItemsCount(ZOMBIE_HEART) + 20 * st.getQuestItemsCount(ZOMBIE_LIVER) + 50 * st.getQuestItemsCount(SKULL) + 15 * st.getQuestItemsCount(RIB_BONE) + 10 * st.getQuestItemsCount(SPINE) + 10 * st.getQuestItemsCount(ARM_BONE) + 10 * st.getQuestItemsCount(THIGH_BONE) + 2000 * st.getQuestItemsCount(COMPLETE_SKELETON));
 				st.takeItems(ZOMBIE_HEAD, -1);
 				st.takeItems(ZOMBIE_HEART, -1);
 				st.takeItems(ZOMBIE_LIVER, -1);
@@ -114,10 +110,7 @@ public class _325_GrimCollector extends Quest implements ScriptFile
 		}
 		else if (event.equalsIgnoreCase("samed_q0325_07.htm") && pieces(st) > 0)
 		{
-			st.giveItems(ADENA_ID,
-						30 * st.getQuestItemsCount(ZOMBIE_HEAD) + 20 * st.getQuestItemsCount(ZOMBIE_HEART) + 20 * st.getQuestItemsCount(ZOMBIE_LIVER) + 50 * st.getQuestItemsCount(SKULL)
-									+ 15 * st.getQuestItemsCount(RIB_BONE) + 10 * st.getQuestItemsCount(SPINE) + 10 * st.getQuestItemsCount(ARM_BONE) + 10 * st.getQuestItemsCount(THIGH_BONE)
-									+ 2000 * st.getQuestItemsCount(COMPLETE_SKELETON));
+			st.giveItems(ADENA_ID, 30 * st.getQuestItemsCount(ZOMBIE_HEAD) + 20 * st.getQuestItemsCount(ZOMBIE_HEART) + 20 * st.getQuestItemsCount(ZOMBIE_LIVER) + 50 * st.getQuestItemsCount(SKULL) + 15 * st.getQuestItemsCount(RIB_BONE) + 10 * st.getQuestItemsCount(SPINE) + 10 * st.getQuestItemsCount(ARM_BONE) + 10 * st.getQuestItemsCount(THIGH_BONE) + 2000 * st.getQuestItemsCount(COMPLETE_SKELETON));
 			st.takeItems(ZOMBIE_HEAD, -1);
 			st.takeItems(ZOMBIE_HEART, -1);
 			st.takeItems(ZOMBIE_LIVER, -1);

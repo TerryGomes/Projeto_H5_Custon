@@ -156,8 +156,7 @@ public class CommunityAugment implements ScriptFile, ICommunityBoardHandler
 					sb.append("<tr>");
 					sb.append("<td width=34 height=34><img src=\"icon." + template.getIcon() + "\" width=32 height=32></td>");
 					sb.append("<td width=220>" + name + " " + template.getAdditionalName() + " " + (item.getEnchantLevel() == 0 ? "" : "+" + item.getEnchantLevel()) + "</td>");
-					sb.append("<td width=32><button value=\"\" action=\"bypass _bbslsInsertItem " + item.getObjectId()
-								+ "\" width=32 height=32 back=\"L2UI_CH3.mapbutton_zoomin1\" fore=\"L2UI_CH3.mapbutton_zoomin1\"></td>");
+					sb.append("<td width=32><button value=\"\" action=\"bypass _bbslsInsertItem " + item.getObjectId() + "\" width=32 height=32 back=\"L2UI_CH3.mapbutton_zoomin1\" fore=\"L2UI_CH3.mapbutton_zoomin1\"></td>");
 					sb.append("</tr>");
 				}
 			}
@@ -276,8 +275,7 @@ public class CommunityAugment implements ScriptFile, ICommunityBoardHandler
 			}
 			if (!player.getInventory().destroyItemByItemId(aug.getItemId(), aug.getCount(), "CB Augment"))
 			{
-				player.sendChatMessage(0, ChatType.BATTLEFIELD.ordinal(), "Augmentation",
-							"Not enought items... Augmentation cost: " + aug.getCount() + " " + ItemHolder.getInstance().getTemplateName(aug.getItemId()));
+				player.sendChatMessage(0, ChatType.BATTLEFIELD.ordinal(), "Augmentation", "Not enought items... Augmentation cost: " + aug.getCount() + " " + ItemHolder.getInstance().getTemplateName(aug.getItemId()));
 				showLSPage(player, 1);
 				return;
 			}
@@ -498,10 +496,8 @@ public class CommunityAugment implements ScriptFile, ICommunityBoardHandler
 		}
 		player.sendChanges();
 		player.sendChatMessage(0, ChatType.BATTLEFIELD.ordinal(), "Augmentation", "All Done. You have purchased " + SkillTable.getInstance().getInfo(aug.getSkillId(), aug.getLevel()).getName());
-		Log.add(player.getName() + " has augmented " + iteminstance.getName() + "[" + iteminstance.getObjectId() + "] . Skill: " + SkillTable.getInstance().getInfo(aug.getSkillId(), aug.getLevel()).getName()
-					+ "[" + aug.getSkillId() + "]", "CommunityAugmentation");
-		Log.add(player.getName() + " has augmented " + iteminstance.getName() + "[" + iteminstance.getObjectId() + "] . Augmentation cost: " + aug.getItemId() + " (" + aug.getCount() + ") Stat: "
-					+ (stat == 0 ? "Random" : stat), "CommunityAugmentation");
+		Log.add(player.getName() + " has augmented " + iteminstance.getName() + "[" + iteminstance.getObjectId() + "] . Skill: " + SkillTable.getInstance().getInfo(aug.getSkillId(), aug.getLevel()).getName() + "[" + aug.getSkillId() + "]", "CommunityAugmentation");
+		Log.add(player.getName() + " has augmented " + iteminstance.getName() + "[" + iteminstance.getObjectId() + "] . Augmentation cost: " + aug.getItemId() + " (" + aug.getCount() + ") Stat: " + (stat == 0 ? "Random" : stat), "CommunityAugmentation");
 		player.setCommunityAugmentItem(null);
 		player.setCommunityAugmentStat(0);
 		showLSPage(player, 1);
@@ -549,8 +545,7 @@ public class CommunityAugment implements ScriptFile, ICommunityBoardHandler
 			}
 			else
 			{
-				htmltosend = htmltosend.replaceAll("%more%",
-							"<button value=\"\" action=\"bypass _bbsls " + (page + 1) + " \" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\">");
+				htmltosend = htmltosend.replaceAll("%more%", "<button value=\"\" action=\"bypass _bbsls " + (page + 1) + " \" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\">");
 			}
 			htmltosend = htmltosend.replaceAll("%back%", "&nbsp;");
 		}
@@ -558,16 +553,13 @@ public class CommunityAugment implements ScriptFile, ICommunityBoardHandler
 		{
 			if (totalpages <= page)
 			{
-				htmltosend = htmltosend.replaceAll("%back%",
-							"<button value=\"\" action=\"bypass _bbsls " + (page - 1) + "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\">");
+				htmltosend = htmltosend.replaceAll("%back%", "<button value=\"\" action=\"bypass _bbsls " + (page - 1) + "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\">");
 				htmltosend = htmltosend.replaceAll("%more%", "&nbsp;");
 			}
 			else
 			{
-				htmltosend = htmltosend.replaceAll("%more%",
-							"<button value=\"\" action=\"bypass _bbsls " + (page + 1) + "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\">");
-				htmltosend = htmltosend.replaceAll("%back%",
-							"<button value=\"\" action=\"bypass _bbsls " + (page - 1) + "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\">");
+				htmltosend = htmltosend.replaceAll("%more%", "<button value=\"\" action=\"bypass _bbsls " + (page + 1) + "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\">");
+				htmltosend = htmltosend.replaceAll("%back%", "<button value=\"\" action=\"bypass _bbsls " + (page - 1) + "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\">");
 			}
 		}
 		for (final AugmentationData aug : getSorttedAugmentation(_playerSortBy.get(player.getObjectId()), _augmentationData))
@@ -624,8 +616,7 @@ public class CommunityAugment implements ScriptFile, ICommunityBoardHandler
 			htmltosend = htmltosend.replaceAll("%type" + clansvisual + "%", "<font color=\"" + typeColor + "\">" + aug.getType().toUpperCase() + "</font>");
 			htmltosend = htmltosend.replaceAll("%desc" + clansvisual + "%", "<font color=\"ad9d46\">[" + desc + "]</font>");
 			htmltosend = htmltosend.replaceAll("%cost" + clansvisual + "%", "Cost: <font color=\"848484\">" + aug.getCount() + " " + ItemHolder.getInstance().getTemplateName(aug.getItemId()) + "</font>");
-			htmltosend = htmltosend.replaceAll("%button" + clansvisual + "%",
-						"<button value=\"\" action=\"bypass _bbslsAugment " + aug.getAugId() + "\" width=32 height=32 back=\"L2UI_CT1.MiniMap_DF_PlusBtn_Red\" fore=\"L2UI_CT1.MiniMap_DF_PlusBtn_Red\">");
+			htmltosend = htmltosend.replaceAll("%button" + clansvisual + "%", "<button value=\"\" action=\"bypass _bbslsAugment " + aug.getAugId() + "\" width=32 height=32 back=\"L2UI_CT1.MiniMap_DF_PlusBtn_Red\" fore=\"L2UI_CT1.MiniMap_DF_PlusBtn_Red\">");
 			htmltosend = htmltosend.replaceAll("%width" + clansvisual + "%", "180");
 		}
 		if (clansvisual < 10)
@@ -903,8 +894,7 @@ public class CommunityAugment implements ScriptFile, ICommunityBoardHandler
 		{
 			return false;
 		}
-		if (player.isCursedWeaponEquipped() || player.isInJail() || player.isDead() || player.isAlikeDead() || player.isCastingNow() || player.isInCombat() || player.isAttackingNow()
-					|| player.isInOlympiadMode() || player.isFlying() || player.isTerritoryFlagEquipped())
+		if (player.isCursedWeaponEquipped() || player.isInJail() || player.isDead() || player.isAlikeDead() || player.isCastingNow() || player.isInCombat() || player.isAttackingNow() || player.isInOlympiadMode() || player.isFlying() || player.isTerritoryFlagEquipped())
 		{
 			player.sendChatMessage(0, ChatType.BATTLEFIELD.ordinal(), "Augmentation", player.isLangRus() ? "Невозможно использовать в данный момент!" : "You can not use it at this moment!");
 			return false;

@@ -228,8 +228,7 @@ public class _711_PathToBecomingALordInnadril extends Quest implements ScriptFil
 		Player castleOwner = castle.getOwner().getLeader().getPlayer();
 		if (owner != null)
 		{
-			if (castleOwner != null && castleOwner != st.getPlayer() && owner == st.getPlayer().getClan() && castleOwner.getQuestState(getClass()) != null
-						&& castleOwner.getQuestState(getClass()).getCond() == cond)
+			if (castleOwner != null && castleOwner != st.getPlayer() && owner == st.getPlayer().getClan() && castleOwner.getQuestState(getClass()) != null && castleOwner.getQuestState(getClass()).getCond() == cond)
 			{
 				return true;
 			}

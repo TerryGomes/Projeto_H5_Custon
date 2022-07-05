@@ -640,8 +640,7 @@ public class _230_TestOfSummoner extends Quest implements ScriptFile
 								htmltext = str(npcId) + "-07.htm";
 								st.takeItems(SUMMONERS[npcId - 30635][2], -1); // take crystal of victory
 								st.giveItems(SUMMONERS[npcId - 30635][1], 1, false);// give arcana
-								if (st.getQuestItemsCount(3354) + st.getQuestItemsCount(3355) + st.getQuestItemsCount(3356) + st.getQuestItemsCount(3357) + st.getQuestItemsCount(3358)
-											+ st.getQuestItemsCount(3359) >= 6)
+								if (st.getQuestItemsCount(3354) + st.getQuestItemsCount(3355) + st.getQuestItemsCount(3356) + st.getQuestItemsCount(3357) + st.getQuestItemsCount(3358) + st.getQuestItemsCount(3359) >= 6)
 								{
 									st.setCond(4);
 								}

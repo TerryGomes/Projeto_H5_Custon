@@ -184,8 +184,7 @@ public class _401_PathToWarrior extends Quest implements ScriptFile
 		{
 			htmltext = "trader_simplon_q0401_06.htm";
 		}
-		else if (npcId == AURON && st.getQuestItemsCount(SIMPLONS_LETTER_ID) > 0 && st.getQuestItemsCount(RUSTED_BRONZE_SWORD2_ID) > 0 && st.getQuestItemsCount(WARRIOR_GUILD_MARK_ID) == 0
-					&& st.getQuestItemsCount(EINS_LETTER_ID) == 0)
+		else if (npcId == AURON && st.getQuestItemsCount(SIMPLONS_LETTER_ID) > 0 && st.getQuestItemsCount(RUSTED_BRONZE_SWORD2_ID) > 0 && st.getQuestItemsCount(WARRIOR_GUILD_MARK_ID) == 0 && st.getQuestItemsCount(EINS_LETTER_ID) == 0)
 		{
 			htmltext = "ein_q0401_09.htm";
 		}

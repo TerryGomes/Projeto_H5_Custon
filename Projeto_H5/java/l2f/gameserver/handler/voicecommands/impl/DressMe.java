@@ -161,13 +161,11 @@ public class DressMe implements IVoicedCommandHandler
 			{
 				if (i == page)
 				{
-					navigation += "<td width=25 align=center valign=top><button value=\"[" + i + "]\" action=\"bypass -h user_dressme-armor " + i
-								+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+					navigation += "<td width=25 align=center valign=top><button value=\"[" + i + "]\" action=\"bypass -h user_dressme-armor " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 				}
 				else
 				{
-					navigation += "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h user_dressme-armor " + i
-								+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+					navigation += "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h user_dressme-armor " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 				}
 
 				if (inline == 7)
@@ -244,13 +242,11 @@ public class DressMe implements IVoicedCommandHandler
 			{
 				if (i == page)
 				{
-					navigation += "<td width=25 align=center valign=top><button value=\"[" + i + "]\" action=\"bypass -h user_dressme-cloak " + i
-								+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+					navigation += "<td width=25 align=center valign=top><button value=\"[" + i + "]\" action=\"bypass -h user_dressme-cloak " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 				}
 				else
 				{
-					navigation += "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h user_dressme-cloak " + i
-								+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+					navigation += "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h user_dressme-cloak " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 				}
 
 				if (inline == 7)
@@ -327,13 +323,11 @@ public class DressMe implements IVoicedCommandHandler
 			{
 				if (i == page)
 				{
-					navigation += "<td width=25 align=center valign=top><button value=\"[" + i + "]\" action=\"bypass -h user_dressme-shield " + i
-								+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+					navigation += "<td width=25 align=center valign=top><button value=\"[" + i + "]\" action=\"bypass -h user_dressme-shield " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 				}
 				else
 				{
-					navigation += "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h user_dressme-shield " + i
-								+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+					navigation += "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h user_dressme-shield " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 				}
 
 				if (inline == 7)
@@ -428,13 +422,11 @@ public class DressMe implements IVoicedCommandHandler
 			{
 				if (i == page)
 				{
-					navigation += "<td width=25 align=center valign=top><button value=\"[" + i + "]\" action=\"bypass -h user_dressme-weapon " + i
-								+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+					navigation += "<td width=25 align=center valign=top><button value=\"[" + i + "]\" action=\"bypass -h user_dressme-weapon " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 				}
 				else
 				{
-					navigation += "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h user_dressme-weapon " + i
-								+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+					navigation += "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h user_dressme-weapon " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 				}
 
 				if (inline == 7)

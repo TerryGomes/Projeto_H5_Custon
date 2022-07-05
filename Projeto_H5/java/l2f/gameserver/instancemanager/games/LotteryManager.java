@@ -188,7 +188,7 @@ public class LotteryManager
 		 finishtime.set(Calendar.DAY_OF_WEEK, 6);
 		 finishtime.set(Calendar.HOUR_OF_DAY, 7);
 		 _enddate = finishtime.getTimeInMillis();
-
+		
 		 ThreadPoolManager.getInstance().scheduleGeneral(new stopSellingTickets(), _enddate - System.currentTimeMillis() - 10 * MINUTE);
 		 ThreadPoolManager.getInstance().scheduleGeneral(new finishLottery(), _enddate - System.currentTimeMillis());
 		 **/

@@ -211,8 +211,7 @@ public abstract class TvTTemplate extends Functions
 		_team1live.clear();
 		_team2live.clear();
 		_team1list.add(player.getStoredId());
-		sayToAll(player.getName() + " created a battle " + _team1count + "х" + _team2count + ", " + _team1min + "-" + _team1max + "lv vs " + _team2min + "-" + _team2max + "lv, rate " + _price + " " + ITEM_NAME
-					+ ", Start over " + _timeToStart + " min");
+		sayToAll(player.getName() + " created a battle " + _team1count + "х" + _team2count + ", " + _team1min + "-" + _team1max + "lv vs " + _team2min + "-" + _team2max + "lv, rate " + _price + " " + ITEM_NAME + ", Start over " + _timeToStart + " min");
 		executeTask("events.TvTArena." + _className, "announce", new Object[0], 60000);
 	}
 
@@ -343,8 +342,7 @@ public abstract class TvTTemplate extends Functions
 		if (_timeToStart > 1)
 		{
 			_timeToStart--;
-			sayToAll(creator.getName() + " created a battle " + _team1count + "х" + _team2count + ", " + _team1min + "-" + _team1max + "lv vs " + _team2min + "-" + _team2max + "lv, rate " + _price + " "
-						+ ITEM_NAME + ", Start over " + _timeToStart + " min");
+			sayToAll(creator.getName() + " created a battle " + _team1count + "х" + _team2count + ", " + _team1min + "-" + _team1max + "lv vs " + _team2min + "-" + _team2max + "lv, rate " + _price + " " + ITEM_NAME + ", Start over " + _timeToStart + " min");
 			executeTask("events.TvTArena." + _className, "announce", new Object[0], 60000);
 		}
 		else if (_team2list.size() > 0)
@@ -1026,7 +1024,6 @@ public abstract class TvTTemplate extends Functions
 			target.block();
 		}
 
-		@SuppressWarnings("unused")
 		@Override
 		public void runImpl() throws Exception
 		{

@@ -13,8 +13,7 @@ import l2f.gameserver.utils.Language;
 
 public enum FacebookActionType
 {
-	LIKE("Facebook.Action.Like", "FacebookRewardLikeTask", "FacebookRewardLikeNoTask", true, false), COMMENT("Facebook.Action.Comment", "FacebookRewardCommentTask", "FacebookRewardCommentNoTask", true, true),
-	POST("Facebook.Action.Post", (String) null, (String) null, false, false), SHARE("Facebook.Action.Share", (String) null, (String) null, true, false);
+	LIKE("Facebook.Action.Like", "FacebookRewardLikeTask", "FacebookRewardLikeNoTask", true, false), COMMENT("Facebook.Action.Comment", "FacebookRewardCommentTask", "FacebookRewardCommentNoTask", true, true), POST("Facebook.Action.Post", (String) null, (String) null, false, false), SHARE("Facebook.Action.Share", (String) null, (String) null, true, false);
 
 	private final String actionNameAddress;
 	private final String rewardTaskConfig;

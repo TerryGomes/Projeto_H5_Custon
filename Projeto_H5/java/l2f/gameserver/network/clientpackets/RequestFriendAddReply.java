@@ -66,8 +66,7 @@ public class RequestFriendAddReply extends L2GameClientPacket
 		requestor.getFriendList().addFriend(activeChar);
 		activeChar.getFriendList().addFriend(requestor);
 
-		requestor.sendPacket(SystemMsg.THAT_PERSON_HAS_BEEN_SUCCESSFULLY_ADDED_TO_YOUR_FRIEND_LIST, new SystemMessage2(SystemMsg.S1_HAS_BEEN_ADDED_TO_YOUR_FRIENDS_LIST).addString(activeChar.getName()),
-					new L2Friend(activeChar, true));
+		requestor.sendPacket(SystemMsg.THAT_PERSON_HAS_BEEN_SUCCESSFULLY_ADDED_TO_YOUR_FRIEND_LIST, new SystemMessage2(SystemMsg.S1_HAS_BEEN_ADDED_TO_YOUR_FRIENDS_LIST).addString(activeChar.getName()), new L2Friend(activeChar, true));
 		activeChar.sendPacket(new SystemMessage2(SystemMsg.S1_HAS_JOINED_AS_A_FRIEND).addString(requestor.getName()), new L2Friend(requestor, true));
 	}
 }

@@ -33,8 +33,7 @@ public class CharacterFriendDAO
 	{
 		Map<Integer, Friend> map = new HashMap<>();
 
-		try (PreparedStatement statement = con.prepareStatement(
-					"SELECT f.friend_id, c.char_name, s.class_id, s.level FROM character_friends f LEFT JOIN characters c ON f.friend_id = c.obj_Id LEFT JOIN character_subclasses s ON ( f.friend_id = s.char_obj_id AND s.active =1 ) WHERE f.char_id = ?"))
+		try (PreparedStatement statement = con.prepareStatement("SELECT f.friend_id, c.char_name, s.class_id, s.level FROM character_friends f LEFT JOIN characters c ON f.friend_id = c.obj_Id LEFT JOIN character_subclasses s ON ( f.friend_id = s.char_obj_id AND s.active =1 ) WHERE f.char_id = ?"))
 		{
 			statement.setInt(1, owner.getObjectId());
 
@@ -75,8 +74,7 @@ public class CharacterFriendDAO
 
 	public void delete(Player owner, int friend)
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("DELETE FROM character_friends WHERE (char_id=? AND friend_id=?) OR (char_id=? AND friend_id=?)"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("DELETE FROM character_friends WHERE (char_id=? AND friend_id=?) OR (char_id=? AND friend_id=?)"))
 		{
 			statement.setInt(1, owner.getObjectId());
 			statement.setInt(2, friend);

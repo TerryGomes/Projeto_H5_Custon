@@ -51,13 +51,9 @@ public class RPSHtmlRPCRewardList
 		}
 
 		// define container table:
-		return "<html><title>RPC Exchange</title><body><center><table border=0 cellspacing=0 cellpadding=0><tr><td><table><tr><td width=100 align=left> <font color=ae9977>RPC Total</font> </td><td align=center><font color=2080D0>"
-					+ RPSUtil.preparePrice(rpc.getRpcTotal()) + "</font></td></tr><tr><td width=100 align=left> <font color=ae9977>RPC Current</font> </td><td width=170 align=center><font color=2080D0>"
-					+ RPSUtil.preparePrice(rpc.getRpcCurrent())
-					+ "</font></td></tr></table></td></tr><tr><td height=8>&nbsp;</td></tr><tr><td FIXWIDTH=270 HEIGHT=4><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr><tr><td height=8></td></tr><tr><td>"
-					+ getRpcRewardList(pageNo) + "</td></tr><tr><td>&nbsp;</td></tr><tr><td HEIGHT=4></td></tr><tr><td>" + getPageChanger(pageNo)
-					+ "</td></tr><tr><td FIXWIDTH=270 HEIGHT=4><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr><tr><td align=center><button value=\"Back\" action=\"bypass RPS.PS\"  width="
-					+ RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\"></td></tr></table></center></body></html>";
+		return "<html><title>RPC Exchange</title><body><center><table border=0 cellspacing=0 cellpadding=0><tr><td><table><tr><td width=100 align=left> <font color=ae9977>RPC Total</font> </td><td align=center><font color=2080D0>" + RPSUtil.preparePrice(rpc.getRpcTotal()) + "</font></td></tr><tr><td width=100 align=left> <font color=ae9977>RPC Current</font> </td><td width=170 align=center><font color=2080D0>" + RPSUtil.preparePrice(rpc.getRpcCurrent())
+					+ "</font></td></tr></table></td></tr><tr><td height=8>&nbsp;</td></tr><tr><td FIXWIDTH=270 HEIGHT=4><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr><tr><td height=8></td></tr><tr><td>" + getRpcRewardList(pageNo) + "</td></tr><tr><td>&nbsp;</td></tr><tr><td HEIGHT=4></td></tr><tr><td>" + getPageChanger(pageNo)
+					+ "</td></tr><tr><td FIXWIDTH=270 HEIGHT=4><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr><tr><td align=center><button value=\"Back\" action=\"bypass RPS.PS\"  width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\"></td></tr></table></center></body></html>";
 	}
 
 	/**
@@ -111,19 +107,12 @@ public class RPSHtmlRPCRewardList
 	{
 		if (RPSConfig.RPC_EXCHANGE_CONFIRM_BOX_ENABLED)
 		{
-			return "<tr><td height=32><table cellspacing=0 cellpadding=0><tr><td width=270 height=16><font color=FF8000>" + itemName
-						+ "</font></td></tr><tr><td><table width=270 cellspacing=0 cellpadding=0><tr><td width=150 height=16><font color=ae9977>Count:</font> <font color=808080>"
-						+ RPSUtil.preparePrice(itemCount) + "</font></td><td width=80><font color=ae9977>RPC:</font> <font color=2080D0>" + RPSUtil.preparePrice(rpcCost)
-						+ "</font></td><td align=right><button value=\"Get\" action=\"bypass RPS.RPCRewardConfirm:" + itemId + "," + pageNo + "\" width=40 height=16 back=\"" + RPSConfig.BUTTON_DOWN
-						+ "\" fore=\"" + RPSConfig.BUTTON_UP
-						+ "\"></td></tr></table></td></tr></table></td></tr><tr><td FIXWIDTH=270 HEIGHT=4><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr>";
+			return "<tr><td height=32><table cellspacing=0 cellpadding=0><tr><td width=270 height=16><font color=FF8000>" + itemName + "</font></td></tr><tr><td><table width=270 cellspacing=0 cellpadding=0><tr><td width=150 height=16><font color=ae9977>Count:</font> <font color=808080>" + RPSUtil.preparePrice(itemCount) + "</font></td><td width=80><font color=ae9977>RPC:</font> <font color=2080D0>" + RPSUtil.preparePrice(rpcCost)
+						+ "</font></td><td align=right><button value=\"Get\" action=\"bypass RPS.RPCRewardConfirm:" + itemId + "," + pageNo + "\" width=40 height=16 back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\"></td></tr></table></td></tr></table></td></tr><tr><td FIXWIDTH=270 HEIGHT=4><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr>";
 		}
 
-		return "<tr><td height=32><table cellspacing=0 cellpadding=0><tr><td width=270 height=16><font color=FF8000>" + itemName
-					+ "</font></td></tr><tr><td><table width=270 cellspacing=0 cellpadding=0><tr><td width=150 height=16><font color=ae9977>Count:</font> <font color=808080>" + RPSUtil.preparePrice(itemCount)
-					+ "</font></td><td width=80><font color=ae9977>RPC:</font> <font color=2080D0>" + RPSUtil.preparePrice(rpcCost)
-					+ "</font></td><td align=right><button value=\"Get\" action=\"bypass RPS.RPCReward:" + itemId + "," + pageNo + "\" width=40 height=16 back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\""
-					+ RPSConfig.BUTTON_UP + "\"></td></tr></table></td></tr></table></td></tr><tr><td FIXWIDTH=270 HEIGHT=4><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr>";
+		return "<tr><td height=32><table cellspacing=0 cellpadding=0><tr><td width=270 height=16><font color=FF8000>" + itemName + "</font></td></tr><tr><td><table width=270 cellspacing=0 cellpadding=0><tr><td width=150 height=16><font color=ae9977>Count:</font> <font color=808080>" + RPSUtil.preparePrice(itemCount) + "</font></td><td width=80><font color=ae9977>RPC:</font> <font color=2080D0>" + RPSUtil.preparePrice(rpcCost)
+					+ "</font></td><td align=right><button value=\"Get\" action=\"bypass RPS.RPCReward:" + itemId + "," + pageNo + "\" width=40 height=16 back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\"></td></tr></table></td></tr></table></td></tr><tr><td FIXWIDTH=270 HEIGHT=4><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr>";
 	}
 
 	private static String getPageChanger(int pageNo)
@@ -152,13 +141,10 @@ public class RPSHtmlRPCRewardList
 	 */
 	public static void getConfirmPage(Player player, int prevPageNo, int rewardId)
 	{
-		String yesButton = "<button value=\"Yes\" action=\"bypass RPS.RPCReward:" + rewardId + "," + prevPageNo + "\"  width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\""
-					+ RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\">";
-		String noButton = "<button value=\"No\" action=\"bypass RPS.RPC:" + prevPageNo + "\"  width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\""
-					+ RPSConfig.BUTTON_UP + "\">";
+		String yesButton = "<button value=\"Yes\" action=\"bypass RPS.RPCReward:" + rewardId + "," + prevPageNo + "\"  width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\">";
+		String noButton = "<button value=\"No\" action=\"bypass RPS.RPC:" + prevPageNo + "\"  width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\">";
 
-		String page = "<html><title>RPC Exchange - Confirm</title><body><center><table><tr><td height=100>&nbsp;</td></tr><tr><td height=100 align=center>Are you sure you want to do that?</td></tr><tr><td><table><tr><td width=130 align=center>"
-					+ yesButton + "</td><td width=130 align=center>" + noButton + "</td></tr></table></td></tr></table></center></body></html>";
+		String page = "<html><title>RPC Exchange - Confirm</title><body><center><table><tr><td height=100>&nbsp;</td></tr><tr><td height=100 align=center>Are you sure you want to do that?</td></tr><tr><td><table><tr><td width=130 align=center>" + yesButton + "</td><td width=130 align=center>" + noButton + "</td></tr></table></td></tr></table></center></body></html>";
 
 		NpcHtmlMessage n = new NpcHtmlMessage(0);
 

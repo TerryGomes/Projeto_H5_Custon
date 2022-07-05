@@ -234,8 +234,7 @@ public class CommunityClan extends Functions implements ScriptFile, ICommunityBo
 		}
 		else
 		{
-			html = html.replace("%sortLeader%",
-						"<font color=FFFFFF><a action=\"bypass _bbsclan_changeSort_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_LEADER_NAME\">Leader</a></font>");
+			html = html.replace("%sortLeader%", "<font color=FFFFFF><a action=\"bypass _bbsclan_changeSort_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_LEADER_NAME\">Leader</a></font>");
 		}
 
 		// Sort Level
@@ -255,8 +254,7 @@ public class CommunityClan extends Functions implements ScriptFile, ICommunityBo
 		}
 		else
 		{
-			html = html.replace("%sortMembers%",
-						"<font color=FFFFFF><a action=\"bypass _bbsclan_changeSort_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_MEMBERS_COUNT\">Members</a></font>");
+			html = html.replace("%sortMembers%", "<font color=FFFFFF><a action=\"bypass _bbsclan_changeSort_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_MEMBERS_COUNT\">Members</a></font>");
 		}
 
 		// Clan List
@@ -281,8 +279,7 @@ public class CommunityClan extends Functions implements ScriptFile, ICommunityBo
 		// Previous Page
 		if (page > 0)
 		{
-			html = html.replace("%previousPage%", "<button action=\"bypass _bbsclan_clanList_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_" + (page - 1)
-						+ "\" width=15 height=15 back=\"L2UI_CH3.prev1_down\" fore=\"L2UI_CH3.prev1\">");
+			html = html.replace("%previousPage%", "<button action=\"bypass _bbsclan_clanList_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_" + (page - 1) + "\" width=15 height=15 back=\"L2UI_CH3.prev1_down\" fore=\"L2UI_CH3.prev1\">");
 		}
 		else
 		{
@@ -292,8 +289,7 @@ public class CommunityClan extends Functions implements ScriptFile, ICommunityBo
 		// Next Page
 		if (sortedClans.length > (clansPerPage * page) + clansPerPage)
 		{
-			html = html.replace("%nextPage%", "<button action=\"bypass _bbsclan_clanList_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_" + (page + 1)
-						+ "\" width=15 height=15 back=\"L2UI_CH3.next1_down\" fore=\"L2UI_CH3.next1\">");
+			html = html.replace("%nextPage%", "<button action=\"bypass _bbsclan_clanList_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_" + (page + 1) + "\" width=15 height=15 back=\"L2UI_CH3.next1_down\" fore=\"L2UI_CH3.next1\">");
 		}
 		else
 		{
@@ -496,8 +492,7 @@ public class CommunityClan extends Functions implements ScriptFile, ICommunityBo
 			clanNotice.append("<td FIXWIDTH=300 align=center valign=top>");
 			if (clan.getNotice() != null && clan.getNotice().length() > 0)
 			{
-				clanNotice.append(
-							"<button action=\"bypass _bbsclan_editClanNotice_" + convertBackTags(clan.getNotice()) + "\" value=\"Edit\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">");
+				clanNotice.append("<button action=\"bypass _bbsclan_editClanNotice_" + convertBackTags(clan.getNotice()) + "\" value=\"Edit\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">");
 			}
 			else
 			{
@@ -607,8 +602,7 @@ public class CommunityClan extends Functions implements ScriptFile, ICommunityBo
 				clanWars.append("<font color=e7a689>" + warClan.getAllSize() + "</font>");
 				clanWars.append("</td>");
 				clanWars.append("<td width=40 align=center valign=top>");
-				clanWars.append("<button action=\"bypass _bbsclan_clanDetails_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_" + page + "_" + warClan.getClanId()
-							+ "\" width=14 height=14 back=\"L2UI_CT1.Button_DF_Input_Down\" fore=\"L2UI_CT1.Button_DF_Input\" />");
+				clanWars.append("<button action=\"bypass _bbsclan_clanDetails_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_" + page + "_" + warClan.getClanId() + "\" width=14 height=14 back=\"L2UI_CT1.Button_DF_Input_Down\" fore=\"L2UI_CT1.Button_DF_Input\" />");
 				clanWars.append("</td>");
 				clanWars.append("</tr>");
 				clanWars.append("</table>");
@@ -763,8 +757,7 @@ public class CommunityClan extends Functions implements ScriptFile, ICommunityBo
 		}
 		st.append("</td>");
 		st.append("<td width=125 align=left valign=top>");
-		st.append("<font color=bc2b0e><a action=\"bypass _bbsclan_clanDetails_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_" + page + "_" + clan.getClanId() + "\">"
-					+ clan.getName() + "</a></font>");
+		st.append("<font color=bc2b0e><a action=\"bypass _bbsclan_clanDetails_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_" + page + "_" + clan.getClanId() + "\">" + clan.getName() + "</a></font>");
 		st.append("</td>");
 		st.append("</tr>");
 		st.append("</table>");
@@ -834,8 +827,7 @@ public class CommunityClan extends Functions implements ScriptFile, ICommunityBo
 		st.append("<font color=e7a689>" + clan.getAllSize() + "</font>");
 		st.append("</td>");
 		st.append("<td width=40 align=center valign=top>");
-		st.append("<button action=\"bypass _bbsclan_clanDetails_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_" + page + "_" + clan.getClanId()
-					+ "\" width=14 height=14 back=L2UI_CT1.Button_DF_Input_Down fore=L2UI_CT1.Button_DF_Input>");
+		st.append("<button action=\"bypass _bbsclan_clanDetails_" + searchClanName + "_" + searchPlayerName + "_" + searchAllianceName + "_" + page + "_" + clan.getClanId() + "\" width=14 height=14 back=L2UI_CT1.Button_DF_Input_Down fore=L2UI_CT1.Button_DF_Input>");
 		st.append("</td>");
 		st.append("</tr>");
 		st.append("</table>");
@@ -1068,8 +1060,7 @@ public class CommunityClan extends Functions implements ScriptFile, ICommunityBo
 
 	private static boolean isSearchedClan(Clan clan, String searchClanName, String searchPlayerName, String searchAllianceName)
 	{
-		return (searchClanName.isEmpty() || StringUtils.containsIgnoreCase(clan.getName(), searchClanName)) && (searchPlayerName.isEmpty() || getFirstMemberByName(clan, searchPlayerName) != null)
-					&& (searchAllianceName.isEmpty() || clan.getAlliance() != null && StringUtils.containsIgnoreCase(clan.getAlliance().getAllyName(), searchAllianceName));
+		return (searchClanName.isEmpty() || StringUtils.containsIgnoreCase(clan.getName(), searchClanName)) && (searchPlayerName.isEmpty() || getFirstMemberByName(clan, searchPlayerName) != null) && (searchAllianceName.isEmpty() || clan.getAlliance() != null && StringUtils.containsIgnoreCase(clan.getAlliance().getAllyName(), searchAllianceName));
 	}
 
 	@Nullable

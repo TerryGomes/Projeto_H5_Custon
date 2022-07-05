@@ -362,8 +362,7 @@ public class heart extends Functions implements ScriptFile, OnDeathListener, OnP
 	{
 		if (_active && SimpleCheckDrop(cha, killer))
 		{
-			((NpcInstance) cha).dropItem(killer.getPlayer(), hearts[Rnd.get(hearts.length)],
-						Util.rollDrop(1, 1, Config.EVENT_CHANGE_OF_HEART_CHANCE * killer.getPlayer().getRateItems() * ((MonsterInstance) cha).getTemplate().rateHp * 10000L, true));
+			((NpcInstance) cha).dropItem(killer.getPlayer(), hearts[Rnd.get(hearts.length)], Util.rollDrop(1, 1, Config.EVENT_CHANGE_OF_HEART_CHANCE * killer.getPlayer().getRateItems() * ((MonsterInstance) cha).getTemplate().rateHp * 10000L, true));
 		}
 	}
 

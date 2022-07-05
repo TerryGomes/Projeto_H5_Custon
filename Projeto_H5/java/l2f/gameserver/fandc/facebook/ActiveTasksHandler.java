@@ -118,8 +118,7 @@ public final class ActiveTasksHandler
 			onTaskCompleted(task, action, true);
 			return false;
 		}
-		if (commentMatchType == FacebookCommentsHolder.CommentMatchType.COMMENT_NOT_MATCHES
-					&& (task.getIdentityType() == FacebookIdentityType.ID || !ConfigHolder.getBool("FacebookRegistrationOnlyExactComment")))
+		if (commentMatchType == FacebookCommentsHolder.CommentMatchType.COMMENT_NOT_MATCHES && (task.getIdentityType() == FacebookIdentityType.ID || !ConfigHolder.getBool("FacebookRegistrationOnlyExactComment")))
 		{
 			onTaskCompleted(task, action, false);
 			return false;

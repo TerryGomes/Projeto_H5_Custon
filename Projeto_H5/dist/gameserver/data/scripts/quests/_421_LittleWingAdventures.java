@@ -259,8 +259,7 @@ public class _421_LittleWingAdventures extends Quest implements ScriptFile
 				{
 					return "30747_00a.htm";
 				}
-				if ((st.getQuestItemsCount(Fairy_Leaf) > 0)
-							|| !(CheckTree(st, Fairy_Tree_of_Wind) && CheckTree(st, Fairy_Tree_of_Star) && CheckTree(st, Fairy_Tree_of_Twilight) && CheckTree(st, Fairy_Tree_of_Abyss)))
+				if ((st.getQuestItemsCount(Fairy_Leaf) > 0) || !(CheckTree(st, Fairy_Tree_of_Wind) && CheckTree(st, Fairy_Tree_of_Star) && CheckTree(st, Fairy_Tree_of_Twilight) && CheckTree(st, Fairy_Tree_of_Abyss)))
 				{
 					st.playSound(SOUND_FINISH);
 					st.exitCurrentQuest(true);

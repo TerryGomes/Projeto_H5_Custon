@@ -184,8 +184,7 @@ public class Util extends Functions
 			return;
 		}
 
-		if (!player.isInPeaceZone()
-					&& (player.isInCombat() || player.getPvpFlag() > 0 || !player.getReflection().equals(ReflectionManager.DEFAULT) || player.isInOlympiadMode() || Olympiad.isRegistered(player)))
+		if (!player.isInPeaceZone() && (player.isInCombat() || player.getPvpFlag() > 0 || !player.getReflection().equals(ReflectionManager.DEFAULT) || player.isInOlympiadMode() || Olympiad.isRegistered(player)))
 		{
 			player.sendMessage("You cannot teleport in this state!");
 			return;

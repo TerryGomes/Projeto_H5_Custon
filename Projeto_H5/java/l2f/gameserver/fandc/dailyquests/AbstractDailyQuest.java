@@ -395,8 +395,7 @@ public abstract class AbstractDailyQuest extends AbstractDPScript
 		}
 
 		final Player attacker = killer.getPlayer();
-		if ((target.isInZone(ZoneType.SIEGE) || attacker.isInZone(ZoneType.SIEGE)) || (target.isInZone(ZoneType.battle_zone) || attacker.isInZone(ZoneType.battle_zone)) || attacker.isInOlympiadMode()
-					|| (attacker.getKarma() > 0))
+		if ((target.isInZone(ZoneType.SIEGE) || attacker.isInZone(ZoneType.SIEGE)) || (target.isInZone(ZoneType.battle_zone) || attacker.isInZone(ZoneType.battle_zone)) || attacker.isInOlympiadMode() || (attacker.getKarma() > 0))
 		{
 			return false;
 		}

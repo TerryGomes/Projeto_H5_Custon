@@ -216,8 +216,7 @@ public class ForumTopic implements Comparable<ForumTopic>
 				}
 			}
 		}
-		try (PreparedStatement statement = BatchStatement.createPreparedStatement(con,
-					"REPLACE INTO smf_messages (id_msg, id_topic, id_board, poster_time, id_member, id_msg_modified, subject, poster_name, poster_email, poster_ip, body, icon) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)"))
+		try (PreparedStatement statement = BatchStatement.createPreparedStatement(con, "REPLACE INTO smf_messages (id_msg, id_topic, id_board, poster_time, id_member, id_msg_modified, subject, poster_name, poster_email, poster_ip, body, icon) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)"))
 		{
 			for (ForumTopic topic2 : board.getTopics())
 			{

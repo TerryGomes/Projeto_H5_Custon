@@ -27,7 +27,6 @@ public class MeleonSeed extends ScriptItemHandler implements ScriptFile
 			spawnedPlant = spawn;
 		}
 
-		@SuppressWarnings("unused")
 		@Override
 		public void runImpl() throws Exception
 		{

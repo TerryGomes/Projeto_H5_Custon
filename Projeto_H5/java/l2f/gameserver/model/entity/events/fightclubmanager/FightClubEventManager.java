@@ -43,12 +43,8 @@ public class FightClubEventManager
 
 	public enum CLASSES
 	{
-		FIGHTERS(13113, ClassId.duelist, ClassId.dreadnought, ClassId.titan, ClassId.grandKhauatari, ClassId.maestro, ClassId.doombringer, ClassId.maleSoulhound, ClassId.femaleSoulhound),
-		TANKS(13112, ClassId.phoenixKnight, ClassId.hellKnight, ClassId.evaTemplar, ClassId.shillienTemplar, ClassId.trickster),
-		ARCHERS(13114, ClassId.sagittarius, ClassId.moonlightSentinel, ClassId.ghostSentinel, ClassId.fortuneSeeker), DAGGERS(13114, ClassId.adventurer, ClassId.windRider, ClassId.ghostHunter),
-		MAGES(13116, ClassId.archmage, ClassId.soultaker, ClassId.mysticMuse, ClassId.stormScreamer), SUMMONERS(13118, ClassId.arcanaLord, ClassId.elementalMaster, ClassId.spectralMaster),
-		HEALERS(13115, ClassId.cardinal, ClassId.evaSaint, ClassId.shillienSaint, ClassId.dominator),
-		SUPPORTS(13117, ClassId.hierophant, ClassId.swordMuse, ClassId.spectralDancer, ClassId.doomcryer, ClassId.judicator);
+		FIGHTERS(13113, ClassId.duelist, ClassId.dreadnought, ClassId.titan, ClassId.grandKhauatari, ClassId.maestro, ClassId.doombringer, ClassId.maleSoulhound, ClassId.femaleSoulhound), TANKS(13112, ClassId.phoenixKnight, ClassId.hellKnight, ClassId.evaTemplar, ClassId.shillienTemplar, ClassId.trickster), ARCHERS(13114, ClassId.sagittarius, ClassId.moonlightSentinel, ClassId.ghostSentinel, ClassId.fortuneSeeker), DAGGERS(13114, ClassId.adventurer, ClassId.windRider, ClassId.ghostHunter),
+		MAGES(13116, ClassId.archmage, ClassId.soultaker, ClassId.mysticMuse, ClassId.stormScreamer), SUMMONERS(13118, ClassId.arcanaLord, ClassId.elementalMaster, ClassId.spectralMaster), HEALERS(13115, ClassId.cardinal, ClassId.evaSaint, ClassId.shillienSaint, ClassId.dominator), SUPPORTS(13117, ClassId.hierophant, ClassId.swordMuse, ClassId.spectralDancer, ClassId.doomcryer, ClassId.judicator);
 
 		private int _transformId;
 		private ClassId[] _classes;
@@ -824,20 +820,17 @@ public class FightClubEventManager
 		builder.append("<table width=270>");
 		builder.append("	<tr>");
 		builder.append("		<td>");
-		builder.append("			<center><button value = \"Buffer\" action=\"bypass -h ").append(BYPASS)
-					.append(" buffer\" back=\"l2ui_ct1.button.OlympiadWnd_DF_Back_Down\" width=200 height=30 fore=\"l2ui_ct1.button.OlympiadWnd_DF_Back\"></center>");
+		builder.append("			<center><button value = \"Buffer\" action=\"bypass -h ").append(BYPASS).append(" buffer\" back=\"l2ui_ct1.button.OlympiadWnd_DF_Back_Down\" width=200 height=30 fore=\"l2ui_ct1.button.OlympiadWnd_DF_Back\"></center>");
 		builder.append("		</td>");
 		builder.append("	</tr>");
 		builder.append("	<tr>");
 		builder.append("		<td>");
-		builder.append("			<center><button value = \"Leave Event\" action=\"bypass -h ").append(BYPASS)
-					.append(" leave\" back=\"l2ui_ct1.button.OlympiadWnd_DF_Back_Down\" width=200 height=30 fore=\"l2ui_ct1.button.OlympiadWnd_DF_Back\"></center>");
+		builder.append("			<center><button value = \"Leave Event\" action=\"bypass -h ").append(BYPASS).append(" leave\" back=\"l2ui_ct1.button.OlympiadWnd_DF_Back_Down\" width=200 height=30 fore=\"l2ui_ct1.button.OlympiadWnd_DF_Back\"></center>");
 		builder.append("		</td>");
 		builder.append("	</tr>");
 		builder.append("	<tr>");
 		builder.append("		<td>");
-		builder.append("			<center><button value = \"Close\" action=\"bypass -h ").append(BYPASS)
-					.append(" close\" back=\"l2ui_ct1.button.OlympiadWnd_DF_Info_Down\" width=200 height=30 fore=\"l2ui_ct1.button.OlympiadWnd_DF_Info\"></center>");
+		builder.append("			<center><button value = \"Close\" action=\"bypass -h ").append(BYPASS).append(" close\" back=\"l2ui_ct1.button.OlympiadWnd_DF_Info_Down\" width=200 height=30 fore=\"l2ui_ct1.button.OlympiadWnd_DF_Info\"></center>");
 		builder.append("		</td>");
 		builder.append("	</tr>");
 		builder.append("</table>");

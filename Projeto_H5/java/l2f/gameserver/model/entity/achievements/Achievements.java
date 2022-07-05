@@ -91,14 +91,8 @@ public class Achievements
 
 		final int totalpages = (int) (Math.ceil(player.getAchievements(category).size() / 5.0));
 
-		FULL_PAGE = FULL_PAGE.replaceAll("%back%",
-					page == 1 ? "<button value=\"\" action=\"bypass _bbs_achievements\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\">"
-								: "<button value=\"\" action=\"bypass _bbs_achievements_cat " + category + " " + (page - 1)
-											+ "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\">");
-		FULL_PAGE = FULL_PAGE.replaceAll("%more%",
-					totalpages <= page ? "&nbsp;"
-								: "<button value=\"\" action=\"bypass _bbs_achievements_cat " + category + " " + (page + 1)
-											+ "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\">");
+		FULL_PAGE = FULL_PAGE.replaceAll("%back%", page == 1 ? "<button value=\"\" action=\"bypass _bbs_achievements\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\">" : "<button value=\"\" action=\"bypass _bbs_achievements_cat " + category + " " + (page - 1) + "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\">");
+		FULL_PAGE = FULL_PAGE.replaceAll("%more%", totalpages <= page ? "&nbsp;" : "<button value=\"\" action=\"bypass _bbs_achievements_cat " + category + " " + (page + 1) + "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\">");
 
 		AchievementCategory cat = _achievementCategories.stream().filter(ctg -> ctg.getCategoryId() == category).findAny().orElse(null);
 		if (cat == null)

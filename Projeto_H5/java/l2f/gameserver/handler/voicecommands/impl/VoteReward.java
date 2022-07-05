@@ -377,8 +377,7 @@ public class VoteReward implements IVoicedCommandHandler, ScriptFile
 		_hwidPenalties.put(HWID, newPenalty);
 
 		// Also store the penalties in the db
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = BatchStatement.createPreparedStatement(con, "REPLACE INTO vote_system(value_type, value, penalty_time) VALUES (?, ?, ?)"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = BatchStatement.createPreparedStatement(con, "REPLACE INTO vote_system(value_type, value, penalty_time) VALUES (?, ?, ?)"))
 		{
 			final String[] values = new String[]
 			{

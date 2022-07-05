@@ -58,8 +58,7 @@ public class TelnetPerfomance implements TelnetCommandHolder
 					try
 					{
 						new File("stats").mkdir();
-						FileUtils.writeStringToFile(new File("stats/RunnableStats-" + new SimpleDateFormat("MMddHHmmss").format(System.currentTimeMillis()) + ".txt"),
-									RunnableStatsManager.getInstance().getStats().toString());
+						FileUtils.writeStringToFile(new File("stats/RunnableStats-" + new SimpleDateFormat("MMddHHmmss").format(System.currentTimeMillis()) + ".txt"), RunnableStatsManager.getInstance().getStats().toString());
 						sb.append("Runnable stats saved.\n");
 					}
 					catch (IOException e)
@@ -163,8 +162,7 @@ public class TelnetPerfomance implements TelnetCommandHolder
 					try
 					{
 						new File("stats").mkdir();
-						FileUtils.writeStringToFile(new File("stats/ThreadsDump-" + new SimpleDateFormat("MMddHHmmss").format(System.currentTimeMillis()) + ".txt"),
-									StatsUtils.getThreadStats(true, true, true).toString());
+						FileUtils.writeStringToFile(new File("stats/ThreadsDump-" + new SimpleDateFormat("MMddHHmmss").format(System.currentTimeMillis()) + ".txt"), StatsUtils.getThreadStats(true, true, true).toString());
 						sb.append("Threads stats saved.\n");
 					}
 					catch (IOException e)

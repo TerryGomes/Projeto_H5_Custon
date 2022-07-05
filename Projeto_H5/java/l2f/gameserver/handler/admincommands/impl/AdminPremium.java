@@ -182,8 +182,7 @@ public class AdminPremium implements IAdminCommandHandler
 			}
 
 			// Now we must add the premium to all accounts in the db, but avoiding those that already have a bonus
-			try (Connection con = DatabaseFactory.getInstance().getConnection();
-						PreparedStatement statement = con.prepareStatement("INSERT IGNORE INTO account_bonus(account, bonus, bonus_expire) VALUES (?,?,?)"))
+			try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("INSERT IGNORE INTO account_bonus(account, bonus, bonus_expire) VALUES (?,?,?)"))
 			{
 				// We create a batch to make this massive query, disabling auto commit
 				con.setAutoCommit(false);

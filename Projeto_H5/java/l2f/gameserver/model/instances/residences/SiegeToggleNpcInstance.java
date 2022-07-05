@@ -84,8 +84,7 @@ public abstract class SiegeToggleNpcInstance extends NpcInstance
 		}
 
 		SiegeEvent<?, ?> siegeEvent = getEvent(SiegeEvent.class);
-		if (siegeEvent == null || !siegeEvent.isInProgress() || (siegeEvent.getSiegeClan(DominionSiegeEvent.DEFENDERS, player.getClan()) != null)
-					|| siegeEvent.getObjects(DominionSiegeEvent.DEFENDER_PLAYERS).contains(player.getObjectId()))
+		if (siegeEvent == null || !siegeEvent.isInProgress() || (siegeEvent.getSiegeClan(DominionSiegeEvent.DEFENDERS, player.getClan()) != null) || siegeEvent.getObjects(DominionSiegeEvent.DEFENDER_PLAYERS).contains(player.getObjectId()))
 		{
 			return false;
 		}

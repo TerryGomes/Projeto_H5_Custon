@@ -67,8 +67,7 @@ public class NewbieGuideInstance extends NpcInstance
 				}
 				if (player.getLevel() < 6) // FIXME: если получить 6 левел во время квеста то награду не дадут
 				{
-					if (player.isQuestCompleted("_001_LettersOfLove") || player.isQuestCompleted("_002_WhatWomenWant") || player.isQuestCompleted("_004_LongLivethePaagrioLord")
-								|| player.isQuestCompleted("_005_MinersFavor") || player.isQuestCompleted("_166_DarkMass") || player.isQuestCompleted("_174_SupplyCheck"))
+					if (player.isQuestCompleted("_001_LettersOfLove") || player.isQuestCompleted("_002_WhatWomenWant") || player.isQuestCompleted("_004_LongLivethePaagrioLord") || player.isQuestCompleted("_005_MinersFavor") || player.isQuestCompleted("_166_DarkMass") || player.isQuestCompleted("_174_SupplyCheck"))
 					{
 						if (!player.getVarB("ng1"))
 						{

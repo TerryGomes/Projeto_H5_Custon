@@ -295,8 +295,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, SiegeClanObject>
 			if (_oldOwner == ownerClan)
 			{
 				getResidence().setRewardCount(getResidence().getRewardCount() + 1);
-				ownerClan.broadcastToOnlineMembers(new SystemMessage2(SystemMsg.SINCE_YOUR_CLAN_EMERGED_VICTORIOUS_FROM_THE_SIEGE_S1_POINTS_HAVE_BEEN_ADDED_TO_YOUR_CLANS_REPUTATION_SCORE)
-							.addInteger(ownerClan.incReputation(1500, false, toString())));
+				ownerClan.broadcastToOnlineMembers(new SystemMessage2(SystemMsg.SINCE_YOUR_CLAN_EMERGED_VICTORIOUS_FROM_THE_SIEGE_S1_POINTS_HAVE_BEEN_ADDED_TO_YOUR_CLANS_REPUTATION_SCORE).addInteger(ownerClan.incReputation(1500, false, toString())));
 
 				// Synerge - Give the winner clan a reputation reward. Half reward if the clan keeps the castle
 				if (Config.SIEGE_WINNER_REPUTATION_REWARD > 0)
@@ -306,15 +305,13 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, SiegeClanObject>
 			}
 			else
 			{
-				L2GameServerPacket packet = new Say2(0, ChatType.CRITICAL_ANNOUNCE, getResidence().getName() + " Castle",
-							"Clan " + ownerClan.getName() + " is victorious over " + getResidence().getName() + "'s castle siege!");
+				L2GameServerPacket packet = new Say2(0, ChatType.CRITICAL_ANNOUNCE, getResidence().getName() + " Castle", "Clan " + ownerClan.getName() + " is victorious over " + getResidence().getName() + "'s castle siege!");
 				for (Player player : GameObjectsStorage.getAllPlayersForIterate())
 				{
 					player.sendPacket(packet);
 				}
 
-				ownerClan.broadcastToOnlineMembers(new SystemMessage2(SystemMsg.SINCE_YOUR_CLAN_EMERGED_VICTORIOUS_FROM_THE_SIEGE_S1_POINTS_HAVE_BEEN_ADDED_TO_YOUR_CLANS_REPUTATION_SCORE)
-							.addInteger(ownerClan.incReputation(3000, false, toString())));
+				ownerClan.broadcastToOnlineMembers(new SystemMessage2(SystemMsg.SINCE_YOUR_CLAN_EMERGED_VICTORIOUS_FROM_THE_SIEGE_S1_POINTS_HAVE_BEEN_ADDED_TO_YOUR_CLANS_REPUTATION_SCORE).addInteger(ownerClan.incReputation(3000, false, toString())));
 
 				if (_oldOwner != null)
 				{
@@ -623,8 +620,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, SiegeClanObject>
 			{
 				return SystemMsg.INVALID_TARGET;
 			}
-			if (attacker.isPlayer() && target.isPlayer() && attacker.getPlayer().getClan() != null && attacker.getPlayer().getClan().getAlliance() != null && target.getPlayer().getClan() != null
-						&& target.getPlayer().getClan().getAlliance() != null && attacker.getPlayer().getClan().getAlliance() == target.getPlayer().getClan().getAlliance())
+			if (attacker.isPlayer() && target.isPlayer() && attacker.getPlayer().getClan() != null && attacker.getPlayer().getClan().getAlliance() != null && target.getPlayer().getClan() != null && target.getPlayer().getClan().getAlliance() != null && attacker.getPlayer().getClan().getAlliance() == target.getPlayer().getClan().getAlliance())
 			{
 				return SystemMsg.INVALID_TARGET;
 			}
@@ -724,8 +720,7 @@ public class CastleSiegeEvent extends SiegeEvent<Castle, SiegeClanObject>
 			{
 				return false;
 			}
-			if (attacker.isPlayer() && target.isPlayer() && attacker.getPlayer().getClan() != null && attacker.getPlayer().getClan().getAlliance() != null && target.getPlayer().getClan() != null
-						&& target.getPlayer().getClan().getAlliance() != null && attacker.getPlayer().getClan().getAlliance() == target.getPlayer().getClan().getAlliance())
+			if (attacker.isPlayer() && target.isPlayer() && attacker.getPlayer().getClan() != null && attacker.getPlayer().getClan().getAlliance() != null && target.getPlayer().getClan() != null && target.getPlayer().getClan().getAlliance() != null && attacker.getPlayer().getClan().getAlliance() == target.getPlayer().getClan().getAlliance())
 			{
 				return false;
 			}

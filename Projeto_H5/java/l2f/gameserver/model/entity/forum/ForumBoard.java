@@ -179,8 +179,7 @@ public class ForumBoard
 		}
 
 		ForumTopic.synchronizeTopics(con, this);
-		try (PreparedStatement statement = BatchStatement.createPreparedStatement(con,
-					"REPLACE INTO smf_topics (id_topic, id_board, id_first_msg, id_last_msg, id_member_started, id_member_updated) VALUES (?,?,?,?,?,?)"))
+		try (PreparedStatement statement = BatchStatement.createPreparedStatement(con, "REPLACE INTO smf_topics (id_topic, id_board, id_first_msg, id_last_msg, id_member_started, id_member_updated) VALUES (?,?,?,?,?,?)"))
 		{
 			for (ForumTopic topic2 : topics)
 			{

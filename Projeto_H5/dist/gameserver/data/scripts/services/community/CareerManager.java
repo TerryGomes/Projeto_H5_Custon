@@ -115,8 +115,7 @@ public class CareerManager implements ScriptFile, ICommunityBoardHandler
 				jobLevel = 4;
 			}
 
-			if ((level >= 20 && jobLevel == 1 || level >= 40 && jobLevel == 2 && activeChar.getActiveClass().isBase() || level >= 76 && jobLevel == 3 && activeChar.getActiveClass().isBase())
-						&& Config.ALLOW_CLASS_MASTERS_LIST.contains(jobLevel))
+			if ((level >= 20 && jobLevel == 1 || level >= 40 && jobLevel == 2 && activeChar.getActiveClass().isBase() || level >= 76 && jobLevel == 3 && activeChar.getActiveClass().isBase()) && Config.ALLOW_CLASS_MASTERS_LIST.contains(jobLevel))
 			{
 				ItemTemplate item = ItemHolder.getInstance().getTemplate(Config.CLASS_MASTERS_PRICE_ITEM);
 				html.append("You have to pay: <font color=\"LEVEL\">");
@@ -130,8 +129,7 @@ public class CareerManager implements ScriptFile, ICommunityBoardHandler
 					}
 					if (cid.childOf(classId) && cid.level() == classId.level() + 1)
 					{
-						html.append("<td><center><button value=\"").append(cid.name()).append("\" action=\"bypass _bbscareer;classmaster;change_class;").append(cid.getId()).append(";")
-									.append(Config.CLASS_MASTERS_PRICE_LIST[jobLevel]).append("\" width=150 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></center></td>");
+						html.append("<td><center><button value=\"").append(cid.name()).append("\" action=\"bypass _bbscareer;classmaster;change_class;").append(cid.getId()).append(";").append(Config.CLASS_MASTERS_PRICE_LIST[jobLevel]).append("\" width=150 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></center></td>");
 					}
 
 				}

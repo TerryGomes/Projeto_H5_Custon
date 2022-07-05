@@ -70,8 +70,7 @@ public enum AbnormalEffect
 	S_UNKNOWN32("sunk32", 0x80000000, true), // пусто
 
 	// event effects
-	E_AFRO_1("afrobaguette1", 0x000001, false, true), E_AFRO_2("afrobaguette2", 0x000002, false, true), E_AFRO_3("afrobaguette3", 0x000004, false, true), E_EVASWRATH("evaswrath", 0x000008, false, true),
-	E_HEADPHONE("headphone", 0x000010, false, true), E_VESPER_1("vesper1", 0x000020, false, true), E_VESPER_2("vesper2", 0x000040, false, true), E_VESPER_3("vesper3", 0x000080, false, true);
+	E_AFRO_1("afrobaguette1", 0x000001, false, true), E_AFRO_2("afrobaguette2", 0x000002, false, true), E_AFRO_3("afrobaguette3", 0x000004, false, true), E_EVASWRATH("evaswrath", 0x000008, false, true), E_HEADPHONE("headphone", 0x000010, false, true), E_VESPER_1("vesper1", 0x000020, false, true), E_VESPER_2("vesper2", 0x000040, false, true), E_VESPER_3("vesper3", 0x000080, false, true);
 
 	private final int _mask;
 	private final String _name;

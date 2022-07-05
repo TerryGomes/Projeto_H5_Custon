@@ -163,8 +163,7 @@ public class EffectsDAO
 	public static void deletePossiblePetEffects(Player player)
 	{
 		final int playerObjectId = player.getObjectId();
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = BatchStatement.createPreparedStatement(con, "DELETE FROM character_effects_save WHERE object_id = ? AND id=?"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = BatchStatement.createPreparedStatement(con, "DELETE FROM character_effects_save WHERE object_id = ? AND id=?"))
 		{
 			for (Skill skill : player.getAllSkills())
 			{

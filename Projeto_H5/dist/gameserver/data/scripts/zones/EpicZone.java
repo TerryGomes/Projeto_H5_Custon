@@ -87,8 +87,7 @@ public class EpicZone implements ScriptFile
 			}
 			// Synerge - Added protection to only allow x max class level to certain zones if set. It also checks if player has subclasses, that should be the same as having 3rd class
 			final int maxClassLvl = zone.getParams().getInteger("maxClassLevelAllowed", -1);
-			if (cha.getLevel() > zone.getParams().getInteger("levelLimit") || (maxClassLvl >= 0 && cha.getPlayer().getClassId().getLevel() > maxClassLvl)
-						|| (maxClassLvl >= 0 && cha.getPlayer().isSubClassActive()))
+			if (cha.getLevel() > zone.getParams().getInteger("levelLimit") || (maxClassLvl >= 0 && cha.getPlayer().getClassId().getLevel() > maxClassLvl) || (maxClassLvl >= 0 && cha.getPlayer().isSubClassActive()))
 			{
 				teleportOut(zone, cha);
 				return;

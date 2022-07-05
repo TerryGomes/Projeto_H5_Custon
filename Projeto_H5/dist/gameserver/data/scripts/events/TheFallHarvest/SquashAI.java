@@ -23,7 +23,6 @@ public class SquashAI extends Fighter
 {
 	public class PolimorphTask extends RunnableImpl
 	{
-		@SuppressWarnings("unused")
 		@Override
 		public void runImpl() throws Exception
 		{

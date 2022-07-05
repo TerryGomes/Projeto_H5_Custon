@@ -246,8 +246,7 @@ public class AchievementsInstance extends NpcInstance
 			for (Achievement a : AchievementsManager.getInstance().getAchievementList().values())
 			{
 				tb.append(getTableColor(i));
-				tb.append("<tr><td width=290 align=\"left\">" + a.getName() + "</td><td width=50 align=\"right\"><a action=\"bypass -h npc_%objectId%_achievementInfo " + a.getID()
-							+ "\">info</a></td><td width=200 align=\"center\">" + getStatusString(a.getID(), player) + "</td></tr></table>");
+				tb.append("<tr><td width=290 align=\"left\">" + a.getName() + "</td><td width=50 align=\"right\"><a action=\"bypass -h npc_%objectId%_achievementInfo " + a.getID() + "\">info</a></td><td width=200 align=\"center\">" + getStatusString(a.getID(), player) + "</td></tr></table>");
 				i++;
 			}
 

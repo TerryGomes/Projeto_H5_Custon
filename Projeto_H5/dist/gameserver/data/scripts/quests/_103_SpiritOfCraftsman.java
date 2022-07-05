@@ -101,8 +101,7 @@ public class _103_SpiritOfCraftsman extends Quest implements ScriptFile
 		}
 		else if (id == STARTED)
 		{
-			if (npcId == 30307 && st.getCond() >= 1
-						&& (st.getQuestItemsCount(KAROYDS_LETTER_ID) >= 1 || st.getQuestItemsCount(CECKTINONS_VOUCHER1_ID) >= 1 || st.getQuestItemsCount(CECKTINONS_VOUCHER2_ID) >= 1))
+			if (npcId == 30307 && st.getCond() >= 1 && (st.getQuestItemsCount(KAROYDS_LETTER_ID) >= 1 || st.getQuestItemsCount(CECKTINONS_VOUCHER1_ID) >= 1 || st.getQuestItemsCount(CECKTINONS_VOUCHER2_ID) >= 1))
 			{
 				htmltext = "blacksmith_karoyd_q0103_06.htm";
 			}

@@ -321,8 +321,7 @@ public class _226_TestOfHealer extends Quest implements ScriptFile
 		case Bandellos:
 			if (cond == 0)
 			{
-				if (st.getPlayer().getClassId() == ClassId.knight || st.getPlayer().getClassId() == ClassId.cleric || st.getPlayer().getClassId() == ClassId.oracle
-							|| st.getPlayer().getClassId() == ClassId.elvenKnight)
+				if (st.getPlayer().getClassId() == ClassId.knight || st.getPlayer().getClassId() == ClassId.cleric || st.getPlayer().getClassId() == ClassId.oracle || st.getPlayer().getClassId() == ClassId.elvenKnight)
 				{
 					if (st.getPlayer().getLevel() >= 39)
 					{

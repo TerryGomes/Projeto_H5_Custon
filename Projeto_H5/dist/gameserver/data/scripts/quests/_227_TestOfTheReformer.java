@@ -540,8 +540,7 @@ public class _227_TestOfTheReformer extends Quest implements ScriptFile
 				}
 			}
 		}
-		if (cond == 18 && st.getQuestItemsCount(BoneFragment1) != 0 && st.getQuestItemsCount(BoneFragment2) != 0 && st.getQuestItemsCount(BoneFragment3) != 0 && st.getQuestItemsCount(BoneFragment4) != 0
-					&& st.getQuestItemsCount(BoneFragment5) != 0)
+		if (cond == 18 && st.getQuestItemsCount(BoneFragment1) != 0 && st.getQuestItemsCount(BoneFragment2) != 0 && st.getQuestItemsCount(BoneFragment3) != 0 && st.getQuestItemsCount(BoneFragment4) != 0 && st.getQuestItemsCount(BoneFragment5) != 0)
 		{
 			st.setCond(19);
 			st.setState(STARTED);

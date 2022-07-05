@@ -52,15 +52,13 @@ public class TournamentInstance extends NpcInstance
 
 		if (player.isInTournament())
 		{
-			tb.append("<center><button action=\"bypass -h npc_" + getObjectId() + "_match " + player.getTournament().getTeamSize() + " \" value=\"" + "Unregister"
-						+ "\" width=75 height=21 back=\"L2UI_ch3.Btn1_normalOn\" fore=\"L2UI_ch3.Btn1_normal\">");
+			tb.append("<center><button action=\"bypass -h npc_" + getObjectId() + "_match " + player.getTournament().getTeamSize() + " \" value=\"" + "Unregister" + "\" width=75 height=21 back=\"L2UI_ch3.Btn1_normalOn\" fore=\"L2UI_ch3.Btn1_normal\">");
 		}
 		else
 		{
 			for (final AbstractTournament match : TournamentHolder.getTournaments())
 			{
-				tb.append("<center><button action=\"bypass -h npc_" + getObjectId() + "_match " + match.getTeamSize() + " \" value=\"" + match.getTeamSize() + " vs " + match.getTeamSize()
-							+ "\" width=75 height=21 back=\"L2UI_ch3.Btn1_normalOn\" fore=\"L2UI_ch3.Btn1_normal\">");
+				tb.append("<center><button action=\"bypass -h npc_" + getObjectId() + "_match " + match.getTeamSize() + " \" value=\"" + match.getTeamSize() + " vs " + match.getTeamSize() + "\" width=75 height=21 back=\"L2UI_ch3.Btn1_normalOn\" fore=\"L2UI_ch3.Btn1_normal\">");
 			}
 		}
 

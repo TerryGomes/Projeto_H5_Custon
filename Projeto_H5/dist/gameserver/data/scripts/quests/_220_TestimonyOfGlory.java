@@ -541,8 +541,7 @@ public class _220_TestimonyOfGlory extends Quest implements ScriptFile
 		{
 			st.takeItems(KasmansLetter3rd, -1);
 			st.giveItems(ScepterOfTunath, 1);
-			if (st.getQuestItemsCount(ScepterOfBreka) != 0 && st.getQuestItemsCount(ScepterOfEnku) != 0 && st.getQuestItemsCount(ScepterOfVuku) != 0 && st.getQuestItemsCount(ScepterOfTurek) != 0
-						&& st.getQuestItemsCount(ScepterOfTunath) != 0)
+			if (st.getQuestItemsCount(ScepterOfBreka) != 0 && st.getQuestItemsCount(ScepterOfEnku) != 0 && st.getQuestItemsCount(ScepterOfVuku) != 0 && st.getQuestItemsCount(ScepterOfTurek) != 0 && st.getQuestItemsCount(ScepterOfTunath) != 0)
 			{
 				st.setCond(5);
 				st.setState(STARTED);
@@ -792,8 +791,7 @@ public class _220_TestimonyOfGlory extends Quest implements ScriptFile
 					st.takeItems(GloveOfVoltar, -1);
 					st.giveItems(ScepterOfBreka, 1);
 					htmltext = "30615-06.htm";
-					if (st.getQuestItemsCount(ScepterOfBreka) > 0 && st.getQuestItemsCount(ScepterOfEnku) > 0 && st.getQuestItemsCount(ScepterOfVuku) > 0 && st.getQuestItemsCount(ScepterOfTurek) > 0
-								&& st.getQuestItemsCount(ScepterOfTunath) > 0)
+					if (st.getQuestItemsCount(ScepterOfBreka) > 0 && st.getQuestItemsCount(ScepterOfEnku) > 0 && st.getQuestItemsCount(ScepterOfVuku) > 0 && st.getQuestItemsCount(ScepterOfTurek) > 0 && st.getQuestItemsCount(ScepterOfTunath) > 0)
 					{
 						st.setCond(5);
 						st.setState(STARTED);
@@ -847,8 +845,7 @@ public class _220_TestimonyOfGlory extends Quest implements ScriptFile
 					st.takeItems(EnkuOverlordHead, -1);
 					st.takeItems(GloveOfKepra, -1);
 					st.giveItems(ScepterOfEnku, 1);
-					if (st.getQuestItemsCount(ScepterOfBreka) > 0 && st.getQuestItemsCount(ScepterOfEnku) > 0 && st.getQuestItemsCount(ScepterOfVuku) > 0 && st.getQuestItemsCount(ScepterOfTurek) > 0
-								&& st.getQuestItemsCount(ScepterOfTunath) > 0)
+					if (st.getQuestItemsCount(ScepterOfBreka) > 0 && st.getQuestItemsCount(ScepterOfEnku) > 0 && st.getQuestItemsCount(ScepterOfVuku) > 0 && st.getQuestItemsCount(ScepterOfTurek) > 0 && st.getQuestItemsCount(ScepterOfTunath) > 0)
 					{
 						st.setCond(5);
 						st.setState(STARTED);
@@ -900,8 +897,7 @@ public class _220_TestimonyOfGlory extends Quest implements ScriptFile
 					st.takeItems(MakumBugbearHead, -1);
 					st.takeItems(GloveOfBurai, -1);
 					st.giveItems(ScepterOfTurek, 1);
-					if (st.getQuestItemsCount(ScepterOfBreka) > 0 && st.getQuestItemsCount(ScepterOfEnku) > 0 && st.getQuestItemsCount(ScepterOfVuku) > 0 && st.getQuestItemsCount(ScepterOfTurek) > 0
-								&& st.getQuestItemsCount(ScepterOfTunath) > 0)
+					if (st.getQuestItemsCount(ScepterOfBreka) > 0 && st.getQuestItemsCount(ScepterOfEnku) > 0 && st.getQuestItemsCount(ScepterOfVuku) > 0 && st.getQuestItemsCount(ScepterOfTurek) > 0 && st.getQuestItemsCount(ScepterOfTunath) > 0)
 					{
 						st.setCond(5);
 						st.setState(STARTED);
@@ -954,8 +950,7 @@ public class _220_TestimonyOfGlory extends Quest implements ScriptFile
 						st.takeItems(StakatoDroneHusk, -1);
 						st.takeItems(DrikosContract, -1);
 						st.giveItems(ScepterOfVuku, 1);
-						if (st.getQuestItemsCount(ScepterOfBreka) > 0 && st.getQuestItemsCount(ScepterOfEnku) > 0 && st.getQuestItemsCount(ScepterOfVuku) > 0 && st.getQuestItemsCount(ScepterOfTurek) > 0
-									&& st.getQuestItemsCount(ScepterOfTunath) > 0)
+						if (st.getQuestItemsCount(ScepterOfBreka) > 0 && st.getQuestItemsCount(ScepterOfEnku) > 0 && st.getQuestItemsCount(ScepterOfVuku) > 0 && st.getQuestItemsCount(ScepterOfTurek) > 0 && st.getQuestItemsCount(ScepterOfTunath) > 0)
 						{
 							st.setCond(5);
 							st.setState(STARTED);

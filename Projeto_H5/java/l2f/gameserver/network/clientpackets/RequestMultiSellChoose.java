@@ -318,9 +318,7 @@ public class RequestMultiSellChoose extends L2GameClientPacket
 								ItemInstance itemToTake = null;
 								for (ItemInstance item : list)
 								{
-									if (!items.contains(new ItemData(item.getItemId(), item.getCount(), item)) && ((itemToTake == null) || (item.getEnchantLevel() < itemToTake.getEnchantLevel()))
-												&& !item.isShadowItem() && !item.isTemporalItem() && (!item.isAugmented() || Config.ALT_ALLOW_DROP_AUGMENTED)
-												&& ItemFunctions.checkIfCanDiscard(activeChar, item))
+									if (!items.contains(new ItemData(item.getItemId(), item.getCount(), item)) && ((itemToTake == null) || (item.getEnchantLevel() < itemToTake.getEnchantLevel())) && !item.isShadowItem() && !item.isTemporalItem() && (!item.isAugmented() || Config.ALT_ALLOW_DROP_AUGMENTED) && ItemFunctions.checkIfCanDiscard(activeChar, item))
 									{
 										itemToTake = item;
 										if (itemToTake.getEnchantLevel() == 0)

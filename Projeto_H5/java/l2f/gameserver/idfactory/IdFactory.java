@@ -168,8 +168,7 @@ public abstract class IdFactory
 			st.executeUpdate("UPDATE dominion SET lord_object_id = '0' WHERE dominion.lord_object_id NOT IN (SELECT obj_Id FROM characters);");
 			st.executeUpdate("UPDATE clan_subpledges SET leader_id=0 WHERE leader_id > 0 AND clan_subpledges.leader_id NOT IN (SELECT obj_Id FROM characters);");
 			st.executeUpdate("UPDATE castle SET tax_percent = '0' WHERE castle.id NOT IN (SELECT hasCastle FROM clan_data);");
-			st.executeUpdate(
-						"UPDATE characters SET clanid = '0', title = '', pledge_type = '0', pledge_rank = '0', lvl_joined_academy = '0', apprentice = '0' WHERE characters.clanid > 0 AND characters.clanid NOT IN (SELECT clan_id FROM clan_data);");
+			st.executeUpdate("UPDATE characters SET clanid = '0', title = '', pledge_type = '0', pledge_rank = '0', lvl_joined_academy = '0', apprentice = '0' WHERE characters.clanid > 0 AND characters.clanid NOT IN (SELECT clan_id FROM clan_data);");
 			st.executeUpdate("UPDATE items SET loc = 'WAREHOUSE' WHERE loc = 'MAIL' AND items.object_id NOT IN (SELECT item_id FROM mail_attachments);");
 
 			_log.info("IdFactory: Cleaned " + cleanCount + " elements from database in " + (System.currentTimeMillis() - cleanupStart) / 1000 + "sec.");

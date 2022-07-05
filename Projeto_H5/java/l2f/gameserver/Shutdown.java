@@ -359,9 +359,7 @@ public class Shutdown extends Thread
 
 	private static void removeVoidItems()
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement(
-								"DELETE items FROM items LEFT JOIN clan_data ON clan_data.clan_id = items.owner_id WHERE items.loc='VOID' AND items.owner_id > 0 AND clan_data.clan_id is NULL"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("DELETE items FROM items LEFT JOIN clan_data ON clan_data.clan_id = items.owner_id WHERE items.loc='VOID' AND items.owner_id > 0 AND clan_data.clan_id is NULL"))
 		{
 			statement.executeUpdate();
 		}

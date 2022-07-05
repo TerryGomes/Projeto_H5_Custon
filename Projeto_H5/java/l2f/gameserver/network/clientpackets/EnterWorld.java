@@ -284,8 +284,7 @@ public class EnterWorld extends L2GameClientPacket
 			if ((activeChar.getClan() != null) && (activeChar.isClanLeader()) && (activeChar.getClan().getCastle() != 0))
 			{
 				int id = activeChar.getCastle().getId();
-				Announcements.getInstance().announceToAll(new CustomMessage("Lord {0} the owner of the castle {1} entered the game.").addString(activeChar.getName())
-							.addString(new CustomMessage("common.castle." + id, activeChar).toString()).toString());
+				Announcements.getInstance().announceToAll(new CustomMessage("Lord {0} the owner of the castle {1} entered the game.").addString(activeChar.getName()).addString(new CustomMessage("common.castle." + id, activeChar).toString()).toString());
 			}
 		}
 		activeChar.getMacroses().sendUpdate();

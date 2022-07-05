@@ -81,13 +81,11 @@ public class ChangeLogManager
 		pagesBuilder.append("<table><tr>");
 		if (index > 0)
 		{
-			pagesBuilder.append("<td><button value=\"Previous\" action=\"bypass -h ShowChangeLogPage ").append(index - 1)
-						.append("\" width=80 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\"></td>");
+			pagesBuilder.append("<td><button value=\"Previous\" action=\"bypass -h ShowChangeLogPage ").append(index - 1).append("\" width=80 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\"></td>");
 		}
 		if (index < getLatestChangeId())
 		{
-			pagesBuilder.append("<td><button value=\"Next\" action=\"bypass -h ShowChangeLogPage ").append(index + 1)
-						.append("\" width=80 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\"></td>");
+			pagesBuilder.append("<td><button value=\"Next\" action=\"bypass -h ShowChangeLogPage ").append(index + 1).append("\" width=80 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\"></td>");
 		}
 
 		pagesBuilder.append("</tr></table>");
@@ -95,13 +93,8 @@ public class ChangeLogManager
 		String html = HtmCache.getInstance().getNotNull("command/changeLog.htm", Language.ENGLISH);
 		html = html.replace("%date%", change.getDate());
 		html = html.replace("%fixes%", fixesBuilder.toString());
-		html = html.replace("%leftPageBtn%",
-					index > 0 ? "<button value=\"Previous\" action=\"bypass -h ShowChangeLogPage " + (index - 1) + "\" width=80 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\">"
-								: "<br>");
-		html = html.replace("%rightPageBtn%",
-					index < getLatestChangeId()
-								? "<button value=\"Next\" action=\"bypass -h ShowChangeLogPage " + (index + 1) + "\" width=80 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\">"
-								: "<br>");
+		html = html.replace("%leftPageBtn%", index > 0 ? "<button value=\"Previous\" action=\"bypass -h ShowChangeLogPage " + (index - 1) + "\" width=80 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\">" : "<br>");
+		html = html.replace("%rightPageBtn%", index < getLatestChangeId() ? "<button value=\"Next\" action=\"bypass -h ShowChangeLogPage " + (index + 1) + "\" width=80 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\">" : "<br>");
 		return html;
 	}
 

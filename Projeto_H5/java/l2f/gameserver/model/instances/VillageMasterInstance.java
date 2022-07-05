@@ -253,8 +253,7 @@ public final class VillageMasterInstance extends NpcInstance
 
 					for (PlayerClass subClass : subsAvailable)
 					{
-						content.append("<a action=\"bypass -h npc_").append(getObjectId()).append("_Subclass 4 ").append(subClass.ordinal()).append("\">").append(HtmlUtils.htmlClassName(subClass.ordinal()))
-									.append("</a><br>");
+						content.append("<a action=\"bypass -h npc_").append(getObjectId()).append("_Subclass 4 ").append(subClass.ordinal()).append("\">").append(HtmlUtils.htmlClassName(subClass.ordinal())).append("</a><br>");
 					}
 				}
 				else
@@ -282,8 +281,7 @@ public final class VillageMasterInstance extends NpcInstance
 					}
 					else
 					{
-						content.append("<a action=\"bypass -h npc_").append(getObjectId()).append("_Subclass 5 ").append(baseClassId).append("\">").append(HtmlUtils.htmlClassName(baseClassId))
-									.append("</a> " + "<font color=\"LEVEL\">(Base Class)</font><br><br>");
+						content.append("<a action=\"bypass -h npc_").append(getObjectId()).append("_Subclass 5 ").append(baseClassId).append("\">").append(HtmlUtils.htmlClassName(baseClassId)).append("</a> " + "<font color=\"LEVEL\">(Base Class)</font><br><br>");
 					}
 
 					for (SubClass subClass : playerClassList.values())
@@ -300,8 +298,7 @@ public final class VillageMasterInstance extends NpcInstance
 						}
 						else
 						{
-							content.append("<a action=\"bypass -h npc_").append(getObjectId()).append("_Subclass 5 ").append(subClassId).append("\">").append(HtmlUtils.htmlClassName(subClassId))
-										.append("</a><br>");
+							content.append("<a action=\"bypass -h npc_").append(getObjectId()).append("_Subclass 5 ").append(subClassId).append("\">").append(HtmlUtils.htmlClassName(subClassId)).append("</a><br>");
 						}
 					}
 				}
@@ -314,8 +311,7 @@ public final class VillageMasterInstance extends NpcInstance
 					content.append("<br>");
 					if (!sub.isBase())
 					{
-						content.append("<a action=\"bypass -h npc_").append(getObjectId()).append("_Subclass 6 ").append(sub.getClassId()).append("\">").append(HtmlUtils.htmlClassName(sub.getClassId()))
-									.append("</a><br>");
+						content.append("<a action=\"bypass -h npc_").append(getObjectId()).append("_Subclass 6 ").append(sub.getClassId()).append("\">").append(HtmlUtils.htmlClassName(sub.getClassId())).append("</a><br>");
 					}
 				}
 
@@ -373,8 +369,7 @@ public final class VillageMasterInstance extends NpcInstance
 				{
 					for (PlayerClass subClass : subsAvailable)
 					{
-						content.append("<a action=\"bypass -h npc_").append(getObjectId()).append("_Subclass 7 ").append(classId).append(" ").append(subClass.ordinal()).append("\">")
-									.append(HtmlUtils.htmlClassName(subClass.ordinal())).append("</a><br>");
+						content.append("<a action=\"bypass -h npc_").append(getObjectId()).append("_Subclass 7 ").append(classId).append(" ").append(subClass.ordinal()).append("\">").append(HtmlUtils.htmlClassName(subClass.ordinal())).append("</a><br>");
 					}
 				}
 				else
@@ -770,8 +765,7 @@ public final class VillageMasterInstance extends NpcInstance
 
 		for (Residence r : ResidenceHolder.getInstance().getResidences())
 		{
-			if (r.getSiegeEvent().getSiegeClan(SiegeEvent.ATTACKERS, clan) != null || r.getSiegeEvent().getSiegeClan(SiegeEvent.DEFENDERS, clan) != null
-						|| r.getSiegeEvent().getSiegeClan(CastleSiegeEvent.DEFENDERS_WAITING, clan) != null)
+			if (r.getSiegeEvent().getSiegeClan(SiegeEvent.ATTACKERS, clan) != null || r.getSiegeEvent().getSiegeClan(SiegeEvent.DEFENDERS, clan) != null || r.getSiegeEvent().getSiegeClan(CastleSiegeEvent.DEFENDERS_WAITING, clan) != null)
 			{
 				player.sendPacket(SystemMsg.UNABLE_TO_DISSOLVE_YOUR_CLAN_HAS_REQUESTED_TO_PARTICIPATE_IN_A_CASTLE_SIEGE);
 				return;
@@ -1208,8 +1202,7 @@ public final class VillageMasterInstance extends NpcInstance
 			if (availSub.isOfRace(Race.kamael))
 			{
 				// Для Soulbreaker-а и SoulHound не предлагаем Soulbreaker-а другого пола
-				if ((currClass == PlayerClass.MaleSoulHound || currClass == PlayerClass.FemaleSoulHound || currClass == PlayerClass.FemaleSoulbreaker || currClass == PlayerClass.MaleSoulbreaker)
-							&& (availSub == PlayerClass.FemaleSoulbreaker || availSub == PlayerClass.MaleSoulbreaker))
+				if ((currClass == PlayerClass.MaleSoulHound || currClass == PlayerClass.FemaleSoulHound || currClass == PlayerClass.FemaleSoulbreaker || currClass == PlayerClass.MaleSoulbreaker) && (availSub == PlayerClass.FemaleSoulbreaker || availSub == PlayerClass.MaleSoulbreaker))
 				{
 					availSubs.remove(availSub);
 				}

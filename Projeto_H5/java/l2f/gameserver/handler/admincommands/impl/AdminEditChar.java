@@ -41,9 +41,8 @@ public class AdminEditChar implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_edit_character, admin_character_actions, admin_current_player, admin_nokarma, admin_setkarma, admin_character_list, admin_show_characters, admin_find_character, admin_save_modifications,
-		admin_rec, admin_settitle, admin_setclass, admin_setname, admin_setsex, admin_setcolor, admin_add_exp_sp_to_character, admin_add_exp_sp, admin_sethero, admin_setnoble, admin_trans, admin_setsubclass,
-		admin_setfame, admin_addfame, admin_setbday, admin_setpassword, admin_setsecondary, admin_give_item, admin_add_bang, admin_set_bang
+		admin_edit_character, admin_character_actions, admin_current_player, admin_nokarma, admin_setkarma, admin_character_list, admin_show_characters, admin_find_character, admin_save_modifications, admin_rec, admin_settitle, admin_setclass, admin_setname, admin_setsex, admin_setcolor, admin_add_exp_sp_to_character, admin_add_exp_sp, admin_sethero, admin_setnoble, admin_trans, admin_setsubclass, admin_setfame, admin_addfame, admin_setbday, admin_setpassword, admin_setsecondary,
+		admin_give_item, admin_add_bang, admin_set_bang
 	}
 
 	@Override
@@ -714,8 +713,7 @@ public class AdminEditChar implements IAdminCommandHandler
 		replyMSG.append("<tr><td width=270>Note: Names should be written case sensitive.</td></tr>");
 		replyMSG.append("</table><br>");
 		replyMSG.append("<center><table><tr><td>");
-		replyMSG.append(
-					"<edit var=\"character_name\" width=120></td><td><button value=\"Find\" action=\"bypass -h admin_find_character $character_name\" width=50 height=20 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">");
+		replyMSG.append("<edit var=\"character_name\" width=120></td><td><button value=\"Find\" action=\"bypass -h admin_find_character $character_name\" width=50 height=20 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">");
 		replyMSG.append("</td></tr></table></center><br><br>");
 
 		for (int x = 0; x < MaxPages; x++)
@@ -731,8 +729,7 @@ public class AdminEditChar implements IAdminCommandHandler
 		for (int i = CharactersStart; i < CharactersEnd; i++)
 		{
 			Player p = players.get(i);
-			replyMSG.append("<tr><td width=80>" + "<a action=\"bypass -h admin_character_list " + p.getName() + "\">" + p.getName() + "</a></td><td width=110>" + p.getTemplate().className + "</td><td width=40>"
-						+ p.getLevel() + "</td></tr>");
+			replyMSG.append("<tr><td width=80>" + "<a action=\"bypass -h admin_character_list " + p.getName() + "\">" + p.getName() + "</a></td><td width=110>" + p.getTemplate().className + "</td><td width=40>" + p.getLevel() + "</td></tr>");
 		}
 		replyMSG.append("</table>");
 		replyMSG.append("</body></html>");
@@ -783,8 +780,7 @@ public class AdminEditChar implements IAdminCommandHandler
 		replyMSG.append("</tr></table><br>");
 		replyMSG.append("<table width=270><tr>");
 		replyMSG.append("<td><button value=\"Go To\" action=\"bypass -h admin_goto_char_menu " + player.getName() + "\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
-		replyMSG.append(
-					"<td><button value=\"Recall\" action=\"bypass -h admin_recall_char_menu " + player.getName() + "\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
+		replyMSG.append("<td><button value=\"Recall\" action=\"bypass -h admin_recall_char_menu " + player.getName() + "\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
 		replyMSG.append("<td><button value=\"Set Noble\" action=\"bypass -h admin_setnoble\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
 		replyMSG.append("</tr><tr>");
 		replyMSG.append("<td><button value=\"Skills\" action=\"bypass -h admin_show_skills\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
@@ -797,8 +793,7 @@ public class AdminEditChar implements IAdminCommandHandler
 		replyMSG.append("</tr></table>");
 		replyMSG.append("<br>");
 		replyMSG.append("<table width=290>");
-		replyMSG.append("<tr><td width=100>Account/IP: </td><td><a action=\"bypass -h admin_find_char_acc " + player.getName() + "\">" + player.getAccountName() + "</a> / <a action=\"bypass -h admin_find_ip "
-					+ player.getIP() + "\">" + player.getIP() + "</a></td></tr>");
+		replyMSG.append("<tr><td width=100>Account/IP: </td><td><a action=\"bypass -h admin_find_char_acc " + player.getName() + "\">" + player.getAccountName() + "</a> / <a action=\"bypass -h admin_find_ip " + player.getIP() + "\">" + player.getIP() + "</a></td></tr>");
 		replyMSG.append("<tr><td width=100>HWID: </td><td><a action=\"bypass -h admin_find_hwid " + player.getHWID() + "\">" + (player.hasHWID() ? player.getHWID() : "hwid missing") + "</a></td></tr>");
 		replyMSG.append("<tr><td width=100>Country: </td><td>" + GeoLocation.getInstance().getCountry(player) + " (" + GeoLocation.getInstance().getCountryCode(player) + ")</td></tr>");
 		replyMSG.append("<tr><td width=100>City: </td><td>" + GeoLocation.getInstance().getCity(player) + " (" + GeoLocation.getInstance().getCityRegion(player) + ")</td></tr>");
@@ -1009,8 +1004,7 @@ public class AdminEditChar implements IAdminCommandHandler
 		replyMSG.append("<tr><td width=40>Load:</td><td width=70>" + player.getCurrentLoad() + "</td><td width=70>" + player.getMaxLoad() + "</td><td width=70>Pvp Flag: " + player.getPvpFlag() + "</td></tr>");
 		replyMSG.append("</table>");
 		replyMSG.append("<br>");
-		replyMSG.append("<table width=290><tr><td><font name=\"hs12\" color=\"00FF00\">" + player.getName() + "</font> " + player.getClassId() + " and ClassID: " + player.getClassId().getId()
-					+ "</td></tr></table><br>");
+		replyMSG.append("<table width=290><tr><td><font name=\"hs12\" color=\"00FF00\">" + player.getName() + "</font> " + player.getClassId() + " and ClassID: " + player.getClassId().getId() + "</td></tr></table><br>");
 		replyMSG.append("<table width=290>");
 		replyMSG.append("<tr><td>Note: Fill all values before saving!</td></tr>");
 		replyMSG.append("</table><br>");
@@ -1019,8 +1013,7 @@ public class AdminEditChar implements IAdminCommandHandler
 		replyMSG.append("<tr><td width=50>Pvp Flag:</td><td><edit var=\"pvpflag\" width=50></td><td width=50>Karma:</td><td><edit var=\"karma\" width=50></td></tr>");
 		replyMSG.append("<tr><td width=50>Class Id:</td><td><edit var=\"classid\" width=50></td><td width=50>Pvp Kills:</td><td><edit var=\"pvpkills\" width=50></td></tr>");
 		replyMSG.append("</table><br>");
-		replyMSG.append(
-					"<table><tr><td align=center><button value=\"Save Changes\" action=\"bypass -h admin_save_modifications $hp & $mp & $karma & $pvpflag & $pvpkills & $classid &\" width=200 height=23 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr></table>");
+		replyMSG.append("<table><tr><td align=center><button value=\"Save Changes\" action=\"bypass -h admin_save_modifications $hp & $mp & $karma & $pvpflag & $pvpkills & $classid &\" width=200 height=23 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr></table>");
 		replyMSG.append("</td></tr>");
 		replyMSG.append("</table></body></html>");
 
@@ -1055,11 +1048,9 @@ public class AdminEditChar implements IAdminCommandHandler
 		replyMSG.append("</tr></table><br></center>");
 		replyMSG.append("<table width=270>");
 
-		replyMSG.append("<tr><td width=90><button value=\"Teleport\" action=\"bypass -h admin_teleportto " + player.getName()
-					+ "\" width=85 height=20 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
+		replyMSG.append("<tr><td width=90><button value=\"Teleport\" action=\"bypass -h admin_teleportto " + player.getName() + "\" width=85 height=20 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
 		replyMSG.append("<td width=90><button value=\"Recall\" action=\"bypass -h admin_recall " + player.getName() + "\" width=85 height=20 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
-		replyMSG.append("<td width=90><button value=\"Quests\" action=\"bypass -h admin_quests " + player.getName()
-					+ "\" width=85 height=20 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr>");
+		replyMSG.append("<td width=90><button value=\"Quests\" action=\"bypass -h admin_quests " + player.getName() + "\" width=85 height=20 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr>");
 
 		replyMSG.append("</body></html>");
 
@@ -1087,8 +1078,7 @@ public class AdminEditChar implements IAdminCommandHandler
 				CharactersFound = CharactersFound + 1;
 				replyMSG.append("<table width=270>");
 				replyMSG.append("<tr><td width=80>Name</td><td width=110>Class</td><td width=40>Level</td></tr>");
-				replyMSG.append("<tr><td width=80><a action=\"bypass -h admin_character_list " + element.getName() + "\">" + element.getName() + "</a></td><td width=110>" + element.getTemplate().className
-							+ "</td><td width=40>" + element.getLevel() + "</td></tr>");
+				replyMSG.append("<tr><td width=80><a action=\"bypass -h admin_character_list " + element.getName() + "\">" + element.getName() + "</a></td><td width=110>" + element.getTemplate().className + "</td><td width=40>" + element.getLevel() + "</td></tr>");
 				replyMSG.append("</table>");
 			}
 		}
@@ -1100,8 +1090,7 @@ public class AdminEditChar implements IAdminCommandHandler
 			replyMSG.append("<tr><td width=270>Please try again.<br></td></tr>");
 			replyMSG.append("</table><br>");
 			replyMSG.append("<center><table><tr><td>");
-			replyMSG.append(
-						"<edit var=\"character_name\" width=80></td><td><button value=\"Find\" action=\"bypass -h admin_find_character $character_name\" width=40 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">");
+			replyMSG.append("<edit var=\"character_name\" width=80></td><td><button value=\"Find\" action=\"bypass -h admin_find_character $character_name\" width=40 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">");
 			replyMSG.append("</td></tr></table></center>");
 		}
 		else
@@ -1169,8 +1158,7 @@ public class AdminEditChar implements IAdminCommandHandler
 		replyMSG.append("<center><table><tr>");
 		replyMSG.append("<td>Exp: <edit var=\"exp_to_add\" width=200><br></td></tr>");
 		replyMSG.append("<tr><td>Sp:  <edit var=\"sp_to_add\" width=200></td></tr>");
-		replyMSG.append(
-					"<tr><td align=center><button value=\"Save Changes\" action=\"bypass -h admin_add_exp_sp $exp_to_add & $sp_to_add &\" width=200 height=23 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
+		replyMSG.append("<tr><td align=center><button value=\"Save Changes\" action=\"bypass -h admin_add_exp_sp $exp_to_add & $sp_to_add &\" width=200 height=23 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>");
 		replyMSG.append("</tr></table></center>");
 		replyMSG.append("<center><table><tr>");
 		replyMSG.append("<td>Set Character LeveL: <edit var=\"lvl\" width=200></td></tr>");
@@ -1309,8 +1297,7 @@ public class AdminEditChar implements IAdminCommandHandler
 			if (availSub.isOfRace(Race.kamael))
 			{
 				// Для Soulbreaker-а и SoulHound не предлагаем Soulbreaker-а другого пола
-				if ((currClass == PlayerClass.MaleSoulHound || currClass == PlayerClass.FemaleSoulHound || currClass == PlayerClass.FemaleSoulbreaker || currClass == PlayerClass.MaleSoulbreaker)
-							&& (availSub == PlayerClass.FemaleSoulbreaker || availSub == PlayerClass.MaleSoulbreaker))
+				if ((currClass == PlayerClass.MaleSoulHound || currClass == PlayerClass.FemaleSoulHound || currClass == PlayerClass.FemaleSoulbreaker || currClass == PlayerClass.MaleSoulbreaker) && (availSub == PlayerClass.FemaleSoulbreaker || availSub == PlayerClass.MaleSoulbreaker))
 				{
 					availSubs.remove(availSub);
 				}

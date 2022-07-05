@@ -188,29 +188,18 @@ public abstract class Skill extends StatTemplate implements Cloneable
 
 	public static enum SkillTargetType
 	{
-		TARGET_ALLY, TARGET_FRIEND, TARGET_AREA, TARGET_AREA_AIM_CORPSE, TARGET_AURA, TARGET_PET_AURA, TARGET_CHEST, TARGET_FEEDABLE_BEAST, TARGET_CLAN, TARGET_CLAN_ONLY, TARGET_CORPSE, TARGET_CORPSE_PLAYER,
-		TARGET_ENEMY_PET, TARGET_ENEMY_SUMMON, TARGET_ENEMY_SERVITOR, TARGET_EVENT, TARGET_FLAGPOLE, TARGET_COMMCHANNEL, TARGET_HOLY, TARGET_ITEM, TARGET_MULTIFACE, TARGET_MULTIFACE_AURA, TARGET_TUNNEL,
-		TARGET_NONE, TARGET_ONE, TARGET_OWNER, TARGET_PARTY, TARGET_PARTY_ONE, TARGET_PARTY_NO_SUMMON, TARGET_PARTY_NO_ME, TARGET_PET, TARGET_SELF, TARGET_SIEGE, TARGET_UNLOCKABLE
+		TARGET_ALLY, TARGET_FRIEND, TARGET_AREA, TARGET_AREA_AIM_CORPSE, TARGET_AURA, TARGET_PET_AURA, TARGET_CHEST, TARGET_FEEDABLE_BEAST, TARGET_CLAN, TARGET_CLAN_ONLY, TARGET_CORPSE, TARGET_CORPSE_PLAYER, TARGET_ENEMY_PET, TARGET_ENEMY_SUMMON, TARGET_ENEMY_SERVITOR, TARGET_EVENT, TARGET_FLAGPOLE, TARGET_COMMCHANNEL, TARGET_HOLY, TARGET_ITEM, TARGET_MULTIFACE, TARGET_MULTIFACE_AURA, TARGET_TUNNEL, TARGET_NONE, TARGET_ONE, TARGET_OWNER, TARGET_PARTY, TARGET_PARTY_ONE, TARGET_PARTY_NO_SUMMON,
+		TARGET_PARTY_NO_ME, TARGET_PET, TARGET_SELF, TARGET_SIEGE, TARGET_UNLOCKABLE
 	}
 
 	public static enum SkillType
 	{
-		AGGRESSION(Aggression.class), AIEFFECTS(AIeffects.class), BALANCE(Balance.class), BEAST_FEED(BeastFeed.class), BLEED(Continuous.class), BUFF(Continuous.class), BUFF_CHARGER(BuffCharger.class),
-		CALL(Call.class), CHAIN_HEAL(ChainHeal.class), CHARGE(Charge.class), CHARGE_SOUL(ChargeSoul.class), CLAN_GATE(ClanGate.class), COMBATPOINTHEAL(CombatPointHeal.class), CONT(Toggle.class),
-		CPDAM(CPDam.class), CPHOT(Continuous.class), CRAFT(Craft.class), DEATH_PENALTY(DeathPenalty.class), DECOY(Decoy.class), DEBUFF(Continuous.class), DELETE_HATE(DeleteHate.class),
-		DELETE_HATE_OF_ME(DeleteHateOfMe.class), DESTROY_SUMMON(DestroySummon.class), DEFUSE_TRAP(DefuseTrap.class), DETECT_TRAP(DetectTrap.class), DISCORD(Continuous.class), DOT(Continuous.class),
-		DRAIN(Drain.class), DRAIN_SOUL(DrainSoul.class), EFFECT(l2f.gameserver.skills.skillclasses.Effect.class), EFFECTS_FROM_SKILLS(EffectsFromSkills.class), ENERGY_REPLENISH(EnergyReplenish.class),
-		ENCHANT_ARMOR, ENCHANT_WEAPON, EXTRACT_STONE(ExtractStone.class), FEED_PET, FISHING(FishingSkill.class), HARDCODED(l2f.gameserver.skills.skillclasses.Effect.class), HARVESTING(Harvesting.class),
-		HEAL(Heal.class), HEAL_PERCENT(HealPercent.class), SUMMON_HEAL_PERCENT(SummonHealPercent.class), HOT(Continuous.class), INSTANT_JUMP(InstantJump.class),
-		KAMAEL_WEAPON_EXCHANGE(KamaelWeaponExchange.class), LEARN_SKILL(LearnSkill.class), LETHAL_SHOT(LethalShot.class), LUCK, MANADAM(ManaDam.class), MANAHEAL(ManaHeal.class),
-		MANAHEAL_PERCENT(ManaHealPercent.class), SUMMON_MANAHEAL_PERCENT(SummonManaHealPercent.class), MDAM(MDam.class), MDOT(Continuous.class), MPHOT(Continuous.class), MUTE(Disablers.class),
-		NEGATE_EFFECTS(NegateEffects.class), NEGATE_STATS(NegateStats.class), ADD_PC_BANG(PcBangPointsAdd.class), NOTDONE, NOTUSED, PARALYZE(Disablers.class), PASSIVE, PDAM(PDam.class),
-		PET_SUMMON(PetSummon.class), POISON(Continuous.class), PUMPING(ReelingPumping.class), RECALL(Recall.class), REELING(ReelingPumping.class), REFILL(Refill.class), RESURRECT(Resurrect.class),
-		RIDE(Ride.class), ROOT(Disablers.class), SELF_SACRIFICE(SelfSacrifice.class), SHIFT_AGGRESSION(ShiftAggression.class), SLEEP(Disablers.class), SOULSHOT, SOWING(Sowing.class), SPHEAL(SPHeal.class),
-		SPIRITSHOT, SPOIL(Spoil.class), STEAL_BUFF(StealBuff.class), SPAWN(Spawn.class), CURSE_DIVINITY(CurseDivinity.class), STUN(Disablers.class), SUMMON(l2f.gameserver.skills.skillclasses.Summon.class),
-		SUMMON_FLAG(SummonSiegeFlag.class), SUMMON_ITEM(SummonItem.class), SWEEP(Sweep.class), TAKECASTLE(TakeCastle.class), TAKEFORTRESS(TakeFortress.class), TAMECONTROL(TameControl.class),
-		TAKEFLAG(TakeFlag.class), TELEPORT_NPC(TeleportNpc.class), TRANSFORMATION(Transformation.class), UNLOCK(Unlock.class), WATCHER_GAZE(Continuous.class), IMPRISON(Imprison.class),
-		VITALITY_HEAL(VitalityHeal.class);
+		AGGRESSION(Aggression.class), AIEFFECTS(AIeffects.class), BALANCE(Balance.class), BEAST_FEED(BeastFeed.class), BLEED(Continuous.class), BUFF(Continuous.class), BUFF_CHARGER(BuffCharger.class), CALL(Call.class), CHAIN_HEAL(ChainHeal.class), CHARGE(Charge.class), CHARGE_SOUL(ChargeSoul.class), CLAN_GATE(ClanGate.class), COMBATPOINTHEAL(CombatPointHeal.class), CONT(Toggle.class), CPDAM(CPDam.class), CPHOT(Continuous.class), CRAFT(Craft.class), DEATH_PENALTY(DeathPenalty.class),
+		DECOY(Decoy.class), DEBUFF(Continuous.class), DELETE_HATE(DeleteHate.class), DELETE_HATE_OF_ME(DeleteHateOfMe.class), DESTROY_SUMMON(DestroySummon.class), DEFUSE_TRAP(DefuseTrap.class), DETECT_TRAP(DetectTrap.class), DISCORD(Continuous.class), DOT(Continuous.class), DRAIN(Drain.class), DRAIN_SOUL(DrainSoul.class), EFFECT(l2f.gameserver.skills.skillclasses.Effect.class), EFFECTS_FROM_SKILLS(EffectsFromSkills.class), ENERGY_REPLENISH(EnergyReplenish.class), ENCHANT_ARMOR, ENCHANT_WEAPON,
+		EXTRACT_STONE(ExtractStone.class), FEED_PET, FISHING(FishingSkill.class), HARDCODED(l2f.gameserver.skills.skillclasses.Effect.class), HARVESTING(Harvesting.class), HEAL(Heal.class), HEAL_PERCENT(HealPercent.class), SUMMON_HEAL_PERCENT(SummonHealPercent.class), HOT(Continuous.class), INSTANT_JUMP(InstantJump.class), KAMAEL_WEAPON_EXCHANGE(KamaelWeaponExchange.class), LEARN_SKILL(LearnSkill.class), LETHAL_SHOT(LethalShot.class), LUCK, MANADAM(ManaDam.class), MANAHEAL(ManaHeal.class),
+		MANAHEAL_PERCENT(ManaHealPercent.class), SUMMON_MANAHEAL_PERCENT(SummonManaHealPercent.class), MDAM(MDam.class), MDOT(Continuous.class), MPHOT(Continuous.class), MUTE(Disablers.class), NEGATE_EFFECTS(NegateEffects.class), NEGATE_STATS(NegateStats.class), ADD_PC_BANG(PcBangPointsAdd.class), NOTDONE, NOTUSED, PARALYZE(Disablers.class), PASSIVE, PDAM(PDam.class), PET_SUMMON(PetSummon.class), POISON(Continuous.class), PUMPING(ReelingPumping.class), RECALL(Recall.class),
+		REELING(ReelingPumping.class), REFILL(Refill.class), RESURRECT(Resurrect.class), RIDE(Ride.class), ROOT(Disablers.class), SELF_SACRIFICE(SelfSacrifice.class), SHIFT_AGGRESSION(ShiftAggression.class), SLEEP(Disablers.class), SOULSHOT, SOWING(Sowing.class), SPHEAL(SPHeal.class), SPIRITSHOT, SPOIL(Spoil.class), STEAL_BUFF(StealBuff.class), SPAWN(Spawn.class), CURSE_DIVINITY(CurseDivinity.class), STUN(Disablers.class), SUMMON(l2f.gameserver.skills.skillclasses.Summon.class),
+		SUMMON_FLAG(SummonSiegeFlag.class), SUMMON_ITEM(SummonItem.class), SWEEP(Sweep.class), TAKECASTLE(TakeCastle.class), TAKEFORTRESS(TakeFortress.class), TAMECONTROL(TameControl.class), TAKEFLAG(TakeFlag.class), TELEPORT_NPC(TeleportNpc.class), TRANSFORMATION(Transformation.class), UNLOCK(Unlock.class), WATCHER_GAZE(Continuous.class), IMPRISON(Imprison.class), VITALITY_HEAL(VitalityHeal.class);
 
 		private final Class<? extends Skill> clazz;
 
@@ -816,8 +805,7 @@ public abstract class Skill extends StatTemplate implements Cloneable
 		}
 
 		// DS: Clarity не влияет на mpConsume1
-		if (checkMp && (activeChar.getCurrentMp() < (isMagic() ? _mpConsume1 + activeChar.calcStat(Stats.MP_MAGIC_SKILL_CONSUME, _mpConsume2, target, this)
-					: _mpConsume1 + activeChar.calcStat(Stats.MP_PHYSICAL_SKILL_CONSUME, _mpConsume2, target, this))))
+		if (checkMp && (activeChar.getCurrentMp() < (isMagic() ? _mpConsume1 + activeChar.calcStat(Stats.MP_MAGIC_SKILL_CONSUME, _mpConsume2, target, this) : _mpConsume1 + activeChar.calcStat(Stats.MP_PHYSICAL_SKILL_CONSUME, _mpConsume2, target, this))))
 		{
 			activeChar.sendPacket(SystemMsg.NOT_ENOUGH_MP);
 			return false;
@@ -994,8 +982,7 @@ public abstract class Skill extends StatTemplate implements Cloneable
 			return SystemMsg.CANNOT_SEE_TARGET;
 		}
 		// Whether the target gets in range at the end of caste
-		if (!skipCastRange && target != activeChar && target == aimingTarget && getCastRange() > 0 && getCastRange() != 32767
-					&& !activeChar.isInRange(target.getLoc(), getCastRange() + (getCastRange() < 200 ? 400 : 500)))
+		if (!skipCastRange && target != activeChar && target == aimingTarget && getCastRange() > 0 && getCastRange() != 32767 && !activeChar.isInRange(target.getLoc(), getCastRange() + (getCastRange() < 200 ? 400 : 500)))
 		{
 			return SystemMsg.YOUR_TARGET_IS_OUT_OF_RANGE;
 		}
@@ -1013,8 +1000,7 @@ public abstract class Skill extends StatTemplate implements Cloneable
 			return null;
 		}
 		// Cone skills
-		if (!skipCastRange && target != activeChar && (_targetType == SkillTargetType.TARGET_MULTIFACE || _targetType == SkillTargetType.TARGET_MULTIFACE_AURA || _targetType == SkillTargetType.TARGET_TUNNEL)
-					&& (_isBehind ? PositionUtils.isFacing(activeChar, target, 120) : !PositionUtils.isFacing(activeChar, target, 60)))
+		if (!skipCastRange && target != activeChar && (_targetType == SkillTargetType.TARGET_MULTIFACE || _targetType == SkillTargetType.TARGET_MULTIFACE_AURA || _targetType == SkillTargetType.TARGET_TUNNEL) && (_isBehind ? PositionUtils.isFacing(activeChar, target, 120) : !PositionUtils.isFacing(activeChar, target, 60)))
 		{
 			return SystemMsg.YOUR_TARGET_IS_OUT_OF_RANGE;
 		}
@@ -1098,8 +1084,7 @@ public abstract class Skill extends StatTemplate implements Cloneable
 					}
 
 					// Sometimes AOE skills ignore targets that are way too near you. Thats why there is distance check to check if your and target's collisions
-					if (isAoE() && (getCastRange() < Integer.MAX_VALUE) && (activeChar.getDistance(target) > (activeChar.getColRadius() + target.getColRadius() + 10))
-								&& !GeoEngine.canSeeTarget(activeChar, target, activeChar.isFlying()))
+					if (isAoE() && (getCastRange() < Integer.MAX_VALUE) && (activeChar.getDistance(target) > (activeChar.getColRadius() + target.getColRadius() + 10)) && !GeoEngine.canSeeTarget(activeChar, target, activeChar.isFlying()))
 					{
 						return SystemMsg.CANNOT_SEE_TARGET;
 					}
@@ -1131,8 +1116,7 @@ public abstract class Skill extends StatTemplate implements Cloneable
 						{
 							return SystemMsg.INVALID_TARGET;
 						}
-						if (activeChar.isInZone(ZoneType.epic) && !forceUse && !isForceUse() && (player.getClan() != null) && (player.getClan().getAlliance() != null) && (pcTarget.getClan() != null)
-									&& (pcTarget.getClan().getAlliance() != null) && (player.getClan().getAlliance() == pcTarget.getClan().getAlliance()))
+						if (activeChar.isInZone(ZoneType.epic) && !forceUse && !isForceUse() && (player.getClan() != null) && (player.getClan().getAlliance() != null) && (pcTarget.getClan() != null) && (pcTarget.getClan().getAlliance() != null) && (player.getClan().getAlliance() == pcTarget.getClan().getAlliance()))
 						{
 							return SystemMsg.INVALID_TARGET;
 						}
@@ -1199,13 +1183,11 @@ public abstract class Skill extends StatTemplate implements Cloneable
 						{
 							return SystemMsg.INVALID_TARGET;
 						}
-						if (player.isInParty() && player.getParty().getCommandChannel() != null && pcTarget.isInParty() && pcTarget.getParty().getCommandChannel() != null
-									&& player.getParty().getCommandChannel() == pcTarget.getParty().getCommandChannel())
+						if (player.isInParty() && player.getParty().getCommandChannel() != null && pcTarget.isInParty() && pcTarget.getParty().getCommandChannel() != null && player.getParty().getCommandChannel() == pcTarget.getParty().getCommandChannel())
 						{
 							return SystemMsg.INVALID_TARGET;
 						}
-						if (player.getClan() != null && player.getClan().getAlliance() != null && pcTarget.getClan() != null && pcTarget.getClan().getAlliance() != null
-									&& player.getClan().getAlliance() == pcTarget.getClan().getAlliance())
+						if (player.getClan() != null && player.getClan().getAlliance() != null && pcTarget.getClan() != null && pcTarget.getClan().getAlliance() != null && player.getClan().getAlliance() == pcTarget.getClan().getAlliance())
 						{
 							return SystemMsg.INVALID_TARGET;
 						}
@@ -1296,8 +1278,7 @@ public abstract class Skill extends StatTemplate implements Cloneable
 		}
 
 		// Sometimes AOE skills ignore targets that are way too near you. Thats why there is distance check to check if your and target's collisions
-		if (isAoE() && isOffensive() && (getCastRange() < Integer.MAX_VALUE) && (activeChar.getDistance(target) > (activeChar.getColRadius() + target.getColRadius() + 10))
-					&& !GeoEngine.canSeeTarget(activeChar, target, activeChar.isFlying()))
+		if (isAoE() && isOffensive() && (getCastRange() < Integer.MAX_VALUE) && (activeChar.getDistance(target) > (activeChar.getColRadius() + target.getColRadius() + 10)) && !GeoEngine.canSeeTarget(activeChar, target, activeChar.isFlying()))
 		{
 			return SystemMsg.CANNOT_SEE_TARGET;
 		}
@@ -1394,14 +1375,12 @@ public abstract class Skill extends StatTemplate implements Cloneable
 				return target;
 			}
 			// olympiad party member or olympiad party member pet.
-			if ((player != null) && player.isInOlympiadMode() && (ptarget != null) && (player.getOlympiadSide() == ptarget.getOlympiadSide()) && (player.getOlympiadGame() == ptarget.getOlympiadGame())
-						&& (target.isDead() == _isCorpse) && !((target == activeChar) && isOffensive()) && (!_isUndeadOnly || target.isUndead()))
+			if ((player != null) && player.isInOlympiadMode() && (ptarget != null) && (player.getOlympiadSide() == ptarget.getOlympiadSide()) && (player.getOlympiadGame() == ptarget.getOlympiadGame()) && (target.isDead() == _isCorpse) && !((target == activeChar) && isOffensive()) && (!_isUndeadOnly || target.isUndead()))
 			{
 				return target;
 			}
 			// party member or party member pet.
-			if ((ptarget != null) && (player != null) && (player.getParty() != null) && player.getParty().containsMember(ptarget) && (target.isDead() == _isCorpse) && !((target == activeChar) && isOffensive())
-						&& (!_isUndeadOnly || target.isUndead()))
+			if ((ptarget != null) && (player != null) && (player.getParty() != null) && player.getParty().containsMember(ptarget) && (target.isDead() == _isCorpse) && !((target == activeChar) && isOffensive()) && (!_isUndeadOnly || target.isUndead()))
 			{
 				return target;
 			}
@@ -1606,8 +1585,7 @@ public abstract class Skill extends StatTemplate implements Cloneable
 			Player player = activeChar.getPlayer();
 			for (Player target : World.getAroundPlayers(player, _skillRadius, 350))
 			{
-				boolean check = (player.getParty() != null) && ((player.getParty() == target.getParty()) || ((player.getClanId() != 0) && (target.getClanId() == player.getClanId()))
-							|| ((player.getAllyId() != 0) && (target.getAllyId() == player.getAllyId())));
+				boolean check = (player.getParty() != null) && ((player.getParty() == target.getParty()) || ((player.getClanId() != 0) && (target.getClanId() == player.getClanId())) || ((player.getAllyId() != 0) && (target.getAllyId() == player.getAllyId())));
 				if ((target == player) || !check || (checkTarget(player, target, aimingTarget, forceUse, false) != null))
 				{
 					continue;
@@ -1659,9 +1637,7 @@ public abstract class Skill extends StatTemplate implements Cloneable
 			double radian1 = Math.toRadians(angle - 90);
 			double radian2 = Math.toRadians(angle + 90);
 
-			terr = new Polygon().add(activeChar.getX() + (int) (Math.cos(radian1) * radius), activeChar.getY() + (int) (Math.sin(radian1) * radius))
-						.add(activeChar.getX() + (int) (Math.cos(radian2) * radius), activeChar.getY() + (int) (Math.sin(radian2) * radius))
-						.add(aimingTarget.getX() + (int) (Math.cos(radian2) * radius), aimingTarget.getY() + (int) (Math.sin(radian2) * radius))
+			terr = new Polygon().add(activeChar.getX() + (int) (Math.cos(radian1) * radius), activeChar.getY() + (int) (Math.sin(radian1) * radius)).add(activeChar.getX() + (int) (Math.cos(radian2) * radius), activeChar.getY() + (int) (Math.sin(radian2) * radius)).add(aimingTarget.getX() + (int) (Math.cos(radian2) * radius), aimingTarget.getY() + (int) (Math.sin(radian2) * radius))
 						.add(aimingTarget.getX() + (int) (Math.cos(radian1) * radius), aimingTarget.getY() + (int) (Math.sin(radian1) * radius)).setZmin(Math.min(zmin1, zmin2)).setZmax(Math.max(zmax1, zmax2));
 		}
 
@@ -2098,8 +2074,7 @@ public abstract class Skill extends StatTemplate implements Cloneable
 
 		if (character.isFlying())
 		{
-			return GeoEngine.moveCheckInAir(character.getX(), character.getY(), character.getZ(), character.getX() + x1, character.getY() + y1, character.getZ(), character.getColRadius(),
-						character.getGeoIndex());
+			return GeoEngine.moveCheckInAir(character.getX(), character.getY(), character.getZ(), character.getX() + x1, character.getY() + y1, character.getZ(), character.getColRadius(), character.getGeoIndex());
 		}
 		return GeoEngine.moveCheck(character.getX(), character.getY(), character.getZ(), character.getX() + x1, character.getY() + y1, character.getGeoIndex());
 	}

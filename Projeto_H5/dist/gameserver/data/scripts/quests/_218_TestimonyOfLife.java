@@ -430,8 +430,7 @@ public class _218_TestimonyOfLife extends Quest implements ScriptFile
 		{
 			htmltext = "30300-11.htm";
 		}
-		else if (npcId == 30300 && cond == 1 && st.getQuestItemsCount(GRAIL_DIAGRAM) == 0 && st.getQuestItemsCount(PUSHKINS_LIST) == 0 && st.getQuestItemsCount(PURE_MITHRIL_CUP) == 0
-					&& st.getQuestItemsCount(MOONFLOWER_CHARM) == 1)
+		else if (npcId == 30300 && cond == 1 && st.getQuestItemsCount(GRAIL_DIAGRAM) == 0 && st.getQuestItemsCount(PUSHKINS_LIST) == 0 && st.getQuestItemsCount(PURE_MITHRIL_CUP) == 0 && st.getQuestItemsCount(MOONFLOWER_CHARM) == 1)
 		{
 			htmltext = "30300-12.htm";
 		}
@@ -454,8 +453,7 @@ public class _218_TestimonyOfLife extends Quest implements ScriptFile
 		{
 			htmltext = "30419-07.htm";
 		}
-		else if (npcId == 30419 && cond == 1 && st.getQuestItemsCount(THALIAS_LETTER1) == 0 && st.getQuestItemsCount(ARKENIAS_CONTRACT) == 0 && st.getQuestItemsCount(ANDARIEL_SCRIPTURE_COPY) == 0
-					&& st.getQuestItemsCount(STARDUST) == 0 && st.getQuestItemsCount(MOONFLOWER_CHARM) == 1)
+		else if (npcId == 30419 && cond == 1 && st.getQuestItemsCount(THALIAS_LETTER1) == 0 && st.getQuestItemsCount(ARKENIAS_CONTRACT) == 0 && st.getQuestItemsCount(ANDARIEL_SCRIPTURE_COPY) == 0 && st.getQuestItemsCount(STARDUST) == 0 && st.getQuestItemsCount(MOONFLOWER_CHARM) == 1)
 		{
 			htmltext = "30419-08.htm";
 		}
@@ -482,8 +480,7 @@ public class _218_TestimonyOfLife extends Quest implements ScriptFile
 		{
 			htmltext = "30375-05.htm";
 		}
-		else if (npcId == 30375 && cond == 1 && st.getQuestItemsCount(ARKENIAS_INSTRUCTIONS) == 0 && st.getQuestItemsCount(ADONIUS_LIST) == 0 && st.getQuestItemsCount(ANDARIEL_SCRIPTURE_COPY) == 0
-					&& st.getQuestItemsCount(MOONFLOWER_CHARM) == 1)
+		else if (npcId == 30375 && cond == 1 && st.getQuestItemsCount(ARKENIAS_INSTRUCTIONS) == 0 && st.getQuestItemsCount(ADONIUS_LIST) == 0 && st.getQuestItemsCount(ANDARIEL_SCRIPTURE_COPY) == 0 && st.getQuestItemsCount(MOONFLOWER_CHARM) == 1)
 		{
 			htmltext = "30375-06.htm";
 		}
@@ -493,8 +490,7 @@ public class _218_TestimonyOfLife extends Quest implements ScriptFile
 		}
 		else if (npcId == 30655 && cond == 1 && st.getQuestItemsCount(MOONFLOWER_CHARM) > 0 && st.getQuestItemsCount(ISAELS_INSTRUCTIONS) > 0)
 		{
-			if (st.getQuestItemsCount(TALINS_SPEAR_BLADE) > 0 && st.getQuestItemsCount(TALINS_SPEAR_SHAFT) > 0 && st.getQuestItemsCount(TALINS_RUBY) > 0 && st.getQuestItemsCount(TALINS_AQUAMARINE) > 0
-						&& st.getQuestItemsCount(TALINS_AMETHYST) > 0 && st.getQuestItemsCount(TALINS_PERIDOT) > 0)
+			if (st.getQuestItemsCount(TALINS_SPEAR_BLADE) > 0 && st.getQuestItemsCount(TALINS_SPEAR_SHAFT) > 0 && st.getQuestItemsCount(TALINS_RUBY) > 0 && st.getQuestItemsCount(TALINS_AQUAMARINE) > 0 && st.getQuestItemsCount(TALINS_AMETHYST) > 0 && st.getQuestItemsCount(TALINS_PERIDOT) > 0)
 			{
 				htmltext = "30655-04.htm";
 				st.takeItems(TALINS_SPEAR_BLADE, 1);
@@ -516,8 +512,7 @@ public class _218_TestimonyOfLife extends Quest implements ScriptFile
 		{
 			htmltext = "30655-05.htm";
 		}
-		else if (npcId == 30655 && cond == 1 && st.getQuestItemsCount(GRAIL_OF_PURITY) > 0 || st.getQuestItemsCount(WATER_OF_LIFE) > 0
-					|| st.getQuestItemsCount(CAMOMILE_CHARM) > 0 && st.getQuestItemsCount(MOONFLOWER_CHARM) == 1)
+		else if (npcId == 30655 && cond == 1 && st.getQuestItemsCount(GRAIL_OF_PURITY) > 0 || st.getQuestItemsCount(WATER_OF_LIFE) > 0 || st.getQuestItemsCount(CAMOMILE_CHARM) > 0 && st.getQuestItemsCount(MOONFLOWER_CHARM) == 1)
 		{
 			htmltext = "30655-06.htm";
 		}
@@ -643,8 +638,7 @@ public class _218_TestimonyOfLife extends Quest implements ScriptFile
 			}
 			break;
 		case 27077:
-			if (cond > 0 && st.getQuestItemsCount(MOONFLOWER_CHARM) == 1 && st.getItemEquipped(Inventory.PAPERDOLL_RHAND) == TALINS_SPEAR && st.getQuestItemsCount(GRAIL_OF_PURITY) == 1
-						&& st.getQuestItemsCount(TEARS_OF_UNICORN) == 0)
+			if (cond > 0 && st.getQuestItemsCount(MOONFLOWER_CHARM) == 1 && st.getItemEquipped(Inventory.PAPERDOLL_RHAND) == TALINS_SPEAR && st.getQuestItemsCount(GRAIL_OF_PURITY) == 1 && st.getQuestItemsCount(TEARS_OF_UNICORN) == 0)
 			{
 				if (st.getQuestItemsCount(TALINS_SPEAR) > 0)
 				{

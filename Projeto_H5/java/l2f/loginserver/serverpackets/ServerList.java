@@ -43,13 +43,11 @@ public final class ServerList extends L2LoginServerPacket
 					final String proxy = proxies.get(gs.getId());
 					final InetAddress proxyIp = InetAddress.getByName(proxy);
 					LOG.info("IP: " + clientIp.getHostAddress() + " Login: " + account.getLogin() + " Assigned to Proxy: " + proxy);
-					_servers.add(new ServerData(gs.getId(), proxyIp, gs.getPort(), gs.isPvp(), gs.isShowingBrackets(), gs.getServerType(), gs.getOnline(), gs.getMaxPlayers(), gs.isOnline(),
-								entry == null ? 0 : (int) entry.getKey(), gs.getAgeLimit(), entry == null ? ArrayUtils.EMPTY_INT_ARRAY : (int[]) entry.getValue()));
+					_servers.add(new ServerData(gs.getId(), proxyIp, gs.getPort(), gs.isPvp(), gs.isShowingBrackets(), gs.getServerType(), gs.getOnline(), gs.getMaxPlayers(), gs.isOnline(), entry == null ? 0 : (int) entry.getKey(), gs.getAgeLimit(), entry == null ? ArrayUtils.EMPTY_INT_ARRAY : (int[]) entry.getValue()));
 				}
 				else
 				{
-					_servers.add(new ServerData(gs.getId(), gs.getExternalHost(), gs.getPort(), gs.isPvp(), gs.isShowingBrackets(), gs.getServerType(), gs.getOnline(), gs.getMaxPlayers(), gs.isOnline(),
-								entry == null ? 0 : (int) entry.getKey(), gs.getAgeLimit(), entry == null ? ArrayUtils.EMPTY_INT_ARRAY : (int[]) entry.getValue()));
+					_servers.add(new ServerData(gs.getId(), gs.getExternalHost(), gs.getPort(), gs.isPvp(), gs.isShowingBrackets(), gs.getServerType(), gs.getOnline(), gs.getMaxPlayers(), gs.isOnline(), entry == null ? 0 : (int) entry.getKey(), gs.getAgeLimit(), entry == null ? ArrayUtils.EMPTY_INT_ARRAY : (int[]) entry.getValue()));
 				}
 			}
 			catch (UnknownHostException e)

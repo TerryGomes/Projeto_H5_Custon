@@ -89,8 +89,7 @@ public final class AdminFunctions
 			}
 			if (Config.BANCHAT_ANNOUNCE)
 			{
-				announce = Config.BANCHAT_ANNOUNCE_NICK && adminName != null && !adminName.isEmpty() ? adminName + " Chat ban player " + charName + " for an indefinite period, the reason: " + reason + "."
-							: "Banned Chat Player " + charName + " for an indefinite period, the reason: " + reason + ".";
+				announce = Config.BANCHAT_ANNOUNCE_NICK && adminName != null && !adminName.isEmpty() ? adminName + " Chat ban player " + charName + " for an indefinite period, the reason: " + reason + "." : "Banned Chat Player " + charName + " for an indefinite period, the reason: " + reason + ".";
 			}
 			Log.add(adminName + " Chat banned Player " + charName + " for an indefinite period, the reason: " + reason + ".", "banchat", adminChar);
 			result = "You are banned from chat Player " + charName + " for an indefinite period.";
@@ -107,8 +106,7 @@ public final class AdminFunctions
 			}
 			if (Config.BANCHAT_ANNOUNCE)
 			{
-				announce = Config.BANCHAT_ANNOUNCE_NICK && adminName != null && !adminName.isEmpty() ? adminName + " Chat banned Player " + charName + " on " + val + " minute, cause: " + reason + "."
-							: "Banned Chat Player " + charName + " on " + val + " minute, reasons: " + reason + ".";
+				announce = Config.BANCHAT_ANNOUNCE_NICK && adminName != null && !adminName.isEmpty() ? adminName + " Chat banned Player " + charName + " on " + val + " minute, cause: " + reason + "." : "Banned Chat Player " + charName + " on " + val + " minute, reasons: " + reason + ".";
 			}
 			Log.add(adminName + " Chat banned Player " + charName + " on " + val + " minute, reasons: " + reason + ".", "banchat", adminChar);
 			result = "You are banned from chat Player " + charName + " on " + val + " minute.";

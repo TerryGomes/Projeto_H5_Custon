@@ -409,8 +409,7 @@ public class _213_TrialOfSeeker extends Quest implements ScriptFile
 			{
 				htmltext = "terry_q0213_07.htm";
 			}
-			else if (cond == 5 && st.getQuestItemsCount(OlMahumRunestone) != 0 && st.getQuestItemsCount(TurekRunestone) != 0 && st.getQuestItemsCount(AntRunestone) != 0
-						&& st.getQuestItemsCount(TurakBugbearRunestone) != 0)
+			else if (cond == 5 && st.getQuestItemsCount(OlMahumRunestone) != 0 && st.getQuestItemsCount(TurekRunestone) != 0 && st.getQuestItemsCount(AntRunestone) != 0 && st.getQuestItemsCount(TurakBugbearRunestone) != 0)
 			{
 				htmltext = "terry_q0213_09.htm";
 			}
@@ -465,8 +464,7 @@ public class _213_TrialOfSeeker extends Quest implements ScriptFile
 					}
 					else if (cond == 17)
 					{
-						if (st.getQuestItemsCount(AbyssRunestone1) != 0 && st.getQuestItemsCount(AbyssRunestone2) != 0 && st.getQuestItemsCount(AbyssRunestone3) != 0
-									&& st.getQuestItemsCount(AbyssRunestone4) != 0)
+						if (st.getQuestItemsCount(AbyssRunestone1) != 0 && st.getQuestItemsCount(AbyssRunestone2) != 0 && st.getQuestItemsCount(AbyssRunestone3) != 0 && st.getQuestItemsCount(AbyssRunestone4) != 0)
 						{
 							htmltext = "terry_q0213_23.htm";
 							st.takeItems(ListOfHost, -1);
@@ -580,14 +578,12 @@ public class _213_TrialOfSeeker extends Quest implements ScriptFile
 				}
 			}
 		}
-		if (cond == 4 && st.getQuestItemsCount(OlMahumRunestone) != 0 && st.getQuestItemsCount(TurekRunestone) != 0 && st.getQuestItemsCount(AntRunestone) != 0
-					&& st.getQuestItemsCount(TurakBugbearRunestone) != 0)
+		if (cond == 4 && st.getQuestItemsCount(OlMahumRunestone) != 0 && st.getQuestItemsCount(TurekRunestone) != 0 && st.getQuestItemsCount(AntRunestone) != 0 && st.getQuestItemsCount(TurakBugbearRunestone) != 0)
 		{
 			st.setCond(5);
 			st.setState(STARTED);
 		}
-		else if (cond == 16 && st.getQuestItemsCount(AbyssRunestone1) != 0 && st.getQuestItemsCount(AbyssRunestone2) != 0 && st.getQuestItemsCount(AbyssRunestone3) != 0
-					&& st.getQuestItemsCount(AbyssRunestone4) != 0)
+		else if (cond == 16 && st.getQuestItemsCount(AbyssRunestone1) != 0 && st.getQuestItemsCount(AbyssRunestone2) != 0 && st.getQuestItemsCount(AbyssRunestone3) != 0 && st.getQuestItemsCount(AbyssRunestone4) != 0)
 		{
 			st.setCond(17);
 			st.setState(STARTED);

@@ -135,8 +135,7 @@ public class Hitman extends Functions implements ScriptFile, OnDeathListener, On
 		{
 			final Order order = getOrderByTargetName(actor.getName());
 			Functions.addItem(killer.getPlayer(), order.getItemId(), order.getItemCount(), "Killed");
-			Announcements.getInstance().announceToAll(new CustomMessage("scripts.events.Hitman.AnnounceKill", killer.getPlayer(), killer.getName(), actor.getName(), order.getItemCount(),
-						ItemFunctions.createItem(order.getItemId()).getTemplate().getName()).toString());
+			Announcements.getInstance().announceToAll(new CustomMessage("scripts.events.Hitman.AnnounceKill", killer.getPlayer(), killer.getName(), actor.getName(), order.getItemCount(), ItemFunctions.createItem(order.getItemId()).getTemplate().getName()).toString());
 
 			if (order.getKillsCount() > 1)
 			{
@@ -208,8 +207,7 @@ public class Hitman extends Functions implements ScriptFile, OnDeathListener, On
 			return 4;
 		}
 
-		if ((Functions.getItemCount(player, Config.EVENT_HITMAN_COST_ITEM_ID) < Config.EVENT_HITMAN_COST_ITEM_COUNT) || (Functions.getItemCount(player, _allowedItems.get(itemname)) < (itemcount * killsCount))
-					|| (_allowedItems.get(itemname) == 57 && Functions.getItemCount(player, _allowedItems.get(itemname)) < (itemcount * killsCount + Config.EVENT_HITMAN_COST_ITEM_COUNT)))
+		if ((Functions.getItemCount(player, Config.EVENT_HITMAN_COST_ITEM_ID) < Config.EVENT_HITMAN_COST_ITEM_COUNT) || (Functions.getItemCount(player, _allowedItems.get(itemname)) < (itemcount * killsCount)) || (_allowedItems.get(itemname) == 57 && Functions.getItemCount(player, _allowedItems.get(itemname)) < (itemcount * killsCount + Config.EVENT_HITMAN_COST_ITEM_COUNT)))
 		{
 			return 0;
 		}

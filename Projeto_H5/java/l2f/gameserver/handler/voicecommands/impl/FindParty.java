@@ -104,8 +104,7 @@ public class FindParty extends Functions implements IVoicedCommandHandler
 					continue;
 				}
 
-				packets[i++] = new Say2(activeChar.getObjectId(), ChatType.PARTY, "[Find Party]", "\b\tType=1 \tID=" + partyLeader.getObjectId() + " \tColor=0 \tUnderline=0 \tTitle=\u001B\u001B\b"
-							+ partyLeader.getName() + " (" + freeSlots + "/" + Party.MAX_SIZE + ")" + " free slots. " + request.message);
+				packets[i++] = new Say2(activeChar.getObjectId(), ChatType.PARTY, "[Find Party]", "\b\tType=1 \tID=" + partyLeader.getObjectId() + " \tColor=0 \tUnderline=0 \tTitle=\u001B\u001B\b" + partyLeader.getName() + " (" + freeSlots + "/" + Party.MAX_SIZE + ")" + " free slots. " + request.message);
 			}
 			packets[i++] = new Say2(activeChar.getObjectId(), ChatType.BATTLEFIELD, "[Party Request]", "---------=[End Party Requests]=---------");
 			activeChar.sendPacket(packets);
@@ -121,8 +120,7 @@ public class FindParty extends Functions implements IVoicedCommandHandler
 
 			if (playerToInvite != null) // A party member asks the party leader to invite specified player.
 			{
-				Say2 packetLeader = new Say2(activeChar.getObjectId(), ChatType.PARTY, "[Party Request]",
-							"Please invite " + playerToInvite.getName() + " to the party. \b\tType=1 \tID=" + playerToInvite.getObjectId() + " \tColor=0 \tUnderline=0 \tTitle=\u001B\u001B\b");
+				Say2 packetLeader = new Say2(activeChar.getObjectId(), ChatType.PARTY, "[Party Request]", "Please invite " + playerToInvite.getName() + " to the party. \b\tType=1 \tID=" + playerToInvite.getObjectId() + " \tColor=0 \tUnderline=0 \tTitle=\u001B\u001B\b");
 				Say2 packet = new Say2(activeChar.getObjectId(), ChatType.PARTY, "[Party Request]", "Please invite " + playerToInvite.getName() + " to the party.");
 				for (Player ptMem : activeChar.getParty())
 				{
@@ -202,8 +200,7 @@ public class FindParty extends Functions implements IVoicedCommandHandler
 			_requests.put(partyRequestObjId, request);
 
 			// [Party Find]: [?] Nik (3/9) free slots. Message
-			Say2 packet = new Say2(activeChar.getObjectId(), ChatType.PARTY, "[Party]", activeChar.getName() + "'s party (" + freeSlots + "/" + Party.MAX_SIZE + ")" + " free slots. " + "\b\tType=1 \tID="
-						+ partyRequestObjId + " \tColor=0 \tUnderline=0 \tTitle=\u001B\u001B\b" + request.message);
+			Say2 packet = new Say2(activeChar.getObjectId(), ChatType.PARTY, "[Party]", activeChar.getName() + "'s party (" + freeSlots + "/" + Party.MAX_SIZE + ")" + " free slots. " + "\b\tType=1 \tID=" + partyRequestObjId + " \tColor=0 \tUnderline=0 \tTitle=\u001B\u001B\b" + request.message);
 			for (Player player : GameObjectsStorage.getAllPlayersForIterate())
 			{
 				// Do not display to players who cant join party, but display to the requesting party so they can see their own message working.
@@ -245,13 +242,11 @@ public class FindParty extends Functions implements IVoicedCommandHandler
 						long delay = System.currentTimeMillis() - player.getQuickVarL("partyrequestsent", 0);
 						if (delay < PARTY_REQUEST_DELAY)
 						{
-							player.sendMessage(
-										"You can send a request every " + PARTY_REQUEST_DELAY / 1000 + " seconds. " + (PARTY_REQUEST_DELAY - delay) / 1000 + " seconds remaining until you can try again.");
+							player.sendMessage("You can send a request every " + PARTY_REQUEST_DELAY / 1000 + " seconds. " + (PARTY_REQUEST_DELAY - delay) / 1000 + " seconds remaining until you can try again.");
 							return;
 						}
 						player.addQuickVar("partyrequestsent", System.currentTimeMillis());
-						Say2 packetLeader = new Say2(player, ChatType.TELL, "I'm Level: " + player.getLevel() + ", Class: " + player.getClassId().getName() + ". Invite \b\tType=1 \tID=" + player.getObjectId()
-									+ " \tColor=0 \tUnderline=0 \tTitle=\u001B\u001B\b");
+						Say2 packetLeader = new Say2(player, ChatType.TELL, "I'm Level: " + player.getLevel() + ", Class: " + player.getClassId().getName() + ". Invite \b\tType=1 \tID=" + player.getObjectId() + " \tColor=0 \tUnderline=0 \tTitle=\u001B\u001B\b");
 						partyLeader.sendPacket(packetLeader);
 						player.sendMessage("Party request sent to " + partyLeader.getName());
 					}

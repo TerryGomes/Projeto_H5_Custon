@@ -54,20 +54,11 @@ public final class DPSTestInstance extends NpcInstance
 		sb.append("<title>DPS Test Dummy</title>").append("This is a traning dummy to check your abilities. Select a time interval to test your skills.<br>")
 					// .append("<center><button value=\"Reset\" action=\"bypass -h npc_%objectId%_reset\" width=\"75\" height=\"26\" back=\"L2UI_ct1.button_df\"
 					// fore=\"L2UI_ct1.button_df\"></center>")
-					.append("<a action=\"bypass -h npc_%objectId%_start 10\">[ 10 sec.]</a>").append("<a action=\"bypass -h npc_%objectId%_start 30\">[ 30 sec.]</a>")
-					.append("<a action=\"bypass -h npc_%objectId%_start 60\">[ 60 sec.]</a>").append("<a action=\"bypass -h npc_%objectId%_start 90\">[ 90 sec.]</a>")
-					.append("<a action=\"bypass -h npc_%objectId%_start 120\">[ 120 sec.]</a>").append("<br><br>").append("<center><font color=LEVEL>DPS Test Results:</font></center>")
-					.append("<br><font color=55FF55>Total Damage:</font> " + (damage + petDamage)).append("<br1><font color=55FF55>Total DPS:</font> " + (damage + petDamage) / seconds + " DPS.")
-					.append("<br1><font color=55FF55>Hits Done:</font> " + (hitCount + petHitCount) + " hits.")
-					.append("<br1><font color=55FF55>Time Wasted:</font> " + FORMAT.format((double) timeInterval / 1000) + " seconds.").append("<br>")
-					.append("<center><font color=LEVEL>Statistics:</font></center>").append("<br1><font color=55FF55>[Your Info]:</font>").append("<br1><font color=AAFFAA>Damage: <font>" + damage)
-					.append("<br1><font color=AAFFAA>DPS: <font>" + damage / seconds).append("<br1><font color=AAFFAA>Hits: <font>" + hitCount)
-					.append("<br1><font color=AAFFAA>Hits Per Second <font>" + FORMAT.format((double) hitCount / seconds))
-					.append("<br1><font color=AAFFAA>Avg. DMG Per Hit: <font>" + (hitCount == 0 ? 0 : damage / hitCount)).append("<br><font color=55FF55>[Pet Info]:</font>")
-					.append("<br1><font color=AAFFAA>Damage: <font>" + petDamage).append("<br1><font color=AAFFAA>DPS: <font>" + petDamage / seconds).append("<br1><font color=AAFFAA>Hits: <font>" + petHitCount)
-					.append("<br1><font color=AAFFAA>Hits Per Second <font>" + FORMAT.format((double) petHitCount / seconds))
-					.append("<br1><font color=AAFFAA>Avg. DMG Per Hit: <font>" + (petHitCount == 0 ? 0 : petDamage / petHitCount)).append("<br><font color=55FF55>[Skills Used]:</font>")
-					.append("<table width=280>");
+					.append("<a action=\"bypass -h npc_%objectId%_start 10\">[ 10 sec.]</a>").append("<a action=\"bypass -h npc_%objectId%_start 30\">[ 30 sec.]</a>").append("<a action=\"bypass -h npc_%objectId%_start 60\">[ 60 sec.]</a>").append("<a action=\"bypass -h npc_%objectId%_start 90\">[ 90 sec.]</a>").append("<a action=\"bypass -h npc_%objectId%_start 120\">[ 120 sec.]</a>").append("<br><br>").append("<center><font color=LEVEL>DPS Test Results:</font></center>")
+					.append("<br><font color=55FF55>Total Damage:</font> " + (damage + petDamage)).append("<br1><font color=55FF55>Total DPS:</font> " + (damage + petDamage) / seconds + " DPS.").append("<br1><font color=55FF55>Hits Done:</font> " + (hitCount + petHitCount) + " hits.").append("<br1><font color=55FF55>Time Wasted:</font> " + FORMAT.format((double) timeInterval / 1000) + " seconds.").append("<br>").append("<center><font color=LEVEL>Statistics:</font></center>")
+					.append("<br1><font color=55FF55>[Your Info]:</font>").append("<br1><font color=AAFFAA>Damage: <font>" + damage).append("<br1><font color=AAFFAA>DPS: <font>" + damage / seconds).append("<br1><font color=AAFFAA>Hits: <font>" + hitCount).append("<br1><font color=AAFFAA>Hits Per Second <font>" + FORMAT.format((double) hitCount / seconds)).append("<br1><font color=AAFFAA>Avg. DMG Per Hit: <font>" + (hitCount == 0 ? 0 : damage / hitCount))
+					.append("<br><font color=55FF55>[Pet Info]:</font>").append("<br1><font color=AAFFAA>Damage: <font>" + petDamage).append("<br1><font color=AAFFAA>DPS: <font>" + petDamage / seconds).append("<br1><font color=AAFFAA>Hits: <font>" + petHitCount).append("<br1><font color=AAFFAA>Hits Per Second <font>" + FORMAT.format((double) petHitCount / seconds)).append("<br1><font color=AAFFAA>Avg. DMG Per Hit: <font>" + (petHitCount == 0 ? 0 : petDamage / petHitCount))
+					.append("<br><font color=55FF55>[Skills Used]:</font>").append("<table width=280>");
 		for (final Entry<Integer, Integer> entry : skillsUsed.entrySet())
 		{
 			sb.append("<tr><td width=200>").append(SkillTable.getInstance().getInfo(entry.getKey(), 1).getName()).append("</td><td>").append(entry.getValue()).append(" times. </td></tr>");

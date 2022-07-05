@@ -44,7 +44,6 @@ public class Seed extends ScriptItemHandler implements ScriptFile
 			spawnedTree = spawn;
 		}
 
-		@SuppressWarnings("unused")
 		@Override
 		public void runImpl() throws Exception
 		{

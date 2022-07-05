@@ -512,8 +512,7 @@ public class _221_TestimonyOfProsperity extends Quest implements ScriptFile
 			}
 			else if (st.getQuestItemsCount(CollectionLicense) > 0)
 			{
-				if (st.getQuestItemsCount(ReceiptOfContribution1st) > 0 && st.getQuestItemsCount(ReceiptOfContribution2st) > 0 && st.getQuestItemsCount(ReceiptOfContribution3st) > 0
-							&& st.getQuestItemsCount(ReceiptOfContribution4st) > 0 && st.getQuestItemsCount(ReceiptOfContribution5st) > 0)
+				if (st.getQuestItemsCount(ReceiptOfContribution1st) > 0 && st.getQuestItemsCount(ReceiptOfContribution2st) > 0 && st.getQuestItemsCount(ReceiptOfContribution3st) > 0 && st.getQuestItemsCount(ReceiptOfContribution4st) > 0 && st.getQuestItemsCount(ReceiptOfContribution5st) > 0)
 				{
 					htmltext = "30531-05.htm";
 					st.takeItems(CollectionLicense, -1);
@@ -685,8 +684,7 @@ public class _221_TestimonyOfProsperity extends Quest implements ScriptFile
 				st.takeItems(ReceiptOfBolter, -1);
 				st.giveItems(ReceiptOfContribution4st, 1);
 			}
-			else if (st.getQuestItemsCount(CollectionLicense) > 0 && st.getQuestItemsCount(ReceiptOfContribution4st) > 0 && st.getQuestItemsCount(ReceiptOfBolter) == 0
-						&& st.getQuestItemsCount(Lockirins4stNotice) == 0)
+			else if (st.getQuestItemsCount(CollectionLicense) > 0 && st.getQuestItemsCount(ReceiptOfContribution4st) > 0 && st.getQuestItemsCount(ReceiptOfBolter) == 0 && st.getQuestItemsCount(Lockirins4stNotice) == 0)
 			{
 				htmltext = "30535-04.htm";
 			}

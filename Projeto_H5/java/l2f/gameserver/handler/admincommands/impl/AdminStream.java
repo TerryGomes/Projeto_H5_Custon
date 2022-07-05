@@ -83,11 +83,10 @@ public class AdminStream implements IAdminCommandHandler
 		final Player activeStreamer = stream.getStreamingPlayer();
 		if (activeStreamer != null)
 		{
-			activeStreamer.sendPacket(new Say2(0, ChatType.COMMANDCHANNEL_ALL, StringHolder.getNotNull(activeStreamer, "Twitch.Stream", new Object[0]),
-						StringHolder.getNotNull(activeStreamer, "Twitch.PunishedForHours", new Object[]
-						{
-							hours
-						})));
+			activeStreamer.sendPacket(new Say2(0, ChatType.COMMANDCHANNEL_ALL, StringHolder.getNotNull(activeStreamer, "Twitch.Stream", new Object[0]), StringHolder.getNotNull(activeStreamer, "Twitch.PunishedForHours", new Object[]
+			{
+				hours
+			})));
 		}
 	}
 

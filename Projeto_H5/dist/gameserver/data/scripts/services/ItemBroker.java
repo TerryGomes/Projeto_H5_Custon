@@ -2172,8 +2172,7 @@ public class ItemBroker extends Functions
 							oldItems = new TreeMap<Long, Item>();
 							items.put(temp.getName(), oldItems);
 						}
-						Item newItem = new Item(item.getItemId(), type, item.getOwnersPrice(), item.getCount(), item.getEnchantLevel(), temp.getName(), pl.getObjectId(), pl.getName(), pl.getLoc(),
-									item.getObjectId(), item, false);
+						Item newItem = new Item(item.getItemId(), type, item.getOwnersPrice(), item.getCount(), item.getEnchantLevel(), temp.getName(), pl.getObjectId(), pl.getName(), pl.getLoc(), item.getObjectId(), item, false);
 						long key = newItem.price * 100;
 						while (key < newItem.price * 100 + 100 && oldItems.containsKey(key))
 						{
@@ -2206,8 +2205,7 @@ public class ItemBroker extends Functions
 							oldItems = new TreeMap<Long, Item>();
 							items.put(temp.getName(), oldItems);
 						}
-						Item newItem = new Item(item.getItemId(), type, packagePrice, item.getCount(), item.getEnchantLevel(), temp.getName(), pl.getObjectId(), pl.getName(), pl.getLoc(), item.getObjectId(),
-									item, true);
+						Item newItem = new Item(item.getItemId(), type, packagePrice, item.getCount(), item.getEnchantLevel(), temp.getName(), pl.getObjectId(), pl.getName(), pl.getLoc(), item.getObjectId(), item, true);
 						long key = newItem.price * 100;
 						while (key < newItem.price * 100 + 100 && oldItems.containsKey(key))
 						{
@@ -2234,8 +2232,7 @@ public class ItemBroker extends Functions
 							oldItems = new TreeMap<Long, Item>();
 							items.put(temp.getName(), oldItems);
 						}
-						Item newItem = new Item(item.getItemId(), type, item.getOwnersPrice(), item.getCount(), item.getEnchantLevel(), temp.getName(), pl.getObjectId(), pl.getName(), pl.getLoc(), itemObjId++,
-									item, false);
+						Item newItem = new Item(item.getItemId(), type, item.getOwnersPrice(), item.getCount(), item.getEnchantLevel(), temp.getName(), pl.getObjectId(), pl.getName(), pl.getLoc(), itemObjId++, item, false);
 						long key = newItem.price * 100;
 						while (key < newItem.price * 100 + 100 && oldItems.containsKey(key))
 						{
@@ -2291,7 +2288,6 @@ public class ItemBroker extends Functions
 		}
 	}
 
-	@SuppressWarnings("null")
 	public void find(String[] var)
 	{
 		Player player = getSelf();

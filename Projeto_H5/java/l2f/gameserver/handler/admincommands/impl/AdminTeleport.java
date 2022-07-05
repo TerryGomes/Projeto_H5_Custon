@@ -30,9 +30,8 @@ public class AdminTeleport implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_show_moves, admin_show_moves_other, admin_show_teleport, admin_teleport_to_character, admin_teleportto, admin_teleport_to, admin_move_to, admin_moveto, admin_teleport, admin_teleport_character,
-		admin_recall, admin_recallparty, admin_recallcc, admin_recallinstance, admin_recallserver, admin_recallserverforce, admin_walk, admin_recall_npc, admin_gonorth, admin_gosouth, admin_goeast, admin_goto,
-		admin_gowest, admin_goup, admin_godown, admin_tele, admin_teleto, admin_tele_to, admin_instant_move, admin_tonpc, admin_to_npc, admin_toobject, admin_setref, admin_getref, admin_autorecall
+		admin_show_moves, admin_show_moves_other, admin_show_teleport, admin_teleport_to_character, admin_teleportto, admin_teleport_to, admin_move_to, admin_moveto, admin_teleport, admin_teleport_character, admin_recall, admin_recallparty, admin_recallcc, admin_recallinstance, admin_recallserver, admin_recallserverforce, admin_walk, admin_recall_npc, admin_gonorth, admin_gosouth, admin_goeast, admin_goto, admin_gowest, admin_goup, admin_godown, admin_tele, admin_teleto, admin_tele_to,
+		admin_instant_move, admin_tonpc, admin_to_npc, admin_toobject, admin_setref, admin_getref, admin_autorecall
 	}
 
 	@Override
@@ -84,8 +83,7 @@ public class AdminTeleport implements IAdminCommandHandler
 				activeChar.sendMessage("USAGE: //teleport x y z [ref]");
 				return false;
 			}
-			activeChar.teleToLocation(Location.parseLoc(Util.joinStrings(" ", wordList, 1, 3)),
-						(ArrayUtils.valid(wordList, 4) != null && !ArrayUtils.valid(wordList, 4).isEmpty() ? Integer.parseInt(wordList[4]) : 0));
+			activeChar.teleToLocation(Location.parseLoc(Util.joinStrings(" ", wordList, 1, 3)), (ArrayUtils.valid(wordList, 4) != null && !ArrayUtils.valid(wordList, 4).isEmpty() ? Integer.parseInt(wordList[4]) : 0));
 			break;
 		case admin_walk:
 			if (wordList.length < 2)
@@ -295,16 +293,14 @@ public class AdminTeleport implements IAdminCommandHandler
 					continue;
 				}
 
-				if (plr.isInOfflineMode() || plr.isInBuffStore() || plr.isInStoreMode() || !plr.isOnline() || plr.isInOlympiadMode() || Olympiad.isRegistered(plr) || plr.isJailed() || plr.isInFightClub()
-							|| plr.isInZone(ZoneType.SIEGE) || plr.getReflection() != ReflectionManager.DEFAULT || plr.getPvpFlag() > 0 || plr.getKarma() > 0)
+				if (plr.isInOfflineMode() || plr.isInBuffStore() || plr.isInStoreMode() || !plr.isOnline() || plr.isInOlympiadMode() || Olympiad.isRegistered(plr) || plr.isJailed() || plr.isInFightClub() || plr.isInZone(ZoneType.SIEGE) || plr.getReflection() != ReflectionManager.DEFAULT || plr.getPvpFlag() > 0 || plr.getKarma() > 0)
 				{
 					continue;
 				}
 
 				targets.add(plr);
 			}
-			activeChar.sendMessage("Recalling " + targets.size() + " players out of " + GameObjectsStorage.getAllPlayersCount()
-						+ " players. Ignored: Offline shops, instance, event, olympiad participants and jailed players.");
+			activeChar.sendMessage("Recalling " + targets.size() + " players out of " + GameObjectsStorage.getAllPlayersCount() + " players. Ignored: Offline shops, instance, event, olympiad participants and jailed players.");
 			recall(activeChar, (command == Commands.admin_recallserver), true, targets.toArray(new Player[targets.size()]));
 			break;
 		case admin_setref:
@@ -417,10 +413,8 @@ public class AdminTeleport implements IAdminCommandHandler
 		replyMSG.append("<edit var=\"char_cord_y\" width=110>");
 		replyMSG.append("Co-ordinate z");
 		replyMSG.append("<edit var=\"char_cord_z\" width=110>");
-		replyMSG.append(
-					"<button value=\"Teleport\" action=\"bypass -h admin_teleport_character $char_cord_x $char_cord_y $char_cord_z\" width=60 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">");
-		replyMSG.append("<button value=\"Teleport near you\" action=\"bypass -h admin_teleport_character " + activeChar.getX() + " " + activeChar.getY() + " " + activeChar.getZ()
-					+ "\" width=115 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">");
+		replyMSG.append("<button value=\"Teleport\" action=\"bypass -h admin_teleport_character $char_cord_x $char_cord_y $char_cord_z\" width=60 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">");
+		replyMSG.append("<button value=\"Teleport near you\" action=\"bypass -h admin_teleport_character " + activeChar.getX() + " " + activeChar.getY() + " " + activeChar.getZ() + "\" width=115 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">");
 		replyMSG.append("<center><button value=\"Back\" action=\"bypass -h admin_current_player\" width=40 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></center>");
 		replyMSG.append("</body></html>");
 

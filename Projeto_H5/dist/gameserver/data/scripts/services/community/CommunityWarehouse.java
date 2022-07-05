@@ -49,13 +49,10 @@ public class CommunityWarehouse implements ScriptFile, ICommunityBoardHandler
 			}
 			if (!player.isInZone(ZoneType.peace_zone) && !player.isInZone(ZoneType.RESIDENCE))
 			{
-				player.sendChatMessage(0, ChatType.TELL.ordinal(), "Warehouse",
-							player.isLangRus() ? "Вы должны быть в зону мира, чтобы использовать эту функцию." : "You must be inside peace zone to use this function.");
+				player.sendChatMessage(0, ChatType.TELL.ordinal(), "Warehouse", player.isLangRus() ? "Вы должны быть в зону мира, чтобы использовать эту функцию." : "You must be inside peace zone to use this function.");
 				return;
 			}
-			if (player.isCursedWeaponEquipped() || player.isInJail() || player.getReflectionId() != ReflectionManager.DEFAULT.getId() /* || player.getPvpFlag() != 0 */ || player.isDead() || player.isAlikeDead()
-						|| player.isCastingNow() || player.isInCombat() || player.isAttackingNow() || player.isInOlympiadMode() || player.isFlying() || player.isTerritoryFlagEquipped()
-						|| player.isInZone(ZoneType.no_escape) || player.isInZone(ZoneType.SIEGE) || player.isInZone(ZoneType.epic))
+			if (player.isCursedWeaponEquipped() || player.isInJail() || player.getReflectionId() != ReflectionManager.DEFAULT.getId() /* || player.getPvpFlag() != 0 */ || player.isDead() || player.isAlikeDead() || player.isCastingNow() || player.isInCombat() || player.isAttackingNow() || player.isInOlympiadMode() || player.isFlying() || player.isTerritoryFlagEquipped() || player.isInZone(ZoneType.no_escape) || player.isInZone(ZoneType.SIEGE) || player.isInZone(ZoneType.epic))
 			{
 				player.sendChatMessage(0, ChatType.TELL.ordinal(), "Warehouse", "You cannot use Warehouse due restrictions. Please try again later.");
 				return;

@@ -345,8 +345,7 @@ public class _999_T1Tutorial extends Quest implements ScriptFile
 			st.addRadar(-119692, 44504, 380);
 			player.teleToLocation(-120050, 44500, 360);
 			String title = npc == null ? "" : npc.getTitle() + " " + npc.getName();
-			htmltext = "<html><body>" + title
-						+ "<br>Go to the <font color=\"LEVEL\">Isle of Souls</font> and meet the <font color=\"LEVEL\">Newbie Guide</font> there to learn a number of important tips. He will also give you an item to assist your development.<br>Follow the direction arrow above your head and it will lead you to the Newbie Guide. Good luck!</body></html>";
+			htmltext = "<html><body>" + title + "<br>Go to the <font color=\"LEVEL\">Isle of Souls</font> and meet the <font color=\"LEVEL\">Newbie Guide</font> there to learn a number of important tips. He will also give you an item to assist your development.<br>Follow the direction arrow above your head and it will lead you to the Newbie Guide. Good luck!</body></html>";
 		}
 		else
 		{
@@ -475,8 +474,7 @@ public class _999_T1Tutorial extends Quest implements ScriptFile
 							htmltext = t.htmlfiles[2];
 							if (htmltext.isEmpty())
 							{
-								htmltext = "<html><body>" + (npc.getTitle().isEmpty() ? "" : npc.getTitle() + " ") + npc.getName()
-											+ "<br>I am sorry. I only help warriors. Please go to another Newbie Helper who may assist you.</body></html>";
+								htmltext = "<html><body>" + (npc.getTitle().isEmpty() ? "" : npc.getTitle() + " ") + npc.getName() + "<br>I am sorry. I only help warriors. Please go to another Newbie Helper who may assist you.</body></html>";
 							}
 						}
 						else
@@ -486,8 +484,7 @@ public class _999_T1Tutorial extends Quest implements ScriptFile
 							htmltext = t.htmlfiles[1];
 							if (htmltext.isEmpty())
 							{
-								htmltext = "<html><body>" + (npc.getTitle().isEmpty() ? "" : npc.getTitle() + " ") + npc.getName()
-											+ "<br>I am sorry. I only help mystics. Please go to another Newbie Helper who may assist you.</body></html>";
+								htmltext = "<html><body>" + (npc.getTitle().isEmpty() ? "" : npc.getTitle() + " ") + npc.getName() + "<br>I am sorry. I only help mystics. Please go to another Newbie Helper who may assist you.</body></html>";
 							}
 						}
 					}

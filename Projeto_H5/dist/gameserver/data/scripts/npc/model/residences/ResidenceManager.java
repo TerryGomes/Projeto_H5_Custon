@@ -341,9 +341,7 @@ public abstract class ResidenceManager extends MerchantInstance
 				}
 				html.replace("%magicList%", support_list.toString());
 				html.replace("%mp%", String.valueOf(Math.round(getCurrentMp())));
-				html.replace("%all%", Config.ALT_CH_ALL_BUFFS
-							? "<a action=\"bypass -h npc_%objectId%_support all\">Give all</a><br1><a action=\"bypass -h npc_%objectId%_support allW\">Give warrior</a><br1><a action=\"bypass -h npc_%objectId%_support allM\">Give mystic</a><br>"
-							: "");
+				html.replace("%all%", Config.ALT_CH_ALL_BUFFS ? "<a action=\"bypass -h npc_%objectId%_support all\">Give all</a><br1><a action=\"bypass -h npc_%objectId%_support allW\">Give warrior</a><br1><a action=\"bypass -h npc_%objectId%_support allM\">Give mystic</a><br>" : "");
 				sendHtmlMessage(player, html);
 			}
 			else if (val.equalsIgnoreCase("back"))

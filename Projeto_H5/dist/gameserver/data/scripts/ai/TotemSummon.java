@@ -38,7 +38,6 @@ public class TotemSummon extends DefaultAI
 		super.onEvtSpawn();
 		ThreadPoolManager.getInstance().schedule(new RunnableImpl()
 		{
-			@SuppressWarnings("unused")
 			@Override
 			public void runImpl() throws Exception
 			{

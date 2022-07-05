@@ -260,15 +260,13 @@ public class AdminAugmentation implements IAdminCommandHandler
 
 			augmentationsHtm.append("<table valign=top border=0 " + (lastColor ? "bgcolor=131210" : "") + ">");
 			augmentationsHtm.append("<tr>");
-			augmentationsHtm.append("<td valign=top align=center width=34 background=" + (skill != null ? skill.getIcon() : "icon.skill5041") + "><button action=\"bypass -h admin_augmentation setaug "
-						+ augm.getId() + "\" width=32 height=32 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"></td>");
+			augmentationsHtm.append("<td valign=top align=center width=34 background=" + (skill != null ? skill.getIcon() : "icon.skill5041") + "><button action=\"bypass -h admin_augmentation setaug " + augm.getId() + "\" width=32 height=32 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"></td>");
 			augmentationsHtm.append("<td width=8></td>");
 			augmentationsHtm.append("<td width=220>");
 			augmentationsHtm.append("<table cellspacing=-2 valign=top>");
 			if (skill != null)
 			{
-				augmentationsHtm.append("<tr><td>" + (skill.getName().length() > 28 ? skill.getName().substring(0, 28) : skill.getName()) + " <font color=a3a3a3>Lv</font> <font color=ae9978>" + skill.getLevel()
-							+ "</font> <font color=616161>(" + skill.getId() + ")</font></td></tr>");
+				augmentationsHtm.append("<tr><td>" + (skill.getName().length() > 28 ? skill.getName().substring(0, 28) : skill.getName()) + " <font color=a3a3a3>Lv</font> <font color=ae9978>" + skill.getLevel() + "</font> <font color=616161>(" + skill.getId() + ")</font></td></tr>");
 			}
 			else
 			{

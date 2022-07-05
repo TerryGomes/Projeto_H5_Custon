@@ -145,7 +145,6 @@ public class AchievementsManager
 		return b;
 	}
 
-	@SuppressWarnings("static-method")
 	private int checkInt(Node d, String nodename)
 	{
 		int i = 0;

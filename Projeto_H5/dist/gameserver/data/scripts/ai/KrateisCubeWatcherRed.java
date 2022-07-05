@@ -90,7 +90,6 @@ public class KrateisCubeWatcherRed extends DefaultAI
 		actor.deleteMe();
 		ThreadPoolManager.getInstance().schedule(new RunnableImpl()
 		{
-			@SuppressWarnings("unused")
 			@Override
 			public void runImpl() throws Exception
 			{

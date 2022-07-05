@@ -80,8 +80,7 @@ public class RPSHtmlPvpStatus
 		// name [level]
 		if (RPSConfig.SHOW_PLAYER_LEVEL_IN_PVPINFO_ENABLED)
 		{
-			tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Name [lvl]</font></td><td width=135 height=22 align=left><font color=ffa000>" + playerTarget.getName() + " ["
-						+ playerTarget.getLevel() + "]</font></td></tr>";
+			tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Name [lvl]</font></td><td width=135 height=22 align=left><font color=ffa000>" + playerTarget.getName() + " [" + playerTarget.getLevel() + "]</font></td></tr>";
 		}
 		else
 		{
@@ -89,14 +88,12 @@ public class RPSHtmlPvpStatus
 		}
 
 		// current class
-		tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Current class</font></td><td width=135 height=22 align=left><font color=ffa000>"
-					+ RPSUtil.getClassName(playerTarget.getClassId().getId()) + "</font></td></tr>";
+		tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Current class</font></td><td width=135 height=22 align=left><font color=ffa000>" + RPSUtil.getClassName(playerTarget.getClassId().getId()) + "</font></td></tr>";
 
 		// main class
 		if (playerTarget.getBaseClassId() != playerTarget.getClassId().getId())
 		{
-			tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Main class</font></td><td width=135 height=22 align=left><font color=ffa000>" + RPSUtil.getClassName(playerTarget.getBaseClassId())
-						+ "</font></td></tr>";
+			tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Main class</font></td><td width=135 height=22 align=left><font color=ffa000>" + RPSUtil.getClassName(playerTarget.getBaseClassId()) + "</font></td></tr>";
 		}
 
 		// nobles / hero
@@ -148,27 +145,23 @@ public class RPSHtmlPvpStatus
 
 			if (targetPvpSummary.getPvpExp() != targetPvpSummary.getTotalRankPoints())
 			{
-				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>PvP Exp / RP</font></td><td width=135 height=22 align=left><font color=ffa000>"
-							+ RPSUtil.preparePrice(targetPvpSummary.getPvpExp()) + " / " + RPSUtil.preparePrice(targetPvpSummary.getTotalRankPoints()) + "</font></td></tr>";
+				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>PvP Exp / RP</font></td><td width=135 height=22 align=left><font color=ffa000>" + RPSUtil.preparePrice(targetPvpSummary.getPvpExp()) + " / " + RPSUtil.preparePrice(targetPvpSummary.getTotalRankPoints()) + "</font></td></tr>";
 			}
 			else
 			{
-				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>PvP Exp</font></td><td width=135 height=22 align=left><font color=ffa000>" + RPSUtil.preparePrice(targetPvpSummary.getPvpExp())
-							+ "</font></td></tr>";
+				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>PvP Exp</font></td><td width=135 height=22 align=left><font color=ffa000>" + RPSUtil.preparePrice(targetPvpSummary.getPvpExp()) + "</font></td></tr>";
 			}
 		}
 
 		if (RPSConfig.TOTAL_KILLS_IN_PVPINFO_ENABLED)
 		{
 			// legal/total kills:
-			tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Legal/Total Kills</font></td><td width=135 height=22 align=left><font color=ffa000>"
-						+ RPSUtil.preparePrice(targetPvpSummary.getTotalKillsLegal()) + " / " + RPSUtil.preparePrice(targetPvpSummary.getTotalKills()) + "</font></td></tr>";
+			tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Legal/Total Kills</font></td><td width=135 height=22 align=left><font color=ffa000>" + RPSUtil.preparePrice(targetPvpSummary.getTotalKillsLegal()) + " / " + RPSUtil.preparePrice(targetPvpSummary.getTotalKills()) + "</font></td></tr>";
 		}
 		else
 		{
 			// legal kills:
-			tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Legal Kills</font></td><td width=135 height=22 align=left><font color=ffa000>"
-						+ RPSUtil.preparePrice(targetPvpSummary.getTotalKillsLegal()) + "</font></td></tr>";
+			tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Legal Kills</font></td><td width=135 height=22 align=left><font color=ffa000>" + RPSUtil.preparePrice(targetPvpSummary.getTotalKillsLegal()) + "</font></td></tr>";
 		}
 
 		// war kills
@@ -178,14 +171,12 @@ public class RPSHtmlPvpStatus
 			if (RPSConfig.TOTAL_KILLS_IN_PVPINFO_ENABLED)
 			{
 				// war legal/total kills:
-				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Legal/Total War Kills</font></td><td width=135 height=22 align=left><font color=2080D0>"
-							+ RPSUtil.preparePrice(targetPvpSummary.getTotalWarKillsLegal()) + " / " + RPSUtil.preparePrice(targetPvpSummary.getTotalWarKills()) + "</font></td></tr>";
+				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Legal/Total War Kills</font></td><td width=135 height=22 align=left><font color=2080D0>" + RPSUtil.preparePrice(targetPvpSummary.getTotalWarKillsLegal()) + " / " + RPSUtil.preparePrice(targetPvpSummary.getTotalWarKills()) + "</font></td></tr>";
 			}
 			else
 			{
 				// war legal kills:
-				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Legal War Kills</font></td><td width=135 height=22 align=left><font color=2080D0>"
-							+ RPSUtil.preparePrice(targetPvpSummary.getTotalWarKillsLegal()) + "</font></td></tr>";
+				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Legal War Kills</font></td><td width=135 height=22 align=left><font color=2080D0>" + RPSUtil.preparePrice(targetPvpSummary.getTotalWarKillsLegal()) + "</font></td></tr>";
 			}
 		}
 
@@ -202,8 +193,7 @@ public class RPSHtmlPvpStatus
 		// Rank Points for Rank
 		if (RPSConfig.RANKS_ENABLED)
 		{
-			tb += "<tr><td width=135 height=22 align=left><font color=ae9977>RP for kill</font></td><td width=135 height=22 align=left><font color=ffa000>" + targetPvpSummary.getRank().getPointsForKill()
-						+ "</font>";
+			tb += "<tr><td width=135 height=22 align=left><font color=ae9977>RP for kill</font></td><td width=135 height=22 align=left><font color=ffa000>" + targetPvpSummary.getRank().getPointsForKill() + "</font>";
 
 			if (RPSConfig.RANK_POINTS_CUT_ENABLED && playerPvpSummary != null)
 			{
@@ -222,8 +212,7 @@ public class RPSHtmlPvpStatus
 		{
 			if (RPSConfig.RANK_RPC_ENABLED && RPSConfig.RPC_REWARD_ENABLED)
 			{
-				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>PvP + Rank RPC Reward</font></td><td width=135 height=22 align=left><font color=ffa000>(" + RPSConfig.RPC_REWARD_AMOUNT + " + "
-							+ targetPvpSummary.getRank().getRpc();
+				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>PvP + Rank RPC Reward</font></td><td width=135 height=22 align=left><font color=ffa000>(" + RPSConfig.RPC_REWARD_AMOUNT + " + " + targetPvpSummary.getRank().getRpc();
 				if (RPSConfig.RANK_RPC_CUT_ENABLED && playerPvpSummary != null)
 				{
 					if (playerPvpSummary.getRank().getRpc() < targetPvpSummary.getRank().getRpc())
@@ -235,8 +224,7 @@ public class RPSHtmlPvpStatus
 			}
 			else if (!RPSConfig.RANK_RPC_ENABLED && RPSConfig.RPC_REWARD_ENABLED)
 			{
-				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>PvP RPC Reward</font></td><td width=135 height=22 align=left><font color=ffa000>" + RPSConfig.RPC_REWARD_AMOUNT
-							+ " </font><font color=FFFF00> RPC</font></td></tr>";
+				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>PvP RPC Reward</font></td><td width=135 height=22 align=left><font color=ffa000>" + RPSConfig.RPC_REWARD_AMOUNT + " </font><font color=FFFF00> RPC</font></td></tr>";
 			}
 			else if (RPSConfig.RANK_RPC_ENABLED)
 			{
@@ -265,8 +253,7 @@ public class RPSHtmlPvpStatus
 			else if (!RPSConfig.RANK_PVP_REWARD_ENABLED && RPSConfig.PVP_REWARD_ENABLED)
 			{
 				String item_name = ItemHolder.getInstance().getTemplate(RPSConfig.PVP_REWARD_ID).getName();
-				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>PvP Reward</font></td><td width=135 height=22 align=left><font color=ffa000>" + RPSConfig.PVP_REWARD_AMOUNT
-							+ " </font>x<font color=FFFF00> " + item_name + "</font></td></tr>";
+				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>PvP Reward</font></td><td width=135 height=22 align=left><font color=ffa000>" + RPSConfig.PVP_REWARD_AMOUNT + " </font>x<font color=FFFF00> " + item_name + "</font></td></tr>";
 			}
 			else if (RPSConfig.RANK_PVP_REWARD_ENABLED)
 			{
@@ -312,14 +299,12 @@ public class RPSHtmlPvpStatus
 			if (RPSConfig.TOTAL_KILLS_ON_ME_IN_PVPINFO_ENABLED)
 			{
 				// legal/total kills on me:
-				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Legal/Total Kills on Me</font></td><td width=135 height=22 align=left><font color=FF00FF>" + pvp1.getKillsLegal() + " / "
-							+ pvp1.getKills() + "</font></td></tr>";
+				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Legal/Total Kills on Me</font></td><td width=135 height=22 align=left><font color=FF00FF>" + pvp1.getKillsLegal() + " / " + pvp1.getKills() + "</font></td></tr>";
 			}
 			else
 			{
 				// legal kills on me:
-				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Legal Kills on Me</font></td><td width=135 height=22 align=left><font color=FF00FF>" + pvp1.getKillsLegal()
-							+ "</font></td></tr>";
+				tb += "<tr><td width=135 height=22 align=left><font color=ae9977>Legal Kills on Me</font></td><td width=135 height=22 align=left><font color=FF00FF>" + pvp1.getKillsLegal() + "</font></td></tr>";
 			}
 
 			tb += "</table>";
@@ -328,15 +313,13 @@ public class RPSHtmlPvpStatus
 		if (RPSConfig.RPC_EXCHANGE_ENABLED && player.equals(playerTarget) && (RPSConfig.RANK_RPC_ENABLED || RPSConfig.RPC_REWARD_ENABLED))
 		{
 			// button RPC Exchanger:
-			tb += "<table border=0 cellspacing=0 cellpadding=0><tr><td width=270 HEIGHT=1><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr><tr><td width=270 height=12></td></tr><tr><td width=270 align=center><button value=\"RPC Exchange\" action=\"bypass RPS.RPC:1\" width="
-						+ RPSConfig.BUTTON_BIG_W + " height=" + RPSConfig.BUTTON_BIG_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\"></td></tr></table>";
+			tb += "<table border=0 cellspacing=0 cellpadding=0><tr><td width=270 HEIGHT=1><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr><tr><td width=270 height=12></td></tr><tr><td width=270 align=center><button value=\"RPC Exchange\" action=\"bypass RPS.RPC:1\" width=" + RPSConfig.BUTTON_BIG_W + " height=" + RPSConfig.BUTTON_BIG_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\"></td></tr></table>";
 		}
 
 		if (RPSConfig.DEATH_MANAGER_DETAILS_ENABLED && player.getRPSCookie().isDeathStatusActive() && player.isDead() && playerTarget.getObjectId() == player.getRPSCookie().getDeathStatus().getKillerObjectId())
 		{ // playerTarget is not real target its handler to current killer. //getTarget() store last killer.
 			// button Death Status:
-			tb += "<table border=0 cellspacing=0 cellpadding=0><tr><td width=270 HEIGHT=1><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr><tr><td width=270 height=12></td></tr><tr><td width=270 align=center><button value=\"Death Status\" action=\"bypass RPS.DS\" width="
-						+ RPSConfig.BUTTON_BIG_W + " height=" + RPSConfig.BUTTON_BIG_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\"></td></tr></table>";
+			tb += "<table border=0 cellspacing=0 cellpadding=0><tr><td width=270 HEIGHT=1><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr><tr><td width=270 height=12></td></tr><tr><td width=270 align=center><button value=\"Death Status\" action=\"bypass RPS.DS\" width=" + RPSConfig.BUTTON_BIG_W + " height=" + RPSConfig.BUTTON_BIG_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\"></td></tr></table>";
 		}
 
 		tb += "</center></body></html>";

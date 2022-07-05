@@ -92,8 +92,7 @@ public class RuVoteAnnounceTask
 			final Map<Language, Say2> msgPerLanguage = new EnumMap<Language, Say2>(Language.class);
 			for (Language lang : Language.values())
 			{
-				msgPerLanguage.put(lang, new Say2(0, ChatType.ANNOUNCEMENT, "",
-							StringHolder.getNotNull(lang, "RussianVote.NotVotedAnnounce", ConfigHolder.getString("RuVoteLinkToVote"), ConfigHolder.getString("RuVoteLinkToGuide"))));
+				msgPerLanguage.put(lang, new Say2(0, ChatType.ANNOUNCEMENT, "", StringHolder.getNotNull(lang, "RussianVote.NotVotedAnnounce", ConfigHolder.getString("RuVoteLinkToVote"), ConfigHolder.getString("RuVoteLinkToGuide"))));
 			}
 			final long currentTime = System.currentTimeMillis();
 			for (Player player : GameObjectsStorage.getAllPlayersForIterate())

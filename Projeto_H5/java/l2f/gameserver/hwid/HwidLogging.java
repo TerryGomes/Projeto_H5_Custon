@@ -43,9 +43,7 @@ public class HwidLogging
 	{
 		List<SimpleLog> playerLogs = new ArrayList<>();
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("SELECT * FROM character_logs WHERE obj_Id=" + objId);
-					ResultSet rset = statement.executeQuery())
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT * FROM character_logs WHERE obj_Id=" + objId); ResultSet rset = statement.executeQuery())
 		{
 			while (rset.next())
 			{

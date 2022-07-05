@@ -20,8 +20,7 @@ public class StreamDatabaseFactory extends BasicDataSource implements OnShutdown
 
 	public StreamDatabaseFactory()
 	{
-		super(Config.DATABASE_DRIVER, ConfigHolder.getString("StreamTableDBURL"), ConfigHolder.getString("StreamTableDBLogin"), ConfigHolder.getString("StreamTableDBPassword"), Config.DATABASE_MAX_CONNECTIONS,
-					Config.DATABASE_MAX_CONNECTIONS, Config.DATABASE_MAX_IDLE_TIMEOUT, Config.DATABASE_IDLE_TEST_PERIOD, false);
+		super(Config.DATABASE_DRIVER, ConfigHolder.getString("StreamTableDBURL"), ConfigHolder.getString("StreamTableDBLogin"), ConfigHolder.getString("StreamTableDBPassword"), Config.DATABASE_MAX_CONNECTIONS, Config.DATABASE_MAX_CONNECTIONS, Config.DATABASE_MAX_IDLE_TIMEOUT, Config.DATABASE_IDLE_TEST_PERIOD, false);
 
 		GameServer.getInstance().addListener(this);
 	}

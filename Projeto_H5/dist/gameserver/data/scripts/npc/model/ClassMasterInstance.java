@@ -74,8 +74,7 @@ public final class ClassMasterInstance extends MerchantInstance
 				}
 				if (cid.childOf(classId) && cid.getLevel() == classId.getLevel() + 1)
 				{
-					html.append("<a action=\"bypass -h npc_").append(getObjectId()).append("_change_class ").append(cid.getId()).append(" ").append(Config.CLASS_MASTERS_PRICE_LIST[jobLevel]).append("\">")
-								.append(HtmlUtils.htmlClassName(cid.getId())).append("</a><br>");
+					html.append("<a action=\"bypass -h npc_").append(getObjectId()).append("_change_class ").append(cid.getId()).append(" ").append(Config.CLASS_MASTERS_PRICE_LIST[jobLevel]).append("\">").append(HtmlUtils.htmlClassName(cid.getId())).append("</a><br>");
 				}
 			}
 			player.sendPacket(new NpcHtmlMessage(player, this).setHtml(html.toString()));

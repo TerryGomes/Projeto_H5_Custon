@@ -28,8 +28,7 @@ public class AdminFacebook implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_facebook, admin_fb_set_message_approval, admin_fb_official_posts, admin_fb_official_post_edit_panel, admin_fb_add_rewarded_action, admin_fb_remove_rewarded_action, admin_reset_facebook_delay,
-		admin_recheck_task_completed, admin_has_fb_task, admin_expire_fb_task, admin_clear_negative_balance, admin_reload_fb_posts
+		admin_facebook, admin_fb_set_message_approval, admin_fb_official_posts, admin_fb_official_post_edit_panel, admin_fb_add_rewarded_action, admin_fb_remove_rewarded_action, admin_reset_facebook_delay, admin_recheck_task_completed, admin_has_fb_task, admin_expire_fb_task, admin_clear_negative_balance, admin_reload_fb_posts
 	}
 
 	@Override
@@ -171,13 +170,11 @@ public class AdminFacebook implements IAdminCommandHandler
 
 				if (officialPost.isActionTypeRewarded(actionType))
 				{
-					sb.append("<button value=\"" + actionType.toString() + "\" action=\"bypass -h admin_fb_remove_rewarded_action " + officialPost.getId() + " " + actionType.toString()
-								+ "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\" />");
+					sb.append("<button value=\"" + actionType.toString() + "\" action=\"bypass -h admin_fb_remove_rewarded_action " + officialPost.getId() + " " + actionType.toString() + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\" />");
 				}
 				else
 				{
-					sb.append("<button value=\"" + actionType.toString() + "\" action=\"bypass -h admin_fb_add_rewarded_action " + officialPost.getId() + " " + actionType.toString()
-								+ "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\" />");
+					sb.append("<button value=\"" + actionType.toString() + "\" action=\"bypass -h admin_fb_add_rewarded_action " + officialPost.getId() + " " + actionType.toString() + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\" />");
 				}
 			}
 

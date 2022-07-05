@@ -395,8 +395,7 @@ public class SevenSignsFestival
 			if (player.getClan() != null)
 			{
 				player.getClan().incReputation(100, true, "SevenSignsFestival");
-				SystemMessage sm = new SystemMessage(
-							SystemMessage.CLAN_MEMBER_S1_WAS_AN_ACTIVE_MEMBER_OF_THE_HIGHEST_RANKED_PARTY_IN_THE_FESTIVAL_OF_DARKNESS_S2_POINTS_HAVE_BEEN_ADDED_TO_YOUR_CLAN_REPUTATION_SCORE);
+				SystemMessage sm = new SystemMessage(SystemMessage.CLAN_MEMBER_S1_WAS_AN_ACTIVE_MEMBER_OF_THE_HIGHEST_RANKED_PARTY_IN_THE_FESTIVAL_OF_DARKNESS_S2_POINTS_HAVE_BEEN_ADDED_TO_YOUR_CLAN_REPUTATION_SCORE);
 				sm.addName(player);
 				sm.addNumber(100);
 				player.getClan().broadcastToOnlineMembers(sm);
@@ -423,8 +422,7 @@ public class SevenSignsFestival
 						{
 							clan.incReputation(100, true, "SevenSignsFestival");
 							clan.broadcastToOnlineMembers(new PledgeShowInfoUpdate(clan));
-							SystemMessage sm = new SystemMessage(
-										SystemMessage.CLAN_MEMBER_S1_WAS_AN_ACTIVE_MEMBER_OF_THE_HIGHEST_RANKED_PARTY_IN_THE_FESTIVAL_OF_DARKNESS_S2_POINTS_HAVE_BEEN_ADDED_TO_YOUR_CLAN_REPUTATION_SCORE);
+							SystemMessage sm = new SystemMessage(SystemMessage.CLAN_MEMBER_S1_WAS_AN_ACTIVE_MEMBER_OF_THE_HIGHEST_RANKED_PARTY_IN_THE_FESTIVAL_OF_DARKNESS_S2_POINTS_HAVE_BEEN_ADDED_TO_YOUR_CLAN_REPUTATION_SCORE);
 							sm.addString(rset.getString("char_name"));
 							sm.addNumber(100);
 							clan.broadcastToOnlineMembers(sm);

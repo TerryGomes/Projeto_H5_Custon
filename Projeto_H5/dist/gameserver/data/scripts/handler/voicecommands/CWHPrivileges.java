@@ -117,9 +117,7 @@ public class CWHPrivileges implements IVoicedCommandHandler, ScriptFile
 							{
 								if (m.getObjectId() == Integer.parseInt(o_id.toString()))
 								{
-									sb.append("<tr><td width=10></td><td width=60>").append(m.getName())
-												.append("</td><td width=20><button width=50 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h user_clan allowwh ")
-												.append(m.getName()).append("\" value=\"Remove\">").append("<br></td></tr>");
+									sb.append("<tr><td width=10></td><td width=60>").append(m.getName()).append("</td><td width=20><button width=50 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h user_clan allowwh ").append(m.getName()).append("\" value=\"Remove\">").append("<br></td></tr>");
 								}
 							}
 						}

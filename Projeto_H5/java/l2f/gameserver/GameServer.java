@@ -213,7 +213,6 @@ public class GameServer
 		return time() - _serverStarted;
 	}
 
-	
 	public GameServer() throws Exception
 	{
 		_instance = this;
@@ -282,7 +281,7 @@ public class GameServer
 		_log.info("Licensed IP " + Config.EXTERNAL_HOSTNAME);
 		_log.info("Licensed IP " + "Please Contact Ichsan Rinaldi Sjofka");
 
-		Class.forName(Config.DATABASE_DRIVER).newInstance();
+		Class.forName(Config.DATABASE_DRIVER).getDeclaredConstructor().newInstance();
 		DatabaseFactory.getInstance().getConnection().close();
 		LoginDatabaseFactory.getInstance().getConnection().close();
 		printSection("Loading Protection Configuration");

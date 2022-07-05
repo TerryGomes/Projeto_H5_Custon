@@ -32,8 +32,7 @@ public class Imprison extends Skill
 
 				Player player = target.getPlayer();
 				AutoBan.doJailPlayer(player, (int) getPower() * 1000L, false);
-				player.sendPacket(new Say2(0, ChatType.TELL, "♦",
-							"Персонаж " + activeChar.getName() + " наложил на Вас проклятие заточения. Вы посажены в тюрьму на срок " + TimeUtils.minutesToFullString((int) getPower() / 60)));
+				player.sendPacket(new Say2(0, ChatType.TELL, "♦", "Персонаж " + activeChar.getName() + " наложил на Вас проклятие заточения. Вы посажены в тюрьму на срок " + TimeUtils.minutesToFullString((int) getPower() / 60)));
 			}
 		}
 	}

@@ -661,8 +661,7 @@ public final class AutoBan
 			}
 
 			mysql.set("REPLACE INTO character_variables (obj_id, type, name, value, expire_time) VALUES (?,'user-var',?,?,?)", objId, "jailedFrom", loc.getX() + ";" + loc.getY() + ";" + loc.getZ() + ";0", -1);
-			mysql.set("REPLACE INTO character_variables (obj_id, type, name, value, expire_time) VALUES (?,'user-var',?,?,?)", objId, "jailed", "1",
-						(period <= 0 ? -1 : System.currentTimeMillis() + (period * 60000)));
+			mysql.set("REPLACE INTO character_variables (obj_id, type, name, value, expire_time) VALUES (?,'user-var',?,?,?)", objId, "jailed", "1", (period <= 0 ? -1 : System.currentTimeMillis() + (period * 60000)));
 
 			return true;
 		}

@@ -128,8 +128,7 @@ public class _609_MagicalPowerofWater1 extends Quest implements ScriptFile
 			{
 				if (st.getPlayer().getLevel() >= 74)
 				{
-					if (st.getQuestItemsCount(MARK_OF_KETRA_ALLIANCE1) == 1 || st.getQuestItemsCount(MARK_OF_KETRA_ALLIANCE2) == 1 || st.getQuestItemsCount(MARK_OF_KETRA_ALLIANCE3) == 1
-								|| st.getQuestItemsCount(MARK_OF_KETRA_ALLIANCE4) == 1 || st.getQuestItemsCount(MARK_OF_KETRA_ALLIANCE5) == 1)
+					if (st.getQuestItemsCount(MARK_OF_KETRA_ALLIANCE1) == 1 || st.getQuestItemsCount(MARK_OF_KETRA_ALLIANCE2) == 1 || st.getQuestItemsCount(MARK_OF_KETRA_ALLIANCE3) == 1 || st.getQuestItemsCount(MARK_OF_KETRA_ALLIANCE4) == 1 || st.getQuestItemsCount(MARK_OF_KETRA_ALLIANCE5) == 1)
 					{
 						if (st.getQuestItemsCount(DIVINE_STONE_OF_WISDOM) == 0)
 						{

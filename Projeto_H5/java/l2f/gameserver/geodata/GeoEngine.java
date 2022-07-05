@@ -501,8 +501,7 @@ public class GeoEngine
 					return result.setH(-30); // or there is an obstacle or not the bottom layer and then it's a "void", then that side of the wall or behind a pillar
 				}
 
-				if (!(canSeeWallCheck(src_nearest_lower_layer, tmp_nearest_lower_layer, i_next_y > curr_y ? SOUTH : NORTH, curr_z, air)
-							&& canSeeWallCheck(tmp_nearest_lower_layer, dst_nearest_lower_layer, i_next_x > curr_x ? EAST : WEST, curr_z, air)))
+				if (!(canSeeWallCheck(src_nearest_lower_layer, tmp_nearest_lower_layer, i_next_y > curr_y ? SOUTH : NORTH, curr_z, air) && canSeeWallCheck(tmp_nearest_lower_layer, dst_nearest_lower_layer, i_next_x > curr_x ? EAST : WEST, curr_z, air)))
 				{
 					NGetLayers(i_next_x, curr_y, tmp_layers, geoIndex);
 					if (tmp_layers[0] == 0)
@@ -721,8 +720,7 @@ public class GeoEngine
 			i_next_x = (int) (next_x + 0.5f);
 			i_next_y = (int) (next_y + 0.5f);
 			NGetLayers(i_next_x, i_next_y, next_layers, geoIndex);
-			if (((i_next_z = NcanMoveNext(curr_x, curr_y, curr_z, curr_layers, i_next_x, i_next_y, next_layers, temp_layers, withCollision, geoIndex)) == Integer.MIN_VALUE)
-						|| (backwardMove && NcanMoveNext(i_next_x, i_next_y, i_next_z, next_layers, curr_x, curr_y, curr_layers, temp_layers, withCollision, geoIndex) == Integer.MIN_VALUE))
+			if (((i_next_z = NcanMoveNext(curr_x, curr_y, curr_z, curr_layers, i_next_x, i_next_y, next_layers, temp_layers, withCollision, geoIndex)) == Integer.MIN_VALUE) || (backwardMove && NcanMoveNext(i_next_x, i_next_y, i_next_z, next_layers, curr_x, curr_y, curr_layers, temp_layers, withCollision, geoIndex) == Integer.MIN_VALUE))
 			{
 				break;
 			}

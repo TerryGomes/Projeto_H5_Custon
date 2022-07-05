@@ -1848,8 +1848,7 @@ public abstract class AbstractFightClub extends GlobalEvent
 		{
 			if (fPlayer != null)
 			{
-				String message = getShortName() + " Event:" + (isPvPEvent() ? fPlayer.getPlayer().getName() + (_teamed ? " from " + fPlayer.getTeam().getName() + " Team" : "") + " had most kills!"
-							: fPlayer.getPlayer().getName() + " had most points!");
+				String message = getShortName() + " Event:" + (isPvPEvent() ? fPlayer.getPlayer().getName() + (_teamed ? " from " + fPlayer.getTeam().getName() + " Team" : "") + " had most kills!" : fPlayer.getPlayer().getName() + " had most points!");
 				FightClubEventManager.getInstance().sendToAllMsg(this, message);
 			}
 		}
@@ -2682,8 +2681,7 @@ public abstract class AbstractFightClub extends GlobalEvent
 			int max = Math.min(10, changedFPlayers.size());
 			for (int i = 0; i < max; i++)
 			{
-				builder.append(changedFPlayers.get(i).getPlayer().getName()).append(' ').append(showScoreNotKills ? "Score" : "Kills").append(": ")
-							.append(showScoreNotKills ? changedFPlayers.get(i).getScore() : changedFPlayers.get(i).getKills(true)).append('\n');
+				builder.append(changedFPlayers.get(i).getPlayer().getName()).append(' ').append(showScoreNotKills ? "Score" : "Kills").append(": ").append(showScoreNotKills ? changedFPlayers.get(i).getScore() : changedFPlayers.get(i).getKills(true)).append('\n');
 			}
 		}
 

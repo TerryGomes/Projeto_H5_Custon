@@ -152,8 +152,7 @@ public class _178_IconicTrinity extends Quest implements ScriptFile
 			st.playSound(SOUND_FINISH);
 			st.exitCurrentQuest(false);
 		}
-		if (event.equalsIgnoreCase("32255-07.htm") || event.equalsIgnoreCase("32255-09.htm") || event.equalsIgnoreCase("32256-07.htm") || event.equalsIgnoreCase("32256-08.htm")
-					|| event.equalsIgnoreCase("32256-09.htm") || event.equalsIgnoreCase("32257-06.htm"))
+		if (event.equalsIgnoreCase("32255-07.htm") || event.equalsIgnoreCase("32255-09.htm") || event.equalsIgnoreCase("32256-07.htm") || event.equalsIgnoreCase("32256-08.htm") || event.equalsIgnoreCase("32256-09.htm") || event.equalsIgnoreCase("32257-06.htm"))
 		{
 			htmltext = HtmCache.getInstance().getNotNull("quests/_178_IconicTrinity/" + event, st.getPlayer());
 			htmltext = htmltext.replace("%player_name%", st.getPlayer().getName());

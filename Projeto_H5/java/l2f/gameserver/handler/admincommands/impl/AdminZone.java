@@ -40,8 +40,7 @@ public class AdminZone implements IAdminCommandHandler
 			World.getZones(zones, activeChar.getLoc(), activeChar.getReflection());
 			for (Zone zone : zones)
 			{
-				activeChar.sendMessage(zone.getType().toString() + ", name: " + zone.getName() + ", state: " + (zone.isActive() ? "active" : "not active") + ", inside: " + zone.checkIfInZone(activeChar) + "/"
-							+ zone.checkIfInZone(activeChar.getX(), activeChar.getY(), activeChar.getZ()));
+				activeChar.sendMessage(zone.getType().toString() + ", name: " + zone.getName() + ", state: " + (zone.isActive() ? "active" : "not active") + ", inside: " + zone.checkIfInZone(activeChar) + "/" + zone.checkIfInZone(activeChar.getX(), activeChar.getY(), activeChar.getZ()));
 			}
 
 			break;
@@ -67,8 +66,7 @@ public class AdminZone implements IAdminCommandHandler
 		}
 		case admin_pos:
 		{
-			String pos = activeChar.getX() + ", " + activeChar.getY() + ", " + activeChar.getZ() + ", " + activeChar.getHeading() + " Geo [" + (activeChar.getX() - World.MAP_MIN_X >> 4) + ", "
-						+ (activeChar.getY() - World.MAP_MIN_Y >> 4) + "] Ref " + activeChar.getReflectionId();
+			String pos = activeChar.getX() + ", " + activeChar.getY() + ", " + activeChar.getZ() + ", " + activeChar.getHeading() + " Geo [" + (activeChar.getX() - World.MAP_MIN_X >> 4) + ", " + (activeChar.getY() - World.MAP_MIN_Y >> 4) + "] Ref " + activeChar.getReflectionId();
 			activeChar.sendMessage("Pos: " + pos);
 			break;
 		}

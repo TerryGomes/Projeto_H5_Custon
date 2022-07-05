@@ -46,9 +46,7 @@ public class RPCHtmlRewardList
 		// define container table:
 		String[] text = getPvpRewardListAndPageChanger(pageNo, rankId);
 		return "<html><title>Rank Reward List</title><body><center><table border=0 cellspacing=0 cellpadding=0><tr><td><table><tr><td width=100 align=left> <font color=ae9977></font> </td><td align=center><font color=2080D0></font></td></tr><tr><td width=100 align=left> <font color=ae9977></font> </td><td width=170 align=center><font color=2080D0></font></td></tr></table></td></tr><tr><td height=8>&nbsp;</td></tr><tr><td FIXWIDTH=270 HEIGHT=4><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr><tr><td height=8></td></tr><tr><td>"
-					+ text[0] + "</td></tr><tr><td>&nbsp;</td></tr><tr><td HEIGHT=4></td></tr><tr><td>" + text[1]
-					+ "</td></tr><tr><td FIXWIDTH=270 HEIGHT=4><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr><tr><td align=center><button value=\"Back\" action=\"bypass RPS.PS\" width="
-					+ RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\"></td></tr></table></center></body></html>";
+					+ text[0] + "</td></tr><tr><td>&nbsp;</td></tr><tr><td HEIGHT=4></td></tr><tr><td>" + text[1] + "</td></tr><tr><td FIXWIDTH=270 HEIGHT=4><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr><tr><td align=center><button value=\"Back\" action=\"bypass RPS.PS\" width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\"></td></tr></table></center></body></html>";
 	}
 
 	/**
@@ -114,9 +112,7 @@ public class RPCHtmlRewardList
 
 	private static String getPvpRewardListItem(int itemId, String itemName, long itemCount, String type, int pageNo)
 	{
-		return "<tr><td height=32><table cellspacing=0 cellpadding=0><tr><td width=270 height=16><font color=FF8000>" + itemName
-					+ "</font></td></tr><tr><td><table width=270 cellspacing=0 cellpadding=0><tr><td width=150 height=16><font color=ae9977>Count:</font> <font color=808080>" + RPSUtil.preparePrice(itemCount)
-					+ "</font></td><td align=right><font color=ae9977>Type:</font> <font color=808080>" + type
+		return "<tr><td height=32><table cellspacing=0 cellpadding=0><tr><td width=270 height=16><font color=FF8000>" + itemName + "</font></td></tr><tr><td><table width=270 cellspacing=0 cellpadding=0><tr><td width=150 height=16><font color=ae9977>Count:</font> <font color=808080>" + RPSUtil.preparePrice(itemCount) + "</font></td><td align=right><font color=ae9977>Type:</font> <font color=808080>" + type
 					+ "</font></td></tr></table></td></tr></table></td></tr><tr><td FIXWIDTH=270 HEIGHT=4><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr>";
 	}
 
@@ -127,14 +123,12 @@ public class RPCHtmlRewardList
 
 		if (pageNo > 1)
 		{
-			backButton = "<button value=\"<<\" action=\"bypass RPS.RewardList:" + rankId + "," + (pageNo - 1) + "\" width=40 height=16 back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP
-						+ "\">";
+			backButton = "<button value=\"<<\" action=\"bypass RPS.RewardList:" + rankId + "," + (pageNo - 1) + "\" width=40 height=16 back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\">";
 		}
 
 		if (pageNo < pageCount)
 		{
-			nextButton = "<button value=\">>\" action=\"bypass RPS.RewardList:" + rankId + "," + (pageNo + 1) + "\" width=40 height=16 back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP
-						+ "\">";
+			nextButton = "<button value=\">>\" action=\"bypass RPS.RewardList:" + rankId + "," + (pageNo + 1) + "\" width=40 height=16 back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\">";
 		}
 
 		return "<table><tr><td width=90 align=right>" + backButton + "</td><td width=90 align=center>" + pageNo + " / " + pageCount + "</td><td width=90 align=left>" + nextButton + "</td></tr></table>";

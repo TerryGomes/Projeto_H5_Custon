@@ -403,8 +403,7 @@ public class glitmedal extends Functions implements ScriptFile, OnDeathListener,
 			{
 				addItem(killer.getPlayer(), EVENT_MEDAL, count, null);
 			}
-			if (killer.getPlayer().getInventory().getCountOf(Badge_of_Wolf) == 0
-						&& Rnd.chance(Config.EVENT_GLITTMEDAL_GLIT_CHANCE * killer.getPlayer().getRateItems() * ((MonsterInstance) cha).getTemplate().rateHp))
+			if (killer.getPlayer().getInventory().getCountOf(Badge_of_Wolf) == 0 && Rnd.chance(Config.EVENT_GLITTMEDAL_GLIT_CHANCE * killer.getPlayer().getRateItems() * ((MonsterInstance) cha).getTemplate().rateHp))
 			{
 				addItem(killer.getPlayer(), EVENT_GLITTMEDAL, 1, null);
 			}

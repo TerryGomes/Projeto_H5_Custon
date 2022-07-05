@@ -223,8 +223,7 @@ public class _508_TheClansReputation extends Quest implements ScriptFile
 					{
 						htmltext = "30868-" + raid + "b.htm";
 						int increasedPoints = clan.incReputation(REWARDS_LIST[raid][2], true, "_508_TheClansReputation");
-						st.getPlayer()
-									.sendPacket(new SystemMessage(SystemMessage.YOU_HAVE_SUCCESSFULLY_COMPLETED_A_CLAN_QUEST_S1_POINTS_HAVE_BEEN_ADDED_TO_YOUR_CLAN_REPUTATION_SCORE).addNumber(increasedPoints));
+						st.getPlayer().sendPacket(new SystemMessage(SystemMessage.YOU_HAVE_SUCCESSFULLY_COMPLETED_A_CLAN_QUEST_S1_POINTS_HAVE_BEEN_ADDED_TO_YOUR_CLAN_REPUTATION_SCORE).addNumber(increasedPoints));
 						st.takeItems(item, 1);
 					}
 				}

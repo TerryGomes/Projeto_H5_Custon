@@ -157,8 +157,7 @@ public class CommunityPartyMatching extends Functions implements ScriptFile, ICo
 			html += "<td width=180><center><font color=" + getTextColor(i) + ">" + (player.getClan() != null ? player.getClan().getName() : "<br>") + "</font></center></td>";
 			if (!player.equals(visitor) || player.getParty() != null)
 			{
-				html += "<td width=120><center><button value=\"Invite\" action=\"bypass _partymatching_%class%_%sort%_%asc%_%page%_" + player.getObjectId()
-							+ "_0\" width=70 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\"><center></td>";
+				html += "<td width=120><center><button value=\"Invite\" action=\"bypass _partymatching_%class%_%sort%_%asc%_%page%_" + player.getObjectId() + "_0\" width=70 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\"><center></td>";
 			}
 			else
 			{
@@ -170,13 +169,11 @@ public class CommunityPartyMatching extends Functions implements ScriptFile, ICo
 		html += "<center><table><tr>";
 		if (page > 0)
 		{
-			html += "<td><button value=\"Prev\" action=\"bypass _partymatching_%class%_%sort%_%asc%_" + (page - 1)
-						+ "_%char%\" width=80 height=18 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\"></td>";
+			html += "<td><button value=\"Prev\" action=\"bypass _partymatching_%class%_%sort%_%asc%_" + (page - 1) + "_%char%\" width=80 height=18 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\"></td>";
 		}
 		if (isThereNextPage)
 		{
-			html += "<td><button value=\"Next\" action=\"bypass _partymatching_%class%_%sort%_%asc%_" + (page + 1)
-						+ "_%char%\" width=80 height=18 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\"></td>";
+			html += "<td><button value=\"Next\" action=\"bypass _partymatching_%class%_%sort%_%asc%_" + (page + 1) + "_%char%\" width=80 height=18 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_ct1.button_df\"></td>";
 		}
 		html += "</tr></table></center>";
 		return html;

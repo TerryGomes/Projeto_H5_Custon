@@ -539,8 +539,7 @@ public class FeedableBeastInstance extends MonsterInstance
 	{
 		try
 		{
-			MonsterInstance monster = (MonsterInstance) NpcHolder.getInstance().getTemplate(npcId).getInstanceConstructor().newInstance(IdFactory.getInstance().getNextId(),
-						NpcHolder.getInstance().getTemplate(npcId));
+			MonsterInstance monster = (MonsterInstance) NpcHolder.getInstance().getTemplate(npcId).getInstanceConstructor().newInstance(IdFactory.getInstance().getNextId(), NpcHolder.getInstance().getTemplate(npcId));
 			monster.setSpawnedLoc(new Location(x, y, z));
 			monster.spawnMe(monster.getSpawnedLoc());
 			return monster;

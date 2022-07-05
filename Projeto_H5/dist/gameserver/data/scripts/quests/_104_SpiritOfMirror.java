@@ -82,8 +82,7 @@ public class _104_SpiritOfMirror extends Quest implements ScriptFile
 					st.exitCurrentQuest(true);
 				}
 			}
-			else if (cond == 1 && st.getQuestItemsCount(GALLINS_OAK_WAND) >= 1
-						&& (st.getQuestItemsCount(WAND_SPIRITBOUND1) == 0 || st.getQuestItemsCount(WAND_SPIRITBOUND2) == 0 || st.getQuestItemsCount(WAND_SPIRITBOUND3) == 0))
+			else if (cond == 1 && st.getQuestItemsCount(GALLINS_OAK_WAND) >= 1 && (st.getQuestItemsCount(WAND_SPIRITBOUND1) == 0 || st.getQuestItemsCount(WAND_SPIRITBOUND2) == 0 || st.getQuestItemsCount(WAND_SPIRITBOUND3) == 0))
 			{
 				htmltext = "gallin_q0104_04.htm";
 			}

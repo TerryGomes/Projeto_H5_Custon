@@ -388,8 +388,7 @@ public class _501_ProofOfClanAlliance extends Quest implements ScriptFile
 					}
 					break;
 				case 3:
-					if (st.getQuestItemsCount(HERB_OF_HARIT) > 0 && st.getQuestItemsCount(HERB_OF_VANOR) > 0 && st.getQuestItemsCount(HERB_OF_OEL_MAHUM) > 0 && st.getQuestItemsCount(BLOOD_OF_EVA) > 0
-								&& st.getQuestItemsCount(ANTIDOTE_RECIPE) > 0)
+					if (st.getQuestItemsCount(HERB_OF_HARIT) > 0 && st.getQuestItemsCount(HERB_OF_VANOR) > 0 && st.getQuestItemsCount(HERB_OF_OEL_MAHUM) > 0 && st.getQuestItemsCount(BLOOD_OF_EVA) > 0 && st.getQuestItemsCount(ANTIDOTE_RECIPE) > 0)
 					{
 						st.takeItems(ANTIDOTE_RECIPE, 1);
 						st.takeItems(HERB_OF_HARIT, 1);

@@ -28,8 +28,7 @@ public class AdminTournament implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_start_tournament_registration, admin_start_tournament, admin_tournament_check_round_over, admin_tournament_reset_current_round, admin_delay_tournament_battles_days,
-		admin_delay_tournament_battles_minutes, admin_delete_tournament_mails_all, admin_change_tournament_team
+		admin_start_tournament_registration, admin_start_tournament, admin_tournament_check_round_over, admin_tournament_reset_current_round, admin_delay_tournament_battles_days, admin_delay_tournament_battles_minutes, admin_delete_tournament_mails_all, admin_change_tournament_team
 	}
 
 	@Override
@@ -267,9 +266,7 @@ public class AdminTournament implements IAdminCommandHandler
 
 	private static void wipeTournamentDatabase() throws SQLException
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement battlesStatement = con.prepareStatement("DELETE FROM tournament_battles");
-					PreparedStatement teamsStatement = con.prepareStatement("DELETE FROM tournament_teams"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement battlesStatement = con.prepareStatement("DELETE FROM tournament_battles"); PreparedStatement teamsStatement = con.prepareStatement("DELETE FROM tournament_teams"))
 		{
 			battlesStatement.executeUpdate();
 			teamsStatement.executeUpdate();

@@ -85,15 +85,13 @@ public class _359_ForSleeplessDeadmen extends Quest implements ScriptFile
 			if (castle.getOwner() != null)
 			{
 				Player castleOwner = castle.getOwner().getLeader().getPlayer();
-				if (castleOwner != null && castleOwner != st.getPlayer() && castleOwner.getClan() == st.getPlayer().getClan() && castleOwner.getQuestState(_713_PathToBecomingALordAden.class) != null
-							&& castleOwner.getQuestState(_713_PathToBecomingALordAden.class).getCond() == 2)
+				if (castleOwner != null && castleOwner != st.getPlayer() && castleOwner.getClan() == st.getPlayer().getClan() && castleOwner.getQuestState(_713_PathToBecomingALordAden.class) != null && castleOwner.getQuestState(_713_PathToBecomingALordAden.class).getCond() == 2)
 				{
 					if (castleOwner.getQuestState(_713_PathToBecomingALordAden.class).get("questsDone") != null)
 					{
 						if (Integer.parseInt(castleOwner.getQuestState(_713_PathToBecomingALordAden.class).get("questsDone")) < 5)
 						{
-							castleOwner.getQuestState(_713_PathToBecomingALordAden.class).set("questsDone",
-										String.valueOf(Integer.parseInt(castleOwner.getQuestState(_713_PathToBecomingALordAden.class).get("questsDone")) + 1), true);
+							castleOwner.getQuestState(_713_PathToBecomingALordAden.class).set("questsDone", String.valueOf(Integer.parseInt(castleOwner.getQuestState(_713_PathToBecomingALordAden.class).get("questsDone")) + 1), true);
 						}
 						else
 						{

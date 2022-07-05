@@ -271,8 +271,7 @@ public class FourSepulchersSpawn extends Functions implements ScriptFile
 			statement1 = con.prepareStatement("SELECT DISTINCT key_npc_id FROM four_sepulchers_spawnlist WHERE spawntype = ? ORDER BY key_npc_id");
 			statement1.setInt(1, type);
 			rset1 = statement1.executeQuery();
-			statement2 = con.prepareStatement(
-						"SELECT id, count, npc_templateid, locx, locy, locz, heading, respawn_delay, key_npc_id FROM four_sepulchers_spawnlist WHERE key_npc_id = ? AND spawntype = ? ORDER BY id");
+			statement2 = con.prepareStatement("SELECT id, count, npc_templateid, locx, locy, locz, heading, respawn_delay, key_npc_id FROM four_sepulchers_spawnlist WHERE key_npc_id = ? AND spawntype = ? ORDER BY id");
 			while (rset1.next())
 			{
 				int keyNpcId = rset1.getInt("key_npc_id");

@@ -33,8 +33,6 @@ public class TournamentUseItemPermission implements UseItemPermission
 
 	public static boolean canUseItem(BattleInstance battle, Player player, ItemInstance item)
 	{
-		return ArrayUtils.contains(ConfigHolder.getIntArray("TournamentOtherItemsAllowedToUse"), item.getItemId())
-					|| ConfigHolder.getMap("TournamentItemsToEveryPlayer", Integer.class, Long.class).containsKey(item.getItemId()) && (item.isStackable() || battle.containsReceivedItem(player, item))
-					|| battle.containsReceivedItem(player, item);
+		return ArrayUtils.contains(ConfigHolder.getIntArray("TournamentOtherItemsAllowedToUse"), item.getItemId()) || ConfigHolder.getMap("TournamentItemsToEveryPlayer", Integer.class, Long.class).containsKey(item.getItemId()) && (item.isStackable() || battle.containsReceivedItem(player, item)) || battle.containsReceivedItem(player, item);
 	}
 }

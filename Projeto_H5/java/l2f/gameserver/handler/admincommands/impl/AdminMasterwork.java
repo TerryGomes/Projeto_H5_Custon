@@ -75,8 +75,7 @@ public class AdminMasterwork implements IAdminCommandHandler
 				main.append("<tr><td width=250>");
 				main.append("<center>").append(item.getName());
 				main.append("<br1>");
-				main.append("<button value=\"Make Masterwork\" action=\"bypass -h admin_create_masterwork ").append(slot)
-							.append("\" width=200 height=25 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df\"></center>");
+				main.append("<button value=\"Make Masterwork\" action=\"bypass -h admin_create_masterwork ").append(slot).append("\" width=200 height=25 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df\"></center>");
 				main.append("</td></tr>");
 			}
 		}

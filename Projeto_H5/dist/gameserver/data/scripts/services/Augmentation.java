@@ -288,8 +288,7 @@ public class Augmentation extends Functions
 			}
 			else
 			{
-				pagesHtm.append(new StringBuilder().append("<td><button action=\"bypass -h scripts_services.Augmentation:run page ").append(i).append(" ").append(_filter.ordinal() + 1).append("\" value=\"")
-							.append(i).append("\" width=34 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df></td>").toString());
+				pagesHtm.append(new StringBuilder().append("<td><button action=\"bypass -h scripts_services.Augmentation:run page ").append(i).append(" ").append(_filter.ordinal() + 1).append("\" value=\"").append(i).append("\" width=34 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df></td>").toString());
 			}
 
 			count++;

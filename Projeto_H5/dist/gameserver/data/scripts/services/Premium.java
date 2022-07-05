@@ -238,8 +238,7 @@ public class Premium extends Functions
 		long cost = premium.getPriceCount();
 		int time = premium.getTime();
 		int id = premium.getId();
-		ConfirmDlg dlg = new ConfirmDlg(SystemMsg.S1, 60000).addString(new CustomMessage("Do you really want to give Premium Account {0} at {1} for player {2}? Cost of operation: {3}")
-					.addString(premium.getName()).addString(TimeUtils.formatTime(time)).addString(target.getName()).addString(Util.formatPay(player, cost, item)).toString());
+		ConfirmDlg dlg = new ConfirmDlg(SystemMsg.S1, 60000).addString(new CustomMessage("Do you really want to give Premium Account {0} at {1} for player {2}? Cost of operation: {3}").addString(premium.getName()).addString(TimeUtils.formatTime(time)).addString(target.getName()).addString(Util.formatPay(player, cost, item)).toString());
 
 		player.ask(dlg, new Ask(player, target, time, cost, item, id));
 	}

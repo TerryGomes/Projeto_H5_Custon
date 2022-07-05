@@ -238,28 +238,24 @@ public class _405_PathToCleric extends Quest implements ScriptFile
 			{
 				htmltext = "lemoniell_q0405_02.htm";
 			}
-			else if (cond == 3 && st.getQuestItemsCount(LETTER_OF_ORDER2) == 1 && st.getQuestItemsCount(BOOK_OF_LEMONIELL) < 1 && st.getQuestItemsCount(LEMONIELLS_COVENANT) < 1
-						&& st.getQuestItemsCount(CERTIFICATE_OF_GALLINT) < 1)
+			else if (cond == 3 && st.getQuestItemsCount(LETTER_OF_ORDER2) == 1 && st.getQuestItemsCount(BOOK_OF_LEMONIELL) < 1 && st.getQuestItemsCount(LEMONIELLS_COVENANT) < 1 && st.getQuestItemsCount(CERTIFICATE_OF_GALLINT) < 1)
 			{
 				htmltext = "lemoniell_q0405_01.htm";
 				st.giveItems(BOOK_OF_LEMONIELL, 1);
 				st.setCond(4);
 			}
-			else if (cond == 4 && st.getQuestItemsCount(LETTER_OF_ORDER2) == 1 && st.getQuestItemsCount(BOOK_OF_LEMONIELL) > 0 && st.getQuestItemsCount(LEMONIELLS_COVENANT) < 1
-						&& st.getQuestItemsCount(CERTIFICATE_OF_GALLINT) < 1)
+			else if (cond == 4 && st.getQuestItemsCount(LETTER_OF_ORDER2) == 1 && st.getQuestItemsCount(BOOK_OF_LEMONIELL) > 0 && st.getQuestItemsCount(LEMONIELLS_COVENANT) < 1 && st.getQuestItemsCount(CERTIFICATE_OF_GALLINT) < 1)
 			{
 				htmltext = "lemoniell_q0405_03.htm";
 			}
-			else if (st.getQuestItemsCount(LETTER_OF_ORDER2) == 1 && st.getQuestItemsCount(BOOK_OF_LEMONIELL) < 1 && st.getQuestItemsCount(LEMONIELLS_COVENANT) < 1
-						&& st.getQuestItemsCount(CERTIFICATE_OF_GALLINT) > 0)
+			else if (st.getQuestItemsCount(LETTER_OF_ORDER2) == 1 && st.getQuestItemsCount(BOOK_OF_LEMONIELL) < 1 && st.getQuestItemsCount(LEMONIELLS_COVENANT) < 1 && st.getQuestItemsCount(CERTIFICATE_OF_GALLINT) > 0)
 			{
 				htmltext = "lemoniell_q0405_04.htm";
 				st.takeItems(CERTIFICATE_OF_GALLINT, -1);
 				st.giveItems(LEMONIELLS_COVENANT, 1);
 				st.setCond(6);
 			}
-			else if (st.getQuestItemsCount(LETTER_OF_ORDER2) == 1 && st.getQuestItemsCount(BOOK_OF_LEMONIELL) < 1 && st.getQuestItemsCount(LEMONIELLS_COVENANT) > 0
-						&& st.getQuestItemsCount(CERTIFICATE_OF_GALLINT) < 1)
+			else if (st.getQuestItemsCount(LETTER_OF_ORDER2) == 1 && st.getQuestItemsCount(BOOK_OF_LEMONIELL) < 1 && st.getQuestItemsCount(LEMONIELLS_COVENANT) > 0 && st.getQuestItemsCount(CERTIFICATE_OF_GALLINT) < 1)
 			{
 				htmltext = "lemoniell_q0405_05.htm";
 			}

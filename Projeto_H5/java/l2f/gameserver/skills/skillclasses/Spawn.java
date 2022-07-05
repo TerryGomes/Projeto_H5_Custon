@@ -45,8 +45,7 @@ public class Spawn extends Skill
 		{
 			return false;
 		}
-		if (activeChar.isInZone(Zone.ZoneType.peace_zone) || activeChar.isInZone(Zone.ZoneType.water) || activeChar.isInZone(Zone.ZoneType.epic) || activeChar.isInZone(Zone.ZoneType.SIEGE)
-					|| activeChar.isInOlympiadMode())
+		if (activeChar.isInZone(Zone.ZoneType.peace_zone) || activeChar.isInZone(Zone.ZoneType.water) || activeChar.isInZone(Zone.ZoneType.epic) || activeChar.isInZone(Zone.ZoneType.SIEGE) || activeChar.isInOlympiadMode())
 		{
 			activeChar.sendMessage(activeChar.getPlayer().isLangRus() ? "In this zone, the action is disabled" : "In this zone, the action is disabled");
 			return false;

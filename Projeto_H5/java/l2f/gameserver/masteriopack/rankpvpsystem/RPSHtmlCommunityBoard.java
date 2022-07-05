@@ -143,8 +143,7 @@ public final class RPSHtmlCommunityBoard
 			{
 				if (RPSConfig.TOP_LIST_IGNORE_TIME_LIMIT > 0)
 				{
-					file = file.replace("%message%", "You're out of " + TopTable.TOP_LIMIT + ", or you did not kill anyone or even killed more than "
-								+ Math.round((double) RPSConfig.TOP_LIST_IGNORE_TIME_LIMIT / (double) 86400000) + " days ago.");
+					file = file.replace("%message%", "You're out of " + TopTable.TOP_LIMIT + ", or you did not kill anyone or even killed more than " + Math.round((double) RPSConfig.TOP_LIST_IGNORE_TIME_LIMIT / (double) 86400000) + " days ago.");
 				}
 				else
 				{
@@ -173,13 +172,11 @@ public final class RPSHtmlCommunityBoard
 
 			if (page == 1)
 			{
-				list += "<button value=\"Refresh\" action=\"bypass _bbsrps:1\" width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\""
-							+ RPSConfig.BUTTON_UP + "\">";
+				list += "<button value=\"Refresh\" action=\"bypass _bbsrps:1\" width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\">";
 			}
 			else
 			{
-				list += "<button value=\"Refresh\" action=\"bypass _bbsrps:0\" width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\""
-							+ RPSConfig.BUTTON_UP + "\">";
+				list += "<button value=\"Refresh\" action=\"bypass _bbsrps:0\" width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\">";
 			}
 
 		}
@@ -247,8 +244,7 @@ public final class RPSHtmlCommunityBoard
 		{
 			if (page == 0)
 			{
-				return "<button value=\">>\" action=\"bypass _bbsrps:1\" width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP
-							+ "\">";
+				return "<button value=\">>\" action=\"bypass _bbsrps:1\" width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\">";
 			}
 
 			return "&nbsp;";
@@ -263,8 +259,7 @@ public final class RPSHtmlCommunityBoard
 		{
 			if (page == 1)
 			{
-				return "<button value=\"<<\" action=\"bypass _bbsrps:0\" width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP
-							+ "\">";
+				return "<button value=\"<<\" action=\"bypass _bbsrps:0\" width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\">";
 			}
 
 			return "&nbsp;";

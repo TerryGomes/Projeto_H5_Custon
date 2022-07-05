@@ -24,13 +24,11 @@ public class lvl extends Functions
 		String add = "";
 		if (player.getLevel() < Config.SERVICES_LVL_UP_MAX)
 		{
-			add += "<button value=\"Raise the level at1 (Price:" + Config.SERVICES_LVL_UP_PRICE + " " + ItemHolder.getInstance().getTemplate(Config.SERVICES_LVL_UP_ITEM).getName()
-						+ ") \" action=\"bypass -h scripts_services.lvl:up" + "\" width=250 height=20 back=\"L2UI_CT1.Button_DF\" fore=\"L2UI_CT1.Button_DF\">" + "</a><br>";
+			add += "<button value=\"Raise the level at1 (Price:" + Config.SERVICES_LVL_UP_PRICE + " " + ItemHolder.getInstance().getTemplate(Config.SERVICES_LVL_UP_ITEM).getName() + ") \" action=\"bypass -h scripts_services.lvl:up" + "\" width=250 height=20 back=\"L2UI_CT1.Button_DF\" fore=\"L2UI_CT1.Button_DF\">" + "</a><br>";
 		}
 		if (player.getLevel() > Config.SERVICES_LVL_DOWN_MAX)
 		{
-			add += "<button value=\"Lower level at the 1 (Price:" + Config.SERVICES_LVL_DOWN_PRICE + " " + ItemHolder.getInstance().getTemplate(Config.SERVICES_LVL_DOWN_ITEM).getName()
-						+ ") \" action=\"bypass -h scripts_services.lvl:down" + "\" width=250 height=20 back=\"L2UI_CT1.Button_DF\" fore=\"L2UI_CT1.Button_DF\">" + "</a><br>";
+			add += "<button value=\"Lower level at the 1 (Price:" + Config.SERVICES_LVL_DOWN_PRICE + " " + ItemHolder.getInstance().getTemplate(Config.SERVICES_LVL_DOWN_ITEM).getName() + ") \" action=\"bypass -h scripts_services.lvl:down" + "\" width=250 height=20 back=\"L2UI_CT1.Button_DF\" fore=\"L2UI_CT1.Button_DF\">" + "</a><br>";
 		}
 		html = html.replaceFirst("%toreplace%", add);
 

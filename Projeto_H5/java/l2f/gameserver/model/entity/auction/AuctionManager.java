@@ -157,9 +157,7 @@ public class AuctionManager
 	{
 		int objId = -1;
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("SELECT object_id FROM items WHERE item_id=57 AND owner_id=" + sellerObjectId + " AND loc='INVENTORY'");
-					ResultSet rset = statement.executeQuery())
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT object_id FROM items WHERE item_id=57 AND owner_id=" + sellerObjectId + " AND loc='INVENTORY'"); ResultSet rset = statement.executeQuery())
 		{
 			if (rset.next())
 			{

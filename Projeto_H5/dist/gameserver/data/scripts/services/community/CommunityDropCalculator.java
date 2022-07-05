@@ -187,19 +187,12 @@ public class CommunityDropCalculator implements ScriptFile, ICommunityBoardHandl
 			newHtml = newHtml.replace("%itemGrade" + i + '%', item != null ? getItemGradeIcon(item) : "<br>");
 			newHtml = newHtml.replace("%dropLists" + i + '%', item != null ? String.valueOf(CalculateRewardChances.getDroplistsCountByItemId(item.getItemId(), true)) : "<br>");
 			newHtml = newHtml.replace("%spoilLists" + i + '%', item != null ? String.valueOf(CalculateRewardChances.getDroplistsCountByItemId(item.getItemId(), false)) : "<br>");
-			newHtml = newHtml.replace("%showMonsters" + i + '%',
-						item != null ? "<button value=\"Show Monsters\" action=\"bypass _dropMonstersByItem_%itemChosenId" + i + "%\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">"
-									: "<br>");
+			newHtml = newHtml.replace("%showMonsters" + i + '%', item != null ? "<button value=\"Show Monsters\" action=\"bypass _dropMonstersByItem_%itemChosenId" + i + "%\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">" : "<br>");
 			newHtml = newHtml.replace("%itemChosenId" + i + '%', item != null ? String.valueOf(item.getItemId()) : "<br>");
 		}
 
-		newHtml = newHtml.replace("%previousButton%",
-					page > 1 ? "<button value=\"Previous\" action=\"bypass _dropItemsByName_" + itemName + "_" + (page - 1) + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">"
-								: "<br>");
-		newHtml = newHtml.replace("%nextButton%",
-					itemsByName.size() > itemIndex + 1
-								? "<button value=\"Next\" action=\"bypass _dropItemsByName_" + itemName + "_" + (page + 1) + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">"
-								: "<br>");
+		newHtml = newHtml.replace("%previousButton%", page > 1 ? "<button value=\"Previous\" action=\"bypass _dropItemsByName_" + itemName + "_" + (page - 1) + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">" : "<br>");
+		newHtml = newHtml.replace("%nextButton%", itemsByName.size() > itemIndex + 1 ? "<button value=\"Next\" action=\"bypass _dropItemsByName_" + itemName + "_" + (page + 1) + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">" : "<br>");
 
 		newHtml = newHtml.replace("%searchItem%", itemName);
 		newHtml = newHtml.replace("%page%", String.valueOf(page));
@@ -237,19 +230,12 @@ public class CommunityDropCalculator implements ScriptFile, ICommunityBoardHandl
 			newHtml = newHtml.replace("%monsterType" + i + '%', npc != null ? drops.dropNoSpoil ? "Drop" : "Spoil" : "<br>");
 			newHtml = newHtml.replace("%monsterCount" + i + '%', npc != null ? String.valueOf(getDropCount(player, npc, itemId, drops.dropNoSpoil)) : "<br>");
 			newHtml = newHtml.replace("%monsterChance" + i + '%', npc != null ? String.valueOf(getDropChance(player, npc, itemId, drops.dropNoSpoil)) : "<br>");
-			newHtml = newHtml.replace("%showDetails" + i + '%',
-						npc != null ? "<button value=\"Show Details\" action=\"bypass _dropMonsterDetailsByItem_%monsterId" + i + "%\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">"
-									: "<br>");
+			newHtml = newHtml.replace("%showDetails" + i + '%', npc != null ? "<button value=\"Show Details\" action=\"bypass _dropMonsterDetailsByItem_%monsterId" + i + "%\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">" : "<br>");
 			newHtml = newHtml.replace("%monsterId" + i + '%', npc != null ? String.valueOf(npc.getNpcId()) : "<br>");
 		}
 
-		newHtml = newHtml.replace("%previousButton%",
-					page > 1 ? "<button value=\"Previous\" action=\"bypass _dropMonstersByItem_%itemChosenId%_" + (page - 1) + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">"
-								: "<br>");
-		newHtml = newHtml.replace("%nextButton%",
-					templates.size() > npcIndex + 1
-								? "<button value=\"Next\" action=\"bypass _dropMonstersByItem_%itemChosenId%_" + (page + 1) + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">"
-								: "<br>");
+		newHtml = newHtml.replace("%previousButton%", page > 1 ? "<button value=\"Previous\" action=\"bypass _dropMonstersByItem_%itemChosenId%_" + (page - 1) + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">" : "<br>");
+		newHtml = newHtml.replace("%nextButton%", templates.size() > npcIndex + 1 ? "<button value=\"Next\" action=\"bypass _dropMonstersByItem_%itemChosenId%_" + (page + 1) + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">" : "<br>");
 
 		newHtml = newHtml.replace("%searchItem%", player.getQuickVarS("DCItemName"));
 		newHtml = newHtml.replace("%searchItemPage%", String.valueOf(player.getQuickVarI("DCItemsPage")));
@@ -341,17 +327,11 @@ public class CommunityDropCalculator implements ScriptFile, ICommunityBoardHandl
 			newHtml = newHtml.replace("%monsterAggro" + i + '%', npc != null ? Util.boolToString(npc.aggroRange > 0) : "<br>");
 			newHtml = newHtml.replace("%monsterDrops" + i + '%', npc != null ? String.valueOf(CalculateRewardChances.getDrops(npc, true, false).size()) : "<br>");
 			newHtml = newHtml.replace("%monsterSpoils" + i + '%', npc != null ? String.valueOf(CalculateRewardChances.getDrops(npc, false, true).size()) : "<br>");
-			newHtml = newHtml.replace("%showDetails" + i + '%',
-						npc != null ? "< button value =\"Show Details\" action=\"bypass _dropMonsterDetailsByName_" + npc.getNpcId() + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">"
-									: "<br>");
+			newHtml = newHtml.replace("%showDetails" + i + '%', npc != null ? "< button value =\"Show Details\" action=\"bypass _dropMonsterDetailsByName_" + npc.getNpcId() + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">" : "<br>");
 		}
 
-		newHtml = newHtml.replace("%previousButton%",
-					page > 1 ? "<button value=\"Previous\" action=\"bypass _dropMonstersByName_%searchName%_" + (page - 1) + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">" : "<br>");
-		newHtml = newHtml.replace("%nextButton%",
-					npcTemplates.size() > npcIndex + 1
-								? "<button value=\"Next\" action=\"bypass _dropMonstersByName_%searchName%_" + (page + 1) + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">"
-								: "<br>");
+		newHtml = newHtml.replace("%previousButton%", page > 1 ? "<button value=\"Previous\" action=\"bypass _dropMonstersByName_%searchName%_" + (page - 1) + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">" : "<br>");
+		newHtml = newHtml.replace("%nextButton%", npcTemplates.size() > npcIndex + 1 ? "<button value=\"Next\" action=\"bypass _dropMonstersByName_%searchName%_" + (page + 1) + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">" : "<br>");
 
 		newHtml = newHtml.replace("%searchName%", monsterName);
 		newHtml = newHtml.replace("%page%", String.valueOf(page));

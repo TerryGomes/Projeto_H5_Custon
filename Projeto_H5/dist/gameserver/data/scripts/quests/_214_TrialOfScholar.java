@@ -338,8 +338,7 @@ public class _214_TrialOfScholar extends Quest implements ScriptFile
 		}
 		else if (event.equalsIgnoreCase("sage_cronos_q0214_14.htm") && _state == STARTED)
 		{
-			if ((st.getQuestItemsCount(Scripture_Chapter_1) == 0) || (st.getQuestItemsCount(Scripture_Chapter_2) == 0) || (st.getQuestItemsCount(Scripture_Chapter_3) == 0)
-						|| (st.getQuestItemsCount(Scripture_Chapter_4) == 0))
+			if ((st.getQuestItemsCount(Scripture_Chapter_1) == 0) || (st.getQuestItemsCount(Scripture_Chapter_2) == 0) || (st.getQuestItemsCount(Scripture_Chapter_3) == 0) || (st.getQuestItemsCount(Scripture_Chapter_4) == 0))
 			{
 				return null;
 			}
@@ -489,8 +488,7 @@ public class _214_TrialOfScholar extends Quest implements ScriptFile
 					st.setCond(4);
 					return "lucas_q0214_01.htm";
 				}
-				if ((st.getQuestItemsCount(Marias_2nd_Letter) > 0) || (st.getQuestItemsCount(Cretas_1st_Letter) > 0) || (st.getQuestItemsCount(Lucillas_Handbag) > 0)
-							|| (st.getQuestItemsCount(Cretas_Painting1) > 0))
+				if ((st.getQuestItemsCount(Marias_2nd_Letter) > 0) || (st.getQuestItemsCount(Cretas_1st_Letter) > 0) || (st.getQuestItemsCount(Lucillas_Handbag) > 0) || (st.getQuestItemsCount(Cretas_Painting1) > 0))
 				{
 					return "lucas_q0214_02.htm";
 				}
@@ -507,8 +505,7 @@ public class _214_TrialOfScholar extends Quest implements ScriptFile
 					return st.getQuestItemsCount(Brown_Scroll_Scrap) < 5 ? "lucas_q0214_05.htm" : "lucas_q0214_06.htm";
 				}
 			}
-			else if ((st.getQuestItemsCount(Symbol_of_Sylvain) > 0) || (st.getQuestItemsCount(Miriens_2nd_Sigil) > 0) || (st.getQuestItemsCount(Miriens_3rd_Sigil) > 0)
-						|| (st.getQuestItemsCount(Crystal_of_Purity1) > 0))
+			else if ((st.getQuestItemsCount(Symbol_of_Sylvain) > 0) || (st.getQuestItemsCount(Miriens_2nd_Sigil) > 0) || (st.getQuestItemsCount(Miriens_3rd_Sigil) > 0) || (st.getQuestItemsCount(Crystal_of_Purity1) > 0))
 			{
 				return "lucas_q0214_07.htm";
 			}
@@ -564,8 +561,7 @@ public class _214_TrialOfScholar extends Quest implements ScriptFile
 					{
 						return "dieter_q0214_11.htm";
 					}
-					if ((st.getQuestItemsCount(Scripture_Chapter_1) == 0) || (st.getQuestItemsCount(Scripture_Chapter_2) == 0) || (st.getQuestItemsCount(Scripture_Chapter_3) == 0)
-								|| (st.getQuestItemsCount(Scripture_Chapter_4) == 0))
+					if ((st.getQuestItemsCount(Scripture_Chapter_1) == 0) || (st.getQuestItemsCount(Scripture_Chapter_2) == 0) || (st.getQuestItemsCount(Scripture_Chapter_3) == 0) || (st.getQuestItemsCount(Scripture_Chapter_4) == 0))
 					{
 						return "dieter_q0214_12.htm";
 					}
@@ -787,8 +783,7 @@ public class _214_TrialOfScholar extends Quest implements ScriptFile
 		{
 			if (st.getQuestItemsCount(Cronos_Sigil) > 0)
 			{
-				if ((st.getQuestItemsCount(Scripture_Chapter_1) == 0) || (st.getQuestItemsCount(Scripture_Chapter_2) == 0) || (st.getQuestItemsCount(Scripture_Chapter_3) == 0)
-							|| (st.getQuestItemsCount(Scripture_Chapter_4) == 0))
+				if ((st.getQuestItemsCount(Scripture_Chapter_1) == 0) || (st.getQuestItemsCount(Scripture_Chapter_2) == 0) || (st.getQuestItemsCount(Scripture_Chapter_3) == 0) || (st.getQuestItemsCount(Scripture_Chapter_4) == 0))
 				{
 					return "sage_cronos_q0214_11.htm";
 				}
@@ -825,8 +820,7 @@ public class _214_TrialOfScholar extends Quest implements ScriptFile
 				st.setCond(27);
 				return "sage_kasian_q0214_01.htm";
 			}
-			if (Casians_List_count == 0 && st.getQuestItemsCount(Scripture_Chapter_1) > 0 && st.getQuestItemsCount(Scripture_Chapter_2) > 0 && st.getQuestItemsCount(Scripture_Chapter_3) > 0
-						&& st.getQuestItemsCount(Scripture_Chapter_4) > 0)
+			if (Casians_List_count == 0 && st.getQuestItemsCount(Scripture_Chapter_1) > 0 && st.getQuestItemsCount(Scripture_Chapter_2) > 0 && st.getQuestItemsCount(Scripture_Chapter_3) > 0 && st.getQuestItemsCount(Scripture_Chapter_4) > 0)
 			{
 				return "sage_kasian_q0214_08.htm";
 			}
@@ -846,8 +840,7 @@ public class _214_TrialOfScholar extends Quest implements ScriptFile
 
 	private static boolean Check_cond29_items(QuestState st)
 	{
-		if ((st.getQuestItemsCount(Ghouls_Skin) < 10) || (st.getQuestItemsCount(Medusas_Blood) < 12) || (st.getQuestItemsCount(Fettered_Souls_Ichor) < 5)
-					|| (st.getQuestItemsCount(Enchanted_Gargoyles_Nail) < 5))
+		if ((st.getQuestItemsCount(Ghouls_Skin) < 10) || (st.getQuestItemsCount(Medusas_Blood) < 12) || (st.getQuestItemsCount(Fettered_Souls_Ichor) < 5) || (st.getQuestItemsCount(Enchanted_Gargoyles_Nail) < 5))
 		{
 			return false;
 		}

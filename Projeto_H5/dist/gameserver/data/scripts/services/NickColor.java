@@ -64,13 +64,11 @@ public class NickColor extends Functions
 		{
 			if (i == page)
 			{
-				navigation += "<td width=25 align=center valign=top><button value=\"[" + i + "]\" action=\"bypass -h scripts_services.NickColor:list " + i
-							+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+				navigation += "<td width=25 align=center valign=top><button value=\"[" + i + "]\" action=\"bypass -h scripts_services.NickColor:list " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 			}
 			else
 			{
-				navigation += "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h scripts_services.NickColor:list " + i
-							+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+				navigation += "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h scripts_services.NickColor:list " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 			}
 
 			if (inline == 7)

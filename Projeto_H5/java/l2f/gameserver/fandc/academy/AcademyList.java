@@ -138,16 +138,14 @@ public class AcademyList
 				if (ItemFunctions.removeItem(activeChar, itemId, price, true, "AcademyList") == 0)
 				{
 					activeChar.sendChatMessage(activeChar.getObjectId(), ChatType.BATTLEFIELD.ordinal(), "Academy", "You dont have enough items to invite " + academyChar.getName() + " in academy!");
-					academyChar.sendChatMessage(academyChar.getObjectId(), ChatType.BATTLEFIELD.ordinal(), "Academy",
-								"Sorry but " + activeChar.getName() + " does not have enough items to invite you in academy.");
+					academyChar.sendChatMessage(academyChar.getObjectId(), ChatType.BATTLEFIELD.ordinal(), "Academy", "Sorry but " + activeChar.getName() + " does not have enough items to invite you in academy.");
 					return;
 				}
 				// Register academy into sql.
 				registerAcademy(activeChar.getClan(), academyChar, itemId, price);
 				// Start invation to clan ...
 				academyChar.sendPacket(new JoinPledge(activeChar.getClanId()));
-				final UnitMember unitMember = new UnitMember(clan, academyChar.getName(), academyChar.getTitle(), academyChar.getLevel(), academyChar.getClassId().getId(), academyChar.getObjectId(), pledgeId,
-							academyChar.getPowerGrade(), academyChar.getApprentice(), academyChar.getSex(), -128);
+				final UnitMember unitMember = new UnitMember(clan, academyChar.getName(), academyChar.getTitle(), academyChar.getLevel(), academyChar.getClassId().getId(), academyChar.getObjectId(), pledgeId, academyChar.getPowerGrade(), academyChar.getApprentice(), academyChar.getSex(), -128);
 				subUnit.addUnitMember(unitMember);
 				academyChar.setPledgeType(pledgeId);
 				academyChar.setClan(clan);
@@ -163,8 +161,7 @@ public class AcademyList
 					new SystemMessage2(SystemMsg.S1_HAS_JOINED_THE_CLAN).addString(academyChar.getName()),
 					new PledgeShowInfoUpdate(clan)
 				});
-				academyChar.sendChatMessage(academyChar.getObjectId(), ChatType.BATTLEFIELD.ordinal(), "Academy", "You have accepted to join " + activeChar.getName()
-							+ "'s clan. On academy finish you will recive " + Util.formatAdena(academyChar.getPledgePrice()) + " " + ItemHolder.getInstance().getTemplateName(itemId) + ".");
+				academyChar.sendChatMessage(academyChar.getObjectId(), ChatType.BATTLEFIELD.ordinal(), "Academy", "You have accepted to join " + activeChar.getName() + "'s clan. On academy finish you will recive " + Util.formatAdena(academyChar.getPledgePrice()) + " " + ItemHolder.getInstance().getTemplateName(itemId) + ".");
 				academyChar.sendPacket(SystemMsg.ENTERED_THE_CLAN);
 				academyChar.sendPacket(academyChar.getClan().listAll());
 				academyChar.setLeaveClanTime(0);
@@ -282,8 +279,7 @@ public class AcademyList
 						letter.setReceiverId(charId);
 						letter.setReceiverName(charName);
 						letter.setTopic("You finished Academy!");
-						letter.setBody("Hello " + charName + ",\nYou have completed Academy and bring reputation score to the clan you was joined. \n Thats why you recived a payment of "
-									+ Util.formatAdena(price) + " " + item.getName() + " ");
+						letter.setBody("Hello " + charName + ",\nYou have completed Academy and bring reputation score to the clan you was joined. \n Thats why you recived a payment of " + Util.formatAdena(price) + " " + item.getName() + " ");
 						letter.setType(Mail.SenderType.NONE);
 						letter.setUnread(true);
 						letter.setExpireTime(720 * 3600 + (int) (System.currentTimeMillis() / 1000L));

@@ -121,9 +121,7 @@ public class TournamentTeamsManager
 	private void loadTeamsFromDatabase()
 	{
 		final int playersPerTeam = ConfigHolder.getInt("TournamentPlayersInTeam");
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("SELECT * FROM tournament_teams");
-					final ResultSet rset = statement.executeQuery())
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT * FROM tournament_teams"); final ResultSet rset = statement.executeQuery())
 		{
 			while (rset.next())
 			{

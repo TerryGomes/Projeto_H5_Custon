@@ -37,10 +37,7 @@ public class GiveItemAction implements EventAction
 					}
 
 					// Send message
-					player.sendPacket(new ExShowScreenMessage(
-								"You have been rewarded with " + ItemHolder.getInstance().getItemName(Config.SIEGE_REWARDS_NEAR_FAME[0][0])
-											+ (Config.SIEGE_REWARDS_NEAR_FAME.length > 1 ? " and " + ItemHolder.getInstance().getItemName(Config.SIEGE_REWARDS_NEAR_FAME[1][0]) : "") + "!",
-								3000, ScreenMessageAlign.BOTTOM_RIGHT, false));
+					player.sendPacket(new ExShowScreenMessage("You have been rewarded with " + ItemHolder.getInstance().getItemName(Config.SIEGE_REWARDS_NEAR_FAME[0][0]) + (Config.SIEGE_REWARDS_NEAR_FAME.length > 1 ? " and " + ItemHolder.getInstance().getItemName(Config.SIEGE_REWARDS_NEAR_FAME[1][0]) : "") + "!", 3000, ScreenMessageAlign.BOTTOM_RIGHT, false));
 				}
 			}
 		}

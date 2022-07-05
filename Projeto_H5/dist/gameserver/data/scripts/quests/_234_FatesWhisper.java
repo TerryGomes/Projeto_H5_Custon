@@ -629,8 +629,7 @@ public class _234_FatesWhisper extends Quest implements ScriptFile
 	public String onAttack(NpcInstance npc, QuestState st)
 	{
 		int cond = st.getCond();
-		if ((cond == COND7 || cond == COND9) && npc.getNpcId() == BAIUM && st.getQuestItemsCount(PIPETTE_KNIFE) >= 1 && st.getQuestItemsCount(RED_PIPETTE_KNIFE) == 0
-					&& st.getItemEquipped(Inventory.PAPERDOLL_RHAND) == PIPETTE_KNIFE)
+		if ((cond == COND7 || cond == COND9) && npc.getNpcId() == BAIUM && st.getQuestItemsCount(PIPETTE_KNIFE) >= 1 && st.getQuestItemsCount(RED_PIPETTE_KNIFE) == 0 && st.getItemEquipped(Inventory.PAPERDOLL_RHAND) == PIPETTE_KNIFE)
 		{
 			if (Rnd.chance(50))
 			{

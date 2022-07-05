@@ -45,8 +45,7 @@ public class FixEnchantOlympiad
 
 	private static boolean isMaxEnchant(ItemInstance item)
 	{
-		if ((item.isWeapon() && item.getEnchantLevel() > Config.OLY_ENCHANT_LIMIT_WEAPON) || (item.isArmor() && item.getEnchantLevel() > Config.OLY_ENCHANT_LIMIT_ARMOR)
-					|| (item.isAccessory() && item.getEnchantLevel() > Config.OLY_ENCHANT_LIMIT_JEWEL))
+		if ((item.isWeapon() && item.getEnchantLevel() > Config.OLY_ENCHANT_LIMIT_WEAPON) || (item.isArmor() && item.getEnchantLevel() > Config.OLY_ENCHANT_LIMIT_ARMOR) || (item.isAccessory() && item.getEnchantLevel() > Config.OLY_ENCHANT_LIMIT_JEWEL))
 		{
 			return true;
 		}

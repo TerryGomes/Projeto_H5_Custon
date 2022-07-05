@@ -197,8 +197,7 @@ public class Quest
 	 */
 	public static void restoreQuestStates(Player player, Connection con)
 	{
-		try (PreparedStatement invalidQuestData = con.prepareStatement("DELETE FROM character_quests WHERE char_id=? and name=?");
-					PreparedStatement statement = con.prepareStatement("SELECT name,value FROM character_quests WHERE char_id=? AND var=?"))
+		try (PreparedStatement invalidQuestData = con.prepareStatement("DELETE FROM character_quests WHERE char_id=? and name=?"); PreparedStatement statement = con.prepareStatement("SELECT name,value FROM character_quests WHERE char_id=? AND var=?"))
 		{
 			statement.setInt(1, player.getObjectId());
 			statement.setString(2, "<state>");

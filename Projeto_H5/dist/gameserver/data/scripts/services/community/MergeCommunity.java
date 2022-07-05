@@ -316,8 +316,7 @@ public class MergeCommunity implements ScriptFile, ICommunityBoardHandler
 	{
 		try (Connection con = DatabaseFactory.getInstance().getConnection())
 		{
-			try (PreparedStatement statement = con.prepareStatement(
-						"INSERT INTO merge_data (old_login, new_login, email, finished, old_char_id_1, new_char_name_1, old_char_id_2, new_char_name_2, old_char_id_3, new_char_name_3, old_char_id_4, new_char_name_4, old_char_id_5, new_char_name_5, old_char_id_6, new_char_name_6, old_char_id_7, new_char_name_7, old_char_id_8, new_char_name_8) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+			try (PreparedStatement statement = con.prepareStatement("INSERT INTO merge_data (old_login, new_login, email, finished, old_char_id_1, new_char_name_1, old_char_id_2, new_char_name_2, old_char_id_3, new_char_name_3, old_char_id_4, new_char_name_4, old_char_id_5, new_char_name_5, old_char_id_6, new_char_name_6, old_char_id_7, new_char_name_7, old_char_id_8, new_char_name_8) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 						PreparedStatement charNamesStatement = con.prepareStatement("SELECT obj_Id, char_name FROM characters WHERE account_name = ?"))
 			{
 				int i = 0;
@@ -416,8 +415,7 @@ public class MergeCommunity implements ScriptFile, ICommunityBoardHandler
 		{
 			return false;
 		}
-		try (Connection con = MergeDatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("SELECT COUNT(char_name) as existingChars FROM characters WHERE char_name = ?"))
+		try (Connection con = MergeDatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT COUNT(char_name) as existingChars FROM characters WHERE char_name = ?"))
 		{
 			statement.setString(1, charNameToCheck);
 			try (ResultSet rset = statement.executeQuery())
@@ -433,9 +431,7 @@ public class MergeCommunity implements ScriptFile, ICommunityBoardHandler
 			LOG.error("Error while checking How many Chars exists for Char Name: " + charNameToCheck + " in charscters of 2nd server!", e);
 		}
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement mergeCharsStatement = con.prepareStatement(
-								"SELECT old_login FROM merge_data WHERE new_char_name_1 = ? OR new_char_name_2 = ? OR new_char_name_3 = ? OR new_char_name_4 = ? OR new_char_name_5 = ? OR new_char_name_6 = ? OR new_char_name_7 = ? OR new_char_name_8 = ?"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement mergeCharsStatement = con.prepareStatement("SELECT old_login FROM merge_data WHERE new_char_name_1 = ? OR new_char_name_2 = ? OR new_char_name_3 = ? OR new_char_name_4 = ? OR new_char_name_5 = ? OR new_char_name_6 = ? OR new_char_name_7 = ? OR new_char_name_8 = ?"))
 		{
 			mergeCharsStatement.setString(1, charNameToCheck);
 			mergeCharsStatement.setString(2, charNameToCheck);
@@ -486,8 +482,7 @@ public class MergeCommunity implements ScriptFile, ICommunityBoardHandler
 			LOG.error("Error while checking New Clan Name from merge_data_clan. OldClanId: " + oldClanId + ", ClanNameToCheck: " + clanNameToCheck, e);
 		}
 
-		try (Connection con = MergeDatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("SELECT COUNT(name) as existingNames FROM clan_subpledges WHERE name = ? AND type = 0"))
+		try (Connection con = MergeDatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT COUNT(name) as existingNames FROM clan_subpledges WHERE name = ? AND type = 0"))
 		{
 			statement.setString(1, clanNameToCheck);
 			try (ResultSet rset = statement.executeQuery())

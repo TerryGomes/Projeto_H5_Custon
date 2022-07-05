@@ -38,13 +38,10 @@ public class AuctioneerInstance extends NpcInstance
 	private final static long WEEK = 7 * 24 * 60 * 60 * 1000L;
 
 	private final static int CH_PAGE_SIZE = 7;
-	private final static String CH_IN_LIST = "\t<tr>\n" + "\t\t<td width=50>\n" + "\t\t\t<font color=\"aaaaff\">&^%id%;</font>\n" + "\t\t</td>\n" + "\t\t<td width=100>\n"
-				+ "\t\t\t<a action=\"bypass -h npc_%objectId%_info %id%\"><font color=\"ffffaa\">&%%id%;[%size%]</font></a>\n" + "\t\t</td>\n" + "\t\t<td width=50>%date%</td>\n"
-				+ "\t\t<td width=70 align=right>\n" + "\t\t\t<font color=\"aaffff\">%min_bid%</font>\n" + "\t\t</td>\n" + "\t</tr>";
+	private final static String CH_IN_LIST = "\t<tr>\n" + "\t\t<td width=50>\n" + "\t\t\t<font color=\"aaaaff\">&^%id%;</font>\n" + "\t\t</td>\n" + "\t\t<td width=100>\n" + "\t\t\t<a action=\"bypass -h npc_%objectId%_info %id%\"><font color=\"ffffaa\">&%%id%;[%size%]</font></a>\n" + "\t\t</td>\n" + "\t\t<td width=50>%date%</td>\n" + "\t\t<td width=70 align=right>\n" + "\t\t\t<font color=\"aaffff\">%min_bid%</font>\n" + "\t\t</td>\n" + "\t</tr>";
 
 	private final static int BIDDER_PAGE_SIZE = 10;
-	private final static String BIDDER_IN_LIST = "\t<tr>\n" + "\t\t<td width=100><font color=\"aaaaff\">&%%id%;</font></td>\n" + "\t\t<td width=100><font color=\"ffffaa\">%clan_name%</font></td>\n"
-				+ "\t\t<td width=70>%date%</td>\n" + "\t</tr>";
+	private final static String BIDDER_IN_LIST = "\t<tr>\n" + "\t\t<td width=100><font color=\"aaaaff\">&%%id%;</font></td>\n" + "\t\t<td width=100><font color=\"ffffaa\">%clan_name%</font></td>\n" + "\t\t<td width=70>%date%</td>\n" + "\t</tr>";
 
 	public AuctioneerInstance(int objectId, NpcTemplate template)
 	{
@@ -108,8 +105,7 @@ public class AuctioneerInstance extends NpcInstance
 				List<AuctionSiegeClanObject> attackers = event.getObjects(ClanHallAuctionEvent.ATTACKERS);
 				Calendar endDate = event.getEndSiegeDate();
 
-				String out = CH_IN_LIST.replace("%id%", String.valueOf(event.getId())).replace("%min_bid%", String.valueOf(event.getResidence().getAuctionMinBid()))
-							.replace("%size%", String.valueOf(attackers.size())).replace("%date%", DATE_FORMAT.format(endDate.getTimeInMillis()));
+				String out = CH_IN_LIST.replace("%id%", String.valueOf(event.getId())).replace("%min_bid%", String.valueOf(event.getResidence().getAuctionMinBid())).replace("%size%", String.valueOf(attackers.size())).replace("%date%", DATE_FORMAT.format(endDate.getTimeInMillis()));
 
 				b.append(out);
 			}
@@ -401,8 +397,7 @@ public class AuctioneerInstance extends NpcInstance
 
 			for (ClanHall ch : ResidenceHolder.getInstance().getResidenceList(ClanHall.class))
 			{
-				if (clanHall != ch && ch.getSiegeEvent().getClass() == ClanHallAuctionEvent.class && ch.getSiegeEvent().isInProgress()
-							&& ch.getSiegeEvent().getSiegeClan(ClanHallAuctionEvent.ATTACKERS, player.getClan()) != null)
+				if (clanHall != ch && ch.getSiegeEvent().getClass() == ClanHallAuctionEvent.class && ch.getSiegeEvent().isInProgress() && ch.getSiegeEvent().getSiegeClan(ClanHallAuctionEvent.ATTACKERS, player.getClan()) != null)
 				{
 					player.sendPacket(SystemMsg.SINCE_YOU_HAVE_ALREADY_SUBMITTED_A_BID_YOU_ARE_NOT_ALLOWED_TO_PARTICIPATE_IN_ANOTHER_AUCTION_AT_THIS_TIME);
 					onBypassFeedback(player, "bid_start " + id);

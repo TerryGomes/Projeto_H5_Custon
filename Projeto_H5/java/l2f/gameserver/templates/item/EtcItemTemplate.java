@@ -8,8 +8,7 @@ public final class EtcItemTemplate extends ItemTemplate
 {
 	public enum EtcItemType implements ItemType
 	{
-		ARROW(1, "Arrow"), MATERIAL(2, "Material"), PET_COLLAR(3, "PetCollar"), POTION(4, "Potion"), RECIPE(5, "Recipe"), SCROLL(6, "Scroll"), QUEST(7, "Quest"), MONEY(8, "Money"), OTHER(9, "Other"),
-		SPELLBOOK(10, "Spellbook"), SEED(11, "Seed"), BAIT(12, "Bait"), SHOT(13, "Shot"), BOLT(14, "Bolt"), RUNE(15, "Rune"), HERB(16, "Herb"), MERCENARY_TICKET(17, "Mercenary Ticket");
+		ARROW(1, "Arrow"), MATERIAL(2, "Material"), PET_COLLAR(3, "PetCollar"), POTION(4, "Potion"), RECIPE(5, "Recipe"), SCROLL(6, "Scroll"), QUEST(7, "Quest"), MONEY(8, "Money"), OTHER(9, "Other"), SPELLBOOK(10, "Spellbook"), SEED(11, "Seed"), BAIT(12, "Bait"), SHOT(13, "Shot"), BOLT(14, "Bolt"), RUNE(15, "Rune"), HERB(16, "Herb"), MERCENARY_TICKET(17, "Mercenary Ticket");
 
 		private final long _mask;
 		private final String _name;

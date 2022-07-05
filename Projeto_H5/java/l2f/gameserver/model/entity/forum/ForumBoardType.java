@@ -4,9 +4,7 @@ import l2f.gameserver.ConfigHolder;
 
 public enum ForumBoardType
 {
-	ANNOUNCEMENTS("Announcements", 1, "ForumBoardIdAnnouncements", true), HALLOFFAME("Hall of Fame", 2, "ForumBoardIdHallofFame", true), EVENTS("Events", 3, "ForumBoardIdEvents", true),
-	RECRUITMENT("Recruitment", 4, "ForumBoardIdRecruitment", true), GENERAL_DISCUSSION("General Discussion", 5, "ForumBoardIdGeneralDiscussion", false),
-	SUGGESTIONS("Suggestions", 6, "ForumBoardIdSuggestions", false), BUG_TRACKER("Bug Tracker", 7, "ForumBoardIdBugTracker", false);
+	ANNOUNCEMENTS("Announcements", 1, "ForumBoardIdAnnouncements", true), HALLOFFAME("Hall of Fame", 2, "ForumBoardIdHallofFame", true), EVENTS("Events", 3, "ForumBoardIdEvents", true), RECRUITMENT("Recruitment", 4, "ForumBoardIdRecruitment", true), GENERAL_DISCUSSION("General Discussion", 5, "ForumBoardIdGeneralDiscussion", false), SUGGESTIONS("Suggestions", 6, "ForumBoardIdSuggestions", false), BUG_TRACKER("Bug Tracker", 7, "ForumBoardIdBugTracker", false);
 
 	private final String niceName;
 	private final int boardIndex;

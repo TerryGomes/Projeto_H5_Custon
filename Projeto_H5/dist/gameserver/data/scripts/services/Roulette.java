@@ -347,8 +347,7 @@ public class Roulette extends Functions
 	public void dialog()
 	{
 		Player player = getSelf();
-		show(HtmCache.getInstance().getNotNull("scripts/services/roulette.htm", player).replaceFirst("%min%", Util.formatAdena(Config.SERVICES_ROULETTE_MIN_BET)).replaceFirst("%max%",
-					Util.formatAdena(Config.SERVICES_ROULETTE_MAX_BET)), player);
+		show(HtmCache.getInstance().getNotNull("scripts/services/roulette.htm", player).replaceFirst("%min%", Util.formatAdena(Config.SERVICES_ROULETTE_MIN_BET)).replaceFirst("%max%", Util.formatAdena(Config.SERVICES_ROULETTE_MAX_BET)), player);
 	}
 
 	public void play(String[] param)

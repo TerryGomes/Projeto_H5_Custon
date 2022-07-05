@@ -103,8 +103,7 @@ public class _10271_TheEnvelopingDarkness extends Quest implements ScriptFile
 		{
 			if (cond == 0)
 			{
-				if (player.getLevel() >= 75 && ToTheSeedOfDestruction != null && ToTheSeedOfDestruction.isCompleted() && player.getParty() != null && player.getParty().getCommandChannel() != null
-							&& player.getParty().getCommandChannel().size() >= CC_MINIMUM)
+				if (player.getLevel() >= 75 && ToTheSeedOfDestruction != null && ToTheSeedOfDestruction.isCompleted() && player.getParty() != null && player.getParty().getCommandChannel() != null && player.getParty().getCommandChannel().size() >= CC_MINIMUM)
 				{
 					htmltext = "orbyu_q10271_1.htm";
 				}

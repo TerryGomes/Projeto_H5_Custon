@@ -128,13 +128,11 @@ public class _345_MethodToRaiseTheDead extends Quest implements ScriptFile
 					st.exitCurrentQuest(true);
 				}
 			}
-			else if (cond == 1 && st.getQuestItemsCount(VICTIMS_ARM_BONE) > 0 && st.getQuestItemsCount(VICTIMS_THIGH_BONE) > 0 && st.getQuestItemsCount(VICTIMS_SKULL) > 0
-						&& st.getQuestItemsCount(VICTIMS_RIB_BONE) > 0 && st.getQuestItemsCount(VICTIMS_SPINE) > 0)
+			else if (cond == 1 && st.getQuestItemsCount(VICTIMS_ARM_BONE) > 0 && st.getQuestItemsCount(VICTIMS_THIGH_BONE) > 0 && st.getQuestItemsCount(VICTIMS_SKULL) > 0 && st.getQuestItemsCount(VICTIMS_RIB_BONE) > 0 && st.getQuestItemsCount(VICTIMS_SPINE) > 0)
 			{
 				htmltext = "dorothy_the_locksmith_q0345_06.htm";
 			}
-			else if (cond == 1 && st.getQuestItemsCount(VICTIMS_ARM_BONE) + st.getQuestItemsCount(VICTIMS_THIGH_BONE) + st.getQuestItemsCount(VICTIMS_SKULL) + st.getQuestItemsCount(VICTIMS_RIB_BONE)
-						+ st.getQuestItemsCount(VICTIMS_SPINE) < 5)
+			else if (cond == 1 && st.getQuestItemsCount(VICTIMS_ARM_BONE) + st.getQuestItemsCount(VICTIMS_THIGH_BONE) + st.getQuestItemsCount(VICTIMS_SKULL) + st.getQuestItemsCount(VICTIMS_RIB_BONE) + st.getQuestItemsCount(VICTIMS_SPINE) < 5)
 			{
 				htmltext = "dorothy_the_locksmith_q0345_05.htm";
 			}

@@ -367,13 +367,11 @@ public class _422_RepentYourSins extends Quest implements ScriptFile
 			{
 				if (st.getQuestItemsCount(MANUAL_OF_MANACLES) == 1)
 				{
-					if (st.getQuestItemsCount(SILVER_NUGGET) < 10 || st.getQuestItemsCount(STEEL) < 5 || st.getQuestItemsCount(ADAMANTINE_NUGGET) < 2 || st.getQuestItemsCount(COKES) < 10
-								|| st.getQuestItemsCount(BLACKSMITHS_FRAME) < 1)
+					if (st.getQuestItemsCount(SILVER_NUGGET) < 10 || st.getQuestItemsCount(STEEL) < 5 || st.getQuestItemsCount(ADAMANTINE_NUGGET) < 2 || st.getQuestItemsCount(COKES) < 10 || st.getQuestItemsCount(BLACKSMITHS_FRAME) < 1)
 					{
 						return "blacksmith_pushkin_q0422_02.htm";
 					}
-					if (st.getQuestItemsCount(SILVER_NUGGET) >= 10 && st.getQuestItemsCount(STEEL) >= 5 && st.getQuestItemsCount(ADAMANTINE_NUGGET) >= 2 && st.getQuestItemsCount(COKES) >= 10
-								&& st.getQuestItemsCount(BLACKSMITHS_FRAME) >= 1)
+					if (st.getQuestItemsCount(SILVER_NUGGET) >= 10 && st.getQuestItemsCount(STEEL) >= 5 && st.getQuestItemsCount(ADAMANTINE_NUGGET) >= 2 && st.getQuestItemsCount(COKES) >= 10 && st.getQuestItemsCount(BLACKSMITHS_FRAME) >= 1)
 					{
 						st.setCond(15);
 						st.takeItems(MANUAL_OF_MANACLES, 1);

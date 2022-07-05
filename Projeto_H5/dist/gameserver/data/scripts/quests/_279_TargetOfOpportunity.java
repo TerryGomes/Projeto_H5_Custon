@@ -110,8 +110,7 @@ public class _279_TargetOfOpportunity extends Quest implements ScriptFile
 				st.giveItems(SealComponentsPart4, 1);
 			}
 
-			if (st.getQuestItemsCount(SealComponentsPart1) >= 1 && st.getQuestItemsCount(SealComponentsPart2) >= 1 && st.getQuestItemsCount(SealComponentsPart3) >= 1
-						&& st.getQuestItemsCount(SealComponentsPart4) >= 1)
+			if (st.getQuestItemsCount(SealComponentsPart1) >= 1 && st.getQuestItemsCount(SealComponentsPart2) >= 1 && st.getQuestItemsCount(SealComponentsPart3) >= 1 && st.getQuestItemsCount(SealComponentsPart4) >= 1)
 			{
 				st.setCond(2);
 			}

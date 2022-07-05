@@ -636,8 +636,7 @@ public class Castle extends Residence
 				final String values[] = new String[_procure.size()];
 				for (CropProcure cp : _procure)
 				{
-					values[count] = "(" + getId() + "," + cp.getId() + "," + cp.getAmount() + "," + cp.getStartAmount() + "," + cp.getPrice() + "," + cp.getReward() + "," + CastleManorManager.PERIOD_CURRENT
-								+ ")";
+					values[count] = "(" + getId() + "," + cp.getId() + "," + cp.getAmount() + "," + cp.getStartAmount() + "," + cp.getPrice() + "," + cp.getReward() + "," + CastleManorManager.PERIOD_CURRENT + ")";
 					count++;
 				}
 				if (values.length > 0)

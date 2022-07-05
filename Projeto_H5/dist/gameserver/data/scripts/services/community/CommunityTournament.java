@@ -250,9 +250,7 @@ public class CommunityTournament implements ScriptFile, ICommunityBoardHandler
 		// Loser Reward
 		if (!ConfigHolder.checkIsEmpty("TournamentExtraLoserReward"))
 		{
-			html = html.replace("%loserReward%",
-						"<font color=f6e41f>Every player who will fight the battle and lose it, will gain " + ConfigHolder.getMapEntry("TournamentExtraLoserReward", Integer.class, Long.class).getValue() + " "
-									+ ItemHolder.getInstance().getItemName(ConfigHolder.getMapEntry("TournamentExtraLoserReward", Integer.class, Long.class).getKey()) + "!</font><br1>");
+			html = html.replace("%loserReward%", "<font color=f6e41f>Every player who will fight the battle and lose it, will gain " + ConfigHolder.getMapEntry("TournamentExtraLoserReward", Integer.class, Long.class).getValue() + " " + ItemHolder.getInstance().getItemName(ConfigHolder.getMapEntry("TournamentExtraLoserReward", Integer.class, Long.class).getKey()) + "!</font><br1>");
 			html = html.replace("%loserReward2%", "<br1>");
 		}
 		else
@@ -281,8 +279,7 @@ public class CommunityTournament implements ScriptFile, ICommunityBoardHandler
 		}
 		if (!ConfigHolder.checkIsEmpty("TournamentRequiredItem"))
 		{
-			requirements.append(ConfigHolder.getMapEntry("TournamentRequiredItem", Integer.class, Long.class).getValue() + " "
-						+ ItemHolder.getInstance().getItemName(ConfigHolder.getMapEntry("TournamentRequiredItem", Integer.class, Long.class).getKey()) + "s in all members inventory<br1>");
+			requirements.append(ConfigHolder.getMapEntry("TournamentRequiredItem", Integer.class, Long.class).getValue() + " " + ItemHolder.getInstance().getItemName(ConfigHolder.getMapEntry("TournamentRequiredItem", Integer.class, Long.class).getKey()) + "s in all members inventory<br1>");
 		}
 
 		// Replacements
@@ -348,9 +345,7 @@ public class CommunityTournament implements ScriptFile, ICommunityBoardHandler
 		// Loser Reward
 		if (!ConfigHolder.checkIsEmpty("TournamentExtraLoserReward"))
 		{
-			html = html.replace("%loserReward%",
-						"<font color=f6e41f>Every player who will fight the battle and lose it, will gain " + ConfigHolder.getMapEntry("TournamentExtraLoserReward", Integer.class, Long.class).getValue() + " "
-									+ ItemHolder.getInstance().getItemName(ConfigHolder.getMapEntry("TournamentExtraLoserReward", Integer.class, Long.class).getKey()) + "!</font><br1>");
+			html = html.replace("%loserReward%", "<font color=f6e41f>Every player who will fight the battle and lose it, will gain " + ConfigHolder.getMapEntry("TournamentExtraLoserReward", Integer.class, Long.class).getValue() + " " + ItemHolder.getInstance().getItemName(ConfigHolder.getMapEntry("TournamentExtraLoserReward", Integer.class, Long.class).getKey()) + "!</font><br1>");
 			html = html.replace("%loserReward2%", "");
 		}
 		else
@@ -481,8 +476,7 @@ public class CommunityTournament implements ScriptFile, ICommunityBoardHandler
 		// Previous Bypass
 		if (sortedBattles.indexOf(leftBattle) > 0)
 		{
-			html = html.replace("%previousBypass%", "<button value=\"     Previous Battles\" action=\"bypass _bbstournament_battleInfo_" + roundIndex + "_" + (battleInRoundIndex - 1)
-						+ "\" width=150 height=26 back=Btns.btn_ornaments_back_blue_150x26_Down fore=Btns.btn_ornaments_back_blue_150x26>");
+			html = html.replace("%previousBypass%", "<button value=\"     Previous Battles\" action=\"bypass _bbstournament_battleInfo_" + roundIndex + "_" + (battleInRoundIndex - 1) + "\" width=150 height=26 back=Btns.btn_ornaments_back_blue_150x26_Down fore=Btns.btn_ornaments_back_blue_150x26>");
 		}
 		else
 		{
@@ -492,8 +486,7 @@ public class CommunityTournament implements ScriptFile, ICommunityBoardHandler
 		// Next Bypass
 		if (rightBattle != null && sortedBattles.indexOf(rightBattle) < sortedBattles.size() - 1)
 		{
-			html = html.replace("%nextBypass%", "<button value=\"     Next Battles\" action=\"bypass _bbstournament_battleInfo_" + roundIndex + "_" + (battleInRoundIndex + 1)
-						+ "\" width=150 height=26 back=Btns.btn_ornaments_right_blue_150x26_Down fore=Btns.btn_ornaments_right_blue_150x26>");
+			html = html.replace("%nextBypass%", "<button value=\"     Next Battles\" action=\"bypass _bbstournament_battleInfo_" + roundIndex + "_" + (battleInRoundIndex + 1) + "\" width=150 height=26 back=Btns.btn_ornaments_right_blue_150x26_Down fore=Btns.btn_ornaments_right_blue_150x26>");
 		}
 		else
 		{
@@ -686,8 +679,7 @@ public class CommunityTournament implements ScriptFile, ICommunityBoardHandler
 		else if (battle.isNowLive())
 		{
 			builder.append("<br>");
-			builder.append("<button value=\"       Watch Match Live NOW!\" action=\"bypass _bbstournament_startObserve_" + battle.getId()
-						+ "\" width=200 height=32 back=Btns.btn_ornaments_info_red_200x32_Down fore=Btns.btn_ornaments_confirmed_red_200x32>");
+			builder.append("<button value=\"       Watch Match Live NOW!\" action=\"bypass _bbstournament_startObserve_" + battle.getId() + "\" width=200 height=32 back=Btns.btn_ornaments_info_red_200x32_Down fore=Btns.btn_ornaments_confirmed_red_200x32>");
 			builder.append("<table cellspacing=9></table>");
 		}
 		else
@@ -786,8 +778,7 @@ public class CommunityTournament implements ScriptFile, ICommunityBoardHandler
 
 			if (ConfigHolder.getBool("TournamentAnnounceRegister"))
 			{
-				ChatUtil.sendStringToAll(ChatUtil.getMessagePerLang("Tournament.RegisterSuccessAnnounceSender"), ChatUtil.getMessagePerLang("Tournament.RegisterSuccessAnnounce1", player.getName()),
-							ConfigHolder.getChatType("TournamentAnnounceRegisterChatType"));
+				ChatUtil.sendStringToAll(ChatUtil.getMessagePerLang("Tournament.RegisterSuccessAnnounceSender"), ChatUtil.getMessagePerLang("Tournament.RegisterSuccessAnnounce1", player.getName()), ConfigHolder.getChatType("TournamentAnnounceRegisterChatType"));
 			}
 
 			if (Debug.TOURNAMENT.isActive())
@@ -811,8 +802,7 @@ public class CommunityTournament implements ScriptFile, ICommunityBoardHandler
 			}
 			if (ConfigHolder.getBool("TournamentAnnounceRegister"))
 			{
-				ChatUtil.sendStringToAll(ChatUtil.getMessagePerLang("Tournament.RegisterSuccessAnnounceSender"), getRegisterAnnounceBody(partyMembers),
-							ConfigHolder.getChatType("TournamentAnnounceRegisterChatType"));
+				ChatUtil.sendStringToAll(ChatUtil.getMessagePerLang("Tournament.RegisterSuccessAnnounceSender"), getRegisterAnnounceBody(partyMembers), ConfigHolder.getChatType("TournamentAnnounceRegisterChatType"));
 			}
 
 			if (Debug.TOURNAMENT.isActive())
@@ -973,8 +963,7 @@ public class CommunityTournament implements ScriptFile, ICommunityBoardHandler
 			}
 			if (Debug.TOURNAMENT.isActive())
 			{
-				Debug.TOURNAMENT.debug(CommunityTournament.class, "checkCanRegister", "ErrorClassLevel", player, leader, sendErrorMessage, player.getClassId().getLevel(),
-							ConfigHolder.getInt("TournamentMinimumClassLevel"));
+				Debug.TOURNAMENT.debug(CommunityTournament.class, "checkCanRegister", "ErrorClassLevel", player, leader, sendErrorMessage, player.getClassId().getLevel(), ConfigHolder.getInt("TournamentMinimumClassLevel"));
 			}
 			return false;
 		}
@@ -1014,8 +1003,7 @@ public class CommunityTournament implements ScriptFile, ICommunityBoardHandler
 			}
 			if (Debug.TOURNAMENT.isActive())
 			{
-				Debug.TOURNAMENT.debug(CommunityTournament.class, "checkCanRegister", "ErrorDisabledClass", player, leader, sendErrorMessage,
-							Arrays.toString(ConfigHolder.getIntArray("TournamentDisabledClasses")), player.getClassId().getId());
+				Debug.TOURNAMENT.debug(CommunityTournament.class, "checkCanRegister", "ErrorDisabledClass", player, leader, sendErrorMessage, Arrays.toString(ConfigHolder.getIntArray("TournamentDisabledClasses")), player.getClassId().getId());
 			}
 			return false;
 		}
@@ -1038,8 +1026,7 @@ public class CommunityTournament implements ScriptFile, ICommunityBoardHandler
 				}
 				if (Debug.TOURNAMENT.isActive())
 				{
-					Debug.TOURNAMENT.debug(CommunityTournament.class, "checkCanRegister", "ErrorNoRequiredItems", player, leader, sendErrorMessage, player.getInventory().getCountOf(requiredItem.getKey()),
-								requiredItem.getValue());
+					Debug.TOURNAMENT.debug(CommunityTournament.class, "checkCanRegister", "ErrorNoRequiredItems", player, leader, sendErrorMessage, player.getInventory().getCountOf(requiredItem.getKey()), requiredItem.getValue());
 				}
 				return false;
 			}

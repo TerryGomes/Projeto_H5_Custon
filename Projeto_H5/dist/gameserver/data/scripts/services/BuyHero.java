@@ -30,8 +30,7 @@ public class BuyHero extends Functions
 		String add = "";
 		for (int i = 0; i < Config.SERVICES_HERO_SELL_DAY.length; i++)
 		{
-			add += "<a action=\"bypass -h scripts_services.BuyHero:get " + i + "\">" + "for " + Config.SERVICES_HERO_SELL_DAY[i] + " days - " + Config.SERVICES_HERO_SELL_PRICE[i] + " "
-						+ ItemHolder.getInstance().getTemplate(Config.SERVICES_HERO_SELL_ITEM[i]).getName() + "</a><br>";
+			add += "<a action=\"bypass -h scripts_services.BuyHero:get " + i + "\">" + "for " + Config.SERVICES_HERO_SELL_DAY[i] + " days - " + Config.SERVICES_HERO_SELL_PRICE[i] + " " + ItemHolder.getInstance().getTemplate(Config.SERVICES_HERO_SELL_ITEM[i]).getName() + "</a><br>";
 		}
 		html = html.replaceFirst("%toreplace%", add);
 

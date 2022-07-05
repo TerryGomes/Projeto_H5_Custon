@@ -345,8 +345,7 @@ public final class ArmorSet
 	{
 		for (ItemInstance item : player.getInventory().getItems())
 		{
-			if (item.isEquipable() && (_chest.contains(item.getItemId()) || _legs.contains(item.getItemId()) || _gloves.contains(item.getItemId()) || _head.contains(item.getItemId())
-						|| _feet.contains(item.getItemId()) || _shield.contains(item.getItemId())))
+			if (item.isEquipable() && (_chest.contains(item.getItemId()) || _legs.contains(item.getItemId()) || _gloves.contains(item.getItemId()) || _head.contains(item.getItemId()) || _feet.contains(item.getItemId()) || _shield.contains(item.getItemId())))
 			{
 				player.getInventory().equipItem(item);
 			}

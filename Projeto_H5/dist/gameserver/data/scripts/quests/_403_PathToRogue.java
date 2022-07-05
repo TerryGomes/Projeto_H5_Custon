@@ -180,8 +180,7 @@ public class _403_PathToRogue extends Quest implements ScriptFile
 		int cond = st.getCond();
 		if (npcId == BEZIQUE)
 		{
-			if (cond == 6 && st.getQuestItemsCount(HORSESHOE_OF_LIGHT_ID) < 1
-						&& st.getQuestItemsCount(STOLEN_JEWELRY_ID) + st.getQuestItemsCount(STOLEN_TOMES_ID) + st.getQuestItemsCount(STOLEN_RING_ID) + st.getQuestItemsCount(STOLEN_NECKLACE_ID) == 4)
+			if (cond == 6 && st.getQuestItemsCount(HORSESHOE_OF_LIGHT_ID) < 1 && st.getQuestItemsCount(STOLEN_JEWELRY_ID) + st.getQuestItemsCount(STOLEN_TOMES_ID) + st.getQuestItemsCount(STOLEN_RING_ID) + st.getQuestItemsCount(STOLEN_NECKLACE_ID) == 4)
 			{
 				htmltext = "captain_bezique_q0403_09.htm";
 				st.takeItems(NETIS_BOW_ID, 1);

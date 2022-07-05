@@ -123,8 +123,7 @@ public class _901_HowLavasaurusesAreMade extends Quest implements ScriptFile
 				{
 					htmltext = "blacksmith_rooney_q901_07.htm";
 				}
-				else if (st.haveQuestItem(LAVASAURUS_STONE_FRAGMENT, 10) && st.haveQuestItem(LAVASAURUS_HEAD_FRAGMENT, 10) && st.haveQuestItem(LAVASAURUS_BODY_FRAGMENT, 10)
-							&& st.haveQuestItem(LAVASAURUS_HORN_FRAGMENT, 10))
+				else if (st.haveQuestItem(LAVASAURUS_STONE_FRAGMENT, 10) && st.haveQuestItem(LAVASAURUS_HEAD_FRAGMENT, 10) && st.haveQuestItem(LAVASAURUS_BODY_FRAGMENT, 10) && st.haveQuestItem(LAVASAURUS_HORN_FRAGMENT, 10))
 				{
 					htmltext = "blacksmith_rooney_q901_05.htm";
 					st.takeAllItems(LAVASAURUS_STONE_FRAGMENT, LAVASAURUS_HEAD_FRAGMENT, LAVASAURUS_BODY_FRAGMENT, LAVASAURUS_HORN_FRAGMENT);
@@ -169,8 +168,7 @@ public class _901_HowLavasaurusesAreMade extends Quest implements ScriptFile
 				st.rollAndGive(LAVASAURUS_HORN_FRAGMENT, 1, DROP_CHANCE);
 			}
 
-			if (st.haveQuestItem(LAVASAURUS_STONE_FRAGMENT, 10) && st.haveQuestItem(LAVASAURUS_HEAD_FRAGMENT, 10) && st.haveQuestItem(LAVASAURUS_BODY_FRAGMENT, 10)
-						&& st.haveQuestItem(LAVASAURUS_HORN_FRAGMENT, 10))
+			if (st.haveQuestItem(LAVASAURUS_STONE_FRAGMENT, 10) && st.haveQuestItem(LAVASAURUS_HEAD_FRAGMENT, 10) && st.haveQuestItem(LAVASAURUS_BODY_FRAGMENT, 10) && st.haveQuestItem(LAVASAURUS_HORN_FRAGMENT, 10))
 			{
 				st.setCond(2);
 				st.playSound(SOUND_MIDDLE);

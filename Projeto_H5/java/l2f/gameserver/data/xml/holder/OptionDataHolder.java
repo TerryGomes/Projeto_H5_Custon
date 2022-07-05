@@ -114,8 +114,7 @@ public final class OptionDataHolder extends AbstractHolder
 				}
 
 				// Chequeamos que el lvl de esta skill si ya fue agregado, sea mayor al anterior
-				if (!options.containsKey(option.getTriggerList().get(0).getSkillId())
-							|| options.get(option.getTriggerList().get(0).getSkillId()).getTriggerList().get(0).getSkillLevel() < option.getTriggerList().get(0).getSkillLevel())
+				if (!options.containsKey(option.getTriggerList().get(0).getSkillId()) || options.get(option.getTriggerList().get(0).getSkillId()).getTriggerList().get(0).getSkillLevel() < option.getTriggerList().get(0).getSkillLevel())
 				{
 					options.put(option.getTriggerList().get(0).getSkillId(), option);
 				}
@@ -172,8 +171,7 @@ public final class OptionDataHolder extends AbstractHolder
 				}
 				case ACTIVE_SKILL:
 				{
-					if (skill.getName().equalsIgnoreCase(option2.getSkills().get(0).getName()) && ((skill.getPower() > 0 && skill.getPower() < option2.getSkills().get(0).getPower())
-								|| (skill.getPower() <= 0 && skill.getMagicLevel() < option2.getSkills().get(0).getMagicLevel())))
+					if (skill.getName().equalsIgnoreCase(option2.getSkills().get(0).getName()) && ((skill.getPower() > 0 && skill.getPower() < option2.getSkills().get(0).getPower()) || (skill.getPower() <= 0 && skill.getMagicLevel() < option2.getSkills().get(0).getMagicLevel())))
 					{
 						mustAddSkill = false;
 					}

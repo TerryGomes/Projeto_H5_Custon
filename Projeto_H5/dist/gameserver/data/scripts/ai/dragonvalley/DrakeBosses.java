@@ -53,8 +53,7 @@ public class DrakeBosses extends Fighter
 					Map<Playable, HateInfo> aggro = getActor().getAggroList().getPlayableMap();
 					for (Player pl : pg)
 					{
-						if (pl != null && !pl.isDead() && aggro.containsKey(pl)
-									&& (getActor().isInRangeZ(pl, Config.ALT_PARTY_DISTRIBUTION_RANGE) || getActor().isInRangeZ(killer, Config.ALT_PARTY_DISTRIBUTION_RANGE)))
+						if (pl != null && !pl.isDead() && aggro.containsKey(pl) && (getActor().isInRangeZ(pl, Config.ALT_PARTY_DISTRIBUTION_RANGE) || getActor().isInRangeZ(killer, Config.ALT_PARTY_DISTRIBUTION_RANGE)))
 						{
 							;
 						}

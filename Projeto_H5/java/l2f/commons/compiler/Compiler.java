@@ -40,8 +40,7 @@ public class Compiler
 		options.add("-Xlint:all");
 		options.add("-g");
 		DiagnosticCollector<JavaFileObject> diagnostics = new DiagnosticCollector<>();
-		try (StandardJavaFileManager fileManager = compiler.getStandardFileManager(diagnostics, null, StandardCharsets.UTF_8);
-					JavaFileManager memFileManager = new MemoryJavaFileManager(fileManager, memoryClassLoader))
+		try (StandardJavaFileManager fileManager = compiler.getStandardFileManager(diagnostics, null, StandardCharsets.UTF_8); JavaFileManager memFileManager = new MemoryJavaFileManager(fileManager, memoryClassLoader))
 		{
 			final CompilationTask compile = compiler.getTask(null, memFileManager, diagnostics, options, null, fileManager.getJavaFileObjectsFromFiles(files));
 			return compile.call();

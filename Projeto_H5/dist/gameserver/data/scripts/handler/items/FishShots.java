@@ -106,8 +106,7 @@ public class FishShots extends ScriptItemHandler implements ScriptFile
 
 		int grade = weaponItem.getCrystalType().externalOrdinal;
 
-		if (grade == 0 && FishshotId != 6535 || grade == 1 && FishshotId != 6536 || grade == 2 && FishshotId != 6537 || grade == 3 && FishshotId != 6538 || grade == 4 && FishshotId != 6539
-					|| grade == 5 && FishshotId != 6540)
+		if (grade == 0 && FishshotId != 6535 || grade == 1 && FishshotId != 6536 || grade == 2 && FishshotId != 6537 || grade == 3 && FishshotId != 6538 || grade == 4 && FishshotId != 6539 || grade == 5 && FishshotId != 6540)
 		{
 			if (isAutoSoulShot)
 			{

@@ -316,15 +316,13 @@ public class TopTable
 			// insert new Top Killers list:
 			for (Map.Entry<Integer, TopField> e : _topKillsTable.entrySet())
 			{
-				statement.addBatch("INSERT INTO rank_pvp_system_top_table (position, player_id, value, table_id) VALUES (" + e.getValue().getTopPosition() + "," + e.getValue().getCharacterId() + ","
-							+ e.getValue().getValue() + ",1)");
+				statement.addBatch("INSERT INTO rank_pvp_system_top_table (position, player_id, value, table_id) VALUES (" + e.getValue().getTopPosition() + "," + e.getValue().getCharacterId() + "," + e.getValue().getValue() + ",1)");
 			}
 
 			// insert new Top Killers list:
 			for (Map.Entry<Integer, TopField> e : _topGatherersTable.entrySet())
 			{
-				statement.addBatch("INSERT INTO rank_pvp_system_top_table (position, player_id, value, table_id) VALUES (" + e.getValue().getTopPosition() + "," + e.getValue().getCharacterId() + ","
-							+ e.getValue().getValue() + ",2)");
+				statement.addBatch("INSERT INTO rank_pvp_system_top_table (position, player_id, value, table_id) VALUES (" + e.getValue().getTopPosition() + "," + e.getValue().getCharacterId() + "," + e.getValue().getValue() + ",2)");
 			}
 
 			statement.executeBatch();
@@ -394,9 +392,7 @@ public class TopTable
 			con = DatabaseFactory.getInstance().getConnection();
 
 			// get top killers:
-			statement = con.prepareStatement(
-						"SELECT position, player_id, value, table_id, char_name as name, base_class as base_class, level as level FROM rank_pvp_system_top_table JOIN characters ON rank_pvp_system_top_table.player_id = characters."
-									+ RPSConfig.CHAR_ID_COLUMN_NAME + " ORDER BY position");
+			statement = con.prepareStatement("SELECT position, player_id, value, table_id, char_name as name, base_class as base_class, level as level FROM rank_pvp_system_top_table JOIN characters ON rank_pvp_system_top_table.player_id = characters." + RPSConfig.CHAR_ID_COLUMN_NAME + " ORDER BY position");
 			rset = statement.executeQuery();
 
 			while (rset.next())
@@ -574,8 +570,7 @@ public class TopTable
 
 			if (!TopTable.getInstance().isUpdating() && TopTable.getInstance().updateTopTable())
 			{
-				log.info("TopTable: Data updated in " + (Calendar.getInstance().getTimeInMillis() - times[0]) + " ms <<< Next update on " + RPSUtil.dateToString(times[2]) + " at "
-							+ RPSUtil.timeToString(times[2]));
+				log.info("TopTable: Data updated in " + (Calendar.getInstance().getTimeInMillis() - times[0]) + " ms <<< Next update on " + RPSUtil.dateToString(times[2]) + " at " + RPSUtil.timeToString(times[2]));
 
 				ThreadPoolManager.getInstance().schedule(new TopTableSchedule(), times[1]);
 			}

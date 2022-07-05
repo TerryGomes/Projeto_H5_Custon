@@ -61,13 +61,11 @@ public class FakeHero extends Functions
 			{
 				if (i == page)
 				{
-					navigation = navigation + "<td width=25 align=center valign=top><button value=\"[" + i + "]\" action=\"bypass -h scripts_services.FakeHero:list " + i
-								+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+					navigation = navigation + "<td width=25 align=center valign=top><button value=\"[" + i + "]\" action=\"bypass -h scripts_services.FakeHero:list " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 				}
 				else
 				{
-					navigation = navigation + "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h scripts_services.FakeHero:list " + i
-								+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+					navigation = navigation + "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h scripts_services.FakeHero:list " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 				}
 				if (inline % 7 == 0)
 				{

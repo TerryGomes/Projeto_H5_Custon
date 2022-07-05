@@ -42,9 +42,7 @@ public class SpawnTable
 
 	private void fillCustomSpawnTable()
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("SELECT * FROM add_spawnlist ORDER by npc_templateid");
-					ResultSet rset = statement.executeQuery())
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT * FROM add_spawnlist ORDER by npc_templateid"); ResultSet rset = statement.executeQuery())
 		{
 
 			while (rset.next())
@@ -73,8 +71,7 @@ public class SpawnTable
 
 	public void addNewSpawn(SimpleSpawner spawn)
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("INSERT INTO `add_spawnlist` (location,count,npc_templateid,locx,locy,locz,heading,respawn_delay) values(?,?,?,?,?,?,?,?)"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("INSERT INTO `add_spawnlist` (location,count,npc_templateid,locx,locy,locz,heading,respawn_delay) values(?,?,?,?,?,?,?,?)"))
 		{
 			statement.setString(1, "");
 			statement.setInt(2, spawn.getAmount());
@@ -94,8 +91,7 @@ public class SpawnTable
 
 	public void deleteSpawn(Location loc, int template)
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("DELETE FROM add_spawnlist WHERE locx=? AND locy=? AND locz=? AND npc_templateid=? AND heading=?"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("DELETE FROM add_spawnlist WHERE locx=? AND locy=? AND locz=? AND npc_templateid=? AND heading=?"))
 		{
 			statement.setInt(1, loc.x);
 			statement.setInt(2, loc.y);

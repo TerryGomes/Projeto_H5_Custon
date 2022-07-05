@@ -55,8 +55,7 @@ public class RequestBypassToServer extends L2GameClientPacket
 	protected void runImpl()
 	{
 		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || bp == null || activeChar.isJailed() || (activeChar.isBlocked() && !activeChar.isInObserverMode()
-					&& (bp.bypass == null || !(bp.bypass.contains("secondaryPassS") || bp.bypass.contains("ProposePass") || bp.bypass.contains("TryPass") || bp.bypass.contains("user_report")))))
+		if (activeChar == null || bp == null || activeChar.isJailed() || (activeChar.isBlocked() && !activeChar.isInObserverMode() && (bp.bypass == null || !(bp.bypass.contains("secondaryPassS") || bp.bypass.contains("ProposePass") || bp.bypass.contains("TryPass") || bp.bypass.contains("user_report")))))
 		{
 			return;
 		}
@@ -210,8 +209,7 @@ public class RequestBypassToServer extends L2GameClientPacket
 					}
 
 					// Transition in view of Olympiad is allowed only from the manager or from the arena.
-					if ((activeChar.getLastNpc() instanceof OlympiadManagerInstance && activeChar.getLastNpc().isInRange(activeChar, Creature.INTERACTION_DISTANCE))
-								|| activeChar.getOlympiadObserveGame() != null)
+					if ((activeChar.getLastNpc() instanceof OlympiadManagerInstance && activeChar.getLastNpc().isInRange(activeChar, Creature.INTERACTION_DISTANCE)) || activeChar.getOlympiadObserveGame() != null)
 					{
 						Olympiad.addSpectator(Integer.parseInt(secondVal) - 1, activeChar);
 					}
@@ -304,8 +302,7 @@ public class RequestBypassToServer extends L2GameClientPacket
 
 					if (receiver.isInOlympiadMode() || activeChar.isInOlympiadMode())
 					{
-						if ((receiver.isInOlympiadMode() != activeChar.isInOlympiadMode()) || (receiver.getOlympiadGame().getId() != activeChar.getOlympiadGame().getId())
-									|| (receiver.getOlympiadSide() != activeChar.getOlympiadSide()))
+						if ((receiver.isInOlympiadMode() != activeChar.isInOlympiadMode()) || (receiver.getOlympiadGame().getId() != activeChar.getOlympiadGame().getId()) || (receiver.getOlympiadSide() != activeChar.getOlympiadSide()))
 						{
 							activeChar.sendMessage("You cannot invite this player to join your party right now.");
 							return;

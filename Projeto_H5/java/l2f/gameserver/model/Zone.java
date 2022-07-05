@@ -42,8 +42,7 @@ public class Zone
 	{
 		AirshipController,
 
-		SIEGE, RESIDENCE, HEADQUARTER, FISHING, UnderGroundColiseum, water, battle_zone, damage, instant_skill, mother_tree, peace_zone, poison, ssq_zone, swamp, no_escape, no_landing, no_restart, no_summon,
-		dummy, offshore, epic, buff_store_only, fix_beleth, global_pvp_zone
+		SIEGE, RESIDENCE, HEADQUARTER, FISHING, UnderGroundColiseum, water, battle_zone, damage, instant_skill, mother_tree, peace_zone, poison, ssq_zone, swamp, no_escape, no_landing, no_restart, no_summon, dummy, offshore, epic, buff_store_only, fix_beleth, global_pvp_zone
 	}
 
 	public enum ZoneTarget
@@ -429,8 +428,7 @@ public class Zone
 
 	public final double findDistanceToZone(int x, int y, int z, boolean includeZAxis)
 	{
-		return PositionUtils.calculateDistance(x, y, z, (getTerritory().getXmax() + getTerritory().getXmin()) / 2, (getTerritory().getYmax() + getTerritory().getYmin()) / 2,
-					(getTerritory().getZmax() + getTerritory().getZmin()) / 2, includeZAxis);
+		return PositionUtils.calculateDistance(x, y, z, (getTerritory().getXmax() + getTerritory().getXmin()) / 2, (getTerritory().getYmax() + getTerritory().getYmin()) / 2, (getTerritory().getZmax() + getTerritory().getZmin()) / 2, includeZAxis);
 	}
 
 	/**

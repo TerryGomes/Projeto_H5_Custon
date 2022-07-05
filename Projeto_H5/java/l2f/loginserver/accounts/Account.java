@@ -259,8 +259,7 @@ public class Account
 
 	public void update(Connection con) throws SQLException
 	{
-		try (PreparedStatement statement = con.prepareStatement(
-					"UPDATE accounts SET password = ?, access_level = ?, ban_expire = ?, allow_ip = ?, allow_hwid=?, bonus = ?, bonus_expire = ?, last_server = ?, last_ip = ?, last_access = ? WHERE login = ?"))
+		try (PreparedStatement statement = con.prepareStatement("UPDATE accounts SET password = ?, access_level = ?, ban_expire = ?, allow_ip = ?, allow_hwid=?, bonus = ?, bonus_expire = ?, last_server = ?, last_ip = ?, last_access = ? WHERE login = ?"))
 		{
 			statement.setString(1, getPasswordHash());
 			statement.setInt(2, getAccessLevel());

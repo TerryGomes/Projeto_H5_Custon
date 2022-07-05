@@ -1359,8 +1359,7 @@ public abstract class Creature extends GameObject
 				{
 					if (Rnd.chance(skill.getCancelTarget()))
 					{
-						if ((target.getCastingSkill() == null || !(target.getCastingSkill().getSkillType() == SkillType.TAKECASTLE || target.getCastingSkill().getSkillType() == SkillType.TAKEFORTRESS
-									|| target.getCastingSkill().getSkillType() == SkillType.TAKEFLAG)) && !target.isRaid())
+						if ((target.getCastingSkill() == null || !(target.getCastingSkill().getSkillType() == SkillType.TAKECASTLE || target.getCastingSkill().getSkillType() == SkillType.TAKEFORTRESS || target.getCastingSkill().getSkillType() == SkillType.TAKEFLAG)) && !target.isRaid())
 						{
 							target.abortAttack(true, true);
 							target.abortCast(true, true);
@@ -1994,8 +1993,7 @@ public abstract class Creature extends GameObject
 			_skillTask = ThreadPoolManager.getInstance().schedule(new MagicUseTask(this, forceUse), skill.getCastCount() > 0 ? skillTime / skill.getCastCount() : skillTime);
 		}
 
-		if ((Config.GEODATA_SKILL_CHECK_TASK_INTERVAL > 0) && (this != target) && (skill.getSkillType() != SkillType.CALL) && (skill.getSkillType() != SkillType.TAKECASTLE)
-					&& (skill.getSkillType() != SkillType.TAKEFORTRESS))
+		if ((Config.GEODATA_SKILL_CHECK_TASK_INTERVAL > 0) && (this != target) && (skill.getSkillType() != SkillType.CALL) && (skill.getSkillType() != SkillType.TAKECASTLE) && (skill.getSkillType() != SkillType.TAKEFORTRESS))
 		{
 			_skillCheckTask = ThreadPoolManager.getInstance().scheduleAtFixedRate(new MagicCheckTask(this), Config.GEODATA_SKILL_CHECK_TASK_INTERVAL, Config.GEODATA_SKILL_CHECK_TASK_INTERVAL);
 		}
@@ -2146,8 +2144,7 @@ public abstract class Creature extends GameObject
 
 		_currentHp = 0;
 
-		boolean fightClubKeepBuffs = isPlayable() && getPlayer().isInFightClub()
-					&& (!getPlayer().getFightClubEvent().loseBuffsOnDeath(getPlayer()) || (isSummon() && !Config.FIGHT_CLUB_SUMMON_LOSE_BUFFS_ON_DEATH));
+		boolean fightClubKeepBuffs = isPlayable() && getPlayer().isInFightClub() && (!getPlayer().getFightClubEvent().loseBuffsOnDeath(getPlayer()) || (isSummon() && !Config.FIGHT_CLUB_SUMMON_LOSE_BUFFS_ON_DEATH));
 		// Stop all active skills effects in progress on the L2Character
 		if (isBlessedByNoblesse() || isSalvation() || fightClubKeepBuffs)
 		{
@@ -3730,8 +3727,7 @@ public abstract class Creature extends GameObject
 				if (zone.getRestartPoints() != null)
 				{
 					ZoneType type = zone.getType();
-					if (type == ZoneType.battle_zone || type == ZoneType.peace_zone || type == ZoneType.offshore || type == ZoneType.dummy
-								|| (zone.getType() == Zone.ZoneType.global_pvp_zone && zone.isActive()))
+					if (type == ZoneType.battle_zone || type == ZoneType.peace_zone || type == ZoneType.offshore || type == ZoneType.dummy || (zone.getType() == Zone.ZoneType.global_pvp_zone && zone.isActive()))
 					{
 						return zone.getSpawn();
 					}

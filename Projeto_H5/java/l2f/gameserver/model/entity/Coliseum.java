@@ -468,8 +468,7 @@ public class Coliseum
 
 	public void teleportPlayers(Party party, Party party2)
 	{
-		if (party == null && party2 == null || party2 == null && party != null && party.getMembers().isEmpty() || party == null && party2 != null && party2.getMembers().isEmpty()
-					|| party2 != null && party != null && party.getMembers().isEmpty() && party2.getMembers().isEmpty())
+		if (party == null && party2 == null || party2 == null && party != null && party.getMembers().isEmpty() || party == null && party2 != null && party2.getMembers().isEmpty() || party2 != null && party != null && party.getMembers().isEmpty() && party2.getMembers().isEmpty())
 		{
 			StopBattle(party, party2, TeamType.NONE, 20000);// все вылетели обнулим битву
 			party_inbattle_list.remove(party);

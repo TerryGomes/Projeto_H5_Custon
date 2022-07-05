@@ -190,8 +190,7 @@ public class _211_TrialOfChallenger extends Quest implements ScriptFile
 			st.setCond(0);
 			if (npcId == Kash)
 			{
-				if (st.getPlayer().getClassId().ordinal() == 0x01 || st.getPlayer().getClassId().ordinal() == 0x13 || st.getPlayer().getClassId().ordinal() == 0x20
-							|| st.getPlayer().getClassId().ordinal() == 0x2d || st.getPlayer().getClassId().ordinal() == 0x2f)
+				if (st.getPlayer().getClassId().ordinal() == 0x01 || st.getPlayer().getClassId().ordinal() == 0x13 || st.getPlayer().getClassId().ordinal() == 0x20 || st.getPlayer().getClassId().ordinal() == 0x2d || st.getPlayer().getClassId().ordinal() == 0x2f)
 				{
 					if (st.getPlayer().getLevel() >= 35)
 					{

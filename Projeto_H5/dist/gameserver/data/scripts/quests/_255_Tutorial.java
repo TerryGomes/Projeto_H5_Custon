@@ -1629,8 +1629,7 @@ public class _255_Tutorial extends Quest implements ScriptFile, OnPlayerEnterLis
 			html.append("</table>");
 			html.append("<br1>");
 			html.append("<table width=280><tr><td align=center>");
-			html.append("<font color=00ff99>").append(player.getName()).append("</font> change your class for <font color=\"LEVEL\">").append(Util.formatAdena(Config.CLASS_MASTERS_PRICE_LIST[jobLevel]))
-						.append(" Adena</font>!<br1>");
+			html.append("<font color=00ff99>").append(player.getName()).append("</font> change your class for <font color=\"LEVEL\">").append(Util.formatAdena(Config.CLASS_MASTERS_PRICE_LIST[jobLevel])).append(" Adena</font>!<br1>");
 			html.append("</td></tr></table>");
 			html.append("<table width=280>");
 			for (ClassId cid : ClassId.values())
@@ -1643,8 +1642,7 @@ public class _255_Tutorial extends Quest implements ScriptFile, OnPlayerEnterLis
 						return false;
 					}
 					String name = cid.name().substring(0, 1).toUpperCase() + cid.name().substring(1);
-					html.append("<tr><td align=center><button value=\"").append(name).append("\" action=\"bypass -h ChangeTo;").append(cid.getId()).append(';').append(Config.CLASS_MASTERS_PRICE_LIST[jobLevel])
-								.append("\" width=200 height=32 back=\"L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down\" fore=\"L2UI_CT1.OlympiadWnd_DF_HeroConfirm\"></td></tr>");
+					html.append("<tr><td align=center><button value=\"").append(name).append("\" action=\"bypass -h ChangeTo;").append(cid.getId()).append(';').append(Config.CLASS_MASTERS_PRICE_LIST[jobLevel]).append("\" width=200 height=32 back=\"L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down\" fore=\"L2UI_CT1.OlympiadWnd_DF_HeroConfirm\"></td></tr>");
 				}
 			}
 			html.append("<tr><td align=center><button value=\"Remaind me later\" action=\"bypass CloseTutorial\" width=200 height=28 back=\"L2UI_CT1.OlympiadWnd_DF_Back_Down\" fore=\"L2UI_CT1.OlympiadWnd_DF_Back\"></td></tr>");

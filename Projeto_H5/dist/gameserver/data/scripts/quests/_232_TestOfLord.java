@@ -637,14 +637,12 @@ public class _232_TestOfLord extends Quest implements ScriptFile
 		for (int item_id : _drop.itemList)
 		{
 			long ORDEAL_NECKLACE_COUNT = qs.getQuestItemsCount(ORDEAL_NECKLACE);
-			if ((item_id == TIMAK_ORC_SKULL && !(ORDEAL_NECKLACE_COUNT > 0 && qs.getQuestItemsCount(HATOS_CHARM) > 0 && qs.getQuestItemsCount(SWORD_INTO_SKULL) == 0))
-						|| (item_id == BREKA_ORC_FANG && !(ORDEAL_NECKLACE_COUNT > 0 && qs.getQuestItemsCount(VARKEES_CHARM) > 0 && qs.getQuestItemsCount(MANAKIAS_ORDERS) > 0)))
+			if ((item_id == TIMAK_ORC_SKULL && !(ORDEAL_NECKLACE_COUNT > 0 && qs.getQuestItemsCount(HATOS_CHARM) > 0 && qs.getQuestItemsCount(SWORD_INTO_SKULL) == 0)) || (item_id == BREKA_ORC_FANG && !(ORDEAL_NECKLACE_COUNT > 0 && qs.getQuestItemsCount(VARKEES_CHARM) > 0 && qs.getQuestItemsCount(MANAKIAS_ORDERS) > 0)))
 			{
 				continue;
 			}
 
-			if ((npcId == Marsh_Spider && !(ORDEAL_NECKLACE_COUNT > 0 && qs.getQuestItemsCount(TAKUNA_CHARM) > 0))
-						|| (npcId == Enchanted_Monstereye && !(ORDEAL_NECKLACE_COUNT > 0 && qs.getQuestItemsCount(CHIANTA_CHARM) > 0)))
+			if ((npcId == Marsh_Spider && !(ORDEAL_NECKLACE_COUNT > 0 && qs.getQuestItemsCount(TAKUNA_CHARM) > 0)) || (npcId == Enchanted_Monstereye && !(ORDEAL_NECKLACE_COUNT > 0 && qs.getQuestItemsCount(CHIANTA_CHARM) > 0)))
 			{
 				continue;
 			}

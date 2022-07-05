@@ -26,8 +26,7 @@ public class Antharas extends DefaultAI
 	final Skill s_fear = getSkill(4108, 1), s_fear2 = getSkill(5092, 1), s_curse = getSkill(4109, 1), s_paralyze = getSkill(4111, 1);
 
 	// damage skills
-	final Skill s_shock = getSkill(4106, 1), s_shock2 = getSkill(4107, 1), s_antharas_ordinary_attack = getSkill(4112, 1), s_antharas_ordinary_attack2 = getSkill(4113, 1), s_meteor = getSkill(5093, 1),
-				s_breath = getSkill(4110, 1);
+	final Skill s_shock = getSkill(4106, 1), s_shock2 = getSkill(4107, 1), s_antharas_ordinary_attack = getSkill(4112, 1), s_antharas_ordinary_attack2 = getSkill(4113, 1), s_meteor = getSkill(5093, 1), s_breath = getSkill(4110, 1);
 
 	// regen skills
 	final Skill s_regen1 = getSkill(4239, 1), s_regen2 = getSkill(4240, 1), s_regen3 = getSkill(4241, 1);
@@ -248,8 +247,7 @@ public class Antharas extends DefaultAI
 			NpcInstance HeralHunter = NpcHolder.getInstance().getTemplate(INVOKER_NEVIT_HERALD).getNewInstance();
 			HeralGiran.spawnMe(new Location(116824, 77400, -2722, 40959));
 
-			ThreadPoolManager.getInstance().schedule(
-						new DeSpawnScheduleTimerTask(HeralGiran, HeralAden, HeralGoddart, HeralRune, HeralDion, HeralOren, HeralGludio, HeralGludin, HeralSchuttgart, HeralHein, HeralHunter), DESPAWN_TIME);
+			ThreadPoolManager.getInstance().schedule(new DeSpawnScheduleTimerTask(HeralGiran, HeralAden, HeralGoddart, HeralRune, HeralDion, HeralOren, HeralGludio, HeralGludin, HeralSchuttgart, HeralHein, HeralHunter), DESPAWN_TIME);
 		}
 		catch (Exception e)
 		{
@@ -273,8 +271,7 @@ public class Antharas extends DefaultAI
 		final NpcInstance HeralHein;
 		final NpcInstance HeralHunter;
 
-		public DeSpawnScheduleTimerTask(NpcInstance HeralGiran, NpcInstance HeralAden, NpcInstance HeralGoddart, NpcInstance HeralRune, NpcInstance HeralDion, NpcInstance HeralOren, NpcInstance HeralGludio,
-					NpcInstance HeralGludin, NpcInstance HeralSchuttgart, NpcInstance HeralHein, NpcInstance HeralHunter)
+		public DeSpawnScheduleTimerTask(NpcInstance HeralGiran, NpcInstance HeralAden, NpcInstance HeralGoddart, NpcInstance HeralRune, NpcInstance HeralDion, NpcInstance HeralOren, NpcInstance HeralGludio, NpcInstance HeralGludin, NpcInstance HeralSchuttgart, NpcInstance HeralHein, NpcInstance HeralHunter)
 		{
 			this.HeralGiran = HeralGiran;
 			this.HeralAden = HeralAden;

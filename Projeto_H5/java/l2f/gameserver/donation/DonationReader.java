@@ -57,9 +57,7 @@ public class DonationReader
 
 	public void writeDonation(String email, String PID, int amount)
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement st = con.prepareStatement("INSERT INTO donations VALUES(?,?,?,?,?,?,?,?)");
-					PreparedStatement st2 = con.prepareStatement("SELECT * FROM donations WHERE transactionID=?");)
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement st = con.prepareStatement("INSERT INTO donations VALUES(?,?,?,?,?,?,?,?)"); PreparedStatement st2 = con.prepareStatement("SELECT * FROM donations WHERE transactionID=?");)
 		{
 			st2.setString(1, PID);
 			try (ResultSet rs = st2.executeQuery();)

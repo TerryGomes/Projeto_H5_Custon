@@ -85,8 +85,7 @@ public class RequestPrivateStoreBuy extends L2GameClientPacket
 		}
 
 		Player seller = (Player) buyer.getVisibleObject(_sellerId);
-		if (seller == null || seller.getPrivateStoreType() != Player.STORE_PRIVATE_SELL && seller.getPrivateStoreType() != Player.STORE_PRIVATE_SELL_PACKAGE
-					|| !seller.isInRangeZ(buyer, Creature.INTERACTION_DISTANCE))
+		if (seller == null || seller.getPrivateStoreType() != Player.STORE_PRIVATE_SELL && seller.getPrivateStoreType() != Player.STORE_PRIVATE_SELL_PACKAGE || !seller.isInRangeZ(buyer, Creature.INTERACTION_DISTANCE))
 		{
 			buyer.sendPacket(SystemMsg.THE_ATTEMPT_TO_TRADE_HAS_FAILED);
 			buyer.sendActionFailed();

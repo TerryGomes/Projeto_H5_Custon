@@ -206,8 +206,7 @@ public class FightClubManager extends Functions implements ScriptFile, OnPlayerE
 
 		if ((requested.getLevel() - requester.getLevel()) > Config.MAXIMUM_LEVEL_DIFFERENCE || (requester.getLevel() - requested.getLevel()) > Config.MAXIMUM_LEVEL_DIFFERENCE)
 		{
-			show(new CustomMessage("scripts.events.fightclub.CancelledLevel", requester, Config.MINIMUM_LEVEL_TO_PARRICIPATION, Config.MAXIMUM_LEVEL_TO_PARRICIPATION, Config.MAXIMUM_LEVEL_DIFFERENCE),
-						requester);
+			show(new CustomMessage("scripts.events.fightclub.CancelledLevel", requester, Config.MINIMUM_LEVEL_TO_PARRICIPATION, Config.MAXIMUM_LEVEL_TO_PARRICIPATION, Config.MAXIMUM_LEVEL_DIFFERENCE), requester);
 			return false;
 		}
 		Object[] duelists =
@@ -707,7 +706,6 @@ public class FightClubManager extends Functions implements ScriptFile, OnPlayerE
 			player.block();
 		}
 
-		@SuppressWarnings("unused")
 		@Override
 		public void runImpl() throws Exception
 		{

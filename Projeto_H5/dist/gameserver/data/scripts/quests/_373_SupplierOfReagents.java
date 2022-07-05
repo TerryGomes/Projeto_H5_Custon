@@ -714,12 +714,8 @@ public class _373_SupplierOfReagents extends Quest implements ScriptFile
 		int catalyst = st.getInt("catalyst");
 		if (page == null)
 		{
-			html = "<html>" + "<body>Alchemists Mixing Urn:" + "<br><table border=0 width=300><tr>" + "<tr><td width=50%>"
-						+ "<a action=\"bypass -h Quest _373_SupplierOfReagents U_M_MACT\">MACT Mixing Stone</a></td><td></td></tr>"
-						+ "<tr><td><a action=\"bypass -h Quest _373_SupplierOfReagents U_I_IACT\">IACT Ingredients</a></td><td>(current: INGR)</td></tr>"
-						+ "<tr><td><a action=\"bypass -h Quest _373_SupplierOfReagents U_C_CACT\">CACT Catalyst</a></td><td>(current: CATA)</td></tr>"
-						+ "<tr><td><a action=\"bypass -h Quest _373_SupplierOfReagents 31149-5.htm\">Select Temperature</a></td>"
-						+ "<td>(current: TEMP)</td></tr><tr><td><a action=\"bypass -h Quest _373_SupplierOfReagents 31149-6.htm\">Mix Ingredients</a></td><td></td></tr></table></body></html>";
+			html = "<html>" + "<body>Alchemists Mixing Urn:" + "<br><table border=0 width=300><tr>" + "<tr><td width=50%>" + "<a action=\"bypass -h Quest _373_SupplierOfReagents U_M_MACT\">MACT Mixing Stone</a></td><td></td></tr>" + "<tr><td><a action=\"bypass -h Quest _373_SupplierOfReagents U_I_IACT\">IACT Ingredients</a></td><td>(current: INGR)</td></tr>" + "<tr><td><a action=\"bypass -h Quest _373_SupplierOfReagents U_C_CACT\">CACT Catalyst</a></td><td>(current: CATA)</td></tr>"
+						+ "<tr><td><a action=\"bypass -h Quest _373_SupplierOfReagents 31149-5.htm\">Select Temperature</a></td>" + "<td>(current: TEMP)</td></tr><tr><td><a action=\"bypass -h Quest _373_SupplierOfReagents 31149-6.htm\">Mix Ingredients</a></td><td></td></tr></table></body></html>";
 			int ingr = st.getInt("ingredient");
 			int cata = st.getInt("catalyst");
 			String temp = st.get("temp");
@@ -792,10 +788,7 @@ public class _373_SupplierOfReagents extends Quest implements ScriptFile
 					if (st.getQuestItemsCount(item) > 0)
 					{
 						amt += 1;
-						html += "<tr><td height=45><img src=icon." + ITEMS[i][1] + " height=32 width=32></td><td width=180>" + ITEMS[i][2]
-									+ "</td><td><button value=X1 action=\"bypass -h Quest _373_SupplierOfReagents x_1_" + page[1] + "_" + str(item)
-									+ "\" width=40 height=15 fore=sek.cbui92><button value=X10 action=\"bypass -h Quest _373_SupplierOfReagents x_2_" + page[1] + "_" + str(item)
-									+ "\" width=40 height=15 fore=sek.cbui92></td></tr>";
+						html += "<tr><td height=45><img src=icon." + ITEMS[i][1] + " height=32 width=32></td><td width=180>" + ITEMS[i][2] + "</td><td><button value=X1 action=\"bypass -h Quest _373_SupplierOfReagents x_1_" + page[1] + "_" + str(item) + "\" width=40 height=15 fore=sek.cbui92><button value=X10 action=\"bypass -h Quest _373_SupplierOfReagents x_2_" + page[1] + "_" + str(item) + "\" width=40 height=15 fore=sek.cbui92></td></tr>";
 					}
 				}
 			}
@@ -970,8 +963,7 @@ public class _373_SupplierOfReagents extends Quest implements ScriptFile
 					int item = 0;
 					for (int i = 0; i < FORMULAS.length; i++)
 					{
-						if (ingredient == FORMULAS[i][1] && catalyst == FORMULAS[i][3] && iq == FORMULAS[i][2] && cq == FORMULAS[i][4]
-									|| ingredient == FORMULAS[i][3] && catalyst == FORMULAS[i][1] && iq == FORMULAS[i][4] && cq == FORMULAS[i][2])
+						if (ingredient == FORMULAS[i][1] && catalyst == FORMULAS[i][3] && iq == FORMULAS[i][2] && cq == FORMULAS[i][4] || ingredient == FORMULAS[i][3] && catalyst == FORMULAS[i][1] && iq == FORMULAS[i][4] && cq == FORMULAS[i][2])
 						{
 							item = FORMULAS[i][0];
 							break;

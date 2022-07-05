@@ -496,8 +496,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_SEARCHER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GUILDSMAN_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_PROSPERITY_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_SEARCHER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GUILDSMAN_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_PROSPERITY_ID) == null)
 				{
 					htmltext = "05.htm";
 				}
@@ -506,8 +505,7 @@ public class Occupation extends Functions
 					htmltext = "06.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_SEARCHER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GUILDSMAN_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_PROSPERITY_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_SEARCHER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GUILDSMAN_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_PROSPERITY_ID) == null)
 			{
 				htmltext = "07.htm";
 			}
@@ -549,8 +547,7 @@ public class Occupation extends Functions
 		{
 			htmltext = "31.htm";
 		}
-		else if (classId == ClassId.sorceror || classId == ClassId.necromancer || classId == ClassId.bishop || classId == ClassId.warlock || classId == ClassId.prophet || classId == ClassId.spellsinger
-					|| classId == ClassId.elder || classId == ClassId.elementalSummoner)
+		else if (classId == ClassId.sorceror || classId == ClassId.necromancer || classId == ClassId.bishop || classId == ClassId.warlock || classId == ClassId.prophet || classId == ClassId.spellsinger || classId == ClassId.elder || classId == ClassId.elementalSummoner)
 		{
 			htmltext = "32.htm";
 		}
@@ -1064,8 +1061,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_MAESTRO_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GUILDSMAN_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_PROSPERITY_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_MAESTRO_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GUILDSMAN_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_PROSPERITY_ID) == null)
 				{
 					htmltext = "05.htm";
 				}
@@ -1074,8 +1070,7 @@ public class Occupation extends Functions
 					htmltext = "06.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_MAESTRO_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GUILDSMAN_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_PROSPERITY_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_MAESTRO_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GUILDSMAN_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_PROSPERITY_ID) == null)
 			{
 				htmltext = "07.htm";
 			}
@@ -1255,8 +1250,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_LIFE_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_LIFE_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
 				{
 					htmltext = "40.htm";
 				}
@@ -1265,8 +1259,7 @@ public class Occupation extends Functions
 					htmltext = "41.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_LIFE_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_LIFE_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
 			{
 				htmltext = "42.htm";
 			}
@@ -1318,8 +1311,7 @@ public class Occupation extends Functions
 					htmltext = "49.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_DUTY_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_WITCHCRAFT_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_DUTY_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_WITCHCRAFT_ID) == null)
 			{
 				htmltext = "50.htm";
 			}
@@ -1345,8 +1337,7 @@ public class Occupation extends Functions
 					htmltext = "53.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_SEARCHER_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_SEARCHER_ID) == null)
 			{
 				htmltext = "54.htm";
 			}
@@ -1363,8 +1354,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_SAGITTARIUS_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_SAGITTARIUS_ID) == null)
 				{
 					htmltext = "56.htm";
 				}
@@ -1373,8 +1363,7 @@ public class Occupation extends Functions
 					htmltext = "57.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_SAGITTARIUS_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_SAGITTARIUS_ID) == null)
 			{
 				htmltext = "58.htm";
 			}
@@ -1417,8 +1406,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_LIFE_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_SAGITTARIUS_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_LIFE_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_SAGITTARIUS_ID) == null)
 				{
 					htmltext = "64.htm";
 				}
@@ -1427,8 +1415,7 @@ public class Occupation extends Functions
 					htmltext = "65.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_LIFE_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_SAGITTARIUS_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_LIFE_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_SAGITTARIUS_ID) == null)
 			{
 				htmltext = "66.htm";
 			}
@@ -1445,8 +1432,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
 				{
 					htmltext = "68.htm";
 				}
@@ -1455,8 +1441,7 @@ public class Occupation extends Functions
 					htmltext = "69.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
 			{
 				htmltext = "70.htm";
 			}
@@ -1473,8 +1458,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_CHAMPION_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_CHAMPION_ID) == null)
 				{
 					htmltext = "72.htm";
 				}
@@ -1483,8 +1467,7 @@ public class Occupation extends Functions
 					htmltext = "73.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_CHAMPION_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_CHAMPION_ID) == null)
 			{
 				htmltext = "74.htm";
 			}
@@ -1611,8 +1594,7 @@ public class Occupation extends Functions
 					htmltext = "23.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_SCHOLAR_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_LIFE_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_SUMMONER_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_SCHOLAR_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_LIFE_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_SUMMONER_ID) == null)
 			{
 				htmltext = "24.htm";
 			}
@@ -1655,8 +1637,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_SCHOLAR_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_WITCHCRFAT_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_SCHOLAR_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_WITCHCRFAT_ID) == null)
 				{
 					htmltext = "30.htm";
 				}
@@ -1665,8 +1646,7 @@ public class Occupation extends Functions
 					htmltext = "31.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_SCHOLAR_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_WITCHCRFAT_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_SCHOLAR_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_WITCHCRFAT_ID) == null)
 			{
 				htmltext = "32.htm";
 			}
@@ -1683,8 +1663,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_SCHOLAR_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_SUMMONER_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_SCHOLAR_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_SUMMONER_ID) == null)
 				{
 					htmltext = "34.htm";
 				}
@@ -1693,8 +1672,7 @@ public class Occupation extends Functions
 					htmltext = "35.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_SCHOLAR_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_SUMMONER_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_SCHOLAR_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_SUMMONER_ID) == null)
 			{
 				htmltext = "36.htm";
 			}
@@ -1833,8 +1811,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_PILGRIM_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_REFORMER_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_PILGRIM_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_REFORMER_ID) == null)
 				{
 					htmltext = "20.htm";
 				}
@@ -1843,8 +1820,7 @@ public class Occupation extends Functions
 					htmltext = "21.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_PILGRIM_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_REFORMER_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_PILGRIM_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_TRUST_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_REFORMER_ID) == null)
 			{
 				htmltext = "22.htm";
 			}
@@ -2226,8 +2202,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GLORY_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GLORY_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
 				{
 					htmltext = "16.htm";
 				}
@@ -2236,8 +2211,7 @@ public class Occupation extends Functions
 					htmltext = "17.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GLORY_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GLORY_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
 			{
 				htmltext = "18.htm";
 			}
@@ -2254,8 +2228,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GLORY_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_CHAMPION_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GLORY_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_CHAMPION_ID) == null)
 				{
 					htmltext = "20.htm";
 				}
@@ -2264,8 +2237,7 @@ public class Occupation extends Functions
 					htmltext = "21.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GLORY_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_CHAMPION_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GLORY_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_CHAMPION_ID) == null)
 			{
 				htmltext = "22.htm";
 			}
@@ -2308,8 +2280,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_PILGRIM_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GLORY_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_WARSPIRIT_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_PILGRIM_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GLORY_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_WARSPIRIT_ID) == null)
 				{
 					htmltext = "28.htm";
 				}
@@ -2318,8 +2289,7 @@ public class Occupation extends Functions
 					htmltext = "29.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_PILGRIM_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GLORY_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_WARSPIRIT_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_PILGRIM_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_GLORY_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_WARSPIRIT_ID) == null)
 			{
 				htmltext = "30.htm";
 			}
@@ -2475,8 +2445,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_FATE_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_FATE_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
 				{
 					htmltext = "30.htm";
 				}
@@ -2485,8 +2454,7 @@ public class Occupation extends Functions
 					htmltext = "31.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_FATE_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_CHALLENGER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_FATE_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_DUELIST_ID) == null)
 			{
 				htmltext = "32.htm";
 			}
@@ -2512,8 +2480,7 @@ public class Occupation extends Functions
 					htmltext = "35.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_PILGRIM_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_FATE_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_REFORMER_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_PILGRIM_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_FATE_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_REFORMER_ID) == null)
 			{
 				htmltext = "36.htm";
 			}
@@ -2556,8 +2523,7 @@ public class Occupation extends Functions
 		{
 			if (Level <= 39)
 			{
-				if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_FATE_ID) == null
-							|| pl.getInventory().getItemByItemId(MARK_OF_SAGITTARIUS_ID) == null)
+				if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_FATE_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_SAGITTARIUS_ID) == null)
 				{
 					htmltext = "42.htm";
 				}
@@ -2566,8 +2532,7 @@ public class Occupation extends Functions
 					htmltext = "43.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_FATE_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_SAGITTARIUS_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_SEEKER_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_FATE_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_SAGITTARIUS_ID) == null)
 			{
 				htmltext = "44.htm";
 			}
@@ -2619,8 +2584,7 @@ public class Occupation extends Functions
 					htmltext = "51.htm";
 				}
 			}
-			else if (pl.getInventory().getItemByItemId(MARK_OF_SCHOLAR_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_FATE_ID) == null
-						|| pl.getInventory().getItemByItemId(MARK_OF_SUMMONER_ID) == null)
+			else if (pl.getInventory().getItemByItemId(MARK_OF_SCHOLAR_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_FATE_ID) == null || pl.getInventory().getItemByItemId(MARK_OF_SUMMONER_ID) == null)
 			{
 				htmltext = "52.htm";
 			}

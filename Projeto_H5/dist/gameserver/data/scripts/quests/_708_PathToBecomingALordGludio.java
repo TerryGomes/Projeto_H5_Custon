@@ -263,8 +263,7 @@ public class _708_PathToBecomingALordGludio extends Quest implements ScriptFile
 		Player castleOwner = castle.getOwner().getLeader().getPlayer();
 		if (owner != null)
 		{
-			if (castleOwner != null && castleOwner != st.getPlayer() && owner == st.getPlayer().getClan() && castleOwner.getQuestState(getClass()) != null
-						&& castleOwner.getQuestState(getClass()).getCond() == cond)
+			if (castleOwner != null && castleOwner != st.getPlayer() && owner == st.getPlayer().getClan() && castleOwner.getQuestState(getClass()) != null && castleOwner.getQuestState(getClass()).getCond() == cond)
 			{
 				return true;
 			}

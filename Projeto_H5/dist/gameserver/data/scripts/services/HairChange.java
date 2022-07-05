@@ -75,8 +75,7 @@ public class HairChange extends Functions
 
 		int id = Util.isNumber(arg[0]) ? Integer.parseInt(arg[0]) : 0;
 
-		String msg = new CustomMessage("Want to change your hairstyle from Type {0} to Type {1}? Change cost: {2}").addString(HairTypeName(player.getHairStyle())).addString(HairTypeName(id))
-					.addString(Util.formatPay(player, Config.SERVICES_HAIR_CHANGE_COUNT, Config.SERVICES_HAIR_CHANGE_ITEM_ID)).toString();
+		String msg = new CustomMessage("Want to change your hairstyle from Type {0} to Type {1}? Change cost: {2}").addString(HairTypeName(player.getHairStyle())).addString(HairTypeName(id)).addString(Util.formatPay(player, Config.SERVICES_HAIR_CHANGE_COUNT, Config.SERVICES_HAIR_CHANGE_ITEM_ID)).toString();
 		ConfirmDlg ask = new ConfirmDlg(SystemMsg.S1, 60000);
 		ask.addString(msg);
 

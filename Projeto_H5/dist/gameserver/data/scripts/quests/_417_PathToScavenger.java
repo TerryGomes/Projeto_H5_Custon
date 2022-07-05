@@ -357,8 +357,7 @@ public class _417_PathToScavenger extends Quest implements ScriptFile
 			{
 				htmltext = "trader_mion_q0417_13.htm";
 			}
-			else if (st.getQuestItemsCount(BEAR_PIC) > 0 || st.getQuestItemsCount(TARANTULA_PIC) > 0 || st.getQuestItemsCount(BEAD_PARCEL) > 0 || st.getQuestItemsCount(ROUTS_TP_SCROLL) > 0
-						|| st.getQuestItemsCount(SUCCUBUS_UNDIES) > 0)
+			else if (st.getQuestItemsCount(BEAR_PIC) > 0 || st.getQuestItemsCount(TARANTULA_PIC) > 0 || st.getQuestItemsCount(BEAD_PARCEL) > 0 || st.getQuestItemsCount(ROUTS_TP_SCROLL) > 0 || st.getQuestItemsCount(SUCCUBUS_UNDIES) > 0)
 			{
 				htmltext = "trader_mion_q0417_14.htm";
 			}

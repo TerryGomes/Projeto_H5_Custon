@@ -692,8 +692,7 @@ public abstract class AbstractDPScript extends Quest
 		}
 		catch (IllegalArgumentException e)
 		{
-			_log.warn("[" + getCurrentFile().getName() + "] Invalid value specified for node: " + node.getNodeName() + " specified value: " + node.getNodeValue() + " should be enum value of \""
-						+ clazz.getSimpleName() + "\" using default value: " + defaultValue);
+			_log.warn("[" + getCurrentFile().getName() + "] Invalid value specified for node: " + node.getNodeName() + " specified value: " + node.getNodeValue() + " should be enum value of \"" + clazz.getSimpleName() + "\" using default value: " + defaultValue);
 			return defaultValue;
 		}
 	}

@@ -389,22 +389,19 @@ public class RequestEnchantItem extends L2GameClientPacket
 			switch (itemType)
 			{
 			case ItemTemplate.TYPE2_WEAPON:
-				if ((isDivineScroll && Config.ENCHANT_MAX_DIVINE_SCROLL_WEAPON > 0 && item.getEnchantLevel() >= Config.ENCHANT_MAX_DIVINE_SCROLL_WEAPON)
-							|| (!isDivineScroll && Config.ENCHANT_MAX_WEAPON > 0 && item.getEnchantLevel() >= Config.ENCHANT_MAX_WEAPON))
+				if ((isDivineScroll && Config.ENCHANT_MAX_DIVINE_SCROLL_WEAPON > 0 && item.getEnchantLevel() >= Config.ENCHANT_MAX_DIVINE_SCROLL_WEAPON) || (!isDivineScroll && Config.ENCHANT_MAX_WEAPON > 0 && item.getEnchantLevel() >= Config.ENCHANT_MAX_WEAPON))
 				{
 					fail = true;
 				}
 				break;
 			case ItemTemplate.TYPE2_SHIELD_ARMOR:
-				if ((isDivineScroll && Config.ENCHANT_MAX_DIVINE_SCROLL_ARMOR > 0 && item.getEnchantLevel() >= Config.ENCHANT_MAX_DIVINE_SCROLL_ARMOR)
-							|| (!isDivineScroll && Config.ENCHANT_MAX_ARMOR > 0 && item.getEnchantLevel() >= Config.ENCHANT_MAX_ARMOR))
+				if ((isDivineScroll && Config.ENCHANT_MAX_DIVINE_SCROLL_ARMOR > 0 && item.getEnchantLevel() >= Config.ENCHANT_MAX_DIVINE_SCROLL_ARMOR) || (!isDivineScroll && Config.ENCHANT_MAX_ARMOR > 0 && item.getEnchantLevel() >= Config.ENCHANT_MAX_ARMOR))
 				{
 					fail = true;
 				}
 				break;
 			case ItemTemplate.TYPE2_ACCESSORY:
-				if ((isDivineScroll && Config.ENCHANT_MAX_DIVINE_SCROLL_JEWELRY > 0 && item.getEnchantLevel() >= Config.ENCHANT_MAX_DIVINE_SCROLL_JEWELRY)
-							|| (!isDivineScroll && Config.ENCHANT_MAX_JEWELRY > 0 && item.getEnchantLevel() >= Config.ENCHANT_MAX_JEWELRY))
+				if ((isDivineScroll && Config.ENCHANT_MAX_DIVINE_SCROLL_JEWELRY > 0 && item.getEnchantLevel() >= Config.ENCHANT_MAX_DIVINE_SCROLL_JEWELRY) || (!isDivineScroll && Config.ENCHANT_MAX_JEWELRY > 0 && item.getEnchantLevel() >= Config.ENCHANT_MAX_JEWELRY))
 				{
 					fail = true;
 				}
@@ -448,36 +445,30 @@ public class RequestEnchantItem extends L2GameClientPacket
 				{
 					if (ItemFunctions.isCrystallEnchantScroll(scrollId))
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_WEAPON_FIGHT_CRYSTAL.size() ? Config.ENCHANT_WEAPON_FIGHT_CRYSTAL.get(Config.ENCHANT_WEAPON_FIGHT_CRYSTAL.size() - 1)
-									: Config.ENCHANT_WEAPON_FIGHT_CRYSTAL.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_WEAPON_FIGHT_CRYSTAL.size() ? Config.ENCHANT_WEAPON_FIGHT_CRYSTAL.get(Config.ENCHANT_WEAPON_FIGHT_CRYSTAL.size() - 1) : Config.ENCHANT_WEAPON_FIGHT_CRYSTAL.get(item.getEnchantLevel());
 					}
 					else if (ItemFunctions.isBlessedEnchantScroll(scrollId))
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_WEAPON_FIGHT_BLESSED.size() ? Config.ENCHANT_WEAPON_FIGHT_BLESSED.get(Config.ENCHANT_WEAPON_FIGHT_BLESSED.size() - 1)
-									: Config.ENCHANT_WEAPON_FIGHT_BLESSED.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_WEAPON_FIGHT_BLESSED.size() ? Config.ENCHANT_WEAPON_FIGHT_BLESSED.get(Config.ENCHANT_WEAPON_FIGHT_BLESSED.size() - 1) : Config.ENCHANT_WEAPON_FIGHT_BLESSED.get(item.getEnchantLevel());
 					}
 					else
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_WEAPON_FIGHT.size() ? Config.ENCHANT_WEAPON_FIGHT.get(Config.ENCHANT_WEAPON_FIGHT.size() - 1)
-									: Config.ENCHANT_WEAPON_FIGHT.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_WEAPON_FIGHT.size() ? Config.ENCHANT_WEAPON_FIGHT.get(Config.ENCHANT_WEAPON_FIGHT.size() - 1) : Config.ENCHANT_WEAPON_FIGHT.get(item.getEnchantLevel());
 					}
 				}
 				else if ((Config.SERVICES_RATE_TYPE != Bonus.NO_BONUS && player.getNetConnection().getBonus() > 0) && Config.USE_ALT_ENCHANT_PA)
 				{
 					if (ItemFunctions.isCrystallEnchantScroll(scrollId))
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_WEAPON_FIGHT_CRYSTAL_PA.size() ? Config.ENCHANT_WEAPON_FIGHT_CRYSTAL_PA.get(Config.ENCHANT_WEAPON_FIGHT_CRYSTAL_PA.size() - 1)
-									: Config.ENCHANT_WEAPON_FIGHT_CRYSTAL_PA.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_WEAPON_FIGHT_CRYSTAL_PA.size() ? Config.ENCHANT_WEAPON_FIGHT_CRYSTAL_PA.get(Config.ENCHANT_WEAPON_FIGHT_CRYSTAL_PA.size() - 1) : Config.ENCHANT_WEAPON_FIGHT_CRYSTAL_PA.get(item.getEnchantLevel());
 					}
 					else if (ItemFunctions.isBlessedEnchantScroll(scrollId))
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_WEAPON_FIGHT_BLESSED_PA.size() ? Config.ENCHANT_WEAPON_FIGHT_BLESSED_PA.get(Config.ENCHANT_WEAPON_FIGHT_BLESSED_PA.size() - 1)
-									: Config.ENCHANT_WEAPON_FIGHT_BLESSED_PA.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_WEAPON_FIGHT_BLESSED_PA.size() ? Config.ENCHANT_WEAPON_FIGHT_BLESSED_PA.get(Config.ENCHANT_WEAPON_FIGHT_BLESSED_PA.size() - 1) : Config.ENCHANT_WEAPON_FIGHT_BLESSED_PA.get(item.getEnchantLevel());
 					}
 					else
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_WEAPON_FIGHT_PA.size() ? Config.ENCHANT_WEAPON_FIGHT_PA.get(Config.ENCHANT_WEAPON_FIGHT_PA.size() - 1)
-									: Config.ENCHANT_WEAPON_FIGHT_PA.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_WEAPON_FIGHT_PA.size() ? Config.ENCHANT_WEAPON_FIGHT_PA.get(Config.ENCHANT_WEAPON_FIGHT_PA.size() - 1) : Config.ENCHANT_WEAPON_FIGHT_PA.get(item.getEnchantLevel());
 					}
 				}
 				else if (Config.SERVICES_RATE_TYPE != Bonus.NO_BONUS && player.getNetConnection().getBonus() > 0)
@@ -505,13 +496,11 @@ public class RequestEnchantItem extends L2GameClientPacket
 				{
 					if (ItemFunctions.isCrystallEnchantScroll(scrollId))
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_CRYSTAL.size() ? Config.ENCHANT_ARMOR_CRYSTAL.get(Config.ENCHANT_ARMOR_CRYSTAL.size() - 1)
-									: Config.ENCHANT_ARMOR_CRYSTAL.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_CRYSTAL.size() ? Config.ENCHANT_ARMOR_CRYSTAL.get(Config.ENCHANT_ARMOR_CRYSTAL.size() - 1) : Config.ENCHANT_ARMOR_CRYSTAL.get(item.getEnchantLevel());
 					}
 					else if (ItemFunctions.isBlessedEnchantScroll(scrollId))
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_BLESSED.size() ? Config.ENCHANT_ARMOR_BLESSED.get(Config.ENCHANT_ARMOR_BLESSED.size() - 1)
-									: Config.ENCHANT_ARMOR_BLESSED.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_BLESSED.size() ? Config.ENCHANT_ARMOR_BLESSED.get(Config.ENCHANT_ARMOR_BLESSED.size() - 1) : Config.ENCHANT_ARMOR_BLESSED.get(item.getEnchantLevel());
 					}
 					else
 					{
@@ -522,13 +511,11 @@ public class RequestEnchantItem extends L2GameClientPacket
 				{
 					if (ItemFunctions.isCrystallEnchantScroll(scrollId))
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_CRYSTAL_PA.size() ? Config.ENCHANT_ARMOR_CRYSTAL_PA.get(Config.ENCHANT_ARMOR_CRYSTAL_PA.size() - 1)
-									: Config.ENCHANT_ARMOR_CRYSTAL_PA.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_CRYSTAL_PA.size() ? Config.ENCHANT_ARMOR_CRYSTAL_PA.get(Config.ENCHANT_ARMOR_CRYSTAL_PA.size() - 1) : Config.ENCHANT_ARMOR_CRYSTAL_PA.get(item.getEnchantLevel());
 					}
 					else if (ItemFunctions.isBlessedEnchantScroll(scrollId))
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_BLESSED_PA.size() ? Config.ENCHANT_ARMOR_BLESSED_PA.get(Config.ENCHANT_ARMOR_BLESSED_PA.size() - 1)
-									: Config.ENCHANT_ARMOR_BLESSED_PA.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_BLESSED_PA.size() ? Config.ENCHANT_ARMOR_BLESSED_PA.get(Config.ENCHANT_ARMOR_BLESSED_PA.size() - 1) : Config.ENCHANT_ARMOR_BLESSED_PA.get(item.getEnchantLevel());
 					}
 					else
 					{
@@ -560,36 +547,30 @@ public class RequestEnchantItem extends L2GameClientPacket
 				{
 					if (ItemFunctions.isCrystallEnchantScroll(scrollId))
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL.size() ? Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL.get(Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL.size() - 1)
-									: Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL.size() ? Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL.get(Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL.size() - 1) : Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL.get(item.getEnchantLevel());
 					}
 					else if (ItemFunctions.isBlessedEnchantScroll(scrollId))
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_JEWELRY_BLESSED.size() ? Config.ENCHANT_ARMOR_JEWELRY_BLESSED.get(Config.ENCHANT_ARMOR_JEWELRY_BLESSED.size() - 1)
-									: Config.ENCHANT_ARMOR_JEWELRY_BLESSED.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_JEWELRY_BLESSED.size() ? Config.ENCHANT_ARMOR_JEWELRY_BLESSED.get(Config.ENCHANT_ARMOR_JEWELRY_BLESSED.size() - 1) : Config.ENCHANT_ARMOR_JEWELRY_BLESSED.get(item.getEnchantLevel());
 					}
 					else
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_JEWELRY.size() ? Config.ENCHANT_ARMOR_JEWELRY.get(Config.ENCHANT_ARMOR_JEWELRY.size() - 1)
-									: Config.ENCHANT_ARMOR_JEWELRY.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_JEWELRY.size() ? Config.ENCHANT_ARMOR_JEWELRY.get(Config.ENCHANT_ARMOR_JEWELRY.size() - 1) : Config.ENCHANT_ARMOR_JEWELRY.get(item.getEnchantLevel());
 					}
 				}
 				else if ((Config.SERVICES_RATE_TYPE != Bonus.NO_BONUS && player.getNetConnection().getBonus() > 0) && Config.USE_ALT_ENCHANT_PA)
 				{
 					if (ItemFunctions.isCrystallEnchantScroll(scrollId))
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL_PA.size() ? Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL_PA.get(Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL_PA.size() - 1)
-									: Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL_PA.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL_PA.size() ? Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL_PA.get(Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL_PA.size() - 1) : Config.ENCHANT_ARMOR_JEWELRY_CRYSTAL_PA.get(item.getEnchantLevel());
 					}
 					else if (ItemFunctions.isBlessedEnchantScroll(scrollId))
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_JEWELRY_BLESSED_PA.size() ? Config.ENCHANT_ARMOR_JEWELRY_BLESSED_PA.get(Config.ENCHANT_ARMOR_JEWELRY_BLESSED_PA.size() - 1)
-									: Config.ENCHANT_ARMOR_JEWELRY_BLESSED_PA.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_JEWELRY_BLESSED_PA.size() ? Config.ENCHANT_ARMOR_JEWELRY_BLESSED_PA.get(Config.ENCHANT_ARMOR_JEWELRY_BLESSED_PA.size() - 1) : Config.ENCHANT_ARMOR_JEWELRY_BLESSED_PA.get(item.getEnchantLevel());
 					}
 					else
 					{
-						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_JEWELRY_PA.size() ? Config.ENCHANT_ARMOR_JEWELRY_PA.get(Config.ENCHANT_ARMOR_JEWELRY_PA.size() - 1)
-									: Config.ENCHANT_ARMOR_JEWELRY_PA.get(item.getEnchantLevel());
+						chance = item.getEnchantLevel() > Config.ENCHANT_ARMOR_JEWELRY_PA.size() ? Config.ENCHANT_ARMOR_JEWELRY_PA.get(Config.ENCHANT_ARMOR_JEWELRY_PA.size() - 1) : Config.ENCHANT_ARMOR_JEWELRY_PA.get(item.getEnchantLevel());
 					}
 				}
 				else if (Config.SERVICES_RATE_TYPE != Bonus.NO_BONUS && player.getNetConnection().getBonus() > 0)

@@ -144,8 +144,7 @@ public final class RequestExEnchantSkillSafe extends L2GameClientPacket
 			activeChar.addSkill(skill, true);
 			activeChar.addExpAndSp(0, -1 * requiredSp);
 			Functions.removeItem(activeChar, 57, requiredAdena, "SkillEnchantSafe");
-			activeChar.sendPacket(new SystemMessage2(SystemMsg.YOUR_SP_HAS_DECREASED_BY_S1).addInteger(requiredSp),
-						new SystemMessage2(SystemMsg.SKILL_ENCHANT_WAS_SUCCESSFUL_S1_HAS_BEEN_ENCHANTED).addSkillName(_skillId, _skillLvl), new ExEnchantSkillResult(1));
+			activeChar.sendPacket(new SystemMessage2(SystemMsg.YOUR_SP_HAS_DECREASED_BY_S1).addInteger(requiredSp), new SystemMessage2(SystemMsg.SKILL_ENCHANT_WAS_SUCCESSFUL_S1_HAS_BEEN_ENCHANTED).addSkillName(_skillId, _skillLvl), new ExEnchantSkillResult(1));
 			activeChar.sendPacket(new SkillList(activeChar));
 			RequestExEnchantSkill.updateSkillShortcuts(activeChar, _skillId, _skillLvl);
 			Log.add(activeChar.getName() + "|Successfully safe enchanted|" + _skillId + "|to+" + _skillLvl + "|" + rate, "enchant_skills");

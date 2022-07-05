@@ -215,9 +215,7 @@ public class CCPSecondaryPassword
 
 	private static String getSecondaryPass(Player player)
 	{
-		try (Connection con = LoginDatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("SELECT secondaryPassword FROM accounts WHERE login='" + player.getAccountName() + "'");
-					ResultSet rset = statement.executeQuery())
+		try (Connection con = LoginDatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT secondaryPassword FROM accounts WHERE login='" + player.getAccountName() + "'"); ResultSet rset = statement.executeQuery())
 		{
 			while (rset.next())
 			{

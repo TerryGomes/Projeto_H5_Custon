@@ -38,8 +38,7 @@ public class RequestDispel extends L2GameClientPacket
 		{
 			if ((e.getDisplayId() == _id) && (e.getDisplayLevel() == _level))
 			{
-				if (!e.isOffensive() && (!e.getSkill().isMusic() || Config.ALT_DISPEL_MUSIC) && e.getSkill().isSelfDispellable() && (e.getSkill().getSkillType() != SkillType.TRANSFORMATION)
-							&& (e.getTemplate().getEffectType() != EffectType.Hourglass))
+				if (!e.isOffensive() && (!e.getSkill().isMusic() || Config.ALT_DISPEL_MUSIC) && e.getSkill().isSelfDispellable() && (e.getSkill().getSkillType() != SkillType.TRANSFORMATION) && (e.getTemplate().getEffectType() != EffectType.Hourglass))
 				{
 					e.exit();
 				}

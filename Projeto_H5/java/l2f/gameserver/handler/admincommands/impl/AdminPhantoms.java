@@ -31,9 +31,7 @@ public class AdminPhantoms implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_phantoms, admin_phantoms_ai, admin_phantoms_enable, admin_phantoms_disable, admin_phantoms_terminate, admin_phantoms_spawner, admin_phantoms_spawner_here, admin_phantoms_stop_spawner,
-		admin_phantoms_stop_spawners, admin_phantoms_stop_spawning, admin_phantoms_spawn, admin_phantoms_spawnnew, admin_phantoms_reset, admin_phantoms_spawn_new, admin_phantoms_spawn_level_gear,
-		admin_phantoms_spawn_withclan, admin_getphantomcount
+		admin_phantoms, admin_phantoms_ai, admin_phantoms_enable, admin_phantoms_disable, admin_phantoms_terminate, admin_phantoms_spawner, admin_phantoms_spawner_here, admin_phantoms_stop_spawner, admin_phantoms_stop_spawners, admin_phantoms_stop_spawning, admin_phantoms_spawn, admin_phantoms_spawnnew, admin_phantoms_reset, admin_phantoms_spawn_new, admin_phantoms_spawn_level_gear, admin_phantoms_spawn_withclan, admin_getphantomcount
 	}
 
 	String charName = "";
@@ -96,8 +94,7 @@ public class AdminPhantoms implements IAdminCommandHandler
 				adminReply.replace("%spawnedPhantom%", "&nbsp;");
 				adminReply.replace("%title%", "<edit var=title width=60>");
 
-				adminReply.replace("%buttonSpawn%",
-							"<button value=\"Save & Spawn\" action=\"bypass -h admin_phantoms_spawn $name $level $classid $gear $type $gender $race $hasAi $hasClan $farm $despawn $title $respawn\" width=120 height=25 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>");
+				adminReply.replace("%buttonSpawn%", "<button value=\"Save & Spawn\" action=\"bypass -h admin_phantoms_spawn $name $level $classid $gear $type $gender $race $hasAi $hasClan $farm $despawn $title $respawn\" width=120 height=25 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>");
 				adminReply.replace("%buttonReset%", "&nbsp;");
 			}
 			else
@@ -151,10 +148,7 @@ public class AdminPhantoms implements IAdminCommandHandler
 				adminReply.replace("%title%", "<br><font color=FABA76>" + title + "</font>");
 				adminReply.replace("%rspwn%", "<br><font color=FABA76>" + rspwn + "</font>");
 
-				adminReply.replace("%buttonSpawn%",
-							"<button value=\"Save & Spawn\" action=\"bypass -h admin_phantoms_spawn " + charName + " " + level + " " + classId + " " + gear + " " + type + " " + gender + " "
-										+ race.name().toUpperCase() + " " + haveAi + " " + hasClan + " " + farm + " " + despawn + " " + title + " " + rspwn
-										+ "\" width=120 height=25 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>");
+				adminReply.replace("%buttonSpawn%", "<button value=\"Save & Spawn\" action=\"bypass -h admin_phantoms_spawn " + charName + " " + level + " " + classId + " " + gear + " " + type + " " + gender + " " + race.name().toUpperCase() + " " + haveAi + " " + hasClan + " " + farm + " " + despawn + " " + title + " " + rspwn + "\" width=120 height=25 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>");
 				adminReply.replace("%buttonReset%", "<button value=\"Reset\" action=\"bypass -h admin_phantoms_reset\" width=120 height=25 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>");
 			}
 
@@ -211,8 +205,7 @@ public class AdminPhantoms implements IAdminCommandHandler
 			adminReply.replace("%rspwn%", "<combobox width=60 var=\"respawn\" list=\"FALSE;TRUE;\">");
 
 			adminReply.replace("%phantomEnabled%", String.valueOf(Config.PHANTOM_PLAYERS_ENABLED));
-			adminReply.replace("%buttonSpawn%",
-						"<button value=\"Save & Spawn\" action=\"bypass -h admin_phantoms_spawn $name $level $classid $gear $type $gender $race $hasAi $hasClan $farm $despawn $title $respawn\" width=120 height=25 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>");
+			adminReply.replace("%buttonSpawn%", "<button value=\"Save & Spawn\" action=\"bypass -h admin_phantoms_spawn $name $level $classid $gear $type $gender $race $hasAi $hasClan $farm $despawn $title $respawn\" width=120 height=25 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>");
 			adminReply.replace("%buttonReset%", "&nbsp;");
 
 			activeChar.sendPacket(adminReply);
@@ -497,8 +490,7 @@ public class AdminPhantoms implements IAdminCommandHandler
 								return false;
 							}
 
-							UnitMember member = new UnitMember(clan2, clanPhantom.getName(), clanPhantom.getTitle(), clanPhantom.getLevel(), clanPhantom.getClassId().getId(), clanPhantom.getObjectId(),
-										pledgeType, clanPhantom.getPowerGrade(), clanPhantom.getApprentice(), clanPhantom.getSex(), Clan.SUBUNIT_NONE);
+							UnitMember member = new UnitMember(clan2, clanPhantom.getName(), clanPhantom.getTitle(), clanPhantom.getLevel(), clanPhantom.getClassId().getId(), clanPhantom.getObjectId(), pledgeType, clanPhantom.getPowerGrade(), clanPhantom.getApprentice(), clanPhantom.getSex(), Clan.SUBUNIT_NONE);
 							subUnit.addUnitMember(member);
 
 							clanPhantom.setPledgeType(pledgeType);
@@ -545,8 +537,7 @@ public class AdminPhantoms implements IAdminCommandHandler
 					}
 
 					String name = CharacterDAO.getNameByObjectId(rndbotwithclan);
-					ThreadPoolManager.getInstance()
-								.execute(new PhantomPlayers.PhantomSpawn(rndbotwithclan, hasAi, gearScore, farming, despawn, disableRespawn).setLocation(activeChar.getLoc().setH(activeChar.getHeading())));
+					ThreadPoolManager.getInstance().execute(new PhantomPlayers.PhantomSpawn(rndbotwithclan, hasAi, gearScore, farming, despawn, disableRespawn).setLocation(activeChar.getLoc().setH(activeChar.getHeading())));
 					activeChar.sendMessage(new CustomMessage("l2f.gameserver.handler.admincommands.impl.AdminPhantoms.message9", activeChar).addString(name));
 					spawnedPhantomName = name;
 					useAdminCommand(Commands.admin_phantoms, null, "", activeChar);
@@ -557,8 +548,7 @@ public class AdminPhantoms implements IAdminCommandHandler
 
 				if (phantom != null)
 				{
-					ThreadPoolManager.getInstance().execute(
-								new PhantomPlayers.PhantomSpawn(phantom.getObjectId(), hasAi, gearScore, farming, despawn, disableRespawn).setLocation(activeChar.getLoc().setH(activeChar.getHeading())));
+					ThreadPoolManager.getInstance().execute(new PhantomPlayers.PhantomSpawn(phantom.getObjectId(), hasAi, gearScore, farming, despawn, disableRespawn).setLocation(activeChar.getLoc().setH(activeChar.getHeading())));
 					activeChar.sendMessage(new CustomMessage("l2f.gameserver.handler.admincommands.impl.AdminPhantoms.message9", activeChar).addString(phantom.getName()));
 					spawnedPhantomName = phantom.getName();
 					useAdminCommand(Commands.admin_phantoms, null, "", activeChar);
@@ -656,8 +646,7 @@ public class AdminPhantoms implements IAdminCommandHandler
 					// Original Message: Mood: " + ai.getMood()
 					activeChar.sendMessage(new CustomMessage("l2f.gameserver.handler.admincommands.impl.AdminPhantoms.message14", activeChar).addString(ai.getMood()));
 					// Original Message: AttackTarget: " + ai.getAttackTarget()
-					activeChar.sendMessage(new CustomMessage("l2f.gameserver.handler.admincommands.impl.AdminPhantoms.message15", activeChar)
-								.addString(ai.getAttackTarget() != null ? ai.getAttackTarget().toString() : "none"));
+					activeChar.sendMessage(new CustomMessage("l2f.gameserver.handler.admincommands.impl.AdminPhantoms.message15", activeChar).addString(ai.getAttackTarget() != null ? ai.getAttackTarget().toString() : "none"));
 				}
 				else if ("stopRoaming".equalsIgnoreCase(wordList[1]))
 				{

@@ -113,8 +113,7 @@ public class HwidEngine
 
 	public void updateGamerInDb(HwidGamer gamer)
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("UPDATE hwid SET first_time_played=?, total_time_played=?, poll_answer=?, warnings=?, seenChangeLog=?, threat=?, banned=? WHERE HWID=?"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("UPDATE hwid SET first_time_played=?, total_time_played=?, poll_answer=?, warnings=?, seenChangeLog=?, threat=?, banned=? WHERE HWID=?"))
 		{
 			statement.setLong(1, gamer.getFirstTimePlayed());
 			statement.setLong(2, gamer.getTotalTimePlayed() / 1000L);
@@ -134,8 +133,7 @@ public class HwidEngine
 
 	private void saveNewGamer(HwidGamer gamer)
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("INSERT INTO hwid SET HWID=?, first_time_played=?, total_time_played=?, poll_answer=?, warnings=?, seenChangeLog=?, threat=?, banned=?"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("INSERT INTO hwid SET HWID=?, first_time_played=?, total_time_played=?, poll_answer=?, warnings=?, seenChangeLog=?, threat=?, banned=?"))
 		{
 			statement.setString(1, gamer.getHwid());
 			statement.setLong(2, gamer.getFirstTimePlayed());
@@ -173,8 +171,7 @@ public class HwidEngine
 		// Saving logs
 		if (!_logsToSave.isEmpty())
 		{
-			try (Connection con = DatabaseFactory.getInstance().getConnection();
-						PreparedStatement statement = BatchStatement.createPreparedStatement(con, "INSERT INTO character_logs (obj_Id, HWID, action, time) VALUES (?, ?, ?, ?)"))
+			try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = BatchStatement.createPreparedStatement(con, "INSERT INTO character_logs (obj_Id, HWID, action, time) VALUES (?, ?, ?, ?)"))
 			{
 				for (SimpleLog log : _logsToSave)
 				{
@@ -196,9 +193,7 @@ public class HwidEngine
 		// Saving hwid time
 		if (!_allHwids.isEmpty())
 		{
-			try (Connection con = DatabaseFactory.getInstance().getConnection();
-						PreparedStatement statement = BatchStatement.createPreparedStatement(con, "INSERT INTO `hwid` (HWID,first_time_played,total_time_played,poll_answer,warnings,threat) VALUES"
-									+ "(?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE first_time_played=VALUES(first_time_played),total_time_played=VALUES(total_time_played),poll_answer=VALUES(poll_answer),warnings=VALUES(warnings),threat=VALUES(threat);"))
+			try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = BatchStatement.createPreparedStatement(con, "INSERT INTO `hwid` (HWID,first_time_played,total_time_played,poll_answer,warnings,threat) VALUES" + "(?, ?, ?, ?, ?, ?) ON DUPLICATE KEY UPDATE first_time_played=VALUES(first_time_played),total_time_played=VALUES(total_time_played),poll_answer=VALUES(poll_answer),warnings=VALUES(warnings),threat=VALUES(threat);"))
 			{
 				for (HwidGamer gamer : _allHwids)
 				{

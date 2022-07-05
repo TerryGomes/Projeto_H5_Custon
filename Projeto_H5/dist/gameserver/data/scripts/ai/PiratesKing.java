@@ -33,7 +33,6 @@ public class PiratesKing extends Fighter
 
 		ThreadPoolManager.getInstance().schedule(new RunnableImpl() // The problem of it OnDespawn
 		{
-			@SuppressWarnings("unused")
 			@Override
 			public void runImpl() throws Exception
 			{
@@ -58,7 +57,6 @@ public class PiratesKing extends Fighter
 			_wait_timeout = System.currentTimeMillis() + 60000;
 			ThreadPoolManager.getInstance().schedule(new RunnableImpl()
 			{
-				@SuppressWarnings("unused")
 				@Override
 				public void runImpl() throws Exception
 				{

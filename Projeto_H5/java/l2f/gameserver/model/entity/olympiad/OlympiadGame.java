@@ -307,8 +307,7 @@ public class OlympiadGame
 			if (member1 != null && member2 != null)
 			{
 				final int diff = (int) ((System.currentTimeMillis() - _startTime) / 1000L);
-				final OlympiadHistory h = new OlympiadHistory(member1.getObjectId(), member2.getObjectId(), member1.getClassId(), member2.getClassId(), member1.getName(), member2.getName(), _startTime, diff,
-							team, _type.ordinal());
+				final OlympiadHistory h = new OlympiadHistory(member1.getObjectId(), member2.getObjectId(), member1.getClassId(), member2.getClassId(), member1.getName(), member2.getName(), _startTime, diff, team, _type.ordinal());
 				OlympiadHistoryManager.getInstance().saveHistory(h);
 			}
 		}
@@ -344,8 +343,7 @@ public class OlympiadGame
 		broadcastPacket(packet, true, false);
 
 		// Synerge - Announce on critical to all players in the world, who won this match
-		IStaticPacket criticalAnn = new Say2(0, ChatType.CRITICAL_ANNOUNCE, "",
-					"Olympiad: " + _team1.getName() + " VS " + _team2.getName() + ". Winner is: " + winnerTeam.getName() + (isEndByTime ? " by time" : "") + "!");
+		IStaticPacket criticalAnn = new Say2(0, ChatType.CRITICAL_ANNOUNCE, "", "Olympiad: " + _team1.getName() + " VS " + _team2.getName() + ". Winner is: " + winnerTeam.getName() + (isEndByTime ? " by time" : "") + "!");
 		for (Player player : GameObjectsStorage.getAllPlayersForIterate())
 		{
 			// Check if we can send oly announcements to the player
@@ -357,8 +355,7 @@ public class OlympiadGame
 			player.sendPacket(criticalAnn);
 		}
 
-		Log.add("Olympiad Result: " + winnerTeam.getName() + " vs " + looseTeam.getName() + " ... (" + (int) winnerTeam.getDamage() + " vs " + (int) looseTeam.getDamage() + ") " + winnerTeam.getName() + " win "
-					+ pointDiff + " points by " + (isEndByTime ? "time" : "death"), "olympiad");
+		Log.add("Olympiad Result: " + winnerTeam.getName() + " vs " + looseTeam.getName() + " ... (" + (int) winnerTeam.getDamage() + " vs " + (int) looseTeam.getDamage() + ") " + winnerTeam.getName() + " win " + pointDiff + " points by " + (isEndByTime ? "time" : "death"), "olympiad");
 
 		// Synerge - Add the new oly match win for the players
 		for (Player player : winnerTeam.getPlayers())
@@ -419,8 +416,7 @@ public class OlympiadGame
 			if (member1 != null && member2 != null)
 			{
 				final int diff = (int) ((System.currentTimeMillis() - _startTime) / 1000L);
-				final OlympiadHistory h = new OlympiadHistory(member1.getObjectId(), member1.getObjectId(), member1.getClassId(), member2.getClassId(), member1.getName(), member2.getName(), _startTime, diff, 0,
-							_type.ordinal());
+				final OlympiadHistory h = new OlympiadHistory(member1.getObjectId(), member1.getObjectId(), member1.getClassId(), member2.getClassId(), member1.getName(), member2.getName(), _startTime, diff, 0, _type.ordinal());
 				OlympiadHistoryManager.getInstance().saveHistory(h);
 			}
 		}

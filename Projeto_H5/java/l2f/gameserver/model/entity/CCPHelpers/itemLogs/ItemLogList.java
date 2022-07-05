@@ -197,8 +197,7 @@ public class ItemLogList
 		}
 
 		LOG.info("Saving Logs_Items");
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					final PreparedStatement statement = BatchStatement.createPreparedStatement(con, "INSERT INTO `logs_items` VALUES (?, ?, ?, ?, ?, ?, ?);"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); final PreparedStatement statement = BatchStatement.createPreparedStatement(con, "INSERT INTO `logs_items` VALUES (?, ?, ?, ?, ?, ?, ?);"))
 		{
 			for (List<ItemActionLog> list : _logLists.values())
 			{

@@ -35,8 +35,7 @@ public class Darnel extends DefaultAI
 			TrapInstance trap;
 			for (int i = 0; i < 10; i++)
 			{
-				trap = new TrapInstance(IdFactory.getInstance().getNextId(), NpcHolder.getInstance().getTemplate(13037), actor, trapSkills[Rnd.get(trapSkills.length)],
-							new Location(Rnd.get(151896, 153608), Rnd.get(145032, 146808), -12584));
+				trap = new TrapInstance(IdFactory.getInstance().getNextId(), NpcHolder.getInstance().getTemplate(13037), actor, trapSkills[Rnd.get(trapSkills.length)], new Location(Rnd.get(151896, 153608), Rnd.get(145032, 146808), -12584));
 				trap.spawnMe();
 			}
 		}

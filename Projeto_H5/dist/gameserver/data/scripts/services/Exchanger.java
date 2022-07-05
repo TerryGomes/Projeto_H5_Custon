@@ -63,8 +63,7 @@ public class Exchanger extends Functions
 		if (_list.isEmpty())
 		{
 			NpcHtmlMessage html2 = new NpcHtmlMessage(5);
-			html2.setHtml(
-						"<html><title>" + (isUpgrade ? "Upgrade Items" : "Exchange Items") + "</title><body><center><br><br><font name=hs12>Wear the item to see it on the list.</font></center></body></html>");
+			html2.setHtml("<html><title>" + (isUpgrade ? "Upgrade Items" : "Exchange Items") + "</title><body><center><br><br><font name=hs12>Wear the item to see it on the list.</font></center></body></html>");
 			player.sendPacket(html2);
 			return;
 		}
@@ -100,8 +99,7 @@ public class Exchanger extends Functions
 			}
 			else
 			{
-				navigation = navigation + "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h scripts_services.Exchanger:change_page " + (isUpgrade ? 1 : 0) + " " + i
-							+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+				navigation = navigation + "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h scripts_services.Exchanger:change_page " + (isUpgrade ? 1 : 0) + " " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 			}
 			if (inline % 7 == 0)
 			{
@@ -186,8 +184,7 @@ public class Exchanger extends Functions
 			}
 			else
 			{
-				navigation = navigation + "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h scripts_services.Exchanger:change_list " + id + " " + (isUpgrade ? 1 : 0) + " " + i
-							+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+				navigation = navigation + "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h scripts_services.Exchanger:change_list " + id + " " + (isUpgrade ? 1 : 0) + " " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 			}
 			if (inline % 7 == 0)
 			{

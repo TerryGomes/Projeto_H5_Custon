@@ -271,8 +271,7 @@ public class CommunityBoardAcademy implements ScriptFile, ICommunityBoardHandler
 		}
 		if (_academyList.contains(player))
 		{
-			htmltosend = htmltosend.replace("%mainbutton%",
-						"<button value=\"Unregister\" action=\"bypass -h _bbsUnregisterFromAcademy\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"><br>");
+			htmltosend = htmltosend.replace("%mainbutton%", "<button value=\"Unregister\" action=\"bypass -h _bbsUnregisterFromAcademy\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"><br>");
 		}
 		else
 		{
@@ -290,8 +289,7 @@ public class CommunityBoardAcademy implements ScriptFile, ICommunityBoardHandler
 			}
 			else
 			{
-				htmltosend = htmltosend.replaceAll("%more%", "<button value=\"\" action=\"bypass _bbsShowAcademyList " + (page + 1)
-							+ " \" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\">");
+				htmltosend = htmltosend.replaceAll("%more%", "<button value=\"\" action=\"bypass _bbsShowAcademyList " + (page + 1) + " \" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\">");
 			}
 			htmltosend = htmltosend.replaceAll("%back%", "&nbsp;");
 		}
@@ -299,16 +297,13 @@ public class CommunityBoardAcademy implements ScriptFile, ICommunityBoardHandler
 		{
 			if (totalpages <= page)
 			{
-				htmltosend = htmltosend.replaceAll("%back%", "<button value=\"\" action=\"bypass _bbsShowAcademyList " + (page - 1)
-							+ "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\">");
+				htmltosend = htmltosend.replaceAll("%back%", "<button value=\"\" action=\"bypass _bbsShowAcademyList " + (page - 1) + "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\">");
 				htmltosend = htmltosend.replaceAll("%more%", "&nbsp;");
 			}
 			else
 			{
-				htmltosend = htmltosend.replaceAll("%more%", "<button value=\"\" action=\"bypass _bbsShowAcademyList " + (page + 1)
-							+ "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\">");
-				htmltosend = htmltosend.replaceAll("%back%", "<button value=\"\" action=\"bypass _bbsShowAcademyList " + (page - 1)
-							+ "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\">");
+				htmltosend = htmltosend.replaceAll("%more%", "<button value=\"\" action=\"bypass _bbsShowAcademyList " + (page + 1) + "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateLeft\">");
+				htmltosend = htmltosend.replaceAll("%back%", "<button value=\"\" action=\"bypass _bbsShowAcademyList " + (page - 1) + "\" width=40 height=20 back=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\" fore=\"L2UI_CT1.Inventory_DF_Btn_RotateRight\">");
 			}
 		}
 		for (final Player plr : getSorttedacademys(_playerSortBy.get(player.getObjectId()), academy))
@@ -340,8 +335,7 @@ public class CommunityBoardAcademy implements ScriptFile, ICommunityBoardHandler
 			htmltosend = htmltosend.replaceAll("%onlinetime" + clansvisual + "%", "Online: <font color=\"848484\">" + Util.formatTime((int) plr.getOnlineTime(), 1) + "</font>");
 			if (player.getClan() != null && player.getClan().getLevel() > 4 && (player.getClanPrivileges() & Clan.CP_CL_INVITE_CLAN) == Clan.CP_CL_INVITE_CLAN && !plr.getBlockList().contains(player.getName()))
 			{
-				htmltosend = htmltosend.replaceAll("%request" + clansvisual + "%", "<button value=\"\" action=\"bypass _bbsShowInvitePage " + plr.getName()
-							+ " 1\" width=32 height=32 back=\"L2UI_CT1.MiniMap_DF_PlusBtn_Red\" fore=\"L2UI_CT1.MiniMap_DF_PlusBtn_Red\">");
+				htmltosend = htmltosend.replaceAll("%request" + clansvisual + "%", "<button value=\"\" action=\"bypass _bbsShowInvitePage " + plr.getName() + " 1\" width=32 height=32 back=\"L2UI_CT1.MiniMap_DF_PlusBtn_Red\" fore=\"L2UI_CT1.MiniMap_DF_PlusBtn_Red\">");
 			}
 			else
 			{
@@ -391,8 +385,7 @@ public class CommunityBoardAcademy implements ScriptFile, ICommunityBoardHandler
 			sb.append("Minimum: " + Util.formatAdena(Config.ACADEMY_MIN_ADENA_AMOUNT));
 			sb.append("<br1>");
 			sb.append("Maximum: " + Util.formatAdena(Config.ACADEMY_MAX_ADENA_AMOUNT));
-			sb.append("<button value=\"Invite To Academy\" action=\"bypass -h _bbsInviteToAcademy " + academy.getName()
-						+ " $items $price\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"><br>");
+			sb.append("<button value=\"Invite To Academy\" action=\"bypass -h _bbsInviteToAcademy " + academy.getName() + " $items $price\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"><br>");
 			sb.append("<button value=\"Back\" action=\"bypass -h _bbsShowAcademyList " + pageNum + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"><br>");
 			sb.append("</center>");
 			break;
@@ -411,8 +404,7 @@ public class CommunityBoardAcademy implements ScriptFile, ICommunityBoardHandler
 		price = Math.max(price, 0);
 		if (price < Config.ACADEMY_MIN_ADENA_AMOUNT || price > Config.ACADEMY_MAX_ADENA_AMOUNT)
 		{
-			activeChar.sendChatMessage(activeChar.getObjectId(), ChatType.BATTLEFIELD.ordinal(), "Academy",
-						"Invalid input! Min: " + Util.formatAdena(Config.ACADEMY_MIN_ADENA_AMOUNT) + " | Max: " + Util.formatAdena(Config.ACADEMY_MAX_ADENA_AMOUNT) + " Adena.");
+			activeChar.sendChatMessage(activeChar.getObjectId(), ChatType.BATTLEFIELD.ordinal(), "Academy", "Invalid input! Min: " + Util.formatAdena(Config.ACADEMY_MIN_ADENA_AMOUNT) + " | Max: " + Util.formatAdena(Config.ACADEMY_MAX_ADENA_AMOUNT) + " Adena.");
 			showAcademyChar(activeChar, academyChar.getName(), 1);
 			return;
 		}
@@ -467,8 +459,7 @@ public class CommunityBoardAcademy implements ScriptFile, ICommunityBoardHandler
 		request.set("pledgeType", Clan.SUBUNIT_ACADEMY);
 		academyChar.setPledgeItemId(itemId);
 		academyChar.setPledgePrice(price);
-		final ConfirmDlg packet = new ConfirmDlg(SystemMsg.S1, 15000).addString(activeChar.getName() + " leader of " + activeChar.getClan().getName() + " clan wish to invite you to academy! You will recive "
-					+ Util.formatAdena(price) + " " + ItemHolder.getInstance().getTemplate(itemId).getName() + " as payment!");
+		final ConfirmDlg packet = new ConfirmDlg(SystemMsg.S1, 15000).addString(activeChar.getName() + " leader of " + activeChar.getClan().getName() + " clan wish to invite you to academy! You will recive " + Util.formatAdena(price) + " " + ItemHolder.getInstance().getTemplate(itemId).getName() + " as payment!");
 		academyChar.ask(packet, new AcademyAnswerListener(activeChar, academyChar));
 		onBypassCommand(activeChar, "_bbsShowAcademyList 1");
 		activeChar.sendMessageS("Invation has been send to " + academyChar.getName(), 5);
@@ -481,8 +472,7 @@ public class CommunityBoardAcademy implements ScriptFile, ICommunityBoardHandler
 		{
 			return false;
 		}
-		if (player.isCursedWeaponEquipped() || player.isInJail() || player.isDead() || player.isAlikeDead() || player.isCastingNow() || player.isInCombat() || player.isAttackingNow()
-					|| player.isInOlympiadMode() || player.isFlying() || player.isTerritoryFlagEquipped())
+		if (player.isCursedWeaponEquipped() || player.isInJail() || player.isDead() || player.isAlikeDead() || player.isCastingNow() || player.isInCombat() || player.isAttackingNow() || player.isInOlympiadMode() || player.isFlying() || player.isTerritoryFlagEquipped())
 		{
 			player.sendChatMessage(player.getObjectId(), ChatType.BATTLEFIELD.ordinal(), "Academy", player.isLangRus() ? "Невозможно использовать в данный момент!" : "You can not use it at this moment!");
 			return false;
@@ -527,8 +517,7 @@ public class CommunityBoardAcademy implements ScriptFile, ICommunityBoardHandler
 
 	private enum SortBy
 	{
-		LEVEL("Level"), NAME_ASC("Name(Ascending)"), NAME_DSC("Name(Descending)"), ONLINE_ASC("Online(Ascending)"), ONLINE_DSC("Online(Descending)"), CLASS_ASC("Class(Ascending)"),
-		CLASS_DSC("Class(Descending)");
+		LEVEL("Level"), NAME_ASC("Name(Ascending)"), NAME_DSC("Name(Descending)"), ONLINE_ASC("Online(Ascending)"), ONLINE_DSC("Online(Descending)"), CLASS_ASC("Class(Ascending)"), CLASS_DSC("Class(Descending)");
 
 		private final String _sortName;
 

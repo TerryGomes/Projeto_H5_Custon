@@ -44,8 +44,7 @@ public class UndergroundColiseumEvent extends GlobalEvent
 
 			if (!isValid(leader1, leaders) || !isValid(leader2, leaders))
 			{
-				ExShowScreenMessage p = new ExShowScreenMessage(NpcString.THE_MATCH_IS_AUTOMATICALLY_CANCELED_BECAUSE_YOU_ARE_TOO_FAR_FROM_THE_ADMISSION_MANAGER, 5000,
-							ExShowScreenMessage.ScreenMessageAlign.TOP_CENTER);
+				ExShowScreenMessage p = new ExShowScreenMessage(NpcString.THE_MATCH_IS_AUTOMATICALLY_CANCELED_BECAUSE_YOU_ARE_TOO_FAR_FROM_THE_ADMISSION_MANAGER, 5000, ExShowScreenMessage.ScreenMessageAlign.TOP_CENTER);
 
 				broadCast(leader1, p);
 				broadCast(leader2, p);

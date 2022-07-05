@@ -31,9 +31,7 @@ public class OfflineBuffersTable
 	{
 		_log.info(getClass().getSimpleName() + ": Loading offline buffers...");
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement st = con.prepareStatement("SELECT * FROM character_offline_buffers WHERE charId > 0");
-					ResultSet rs = st.executeQuery())
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement st = con.prepareStatement("SELECT * FROM character_offline_buffers WHERE charId > 0"); ResultSet rs = st.executeQuery())
 		{
 			int nBuffers = 0;
 

@@ -183,7 +183,6 @@ public class FacebookProfile
 	@Override
 	public String toString()
 	{
-		return "FacebookProfile{id='" + id + '\'' + ", name='" + name + '\'' + ", lastCompletedTaskDate=" + lastCompletedTaskDate + ", positivePoints=" + positivePoints + ", negativePoints=" + negativePoints
-					+ '}';
+		return "FacebookProfile{id='" + id + '\'' + ", name='" + name + '\'' + ", lastCompletedTaskDate=" + lastCompletedTaskDate + ", positivePoints=" + positivePoints + ", negativePoints=" + negativePoints + '}';
 	}
 }

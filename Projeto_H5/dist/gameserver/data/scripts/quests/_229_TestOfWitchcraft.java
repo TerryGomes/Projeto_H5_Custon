@@ -534,8 +534,7 @@ public class _229_TestOfWitchcraft extends Quest implements ScriptFile
 				{
 					htmltext = "30110-01.htm";
 				}
-				else if (st.getQuestItemsCount(IkersList) > 0
-							&& (st.getQuestItemsCount(DireWyrmFang) < 20 || st.getQuestItemsCount(LetoLizardmanCharm) < 20 || st.getQuestItemsCount(EnchantedGolemHeartstone) < 20))
+				else if (st.getQuestItemsCount(IkersList) > 0 && (st.getQuestItemsCount(DireWyrmFang) < 20 || st.getQuestItemsCount(LetoLizardmanCharm) < 20 || st.getQuestItemsCount(EnchantedGolemHeartstone) < 20))
 				{
 					htmltext = "30110-04.htm";
 				}

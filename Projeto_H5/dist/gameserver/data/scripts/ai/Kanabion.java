@@ -136,7 +136,6 @@ public class Kanabion extends Fighter
 			_nextId = nextId;
 		}
 
-		@SuppressWarnings("unused")
 		@Override
 		public void runImpl() throws Exception
 		{

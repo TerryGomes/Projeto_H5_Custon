@@ -447,8 +447,7 @@ public class CommunityNpcs implements ScriptFile, ICommunityBoardHandler
 			else
 			{
 				PlayerClass playerClass = arraySubs[i];
-				replacements[i * 2 + 1] = "<button value=\"Add " + playerClass.name() + "\" action=\"bypass _bbsAddNewSub_" + playerClass.ordinal()
-							+ "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">";
+				replacements[i * 2 + 1] = "<button value=\"Add " + playerClass.name() + "\" action=\"bypass _bbsAddNewSub_" + playerClass.ordinal() + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">";
 			}
 		}
 		sendFileToPlayer(player, "smallNpcs/subclassChanger_select.htm", true, replacements);
@@ -477,8 +476,7 @@ public class CommunityNpcs implements ScriptFile, ICommunityBoardHandler
 			else
 			{
 				SubClass playerClass = availableSubs.get(i);
-				replacements[i * 2 + 1] = "<button value=\"Change To " + Util.getFullClassName(ClassId.values()[playerClass.getClassId()]) + "\" action=\"bypass _bbsChangeSubTo_" + playerClass.getClassId()
-							+ "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">";
+				replacements[i * 2 + 1] = "<button value=\"Change To " + Util.getFullClassName(ClassId.values()[playerClass.getClassId()]) + "\" action=\"bypass _bbsChangeSubTo_" + playerClass.getClassId() + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">";
 			}
 		}
 		sendFileToPlayer(player, "smallNpcs/subclassChanger_select.htm", true, replacements);
@@ -505,8 +503,7 @@ public class CommunityNpcs implements ScriptFile, ICommunityBoardHandler
 			else
 			{
 				SubClass playerClass = subToChoose.get(i);
-				replacements[i * 2 + 1] = "<button value=\"Remove " + Util.getFullClassName(ClassId.values()[playerClass.getClassId()]) + "\" action=\"bypass _bbsSelectCancelSub_" + playerClass.getClassId()
-							+ "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">";
+				replacements[i * 2 + 1] = "<button value=\"Remove " + Util.getFullClassName(ClassId.values()[playerClass.getClassId()]) + "\" action=\"bypass _bbsSelectCancelSub_" + playerClass.getClassId() + "\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\">";
 			}
 		}
 		sendFileToPlayer(player, "smallNpcs/subclassChanger_select.htm", true, replacements);
@@ -667,8 +664,7 @@ public class CommunityNpcs implements ScriptFile, ICommunityBoardHandler
 
 	private static String getDecreasePkButton(int pks)
 	{
-		return "<button value=\"" + pks + " PKs for " + (Config.SERVICES_WASH_PK_PRICE * pks) + " Coins\" action=\"bypass _decreasePK_" + pks
-					+ "\" width=200 height=30 back=\"L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down\" fore=\"L2UI_ct1.OlympiadWnd_DF_HeroConfirm\">";
+		return "<button value=\"" + pks + " PKs for " + (Config.SERVICES_WASH_PK_PRICE * pks) + " Coins\" action=\"bypass _decreasePK_" + pks + "\" width=200 height=30 back=\"L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down\" fore=\"L2UI_ct1.OlympiadWnd_DF_HeroConfirm\">";
 	}
 
 	private static boolean canChangeClass(Player player)

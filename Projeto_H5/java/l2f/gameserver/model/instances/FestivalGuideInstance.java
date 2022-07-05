@@ -220,8 +220,7 @@ public final class FestivalGuideInstance extends NpcInstance
 					{
 						cabalStr = "Children of Dawn";
 					}
-					strBuffer.append("Consecutive top scores: " + calculateDate(overallData.getString("date")) + ". Score " + overallScore + "<br>Affilated side: " + cabalStr + "<br>"
-								+ overallData.getString("names").replaceAll(",", ", ") + "<br>");
+					strBuffer.append("Consecutive top scores: " + calculateDate(overallData.getString("date")) + ". Score " + overallScore + "<br>Affilated side: " + cabalStr + "<br>" + overallData.getString("names").replaceAll(",", ", ") + "<br>");
 				}
 				else
 				{
@@ -393,8 +392,7 @@ public final class FestivalGuideInstance extends NpcInstance
 				winningCabal = "None";
 			}
 
-			tableHtml.append("<tr><td width=\"100\" align=\"center\">" + festivalName + "</td><td align=\"center\" width=\"35\">" + duskScore + "</td><td align=\"center\" width=\"35\">" + dawnScore
-						+ "</td><td align=\"center\" width=\"130\">" + winningCabal + "</td></tr>");
+			tableHtml.append("<tr><td width=\"100\" align=\"center\">" + festivalName + "</td><td align=\"center\" width=\"35\">" + duskScore + "</td><td align=\"center\" width=\"35\">" + dawnScore + "</td><td align=\"center\" width=\"130\">" + winningCabal + "</td></tr>");
 		}
 
 		return tableHtml.toString();

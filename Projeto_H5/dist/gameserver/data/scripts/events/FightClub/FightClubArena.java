@@ -185,8 +185,7 @@ public class FightClubArena extends FightClubManager implements OnDeathListener,
 	 */
 	private void draw()
 	{
-		if (!Config.ALLOW_DRAW && player1.getCurrentCp() != player1.getMaxCp() || player2.getCurrentCp() != player2.getMaxCp() || player1.getCurrentHp() != player1.getMaxHp()
-					|| player2.getCurrentHp() != player2.getMaxHp())
+		if (!Config.ALLOW_DRAW && player1.getCurrentCp() != player1.getMaxCp() || player2.getCurrentCp() != player2.getMaxCp() || player1.getCurrentHp() != player1.getMaxHp() || player2.getCurrentHp() != player2.getMaxHp())
 		{
 			if (player1.getCurrentHp() != player1.getMaxHp() || player2.getCurrentHp() != player2.getMaxHp())
 			{

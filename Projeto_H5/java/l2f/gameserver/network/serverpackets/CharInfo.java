@@ -92,8 +92,7 @@ public class CharInfo extends L2GameServerPacket
 		_objId = cha.getObjectId();
 
 		// Cursed weapon and transformation to hide the name of the TV and all the other markings
-		if (player.getTransformationName() != null
-					|| (player.getReflection() == ReflectionManager.GIRAN_HARBOR || player.getReflection() == ReflectionManager.PARNASSUS) && player.getPrivateStoreType() != Player.STORE_PRIVATE_NONE)
+		if (player.getTransformationName() != null || (player.getReflection() == ReflectionManager.GIRAN_HARBOR || player.getReflection() == ReflectionManager.PARNASSUS) && player.getPrivateStoreType() != Player.STORE_PRIVATE_NONE)
 		{
 			_name = player.getTransformationName() != null ? player.getTransformationName() : player.getVisibleName();
 			_title = "";

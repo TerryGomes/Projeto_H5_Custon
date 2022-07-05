@@ -92,8 +92,7 @@ public class ClanPanel extends Functions
 				}
 				else
 				{
-					pg.append("<td width=25 align=center><button value=\"").append(current).append("\" action=\"bypass -h scripts_services.ClanPanel:online " + clan.getClanId() + " ").append(current)
-								.append("\" width=28 height=25 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df\"></td>");
+					pg.append("<td width=25 align=center><button value=\"").append(current).append("\" action=\"bypass -h scripts_services.ClanPanel:online " + clan.getClanId() + " ").append(current).append("\" width=28 height=25 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df\"></td>");
 				}
 				if (line == 22)
 				{

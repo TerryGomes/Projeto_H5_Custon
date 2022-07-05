@@ -105,9 +105,7 @@ public class ClanDataMerge
 
 	private void loadMergedClanIds()
 	{
-		try (Connection oldServerCon = MergeDatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = oldServerCon.prepareStatement("SELECT old_clan_id, new_clan_id FROM merge_data_clan");
-					ResultSet rset = statement.executeQuery())
+		try (Connection oldServerCon = MergeDatabaseFactory.getInstance().getConnection(); PreparedStatement statement = oldServerCon.prepareStatement("SELECT old_clan_id, new_clan_id FROM merge_data_clan"); ResultSet rset = statement.executeQuery())
 		{
 			while (rset.next())
 			{
@@ -148,8 +146,7 @@ public class ClanDataMerge
 	{
 		final boolean transferCRP = ConfigHolder.getBool("MergeClansTransferCRP");
 		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT clan_id, clan_level, reputation_score, warehouse, auction_bid_at, airship FROM clan_data");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement(
-								"INSERT INTO clan_data (clan_id, clan_level, hasCastle, hasFortress, hasHideout, ally_id, crest, largecrest, reputation_score, warehouse, expelled_member, leaved_ally, dissolved_ally, auction_bid_at, airship) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO clan_data (clan_id, clan_level, hasCastle, hasFortress, hasHideout, ally_id, crest, largecrest, reputation_score, warehouse, expelled_member, leaved_ally, dissolved_ally, auction_bid_at, airship) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 					ResultSet rset = oldServerStatement.executeQuery())
 		{
 			while (rset.next())
@@ -183,9 +180,7 @@ public class ClanDataMerge
 
 	private void mergeClanPrivs(Connection oldServerCon, Connection newServerCon) throws SQLException
 	{
-		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT clan_id, rank, privilleges FROM clan_privs");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO clan_privs (clan_id, rank, privilleges) VALUES (?,?,?)");
-					ResultSet rset = oldServerStatement.executeQuery())
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT clan_id, rank, privilleges FROM clan_privs"); PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO clan_privs (clan_id, rank, privilleges) VALUES (?,?,?)"); ResultSet rset = oldServerStatement.executeQuery())
 		{
 			while (rset.next())
 			{
@@ -207,9 +202,7 @@ public class ClanDataMerge
 
 	private void mergeClanSkills(Connection oldServerCon, Connection newServerCon) throws SQLException
 	{
-		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT clan_id, skill_id, skill_level FROM clan_skills");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO clan_skills (clan_id, skill_id, skill_level) VALUES (?,?,?)");
-					ResultSet rset = oldServerStatement.executeQuery())
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT clan_id, skill_id, skill_level FROM clan_skills"); PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO clan_skills (clan_id, skill_id, skill_level) VALUES (?,?,?)"); ResultSet rset = oldServerStatement.executeQuery())
 		{
 			while (rset.next())
 			{
@@ -233,9 +226,7 @@ public class ClanDataMerge
 	{
 		final String addCharOnSameName = ConfigHolder.getString("MergeClansAddCharOnSameName");
 		final ClanTable clanTable = ClanTable.getInstance();
-		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT clan_id, type, name, leader_id FROM clan_subpledges");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO clan_subpledges (clan_id, type, name, leader_id) VALUES (?,?,?,?)");
-					ResultSet rset = oldServerStatement.executeQuery())
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT clan_id, type, name, leader_id FROM clan_subpledges"); PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO clan_subpledges (clan_id, type, name, leader_id) VALUES (?,?,?,?)"); ResultSet rset = oldServerStatement.executeQuery())
 		{
 			while (rset.next())
 			{
@@ -269,9 +260,7 @@ public class ClanDataMerge
 
 	private void mergeClanSubpledgesSkills(Connection oldServerCon, Connection newServerCon) throws SQLException
 	{
-		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT clan_id, type, skill_id, skill_level FROM clan_subpledges_skills");
-					PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO clan_subpledges_skills (clan_id, type, skill_id, skill_level) VALUES (?,?,?,?)");
-					ResultSet rset = oldServerStatement.executeQuery())
+		try (PreparedStatement oldServerStatement = oldServerCon.prepareStatement("SELECT clan_id, type, skill_id, skill_level FROM clan_subpledges_skills"); PreparedStatement newServerStatement = newServerCon.prepareStatement("INSERT INTO clan_subpledges_skills (clan_id, type, skill_id, skill_level) VALUES (?,?,?,?)"); ResultSet rset = oldServerStatement.executeQuery())
 		{
 			while (rset.next())
 			{

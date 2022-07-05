@@ -71,8 +71,7 @@ public class _005_MinersFavor extends Quest implements ScriptFile
 		{
 			st.takeItems(BOLTERS_SMELLY_SOCKS, -1);
 			st.giveItems(MINERS_PICK, 1, false);
-			if (st.getQuestItemsCount(BOLTERS_LIST) > 0
-						&& st.getQuestItemsCount(MINING_BOOTS) + st.getQuestItemsCount(MINERS_PICK) + st.getQuestItemsCount(BOOMBOOM_POWDER) + st.getQuestItemsCount(REDSTONE_BEER) == 4)
+			if (st.getQuestItemsCount(BOLTERS_LIST) > 0 && st.getQuestItemsCount(MINING_BOOTS) + st.getQuestItemsCount(MINERS_PICK) + st.getQuestItemsCount(BOOMBOOM_POWDER) + st.getQuestItemsCount(REDSTONE_BEER) == 4)
 			{
 				st.setCond(2);
 				st.playSound(SOUND_MIDDLE);
@@ -184,8 +183,7 @@ public class _005_MinersFavor extends Quest implements ScriptFile
 				}
 				break;
 			}
-			if (st.getQuestItemsCount(BOLTERS_LIST) > 0
-						&& st.getQuestItemsCount(MINING_BOOTS) + st.getQuestItemsCount(MINERS_PICK) + st.getQuestItemsCount(BOOMBOOM_POWDER) + st.getQuestItemsCount(REDSTONE_BEER) == 4)
+			if (st.getQuestItemsCount(BOLTERS_LIST) > 0 && st.getQuestItemsCount(MINING_BOOTS) + st.getQuestItemsCount(MINERS_PICK) + st.getQuestItemsCount(BOOMBOOM_POWDER) + st.getQuestItemsCount(REDSTONE_BEER) == 4)
 			{
 				st.setCond(2);
 				st.playSound(SOUND_MIDDLE);

@@ -503,8 +503,7 @@ public class _219_TestimonyOfFate extends Quest implements ScriptFile
 				{
 					htmltext = "30614-04.htm";
 				}
-				else if (st.getQuestItemsCount(AldersSkull1) > 0 || st.getQuestItemsCount(AldersSkull2) > 0 || st.getQuestItemsCount(AldersReceipt) > 0 || st.getQuestItemsCount(RevelationsManuscript) > 0
-							|| st.getQuestItemsCount(KairasInstructions) > 0 || st.getQuestItemsCount(KairasRecommendation) > 0)
+				else if (st.getQuestItemsCount(AldersSkull1) > 0 || st.getQuestItemsCount(AldersSkull2) > 0 || st.getQuestItemsCount(AldersReceipt) > 0 || st.getQuestItemsCount(RevelationsManuscript) > 0 || st.getQuestItemsCount(KairasInstructions) > 0 || st.getQuestItemsCount(KairasRecommendation) > 0)
 				{
 					htmltext = "30614-06.htm";
 				}
@@ -524,8 +523,7 @@ public class _219_TestimonyOfFate extends Quest implements ScriptFile
 			{
 				htmltext = "30463-02.htm";
 			}
-			else if (cond == 7 && st.getQuestItemsCount(MedusasIchor) >= 10 && st.getQuestItemsCount(MarshSpiderFluids) >= 10 && st.getQuestItemsCount(DeadSeekerDung) >= 10
-						&& st.getQuestItemsCount(TyrantsBlood) >= 10 && st.getQuestItemsCount(NightshadeRoot) >= 10)
+			else if (cond == 7 && st.getQuestItemsCount(MedusasIchor) >= 10 && st.getQuestItemsCount(MarshSpiderFluids) >= 10 && st.getQuestItemsCount(DeadSeekerDung) >= 10 && st.getQuestItemsCount(TyrantsBlood) >= 10 && st.getQuestItemsCount(NightshadeRoot) >= 10)
 			{
 				st.takeItems(MedusasIchor, -1);
 				st.takeItems(MarshSpiderFluids, -1);
@@ -547,8 +545,7 @@ public class _219_TestimonyOfFate extends Quest implements ScriptFile
 			{
 				htmltext = "30463-04.htm";
 			}
-			else if (st.getQuestItemsCount(AldersSkull1) > 0 || st.getQuestItemsCount(AldersSkull2) > 0 || st.getQuestItemsCount(AldersReceipt) > 0 || st.getQuestItemsCount(RevelationsManuscript) > 0
-						|| st.getQuestItemsCount(KairasInstructions) > 0 || st.getQuestItemsCount(KairasRecommendation) > 0)
+			else if (st.getQuestItemsCount(AldersSkull1) > 0 || st.getQuestItemsCount(AldersSkull2) > 0 || st.getQuestItemsCount(AldersReceipt) > 0 || st.getQuestItemsCount(RevelationsManuscript) > 0 || st.getQuestItemsCount(KairasInstructions) > 0 || st.getQuestItemsCount(KairasRecommendation) > 0)
 			{
 				htmltext = "30463-05.htm";
 			}
@@ -659,13 +656,11 @@ public class _219_TestimonyOfFate extends Quest implements ScriptFile
 				{
 					htmltext = "31845-01.htm";
 				}
-				else if (st.getQuestItemsCount(RedFairyDust) == 0 && st.getQuestItemsCount(PixyGarnet) > 0 && (st.getQuestItemsCount(GrandissSkull) < 10 || st.getQuestItemsCount(KarulBugbearSkull) < 10
-							|| st.getQuestItemsCount(BrekaOverlordSkull) < 10 || st.getQuestItemsCount(LetoOverlordSkull) < 10))
+				else if (st.getQuestItemsCount(RedFairyDust) == 0 && st.getQuestItemsCount(PixyGarnet) > 0 && (st.getQuestItemsCount(GrandissSkull) < 10 || st.getQuestItemsCount(KarulBugbearSkull) < 10 || st.getQuestItemsCount(BrekaOverlordSkull) < 10 || st.getQuestItemsCount(LetoOverlordSkull) < 10))
 				{
 					htmltext = "31845-03.htm";
 				}
-				else if (st.getQuestItemsCount(RedFairyDust) == 0 && st.getQuestItemsCount(PixyGarnet) > 0 && st.getQuestItemsCount(GrandissSkull) >= 10 && st.getQuestItemsCount(KarulBugbearSkull) >= 10
-							&& st.getQuestItemsCount(BrekaOverlordSkull) >= 10 && st.getQuestItemsCount(LetoOverlordSkull) >= 10)
+				else if (st.getQuestItemsCount(RedFairyDust) == 0 && st.getQuestItemsCount(PixyGarnet) > 0 && st.getQuestItemsCount(GrandissSkull) >= 10 && st.getQuestItemsCount(KarulBugbearSkull) >= 10 && st.getQuestItemsCount(BrekaOverlordSkull) >= 10 && st.getQuestItemsCount(LetoOverlordSkull) >= 10)
 				{
 					st.takeItems(GrandissSkull, -1);
 					st.takeItems(KarulBugbearSkull, -1);
@@ -741,8 +736,7 @@ public class _219_TestimonyOfFate extends Quest implements ScriptFile
 			st.setCond(3);
 			st.setState(STARTED);
 		}
-		else if (cond == 6 && st.getQuestItemsCount(MedusasIchor) >= 10 && st.getQuestItemsCount(MarshSpiderFluids) >= 10 && st.getQuestItemsCount(DeadSeekerDung) >= 10
-					&& st.getQuestItemsCount(TyrantsBlood) >= 10 && st.getQuestItemsCount(NightshadeRoot) >= 10)
+		else if (cond == 6 && st.getQuestItemsCount(MedusasIchor) >= 10 && st.getQuestItemsCount(MarshSpiderFluids) >= 10 && st.getQuestItemsCount(DeadSeekerDung) >= 10 && st.getQuestItemsCount(TyrantsBlood) >= 10 && st.getQuestItemsCount(NightshadeRoot) >= 10)
 		{
 			st.setCond(7);
 			st.setState(STARTED);

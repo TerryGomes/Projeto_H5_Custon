@@ -380,8 +380,7 @@ public class Hero
 		if (player.getClan() != null && player.getClan().getLevel() >= 5)
 		{
 			player.getClan().incReputation(1000, true, "Hero:activateHero:" + player);
-			player.getClan().broadcastToOtherOnlineMembers(new SystemMessage(SystemMessage.CLAN_MEMBER_S1_WAS_NAMED_A_HERO_2S_POINTS_HAVE_BEEN_ADDED_TO_YOUR_CLAN_REPUTATION_SCORE).addString(player.getName())
-						.addNumber(Math.round(1000 * Config.RATE_CLAN_REP_SCORE)), player);
+			player.getClan().broadcastToOtherOnlineMembers(new SystemMessage(SystemMessage.CLAN_MEMBER_S1_WAS_NAMED_A_HERO_2S_POINTS_HAVE_BEEN_ADDED_TO_YOUR_CLAN_REPUTATION_SCORE).addString(player.getName()).addNumber(Math.round(1000 * Config.RATE_CLAN_REP_SCORE)), player);
 		}
 		player.broadcastUserInfo(true);
 		updateHeroes(player.getObjectId());

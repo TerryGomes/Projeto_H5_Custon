@@ -28,8 +28,7 @@ public class AdminEffects implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_invis, admin_vis, admin_offline_vis, admin_offline_invis, admin_earthquake, admin_para_everybody, admin_para, admin_unpara_everybody, admin_unpara, admin_flag, admin_unflag, admin_changename,
-		admin_gmspeed, admin_invul, admin_setinvul, admin_getinvul, admin_social, admin_abnormal, admin_transform, admin_callskill, admin_showmovie, admin_liston, admin_listoff
+		admin_invis, admin_vis, admin_offline_vis, admin_offline_invis, admin_earthquake, admin_para_everybody, admin_para, admin_unpara_everybody, admin_unpara, admin_flag, admin_unflag, admin_changename, admin_gmspeed, admin_invul, admin_setinvul, admin_getinvul, admin_social, admin_abnormal, admin_transform, admin_callskill, admin_showmovie, admin_liston, admin_listoff
 	}
 
 	@Override

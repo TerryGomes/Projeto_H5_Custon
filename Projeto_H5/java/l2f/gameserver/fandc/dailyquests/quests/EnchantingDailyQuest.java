@@ -67,11 +67,9 @@ public class EnchantingDailyQuest extends AbstractDailyQuest
 		sb.append("Minimum level to start the quest is " + getMinLevel() + "<br>");
 		sb.append("Minimum enchant level of an armor to be counted is " + getSettings().getParameters().getString("ArmorMinEnchant") + ".<br>");
 		sb.append("Minimum enchant level of an weapon to be counted is " + getSettings().getParameters().getString("WeaponMinEnchant") + ".<br>");
-		sb.append("Everytime you enchant and item above it's minimal enchant level you will gain one point<br1> which means if u enchant an armor to +"
-					+ getSettings().getParameters().getString("ArmorMinEnchant") + " you will gain a point or a weapon to +" + getSettings().getParameters().getString("WeaponMinEnchant") + "<br>");
-		sb.append("For example if u have " + getSettings().getParameters().getString("WeaponMinEnchant") + " weapons to enchant you could enchant one weapon<br1> from +"
-					+ getSettings().getParameters().getString("WeaponMinEnchant") + " to +" + (getSettings().getParameters().getInteger("WeaponMinEnchant") * 2) + " in order to complete this step or "
-					+ getSettings().getParameters().getString("WeaponMinEnchant") + " different weapons to +" + getSettings().getParameters().getString("WeaponMinEnchant") + "<br>");
+		sb.append("Everytime you enchant and item above it's minimal enchant level you will gain one point<br1> which means if u enchant an armor to +" + getSettings().getParameters().getString("ArmorMinEnchant") + " you will gain a point or a weapon to +" + getSettings().getParameters().getString("WeaponMinEnchant") + "<br>");
+		sb.append("For example if u have " + getSettings().getParameters().getString("WeaponMinEnchant") + " weapons to enchant you could enchant one weapon<br1> from +" + getSettings().getParameters().getString("WeaponMinEnchant") + " to +" + (getSettings().getParameters().getInteger("WeaponMinEnchant") * 2) + " in order to complete this step or " + getSettings().getParameters().getString("WeaponMinEnchant") + " different weapons to +"
+					+ getSettings().getParameters().getString("WeaponMinEnchant") + "<br>");
 		return sb.toString();
 	}
 
@@ -165,8 +163,7 @@ public class EnchantingDailyQuest extends AbstractDailyQuest
 				{
 					return;
 				}
-				if ((item.isArmor() && (item.getEnchantLevel() < getSettings().getParameters().getInteger("ArmorMinEnchant", 4)))
-							|| (item.isWeapon() && (item.getEnchantLevel() < getSettings().getParameters().getInteger("WeaponMinEnchant", 7))))
+				if ((item.isArmor() && (item.getEnchantLevel() < getSettings().getParameters().getInteger("ArmorMinEnchant", 4))) || (item.isWeapon() && (item.getEnchantLevel() < getSettings().getParameters().getInteger("WeaponMinEnchant", 7))))
 				{
 					return;
 				}

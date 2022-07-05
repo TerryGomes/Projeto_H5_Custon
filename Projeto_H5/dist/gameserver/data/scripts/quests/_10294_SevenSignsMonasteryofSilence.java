@@ -214,8 +214,7 @@ public class _10294_SevenSignsMonasteryofSilence extends Quest implements Script
 		}
 		else if (event.equalsIgnoreCase("teleport_to_guardian"))
 		{
-			if (npc.getNpcId() == YellowRelicWatcher && st.getInt("yellow") != 0 || npc.getNpcId() == GreenRelicWatcher && st.getInt("green") != 0 || npc.getNpcId() == BlueRelicWatcher && st.getInt("blue") != 0
-						|| npc.getNpcId() == RedRelicWatcher && st.getInt("red") != 0)
+			if (npc.getNpcId() == YellowRelicWatcher && st.getInt("yellow") != 0 || npc.getNpcId() == GreenRelicWatcher && st.getInt("green") != 0 || npc.getNpcId() == BlueRelicWatcher && st.getInt("blue") != 0 || npc.getNpcId() == RedRelicWatcher && st.getInt("red") != 0)
 			{
 				htmltext = "relicwatcher_q10294_4.htm";
 			}

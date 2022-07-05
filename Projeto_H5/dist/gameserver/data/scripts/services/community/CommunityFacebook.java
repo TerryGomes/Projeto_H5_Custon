@@ -349,8 +349,7 @@ public class CommunityFacebook implements ScriptFile, ICommunityBoardHandler
 		sb.append("</td>");
 		sb.append("<td width=168>");
 		sb.append("<br>");
-		sb.append("<button value=\"Challenge Accepted\" action=\"bypass _bbsfacebook_startTask_" + actionType.toString()
-					+ "\" width=150 height=22 back=Btns.btn_simple_red_150x22_down fore=Btns.btn_simple_red_150x22 />");
+		sb.append("<button value=\"Challenge Accepted\" action=\"bypass _bbsfacebook_startTask_" + actionType.toString() + "\" width=150 height=22 back=Btns.btn_simple_red_150x22_down fore=Btns.btn_simple_red_150x22 />");
 		sb.append("</td>");
 		sb.append("</tr>");
 		sb.append("</table>");
@@ -404,10 +403,7 @@ public class CommunityFacebook implements ScriptFile, ICommunityBoardHandler
 		{
 			messages.append("<tr>");
 			messages.append("<td align=center height=50>");
-			messages.append("<font color=bc2b0e name=hs12>Comment to write "
-						+ (activeTask.getIdentityType() == FacebookIdentityType.ID || !ConfigHolder.getBool("FacebookRegistrationOnlyExactComment") ? "different comment will have to be approved"
-									: "<font color=ff0000 name=hs12>(COMMENT MUST BE 100% THE SAME!!!)</font>")
-						+ ":");
+			messages.append("<font color=bc2b0e name=hs12>Comment to write " + (activeTask.getIdentityType() == FacebookIdentityType.ID || !ConfigHolder.getBool("FacebookRegistrationOnlyExactComment") ? "different comment will have to be approved" : "<font color=ff0000 name=hs12>(COMMENT MUST BE 100% THE SAME!!!)</font>") + ":");
 			messages.append("</font><br1>");
 			messages.append("<font color=ff8e3b>");
 			messages.append(activeTask.getRequestedMessage());

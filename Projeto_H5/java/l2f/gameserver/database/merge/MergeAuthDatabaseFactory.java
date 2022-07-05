@@ -11,8 +11,7 @@ public class MergeAuthDatabaseFactory extends BasicDataSource
 {
 	public MergeAuthDatabaseFactory()
 	{
-		super(Config.DATABASE_DRIVER, ConfigHolder.getString("MergeAuthUrl"), ConfigHolder.getString("MergeAuthLogin"), ConfigHolder.getString("MergeAuthPassword"), Config.DATABASE_MAX_CONNECTIONS,
-					Config.DATABASE_MAX_CONNECTIONS, Config.DATABASE_MAX_IDLE_TIMEOUT, Config.DATABASE_IDLE_TEST_PERIOD, false);
+		super(Config.DATABASE_DRIVER, ConfigHolder.getString("MergeAuthUrl"), ConfigHolder.getString("MergeAuthLogin"), ConfigHolder.getString("MergeAuthPassword"), Config.DATABASE_MAX_CONNECTIONS, Config.DATABASE_MAX_CONNECTIONS, Config.DATABASE_MAX_IDLE_TIMEOUT, Config.DATABASE_IDLE_TEST_PERIOD, false);
 	}
 
 	@Override

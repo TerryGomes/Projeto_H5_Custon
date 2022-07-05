@@ -30,10 +30,7 @@ public abstract class ItemTemplate extends StatTemplate
 {
 	public static enum ReuseType
 	{
-		NORMAL(
-					SystemMsg.THERE_ARE_S2_SECONDS_REMAINING_IN_S1S_REUSE_TIME,
-					SystemMsg.THERE_ARE_S2_MINUTES_S3_SECONDS_REMAINING_IN_S1S_REUSE_TIME,
-					SystemMsg.THERE_ARE_S2_HOURS_S3_MINUTES_AND_S4_SECONDS_REMAINING_IN_S1S_REUSE_TIME)
+		NORMAL(SystemMsg.THERE_ARE_S2_SECONDS_REMAINING_IN_S1S_REUSE_TIME, SystemMsg.THERE_ARE_S2_MINUTES_S3_SECONDS_REMAINING_IN_S1S_REUSE_TIME, SystemMsg.THERE_ARE_S2_HOURS_S3_MINUTES_AND_S4_SECONDS_REMAINING_IN_S1S_REUSE_TIME)
 		{
 
 			@Override
@@ -42,10 +39,7 @@ public abstract class ItemTemplate extends StatTemplate
 				return System.currentTimeMillis() + item.getTemplate().getReuseDelay();
 			}
 		},
-		EVERY_DAY_AT_6_30(
-					SystemMsg.THERE_ARE_S2_SECONDS_REMAINING_FOR_S1S_REUSE_TIME,
-					SystemMsg.THERE_ARE_S2_MINUTES_S3_SECONDS_REMAINING_FOR_S1S_REUSE_TIME,
-					SystemMsg.THERE_ARE_S2_HOURS_S3_MINUTES_S4_SECONDS_REMAINING_FOR_S1S_REUSE_TIME)
+		EVERY_DAY_AT_6_30(SystemMsg.THERE_ARE_S2_SECONDS_REMAINING_FOR_S1S_REUSE_TIME, SystemMsg.THERE_ARE_S2_MINUTES_S3_SECONDS_REMAINING_FOR_S1S_REUSE_TIME, SystemMsg.THERE_ARE_S2_HOURS_S3_MINUTES_S4_SECONDS_REMAINING_FOR_S1S_REUSE_TIME)
 		{
 			private final SchedulingPattern _pattern = new SchedulingPattern("30 6 * * *");
 
@@ -670,27 +664,22 @@ public abstract class ItemTemplate extends StatTemplate
 
 	public boolean isLifeStone()
 	{
-		return ((_itemId >= 8723) && (_itemId <= 8762)) || ((_itemId >= 9573) && (_itemId <= 9576)) || ((_itemId >= 10483) && (_itemId <= 10486)) || ((_itemId >= 12754) && (_itemId <= 12763))
-					|| (_itemId == 12821) || (_itemId == 12822) || ((_itemId >= 12840) && (_itemId <= 12851)) || (_itemId == 14008) || ((_itemId >= 14166) && (_itemId <= 14169))
-					|| ((_itemId >= 16160) && (_itemId <= 16167)) || (_itemId == 16177) || (_itemId == 16178);
+		return ((_itemId >= 8723) && (_itemId <= 8762)) || ((_itemId >= 9573) && (_itemId <= 9576)) || ((_itemId >= 10483) && (_itemId <= 10486)) || ((_itemId >= 12754) && (_itemId <= 12763)) || (_itemId == 12821) || (_itemId == 12822) || ((_itemId >= 12840) && (_itemId <= 12851)) || (_itemId == 14008) || ((_itemId >= 14166) && (_itemId <= 14169)) || ((_itemId >= 16160) && (_itemId <= 16167)) || (_itemId == 16177) || (_itemId == 16178);
 	}
 
 	public boolean isEnchantScroll()
 	{
-		return ((_itemId >= 6569) && (_itemId <= 6578)) || ((_itemId >= 17255) && (_itemId <= 17264)) || ((_itemId >= 22314) && (_itemId <= 22323)) || ((_itemId >= 949) && (_itemId <= 962))
-					|| ((_itemId >= 729) && (_itemId <= 732));
+		return ((_itemId >= 6569) && (_itemId <= 6578)) || ((_itemId >= 17255) && (_itemId <= 17264)) || ((_itemId >= 22314) && (_itemId <= 22323)) || ((_itemId >= 949) && (_itemId <= 962)) || ((_itemId >= 729) && (_itemId <= 732));
 	}
 
 	public boolean isForgottenScroll()
 	{
-		return ((_itemId >= 10549) && (_itemId <= 10599)) || ((_itemId >= 12768) && (_itemId <= 12778)) || ((_itemId >= 14170) && (_itemId <= 14227)) || (_itemId == 17030)
-					|| ((_itemId >= 17034) && (_itemId <= 17039));
+		return ((_itemId >= 10549) && (_itemId <= 10599)) || ((_itemId >= 12768) && (_itemId <= 12778)) || ((_itemId >= 14170) && (_itemId <= 14227)) || (_itemId == 17030) || ((_itemId >= 17034) && (_itemId <= 17039));
 	}
 
 	public boolean isShieldNoEnchant()
 	{
-		return (_itemId == 11508) || (_itemId == 6377) || (_itemId == 11532) || (_itemId == 9441) || (_itemId == 16304) || (_itemId == 15621) || (_itemId == 16321) || (_itemId == 13471) || (_itemId == 15587)
-					|| (_itemId == 15604);
+		return (_itemId == 11508) || (_itemId == 6377) || (_itemId == 11532) || (_itemId == 9441) || (_itemId == 16304) || (_itemId == 15621) || (_itemId == 16321) || (_itemId == 13471) || (_itemId == 15587) || (_itemId == 15604);
 	}
 
 	public boolean isNoEnchant()
@@ -700,8 +689,7 @@ public abstract class ItemTemplate extends StatTemplate
 
 	public boolean isSigelNoEnchant()
 	{
-		return ((_itemId >= 12811) && (_itemId <= 12813)) || (_itemId == 16305) || (_itemId == 15588) || (_itemId == 15605) || (_itemId == 16322) || (_itemId == 15622) || (_itemId >= 13078)
-					|| (_itemId == 10119);
+		return ((_itemId >= 12811) && (_itemId <= 12813)) || (_itemId == 16305) || (_itemId == 15588) || (_itemId == 15605) || (_itemId == 16322) || (_itemId == 15622) || (_itemId >= 13078) || (_itemId == 10119);
 	}
 
 	public boolean isCodexBook()
@@ -736,8 +724,7 @@ public abstract class ItemTemplate extends StatTemplate
 
 	public boolean isTerritoryAccessory()
 	{
-		return ((_itemId >= 13740) && (_itemId <= 13748)) || ((_itemId >= 14592) && (_itemId <= 14600)) || ((_itemId >= 14664) && (_itemId <= 14672)) || ((_itemId >= 14801) && (_itemId <= 14809))
-					|| ((_itemId >= 15282) && (_itemId <= 15299));
+		return ((_itemId >= 13740) && (_itemId <= 13748)) || ((_itemId >= 14592) && (_itemId <= 14600)) || ((_itemId >= 14664) && (_itemId <= 14672)) || ((_itemId >= 14801) && (_itemId <= 14809)) || ((_itemId >= 15282) && (_itemId <= 15299));
 	}
 
 	public boolean isArrow()

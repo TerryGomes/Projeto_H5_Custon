@@ -245,9 +245,7 @@ public class _334_TheWishingPotion extends Quest implements ScriptFile
 
 	public boolean checkIngr(QuestState st)
 	{
-		if (st.getQuestItemsCount(AMBER_SCALE_ID) == 1 && st.getQuestItemsCount(WIND_SOULSTONE_ID) == 1 && st.getQuestItemsCount(GLASS_EYE_ID) == 1 && st.getQuestItemsCount(HORROR_ECTOPLASM_ID) == 1
-					&& st.getQuestItemsCount(SILENOS_HORN_ID) == 1 && st.getQuestItemsCount(ANT_SOLDIER_APHID_ID) == 1 && st.getQuestItemsCount(TYRANTS_CHITIN_ID) == 1
-					&& st.getQuestItemsCount(BUGBEAR_BLOOD_ID) == 1)
+		if (st.getQuestItemsCount(AMBER_SCALE_ID) == 1 && st.getQuestItemsCount(WIND_SOULSTONE_ID) == 1 && st.getQuestItemsCount(GLASS_EYE_ID) == 1 && st.getQuestItemsCount(HORROR_ECTOPLASM_ID) == 1 && st.getQuestItemsCount(SILENOS_HORN_ID) == 1 && st.getQuestItemsCount(ANT_SOLDIER_APHID_ID) == 1 && st.getQuestItemsCount(TYRANTS_CHITIN_ID) == 1 && st.getQuestItemsCount(BUGBEAR_BLOOD_ID) == 1)
 		{
 			st.setCond(4);
 			return true;

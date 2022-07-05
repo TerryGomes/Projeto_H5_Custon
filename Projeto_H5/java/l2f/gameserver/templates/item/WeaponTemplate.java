@@ -16,13 +16,13 @@ public final class WeaponTemplate extends ItemTemplate
 
 	public enum WeaponType implements ItemType
 	{
-		NONE(1, "Shield", null), SWORD(2, "Sword", Stats.SWORD_WPN_VULNERABILITY), BLUNT(3, "Blunt", Stats.BLUNT_WPN_VULNERABILITY), DAGGER(4, "Dagger", Stats.DAGGER_WPN_VULNERABILITY),
-		BOW(5, "Bow", Stats.BOW_WPN_VULNERABILITY), POLE(6, "Pole", Stats.POLE_WPN_VULNERABILITY), ETC(7, "Etc", null), FIST(8, "Fist", Stats.FIST_WPN_VULNERABILITY),
-		DUAL(9, "Dual Sword", Stats.DUAL_WPN_VULNERABILITY), DUALFIST(10, "Dual Fist", Stats.FIST_WPN_VULNERABILITY), BIGSWORD(11, "Big Sword", Stats.SWORD_WPN_VULNERABILITY), // Two
-																																												// Handed
-																																												// Swords
-		PET(12, "Pet", Stats.FIST_WPN_VULNERABILITY), ROD(13, "Rod", null), BIGBLUNT(14, "Big Blunt", Stats.BLUNT_WPN_VULNERABILITY), CROSSBOW(15, "Crossbow", Stats.CROSSBOW_WPN_VULNERABILITY),
-		RAPIER(16, "Rapier", Stats.DAGGER_WPN_VULNERABILITY), ANCIENTSWORD(17, "Ancient Sword", Stats.SWORD_WPN_VULNERABILITY), // Kamael 2h sword
+		NONE(1, "Shield", null), SWORD(2, "Sword", Stats.SWORD_WPN_VULNERABILITY), BLUNT(3, "Blunt", Stats.BLUNT_WPN_VULNERABILITY), DAGGER(4, "Dagger", Stats.DAGGER_WPN_VULNERABILITY), BOW(5, "Bow", Stats.BOW_WPN_VULNERABILITY), POLE(6, "Pole", Stats.POLE_WPN_VULNERABILITY), ETC(7, "Etc", null), FIST(8, "Fist", Stats.FIST_WPN_VULNERABILITY), DUAL(9, "Dual Sword", Stats.DUAL_WPN_VULNERABILITY), DUALFIST(10, "Dual Fist", Stats.FIST_WPN_VULNERABILITY),
+		BIGSWORD(11, "Big Sword", Stats.SWORD_WPN_VULNERABILITY), // Two
+																	// Handed
+																	// Swords
+		PET(12, "Pet", Stats.FIST_WPN_VULNERABILITY), ROD(13, "Rod", null), BIGBLUNT(14, "Big Blunt", Stats.BLUNT_WPN_VULNERABILITY), CROSSBOW(15, "Crossbow", Stats.CROSSBOW_WPN_VULNERABILITY), RAPIER(16, "Rapier", Stats.DAGGER_WPN_VULNERABILITY), ANCIENTSWORD(17, "Ancient Sword", Stats.SWORD_WPN_VULNERABILITY), // Kamael
+																																																																															// 2h
+																																																																															// sword
 		DUALDAGGER(18, "Dual Dagger", Stats.DAGGER_WPN_VULNERABILITY);
 
 		public final static WeaponType[] VALUES = values();

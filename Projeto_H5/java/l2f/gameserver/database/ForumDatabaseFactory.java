@@ -12,9 +12,7 @@ public class ForumDatabaseFactory extends BasicDataSource
 
 	public ForumDatabaseFactory()
 	{
-		super(ConfigHolder.getString("ForumDriver"), ConfigHolder.getString("ForumURL"), ConfigHolder.getString("ForumLogin"), ConfigHolder.getString("ForumPassword"),
-					ConfigHolder.getInt("ForumMaximumDbConnections"), ConfigHolder.getInt("ForumMaximumDbConnections"), ConfigHolder.getInt("ForumMaxIdleConnectionTimeout"),
-					ConfigHolder.getInt("ForumIdleConnectionTestPeriod"), false);
+		super(ConfigHolder.getString("ForumDriver"), ConfigHolder.getString("ForumURL"), ConfigHolder.getString("ForumLogin"), ConfigHolder.getString("ForumPassword"), ConfigHolder.getInt("ForumMaximumDbConnections"), ConfigHolder.getInt("ForumMaximumDbConnections"), ConfigHolder.getInt("ForumMaxIdleConnectionTimeout"), ConfigHolder.getInt("ForumIdleConnectionTestPeriod"), false);
 	}
 
 	@Override

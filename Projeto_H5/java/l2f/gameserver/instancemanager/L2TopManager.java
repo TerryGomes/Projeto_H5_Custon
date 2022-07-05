@@ -90,8 +90,7 @@ public class L2TopManager
 			s = new Socket("l2top.ru", 80);
 
 			s.setSoTimeout(30000);
-			String request = "GET " + address + " HTTP/1.1\r\n" + "User-Agent: http:\\" + Config.EXTERNAL_HOSTNAME + " server\r\n" + "Host: http:\\" + Config.EXTERNAL_HOSTNAME + " \r\n" + "Accept: */*\r\n"
-						+ "Connection: close\r\n" + "\r\n";
+			String request = "GET " + address + " HTTP/1.1\r\n" + "User-Agent: http:\\" + Config.EXTERNAL_HOSTNAME + " server\r\n" + "Host: http:\\" + Config.EXTERNAL_HOSTNAME + " \r\n" + "Accept: */*\r\n" + "Connection: close\r\n" + "\r\n";
 			s.getOutputStream().write(request.getBytes());
 			BufferedReader in = new BufferedReader(new InputStreamReader(s.getInputStream(), "Cp1251"));
 

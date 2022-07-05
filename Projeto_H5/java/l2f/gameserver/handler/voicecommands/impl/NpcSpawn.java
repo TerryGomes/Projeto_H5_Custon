@@ -156,8 +156,7 @@ public class NpcSpawn extends Functions implements IVoicedCommandHandler
 			sb.append("<tr><td width=160>");
 			sb.append("<font color=" + (isSpawned ? "00FF00" : "FF0000") + ">" + getNpcName(npcId) + "</font>");
 			sb.append("</td><td align=right>");
-			sb.append("<button value=\"" + (isSpawned ? "Unspawn" : "Spawn") + "\" action=\"bypass -h user_npcspawn " + (isSpawned ? ("unspawn " + objId) : ("spawn " + npcId))
-						+ "\" width=100 height=30 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">");
+			sb.append("<button value=\"" + (isSpawned ? "Unspawn" : "Spawn") + "\" action=\"bypass -h user_npcspawn " + (isSpawned ? ("unspawn " + objId) : ("spawn " + npcId)) + "\" width=100 height=30 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">");
 			sb.append("</td></tr>");
 		}
 		sb.append("</table></body></html>");

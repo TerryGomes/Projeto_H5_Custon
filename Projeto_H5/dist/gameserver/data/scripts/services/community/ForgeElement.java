@@ -35,18 +35,14 @@ public class ForgeElement
 					data[2] = heronot;
 					data[3] = slotclose;
 				}
-				else if (((item.isArmor()) && (((item.getAttributes().getFire() | item.getAttributes().getWater()) & (item.getAttributes().getWind() | item.getAttributes().getEarth())
-							& (item.getAttributes().getHoly() | item.getAttributes().getUnholy())) >= Config.BBS_FORGE_ARMOR_ATTRIBUTE_MAX))
-							|| ((item.isWeapon()) && (item.getAttributes().getValue() >= Config.BBS_FORGE_WEAPON_ATTRIBUTE_MAX)) || item.isAccessory() || item.getTemplate().isShield())
+				else if (((item.isArmor()) && (((item.getAttributes().getFire() | item.getAttributes().getWater()) & (item.getAttributes().getWind() | item.getAttributes().getEarth()) & (item.getAttributes().getHoly() | item.getAttributes().getUnholy())) >= Config.BBS_FORGE_ARMOR_ATTRIBUTE_MAX)) || ((item.isWeapon()) && (item.getAttributes().getValue() >= Config.BBS_FORGE_WEAPON_ATTRIBUTE_MAX)) || item.isAccessory() || item.getTemplate().isShield())
 				{
 					data[2] = maxenchant;
 					data[3] = slotclose;
 				}
 				else
 				{
-					data[2] = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:item:").append(slot).append("\" value=\"")
-								.append(new CustomMessage("common.enchant.attribute", player).toString()).append("\" width=120 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">")
-								.toString();
+					data[2] = new StringBuilder().append("<button action=\"bypass _bbsforge:attribute:item:").append(slot).append("\" value=\"").append(new CustomMessage("common.enchant.attribute", player).toString()).append("\" width=120 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">").toString();
 					/*
 					 * if (item.getTemplate().isPvP())
 					 * data[3] = pvp;
@@ -96,8 +92,7 @@ public class ForgeElement
 				}
 				else
 				{
-					data[2] = new StringBuilder().append("<button action=\"bypass _bbsforge:enchant:item:").append(slot).append("\" value=\"").append(new CustomMessage("common.enchant", player).toString())
-								.append("\"width=120 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">").toString();
+					data[2] = new StringBuilder().append("<button action=\"bypass _bbsforge:enchant:item:").append(slot).append("\" value=\"").append(new CustomMessage("common.enchant", player).toString()).append("\"width=120 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">").toString();
 					/*
 					 * if (item.getTemplate().isPvP())
 					 * data[3] = pvp;
@@ -148,8 +143,7 @@ public class ForgeElement
 				}
 				else
 				{
-					data[2] = new StringBuilder().append("<button action=\"bypass _bbsforge:foundation:item:").append(slot).append("\" value=\"").append(new CustomMessage("common.exchange", player).toString())
-								.append("\"width=120 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">").toString();
+					data[2] = new StringBuilder().append("<button action=\"bypass _bbsforge:foundation:item:").append(slot).append("\" value=\"").append(new CustomMessage("common.exchange", player).toString()).append("\"width=120 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\">").toString();
 					/*
 					 * if (item.getTemplate().isPvP())
 					 * data[3] = pvp;

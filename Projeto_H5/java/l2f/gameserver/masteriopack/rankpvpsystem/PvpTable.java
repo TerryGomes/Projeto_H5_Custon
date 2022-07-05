@@ -393,19 +393,14 @@ public class PvpTable
 					if (pvp.getDbStatus() == DBStatus.UPDATED)
 					{
 						// rank_pvp_system_pvp:
-						statement.addBatch("UPDATE rank_pvp_system_pvp SET kills=" + pvp.getKills() + ", kills_today=" + pvp.getKillsToday() + ", kills_legal=" + pvp.getKillsLegal() + ", kills_today_legal="
-									+ pvp.getKillsLegalToday() + ", rank_points=" + pvp.getRankPoints() + ", rank_points_today=" + pvp.getRankPointsToday() + ", kill_time=" + pvp.getKillTime() + ", kill_day="
-									+ pvp.getKillDay() + " WHERE killer_id=" + kps.getKillerId() + " AND victim_id=" + pvp.getVictimId());
+						statement.addBatch("UPDATE rank_pvp_system_pvp SET kills=" + pvp.getKills() + ", kills_today=" + pvp.getKillsToday() + ", kills_legal=" + pvp.getKillsLegal() + ", kills_today_legal=" + pvp.getKillsLegalToday() + ", rank_points=" + pvp.getRankPoints() + ", rank_points_today=" + pvp.getRankPointsToday() + ", kill_time=" + pvp.getKillTime() + ", kill_day=" + pvp.getKillDay() + " WHERE killer_id=" + kps.getKillerId() + " AND victim_id=" + pvp.getVictimId());
 						pvp.setDbStatus(DBStatus.NONE); // it is after query because PvP is updating in real time.
 						updateCount++;
 					}
 					else if (pvp.getDbStatus() == DBStatus.INSERTED)
 					{
 						// rank_pvp_system_pvp:
-						statement.addBatch(
-									"INSERT INTO rank_pvp_system_pvp (killer_id, victim_id, kills, kills_today, kills_legal, kills_today_legal, rank_points, rank_points_today, kill_time, kill_day) VALUES ("
-												+ kps.getKillerId() + ", " + pvp.getVictimId() + ", " + pvp.getKills() + ", " + pvp.getKillsToday() + ", " + pvp.getKillsLegal() + ", " + pvp.getKillsLegalToday()
-												+ ", " + pvp.getRankPoints() + ", " + pvp.getRankPointsToday() + ", " + pvp.getKillTime() + ", " + pvp.getKillDay() + ")");
+						statement.addBatch("INSERT INTO rank_pvp_system_pvp (killer_id, victim_id, kills, kills_today, kills_legal, kills_today_legal, rank_points, rank_points_today, kill_time, kill_day) VALUES (" + kps.getKillerId() + ", " + pvp.getVictimId() + ", " + pvp.getKills() + ", " + pvp.getKillsToday() + ", " + pvp.getKillsLegal() + ", " + pvp.getKillsLegalToday() + ", " + pvp.getRankPoints() + ", " + pvp.getRankPointsToday() + ", " + pvp.getKillTime() + ", " + pvp.getKillDay() + ")");
 						pvp.setDbStatus(DBStatus.NONE);
 						insertCount++;
 					}
@@ -414,16 +409,14 @@ public class PvpTable
 				if (kps.getDbStatus() == DBStatus.UPDATED)
 				{
 					// rank_pvp_system_pvp_summary:
-					statement.addBatch("UPDATE rank_pvp_system_pvp_summary SET pvp_exp=" + kps.getPvpExp() + ", total_war_kills=" + kps.getTotalWarKills() + ", total_war_kills_legal="
-								+ kps.getTotalWarKillsLegal() + ", max_rank_id=" + kps.getMaxRankId() + " WHERE killer_id=" + kps.getKillerId());
+					statement.addBatch("UPDATE rank_pvp_system_pvp_summary SET pvp_exp=" + kps.getPvpExp() + ", total_war_kills=" + kps.getTotalWarKills() + ", total_war_kills_legal=" + kps.getTotalWarKillsLegal() + ", max_rank_id=" + kps.getMaxRankId() + " WHERE killer_id=" + kps.getKillerId());
 					kps.setDbStatus(DBStatus.NONE);
 					updateCount++;
 				}
 				else if (kps.getDbStatus() == DBStatus.INSERTED)
 				{
 					// rank_pvp_system_pvp_summary:
-					statement.addBatch("INSERT INTO rank_pvp_system_pvp_summary (killer_id, pvp_exp, total_war_kills, total_war_kills_legal, max_rank_id) VALUES (" + kps.getKillerId() + ", " + kps.getPvpExp()
-								+ ", " + kps.getTotalWarKills() + ", " + kps.getTotalWarKillsLegal() + ", " + kps.getMaxRankId() + ")");
+					statement.addBatch("INSERT INTO rank_pvp_system_pvp_summary (killer_id, pvp_exp, total_war_kills, total_war_kills_legal, max_rank_id) VALUES (" + kps.getKillerId() + ", " + kps.getPvpExp() + ", " + kps.getTotalWarKills() + ", " + kps.getTotalWarKillsLegal() + ", " + kps.getMaxRankId() + ")");
 					kps.setDbStatus(DBStatus.NONE);
 					insertCount++;
 				}
@@ -519,8 +512,7 @@ public class PvpTable
 
 				if (up[0] == 0)
 				{
-					log.info("PvpTable: Data updated [" + up[1] + " inserts and " + up[2] + " updates] <<< Next update at "
-								+ RPSUtil.timeToString(Calendar.getInstance().getTimeInMillis() + RPSConfig.PVP_TABLE_UPDATE_INTERVAL));
+					log.info("PvpTable: Data updated [" + up[1] + " inserts and " + up[2] + " updates] <<< Next update at " + RPSUtil.timeToString(Calendar.getInstance().getTimeInMillis() + RPSConfig.PVP_TABLE_UPDATE_INTERVAL));
 				}
 
 				// update RPC here:

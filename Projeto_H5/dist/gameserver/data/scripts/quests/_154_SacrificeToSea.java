@@ -109,8 +109,7 @@ public class _154_SacrificeToSea extends Quest implements ScriptFile
 		{
 			htmltext = "30051-01.htm";
 		}
-		else if (npcId == 30051 && st.getCond() == 1 && st.getQuestItemsCount(FOX_FUR_ID) >= 10 && st.getQuestItemsCount(FOX_FUR_YARN_ID) == 0 && st.getQuestItemsCount(MAIDEN_DOLL_ID) == 0
-					&& st.getQuestItemsCount(MAIDEN_DOLL_ID) < 10)
+		else if (npcId == 30051 && st.getCond() == 1 && st.getQuestItemsCount(FOX_FUR_ID) >= 10 && st.getQuestItemsCount(FOX_FUR_YARN_ID) == 0 && st.getQuestItemsCount(MAIDEN_DOLL_ID) == 0 && st.getQuestItemsCount(MAIDEN_DOLL_ID) < 10)
 		{
 			htmltext = "30051-02.htm";
 			st.giveItems(FOX_FUR_YARN_ID, 1);

@@ -73,14 +73,12 @@ public class BuyWashPk extends Functions
 
 	private static String getPkButton(int i)
 	{
-		return "<a action=\"bypass -h scripts_services.BuyWashPk:cleanPk " + i + "\"> for " + i + " PK - " + Config.SERVICES_WASH_PK_PRICE * i + " "
-					+ ItemHolder.getInstance().getTemplate(Config.SERVICES_WASH_PK_ITEM).getName() + "</a><br>";
+		return "<a action=\"bypass -h scripts_services.BuyWashPk:cleanPk " + i + "\"> for " + i + " PK - " + Config.SERVICES_WASH_PK_PRICE * i + " " + ItemHolder.getInstance().getTemplate(Config.SERVICES_WASH_PK_ITEM).getName() + "</a><br>";
 	}
 
 	private static String getKarmaButton(int i)
 	{
-		return "<a action=\"bypass -h scripts_services.BuyWashPk:cleanKarma " + i + "\"> for " + i + " Karma - " + (Config.SERVICES_WASH_KARMA_PRICE * i) / 100 + " "
-					+ ItemHolder.getInstance().getTemplate(Config.SERVICES_WASH_KARMA_ITEM).getName() + "</a><br>";
+		return "<a action=\"bypass -h scripts_services.BuyWashPk:cleanKarma " + i + "\"> for " + i + " Karma - " + (Config.SERVICES_WASH_KARMA_PRICE * i) / 100 + " " + ItemHolder.getInstance().getTemplate(Config.SERVICES_WASH_KARMA_ITEM).getName() + "</a><br>";
 	}
 
 	public void cleanPk(String[] param)

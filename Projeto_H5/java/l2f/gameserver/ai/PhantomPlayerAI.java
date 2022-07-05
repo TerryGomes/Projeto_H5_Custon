@@ -766,8 +766,7 @@ public class PhantomPlayerAI extends PlayerAI implements OnAiEventListener, OnMa
 					// Check for physical skills to execute.
 					for (Skill skill : actor.getAllAvailableSkillsArray())
 					{
-						if (!skill.isActive() || !skill.isOffensive() || !skill.checkCondition(actor, target, false, false, true) || skill.getSkillType() == SkillType.AGGRESSION
-									|| skill.getSkillType() == SkillType.INSTANT_JUMP)
+						if (!skill.isActive() || !skill.isOffensive() || !skill.checkCondition(actor, target, false, false, true) || skill.getSkillType() == SkillType.AGGRESSION || skill.getSkillType() == SkillType.INSTANT_JUMP)
 						{
 							continue;
 						}
@@ -839,9 +838,7 @@ public class PhantomPlayerAI extends PlayerAI implements OnAiEventListener, OnMa
 		try
 		{
 			final LinkedList<Creature> lowPriorityTargets = new LinkedList<>();
-			final List<Creature> list = World.getAroundCharacters(getActor()).stream().filter(Objects::nonNull)
-						.filter(t -> !t.isRaid() && !t.isDead() && !t.isMinion() && !(t instanceof GuardInstance) && !t.isInvisible() && !t.isInvul() && t.isMonster() && !t.isTreasureChest())
-						.sorted(targetComparator).collect(Collectors.toList());
+			final List<Creature> list = World.getAroundCharacters(getActor()).stream().filter(Objects::nonNull).filter(t -> !t.isRaid() && !t.isDead() && !t.isMinion() && !(t instanceof GuardInstance) && !t.isInvisible() && !t.isInvul() && t.isMonster() && !t.isTreasureChest()).sorted(targetComparator).collect(Collectors.toList());
 
 			// Find a valid target to attack.
 			OUT:
@@ -1147,8 +1144,7 @@ public class PhantomPlayerAI extends PlayerAI implements OnAiEventListener, OnMa
 					List<NpcInstance> list = new ArrayList<NpcInstance>();
 					for (NpcInstance npc : World.getAroundNpc(_player, Config.PHANTOM_MAX_DRIFT_RANGE, 200))
 					{
-						if (npc != null && !npc.isInZone(ZoneType.RESIDENCE) && npc instanceof WarehouseInstance && Util.contains(Config.PHANTOM_ALLOWED_NPC_TO_WALK, npc.getNpcId())
-									&& !npc.getTitle().startsWith("Clan Hall"))
+						if (npc != null && !npc.isInZone(ZoneType.RESIDENCE) && npc instanceof WarehouseInstance && Util.contains(Config.PHANTOM_ALLOWED_NPC_TO_WALK, npc.getNpcId()) && !npc.getTitle().startsWith("Clan Hall"))
 						{
 							list.add(npc);
 						}
@@ -1185,8 +1181,7 @@ public class PhantomPlayerAI extends PlayerAI implements OnAiEventListener, OnMa
 					List<NpcInstance> list = new ArrayList<NpcInstance>();
 					for (NpcInstance npc : World.getAroundNpc(_player, Config.PHANTOM_MAX_DRIFT_RANGE, 200))
 					{
-						if (npc != null && !npc.isInZone(ZoneType.RESIDENCE) && npc instanceof MerchantInstance && Util.contains(Config.PHANTOM_ALLOWED_NPC_TO_WALK, npc.getNpcId())
-									&& !npc.getTitle().startsWith("Clan Hall"))
+						if (npc != null && !npc.isInZone(ZoneType.RESIDENCE) && npc instanceof MerchantInstance && Util.contains(Config.PHANTOM_ALLOWED_NPC_TO_WALK, npc.getNpcId()) && !npc.getTitle().startsWith("Clan Hall"))
 						{
 							list.add(npc);
 						}
@@ -1231,8 +1226,7 @@ public class PhantomPlayerAI extends PlayerAI implements OnAiEventListener, OnMa
 					List<NpcInstance> list = new ArrayList<NpcInstance>();
 					for (NpcInstance npc : World.getAroundNpc(_player, Config.PHANTOM_MAX_DRIFT_RANGE, 200))
 					{
-						if (npc != null && !npc.isMonster() && !npc.isRaid() && !npc.isBoss() && !npc.isInZone(ZoneType.RESIDENCE) && Util.contains(Config.PHANTOM_ALLOWED_NPC_TO_WALK, npc.getNpcId())
-									&& !npc.getTitle().startsWith("Clan Hall"))
+						if (npc != null && !npc.isMonster() && !npc.isRaid() && !npc.isBoss() && !npc.isInZone(ZoneType.RESIDENCE) && Util.contains(Config.PHANTOM_ALLOWED_NPC_TO_WALK, npc.getNpcId()) && !npc.getTitle().startsWith("Clan Hall"))
 						{
 							list.add(npc);
 						}
@@ -1442,14 +1436,9 @@ public class PhantomPlayerAI extends PlayerAI implements OnAiEventListener, OnMa
 
 		for (Zone zone : getActor().getZones())
 		{
-			if (zone.getName().contains("talking_island_town_peace_zone") || zone.getName().contains("darkelf_town_peace_zone") || zone.getName().contains("elf_town_peace")
-						|| zone.getName().contains("guldiocastle_town_peace") || zone.getName().contains("gludin_town_peace") || zone.getName().contains("dion_town_peace")
-						|| zone.getName().contains("floran_town_peace") || zone.getName().contains("giran_town_peace") || zone.getName().contains("orc_town_peace") || zone.getName().contains("dwarf_town_peace")
-						|| zone.getName().contains("oren_town_peace") || zone.getName().contains("hunter_town_peace") || zone.getName().contains("aden_town_peace")
-						|| zone.getName().contains("speaking_port_peace") || zone.getName().contains("gludin_port") || zone.getName().contains("giran_port") || zone.getName().contains("heiness_peace")
-						|| zone.getName().contains("godad_peace") || zone.getName().contains("rune_peace") || zone.getName().contains("gludio_airship_peace") || zone.getName().contains("schuttgart_town_peace")
-						|| zone.getName().contains("kamael_village_town_peace") || zone.getName().contains("keucereus_alliance_base_town_peace") || zone.getName().contains("giran_harbor_peace_alt")
-						|| zone.getName().contains("parnassus_peace"))
+			if (zone.getName().contains("talking_island_town_peace_zone") || zone.getName().contains("darkelf_town_peace_zone") || zone.getName().contains("elf_town_peace") || zone.getName().contains("guldiocastle_town_peace") || zone.getName().contains("gludin_town_peace") || zone.getName().contains("dion_town_peace") || zone.getName().contains("floran_town_peace") || zone.getName().contains("giran_town_peace") || zone.getName().contains("orc_town_peace")
+						|| zone.getName().contains("dwarf_town_peace") || zone.getName().contains("oren_town_peace") || zone.getName().contains("hunter_town_peace") || zone.getName().contains("aden_town_peace") || zone.getName().contains("speaking_port_peace") || zone.getName().contains("gludin_port") || zone.getName().contains("giran_port") || zone.getName().contains("heiness_peace") || zone.getName().contains("godad_peace") || zone.getName().contains("rune_peace")
+						|| zone.getName().contains("gludio_airship_peace") || zone.getName().contains("schuttgart_town_peace") || zone.getName().contains("kamael_village_town_peace") || zone.getName().contains("keucereus_alliance_base_town_peace") || zone.getName().contains("giran_harbor_peace_alt") || zone.getName().contains("parnassus_peace"))
 			{
 				return true;
 			}
@@ -1884,8 +1873,7 @@ public class PhantomPlayerAI extends PlayerAI implements OnAiEventListener, OnMa
 	protected void upgradeClass()
 	{
 		if (getActor().getClassId().getLevel() < 4 && // Not 3rd class
-					((getActor().getLevel() >= 20 && getActor().getClassId().getLevel() == 1) || (getActor().getLevel() >= 40 && getActor().getClassId().getLevel() == 2)
-								|| (getActor().getLevel() >= 75 && getActor().getClassId().getLevel() == 3)))
+					((getActor().getLevel() >= 20 && getActor().getClassId().getLevel() == 1) || (getActor().getLevel() >= 40 && getActor().getClassId().getLevel() == 2) || (getActor().getLevel() >= 75 && getActor().getClassId().getLevel() == 3)))
 		{
 
 			List<ClassId> classesToChoseFrom = new ArrayList<ClassId>(2);
@@ -2289,11 +2277,8 @@ public class PhantomPlayerAI extends PlayerAI implements OnAiEventListener, OnMa
 		if (actor == caster)
 		{
 			// Check if SOE is casted.
-			if (skill == SOE_BLESSED || skill == SOE_CLANHALL || skill == SOE_CASTLE || skill == SOE_BLESSED_CLANHALL || skill == SOE_BLESSED_CASTLE || skill == SOE || skill == SOE_TALKING_ISLAND_VILLAGE
-						|| skill == SOE_ELVEN_VILLAGE || skill == SOE_DARK_ELF_VILLAGE || skill == SOE_ORC_VILLAGE || skill == SOE_DWARVEN_VILLAGE || skill == SOE_GLUDIN_VILLAGE || skill == SOE_TOWN_OF_GLUDIO
-						|| skill == SOE_TOWN_OF_DION || skill == SOE_FLORAN_VILLAGE || skill == SOE_TOWN_OF_GIRAN || skill == SOE_HARDIN_ACADEMY || skill == SOE_HEINE || skill == SOE_TOWN_OF_OREN
-						|| skill == SOE_IVORY_TOWER || skill == SOE_HUNTERS_VILLAGE || skill == SOE_HUNTERS_VILLAGE || skill == SOE_TOWN_OF_GODDARD || skill == SOE_RUNE_TOWNSHIP
-						|| skill == SOE_TOWN_OF_SCHUTTGART || skill == SOE_KETRA_ORC_VILLAGE || skill == SOE_VARKA_SILENOS_VILLAGE || skill == SOE_KAMAEL_VILLAGE)
+			if (skill == SOE_BLESSED || skill == SOE_CLANHALL || skill == SOE_CASTLE || skill == SOE_BLESSED_CLANHALL || skill == SOE_BLESSED_CASTLE || skill == SOE || skill == SOE_TALKING_ISLAND_VILLAGE || skill == SOE_ELVEN_VILLAGE || skill == SOE_DARK_ELF_VILLAGE || skill == SOE_ORC_VILLAGE || skill == SOE_DWARVEN_VILLAGE || skill == SOE_GLUDIN_VILLAGE || skill == SOE_TOWN_OF_GLUDIO || skill == SOE_TOWN_OF_DION || skill == SOE_FLORAN_VILLAGE || skill == SOE_TOWN_OF_GIRAN
+						|| skill == SOE_HARDIN_ACADEMY || skill == SOE_HEINE || skill == SOE_TOWN_OF_OREN || skill == SOE_IVORY_TOWER || skill == SOE_HUNTERS_VILLAGE || skill == SOE_HUNTERS_VILLAGE || skill == SOE_TOWN_OF_GODDARD || skill == SOE_RUNE_TOWNSHIP || skill == SOE_TOWN_OF_SCHUTTGART || skill == SOE_KETRA_ORC_VILLAGE || skill == SOE_VARKA_SILENOS_VILLAGE || skill == SOE_KAMAEL_VILLAGE)
 			{
 				setMood(""); // Unset the SOE cast mood.
 			}

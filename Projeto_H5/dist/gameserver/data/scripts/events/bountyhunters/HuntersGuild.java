@@ -135,8 +135,7 @@ public class HuntersGuild extends Functions implements ScriptFile, IVoicedComman
 
 		double reputation = Math.min(Math.max((100 + success - fails) / 100., .25), 2.) * mod;
 
-		long adenarewardvalue = Math.round((target.level * Math.max(Math.log(target.level), 1) * 10 + Math.max((target.level - 60) * 33, 0) + Math.max((target.level - 65) * 50, 0)) * target.rateHp * mobcount
-					* Config.RATE_DROP_ADENA * player.getRateAdena() * reputation * .15);
+		long adenarewardvalue = Math.round((target.level * Math.max(Math.log(target.level), 1) * 10 + Math.max((target.level - 60) * 33, 0) + Math.max((target.level - 65) * 50, 0)) * target.rateHp * mobcount * Config.RATE_DROP_ADENA * player.getRateAdena() * reputation * .15);
 		if (Rnd.chance(30)) // Адена, 30% случаев
 		{
 			player.setVar("bhRewardId", "57", -1);
@@ -178,8 +177,7 @@ public class HuntersGuild extends Functions implements ScriptFile, IVoicedComman
 		{
 			return;
 		}
-		if (cha.isMonster() && !cha.isRaid() && killer != null && killer.getPlayer() != null && killer.getPlayer().getVar("bhMonstersId") != null
-					&& Integer.parseInt(killer.getPlayer().getVar("bhMonstersId")) == cha.getNpcId())
+		if (cha.isMonster() && !cha.isRaid() && killer != null && killer.getPlayer() != null && killer.getPlayer().getVar("bhMonstersId") != null && Integer.parseInt(killer.getPlayer().getVar("bhMonstersId")) == cha.getNpcId())
 		{
 			int count = Integer.parseInt(killer.getPlayer().getVar("bhMonstersKilled")) + 1;
 			killer.getPlayer().setVar("bhMonstersKilled", String.valueOf(count), -1);

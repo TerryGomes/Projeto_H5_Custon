@@ -401,10 +401,7 @@ public class SchedulingPattern
 			ValueMatcher dayOfMonthMatcher = dayOfMonthMatchers.get(i);
 			ValueMatcher monthMatcher = monthMatchers.get(i);
 			ValueMatcher dayOfWeekMatcher = dayOfWeekMatchers.get(i);
-			boolean eval = minuteMatcher.match(minute) && hourMatcher.match(hour)
-						&& ((dayOfMonthMatcher instanceof DayOfMonthValueMatcher) ? ((DayOfMonthValueMatcher) dayOfMonthMatcher).match(dayOfMonth, month, gc.isLeapYear(year))
-									: dayOfMonthMatcher.match(dayOfMonth))
-						&& monthMatcher.match(month) && dayOfWeekMatcher.match(dayOfWeek);
+			boolean eval = minuteMatcher.match(minute) && hourMatcher.match(hour) && ((dayOfMonthMatcher instanceof DayOfMonthValueMatcher) ? ((DayOfMonthValueMatcher) dayOfMonthMatcher).match(dayOfMonth, month, gc.isLeapYear(year)) : dayOfMonthMatcher.match(dayOfMonth)) && monthMatcher.match(month) && dayOfWeekMatcher.match(dayOfWeek);
 			if (eval)
 			{
 				return true;

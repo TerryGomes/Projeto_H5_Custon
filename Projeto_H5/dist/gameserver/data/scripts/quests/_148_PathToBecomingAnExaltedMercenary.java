@@ -129,8 +129,7 @@ public class _148_PathToBecomingAnExaltedMercenary extends Quest implements Scri
 				if (killedCount < maxCount)
 				{
 					st.set("enemies", killedCount);
-					st.getPlayer().sendPacket(new ExShowScreenMessage(NpcString.YOU_HAVE_DEFEATED_S2_OF_S1_ENEMIES, 4000, ExShowScreenMessage.ScreenMessageAlign.TOP_CENTER, true, String.valueOf(maxCount),
-								String.valueOf(killedCount)));
+					st.getPlayer().sendPacket(new ExShowScreenMessage(NpcString.YOU_HAVE_DEFEATED_S2_OF_S1_ENEMIES, 4000, ExShowScreenMessage.ScreenMessageAlign.TOP_CENTER, true, String.valueOf(maxCount), String.valueOf(killedCount)));
 				}
 				else
 				{

@@ -27,9 +27,7 @@ public class CharactersLevel implements ProxyRequirement
 
 	private static int getBiggestLevel(String accountName)
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement(
-								"SELECT level FROM character_subclasses INNER JOIN characters ON character_subclasses.char_obj_id=characters.obj_Id WHERE characters.account_name = ? ORDER BY level DESC LIMIT 1"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT level FROM character_subclasses INNER JOIN characters ON character_subclasses.char_obj_id=characters.obj_Id WHERE characters.account_name = ? ORDER BY level DESC LIMIT 1"))
 		{
 			statement.setString(1, accountName);
 			try (ResultSet rset = statement.executeQuery())

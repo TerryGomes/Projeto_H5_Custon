@@ -44,9 +44,7 @@ public class FakePlayersEngine
 
 	public static FakePlayer getNewFakePlayer()
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("SELECT account_name, obj_Id, clanid FROM characters WHERE pvpkills > 0 AND obj_Id != 268480334 ORDER BY pvpkills DESC");
-					ResultSet rset = statement.executeQuery())
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT account_name, obj_Id, clanid FROM characters WHERE pvpkills > 0 AND obj_Id != 268480334 ORDER BY pvpkills DESC"); ResultSet rset = statement.executeQuery())
 		{
 			while (rset.next())
 			{

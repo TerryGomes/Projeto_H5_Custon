@@ -76,8 +76,7 @@ public class VoteManager extends DocumentParser
 								{
 									if ("reward".equals(rew.getNodeName()))
 									{
-										VoteReward reward = new VoteReward(Integer.parseInt(rew.getAttributes().getNamedItem("itemId").getNodeValue()),
-													Integer.parseInt(rew.getAttributes().getNamedItem("count").getNodeValue()));
+										VoteReward reward = new VoteReward(Integer.parseInt(rew.getAttributes().getNamedItem("itemId").getNodeValue()), Integer.parseInt(rew.getAttributes().getNamedItem("count").getNodeValue()));
 
 										if (rew.getAttributes().getNamedItem("chance") != null)
 										{
@@ -97,8 +96,7 @@ public class VoteManager extends DocumentParser
 										{
 											if ("buff".equals(bf.getNodeName()))
 											{
-												VoteBuff buff = new VoteBuff(SkillTable.getInstance().getInfo(Integer.parseInt(bf.getAttributes().getNamedItem("id").getNodeValue()),
-															Integer.parseInt(bf.getAttributes().getNamedItem("level").getNodeValue())));
+												VoteBuff buff = new VoteBuff(SkillTable.getInstance().getInfo(Integer.parseInt(bf.getAttributes().getNamedItem("id").getNodeValue()), Integer.parseInt(bf.getAttributes().getNamedItem("level").getNodeValue())));
 
 												if (bf.getAttributes().getNamedItem("chance") != null)
 												{

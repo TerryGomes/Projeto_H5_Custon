@@ -42,8 +42,7 @@ public final class FacebookDatabaseHandler
 
 	public static void deleteCompletedTask(CompletedTask task)
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("DELETE FROM facebook_completed_tasks WHERE player_id = ? AND action_id = ? AND action_type_name = ? AND father_id = ?"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("DELETE FROM facebook_completed_tasks WHERE player_id = ? AND action_id = ? AND action_type_name = ? AND father_id = ?"))
 		{
 			statement.setInt(1, task.getPlayerId());
 			statement.setString(2, task.getId() == null ? "" : task.getId());
@@ -60,9 +59,7 @@ public final class FacebookDatabaseHandler
 	public static ArrayList<CompletedTask> loadCompletedTasks()
 	{
 		final ArrayList<CompletedTask> tasks = new ArrayList<CompletedTask>();
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("SELECT * FROM facebook_completed_tasks");
-					ResultSet rset = statement.executeQuery())
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT * FROM facebook_completed_tasks"); ResultSet rset = statement.executeQuery())
 		{
 			while (rset.next())
 			{

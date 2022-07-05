@@ -99,7 +99,7 @@ public class Say2C extends L2GameClientPacket
 
 		/**
 		_text = _text.replaceAll("\\\\n", "\n");
-
+		
 		if (_text.contains("\n"))
 		{
 			String[] lines = _text.split("\n");
@@ -154,8 +154,7 @@ public class Say2C extends L2GameClientPacket
 			activeChar.sendActionFailed();
 			return;
 		}
-		if (activeChar.getLevel() <= Config.CHATS_REQUIRED_LEVEL && activeChar.getSubClasses().size() <= 1 && (!_text.startsWith(".") || Config.NOT_USE_USER_VOICED)
-					&& (_type == ChatType.ALL && (receiver == null || !receiver.isGM())))
+		if (activeChar.getLevel() <= Config.CHATS_REQUIRED_LEVEL && activeChar.getSubClasses().size() <= 1 && (!_text.startsWith(".") || Config.NOT_USE_USER_VOICED) && (_type == ChatType.ALL && (receiver == null || !receiver.isGM())))
 		{
 			activeChar.sendMessage("This Chat is allowed only for characters with level higher than " + Config.CHATS_REQUIRED_LEVEL + " to avoid spam!");
 			activeChar.sendActionFailed();
@@ -420,8 +419,7 @@ public class Say2C extends L2GameClientPacket
 
 		// Synerge - Emotions system
 		int emotion = EmotionsTable.containsEmotion(_text);
-		if (emotion != -1 && !World.getAroundPlayers(activeChar, 300, 300).isEmpty() && !activeChar.isInCombat() && !activeChar.isDead() && !activeChar.isCastingNow() && !activeChar.isSitting()
-					&& !activeChar.isNotShowEmotions())
+		if (emotion != -1 && !World.getAroundPlayers(activeChar, 300, 300).isEmpty() && !activeChar.isInCombat() && !activeChar.isDead() && !activeChar.isCastingNow() && !activeChar.isSitting() && !activeChar.isNotShowEmotions())
 		{
 			activeChar.broadcastPacket(new SocialAction(activeChar.getObjectId(), emotion));
 		}

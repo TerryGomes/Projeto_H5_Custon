@@ -175,8 +175,7 @@ public class CommunityBosses implements ScriptFile, ICommunityBoardHandler
 			builder.append("<td width=300 height=25><center><font name=__SYSTEMWORLDFONT color=F26262>").append(temp.getName()).append("</font></center></td>");
 			builder.append("<td width=73 height=25><center><font name=__SYSTEMWORLDFONT color=C8C8C8>").append(temp.level).append("</font></center></td>");
 			builder.append("<td width=130 height=25><center><font name=__SYSTEMWORLDFONT color=").append(getAliveColor(isAlive)).append('>').append(isAlive ? "Alive" : "Dead").append("</font></center></td>");
-			builder.append("<td width=240 height=25><center><button value=\"Details\" action=\"bypass _bbsboss_%sort%_").append(page).append("_ %search% _").append(entry.getKey())
-						.append("\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"></center></td>");
+			builder.append("<td width=240 height=25><center><button value=\"Details\" action=\"bypass _bbsboss_%sort%_").append(page).append("_ %search% _").append(entry.getKey()).append("\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"></center></td>");
 			builder.append("</tr></table>");
 			i++;
 		}
@@ -184,8 +183,7 @@ public class CommunityBosses implements ScriptFile, ICommunityBoardHandler
 		builder.append("<center><table width=760><tr>");
 		if (page > 0)
 		{
-			builder.append("<td width=380 align=right><button value=\"Prev\" action=\"bypass _bbsbosslist_%sort%_").append(page - 1)
-						.append("_%search%\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"></td>");
+			builder.append("<td width=380 align=right><button value=\"Prev\" action=\"bypass _bbsbosslist_%sort%_").append(page - 1).append("_%search%\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"></td>");
 		}
 		else
 		{
@@ -194,8 +192,7 @@ public class CommunityBosses implements ScriptFile, ICommunityBoardHandler
 		// Next
 		if (nextPage)
 		{
-			builder.append("<td width=380 align=left><button value=\"Next\" action=\"bypass _bbsbosslist_%sort%_").append(page + 1)
-						.append("_%search%\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"></td>");
+			builder.append("<td width=380 align=left><button value=\"Next\" action=\"bypass _bbsbosslist_%sort%_").append(page + 1).append("_%search%\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"></td>");
 		}
 		else
 		{

@@ -374,8 +374,7 @@ public class RequestExSendPost extends L2GameClientPacket
 					if (item.getItemId() == ItemTemplate.ITEM_ID_ADENA && item.getCount() >= 1000000000)
 					{
 						_log.warn("=============================================================");
-						_log.warn("The player " + activeChar.getName() + " sent to " + _recieverName + " in a mail Adena (" + String.format(Locale.US, "%,d", item.getCount()).replace(',', '.')
-									+ "). Possible adena botter!!!");
+						_log.warn("The player " + activeChar.getName() + " sent to " + _recieverName + " in a mail Adena (" + String.format(Locale.US, "%,d", item.getCount()).replace(',', '.') + "). Possible adena botter!!!");
 						_log.warn("=============================================================");
 					}
 				}

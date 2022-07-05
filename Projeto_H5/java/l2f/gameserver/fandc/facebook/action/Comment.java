@@ -112,7 +112,6 @@ public class Comment implements FacebookAction
 	@Override
 	public String toString()
 	{
-		return "Comment{id='" + id + '\'' + ", executor=" + executor + ", message='" + message + '\'' + ", createdTime=" + createdTime + ", extractionDate=" + extractionDate + ", fatherAction=" + fatherAction
-					+ '}';
+		return "Comment{id='" + id + '\'' + ", executor=" + executor + ", message='" + message + '\'' + ", createdTime=" + createdTime + ", extractionDate=" + extractionDate + ", fatherAction=" + fatherAction + '}';
 	}
 }

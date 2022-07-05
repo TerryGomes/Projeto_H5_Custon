@@ -162,8 +162,7 @@ public class _407_PathToElvenScout extends Quest implements ScriptFile
 				htmltext = "guard_moretti_q0407_04.htm";
 				break;
 			case 3:
-				if (st.getQuestItemsCount(PRIGUNS_TEAR_LETTER1_ID) == 1 && st.getQuestItemsCount(PRIGUNS_TEAR_LETTER2_ID) == 1 && st.getQuestItemsCount(PRIGUNS_TEAR_LETTER3_ID) == 1
-							&& st.getQuestItemsCount(PRIGUNS_TEAR_LETTER4_ID) == 1)
+				if (st.getQuestItemsCount(PRIGUNS_TEAR_LETTER1_ID) == 1 && st.getQuestItemsCount(PRIGUNS_TEAR_LETTER2_ID) == 1 && st.getQuestItemsCount(PRIGUNS_TEAR_LETTER3_ID) == 1 && st.getQuestItemsCount(PRIGUNS_TEAR_LETTER4_ID) == 1)
 				{
 					htmltext = "guard_moretti_q0407_06.htm";
 					st.takeItems(PRIGUNS_TEAR_LETTER1_ID, 1);

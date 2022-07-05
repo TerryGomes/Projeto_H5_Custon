@@ -906,8 +906,7 @@ public final class Player extends Playable implements PlayerGroup
 		long seconds = (long) Math.ceil((timeleft - (hours * 3600000) - (minutes * 60000)) / 1000.);
 		if (hours > 0)
 		{
-			sendPacket(new SystemMessage(SystemMessage.THERE_ARE_S2_HOURS_S3_MINUTES_AND_S4_SECONDS_REMAINING_IN_S1S_REUSE_TIME).addSkillName(skill.getId(), skill.getDisplayLevel()).addNumber(hours)
-						.addNumber(minutes).addNumber(seconds));
+			sendPacket(new SystemMessage(SystemMessage.THERE_ARE_S2_HOURS_S3_MINUTES_AND_S4_SECONDS_REMAINING_IN_S1S_REUSE_TIME).addSkillName(skill.getId(), skill.getDisplayLevel()).addNumber(hours).addNumber(minutes).addNumber(seconds));
 		}
 		else if (minutes > 0)
 		{
@@ -4329,8 +4328,7 @@ public final class Player extends Playable implements PlayerGroup
 
 	public boolean atMutualWarWith(Player player)
 	{
-		return (_clan != null) && (player.getClan() != null) && (getPledgeType() != -1) && (player.getPledgeType() != -1) && _clan.isAtWarWith(player.getClan().getClanId())
-					&& player.getClan().isAtWarWith(_clan.getClanId());
+		return (_clan != null) && (player.getClan() != null) && (getPledgeType() != -1) && (player.getPledgeType() != -1) && _clan.isAtWarWith(player.getClan().getClanId()) && player.getClan().isAtWarWith(_clan.getClanId());
 	}
 
 	public final void doPurePk(Player killer)
@@ -4473,9 +4471,7 @@ public final class Player extends Playable implements PlayerGroup
 				if (AntiFeedManager.getInstance().check(killer, this))
 				{
 					pk.getClan().incSiegeKills();
-					if (((siegeEventPk.getSiegeClan("defenders", pk.getClan()) != siegeEvent.getSiegeClan("attackers", getClan()))
-								|| (siegeEventPk.getSiegeClan("attackers", pk.getClan()) != siegeEvent.getSiegeClan("defenders", getClan()))) && (pk.getClan().getReputationScore() > 0)
-								&& (_clan.getLevel() >= 5) && (_clan.getReputationScore() > 0) && (pk.getClan().getLevel() >= 5))
+					if (((siegeEventPk.getSiegeClan("defenders", pk.getClan()) != siegeEvent.getSiegeClan("attackers", getClan())) || (siegeEventPk.getSiegeClan("attackers", pk.getClan()) != siegeEvent.getSiegeClan("defenders", getClan()))) && (pk.getClan().getReputationScore() > 0) && (_clan.getLevel() >= 5) && (_clan.getReputationScore() > 0) && (pk.getClan().getLevel() >= 5))
 					{
 						_clan.broadcastToOtherOnlineMembers(new SystemMessage(1782).addString(getName()).addNumber(-_clan.incReputation(-repValue, true, "ClanWar")), this);
 						pk.getClan().broadcastToOtherOnlineMembers(new SystemMessage(1783).addNumber(pk.getClan().incReputation(repValue, true, "ClanWar")), pk);
@@ -4494,10 +4490,7 @@ public final class Player extends Playable implements PlayerGroup
 			}
 			FortressSiegeEvent fsiegeEvent = getEvent(FortressSiegeEvent.class);
 			FortressSiegeEvent fsiegeEventPk = pk.getEvent(FortressSiegeEvent.class);
-			if ((fsiegeEvent != null) && (fsiegeEvent == fsiegeEventPk) && (pk.getClan() != null) && (_clan != null)
-						&& ((fsiegeEventPk.getSiegeClan("defenders", pk.getClan()) != fsiegeEvent.getSiegeClan("attackers", getClan()))
-									|| (fsiegeEventPk.getSiegeClan("attackers", pk.getClan()) != fsiegeEvent.getSiegeClan("defenders", getClan())))
-						&& (pk.getClan().getReputationScore() > 0) && (_clan.getLevel() >= 5) && (_clan.getReputationScore() > 0) && (pk.getClan().getLevel() >= 5))
+			if ((fsiegeEvent != null) && (fsiegeEvent == fsiegeEventPk) && (pk.getClan() != null) && (_clan != null) && ((fsiegeEventPk.getSiegeClan("defenders", pk.getClan()) != fsiegeEvent.getSiegeClan("attackers", getClan())) || (fsiegeEventPk.getSiegeClan("attackers", pk.getClan()) != fsiegeEvent.getSiegeClan("defenders", getClan()))) && (pk.getClan().getReputationScore() > 0) && (_clan.getLevel() >= 5) && (_clan.getReputationScore() > 0) && (pk.getClan().getLevel() >= 5))
 			{
 				// Synerge - Antifeed system
 				if (AntiFeedManager.getInstance().check(killer, this))
@@ -4508,10 +4501,7 @@ public final class Player extends Playable implements PlayerGroup
 			}
 			ClanHallSiegeEvent chsiegeEvent = getEvent(ClanHallSiegeEvent.class);
 			ClanHallSiegeEvent chsiegeEventPk = pk.getEvent(ClanHallSiegeEvent.class);
-			if ((chsiegeEvent != null) && (pk.getClan() != null) && (chsiegeEvent == chsiegeEventPk)
-						&& ((chsiegeEventPk.getSiegeClan("defenders", pk.getClan()) != chsiegeEvent.getSiegeClan("attackers", getClan()))
-									|| (chsiegeEventPk.getSiegeClan("attackers", pk.getClan()) != chsiegeEvent.getSiegeClan("defenders", getClan())))
-						&& (pk.getClan().getReputationScore() > 0) && (_clan.getLevel() >= 5) && (_clan.getReputationScore() > 0) && (pk.getClan().getLevel() >= 5))
+			if ((chsiegeEvent != null) && (pk.getClan() != null) && (chsiegeEvent == chsiegeEventPk) && ((chsiegeEventPk.getSiegeClan("defenders", pk.getClan()) != chsiegeEvent.getSiegeClan("attackers", getClan())) || (chsiegeEventPk.getSiegeClan("attackers", pk.getClan()) != chsiegeEvent.getSiegeClan("defenders", getClan()))) && (pk.getClan().getReputationScore() > 0) && (_clan.getLevel() >= 5) && (_clan.getReputationScore() > 0) && (pk.getClan().getLevel() >= 5))
 			{
 				// Synerge - Antifeed system
 				if (AntiFeedManager.getInstance().check(killer, this))
@@ -5847,11 +5837,7 @@ public final class Player extends Playable implements PlayerGroup
 	{
 		Player player = null;
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					Statement statement = con.createStatement();
-					Statement statement2 = con.createStatement();
-					ResultSet rset = statement.executeQuery("SELECT * FROM `characters` WHERE `obj_Id`=" + objectId + " LIMIT 1");
-					ResultSet rset2 = statement2.executeQuery("SELECT `class_id` FROM `character_subclasses` WHERE `char_obj_id`=" + objectId + " AND `isBase`=1 LIMIT 1"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); Statement statement = con.createStatement(); Statement statement2 = con.createStatement(); ResultSet rset = statement.executeQuery("SELECT * FROM `characters` WHERE `obj_Id`=" + objectId + " LIMIT 1"); ResultSet rset2 = statement2.executeQuery("SELECT `class_id` FROM `character_subclasses` WHERE `char_obj_id`=" + objectId + " AND `isBase`=1 LIMIT 1"))
 		{
 			if (rset.next() && rset2.next())
 			{
@@ -6399,8 +6385,7 @@ public final class Player extends Playable implements PlayerGroup
 									"UPDATE characters SET face=?,hairStyle=?,hairColor=?,x=?,y=?,z=?" + //
 												",karma=?,pvpkills=?,pkkills=?,rec_have=?,rec_left=?,rec_bonus_time=?,hunt_points=?,hunt_time=?,clanid=?,deletetime=?," + //
 												"title=?,accesslevel=?,online=?,leaveclan=?,deleteclan=?,nochannel=?," + //
-												"onlinetime=?,pledge_type=?,pledge_rank=?,lvl_joined_academy=?,apprentice=?,key_bindings=?,pcBangPoints=?,char_name=?,vitality=?,"
-												+ "fame=?,bookmarks=?,hwid_lock=?,raidkills=?,eventKills=?,siege_kills=?,oly_wins=?,facebook_id=?,forum_login=? WHERE obj_Id=? LIMIT 1");)
+												"onlinetime=?,pledge_type=?,pledge_rank=?,lvl_joined_academy=?,apprentice=?,key_bindings=?,pcBangPoints=?,char_name=?,vitality=?," + "fame=?,bookmarks=?,hwid_lock=?,raidkills=?,eventKills=?,siege_kills=?,oly_wins=?,facebook_id=?,forum_login=? WHERE obj_Id=? LIMIT 1");)
 			{
 				statement.setInt(1, getFace());
 				statement.setInt(2, getHairStyle());
@@ -6523,8 +6508,7 @@ public final class Player extends Playable implements PlayerGroup
 		// Synerge - Fix If the skill existed before, then we must transfer its reuse to the new level. Its a known exploit of enchant a skill to reset its reuse
 		if (getKnownSkill(newSkill.getId()) != null)
 		{
-			disableSkillByNewLvl(SkillTable.getInstance().getInfo(newSkill.getId(), getKnownSkill(newSkill.getId()).getLevel()).hashCode(),
-						SkillTable.getInstance().getInfo(newSkill.getId(), newSkill.getLevel()).hashCode());
+			disableSkillByNewLvl(SkillTable.getInstance().getInfo(newSkill.getId(), getKnownSkill(newSkill.getId()).getLevel()).hashCode(), SkillTable.getInstance().getInfo(newSkill.getId(), newSkill.getLevel()).hashCode());
 		}
 		// Add a skill to the L2Player _skills and its Func objects to the calculator set of the L2Player
 		Skill oldSkill = super.addSkill(newSkill);
@@ -6576,8 +6560,7 @@ public final class Player extends Playable implements PlayerGroup
 
 		if (oldSkill != null)
 		{
-			try (Connection con = DatabaseFactory.getInstance().getConnection();
-						PreparedStatement statement = con.prepareStatement("DELETE FROM character_skills WHERE skill_id=? AND char_obj_id=? AND class_index=?"))
+			try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("DELETE FROM character_skills WHERE skill_id=? AND char_obj_id=? AND class_index=?"))
 			{
 				// Remove or update a L2Player skill from the character_skills table of the database
 				statement.setInt(1, oldSkill.getId());
@@ -6625,8 +6608,7 @@ public final class Player extends Playable implements PlayerGroup
 			return;
 		}
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("REPLACE INTO character_skills (char_obj_id,skill_id,skill_level,class_index) values(?,?,?,?)"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("REPLACE INTO character_skills (char_obj_id,skill_id,skill_level,class_index) values(?,?,?,?)"))
 		{
 			statement.setInt(1, getObjectId());
 			statement.setInt(2, newSkill.getId());
@@ -6788,8 +6770,7 @@ public final class Player extends Playable implements PlayerGroup
 		try (Connection con = DatabaseFactory.getInstance().getConnection(); Statement statement = con.createStatement();)
 		{
 
-			try (ResultSet rset = statement
-						.executeQuery("SELECT skill_id,skill_level,end_time,reuse_delay_org FROM character_skills_save WHERE char_obj_id=" + getObjectId() + " AND class_index=" + getActiveClassId()))
+			try (ResultSet rset = statement.executeQuery("SELECT skill_id,skill_level,end_time,reuse_delay_org FROM character_skills_save WHERE char_obj_id=" + getObjectId() + " AND class_index=" + getActiveClassId()))
 			{
 				while (rset.next())
 				{
@@ -6822,8 +6803,7 @@ public final class Player extends Playable implements PlayerGroup
 	 */
 	private void restoreHenna()
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("select slot, symbol_id from character_hennas where char_obj_id=? AND class_index=?"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("select slot, symbol_id from character_hennas where char_obj_id=? AND class_index=?"))
 		{
 			statement.setInt(1, getObjectId());
 			statement.setInt(2, getActiveClassId());
@@ -6960,8 +6940,7 @@ public final class Player extends Playable implements PlayerGroup
 				// Calculate Henna modifiers of this L2Player
 				recalcHennaStats();
 
-				try (Connection con = DatabaseFactory.getInstance().getConnection();
-							PreparedStatement statement = con.prepareStatement("INSERT INTO `character_hennas` (char_obj_id, symbol_id, slot, class_index) VALUES (?,?,?,?)"))
+				try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("INSERT INTO `character_hennas` (char_obj_id, symbol_id, slot, class_index) VALUES (?,?,?,?)"))
 				{
 					statement.setInt(1, getObjectId());
 					statement.setInt(2, henna.getSymbolId());
@@ -8016,8 +7995,7 @@ public final class Player extends Playable implements PlayerGroup
 	{
 		_blockList.clear();
 
-		try (PreparedStatement statement = con
-					.prepareStatement("SELECT target_Id, char_name FROM character_blocklist LEFT JOIN characters ON ( character_blocklist.target_Id = characters.obj_Id ) WHERE character_blocklist.obj_Id = ?"))
+		try (PreparedStatement statement = con.prepareStatement("SELECT target_Id, char_name FROM character_blocklist LEFT JOIN characters ON ( character_blocklist.target_Id = characters.obj_Id ) WHERE character_blocklist.obj_Id = ?"))
 		{
 			statement.setInt(1, getObjectId());
 
@@ -9648,9 +9626,7 @@ public final class Player extends Playable implements PlayerGroup
 
 		_classlist.put(classId, newClass);
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement(
-								"INSERT INTO character_subclasses (char_obj_id, class_id, exp, sp, curHp, curMp, curCp, maxHp, maxMp, maxCp, level, active, isBase, death_penalty, certification) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("INSERT INTO character_subclasses (char_obj_id, class_id, exp, sp, curHp, curMp, curCp, maxHp, maxMp, maxCp, level, active, isBase, death_penalty, certification) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)"))
 		{
 			// Store the basic info about this new sub-class.
 			statement.setInt(1, getObjectId());
@@ -9837,8 +9813,7 @@ public final class Player extends Playable implements PlayerGroup
 
 		getEffectList().stopAllEffects();
 
-		if ((_summon != null) && (_summon.isSummon() || (Config.ALT_IMPROVED_PETS_LIMITED_USE
-					&& (((_summon.getNpcId() == PetDataTable.IMPROVED_BABY_KOOKABURRA_ID) && !isMageClass()) || ((_summon.getNpcId() == PetDataTable.IMPROVED_BABY_BUFFALO_ID) && isMageClass())))))
+		if ((_summon != null) && (_summon.isSummon() || (Config.ALT_IMPROVED_PETS_LIMITED_USE && (((_summon.getNpcId() == PetDataTable.IMPROVED_BABY_KOOKABURRA_ID) && !isMageClass()) || ((_summon.getNpcId() == PetDataTable.IMPROVED_BABY_BUFFALO_ID) && isMageClass())))))
 		{
 			_summon.unSummon();
 		}
@@ -14103,7 +14078,7 @@ public final class Player extends Playable implements PlayerGroup
 	}
 
 	/** ----------------- End Hit Man System -------------------
-
+	
 	 * @return
 	 * */
 	public boolean isInAwayingMode()
@@ -14536,8 +14511,7 @@ public final class Player extends Playable implements PlayerGroup
 				}
 
 				// Check if we can use this item
-				if (getInventory().isLockedItem(item) || isSharedGroupDisabled(item.getTemplate().getReuseGroup()) || !item.getTemplate().testCondition(Player.this, item)
-							|| !getPermissions().canUseItem(item, true, false))
+				if (getInventory().isLockedItem(item) || isSharedGroupDisabled(item.getTemplate().getReuseGroup()) || !item.getTemplate().testCondition(Player.this, item) || !getPermissions().canUseItem(item, true, false))
 				{
 					continue;
 				}
@@ -14768,8 +14742,7 @@ public final class Player extends Playable implements PlayerGroup
 			Announcements.getInstance().announceToAll(text.replace("%name%", getName()));
 
 			// Send the current killing spree to the player with the pvps, replacing the other screenmessage
-			sendPacket(new ExShowScreenMessage("+" + _killingSpreeKills + " PvPs\n" + text.replace("%name%", "").replace("is on an", "").replace("is on a", "").replace("is on", "").replace(" is ", "").trim(),
-						6000, ScreenMessageAlign.MIDDLE_RIGHT, false));
+			sendPacket(new ExShowScreenMessage("+" + _killingSpreeKills + " PvPs\n" + text.replace("%name%", "").replace("is on an", "").replace("is on a", "").replace("is on", "").replace(" is ", "").trim(), 6000, ScreenMessageAlign.MIDDLE_RIGHT, false));
 		}
 	}
 

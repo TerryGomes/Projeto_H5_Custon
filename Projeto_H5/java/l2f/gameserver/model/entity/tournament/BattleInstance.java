@@ -447,7 +447,6 @@ public class BattleInstance
 	@Override
 	public String toString()
 	{
-		return "BattleInstance{battleRecord=" + battleRecord + ", map=" + map + ", fightersPerTeam=" + fightersPerTeam + ", fightIndex=" + fightIndex + ", isFightTime=" + isFightTime + ", team1Wins="
-					+ team1Wins + ", team2Wins=" + team2Wins + ", observers=" + observers + '}';
+		return "BattleInstance{battleRecord=" + battleRecord + ", map=" + map + ", fightersPerTeam=" + fightersPerTeam + ", fightIndex=" + fightIndex + ", isFightTime=" + isFightTime + ", team1Wins=" + team1Wins + ", team2Wins=" + team2Wins + ", observers=" + observers + '}';
 	}
 }

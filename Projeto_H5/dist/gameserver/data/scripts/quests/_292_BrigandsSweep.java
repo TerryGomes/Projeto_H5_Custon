@@ -164,8 +164,7 @@ public class _292_BrigandsSweep extends Quest implements ScriptFile
 			}
 			else if (cond == 1)
 			{
-				long reward = st.getQuestItemsCount(GoblinNecklace) * 12 + st.getQuestItemsCount(GoblinPendant) * 36 + st.getQuestItemsCount(GoblinLordPendant) * 33
-							+ st.getQuestItemsCount(SuspiciousContract) * 100;
+				long reward = st.getQuestItemsCount(GoblinNecklace) * 12 + st.getQuestItemsCount(GoblinPendant) * 36 + st.getQuestItemsCount(GoblinLordPendant) * 33 + st.getQuestItemsCount(SuspiciousContract) * 100;
 				if (reward == 0)
 				{
 					return "elder_spiron_q0292_04.htm";

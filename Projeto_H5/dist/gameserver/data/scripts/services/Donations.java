@@ -120,8 +120,7 @@ public class Donations extends Functions
 				}
 				else
 				{
-					navigation = navigation + "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h scripts_services.Donations:list " + id + " " + i
-								+ "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
+					navigation = navigation + "<td width=25 align=center valign=top><button value=\"" + i + "\" action=\"bypass -h scripts_services.Donations:list " + id + " " + i + "\" width=32 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td>";
 				}
 				if (inline % 7 == 0)
 				{
@@ -1136,8 +1135,7 @@ public class Donations extends Functions
 			player.sendMessage("Can't find player " + str + " in game!");
 			return;
 		}
-		if ((str.isEmpty() || Util.getPay(player, Config.SERVICES_OLF_TRANSFER_ITEM[0], Config.SERVICES_OLF_TRANSFER_ITEM[1], true))
-					&& (player.getInventory().destroyItemByObjectId(currentItem.getObjectId(), currentItem.getCount(), "Services: Olf Transfer!")))
+		if ((str.isEmpty() || Util.getPay(player, Config.SERVICES_OLF_TRANSFER_ITEM[0], Config.SERVICES_OLF_TRANSFER_ITEM[1], true)) && (player.getInventory().destroyItemByObjectId(currentItem.getObjectId(), currentItem.getCount(), "Services: Olf Transfer!")))
 		{
 			PcInventory localPcInventory = localPlayer2.getInventory();
 			ItemInstance newItem = ItemFunctions.createItem(itemId);
@@ -1327,8 +1325,7 @@ public class Donations extends Functions
 		boolean bool = false;
 		Player player = getSelf();
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement ps = con.prepareStatement("SELECT `obj_id`, `accesslevel`, `char_name` FROM `characters` WHERE `account_name` = ?"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement ps = con.prepareStatement("SELECT `obj_id`, `accesslevel`, `char_name` FROM `characters` WHERE `account_name` = ?"))
 		{
 			ps.setString(1, accountName);
 			try (ResultSet rs = ps.executeQuery())

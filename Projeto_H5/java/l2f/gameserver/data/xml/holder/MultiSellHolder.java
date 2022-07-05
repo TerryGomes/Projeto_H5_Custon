@@ -382,8 +382,7 @@ public class MultiSellHolder
 			{
 				if (item.getReferencePrice() > entry.getIngredients().get(0).getItemCount())
 				{
-					_log.warn("MultiSell [" + multiSellId + "] Production '" + item.getName() + "' [" + entry.getProduction().get(0).getItemId() + "] price is lower than referenced | "
-								+ item.getReferencePrice() + " > " + entry.getIngredients().get(0).getItemCount());
+					_log.warn("MultiSell [" + multiSellId + "] Production '" + item.getName() + "' [" + entry.getProduction().get(0).getItemId() + "] price is lower than referenced | " + item.getReferencePrice() + " > " + entry.getIngredients().get(0).getItemCount());
 				}
 			}
 		}

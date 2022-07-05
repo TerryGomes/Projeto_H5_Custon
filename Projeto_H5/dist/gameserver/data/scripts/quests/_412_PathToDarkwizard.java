@@ -214,8 +214,7 @@ public class _412_PathToDarkwizard extends Quest implements ScriptFile
 					htmltext = "varika_q0412_04.htm";
 				}
 			}
-			else if (st.getQuestItemsCount(SEEDS_OF_DESPAIR_ID) > 0 && st.getQuestItemsCount(SEEDS_OF_HORROR_ID) > 0 && st.getQuestItemsCount(SEEDS_OF_LUNACY_ID) > 0
-						&& st.getQuestItemsCount(SEEDS_OF_ANGER_ID) > 0)
+			else if (st.getQuestItemsCount(SEEDS_OF_DESPAIR_ID) > 0 && st.getQuestItemsCount(SEEDS_OF_HORROR_ID) > 0 && st.getQuestItemsCount(SEEDS_OF_LUNACY_ID) > 0 && st.getQuestItemsCount(SEEDS_OF_ANGER_ID) > 0)
 			{
 				htmltext = "varika_q0412_16.htm";
 				if (st.getPlayer().getClassId().getLevel() == 1)
@@ -234,8 +233,7 @@ public class _412_PathToDarkwizard extends Quest implements ScriptFile
 			}
 			else if (st.getQuestItemsCount(SEEDS_OF_DESPAIR_ID) > 0)
 			{
-				if (st.getQuestItemsCount(FAMILYS_ASHES_ID) < 1 && st.getQuestItemsCount(LUCKY_KEY_ID) < 1 && st.getQuestItemsCount(CANDLE_ID) < 1 && st.getQuestItemsCount(HUB_SCENT_ID) < 1
-							&& st.getQuestItemsCount(KNEE_BONE_ID) < 1 && st.getQuestItemsCount(HEART_OF_LUNACY_ID) < 1)
+				if (st.getQuestItemsCount(FAMILYS_ASHES_ID) < 1 && st.getQuestItemsCount(LUCKY_KEY_ID) < 1 && st.getQuestItemsCount(CANDLE_ID) < 1 && st.getQuestItemsCount(HUB_SCENT_ID) < 1 && st.getQuestItemsCount(KNEE_BONE_ID) < 1 && st.getQuestItemsCount(HEART_OF_LUNACY_ID) < 1)
 				{
 					htmltext = "varika_q0412_17.htm";
 				}

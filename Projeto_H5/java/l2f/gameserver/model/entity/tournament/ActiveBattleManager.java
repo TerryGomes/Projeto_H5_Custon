@@ -95,9 +95,7 @@ public final class ActiveBattleManager
 		_maxBattleDurationMillis += ConfigHolder.getLong("TournamentFightsToResult") * ConfigHolder.getMillis("TournamentMaxFightTimeForResult", TimeUnit.SECONDS);
 		if (Debug.TOURNAMENT.isActive())
 		{
-			Debug.TOURNAMENT.debug(this, "calculateMaxBattleDuration", _maxBattleDurationMillis, ConfigHolder.getMillis("TournamentFirstFightPreparation", TimeUnit.SECONDS),
-						ConfigHolder.getLong("TournamentFightsToResult"), ConfigHolder.getMillis("TournamentNextFightsPreparation", TimeUnit.SECONDS),
-						ConfigHolder.getMillis("TournamentMaxFightTimeForResult", TimeUnit.SECONDS));
+			Debug.TOURNAMENT.debug(this, "calculateMaxBattleDuration", _maxBattleDurationMillis, ConfigHolder.getMillis("TournamentFirstFightPreparation", TimeUnit.SECONDS), ConfigHolder.getLong("TournamentFightsToResult"), ConfigHolder.getMillis("TournamentNextFightsPreparation", TimeUnit.SECONDS), ConfigHolder.getMillis("TournamentMaxFightTimeForResult", TimeUnit.SECONDS));
 		}
 	}
 
@@ -264,8 +262,7 @@ public final class ActiveBattleManager
 		{
 			if (Debug.TOURNAMENT.isActive())
 			{
-				Debug.TOURNAMENT.debug(ActiveBattleManager.class, "getCriteriaErrorMessage", "isInFightClub", player, player.isInFightClub(),
-							FightClubEventManager.getInstance().isPlayerRegistered(player, false));
+				Debug.TOURNAMENT.debug(ActiveBattleManager.class, "getCriteriaErrorMessage", "isInFightClub", player, player.isInFightClub(), FightClubEventManager.getInstance().isPlayerRegistered(player, false));
 			}
 			return StringHolder.getNotNull(player, "Tournament.TeleportFail.FightClub", new Object[0]);
 		}
@@ -398,8 +395,7 @@ public final class ActiveBattleManager
 			}
 			else if (team1Players.size() == 2 && team2Players.size() == 2)
 			{
-				showGlobalNotification(battleInstance, "Tournament.GlobalNotification.BattleStart.22", team1Players.get(0).getName(), team1Players.get(1).getName(), team2Players.get(0).getName(),
-							team2Players.get(1).getName());
+				showGlobalNotification(battleInstance, "Tournament.GlobalNotification.BattleStart.22", team1Players.get(0).getName(), team1Players.get(1).getName(), team2Players.get(0).getName(), team2Players.get(1).getName());
 			}
 			else if (team1Players.size() == 2)
 			{
@@ -1050,8 +1046,7 @@ public final class ActiveBattleManager
 	{
 		if (fightLoserTeam == null)
 		{
-			throw new IllegalArgumentException(
-						String.format("Argument for @NotNull parameter '%s' of %s.%s must not be null", "fightLoserTeam", "l2f/gameserver/model/entity/tournament/ActiveBattleManager", "endFight"));
+			throw new IllegalArgumentException(String.format("Argument for @NotNull parameter '%s' of %s.%s must not be null", "fightLoserTeam", "l2f/gameserver/model/entity/tournament/ActiveBattleManager", "endFight"));
 		}
 		synchronized (getInstance().endFightLock)
 		{
@@ -1341,8 +1336,7 @@ public final class ActiveBattleManager
 		final Map<Language, IStaticPacket> packetPerLang = new EnumMap<Language, IStaticPacket>(Language.class);
 		for (Language lang : Language.values())
 		{
-			packetPerLang.put(lang, new Say2(0, ConfigHolder.getChatType("TournamentGlobalNotificationChat"), StringHolder.getNotNull(lang, "Tournament.GlobalNotification.SenderName", new Object[0]),
-						StringHolder.getNotNull(lang, address, (Object[]) parameters)));
+			packetPerLang.put(lang, new Say2(0, ConfigHolder.getChatType("TournamentGlobalNotificationChat"), StringHolder.getNotNull(lang, "Tournament.GlobalNotification.SenderName", new Object[0]), StringHolder.getNotNull(lang, address, (Object[]) parameters)));
 		}
 		final List<Player> players = GameObjectsStorage.getAllPlayersCopy();
 		if (battle != null)
@@ -1365,8 +1359,7 @@ public final class ActiveBattleManager
 		final Map<Language, IStaticPacket> packetPerLang = new EnumMap<Language, IStaticPacket>(Language.class);
 		for (Language lang : Language.values())
 		{
-			packetPerLang.put(lang,
-						new Say2(0, ConfigHolder.getChatType("TournamentGlobalNotificationChat"), StringHolder.getNotNull(lang, "Tournament.GlobalNotification.SenderName", new Object[0]), message.get(lang)));
+			packetPerLang.put(lang, new Say2(0, ConfigHolder.getChatType("TournamentGlobalNotificationChat"), StringHolder.getNotNull(lang, "Tournament.GlobalNotification.SenderName", new Object[0]), message.get(lang)));
 		}
 		final List<Player> players = GameObjectsStorage.getAllPlayersCopy();
 		if (battle != null)

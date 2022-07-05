@@ -155,8 +155,7 @@ public class OlympiadDatabase
 	{
 		List<String> names = new ArrayList<String>();
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement(classId == 132 ? OlympiadNobleDAO.GET_EACH_PAST_CLASS_LEADER_SOULHOUND : OlympiadNobleDAO.GET_EACH_PAST_CLASS_LEADER))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement(classId == 132 ? OlympiadNobleDAO.GET_EACH_PAST_CLASS_LEADER_SOULHOUND : OlympiadNobleDAO.GET_EACH_PAST_CLASS_LEADER))
 		{
 			statement.setInt(1, classId);
 
@@ -187,8 +186,7 @@ public class OlympiadDatabase
 	{
 		final Map<String, Integer> names = new LinkedHashMap<>();
 
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement(classId == 132 ? OlympiadNobleDAO.GET_EACH_CURRENT_CLASS_LEADER_SOULHOUND : OlympiadNobleDAO.GET_EACH_CURRENT_CLASS_LEADER))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement(classId == 132 ? OlympiadNobleDAO.GET_EACH_CURRENT_CLASS_LEADER_SOULHOUND : OlympiadNobleDAO.GET_EACH_CURRENT_CLASS_LEADER))
 		{
 			statement.setInt(1, classId);
 			statement.setInt(2, Config.OLYMPIAD_BATTLES_FOR_REWARD);

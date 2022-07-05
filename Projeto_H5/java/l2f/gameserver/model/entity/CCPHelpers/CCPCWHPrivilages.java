@@ -20,8 +20,7 @@ public class CCPCWHPrivilages
 	 */
 	public static String clanMain(Player activeChar, String args)
 	{
-		if ((activeChar.getClan() == null) || (Config.ALT_ALLOW_CLAN_COMMAND_ONLY_FOR_CLAN_LEADER && !activeChar.isClanLeader())
-					|| !((activeChar.getClanPrivileges() & Clan.CP_CL_MANAGE_RANKS) == Clan.CP_CL_MANAGE_RANKS))
+		if ((activeChar.getClan() == null) || (Config.ALT_ALLOW_CLAN_COMMAND_ONLY_FOR_CLAN_LEADER && !activeChar.isClanLeader()) || !((activeChar.getClanPrivileges() & Clan.CP_CL_MANAGE_RANKS) == Clan.CP_CL_MANAGE_RANKS))
 		{
 			return "cfgClan.htm";
 		}
@@ -102,9 +101,7 @@ public class CCPCWHPrivilages
 						{
 							if (m.getObjectId() == Integer.parseInt(memberObjectId.toString()))
 							{
-								replaceBuilder.append("<tr><td width=30></td><td width=100><font color=686764>").append(m.getName()).append(
-											"</font></td><td width=150><button width=130 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h user_cfg cwhPrivs allowwh ")
-											.append(m.getName()).append("\" value=\"Remove Privilage\"><br></td></tr>");
+								replaceBuilder.append("<tr><td width=30></td><td width=100><font color=686764>").append(m.getName()).append("</font></td><td width=150><button width=130 height=25 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\" action=\"bypass -h user_cfg cwhPrivs allowwh ").append(m.getName()).append("\" value=\"Remove Privilage\"><br></td></tr>");
 							}
 						}
 					}

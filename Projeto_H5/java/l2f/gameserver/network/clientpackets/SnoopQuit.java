@@ -5,7 +5,6 @@ import l2f.gameserver.model.Player;
 
 public class SnoopQuit extends L2GameClientPacket
 {
-	@SuppressWarnings("unused")
 	private int _snoopID;
 
 	/**

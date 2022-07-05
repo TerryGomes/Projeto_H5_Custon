@@ -111,10 +111,8 @@ public final class TradeHelper
 		{
 			if (item.getEnchantLevel() > 0)
 			{
-				seller.sendPacket(new SystemMessage2(SystemMsg.S2S3_HAS_BEEN_SOLD_TO_C1_AT_THE_PRICE_OF_S4_ADENA).addString(buyer.getName()).addInteger(item.getEnchantLevel()).addItemName(item.getItemId())
-							.addLong(price));
-				buyer.sendPacket(new SystemMessage2(SystemMsg.S2S3_HAS_BEEN_PURCHASED_FROM_C1_AT_THE_PRICE_OF_S4_ADENA).addString(seller.getName()).addInteger(item.getEnchantLevel())
-							.addItemName(item.getItemId()).addLong(price));
+				seller.sendPacket(new SystemMessage2(SystemMsg.S2S3_HAS_BEEN_SOLD_TO_C1_AT_THE_PRICE_OF_S4_ADENA).addString(buyer.getName()).addInteger(item.getEnchantLevel()).addItemName(item.getItemId()).addLong(price));
+				buyer.sendPacket(new SystemMessage2(SystemMsg.S2S3_HAS_BEEN_PURCHASED_FROM_C1_AT_THE_PRICE_OF_S4_ADENA).addString(seller.getName()).addInteger(item.getEnchantLevel()).addItemName(item.getItemId()).addLong(price));
 			}
 			else
 			{

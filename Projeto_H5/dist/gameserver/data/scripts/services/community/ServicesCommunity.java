@@ -85,8 +85,7 @@ public class ServicesCommunity extends Functions implements ScriptFile, ICommuni
 					{
 						_content.append("</tr><tr>");
 					}
-					_content.append("<td><center><button value=\"On " + LvList[i] + " (Price:" + LvPiceList[i] + " " + NameItemPice + ")\" action=\"bypass _bbsservices:level:up:" + LvList[i] + ":"
-								+ LvPiceList[i] + "\" width=180 height=20 back=\"L2UI_CT1.Button_DF\" fore=\"L2UI_CT1.Button_DF\"></center></td>");
+					_content.append("<td><center><button value=\"On " + LvList[i] + " (Price:" + LvPiceList[i] + " " + NameItemPice + ")\" action=\"bypass _bbsservices:level:up:" + LvList[i] + ":" + LvPiceList[i] + "\" width=180 height=20 back=\"L2UI_CT1.Button_DF\" fore=\"L2UI_CT1.Button_DF\"></center></td>");
 				}
 			}
 			_content.append("</tr></table>");
@@ -110,8 +109,7 @@ public class ServicesCommunity extends Functions implements ScriptFile, ICommuni
 
 	public boolean checkCondition(Player player)
 	{
-		if (/* player.isInJail() || */player.getReflectionId() != 0 || player.isDead() || player.isAlikeDead() || player.isCastingNow() || player.isInCombat() || player.isAttackingNow()
-					|| player.isInOlympiadMode() || player.isFlying())
+		if (/* player.isInJail() || */player.getReflectionId() != 0 || player.isDead() || player.isAlikeDead() || player.isCastingNow() || player.isInCombat() || player.isAttackingNow() || player.isInOlympiadMode() || player.isFlying())
 		{
 			player.sendMessage("Raising is not possible");
 			return false;

@@ -99,8 +99,7 @@ public class FightClubManagerInstance extends NpcInstance
 				final String respone = (String) callScripts("addApplication", objects);
 				if ("OK".equalsIgnoreCase(respone))
 				{
-					sendResult(player, "Completed!", "You have created an application for participation.<br>Your bet - <font color=\"LEVEL\">" + String.valueOf(objects[2]) + " " + String.valueOf(objects[1])
-								+ "</font><br><center>Good luck!</center>");
+					sendResult(player, "Completed!", "You have created an application for participation.<br>Your bet - <font color=\"LEVEL\">" + String.valueOf(objects[2]) + " " + String.valueOf(objects[1]) + "</font><br><center>Good luck!</center>");
 				}
 				else if ("NoItems".equalsIgnoreCase(respone))
 				{

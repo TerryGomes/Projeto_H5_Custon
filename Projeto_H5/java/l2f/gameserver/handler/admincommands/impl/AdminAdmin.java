@@ -45,9 +45,8 @@ public class AdminAdmin implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_admin, admin_play_sounds, admin_play_sound, admin_silence, admin_tradeoff, admin_cfg, admin_config, admin_show_html, admin_setnpcstate, admin_setareanpcstate, admin_showmovie, admin_setzoneinfo,
-		admin_eventtrigger, admin_debug, admin_debugdata, admin_uievent, admin_opensod, admin_closesod, admin_setsoistage, admin_soinotify, admin_forcenpcinfo, admin_loc, admin_ready, admin_checkadena,
-		admin_locdump, admin_pointdump, admin_coordsdump, admin_undying, admin_garbage_collector, admin_show_memory, admin_trivia,
+		admin_admin, admin_play_sounds, admin_play_sound, admin_silence, admin_tradeoff, admin_cfg, admin_config, admin_show_html, admin_setnpcstate, admin_setareanpcstate, admin_showmovie, admin_setzoneinfo, admin_eventtrigger, admin_debug, admin_debugdata, admin_uievent, admin_opensod, admin_closesod, admin_setsoistage, admin_soinotify, admin_forcenpcinfo, admin_loc, admin_ready, admin_checkadena, admin_locdump, admin_pointdump, admin_coordsdump, admin_undying, admin_garbage_collector,
+		admin_show_memory, admin_trivia,
 	}
 
 	@Override

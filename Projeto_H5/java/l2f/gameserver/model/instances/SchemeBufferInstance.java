@@ -170,9 +170,7 @@ public class SchemeBufferInstance extends NpcInstance
 	private static void loadSingleBuffs()
 	{
 		allSingleBuffs = new LinkedList<>();
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("SELECT * FROM npcbuffer_buff_list WHERE canUse = 1 ORDER BY Buff_Class ASC, buffId");
-					ResultSet rset = statement.executeQuery())
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT * FROM npcbuffer_buff_list WHERE canUse = 1 ORDER BY Buff_Class ASC, buffId"); ResultSet rset = statement.executeQuery())
 		{
 			while (rset.next())
 			{
@@ -431,8 +429,7 @@ public class SchemeBufferInstance extends NpcInstance
 			bottonA = "Auto Buff Pet";
 			bottonB = "Heal My Pet";
 			bottonC = "Remove Pet Buffs";
-			dialog = dialog.replace("%topbtn%", "<button value=\"" + (player.getPet() != null ? player.getPet().getName() : "You don't have Pet")
-						+ "\" action=\"bypass _bbsbufferbypass_buffpet 0 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\">");
+			dialog = dialog.replace("%topbtn%", "<button value=\"" + (player.getPet() != null ? player.getPet().getName() : "You don't have Pet") + "\" action=\"bypass _bbsbufferbypass_buffpet 0 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\">");
 		}
 		else
 		{
@@ -440,26 +437,22 @@ public class SchemeBufferInstance extends NpcInstance
 			bottonB = "Heal";
 			bottonC = "Remove Buffs";
 
-			dialog = dialog.replace("%topbtn%",
-						"<button value=" + player.getName() + " action=\"bypass _bbsbufferbypass_buffpet 1 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\">");
+			dialog = dialog.replace("%topbtn%", "<button value=" + player.getName() + " action=\"bypass _bbsbufferbypass_buffpet 1 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\">");
 		}
 
 		if (ENABLE_BUFF_SET)
 		{
-			dialog = dialog.replace("%autobuff%",
-						"<button value=\"" + bottonA + "\" action=\"bypass _bbsbufferbypass_castBuffSet 0 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\">");
+			dialog = dialog.replace("%autobuff%", "<button value=\"" + bottonA + "\" action=\"bypass _bbsbufferbypass_castBuffSet 0 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\">");
 		}
 
 		if (ENABLE_HEAL)
 		{
-			dialog = dialog.replace("%heal%",
-						"<button value=\"" + bottonB + "\" action=\"bypass _bbsbufferbypass_heal 0 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\">");
+			dialog = dialog.replace("%heal%", "<button value=\"" + bottonB + "\" action=\"bypass _bbsbufferbypass_heal 0 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\">");
 		}
 
 		if (ENABLE_BUFF_REMOVE)
 		{
-			dialog = dialog.replace("%removebuffs%",
-						"<button value=\"" + bottonC + "\" action=\"bypass _bbsbufferbypass_removeBuffs 0 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\">");
+			dialog = dialog.replace("%removebuffs%", "<button value=\"" + bottonC + "\" action=\"bypass _bbsbufferbypass_removeBuffs 0 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\">");
 		}
 
 		if (ENABLE_SCHEME_SYSTEM)
@@ -469,8 +462,7 @@ public class SchemeBufferInstance extends NpcInstance
 
 		if (player.isGM())
 		{
-			dialog = dialog.replace("%gm%",
-						"<button value=\"Manage Schemes\" action=\"bypass _bbsbufferbypass_redirect manage_buffs 0 0\" width=135 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\">");
+			dialog = dialog.replace("%gm%", "<button value=\"Manage Schemes\" action=\"bypass _bbsbufferbypass_redirect manage_buffs 0 0\" width=135 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\">");
 		}
 		else
 		{
@@ -549,8 +541,7 @@ public class SchemeBufferInstance extends NpcInstance
 				addedBuffs.append("<table cellspacing=0 cellpadding=0 width=34 height=34 background=" + skill.getIcon() + ">");
 				addedBuffs.append("<tr>");
 				addedBuffs.append("<td width=34>");
-				addedBuffs.append("<button action=\"bypass _bbsbufferbypass_remove_buff " + schemeId + "_" + skill.getId() + "_" + skill.getLevel() + " " + pageN
-							+ " x\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>");
+				addedBuffs.append("<button action=\"bypass _bbsbufferbypass_remove_buff " + schemeId + "_" + skill.getId() + "_" + skill.getLevel() + " " + pageN + " x\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>");
 				addedBuffs.append("</td>");
 				addedBuffs.append("</tr>");
 				addedBuffs.append("</table>");
@@ -563,8 +554,7 @@ public class SchemeBufferInstance extends NpcInstance
 				addedBuffs.append("<table cellspacing=0 cellpadding=0 width=34 height=34 background=" + skill.getIcon() + ">");
 				addedBuffs.append("<tr>");
 				addedBuffs.append("<td width=34>");
-				addedBuffs.append("<button action=\"bypass _bbsbufferbypass_remove_buff " + schemeId + "_" + skill.getId() + "_" + skill.getLevel() + " " + pageN
-							+ " x\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>");
+				addedBuffs.append("<button action=\"bypass _bbsbufferbypass_remove_buff " + schemeId + "_" + skill.getId() + "_" + skill.getLevel() + " " + pageN + " x\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"/>");
 				addedBuffs.append("</td>");
 				addedBuffs.append("</tr>");
 				addedBuffs.append("</table>");
@@ -688,8 +678,7 @@ public class SchemeBufferInstance extends NpcInstance
 				availableBuffs.append("									<br>");
 				availableBuffs.append("								</td>");
 				availableBuffs.append("								<td height=34>");
-				availableBuffs.append("									<button action=\"bypass _bbsbufferbypass_add_buff ").append(scheme).append("_").append(skill.getId()).append("_").append(skill.getLevel())
-							.append(" ").append(currentPage).append(" ").append(TOTAL_BUFF).append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\">");
+				availableBuffs.append("									<button action=\"bypass _bbsbufferbypass_add_buff ").append(scheme).append("_").append(skill.getId()).append("_").append(skill.getLevel()).append(" ").append(currentPage).append(" ").append(TOTAL_BUFF).append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\">");
 				availableBuffs.append("								</td>");
 				availableBuffs.append("							</tr>");
 				availableBuffs.append("						</table>");
@@ -777,8 +766,7 @@ public class SchemeBufferInstance extends NpcInstance
 
 		for (PlayerScheme scheme : player.getBuffSchemes())
 		{
-			builder.append("<button value=\"").append(scheme.schemeName).append("\" action=\"bypass _bbsbufferbypass_delete ").append(scheme.schemeId).append(" ").append(scheme.schemeName)
-						.append(" x\" width=200 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"><br1>");
+			builder.append("<button value=\"").append(scheme.schemeName).append("\" action=\"bypass _bbsbufferbypass_delete ").append(scheme.schemeId).append(" ").append(scheme.schemeName).append(" x\" width=200 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"><br1>");
 		}
 
 		dialog = dialog.replace("%schemes%", builder.toString());
@@ -892,8 +880,7 @@ public class SchemeBufferInstance extends NpcInstance
 				final Skill skill = SkillTable.getInstance().getInfo(buff._buffId, buff._buffLevel);
 
 				// We format the buff name to fit every part on each line so its almost always centered
-				String nameFormatted = buff._buffName.replace(" Of ", " of ").replace(" of ", "%%%%%%%% ").replace(" ", "<br1>").replace("%%%%%%%%", " of ").replace("Regeneration", "Regen.")
-							.replace("Prophecy of", "Prof. of").replace("Resistance", "Resist.");
+				String nameFormatted = buff._buffName.replace(" Of ", " of ").replace(" of ", "%%%%%%%% ").replace(" ", "<br1>").replace("%%%%%%%%", " of ").replace("Regeneration", "Regen.").replace("Prophecy of", "Prof. of").replace("Resistance", "Resist.");
 				if (secondRowValue <= 7)
 				{
 					nameFormatted = nameFormatted.replace(" +15<br1>", " +15 ").replace(" +30<br1>", " +30 ");
@@ -906,8 +893,7 @@ public class SchemeBufferInstance extends NpcInstance
 				builder.append("<table cellspacing=0 cellpadding=0 width=32 height=32 background=" + skill.getIcon() + ">");
 				builder.append("<tr>");
 				builder.append("<td width=32 height=32 align=center>");
-				builder.append("<button action=\"bypass _bbsbufferbypass_giveBuffs " + buff._buffId + " " + buff._buffLevel + " " + buffType
-							+ "\" width=34 height=34 back=L2UI_CT1.ItemWindow_DF_Frame_Down fore=L2UI_CT1.ItemWindow_DF_Frame />");
+				builder.append("<button action=\"bypass _bbsbufferbypass_giveBuffs " + buff._buffId + " " + buff._buffLevel + " " + buffType + "\" width=34 height=34 back=L2UI_CT1.ItemWindow_DF_Frame_Down fore=L2UI_CT1.ItemWindow_DF_Frame />");
 				builder.append("</td>");
 				builder.append("</tr>");
 				builder.append("</table>");
@@ -946,8 +932,7 @@ public class SchemeBufferInstance extends NpcInstance
 
 		for (PlayerScheme scheme : player.getBuffSchemes())
 		{
-			builder.append("<button value=\"").append(scheme.schemeName).append("\" action=\"bypass _bbsbufferbypass_manage_scheme_select ").append(scheme.schemeId)
-						.append(" x x\" width=200 height=30 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"><br1>");
+			builder.append("<button value=\"").append(scheme.schemeName).append("\" action=\"bypass _bbsbufferbypass_manage_scheme_select ").append(scheme.schemeId).append(" x x\" width=200 height=30 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"><br1>");
 		}
 
 		// builder.append("<br><button value=\"Back\" action=\"bypass _bbsbufferbypass_redirect main 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\"
@@ -1039,8 +1024,7 @@ public class SchemeBufferInstance extends NpcInstance
 		}
 		if (ENABLE_SPECIAL)
 		{
-			builder.append(
-						"<button value=\"Special Buffs\" action=\"bypass _bbsbufferbypass_edit_buff_list special Special_Buffs 1\" width=200 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">");
+			builder.append("<button value=\"Special Buffs\" action=\"bypass _bbsbufferbypass_edit_buff_list special Special_Buffs 1\" width=200 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">");
 		}
 		if (ENABLE_OTHERS)
 		{
@@ -1275,8 +1259,7 @@ public class SchemeBufferInstance extends NpcInstance
 				mainBuilder.append("</td>");
 				mainBuilder.append("<td width=30 align=center>");
 				mainBuilder.append("<br>");
-				mainBuilder.append("<button action=\"bypass _bbsbufferbypass_manage_scheme_select " + scheme.schemeId
-							+ " x x\" width=32 height=32 back=L2UI_CT1.RadarMap_DF_OptionBtn_Down fore=L2UI_CT1.RadarMap_DF_OptionBtn />");
+				mainBuilder.append("<button action=\"bypass _bbsbufferbypass_manage_scheme_select " + scheme.schemeId + " x x\" width=32 height=32 back=L2UI_CT1.RadarMap_DF_OptionBtn_Down fore=L2UI_CT1.RadarMap_DF_OptionBtn />");
 				mainBuilder.append("</td>");
 				mainBuilder.append("</tr>");
 				mainBuilder.append("</table>");
@@ -1419,8 +1402,7 @@ public class SchemeBufferInstance extends NpcInstance
 			}
 			else
 			{
-				builder.append("<td width=").append(width).append("><button value=\"").append(pageName).append(ii).append("\" action=\"bypass _bbsbufferbypass_edit_buff_list ").append(type).append(" ")
-							.append(typeName).append(" ").append(ii).append("\" width=").append(width).append(" height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>");
+				builder.append("<td width=").append(width).append("><button value=\"").append(pageName).append(ii).append("\" action=\"bypass _bbsbufferbypass_edit_buff_list ").append(type).append(" ").append(typeName).append(" ").append(ii).append("\" width=").append(width).append(" height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>");
 			}
 		}
 		builder.append("</tr></table><br>");
@@ -1459,9 +1441,8 @@ public class SchemeBufferInstance extends NpcInstance
 				default:
 					break;
 				}
-				builder.append("<tr><td fixwidth=145>").append(buff._buffName).append("</td><td width=70><combobox var=\"newSet").append(i).append("\" width=70 ").append(listOrder)
-							.append("></td><td width=50><button value=\"Update\" action=\"bypass _bbsbufferbypass_changeBuffSet ").append(buff._buffId).append(" ").append(buff._buffLevel).append(" $newSet")
-							.append(i).append(" ").append(page).append(" ").append(buff._buffType).append("\" width=50 height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr>");
+				builder.append("<tr><td fixwidth=145>").append(buff._buffName).append("</td><td width=70><combobox var=\"newSet").append(i).append("\" width=70 ").append(listOrder).append("></td><td width=50><button value=\"Update\" action=\"bypass _bbsbufferbypass_changeBuffSet ").append(buff._buffId).append(" ").append(buff._buffLevel).append(" $newSet").append(i).append(" ").append(page).append(" ").append(buff._buffType)
+							.append("\" width=50 height=20 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr>");
 			}
 			else
 			{
@@ -1469,32 +1450,27 @@ public class SchemeBufferInstance extends NpcInstance
 				builder.append("<tr><td fixwidth=170>").append(buff._buffName).append("</td><td width=80>");
 				if (buff._canUse)
 				{
-					builder.append("<button value=\"Disable\" action=\"bypass _bbsbufferbypass_editSelectedBuff ").append("canUse ").append(buff._buffId).append(" ").append(buff._buffLevel).append(" 0 ")
-								.append(page).append(" ").append(type).append("\" width=80 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>");
+					builder.append("<button value=\"Disable\" action=\"bypass _bbsbufferbypass_editSelectedBuff ").append("canUse ").append(buff._buffId).append(" ").append(buff._buffLevel).append(" 0 ").append(page).append(" ").append(type).append("\" width=80 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>");
 				}
 				else
 				{
-					builder.append("<button value=\"Enable\" action=\"bypass _bbsbufferbypass_editSelectedBuff ").append("canUse ").append(buff._buffId).append(" ").append(buff._buffLevel).append(" 1 ")
-								.append(page).append(" ").append(type).append("\" width=80 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>");
+					builder.append("<button value=\"Enable\" action=\"bypass _bbsbufferbypass_editSelectedBuff ").append("canUse ").append(buff._buffId).append(" ").append(buff._buffLevel).append(" 1 ").append(page).append(" ").append(type).append("\" width=80 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td>");
 				}
 
 				// Is premium
 				builder.append("<td width=100>");
 				if (buff._isPremium)
 				{
-					builder.append("<button value=\"Set Normal\" action=\"bypass _bbsbufferbypass_editSelectedBuff ").append("isPremium ").append(buff._buffId).append(" ").append(buff._buffLevel).append(" 0 ")
-								.append(page).append(" ").append(type).append("\" width=100 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr>");
+					builder.append("<button value=\"Set Normal\" action=\"bypass _bbsbufferbypass_editSelectedBuff ").append("isPremium ").append(buff._buffId).append(" ").append(buff._buffLevel).append(" 0 ").append(page).append(" ").append(type).append("\" width=100 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr>");
 				}
 				else
 				{
-					builder.append("<button value=\"Set Premium\" action=\"bypass _bbsbufferbypass_editSelectedBuff ").append("isPremium ").append(buff._buffId).append(" ").append(buff._buffLevel).append(" 1 ")
-								.append(page).append(" ").append(type).append("\" width=100 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr>");
+					builder.append("<button value=\"Set Premium\" action=\"bypass _bbsbufferbypass_editSelectedBuff ").append("isPremium ").append(buff._buffId).append(" ").append(buff._buffLevel).append(" 1 ").append(page).append(" ").append(type).append("\" width=100 height=22 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></td></tr>");
 				}
 			}
 			builder.append("</table>");
 		}
-		builder.append(
-					"<br><br><button value=\"Back\" action=\"bypass _bbsbufferbypass_redirect manage_buffs 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\"><button value=\"Home\" action=\"bypass _bbsbufferbypass_redirect main 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\"></center>");
+		builder.append("<br><br><button value=\"Back\" action=\"bypass _bbsbufferbypass_redirect manage_buffs 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\"><button value=\"Home\" action=\"bypass _bbsbufferbypass_redirect main 0 0\" width=200 height=30 back=\"L2UI_ct1.Button_DF_Down\" fore=\"L2UI_ct1.Button_DF\"></center>");
 		return builder.toString();
 	}
 
@@ -1646,8 +1622,7 @@ public class SchemeBufferInstance extends NpcInstance
 			}
 
 			// Synerge - Then update the db
-			try (Connection con = DatabaseFactory.getInstance().getConnection();
-						PreparedStatement statement = con.prepareStatement("UPDATE npcbuffer_buff_list SET forClass=? WHERE buffId=? AND buffLevel=? AND buffType=?"))
+			try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("UPDATE npcbuffer_buff_list SET forClass=? WHERE buffId=? AND buffLevel=? AND buffType=?"))
 			{
 				statement.setInt(1, forClass);
 				statement.setInt(2, skillId);
@@ -1729,8 +1704,7 @@ public class SchemeBufferInstance extends NpcInstance
 			}
 
 			// Synerge - Then update the db
-			try (Connection con = DatabaseFactory.getInstance().getConnection();
-						PreparedStatement statement = con.prepareStatement("UPDATE npcbuffer_buff_list SET " + editType + "=? WHERE buffId=? AND buffLevel=? AND buffType=?"))
+			try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("UPDATE npcbuffer_buff_list SET " + editType + "=? WHERE buffId=? AND buffLevel=? AND buffType=?"))
 			{
 				statement.setInt(1, mustEnable);
 				statement.setInt(2, skillId);
@@ -2238,8 +2212,7 @@ public class SchemeBufferInstance extends NpcInstance
 			String skill = split[1];
 			String level = split[2];
 
-			try (Connection con = DatabaseFactory.getInstance().getConnection();
-						PreparedStatement statement = con.prepareStatement("DELETE FROM npcbuffer_scheme_contents WHERE scheme_id=? AND skill_id=? AND skill_level=? LIMIT 1"))
+			try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("DELETE FROM npcbuffer_scheme_contents WHERE scheme_id=? AND skill_id=? AND skill_level=? LIMIT 1"))
 			{
 				statement.setString(1, scheme);
 				statement.setString(2, skill);
@@ -2276,8 +2249,7 @@ public class SchemeBufferInstance extends NpcInstance
 
 			int idbuffclass = getClassBuff(skillId);
 
-			try (Connection con = DatabaseFactory.getInstance().getConnection();
-						PreparedStatement statement = con.prepareStatement("INSERT INTO npcbuffer_scheme_contents (scheme_id,skill_id,skill_level,buff_class) VALUES (?,?,?,?)"))
+			try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("INSERT INTO npcbuffer_scheme_contents (scheme_id,skill_id,skill_level,buff_class) VALUES (?,?,?,?)"))
 			{
 				statement.setString(1, scheme);
 				statement.setInt(2, skillId);
@@ -2298,8 +2270,7 @@ public class SchemeBufferInstance extends NpcInstance
 				SchemeBuff buff = it.next();
 				if (buff != null && buff.skillId == skillId)
 				{
-					try (Connection con = DatabaseFactory.getInstance().getConnection();
-								PreparedStatement statement = con.prepareStatement("DELETE FROM npcbuffer_scheme_contents WHERE scheme_id=? AND skill_id=? AND skill_level=? LIMIT 1"))
+					try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("DELETE FROM npcbuffer_scheme_contents WHERE scheme_id=? AND skill_id=? AND skill_level=? LIMIT 1"))
 					{
 						statement.setString(1, scheme);
 						statement.setInt(2, buff.skillId);
@@ -2359,8 +2330,7 @@ public class SchemeBufferInstance extends NpcInstance
 				return;
 			}
 
-			try (Connection con = DatabaseFactory.getInstance().getConnection();
-						PreparedStatement statement = con.prepareStatement("INSERT INTO npcbuffer_scheme_list (player_id,scheme_name,icon) VALUES (?,?,?)", Statement.RETURN_GENERATED_KEYS))
+			try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("INSERT INTO npcbuffer_scheme_list (player_id,scheme_name,icon) VALUES (?,?,?)", Statement.RETURN_GENERATED_KEYS))
 			{
 				statement.setInt(1, player.getObjectId());
 				statement.setString(2, name);
@@ -2404,10 +2374,7 @@ public class SchemeBufferInstance extends NpcInstance
 		}
 		else if (eventParam0.equalsIgnoreCase("delete_c"))
 		{
-			msg = "<html><head><title>" + TITLE_NAME
-						+ "</title></head><body><br><center><img src=\"L2UI_CH3.herotower_deco\" width=256 height=32><br><font name=\"hs12\" color=LEVEL>Do you really want to delete '" + eventParam2
-						+ "' scheme?</font><br><br><button value=\"Yes\" action=\"bypass _bbsbufferbypass_delete " + eventParam1
-						+ " x x\" width=50 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">"
+			msg = "<html><head><title>" + TITLE_NAME + "</title></head><body><br><center><img src=\"L2UI_CH3.herotower_deco\" width=256 height=32><br><font name=\"hs12\" color=LEVEL>Do you really want to delete '" + eventParam2 + "' scheme?</font><br><br><button value=\"Yes\" action=\"bypass _bbsbufferbypass_delete " + eventParam1 + " x x\" width=50 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\">"
 						+ "<button value=\"No\" action=\"bypass _bbsbufferbypass_delete_1 x x x\" width=50 height=25 back=\"L2UI_ct1.button_df\" fore=\"L2UI_ct1.button_df\"></body></html>";
 
 		}

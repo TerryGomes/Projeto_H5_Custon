@@ -23,7 +23,6 @@ public class MeleonAI extends Fighter
 {
 	public class PolimorphTask extends RunnableImpl
 	{
-		@SuppressWarnings("unused")
 		@Override
 		public void runImpl() throws Exception
 		{

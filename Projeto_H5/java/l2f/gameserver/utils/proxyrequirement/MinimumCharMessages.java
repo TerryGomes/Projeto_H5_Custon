@@ -36,8 +36,7 @@ public class MinimumCharMessages implements ProxyRequirement
 	private static int getBiggestLevel(Connection con, String accountName, ChatType chatType)
 	{
 		final String variableName = "wroteMessages_" + chatType;
-		try (PreparedStatement statement = con.prepareStatement(
-					"SELECT value FROM character_variables INNER JOIN characters ON character_variables.obj_id=characters.obj_Id WHERE characters.account_name = ? AND character_variables.name = ? ORDER BY character_variables.name DESC LIMIT 1"))
+		try (PreparedStatement statement = con.prepareStatement("SELECT value FROM character_variables INNER JOIN characters ON character_variables.obj_id=characters.obj_Id WHERE characters.account_name = ? AND character_variables.name = ? ORDER BY character_variables.name DESC LIMIT 1"))
 		{
 			statement.setString(1, accountName);
 			statement.setString(2, variableName);

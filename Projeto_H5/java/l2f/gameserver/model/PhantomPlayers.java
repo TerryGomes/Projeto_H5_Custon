@@ -217,8 +217,7 @@ public class PhantomPlayers
 			race = Race.kamael;
 		}
 
-		if (name.toLowerCase().contains("mage") || name.toLowerCase().contains("summon") || name.toLowerCase().contains("summoner") || name.toLowerCase().contains("buff")
-					|| name.toLowerCase().contains("buffer"))
+		if (name.toLowerCase().contains("mage") || name.toLowerCase().contains("summon") || name.toLowerCase().contains("summoner") || name.toLowerCase().contains("buff") || name.toLowerCase().contains("buffer"))
 		{
 			mage = true;
 		}

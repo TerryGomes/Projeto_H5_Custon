@@ -216,8 +216,7 @@ public class AdminGmEvent implements IAdminCommandHandler
 		{
 			if (GmEventManager.getInstance().isTeamEvent())
 			{
-				adminReply.replace("%recallButtons%", "<button value=\"Recall Team Blue\" action=\"bypass -h admin_gmevent recallteam 1\" width=140 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>"
-							+ "<button value=\"Recall Team Red\" action=\"bypass -h admin_gmevent recallteam 2\" width=140 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>");
+				adminReply.replace("%recallButtons%", "<button value=\"Recall Team Blue\" action=\"bypass -h admin_gmevent recallteam 1\" width=140 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>" + "<button value=\"Recall Team Red\" action=\"bypass -h admin_gmevent recallteam 2\" width=140 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>");
 			}
 			else
 			{

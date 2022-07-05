@@ -572,8 +572,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 
 	public static boolean hasUnreadMail(int receiverId, String mailTopic)
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("SELECT COUNT(message_id) as count from mail WHERE receiver_id=? AND unread=1 AND topic LIKE ?"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT COUNT(message_id) as count from mail WHERE receiver_id=? AND unread=1 AND topic LIKE ?"))
 		{
 			statement.setInt(1, receiverId);
 			statement.setString(2, mailTopic);
@@ -594,8 +593,7 @@ public class MailDAO implements JdbcDAO<Integer, Mail>
 
 	public static boolean hasUnreadMail(int receiverId, String mailTopic, String mailBody)
 	{
-		try (Connection con = DatabaseFactory.getInstance().getConnection();
-					PreparedStatement statement = con.prepareStatement("SELECT COUNT(message_id) as count from mail WHERE receiver_id=? AND unread=1 AND topic LIKE ? AND body LIKE ?"))
+		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT COUNT(message_id) as count from mail WHERE receiver_id=? AND unread=1 AND topic LIKE ? AND body LIKE ?"))
 		{
 			statement.setInt(1, receiverId);
 			statement.setString(2, mailTopic);

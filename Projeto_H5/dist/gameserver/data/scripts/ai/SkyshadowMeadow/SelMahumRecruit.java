@@ -53,8 +53,7 @@ public class SelMahumRecruit extends Fighter
 		{
 			for (NpcInstance npc : getActor().getAroundNpc(750, 750))
 			{
-				if (npc != null && (npc.getNpcId() == 22775 || npc.getNpcId() == 22776 || npc.getNpcId() == 22778 || npc.getNpcId() == 22780 || npc.getNpcId() == 22782 || npc.getNpcId() == 22783
-							|| npc.getNpcId() == 22784 || npc.getNpcId() == 22785))
+				if (npc != null && (npc.getNpcId() == 22775 || npc.getNpcId() == 22776 || npc.getNpcId() == 22778 || npc.getNpcId() == 22780 || npc.getNpcId() == 22782 || npc.getNpcId() == 22783 || npc.getNpcId() == 22784 || npc.getNpcId() == 22785))
 				{
 					_arm.add(npc);
 				}

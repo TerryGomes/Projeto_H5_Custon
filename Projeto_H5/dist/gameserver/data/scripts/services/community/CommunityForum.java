@@ -186,8 +186,7 @@ public class CommunityForum implements ScriptFile, ICommunityBoardHandler
 
 		if (announcementsBoard.getLastPost() != null)
 		{
-			html = html.replace("%announceLastPost%",
-						"<font color=" + announcementsBoard.getLastPost().getWriter().getMemberGroup().getColor() + ">" + announcementsBoard.getLastPost().getWriter().getMemberName() + "</font>");
+			html = html.replace("%announceLastPost%", "<font color=" + announcementsBoard.getLastPost().getWriter().getMemberGroup().getColor() + ">" + announcementsBoard.getLastPost().getWriter().getMemberName() + "</font>");
 			html = html.replace("%announceTime%", "<font color=63bea6>" + POST_TIME.format(announcementsBoard.getLastPost().getDate()) + "</font>");
 		}
 		else
@@ -221,8 +220,7 @@ public class CommunityForum implements ScriptFile, ICommunityBoardHandler
 
 		if (changelogBoard.getLastPost() != null)
 		{
-			html = html.replace("%changelogLastPost%",
-						"<font color=" + changelogBoard.getLastPost().getWriter().getMemberGroup().getColor() + ">" + changelogBoard.getLastPost().getWriter().getMemberName() + "</font>");
+			html = html.replace("%changelogLastPost%", "<font color=" + changelogBoard.getLastPost().getWriter().getMemberGroup().getColor() + ">" + changelogBoard.getLastPost().getWriter().getMemberName() + "</font>");
 			html = html.replace("%changelogTime%", "<font color=63bea6>" + POST_TIME.format(changelogBoard.getLastPost().getDate()) + "</font>");
 		}
 		else
@@ -239,8 +237,7 @@ public class CommunityForum implements ScriptFile, ICommunityBoardHandler
 
 		if (generalBoard.getLastPost() != null)
 		{
-			html = html.replace("%generalLastPost%",
-						"<font color=" + generalBoard.getLastPost().getWriter().getMemberGroup().getColor() + ">" + generalBoard.getLastPost().getWriter().getMemberName() + "</font>");
+			html = html.replace("%generalLastPost%", "<font color=" + generalBoard.getLastPost().getWriter().getMemberGroup().getColor() + ">" + generalBoard.getLastPost().getWriter().getMemberName() + "</font>");
 			html = html.replace("%generalTime%", "<font color=63bea6>" + POST_TIME.format(generalBoard.getLastPost().getDate()) + "</font>");
 		}
 		else
@@ -292,8 +289,7 @@ public class CommunityForum implements ScriptFile, ICommunityBoardHandler
 
 		if (bugTrackerBoard.getLastPost() != null)
 		{
-			html = html.replace("%bugLastPost%",
-						"<font color=" + bugTrackerBoard.getLastPost().getWriter().getMemberGroup().getColor() + ">" + bugTrackerBoard.getLastPost().getWriter().getMemberName() + "</font>");
+			html = html.replace("%bugLastPost%", "<font color=" + bugTrackerBoard.getLastPost().getWriter().getMemberGroup().getColor() + ">" + bugTrackerBoard.getLastPost().getWriter().getMemberName() + "</font>");
 			html = html.replace("%bugTime%", "<font color=63bea6>" + POST_TIME.format(bugTrackerBoard.getLastPost().getDate()) + "</font>");
 		}
 		else
@@ -354,8 +350,7 @@ public class CommunityForum implements ScriptFile, ICommunityBoardHandler
 		{
 			minPosts.append("<font name=hs12 color=565368>Requirements:</font>");
 			minPosts.append("<br1>");
-			minPosts.append(
-						"<font color=63bea6>Account MUST have at least " + ConfigHolder.getString("ForumAccountMinPosts") + " Post" + (ConfigHolder.getInt("ForumAccountMinPosts") > 1 ? "s" : "") + "!</font>");
+			minPosts.append("<font color=63bea6>Account MUST have at least " + ConfigHolder.getString("ForumAccountMinPosts") + " Post" + (ConfigHolder.getInt("ForumAccountMinPosts") > 1 ? "s" : "") + "!</font>");
 		}
 		else
 		{
@@ -368,8 +363,7 @@ public class CommunityForum implements ScriptFile, ICommunityBoardHandler
 		{
 			accountPrice.append("<font name=hs12 color=565368>Price:</font>");
 			accountPrice.append("<br1>");
-			accountPrice.append("<font color=63bea6>" + ConfigHolder.getLong("ForumConnectAccountPrice") + " " + ItemHolder.getInstance().getTemplate(ConfigHolder.getInt("ForumConnectAccountPriceId")).getName()
-						+ (ConfigHolder.getLong("ForumConnectAccountPrice") > 1 ? "s" : "") + "</font>");
+			accountPrice.append("<font color=63bea6>" + ConfigHolder.getLong("ForumConnectAccountPrice") + " " + ItemHolder.getInstance().getTemplate(ConfigHolder.getInt("ForumConnectAccountPriceId")).getName() + (ConfigHolder.getLong("ForumConnectAccountPrice") > 1 ? "s" : "") + "</font>");
 			accountPrice.append("<br>");
 		}
 		else
@@ -688,8 +682,7 @@ public class CommunityForum implements ScriptFile, ICommunityBoardHandler
 		// New Topic
 		if (board.canWriteNewTopic(player.getForumMember()))
 		{
-			html = html.replace("%newTopic%", "<button action=\"bypass _bbsforum_startNewTopic_" + boardIndex
-						+ "\" value=\"   Create New Topic\" width=200 height=32 back=Btns.btn_ornaments_confirmed_red_200x32_down fore=Btns.btn_ornaments_confirmed_red_200x32>");
+			html = html.replace("%newTopic%", "<button action=\"bypass _bbsforum_startNewTopic_" + boardIndex + "\" value=\"   Create New Topic\" width=200 height=32 back=Btns.btn_ornaments_confirmed_red_200x32_down fore=Btns.btn_ornaments_confirmed_red_200x32>");
 		}
 		else
 		{
@@ -784,15 +777,12 @@ public class CommunityForum implements ScriptFile, ICommunityBoardHandler
 		posts.append("</font>");
 
 		// Message
-		html = html.replace("%message%",
-					CommunityForum.convertQuotes(post.getMessage(), "<table cellspacing=8><tr><td fixwidth=568><table width=568 cellspacing=3 bgcolor=16595a><tr><td fixwidth=568><font color=63bea6>Quote By: ",
-								"</font><br1><font color=919191>", "</font></td></tr></table></td></tr></table><br1>"));
+		html = html.replace("%message%", CommunityForum.convertQuotes(post.getMessage(), "<table cellspacing=8><tr><td fixwidth=568><table width=568 cellspacing=3 bgcolor=16595a><tr><td fixwidth=568><font color=63bea6>Quote By: ", "</font><br1><font color=919191>", "</font></td></tr></table></td></tr></table><br1>"));
 
 		// Quote
 		if (topic.checkCanAddPost(player.getForumMember()))
 		{
-			html = html.replace("%quote%", "<button action=\"bypass _bbsforum_startNewReply_" + topic.getTopicId() + "_" + CommunityForum.getQuotePost(post)
-						+ "\" value=\"Quote\" width=110 height=28 back=Btns.btn_simple_red_110x28_down fore=Btns.btn_simple_red_110x28>");
+			html = html.replace("%quote%", "<button action=\"bypass _bbsforum_startNewReply_" + topic.getTopicId() + "_" + CommunityForum.getQuotePost(post) + "\" value=\"Quote\" width=110 height=28 back=Btns.btn_simple_red_110x28_down fore=Btns.btn_simple_red_110x28>");
 		}
 		else
 		{
@@ -835,8 +825,7 @@ public class CommunityForum implements ScriptFile, ICommunityBoardHandler
 		// New post
 		if (topic.checkCanAddPost(player.getForumMember()))
 		{
-			html = html.replace("%newPost%", "<button action=\"bypass _bbsforum_startNewReply_" + topic.getTopicId()
-						+ "\" value=\"Reply\" width=200 height=32 back=Btns.btn_ornaments_confirmed_red_200x32_Down fore=Btns.btn_ornaments_confirmed_red_200x32>");
+			html = html.replace("%newPost%", "<button action=\"bypass _bbsforum_startNewReply_" + topic.getTopicId() + "\" value=\"Reply\" width=200 height=32 back=Btns.btn_ornaments_confirmed_red_200x32_Down fore=Btns.btn_ornaments_confirmed_red_200x32>");
 		}
 		else
 		{
@@ -1004,8 +993,7 @@ public class CommunityForum implements ScriptFile, ICommunityBoardHandler
 			useForumBypass(player, "connectAccountError", "Password is incorrect!");
 			return;
 		}
-		if (ConfigHolder.getInt("ForumConnectAccountPriceId") > 0 && ConfigHolder.getLong("ForumConnectAccountPrice") > 0L
-					&& !player.getInventory().destroyItemByItemId(ConfigHolder.getInt("ForumConnectAccountPriceId"), ConfigHolder.getLong("ForumConnectAccountPrice"), "Connecting Forum Account"))
+		if (ConfigHolder.getInt("ForumConnectAccountPriceId") > 0 && ConfigHolder.getLong("ForumConnectAccountPrice") > 0L && !player.getInventory().destroyItemByItemId(ConfigHolder.getInt("ForumConnectAccountPriceId"), ConfigHolder.getLong("ForumConnectAccountPrice"), "Connecting Forum Account"))
 		{
 			useForumBypass(player, "connectAccountError", "You don't have enough of required items!");
 			return;

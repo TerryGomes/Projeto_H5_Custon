@@ -215,10 +215,8 @@ public class RequestActionUse extends L2GameClientPacket
 										// for 1 minute?
 
 		// social action
-		ACTION12(12, 3, SocialAction.GREETING, 2), ACTION13(13, 3, SocialAction.VICTORY, 2), ACTION14(14, 3, SocialAction.ADVANCE, 2), ACTION24(24, 3, SocialAction.YES, 2), ACTION25(25, 3, SocialAction.NO, 2),
-		ACTION26(26, 3, SocialAction.BOW, 2), ACTION29(29, 3, SocialAction.UNAWARE, 2), ACTION30(30, 3, SocialAction.WAITING, 2), ACTION31(31, 3, SocialAction.LAUGH, 2),
-		ACTION33(33, 3, SocialAction.APPLAUD, 2), ACTION34(34, 3, SocialAction.DANCE, 2), ACTION35(35, 3, SocialAction.SORROW, 2), ACTION62(62, 3, SocialAction.CHARM, 2),
-		ACTION66(66, 3, SocialAction.SHYNESS, 2),
+		ACTION12(12, 3, SocialAction.GREETING, 2), ACTION13(13, 3, SocialAction.VICTORY, 2), ACTION14(14, 3, SocialAction.ADVANCE, 2), ACTION24(24, 3, SocialAction.YES, 2), ACTION25(25, 3, SocialAction.NO, 2), ACTION26(26, 3, SocialAction.BOW, 2), ACTION29(29, 3, SocialAction.UNAWARE, 2), ACTION30(30, 3, SocialAction.WAITING, 2), ACTION31(31, 3, SocialAction.LAUGH, 2), ACTION33(33, 3, SocialAction.APPLAUD, 2), ACTION34(34, 3, SocialAction.DANCE, 2), ACTION35(35, 3, SocialAction.SORROW, 2),
+		ACTION62(62, 3, SocialAction.CHARM, 2), ACTION66(66, 3, SocialAction.SHYNESS, 2),
 
 		// Semi social action
 		ACTION71(71, 4, SocialAction.COUPLE_BOW, 2), ACTION72(72, 4, SocialAction.COUPLE_HIGH_FIVE, 2), ACTION73(73, 4, SocialAction.COUPLE_DANCE, 2);
@@ -326,8 +324,7 @@ public class RequestActionUse extends L2GameClientPacket
 		// Социальные действия
 		if (action.type == 3)
 		{
-			if (activeChar.isOutOfControl() || activeChar.getTransformation() != 0 || activeChar.isActionsDisabled() || activeChar.isSitting() || activeChar.getPrivateStoreType() != Player.STORE_PRIVATE_NONE
-						|| activeChar.isProcessingRequest())
+			if (activeChar.isOutOfControl() || activeChar.getTransformation() != 0 || activeChar.isActionsDisabled() || activeChar.isSitting() || activeChar.getPrivateStoreType() != Player.STORE_PRIVATE_NONE || activeChar.isProcessingRequest())
 			{
 				activeChar.sendActionFailed();
 				return;

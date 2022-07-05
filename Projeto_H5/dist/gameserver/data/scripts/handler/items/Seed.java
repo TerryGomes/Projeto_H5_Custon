@@ -72,9 +72,7 @@ public class Seed extends ScriptItemHandler implements ScriptFile
 		}
 
 		// Цель не моб, РБ или миньон
-		if (!player.getTarget().isMonster() || player.getTarget() instanceof RaidBossInstance
-					|| player.getTarget() instanceof MinionInstance && ((MinionInstance) player.getTarget()).getLeader() instanceof RaidBossInstance || player.getTarget() instanceof ChestInstance
-					|| ((MonsterInstance) playable.getTarget()).getChampion() > 0 && !item.isAltSeed())
+		if (!player.getTarget().isMonster() || player.getTarget() instanceof RaidBossInstance || player.getTarget() instanceof MinionInstance && ((MinionInstance) player.getTarget()).getLeader() instanceof RaidBossInstance || player.getTarget() instanceof ChestInstance || ((MonsterInstance) playable.getTarget()).getChampion() > 0 && !item.isAltSeed())
 		{
 			player.sendPacket(SystemMsg.THE_TARGET_IS_UNAVAILABLE_FOR_SEEDING);
 			return false;

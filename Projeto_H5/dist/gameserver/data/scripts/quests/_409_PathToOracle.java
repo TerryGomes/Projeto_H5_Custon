@@ -143,13 +143,11 @@ public class _409_PathToOracle extends Quest implements ScriptFile
 			}
 			else if (st.getQuestItemsCount(CRYSTAL_MEDALLION_ID) > 0)
 			{
-				if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) < 1 && st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) < 1 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) < 1
-							&& st.getQuestItemsCount(HALF_OF_DAIRY_ID) < 1)
+				if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) < 1 && st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) < 1 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) < 1 && st.getQuestItemsCount(HALF_OF_DAIRY_ID) < 1)
 				{
 					htmltext = "father_manuell_q0409_09.htm";
 				}
-				else if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) > 0 && st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) > 0 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) > 0
-							&& st.getQuestItemsCount(HALF_OF_DAIRY_ID) < 1)
+				else if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) > 0 && st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) > 0 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) > 0 && st.getQuestItemsCount(HALF_OF_DAIRY_ID) < 1)
 				{
 					htmltext = "father_manuell_q0409_08.htm";
 					st.takeItems(MONEY_OF_SWINDLER_ID, 1);
@@ -179,8 +177,7 @@ public class _409_PathToOracle extends Quest implements ScriptFile
 		case ALLANA:
 			if (st.getQuestItemsCount(CRYSTAL_MEDALLION_ID) > 0)
 			{
-				if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) < 1 && st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) < 1 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) < 1
-							&& st.getQuestItemsCount(HALF_OF_DAIRY_ID) < 1)
+				if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) < 1 && st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) < 1 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) < 1 && st.getQuestItemsCount(HALF_OF_DAIRY_ID) < 1)
 				{
 					if (cond > 2)
 					{
@@ -191,15 +188,13 @@ public class _409_PathToOracle extends Quest implements ScriptFile
 						htmltext = "allana_q0409_01.htm";
 					}
 				}
-				else if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) < 1 && st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) < 1 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) > 0
-							&& st.getQuestItemsCount(HALF_OF_DAIRY_ID) < 1)
+				else if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) < 1 && st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) < 1 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) > 0 && st.getQuestItemsCount(HALF_OF_DAIRY_ID) < 1)
 				{
 					htmltext = "allana_q0409_02.htm";
 					st.giveItems(HALF_OF_DAIRY_ID, 1);
 					st.setCond(4);
 				}
-				else if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) < 1 && st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) < 1 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) > 0
-							&& st.getQuestItemsCount(HALF_OF_DAIRY_ID) > 0)
+				else if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) < 1 && st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) < 1 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) > 0 && st.getQuestItemsCount(HALF_OF_DAIRY_ID) > 0)
 				{
 					if (st.getQuestItemsCount(TAMATOS_NECKLACE_ID) < 1)
 					{
@@ -210,16 +205,14 @@ public class _409_PathToOracle extends Quest implements ScriptFile
 						htmltext = "allana_q0409_03.htm";
 					}
 				}
-				else if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) > 0 && st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) < 1 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) > 0
-							&& st.getQuestItemsCount(HALF_OF_DAIRY_ID) > 0)
+				else if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) > 0 && st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) < 1 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) > 0 && st.getQuestItemsCount(HALF_OF_DAIRY_ID) > 0)
 				{
 					htmltext = "allana_q0409_04.htm";
 					st.takeItems(HALF_OF_DAIRY_ID, -1);
 					st.giveItems(DAIRY_OF_ALLANA_ID, 1);
 					st.setCond(7);
 				}
-				else if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) > 0 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) > 0 && st.getQuestItemsCount(HALF_OF_DAIRY_ID) < 1
-							&& st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) > 0)
+				else if (st.getQuestItemsCount(MONEY_OF_SWINDLER_ID) > 0 && st.getQuestItemsCount(LIZARD_CAPTAIN_ORDER_ID) > 0 && st.getQuestItemsCount(HALF_OF_DAIRY_ID) < 1 && st.getQuestItemsCount(DAIRY_OF_ALLANA_ID) > 0)
 				{
 					htmltext = "allana_q0409_05.htm";
 				}

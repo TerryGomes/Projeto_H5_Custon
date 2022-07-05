@@ -30,8 +30,7 @@ public class _060_GoodWorksReward extends Quest implements ScriptFile
 	private final static PrintfFormat msgPursuer = new PrintfFormat("%s! I must kill you. Blame your own curiosity.");
 	private final static String diePursuer = "You are strong. This was a mistake.";
 	private final static String diePursuer_return = "You have good luck. I shall return.";
-	private final static PrintfFormat Mammon_dialog = new PrintfFormat(
-				"<html><body>Black Marketeer of Mammon:<br>Forget about the money!<br>I will help you complete the class transfer, which is far more valuable! Which class would you like to be? Choose one.<br>%s</body></html>");
+	private final static PrintfFormat Mammon_dialog = new PrintfFormat("<html><body>Black Marketeer of Mammon:<br>Forget about the money!<br>I will help you complete the class transfer, which is far more valuable! Which class would you like to be? Choose one.<br>%s</body></html>");
 
 	private static long Last_Spawned_Pursuer = 0;
 
@@ -315,8 +314,7 @@ public class _060_GoodWorksReward extends Quest implements ScriptFile
 		profs.put(1, "<a action=\"bypass -h Quest _060_GoodWorksReward marks-WL\">Warlord.</a><br><a action=\"bypass -h Quest _060_GoodWorksReward marks-GL\">Gladiator.</a>");
 		profs.put(4, "<a action=\"bypass -h Quest _060_GoodWorksReward marks-PA\">Paladin.</a><br><a action=\"bypass -h Quest _060_GoodWorksReward marks-DA\">Dark Avenger.</a>");
 		profs.put(7, "<a action=\"bypass -h Quest _060_GoodWorksReward marks-TH\">Treasure Hunter.</a><br><a action=\"bypass -h Quest _060_GoodWorksReward marks-HK\">Hawkeye.</a>");
-		profs.put(11,
-					"<a action=\"bypass -h Quest _060_GoodWorksReward marks-SC\">Sorcerer.</a><br><a action=\"bypass -h Quest _060_GoodWorksReward marks-NM\">Necromancer.</a><br><a action=\"bypass -h Quest _060_GoodWorksReward marks-WA\">Warlock.</a>");
+		profs.put(11, "<a action=\"bypass -h Quest _060_GoodWorksReward marks-SC\">Sorcerer.</a><br><a action=\"bypass -h Quest _060_GoodWorksReward marks-NM\">Necromancer.</a><br><a action=\"bypass -h Quest _060_GoodWorksReward marks-WA\">Warlock.</a>");
 		profs.put(15, "<a action=\"bypass -h Quest _060_GoodWorksReward marks-BS\">Bishop.</a><br><a action=\"bypass -h Quest _060_GoodWorksReward marks-PP\">Prophet.</a>");
 		profs.put(19, "<a action=\"bypass -h Quest _060_GoodWorksReward marks-TK\">Temple Knight.</a><br><a action=\"bypass -h Quest _060_GoodWorksReward marks-SS\">Swordsinger.</a>");
 		profs.put(22, "<a action=\"bypass -h Quest _060_GoodWorksReward marks-PW\">Plainswalker.</a><br><a action=\"bypass -h Quest _060_GoodWorksReward marks-SR\">Silver Ranger.</a>");

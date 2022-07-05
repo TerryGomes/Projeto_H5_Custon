@@ -288,9 +288,7 @@ public class _416_PathToOrcShaman extends Quest implements ScriptFile
 				htmltext = "hestui_totem_spirit_q0416_04.htm";
 			}
 		}
-		else if (npcId == HestuiTotemSpirit && st.getCond() > 0
-					&& (st.getQuestItemsCount(GrizzlyBlood) > 0 || st.getQuestItemsCount(FlameCharm) > 0 || st.getQuestItemsCount(BloodCauldron) > 0 || st.getQuestItemsCount(SpiritNet) > 0
-								|| st.getQuestItemsCount(BoundDurkaSpirit) > 0 || st.getQuestItemsCount(TotemSpiritBlood) > 0 || st.getQuestItemsCount(TatarusLetterOfRecommendation) > 0))
+		else if (npcId == HestuiTotemSpirit && st.getCond() > 0 && (st.getQuestItemsCount(GrizzlyBlood) > 0 || st.getQuestItemsCount(FlameCharm) > 0 || st.getQuestItemsCount(BloodCauldron) > 0 || st.getQuestItemsCount(SpiritNet) > 0 || st.getQuestItemsCount(BoundDurkaSpirit) > 0 || st.getQuestItemsCount(TotemSpiritBlood) > 0 || st.getQuestItemsCount(TatarusLetterOfRecommendation) > 0))
 		{
 			htmltext = "hestui_totem_spirit_q0416_05.htm";
 		}

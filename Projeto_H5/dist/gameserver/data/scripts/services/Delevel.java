@@ -19,8 +19,7 @@ public class Delevel extends Functions implements ScriptFile
 		}
 		String append = "Delevel Service";
 		append += "<br>";
-		append += "<font color=\"LEVEL\">"
-					+ new CustomMessage("scripts.services.Delevel.DelevelFor", getSelf()).addString(Util.formatAdena(Config.SERVICES_DELEVEL_COUNT)).addItemName(Config.SERVICES_DELEVEL_ITEM) + "</font>";
+		append += "<font color=\"LEVEL\">" + new CustomMessage("scripts.services.Delevel.DelevelFor", getSelf()).addString(Util.formatAdena(Config.SERVICES_DELEVEL_COUNT)).addItemName(Config.SERVICES_DELEVEL_ITEM) + "</font>";
 		append += "<table>";
 		append += "<tr><td></td></tr>";
 		append += "<tr><td><button value=\"Delevel\" action=\"bypass -h scripts_services.Delevel:delevel\" width=80 height=15 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></td></tr>";

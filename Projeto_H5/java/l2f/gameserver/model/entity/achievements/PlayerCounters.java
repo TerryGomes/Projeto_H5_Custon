@@ -278,9 +278,7 @@ public class PlayerCounters
 		sb.append("<table width=300 border=0>");
 		for (Entry<Integer, Long> top : tops.entrySet())
 		{
-			sb.append("<tr><td><table border=0 width=294 bgcolor=" + ((order % 2) == 0 ? "1E1E1E" : "090909") + ">").append("<tr><td fixwidth=10%><font color=LEVEL>").append(order++).append(".<font></td>")
-						.append("<td fixwidth=45%>").append(CharacterDAO.getNameByObjectId(top.getKey())).append("</td><td fixwidth=45%><font color=777777>").append(top.getValue()).append("</font></td></tr>")
-						.append("</table></td></tr>");
+			sb.append("<tr><td><table border=0 width=294 bgcolor=" + ((order % 2) == 0 ? "1E1E1E" : "090909") + ">").append("<tr><td fixwidth=10%><font color=LEVEL>").append(order++).append(".<font></td>").append("<td fixwidth=45%>").append(CharacterDAO.getNameByObjectId(top.getKey())).append("</td><td fixwidth=45%><font color=777777>").append(top.getValue()).append("</font></td></tr>").append("</table></td></tr>");
 		}
 		sb.append("</table>");
 

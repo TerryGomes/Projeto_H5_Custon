@@ -317,8 +317,7 @@ public class UndergroundColiseumBattleEvent extends GlobalEvent implements Itera
 			}
 			if (member.getPlayer().getDistance(manager) > 400)
 			{
-				broadcastToMembers(
-							new ExShowScreenMessage(NpcString.THE_MATCH_IS_AUTOMATICALLY_CANCELED_BECAUSE_YOU_ARE_TOO_FAR_FROM_THE_ADMISSION_MANAGER, 5000, ExShowScreenMessage.ScreenMessageAlign.TOP_CENTER));
+				broadcastToMembers(new ExShowScreenMessage(NpcString.THE_MATCH_IS_AUTOMATICALLY_CANCELED_BECAUSE_YOU_ARE_TOO_FAR_FROM_THE_ADMISSION_MANAGER, 5000, ExShowScreenMessage.ScreenMessageAlign.TOP_CENTER));
 				cancel();
 				return;
 			}

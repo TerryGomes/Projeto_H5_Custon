@@ -167,8 +167,7 @@ public class CommunityAuctionHouse implements ScriptFile, ICommunityBoardHandler
 									return;
 								}
 								ItemInstance item = auction.getItem();
-								ConfirmDlg packet = new ConfirmDlg(SystemMsg.S1, 60000)
-											.addString("Are you sure, you want to buy " + quantity + ' ' + item.getName() + " for " + Util.getNumberWithCommas(realPrice) + " adena?");
+								ConfirmDlg packet = new ConfirmDlg(SystemMsg.S1, 60000).addString("Are you sure, you want to buy " + quantity + ' ' + item.getName() + " for " + Util.getNumberWithCommas(realPrice) + " adena?");
 								player.ask(packet, new ButtonClick(player, item, Buttons.Buy_Item, quantity));
 							}
 						}
@@ -305,8 +304,7 @@ public class CommunityAuctionHouse implements ScriptFile, ICommunityBoardHandler
 			if (itemTypes[0] == i)
 			{
 				AuctionItemTypes[] types = getGroupsInType(itemTypes[0]);
-				html = html.replace("%plusMinusBtn" + i + "%",
-							"<button value=\"\" action=\"bypass _bbsAuction_ 1 _ -1 -1 _ %grade% _ %search% _ %itemSort% _ %gradeSort% _ %quantitySort% _ %priceSort%\" width=15 height=15 back=\"L2UI_CH3.QuestWndMinusBtn\" fore=\"L2UI_CH3.QuestWndMinusBtn\">");
+				html = html.replace("%plusMinusBtn" + i + "%", "<button value=\"\" action=\"bypass _bbsAuction_ 1 _ -1 -1 _ %grade% _ %search% _ %itemSort% _ %gradeSort% _ %quantitySort% _ %priceSort%\" width=15 height=15 back=\"L2UI_CH3.QuestWndMinusBtn\" fore=\"L2UI_CH3.QuestWndMinusBtn\">");
 				html = html.replace("%itemListHeight" + i + "%", String.valueOf(types.length * 5));
 				heightToBeUsed -= types.length * 15;
 
@@ -317,8 +315,7 @@ public class CommunityAuctionHouse implements ScriptFile, ICommunityBoardHandler
 				{
 					builder.append("<tr><td><table width=150 bgcolor=").append(count % 2 == 1 ? "22211d" : "1b1a15").append(">");
 					builder.append("<tr><td width=150 height=17><font color=93886c>");
-					builder.append("<button value=\"").append(itemType.toString().replace("_", " ")).append("\" action=\"bypass _bbsAuction_ 1 _ ").append(itemTypes[0]).append(" ").append(count)
-								.append(" _ %grade% _ %search% _ %itemSort% _ %gradeSort% _ %quantitySort% _ %priceSort%\" width=150 height=17 back=\"L2UI_CT1.emptyBtn\" fore=\"L2UI_CT1.emptyBtn\">");
+					builder.append("<button value=\"").append(itemType.toString().replace("_", " ")).append("\" action=\"bypass _bbsAuction_ 1 _ ").append(itemTypes[0]).append(" ").append(count).append(" _ %grade% _ %search% _ %itemSort% _ %gradeSort% _ %quantitySort% _ %priceSort%\" width=150 height=17 back=\"L2UI_CT1.emptyBtn\" fore=\"L2UI_CT1.emptyBtn\">");
 					builder.append("</font></td></tr></table></td></tr>");
 					count++;
 				}
@@ -327,8 +324,7 @@ public class CommunityAuctionHouse implements ScriptFile, ICommunityBoardHandler
 			}
 			else
 			{
-				html = html.replace("%plusMinusBtn" + i + "%", "<button value=\"\" action=\"bypass _bbsAuction_ 1 _ " + (i)
-							+ " -1 _ %grade% _ %search% _ %itemSort% _ %gradeSort% _ %quantitySort% _ %priceSort%\" width=15 height=15 back=\"L2UI_CH3.QuestWndPlusBtn\" fore=\"L2UI_CH3.QuestWndPlusBtn\">");
+				html = html.replace("%plusMinusBtn" + i + "%", "<button value=\"\" action=\"bypass _bbsAuction_ 1 _ " + (i) + " -1 _ %grade% _ %search% _ %itemSort% _ %gradeSort% _ %quantitySort% _ %priceSort%\" width=15 height=15 back=\"L2UI_CH3.QuestWndPlusBtn\" fore=\"L2UI_CH3.QuestWndPlusBtn\">");
 				html = html.replace("%itemListHeight" + i + "%", "0");
 				html = html.replace("%itemList" + i + "%", "");
 			}
@@ -359,9 +355,7 @@ public class CommunityAuctionHouse implements ScriptFile, ICommunityBoardHandler
 
 			builder.append("<tr><td width=280 height=25><table border=0 width=280 height=30><tr>");
 
-			builder.append("<td width=32 background=" + item.getTemplate().getIcon()
-						+ "><button value=\"\" action=\"bypass _bbsAuction_ %page% _ %type% _ %grade% _ %search% _ %itemSort% _ %gradeSort% _ %quantitySort% _ %priceSort% _ 0 _ ").append(auction.getAuctionId())
-						.append("\" width=32 height=32 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"></td>");
+			builder.append("<td width=32 background=" + item.getTemplate().getIcon() + "><button value=\"\" action=\"bypass _bbsAuction_ %page% _ %type% _ %grade% _ %search% _ %itemSort% _ %gradeSort% _ %quantitySort% _ %priceSort% _ 0 _ ").append(auction.getAuctionId()).append("\" width=32 height=32 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\"></td>");
 			builder.append(getItemName(item, 248, 25, auction.isPrivateStore()));
 			builder.append("</tr></table></td><td width=40 height=30><center>");
 			if (item.getCrystalType() != Grade.NONE)
@@ -482,8 +476,7 @@ public class CommunityAuctionHouse implements ScriptFile, ICommunityBoardHandler
 					{
 						if (choosenItem.getAttributeElementValue(element, false) > 0)
 						{
-							builder.append("<br><font color=827d78>").append(getElementName(element)).append(" Def ").append(getElementName(element)).append(" </font><img src=L2UI_CT1.Gauge_DF_Attribute_")
-										.append(getElementName(element)).append(" width=100 height=10>");
+							builder.append("<br><font color=827d78>").append(getElementName(element)).append(" Def ").append(getElementName(element)).append(" </font><img src=L2UI_CT1.Gauge_DF_Attribute_").append(getElementName(element)).append(" width=100 height=10>");
 						}
 					}
 				}
@@ -502,8 +495,7 @@ public class CommunityAuctionHouse implements ScriptFile, ICommunityBoardHandler
 		html = html.replace("%priceSort%", String.valueOf(priceSort));
 		html = html.replace("%auctionId%", String.valueOf(auctionId));
 		html = html.replace("%icon%", "<img src=icon." + choosenItem.getTemplate().getIcon() + " width=32 height=32>");
-		html = html.replace("%fullName%",
-					"<table width=240 height=50><tr>" + getItemName(choosenItem, 240, 50, auction.isPrivateStore(), (auction.getCountToSell() > 1 ? " x" + auction.getCountToSell() : "")) + "</tr></table>");
+		html = html.replace("%fullName%", "<table width=240 height=50><tr>" + getItemName(choosenItem, 240, 50, auction.isPrivateStore(), (auction.getCountToSell() > 1 ? " x" + auction.getCountToSell() : "")) + "</tr></table>");
 		html = html.replace("%quantity%", (auction.getCountToSell() > 1 ? "<edit var=\"quantity\" type=number value=\"\" width=160 height=12>" : "<center><font color=94775b>1</font></center>"));
 		if (auction.getCountToSell() <= 1)
 		{
@@ -559,8 +551,7 @@ public class CommunityAuctionHouse implements ScriptFile, ICommunityBoardHandler
 			builder.append("<td width=32 height=32 align=center valign=top>");
 			if (item != null)
 			{
-				builder.append("<button value=\"\" action=\"bypass _bbsNewAuction_ n").append(item.getObjectId()).append(" _ ").append(line)
-							.append("\" width=32 height=32 back=L2UI_CT1.ItemWindow_DF_Frame_Down fore=L2UI_CT1.ItemWindow_DF_Frame />");
+				builder.append("<button value=\"\" action=\"bypass _bbsNewAuction_ n").append(item.getObjectId()).append(" _ ").append(line).append("\" width=32 height=32 back=L2UI_CT1.ItemWindow_DF_Frame_Down fore=L2UI_CT1.ItemWindow_DF_Frame />");
 			}
 			else
 			{
@@ -627,8 +618,7 @@ public class CommunityAuctionHouse implements ScriptFile, ICommunityBoardHandler
 			// button with image of item icon
 			if (!player.hasDialogAskActive())
 			{
-				builder.append("<button value=\"\" action=\"bypass _bbsNewAuction_ c").append(item.getObjectId()).append(" _ ").append(line)
-							.append(" _ 1\" width=32 height=32 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\">");
+				builder.append("<button value=\"\" action=\"bypass _bbsNewAuction_ c").append(item.getObjectId()).append(" _ ").append(line).append(" _ 1\" width=32 height=32 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\">");
 			}
 			else
 			{
@@ -658,8 +648,7 @@ public class CommunityAuctionHouse implements ScriptFile, ICommunityBoardHandler
 		// making longer table, in case there are less items than 10
 		if (i < 10)
 		{
-			builder.append("<table border=0 cellspacing=0 cellpadding=0 width=470 height=").append((10 - i) * 35)
-						.append("><tr><td width=260><br></td><td width=55></td><td width=55></td><td width=100></td></tr></table>");
+			builder.append("<table border=0 cellspacing=0 cellpadding=0 width=470 height=").append((10 - i) * 35).append("><tr><td width=260><br></td><td width=55></td><td width=55></td><td width=100></td></tr></table>");
 		}
 
 		// replacements
@@ -679,9 +668,7 @@ public class CommunityAuctionHouse implements ScriptFile, ICommunityBoardHandler
 		html = html.replace("%choosenImage%", (choosenItem != null ? "<img src=icon." + choosenItem.getTemplate().getIcon() + " width=32 height=32>" : ""));
 		html = html.replace("%choosenItem%", (choosenItem != null ? (getItemName(choosenItem, 180, 45, false, (choosenItem.getCount() > 1 ? " x" + choosenItem.getCount() : ""))) : ""));
 		html = html.replace("%quantity%", (choosenItem == null || choosenItem.getCount() > 1 ? "<edit var=\"quantity\" type=number value=\"\" width=160 height=12>" : "<center>1</center>"));
-		html = html.replace("%NewAuctionButton%", (choosenItem != null ? "<center><button value=\"New Auction\" action=\"bypass _bbsNewAuction_ " + (newItem ? "n" : "c") + currentItem + " _ " + line + " _ 0 _ "
-					+ (choosenItem == null || choosenItem.getCount() > 1 ? "$quantity" : "1") + " _ $sale_price\" width=90 height=30 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></center>"
-					: ""));
+		html = html.replace("%NewAuctionButton%", (choosenItem != null ? "<center><button value=\"New Auction\" action=\"bypass _bbsNewAuction_ " + (newItem ? "n" : "c") + currentItem + " _ " + line + " _ 0 _ " + (choosenItem == null || choosenItem.getCount() > 1 ? "$quantity" : "1") + " _ $sale_price\" width=90 height=30 back=\"L2UI_CT1.Button_DF_Down\" fore=\"L2UI_CT1.Button_DF\"></center>" : ""));
 
 		return html;
 	}
@@ -851,8 +838,7 @@ public class CommunityAuctionHouse implements ScriptFile, ICommunityBoardHandler
 		}
 		if (item.getAttackElement() != Element.NONE)
 		{
-			builder.append("<font color=").append(getElementColor(item.getAttackElement())).append("> ").append(getElementName(item.getAttackElement())).append(" +").append(item.getAttackElementValue())
-						.append("</font>");
+			builder.append("<font color=").append(getElementColor(item.getAttackElement())).append("> ").append(getElementName(item.getAttackElement())).append(" +").append(item.getAttackElementValue()).append("</font>");
 		}
 		if (item.isArmor())
 		{

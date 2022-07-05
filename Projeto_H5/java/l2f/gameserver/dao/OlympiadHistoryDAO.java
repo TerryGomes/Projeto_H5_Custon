@@ -55,8 +55,7 @@ public class OlympiadHistoryDAO
 
 					boolean old = rset.getBoolean("old");
 
-					OlympiadHistory history = new OlympiadHistory(objectId1, objectId2, classId1, classId2, name1, name2, rset.getLong("game_start_time"), rset.getInt("game_time"), rset.getInt("game_status"),
-								rset.getInt("game_type"));
+					OlympiadHistory history = new OlympiadHistory(objectId1, objectId2, classId1, classId2, name1, name2, rset.getLong("game_start_time"), rset.getInt("game_time"), rset.getInt("game_status"), rset.getInt("game_type"));
 
 					map.get(old).add(history);
 				}

@@ -23,8 +23,7 @@ public class ReportBot implements IVoicedCommandHandler
 		{
 			final NpcHtmlMessage html = new NpcHtmlMessage(0);
 			html.setHtml(htmlreport);
-			html.replace("%reported%", activeChar.getTarget() == null ? "Please select target to report or type his name."
-						: activeChar.getTarget().isPlayer() ? activeChar.getTarget().getName() : "You can report only players.");
+			html.replace("%reported%", activeChar.getTarget() == null ? "Please select target to report or type his name." : activeChar.getTarget().isPlayer() ? activeChar.getTarget().getName() : "You can report only players.");
 			activeChar.sendPacket(html);
 			return false;
 		}

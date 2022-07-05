@@ -146,8 +146,7 @@ public class _404_PathToWizard extends Quest implements ScriptFile
 			{
 				htmltext = "parina_q0404_05.htm";
 			}
-			else if (cond > 0 && st.getQuestItemsCount(FLAME_EARING_ID) > 0 && st.getQuestItemsCount(WIND_BANGEL_ID) > 0 && st.getQuestItemsCount(WATER_NECKLACE_ID) > 0
-						&& st.getQuestItemsCount(EARTH_RING_ID) > 0)
+			else if (cond > 0 && st.getQuestItemsCount(FLAME_EARING_ID) > 0 && st.getQuestItemsCount(WIND_BANGEL_ID) > 0 && st.getQuestItemsCount(WATER_NECKLACE_ID) > 0 && st.getQuestItemsCount(EARTH_RING_ID) > 0)
 			{
 				htmltext = "parina_q0404_06.htm";
 				st.takeItems(FLAME_EARING_ID, st.getQuestItemsCount(FLAME_EARING_ID));

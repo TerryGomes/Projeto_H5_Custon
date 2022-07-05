@@ -10,8 +10,7 @@ public class MergeDatabaseFactory extends BasicDataSource
 {
 	public MergeDatabaseFactory()
 	{
-		super(Config.DATABASE_DRIVER, Config.MERGE_URL, Config.MERGE_LOGIN, Config.MERGE_PASSWORD, Config.DATABASE_MAX_CONNECTIONS, Config.DATABASE_MAX_CONNECTIONS, Config.DATABASE_MAX_IDLE_TIMEOUT,
-					Config.DATABASE_IDLE_TEST_PERIOD, false);
+		super(Config.DATABASE_DRIVER, Config.MERGE_URL, Config.MERGE_LOGIN, Config.MERGE_PASSWORD, Config.DATABASE_MAX_CONNECTIONS, Config.DATABASE_MAX_CONNECTIONS, Config.DATABASE_MAX_IDLE_TIMEOUT, Config.DATABASE_IDLE_TEST_PERIOD, false);
 	}
 
 	@Override

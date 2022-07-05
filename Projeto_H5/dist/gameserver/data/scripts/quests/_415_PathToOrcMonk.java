@@ -424,8 +424,7 @@ public class _415_PathToOrcMonk extends Quest implements ScriptFile
 			st.takeItems(LeatherPouch3st, -1);
 			st.giveItems(LeatherPouchFull3st, 1);
 		}
-		else if (cond == 11 && st.getQuestItemsCount(RatmanFang) >= 3 && st.getQuestItemsCount(LangkLizardmanTooth) >= 3 && st.getQuestItemsCount(FelimLizardmanTooth) >= 3
-					&& st.getQuestItemsCount(VukuOrcTusk) >= 3)
+		else if (cond == 11 && st.getQuestItemsCount(RatmanFang) >= 3 && st.getQuestItemsCount(LangkLizardmanTooth) >= 3 && st.getQuestItemsCount(FelimLizardmanTooth) >= 3 && st.getQuestItemsCount(VukuOrcTusk) >= 3)
 		{
 			st.takeItems(VukuOrcTusk, -1);
 			st.takeItems(RatmanFang, -1);

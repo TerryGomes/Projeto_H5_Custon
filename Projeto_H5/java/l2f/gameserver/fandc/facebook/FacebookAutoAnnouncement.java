@@ -43,8 +43,7 @@ public final class FacebookAutoAnnouncement extends RunnableImpl
 		final long currentDate = System.currentTimeMillis();
 		if (ConfigHolder.getBool("AllowFacebookRewardSystem"))
 		{
-			if (ConfigHolder.getBool("FacebookAllowAutoAnnouncementNotConnected")
-						&& _lastNotConnectedMsgDate + ConfigHolder.getMillis("FacebookAutoAnnouncementNotConnectedDelay", TimeUnit.SECONDS) < currentDate)
+			if (ConfigHolder.getBool("FacebookAllowAutoAnnouncementNotConnected") && _lastNotConnectedMsgDate + ConfigHolder.getMillis("FacebookAutoAnnouncementNotConnectedDelay", TimeUnit.SECONDS) < currentDate)
 			{
 				_lastNotConnectedMsgDate = currentDate;
 				announceNotConnectedMsg();
@@ -54,8 +53,7 @@ public final class FacebookAutoAnnouncement extends RunnableImpl
 				_lastConnectedMsgDate = currentDate;
 				announceConnectedMsg();
 			}
-			if (ConfigHolder.getBool("FacebookAllowAutoAnnounceNegativePoints")
-						&& _lastNegativePointsMsgDate + ConfigHolder.getMillis("FacebookAutoAnnouncementNegativePointsDelay", TimeUnit.SECONDS) < currentDate)
+			if (ConfigHolder.getBool("FacebookAllowAutoAnnounceNegativePoints") && _lastNegativePointsMsgDate + ConfigHolder.getMillis("FacebookAutoAnnouncementNegativePointsDelay", TimeUnit.SECONDS) < currentDate)
 			{
 				_lastNegativePointsMsgDate = currentDate;
 				announceNegativePointsMsg();
@@ -100,8 +98,7 @@ public final class FacebookAutoAnnouncement extends RunnableImpl
 
 	private long getNextDelay(long currentDate)
 	{
-		if (!ConfigHolder.getBool("AllowFacebookRewardSystem") || !ConfigHolder.getBool("FacebookAllowAutoAnnouncementNotConnected") && !ConfigHolder.getBool("FacebookAllowAutoAnnouncementConnected")
-					&& !ConfigHolder.getBool("FacebookAllowAutoAnnounceNegativePoints"))
+		if (!ConfigHolder.getBool("AllowFacebookRewardSystem") || !ConfigHolder.getBool("FacebookAllowAutoAnnouncementNotConnected") && !ConfigHolder.getBool("FacebookAllowAutoAnnouncementConnected") && !ConfigHolder.getBool("FacebookAllowAutoAnnounceNegativePoints"))
 		{
 			return DELAY_WHILE_SYSTEM_DISABLED;
 		}

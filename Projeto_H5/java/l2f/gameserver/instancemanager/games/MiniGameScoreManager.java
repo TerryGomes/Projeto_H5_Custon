@@ -55,8 +55,7 @@ public class MiniGameScoreManager
 		{
 			con = DatabaseFactory.getInstance().getConnection();
 			statement = con.createStatement();
-			rset = statement.executeQuery(
-						"SELECT characters.char_name AS name, character_minigame_score.score AS score FROM characters, character_minigame_score WHERE characters.obj_Id=character_minigame_score.object_id");
+			rset = statement.executeQuery("SELECT characters.char_name AS name, character_minigame_score.score AS score FROM characters, character_minigame_score WHERE characters.obj_Id=character_minigame_score.object_id");
 			while (rset.next())
 			{
 				String name = rset.getString("name");

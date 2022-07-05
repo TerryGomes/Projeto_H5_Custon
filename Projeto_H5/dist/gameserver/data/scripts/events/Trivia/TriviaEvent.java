@@ -912,7 +912,6 @@ public class TriviaEvent extends Functions implements ScriptFile, IVoicedCommand
 		return status;
 	}
 
-	@SuppressWarnings("static-access")
 	private void setStatus(boolean status)
 	{
 		TriviaEvent.status = status;

@@ -28,8 +28,7 @@ public class AdminBan implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_ban, admin_unban, admin_cban, admin_chatban, admin_chatunban, admin_banip, admin_accban, admin_accunban, admin_accban_hwid, admin_trade_ban, admin_trade_unban, admin_jail, admin_unjail,
-		admin_permaban
+		admin_ban, admin_unban, admin_cban, admin_chatban, admin_chatunban, admin_banip, admin_accban, admin_accunban, admin_accban_hwid, admin_trade_ban, admin_trade_unban, admin_jail, admin_unjail, admin_permaban
 	}
 
 	@SuppressWarnings(

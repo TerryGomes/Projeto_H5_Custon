@@ -454,8 +454,7 @@ public class BattleScheduleManager
 	{
 		if (team == null)
 		{
-			throw new IllegalArgumentException(
-						String.format("Argument for @NotNull parameter '%s' of %s.%s must not be null", "team", "l2f/gameserver/model/entity/tournament/BattleScheduleManager", "setFinalPosition"));
+			throw new IllegalArgumentException(String.format("Argument for @NotNull parameter '%s' of %s.%s must not be null", "team", "l2f/gameserver/model/entity/tournament/BattleScheduleManager", "setFinalPosition"));
 		}
 		final int finalPosition = decideFinalTeamPosition(team.getRoundsLost(), roundIndex);
 		team.setFinalPosition(finalPosition);
@@ -839,8 +838,7 @@ public class BattleScheduleManager
 			{
 				final int[] playerIds = placeWinner.getPlayerIdsForIterate();
 
-				final String message = "Congratulations." + "\nYour team has finished in the " + place + " place in the last tournament." + "\nHere is the reward given for finishing the tournament in the "
-							+ place + " place." + "\n\nThanks for participating";
+				final String message = "Congratulations." + "\nYour team has finished in the " + place + " place in the last tournament." + "\nHere is the reward given for finishing the tournament in the " + place + " place." + "\n\nThanks for participating";
 
 				for (int playerId : playerIds)
 				{
@@ -1037,9 +1035,7 @@ public class BattleScheduleManager
 			getBattlesPerRound().clear();
 
 			// Clear db
-			try (Connection con = DatabaseFactory.getInstance().getConnection();
-						PreparedStatement battlesStatement = con.prepareStatement("DELETE FROM tournament_battles");
-						PreparedStatement teamsStatement = con.prepareStatement("DELETE FROM tournament_teams"))
+			try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement battlesStatement = con.prepareStatement("DELETE FROM tournament_battles"); PreparedStatement teamsStatement = con.prepareStatement("DELETE FROM tournament_teams"))
 			{
 				battlesStatement.executeUpdate();
 				teamsStatement.executeUpdate();

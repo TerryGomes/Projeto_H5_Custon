@@ -77,8 +77,7 @@ public class TransferWeapon extends Functions
 				sb.append("									<br>");
 				sb.append("								</td>");
 				sb.append("								<td height=34>");
-				sb.append("									<button action=\"bypass -h scripts_services.TransferWeapon:chooseWeapon ").append(weapon.getObjectId())
-							.append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\">");
+				sb.append("									<button action=\"bypass -h scripts_services.TransferWeapon:chooseWeapon ").append(weapon.getObjectId()).append("\" width=34 height=34 back=\"L2UI_CT1.ItemWindow_DF_Frame_Down\" fore=\"L2UI_CT1.ItemWindow_DF_Frame\">");
 				sb.append("								</td>");
 				sb.append("							</tr>");
 				sb.append("						</table>");
@@ -144,8 +143,7 @@ public class TransferWeapon extends Functions
 		}
 
 		String html = HtmCache.getInstance().getNotNull("scripts/services/TransferWeapon/transfer.htm", player);
-		html = html.replace("%weaponName%", (weapon.getAugmentationId() > 0 ? "Augmented " : "") + weapon.getName() + (weapon.getEnchantLevel() > 0 ? " +" + weapon.getEnchantLevel() : "") + " "
-					+ weapon.getTemplate().getAdditionalName());
+		html = html.replace("%weaponName%", (weapon.getAugmentationId() > 0 ? "Augmented " : "") + weapon.getName() + (weapon.getEnchantLevel() > 0 ? " +" + weapon.getEnchantLevel() : "") + " " + weapon.getTemplate().getAdditionalName());
 		html = html.replace("%weaponId%", String.valueOf(weapon.getObjectId()));
 		html = html.replace("%icon%", weapon.getTemplate().getIcon());
 		show(html, player);

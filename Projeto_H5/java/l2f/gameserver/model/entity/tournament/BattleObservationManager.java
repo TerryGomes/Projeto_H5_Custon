@@ -149,8 +149,7 @@ public final class BattleObservationManager
 			}
 			if (Debug.TOURNAMENT.isActive())
 			{
-				Debug.TOURNAMENT.debug(ActiveBattleManager.class, "canObserveBattle", battle, player, sendErrorMsg, battle.getObserversForIterate().contains(player),
-							battle.getAllFightersForIterate().contains(player), player.isInObserverMode());
+				Debug.TOURNAMENT.debug(ActiveBattleManager.class, "canObserveBattle", battle, player, sendErrorMsg, battle.getObserversForIterate().contains(player), battle.getAllFightersForIterate().contains(player), player.isInObserverMode());
 			}
 			return false;
 		}
@@ -264,8 +263,7 @@ public final class BattleObservationManager
 		list.add(new PartySmallWindowAll.PartySmallWindowMemberInfo("Team 2: ", 100, 0, 0, 0, false));
 		list.add(new PartySmallWindowAll.PartySmallWindowMemberInfo("Tester", 100, 0, 0, 0, true));
 		final Team[] teams = battle.getBattleRecord().getTeams();
-		final List<PartySmallWindowAll.PartySmallWindowMemberInfo> members = new ArrayList<PartySmallWindowAll.PartySmallWindowMemberInfo>(
-					teams.length + teams.length * ConfigHolder.getInt("TournamentPlayersInTeam"));
+		final List<PartySmallWindowAll.PartySmallWindowMemberInfo> members = new ArrayList<PartySmallWindowAll.PartySmallWindowMemberInfo>(teams.length + teams.length * ConfigHolder.getInt("TournamentPlayersInTeam"));
 		for (Team team : teams)
 		{
 			final int teamIndex = battle.getBattleRecord().getTeamIndex(team);

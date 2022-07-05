@@ -814,12 +814,10 @@ public enum SystemMsg implements IStaticPacket
 	// Message: Your account has been suspended for 7 days (retroactive to the day of disclosure), under Chapter 3, Section 14 of the Lineage II Service Use Agreement, for dealing or
 	// attempting to deal items or characters (accounts) within the game in exchange for cash or items of other games. Suspension of your account will automatically expire after 7 days.
 	// For more information, please visit the Support Center on the NCsoft website (http://us.ncsol2f.com/support).
-	YOUR_ACCOUNT_HAS_BEEN_SUSPENDED_FOR_7_DAYS_RETROACTIVE_TO_THE_DAY_OF_DISCLOSURE_UNDER_CHAPTER_3_SECTION_14_OF_THE_LINEAGE_II_SERVICE_USE_AGREEMENT_FOR_DEALING_OR_ATTEMPTING_TO_DEAL_ITEMS_OR_CHARACTERS_ACCOUNTS_WITHIN_THE_GAME_IN_EXCHANGE_FOR_CASH_OR_ITEMS_OF_OTHER_GAMES(
-				432),
+	YOUR_ACCOUNT_HAS_BEEN_SUSPENDED_FOR_7_DAYS_RETROACTIVE_TO_THE_DAY_OF_DISCLOSURE_UNDER_CHAPTER_3_SECTION_14_OF_THE_LINEAGE_II_SERVICE_USE_AGREEMENT_FOR_DEALING_OR_ATTEMPTING_TO_DEAL_ITEMS_OR_CHARACTERS_ACCOUNTS_WITHIN_THE_GAME_IN_EXCHANGE_FOR_CASH_OR_ITEMS_OF_OTHER_GAMES(432),
 	// Message: Your account has been suspended, under Chapter 3, Section 14 of the Lineage II Service Use Agreement, for dealing or attempting to deal items or characters (accounts)
 	// within the game in exchange for cash or items of other games. For more information, please visit the Support Center on the NCsoft website (http://us.ncsol2f.com/support).
-	YOUR_ACCOUNT_HAS_BEEN_SUSPENDED_UNDER_CHAPTER_3_SECTION_14_OF_THE_LINEAGE_II_SERVICE_USE_AGREEMENT_FOR_DEALING_OR_ATTEMPTING_TO_DEAL_ITEMS_OR_CHARACTERS_ACCOUNTS_WITHIN_THE_GAME_IN_EXCHANGE_FOR_CASH_OR_ITEMS_OF_OTHER_GAMES(
-				433),
+	YOUR_ACCOUNT_HAS_BEEN_SUSPENDED_UNDER_CHAPTER_3_SECTION_14_OF_THE_LINEAGE_II_SERVICE_USE_AGREEMENT_FOR_DEALING_OR_ATTEMPTING_TO_DEAL_ITEMS_OR_CHARACTERS_ACCOUNTS_WITHIN_THE_GAME_IN_EXCHANGE_FOR_CASH_OR_ITEMS_OF_OTHER_GAMES(433),
 	// Message: Your account has been suspended, under Chapter 3, Section 14 of the Lineage II Service Use Agreement, for unethical behavior or fraud. For more information, please visit
 	// the Support Center on the NCsoft website (http://us.ncsol2f.com/support).
 	YOUR_ACCOUNT_HAS_BEEN_SUSPENDED_UNDER_CHAPTER_3_SECTION_14_OF_THE_LINEAGE_II_SERVICE_USE_AGREEMENT_FOR_UNETHICAL_BEHAVIOR_OR_FRAUD(434),
@@ -2045,8 +2043,7 @@ public enum SystemMsg implements IStaticPacket
 	THIS_SEAL_PERMITS_THE_GROUP_THAT_HOLDS_IT_TO_EXCLUSIVE_ENTRY_TO_THE_DUNGEONS_OPENED_BY_THE_SEAL_OF_AVARICE_DURING_THE_SEAL_VALIDATION_PERIOD(1178),
 	// Message: This seal permits the group that holds it to enter the dungeon opened by the Seal of Gnosis, use the teleportation service offered by the priest in the village, and do
 	// business with the Blacksmith of Mammon. The Orator of Revelations appears and casts good magic on the winners, and the Preacher of Doom appears and casts bad magic on the losers.
-	THIS_SEAL_PERMITS_THE_GROUP_THAT_HOLDS_IT_TO_ENTER_THE_DUNGEON_OPENED_BY_THE_SEAL_OF_GNOSIS_USE_THE_TELEPORTATION_SERVICE_OFFERED_BY_THE_PRIEST_IN_THE_VILLAGE_AND_DO_BUSINESS_WITH_THE_BLACKSMITH_OF_MAMMON(
-				1179),
+	THIS_SEAL_PERMITS_THE_GROUP_THAT_HOLDS_IT_TO_ENTER_THE_DUNGEON_OPENED_BY_THE_SEAL_OF_GNOSIS_USE_THE_TELEPORTATION_SERVICE_OFFERED_BY_THE_PRIEST_IN_THE_VILLAGE_AND_DO_BUSINESS_WITH_THE_BLACKSMITH_OF_MAMMON(1179),
 	// Message: During the Seal Validation period, the cabal's maximum CP amount increases. In addition, the cabal possessing the seal will benefit from favorable changes in the cost to
 	// upgrade castle defense mercenaries, castle gates and walls; basic P. Def. of castle gates and walls; and the limit imposed on the castle tax rate. The use of siege war weapons
 	// will also be limited. If the Revolutionary Army of Dusk takes possession of this seal during the castle siege war, only the clan that owns the castle can come to its defense.

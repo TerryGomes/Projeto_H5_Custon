@@ -65,9 +65,7 @@ public class CommunityRanking implements ScriptFile, ICommunityBoardHandler
 
 	private static enum RankingEnum
 	{
-		PVP("PvP", "pk", "pvpkills", RankingType.NORMAL), PK("PK", "pvp", "pkkills", RankingType.NORMAL), RAID("Raid Kills", "rk", "raidkills", RankingType.NORMAL),
-		EVENT("Event Kills", "event", "eventKills", RankingType.NORMAL), SIEGE("Siege Kills", "siege", "siege_kills", RankingType.NORMAL), OLY("Olympiad Wins", "oly", "oly_wins", RankingType.NORMAL),
-		ADENA("Adena", "adena", "adena", RankingType.SPECIAL);
+		PVP("PvP", "pk", "pvpkills", RankingType.NORMAL), PK("PK", "pvp", "pkkills", RankingType.NORMAL), RAID("Raid Kills", "rk", "raidkills", RankingType.NORMAL), EVENT("Event Kills", "event", "eventKills", RankingType.NORMAL), SIEGE("Siege Kills", "siege", "siege_kills", RankingType.NORMAL), OLY("Olympiad Wins", "oly", "oly_wins", RankingType.NORMAL), ADENA("Adena", "adena", "adena", RankingType.SPECIAL);
 
 		private final String _name;
 		private final String _bypass;
@@ -213,9 +211,7 @@ public class CommunityRanking implements ScriptFile, ICommunityBoardHandler
 
 		final List<RankingStats> stats = _stats.get(type);
 
-		String html = HtmCache.getInstance().getNotNull(
-					Config.BBS_HOME_DIR + "ranking/" + (type.getRankingType() == RankingType.REWARDS ? "rank_rewards" : (type.getRankingType() == RankingType.NORMAL ? "rank_normal" : "rank_special") + ".htm"),
-					player);
+		String html = HtmCache.getInstance().getNotNull(Config.BBS_HOME_DIR + "ranking/" + (type.getRankingType() == RankingType.REWARDS ? "rank_rewards" : (type.getRankingType() == RankingType.NORMAL ? "rank_normal" : "rank_special") + ".htm"), player);
 
 		// Top 3
 		int index = 0;
@@ -293,8 +289,7 @@ public class CommunityRanking implements ScriptFile, ICommunityBoardHandler
 					html = html.replace("<?current_name_" + index + "?>", "<font color=LEVEL>" + playerStats.getPlayerName() + "</font>");
 					html = html.replace("<?current_clan_" + index + "?>", playerStats.getClanName() == null ? "<font color=B59A75>No Clan</font>" : "<font color=LEVEL>" + playerStats.getClanName() + "</font>");
 					html = html.replace("<?current_class_" + index + "?>", "<font color=LEVEL>" + Util.getFullClassName(playerStats.getClassId()) + "</font>");
-					html = html.replace("<?current_count_" + index + "?>",
-								"<font color=LEVEL>" + String.valueOf((type == RankingEnum.ADENA ? Util.convertToLineagePriceFormat(playerStats.getValue()) : playerStats.getValue())) + "</font>");
+					html = html.replace("<?current_count_" + index + "?>", "<font color=LEVEL>" + String.valueOf((type == RankingEnum.ADENA ? Util.convertToLineagePriceFormat(playerStats.getValue()) : playerStats.getValue())) + "</font>");
 				}
 				else
 				{
@@ -322,9 +317,7 @@ public class CommunityRanking implements ScriptFile, ICommunityBoardHandler
 		html = html.replace("%reward3%", String.valueOf(Config.SERVER_RANKING_REWARD_ITEM_COUNT[2]));
 		html = html.replace("<?update?>", String.valueOf(TIME_UPDATE / (60 * 1000)));
 		html = html.replace("<?last_update?>", TIME_FORMAT.format(_lastUpdate));
-		html = html.replace("%adenaBypass%",
-					(player.getAccessLevel() > 0 ? "<td align=center><button action=\"bypass _bbsranking:adena\" value=\"Adena\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"></td>"
-								: ""));
+		html = html.replace("%adenaBypass%", (player.getAccessLevel() > 0 ? "<td align=center><button action=\"bypass _bbsranking:adena\" value=\"Adena\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"></td>" : ""));
 		ShowBoard.separateAndSend(html, player);
 	}
 
@@ -453,10 +446,7 @@ public class CommunityRanking implements ScriptFile, ICommunityBoardHandler
 		html = html.replace("%page%", String.valueOf(page + 1));
 		html = html.replace("<?update?>", String.valueOf(TIME_UPDATE / (60 * 1000)));
 		html = html.replace("<?last_update?>", TIME_FORMAT.format(_lastUpdate));
-		html = html.replace("%adenaBypass%",
-					(player.getAccessLevel() > 0
-								? "<tr><td height=40 align=center><button action=\"bypass _bbsranking:adena\" value=\"   Adena\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"></td></tr>"
-								: ""));
+		html = html.replace("%adenaBypass%", (player.getAccessLevel() > 0 ? "<tr><td height=40 align=center><button action=\"bypass _bbsranking:adena\" value=\"   Adena\" width=120 height=25 back=\"cb.mx_button_down\" fore=\"cb.mx_button\"></td></tr>" : ""));
 		ShowBoard.separateAndSend(html, player);
 	}
 
@@ -481,9 +471,7 @@ public class CommunityRanking implements ScriptFile, ICommunityBoardHandler
 			{
 				if (type == RankingEnum.ADENA)
 				{
-					try (PreparedStatement statement = con.prepareStatement(
-								"SELECT obj_Id,char_name,class_id,clanid,it.count FROM characters AS c LEFT JOIN character_subclasses AS cs ON (c.obj_Id=cs.char_obj_id) JOIN items AS it ON (c.obj_Id=it.owner_id) WHERE cs.isBase=1 AND it.item_id=57 AND accesslevel = 0 ORDER BY it.count DESC");
-								ResultSet rset = statement.executeQuery())
+					try (PreparedStatement statement = con.prepareStatement("SELECT obj_Id,char_name,class_id,clanid,it.count FROM characters AS c LEFT JOIN character_subclasses AS cs ON (c.obj_Id=cs.char_obj_id) JOIN items AS it ON (c.obj_Id=it.owner_id) WHERE cs.isBase=1 AND it.item_id=57 AND accesslevel = 0 ORDER BY it.count DESC"); ResultSet rset = statement.executeQuery())
 					{
 						while (rset.next())
 						{
@@ -498,9 +486,7 @@ public class CommunityRanking implements ScriptFile, ICommunityBoardHandler
 				}
 				else
 				{
-					try (PreparedStatement statement = con.prepareStatement("SELECT obj_Id,char_name,class_id,clanid," + type.getDbName()
-								+ " FROM characters AS c LEFT JOIN character_subclasses AS cs ON (c.obj_Id=cs.char_obj_id) WHERE cs.isBase=1 AND accesslevel = 0 AND " + type.getDbName() + " > 0 ORDER BY "
-								+ type.getDbName() + " DESC"); ResultSet rset = statement.executeQuery())
+					try (PreparedStatement statement = con.prepareStatement("SELECT obj_Id,char_name,class_id,clanid," + type.getDbName() + " FROM characters AS c LEFT JOIN character_subclasses AS cs ON (c.obj_Id=cs.char_obj_id) WHERE cs.isBase=1 AND accesslevel = 0 AND " + type.getDbName() + " > 0 ORDER BY " + type.getDbName() + " DESC"); ResultSet rset = statement.executeQuery())
 					{
 						while (rset.next())
 						{

@@ -173,8 +173,7 @@ public class _369_CollectorOfJewels extends Quest implements ScriptFile
 		}
 
 		int max_count = cond == 1 ? 50 : 200;
-		if (qs.getQuestItemsCount(drop[0]) < max_count && qs.rollAndGive(drop[0], 1, 1, max_count, drop[1]) && qs.getQuestItemsCount(FLARE_SHARD) >= max_count
-					&& qs.getQuestItemsCount(FREEZING_SHARD) >= max_count)
+		if (qs.getQuestItemsCount(drop[0]) < max_count && qs.rollAndGive(drop[0], 1, 1, max_count, drop[1]) && qs.getQuestItemsCount(FLARE_SHARD) >= max_count && qs.getQuestItemsCount(FREEZING_SHARD) >= max_count)
 		{
 			qs.setCond(cond == 1 ? 2 : 4);
 		}

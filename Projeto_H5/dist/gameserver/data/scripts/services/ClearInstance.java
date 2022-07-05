@@ -83,8 +83,7 @@ public class ClearInstance extends Functions
 			player.sendMessage("The selected instance id is invalid");
 			return;
 		}
-		if ((player.isDead()) || (player.isAlikeDead()) || (player.isCastingNow()) || (player.isInCombat()) || (player.isAttackingNow()) || (player.isFlying())
-					|| player.getReflection() != ReflectionManager.DEFAULT)
+		if ((player.isDead()) || (player.isAlikeDead()) || (player.isCastingNow()) || (player.isInCombat()) || (player.isAttackingNow()) || (player.isFlying()) || player.getReflection() != ReflectionManager.DEFAULT)
 		{
 			player.sendMessage("You must be in peace zone.");
 			return;

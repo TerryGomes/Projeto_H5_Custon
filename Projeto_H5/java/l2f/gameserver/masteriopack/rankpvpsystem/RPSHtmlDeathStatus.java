@@ -108,8 +108,7 @@ public class RPSHtmlDeathStatus
 
 		tb += "<table width=270 border=0 cellspacing=0 cellpadding=2 bgcolor=000000>";
 		tb += "<tr><td width=270 height=18 align=center><font color=ae9977>CP:</font> <font color=FFF000>" + _killerCurrentCP + " / " + _killerMaxCP + "</font></td></tr>";
-		tb += "<tr><td width=270 height=18 align=center><font color=ae9977>HP:</font> <font color=FF0000>" + _killerCurrentHP + " / " + _killerMaxHP
-					+ "</font><font color=ae9977>, MP:</font> <font color=2080D0>" + _killerCurrentMP + "/" + _killerMaxMP + "</font></td></tr>";
+		tb += "<tr><td width=270 height=18 align=center><font color=ae9977>HP:</font> <font color=FF0000>" + _killerCurrentHP + " / " + _killerMaxHP + "</font><font color=ae9977>, MP:</font> <font color=2080D0>" + _killerCurrentMP + "/" + _killerMaxMP + "</font></td></tr>";
 		tb += "<tr><td FIXWIDTH=270 HEIGHT=4><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr>";
 		tb += "<tr><td width=270 height=12></td></tr>";
 		tb += "</table>";
@@ -136,26 +135,22 @@ public class RPSHtmlDeathStatus
 			{
 				if (e.getValue()._group == KillerItem.GROUP_WEAPON)
 				{
-					tb_weapon += "<tr><td width=270 height=16 align=center><font color=808080>" + e.getValue()._itemName + " (</font><font color=FF8000>+" + e.getValue()._itemEnchantLevel
-								+ "</font><font color=808080>)</font></td></tr>";
+					tb_weapon += "<tr><td width=270 height=16 align=center><font color=808080>" + e.getValue()._itemName + " (</font><font color=FF8000>+" + e.getValue()._itemEnchantLevel + "</font><font color=808080>)</font></td></tr>";
 					tb_weapon += "<tr><td width=270 HEIGHT=3><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr>";
 				}
 				else if (e.getValue()._group == KillerItem.GROUP_ARMOR)
 				{
-					tb_armor += "<tr><td width=270 height=16 align=center><font color=808080>" + e.getValue()._itemName + " (</font><font color=FF8000>+" + e.getValue()._itemEnchantLevel
-								+ "</font><font color=808080>)</font></td></tr>";
+					tb_armor += "<tr><td width=270 height=16 align=center><font color=808080>" + e.getValue()._itemName + " (</font><font color=FF8000>+" + e.getValue()._itemEnchantLevel + "</font><font color=808080>)</font></td></tr>";
 					tb_armor += "<tr><td width=270 HEIGHT=3><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr>";
 				}
 				else if (e.getValue()._group == KillerItem.GROUP_JEWEL)
 				{
-					tb_jewel += "<tr><td width=270 height=16 align=center><font color=808080>" + e.getValue()._itemName + " (</font><font color=FF8000>+" + e.getValue()._itemEnchantLevel
-								+ "</font><font color=808080>)</font></td></tr>";
+					tb_jewel += "<tr><td width=270 height=16 align=center><font color=808080>" + e.getValue()._itemName + " (</font><font color=FF8000>+" + e.getValue()._itemEnchantLevel + "</font><font color=808080>)</font></td></tr>";
 					tb_jewel += "<tr><td width=270 HEIGHT=3><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr>";
 				}
 				else // KillerItem.GROUP_OTHER
 				{
-					tb_other += "<tr><td width=270 height=16 align=center><font color=808080>" + e.getValue()._itemName + " (</font><font color=FF8000>+" + e.getValue()._itemEnchantLevel
-								+ "</font><font color=808080>)</font></td></tr>";
+					tb_other += "<tr><td width=270 height=16 align=center><font color=808080>" + e.getValue()._itemName + " (</font><font color=FF8000>+" + e.getValue()._itemEnchantLevel + "</font><font color=808080>)</font></td></tr>";
 					tb_other += "<tr><td width=270 HEIGHT=3><img src=\"L2UI.Squaregray\" width=\"270\" height=\"1\"></img></td></tr>";
 				}
 			}
@@ -173,8 +168,7 @@ public class RPSHtmlDeathStatus
 		tb += "<table border=0 cellspacing=0 cellpadding=0>";
 		tb += "<tr><td width=270 height=12 align=center><font color=808080>- killer's state in kill moment -</font></td></tr>";
 		tb += "<tr><td width=270 height=12></td></tr>";
-		tb += "<tr><td width=270 align=center><button value=\"Back\" action=\"bypass -h RPS.PS\"  width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN
-					+ "\" fore=\"" + RPSConfig.BUTTON_UP + "\"></td></tr>";
+		tb += "<tr><td width=270 align=center><button value=\"Back\" action=\"bypass -h RPS.PS\"  width=" + RPSConfig.BUTTON_W + " height=" + RPSConfig.BUTTON_H + " back=\"" + RPSConfig.BUTTON_DOWN + "\" fore=\"" + RPSConfig.BUTTON_UP + "\"></td></tr>";
 		tb += "</table>";
 
 		tb += "</center></body></html>";

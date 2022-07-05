@@ -61,8 +61,7 @@ public class FuncEnchant extends Func
 		{
 			ItemType itemType = item.getItemType();
 			boolean isBow = itemType == WeaponType.BOW || itemType == WeaponType.CROSSBOW;
-			boolean isSword = (itemType == WeaponType.DUALFIST || itemType == WeaponType.DUAL || itemType == WeaponType.BIGSWORD || itemType == WeaponType.SWORD || itemType == WeaponType.RAPIER
-						|| itemType == WeaponType.ANCIENTSWORD) && item.getTemplate().getBodyPart() == ItemTemplate.SLOT_LR_HAND;
+			boolean isSword = (itemType == WeaponType.DUALFIST || itemType == WeaponType.DUAL || itemType == WeaponType.BIGSWORD || itemType == WeaponType.SWORD || itemType == WeaponType.RAPIER || itemType == WeaponType.ANCIENTSWORD) && item.getTemplate().getBodyPart() == ItemTemplate.SLOT_LR_HAND;
 			switch (item.getTemplate().getCrystalType().cry)
 			{
 			case ItemTemplate.CRYSTAL_S:

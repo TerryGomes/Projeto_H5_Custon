@@ -261,27 +261,15 @@ public class AdminAttribute implements IAdminCommandHandler
 	private static String getAttributeButtons(Element element, int paperdoll, int currentValue, boolean weapon)
 	{
 		StringBuilder builder = new StringBuilder();
-		builder.append("<td>").append(currentValue == 0 ? "0"
-					: "<button value=\"0\" action=\"bypass -h admin_attribute " + paperdoll + ' ' + element.getId() + " 0\" width=40 height=20 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df\">")
-					.append("</td>");
+		builder.append("<td>").append(currentValue == 0 ? "0" : "<button value=\"0\" action=\"bypass -h admin_attribute " + paperdoll + ' ' + element.getId() + " 0\" width=40 height=20 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df\">").append("</td>");
 		if (!weapon)
 		{
-			builder.append("<td>")
-						.append(currentValue == 0 ? "60"
-									: "<button value=\"60\" action=\"bypass -h admin_attribute " + paperdoll + ' ' + element.getId()
-												+ " 60\" width=40 height=20 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df\">")
-						.append("</td>");
+			builder.append("<td>").append(currentValue == 0 ? "60" : "<button value=\"60\" action=\"bypass -h admin_attribute " + paperdoll + ' ' + element.getId() + " 60\" width=40 height=20 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df\">").append("</td>");
 		}
-		builder.append("<td>").append(currentValue == 0 ? "120"
-					: "<button value=\"120\" action=\"bypass -h admin_attribute " + paperdoll + ' ' + element.getId() + " 120\" width=40 height=20 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df\">")
-					.append("</td>");
+		builder.append("<td>").append(currentValue == 0 ? "120" : "<button value=\"120\" action=\"bypass -h admin_attribute " + paperdoll + ' ' + element.getId() + " 120\" width=40 height=20 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df\">").append("</td>");
 		if (weapon)
 		{
-			builder.append("<td>")
-						.append(currentValue == 0 ? "300"
-									: "<button value=\"300\" action=\"bypass -h admin_attribute " + paperdoll + ' ' + element.getId()
-												+ " 300\" width=40 height=20 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df\">")
-						.append("</td>");
+			builder.append("<td>").append(currentValue == 0 ? "300" : "<button value=\"300\" action=\"bypass -h admin_attribute " + paperdoll + ' ' + element.getId() + " 300\" width=40 height=20 back=\"L2UI_ct1.button_df_down\" fore=\"L2UI_ct1.button_df\">").append("</td>");
 		}
 		return builder.toString();
 	}

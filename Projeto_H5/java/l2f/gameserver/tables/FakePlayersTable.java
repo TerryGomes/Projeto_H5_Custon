@@ -79,14 +79,12 @@ public class FakePlayersTable
 
 	public static class Task implements Runnable
 	{
-		@SuppressWarnings("synthetic-access")
 		@Override
 		public void run()
 		{
 			try
 			{
-				if ((_activeFakePlayers.size() < ((Math.max(0, GameObjectsStorage.getAllPlayersCount() - GameObjectsStorage.getAllOfflineCount()) * Config.FAKE_PLAYERS_PERCENT) / 100))
-							&& (_activeFakePlayers.size() < _fakePlayers.length))
+				if ((_activeFakePlayers.size() < ((Math.max(0, GameObjectsStorage.getAllPlayersCount() - GameObjectsStorage.getAllOfflineCount()) * Config.FAKE_PLAYERS_PERCENT) / 100)) && (_activeFakePlayers.size() < _fakePlayers.length))
 				{
 					if (Rnd.chance(50))
 					{

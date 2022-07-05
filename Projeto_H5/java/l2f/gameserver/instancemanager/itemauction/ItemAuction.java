@@ -162,8 +162,7 @@ public class ItemAuction
 		try
 		{
 			con = DatabaseFactory.getInstance().getConnection();
-			statement = con
-						.prepareStatement("INSERT INTO item_auction (auctionId,instanceId,auctionItemId,startingTime,endingTime,auctionStateId) VALUES (?,?,?,?,?,?) ON DUPLICATE KEY UPDATE auctionStateId=?");
+			statement = con.prepareStatement("INSERT INTO item_auction (auctionId,instanceId,auctionItemId,startingTime,endingTime,auctionStateId) VALUES (?,?,?,?,?,?) ON DUPLICATE KEY UPDATE auctionStateId=?");
 			statement.setInt(1, _auctionId);
 			statement.setInt(2, _instanceId);
 			statement.setInt(3, _auctionItem.getAuctionItemId());

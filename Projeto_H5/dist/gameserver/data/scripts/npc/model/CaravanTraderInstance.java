@@ -679,8 +679,7 @@ public final class CaravanTraderInstance extends NpcInstance
 		switch (mark)
 		{
 		case 1:
-			if (player.getInventory().getCountOf(FirstMark) != 0 || player.getInventory().getCountOf(SecondMark) != 0 || player.getInventory().getCountOf(ThirdMark) != 0
-						|| player.getInventory().getCountOf(ForthMark) != 0)
+			if (player.getInventory().getCountOf(FirstMark) != 0 || player.getInventory().getCountOf(SecondMark) != 0 || player.getInventory().getCountOf(ThirdMark) != 0 || player.getInventory().getCountOf(ForthMark) != 0)
 			{
 				return true;
 			}

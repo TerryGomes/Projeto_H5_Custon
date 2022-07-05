@@ -30,7 +30,6 @@ public class GvG extends Functions implements ScriptFile
 
 	public static class RegTask extends RunnableImpl
 	{
-		@SuppressWarnings("unused")
 		@Override
 		public void runImpl() throws Exception
 		{
@@ -47,7 +46,6 @@ public class GvG extends Functions implements ScriptFile
 			_timer = timer;
 		}
 
-		@SuppressWarnings("unused")
 		@Override
 		public void runImpl() throws Exception
 		{

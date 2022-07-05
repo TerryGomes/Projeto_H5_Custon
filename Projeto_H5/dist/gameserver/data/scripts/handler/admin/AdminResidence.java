@@ -130,16 +130,14 @@ public class AdminResidence implements IAdminCommandHandler, ScriptFile
 				{
 					if (clan != null && clan.getClan() != null)
 					{
-						builder.append("<tr>").append("<td>").append(clan.getClan().getName()).append("</td>").append("<td>").append(clan.getClan().getLeaderName()).append("</td>").append("<td>")
-									.append(SiegeEvent.ATTACKERS).append("</td>").append("</tr>");
+						builder.append("<tr>").append("<td>").append(clan.getClan().getName()).append("</td>").append("<td>").append(clan.getClan().getLeaderName()).append("</td>").append("<td>").append(SiegeEvent.ATTACKERS).append("</td>").append("</tr>");
 					}
 				}
 
 				clans = event.getObjects(SiegeEvent.DEFENDERS);
 				for (SiegeClanObject clan : clans)
 				{
-					builder.append("<tr>").append("<td>").append(clan.getClan().getName()).append("</td>").append("<td>").append(clan.getClan().getLeaderName()).append("</td>").append("<td>")
-								.append(SiegeEvent.DEFENDERS).append("</td>").append("</tr>");
+					builder.append("<tr>").append("<td>").append(clan.getClan().getName()).append("</td>").append("<td>").append(clan.getClan().getLeaderName()).append("</td>").append("<td>").append(SiegeEvent.DEFENDERS).append("</td>").append("</tr>");
 				}
 
 				msg.replace("%clans%", builder.toString());
@@ -149,16 +147,14 @@ public class AdminResidence implements IAdminCommandHandler, ScriptFile
 				for (int i : players)
 				{
 					Player player = GameObjectsStorage.getPlayer(i);
-					builder.append("<tr>").append("<td>").append(i).append("</td>").append("<td>").append(player == null ? "null" : player.getName()).append("</td>").append("<td>")
-								.append(DominionSiegeEvent.ATTACKER_PLAYERS).append("</td>").append("</tr>");
+					builder.append("<tr>").append("<td>").append(i).append("</td>").append("<td>").append(player == null ? "null" : player.getName()).append("</td>").append("<td>").append(DominionSiegeEvent.ATTACKER_PLAYERS).append("</td>").append("</tr>");
 				}
 
 				players = event.getObjects(DominionSiegeEvent.DEFENDER_PLAYERS);
 				for (int i : players)
 				{
 					Player player = GameObjectsStorage.getPlayer(i);
-					builder.append("<tr>").append("<td>").append(i).append("</td>").append("<td>").append(player == null ? "null" : player.getName()).append("</td>").append("<td>")
-								.append(DominionSiegeEvent.DEFENDER_PLAYERS).append("</td>").append("</tr>");
+					builder.append("<tr>").append("<td>").append(i).append("</td>").append("<td>").append(player == null ? "null" : player.getName()).append("</td>").append("<td>").append(DominionSiegeEvent.DEFENDER_PLAYERS).append("</td>").append("</tr>");
 				}
 				msg.replace("%players%", builder.toString());
 			}
@@ -181,8 +177,7 @@ public class AdminResidence implements IAdminCommandHandler, ScriptFile
 						if (o instanceof SiegeClanObject)
 						{
 							SiegeClanObject siegeClanObject = (SiegeClanObject) o;
-							clans.append("<tr>").append("<td>").append(siegeClanObject.getClan().getName()).append("</td>").append("<td>").append(siegeClanObject.getClan().getLeaderName()).append("</td>")
-										.append("<td>").append(siegeClanObject.getType()).append("</td>").append("</tr>");
+							clans.append("<tr>").append("<td>").append(siegeClanObject.getClan().getName()).append("</td>").append("<td>").append(siegeClanObject.getClan().getLeaderName()).append("</td>").append("<td>").append(siegeClanObject.getType()).append("</td>").append("</tr>");
 						}
 					}
 				}
@@ -323,7 +318,7 @@ public class AdminResidence implements IAdminCommandHandler, ScriptFile
 			event.clearActions();
 			ThreadPoolManager.getInstance().execute(new RunnableImpl()
 			{
-				@SuppressWarnings("unused")
+
 				@Override
 				public void runImpl() throws Exception
 				{
@@ -372,7 +367,6 @@ public class AdminResidence implements IAdminCommandHandler, ScriptFile
 			runnerEvent.clearActions();
 			ThreadPoolManager.getInstance().execute(new RunnableImpl()
 			{
-				@SuppressWarnings("unused")
 				@Override
 				public void runImpl() throws Exception
 				{

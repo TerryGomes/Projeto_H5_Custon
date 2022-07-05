@@ -159,8 +159,7 @@ public class AutoHuntingManager
 				_reportedCount.get(reporter).add(reported);
 			}
 			con = DatabaseFactory.getInstance().getConnection();
-			statement = con.prepareStatement("INSERT INTO `bot_report`(`reported_name`, `reported_objectId`, `reporter_name`, `reporter_objectId`, `date`, `reportType`, `info`) VALUES (?,?,?,?,?,?,?)",
-						Statement.RETURN_GENERATED_KEYS);
+			statement = con.prepareStatement("INSERT INTO `bot_report`(`reported_name`, `reported_objectId`, `reporter_name`, `reporter_objectId`, `date`, `reportType`, `info`) VALUES (?,?,?,?,?,?,?)", Statement.RETURN_GENERATED_KEYS);
 			statement.setString(1, reported.getName());
 			statement.setInt(2, reported.getObjectId());
 			statement.setString(3, reporter.getName());

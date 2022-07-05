@@ -55,7 +55,6 @@ public class OfficialPost extends Post
 	@Override
 	public String toString()
 	{
-		return "OfficialPost{id='" + getId() + '\'' + ", executor=" + getExecutor() + ", message='" + getMessage() + '\'' + ", createdTime=" + getCreatedDate() + ", extractionDate=" + getExtractionDate()
-					+ ", rewardedActions=" + _rewardedActions + '}';
+		return "OfficialPost{id='" + getId() + '\'' + ", executor=" + getExecutor() + ", message='" + getMessage() + '\'' + ", createdTime=" + getCreatedDate() + ", extractionDate=" + getExtractionDate() + ", rewardedActions=" + _rewardedActions + '}';
 	}
 }

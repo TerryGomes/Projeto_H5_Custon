@@ -455,8 +455,7 @@ public class _216_TrialoftheGuildsman extends Quest implements ScriptFile
 					htmltext = "warehouse_keeper_norman_q0216_11.htm";
 				}
 			}
-			else if (st.getQuestItemsCount(NORMANS_INSTRUCTIONS) == 0 && st.getQuestItemsCount(NORMANS_LIST) == 0 && st.getQuestItemsCount(ALLTRANS_INSTRUCTIONS) == 1
-						&& (st.getQuestItemsCount(JOURNEYMAN_GEM) > 0 || st.getQuestItemsCount(JOURNEYMAN_RING) > 0))
+			else if (st.getQuestItemsCount(NORMANS_INSTRUCTIONS) == 0 && st.getQuestItemsCount(NORMANS_LIST) == 0 && st.getQuestItemsCount(ALLTRANS_INSTRUCTIONS) == 1 && (st.getQuestItemsCount(JOURNEYMAN_GEM) > 0 || st.getQuestItemsCount(JOURNEYMAN_RING) > 0))
 			{
 				htmltext = "warehouse_keeper_norman_q0216_13.htm";
 			}
@@ -475,8 +474,7 @@ public class _216_TrialoftheGuildsman extends Quest implements ScriptFile
 			{
 				htmltext = "blacksmith_duning_q0216_04.htm";
 			}
-			else if (st.getQuestItemsCount(NORMANS_RECEIPT) == 0 && st.getQuestItemsCount(DUNINGS_INSTRUCTIONS) == 0 && st.getQuestItemsCount(DUNINGS_KEY) == 0
-						&& st.getQuestItemsCount(ALLTRANS_INSTRUCTIONS) == 1)
+			else if (st.getQuestItemsCount(NORMANS_RECEIPT) == 0 && st.getQuestItemsCount(DUNINGS_INSTRUCTIONS) == 0 && st.getQuestItemsCount(DUNINGS_KEY) == 0 && st.getQuestItemsCount(ALLTRANS_INSTRUCTIONS) == 1)
 			{
 				htmltext = "blacksmith_duning_q0216_01.htm";
 			}
@@ -514,8 +512,7 @@ public class _216_TrialoftheGuildsman extends Quest implements ScriptFile
 					}
 				}
 			}
-			else if (st.getQuestItemsCount(ALLTRANS_INSTRUCTIONS) == 1 && st.getQuestItemsCount(PINTERS_INSTRUCTIONS) == 0
-						&& (st.getQuestItemsCount(JOURNEYMAN_DECO_BEADS) > 0 || st.getQuestItemsCount(JOURNEYMAN_RING) > 0))
+			else if (st.getQuestItemsCount(ALLTRANS_INSTRUCTIONS) == 1 && st.getQuestItemsCount(PINTERS_INSTRUCTIONS) == 0 && (st.getQuestItemsCount(JOURNEYMAN_DECO_BEADS) > 0 || st.getQuestItemsCount(JOURNEYMAN_RING) > 0))
 			{
 				htmltext = "blacksmith_pinter_q0216_08.htm";
 			}

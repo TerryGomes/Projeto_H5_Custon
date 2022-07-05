@@ -675,8 +675,7 @@ public class RankPvpSystem
 	{
 		// 1: check total legal kills:
 		// 2: check total legal kills today:
-		if ((RPSConfig.LEGAL_KILL_PROTECTION > 0 && pvp.getKillsLegal() > RPSConfig.LEGAL_KILL_PROTECTION)
-					|| (RPSConfig.DAILY_LEGAL_KILL_PROTECTION > 0 && pvp.getKillsLegalToday() > RPSConfig.DAILY_LEGAL_KILL_PROTECTION))
+		if ((RPSConfig.LEGAL_KILL_PROTECTION > 0 && pvp.getKillsLegal() > RPSConfig.LEGAL_KILL_PROTECTION) || (RPSConfig.DAILY_LEGAL_KILL_PROTECTION > 0 && pvp.getKillsLegalToday() > RPSConfig.DAILY_LEGAL_KILL_PROTECTION))
 		{
 			return false;
 		}

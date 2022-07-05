@@ -123,8 +123,7 @@ public class SpawnManager
 			NpcTemplate npcTemplate = NpcHolder.getInstance().getTemplate(spawner.getCurrentNpcId());
 
 			int toAdd;
-			if ((Config.RATE_MOB_SPAWN > 1) && (npcTemplate.getInstanceClass() == MonsterInstance.class) && (npcTemplate.level >= Config.RATE_MOB_SPAWN_MIN_LEVEL)
-						&& (npcTemplate.level <= Config.RATE_MOB_SPAWN_MAX_LEVEL))
+			if ((Config.RATE_MOB_SPAWN > 1) && (npcTemplate.getInstanceClass() == MonsterInstance.class) && (npcTemplate.level >= Config.RATE_MOB_SPAWN_MIN_LEVEL) && (npcTemplate.level <= Config.RATE_MOB_SPAWN_MAX_LEVEL))
 			{
 				toAdd = template.getCount() * Config.RATE_MOB_SPAWN;
 				spawner.setAmount(toAdd);

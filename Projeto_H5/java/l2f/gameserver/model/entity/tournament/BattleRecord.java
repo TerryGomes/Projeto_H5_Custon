@@ -265,7 +265,6 @@ public class BattleRecord
 	@Override
 	public String toString()
 	{
-		return "BattleRecord{id=" + _id + ", team1Id=" + _team1Id + ", team2Id=" + _team2Id + ", round=" + _round + ", battleDate=" + _battleDate + ", winnerId=" + _winnerId + ", winnerWonGames="
-					+ _winnerWonGames + '}';
+		return "BattleRecord{id=" + _id + ", team1Id=" + _team1Id + ", team2Id=" + _team2Id + ", round=" + _round + ", battleDate=" + _battleDate + ", winnerId=" + _winnerId + ", winnerWonGames=" + _winnerWonGames + '}';
 	}
 }
