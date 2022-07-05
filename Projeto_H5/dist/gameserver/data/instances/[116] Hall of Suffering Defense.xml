@@ -1,0 +1,38 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Hall of Suffering Defense -->
+	<instance id="116" name="Seed of Infinity (Hall of Suffering)" maxChannels="20" collapseIfEmpty="10" timelimit="60" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="75" max="85"/>
+		<party min="2" max="9"/>
+		<return loc="-183656 206264 -12928"/>
+		<teleport loc="-174053 218075 -9560"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="695"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+		<spawns>
+			<group name="soi_hos_defence_tumor" spawned="false" />
+			<group name="soi_hos_defence_alivetumor" spawned="false" />
+			<group name="soi_hos_defence_brothers" spawned="false" />
+			<group name="soi_hos_defence_mobs_1" spawned="false" />
+			<group name="soi_hos_defence_mobs_2" spawned="false" />
+			<group name="soi_hos_defence_mobs_3" spawned="false" />
+			<group name="soi_hos_defence_mobs_4" spawned="false" />
+			<group name="soi_hos_defence_mobs_5" spawned="false" />
+			<group name="soi_hos_defence_tepios" spawned="false" />
+		</spawns>
+		<zones>
+			<zone name="[soi_hos_defence_attackup_1]" active="false"/>
+			<zone name="[soi_hos_defence_attackup_2]" active="false"/>
+			<zone name="[soi_hos_defence_attackup_3]" active="false"/>
+			<zone name="[soi_hos_defence_attackup_4]" active="false"/>
+			<zone name="[soi_hos_defence_attackup_5]" active="false"/>
+			<zone name="[soi_hos_defence_defenceup_1]" active="false"/>
+			<zone name="[soi_hos_defence_defenceup_2]" active="false"/>
+			<zone name="[soi_hos_defence_defenceup_3]" active="false"/>
+			<zone name="[soi_hos_defence_defenceup_4]" active="false"/>
+			<zone name="[soi_hos_defence_defenceup_5]" active="false"/>
+		</zones>
+	</instance>
+</list>

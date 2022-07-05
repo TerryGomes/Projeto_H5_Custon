@@ -1,0 +1,34 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Rune Township: NPC Mathias (Level 73) -->
+	<instance id="72" name="Kamaloka, Hall of the Abyss" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="68" max="78"/>
+		<party min="2" max="6"/>
+		<return loc="42767 -48016 -800"/>
+		<teleport loc="-23472 -220688 -8000"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="1"/>
+		<add_parameters>
+			<param name="tele_device_loc" value="-23496 -219848 -8048"/>
+		</add_parameters>
+		<spawns>
+			<!-- White Allosce -->
+			<spawn mobId="18577" type="loc">
+				<coords loc="-23278 -219732 -8000 -8000"/>
+				<coords loc="-23278 -220132 -8000 -8000"/>
+				<coords loc="-23678 -220132 -8000 -8000"/>
+				<coords loc="-23678 -219732 -8000 -8000"/>
+			</spawn>
+			<!-- Follower of Allosce -->
+			<spawn mobId="18578" count="4" respawn="30" type="loc">
+				<coords loc="-23278 -219732 -8000 -8000"/>
+				<coords loc="-23278 -220132 -8000 -8000"/>
+				<coords loc="-23678 -220132 -8000 -8000"/>
+				<coords loc="-23678 -219732 -8000 -8000"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

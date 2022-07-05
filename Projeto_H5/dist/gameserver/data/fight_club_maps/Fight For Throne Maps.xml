@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "maps.dtd">
+<list>
+	<map name="Dion Castle">
+		<parameter name="events" value="FightForThrone"/>
+		<parameter name="minAllPlayers" value="1"/>
+		<parameter name="maxAllPlayers" value="80"/>
+		<parameter name="teamsCount_DEFENDER" value="1"/>
+		<parameter name="teamsCount_ATTACKER" value="1"/>
+		<parameter name="crystal" value="dion_castle_siege_artefact"/>
+		<parameter name="guards" value="dion_castle_siege"/>
+		<parameter name="doors" value="20220001;20220002;20220003;20220004;20220005;20220006;20220007;20220008;20220009"/>
+
+		<objects name="teamSpawns" teamType="ATTACKER">
+			<point x="23096" y="155336" z="-2983"/>
+			<point x="23144" y="155592" z="-2987"/>
+			<point x="23320" y="155464" z="-2986"/>
+			<point x="23416" y="155208" z="-2987"/>
+			<point x="23208" y="155000" z="-2983"/>
+		</objects>
+		<objects name="teamSpawns" teamType="ATTACKER">
+			<point x="21544" y="155176" z="-2977"/>
+			<point x="21544" y="155496" z="-2977"/>
+			<point x="21224" y="155320" z="-2977"/>
+			<point x="21224" y="155016" z="-2978"/>
+			<point x="21480" y="154824" z="-2977"/>
+		</objects>
+
+		<objects name="teamSpawns" teamType="DEFENDER">
+			<point x="20424" y="160376" z="-2500"/>
+			<point x="20664" y="160376" z="-2500"/>
+			<point x="20968" y="160376" z="-2500"/>
+			<point x="22376" y="159896" z="-2876"/>
+			<point x="22376" y="160200" z="-2876"/>
+			<point x="22376" y="160552" z="-2876"/>
+			<point x="22104" y="162104" z="-2788"/>
+			<point x="21064" y="161240" z="-2788"/>
+			<point x="23128" y="160840" z="-2788"/>
+		</objects>
+
+		<objects name="npcLocations">
+			<npcLoc name="controlTowers" npc_id="57008" x="22285" y="156939" z="-2571" h="32542"/>
+			<npcLoc name="controlTowers" npc_id="57008" x="22008" y="162652" z="-2572" h="32542"/>
+			<npcLoc name="controlTowers" npc_id="57008" x="22073" y="161153" z="-2537" h="32542"/>
+		</objects>
+
+		<objects name="territory">
+			<zone name="[FC_Dion_Castle_Area]" />
+		</objects>
+	</map>
+	<map name="Gludio Castle">
+		<parameter name="events" value="FightForThrone"/>
+		<parameter name="minAllPlayers" value="1"/>
+		<parameter name="maxAllPlayers" value="80"/>
+		<parameter name="teamsCount_DEFENDER" value="1"/>
+		<parameter name="teamsCount_ATTACKER" value="1"/>
+		<parameter name="crystal" value="gludio_castle_siege_artefact"/>
+		<parameter name="guards" value="gludio_castle_siege"/>
+		<parameter name="doors" value="19210001;19210002;19210003;19210004;19210005;19210006;19210007;19210008;19210009"/>
+
+		<objects name="teamSpawns" teamType="ATTACKER">
+			<point x="-17560" y="114584" z="-2803"/>
+			<point x="-17448" y="114408" z="-2803"/>
+			<point x="-17576" y="114888" z="-2779"/>
+			<point x="-17384" y="114664" z="-2803"/>
+		</objects>
+		<objects name="teamSpawns" teamType="ATTACKER">
+			<point x="-19192" y="114424" z="-2803"/>
+			<point x="-19176" y="114648" z="-2803"/>
+			<point x="-19176" y="114872" z="-2803"/>
+			<point x="-19368" y="114648" z="-2803"/>
+		</objects>
+
+		<objects name="teamSpawns" teamType="DEFENDER">
+			<point x="-18408" y="109672" z="-2682"/>
+			<point x="-18296" y="109512" z="-2682"/>
+			<point x="-18424" y="109256" z="-2682"/>
+			<point x="-18152" y="109304" z="-2682"/>
+			<point x="-17032" y="109384" z="-2306"/>
+			<point x="-16792" y="109288" z="-2306"/>
+			<point x="-16632" y="109416" z="-2306"/>
+			<point x="-16408" y="109304" z="-2306"/>
+		</objects>
+
+		<objects name="npcLocations">
+			<npcLoc name="controlTowers" npc_id="57008" x="-18325" y="112811" z="-2377" h="32542"/>
+			<npcLoc name="controlTowers" npc_id="57008" x="-18048" y="107098" z="-2378" h="32542"/>
+			<npcLoc name="controlTowers" npc_id="57008" x="-18113" y="108597" z="-2343" h="32542"/>
+		</objects>
+
+		<objects name="territory">
+			<zone name="[FC_Gludio_Castle_Area]" />
+		</objects>
+	</map>
+	<map name="Schuttgart Castle">
+		<parameter name="events" value="FightForThrone"/>
+		<parameter name="minAllPlayers" value="1"/>
+		<parameter name="maxAllPlayers" value="80"/>
+		<parameter name="teamsCount_DEFENDER" value="1"/>
+		<parameter name="teamsCount_ATTACKER" value="1"/>
+		<parameter name="crystal" value="schuttgart_castle_siege_artefact"/>
+		<parameter name="guards" value="schuttgart_castle_siege"/>
+		<parameter name="doors" value="22130001;22130002;22130003;22130004;22130005;22130006;22130007;22130008;22130009;22130010;22130011;22130012;22130013;22130014;22130015"/>
+
+		<objects name="teamSpawns" teamType="ATTACKER">
+			<point x="74216" y="-150120" z="-693"/>
+			<point x="74328" y="-150264" z="-719"/>
+			<point x="74424" y="-150552" z="-746"/>
+			<point x="74136" y="-150440" z="-704"/>
+			<point x="74504" y="-150776" z="-779"/>
+		</objects>
+		<objects name="teamSpawns" teamType="ATTACKER">
+			<point x="80600" y="-150568" z="-819"/>
+			<point x="80664" y="-150376" z="-814"/>
+			<point x="80776" y="-150184" z="-801"/>
+			<point x="80840" y="-150536" z="-814"/>
+			<point x="80616" y="-150824" z="-816"/>
+		</objects>
+
+		<objects name="teamSpawns" teamType="DEFENDER">
+			<point x="77560" y="-154776" z="361"/>
+			<point x="77352" y="-152728" z="-570"/>
+			<point x="77720" y="-152712" z="-570"/>
+			<point x="77752" y="-152392" z="-570"/>
+			<point x="77320" y="-152376" z="-570"/>
+			<point x="77560" y="-151128" z="-933"/>
+		</objects>
+
+		<objects name="npcLocations">
+			<npcLoc name="controlTowers" npc_id="57008" x="74777" y="-152885" z="-12" h="32542"/>
+			<npcLoc name="controlTowers" npc_id="57008" x="80329" y="-152885" z="-12" h="32542"/>
+			<npcLoc name="controlTowers" npc_id="57008" x="77563" y="-153362" z="112" h="32542"/>
+		</objects>
+
+		<objects name="territory">
+			<zone name="[FC_Schuttgart_Castle_Area]" />
+		</objects>
+	</map>
+	<map name="Oren Castle">
+		<parameter name="events" value="FightForThrone"/>
+		<parameter name="minAllPlayers" value="1"/>
+		<parameter name="maxAllPlayers" value="80"/>
+		<parameter name="teamsCount_DEFENDER" value="1"/>
+		<parameter name="teamsCount_ATTACKER" value="1"/>
+		<parameter name="crystal" value="oren_castle_siege_artefact"/>
+		<parameter name="guards" value="oren_castle_siege"/>
+		<parameter name="doors" value="22190001;22190002;22190003;22190004;22190005;22190006;22190007;22190008;22190009"/>
+
+		<objects name="teamSpawns" teamType="ATTACKER">
+			<point x="77768" y="37608" z="-2474"/>
+			<point x="77576" y="37592" z="-2481"/>
+			<point x="77624" y="37880" z="-2439"/>
+			<point x="77928" y="37880" z="-2435"/>
+		</objects>
+		<objects name="teamSpawns" teamType="ATTACKER">
+			<point x="77912" y="36136" z="-2490"/>
+			<point x="77704" y="36184" z="-2488"/>
+			<point x="77480" y="36248" z="-2482"/>
+			<point x="77624" y="35960" z="-2497"/>
+		</objects>
+
+		<objects name="teamSpawns" teamType="DEFENDER">
+			<point x="83864" y="38232" z="-2387"/>
+			<point x="83672" y="38232" z="-2387"/>
+			<point x="83928" y="36216" z="-2387"/>
+			<point x="83688" y="36232" z="-2387"/>
+			<point x="82632" y="38312" z="-2100"/>
+			<point x="82728" y="38584" z="-2100"/>
+			<point x="82616" y="38808" z="-2100"/>
+			<point x="82776" y="37192" z="-2315"/>
+			<point x="82728" y="36984" z="-2476"/>
+			<point x="82408" y="36968" z="-2476"/>
+			<point x="82408" y="37224" z="-2476"/>
+		</objects>
+
+		<objects name="npcLocations">
+			<npcLoc name="controlTowers" npc_id="57008" x="79193" y="36977" z="-2167"/>
+			<npcLoc name="controlTowers" npc_id="57008" x="84906" y="37254" z="-2168"/>
+			<npcLoc name="controlTowers" npc_id="57008" x="83407" y="37189" z="-2133"/>
+		</objects>
+
+		<objects name="territory">
+			<zone name="[FC_Oren_Castle_Area]" />
+		</objects>
+	</map>
+</list>

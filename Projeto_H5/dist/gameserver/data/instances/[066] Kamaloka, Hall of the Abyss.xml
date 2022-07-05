@@ -1,0 +1,34 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Town of Oren: NPC Mouen (Level 53) -->
+	<instance id="66" name="Kamaloka, Hall of the Abyss" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="48" max="58"/>
+		<party min="2" max="6"/>
+		<return loc="80995 56411 -1552"/>
+		<teleport loc="-56265 -220686 -8112"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="1"/>
+		<add_parameters>
+			<param name="tele_device_loc" value="9256 -219864 -8016"/>
+		</add_parameters>
+		<spawns>
+			<!-- Kaim Abigore -->
+			<spawn mobId="18566" type="loc">
+				<coords loc="9067 -219746 -8000 -8000"/>
+				<coords loc="9067 -220146 -8000 -8000"/>
+				<coords loc="9467 -220146 -8000 -8000"/>
+				<coords loc="9467 -219746 -8000 -8000"/>
+			</spawn>
+			<!-- Follower of Abigore -->
+			<spawn mobId="18567" count="4" respawn="30" type="loc">
+				<coords loc="9067 -219746 -8000 -8000"/>
+				<coords loc="9067 -220146 -8000 -8000"/>
+				<coords loc="9467 -220146 -8000 -8000"/>
+				<coords loc="9467 -219746 -8000 -8000"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

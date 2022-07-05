@@ -1,0 +1,379 @@
+<html noscrollbar>
+<body>
+<title>Drop Calculator</title>
+<br>
+<center>&nbsp;
+<table border=0 cellpadding=0 cellspacing=0 width=800 height=508 background="l2fandc.bg2">
+	<tr>
+		<td>
+			<br1>
+			<table width=760 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td>
+						<table width=510>
+							<tr>
+								<td fixwidth=50>
+									<center><img src="Icon.etc_scroll_of_memory_i00" width=32 height=32></center>
+								</td>
+								<td fixwidth=460>
+									<table>
+										<tr>
+											<td>
+												<font name="__SYSTEMWORLDFONT" color=31B404>Drop Calculator</font>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<font color=31B404>Shows exact informations about Drop and Spoil List of all Monsters</font>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table width=250 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=20>
+									<br>
+								</td>
+							</tr>
+							<tr>
+								<td fixwidth=250>
+									<center><button value="Back" action="bypass _dropCalc" width=200 height=32 back="L2UI_CT1.OlympiadWnd_DF_Back_Down" fore="L2UI_ct1.OlympiadWnd_DF_Back"></center>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br><br><br>
+			<table width=760 height=20 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td fixwidth=50>
+						<button value="Icon" action="bypass _dropItemsByName_%searchItem%_%page%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=50 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=200>
+						<button value="Item Name" action="bypass _dropItemsByName_%searchItem%_%page%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=200 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=60>
+						<button value="Grade" action="bypass _dropItemsByName_%searchItem%_%page%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=60 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=150>
+						<button value="Number of Drop Lists" action="bypass _dropItemsByName_%searchItem%_%page%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=150 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=150>
+						<button value="Number of Spoil Lists" action="bypass _dropItemsByName_%searchItem%_%page%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=150 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=150>
+						<button value="Show Monsters" action="bypass _dropItemsByName_%searchItem%_%page%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=150 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=45 border=0 cellpadding=0 cellspacing=0 bgcolor=23201E>
+				<tr>
+					<td fixwidth=50>
+						<center>%itemIcon0%</center>
+					</td>
+					<td fixwidth=200>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemName0%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemGrade0%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%dropLists0%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%spoilLists0%</font></center>
+					</td>
+					<td fixwidth=150>
+						<table width=150 height=45>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=44>
+									<center>
+									%showMonsters0%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=45 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td fixwidth=50>
+						<center>%itemIcon1%</center>
+					</td>
+					<td fixwidth=200>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemName1%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemGrade1%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%dropLists1%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%spoilLists1%</font></center>
+					</td>
+					<td fixwidth=150>
+						<table width=150 height=45>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=44>
+									<center>
+									%showMonsters1%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=45 border=0 cellpadding=0 cellspacing=0 bgcolor=23201E>
+				<tr>
+					<td fixwidth=50>
+						<center>%itemIcon2%</center>
+					</td>
+					<td fixwidth=200>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemName2%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemGrade2%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%dropLists2%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%spoilLists2%</font></center>
+					</td>
+					<td fixwidth=150>
+						<table width=150 height=45>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=44>
+									<center>
+									%showMonsters2%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=45 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td fixwidth=50>
+						<center>%itemIcon3%</center>
+					</td>
+					<td fixwidth=200>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemName3%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemGrade3%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%dropLists3%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%spoilLists3%</font></center>
+					</td>
+					<td fixwidth=150>
+						<table width=150 height=45>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=44>
+									<center>
+									%showMonsters3%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=45 border=0 cellpadding=0 cellspacing=0 bgcolor=23201E>
+				<tr>
+					<td fixwidth=50>
+						<center>%itemIcon4%</center>
+					</td>
+					<td fixwidth=200>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemName4%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemGrade4%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%dropLists4%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%spoilLists4%</font></center>
+					</td>
+					<td fixwidth=150>
+						<table width=150 height=45>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=44>
+									<center>
+									%showMonsters4%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=45 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td fixwidth=50>
+						<center>%itemIcon5%</center>
+					</td>
+					<td fixwidth=200>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemName5%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemGrade5%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%dropLists5%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%spoilLists5%</font></center>
+					</td>
+					<td fixwidth=150>
+						<table width=150 height=45>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=44>
+									<center>
+									%showMonsters5%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=45 border=0 cellpadding=0 cellspacing=0 bgcolor=23201E>
+				<tr>
+					<td fixwidth=50>
+						<center>%itemIcon6%</center>
+					</td>
+					<td fixwidth=200>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemName6%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemGrade6%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%dropLists6%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%spoilLists6%</font></center>
+					</td>
+					<td fixwidth=150>
+						<table width=150 height=45>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=44>
+									<center>
+									%showMonsters6%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=45 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td fixwidth=50>
+						<center>%itemIcon7%</center>
+					</td>
+					<td fixwidth=200>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemName7%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%itemGrade7%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%dropLists7%</font></center>
+					</td>
+					<td fixwidth=150>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%spoilLists7%</font></center>
+					</td>
+					<td fixwidth=150>
+						<table width=150 height=45>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=44>
+									<center>
+									%showMonsters7%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<center>
+			<table width=760 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td fixwidth=380 align=right>
+						%previousButton%
+					</td>
+					<td fixwidth=380 align=left>
+						%nextButton%
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>

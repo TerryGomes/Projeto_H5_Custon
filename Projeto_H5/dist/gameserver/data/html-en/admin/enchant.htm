@@ -1,0 +1,75 @@
+<html>
+<body>
+<center>
+	<table width=260 bgcolor="0099FF" background="L2UI_CT1.Windows_DF_Drawer_Bg">
+		<tr>
+			<td width=40><button value="Home" action="bypass -h admin_admin" width=65 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td width=160><center>Better Things</center></td>
+			<td width=40><button value="Back" action="bypass -h admin_admin" width=65 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+		</tr>
+	</table>
+</center><br>
+<center><img src="L2UI_CH3.herotower_deco" width=256 height=32>[Attribute Enchant 0-300/120]<br></center>
+<center>
+	<table width=200 bgcolor="0099FF" background="L2UI_CT1.Windows_DF_Drawer_Bg">
+		<tr>
+			<td><center><combobox var="attribute" width=80 List="Fire;Water;Wind;Earth;Holy;Dark;"></center><br></td>
+			<td><center>value:</center><br></td>
+			<td><center><edit var="attr_val" width=80 height=11></center><br></td>
+		</tr>
+		<tr>
+			<td><button value="Weapon" action="bypass -h admin_seteaw $attr_val $attribute" width=80 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Chest" action="bypass -h admin_seteac $attr_val $attribute" width=80 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Helmet" action="bypass -h admin_seteah $attr_val $attribute" width=80 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+		</tr>
+		<tr>
+			<td><button value="Gloves" action="bypass -h admin_seteag $attr_val $attribute" width=80 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Leggings" action="bypass -h admin_seteal $attr_val $attribute" width=80 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Boots" action="bypass -h admin_seteab $attr_val $attribute" width=80 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+		</tr>
+	</table><br>
+</center><br>
+<center><img src="L2UI_CH3.herotower_deco" width=256 height=32>[Enchant 0-65535]<br></center>
+<center>
+	<table width=270 bgcolor="0099FF" background="L2UI_CT1.Windows_DF_Drawer_Bg">
+		<tr>
+			<td><center>value: </center><br></td>
+			<td><center><edit var="menu_command" width=100 height=15></center><br></td>
+		</tr>
+	</table>
+</center>
+<center>
+	<table width=270 bgcolor="0099FF" background="L2UI_CT1.Windows_DF_Drawer_Bg">
+		<tr>
+			<td><button value="Shirt" action="bypass -h admin_setun $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Helmet" action="bypass -h admin_seteh $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Cloak" action="bypass -h admin_setba $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Mask" action="bypass -h admin_setha $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Necklace" action="bypass -h admin_seten $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+		</tr>
+	</table>
+</center>
+<center>
+	<table width=270 bgcolor="0099FF" background="L2UI_CT1.Windows_DF_Drawer_Bg">
+		<tr>
+			<td><button value="Weapon" action="bypass -h admin_setew $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Chest" action="bypass -h admin_setec $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Shield" action="bypass -h admin_setes $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Earring" action="bypass -h admin_setre $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Earring" action="bypass -h admin_setle $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+		</tr>
+	</table>
+</center>
+<center>
+	<table width=270 bgcolor="0099FF" background="L2UI_CT1.Windows_DF_Drawer_Bg">
+		<tr>
+			<td><button value="Gloves" action="bypass -h admin_seteg $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Leggings" action="bypass -h admin_setel $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Boots" action="bypass -h admin_seteb $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Ring" action="bypass -h admin_setrf $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+			<td><button value="Ring" action="bypass -h admin_setlf $menu_command" width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+		</tr>
+	</table>
+</center><br>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html><head><title>Character Control Panel</title></head><body>
+<center>
+<font name="hs12" color="c88f05">L2fandc</font>
+
+<img src="L2UI.squaregray" width="280" height="1">
+<table width=280 bgcolor=222120>
+	<tr>
+		<td align=center>
+			<font color = 3f6293>%online%</font><br>
+		</td>
+	</tr>
+</table>
+<img src="L2UI.squaregray" width="280" height="1">
+<br><br>
+<center>
+<font color=686764>
+To complete the setup, write down Code that was sent to your Email Address(it may be in Spam section):<br>
+</font>
+<table width=250>
+<tr><td><font color=686764>Code:</font></td><td><edit var="code" width=80 height=15 /></td></tr>
+</table>
+<br><br>
+<button value="Setup Recover" action="bypass -h user_cfg setupPRecover2 | %question% | %answer% | %email% | $code" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+<button value="Back" action="bypass -h user_cfg setupPRecover" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /><br>
+</body></html>

@@ -1,0 +1,2704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <armor id="9200" name="Shadow Item - Jester Hat" add_name="Firework">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="360"/>
+    <set name="icon" value="icon.accessory_jester_cap_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="3266" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9201" name="Shadow Item - Wizard Hat" add_name="Firework">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="360"/>
+    <set name="icon" value="icon.accessory_magic_cap_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="3266" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9202" name="Shadow Item - Dapper Cap" add_name="Firework">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="360"/>
+    <set name="icon" value="icon.accessory_dandy_cap_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="3266" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9203" name="Shadow Item - Romantic Chapeau" add_name="Firework">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="360"/>
+    <set name="icon" value="icon.accessory_romantic_chaperon_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="3266" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9204" name="Shadow Item - Iron Circlet" add_name="Firework">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="360"/>
+    <set name="icon" value="icon.accessory_iron_circlet_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="3266" level="1"/>
+    </skills>
+  </armor>
+  <etcitem id="9205" name="Alchemist's Chest Key">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_old_key_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <etcitem id="9206" name="Greater Healing Potion (Event)">
+    <set name="reuse_delay" value="10000"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_reagent_white_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="5"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="9207" name="Quick Healing Potion (Event)">
+    <set name="reuse_delay" value="1500"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_potion_gold_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="5"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <armor id="9208" name="Phantom Mask (Event)">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessary_mask_of_chaotic_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <weapon id="9209" name="Rapier">
+    <set name="crystal_count" value="582"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_rapier_i00"/>
+    <set name="kamael_convert" value="123"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="36"/>
+      <add stat="mAtk" order="0x10" value="26"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9210" name="Talwar">
+    <set name="crystal_count" value="582"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_tulwar_i00"/>
+    <set name="kamael_convert" value="5285"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="2100"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="43"/>
+      <add stat="mAtk" order="0x10" value="26"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9211" name="Talwar">
+    <set name="crystal_count" value="582"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_tulwar_i00"/>
+    <set name="kamael_convert" value="7880"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="2100"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="43"/>
+      <add stat="mAtk" order="0x10" value="26"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9212" name="Field Gun">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="582"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_hunting_gun_i00"/>
+    <set name="kamael_convert" value="274"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1870"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="51"/>
+      <add stat="mAtk" order="0x10" value="26"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9213" name="Fleuret">
+    <set name="crystal_count" value="915"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_rapier_i00"/>
+    <set name="kamael_convert" value="69"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1500"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="46"/>
+      <add stat="mAtk" order="0x10" value="32"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9214" name="Fleuret">
+    <set name="crystal_count" value="915"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_rapier_i00"/>
+    <set name="kamael_convert" value="125"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1500"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="46"/>
+      <add stat="mAtk" order="0x10" value="32"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9215" name="Fleuret">
+    <set name="crystal_count" value="915"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_rapier_i00"/>
+    <set name="kamael_convert" value="126"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1500"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="46"/>
+      <add stat="mAtk" order="0x10" value="32"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9216" name="Military Talwar">
+    <set name="crystal_count" value="915"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_tulwar_i00"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="2080"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="55"/>
+      <add stat="mAtk" order="0x10" value="32"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9217" name="Hand Crossbow">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="915"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_hunting_gun_i00"/>
+    <set name="kamael_convert" value="275"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="4"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1850"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="64"/>
+      <add stat="mAtk" order="0x10" value="32"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9218" name="Estoc">
+    <set name="crystal_count" value="1373"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_rapier_i00"/>
+    <set name="kamael_convert" value="127"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1470"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="58"/>
+      <add stat="mAtk" order="0x10" value="39"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9219" name="Estoc">
+    <set name="crystal_count" value="1373"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_rapier_i00"/>
+    <set name="kamael_convert" value="130"/>
+    <set name="price" value="10231"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1470"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="58"/>
+      <add stat="mAtk" order="0x10" value="39"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9220" name="Field Sword">
+    <set name="crystal_count" value="1373"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_tulwar_i00"/>
+    <set name="kamael_convert" value="124"/>
+    <set name="price" value="10231"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="2060"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="69"/>
+      <add stat="mAtk" order="0x10" value="39"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9221" name="Crossbow">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="1373"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_hunting_gun_i00"/>
+    <set name="kamael_convert" value="278"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="4"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1840"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="81"/>
+      <add stat="mAtk" order="0x10" value="39"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9222" name="Epee">
+    <set name="crystal_count" value="1983"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_rapier_i00"/>
+    <set name="kamael_convert" value="129"/>
+    <set name="price" value="15231"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1450"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="72"/>
+      <add stat="mAtk" order="0x10" value="47"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9223" name="Katzbalger">
+    <set name="crystal_count" value="1983"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_tulwar_i00"/>
+    <set name="kamael_convert" value="7881"/>
+    <set name="price" value="15231"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="2020"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="86"/>
+      <add stat="mAtk" order="0x10" value="47"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9224" name="Arm Breaker">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="1983"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_hunting_gun_i00"/>
+    <set name="kamael_convert" value="279"/>
+    <set name="price" value="15231"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="6"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1820"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="100"/>
+      <add stat="mAtk" order="0x10" value="47"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9225" name="Grand Epee">
+    <set name="crystal_count" value="2561"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_rapier_i00"/>
+    <set name="kamael_convert" value="2499"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1440"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="83"/>
+      <add stat="mAtk" order="0x10" value="54"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9226" name="General's Katzbalger">
+    <set name="crystal_count" value="2561"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_tulwar_i00"/>
+    <set name="kamael_convert" value="70"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="2010"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="100"/>
+      <add stat="mAtk" order="0x10" value="54"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9227" name="Cranequin">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="2561"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_hunting_gun_i00"/>
+    <set name="kamael_convert" value="280"/>
+    <set name="price" value="32231"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="6"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1810"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="117"/>
+      <add stat="mAtk" order="0x10" value="54"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9228" name="Soldat Estoc">
+    <set name="crystal_count" value="705"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i00"/>
+    <set name="kamael_convert" value="72"/>
+    <set name="price" value="1762900"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1430"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="97"/>
+      <add stat="mAtk" order="0x10" value="61"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9229" name="Soldat Estoc" add_name="Critical Anger">
+    <set name="crystal_count" value="705"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4681"/>
+    <set name="price" value="1762900"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1430"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3026" level="1"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="97"/>
+      <add stat="mAtk" order="0x10" value="61"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9230" name="Soldat Estoc" add_name="Focus">
+    <set name="crystal_count" value="705"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4682"/>
+    <set name="price" value="1762900"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1430"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3010" level="1"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="97"/>
+      <add stat="mAtk" order="0x10" value="61"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9231" name="Soldat Estoc" add_name="Light">
+    <set name="crystal_count" value="705"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4683"/>
+    <set name="price" value="1762900"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1430"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3498" level="1"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="97"/>
+      <add stat="mAtk" order="0x10" value="61"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9232" name="Schlager">
+    <set name="crystal_count" value="705"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_schlaeger_i00"/>
+    <set name="kamael_convert" value="71"/>
+    <set name="price" value="1762900"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1980"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="116"/>
+      <add stat="mAtk" order="0x10" value="61"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9233" name="Schlager" add_name="Critical Damage">
+    <set name="crystal_count" value="705"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_schlaeger_i01"/>
+    <set name="kamael_convert" value="4711"/>
+    <set name="price" value="1762900"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1980"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3023" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="116"/>
+      <add stat="mAtk" order="0x10" value="61"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9234" name="Schlager" add_name="Focus">
+    <set name="crystal_count" value="705"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_schlaeger_i01"/>
+    <set name="kamael_convert" value="4712"/>
+    <set name="price" value="1762900"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1980"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3010" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="116"/>
+      <add stat="mAtk" order="0x10" value="61"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9235" name="Schlager" add_name="Light">
+    <set name="crystal_count" value="705"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_schlaeger_i01"/>
+    <set name="kamael_convert" value="4713"/>
+    <set name="price" value="1762900"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1980"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3498" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="116"/>
+      <add stat="mAtk" order="0x10" value="61"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9236" name="Arbalest">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="705"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_arbalest_i00"/>
+    <set name="kamael_convert" value="281"/>
+    <set name="price" value="1762900"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="4"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1790"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="135"/>
+      <add stat="mAtk" order="0x10" value="61"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9237" name="Arbalest" add_name="Guidance">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="705"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_arbalest_i01"/>
+    <set name="kamael_convert" value="4810"/>
+    <set name="price" value="1762900"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="4"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1790"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3008" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="135"/>
+      <add stat="mAtk" order="0x10" value="61"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9238" name="Arbalest" add_name="Evasion">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="705"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_arbalest_i01"/>
+    <set name="kamael_convert" value="4811"/>
+    <set name="price" value="1762900"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="4"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1790"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3009" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="135"/>
+      <add stat="mAtk" order="0x10" value="61"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9239" name="Arbalest" add_name="Quick Recovery">
+    <set name="atk_reuse" value="332"/>
+    <set name="crystal_count" value="705"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_arbalest_i01"/>
+    <set name="kamael_convert" value="4812"/>
+    <set name="price" value="1762900"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="4"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1790"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="135"/>
+      <add stat="mAtk" order="0x10" value="61"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <mul stat="atkReuse" order="0x50" value="0.83"/>
+    </for>
+  </weapon>
+  <weapon id="9240" name="Chevalier Rapier">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i00"/>
+    <set name="kamael_convert" value="73"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9241" name="Chevalier Rapier" add_name="Guidance">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4684"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3007" level="2"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9242" name="Chevalier Rapier" add_name="Back Blow">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4685"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3018" level="2"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9243" name="Chevalier Rapier" add_name="Rsk. Evasion">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4686"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3028" level="2"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9244" name="Chevalier Rapier">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i00"/>
+    <set name="kamael_convert" value="74"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9245" name="Chevalier Rapier" add_name="Focus">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4687"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3010" level="2"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9246" name="Chevalier Rapier" add_name="Critical Damage">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4688"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3023" level="2"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9247" name="Chevalier Rapier" add_name="Haste">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4689"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3036" level="2"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9248" name="Chevalier Rapier">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i00"/>
+    <set name="kamael_convert" value="131"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9249" name="Chevalier Rapier" add_name="Critical Damage">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4690"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3023" level="2"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9250" name="Chevalier Rapier" add_name="Critical Poison">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4691"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3024" level="2" type="CRIT" chance="100"/>
+    </triggers>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9251" name="Chevalier Rapier" add_name="Haste">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4692"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3036" level="2"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9252" name="Chevalier Rapier">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i00"/>
+    <set name="kamael_convert" value="133"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9253" name="Chevalier Rapier" add_name="Focus">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4693"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3010" level="2"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9254" name="Chevalier Rapier" add_name="Critical Drain">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4694"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3022" level="4" type="CRIT" chance="100"/>
+    </triggers>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9255" name="Chevalier Rapier" add_name="Critical Poison">
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soldat_estoc_i01"/>
+    <set name="kamael_convert" value="4695"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1420"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3024" level="2" type="CRIT" chance="100"/>
+    </triggers>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="111"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9256" name="Ballista">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_arbalest_i00"/>
+    <set name="kamael_convert" value="282"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="5"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1770"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="155"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9257" name="Ballista" add_name="Guidance">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_arbalest_i01"/>
+    <set name="kamael_convert" value="4813"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="5"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1770"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3008" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="155"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9258" name="Ballista" add_name="Miser">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_arbalest_i01"/>
+    <set name="kamael_convert" value="4814"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="5"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1770"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="155"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <set stat="miser" order="0x08" value="4"/>
+      <set stat="miserChance" order="0x08" value="40"/>
+    </for>
+  </weapon>
+  <weapon id="9259" name="Ballista" add_name="Quick Recovery">
+    <set name="atk_reuse" value="320"/>
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_arbalest_i01"/>
+    <set name="kamael_convert" value="4815"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="5"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1770"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="155"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <mul stat="atkReuse" order="0x50" value="0.80"/>
+    </for>
+  </weapon>
+  <weapon id="9260" name="Ballista">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_arbalest_i00"/>
+    <set name="kamael_convert" value="285"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="5"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1770"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="155"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9261" name="Ballista" add_name="Evasion">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_arbalest_i01"/>
+    <set name="kamael_convert" value="4816"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="5"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1770"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3009" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="155"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9262" name="Ballista" add_name="Miser">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_arbalest_i01"/>
+    <set name="kamael_convert" value="4817"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="5"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1770"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="155"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <set stat="miser" order="0x08" value="4"/>
+      <set stat="miserChance" order="0x08" value="40"/>
+    </for>
+  </weapon>
+  <weapon id="9263" name="Ballista" add_name="Cheap Shot">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="884"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_arbalest_i01"/>
+    <set name="kamael_convert" value="4818"/>
+    <set name="price" value="2209700"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="5"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1770"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3360" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="155"/>
+      <add stat="mAtk" order="0x10" value="68"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <mul stat="mpConsumePhysical" order="0x30" value="0.88"/>
+    </for>
+  </weapon>
+  <weapon id="9264" name="Blinzlasher">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i00"/>
+    <set name="kamael_convert" value="75"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9265" name="Blinzlasher" add_name="Guidance">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4696"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3007" level="3"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9266" name="Blinzlasher" add_name="Focus">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4697"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3010" level="3"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9267" name="Blinzlasher" add_name="Critical Damage">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4698"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3023" level="3"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9268" name="Blinzlasher">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i00"/>
+    <set name="kamael_convert" value="76"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9269" name="Blinzlasher" add_name="Focus">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4699"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3010" level="3"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9270" name="Blinzlasher" add_name="Health">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4700"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="1"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9271" name="Blinzlasher" add_name="Rsk. Haste">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4701"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3032" level="3"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9272" name="Blinzlasher">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i00"/>
+    <set name="kamael_convert" value="77"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9273" name="Blinzlasher" add_name="Focus">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4702"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3010" level="3"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9274" name="Blinzlasher" add_name="Critical Damage">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4703"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3023" level="3"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9275" name="Blinzlasher" add_name="Haste">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4704"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3036" level="3"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9276" name="Blinzlasher">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i00"/>
+    <set name="kamael_convert" value="134"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9277" name="Blinzlasher" add_name="Health">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4705"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="1"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9278" name="Blinzlasher" add_name="Focus">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4706"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3010" level="3"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9279" name="Blinzlasher" add_name="Light">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4707"/>
+    <set name="price" value="15231"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3498" level="1"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9280" name="Blinzlasher">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i00"/>
+    <set name="kamael_convert" value="132"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9281" name="Blinzlasher" add_name="Guidance">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="6307"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3007" level="3"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9282" name="Blinzlasher" add_name="Critical Drain">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="6308"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3022" level="4" type="CRIT" chance="100"/>
+    </triggers>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9283" name="Blinzlasher" add_name="Health">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="6309"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1400"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="1"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9284" name="Immortal Edge">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_invincible_blade_i00"/>
+    <set name="kamael_convert" value="7882"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1980"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="151"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9285" name="Immortal Edge" add_name="Focus">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_invincible_blade_i01"/>
+    <set name="kamael_convert" value="8102"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1980"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3010" level="3"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="151"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9286" name="Immortal Edge" add_name="Health">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_invincible_blade_i01"/>
+    <set name="kamael_convert" value="8103"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1980"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="151"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9287" name="Immortal Edge" add_name="Critical Drain">
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_invincible_blade_i01"/>
+    <set name="kamael_convert" value="8104"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1980"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3022" level="4" type="CRIT" chance="100"/>
+    </triggers>
+    <for>
+      <add stat="pAtk" order="0x10" value="151"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9288" name="Tathlum">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_taslam_i00"/>
+    <set name="kamael_convert" value="283"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="5"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1760"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="176"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9289" name="Tathlum" add_name="Guidance">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_taslam_i01"/>
+    <set name="kamael_convert" value="4819"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="5"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1760"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3008" level="3"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="176"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9290" name="Tathlum" add_name="Evasion">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_taslam_i01"/>
+    <set name="kamael_convert" value="4820"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="5"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1760"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3009" level="3"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="176"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9291" name="Tathlum" add_name="Miser">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="1322"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_taslam_i01"/>
+    <set name="kamael_convert" value="4821"/>
+    <set name="price" value="3304300"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="5"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1760"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="176"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <set stat="miser" order="0x08" value="4"/>
+      <set stat="miserChance" order="0x08" value="32"/>
+    </for>
+  </weapon>
+  <weapon id="9292" name="Admiral's Estoc">
+    <set name="crystal_count" value="1885"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i00"/>
+    <set name="kamael_convert" value="135"/>
+    <set name="price" value="140430"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1380"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="141"/>
+      <add stat="mAtk" order="0x10" value="83"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9293" name="Admiral's Estoc" add_name="Focus">
+    <set name="crystal_count" value="1885"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4708"/>
+    <set name="price" value="140430"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1380"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3010" level="4"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="141"/>
+      <add stat="mAtk" order="0x10" value="83"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9294" name="Admiral's Estoc" add_name="Critical Damage">
+    <set name="crystal_count" value="1885"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4709"/>
+    <set name="price" value="140430"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1380"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3023" level="4"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="141"/>
+      <add stat="mAtk" order="0x10" value="83"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9295" name="Admiral's Estoc" add_name="Haste">
+    <set name="crystal_count" value="1885"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i01"/>
+    <set name="kamael_convert" value="4710"/>
+    <set name="price" value="140430"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1380"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3036" level="4"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="141"/>
+      <add stat="mAtk" order="0x10" value="83"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9296" name="Saber Tooth">
+    <set name="crystal_count" value="1885"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_invincible_blade_i00"/>
+    <set name="kamael_convert" value="5286"/>
+    <set name="price" value="140430"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1950"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="169"/>
+      <add stat="mAtk" order="0x10" value="83"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9297" name="Saber Tooth" add_name="Focus">
+    <set name="crystal_count" value="1885"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_invincible_blade_i01"/>
+    <set name="kamael_convert" value="6347"/>
+    <set name="price" value="140430"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1950"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3010" level="4"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="169"/>
+      <add stat="mAtk" order="0x10" value="83"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9298" name="Saber Tooth" add_name="Critical Damage">
+    <set name="crystal_count" value="1885"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_invincible_blade_i01"/>
+    <set name="kamael_convert" value="6348"/>
+    <set name="price" value="140430"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1950"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3542" level="4"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="169"/>
+      <add stat="mAtk" order="0x10" value="83"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9299" name="Saber Tooth" add_name="Haste">
+    <set name="crystal_count" value="1885"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_invincible_blade_i01"/>
+    <set name="kamael_convert" value="6349"/>
+    <set name="price" value="140430"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1950"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3037" level="4"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="169"/>
+      <add stat="mAtk" order="0x10" value="83"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+</list>

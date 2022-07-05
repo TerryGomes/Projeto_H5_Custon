@@ -1,0 +1,2354 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+	<etcitem id="21900" name="Totem of Spirit">
+		<set name="icon" value="BranchSys2.icon.totem_of_mind"/>
+		<set name="weight" value="10"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="OTHER"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="reuse_delay" value="600000"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<cond msgId="1983">
+			<not>
+				<player fightClub="true" />
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="21901" name="Totem of Courage">
+		<set name="icon" value="BranchSys2.icon.totem_of_bravery"/>
+		<set name="weight" value="10"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="OTHER"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="reuse_delay" value="600000"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<cond msgId="1983">
+			<not>
+				<player fightClub="true" />
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="21902" name="Totem of Fortitude">
+		<set name="icon" value="BranchSys2.icon.totem_of_fortitude"/>
+		<set name="weight" value="10"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="OTHER"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="reuse_delay" value="600000"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<cond msgId="1983">
+			<not>
+				<player fightClub="true" />
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="21903" name="Refined Red Dragon Blood">
+		<set name="icon" value="BranchSys2.icon.refined_red_blood_of_dragon"/>
+		<set name="weight" value="10"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="OTHER"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="reuse_delay" value="300000"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<cond msgId="1983">
+			<not>
+				<player fightClub="true" />
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="21904" name="Refined Blue Dragon Blood">
+		<set name="icon" value="BranchSys2.icon.refined_blue_blood_of_dragon"/>
+		<set name="weight" value="10"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="OTHER"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="reuse_delay" value="300000"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<cond msgId="1983">
+			<not>
+				<player fightClub="true" />
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="21905" name="Clear Crystal">
+		<set name="icon" value="icon.etc_bead_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21906" name="Empty Crystal">
+		<set name="icon" value="icon.etc_bead_white_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21907" name="Filled Crystal (Antharas Energy)">
+		<set name="icon" value="icon.etc_bead_gold_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21908" name="Filled Crystal (Valakas Energy)">
+		<set name="icon" value="icon.etc_bead_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21909" name="Lavasaurus Stone Fragment">
+		<set name="icon" value="icon.etc_broken_crystal_silver_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21910" name="Lavasaurus Head Fragment">
+		<set name="icon" value="icon.etc_broken_crystal_silver_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21911" name="Lavasaurus Body Fragment">
+		<set name="icon" value="icon.etc_broken_crystal_silver_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21912" name="Lavasaurus Horn Fragment">
+		<set name="icon" value="icon.etc_broken_crystal_silver_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21913" name="Unrefined Red Dragon Blood">
+		<set name="icon" value="icon.etc_potion_red_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21914" name="Unrefined Blue Dragon Blood">
+		<set name="icon" value="icon.etc_potion_blue_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21915" name="Ice Candy Piece">
+		<set name="icon" value="BranchSys.icon.br_valentine_cream_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="21916" name="Super Kat the Cat Z Summon Necklace">
+		<set name="icon" value="BranchSys2.icon.g_supercat_cat_i00"/>
+		<set name="weight" value="10"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="type" value="OTHER"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="21917" name="Super Feline Queen Z Summon Necklace">
+		<set name="icon" value="BranchSys2.icon.g_supercat_queen_i00"/>
+		<set name="weight" value="10"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="OTHER"/>
+		<set name="dropable" value="false"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="21918" name="Super Mew the Cat Z Summon Necklace">
+		<set name="icon" value="BranchSys2.icon.g_supercat_mew_i00"/>
+		<set name="weight" value="10"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="OTHER"/>
+		<set name="dropable" value="false"/>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<weapon id="21919" name="Hellblade">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i00"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21920" name="Hellblade" add_name="Haste">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3564" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21921" name="Hellblade" add_name="Health">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3013" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21922" name="Hellblade" add_name="Focus">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3566" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21923" name="Hellblade {PvP}">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i00"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3552" level="3"/>
+			<skill id="3650" level="1"/>
+			<skill id="3653" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21924" name="Hellblade {PvP}" add_name="Haste">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3564" level="3"/>
+			<skill id="3650" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21925" name="Hellblade {PvP}" add_name="Health">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3013" level="3"/>
+			<skill id="3552" level="1"/>
+			<skill id="3650" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21926" name="Hellblade {PvP}" add_name="Focus">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3566" level="3"/>
+			<skill id="3650" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21927" name="Hellblade - Lightning">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i00"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3828" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21928" name="Hellblade - Lightning" add_name="Haste">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3564" level="3"/>
+			<skill id="3828" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21929" name="Hellblade - Lightning" add_name="Health">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3013" level="3"/>
+			<skill id="3828" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21930" name="Hellblade - Lightning" add_name="Focus">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3566" level="3"/>
+			<skill id="3828" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21931" name="Hellblade - Lightning {PvP}">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i00"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3552" level="3"/>
+			<skill id="3650" level="1"/>
+			<skill id="3653" level="1"/>
+			<skill id="3851" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21932" name="Hellblade - Lightning {PvP}" add_name="Haste">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3564" level="3"/>
+			<skill id="3650" level="1"/>
+			<skill id="3828" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21933" name="Hellblade - Lightning {PvP}" add_name="Health">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3013" level="3"/>
+			<skill id="3552" level="1"/>
+			<skill id="3650" level="1"/>
+			<skill id="3828" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21934" name="Hellblade - Lightning {PvP}" add_name="Focus">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_Caladbulg_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21252" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3566" level="3"/>
+			<skill id="3650" level="1"/>
+			<skill id="3828" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21935" name="Butcher Blades">
+		<set name="crystal_type" value="S80"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_habus_knife_i00"/>
+		<set name="price" value="121780000"/>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="weight" value="2100"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="5845"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21253" level="1"/>
+			<skill id="3552" level="1"/>
+		</skills>
+		<enchant4_skill id="8296" level="1"/>
+		<for>
+			<add stat="pAtk" order="0x10" value="332"/>
+			<add stat="mAtk" order="0x10" value="169"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<add stat="accCombat" order="0x10" value="-3.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21936" name="Butcher Blades {PvP}">
+		<set name="crystal_type" value="S80"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_habus_knife_i00"/>
+		<set name="price" value="121780000"/>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="weight" value="2100"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="5845"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21253" level="1"/>
+			<skill id="3552" level="3"/>
+			<skill id="3651" level="1"/>
+			<skill id="3652" level="1"/>
+		</skills>
+		<enchant4_skill id="8296" level="1"/>
+		<!--Special Ability Focus-->
+		<for>
+			<add stat="pAtk" order="0x10" value="332"/>
+			<add stat="mAtk" order="0x10" value="169"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<add stat="accCombat" order="0x10" value="-3.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21937" name="Butcher Blades - Confusion">
+		<set name="crystal_type" value="S80"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_habus_knife_i00"/>
+		<set name="price" value="121780000"/>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="weight" value="2100"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="5845"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21253" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3858" level="3"/>
+		</skills>
+		<enchant4_skill id="8296" level="1"/>
+		<!--Special Ability Focus-->
+		<for>
+			<add stat="pAtk" order="0x10" value="332"/>
+			<add stat="mAtk" order="0x10" value="169"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<add stat="accCombat" order="0x10" value="-3.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21938" name="Butcher Blades - Confusion {PvP}">
+		<set name="crystal_type" value="S80"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_habus_knife_i00"/>
+		<set name="price" value="121780000"/>
+		<set name="type" value="DUALDAGGER"/>
+		<set name="weight" value="2100"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="5845"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21253" level="1"/>
+			<skill id="3552" level="3"/>
+			<skill id="3651" level="1"/>
+			<skill id="3652" level="1"/>
+			<skill id="3858" level="3"/>
+		</skills>
+		<enchant4_skill id="8296" level="1"/>
+		<!--Special Ability Focus-->
+		<for>
+			<add stat="pAtk" order="0x10" value="332"/>
+			<add stat="mAtk" order="0x10" value="169"/>
+			<set stat="atkBaseSpeed" order="0x08" value="433"/>
+			<set stat="baseCrit" order="0x08" value="120"/>
+			<add stat="accCombat" order="0x10" value="-3.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21939" name="Claw of Destruction">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i00"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21940" name="Claw of Destruction" add_name="HP Drain">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3568" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21941" name="Claw of Destruction" add_name="Health">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3013" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21942" name="Claw of Destruction" add_name="HP Regeneration">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3569" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21943" name="Claw of Destruction {PvP}">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i00"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3552" level="3"/>
+			<skill id="3650" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21944" name="Claw of Destruction {PvP}" add_name="HP Drain">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3568" level="2"/>
+			<skill id="3650" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21945" name="Claw of Destruction {PvP}" add_name="Health">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3013" level="3"/>
+			<skill id="3552" level="1"/>
+			<skill id="3650" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21946" name="Claw of Destruction {PvP}" add_name="HP Regeneration">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3569" level="2"/>
+			<skill id="3650" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21947" name="Claw of Destruction - Landslide">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i00"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3885" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21948" name="Claw of Destruction - Landslide" add_name="HP Drain">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3568" level="2"/>
+			<skill id="3885" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21949" name="Claw of Destruction - Landslide" add_name="Health">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3013" level="3"/>
+			<skill id="3885" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21950" name="Claw of Destruction - Landslide" add_name="HP Regeneration">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3569" level="2"/>
+			<skill id="3885" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="4.0"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21951" name="Claw of Destruction - Landslide {PvP}">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i00"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3552" level="3"/>
+			<skill id="3650" level="1"/>
+			<skill id="3885" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21952" name="Claw of Destruction - Landslide {PvP}" add_name="HP Drain">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3568" level="2"/>
+			<skill id="3650" level="1"/>
+			<skill id="3885" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21953" name="Claw of Destruction - Landslide {PvP}" add_name="Health">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3013" level="3"/>
+			<skill id="3552" level="1"/>
+			<skill id="3650" level="1"/>
+			<skill id="3885" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21954" name="Claw of Destruction - Landslide {PvP}" add_name="HP Regeneration">
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tiatenon_i01"/>
+		<set name="price" value="143356000"/>
+		<set name="type" value="BLUNT"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="20"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="7050"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21254" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3569" level="2"/>
+			<skill id="3650" level="1"/>
+			<skill id="3885" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="396"/>
+			<add stat="mAtk" order="0x10" value="176"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="40"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21955" name="Blades of Delusion">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_astarot_i00"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21255" level="1"/>
+			<skill id="3552" level="1"/>
+		</skills>
+		<enchant4_skill id="3411" level="1"/>
+		<!--Special Ability: Focus-->
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21956" name="Blades of Delusion {PvP}">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_astarot_i00"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21255" level="1"/>
+			<skill id="3552" level="3"/>
+			<skill id="3656" level="1"/>
+		</skills>
+		<enchant4_skill id="3411" level="1"/>
+		<!--Special Ability: Focus-->
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21957" name="Blades of Delusion - Earth">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_astarot_i00"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21255" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3836" level="2"/>
+		</skills>
+		<enchant4_skill id="3411" level="1"/>
+		<!--Special Ability: Focus-->
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21958" name="Blades of Delusion - Earth {PvP}">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_astarot_i00"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="DUAL"/>
+		<set name="weight" value="1520"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21255" level="1"/>
+			<skill id="3552" level="3"/>
+			<skill id="3656" level="1"/>
+			<skill id="3836" level="2"/>
+		</skills>
+		<enchant4_skill id="3411" level="1"/>
+		<!--Special Ability: Focus-->
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21959" name="Blood Brother">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i00"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21960" name="Blood Brother" add_name="Focus">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i01"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+			<skill id="3566" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21961" name="Blood Brother" add_name="Health">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i01"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+			<skill id="3013" level="3"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21962" name="Blood Brother" add_name="Light">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i01"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+			<skill id="3498" level="1"/>
+			<skill id="3552" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21963" name="Blood Brother {PvP}" add_name="Focus">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i01"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3566" level="2"/>
+			<skill id="3653" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21964" name="Blood Brother {PvP}" add_name="Health">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i01"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+			<skill id="3013" level="3"/>
+			<skill id="3552" level="1"/>
+			<skill id="3653" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="8.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21965" name="Blood Brother {PvP}" add_name="Light">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i01"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+			<skill id="3498" level="1"/>
+			<skill id="3552" level="3"/>
+			<skill id="3653" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21966" name="Blood Brother - Great Gale">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i00"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+			<skill id="3840" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21967" name="Blood Brother - Great Gale" add_name="Focus">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i01"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+			<skill id="3566" level="2"/>
+			<skill id="3840" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21968" name="Blood Brother - Great Gale" add_name="Health">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i01"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+			<skill id="3013" level="3"/>
+			<skill id="3840" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21969" name="Blood Brother - Great Gale" add_name="Light">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i01"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+			<skill id="3498" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3840" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21970" name="Blood Brother - Great Gale {PvP}" add_name="Focus">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i01"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3566" level="2"/>
+			<skill id="3653" level="1"/>
+			<skill id="3840" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21971" name="Blood Brother - Great Gale {PvP}" add_name="Health">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i01"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+			<skill id="3013" level="3"/>
+			<skill id="3552" level="1"/>
+			<skill id="3653" level="1"/>
+			<skill id="3840" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21972" name="Blood Brother - Great Gale {PvP}" add_name="Light">
+		<set name="crystal_type" value="S"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_tirbing_i01"/>
+		<set name="price" value="74946000"/>
+		<set name="type" value="BIGSWORD"/>
+		<set name="weight" value="1740"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="attributable" value="false"/>
+		<set name="augmentable" value="false"/>
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_count" value="3597"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21256" level="1"/>
+			<skill id="3498" level="1"/>
+			<skill id="3552" level="3"/>
+			<skill id="3653" level="1"/>
+			<skill id="3840" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="405"/>
+			<add stat="mAtk" order="0x10" value="151"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21973" name="Mardil's Fan">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_wind_of_mardil_i00"/>
+		<set name="price" value="20741000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="840"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="crystal_count" value="1659"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21257" level="1"/>
+			<skill id="3856" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="186"/>
+			<add stat="mAtk" order="0x10" value="152"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21974" name="Mardil's Fan" add_name="M. Atk.">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_wind_of_mardil_i01"/>
+		<set name="price" value="20741000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="840"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="crystal_count" value="1659"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21257" level="1"/>
+			<skill id="3073" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="186"/>
+			<add stat="mAtk" order="0x10" value="152"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21975" name="Mardil's Fan" add_name="Magic Silence">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_wind_of_mardil_i01"/>
+		<set name="price" value="20741000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="840"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="crystal_count" value="1659"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21257" level="1"/>
+			<skill id="3552" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="186"/>
+			<add stat="mAtk" order="0x10" value="152"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21976" name="Mardil's Fan" add_name="Acumen">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_wind_of_mardil_i01"/>
+		<set name="price" value="20741000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="840"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="crystal_count" value="1659"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21257" level="1"/>
+			<skill id="3047" level="2"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="186"/>
+			<add stat="mAtk" order="0x10" value="152"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21977" name="Mardil's Fan - Holy Spirit">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_wind_of_mardil_i00"/>
+		<set name="price" value="20741000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="840"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="crystal_count" value="1659"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21257" level="1"/>
+			<skill id="3856" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="186"/>
+			<add stat="mAtk" order="0x10" value="152"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21978" name="Mardil's Fan - Holy Spirit" add_name="M. Atk.">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_wind_of_mardil_i01"/>
+		<set name="price" value="20741000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="840"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="crystal_count" value="1659"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21257" level="1"/>
+			<skill id="3073" level="2"/>
+			<skill id="3856" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="186"/>
+			<add stat="mAtk" order="0x10" value="152"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21979" name="Mardil's Fan - Holy Spirit" add_name="Magic Silence">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_wind_of_mardil_i01"/>
+		<set name="price" value="20741000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="840"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="crystal_count" value="1659"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21257" level="1"/>
+			<skill id="3552" level="1"/>
+			<skill id="3856" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="186"/>
+			<add stat="mAtk" order="0x10" value="152"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<weapon id="21980" name="Mardil's Fan - Holy Spirit" add_name="Acumen">
+		<set name="crystal_type" value="A"/>
+		<set name="icon" value="BranchSys2.icon.br_wp_wind_of_mardil_i01"/>
+		<set name="price" value="20741000"/>
+		<set name="type" value="SWORD"/>
+		<set name="weight" value="840"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="10"/>
+		<set name="is_magic_weapon" value="true"/>
+		<set name="crystal_count" value="1659"/>
+		<set name="crystallizable" value="true"/>
+		<equip>
+			<slot id="RIGHT_HAND"/>
+		</equip>
+		<skills>
+			<skill id="21257" level="1"/>
+			<skill id="3047" level="2"/>
+			<skill id="3856" level="1"/>
+		</skills>
+		<for>
+			<add stat="pAtk" order="0x10" value="186"/>
+			<add stat="mAtk" order="0x10" value="152"/>
+			<set stat="atkBaseSpeed" order="0x08" value="379"/>
+			<set stat="baseCrit" order="0x08" value="80"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<armor id="21981" name="Clownfish Hat">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_fish_cap2_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="21982" name="Refined Angel Ring">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_angel_ring_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="21983" name="Refined Wizard Hat">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_magician_cap2_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="21984" name="Refined Jester Hat">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_jester_cap_2_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="21985" name="Refined Romantic Chapeau">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.accessory_archer_hat2_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="21986" name="Agathion Seal Bracelet - Antharas">
+		<set name="dropable" value="false"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.pi_high_agathion_bracelet_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="150"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<skills>
+			<skill id="3267" level="1"/>
+			<skill id="6916" level="1"/>
+			<skill id="8521" level="1"/>
+		</skills>
+		<cond msgId="1507">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+		<cond msgId="1983">
+			<not>
+				<player fightClub="true" />
+			</not>
+		</cond>
+	</armor>
+	<armor id="21987" name="Pirate Hat">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.Accessary_sea_robber_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<armor id="21988" name="Shiny Lit Platform Summon Bracelet">
+		<set name="freightable" value="true"/>
+		<set name="dropable" value="false"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.Icon.br_shiny_platform_i00"/>
+		<set name="price" value="0"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="30"/>
+		<equip>
+			<slot id="LEFT_BRACELET"/>
+		</equip>
+		<skills>
+			<skill id="21232" level="1"/>
+		</skills>
+	</armor>
+	<armor id="21989" name="Warm Bear Hat">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_polar_bear_cap_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="10"/>
+		<equip>
+			<slot id="HAIR_ALL"/>
+		</equip>
+	</armor>
+	<weapon id="21990" name="Warm Bear Paws">
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="BranchSys2.icon.br_polar_bear_wp_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="DUALFIST"/>
+		<set name="weight" value="450"/>
+		<set name="soulshots" value="1"/>
+		<set name="spiritshots" value="1"/>
+		<set name="rnd_dam" value="5"/>
+		<equip>
+			<slot id="LEFT_RIGHT_HAND"/>
+		</equip>
+		<for>
+			<add stat="pAtk" order="0x10" value="5"/>
+			<add stat="mAtk" order="0x10" value="5"/>
+			<set stat="atkBaseSpeed" order="0x08" value="325"/>
+			<set stat="baseCrit" order="0x08" value="4.0"/>
+			<add stat="accCombat" order="0x10" value="4.0"/>
+			<enchant stat="pAtk" order="0x0C" value="0"/>
+			<enchant stat="mAtk" order="0x0C" value="0"/>
+		</for>
+	</weapon>
+	<etcitem id="21991" name="Tarask Dragon's Leather Fragment">
+		<set name="icon" value="icon.etc_leather_yellow_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21992" name="Behemoth Dragon Leather">
+		<set name="icon" value="icon.etc_leather_yellow_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21993" name="Lavasaurus Alpha Fragment">
+		<set name="icon" value="icon.etc_broken_crystal_gold_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21994" name="Vitality Replenishing Beverage - Pack of 9">
+		<set name="icon" value="icon.etc_pi_gift_box_i00"/>
+		<set name="weight" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="21995" name="Vitality Replenishing Beverage - Pack of 12">
+		<set name="icon" value="icon.etc_pi_gift_box_i00"/>
+		<set name="weight" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="21996" name="Vitality Replenishing Beverage - Pack of 15">
+		<set name="icon" value="icon.etc_pi_gift_box_i00"/>
+		<set name="weight" value="100"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="21997" name="Shattered Bones">
+		<set name="icon" value="icon.etc_broken_crystal_gold_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21998" name="Cannibalistic Stakato Leader Claw">
+		<set name="icon" value="icon.etc_parasite_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+	<etcitem id="21999" name="Anais Scroll">
+		<set name="icon" value="BranchSys2.icon.g_ancient_book_piece_high"/>
+		<set name="stackable" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="QUEST"/>
+	</etcitem>
+</list>

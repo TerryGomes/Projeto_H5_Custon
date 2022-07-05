@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT list (henna)*>
+<!ELEMENT henna (class)*>
+<!ATTLIST henna
+	con CDATA #REQUIRED
+	dex CDATA #REQUIRED
+	dye_id CDATA #REQUIRED
+	int CDATA #REQUIRED
+	men CDATA #REQUIRED
+	name CDATA #REQUIRED
+	price CDATA #REQUIRED
+	str CDATA #REQUIRED
+	symbol_id CDATA #REQUIRED
+	wit CDATA #REQUIRED>
+<!ELEMENT class (#PCDATA)>
+<!ATTLIST class
+	id CDATA #REQUIRED>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="24001" levels="1" name="Support Power Cardinal">
+		<set name="icon" val="icon.skill3123" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<add order="0x40" stat="runSpd" val="35" />
+			<mul order="0x30" stat="mAtkSpd" val="1.10" />
+			<mul order="0x30" stat="paralyzeResist" val="1.10" />
+		</for>
+	</skill>
+	<skill id="24002" levels="1" name="Support Power Hierophant" >
+		<set name="icon" val="icon.skill3123" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<add order="0x40" stat="runSpd" val="35" />
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="paralyzeResist" val="1.10" />
+		</for>
+	</skill>
+	<skill id="24003" levels="1" name="Support Power Sword Muse" >
+		<set name="icon" val="icon.skill3123" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="1.10" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="rootResist" val="1.10" />
+		</for>
+	</skill>
+	<skill id="24004" levels="1" name="Support Power Eva Saint" >
+		<set name="icon" val="icon.skill3123" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<add order="0x40" stat="runSpd" val="35" />
+			<mul order="0x30" stat="regMp" val="1.10" />
+			<mul order="0x30" stat="rootResist" val="1.10" />
+		</for>
+	</skill>
+	<skill id="24005" levels="1" name="Support Power Spectral Dancer" >
+		<set name="icon" val="icon.skill3123" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<add order="0x40" stat="runSpd" val="35" />
+			<mul order="0x30" stat="maxHp" val="1.10" />
+			<mul order="0x30" stat="rootResist" val="1.10" />
+		</for>
+	</skill>
+	<skill id="24006" levels="1" name="Support Power Shillien Saint" >
+		<set name="icon" val="icon.skill3123" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<add order="0x40" stat="runSpd" val="35" />
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="stunResist" val="1.10" />
+		</for>
+	</skill>
+	<skill id="24007" levels="1" name="Support Power Dominator" >
+		<set name="icon" val="icon.skill3123" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<add order="0x40" stat="runSpd" val="35" />
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="stunResist" val="1.10" />
+		</for>
+	</skill>
+	<skill id="24008" levels="1" name="Support Power Doomcryer" >
+		<set name="icon" val="icon.skill3123" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<add order="0x40" stat="runSpd" val="35" />
+			<mul order="0x30" stat="maxMp" val="1.10" />
+			<mul order="0x30" stat="paralyzeResist" val="1.10" />
+		</for>
+	</skill>
+	<skill id="24009" levels="3" name="Luckpy Power" >
+		<table name="#pDef">0.06 0.5 1</table>
+		<table name="#mDef">0.06 0.5 1</table>
+		<set name="icon" val="icon.skill3123" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<mul order="0x30" stat="pDef" val="#pDef" />
+			<mul order="0x30" stat="mDef" val="#mDef" />
+		</for>
+	</skill>
+</list>

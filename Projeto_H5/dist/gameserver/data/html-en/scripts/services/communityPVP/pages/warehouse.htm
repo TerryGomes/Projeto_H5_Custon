@@ -1,0 +1,202 @@
+<html noscrollbar>
+	<title>Community Warehouse</title>
+	<body>
+		<br>
+		<table width=755>
+		<tr>
+			<center>
+			<td>
+				<table border=0 cellpadding=0 cellspacing=0 width=769 height=405 background="l2ui_ct1.Windows_DF_TooltipBG">
+		<tr>
+			<td valign="top" align="center">
+				<table width=755 height=405>
+					<tr>
+						<td width=755>
+							<br>
+							<table width="769" height="35" cellspacing=0 cellpadding=0 >
+								<tr>
+									<td valign="top" align="center">
+										<table width="420" height="35" cellspacing=0 cellpadding=0 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+											<tr>
+												<td valign="top" align="center">
+													<br>
+													<font color=F7819F name=hs12>Warehouse</font>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<center>
+							<table width=769 height=94>
+								<tr>
+									<td valign="top" align="center">
+										<table border=0 width=250 height=90 cellspacing=1 cellpadding=0>
+											<tr>
+												<td valign=top align=center>
+													<table  width=318 height=30 border=0 background="L2UI_CT1.ComboBox_DF_Dropmenu_Bg">
+														<tr>
+															<td align=center valign=top>
+																<br>
+																<font name="hs12" color="298A08">Private Warehouse</font>
+																<br>
+															</td>
+														</tr>
+													</table>
+													<table width=310 height=200 border=0 background="L2UI_CT1.ComboBox_DF_Dropmenu_Bg">
+														<tr>
+															<td>
+																<br>
+																<center>
+																<table>
+																	<tr>
+																		<td valign=top align=center>
+																			<br>
+																			<table width=260 background="L2UI_CT1.ComboBox_DF_Dropmenu_Bg">
+																				<tr>
+																					<td height=36 align="center">
+																						<img src="L2UI_CT1.MiniMap_DF_ICN_Prison" width=32 height=32>
+																					</td>
+																					<td height=36 width="200" align="center">
+																						<br>
+																						<font color="LEVEL">Check Private Warehouse</font>
+																					</td>
+																					<td height=36 align="center">
+																						<img src="L2UI_CT1.MiniMap_DF_ICN_Prison" width=32 height=32>
+																					</td>
+																				</tr>
+																			</table>
+																			<table width=200>
+																				<tr>
+																					<td height=30 align="center">
+																						<br>
+																						<combobox width="140" var="private_category" list="All Items;Weapons;Armors;Jewerly;Accessory;Consumable;Material;Key Material;Recipe;Books;Misc;Other">
+																						<br>
+																						<br>
+																					</td>
+																					<td height=34 align="center">
+																						<button value="" action="bypass _bbswarehouse:private_retrieve: $private_category" width=34 height=34 back="L2UI_ct1.Icon_DF_MenuWnd_Inventory_Over" fore="Icon_DF_MenuWnd_Inventory">
+																					</td>
+																				</tr>
+																			</table>
+																			<table width=260 height=60 background="L2UI_CT1.ComboBox_DF_Dropmenu_Bg">
+																				<tr>
+																					<td height=36 align="center">
+																						<img src="L2UI_CT1.MiniMap_DF_ICN_Prison" width=32 height=32>
+																					</td>
+																					<td height=36 width="200" align="center">
+																						<br>
+																						<font color="LEVEL">Deposit items</font>
+																						<br1>
+																						<font color="B6B6B4">Private Warehouse</font>
+																					</td>
+																					<td height=36 align="center">
+																						<img src="L2UI_CT1.MiniMap_DF_ICN_Prison" width=32 height=32>
+																					</td>
+																				</tr>
+																			</table>
+																			<br>
+																			<button value="Deposit" action="bypass _bbswarehouse:private_deposit" width=200 height=31 back="L2UI_CT1.OlympiadWnd_DF_BuyEtc_Down" fore="L2UI_CT1.OlympiadWnd_DF_BuyEtc">
+																			<br>
+																			<br>
+																		</td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td valign=top align=center>
+													<table  width=318 height=30 border=0 background="L2UI_CT1.ComboBox_DF_Dropmenu_Bg">
+														<tr>
+															<td align=center valign=top>
+																<br>
+																<font name="hs12" color="2E64FE">Clan Warehouse</font>
+																<br>
+															</td>
+														</tr>
+													</table>
+													<table width=310 height=200 border=0 background="L2UI_CT1.ComboBox_DF_Dropmenu_Bg">
+														<tr>
+															<td>
+																<br>
+																<center>
+																	<table>
+																		<tr>
+																			<td valign=top align=center>
+																				<br>
+																				<table width=260 background="L2UI_CT1.ComboBox_DF_Dropmenu_Bg">
+																					<tr>
+																						<td height=36 align="center">
+																							<img src="L2UI_CT1.MiniMap_DF_ICN_Prison_Disable" width=32 height=32>
+																						</td>
+																						<td height=36 width="200" align="center">
+																							<br>
+																							<font color="LEVEL">Check Clan Warehouse</font>
+																						</td>
+																						<td height=36 align="center">
+																							<img src="L2UI_CT1.MiniMap_DF_ICN_Prison_Disable" width=32 height=32>
+																						</td>
+																					</tr>
+																				</table>
+																				<table width=200>
+																					<tr>
+																						<td height=30 align="center">
+																							<br>
+																							<combobox width="140" var="clan_category" list="All Items;Weapons;Armors;Jewerly;Accessory;Consumable;Material;Key Material;Recipe;Books;Misc;Other">
+																							<br>
+																							<br>
+																						</td>
+																						<td height=34 align="center">
+																							<button value="" action="bypass _bbswarehouse:clan_retrieve: $clan_category" width=34 height=34 back="L2UI_ct1.Icon_DF_MenuWnd_Clan_Over" fore="Icon_DF_MenuWnd_Clan">
+																						</td>
+																					</tr>
+																				</table>
+																				<table width=260 height=60 background="L2UI_CT1.ComboBox_DF_Dropmenu_Bg">
+																					<tr>
+																						<td height=36 align="center">
+																							<img src="L2UI_CT1.MiniMap_DF_ICN_Prison_Disable" width=32 height=32>
+																						</td>
+																						<td height=36 width="200" align="center">
+																							<br>
+																							<font color="LEVEL">Deposit items</font>
+																							<br1>
+																							<font color="B6B6B4">Clan Warehouse</font>
+																						</td>
+																						<td height=36 align="center">
+																							<img src="L2UI_CT1.MiniMap_DF_ICN_Prison_Disable" width=32 height=32>
+																						</td>
+																					</tr>
+																				</table>
+																				<br>
+																				<button value="Deposit" action="bypass _bbswarehouse:clan_deposit" width=200 height=31 back="L2UI_CT1.OlympiadWnd_DF_BuyEtc_Down" fore="L2UI_CT1.OlympiadWnd_DF_BuyEtc">
+																				<br>
+																				<br>
+																			</td>
+																		</tr>
+																	</table>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<br><br><br><br><br>
+							<table width=600 height=25>
+							<tr>
+							<td valign=top align=center>
+							<center>
+							<button value="" action="bypass _bbshome" width=16 height=16 back="L2UI_CT1.Button_DF_Input" fore="L2UI_CT1.Button_DF_Input">
+							</center>
+							</td>
+							</tr>
+							</table>
+						</td>
+						</center>
+					</tr>
+				</table>
+	</body>
+</html>

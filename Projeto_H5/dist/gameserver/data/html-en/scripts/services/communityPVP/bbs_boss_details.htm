@@ -1,0 +1,375 @@
+<html noscrollbar>
+<head>
+	<title>Boss Status</title>
+</head>
+<body>
+<br>
+<table width=800 height=508 background="l2fandc.bg17">
+	<tr>
+		<td align=center>
+			<table width=680 height=40 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td>
+						<table width=280>
+						<tr>
+							<td width=40 align=center>
+								<img src="Icon.skill5861" width=32 height=32>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<td>
+											<font name="__SYSTEMWORLDFONT" color=F26262>Raid Boss Status</font>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<font color=AFA196>Detailed informations about Raids</font>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					</td>
+					<td>
+						<table>
+							<tr>
+								<td>
+									<table width=260 height=30>
+										<tr>
+											<td align=center width=200 height=30>
+												<edit var="search" width=200 height=15>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td width=100 align=left>
+									<button value="Search" action="bypass _bbsbosslist_%sort%_0_ $search" width=100 height=28 back="L2UI_CT1.Button_DF_Down" fore="L2UI_ct1.Button_DF">
+								</td>
+								<td width=110 align=right>
+									<button value="Refresh" action="bypass _bbsboss_%sort%_%page%_ %search% _%bossId%" width=100 height=29 back="L2UI_CT1.Button_DF_Down" fore="L2UI_ct1.Button_DF">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width=680 height=300 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td width=10></td>
+					<td>
+						<br>
+						<table width=690 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td width=10></td>
+								<td align=center width=310>
+									<table width=269 height=269 background="L2UI_CT1.Windows_DF_Drawer_Bg">
+										<tr>
+											<td align=center width=269 height=269>
+												<img src="Crest.crest_1_%bossId%" width=256 height=256>
+											</td>
+										</tr>
+									</table>
+									<br>
+									<table width=225 cellpadding=0 cellspacing=0>
+										<tr>
+											<td>
+												<button value="Show Raid Location" action="bypass _bbsboss_%sort%_%page%_ %search% _%bossId%_1" width=130 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_ct1.Button_DF">
+											</td>
+											<td>
+												<button value="View Raid Drop List" action="bypass _bbsboss_%sort%_%page%_ %search% _%bossId%_2" width=130 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_ct1.Button_DF">
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<button value="Show Skills" action="bypass -h scripts_actions.OnActionShift:skills %bossId%" width=130 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_ct1.Button_DF">
+											</td>
+											<td>
+												<button value="Clear Map" action="bypass _bbsboss_%sort%_%page%_ %search% _%bossId%_4" width=130 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_ct1.Button_DF">
+											</td>
+										</tr>
+									</table>
+									<br>
+									<table width=225 cellpadding=0 cellspacing=0>
+										<tr>
+											<td width=260 height=25>
+												<button value="Teleport To Raid" action="bypass _bbsboss_%sort%_%page%_ %search% _%bossId%_3" width=260 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br>
+												<button value="Back" action="bypass _bbsbosslist_%sort%_%page%_%search%" width=260 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_ct1.Button_DF">
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td width=35></td>
+								<td width=400 height=300>
+									<table border=0>
+										<tr>
+											<td height=25 width=100>
+												<font name=hs12 color=FFFFFF>Name:</font>
+											</td>
+											<td height=25 width=350>
+												<font name=hs12 color=FFFFFF>%name%</font>
+											</td>
+										</tr>
+									</table>
+									<br>
+									<table border=0 bgcolor=1A1919>
+										<tr>
+											<td height=25 width=365>
+												<table border=0>
+													<tr>
+														<td width=60>
+															<font color=A8A8A8>HP:</font><br1>
+															<font color=A8A8A8>MP:</font><br1>
+															<font color=A8A8A8>EXP/SP:</font>
+														</td>
+														<td width=50 align=center valign=top>
+															<table>
+																<tr>
+																	<td width=300 align=center valign=top>
+																		%hpGauge% <br>
+																	</td>
+																</tr>
+																<tr>
+																	<td width=300 align=center valign=top>
+																		%mpGauge% <br>
+																	</td>
+																</tr>
+																<tr>
+																	<td valign=top align=center background=L2UI_CT1.Gauge_DF_Large_EXP_Center width=300>
+																		<font color=FFFFFF>%expReward% / <font color=FFFFFF>%spReward%</font></font><br1>
+																	</td>
+																</tr>
+															</table>
+														</td>
+														<td valign=top width=100>
+														<font name=hs12 color=FFFFFF>Level:  %level%</font><br>
+														<font color=878786>Minions:  %minions%</font> 
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									<br>
+									&nbsp;&nbsp; Combat:
+									<center>
+									<table cellpadding=0 cellspacing=0 border=0 bgcolor=1A1919>
+										<tr>
+											<td height=25 width=40>
+												<font color=878786>P. Atk:</font>
+											</td>
+											<td align=right height=25 width=120>
+											<font color=A99375>%pAtk%</font> &nbsp; 
+											</td>
+											<td height=25 width=40>
+												<font color=878786>M. Atk:</font>
+											</td>
+											<td align=right height=25 width=120>
+												<font color=A99375>%mAtk%</font> &nbsp; 
+											</td>
+										</tr>
+										<tr>
+											<td height=25 width=40>
+												<font color=878786>P. Def:</font>
+											</td>
+											<td align=right height=25 width=120>
+												<font color=A99375>%pDef%</font> &nbsp; 
+											</td>
+											<td height=25 width=40>
+												<font color=878786>M. Def:</font>
+											</td>
+											<td align=right height=25 width=120>
+												<font color=A99375>%mDef%</font> &nbsp; 
+											</td>
+										</tr>
+										<tr>
+											<td height=25 width=40>
+												<font color=878786>Accuracy:</font>
+											</td>
+											<td align=right height=25 width=120>
+												<font color=A99375>%accuracy%</font> &nbsp; 
+											</td>
+											<td height=25 width=40>
+												<font color=878786>Evasion:</font>
+											</td>
+											<td align=right height=25 width=120>
+												<font color=A99375>%evasionRate%</font> &nbsp; 
+											</td>
+										</tr>
+										<tr>
+											<td height=25 width=40>
+												<font color=878786>Crit. Rate:</font>
+											</td>
+											<td align=right height=25 width=120>
+												<font color=A99375>%criticalHit%</font> &nbsp; 
+											</td>
+											<td height=25 width=40>
+												<font color=878786>Speed:</font>
+											</td>
+											<td align=right height=25 width=120>
+												<font color=A99375>%speed%</font> &nbsp; 
+											</td>
+										</tr>
+										<tr>
+											<td height=25 width=40>
+												<font color=878786>Atk. Spd:</font>
+											</td>
+											<td align=right height=25 width=120>
+												<font color=A99375>%atkspeed%</font> &nbsp; 
+											</td>
+											<td height=25 width=40>
+												<font color=878786>Casting Spd:</font>
+											</td>
+											<td align=right height=25 width=120>
+												<font color=A99375>%cspeed%</font> &nbsp; 
+											</td>
+										</tr>
+									</table>
+									<br>
+									</center>
+									&nbsp;&nbsp; Stats:
+									<br1>
+									<center>
+										<table cellpadding=0 cellspacing=0 border=0 bgcolor=1A1919>
+											<tr>
+												<td height=25 width=50>
+													<font color=878786>STR:</font>
+												</td>
+												<td align=right height=25 width=70>
+													<font color=A99375>%STR%</font> &nbsp; 
+												</td>
+												<td height=25 width=50>
+													<font color=878786>DEX:</font>
+												</td>
+												<td align=right height=25 width=70>
+													<font color=A99375>%DEX%</font> &nbsp; 
+												</td>
+												<td height=25 width=50>
+													<font color=878786>CON:</font>
+												</td>
+												<td align=right height=25 width=70>
+													<font color=A99375>%CON%</font> &nbsp; 
+												</td>
+											</tr>
+											<tr>
+												<td height=25 width=50>
+													<font color=878786>INT:</font>
+												</td>
+												<td align=right height=25 width=70>
+													<font color=A99375>%INT%</font> &nbsp; 
+												</td>
+												<td height=25 width=50>
+													<font color=878786>WIT:</font>
+												</td>
+												<td align=right height=25 width=70>
+													<font color=A99375>%WIT%</font> &nbsp; 
+												</td>
+												<td height=25 width=50>
+													<font color=878786>MEN:</font>
+												</td>
+												<td align=right height=25 width=70>
+													<font color=A99375>%MEN%</font> &nbsp; 
+												</td>
+											</tr>
+										</table>
+									</center>
+									&nbsp;&nbsp; Def Attribute Value:
+									<center>
+									<table border=0 cellpadding=0 cellspacing=0 bgcolor=1A1919>
+										<tr>
+											<td height=25 width=40>
+												<font color=878786>Fire:</font>
+											</td>
+											<td align=right height=25 width=140>
+											<font color=A99375>%fire%</font> &nbsp; 
+											</td>
+											<td height=25 width=40>
+												<font color=878786>Water:</font>
+											</td>
+											<td align=right height=25 width=140>
+												<font color=A99375>%water%</font> &nbsp; 
+											</td>
+										</tr>
+										<tr>
+											<td height=25 width=40>
+												<font color=878786>Wind:</font>
+											</td>
+											<td align=right height=25 width=140>
+												<font color=A99375>%wind%</font> &nbsp; 
+											</td>
+											<td height=25 width=40>
+												<font color=878786>Earth:</font>
+											</td>
+											<td align=right height=25 width=140>
+												<font color=A99375>%earth%</font> &nbsp; 
+											</td>
+										</tr>
+										<tr>
+											<td height=25 width=40>
+												<font color=878786>Holy:</font>
+											</td>
+											<td align=right height=25 width=140>
+												<font color=A99375>%holy%</font> &nbsp; 
+											</td>
+											<td height=25 width=40>
+												<font color=878786>Dark:</font>
+											</td>
+											<td align=right height=25 width=140>
+												<font color=A99375>%dark%</font> &nbsp; 
+											</td>
+										</tr>
+									</table>
+									<br>
+									</center>
+									&nbsp;&nbsp; Other information:<br1>
+									<center>
+										<table border=0 cellpadding=0 cellspacing=0 bgcolor=1A1919>
+											<tr>
+												<td height=25 width=80>
+													<font color=878786>Last Kiler:</font>
+												</td>
+												<td align=right height=25 width=140>
+													<font color=A99375>%lastKiller%</font> &nbsp; 
+												</td>
+												<td height=25 width=80>
+													<font color=878786>Status:</font>
+												</td>
+												<td align=right height=25 width=55>
+													<font color="%color%">%alive%</font> &nbsp; 
+												</td>
+											</tr>
+											<tr>
+												<td height=25 width=80>
+													<font color=878786>Death Date:</font>
+												</td>
+												<td align=right height=25 width=110>
+													<font color=A99375>%dateOfDeath%</font> &nbsp; 
+												</td>
+												<td height=25 width=100>
+													<font color=878786>Respawn Date</font>
+												</td>
+												<td align=right height=25 width=110>
+													<font color=A99375>%dateOfRespawn%</font> &nbsp; 
+												</td>
+											</tr>
+										</table>
+									</center>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		<br><br><br><br><br1>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

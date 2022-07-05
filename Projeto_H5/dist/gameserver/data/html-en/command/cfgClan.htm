@@ -1,0 +1,34 @@
+<html noscrollbar>
+	<head>
+		<title>Control Panel</title>
+	</head>
+<body>
+
+<center>
+<img src="L2UI.squaregray" width="285" height="1">
+<table width=280 bgcolor=222120>
+	<tr>
+		<td>
+			<center>
+			<font name="hs12" color="3399FF">L2fandc</font>
+			</center>
+		</td>
+	</tr>
+</table>
+<img src="L2UI.squaregray" width="285" height="1">
+<br>
+<br>
+</center>
+<font color=c1b33a>
+Add remove from CWH privilage to nickname:<br>
+</font>
+<center>
+<edit var="name" width=150 height=15 />
+<br>
+<br>
+<button value="Add Character" action="bypass -h user_control cwhPrivs allowwh $name" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+<button value="Remove Character" action="bypass -h user_control cwhPrivs blockwh $name" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+<button value="View current List" action="bypass -h user_control cwhPrivs list" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+<button value="Back" action="bypass -h user_control back" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /><br>
+</body>
+</html>

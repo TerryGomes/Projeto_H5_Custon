@@ -1,0 +1,1395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="6200" levels="1" name="NPC Transform Dispel">
+		<set name="icon" val="icon.skilltransform2" />
+		<set name="magicLevel" val="56" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="2500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6201" levels="1" name="Transformation Condition - Frog" >
+		<!--
+		Done by:	pchayka
+		Last modify:	09.06.2010  
+		Description: Transformed into a frog.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="addSkills" val="959;1;5491;1;619;1" />
+		<set name="npcId" val="13157" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isCommon" val="true" />
+		<set name="canUseTeleport" val="false" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="520" val="111" stackOrder="100" stackType="SpeedUp"/>
+		</for>
+	</skill>
+	<skill id="6202" levels="1" name="Transformation Condition - Young Child" >
+		<!--
+		Done by:	pchayka
+		Last modify:	09.06.2010  
+		Description: Transformed into a Young Child.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="addSkills" val="960;1;5491;1;619;1" />
+		<set name="npcId" val="13158" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isCommon" val="true" />
+		<set name="canUseTeleport" val="false" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="460" val="112" stackOrder="100" stackType="SpeedUp"/>
+		</for>
+	</skill>
+	<skill id="6203" levels="1" name="Transformed Condition - Native" >
+		<!--
+		Done by:	pchayka
+		Last modify:	09.06.2010  
+		Description: Transformed into a Native.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="addSkills" val="961;1;5491;1;619;1" />
+		<set name="npcId" val="13090" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isCommon" val="true" />
+		<set name="canUseTeleport" val="false" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="215" val="101" stackOrder="100" stackType="SpeedUp"/>
+		</for>
+	</skill>
+	<skill id="6204" levels="1" name="Transformed Condition - Guards of the Dawn" >
+		<!--
+		Done by:	pchayka
+		Last modify:	11.06.2010  
+		Description: Transformed into a Guards of the Dawn.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="addSkills" val="963;1;5491;1" />
+		<set name="npcId" val="13159" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isCommon" val="true" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="18000" val="113" stackOrder="100" stackType="SpeedUp"/>
+		</for>
+	</skill>
+	<skill id="6205" levels="19" name="Strider Bite">
+		<table name="#effectPoint">523 566 604 635 646 655 662 669 676 679 681 684 687 689 692 694 696 698 700</table>
+		<table name="#dot">67 77 77 84 84 84 84 84 87 87 87 87 87 87 87 87 87 87 89</table>
+		<table name="#mpConsume2">68 76 82 89 91 94 96 98 100 100 101 102 103 103 104 104 105 105 105</table>
+		<table name="#magicLevel">55 60 65 70 72 74 76 78 80 81 82 83 84 85 86 87 88 89 90</table>
+		<table name="#power">1649 2045 2476 2927 3108 3288 3464 3636 3801 3881 3959 4034 4107 4176 4243 4307 4367 4424 4477</table>
+		<set name="levelModifier" val="2" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="720" />
+		<set name="reuseDelay" val="3000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="1080" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="effectRange" val="400"/>
+		<set name="absorbPart" val="0" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="nextAction" val="attack" />
+		<set name="criticalRate" val="20" />
+		<set name="overHit" val="true" />
+		<set name="isDebuff" val="true" />
+		<set name="trait" val="BLEED" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect abnormal="bleeding" count="20" name="Bleed" stackType="Bleed" stackOrder="6" time="1" val="#dot" chance="20" />
+		</for>
+	</skill>
+	<skill id="6206" levels="19" name="Strider Fear">
+		<table name="#effectPoint">523 566 604 635 646 655 662 669 676 679 681 684 687 689 692 694 696 698 700</table>
+		<table name="#mpConsume2">40 44 48 52 53 55 56 57 58 58 59 59 60 60 60 61 61 61 61</table>
+		<table name="#mpConsume1">10 11 12 13 14 14 14 15 15 15 15 15 15 15 15 16 16 16 16</table>
+		<table name="#magicLevel">55 60 65 70 72 74 76 78 80 81 82 83 84 85 86 87 88 89 90</table>
+		<set name="levelModifier" val="1" />
+		<set name="magicType" val="MAGIC" />
+		<set name="affectLimit" val="6;12" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="5000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="effectRange" val="300"/>
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="activateRate" val="10" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="DERANGEMENT" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="2" name="Fear" stackOrder="-1" stackType="Fear" time="5" val="0" />
+		</for>
+	</skill>
+	<skill id="6207" levels="1" name="Strider Dash">
+		<set name="icon" val="icon.action108" />
+		<set name="reuseDelay" val="30000" />
+		<set name="magicLevel" val="56" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="55" />
+		<set name="effectPoint" val="438" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="skillType" val="BUFF" />
+		<set name="target" val="TARGET_SELF" />
+		<for>
+			<effect name="Buff" time="15" val="0" stackType="speed_up_special" stackOrder="2">
+				<add order="0x40" stat="runSpd" val="66" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6208" levels="1" name="Blessed Guidance" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Blessed Guidance. For 10 seconds, increases accuracy by 2."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skill1240" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6209" levels="4" name="Weapon Grade Penalty" >
+		<!--
+		6209	1	Weapon Grade Penalty	The equipped weapon's grade doesn't match your level, so the following penalties are incurred: Decrease in accuracy by 16, Critical Rate by 10%, Critical Power by 10%, Atk. Spd. by 10%, and P. Atk. by 10%.
+		6209	2	Weapon Grade Penalty	The equipped weapon's grade doesn't match your level, so the following penalties are incurred: Decrease in accuracy by 16, Critical Rate by 20%, Critical Power by 20%, Atk. Spd. by 10%, and P. Atk. by 10%.
+		6209	3	Weapon Grade Penalty	The equipped weapon's grade doesn't match your level, so the following penalties are incurred: Decrease in accuracy by 16, Critical Rate by 30%, Critical Power by 30%, Atk. Spd. by 10%, and P. Atk. by 10%.
+		6209	4	Weapon Grade Penalty	The equipped weapon's grade doesn't match your level, so the following penalties are incurred: Decrease in accuracy by 16, Critical Rate by 40%, Critical Power by 40%, Atk. Spd. by 10%, and P. Atk. by 10%.
+		-->
+		<table name="#power">0.9 0.8 0.7 0.6</table>
+		<table name="#mAtk">0.8 0.6 0.4 0.15</table>
+		<set name="icon" val="icon.skill6209_1" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<sub order="0x80" stat="accCombat" val="16" />
+			<mul order="0x70" stat="rCrit" val="#power" />
+			<mul order="0x70" stat="cAtk" val="#power" />
+			<mul order="0x70" stat="pAtkSpd" val="0.9" />
+			<mul order="0x70" stat="pAtk" val="0.9" />
+			<mul order="0x70" stat="mAtk" val="#mAtk" /> <!-- fixme: magic failure rate -->
+		</for>
+	</skill>
+	<skill id="6213" levels="4" name="Armor Grade Penalty" >
+		<!--
+		6213	1	Armor Grade Penalty	When equipped with armor or accessories whose grade doesn't fit with your level, a penalty is incurred ith decreases in evasion by 2.5, Atk. Spd./Casting Spd./moving speed by 16.67%.
+		6213	2	Armor Grade Penalty	When equipped with armor or accessories whose grade doesn't fit with your level, a penalty is incurred ith decreases in evasion by 5, Atk. Spd./Casting Spd./moving speed by 30.56%.
+		6213	3	Armor Grade Penalty	When equipped with armor or accessories whose grade doesn't fit with your level, a penalty is incurred ith decreases in evasion by 7.5, Atk. Spd./Casting Spd./moving speed by 42.13%.
+		6213	4	Armor Grade Penalty	When equipped with armor or accessories whose grade doesn't fit with your level, a penalty is incurred ith decreases in evasion by 10, Atk. Spd./Casting Spd./moving speed by 51.77%.
+		-->
+		<table name="#rEvas">2.5 5 7.5 10</table>
+		<table name="#rate">0.8333 0.6944 0.5787 0.4823</table>
+		<set name="icon" val="icon.skill6213_1" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<sub order="0x80" stat="rEvas" val="#rEvas" />
+			<mul order="0x70" stat="pAtkSpd" val="#rate" />
+			<mul order="0x70" stat="mAtkSpd" val="#rate" />
+			<mul order="0x70" stat="runSpd" val="#rate" />
+		</for>
+	</skill>
+	<skill id="6217" levels="1" name="Raid Boss - Level 81" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Evil existence trying to invade the real world along the border between dreams and reality. It is recognized differently by different people, as if it were created by a collection of nightmares."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6218" levels="1" name="Raid Boss - Level 81" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Evil existence trying to invade the real world along the border between dreams and reality. It is recognized differently by different people, as if it were created by a collection of nightmares."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6219" levels="1" name="Raid Boss - Level 81" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Evil existence trying to invade the real world along the border between dreams and reality. It is recognized differently by different people, as if it were created by a collection of nightmares."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6220" levels="1" name="Raid Boss - Level 81" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Evil existence trying to invade the real world along the border between dreams and reality. It is recognized differently by different people, as if it were created by a collection of nightmares."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6221" levels="1" name="Raid Boss - Level 82" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Evil existence trying to invade the real world along the border between dreams and reality. It is recognized differently by different people, as if it were created by a collection of nightmares."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6222" levels="1" name="Raid Boss - Level 84" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Evil existence trying to invade the real world along the border between dreams and reality. It is recognized differently by different people, as if it were created by a collection of nightmares."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6223" levels="1" name="Raid Boss - Level 84" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Leader of the Cannibalistic Stakatos appointed by the Stakato Queen Shyeed to guard their nest. Unlike other Stakatos, it has the ability to jump through invisible space."
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HARDCODED" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6224" levels="1" name="Raid Boss - Level 84" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Leader of the Cannibalistic Stakatos appointed by the Stakato Queen Shyeed to guard their nest. Unlike other Stakatos, it has the ability to jump through invisible space."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6225" levels="1" name="Raid Boss - Level 84" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Leader of the Cannibalistic Stakatos appointed by the Stakato Queen Shyeed to guard their nest. Unlike other Stakatos, it has the ability to jump through invisible space."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6226" levels="1" name="Raid Boss - Level 84" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Leader of the Cannibalistic Stakatos appointed by the Stakato Queen Shyeed to guard their nest. Unlike other Stakatos, it has the ability to jump through invisible space."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6227" levels="1" name="Raid Boss - Level 84" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Queen of the Spike Stakatos who commands and propagates the Spike Stakatos. It knows that its life is coming to an end, and it orders the nest guarded so that it is a good environment for the next Stakato Queen to grow up."
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HARDCODED" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6228" levels="1" name="Raid Boss - Level 83" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "One of the monsters born of the Goddess Shilen. When the Great Sprite Gildor is weakened, it leads the Tasaba Lizardmen into the Reed Field, but when the Tasaba Lizardmen are wiped out by the appearance of the Mucrokians, it spews tremendous anger."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6229" levels="1" name="Raid Boss - Level 84" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Water sprite born from the powerful waters of Innadril. It is greatly beloved by the Goddess Eva. It's a trickster that does whatever it wants, like snatching babies or causing floods in the middle of the night. Eva fears retaliation one day because of Lian's severe tricks, and she puts him in the care of guardian spirits."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6230" levels="1" name="Raid Boss - Level 82" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Because of the item that was made in the image of the giants by the Ivory Tower magicians, it believes it is a giant itself. It is controlled by Hekaton Prime, and it guards the cave that was once the fortress of the giants."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6231" levels="1" name="Raid Boss - Level 82" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Lifeform created by the giants that were fleeing by night the wrath of Einhasad. It was improved with a Monster Eye as its foundation and it was created to exterminate the pursuers of the gods.  At one time, it broke free from the control of the giants and fought against them. Its mind is now controlled by Hekaton prime, and it again protects the giants."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6232" levels="1" name="Raid Boss - Level 83" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Last Lesser Giant hiding deep inside the Giant's Cave. Though it is physically the same as the other Lesser Giants, it contains the secret of the ancient lesser giant civilization, and it protects this secret. It is currently controlled by Hekaton Prime."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6233" levels="1" name="Raid Boss - Level 83" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Control device created by the ancient giants civilization. It has outgrown its original research goal. It's only goal now is to protect the cave. It is transforming it into a powerful protected fortress by controlling the minds of the other races and by maintaining the Giant's Cave.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skillraid" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6234" levels="1" name="Presentation - Adena Firework" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="80" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6235" levels="1" name="Blessed Focus" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Blessing's Focus. Increases Critical Rate for 1 minute.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6236" levels="1" name="Presentation - Party Recall" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="2500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6237" levels="1" name="Moving Speed Decrease" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Moving Speed is reduced by 80% for 10 seconds.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill1160" />
+		<set name="magicLevel" val="84" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+	</skill>
+	<skill id="6238" levels="1" name="Moving Speed Decrease" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Moving Speed/Casting Spd./Atk. Spd. are reduced by 50% for 20 seconds.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill1160" />
+		<set name="magicLevel" val="84" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+	</skill>
+	<skill id="6239" levels="1" name="Proof of Space and Time" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="1000" />
+		<set name="reuseDelay" val="86400000" />
+		<set name="magicLevel" val="55" />
+		<set name="hitTime" val="2700" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6240" levels="5" name="Heatstroke" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke stage 1. Inflicted with heatstroke. You are extremely hot and fatigued.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.etc_ashes_white_i00" />
+		<set name="reuseDelay" val="1000" />
+		<set name="castRange" val="300" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6241" levels="1" name="Heatstroke Prevention Effect - Gludio" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Gludio region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6242" levels="1" name="Heatstroke Prevention Effect - Dion" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Dion region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6243" levels="1" name="Heatstroke Prevention Effect - Giran" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Giran region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6244" levels="1" name="Heatstroke Prevention Effect - Oren" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Oren region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6245" levels="1" name="Heatstroke Prevention Effect - Aden" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Aden region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6246" levels="1" name="Heatstroke Prevention Effect - Innadril" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Innadril region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6247" levels="1" name="Heatstroke Prevention Effect - Goddard" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Goddard region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6248" levels="1" name="Heatstroke Prevention Effect - Rune" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Rune region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6249" levels="1" name="Heatstroke Prevention Effect -Schuttgart" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Schuttgart region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6250" levels="1" name="Severe Heatstroke" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Severe heatstroke. Humidity is summoned.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.etc_ashes_red_i00" />
+		<set name="reuseDelay" val="1000" />
+		<set name="castRange" val="200" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+	</skill>
+	<skill id="6251" levels="1" name="Summon Humidity" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6252" levels="1" name="Humidity Attack" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="1000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6253" levels="1" name="Heatstroke Prevention Effect - Gludio" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Gludio region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6254" levels="1" name="Heatstroke Prevention Effect - Dion" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Dion region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6255" levels="1" name="Heatstroke Prevention Effect - Giran" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Giran region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6256" levels="1" name="Heatstroke Prevention Effect - Oren" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Oren region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6257" levels="1" name="Heatstroke Prevention Effect - Aden" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Aden region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6258" levels="1" name="Heatstroke Prevention Effect - Innadril" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Innadril region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6259" levels="1" name="Heatstroke Prevention Effect - Goddard" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Goddard region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6260" levels="1" name="Heatstroke Prevention Effect - Rune" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Rune region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6261" levels="1" name="Heatstroke Prevention Effect -Schuttgart" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Heatstroke Prevention Effect - Prevention effect received in the Schuttgart region. Effect that minimizes the damage incurred from heatstroke.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-12-2009  19:13
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6262" levels="1" name="EMP Power">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="30000" />
+		<set name="power" val="1046" />
+		<set name="magicLevel" val="76" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="78" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="element" val="fire" />
+		<set name="overHit" val="true" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="3" val="0" />
+		</for>
+	</skill>
+	<skill id="6263" levels="1" name="EMP Shock">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill0100" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="30000" />
+		<set name="power" val="1046" />
+		<set name="magicLevel" val="77" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="78" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="element" val="fire" />
+		<set name="overHit" val="true" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="SHOCK" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="3" val="0" />
+		</for>
+	</skill>
+	<skill id="6264" levels="1" name="Golem Boom">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="3000" />
+		<set name="power" val="1046" />
+		<set name="magicLevel" val="75" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillRadius" val="100" />
+		<set name="element" val="fire" />
+		<set name="overHit" val="true" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6265" levels="1" name="Smoke">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="3000" />
+		<set name="power" val="600" />
+		<set name="magicLevel" val="75" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillRadius" val="100" />
+		<set name="overHit" val="true" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6266" levels="1" name="Shock">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill0100" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="84" />
+		<set name="castRange" val="2500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="82" />
+		<set name="activateRate" val="20" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillRadius" val="100" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="SHOCK" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="3" val="0" />
+		</for>
+	</skill>
+	<skill id="6267" levels="1" name="Power Attack">
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="2617" />
+		<set name="magicLevel" val="84" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="2500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="123" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6268" levels="1" name="Power Attack">
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="2617" />
+		<set name="magicLevel" val="84" />
+		<set name="castRange" val="250" />
+		<set name="hitTime" val="5000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="164" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6269" levels="1" name="Poison Gas">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill4036" />
+		<set name="castRange" val="1100" />
+		<set name="hitTime" val="2500" />
+		<set name="hitCancelTime" val="1500" />
+		<set name="mpConsume1" val="24" />
+		<set name="mpConsume2" val="93" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="trait" val="POISON" />
+		<set name="saveVs" val="CON" />
+	</skill>
+	<skill id="6270" levels="1" name="Grima Power Up">
+		<set name="icon" val="icon.skill4036" />
+		<set name="magicLevel" val="84" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="POISON" />
+		<for>
+			<mul order="0x30" val="1.2" stat="pAtk" />
+		</for>
+	</skill>
+	<skill id="6271" levels="5" name="Grima Power Up">
+		<!--
+			Increase Physical Attack by 10%.
+			Increase Physical Attack by 20%.
+			Increase Physical Attack by 30%.
+			Increase Physical Attack by 40%.
+			Increase Physical Attack by 50%.
+		-->
+		<table name="#pAtk">1.1 1.2 1.3 1.4 1.5</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1068" />
+		<set name="magicLevel" val="84" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<mul order="0x30" val="#pAtk" stat="pAtk" />
+		</for>
+	</skill>
+	<skill id="6272" levels="1" name="Underbug Defense Up">
+		<!-- Increase each of P. Def. and M. Def. by 30%. -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1040" />
+		<set name="magicLevel" val="84" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<mul order="0x30" val="1.3" stat="pDef" />
+			<mul order="0x30" val="1.3" stat="mDef" />
+		</for>
+	</skill>
+	<skill id="6273" levels="1" name="Underbug Self Blasting">
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="1000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="10000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="trait" val="POISON" />
+	</skill>
+	<skill id="6274" levels="1" name="Eternal Blizzard">
+		<!-- Normal mode -->
+		<set name="icon" val="icon.skill6274" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="10000" />
+		<set name="power" val="38976" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="10000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="165" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="effectRange" val="3000" />
+		<set name="skillRadius" val="3000" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="element" val="water" />
+		<for>
+			<effect count="1" name="CallSkills" time="0" val="0" >
+				<def name="skillIds" val="6662" />
+				<def name="skillLevels" val="2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6275" levels="1" name="Eternal Blizzard">
+		<!-- Hard mode -->
+		<set name="icon" val="icon.skill6274" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="10000" />
+		<set name="power" val="45256" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="7000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="166" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="effectRange" val="3000" />
+		<set name="skillRadius" val="3000" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="element" val="water" />
+		<for>
+			<effect count="1" name="CallSkills" time="0" val="0" >
+				<def name="skillIds" val="6662" />
+				<def name="skillLevels" val="2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6276" levels="1" name="Eternal Blizzard">
+		<set name="icon" val="icon.skill6274" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="10000" />
+		<set name="power" val="30" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="10000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_AREA" />
+		<set name="skillRadius" val="600" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6277" levels="1" name="Summon Spirits">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="10000" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="800" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" time="30" val="0">
+				<mul stat="pDef" val="1.2" order="0x30" />
+				<mul stat="mDef" val="1.2" order="0x30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6278" levels="1" name="Ice Ball">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="power" val="18560" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="800" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="168" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="element" val="water" />
+	</skill>
+	<skill id="6279" levels="1" name="Attack Nearby Range">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="power" val="18560" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="5000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="168" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="effectRange" val="450" />
+		<set name="skillRadius" val="450" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="element" val="water" />
+	</skill>
+	<skill id="6280" levels="1" name="Death Clack">
+		<!-- Freya's Cruel Sentence. Verdict will be made after 10 seconds. -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill6280" />
+		<set name="coolTime" val="800" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="1500" />
+		<set name="hitTime" val="500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="85" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="10" name="DamOverTime" time="1" val="500" />
+		</for>
+	</skill>
+	<skill id="6281" levels="1" name="Cold Judgement">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="18560" />
+		<set name="magicLevel" val="85" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6282" levels="1" name="Reflect Magic">
+		<!-- Reflects Damage Magic back to the enemy for 10 seconds. -->
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="45000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="85" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" time="10" val="0">
+				<add order="0x40" stat="reflectAndBlockMSkillDam" val="100" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6283" levels="1" name="Ice Storm">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="power" val="18560" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="1100" />
+		<set name="hitTime" val="3500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillRadius" val="1200" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="element" val="water" />
+	</skill>
+	<skill id="6284" levels="1" name="Freya's Bless">
+		<!-- Increase P.Atk, P.Def. and Atk. Spd. by 15%. -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6285" levels="1" name="Rage of Ice">
+		<!-- Increases Casting Spd. by 15% for 20 minutes. -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" time="1800" val="0">
+				<mul stat="mAtkSpd" val="1.15" order="0x30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6286" levels="1" name="Bless of Sword">
+		<!-- Increase HP Recovery Bonus by 15% and P. Def by 10% for 20 minutes. -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill6286" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="650" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6287" levels="1" name="Bless of Sword">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill6286" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="2000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6288" levels="1" name="Jinia's Prayer">
+		<!-- Increase P.Def. and M.Def. by 300%. -->
+		<set name="icon" val="icon.skill6288" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="5000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" time="30" val="0">
+				<mul stat="pDef" val="3" order="0x50" />
+				<mul stat="mDef" val="3" order="0x50" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6289" levels="1" name="Kegor's Courage">
+		<!-- Increase P.Atk. by 300%, M. Atk. by 300%, Atk. Spd. by 25% and Casting Spd. by 25%. -->
+		<set name="icon" val="icon.skill6289" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="5000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" time="30" val="0" stackOrder="1" stackType="signal_b">
+				<mul stat="pAtk" val="3" order="0x50" />
+				<mul stat="mAtk" val="3" order="0x50" />
+				<mul stat="pAtkSpd" val="1.25" order="0x50" />
+				<mul stat="mAtkSpd" val="1.25" order="0x50" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6290" levels="1" name="Power Strike">
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="4563" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="150" />
+		<set name="hitTime" val="2500" />
+		<set name="reuseDelay" val="10000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="123" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="element" val="water" />
+	</skill>
+	<skill id="6291" levels="1" name="Power Strike">
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="4564" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3500" />
+		<set name="reuseDelay" val="10000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="123" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="element" val="water" />
+	</skill>
+	<skill id="6292" levels="1" name="Rush">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="200" />
+		<set name="power" val="4565" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="500" />
+		<set name="reuseDelay" val="20000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="20" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="element" val="water" />
+	</skill>
+	<skill id="6293" levels="1" name="Power Strike">
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="8565" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="2500" />
+		<set name="reuseDelay" val="10000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="123" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="element" val="water" />
+	</skill>
+	<skill id="6294" levels="1" name="Leader's Roar">
+		<!-- Increase P.Atk. by 15%. -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1040" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="34400" />
+		<set name="hitCancelTime" val="500" />
+		<set name="reuseDelay" val="300000" />
+		<set name="mpConsume1" val="17" />
+		<set name="mpConsume2" val="66" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" time="1800" val="0">
+				<mul stat="pAtk" val="1.15" order="0x30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6295" levels="1" name="Point Target">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="power" val="18565" />
+		<set name="magicLevel" val="85" />
+		<set name="reuseDelay" val="10000" />
+		<set name="castRange" val="800" />
+		<set name="hitTime" val="2500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="element" val="water" />
+	</skill>
+	<skill id="6296" levels="1" name="Rush">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="200" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="900" />
+		<set name="reuseDelay" val="20000" />
+		<set name="hitTime" val="500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="20" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6297" levels="1" name="Cylinder Throw">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="power" val="4565" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="1100" />
+		<set name="reuseDelay" val="12000" />
+		<set name="hitTime" val="2500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="123" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="element" val="water" />
+	</skill>
+	<skill id="6298" levels="1" name="Summon Follower Knight">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6299" levels="1" name="Breath of Ice Palace - Ice Storm">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="15000" />
+		<set name="power" val="1547" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="skillRadius" val="200" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="element" val="water" />
+		<for>
+			<effect count="1" name="CallSkills" time="0" val="0" >
+				<def name="skillIds" val="6662" />
+				<def name="skillLevels" val="1" />
+			</effect>
+		</for>
+	</skill>
+</list>

@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "events.dtd">
+<list>
+	<event id="2" name="Krateis Cube 70-75 Level" type="PVP_EVENT" impl="KrateisCube">
+		<parameter name="min_level" value="70"/>
+		<parameter name="max_level" value="75"/>
+		<on_init>
+			<init name="doors" />
+		</on_init>
+		<on_start>
+			<close name="doors" />
+			<spawn name="spawnlist" />
+		</on_start>
+		<on_stop>
+			<close name="doors" />
+			<despawn name="spawnlist" />
+		</on_stop>
+		<on_time>
+			<on time="-180">
+				<start name="prepare"/>
+			</on>
+			<on time="-30">
+				<announce />
+			</on>
+			<on time="-29">
+				<announce />
+			</on>
+			<on time="-28">
+				<announce />
+			</on>
+			<on time="-27">
+				<announce />
+			</on>
+			<on time="-26">
+				<announce />
+			</on>
+			<on time="-25">
+				<announce />
+			</on>
+			<on time="-24">
+				<announce />
+			</on>
+			<on time="-23">
+				<announce />
+			</on>
+			<on time="-22">
+				<announce />
+			</on>
+			<on time="-21">
+				<announce />
+			</on>
+			<on time="-20">
+				<announce />
+			</on>
+			<on time="-19">
+				<announce />
+			</on>
+			<on time="-18">
+				<announce />
+			</on>
+			<on time="-17">
+				<announce />
+			</on>
+			<on time="-16">
+				<announce />
+			</on>
+			<on time="-15">
+				<announce />
+			</on>
+			<on time="-14">
+				<announce />
+			</on>
+			<on time="-13">
+				<announce />
+			</on>
+			<on time="-12">
+				<announce />
+			</on>
+			<on time="-11">
+				<announce />
+			</on>
+			<on time="-10">
+				<announce />
+			</on>
+			<on time="-9">
+				<announce />
+			</on>
+			<on time="-8">
+				<announce />
+			</on>
+			<on time="-7">
+				<announce />
+			</on>
+			<on time="-6">
+				<announce />
+			</on>
+			<on time="-5">
+				<announce />
+			</on>
+			<on time="-4">
+				<announce />
+			</on>
+			<on time="-3">
+				<announce />
+			</on>
+			<on time="-2">
+				<announce />
+			</on>
+			<on time="-1">
+				<announce />
+			</on>
+			<on time="0">
+				<start name="event"/>
+			</on>
+			<on time="1195">
+				<announce val="5" />
+			</on>
+			<on time="1196">
+				<announce val="4" />
+			</on>
+			<on time="1197">
+				<announce val="3" />
+			</on>
+			<on time="1198">
+				<announce val="2" />
+			</on>
+			<on time="1199">
+				<announce val="1" />
+			</on>
+			<on time="1200">
+				<stop name="event" />
+			</on>
+		</on_time>
+		<objects name="wait_locs">
+			<point x="-87247" y="-16391" z="-8320"/>
+			<point x="-87159" y="-16594" z="-8320"/>
+			<point x="-87203" y="-16491" z="-8320"/>
+			<point x="-87205" y="-16273" z="-8320"/>
+			<point x="-87237" y="-16159" z="-8320"/>
+		</objects>
+		<objects name="teleport_locs">
+			<point x="-86067" y="-20467" z="-8379"/>
+			<point x="-84068" y="-20462" z="-8379"/>
+			<point x="-82066" y="-20461" z="-8379"/>
+			<point x="-80064" y="-20465" z="-8375"/>
+			<point x="-78063" y="-20466" z="-8375"/>
+			<point x="-86067" y="-18461" z="-8375"/>
+			<point x="-84065" y="-18464" z="-8371"/>
+			<point x="-82065" y="-18461" z="-8371"/>
+			<point x="-80062" y="-18461" z="-8375"/>
+			<point x="-78071" y="-18466" z="-8379"/>
+			<point x="-86063" y="-16465" z="-8375"/>
+			<point x="-84071" y="-16461" z="-8367"/>
+			<point x="-82064" y="-16466" z="-8383"/>
+			<point x="-80064" y="-16461" z="-8387"/>
+			<point x="-78070" y="-16462" z="-8375"/>
+			<point x="-86064" y="-14461" z="-8375"/>
+			<point x="-84066" y="-14465" z="-8371"/>
+			<point x="-82066" y="-14462" z="-8387"/>
+			<point x="-80067" y="-14462" z="-8391"/>
+			<point x="-78065" y="-14463" z="-8379"/>
+			<point x="-86063" y="-12464" z="-8375"/>
+			<point x="-84066" y="-12462" z="-8387"/>
+			<point x="-82067" y="-12462" z="-8379"/>
+			<point x="-80069" y="-12465" z="-8375"/>
+			<point x="-78066" y="-12462" z="-8383"/>
+		</objects>
+		<objects name="doors">
+			<door id="17170007"/>
+			<door id="17170008"/>
+			<door id="17170016"/>
+			<door id="17170021"/>
+			<door id="17170009"/>
+			<door id="17170010"/>
+			<door id="17170017"/>
+			<door id="17170022"/>
+			<door id="17170011"/>
+			<door id="17170012"/>
+			<door id="17170018"/>
+			<door id="17170023"/>
+			<door id="17170013"/>
+			<door id="17170014"/>
+			<door id="17170019"/>
+			<door id="17170024"/>
+			<door id="17170020"/>
+			<door id="17170025"/>
+			<door id="17170027"/>
+			<door id="17170028"/>
+			<door id="17170036"/>
+			<door id="17170041"/>
+			<door id="17170028"/>
+			<door id="17170030"/>
+			<door id="17170037"/>
+			<door id="17170042"/>
+			<door id="17170031"/>
+			<door id="17170032"/>
+			<door id="17170038"/>
+			<door id="17170043"/>
+			<door id="17170033"/>
+			<door id="17170034"/>
+			<door id="17170039"/>
+			<door id="17170044"/>
+			<door id="17170040"/>
+			<door id="17170045"/>
+			<door id="17170047"/>
+			<door id="17170048"/>
+			<door id="17170056"/>
+			<door id="17170061"/>
+			<door id="17170049"/>
+			<door id="17170050"/>
+			<door id="17170057"/>
+			<door id="17170062"/>
+			<door id="17170051"/>
+			<door id="17170052"/>
+			<door id="17170058"/>
+			<door id="17170063"/>
+			<door id="17170053"/>
+			<door id="17170054"/>
+			<door id="17170059"/>
+			<door id="17170064"/>
+			<door id="17170060"/>
+			<door id="17170065"/>
+			<door id="17170067"/>
+			<door id="17170068"/>
+			<door id="17170076"/>
+			<door id="17170081"/>
+			<door id="17170069"/>
+			<door id="17170070"/>
+			<door id="17170077"/>
+			<door id="17170082"/>
+			<door id="17170071"/>
+			<door id="17170072"/>
+			<door id="17170078"/>
+			<door id="17170083"/>
+			<door id="17170073"/>
+			<door id="17170074"/>
+			<door id="17170079"/>
+			<door id="17170084"/>
+			<door id="17170080"/>
+			<door id="17170085"/>
+			<door id="17170087"/>
+			<door id="17170088"/>
+			<door id="17170089"/>
+			<door id="17170090"/>
+			<door id="17170091"/>
+			<door id="17170092"/>
+			<door id="17170093"/>
+			<door id="17170094"/>
+		</objects>
+		<objects name="spawnlist">
+			<spawn_ex name="krateis_cube_70_75_room_0" />
+			<spawn_ex name="krateis_cube_70_75_room_1" />
+			<spawn_ex name="krateis_cube_70_75_room_2" />
+			<spawn_ex name="krateis_cube_70_75_room_3" />
+			<spawn_ex name="krateis_cube_70_75_room_4" />
+			<spawn_ex name="krateis_cube_70_75_room_5" />
+			<spawn_ex name="krateis_cube_70_75_room_6" />
+			<spawn_ex name="krateis_cube_70_75_room_7" />
+			<spawn_ex name="krateis_cube_70_75_room_8" />
+			<spawn_ex name="krateis_cube_70_75_room_9" />
+			<spawn_ex name="krateis_cube_70_75_room_10" />
+			<spawn_ex name="krateis_cube_70_75_room_11" />
+			<spawn_ex name="krateis_cube_70_75_room_12" />
+			<spawn_ex name="krateis_cube_70_75_room_13" />
+			<spawn_ex name="krateis_cube_70_75_room_14" />
+			<spawn_ex name="krateis_cube_70_75_room_15" />
+			<spawn_ex name="krateis_cube_70_75_room_16" />
+			<spawn_ex name="krateis_cube_70_75_room_17" />
+			<spawn_ex name="krateis_cube_70_75_room_18" />
+			<spawn_ex name="krateis_cube_70_75_room_19" />
+			<spawn_ex name="krateis_cube_70_75_room_20" />
+			<spawn_ex name="krateis_cube_70_75_room_21" />
+			<spawn_ex name="krateis_cube_70_75_room_22" />
+			<spawn_ex name="krateis_cube_70_75_room_23" />
+			<spawn_ex name="krateis_cube_70_75_room_24" />
+		</objects>
+	</event>
+</list>

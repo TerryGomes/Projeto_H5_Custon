@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (change)*>
+<!ELEMENT change (variant)*>
+<!ATTLIST change
+	id CDATA #REQUIRED
+	name CDATA #REQUIRED
+	icon CDATA #REQUIRED
+	cost_id CDATA #REQUIRED
+	cost_count CDATA #REQUIRED
+	attribute_change CDATA #REQUIRED
+	is_upgrade CDATA #REQUIRED>
+<!ELEMENT variant (#PCDATA)>
+<!ATTLIST variant
+	number CDATA #REQUIRED
+	id CDATA #REQUIRED
+	name CDATA #REQUIRED
+	icon CDATA #REQUIRED>

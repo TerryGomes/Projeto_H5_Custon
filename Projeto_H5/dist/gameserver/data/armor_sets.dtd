@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (set)*>
+<!ELEMENT set (#PCDATA)>
+<!ATTLIST set
+	id CDATA #REQUIRED
+	chest CDATA #REQUIRED
+	legs CDATA #IMPLIED
+	head CDATA #IMPLIED
+	gloves CDATA #IMPLIED
+	feet CDATA #IMPLIED
+	skills CDATA #IMPLIED
+	shield CDATA #IMPLIED
+	shield_skills CDATA #IMPLIED
+	enchant6skills CDATA #IMPLIED>

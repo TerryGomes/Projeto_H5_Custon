@@ -1,0 +1,337 @@
+<html noscrollbar>
+<body>
+<title>
+Community Board - Augmentation
+</title>
+<center>
+<br>
+<table width="701" cellpadding="0" cellspacing="0">
+<tr>
+<td width="700" valign="top">
+<table width="600"  height="65" cellspacing="0" cellpadding="7">
+<tr>
+<td width="32" valign="top">
+<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="icon.skill0758">
+<tr>
+	<td>
+    	<table cellspacing=0 cellpadding=0 width=34 height=34 background="L2_SkillTime.ToggleEffectG001">
+        <tr>
+        	<td><br></td>
+        	<td height=16><br></td>
+        </tr>
+        </table>
+	</td>
+</tr>
+</table>
+</td>
+<td width="200" valign="top">
+<table cellspacing="0" cellpadding="0" border1>
+<tr>
+<td height="26" valign="top"><font name="hs15" color="6D6969">AUGMENTATION</font></td>
+</tr>
+<tr>
+<td>Transform your weapon to more powerful item.</td>
+</tr>
+</table>
+</td>
+<td width="80" valign="top">
+<table cellspacing="0" cellpadding="5">
+<tr>
+<td width="32" valign="top" align=center>%selectedWeapon%</td>
+<td width="135" align=center>%selectedStat% <combobox width=100 var="lock_type" list="RANDOM;STR;CON;MEN;INT"></td>
+</tr>
+<tr>
+<td valign="top"><button value="Select Weapon" action="bypass _bbslsShowItems" width=110 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td valign="top"><button value="Select Stat" action="bypass _bbslsSetStat $lock_type" width=110 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+</td>
+<td width="80" valign="top">
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td align="right"><combobox width="120" var="sortby" list=%sortbylist%></td>
+<td height="30" valign="top"><button value="Show" action="bypass _bbslsySort $sortby" width=121 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td><edit var="qbox" width=150 height=13 length=20></td>
+<td height="30" valign="top">
+<table cellspacing = -1>
+<tr>
+<td height="30" valign="top"><button value="Search" action="bypass _bbslsSearch $qbox" width=60 height=22 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td height="30" valign="top"><button value="Reset" action="bypass _bbslsyReset" width=60 height=22 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<table cellspacing = -1>
+<tr>
+<td height="30" valign="top"><button value="Remove Augment" action="bypass _bbsdeaugment" width=120 height=25 back="L2UI_CT1.Button_DF_Msn" fore="L2UI_CT1.Button_DF_Msn"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<img src="L2UI_CT1.ChatBalloon_DF_TopCenter" width="820" height="1" align="top" />
+<table width="700" cellpadding="0" cellspacing="0" valign="top">
+<tr>
+<td>
+<table width=600 cellpadding=0 cellspacing=0>
+<tr>
+<td>
+<table width=100 cellpadding=0 cellspacing=0>
+<tr>
+<td>
+<table width="100" height="25" bgcolor="03051B" cellspacing="0" cellpadding="7">
+<tr>
+<td valign="top">
+<table width="377" cellspacing="0" cellpadding="0">
+<tr>
+<td>%searchfor%</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<img src="L2UI_CT1.ChatBalloon_DF_TopCenter" width="391" height="1" align="top" />
+<table width="%width1%" height="71" bgcolor="090941" cellspacing="0" cellpadding="7">
+<tr>
+<td width="32" valign="top"><img src="%icon1%" width="32" height="32" align="top" /></td>
+<td valign="top">
+<table width="285" cellspacing="0" cellpadding="0">
+<tr>
+<td width="120" height="24" valign="top">%skillName1% %skillLevel1% %type1%</td>
+</tr>
+<tr>
+<td height="22" valign="top">%cost1%</td>
+</tr>
+<tr>
+<td valign="top">%desc1%</td>
+</tr>
+</table>
+</td>
+<td width="25" valign="top">%button1%</td>
+</tr>
+</table>
+<table width="%width3%" height="71" bgcolor="17174C" cellspacing="0" cellpadding="7">
+<tr>
+<td width="32" valign="top"><img src="%icon3%" width="32" height="32" align="top" /></td>
+<td valign="top">
+<table width="285" cellspacing="0" cellpadding="0">
+<tr>
+<td width="120" height="24" valign="top">%skillName3% %skillLevel3% %type3%</td>
+</tr>
+<tr>
+<td height="22" valign="top">%cost3%</td>
+</tr>
+<tr>
+<td valign="top">%desc3%</td>
+</tr>
+</table>
+</td>
+<td width="25" valign="top">%button3%</td>
+</tr>
+</table>
+<table width="%width5%" height="71" bgcolor="090941" cellspacing="0" cellpadding="7">
+<tr>
+<td width="32" valign="top"><img src="%icon5%" width="32" height="32" align="top" /></td>
+<td valign="top">
+<table width="285" cellspacing="0" cellpadding="0">
+<tr>
+<td width="120" height="24" valign="top">%skillName5% %skillLevel5% %type5%</td>
+</tr>
+<tr>
+<td height="22" valign="top">%cost5%</td>
+</tr>
+<tr>
+<td valign="top">%desc5%</td>
+</tr>
+</table>
+</td>
+<td width="25" valign="top">%button5%</td>
+</tr>
+</table>
+<table width="%width7%" height="71" bgcolor="17174C" cellspacing="0" cellpadding="7">
+<tr>
+<td width="32" valign="top"><img src="%icon7%" width="32" height="32" align="top" /></td>
+<td valign="top">
+<table width="285" cellspacing="0" cellpadding="0">
+<tr>
+<td width="120" height="24" valign="top">%skillName7% %skillLevel7% %type7%</td>
+</tr>
+<tr>
+<td height="22" valign="top">%cost7%</td>
+</tr>
+<tr>
+<td valign="top">%desc7%</td>
+</tr>
+</table>
+</td>
+<td width="25" valign="top">%button7%</td>
+</tr>
+</table>
+<table width="%width9%" height="71" bgcolor="090941" cellspacing="0" cellpadding="7">
+<tr>
+<td width="32" valign="top"><img src="%icon9%" width="32" height="32" align="top" /></td>
+<td valign="top">
+<table width="285" cellspacing="0" cellpadding="0">
+<tr>
+<td width="120" height="24" valign="top">%skillName9% %skillLevel9% %type9%</td>
+</tr>
+<tr>
+<td height="22" valign="top">%cost9%</td>
+</tr>
+<tr>
+<td valign="top">%desc9%</td>
+</tr>
+</table>
+</td>
+<td width="25" valign="top">%button9%</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+<td>
+<table width=100 cellpadding=0 cellspacing=0>
+<tr>
+<td>
+<table width="100" height="25" bgcolor="03051B" cellspacing="0" cellpadding="7">
+<tr>
+<td valign="top">
+<table width="372" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top" align=right><font color=5b574c>Augment Skills: %totalresults%</font></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<img src="L2UI_CT1.ChatBalloon_DF_TopCenter" width="385" height="1" align="top" />
+<table width="%width2%" height="71" bgcolor="17174C" cellspacing="0" cellpadding="7">
+<tr>
+<td width="32" valign="top"><img src="%icon2%" width="32" height="32" align="top" /></td>
+<td valign="top">
+<table width="285" cellspacing="0" cellpadding="0">
+<tr>
+<td width="120" height="24" valign="top">%skillName2% %skillLevel2% %type2%</td>
+</tr>
+<tr>
+<td height="22" valign="top">%cost2%</td>
+</tr>
+<tr>
+<td valign="top">%desc2%</td>
+</tr>
+</table>
+</td>
+<td width="25" valign="top">%button2%</td>
+</tr>
+</table>
+<table width="%width4%" height="71" bgcolor="090941" cellspacing="0" cellpadding="7">
+<tr>
+<td width="32" valign="top"><img src="%icon4%" width="32" height="32" align="top" /></td>
+<td valign="top">
+<table width="285" cellspacing="0" cellpadding="0">
+<tr>
+<td width="120" height="24" valign="top">%skillName4% %skillLevel4% %type4%</td>
+</tr>
+<tr>
+<td height="22" valign="top">%cost4%</td>
+</tr>
+<tr>
+<td valign="top">%desc4%</td>
+</tr>
+</table>
+</td>
+<td width="25" valign="top">%button4%</td>
+</tr>
+</table>
+<table width="%width6%" height="71" bgcolor="17174C" cellspacing="0" cellpadding="7">
+<tr>
+<td width="32" valign="top"><img src="%icon6%" width="32" height="32" align="top" /></td>
+<td valign="top">
+<table width="285" cellspacing="0" cellpadding="0">
+<tr>
+<td width="120" height="24" valign="top">%skillName6% %skillLevel6% %type6%</td>
+</tr>
+<tr>
+<td height="22" valign="top">%cost6%</td>
+</tr>
+<tr>
+<td valign="top">%desc6%</td>
+</tr>
+</table>
+</td>
+<td width="25" valign="top">%button6%</td>
+</tr>
+</table>
+<table width="%width8%" height="71" bgcolor="090941" cellspacing="0" cellpadding="7">
+<tr>
+<td width="32" valign="top"><img src="%icon8%" width="32" height="32" align="top" /></td>
+<td valign="top">
+<table width="285" cellspacing="0" cellpadding="0">
+<tr>
+<td width="120" height="24" valign="top">%skillName8% %skillLevel8% %type8%</td>
+</tr>
+<tr>
+<td height="22" valign="top">%cost8%</td>
+</tr>
+<tr>
+<td valign="top">%desc8%</td>
+</tr>
+</table>
+</td>
+<td width="25" valign="top">%button8%</td>
+</tr>
+</table>
+<table width="%width10%" height="71" bgcolor="17174C" cellspacing="0" cellpadding="7">
+<tr>
+<td width="32" valign="top"><img src="%icon10%" width="32" height="32" align="top" /></td>
+<td valign="top">
+<table width="285" cellspacing="0" cellpadding="0">
+<tr>
+<td width="120" height="24" valign="top">%skillName10% %skillLevel10% %type10%</td>
+</tr>
+<tr>
+<td height="22" valign="top">%cost10%</td>
+</tr>
+<tr>
+<td valign="top">%desc10%</td>
+</tr>
+</table>
+</td>
+<td width="25" valign="top">%button10%</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<button width=0 height=12>
+<img src="L2UI_CT1.ChatBalloon_DF_TopCenter" width="820" height="1" align="top" />
+<br>
+<table width="780" cellpadding="0" cellspacing="0" valign="top">
+<tr>
+<td width="690" valign="top">%back%</td>
+<td width="60" valign="top">%more%</td>
+</tr>
+</table>
+<center><font color="5b574c"></font></center>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

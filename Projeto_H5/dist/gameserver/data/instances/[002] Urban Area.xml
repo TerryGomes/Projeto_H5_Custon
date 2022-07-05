@@ -1,0 +1,124 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <!-- Hellbound: Urban Area -->
+    <instance id="2" name="Urban Area" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+        <collapse on-party-dismiss="true" timer="60"/>
+        <level min="78" max="85"/>
+        <party min="2" max="9"/>
+        <return loc="13725 255403 -2023"/>
+        <teleport loc="14119 255443 -2016"/>
+        <remove itemId="0" count="0" necessary="false"/>
+        <give itemId="0" count="0"/>
+        <quest id="0"/>
+        <reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+        <spawns>
+            <!-- Town Guard -->
+            <spawn mobId="22359" count="5" respawn="120" type="loc">
+                <coords loc="14760 254280 -2047 -2047"/>
+                <coords loc="13992 254184 -2047 -2047"/>
+                <coords loc="14008 253448 -2047 -2047"/>
+                <coords loc="14776 253432 -2047 -2047"/>
+            </spawn>
+            <spawn mobId="22359" count="5" respawn="120" type="loc">
+                <coords loc="14872 251848 -2030 -1930"/>
+                <coords loc="14904 250824 -1973 -1873"/>
+                <coords loc="15800 250824 -1972 -1872"/>
+                <coords loc="15880 251800 -2033 -1933"/>
+            </spawn>
+            <spawn mobId="22359" count="5" respawn="120" type="loc">
+                <coords loc="16536 254520 -2081 -1981"/>
+                <coords loc="15704 254552 -2074 -1974"/>
+                <coords loc="16072 255640 -2054 -1954"/>
+                <coords loc="16728 255368 -2099 -1999"/>
+            </spawn>
+            <spawn mobId="22359" count="5" respawn="120" type="loc">
+                <coords loc="18904 256312 -2125 -2025"/>
+                <coords loc="18920 255704 -2062 -1962"/>
+                <coords loc="19544 255640 -2095 -1995"/>
+                <coords loc="19496 256344 -2125 -2025"/>
+            </spawn>
+            <spawn mobId="22359" count="12" respawn="120" type="loc">
+                <coords loc="21384 254680 -2035 -1935"/>
+                <coords loc="17720 254664 -2047 -1947"/>
+                <coords loc="17656 252120 -2047 -1947"/>
+                <coords loc="20408 252168 -2047 -1947"/>
+                <coords loc="21480 252840 -2046 -1946"/>
+            </spawn>
+            <spawn mobId="22359" count="5" respawn="120" type="loc">
+                <coords loc="19640 251192 -2047 -1947"/>
+                <coords loc="20760 251192 -2047 -1947"/>
+                <coords loc="20760 250168 -2005 -1905"/>
+                <coords loc="19256 250376 -2047 -1947"/>
+            </spawn>
+            <!-- Town Patrolman -->
+            <spawn mobId="22360" respawn="120" type="point">
+                <coords loc="14759 254626 -2033 11781"/>
+                <coords loc="15626 250586 -1932 56089"/>
+                <coords loc="16163 254466 -2082 47441"/>
+                <coords loc="17106 256208 -2064 25958"/>
+                <coords loc="18051 256253 -2101 34402"/>
+                <coords loc="21894 252039 -2019 9185"/>
+                <coords loc="22194 251956 -2017 17645"/>
+                <coords loc="22678 253887 -2016 8992"/>
+                <coords loc="19914 250973 -2020 13028"/>
+                <coords loc="17662 251962 -2020 37829"/>
+                <coords loc="20301 253744 -2033 63557"/>
+                <coords loc="19427 252757 -2033 35158"/>
+            </spawn>
+            <!-- Native Prisoner -->
+            <spawn mobId="32358" type="point">
+                <coords loc="14024 254872 -2035 -1"/>
+                <coords loc="15064 253768 -2038 -1"/>
+                <coords loc="14120 253112 -2039 -1"/>
+                <coords loc="13944 251880 -1962 -1"/>
+                <coords loc="14200 250408 -1966 -1"/>
+                <coords loc="16584 253912 -2060 -1"/>
+                <coords loc="15576 255560 -2041 -1"/>
+                <coords loc="16280 256264 -2043 -1"/>
+                <coords loc="20120 256200 -2116 -1"/>
+                <coords loc="19832 255112 -2034 -1"/>
+                <coords loc="17640 255080 -2045 -1"/>
+                <coords loc="17208 253000 -2041 -1"/>
+                <coords loc="17528 250456 -1948 -1"/>
+                <coords loc="18904 251288 -2035 -1"/>
+                <coords loc="21256 250488 -2006 -1"/>
+                <coords loc="21304 251128 -2034 -1"/>
+                <coords loc="18888 251800 -2037 -1"/>
+                <coords loc="20968 251736 -2033 -1"/>
+                <coords loc="21976 253368 -2040 -1"/>
+                <coords loc="22008 254008 -2036 -1"/>
+            </spawn>
+            <!-- Amaskari -->
+            <spawn mobId="22449" type="point">
+                <coords loc="19496 253125 -2030 44398"/>
+            </spawn>
+            <!-- Moonlight Tombstone -->
+            <spawn mobId="32343" type="point">
+                <coords loc="19720 250056 -2016 17184"/>
+            </spawn>
+            <!-- Steel Citadel Keymaster -->
+            <spawn mobId="22361" type="rnd">
+                <coords loc="14044 254892 -2035 -1"/>
+                <coords loc="15084 253788 -2038 -1"/>
+                <coords loc="14140 253132 -2039 -1"/>
+                <coords loc="13964 251860 -1962 -1"/>
+                <coords loc="14220 250428 -1966 -1"/>
+                <coords loc="16564 253932 -2060 -1"/>
+                <coords loc="15596 255580 -2041 -1"/>
+                <coords loc="16260 256284 -2043 -1"/>
+                <coords loc="20140 256220 -2116 -1"/>
+                <coords loc="19852 255132 -2034 -1"/>
+                <coords loc="17660 255060 -2045 -1"/>
+                <coords loc="17228 253020 -2041 -1"/>
+                <coords loc="17548 250476 -1948 -1"/>
+                <coords loc="18924 251268 -2035 -1"/>
+                <coords loc="21276 250468 -2006 -1"/>
+                <coords loc="21324 251148 -2034 -1"/>
+                <coords loc="18868 251820 -2037 -1"/>
+                <coords loc="20948 251756 -2033 -1"/>
+                <coords loc="21996 253388 -2040 -1"/>
+                <coords loc="22028 254028 -2036 -1"/>
+            </spawn>
+        </spawns>
+    </instance>
+</list>

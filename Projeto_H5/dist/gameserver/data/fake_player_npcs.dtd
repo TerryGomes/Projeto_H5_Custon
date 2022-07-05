@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (npc)*>
+
+		<!ELEMENT npc (name|body|animation|effect|items)*>
+		<!ATTLIST npc
+				template_id CDATA #REQUIRED
+				name CDATA #REQUIRED
+				title CDATA #REQUIRED>
+
+				<!ELEMENT name (#PCDATA)>
+				<!ATTLIST name
+						pvp_flag CDATA #REQUIRED
+						karma CDATA #REQUIRED
+						recommends CDATA #REQUIRED
+						name_color CDATA #REQUIRED
+						title_color CDATA #REQUIRED>
+
+				<!ELEMENT body (#PCDATA)>
+				<!ATTLIST body
+						race CDATA #REQUIRED
+						sex CDATA #REQUIRED
+						class_id CDATA #REQUIRED
+						hair_style CDATA #REQUIRED
+						hair_color CDATA #REQUIRED
+						face CDATA #REQUIRED>
+		
+				<!ELEMENT animation (#PCDATA)>
+				<!ATTLIST animation
+						sit CDATA #REQUIRED
+						run CDATA #REQUIRED
+						combat CDATA #REQUIRED
+						dead CDATA #REQUIRED
+						store CDATA #REQUIRED>
+		
+				<!ELEMENT effect (#PCDATA)>
+				<!ATTLIST effect
+						weapon_enchant CDATA #REQUIRED
+						weapon_glow CDATA #REQUIRED
+						abnormal CDATA #REQUIRED
+						abnormal2 CDATA #REQUIRED
+						hero CDATA #REQUIRED
+						agathion CDATA #REQUIRED
+						cubics CDATA #REQUIRED
+						team CDATA #REQUIRED>
+
+				<!ELEMENT items (#PCDATA)>
+				<!ATTLIST items
+						weapon CDATA #REQUIRED
+						shield CDATA #REQUIRED
+						chest CDATA #REQUIRED
+						leggings CDATA #REQUIRED
+						gloves CDATA #REQUIRED
+						boots CDATA #REQUIRED
+						cloak CDATA #REQUIRED
+						accessory_head CDATA #REQUIRED
+						accessory_face CDATA #REQUIRED>

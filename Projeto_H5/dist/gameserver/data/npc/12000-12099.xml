@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "npc.dtd">
+<list>
+	<npc id="12077" name="Wolf" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="CharacterAI" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="44" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="195" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="2.9" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="3" />
+		<set name="baseMAtkSpd" value="333" />
+		<set name="baseMDef" value="17" />
+		<set name="baseMEN" value="25" />
+		<set name="baseMpMax" value="164" />
+		<set name="baseMpReg" value="1.2" />
+		<set name="basePAtk" value="9" />
+		<set name="basePAtkSpd" value="278" />
+		<set name="basePDef" value="19" />
+		<set name="baseRunSpd" value="125" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="24" />
+		<set name="collision_height" value="11.5" />
+		<set name="collision_radius" value="13.0" />
+		<set name="level" value="15" />
+		<set name="rewardExp" value="0" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="0" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Pet" />
+		<skills>
+			<skill id="4416" level="4" />	<!--Animals-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+</list>

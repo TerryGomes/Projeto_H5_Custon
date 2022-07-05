@@ -1,0 +1,277 @@
+<html noscrollbar>
+<body>
+<title>Drop Calculator</title>
+<br>
+<center>&nbsp;
+<table border=0 cellpadding=0 cellspacing=0 width=800 height=508 background="l2fandc.bg12">
+	<tr>
+		<td aling=center>
+			<br1>
+			<table width=760 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td>
+						<table width=510>
+							<tr>
+								<td fixwidth=50>
+									<center><img src="Icon.etc_scroll_of_memory_i00" width=32 height=32></center>
+								</td>
+								<td fixwidth=460>
+									<table>
+										<tr>
+											<td>
+												<font name="__SYSTEMWORLDFONT" color=31B404>Drop Calculator</font>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<font color=31B404>Shows exact informations about Drop and Spoil List of all Monsters</font>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table width=250 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=20>
+									<br>
+								</td>
+							</tr>
+							<tr>
+								<td fixwidth=250>
+									<center><button value="Back" action="bypass _dropMonstersByName_%searchName%_%monsterPage%" width=200 height=32 back="L2UI_CT1.OlympiadWnd_DF_Back_Down" fore="L2UI_ct1.OlympiadWnd_DF_Back"></center>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br><br><br>
+			<table width=760 height=20 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td fixwidth=220>
+						<button value="Monster Name" action="bypass _dropMonsterDetailsByName_%monsterId%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=220 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=60>
+						<button value="Level" action="bypass _dropMonsterDetailsByName_%monsterId%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=60 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=110>
+						<button value="Aggressive" action="bypass _dropMonsterDetailsByName_%monsterId%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=110 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=110>
+						<button value="Dropping Items" action="bypass _dropMonsterDetailsByName_%monsterId%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=110 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=110>
+						<button value="Spoiling Items" action="bypass _dropMonsterDetailsByName_%monsterId%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=110 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=150>
+						<button value="Show Details" action="bypass _dropMonsterDetailsByName_%monsterId%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=150 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=35 border=0 cellpadding=0 cellspacing=0 bgcolor=23201E>
+				<tr>
+					<td fixwidth=220>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterName%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterLevel%</font></center>
+					</td>
+					<td fixwidth=110>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterAggro%</font></center>
+					</td>
+					<td fixwidth=110>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterDropAll%</font></center>
+					</td>
+					<td fixwidth=110>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterSpoilAll%</font></center>
+					</td>
+					<td fixwidth=150>
+						<table width=150 height=35 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=34>
+									<center><button value="Hide Details" action="bypass _dropMonstersByName_%searchName%_%monsterPage%" width=120 height=32 back="L2UI_CT1.Button_DF_Down" fore="L2UI_ct1.Button_DF"></center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table width=750 border=0 cellpadding=0 cellspacing=0 bgcolor=18191e>
+				<tr>
+					<td>
+						<table width=750 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td align=center width=290>
+									<table border=0 cellpadding=0 cellspacing=0 width=269 height=269 background="L2UI_CT1.Windows_DF_Drawer_Bg">
+										<tr>
+											<td align=center>
+												<img src="Crest.crest_1_%monsterId%" width=256 height=256>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<br>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td fixwidth=420 height=280>
+									<table border=0 width=425>
+										<tr>
+											<td height=25 width=100>
+												Spawned Count:
+											</td>
+											<td align=right height=25 width=140>
+												%spawnCount%
+											</td>
+										</tr>
+									</table>
+									<table border=0 width=425 bgcolor=000000>
+										<tr>
+											<td height=25 width=100>
+												Minions:
+											</td>
+											<td align=right height=25 width=140>
+												%minions%
+											</td>
+										</tr>
+									</table>
+									<table border=0 width=425>
+										<tr>
+											<td height=25 width=100>
+												Exp Reward:
+											</td>
+											<td align=right height=25 width=140>
+												<font color=9999FF>%expReward%</font>
+											</td>
+										</tr>
+									</table>
+									<table border=0 width=425 bgcolor=000000>
+										<tr>
+											<td height=25 width=100>
+												Max HP:
+											</td>
+											<td align=right height=25 width=140>
+												<font color=FF0000>%maxHp%</font>
+											</td>
+										</tr>
+									</table>
+									<table border=0 width=425>
+										<tr>
+											<td height=25 width=100>
+												Max MP:
+											</td>
+											<td align=right height=25 width=140>
+												<font color=0099FF>%maxMP%</font>
+											</td>
+										</tr>
+									</table>
+									<table border=0 width=425 bgcolor=000000>
+										<tr>
+											<td height=25 width=100>
+												P Atk:
+											</td>
+											<td align=right height=25 width=140>
+												%pAtk%
+											</td>
+										</tr>
+									</table>
+									<table border=0 width=425>
+										<tr>
+											<td height=25 width=100>
+												M Atk:
+											</td>
+											<td align=right height=25 width=140>
+												%mAtk%
+											</td>
+										</tr>
+									</table>
+									<table border=0 width=425 bgcolor=000000>
+										<tr>
+											<td height=25 width=100>
+												P Def:
+											</td>
+											<td align=right height=25 width=140>
+												%pDef%
+											</td>
+										</tr>
+									</table>
+									<table border=0 width=425>
+										<tr>
+											<td height=25 width=100>
+												M Def:
+											</td>
+											<td align=right height=25 width=140>
+												%mDef%
+											</td>
+										</tr>
+									</table>
+									<table border=0 width=425 bgcolor=000000>
+										<tr>
+											<td height=25 width=100>
+												Attack Speed:
+											</td>
+											<td align=right height=25 width=140>
+												%atkSpd%
+											</td>
+										</tr>
+									</table>
+									<table border=0 width=425>
+										<tr>
+											<td height=25 width=100>
+												Casting Speed:
+											</td>
+											<td align=right height=25 width=140>
+												%castSpd%
+											</td>
+										</tr>
+									</table>
+									<table border=0 width=425 bgcolor=000000>
+										<tr>
+											<td height=25 width=100>
+												Run Speed:
+											</td>
+											<td align=right height=25 width=140>
+												%runSpd%
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br><br>
+			<table border=0 width=750 height=30>
+				<tr>
+					<td align=center>
+						<table width=750>
+							<tr>
+								<td align=center>
+									<button value="Show Spawn Location" action="bypass _dropMonsterDetailsByName_%monsterId%_1" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Watch_Down" fore="L2UI_ct1.OlympiadWnd_DF_Watch">
+								</td>
+								<td align=center>
+									<button value="Show Drop list" action="bypass _dropMonsterDetailsByName_%monsterId%_2" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Reward_Down" fore="L2UI_ct1.OlympiadWnd_DF_Reward">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>

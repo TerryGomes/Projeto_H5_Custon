@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE residence SYSTEM "residence.dtd">
+<residence id="6" name="Innadril" impl="Castle">
+	<support level="3" lease="7000"/>
+	<support level="13" lease="70000"/>
+	<support level="5" lease="21000"/>
+	<support level="15" lease="210000"/>
+	<support level="7" lease="37000"/>
+	<support level="17" lease="370000"/>
+	<support level="8" lease="52000"/>
+	<support level="18" lease="520000"/>
+	<restore_exp level="15" lease="3000"/>
+	<restore_exp level="25" lease="9000"/>
+	<restore_exp level="35" lease="18000"/>
+	<restore_exp level="50" lease="18000"/>
+	<restore_hp level="80" lease="1000"/>
+	<restore_hp level="120" lease="1500"/>
+	<restore_hp level="180" lease="2250"/>
+	<restore_hp level="240" lease="3750"/>
+	<restore_hp level="300" lease="5166"/>
+	<restore_mp level="5" lease="2000"/>
+	<restore_mp level="15" lease="6500"/>
+	<restore_mp level="30" lease="13750"/>
+	<restore_mp level="40" lease="20000"/>
+	<teleport level="1" lease="1000">
+		<target loc="117608 241660 -1408" name="1010694" price="0" StringName="Front of the Innadril Castle" StringNameLang="Замок Иннадрил"/><!--Front of the Innadril Castle-->
+		<target loc="111455 219400 -3546" name="1010686" price="0" StringName="Heine Town Square" StringNameLang="Площадь Хейна"/><!--Heine Town Square-->
+		<target loc="124651 207877 -3184" name="1010673" price="0" StringName="Front of the White Sand Fortress" StringNameLang="Крепость Белых Песков"/><!--Front of the White Sand Fortress-->
+	</teleport>
+	<teleport level="2" lease="2000">
+		<target loc="117608 241660 -1408" name="1010694" price="0" StringName="Front of the Innadril Castle" StringNameLang="Замок Иннадрил"/><!--Front of the Innadril Castle-->
+		<target loc="111455 219400 -3546" name="1010686" price="0" StringName="Heine Town Square" StringNameLang="Площадь Хейна"/><!--Heine Town Square-->
+		<target loc="124651 207877 -3184" name="1010673" price="0" StringName="Front of the White Sand Fortress" StringNameLang="Крепость Белых Песков"/><!--Front of the White Sand Fortress-->
+		<target loc="113708 178387 -3232" name="1010606" price="500" StringName="The Center of Alligator Island" StringNameLang="Центр Острова Аллигаторов"/><!--The Center of Alligator Island-->
+		<target loc="80987 182423 -3504" name="1010704" price="500" StringName="Field of Silence Center" StringNameLang="Сердце Полей Безмолвия"/><!--Field of Silence Center-->
+		<target loc="86147 218268 -3592" name="1010705" price="500" StringName="Field of Whispers Center" StringNameLang="Сердце Шепчущих Полей"/><!--Field of Whispers Center-->
+		<target loc="82693 242220 -6712" name="1010526" price="500" StringName="Inside the Garden of Eva" StringNameLang="Внутри Садов Богини Евы"/><!--Inside the Garden of Eva-->
+	</teleport>
+	<skills>
+		<skill id="595" level="1" /> <!--Residence Clarity-->
+		<skill id="599" level="1" /> <!--Residence Magic Barrier-->
+		<skill id="607" level="1" /> <!--Residence Freedom-->
+	</skills>
+	<banish_points>
+		<point x="118730" y="243416" z="-1060" />
+		<point x="118932" y="242933" z="-1060" />
+		<point x="119058" y="243545" z="-1060" />
+		<point x="119330" y="242907" z="-1060" />
+	</banish_points>
+	<owner_restart_points>
+		<point x="114465" y="249147" z="-89" />
+		<point x="114780" y="249154" z="-89" />
+		<point x="114570" y="249268" z="-89" />
+		<point x="114529" y="249044" z="-89" />
+	</owner_restart_points>
+	<other_restart_points>
+		<point x="116127" y="76015" z="-2729" />
+		<point x="115683" y="77610" z="-2650" />
+		<point x="117304" y="76318" z="-2670" />
+		<point x="119862" y="76603" z="-2220" />
+		<point x="117671" y="78998" z="-2210" />
+		<point x="117189" y="78952" z="-2210" />
+		<point x="115861" y="75200" z="-2550" />
+		<point x="118275" y="74859" z="-2557" />
+		<point x="118229" y="74677" z="-2450" />
+		<point x="115685" y="75072" z="-2550" />
+		<point x="116704" y="75695" z="-2680" />
+		<point x="116737" y="76738" z="-2650" />
+		<point x="115193" y="77594" z="-2670" />
+		<point x="116158" y="77443" z="-2660" />
+	</other_restart_points>
+	<chaos_restart_points>
+		<point x="122098" y="70373" z="-2864" />
+		<point x="118674" y="71218" z="-2743" />
+		<point x="118040" y="67175" z="-2905" />
+		<point x="119300" y="70660" z="-2850" />
+		<point x="118851" y="70566" z="-2800" />
+		<point x="112655" y="70976" z="-3122" />
+		<point x="119712" y="66376" z="-2960" />
+		<point x="107511" y="82890" z="-2515" />
+		<point x="105702" y="82773" z="-2803" />
+		<point x="104257" y="82194" z="-2581" />
+		<point x="104474" y="81109" z="-2651" />
+	</chaos_restart_points>
+	<related_fortresses>
+		<domain fortress="108" /> <!--White Sands Fortress-->
+		<boundary fortress="119" />  <!--Aaru Fortress-->
+	</related_fortresses>
+	<merchant_guards>
+		<merchant_guard item_id="6105" npc_id="35030" ssq="cabal_null;cabal_dawn;" max="2" />
+		<merchant_guard item_id="6106" npc_id="35031" ssq="cabal_null;cabal_dawn;" max="2" />
+		<merchant_guard item_id="6107" npc_id="35032" ssq="cabal_null;cabal_dawn;" max="5" />
+		<merchant_guard item_id="6108" npc_id="35033" ssq="cabal_null;cabal_dawn;" max="1" />
+		<merchant_guard item_id="6109" npc_id="35034" ssq="cabal_null;cabal_dawn;" max="1" />
+		<merchant_guard item_id="6110" npc_id="35035" ssq="cabal_null;cabal_dawn;" max="2" />
+		<merchant_guard item_id="6111" npc_id="35036" ssq="cabal_null;cabal_dawn;" max="2" />
+		<merchant_guard item_id="6112" npc_id="35037" ssq="cabal_null;cabal_dawn;" max="5" />
+		<merchant_guard item_id="6113" npc_id="35038" ssq="cabal_null;cabal_dawn;" max="1" />
+		<merchant_guard item_id="6114" npc_id="35039" ssq="cabal_null;cabal_dawn;" max="1" />
+		<merchant_guard item_id="6165" npc_id="35020" ssq="cabal_dawn;" max="5" />
+		<merchant_guard item_id="6166" npc_id="35021" ssq="cabal_dawn;" max="2" />
+		<merchant_guard item_id="6167" npc_id="35022" ssq="cabal_dawn;" max="10" />
+		<merchant_guard item_id="6168" npc_id="35023" ssq="cabal_dawn;" max="2" />
+		<merchant_guard item_id="6169" npc_id="35024" ssq="cabal_dawn;" max="2" />
+		<merchant_guard item_id="6170" npc_id="35025" ssq="cabal_dawn;" max="5" />
+		<merchant_guard item_id="6171" npc_id="35026" ssq="cabal_dawn;" max="2" />
+		<merchant_guard item_id="6172" npc_id="35027" ssq="cabal_dawn;" max="10" />
+		<merchant_guard item_id="6173" npc_id="35028" ssq="cabal_dawn;" max="2" />
+		<merchant_guard item_id="6174" npc_id="35029" ssq="cabal_dawn;" max="2" />
+		<merchant_guard item_id="6225" npc_id="35040" ssq="cabal_dusk;" max="2" />
+		<merchant_guard item_id="6226" npc_id="35041" ssq="cabal_dusk;" max="2" />
+		<merchant_guard item_id="6227" npc_id="35042" ssq="cabal_dusk;" max="5" />
+		<merchant_guard item_id="6228" npc_id="35043" ssq="cabal_dusk;" max="1" />
+		<merchant_guard item_id="6229" npc_id="35044" ssq="cabal_dusk;" max="1" />
+		<merchant_guard item_id="6230" npc_id="35045" ssq="cabal_dusk;" max="2" />
+		<merchant_guard item_id="6231" npc_id="35046" ssq="cabal_dusk;" max="2" />
+		<merchant_guard item_id="6232" npc_id="35047" ssq="cabal_dusk;" max="5" />
+		<merchant_guard item_id="6233" npc_id="35048" ssq="cabal_dusk;" max="1" />
+		<merchant_guard item_id="6234" npc_id="35049" ssq="cabal_dusk;" max="1" />
+		<merchant_guard item_id="6285" npc_id="35050" ssq="cabal_dusk;" max="5" />
+		<merchant_guard item_id="6286" npc_id="35051" ssq="cabal_dusk;" max="3" />
+		<merchant_guard item_id="6287" npc_id="35052" ssq="cabal_dusk;" max="10" />
+		<merchant_guard item_id="6288" npc_id="35053" ssq="cabal_dusk;" max="2" />
+		<merchant_guard item_id="6289" npc_id="35054" ssq="cabal_dusk;" max="2" />
+		<merchant_guard item_id="6290" npc_id="35055" ssq="cabal_dusk;" max="5" />
+		<merchant_guard item_id="6291" npc_id="35056" ssq="cabal_dusk;" max="3" />
+		<merchant_guard item_id="6292" npc_id="35057" ssq="cabal_dusk;" max="10" />
+		<merchant_guard item_id="6293" npc_id="35058" ssq="cabal_dusk;" max="2" />
+		<merchant_guard item_id="6294" npc_id="35059" ssq="cabal_dusk;" max="2" />
+		<merchant_guard item_id="6305" npc_id="35060" ssq="cabal_dawn;" max="1" />
+		<merchant_guard item_id="6306" npc_id="35061" ssq="cabal_dawn;" max="1" />
+		<merchant_guard item_id="5205" npc_id="35010" ssq="cabal_null;cabal_dawn;" max="5" />
+		<merchant_guard item_id="5206" npc_id="35011" ssq="cabal_null;cabal_dawn;" max="3" />
+		<merchant_guard item_id="5207" npc_id="35012" ssq="cabal_null;cabal_dawn;" max="10" />
+		<merchant_guard item_id="5208" npc_id="35013" ssq="cabal_null;cabal_dawn;" max="2" />
+		<merchant_guard item_id="5209" npc_id="35014" ssq="cabal_null;cabal_dawn;" max="2" />
+		<merchant_guard item_id="5210" npc_id="35015" ssq="cabal_null;cabal_dawn;" max="5" />
+		<merchant_guard item_id="5211" npc_id="35016" ssq="cabal_null;cabal_dawn;" max="3" />
+		<merchant_guard item_id="5212" npc_id="35017" ssq="cabal_null;cabal_dawn;" max="10" />
+		<merchant_guard item_id="5213" npc_id="35018" ssq="cabal_null;cabal_dawn;" max="2" />
+		<merchant_guard item_id="5214" npc_id="35019" ssq="cabal_null;cabal_dawn;" max="2" />
+		<merchant_guard item_id="5215" npc_id="35308" ssq="cabal_null;cabal_dawn;cabal_dusk;" max="1" />
+		<merchant_guard item_id="5218" npc_id="35309" ssq="cabal_null;cabal_dawn;cabal_dusk;" max="1" />
+		<merchant_guard item_id="5219" npc_id="35310" ssq="cabal_null;cabal_dawn;cabal_dusk;" max="1" />
+	</merchant_guards>
+</residence>

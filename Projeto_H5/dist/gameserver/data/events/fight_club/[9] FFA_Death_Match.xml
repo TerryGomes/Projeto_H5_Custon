@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "../events.dtd">
+<list>
+	<event id="9" name="Death Match" type="FIGHT_CLUB_EVENT" impl="fightclub.DeathMatch">
+		<parameter name="icon" value="Icon.skilltransform1"/>
+		<parameter name="desc" value="Free For All Event. You need to kill as many players as you can in 10 Minutes. After death, you will respawn in random location after 10 seconds."/>
+		<parameter name="roundRunTime" value="600"/>
+		<parameter name="isAutoTimed" value="True"/>
+		<parameter name="autoTimes" value="07:00,15:00,23:00"/>
+		<parameter name="rounds" value="1"/>
+		<parameter name="teamed" value="false"/>
+		<parameter name="buffer" value="true"/>
+		<parameter name="fighterBuffs" value="1204,2;1086,2;1068,3;1045,6;1048,6;1040,3;1062,2;1036,2"/>
+		<parameter name="mageBuffs" value="1204,2;1085,3;1059,3;1045,6;1048,6;1040,3;1062,2;1036,2"/>
+		<parameter name="rootBetweenRounds" value="true"/>
+		<parameter name="excludedClasses" value="HEALERS"/>
+		<parameter name="roundEvent" value="false"/>
+		<parameter name="ressAllowed" value="false"/>
+		<parameter name="respawnTime" value="10"/>
+		<parameter name="showPersonality" value="false"/>
+		<parameter name="badgesKillPlayer" value="1"/>
+		<parameter name="badgesKillPet" value="0"/>
+		<!-- <parameter name="killsNeededForBadge" value="2"/> -->		
+		<parameter name="badgesWin" value="10"/>
+		<parameter name="topKillerReward" value="0"/>
+	</event>
+</list>

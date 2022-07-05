@@ -1,0 +1,25 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Freya - Acquision Of Divine Sword -->
+	<instance id="140" name="Jinia Guild Hideout" maxChannels="20" collapseIfEmpty="0" timelimit="30" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="82" max="85"/>
+		<return loc="113848 -109272 -870"/>
+		<teleport loc="-23768 -8968 -5412"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="10284"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<spawns>
+			<spawn mobId="32760" type="point" respawn="0">
+				<coords loc="-24040 -8969 -5360 0"/>
+			</spawn>
+			<spawn mobId="32778" type="point" respawn="0">
+				<coords loc="-23993 -8845 -5384 0"/>
+			</spawn>
+			<spawn mobId="32777" type="point" respawn="0">
+				<coords loc="-23993 -9069 -5384 0"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

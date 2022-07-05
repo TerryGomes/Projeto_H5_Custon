@@ -1,0 +1,22 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- SSQ - Embryo -->
+	<instance id="113" name="Hideout of the Dawn" maxChannels="20" collapseIfEmpty="10" timelimit="30" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="79" max="85"/>
+		<return loc="147128 23784 -2017"/>
+		<teleport loc="-23768 -8968 -5412"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="198"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<spawns>
+			<spawn mobId="32597" type="point" respawn="0">
+				<coords loc="-23960 -8952 -5412 0"/>
+			</spawn>
+			<spawn mobId="32582" type="point" respawn="0">
+				<coords loc="-23976 -8856 -5412 0"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

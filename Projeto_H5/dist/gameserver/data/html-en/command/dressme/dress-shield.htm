@@ -1,0 +1,78 @@
+<html>
+<head>
+<body scroll="no">
+<title>Dress me</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td valign="top">
+			<table width=290 height=330>
+				<tr>
+					<td valign="top" align="center"><br>
+						<font name="__SystemEditBoxFont" color="669933">{name}</font>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="center" height=250>
+						<table width=270 height=46>
+							<tr>
+								<td width=270 height=40 align=center valign=top>
+									<table border=0 cellspacing=2 cellpadding=4 width=270 height=40>
+										<tr>
+											<td width=40 align=right valign=top>
+												<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="{my_cloak_icon}">
+													<tr>
+														<td width=32 align=center valign=top>
+															<img src="icon.panel_2" width="32" height="32">
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td width=20 align=center valign=center>
+												<img src="L2UI_CH3.shortcut_minimizev_down" width="16" height="16">
+											</td>
+											<td width=40 align=right valign=top>
+												<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="{item_icon}">
+													<tr>
+														<td width=32 align=center valign=top>
+															<img src="icon.panel_2" width="32" height="32">
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td width=184 align=left valign=top>
+												<font color="99CC66">{item_name}</font>
+												<br1>› Grade: {item_grade}.
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<br><br>
+						<table width=270 height=46>
+							<tr>
+								<td align="center"><font color="99CC00">Cost:</font> {price}</td>
+							</tr>
+							<tr>
+								<td align="center"><button action="{bypassBuy}" value="Change visual to {name}" width=282 height=26 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+							</tr>
+							<tr>
+								<td align="center"><button action="{bypassTry}" value="Try shield" width=282 height=26 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+							</tr>
+							<tr>
+								<td align="center"><font color=FF0000>Note:</font> If you Change Foundation or PvP your item, you will lose your Dress on your Item.</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top" align="center">
+						<button action="bypass -h user_dressme" width=32 height=32 back="L2UI_CT1.MiniMap_DF_MinusBtn_Red_Down" fore="L2UI_CT1.MiniMap_DF_MinusBtn_Red" />
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

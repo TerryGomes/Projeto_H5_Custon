@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "events.dtd">
+<list>
+	<event id="2" name="krateis_cube_runner" type="MAIN_EVENT" impl="KrateisCubeRunner">
+		<on_init>
+			<spawn name="manager" />
+			<start name="registration" />
+		</on_init>
+		<on_time>
+			<on time="-600">
+				<announce />
+			</on>
+			<on time="-540">
+				<announce />
+			</on>
+			<on time="-480">
+				<announce />
+			</on>
+			<on time="-360">
+				<announce />
+			</on>
+			<on time="-330">
+				<announce />
+			</on>
+			<on time="-300">
+				<announce />
+			</on>
+			<on time="-240">
+				<announce />
+			</on>
+			<on time="-180">
+				<announce />
+				<stop name="registration" />
+			</on>
+			<on time="-120">
+				<announce />
+			</on>
+			<on time="-60">
+				<announce />
+			</on>
+			<on time="0">
+				<start name="event" />
+				<start name="registration" />
+			</on>
+			<on time="60">
+				<announce />
+			</on>
+			<on time="360">
+				<announce />
+			</on>
+			<on time="600">
+				<announce />
+			</on>
+			<on time="660">
+				<announce />
+			</on>
+			<on time="960">
+				<announce />
+			</on>
+			<on time="1200">
+				<stop name="event" />
+			</on>
+		</on_time>
+		<objects name="manager">
+			<spawn_ex name="kratei_cube_manager" />
+		</objects>
+	</event>
+</list>

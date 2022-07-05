@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (mask|level|minChatMessages)*>
+		<!ELEMENT mask (#PCDATA)>
+		<!--.
+				mask - Mask of the Players IP. For Example: 64.0.0.0/3
+				ip - IP of the GameServer that will 
+		-->
+		<!ATTLIST mask
+				mask CDATA #REQUIRED
+				ip CDATA #REQUIRED>
+		<!ELEMENT level (#PCDATA)>
+		<!--.
+				ip - IP of the GameServer that will 
+		-->
+		<!ATTLIST level
+				min CDATA #REQUIRED
+				max CDATA #REQUIRED
+				ip CDATA #REQUIRED>
+		<!ELEMENT minChatMessages (#PCDATA)>
+		<!--.
+				ip - IP of the GameServer that will 
+		-->
+		<!ATTLIST minChatMessages
+				all CDATA #IMPLIED
+				trade CDATA #IMPLIED
+				shout CDATA #IMPLIED
+				pm CDATA #IMPLIED
+				party CDATA #IMPLIED
+				clan CDATA #IMPLIED
+				ally CDATA #IMPLIED
+				hero CDATA #IMPLIED
+				ip CDATA #REQUIRED>

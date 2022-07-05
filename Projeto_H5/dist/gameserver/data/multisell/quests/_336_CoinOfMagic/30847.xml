@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Exchange of Ferris (level 1) -->
+
+<list>
+  <!-- Внимание: keepenchanted НЕ должно быть установлено в мультиселлах, где в одном блоке возможны два одинаковых нестекуемых предмета (напрмиер dual) -->
+  <!-- ignoreprice не работает с keepencahnted -->
+  <config showall="true" notax="true" keepenchanted="false" />
+
+	<!--
+	3472 Blood Medusa
+	3473 Blood Werewolf
+	3474 Blood Basilisk
+	3475 Blood Drevanul
+	3476 Blood Succubus
+	3477 Blood Dragon
+	3478 Beleths Blood
+	3479 Manaks Blood Werewolf
+	3480 Nia's Blood Medusa
+	3481 Gold Dragon
+	3482 Gold Wyvern
+	3483 Gold Knight
+	3484 Gold Giant
+	3485 Gold Drake
+	3486 Gold Wyrm
+	3487 Beleths Gold
+	3488 Manaks Gold Giant
+	3489 Nia's Gold Wywern
+	3490 Silver Unicorn
+	3491 Silver Fairy
+	3492 Silver Dryad
+	3493 Silver Dragon
+	3494 Silver Golem
+	3495 Silver Undine
+	3496 Beleths Silver
+	3497 Manaks Silver Dryad
+	3498 Nia's Silver Fairy
+	-->
+
+	<!-- 5 G Wyrm + 5 G Giant -> 1 G Dragon -->
+  <item>
+    <ingredient id="3486" count="5"/>
+    <ingredient id="3484" count="5"/>
+    <production id="3481" count="1"/>
+  </item>
+
+	<!-- 5 B Succubus + 5 B Basilisk -> 1 B Dragon -->
+  <item>
+    <ingredient id="3476" count="5"/>
+    <ingredient id="3474" count="5"/>
+    <production id="3477" count="1"/>
+  </item>
+
+	<!-- 5 S Dryad + 5 S Undine -> 1 S Dragon -->
+  <item>
+    <ingredient id="3492" count="5"/>
+    <ingredient id="3495" count="5"/>
+    <production id="3493" count="1"/>
+  </item>
+
+	<!-- 10 B Succubus + 10 B Basilisk -> 1 Beleth Blood -->
+  <item>
+    <ingredient id="3476" count="10"/>
+    <ingredient id="3474" count="10"/>
+    <production id="3478" count="1"/>
+  </item>
+
+	<!-- 1 Beleth Blood + 1 S Dragon + 13 G Wyrm -> Demon Staff -->
+  <item>
+    <ingredient id="3478" count="1"/>
+    <ingredient id="3493" count="1"/>
+    <ingredient id="3486" count="13"/>
+    <production id="206" count="1"/>
+  </item>
+
+	<!-- 1 Beleth Gold + 1 B Dragon + 1 S Dryad + 1 G Giant -> Dark Screamer -->
+  <item>
+    <ingredient id="3487" count="1"/>
+    <ingredient id="3477" count="1"/>
+    <ingredient id="3492" count="1"/>
+    <ingredient id="3484" count="1"/>
+    <production id="233" count="1"/>
+  </item>
+
+	<!-- 1 Beleth Silver + 1 G Dragon + 1 B Succubus + 1 B Basilisk -> Widow maker -->
+  <item>
+    <ingredient id="3496" count="1"/>
+    <ingredient id="3481" count="1"/>
+    <ingredient id="3476" count="1"/>
+    <ingredient id="3474" count="1"/>
+    <production id="303" count="1"/>
+  </item>
+
+	<!-- 1 S Dragon + 1 G Dragon + 1 B Dragon + 1 S Undine -> Sword of Limit -->
+  <item>
+    <ingredient id="3493" count="1"/>
+    <ingredient id="3481" count="1"/>
+    <ingredient id="3477" count="1"/>
+    <ingredient id="3495" count="1"/>
+    <production id="132" count="1"/>
+  </item>
+
+  <!-- 1 Beleth Silver + Beleth Gold + 1 B Dragon -> Ecliptic Sword -->
+  <item>
+    <ingredient id="3496" count="1"/>
+    <ingredient id="3487" count="1"/>
+    <ingredient id="3477" count="1"/>
+    <production id="7888" count="1"/>
+  </item>
+</list>

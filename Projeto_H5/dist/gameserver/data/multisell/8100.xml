@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Обмен эссенций камалоки -->
+<list>
+  <!-- Внимание: keepenchanted НЕ должно быть установлено в мультиселлах, где в одном блоке возможны два одинаковых нестекуемых предмета (напрмиер dual) -->
+  <!-- ignoreprice не работает с keepencahnted -->
+  <config showall="true" notax="true" keepenchanted="false" />
+
+  <!-- D -->
+  <item>
+    <ingredient id="13002" count="10"/>
+    <production id="13003" count="1"/>
+  </item>
+
+  <!-- C -->
+  <item>
+    <ingredient id="13002" count="20"/>
+    <production id="13004" count="1"/>
+  </item>
+
+  <!-- B -->
+  <item>
+    <ingredient id="13002" count="50"/>
+    <production id="13005" count="1"/>
+  </item>
+
+  <!-- A -->
+  <item>
+    <ingredient id="13002" count="100"/>
+    <production id="13006" count="1"/>
+  </item>
+
+  <!-- S -->
+  <item>
+    <ingredient id="13002" count="200"/>
+    <production id="13007" count="1"/>
+  </item>
+
+  <!-- Au -->
+  <item>
+    <ingredient id="13002" count="300"/>
+    <production id="13270" count="1"/>
+  </item>
+
+  <!-- Ar -->
+  <item>
+    <ingredient id="13002" count="300"/>
+    <production id="13271" count="1"/>
+  </item>
+
+  <!-- Ae -->
+  <item>
+    <ingredient id="13002" count="300"/>
+    <production id="13272" count="1"/>
+  </item>
+
+</list>

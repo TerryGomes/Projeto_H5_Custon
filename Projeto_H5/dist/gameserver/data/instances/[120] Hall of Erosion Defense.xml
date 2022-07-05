@@ -1,0 +1,73 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Hall of Erosion Defense -->
+	<instance id="120" name="Seed of Infinity (Hall of Erosion)" maxChannels="3" collapseIfEmpty="10" timelimit="40" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="75" max="85"/>
+		<party min="18" max="27"/>
+		<return loc="-183656 206264 -12928"/>
+		<teleport loc="-179659 211061 -12784"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="697"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+		<spawns>
+			<group name="soi_hoe_defence_lifeseed" spawned="false"/>
+			<group name="soi_hoe_defence_tumor" spawned="false"/>
+			<group name="soi_hoe_defence_alivetumor" spawned="false"/>
+			<group name="soi_hoe_defence_wards" spawned="false"/>
+			<group name="soi_hoe_defence_soulwagon" spawned="false"/>
+			<group name="soi_hoe_defence_mob_1" spawned="false"/>
+			<group name="soi_hoe_defence_mob_2" spawned="false"/>
+			<group name="soi_hoe_defence_mob_3" spawned="false"/>
+			<group name="soi_hoe_defence_mob_4" spawned="false"/>
+			<group name="soi_hoe_defence_mob_5" spawned="false"/>
+			<group name="soi_hoe_defence_mob_6" spawned="false"/>
+			<group name="soi_hoe_defence_mob_7" spawned="false"/>
+			<group name="soi_hoe_defence_mob_8" spawned="false"/>
+		</spawns>
+		<zones>
+			<zone name="[soi_hoe_attack_attackup1_1]" active="true"/>
+			<zone name="[soi_hoe_attack_attackup1_2]" active="true"/>
+			<zone name="[soi_hoe_attack_attackup1_3]" active="true"/>
+			<zone name="[soi_hoe_attack_attackup1_4]" active="true"/>
+			<zone name="[soi_hoe_attack_attackup1_5]" active="true"/>
+			<zone name="[soi_hoe_attack_attackup1_6]" active="true"/>
+			<zone name="[soi_hoe_attack_attackup1_7]" active="true"/>
+			<zone name="[soi_hoe_attack_attackup1_8]" active="true"/>
+			<zone name="[soi_hoe_attack_attackup1_9]" active="true"/>
+
+			<zone name="[soi_hoe_attack_defenceup1_1]" active="true"/>
+			<zone name="[soi_hoe_attack_defenceup1_2]" active="true"/>
+			<zone name="[soi_hoe_attack_defenceup1_3]" active="true"/>
+			<zone name="[soi_hoe_attack_defenceup1_4]" active="true"/>
+			<zone name="[soi_hoe_attack_defenceup1_5]" active="true"/>
+			<zone name="[soi_hoe_attack_defenceup1_6]" active="true"/>
+			<zone name="[soi_hoe_attack_defenceup1_7]" active="true"/>
+			<zone name="[soi_hoe_attack_defenceup1_8]" active="true"/>
+			<zone name="[soi_hoe_attack_defenceup1_9]" active="true"/>
+
+			<zone name="[soi_hoe_attack_pc_regen_1]" active="false"/>
+			<zone name="[soi_hoe_attack_pc_regen_2]" active="false"/>
+			<zone name="[soi_hoe_attack_pc_regen_3]" active="false"/>
+			<zone name="[soi_hoe_attack_pc_regen_4]" active="false"/>
+			<zone name="[soi_hoe_attack_pc_regen_5]" active="false"/>
+			<zone name="[soi_hoe_attack_pc_regen_6]" active="false"/>
+			<zone name="[soi_hoe_attack_pc_regen_7]" active="false"/>
+			<zone name="[soi_hoe_attack_pc_regen_8]" active="false"/>
+
+			<zone name="[soi_hoe_attack_pc_vicera_1]" active="true"/>
+			<zone name="[soi_hoe_attack_pc_vicera_2]" active="true"/>
+			<zone name="[soi_hoe_attack_pc_vicera_3]" active="true"/>
+			<zone name="[soi_hoe_attack_pc_vicera_4]" active="true"/>
+			<zone name="[soi_hoe_attack_pc_vicera_5]" active="true"/>
+			<zone name="[soi_hoe_attack_pc_vicera_6]" active="true"/>
+			<zone name="[soi_hoe_attack_pc_vicera_7]" active="true"/>
+			<zone name="[soi_hoe_attack_pc_vicera_8]" active="true"/>
+			<zone name="[soi_hoe_attack_pc_vicera_9]" active="true"/>
+			<zone name="[soi_hoe_attack_pc_vicera_10]" active="true"/>
+			<zone name="[soi_hoe_attack_pc_vicera_11]" active="true"/>
+			<zone name="[soi_hoe_attack_pc_vicera_12]" active="true"/>
+		</zones>
+	</instance>
+</list>

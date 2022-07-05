@@ -1,0 +1,5 @@
+<!ELEMENT list (foundation)*>
+<!ELEMENT foundation (#PCDATA)>
+<!ATTLIST foundation
+	simple CDATA #REQUIRED
+	found CDATA #REQUIRED>

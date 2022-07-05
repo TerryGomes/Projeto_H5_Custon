@@ -1,0 +1,23 @@
+<title>Trivia Event manage</title>
+<center><table width=260 bgcolor=DAFF7F>
+<tr>
+<td><button value="Main" action="bypass -h admin_admin" width=50 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Events" action="bypass -h admin_show_html events/events.htm" width=50 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Chars" action="bypass -h admin_char_manage" width=50 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="Server" action="bypass -h admin_server admserver.htm" width=50 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td><button value="GM Shop" action="bypass -h admin_gmshop" width=50 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr></table>
+<br>
+<br><br>
+</center>
+<table width=280 bgcolor=3E9B00>
+<tr>
+<td width=100>Manage Trivia</td>
+<td width=45><button value="Start (hours)" action="bypass -h scripts_events.Trivia.TriviaEvent:ForseStart $box" width=120 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=45><button value="Stop" action="bypass -h scripts_events.Trivia.TriviaEvent:stop" width=80 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+<td width=45></td>
+</tr>
+</table>
+<br>
+<edit var="box" width=100 height=12></center>
+<br>

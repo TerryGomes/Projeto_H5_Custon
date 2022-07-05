@@ -1,0 +1,82 @@
+<html><body>
+Min bet %min%, max %max%
+<table>
+<tr>
+	<td width=120>Straight Up:</td>
+	<td width=60>Number:</td>
+	<td width=60></td>
+	<td width=60></td>
+</tr>
+<tr>
+	<td width=120><edit var="bet1" width=100 height=10 /></td>
+	<td width=60><edit var="number1" width=40 height=10 /></td>
+	<td width=60><button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Roulette:play StraightUp $number1 $bet1" value="Ok"></td>
+	<td width=60></td>
+</tr>
+
+<tr>
+	<td width=120>Column Bet:</td>
+	<td width=60></td>
+	<td width=60></td>
+	<td width=60></td>
+</tr>
+<tr>
+	<td width=120><edit var="bet2" width=100 height=10 /></td>
+	<td width=60><button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Roulette:play ColumnBet first $bet2" value="First"></td>
+	<td width=60><button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Roulette:play ColumnBet second $bet2" value="Second"></td>
+	<td width=60><button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Roulette:play ColumnBet third $bet2" value="Third"></td>
+</tr>
+
+<tr>
+	<td width=120>Dozen Bet:</td>
+	<td width=60></td>
+	<td width=60></td>
+	<td width=60></td>
+</tr>
+<tr>
+	<td width=120><edit var="bet3" width=100 height=10 /></td>
+	<td width=60><button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Roulette:play DozenBet first $bet3" value="First"></td>
+	<td width=60><button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Roulette:play DozenBet second $bet3" value="Second"></td>
+	<td width=60><button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Roulette:play DozenBet third $bet3" value="Third"></td>
+</tr>
+
+<tr>
+	<td width=120>Red or Black:</td>
+	<td width=60></td>
+	<td width=60></td>
+	<td width=60></td>
+</tr>
+<tr>
+	<td width=120><edit var="bet4" width=100 height=10 /></td>
+	<td width=60><button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Roulette:play RedOrBlack red $bet4" value="Red"></td>
+	<td width=60><button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Roulette:play RedOrBlack black $bet4" value="Black"></td>
+	<td width=60></td>
+</tr>
+
+<tr>
+	<td width=120>Even or Odd:</td>
+	<td width=60></td>
+	<td width=60></td>
+	<td width=60></td>
+</tr>
+<tr>
+	<td width=120><edit var="bet5" width=100 height=10 /></td>
+	<td width=60><button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Roulette:play EvenOrOdd even $bet5" value="Even"></td>
+	<td width=60><button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Roulette:play EvenOrOdd odd $bet5" value="Odd"></td>
+	<td width=60></td>
+</tr>
+
+<tr>
+	<td width=120>Low or High:</td>
+	<td width=60></td>
+	<td width=60></td>
+	<td width=60></td>
+</tr>
+<tr>
+	<td width=120><edit var="bet6" width=100 height=10 /></td>
+	<td width=60><button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Roulette:play LowOrHigh low $bet6" value="Low"></td>
+	<td width=60><button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Roulette:play LowOrHigh high $bet6" value="High"></td>
+	<td width=60></td>
+</tr>
+</table>
+</body></html>

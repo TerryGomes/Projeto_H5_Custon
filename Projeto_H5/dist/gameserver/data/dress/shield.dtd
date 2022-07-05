@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (shield)*>
+<!ELEMENT shield (price)*>
+<!ATTLIST shield
+	number CDATA #REQUIRED
+	id CDATA #REQUIRED
+	name CDATA #REQUIRED>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price
+	id CDATA #REQUIRED
+	count CDATA #REQUIRED>

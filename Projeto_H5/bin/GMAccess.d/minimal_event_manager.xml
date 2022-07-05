@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<list>
+	<char>
+		<PlayerID set="-1"/>
+		<IsGM set="true"/>
+		<CanUseGMCommand set="true"/>
+		<CanAnnounce set="true"/>
+		<CanBan set="true"/>
+		<CanBanChat set="true"/>
+		<CanUnBanChat set="true"/>
+		<BanChatDelay set="-1"/>
+		<BanChatMaxValue set="-1"/>
+		<BanChatCountPerDay set="-1"/>
+		<BanChatBonusId set="-1"/>
+		<BanChatBonusCount set="-1"/>
+		<CanChatPenalty set="true"/>
+		<UseGMShop set="true"/>
+		<CanDelete set="true"/>
+		<CanKick set="true"/>
+		<Menu set="true"/>
+		<GodMode set="true"/>
+		<CanEditCharAll set="false"/>
+		<CanEditChar set="true"/>
+		<CanEditPledge set="false"/>
+		<CanViewChar set="true"/>
+		<CanEditNPC set="false"/>
+		<CanViewNPC set="true"/>
+		<CanTeleport set="true"/>
+		<CanRestart set="true"/>
+		<MonsterRace set="true"/>
+		<Rider set="true"/>
+		<FastUnstuck set="true"/>
+		<ResurectFixed set="true"/>
+		<Door set="true"/>
+		<Res set="true"/>
+		<PeaceAttack set="true"/>
+		<Heal set="true"/>
+		<Unblock set="true"/>
+		<CanChangeClass set="true"/>
+		<BlockInventory set="false"/>
+		<CanGmEdit set="true"/>
+		<IsEventGm set="true"/>
+		<CanReload set="false"/>
+		<CanRename set="true"/>
+		<CanJail set="true"/>
+		<CanPolymorph set="true"/>
+		<UseInventory set="true"/>
+		<UseTrade set="true"/>
+		<CanAttack set="true"/>
+		<CanEvaluate set="true"/>
+		<CanJoinParty set="true"/>
+		<CanJoinClan set="true"/>
+		<UseWarehouse set="true"/>
+		<UseShop set="true"/>
+		
+		<!-- Only this commands will be available for this GM -->
+		<AllowedCommands set="gmspeed;kill;res;heal;setteam;autorecall;teleport;add_mail;remove_mail;cleanse;resetreuse;cancel;para;unpara;remove_coooldown;ip;kick;jail" />
+	</char>
+</list>

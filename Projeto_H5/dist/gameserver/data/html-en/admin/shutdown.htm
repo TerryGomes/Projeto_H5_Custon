@@ -1,0 +1,104 @@
+<html noscrollbar>
+<body>
+<title>Server Shutdown Menu</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td align=center>
+		<br>
+				<table cellpadding=0 cellspacing=-5 width=260>
+					<tr>
+						<td><button value="Main" action="bypass -h admin_admin" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Events" action="bypass -h admin_show_html events/events.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Chars" action="bypass -h admin_char_manage" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Server" action="bypass -h admin_server admserver.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="GM Shop" action="bypass -h admin_gmshop" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+				</table>
+				<br>
+				<table cellpadding=3 width=280 background=l2ui_ct1.Windows_DF_TooltipBG>
+					<tr>
+						<td width=270>
+							<br>
+							<table>
+								<tr>
+									<td fixwidth=135>Players Online: <font color=00FF00>%onlineCount%</font></td>
+									<td fixwidth=135>Traders Count: <font color=00FF00>%tradersCount%</font></td>
+								</tr>
+							</table>
+							<table><tr><td fixwidth=270 align=left>Game Time: %currentTime%</td></tr></table>
+							<br>
+							<center><font name=hs12 color=LEVEL>Schedule New Restart:</font><br1></center>
+							<table>
+								<tr><td width=135 align=right>Seconds:</td>
+									<td width=135><edit var="seconds" width=120></td>
+								</tr>
+							</table>
+							<br>
+							<center>
+								1 Hour = 3600
+								<br1>
+								15 Minutes = 900
+							</center>
+							<br>
+							<table width=260>
+								<tr>
+									<td align=center><font name=hs12>WITH Backup:</font></td>
+									<td align=center><font name=hs12>NO Backup:</font></td>
+								</tr>
+								<tr>
+									<td align=center>
+										<table cellpadding=0 cellspacing=0>
+											<tr>
+												<td width=146 align=center><button value="Shutdown" action="bypass -h admin_shutdown_seconds $seconds True" width=60 height=20 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF></td>
+												<td width=146 align=center><button value="Restart" action="bypass -h admin_restart_seconds $seconds True" width=60 height=20 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF></td>
+											</tr>
+										</table>
+									</td>
+									<td align=center>
+										<table cellpadding=0 cellspacing=0>
+											<tr>
+												<td width=146 align=center><button value="Shutdown" action="bypass -h admin_shutdown_seconds $seconds False" width=60 height=20 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF></td>
+												<td width=146 align=center><button value="Restart" action="bypass -h admin_restart_seconds $seconds False" width=60 height=20 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<br>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<table cellpadding=3 width=282 background=l2ui_ct1.Windows_DF_TooltipBG>
+					<tr>
+						<td width=282>
+							<br>
+							<center>
+								<font name=hs12 color=LEVEL>Scheduled Restart:</font>
+								<br1>
+							</center>
+							<table width=277>
+								<tr>
+									<td fixwidth=70 align=center>Type:</td>
+									<td fixwidth=50 align=center>In:</td>
+									<td fixwidth=70 align=center>Backup:</td>
+									<td fixwidth=70 align=center>Abort:</td>
+								</tr>
+								<tr>
+									<td width=70 align=center>%shutdownMode%</td>
+									<td width=100 align=center>%time%</td>
+									<td width=45 align=center>%backup%</td>
+									<td width=70 align=center><button value="Abort" action="bypass -h admin_restart_abort" width=60 height=20 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF></td>
+								</tr>
+							</table>
+							<br>
+						</td>
+					</tr>
+				</table>
+			<br>
+		</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>

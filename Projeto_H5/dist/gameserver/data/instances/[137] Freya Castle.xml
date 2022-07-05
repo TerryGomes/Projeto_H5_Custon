@@ -1,0 +1,39 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Freya - Meeting Sirra -->
+	<instance id="137" name="Ice Queen's Castle" maxChannels="20" collapseIfEmpty="0" timelimit="30" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="82" max="85"/>
+		<return loc="113848 -109272 -870"/>
+		<teleport loc="114000 -112357 -11200"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="10285"/>
+		<geodata map="23_14"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<spawns>
+			<spawn mobId="18848" type="point" respawn="0">
+				<coords loc="114861 -113615 -11198 -21832"/>
+				<coords loc="114633 -113619 -11198 -12224"/>
+			</spawn>
+			<spawn mobId="18849" type="point" respawn="0">
+				<coords loc="114950 -113647 -11198 -20880"/>
+				<coords loc="114540 -113654 -11198 -12880"/>
+			</spawn>
+			<spawn mobId="18926" type="point" respawn="0">
+				<coords loc="115041 -113694 -11198 -22440"/>
+				<coords loc="114446 -113698 -11198 -11264"/>
+			</spawn>
+			<spawn mobId="22767" type="point" respawn="0">
+				<coords loc="114713 -115109 -11198 16456"/>
+				<coords loc="114008 -115080 -11198 3568"/>
+				<coords loc="114422 -115508 -11198 12400"/>
+				<coords loc="115023 -115508 -11198 20016"/>
+				<coords loc="115459 -115079 -11198 27936"/>
+			</spawn>
+		</spawns>
+		<doors>
+			<door id="23140101" opened="true"/>
+		</doors>
+	</instance>
+</list>

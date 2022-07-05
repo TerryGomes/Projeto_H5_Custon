@@ -1,0 +1,61 @@
+<html><body><title>Clan and Alliance Services</title><br><center>
+<font color="LEVEL">Clan Manager</font>
+<td><img src=L2UI_CT1.Button_DF.Icon_DF_MenuWnd_Clan_Over width=34 height=40></td>
+<img src="L2UI_CH3.onscrmsg_pattern01_1" width=300 height=32>
+<button value="Clan Services" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water"></td>
+<td><img src=L2UI_CH3.bloodhood_icon01 width=34 height=40></td>
+<table><tr>
+<td><edit var="name" width=117></td>
+<td><button value="Create New Clan" action="bypass -h npc_%objectId%_create_clan $name" width=130 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg"></td>
+</tr></table>
+<br><img src="L2UI.SquareGray" width=250 height=1><br>
+<button value="Acquire Clan Skills" action="bypass -h npc_%objectId%_learn_clan_skills" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg">
+<button value="Increase Clan Level" action="bypass -h npc_%objectId%_Chat 3" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg">
+<button value="Disband Clan" action="bypass -h npc_%objectId%_dissolve_clan" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg">
+<button value="Restore Clan" action="bypass -h npc_%objectId%_recover_clan" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg">
+<br><img src="L2UI.SquareGray" width=250 height=1><br>
+<button value="Enter the name of new Leader" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water"></td>
+<td><img src=L2UI_CT1.clan_DF_clanwaricon_bluecrownleader width=32 height=32></td>
+<table><tr>
+<td><edit var="leader" width=117 height=18></td>
+<td><button value="Delegate Leader" action="bypass -h npc_%objectId%_change_clan_leader $leader" width=130 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg"></td>
+</tr></table>
+<br><img src="L2UI.SquareGray" width=250 height=1><br>
+<button value="Enter the name of Academy" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water"></td>
+<td><img src=L2UI_CH3.bloodhood_icon02 width=34 height=40></td>
+<table><tr>
+<td><edit var="academy" width=117 height=18></td><br>
+<td><button value="Create Academy" action="bypass -h npc_%objectId%_create_academy $academy" width=130 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg"></td>
+</tr></table>
+<br><img src="L2UI.SquareGray" width=250 height=1><br>
+<button value="Enter the name of Royal Guard Unit" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water"></td>
+<td><img src=L2UI_CH3.bloodhood_icon03 width=34 height=40></td>
+<font color="0077EE">Royal Name  |   Royal Leader</font>
+<br>
+<table><tr>
+<td><edit var="royalname" width=117></td> <td><edit var="royalleadername" width=117></td>
+</tr></table><br>
+<button value="Create a Royal Guard Unit" action="bypass -h npc_%objectId%_create_royal $royalname $royalleadername" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg">
+<br><img src="L2UI.SquareGray" width=250 height=1><br>
+<button value="Enter the name of Order of Knights Unit" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water"></td>
+<td><img src=L2UI_CH3.bloodhood_icon04 width=34 height=40></td>
+<font color="0077EE">Order Name  |   Order Leader</font><br>
+<table><tr>
+<td><edit var="knightname" width=117></td> <td><edit var="knightleadername" width=117></td>
+</tr></table><br>
+<button value="Create an Order of Knights Unit" action="bypass -h npc_%objectId%_create_knight $knightname $knightleadername" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg">
+<br><img src="L2UI.SquareGray" width=250 height=1><br>
+<button value="Unit Leader Replacement" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water"></td>
+<font color="0077EE">       Unit Name    |    Leader of Unit</font>
+<br>
+<table><tr>
+<td><edit var="unitname" width=117></td> <td><edit var="unitlnewleader" width=117></td>
+</tr></table><br>
+<button value="Replace Unit Leader" action="bypass -h npc_%objectId%_assign_subpl_leader $unitname $lunitnewleader" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Water_bg">
+<img src="L2UI_CH3.onscrmsg_pattern01_2" width=300 height=32>
+<table><tr>
+<td><img src="L2UI_CH3.shortcut_prev_over" width=16 height=16></td>
+<td><button value="Back" action="bypass -h npc_%objectId%_Chat 0" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr></table>
+<table cellspacing="-1"><tr>
+</tr></table></center><br></body></html>

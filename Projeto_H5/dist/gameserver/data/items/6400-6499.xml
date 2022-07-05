@@ -1,0 +1,1362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <etcitem id="6400" name="Badge of Hyena">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="100"/>
+    <set name="icon" value="icon.etc_paper_red_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="QUEST"/>
+  </etcitem>
+  <etcitem id="6401" name="Badge of Fox">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="100"/>
+    <set name="icon" value="icon.etc_paper_red_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="QUEST"/>
+  </etcitem>
+  <etcitem id="6402" name="Badge of Wolf">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="100"/>
+    <set name="icon" value="icon.etc_paper_red_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="QUEST"/>
+  </etcitem>
+  <etcitem id="6403" name="Star Shard">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_fairy_fire_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <skills>
+      <skill id="2023" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6404" name="Gunpowder">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_powder_black_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="6405" name="Magnesium">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_broken_crystal_silver_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="6406" name="Firework">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_small_ultra_bomb_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <skills>
+      <skill id="2024" level="1"/>
+    </skills>
+  </etcitem>
+  <etcitem id="6407" name="Large Firework">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_ultra_bomb_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <skills>
+      <skill id="2025" level="1"/>
+    </skills>
+  </etcitem>
+  <armor id="6408" name="Formal Wear">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="price" value="5000000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1000"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+  <etcitem id="6409" name="2006 Battle Tournament - CP Potion">
+    <set name="reuse_delay" value="1000"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cp_potion_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="500"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6410" name="2006 Battle Tournament - Quick Healing Potion">
+    <set name="reuse_delay" value="500"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_potion_gold_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="180"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6411" name="Small Nimble Green Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i07"/>
+    <set name="price" value="138"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6412" name="Small Ugly Green Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i07"/>
+    <set name="price" value="141"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6413" name="Small Pudgy Green Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i07"/>
+    <set name="price" value="153"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6414" name="Nimble Green Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i07"/>
+    <set name="price" value="167"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6415" name="Ugly Green Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i07"/>
+    <set name="price" value="187"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6416" name="Pudgy Green Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i07"/>
+    <set name="price" value="208"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6417" name="Large Nimble Green Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i07"/>
+    <set name="price" value="225"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6418" name="Large Ugly Green Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i07"/>
+    <set name="price" value="248"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6419" name="Large Pudgy Green Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i07"/>
+    <set name="price" value="265"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6420" name="Small Jade Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i06"/>
+    <set name="price" value="285"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6421" name="Small Jade Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i06"/>
+    <set name="price" value="295"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6422" name="Small Jade Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i06"/>
+    <set name="price" value="310"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6423" name="Jade Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i06"/>
+    <set name="price" value="325"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6424" name="Jade Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i06"/>
+    <set name="price" value="340"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6425" name="Jade Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i06"/>
+    <set name="price" value="355"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6426" name="Big Jade Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i06"/>
+    <set name="price" value="365"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6427" name="Big Jade Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i06"/>
+    <set name="price" value="375"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6428" name="Big Jade Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i06"/>
+    <set name="price" value="385"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6429" name="Small Blue Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i01"/>
+    <set name="price" value="395"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6430" name="Small Blue Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i01"/>
+    <set name="price" value="400"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6431" name="Small Blue Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i01"/>
+    <set name="price" value="410"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6432" name="Blue Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i01"/>
+    <set name="price" value="415"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6433" name="Blue Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i01"/>
+    <set name="price" value="418"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6434" name="Blue Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i01"/>
+    <set name="price" value="420"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6435" name="Big Blue Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i01"/>
+    <set name="price" value="425"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6436" name="Big Blue Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i01"/>
+    <set name="price" value="431"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6437" name="Big Blue Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i01"/>
+    <set name="price" value="435"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6438" name="Small Yellow Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i02"/>
+    <set name="price" value="442"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6439" name="Small Yellow Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i02"/>
+    <set name="price" value="447"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6440" name="Small Yellow Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i02"/>
+    <set name="price" value="452"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6441" name="Yellow Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i02"/>
+    <set name="price" value="540"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6442" name="Yellow Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i02"/>
+    <set name="price" value="553"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6443" name="Yellow Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i02"/>
+    <set name="price" value="568"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6444" name="Big Yellow Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i02"/>
+    <set name="price" value="580"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6445" name="Big Yellow Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i02"/>
+    <set name="price" value="594"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6446" name="Big Yellow Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i02"/>
+    <set name="price" value="608"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6447" name="Small Orange Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i08"/>
+    <set name="price" value="622"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6448" name="Small Orange Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i08"/>
+    <set name="price" value="635"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6449" name="Small Orange Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i08"/>
+    <set name="price" value="649"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6450" name="Orange Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i08"/>
+    <set name="price" value="663"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6451" name="Orange Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i08"/>
+    <set name="price" value="776"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6452" name="Orange Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i08"/>
+    <set name="price" value="792"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6453" name="Big Orange Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i08"/>
+    <set name="price" value="816"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6454" name="Big Orange Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i08"/>
+    <set name="price" value="840"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6455" name="Big Orange Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i08"/>
+    <set name="price" value="858"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6456" name="Small Purple Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i04"/>
+    <set name="price" value="875"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6457" name="Small Purple Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i04"/>
+    <set name="price" value="893"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6458" name="Small Purple Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i04"/>
+    <set name="price" value="910"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6459" name="Purple Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i04"/>
+    <set name="price" value="930"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6460" name="Purple Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i04"/>
+    <set name="price" value="948"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6461" name="Purple Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i04"/>
+    <set name="price" value="1090"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6462" name="Big Purple Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i04"/>
+    <set name="price" value="1111"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6463" name="Big Purple Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i04"/>
+    <set name="price" value="1133"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6464" name="Big Purple Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i04"/>
+    <set name="price" value="1157"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6465" name="Small Red Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i03"/>
+    <set name="price" value="1277"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6466" name="Small Red Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i03"/>
+    <set name="price" value="1301"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6467" name="Small Red Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i03"/>
+    <set name="price" value="1326"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6468" name="Red Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i03"/>
+    <set name="price" value="1351"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6469" name="Red Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i03"/>
+    <set name="price" value="1376"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6470" name="Red Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i03"/>
+    <set name="price" value="1402"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6471" name="Big Red Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i03"/>
+    <set name="price" value="1577"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6472" name="Big Red Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i03"/>
+    <set name="price" value="1608"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6473" name="Big Red Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i03"/>
+    <set name="price" value="1715"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6474" name="Small White Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i00"/>
+    <set name="price" value="1747"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6475" name="Small White Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i00"/>
+    <set name="price" value="1781"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6476" name="Small White Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i00"/>
+    <set name="price" value="1814"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6477" name="White Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i00"/>
+    <set name="price" value="1849"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6478" name="White Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i00"/>
+    <set name="price" value="1887"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6479" name="White Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i00"/>
+    <set name="price" value="1923"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6480" name="Big White Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i00"/>
+    <set name="price" value="1961"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6481" name="Big White Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i00"/>
+    <set name="price" value="2000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6482" name="Big White Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i00"/>
+    <set name="price" value="2039"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6483" name="Small Black Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i05"/>
+    <set name="price" value="2081"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6484" name="Small Black Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i05"/>
+    <set name="price" value="2123"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6485" name="Small Black Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i05"/>
+    <set name="price" value="2166"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6486" name="Black Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i05"/>
+    <set name="price" value="2309"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6487" name="Black Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i05"/>
+    <set name="price" value="2357"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6488" name="Black Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i05"/>
+    <set name="price" value="2403"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6489" name="Big Black Nimble Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_tuna_i05"/>
+    <set name="price" value="2452"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6490" name="Big Black Ugly Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_angler_i05"/>
+    <set name="price" value="2502"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6491" name="Big Black Fat Fish">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bream_i05"/>
+    <set name="price" value="2552"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6492" name="Small Green Treasure Chest">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_treasure_box_i07"/>
+    <set name="price" value="153"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6493" name="Green Treasure Chest">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_treasure_box_i07"/>
+    <set name="price" value="208"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6494" name="Big Green Treasure Chest">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_treasure_box_i07"/>
+    <set name="price" value="265"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6495" name="Small Jade Treasure Chest">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_treasure_box_i06"/>
+    <set name="price" value="285"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6496" name="Jade Treasure Chest">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_treasure_box_i06"/>
+    <set name="price" value="315"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6497" name="Big Jade Treasure Chest">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_treasure_box_i06"/>
+    <set name="price" value="345"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6498" name="Small Blue Treasure Chest">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_treasure_box_i01"/>
+    <set name="price" value="395"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="6499" name="Blue Treasure Chest">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_treasure_box_i01"/>
+    <set name="price" value="419"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+</list>

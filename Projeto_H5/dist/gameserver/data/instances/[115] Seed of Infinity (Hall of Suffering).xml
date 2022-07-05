@@ -1,0 +1,45 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <!-- Seed of Infinity (Hall of Suffering) -->
+    <instance id="115" name="Seed of Infinity (Hall of Suffering)" maxChannels="20" collapseIfEmpty="10" timelimit="60" dispelBuffs="false">
+        <collapse on-party-dismiss="true" timer="60"/>
+        <level min="75" max="85"/>
+        <party min="2" max="9"/>
+        <return loc="-183352 206008 -12896"/>
+        <teleport loc="-187816 205576 -9528"/>
+        <remove itemId="0" count="0" necessary="false"/>
+        <give itemId="0" count="0"/>
+        <quest id="694"/>
+        <reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+        <spawns>
+			<group name="soi_hos_attack_1" spawned="false" />
+			<group name="soi_hos_attack_2" spawned="false" />
+			<group name="soi_hos_attack_3" spawned="false" />
+			<group name="soi_hos_attack_4" spawned="false" />
+			<group name="soi_hos_attack_5" spawned="false" />
+			<group name="soi_hos_attack_6" spawned="false" />
+			<group name="soi_hos_attack_7" spawned="false" />
+		</spawns>
+		<zones>
+			<zone name="[soi_hos_attack_1]" active="true" />
+			<zone name="[soi_hos_attack_2]" active="true" />
+			<zone name="[soi_hos_attack_3]" active="true" />
+			<zone name="[soi_hos_attack_4]" active="true" />
+			<zone name="[soi_hos_attack_5]" active="true" />
+
+			<zone name="[soi_hos_attack_attackup_1]" active="false" />
+			<zone name="[soi_hos_attack_attackup_2]" active="false" />
+			<zone name="[soi_hos_attack_attackup_3]" active="false" />
+			<zone name="[soi_hos_attack_attackup_4]" active="false" />
+			<zone name="[soi_hos_attack_attackup_5]" active="false" />
+
+			<zone name="[soi_hos_attack_defenceup_1]" active="false" />
+			<zone name="[soi_hos_attack_defenceup_2]" active="false" />
+			<zone name="[soi_hos_attack_defenceup_3]" active="false" />
+			<zone name="[soi_hos_attack_defenceup_4]" active="false" />
+			<zone name="[soi_hos_attack_defenceup_5]" active="false" />
+
+			<zone name="[soi_hos_attack_pcbuff_6]" active="false" />
+		</zones>
+    </instance>
+</list>

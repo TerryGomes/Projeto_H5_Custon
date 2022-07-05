@@ -1,0 +1,24 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Town of Oren: NPC Mouen (Level 56) PC Cafe -->
+	<instance id="68" name="Kamaloka, Hall of the Abyss" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="51" max="61"/>
+		<party min="2" max="6"/>
+		<return loc="80995 56411 -1552"/>
+		<teleport loc="-42016 -220688 -8112"/>
+		<remove itemId="-100" count="2500" necessary="true"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="1"/>
+		<add_parameters>
+			<!-- TODO --><param name="tele_device_loc" value="-89000 -220065 -7888"/>
+		</add_parameters>
+		<spawns>
+			<!-- Summer Yaganitan -->
+			<spawn mobId="18570" count="1" respawn="0" type="point">
+				<coords loc="-42015 -219881 -8128 -16248"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

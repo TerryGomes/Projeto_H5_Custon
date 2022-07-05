@@ -1,0 +1,286 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Nornil's Garden (Level 15-22) -->
+	<instance id="11" name="Nornil's Garden" maxChannels="20" collapseIfEmpty="10" timelimit="120">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="15" max="22"/>
+		<party min="2" max="9"/>
+		<return loc="-84725 60027 -2576"/>
+		<teleport loc="-111188 74555 -12432"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<geodata map="16_20"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<spawns>
+			<spawn mobId="32258" type="point" respawn="0">
+				<coords loc="-120085 87176 -12594 65342"/>
+			</spawn>
+			<spawn mobId="32260" type="point" respawn="0">
+				<coords loc="-113123 87082 -12880 1796"/>
+			</spawn>
+			<spawn mobId="32261" type="point" respawn="0">
+				<coords loc="-115009 87089 -12780 65101"/>
+			</spawn>
+			<spawn mobId="32262" type="point" respawn="0">
+				<coords loc="-116900 87083 -12687 0"/>
+			</spawn>
+			<spawn mobId="18347" type="point" respawn="0">
+				<coords loc="-109742 74500 -12536 29412"/>
+			</spawn>
+			<spawn mobId="18348" type="point" respawn="0">
+				<coords loc="-109613 75659 -12629 34047"/>
+				<coords loc="-109610 76069 -12629 31728"/>
+				<coords loc="-109704 76569 -12629 63714"/>
+				<coords loc="-109695 76740 -12629 62467"/>
+				<coords loc="-109591 76820 -12629 63813"/>
+				<coords loc="-110890 76136 -12725 64032"/>
+				<coords loc="-110620 76050 -12725 64399"/>
+				<coords loc="-109810 77810 -12725 50149"/>
+				<coords loc="-112877 83937 -12885 49151"/>
+				<coords loc="-112761 84141 -12885 46919"/>
+				<coords loc="-112535 84227 -12897 35347"/>
+				<coords loc="-112543 84000 -12895 30068"/>
+				<coords loc="-111424 84002 -12981 30514"/>
+				<coords loc="-111134 84226 -12981 33221"/>
+				<coords loc="-111134 83996 -12981 32096"/>
+				<coords loc="-113398 83620 -12981 64106"/>
+				<coords loc="-113409 83842 -12981 1154"/>
+			</spawn>
+			<spawn mobId="18349" type="point" respawn="0">
+				<coords loc="-109793 75782 -12629 65119"/>
+				<coords loc="-109792 76620 -12629 5636"/>
+				<coords loc="-110954 75950 -12725 65242"/>
+				<coords loc="-109815 77429 -12639 48131"/>
+				<coords loc="-109609 77839 -12725 65039"/>
+				<coords loc="-109864 78063 -12725 49538"/>
+				<coords loc="-111472 77849 -12821 924"/>
+				<coords loc="-111286 78005 -12821 61291"/>
+				<coords loc="-110594 78277 -12850 47308"/>
+				<coords loc="-111774 77955 -12821 904"/>
+				<coords loc="-111123 76847 -12725 15949"/>
+				<coords loc="-111332 76806 -12725 16641"/>
+				<coords loc="-111342 76079 -12725 15842"/>
+				<coords loc="-111968 80549 -12920 682"/>
+				<coords loc="-111955 80769 -12917 65001"/>
+				<coords loc="-109063 80634 -12917 29983"/>
+				<coords loc="-108813 80648 -12917 32605"/>
+				<coords loc="-108036 79995 -12799 16850"/>
+				<coords loc="-108707 77085 -12533 63092"/>
+				<coords loc="-109099 77193 -12536 204"/>
+				<coords loc="-108670 76427 -12533 15794"/>
+				<coords loc="-112333 79262 -12917 28114"/>
+				<coords loc="-112553 79452 -12917 21220"/>
+				<coords loc="-112411 78903 -12917 16709"/>
+				<coords loc="-112659 77916 -12839 64238"/>
+				<coords loc="-110596 83948 -12981 49495"/>
+				<coords loc="-109988 84106 -12905 31385"/>
+				<coords loc="-108350 84596 -12885 33309"/>
+				<coords loc="-112148 84192 -12981 32928"/>
+				<coords loc="-114150 83662 -12981 64412"/>
+				<coords loc="-114148 83901 -12981 826"/>
+				<coords loc="-107504 82863 -12917 11200"/>
+				<coords loc="-106960 81825 -12917 17251"/>
+			</spawn>
+			<spawn mobId="18350" type="point" respawn="0">
+				<coords loc="-109046 76479 -12629 49568"/>
+				<coords loc="-109261 76492 -12629 48441"/>
+				<coords loc="-109711 77577 -12675 1480"/>
+				<coords loc="-109605 77439 -12642 46843"/>
+				<coords loc="-109650 78563 -12725 48154"/>
+				<coords loc="-109953 78519 -12725 52342"/>
+				<coords loc="-111189 78042 -12821 65325"/>
+				<coords loc="-111395 77902 -12821 0"/>
+				<coords loc="-110356 78260 -12848 49151"/>
+				<coords loc="-110478 78423 -12888 48408"/>
+				<coords loc="-110484 78619 -12917 47671"/>
+				<coords loc="-110360 79079 -12917 49700"/>
+				<coords loc="-110586 79178 -12917 49151"/>
+				<coords loc="-110579 78912 -12917 46671"/>
+				<coords loc="-112156 77861 -12821 63813"/>
+				<coords loc="-112123 78061 -12824 64055"/>
+				<coords loc="-111214 77010 -12725 16756"/>
+				<coords loc="-111211 77227 -12725 16077"/>
+				<coords loc="-111113 76447 -12725 15192"/>
+				<coords loc="-111341 76393 -12725 14468"/>
+				<coords loc="-111294 75451 -12725 18232"/>
+				<coords loc="-111014 75491 -12725 23899"/>
+				<coords loc="-108969 80755 -12917 32024"/>
+				<coords loc="-108936 80512 -12917 32767"/>
+				<coords loc="-108163 80397 -12899 18763"/>
+				<coords loc="-108036 80245 -12861 15961"/>
+				<coords loc="-108294 80219 -12855 16250"/>
+				<coords loc="-108167 79885 -12771 14970"/>
+				<coords loc="-108038 80641 -12917 31497"/>
+				<coords loc="-107798 80766 -12917 30880"/>
+				<coords loc="-107802 80509 -12917 33101"/>
+				<coords loc="-108438 78135 -12621 16651"/>
+				<coords loc="-108434 77851 -12550 17251"/>
+				<coords loc="-108662 77708 -12533 17138"/>
+				<coords loc="-108461 77207 -12533 34290"/>
+				<coords loc="-108723 77304 -12533 254"/>
+				<coords loc="-108940 77195 -12533 63554"/>
+				<coords loc="-108442 76333 -12533 16635"/>
+				<coords loc="-108442 76641 -12533 14402"/>
+				<coords loc="-108657 76020 -12533 9501"/>
+				<coords loc="-108290 82762 -12885 33252"/>
+				<coords loc="-108189 83065 -12885 45640"/>
+				<coords loc="-112333 80741 -12917 18259"/>
+				<coords loc="-112565 80666 -12917 1515"/>
+				<coords loc="-112699 80562 -12917 1006"/>
+				<coords loc="-112848 80160 -12917 16837"/>
+				<coords loc="-112720 79878 -12920 15502"/>
+				<coords loc="-112878 79875 -12917 14465"/>
+				<coords loc="-112806 79658 -12917 14903"/>
+				<coords loc="-112757 79574 -12917 14364"/>
+				<coords loc="-112393 79576 -12917 11703"/>
+				<coords loc="-112856 79071 -12917 15063"/>
+				<coords loc="-112649 79081 -12917 14729"/>
+				<coords loc="-112299 79063 -12917 17658"/>
+				<coords loc="-112295 78557 -12917 15185"/>
+				<coords loc="-112508 78568 -12917 11982"/>
+				<coords loc="-112554 78071 -12821 5473"/>
+				<coords loc="-112962 77832 -12915 64884"/>
+				<coords loc="-112931 78074 -12906 61198"/>
+				<coords loc="-113148 78015 -12917 336"/>
+				<coords loc="-110474 83240 -12885 48979"/>
+				<coords loc="-110577 83404 -12885 49277"/>
+				<coords loc="-110368 83391 -12885 49151"/>
+				<coords loc="-110364 84217 -12981 47643"/>
+				<coords loc="-110369 83979 -12981 48866"/>
+				<coords loc="-110475 84112 -12978 50387"/>
+				<coords loc="-110597 84297 -12981 46750"/>
+				<coords loc="-110596 83736 -12937 49151"/>
+				<coords loc="-109832 84220 -12885 32408"/>
+				<coords loc="-109830 83983 -12885 30084"/>
+				<coords loc="-109422 84114 -12885 32124"/>
+				<coords loc="-109178 84109 -12885 31689"/>
+				<coords loc="-108958 84112 -12885 32767"/>
+				<coords loc="-108970 84517 -12885 27752"/>
+				<coords loc="-109153 84531 -12885 31971"/>
+				<coords loc="-109365 84532 -12885 32718"/>
+				<coords loc="-108626 84488 -12885 33338"/>
+				<coords loc="-108215 84504 -12885 33097"/>
+				<coords loc="-107957 84613 -12885 33087"/>
+				<coords loc="-107973 84366 -12885 31546"/>
+				<coords loc="-108328 84393 -12888 54566"/>
+				<coords loc="-107290 84205 -12885 16791"/>
+				<coords loc="-107531 84222 -12885 11547"/>
+				<coords loc="-107395 83529 -12885 18064"/>
+				<coords loc="-107514 83836 -12885 16280"/>
+				<coords loc="-107294 83855 -12885 14926"/>
+				<coords loc="-107209 83075 -12917 31685"/>
+				<coords loc="-106901 83070 -12917 31728"/>
+				<coords loc="-107303 80617 -12917 15086"/>
+				<coords loc="-107521 80781 -12917 4554"/>
+				<coords loc="-107528 85126 -12981 48112"/>
+				<coords loc="-107301 85172 -12981 48441"/>
+				<coords loc="-107418 84998 -12965 51279"/>
+				<coords loc="-110488 85639 -12984 49249"/>
+				<coords loc="-110499 85989 -12981 49009"/>
+				<coords loc="-112454 82643 -12885 55115"/>
+				<coords loc="-112597 82694 -12885 55899"/>
+				<coords loc="-112409 82765 -12885 50191"/>
+				<coords loc="-112629 82950 -12885 46058"/>
+				<coords loc="-112775 83014 -12885 52778"/>
+				<coords loc="-112554 83065 -12885 54955"/>
+			</spawn>
+			<spawn mobId="18351" type="point" respawn="0">
+				<coords loc="-108666 78743 -12725 16159"/>
+				<coords loc="-108457 78715 -12725 14325"/>
+				<coords loc="-107688 76074 -12533 36736"/>
+				<coords loc="-107696 75872 -12533 32259"/>
+				<coords loc="-113702 78113 -12917 62951"/>
+				<coords loc="-113716 77887 -12917 1221"/>
+				<coords loc="-107312 81766 -12917 13028"/>
+				<coords loc="-107496 81774 -12917 12090"/>
+				<coords loc="-107305 85815 -12981 49412"/>
+				<coords loc="-107578 85810 -12981 47344"/>
+			</spawn>
+			<spawn mobId="18352" type="point" respawn="0">
+				<coords loc="-109773 78312 -12725 48006"/>
+			</spawn>
+			<spawn mobId="18353" type="point" respawn="0">
+				<coords loc="-111175 75631 -12728 16102"/>
+			</spawn>
+			<spawn mobId="18354" type="point" respawn="0">
+				<coords loc="-108584 78863 -12725 15985"/>
+			</spawn>
+			<spawn mobId="18355" type="point" respawn="0">
+				<coords loc="-107790 75995 -12533 34826"/>
+			</spawn>
+			<spawn mobId="18356" type="point" respawn="0">
+				<coords loc="-113530 78000 -12917 3014"/>
+			</spawn>
+			<spawn mobId="18357" type="point" respawn="0">
+				<coords loc="-107407 81946 -12917 15732"/>
+			</spawn>
+			<spawn mobId="18358" type="point" respawn="0">
+				<coords loc="-109127 76222 -12629 48636"/>
+			</spawn>
+			<spawn mobId="18359" type="point" respawn="0">
+				<coords loc="-114005 83778 -12981 64682"/>
+			</spawn>
+			<spawn mobId="18360" type="point" respawn="0">
+				<coords loc="-107465 85672 -12981 46802"/>
+			</spawn>
+			<spawn mobId="18379" type="point" respawn="0">
+				<coords loc="-111478 74271 -12341 0"/>
+			</spawn>
+			<spawn mobId="25528" type="point" respawn="0">
+				<coords loc="-110086 86538 -12980 55000"/>
+			</spawn>
+			<spawn mobId="25529" type="point" respawn="0">
+				<coords loc="-109983 86490 -12980 55000"/>
+			</spawn>
+			<spawn mobId="25530" type="point" respawn="0">
+				<coords loc="-110195 86453 -12980 55000"/>
+			</spawn>
+
+			<!-- Herb Jar -->
+			<spawn mobId="18478" type="point" respawn="0">
+				<coords loc="-109975 86016 -12981 18574"/>
+				<coords loc="-110502 87280 -12981 47257"/>
+				<coords loc="-114285 83809 -12981 64349"/>
+				<coords loc="-110766 84249 -12981 33276"/>
+				<coords loc="-112907 84184 -12885 51239"/>
+				<coords loc="-107283 85571 -12981 24731"/>
+				<coords loc="-109426 84549 -12885 816"/>
+				<coords loc="-106881 81680 -12917 13028"/>
+				<coords loc="-107258 83605 -12885 37604"/>
+				<coords loc="-110621 83447 -12885 49151"/>
+				<coords loc="-113895 78267 -12920 57825"/>
+				<coords loc="-108597 82711 -12885 41681"/>
+				<coords loc="-112904 79038 -12917 14103"/>
+				<coords loc="-107494 76160 -12533 31045"/>
+				<coords loc="-107466 75747 -12533 31888"/>
+				<coords loc="-108042 78657 -12725 15278"/>
+				<coords loc="-110007 78662 -12725 51879"/>
+				<coords loc="-110477 77870 -12821 64923"/>
+				<coords loc="-111344 75306 -12725 13828"/>
+				<coords loc="-110049 80043 -12981 16383"/>
+				<coords loc="-110901 80037 -12981 15229"/>
+			</spawn>
+		</spawns>
+		<doors>
+			<door id="16200001" opened="true"/>
+			<door id="16200002"/>
+			<door id="16200003"/>
+			<door id="16200005"/>
+			<door id="16200006"/>
+			<door id="16200007"/>
+			<door id="16200008"/>
+			<door id="16200009"/>
+			<door id="16200010"/>
+			<door id="16200011"/>
+			<door id="16200012"/>
+			<door id="16200013" opened="true"/>
+			<door id="16200014"/>
+			<door id="16200015"/>
+			<door id="16200016"/>
+			<door id="16200023" opened="true"/>
+			<door id="16200024" opened="true"/>
+			<door id="16200025" opened="true"/>
+		</doors>
+	</instance>
+</list>

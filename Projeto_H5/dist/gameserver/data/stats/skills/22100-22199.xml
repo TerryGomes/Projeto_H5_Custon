@@ -1,0 +1,1982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="22100" levels="1" name="Soul Scent" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_ghost_incense_i00" />
+		<set name="reuseDelay" val="5000" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="Unique1" time="300" val="0">
+				<mul order="0x30" stat="maxHp" val="1.4" />
+				<mul order="0x30" stat="maxMp" val="1.4" />
+				<mul order="0x30" stat="maxCp" val="1.4" />
+				<mul order="0x30" stat="pDef" val="1.3" />
+				<mul order="0x30" stat="mDef" val="1.3" />
+				<add order="0x40" stat="runSpd" val="20" />
+				<mul order="0x30" stat="mAtk" val="1.45" />
+				<mul order="0x30" stat="mpConsumePhysical" val="0.9" />
+				<mul order="0x30" stat="mpConsum" val="0.9" />
+			</effect>
+		</for>  
+	</skill>
+	<skill id="22101" levels="1" name="Fortune of Love Box" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22102" levels="1" name="Soul Magic Box" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="86400000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22103" levels="1" name="Blessed Scroll of Escape - event" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="200" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22104" levels="1" name="Blessed Scroll of Resurrection - event" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22105" levels="1" name="Wooldy Summon Scroll - Event" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="12000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="1500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22106" levels="1" name="Verdandi Summon Scroll - Event" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="12000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="1500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22107" levels="1" name="Skooldy Summon Scroll - Event" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="12000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="1500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22108" levels="1" name="Halloween Toy Box" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22109" levels="1" name="Shiny Halloween Toy Box" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22110" levels="1" name="Lucky Sky Lantern Summon" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22111" levels="1" name="Ambient Sky Lantern Summon" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22112" levels="1" name="Sway Sky Lantern Summon" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22113" levels="1" name="Comfort Sky Lantern Summon" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22114" levels="1" name="Morph Scroll Box" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22115" levels="1" name="Santa's Weapon Exchange Ticket Box" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22116" levels="1" name="Summon Flames Box" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_fire_box_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22117" levels="1" name="Flames Box Firework" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0788" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22118" levels="1" name="Warmth of Kotatz" >
+		<set name="icon" val="BranchSys.icon.br_kotatsu_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="0" stackType="0" time="3600" val="0">
+				<mul order="0x30" stat="regHp" val="1.4" />
+				<mul order="0x30" stat="regMp" val="1.2" />
+				<mul order="0x30" stat="regCp" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22119" levels="1" name="Love for All Seasons" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 1 hour, increases M. Atk. by 75% and the chance of Prominent Damage occurring through damage magic by 2."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_a_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="0" stackType="0" time="3600" val="0">
+				<mul order="0x30" stat="mAtk" val="1.75" />
+				<add order="0x40" stat="mCritRate" val="2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22120" levels="1" name="Happy New Year" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 1 hour, increases Critical attack power by 35%, Critical attack rate by 30, and accuracy by 4."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_b_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="0" stackType="0" time="3600" val="0">
+				<add order="0x30" stat="rCrit" val="30" />
+				<mul order="0x30" stat="cAtk" val="1.35" />
+                <add order="0x30" stat="accCombat" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22121" levels="1" name="Female Aniruddha" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 1 hour, increases P. Def. by 15%, Magic Resistance by 30%, and Shield Defense Rate by 15."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_c_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="0" stackType="0" time="3600" val="0">
+				<mul order="0x30" stat="pDef" val="1.15" />
+				<mul order="0x30" stat="mDef" val="1.3" />
+                <add order="0x30" stat="rShld" val="15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22122" levels="1" name="Kung Hei Fat Choy" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 1 hour, decreases party members' P. Def. by 8%, M. Def. by 16%, and Evasion by 4. 
+			  Increases P. Atk. by 15%, P. Atk. by 8%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and moving speed by 8.
+			  9% of the standard short-range physical damage inflicted on the enemy is recovered by HP."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_d_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="0" stackType="0" time="3600" val="0">
+				<mul order="0x30" stat="mAtk" val="1.16" />
+				<mul order="0x30" stat="pAtk" val="1.08" />
+				<mul order="0x30" stat="pDef" val="0.92" />
+				<mul order="0x30" stat="mDef" val="0.84" />
+				<mul order="0x30" stat="mAtkSpd" val="1.08" />
+				<mul order="0x30" stat="pAtkSpd" val="1.08" />
+				<add order="0x40" stat="runSpd" val="8" />
+				<sub order="0x40" stat="rEvas" val="4" />
+				<add order="0x40" stat="absorbDam" val="9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22123" levels="1" name="Chinese Feast" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 1 hour, decreases physical skill MP consumption by 20%, magic skill's MP consumption by 10%, 
+			  and song/dance skill's MP consumption by 20%. Increases Casting Spd. by 30% and Max MP by 35%."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_e_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+		    <effect count="1" name="Buff" stackOrder="0" stackType="0" time="3600" val="0">
+			<mul order="0x30" stat="mAtkSpd" val="1.3" />
+			<mul order="0x30" stat="maxMp" val="1.35" />
+			<mul order="0x30" stat="mpConsum" val="0.9" />
+			<mul order="0x30" stat="mpConsumePhysical" val="0.8" />
+			<mul order="0x30" stat="mpDanceConsume" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22124" levels="1" name="Hwa Gei Bu Gwi" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 1 hour, increases Atk. Spd. by 33% and weight penalty interval by 9000."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_f_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+		    <effect count="1" name="Buff" stackOrder="0" stackType="0" time="3600" val="0">
+			<mul order="0x30" stat="pAtkSpd" val="1.33" />
+			<add order="0x40" stat="maxNoPenaltyLoad" val="9000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22125" levels="1" name="Fire Stamp" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 1 hour, increases moving speed by 33, Evasion rate by 4, and Max HP by 35%."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_g_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+		    <effect count="1" name="Buff" stackOrder="0" stackType="0" time="3600" val="0">
+			<add order="0x30" stat="runSpd" val="33" />
+			<add order="0x30" stat="rEvas" val="4" />
+			<mul order="0x30" stat="maxHp" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22126" levels="1" name="Baby Food Skill" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.br_baby_food_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22127" levels="1" name="Summon Warm Kotatz" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_kotatsu_i00" />
+		<set name="reuseDelay" val="600000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22128" levels="3" name="Rudolph's Joy" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 5 minutes, raises Atk. Spd. by 10% and Magic Casting Spd. by 10%."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="icon.skill1256" />
+		<set name="reuseDelay" val="2000" />
+		<set name="hitTime" val="100" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+		    <effect count="1" name="Buff" stackOrder="0" stackType="0" time="300" val="0">
+			<mul order="0x30" stat="mAtkSpd" val="1.1" />
+			<mul order="0x30" stat="pAtkSpd" val="1.1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22129" levels="1" name="Red Dimensional Stone" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Pailaka Initialization
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="18000000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="1500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22130" levels="1" name="Food of Doubt's Effect" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Food of Doubt's effect.For 20 minutes, energy is recovered when Exp. is acquired."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.br_rudolf_food_unknown_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="1200" val="0" />
+		</for>
+	</skill>
+	<skill id="22131" levels="1" name="Red Firework Flames" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 10 minutes, increases water type defense by 30 and STR by 1."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_firecracker_red_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+		    <effect count="1" name="Buff" stackOrder="0" stackType="0" time="600" val="0">
+			<add order="0x40" stat="defenceWater" val="30" />
+			<add order="0x40" stat="STR" val="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22132" levels="1" name="Gold Firework Flames" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 10 minutes, increases divinity type defense by 30 and CON by 1."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_firecracker_gold_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+		    <effect count="1" name="Buff" stackOrder="0" stackType="0" time="600" val="0">
+			<add order="0x40" stat="defenceHoly" val="30" />
+			<add order="0x40" stat="CON" val="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22133" levels="1" name="Blue Firework Flames" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 10 minutes, increases fire type defense by 30 and DEX by 1."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_firecracker_blue_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+		    <effect count="1" name="Buff" stackOrder="0" stackType="0" time="600" val="0">
+			<add order="0x40" stat="defenceFire" val="30" />
+			<add order="0x40" stat="DEX" val="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22134" levels="1" name="Pink Firework Flames" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 10 minutes, increases earth type defense by 30 and MEN by 1."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_firecracker_pink_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+		    <effect count="1" name="Buff" stackOrder="0" stackType="0" time="600" val="0">
+			<add order="0x40" stat="defenceEarth" val="30" />
+			<add order="0x40" stat="MEN" val="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22135" levels="1" name="White Firework Flames" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 10 minutes, increases wind type defense by 30 and WIT by 1."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_firecracker_white_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+		    <effect count="1" name="Buff" stackOrder="0" stackType="0" time="600" val="0">
+			<add order="0x40" stat="defenceWind" val="30" />
+			<add order="0x40" stat="WIT" val="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22136" levels="1" name="Silver Firework Flames" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 10 minutes, increases darkness type defense by 30 and INT by 1."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_firecracker_silver_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+		    <effect count="1" name="Buff" stackOrder="0" stackType="0" time="600" val="0">
+			<add order="0x40" stat="defenceUnholy" val="30" />
+			<add order="0x40" stat="INT" val="1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22137" levels="1" name="Star Food" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22138" levels="1" name="Mango Dessert" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_thai_desert_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22139" levels="1" name="Branding Wind Walk" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases moving speed by 33 for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_g_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="SpeedUp" time="3600" val="0">
+				<add order="0x40" stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22140" levels="1" name="Hwa Gei Bu Gwi Haste" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases Atk. Spd. by 33% for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_f_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtkSpeedUp" time="3600" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22141" levels="1" name="Branding Agility" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases evasion rate by 4 for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_g_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="rEvas" time="3600" val="0">
+				<add order="0x40" stat="rEvas" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22142" levels="1" name="Female Aniruddha's Shield" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases P. Def. by 15% for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_c_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pDef" time="3600" val="0">
+				<mul order="0x30" stat="pDef" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22143" levels="1" name="Happy New Year Death Whisper" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases Critical attack power by 35% for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_b_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="cAtk" time="3600" val="0">
+				<mul order="0x30" stat="cAtk" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22144" levels="1" name="Happy New Year Guidance" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases accuracy by 4 for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_b_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="accuracyUp" time="3600" val="0">
+				<add order="0x40" stat="accCombat" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22145" levels="1" name="Love for All Seasons Empower" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases M. Atk. by 75% for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_a_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mAtk" time="3600" val="0">
+				<mul order="0x30" stat="mAtk" val="1.75" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22146" levels="1" name="Chinese Feast Greater Acumen" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases Casting Spd. by 30% for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_e_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mAtkSpeedUp" time="3600" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22147" levels="1" name="Kung Hei Fat Choy Vampiric Rage" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 1 hour, 9% of the standard short-range physical damage inflicted on the enemy is recovered as HP."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_d_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="9" stackType="vampRage" time="3600" val="0">
+				<mul order="0x30" stat="absorbDam" val="9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22148" levels="1" name="Branding Blessed Body" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases Max HP by 35% for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_g_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="6" stackType="hp_up" time="3600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22149" levels="1" name="Kung Hei Fat Choy Berserker Spirit" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "Decreases P. Def. by 8%, M. Def. by 16%, and evasion by 4, and increases P. Atk. by 8%,
+			  M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and moving speed by 8 for 1 hour."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_d_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="berserk" time="3600" val="0">
+				<mul order="0x30" stat="mAtk" val="1.16" />
+				<mul order="0x30" stat="pAtk" val="1.08" />
+				<mul order="0x30" stat="pDef" val="0.92" />
+				<mul order="0x30" stat="mDef" val="0.84" />
+				<mul order="0x30" stat="mAtkSpd" val="1.08" />
+				<mul order="0x30" stat="pAtkSpd" val="1.08" />
+				<add order="0x40" stat="runSpd" val="8" />
+				<sub order="0x40" stat="rEvas" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22150" levels="1" name="Female Aniruddha's Magic Barrier" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases magic resistance by 30% for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_c_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="MagicDefUp" time="3600" val="0">
+				<mul order="0x30" stat="mDef" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22151" levels="1" name="Chinese Feast Blessed Soul" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases Max MP by 35% for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_e_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="6" stackType="mp_up" time="3600" val="0">
+				<mul order="0x30" stat="maxMp" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22152" levels="1" name="Chinese Feast Clarity" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 1 hour, decreases physical skill MP consumption by 20%, magic skill's MP consumption by 10%,
+			  and song/dance skill's MP consumption by 20%."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_e_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="clarity" time="3600" val="0">
+				<mul order="0x30" stat="mpConsum" val="0.9" />
+				<mul order="0x30" stat="mpConsumePhysical" val="0.8" />
+				<mul order="0x30" stat="mpDanceConsume" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22153" levels="1" name="Love for All Seasons Wild Magic" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "For 1 hour, increases by 2 the occurrence rate of damage that is caused by damage magic."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_a_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="magicCritUp" time="3600" val="0">
+				<add order="0x40" stat="mCritRate" val="2" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22154" levels="1" name="Happy New Year Focus" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases Critical attack rate by 30% for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_b_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="rCrit" time="3600" val="0">
+				<add order="0x40" stat="rCrit" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22155" levels="1" name="Female Aniruddha's Blessed Shield" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases Shield defense rate by 15 for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_c_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="6" stackType="shieldProbUp" time="3600" val="0">
+				<add order="0x30" stat="rShld" val="15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22156" levels="1" name="Hwa Gei Bu Gwi Decrease Weight" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases the weight penalty interval by 9000 for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_f_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="weight" time="3600" val="0">
+				<add order="0x40" stat="maxNoPenaltyLoad" val="9000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22157" levels="1" name="Kung Hei Fat Choy Might" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increases P. Atk. by 15% for 1 hour.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-12-2009  18:32
+		-->
+		<set name="icon" val="BranchSys.icon.br_taiwan_newyear_food_d_i00" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtk" time="3600" val="0">
+				<mul order="0x30" stat="pAtk" val="1.15" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22158" levels="10" name="Rose Petal" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: Increase HP/MP recovery by 20% for 5 minutes.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys2.icon.Br_herb_rose_red_i00" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="100" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="22159" levels="1" name="Vesper Super Power">
+		<!-- Increases P. Atk. by 15%, M. Atk. by 20% and Speed by 10 for 10 minutes. -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys2.icon.br_royal_crown_of_vesper_i00" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="100" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="altUse" val="true" />
+		<set name="isHideUseMessage" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect applyOnCaster="true" abnormal="vesper1" count="1" name="Buff" stackOrder="1" stackType="VesperHerb" time="600" val="0">
+				<mul order="0x30" stat="pAtk" val="1.15" />
+				<mul order="0x30" stat="mAtk" val="1.15" />
+				<add order="0x40" stat="runSpd" val="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22160" levels="1" name="Vesper Critical Power">
+		<!-- Increases Physical critical attack rate by 15, Magical critical attack rate by 2 and Speed by 10 for 10 minutes. 
+		5% of the standard short-range physical damage inflicted on the enemy is recovered as HP. -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys2.icon.br_royal_circlet_of_vesper_i00" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="100" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="altUse" val="true" />
+		<set name="isHideUseMessage" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect applyOnCaster="true" abnormal="vesper2" count="1" name="Buff" stackOrder="1" stackType="VesperHerb" time="600" val="0">
+				<add order="0x40" stat="rCrit" val="15" />
+				<add order="0x40" stat="mCritRate" val="2" />
+				<add order="0x40" stat="runSpd" val="10" />
+				<add order="0x40" stat="absorbDam" val="5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22161" levels="1" name="Invincible Vesper">
+		<!-- Increases Atk. Spd. by 20%, Casting Spd. by 20% and Speed by 20 for 10 minutes. -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys2.icon.br_noblesse_oblige_of_vesper_i00" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="100" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="altUse" val="true" />
+		<set name="isHideUseMessage" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect applyOnCaster="true" abnormal="vesper3" count="1" name="Buff" stackOrder="1" stackType="VesperHerb" time="600" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+				<add order="0x40" stat="runSpd" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22162" levels="1" name="Mt. Fuji Herb">
+		<!-- Energy is recovered for 10 minutes when acquiring Exp. -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys2.icon.br_fuji_herb_i00" />
+		<set name="reuseDelay" val="2000" />
+		<set name="hitTime" val="100" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="altUse" val="true" />
+		<set name="isHideUseMessage" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="600" val="0" />
+		</for>
+	</skill>
+	<skill id="22163" levels="1" name="Hawk Herb">
+		<!-- Physical Atk Speed is increased by 15% and physical Critical Atk rate is increased by 10% for 10 minutes. -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys2.icon.br_hawk_herb_i00" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="100" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="altUse" val="true" />
+		<set name="isHideUseMessage" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="600" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.15" />
+				<mul order="0x30" stat="rCrit" val="1.10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22164" levels="1" name="Eggplant Herb">
+		<!-- Magic Atk Speed is increased by 10% and magic Critical Rate is increased by 2 for 10 minutes. -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys2.icon.br_eggplant_herb_i00" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="100" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="altUse" val="true" />
+		<set name="isHideUseMessage" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="600" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="1.10" />
+				<add order="0x40" stat="mCritRate" val="2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22165" levels="1" name="Energy Replenish">
+		<!-- 5000 Soul Avatar Energy is replenished. -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0788" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="ENERGY_REPLENISH" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="itemConsumeId" val="20954" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="addEnergy" val="5000" />
+	</skill>
+	<skill id="22166" levels="1" name="Energy Replenish">
+		<!-- 10000 Soul Avatar Energy is replenished. -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0788" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="ENERGY_REPLENISH" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="itemConsumeId" val="20955" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="addEnergy" val="10000" />
+	</skill>
+	<skill id="22167" levels="1" name="April Fools' Day Vesper Weapon Gift">
+		<!-- One among 14 Vesper Weapons will be given. -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="22168" levels="1" name="Thirst Quencher">
+		<!-- Replenishes an Agathion's energy by 2500 -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="22169" levels="1" name="Soccer Ball of Cheers Release">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="22170" levels="1" name="Hardin's Protection">
+		<!-- Maximies P. Def. for 10 seconds. -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="itemConsumeId" val="21030" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="reuseDelay" val="900000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" time="10">
+				<add order="0x40" stat="pDef" val="10000" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22171" levels="1" name="Hardin's Blessing">
+		<!-- Maximies M. Def. for 10 seconds. -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="reuseDelay" val="900000" />
+		<set name="itemConsumeId" val="21031" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" time="10">
+				<add order="0x40" stat="mDef" val="10000" />
+			</effect>
+		</for>
+
+	</skill>
+	<skill id="22172" levels="1" name="Sylphide's Wings">
+		<!-- Increases one's own moving speed by 300 for 15 seconds. -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="itemConsumeId" val="21032" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" time="15">
+				<add order="0x40" stat="runSpd" val="250" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22173" levels="1" name="Sylphide's Blessing">
+		<!-- Increases the moving speed of yourself and friendly nearby targets by 300 for 15 seconds. -->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="itemConsumeId" val="21033" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" time="15">
+				<add order="0x40" stat="runSpd" val="300" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22174" levels="1" name="Yibein's Recovery Scroll">
+		<!-- Recovers HP of yourself and friendly nearby targets by 500. -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="itemConsumeId" val="21034" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="power" val="500" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="1000" />
+		<set name="skillType" val="HEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22175" levels="1" name="Rune of Life">
+		<!-- When HP falls below 30%, it is restored by 500. -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="itemConsumeId" val="21035" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="power" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="113" addName="1">
+			<player percentHP="30" />
+		</cond>
+	</skill>
+	<skill id="22176" levels="1" name="Rune of Spirit">
+		<!-- When MP falls below 10%, it is restored by 500. -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="itemConsumeId" val="21036" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="power" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="MANAHEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="113" addName="1">
+			<player percentMP="30" />
+		</cond>
+	</skill>
+	<skill id="22177" levels="1" name="Warrior's Breath">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="magicLevel" val="1" />
+		<set name="power" val="300" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="COMBATPOINTHEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22178" levels="1" name="Hero's Potion">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="itemConsumeId" val="21038"/>
+		<set name="itemConsumeCount" val="1"/>
+		<set name="isHandler" val="true" />
+		<set name="altUse" val="true" />
+		<set name="reuseDelay" val="60000" />
+		<set name="power" val="500" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="ManaHealOverTime" time="0" val="200"/>
+		</for>
+	</skill>
+	<skill id="22179" levels="1" name="Fortuna of Chaos">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0001" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="22180" levels="1" name="Wondrous Cubic - 1 time use" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22181" levels="1" name="Refined Cubic - 1 time use" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22182" levels="1" name="Joyous Vitality Potion" >
+		<set name="icon" val="icon.etc_potion_blue_i00" />
+		<set name="reuseDelay" val="43200000" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="trait" val="ETC" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="43200" val="0" />
+		</for>
+	</skill>
+	<skill id="22183" levels="1" name="Dragon Master Lee Transformation Scroll" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0298" />
+		<set name="itemConsumeId" val="21148" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="isHandler" val="true" />
+		<set name="addSkills" val="5491;1" />
+		<set name="npcId" val="134" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Transformation" time="600" val="134" />
+		</for>
+	</skill>
+	<skill id="22184" levels="1" name="Dragon Master Karin Transformation Scroll" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0298" />
+		<set name="itemConsumeId" val="21149" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="isHandler" val="true" />
+		<set name="addSkills" val="5491;1" />
+		<set name="npcId" val="135" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Transformation" time="600" val="135" />
+		</for>
+	</skill>
+	<skill id="22185" levels="1" name="Shiny Lighting" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="BranchSys.icon.br_firecracker_red_i00" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22186" levels="1" name="Echo Crystal - Theme of Celebration" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.item_normal16" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22187" levels="1" name="Honeymoon Ticket - Joy of Vitality" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="BranchSys2.Icon.br_weddin_ticket_i00" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22188" levels="1" name="Summon Big Wedding Cake" >
+		<set name="target" val="TARGET_SELF"/>
+		<set name="icon" val="icon.skill0000" />
+		<set name="skillType" val="SPAWN" />
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="hitTime" val="1500"/>
+		<set name="staticHitTime" val="true"/>
+		<set name="npcId" val="9"/>
+		<set name="despawnDelay" val="60000"/>
+		<set name="isSummonSpawn" val="true"/>
+	</skill>
+	<skill id="22189" levels="1" name="Flower Shower" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.item_normal16" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22190" levels="1" name="Transformation Scroll - Treasure Hunter" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0298" />
+		<set name="itemConsumeId" val="21171" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="isHandler" val="true" />
+		<set name="addSkills" val="20000;1;20001;1;5491;1" />
+		<set name="npcId" val="140" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Transformation" time="600" val="140" />
+		</for>
+	</skill>
+	<skill id="22191" levels="1" name="Transformation Scroll - Onyx Beast">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="hitTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="584;1;585;1;619;1;5491;1" />
+		<set name="npcId" val="13077" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="itemConsumeId" val="21172" />
+		<set name="itemConsumeCount" val="1" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="1">
+				<set order="0x40" stat="STR" val="40" />
+				<set order="0x40" stat="DEX" val="30" />
+				<set order="0x40" stat="CON" val="43" />
+				<set order="0x40" stat="INT" val="21" />
+				<set order="0x40" stat="WIT" val="11" />
+				<set order="0x40" stat="MEN" val="25" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22192" levels="1" name="Transformation Scroll - Death Blader">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="hitTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="586;1;587;1;589;1;588;1;619;1;5491;1" />
+		<set name="npcId" val="13078" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="itemConsumeId" val="21173" />
+		<set name="itemConsumeCount" val="1" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="2">
+				<set order="0x40" stat="STR" val="40" />
+				<set order="0x40" stat="DEX" val="30" />
+				<set order="0x40" stat="CON" val="43" />
+				<set order="0x40" stat="INT" val="21" />
+				<set order="0x40" stat="WIT" val="11" />
+				<set order="0x40" stat="MEN" val="25" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22193" levels="1" name="Transformation Scroll - Grail Apostle">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="hitTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="560;3;559;3;561;3;562;3;619;1;5491;1" />
+		<set name="npcId" val="13079" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="itemConsumeId" val="21174" />
+		<set name="itemConsumeCount" val="1" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="201">
+				<set order="0x40" stat="STR" val="40" />
+				<set order="0x40" stat="DEX" val="30" />
+				<set order="0x40" stat="CON" val="43" />
+				<set order="0x40" stat="INT" val="21" />
+				<set order="0x40" stat="WIT" val="11" />
+				<set order="0x40" stat="MEN" val="25" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22194" levels="1" name="Transformation Scroll - Unicorn">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="hitTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="563;3;565;3;564;3;567;3;619;1;5491;1" />
+		<set name="npcId" val="13081" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="itemConsumeId" val="21175" />
+		<set name="itemConsumeCount" val="1" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="204">
+				<set order="0x40" stat="STR" val="36" />
+				<set order="0x40" stat="DEX" val="35" />
+				<set order="0x40" stat="CON" val="36" />
+				<set order="0x40" stat="INT" val="23" />
+				<set order="0x40" stat="WIT" val="14" />
+				<set order="0x40" stat="MEN" val="26" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22195" levels="1" name="Transformation Scroll - Lilim Knight">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="hitTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="568;3;569;3;570;3;571;3;619;1;5491;1" />
+		<set name="npcId" val="13082" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="itemConsumeId" val="21176" />
+		<set name="itemConsumeCount" val="1" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="207">
+				<set order="0x40" stat="STR" val="41" />
+				<set order="0x40" stat="DEX" val="34" />
+				<set order="0x40" stat="CON" val="32" />
+				<set order="0x40" stat="INT" val="25" />
+				<set order="0x40" stat="WIT" val="12" />
+				<set order="0x40" stat="MEN" val="26" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22196" levels="1" name="Transformation Scroll - Golem Guardian">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="hitTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="572;3;573;3;574;3;575;3;619;1;5491;1" />
+		<set name="npcId" val="13083" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="itemConsumeId" val="21177" />
+		<set name="itemConsumeCount" val="1" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="210">
+				<set order="0x40" stat="STR" val="39" />
+				<set order="0x40" stat="DEX" val="29" />
+				<set order="0x40" stat="CON" val="45" />
+				<set order="0x40" stat="INT" val="20" />
+				<set order="0x40" stat="WIT" val="10" />
+				<set order="0x40" stat="MEN" val="27" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22197" levels="1" name="Transformation Scroll - Inferno Drake">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="hitTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="576;3;577;3;578;3;579;3;619;1;5491;1" />
+		<set name="npcId" val="13084" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="itemConsumeId" val="21178" />
+		<set name="itemConsumeCount" val="1" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="213">
+				<set order="0x40" stat="STR" val="40" />
+				<set order="0x40" stat="DEX" val="26" />
+				<set order="0x40" stat="CON" val="47" />
+				<set order="0x40" stat="INT" val="18" />
+				<set order="0x40" stat="WIT" val="12" />
+				<set order="0x40" stat="MEN" val="27" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22198" levels="1" name="Transformation Scroll - Dragon Bomber">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="hitTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="580;3;581;3;582;3;583;3;619;1;5491;1" />
+		<set name="npcId" val="13085" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="itemConsumeId" val="21179" />
+		<set name="itemConsumeCount" val="1" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="216">
+				<set order="0x40" stat="STR" val="41" />
+				<set order="0x40" stat="DEX" val="33" />
+				<set order="0x40" stat="CON" val="31" />
+				<set order="0x40" stat="INT" val="29" />
+				<set order="0x40" stat="WIT" val="11" />
+				<set order="0x40" stat="MEN" val="25" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22199" levels="1" name="Transformation Scroll - Heretic">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="hitTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="738;3;741;3;739;3;740;3;619;1;5491;1" />
+		<set name="npcId" val="13106" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="itemConsumeId" val="21180" />
+		<set name="itemConsumeCount" val="1" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="3">
+				<set order="0x40" stat="STR" val="22" />
+				<set order="0x40" stat="DEX" val="21" />
+				<set order="0x40" stat="CON" val="27" />
+				<set order="0x40" stat="INT" val="41" />
+				<set order="0x40" stat="WIT" val="20" />
+				<set order="0x40" stat="MEN" val="39" />
+			</effect>
+		</for>
+	</skill>
+</list>

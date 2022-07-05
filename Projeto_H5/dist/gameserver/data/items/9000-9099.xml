@@ -1,0 +1,2149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <weapon id="9000" name="Shadow Item: Stormbringer*Stormbringer">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.time_weapon_dual_sword_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUAL"/>
+    <set name="weight" value="780"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="175"/>
+      <add stat="mAtk" order="0x10" value="78"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9001" name="Shadow Item: Great Sword">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_great_sword_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="650"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="91"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9002" name="Shadow Item: Heavy War Axe">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_heavy_war_axe_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="540"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="175"/>
+      <add stat="mAtk" order="0x10" value="91"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9003" name="Shadow Item: Sprite's Staff">
+    <set name="enchantable" value="false"/>
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_sprites_staff_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="320"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="170"/>
+      <add stat="mAtk" order="0x10" value="134"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9004" name="Shadow Item: Keshanberk">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_kshanberk_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="460"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="175"/>
+      <add stat="mAtk" order="0x10" value="91"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9005" name="Shadow Item: Sword of Valhalla">
+    <set name="enchantable" value="false"/>
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_sword_of_valhalla_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="140"/>
+      <add stat="mAtk" order="0x10" value="122"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9006" name="Shadow Item: Kris">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_kris_i00"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="330"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="153"/>
+      <add stat="mAtk" order="0x10" value="91"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9007" name="Shadow Item: Arthro Nail">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_arthro_nail_i00"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="480"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="91"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9008" name="Shadow Item: Dark Elven Long Bow">
+    <set name="enchantable" value="false"/>
+    <set name="atk_reuse" value="1500"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_dark_elven_long_bow_i00"/>
+    <set name="mp_consume" value="3"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="580"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="397"/>
+      <add stat="mAtk" order="0x10" value="100"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="227"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9009" name="Shadow Item: Sword of Delusion*Sword of Delusion">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.time_weapon_dual_sword_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUAL"/>
+    <set name="weight" value="720"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="91"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9010" name="Shadow Item: Great Axe">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_great_axe_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="650"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3599" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="175"/>
+      <add stat="mAtk" order="0x10" value="91"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9011" name="Shadow Item: Tallum Blade">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_tallum_blade_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="450"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9012" name="Shadow Item: Halberd">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_halbard_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="640"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3599" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9013" name="Shadow Item: Dasparion's Staff">
+    <set name="enchantable" value="false"/>
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_dasparions_staff_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="310"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="207"/>
+      <add stat="mAtk" order="0x10" value="157"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9014" name="Shadow Item: Bloody Orchid">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_bloody_orchid_i00"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="320"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="186"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9015" name="Shadow Item: Blood Tornado">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_blood_tornado_i00"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="460"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="259"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9016" name="Shadow Item: Carnage Bow">
+    <set name="enchantable" value="false"/>
+    <set name="atk_reuse" value="1500"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_carnium_bow_i00"/>
+    <set name="mp_consume" value="4"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="560"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="440"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="293"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9017" name="Shadow Item: Keshanberk*Keshanberk">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.time_weapon_dual_sword_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUAL"/>
+    <set name="weight" value="700"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="259"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9018" name="Shadow Item: Meteor Shower">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_meteor_shower_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="540"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9019" name="Shadow Item: Inferno Master">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_inferno_master_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="640"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="259"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9020" name="Shadow Item: Keshanberk*Damascus">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_dual_sword_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUAL"/>
+    <set name="weight" value="693"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3013" level="1"/>
+    <!--Special Ability: Health-->
+    <for>
+      <add stat="pAtk" order="0x10" value="275"/>
+      <add stat="mAtk" order="0x10" value="112"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9021" name="Shadow Item: Dragon Slayer">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_dragon_slayer_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="613"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="282"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9022" name="Shadow Item: Sword of Miracles">
+    <set name="enchantable" value="false"/>
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_sword_of_miracle_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="280"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="186"/>
+      <add stat="mAtk" order="0x10" value="152"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9023" name="Shadow Item: Elysian">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_elysian_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="527"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="232"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9024" name="Shadow Item: Branch of the Mother Tree">
+    <set name="enchantable" value="false"/>
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_worldtrees_branch_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="300"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="226"/>
+      <add stat="mAtk" order="0x10" value="167"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9025" name="Shadow Item: Soul Separator">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_soul_separator_i00"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="317"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="203"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9026" name="Shadow Item: Dragon Grinder">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_dragon_grinder_i00"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="450"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="282"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9027" name="Shadow Item: Soul Bow">
+    <set name="enchantable" value="false"/>
+    <set name="atk_reuse" value="1500"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_soul_bow_i00"/>
+    <set name="mp_consume" value="5"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="553"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="528"/>
+      <add stat="mAtk" order="0x10" value="125"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="227"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9028" name="Shadow Item: Tallum Glaive">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_tallum_glaive_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="613"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3599" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="232"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9029" name="Shadow Item: Dark Legion">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.weapon_dark_legions_edge_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="440"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="232"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <armor id="9030" name="Shadow Item: Bronze Breastplate">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t34_u_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="2973"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="68"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9031" name="Shadow Item: Bronze Gaiters">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t34_l_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="1320"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="43"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9032" name="Shadow Item: Hard Leather Shirt">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t30_u_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1573"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="53"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9033" name="Shadow Item: Hard Leather Gaiters">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t30_l_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="537"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="33"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9034" name="Shadow Item: Tunic of Magic">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t58_u_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="693"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="34"/>
+      <add stat="maxMp" order="0x60" value="86"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9035" name="Shadow Item: Stockings of Magic">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t58_l_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="343"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="21"/>
+      <add stat="maxMp" order="0x60" value="54"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="9036" name="Shadow Item: Bone Shield">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.shield_bone_shield_i00"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="460"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="90"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="9037" name="Shadow Item: Hard Leather Helmet">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="213"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="26"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9038" name="Shadow Item: Boots">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t30_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="437"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="17"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9039" name="Shadow Item: Bracer">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t30_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="217"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="17"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9040" name="Shadow Item: Mithril Breastplate">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t19_u_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="2890"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="95"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9041" name="Shadow Item: Mithril Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t19_l_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="1277"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="61"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9042" name="Shadow Item: Gauntlet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t10_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="213"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9043" name="Shadow Item: Iron Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t10_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="427"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="9044" name="Shadow Item: Hoplon">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.shield_hoplon_i00"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="447"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="128"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="9045" name="Shadow Item: Reinforced Leather Shirt">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t13_u_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1523"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9046" name="Shadow Item: Reinforced Leather Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t13_l_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="523"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="46"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9047" name="Shadow Item: Reinforced Leather Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t13_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="213"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9048" name="Shadow Item: Reinforced Leather Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t13_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="427"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9049" name="Shadow Item: Tunic of Knowledge">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t41_u_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="673"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="49"/>
+      <add stat="maxMp" order="0x60" value="147"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9050" name="Shadow Item: Stockings of Knowledge">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t41_l_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="333"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="30"/>
+      <add stat="maxMp" order="0x60" value="92"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9051" name="Shadow Item: Gloves of Knowledge">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t41_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="213"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9052" name="Shadow Item: Boots of Knowledge">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t41_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="423"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9053" name="Shadow Item: Helmet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_helmet_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="213"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="37"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9054" name="Shadow Item: Composite Armor">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t61_ul_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="3660"/>
+    <equip>
+      <slot id="FULL_ARMOR"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="224"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9055" name="Shadow Item: Composite Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t61_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="407"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="36"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="9056" name="Shadow Item: Composite Shield">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.shield_composite_shield_i00"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="410"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="190"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="9057" name="Shadow Item: Composite Helmet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="203"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="54"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9058" name="Shadow Item: Theca Leather Armor">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t63_u_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1457"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="106"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9059" name="Shadow Item: Theca Leather Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t63_l_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="510"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="66"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9060" name="Shadow Item: Theca Leather Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t63_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="403"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="37"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9061" name="Shadow Item: Theca Leather Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t63_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="200"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="37"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9062" name="Shadow Item: Demon's Tunic">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t54_u_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="663"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="69"/>
+      <add stat="maxMp" order="0x60" value="284"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9063" name="Shadow Item: Demon's Stockings">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t54_l_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="327"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="43"/>
+      <add stat="maxMp" order="0x60" value="177"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9064" name="Shadow Item: Demon's Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t54_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="407"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="36"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9065" name="Shadow Item: Demon's Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t54_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="203"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="36"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9066" name="Shadow Item: Shining Circlet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_circlet_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="200"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="54"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9067" name="Shadow Item: Zubei's Breastplate">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t64_u_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="2657"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="157"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9068" name="Shadow Item: Zubei's Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t64_l_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="1190"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="98"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9069" name="Shadow Item: Zubei's Helmet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_helmet_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="197"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="62"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="9070" name="Shadow Item: Zubei's Shield">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.shield_shrnoens_shield_i00"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="403"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="216"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="9071" name="Shadow Item: Zubei's Gauntlet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t64_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="197"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="41"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9072" name="Shadow Item: Zubei's Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t64_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="393"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="41"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9073" name="Shadow Item: Zubei's Leather Shirt">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t65_u_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1443"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="117"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9074" name="Shadow Item: Zubei's Leather Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t65_l_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="493"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9075" name="Shadow Item: Zubei's Gauntlet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t65_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="197"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="41"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9076" name="Shadow Item: Zubei's Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t65_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="393"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="41"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9077" name="Shadow Item: Tunic of Zubei">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t56_u_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="653"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="78"/>
+      <add stat="maxMp" order="0x60" value="345"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9078" name="Shadow Item: Stockings of Zubei">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t56_l_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="313"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="49"/>
+      <add stat="maxMp" order="0x60" value="216"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9079" name="Shadow Item: Zubei's Gauntlet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t56_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="197"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="41"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9080" name="Shadow Item: Zubei's Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t56_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="393"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="41"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9081" name="Shadow Item: Dark Crystal Breastplate">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t74_u_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="2567"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="171"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9082" name="Shadow Item: Dark Crystal Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t74_l_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="1107"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="107"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9083" name="Shadow Item: Dark Crystal Helmet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_helmet_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="190"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="69"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="9084" name="Shadow Item: Dark Crystal Shield">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.shield_dark_crystal_shield_i00"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="397"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="243"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="9085" name="Shadow Item: Dark Crystal Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t74_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="193"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="46"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9086" name="Shadow Item: Dark Crystal Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t74_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="370"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="46"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9087" name="Shadow Item: Dark Crystal Leather Armor">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t75_u_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1433"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="128"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9088" name="Shadow Item: Dark Crystal Leggings">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t75_l_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="493"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="80"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9089" name="Shadow Item: Dark Crystal Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t75_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="193"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="46"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9090" name="Shadow Item: Dark Crystal Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t75_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="370"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="46"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9091" name="Shadow Item: Dark Crystal Robe">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t76_ul_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="817"/>
+    <equip>
+      <slot id="FULL_ARMOR"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="139"/>
+      <add stat="maxMp" order="0x60" value="665"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9092" name="Shadow Item: Dark Crystal Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t76_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="193"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="46"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9093" name="Shadow Item: Dark Crystal Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t76_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="370"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="46"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9094" name="Shadow Item: Majestic Plate Armor">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t83_ul_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="3067"/>
+    <equip>
+      <slot id="FULL_ARMOR"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="293"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9095" name="Shadow Item: Majestic Circlet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="183"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9096" name="Shadow Item: Majestic Gauntlet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t83_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="180"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="49"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9097" name="Shadow Item: Majestic Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t83_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="370"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="49"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9098" name="Shadow Item: Majestic Leather Armor">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t84_ul_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1783"/>
+    <equip>
+      <slot id="FULL_ARMOR"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="220"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="9099" name="Shadow Item: Majestic Gauntlet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t84_g_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="180"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="49"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+</list>

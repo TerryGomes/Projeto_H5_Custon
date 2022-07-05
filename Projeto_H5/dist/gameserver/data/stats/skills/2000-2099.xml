@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="2001" levels="1" name="Red Potion">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="1" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="1073" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="5" name="HealOverTime" stackOrder="1" stackType="HpRecoverCast" time="3" val="25.6" />
+		</for>
+	</skill>
+	<skill id="2002" levels="1" name="Healing drug">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="1" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="725" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="5" name="HealOverTime" stackOrder="1" stackType="HpRecoverCast" time="3" val="25.6" />
+		</for>
+	</skill>
+	<skill id="2003" levels="1" name="Squash Seed">
+		<table name="#mot">1.5</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="power" val="5000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="1500" />
+		<set name="itemConsumeId" val="726" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="MANAHEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2004" levels="1" name="Large Squash Seed">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="1500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2005" levels="1" name="Nectar">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="1000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="200" />
+		<set name="itemConsumeId" val="6391" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2006" levels="1" name="Scroll: Enchant Weapon (Grade A)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="ENCHANT_WEAPON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2007" levels="1" name="Scroll: Enchant Armor (Grade A)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="ENCHANT_ARMOR" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2008" levels="1" name="Item - Beast Spirit Shot">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2009" levels="1" name="Item - Beast Blessed Spirit Shot">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2010" levels="1" name="Endeavor potion">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="733" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" time="300" val="0" stackOrder="3" stackType="accuracyUp">
+				<add order="0x40" stat="accCombat" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2011" levels="1" name="Haste Potion">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_potion_green_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="734" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="SpeedUp" time="1200" val="0">
+				<add order="0x40" stat="runSpd" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2012" levels="1" name="Potion of Alacrity">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_reagent_green_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="735" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="pAtkSpeedUp" time="1200" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2013" levels="1" name="Scroll of escape">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="20000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="736" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="RECALL" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2014" levels="1" name="Scroll of resurrection">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="15000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="737" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_CORPSE_PLAYER" />
+		<set name="corpse" val="true" />
+		<set name="skillType" val="RESURRECT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="canPet" val="true" />
+	</skill>
+	<skill id="2015" levels="1" name="Scroll: Enchant Weapon (Grade B)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="ENCHANT_WEAPON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2016" levels="1" name="Scroll: Enchant Armor (Grade B)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="ENCHANT_ARMOR" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2017" levels="1" name="Scroll: Enchant Weapon (Grade C)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="ENCHANT_WEAPON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2018" levels="1" name="Scroll: Enchant Armor (Grade C)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="ENCHANT_ARMOR" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2019" levels="1" name="Scroll: Enchant Weapon (Grade D)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="ENCHANT_WEAPON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2020" levels="1" name="Scroll: Enchant Armor (Grade D)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="ENCHANT_ARMOR" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2021" levels="1" name="Scroll: Enchant Weapon (Grade S)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="ENCHANT_WEAPON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2022" levels="1" name="Scroll: Enchant Armor (Grade S)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="ENCHANT_ARMOR" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2023" levels="1" name="Star Shard">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="700" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="6403" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2024" levels="1" name="Firework">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="1500" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="6406" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2025" levels="1" name="Large Firework">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="6407" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2026" levels="1" name="Scroll: Enchant Weapon (Grade S)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2027" levels="1" name="Scroll: Enchant Weapon (Grade A)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2028" levels="1" name="Scroll: Enchant Weapon (Grade B)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2029" levels="1" name="Scroll: Enchant Weapon (Grade C)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2030" levels="1" name="Scroll: Enchant Weapon (Grade D)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_ITEM" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2031" levels="1" name="Lesser healing potion">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_lesser_potion_red_i00" />
+		<set name="power" val="1" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="1060" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="5" name="HealOverTime" stackOrder="1" stackType="HpRecoverCast" time="3" val="25.6" />
+		</for>
+	</skill>
+	<skill id="2032" levels="1" name="Healing potion">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_potion_scarlet_i00" />
+		<set name="power" val="2" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="1061" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="5" name="HealOverTime" stackOrder="5" stackType="HpRecoverCast" time="3" val="72" />
+		</for>
+	</skill>
+	<skill id="2033" levels="1" name="Item - Beast Soul Shot">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="1062" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="SpeedUp" time="1200" val="0">
+				<add order="0x40" stat="runSpd" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2034" levels="1" name="Greater Haste Potion">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_lesser_potion_green_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="1374" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="SpeedUp" time="1200" val="0">
+				<add order="0x40" stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2035" levels="1" name="Greater Swift Attack Potion">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_lesser_potion_purple_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="1375" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="pAtkSpeedUp" time="1200" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2036" levels="2" name="Blessed scroll of escape">
+		<table name="#itemConsumeId">1538 3958</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="200" />
+		<set name="itemConsumeId" val="#itemConsumeId" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="RECALL" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2037" levels="1" name="Greater healing potion">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_reagent_white_i00" />
+		<set name="power" val="3" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="1539" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="5" name="HealOverTime" stackOrder="19" stackType="HpRecoverCast" time="3" val="150" />
+		</for>
+	</skill>
+	<skill id="2038" levels="2" name="Quick healing potion">
+        <table name="#power">435 550</table>
+        <table name="#val">1 0</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="1540" />
+		<set name="itemConsumeCount" val="#val" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2039" levels="1" name="Soulshot: No Grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SOULSHOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2040" levels="1" name="Scroll of Escape: Clan Hall">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="20000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="1829" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="clanhall" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="RECALL" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2041" levels="1" name="Scroll of Escape: Castle">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="20000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="1830" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="castle" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="RECALL" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2042" levels="1" name="Antidote">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="1831" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="NEGATE_EFFECTS" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="negateEffects" val="Poison:3" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2043" levels="1" name="Greater Antidote">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="1832" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="NEGATE_EFFECTS" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="negateEffects" val="Poison:7" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2044" levels="1" name="Bandage">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="1833" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="NEGATE_EFFECTS" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="negateEffects" val="Bleed:3" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2045" levels="1" name="Emergency dressing">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="1834" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="NEGATE_EFFECTS" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="negateEffects" val="Bleed:7" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2046" levels="1" name="Wolves' necklace">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="5000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="PET_SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2047" levels="1" name="Spiritshot: No Grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SPIRITSHOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2048" levels="1" name="Wolves' food">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="FEED_PET" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2049" levels="1" name="Blessed scroll of resurrection">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="100" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="3936" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_CORPSE_PLAYER" />
+		<set name="corpse" val="true" />
+		<set name="skillType" val="RESURRECT" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2050" levels="1" name="Scroll of Guidance">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="3926" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="accuracyUp" time="3600" val="0">
+				<add order="0x40" stat="accCombat" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2051" levels="1" name="Scroll of Death Whisper">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="3927" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="cAtk" time="3600" val="0">
+				<mul order="0x30" stat="cAtk" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2052" levels="1" name="Scroll of Focus">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="3928" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="rCrit" time="3600" val="0">
+				<add order="0x40" stat="rCrit" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2053" levels="1" name="Scroll of Greater Acumen">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="3929" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mAtkSpeedUp" time="3600" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2054" levels="1" name="Scroll of Haste">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="3930" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="pAtkSpeedUp" time="3600" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2055" levels="1" name="Scroll of Agility">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="3931" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="rEvas" time="3600" val="0">
+				<add order="0x40" stat="rEvas" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2056" levels="1" name="Scroll of Mystic Empower">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="3932" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mAtk" time="3600" val="0">
+				<mul order="0x30" stat="mAtk" val="1.75" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2057" levels="1" name="Scroll of Might">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="3933" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtk" time="3600" val="0">
+				<mul order="0x30" stat="pAtk" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2058" levels="1" name="Scroll of Wind Walk">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="3934" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="SpeedUp" time="3600" val="0">
+				<add order="0x40" stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2059" levels="1" name="Scroll of Shield">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="3935" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pDef" time="3600" val="0">
+				<mul order="0x30" stat="pDef" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2060" levels="1" name="Healing Medicine">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="3889" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="NEGATE_EFFECTS" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="negateEffects" val="Poison:9;Root:9" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2061" levels="1" name="Blessed Spiritshot: No Grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="isHandler" val="true" />
+		<set name="skillType" val="SPIRITSHOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2062" levels="1" name="Blessed Scroll of Resurrection">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="100" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="3959" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_CORPSE_PLAYER" />
+		<set name="corpse" val="true" />
+		<set name="skillType" val="RESURRECT" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2063" levels="1" name="Hatchling Food">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="FEED_PET" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2064" levels="1" name="Scroll of Mana Regeneration">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_scroll_white_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="4218" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="4" stackType="mpregen" time="3600" val="0">
+				<mul order="0x30" stat="regMp" val="1.4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2065" levels="8" name="Box Key">
+		<table name="#itemConsumeId">6665 6666 6667 6668 6669 6670 6671 6672</table>
+		<table name="#magicLevel">1 10 20 30 40 50 60 70</table>
+		<table name="#unlockPower">19 29 39 49 59 69 79 89</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="unlockPower" val="#unlockPower" />
+		<set name="hitTime" val="500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="activateRate" val="100" />
+		<set name="itemConsumeId" val="#itemConsumeId" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_CHEST" />
+		<set name="skillType" val="UNLOCK" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2066" levels="1" name="Item - Theme Sound Crystal">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5010" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2067" levels="1" name="Item - Theme Sound Crystal">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="4417" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2068" levels="1" name="Item - Race Sound Crystal">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="4412" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2069" levels="1" name="Item - Race Sound Crystal">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="4411" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2070" levels="1" name="Item - Race Sound Crystal">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="4413" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2071" levels="1" name="Item - Race Sound Crystal">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="4415" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2072" levels="1" name="Item - Race Sound Crystal">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="4414" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2073" levels="2" name="Item - Theme Sound Crystal">
+		<table name="#itemConsumeId">4416 7061</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="#itemConsumeId" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="displayLevel" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2074" levels="1" name="Potion of Critical Escape">
+		<!--
+			Last modify:	04.05.2009
+
+			Description: Misdirects enemy attack and slows Speed of user.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="affectLimit" val="9;10" />
+		<set name="icon" val="icon.etc_potion_red_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="600" />
+		<set name="itemConsumeId" val="4677" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="effectPoint" val="1000" />
+		<set name="target" val="TARGET_AREA" />
+		<set name="skillRadius" val="200" />
+		<set name="skillType" val="AGGRESSION" />
+		<set name="unaggroing" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<for>
+			<effect count="1" name="Buff" time="10" val="0">
+				<mul order="0x50" stat="runSpd" val="0.7" />
+			</effect>
+			<effect count="1" name="RandomHate" stackOrder="-1" stackType="RandomHate" time="0" val="0" chance="100" />
+		</for>
+	</skill>
+	<skill id="2075" levels="1" name="Decrease Hate Scroll">
+		<!--
+			Last modify:	04.05.2009
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="600" />
+		<set name="itemConsumeId" val="4678" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="activateRate" val="70" />
+		<set name="skillType" val="DELETE_HATE_OF_ME" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2076" levels="1" name="Bless of Eva">
+		<!--
+			Last modify:	04.05.2009
+
+			Description: Increase lung capacity. Effect 1.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_bless_of_eva_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="4679" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="Breath" time="1200" val="0">
+				<mul order="0x30" stat="breath" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2077" levels="1" name="Potion of Revenge">
+		<!--
+			Last modify:	04.05.2009
+
+			Description: Lowers user's P. Def. and reflects a certain amount of damage back to the enemy, excluding damage from skill use or remote attacks. Effect 3.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_potion_blue_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="4680" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="DmgShield" time="30" val="0">
+				<add order="0x40" stat="reflectDam" val="20" />
+				<mul order="0x50" stat="pDef" val="0.83" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2078" levels="1" name="Compressed Package of Soulshots: No Grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5134" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="1835" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2079" levels="1" name="Compressed Package of Soulshots: D-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5135" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="1463" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2080" levels="1" name="Compressed Package of Soulshots: C-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5136" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="1464" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2081" levels="1" name="Compressed Package of Soulshots: B-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5137" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="1465" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2082" levels="1" name="Compressed Package of Soulshots: A-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5138" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="1466" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2083" levels="1" name="Compressed Package of Soulshots: S-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5139" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="1467" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2084" levels="1" name="Compressed Package of Spiritshots: No Grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5140" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="2509" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2085" levels="1" name="Compressed Package of Spiritshots: D-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5141" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="2510" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2086" levels="1" name="Compressed Package of Spiritshots: C-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5142" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="2511" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2087" levels="1" name="Compressed Package of Spiritshots: B-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5143" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="2512" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2088" levels="1" name="Compressed Package of Spiritshots: A-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5144" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="2513" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2089" levels="1" name="Compressed Package of Spiritshots: S-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5145" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="2514" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2090" levels="1" name="Compressed Package of Blessed Spiritshots: No Grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5146" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="3947" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2091" levels="1" name="Compressed Package of Blessed Spiritshots: D-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5147" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="3948" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2092" levels="1" name="Compressed Package of Blessed Spiritshots: C-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5148" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="3949" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2093" levels="1" name="Compressed Package of Blessed Spiritshots: B-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5149" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="3950" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2094" levels="1" name="Compressed Package of Blessed Spiritshots: A-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5150" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="3951" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2095" levels="1" name="Compressed Package of Blessed Spiritshots: S-grade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="5151" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="SummonItemId" val="3952" />
+		<set name="SummonMinCount" val="300" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2096" levels="1" name="Soul Crystal">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="300" />
+		<set name="hitTime" val="1200" />
+		<set name="mpConsume1" val="6" />
+		<set name="mpConsume2" val="20" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DRAIN_SOUL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="displayId" val="2096" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2097" levels="3" name="Sowing">
+		<table name="#mpConsume2">4 6 8</table>
+		<table name="#magicLevel">10 20 30</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="150" />
+		<set name="hitTime" val="1800" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="SOWING" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="nextAction" val="attack" />
+	</skill>
+	<skill id="2098" levels="1" name="Harvesting">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="1000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="20" />
+		<set name="hitTime" val="500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="3" />
+		<set name="target" val="TARGET_CORPSE" />
+		<set name="corpse" val="true" />
+		<set name="skillType" val="HARVESTING" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2099" levels="1" name="Escape: 30 Seconds">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="30000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="RECALL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+</list>

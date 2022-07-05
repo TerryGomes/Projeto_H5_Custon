@@ -1,0 +1,32 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Town of Dion: NPC Pathfinder (Level 35) -->
+	<instance id="48" name="Kamaloka, Hall of the Nightmares" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="30" max="40"/>
+		<party min="1" max="1"/>
+		<teleport loc="22742 -220079 -7800"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="true" sharedReuseGroup="2"/>
+		<add_parameters>
+			<param name="pathfinder_loc" value="23479 -220080 -7800"/>
+			<param name="reward_lvl_0" value="13002-4"/>
+			<param name="reward_lvl_1" value="13002-4;10840-1"/>
+			<param name="reward_lvl_2" value="13002-4;10841-1"/>
+			<param name="reward_lvl_3" value="13002-4;10842-1"/>
+			<param name="reward_lvl_4" value="13002-4;10843-1"/>
+			<param name="reward_lvl_5" value="13002-4;10844-1"/>
+		</add_parameters>
+		<spawns>
+			<!-- Rotten Kanabion -->
+			<spawn mobId="22458" count="4" respawn="30" type="loc">
+				<coords loc="22744 -220808 -7800 -7800"/>
+				<coords loc="24216 -220808 -7800 -7800"/>
+				<coords loc="24216 -219352 -7800 -7800"/>
+				<coords loc="22744 -219352 -7800 -7800"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

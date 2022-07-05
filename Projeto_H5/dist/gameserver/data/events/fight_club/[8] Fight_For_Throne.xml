@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "../events.dtd">
+<list>
+	<event id="8" name="Fight For Throne" type="FIGHT_CLUB_EVENT" impl="fightclub.FightForThrone">
+		<parameter name="icon" value="BranchSys2.the_fall_of_dragon"/>
+		<parameter name="desc" value="Team Event. Protect the Castle from the Invaders and don't let them engrave the Seal of Ruler or Castle Throne will be theirs. Every invader is able to cast the Spell. Team which will possess the Castle after 10 minutes, will win the Event."/>
+		<parameter name="roundRunTime" value="900"/>
+		<parameter name="roundEvent" value="false"/>
+		<parameter name="isAutoTimed" value="true"/>
+		<parameter name="autoTimes" value="06:00,14:00,22:00"/>
+		<parameter name="teamed" value="true"/>
+		<parameter name="buffer" value="true"/>
+		<parameter name="fighterBuffs" value="1204,2;1086,2;1068,3;1045,6;1048,6;1040,3;1062,2;1036,2"/>
+		<parameter name="mageBuffs" value="1204,2;1085,3;1059,3;1045,6;1048,6;1040,3;1062,2;1036,2"/>
+		<parameter name="rootBetweenRounds" value="true"/>
+		<parameter name="excludedClasses" value=""/>
+		<parameter name="respawnTime" value="5"/>
+		<parameter name="respawnTime_DEFENDER" value="15"/>
+		<parameter name="ressAllowed" value="false"/>
+		<parameter name="showPersonality" value="true"/>
+		<parameter name="badgesKillPlayer" value="0"/>
+		<parameter name="badgesKillPet" value="0"/>
+		<parameter name="badgesDie" value="0"/>
+		<parameter name="badgesWin" value="6"/>
+		<parameter name="badgesLose" value="2"/>
+		<parameter name="topKillerReward" value="3"/>
+
+		<parameter name="respawnAfterTowersDestroyed" value="40"/>
+		<parameter name="sealOfRulerId" value="246"/>
+		<parameter name="sealOfRulerHitTime" value="30000"/>
+		<parameter name="bothTeamsAttackOnStart" value="true"/>
+		<parameter name="spawnGuardsOnNoDefenders" value="true"/>
+		<parameter name="spawnGuardsNearDefenders" value="true"/>
+	</event>
+</list>

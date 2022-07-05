@@ -1,0 +1,1547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="2600" levels="1" name="Gran Kain's Echo Crystal - Theme of Solitude">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2601" levels="1" name="Gran Kain's Echo Crystal - Theme of the Feast">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2602" levels="1" name="Gran Kain's Echo Crystal - Theme of Celebration">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2603" levels="1" name="Gran Kain's Echo Crystal - Theme of Comedy">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2604" levels="1" name="Gran Kain's Firework">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="1500" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2605" levels="1" name="Gran Kain's Large Firework">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2606" levels="1" name="Gran Kain's Gift Box">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="86400000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2607" levels="1" name="Pailaka Door Key">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="HARDCODED" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2608" levels="3" name="Blue Crystal of Fantasy">
+		<!--.
+			Last modify:	19.11.2008
+			Description:	1 level - 50000, 2 level - 100000, 3 level - 200000.
+		-->
+		<table name="#item">13386 13387 13388</table>
+		<table name="#power">50000 100000 200000</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="200" />
+		<set name="itemConsumeId" val="#item" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SPHEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2609" levels="20" name="Escape - Talking Island Village">
+		<!--.
+			Last modify:	20.11.2008
+		-->
+		<table name="#itemConsumeId">13395 13396 13397 13398 13399 13400 13401 13402 13403 13404 13405 13406 13407 13408 13409 13410 13411 13412 13413 13414</table>
+		<table name="#townId">1 2 3 4 5 7 6 8 19 9 9 13 10 10 12 11 15 14 16 17</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="20000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="townId" val="#townId" />
+		<set name="itemConsumeId" val="#itemConsumeId" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="RECALL" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2610" levels="1" name="Register Bookmark (Event)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2611" levels="1" name="Large Firework">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2612" levels="1" name="Large Firework">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2613" levels="1" name="Large Firework">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2614" levels="1" name="Large Firework">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2615" levels="1" name="Destroyed Darkness Fragment Powder">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2616" levels="1" name="Bond Sealant">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2617" levels="1" name="Stun Planter">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2618" levels="1" name="Stun Land Mine">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2619" levels="1" name="Extra Entrance Pass - Kamaloka (Hall of the Abyss) (Event)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2620" levels="1" name="Extra Entrance Pass - Near Kamaloka (Event)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2621" levels="1" name="Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) (Event)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2622" levels="1" name="Summon Life-size Decoy">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="15" />
+		<set name="mpConsume2" val="60" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2623" levels="1" name="Alkaline Therapy">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_potion_of_acumen2_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2624" levels="1" name="Life Aid Banding">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_piece_of_cloth_white_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2625" levels="1" name="Enbalming">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2626" levels="1" name="Lighting Incense">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2627" levels="1" name="Elixir Miracle">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2628" levels="1" name="Structure Scarab">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_beetle_i00" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2629" levels="1" name="Ancient Treasure Sack">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2630" levels="1" name="Presentation - Collect Items">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="6000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="13844" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="skillType" val="EXTRACT_STONE" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="flyingTransformUsage" val="true" />
+		<set name="npcIds" val="18684;18685;18686;18687;18688;18689;18690;18691;18692" />
+	</skill>
+	<skill id="2631" levels="1" name="Scroll of Transformation - Frog">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+	</skill>
+	<skill id="2632" levels="1" name="Scroll of Transformation - Young Child">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2633" levels="1" name="Elmore-Aden's Holy Water">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2634" levels="1" name="Court Magician's Blessing">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2635" levels="1" name="Blessing of Fire">
+		<!--
+			Last modify:	04.08.2009
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="magicLevel" val="25" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" time="600" val="0">
+				<add order="0x60" stat="attackFire" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2636" levels="1" name="Blessing of Earth">
+		<!--
+			Last modify:	04.08.2009
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="10000" />
+		<set name="magicLevel" val="25" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" time="600" val="0">
+				<add order="0x60" stat="attackEarth" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2637" levels="1" name="Scroll: Enchant Weapon (Event)">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2638" levels="1" name="Five-year anniversary event box">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2639" levels="1" name="Five-year anniversary event box">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2640" levels="1" name="Five-year anniversary event box">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2641" levels="1" name="Five-Year Anniversary Event Box">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2642" levels="1" name="Five-Year Anniversary Event Box">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2643" levels="1" name="Five-Year Anniversary Event Box">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2644" levels="1" name="Five-Year Anniversary Event Box">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2645" levels="1" name="Multi-Colored Rice Cake">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2646" levels="1" name="Honey Wheat Cake">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="100" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="16421" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<!-- Dafault: 100% = 20000 points -->
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="VITALITY_HEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2647" levels="1" name="Energy Star Stone" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="25" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="13277" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="altUse" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="REFILL" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2648" levels="1" name="High Quality Energy Star Stone" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2649" levels="9" name="Escape - Gludin Village" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="200" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2650" levels="1" name="Summon Imperial Phoenix" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2651" levels="1" name="Deflect Magic" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2652" levels="1" name="Song of Purification" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2653" levels="1" name="Dance of Berserker" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2654" levels="1" name="Final Circlet" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2655" levels="1" name="Maximum Force Focus" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2656" levels="1" name="Maximum Sonic Focus" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2657" levels="1" name="Hide" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2658" levels="1" name="Dual Dagger Mastery" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2659" levels="1" name="Seven Arrow" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2660" levels="1" name="Enlightenment" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2661" levels="1" name="Enlightenment" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2662" levels="1" name="Chant of Movement" >
+		<!--
+			Description: Combines a party member's moving speed increase and evasion increase effects for a more advanced movement increase effect. For 40 minutes, increases moving speed by 33% and evasion by 4.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="72" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_PARTY" />
+		<set name="skillRadius" val="900" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="10" stackType="SpeedUp" stackType2="rEvas" time="2400" val="0">
+				<add order="0x40" stat="runSpd" val="33" />
+				<add order="0x40" stat="rEvas" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2663" levels="1" name="Combat of Pa'agrio" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="70" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2664" levels="1" name="Critical of Pa'agrio" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="74" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2665" levels="1" name="Condition of Pa'agrio" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="72" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2666" levels="1" name="Duel Blow" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2667" levels="1" name="Spirit of the Cat" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2668" levels="1" name="Spirit of the Phantom" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2669" levels="1" name="Spirit of the Unicorn" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="81" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2670" levels="1" name="Scroll of Transformation - Red" >
+		<!--  Automatically generated from The Gracia Final client files.
+		      Description: Transforms caster into a member of the red team.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-4-2009  22:35
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2671" levels="1" name="Scroll of Transformation - Blue" >
+		<!--  Automatically generated from The Gracia Final client files.
+		      Description: Transforms caster into a member of the blue team.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 16-4-2009  22:35
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform3" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2672" levels="1" name="Gludio Human Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a human mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13569" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="npcId" val="13169" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="10" />
+		</for>
+	</skill>
+	<skill id="2673" levels="1" name="Gludio Elf Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into an Elf mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13570" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13170" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="11" />
+		</for>
+	</skill>
+	<skill id="2674" levels="1" name="Gludio Dark Elf Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Dark Elf mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13571" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13171" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="12" />
+		</for>
+	</skill>
+	<skill id="2675" levels="1" name="Gludio Orc Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into an Orc mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13572" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13172" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="13" />
+		</for>
+	</skill>
+	<skill id="2676" levels="1" name="Gludio Dwarf Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Dwarf mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13573" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13173" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="14" />
+		</for>
+	</skill>
+	<skill id="2677" levels="1" name="Gludio Kamael Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Kamael mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13574" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13174" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="15" />
+		</for>
+	</skill>
+	<skill id="2678" levels="1" name="Gludio Royal Guard Captain" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Royal Guard Captain.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13575" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13175" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="16" />
+		</for>
+	</skill>
+	<skill id="2679" levels="1" name="Gludio Archer Captain" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into an Archer Captain.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13576" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13176" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="17" />
+		</for>
+	</skill>
+	<skill id="2680" levels="1" name="Gludio Magic Leader" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Magic Leader.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13577" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13177" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="18" />
+		</for>
+	</skill>
+	<skill id="2681" levels="1" name="Gludio Kamael Guard Captain" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Kamael guard captain.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13578" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13178" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="19" />
+		</for>
+	</skill>
+	<skill id="2682" levels="1" name="Gludio Knight of Dawn" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Knight of Dawn.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13579" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13179" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="20" />
+		</for>
+	</skill>
+	<skill id="2683" levels="1" name="Gludio Fortress Captain" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Fortress Captain.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13580" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13180" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="21" />
+		</for>
+	</skill>
+	<skill id="2684" levels="1" name="Dion Human Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a human mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13581" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13169" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="10" />
+		</for>
+	</skill>
+	<skill id="2685" levels="1" name="Dion Elf Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into an Elf mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13582" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13170" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="11" />
+		</for>
+	</skill>
+	<skill id="2686" levels="1" name="Dion Dark Elf Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Dark Elf mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13583" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13171" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="12" />
+		</for>
+	</skill>
+	<skill id="2687" levels="1" name="Dion Orc Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into an Orc mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13584" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13172" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="13" />
+		</for>
+	</skill>
+	<skill id="2688" levels="1" name="Dion Dwarf Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Dwarf mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13585" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13173" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="14" />
+		</for>
+	</skill>
+	<skill id="2689" levels="1" name="Dion Kamael Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Kamael mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13586" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13174" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="15" />
+		</for>
+	</skill>
+	<skill id="2690" levels="1" name="Dion Royal Guard Captain" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Royal Guard Captain.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13587" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13175" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="16" />
+		</for>
+	</skill>
+	<skill id="2691" levels="1" name="Dion Archer Captain" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into an Archer Captain.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13588" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13176" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="17" />
+		</for>
+	</skill>
+	<skill id="2692" levels="1" name="Dion Magic Leader" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Magic Leader.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13589" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13177" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="18" />
+		</for>
+	</skill>
+	<skill id="2693" levels="1" name="Dion Kamael Guard Captain" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Kamael guard captain.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13590" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13178" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="19" />
+		</for>
+	</skill>
+	<skill id="2694" levels="1" name="Dion Knight of Dawn" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Knight of Dawn.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13591" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13179" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="20" />
+		</for>
+	</skill>
+	<skill id="2695" levels="1" name="Dion Fortress Captain" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Fortress Captain.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13592" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13180" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="21" />
+		</for>
+	</skill>
+	<skill id="2696" levels="1" name="Giran Human Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a human mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13593" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13169" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="10" />
+		</for>
+	</skill>
+	<skill id="2697" levels="1" name="Giran Elf Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into an Elf mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13594" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13170" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="11" />
+		</for>
+	</skill>
+	<skill id="2698" levels="1" name="Giran Dark Elf Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into a Dark Elf mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13595" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13171" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="12" />
+		</for>
+	</skill>
+	<skill id="2699" levels="1" name="Giran Orc Mercenary" >
+		<!--
+		      Last modify: 24.05.2009
+
+		      Description: Transforms into an Orc mercenary.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="2500" />
+		<set name="mpConsume2" val="31" />
+		<set name="itemConsumeId" val="13596" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="619;1;5491;1" />
+		<set name="npcId" val="13172" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<cond msgId="2955">
+			<zone type="SIEGE" /> <!-- TODO: Territory -->
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="13" />
+		</for>
+	</skill>
+</list>

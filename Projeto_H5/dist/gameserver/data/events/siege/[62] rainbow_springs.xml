@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "events.dtd">
+<list>
+	<event id="62" name="Rainbow Springs" type="SIEGE_EVENT" impl="ClanHallMiniGame">
+		<parameter name="day_of_weak" value="6"/>
+		<parameter name="hour_of_day" value="22"/>
+		<on_init>
+			<start name="registration"/>
+			<spawn name="coordinator"/>
+			<init name="zone_0" />
+			<init name="zone_1" />
+			<init name="zone_2" />
+			<init name="zone_3" />
+			<init name="restart_zone" />
+		</on_init>
+		<on_start/>
+		<on_stop>
+			<despawn name="arena_0"/>
+			<despawn name="arena_1"/>
+			<despawn name="arena_2"/>
+			<despawn name="arena_3"/>
+			<deactive name="restart_zone"/>
+			<start name="registration"/>
+		</on_stop>
+		<on_time>
+			<on time="-3600">
+				<stop name="registration"/>
+			</on>
+			<on time="0">
+				<start name="event"/>
+			</on>
+			<on time="600">		   <!--50 min-->
+				<announce val="3000"/>
+			</on>
+			<on time="1200">		  <!--40 min-->
+				<announce val="2400"/>
+			</on>
+			<on time="1800">		  <!--30 min-->
+				<announce val="1800"/>
+			</on>
+			<on time="2400">		   <!--20 min-->
+				<announce val="1200"/>
+			</on>
+			<on time="3000">		   <!--10 min-->
+				<announce val="600"/>
+			</on>
+			<on time="3300">		   <!--5 min-->
+				<announce val="300"/>
+			</on>
+			<on time="3360">		   <!--4 min-->
+				<announce val="300"/>
+			</on>
+			<on time="3420">		   <!--3 min-->
+				<announce val="240"/>
+			</on>
+			<on time="3480">		   <!--2 min-->
+				<announce val="180"/>
+			</on>
+			<on time="3540">		   <!--1 min-->
+				<announce val="60"/>
+			</on>
+			<on time="3570">		   <!--30 sec-->
+				<announce val="30"/>
+			</on>
+			<on time="3580">		   <!--20 sec-->
+				<announce val="20"/>
+			</on>
+			<on time="3590">		   <!--10 sec-->
+				<announce val="10"/>
+			</on>
+			<on time="3591">		   <!--9 sec-->
+				<announce val="9"/>
+			</on>
+			<on time="3592">		   <!--8 sec-->
+				<announce val="8"/>
+			</on>
+			<on time="3593">		   <!--7 sec-->
+				<announce val="7"/>
+			</on>
+			<on time="3594">		   <!--6 sec-->
+				<announce val="6"/>
+			</on>
+			<on time="3595">		   <!--5 sec-->
+				<announce val="5"/>
+			</on>
+			<on time="3596">		   <!--4 sec-->
+				<announce val="4"/>
+			</on>
+			<on time="3597">		   <!--3 sec-->
+				<announce val="3"/>
+			</on>
+			<on time="3598">		   <!--2 sec-->
+				<announce val="2"/>
+			</on>
+			<on time="3599">		   <!--1 sec-->
+				<announce val="1"/>
+			</on>
+			<on time="3600">
+				<start name="next_step"/>
+				<active name="restart_zone"/>
+			</on>
+		</on_time>
+		<objects name="coordinator">
+			<spawn_ex name="rainbow_springs_coordinator"/>
+		</objects>
+		<objects name="arena_0">
+			<spawn_ex name="rainbow_springs_arena_0"/>
+		</objects>
+		<objects name="arena_1">
+			<spawn_ex name="rainbow_springs_arena_1"/>
+		</objects>
+		<objects name="arena_2">
+			<spawn_ex name="rainbow_springs_arena_2"/>
+		</objects>
+		<objects name="arena_3">
+			<spawn_ex name="rainbow_springs_arena_3"/>
+		</objects>
+		<objects name="zone_0">
+			<zone name="rainbow_slow_1"/>
+		</objects>
+		<objects name="zone_1">
+			<zone name="rainbow_slow_2"/>
+		</objects>
+		<objects name="zone_2">
+			<zone name="rainbow_slow_3"/>
+		</objects>
+		<objects name="zone_3">
+			<zone name="rainbow_slow_4"/>
+		</objects>
+		<objects name="restart_zone">
+			<zone name="rainbow_spring_no_restart1"/>
+		</objects>
+	</event>
+</list>

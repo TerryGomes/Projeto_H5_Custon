@@ -1,0 +1,42 @@
+<html>
+<body>
+	<title>IPs with Amount of Players Online</title>
+	<center>
+		<table width=260 bgcolor=DAFF7F>
+			<tr>
+				<td>
+					<button value="Main" action="bypass -h admin_admin" width=50 height=20 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF>
+				</td>
+				<td>
+					<button value="Events" action="bypass -h admin_show_html events/events.htm" width=50 height=20 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF>
+				</td>
+				<td>
+					<button value="Chars" action="bypass -h admin_char_manage" width=50 height=20 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF>
+				</td>
+				<td>
+					<button value="Server" action="bypass -h admin_server admserver.htm" width=50 height=20 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF>
+				</td>
+				<td>
+					<button value="GM Shop" action="bypass -h admin_gmshop" width=50 height=20 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		%pages%
+		<br>
+		<br>
+		<table width=294>
+			<tr>
+				<td align=center width=200>
+					IP
+				</td>
+				<td align=center width=94>
+					Amount
+				</td>
+			</tr>
+			%ips%
+		</table>
+	</center>
+</body>
+</html>

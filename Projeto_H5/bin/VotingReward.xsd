@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="config" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute type="xs:string" name="enableVoteReward" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="api" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute type="xs:string" name="zone" use="required" />
+						<xs:attribute type="xs:string" name="id" use="required" />
+						<xs:attribute type="xs:string" name="key" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="voting" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute type="xs:string" name="command" use="required" />
+						<xs:attribute type="xs:string" name="interval" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="nameColor" minOccurs="0">
+					<xs:complexType>
+						<xs:attribute type="xs:string" name="enable" use="required" />
+						<xs:attribute type="xs:string" name="color" use="required" />
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="messages">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="message" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute type="xs:string" name="type" use="optional" />
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="rewards" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="group" maxOccurs="unbounded" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+											<xs:complexType>
+												<xs:attribute type="xs:short" name="id" use="required" />
+												<xs:attribute type="xs:short" name="min" use="required" />
+												<xs:attribute type="xs:short" name="max" use="required" />
+												<xs:attribute type="xs:float" name="chance" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute type="xs:float" name="chance" use="required" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

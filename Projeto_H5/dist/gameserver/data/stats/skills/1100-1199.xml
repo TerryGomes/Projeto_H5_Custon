@@ -1,0 +1,1526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="1100" levels="2" name="Chill Flame">
+		<table name="#dmg">27 40</table>
+		<table name="#effectPoint">121 162</table>
+		<table name="#mpConsume2">12 18</table>
+		<table name="#mpConsume1">3 5</table>
+		<table name="#magicLevel">7 14</table>
+		<table name="#power">1 2</table>
+		<set name="levelModifier" val="1" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1100" />
+		<set name="reuseDelay" val="2000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="activateRate" val="20" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="element" val="fire" />
+		<set name="skillType" val="DOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="15" name="DamOverTime" time="1" val="#dmg" />
+		</for>
+	</skill>
+	<skill id="1101" levels="2" name="Blaze Quake">
+		<table name="#dmg">58 79</table>
+		<table name="#effectPoint">243 331</table>
+		<table name="#mpConsume2">40 54</table>
+		<table name="#mpConsume1">10 14</table>
+		<table name="#magicLevel">25 35</table>
+		<table name="#power">3 4</table>
+		<set name="levelModifier" val="1" />
+		<set name="magicType" val="MAGIC" />
+		<set name="affectLimit" val="10;10" />
+		<set name="icon" val="icon.skill1101" />
+		<set name="reuseDelay" val="4000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="activateRate" val="20" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillRadius" val="200" />
+		<set name="element" val="fire" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="15" name="DamOverTime" time="1" val="#dmg" />
+		</for>
+	</skill>
+	<skill id="1102" levels="6" name="Aura Sink">
+		<table name="#dmg">8 10 13 16 20 22</table>
+		<table name="#effectPoint">243 331 418 495 597 635</table>
+		<table name="#mpConsume2">27 36 47 56 71 78</table>
+		<table name="#mpConsume1">7 9 12 14 18 20</table>
+		<table name="#magicLevel">25 35 44 52 64 70</table>
+		<table name="#power">16 22 29 36 46 51</table>
+		<set name="levelModifier" val="2" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1102" />
+		<set name="reuseDelay" val="3000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="activateRate" val="20" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="MANADAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="15" name="ManaDamOverTime" time="1" val="#dmg" />
+		</for>
+	</skill>
+	<skill id="1104" levels="14" name="Seal of Winter">
+		<table name="#effectPoint">379 418 457 495 532 549 566 582 597 611 624 635 646 655</table>
+		<table name="#activateRate">20</table>
+		<table name="#time">30</table>
+		<table name="#mpConsume2">42 47 52 56 61 64 66 69 71 74 76 78 80 82</table>
+		<table name="#mpConsume1">11 12 13 14 16 16 17 18 18 19 19 20 20 21</table>
+		<table name="#magicLevel">40 44 48 52 56 58 60 62 64 66 68 70 72 74</table>
+		<set name="levelModifier" val="1" />
+		<set name="magicType" val="MAGIC" />
+		<set name="affectLimit" val="10;10" />
+		<set name="icon" val="icon.skill1104" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="activateRate" val="#activateRate" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillRadius" val="200" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<enchant1 levels="30" name="Chance">
+			<table name="#activateRate">21 21 21 21 21 21 22 22 22 22 22 22 23 23 23 23 23 23 24 24 24 24 24 24 25 25 25 25 25 25</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#time">31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">20 19 19 19 18 18 18 17 17 17 16 16 16 15 15 15 14 14 13 13 13 12 12 12 11 11 11 10 10 10</table>
+			<table name="#mpConsume2">80 79 77 76 75 73 72 71 69 68 66 65 64 62 61 60 58 57 55 54 53 51 50 49 47 46 44 43 42 40</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtkSpdDown" time="#time" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="0.77" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1105" levels="18" name="Madness">
+		<!--
+		-->
+		<table name="#mpConsume2">16 18 21 24 28 31 35 38 41 43 44 46 48 49 51 52 53 55</table>
+		<table name="#mpConsume1">4 5 6 6 7 8 9 10 11 11 11 12 12 13 13 13 14 14</table>
+		<table name="#magicLevel">20 25 30 35 40 44 48 52 56 58 60 62 64 66 68 70 72 74</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1105" />
+		<set name="reuseDelay" val="10000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="unaggroing" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Discord" time="30" val="0" />
+		</for>
+	</skill>
+	<skill id="1107" levels="2" name="Frost Flame">
+		<table name="#dmg">58 79</table>
+		<table name="#effectPoint">204 285</table>
+		<table name="#mpConsume2">23 32</table>
+		<table name="#mpConsume1">6 8</table>
+		<table name="#magicLevel">20 30</table>
+		<table name="#power">3 4</table>
+		<set name="levelModifier" val="1" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1107" />
+		<set name="reuseDelay" val="2000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="750" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="activateRate" val="20" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="element" val="fire" />
+		<set name="skillType" val="DOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="15" name="DamOverTime" time="1" val="#dmg" />
+		</for>
+	</skill>
+	<skill id="1108" levels="4" name="Seal of Flame">
+		<table name="#effectPoint">286 333 390 409</table>
+		<table name="#dmg">60 73 84 92</table>
+		<table name="#mpConsume2">77 92 113 122</table>
+		<table name="#mpConsume1">20 23 29 31</table>
+		<table name="#magicLevel">48 56 68 74</table>
+		<table name="#power">5 6 7 8</table>
+		<set name="levelModifier" val="1" />
+		<set name="magicType" val="MAGIC" />
+		<set name="affectLimit" val="10;10" />
+		<set name="icon" val="icon.skill1108" />
+		<set name="reuseDelay" val="5000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="activateRate" val="15" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillRadius" val="200" />
+		<set name="element" val="fire" />
+		<set name="skillType" val="DOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="15" name="DamOverTime" time="1" val="#dmg" />
+		</for>
+	</skill>
+	<skill id="1111" levels="18" name="Summon Kat the Cat">
+		<table name="#itemConsumeCount">1 1 2 2 7 1 1 4 5 6 11 12 2 3 4 4 9 10</table>
+		<table name="#itemConsumeCountInTime">0 0 0 0 0 1 1 1 1 1 1 1 2 2 2 2 2 2</table>
+		<table name="#lifeTime">1200 1200 1200 1200 3600</table>
+		<table name="#mpConsume2">31 35 42 48 56 62 69 75 82 85 88 92 95 98 101 104 106 109</table>
+		<table name="#mpConsume1">8 9 11 12 14 16 18 19 21 22 22 23 24 25 26 26 27 28</table>
+		<table name="#magicLevel">20 25 30 35 40 44 48 52 56 58 60 62 64 66 68 70 72 74</table>
+		<table name="#reuseDelay">5400000 5400000 5400000 5400000 5000 5000 5000 5000 5000 5000 5000 5000 5000 5000 5000 5000 5000 5000</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1111" />
+		<set name="reuseDelay" val="#reuseDelay" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="6000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="lifeTime" val="#lifeTime" />
+		<set name="itemConsumeId" val="3031" />
+		<set name="itemConsumeCount" val="#itemConsumeCount" />
+		<set name="itemConsumeIdInTime" val="3031" />
+		<set name="itemConsumeCountInTime" val="#itemConsumeCountInTime" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<!-- Summon-specific -->
+		<table name="#npcIds">14111 14112 14113 14114 14115 14116 14117 14118 14119 14120 14121 14122 14123 14124 14125 14126 14127 14128</table>
+		<set name="npcId" val="#npcIds" />
+		<enchant1 levels="30" name="Power">
+			<table name="#npcIds">14129 14130 14131 14132 14133 14134 14135 14136 14137 14138 14139 14140 14141 14142 14143 14144 14145 14146 14147 14148 14149 14150 14151 14152 14153 14154 14155 14156 14157 14158</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+	</skill>
+	<skill id="1126" levels="34" name="Servitor Recharge">
+		<table name="#effectPoint">227 243 268 285 313 331 360 379 399 418 438 457 477 495 514 532 541 549 558 566 574 582 590 597 604 611 617 624 630 635 641 646 650 655</table>
+		<table name="#mpConsume2">33 35 39 42 45 48 53 56 59 62 65 69 72 75 78 82 83 85 87 88 90 92 93 95 96 98 99 101 102 104 105 106 108 109</table>
+		<table name="#mpConsume1">9 9 10 11 12 12 14 14 15 16 17 18 18 19 20 21 21 22 22 22 23 23 24 24 24 25 25 26 26 26 27 27 27 28</table>
+		<table name="#magicLevel">23 25 28 30 33 35 38 40 42 44 46 48 50 52 54 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74</table>
+		<table name="#power">41 44 49 52 57 60 66 70 73 77 81 86 90 94 98 102 104 106 108 110 113 115 116 118 120 122 124 126 128 129 131 133 134 136</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1126" />
+		<set name="reuseDelay" val="3000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_PET" />
+		<set name="skillType" val="MANAHEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Power">
+			<table name="#power">137 137 138 139 139 140 141 141 142 143 143 144 145 146 146 147 148 148 149 150 150 151 152 152 153 154 154 155 156 156</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">26 26 25 25 25 24 24 23 23 22 22 21 21 20 20 19 19 19 18 18 17 17 16 16 15 15 14 14 14 13</table>
+			<table name="#mpConsume2">107 105 103 101 100 98 96 94 92 90 89 87 85 83 81 79 78 76 74 72 70 69 67 65 63 61 59 58 56 54</table>
+		</enchant2>
+	</skill>
+	<skill id="1127" levels="45" name="Servitor Heal">
+		<table name="#effectPoint">121 135 151 176 185 195 224 234 245 278 289 301 337 349 362 388 401 414 440 454 467 494 508 521 548 562 575 588 602 615 627 640 653 665 677 689 700 711 722 733 743 753 763 772 780</table>
+		<table name="#mpConsume2">19 21 24 26 28 29 33 35 35 38 40 41 46 48 49 51 52 54 57 59 61 64 64 66 69 71 72 74 76 77 78 78 80 81 83 84 86 87 89 90 91 92 93 95 96</table>
+		<table name="#mpConsume1">5 6 6 7 7 8 9 9 9 10 10 11 12 12 13 13 13 14 15 15 16 16 16 17 18 18 18 19 19 20 20 20 20 21 21 21 22 22 23 23 23 23 24 24 24</table>
+		<table name="#magicLevel">16 18 20 23 24 25 28 29 30 33 34 35 38 39 40 42 43 44 46 47 48 50 51 52 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74</table>
+		<table name="#power">168 188 210 230 251 272 293 314 335 356 377 397 418 439 460 481 502 523 544 565 585 606 627 648 669 690 711 732 752 773 794 815 836 857 878 899 919 940 961 982 1003 1024 1045 1066 1087</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1127" />
+		<set name="reuseDelay" val="3000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_PET" />
+		<set name="skillType" val="HEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Power">
+			<table name="#power">1093 1099 1104 1110 1116 1122 1128 1133 1139 1145 1151 1157 1162 1168 1174 1180 1186 1191 1197 1203 1209 1215 1220 1226 1232 1238 1244 1249 1255 1261</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">23 23 22 22 21 21 21 20 20 19 19 19 18 18 17 17 16 16 16 15 15 14 14 14 13 13 12 12 12 11</table>
+			<table name="#mpConsume2">94 92 90 89 87 86 84 82 81 79 77 76 74 72 71 69 67 66 64 62 61 59 57 56 54 53 51 49 48 46</table>
+		</enchant2>
+	</skill>
+	<skill id="1128" levels="18" name="Summon Shadow">
+		<table name="#itemConsumeCount">1 1 2 2 7 1 1 4 5 6 11 12 2 3 4 4 9 10</table>
+		<table name="#itemConsumeCountInTime">0 0 0 0 0 1 1 1 1 1 1 1 2 2 2 2 2 2</table>
+		<table name="#lifeTime">1200 1200 1200 1200 3600</table>
+		<table name="#mpConsume2">31 35 42 48 56 62 69 75 82 85 88 92 95 98 101 104 106 109</table>
+		<table name="#mpConsume1">8 9 11 12 14 16 18 19 21 22 22 23 24 25 26 26 27 28</table>
+		<table name="#magicLevel">20 25 30 35 40 44 48 52 56 58 60 62 64 66 68 70 72 74</table>
+		<table name="#reuseDelay">5400000 5400000 5400000 5400000 5000 5000 5000 5000 5000 5000 5000 5000 5000 5000 5000 5000 5000 5000</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1128" />
+		<set name="reuseDelay" val="#reuseDelay" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="6000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="lifeTime" val="#lifeTime" />
+		<set name="itemConsumeId" val="3031" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="itemConsumeCount" val="#itemConsumeCount" />
+		<set name="itemConsumeIdInTime" val="3031" />
+		<set name="itemConsumeCountInTime" val="#itemConsumeCountInTime" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<!-- Summon-specific -->
+		<table name="#npcIds">14479 14480 14481 14482 14483 14484 14485 14486 14487 14488 14489 14490 14491 14492 14493 14494 14495 14496</table>
+		<set name="npcId" val="#npcIds" />
+		<enchant1 levels="30" name="Power">
+			<table name="#npcIds">14497 14498 14499 14500 14501 14502 14503 14504 14505 14506 14507 14508 14509 14510 14511 14512 14513 14514 14515 14516 14517 14518 14519 14520 14521 14522 14523 14524 14525 14526</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+	</skill>
+	<skill id="1129" levels="7" name="Summon Reanimated Man">
+		<table name="#itemConsumeCount">11 13 6 9 9 9 9</table>
+		<table name="#itemConsumeCountInTime">0 0 1 1 1 2 2</table>
+		<table name="#mpConsume2">62 75 88 95 101 106 109</table>
+		<table name="#mpConsume1">16 19 22 24 26 27 28</table>
+		<table name="#magicLevel">44 52 60 64 68 72 74</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1129" />
+		<set name="reuseDelay" val="5000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="6000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="itemConsumeId" val="3031" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="itemConsumeCount" val="#itemConsumeCount" />
+		<set name="itemConsumeIdInTime" val="3031" />
+		<set name="itemConsumeCountInTime" val="#itemConsumeCountInTime" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<!-- Summon-specific -->
+		<table name="#npcIds">14001 14002 14003 14004 14005 14006 14007</table>
+		<set name="npcId" val="#npcIds" />
+		<enchant1 levels="30" name="Power">
+			<table name="#npcIds">14008 14009 14010 14011 14012 14013 14014 14015 14016 14017 14018 14019 14020 14021 14022 14023 14024 14025 14026 14027 14028 14029 14030 14031 14032 14033 14034 14035 14036 14037</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+	</skill>
+	<skill id="1139" levels="2" name="Servitor Magic Shield">
+		<table name="#Tab-mDef">1.23 1.3</table>
+		<table name="#effectPoint">418 495</table>
+		<table name="#abnormal_lv">2 3</table>
+		<table name="#abnormal_time">1200</table>
+		<table name="#mpConsume2">31 38</table>
+		<table name="#mpConsume1">8 10</table>
+		<table name="#magicLevel">44 52</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1139" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_PET" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Time">
+			<table name="#abnormal_time">1240 1280 1320 1360 1400 1440 1480 1520 1560 1600 1640 1680 1720 1760 1800 1840 1880 1920 1960 2000 2040 2080 2120 2160 2200 2240 2280 2320 2360 2400</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">9 9 9 9 9 9 8 8 8 8 8 8 7 7 7 7 7 7 6 6 6 6 6 6 5 5 5 5 5 5</table>
+			<table name="#mpConsume2">37 36 36 35 34 34 33 32 32 31 31 30 29 29 28 27 27 26 25 25 24 24 23 22 22 21 20 20 19 19</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="MagicDefUp" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="mDef" val="#Tab-mDef" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1140" levels="3" name="Servitor Physical Shield">
+		<table name="#Tab-pDef">1.08 1.12 1.15</table>
+		<table name="#effectPoint">379 457 532</table>
+		<table name="#abnormal_lv">1 2 3</table>
+		<table name="#abnormal_time">1200</table>
+		<table name="#mpConsume2">28 35 41</table>
+		<table name="#mpConsume1">7 9 11</table>
+		<table name="#magicLevel">40 48 56</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1140" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_PET" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Time">
+			<table name="#abnormal_time">1240 1280 1320 1360 1400 1440 1480 1520 1560 1600 1640 1680 1720 1760 1800 1840 1880 1920 1960 2000 2040 2080 2120 2160 2200 2240 2280 2320 2360 2400</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">10 10 10 10 10 9 9 9 9 9 8 8 8 8 8 8 7 7 7 7 7 6 6 6 6 6 6 5 5 5</table>
+			<table name="#mpConsume2">40 39 38 38 37 36 36 35 34 34 33 32 32 31 30 30 29 28 28 27 26 25 25 24 23 23 22 21 21 20</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="pDef" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="pDef" val="#Tab-pDef" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1141" levels="2" name="Servitor Haste">
+		<table name="#Tab-pAtkSpd">1.15 1.33</table>
+		<table name="#effectPoint">418 495</table>
+		<table name="#abnormal_lv">1 2</table>
+		<table name="#abnormal_time">1200</table>
+		<table name="#mpConsume2">31 38</table>
+		<table name="#mpConsume1">8 10</table>
+		<table name="#magicLevel">44 52</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1141" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_PET" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Time">
+			<table name="#abnormal_time">1240 1280 1320 1360 1400 1440 1480 1520 1560 1600 1640 1680 1720 1760 1800 1840 1880 1920 1960 2000 2040 2080 2120 2160 2200 2240 2280 2320 2360 2400</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">9 9 9 9 9 9 8 8 8 8 8 8 7 7 7 7 7 7 6 6 6 6 6 6 5 5 5 5 5 5</table>
+			<table name="#mpConsume2">37 36 36 35 34 34 33 32 32 31 31 30 29 29 28 27 27 26 25 25 24 24 23 22 22 21 20 20 19 19</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="pAtkSpeedUp" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="#Tab-pAtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1144" levels="2" name="Servitor Wind Walk">
+		<table name="#Tab-runSpd">20 33</table>
+		<table name="#effectPoint">331 457</table>
+		<table name="#abnormal_lv">1 2</table>
+		<table name="#abnormal_time">1200 1200</table>
+		<table name="#mpConsume2">24 36</table>
+		<table name="#mpConsume1">6 10</table>
+		<table name="#magicLevel">35 48</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1144" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_PET" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Time">
+			<table name="#abnormal_time">1240 1280 1320 1360 1400 1440 1480 1520 1560 1600 1640 1680 1720 1760 1800 1840 1880 1920 1960 2000 2040 2080 2120 2160 2200 2240 2280 2320 2360 2400</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">9 9 9 9 9 9 8 8 8 8 8 8 7 7 7 7 7 7 6 6 6 6 6 6 5 5 5 5 5 5</table>
+			<table name="#mpConsume2">34 33 33 32 32 31 30 30 29 29 28 28 27 26 26 25 25 24 23 23 22 22 21 21 20 19 19 18 18 17</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="SpeedUp" time="#abnormal_time" val="0">
+				<add order="0x40" stat="runSpd" val="#Tab-runSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1145" levels="3" name="Bright Servitor">
+		<table name="#Tab-mAtk">1.55 1.65 1.75</table>
+		<table name="#effectPoint">331 457 532</table>
+		<table name="#abnormal_lv">1 2 3</table>
+		<table name="#abnormal_time">1200</table>
+		<table name="#mpConsume2">24 36 42</table>
+		<table name="#mpConsume1">6 10 12</table>
+		<table name="#magicLevel">35 48 56</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1145" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_PET" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Time">
+			<table name="#abnormal_time">1240 1280 1320 1360 1400 1440 1480 1520 1560 1600 1640 1680 1720 1760 1800 1840 1880 1920 1960 2000 2040 2080 2120 2160 2200 2240 2280 2320 2360 2400</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">11 11 11 11 11 10 10 10 10 10 9 9 9 9 9 8 8 8 8 8 7 7 7 7 7 6 6 6 6 6</table>
+			<table name="#mpConsume2">41 40 39 39 38 37 37 36 35 35 34 33 32 32 31 30 30 29 28 28 27 26 25 25 24 23 23 22 21 21</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="mAtk" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="mAtk" val="#Tab-mAtk" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1146" levels="3" name="Mighty Servitor">
+		<table name="#Tab-pAtk">1.08 1.12 1.15</table>
+		<table name="#effectPoint">331 457 532</table>
+		<table name="#abnormal_lv">1 2 3</table>
+		<table name="#abnormal_time">1200</table>
+		<table name="#mpConsume2">24 36 42</table>
+		<table name="#mpConsume1">6 10 12</table>
+		<table name="#magicLevel">35 48 56</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1146" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_PET" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Time">
+			<table name="#abnormal_time">1240 1280 1320 1360 1400 1440 1480 1520 1560 1600 1640 1680 1720 1760 1800 1840 1880 1920 1960 2000 2040 2080 2120 2160 2200 2240 2280 2320 2360 2400</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">11 11 11 11 11 10 10 10 10 10 9 9 9 9 9 8 8 8 8 8 7 7 7 7 7 6 6 6 6 6</table>
+			<table name="#mpConsume2">41 40 39 39 38 37 37 36 35 35 34 33 32 32 31 30 30 29 28 28 27 26 25 25 24 23 23 22 21 21</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="pAtk" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="pAtk" val="#Tab-pAtk" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1147" levels="6" name="Vampiric Touch">
+		<table name="#effectPoint">143 162 182 204 227 243</table>
+		<table name="#mpConsume2">20 22 25 28 30 32</table>
+		<table name="#mpConsume1">5 6 7 7 8 8</table>
+		<table name="#magicLevel">11 14 17 20 23 25</table>
+		<table name="#power">18 21 23 26 29 32</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1147" />
+		<set name="reuseDelay" val="3000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="element" val="unholy" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DRAIN" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="absorbPart" val="0.4" />
+	</skill>
+	<skill id="1148" levels="13" name="Death Spike">
+		<table name="#effectPoint">418 457 495 532 549 566 582 597 611 624 635 646 655</table>
+		<table name="#elementPower">20</table>
+		<table name="#mpConsume2">19 22 24 28 29 31 32 33 35 36 37 38 40</table>
+		<table name="#mpConsume1">4 5 6 7 7 7 8 8 8 9 9 9 10</table>
+		<table name="#magicLevel">44 48 52 56 58 60 62 64 66 68 70 72 74</table>
+		<table name="#power">58 65 72 78 82 85 89 92 96 99 102 105 108</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1148" />
+		<set name="reuseDelay" val="1200" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="elementPower" val="#elementPower" />
+		<set name="element" val="unholy" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="shieldignore" val="true" />
+		<enchant1 levels="30" name="Power">
+			<table name="#power">108 109 109 110 110 110 111 111 111 112 112 112 113 113 113 114 114 114 115 115 116 116 116 117 117 117 118 118 118 119</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#power">108 108 109 109 109 109 109 109 109 110 110 110 110 110 110 110 111 111 111 111 111 111 111 112 112 112 112 112 112 113</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">9 9 9 9 9 9 9 9 8 8 8 8 8 8 8 8 7 7 7 7 7 7 7 7 6 6 6 6 6 6</table>
+			<table name="#mpConsume2">39 39 38 38 37 37 36 36 35 35 34 34 33 33 32 32 31 31 30 30 29 29 28 28 27 27 26 26 25 25</table>
+		</enchant2>
+		<enchant3 levels="30" name="Dark Attack">
+			<table name="#elementPower">21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant3>
+	</skill>
+	<skill id="1151" levels="16" name="Corpse Life Drain">
+		<table name="#drain">260 299 347 384 426 467 509 529 550 571 590 609 628 645 662 678</table>
+		<table name="#count">0</table>
+		<table name="#cp">0</table>
+		<table name="#mpConsume2">11 12 14 16 18 19 21 22 22 23 24 25 26 26 27 28</table>
+		<table name="#mpConsume1">3 3 4 4 5 5 6 6 6 6 6 7 7 7 7 7</table>
+		<table name="#magicLevel">30 35 40 44 48 52 56 58 60 62 64 66 68 70 72 74</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1151" />
+		<set name="reuseDelay" val="5000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="target" val="TARGET_CORPSE" />
+		<set name="corpse" val="true" />
+		<set name="skillType" val="DRAIN" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="absorbPart" val="0." />
+		<set name="absorbAbs" val="#drain" />
+		<enchant1 levels="30" name="Power">
+			<table name="#drain">682 685 688 692 695 699 702 705 709 712 715 719 722 726 729 732 736 739 743 746 749 753 756 760 763 766 770 773 776 780</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Bravery">
+			<table name="#count">1</table>
+			<table name="#cp">100 110 120 130 140 150 160 170 180 190 200 210 220 230 240 250 260 270 280 290 300 310 320 330 340 350 360 370 380 390 400</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">6 6 6 6 6 6 6 6 6 6 6 6 6 6 6 5 5 5 5 5 5 5 5 5 5 5 5 5 5 5</table>
+			<table name="#mpConsume2">27 27 27 26 26 26 26 25 25 25 25 24 24 24 24 23 23 23 23 22 22 22 21 21 21 21 20 20 20 20</table>
+		</enchant2>
+		<for>
+			<effect count="#count" name="CombatPointHealOverTime" time="0" val="#cp" />
+		</for>
+	</skill>
+	<skill id="1154" levels="6" name="Summon Corrupted Man">
+		<table name="#mpConsume2">56 69 82 92 98 104</table>
+		<table name="#mpConsume1">14 18 21 23 25 26</table>
+		<table name="#magicLevel">40 48 56 62 66 70</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1154" />
+		<set name="reuseDelay" val="5000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="6000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="itemConsumeId" val="3031" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<!-- Summon-specific -->
+		<table name="#npcIds">14038 14039 14040 14041 14042 14043</table>
+		<set name="npcId" val="#npcIds" />
+		<set name="expPenalty" val="0.9" />
+		<enchant1 levels="30" name="Power">
+			<table name="#npcIds">14044 14045 14046 14047 14048 14049 14050 14051 14052 14053 14054 14055 14056 14057 14058 14059 14060 14061 14062 14063 14064 14065 14066 14067 14068 14069 14070 14071 14072 14073</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+	</skill>
+	<skill id="1155" levels="15" name="Corpse Burst">
+		<table name="#effectPoint">219 229 239 248 257 266 275 283 291 299 306 312 318 323 328</table>
+		<table name="#mpConsume2">33 35 36 38 39 41 43 44 46 48 49 51 52 53 55</table>
+		<table name="#mpConsume1">9 9 9 10 10 11 11 11 12 12 13 13 13 14 14</table>
+		<table name="#magicLevel">46 48 50 52 54 56 58 60 62 64 66 68 70 72 74</table>
+		<table name="#power">61 65 68 72 75 78 82 85 89 92 96 99 102 105 108</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1155" />
+		<set name="reuseDelay" val="5000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_AREA_AIM_CORPSE" />
+		<set name="corpse" val="true" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="skillRadius" val="200" />
+		<enchant1 levels="30" name="Power">
+			<table name="#power">109 109 110 111 111 112 113 113 114 115 115 116 116 117 118 118 119 120 120 121 122 122 123 124 124 125 125 126 127 127</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#power">108 108 109 109 109 109 109 109 109 110 110 110 110 110 110 110 111 111 111 111 111 111 111 112 112 112 112 112 112 113</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">13 13 13 12 12 12 12 12 12 11 11 11 11 11 10 10 10 10 10 9 9 9 9 9 8 8 8 8 8 7</table>
+			<table name="#mpConsume2">54 53 52 51 51 50 49 48 48 47 46 45 44 44 43 42 41 41 40 39 38 38 37 36 35 34 34 33 32 31</table>
+		</enchant2>
+	</skill>
+	<skill id="1156" levels="13" name="Forget">
+		<!--
+			Last modify:	12.12.2007
+
+			Description:
+			Takes away the enemy's will to attack.
+		-->
+		<table name="#effectPoint">260 460 660 860 1060 1260 1460 1660 1860 2060 2260 2460 2660</table>
+		<table name="#mpConsume2">31 35 38 41 43 44 46 48 49 51 52 53 55</table>
+		<table name="#mpConsume1">8 9 10 11 11 11 12 12 13 13 13 14 14</table>
+		<table name="#magicLevel">44 48 52 56 58 60 62 64 66 68 70 72 74</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1156" />
+		<set name="reuseDelay" val="5000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="activateRate" val="40" />
+		<set name="skillType" val="DELETE_HATE_OF_ME" />
+		<set name="unaggroing" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="DERANGEMENT" />
+	</skill>
+	<skill id="1157" levels="5" name="Body To Mind">
+		<table name="#effectPoint">243 379 495 549 611</table>
+		<table name="#power2">0</table>
+		<table name="#count">0</table>
+		<table name="#hpConsume">131 209 280 318 366</table>
+		<table name="#magicLevel">25 40 52 58 66</table>
+		<table name="#power">22 35 47 53 61</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1157" />
+		<set name="reuseDelay" val="5000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="hpConsume" val="#hpConsume" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="MANAHEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Power">
+			<table name="#power">70 70 70 70 71 71 71 71 71 71 72 72 72 72 72 72 72 73 73 73 73 73 73 74 74 74 74 74 74 75</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#hpConsume">359 353 347 341 335 328 322 316 310 304 297 291 285 279 273 266 260 254 248 242 235 229 223 217 211 204 198 192 186 180</table>
+		</enchant2>
+		<enchant3 levels="30" name="Bravery">
+			<table name="#count">1</table>
+			<table name="#power2">29 38 48 57 66 76 85 94 104 113 122 132 141 150 160 169 178 188 197 206 216 225 234 244 253 262 272 281 290 300</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant3>
+		<for>
+			<effect count="#count" name="CombatPointHealOverTime" time="0" val="#power2" />
+		</for>
+	</skill>
+	<skill id="1159" levels="22" name="Curse Death Link">
+		<table name="#effectPoint">477 495 514 532 541 549 558 566 574 582 590 597 604 611 617 624 630 635 641 646 650 655</table>
+		<table name="#mpConsume2">36 38 39 41 42 43 44 44 45 46 47 48 48 49 50 51 51 52 53 53 54 55</table>
+		<table name="#mpConsume1">9 10 10 11 11 11 11 11 12 12 12 12 12 13 13 13 13 13 14 14 14 14</table>
+		<table name="#magicLevel">50 52 54 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74</table>
+		<table name="#power">68 72 75 78 80 82 84 85 87 89 90 92 94 96 97 99 100 102 104 105 107 108</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1159" />
+		<set name="reuseDelay" val="1200" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="element" val="unholy" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="MDAM" />
+		<set name="deathlink" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Power">
+			<table name="#power">109 109 110 111 111 112 113 113 114 115 115 116 116 117 118 118 119 120 120 121 122 122 123 124 124 125 125 126 127 127</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#power">109 109 109 110 110 110 110 111 111 111 111 112 112 112 113 113 113 113 114 114 114 114 115 115 115 115 116 116 116 117</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">13 13 13 12 12 12 12 12 12 11 11 11 11 11 10 10 10 10 10 9 9 9 9 9 8 8 8 8 8 7</table>
+			<table name="#mpConsume2">54 53 52 51 51 50 49 48 48 47 46 45 44 44 43 42 41 41 40 39 38 38 37 36 35 34 34 33 32 31</table>
+		</enchant2>
+	</skill>
+	<skill id="1160" levels="15" name="Slow">
+		<table name="#effectPoint">331 379 418 457 495 532 549 566 582 597 611 624 635 646 655</table>
+		<table name="#abnormal_lv">2 3</table>
+		<table name="#activateRate">15</table>
+		<table name="#time">60</table>
+		<table name="#rEvas">0</table>
+		<table name="#runSpd">0.8 0.7</table>
+		<table name="#mpConsume2">24 28 31 35 38 41 43 44 46 48 49 51 52 53 55</table>
+		<table name="#mpConsume1">6 7 8 9 10 11 11 11 12 12 13 13 13 14 14</table>
+		<table name="#magicLevel">35 40 44 48 52 56 58 60 62 64 66 68 70 72 74</table>
+		<set name="levelModifier" val="2" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1160" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="activateRate" val="#activateRate" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<enchant1 levels="30" name="Chance">
+			<table name="#activateRate">16 16 16 17 17 17 18 18 18 19 19 19 20 20 20 21 21 21 22 22 22 23 23 23 24 24 24 25 25 25</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#time">62 64 66 68 70 72 74 76 78 80 82 84 86 88 90 92 94 96 98 100 102 104 106 108 110 112 114 116 118 120</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">13 13 13 12 12 12 12 11 11 11 11 11 10 10 10 10 9 9 9 9 8 8 8 8 8 7 7 7 7 6</table>
+			<table name="#mpConsume2">54 53 52 51 50 49 48 47 46 45 44 44 43 42 41 40 39 38 37 36 35 34 33 33 32 31 30 29 28 27</table>
+		</enchant2>
+		<enchant3 levels="30" name="Defence">
+			<table name="#rEvas">5 6 6 7 7 8 8 9 9 10 10 11 11 12 12 13 13 14 14 15 15 16 16 17 17 18 18 19 20</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant3>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="RunSpeedDown" time="#time" val="0">
+				<mul order="0x50" stat="runSpd" val="#runSpd" />
+				<sub order="0x60" stat="rEvas" val="#rEvas" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1163" levels="14" name="Curse Discord">
+		<table name="#mpConsume2">28 31 35 38 41 43 44 46 48 49 51 52 53 55</table>
+		<table name="#mpConsume1">7 8 9 10 11 11 11 12 12 13 13 13 14 14</table>
+		<table name="#magicLevel">40 44 48 52 56 58 60 62 64 66 68 70 72 74</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1163" />
+		<set name="reuseDelay" val="10000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DISCORD" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Discord" time="30" val="0" />
+		</for>
+	</skill>
+	<skill id="1164" levels="19" name="Curse: Weakness">
+		<table name="#Tab-pAtk">0.83 0.80 0.80 0.80 0.80 0.77</table>
+		<table name="#effectPoint">162 204 243 285 331 379 418 457 495 532 549 566 582 597 611 624 635 646 655</table>
+		<table name="#abnormal_lv">1 2 2 2 2 3</table>
+		<table name="#time">20</table>
+		<table name="#runSpd">1</table>
+		<table name="#pDef">1</table>
+		<table name="#activateRate">30</table>
+		<table name="#mpConsume2">2 8 9 11 12 28 31 35 38 41 43 44 46 48 49 51 52 53 55</table>
+		<table name="#mpConsume1">1 2 3 3 3 7 8 9 10 11 11 11 12 12 13 13 13 14 14</table>
+		<table name="#magicLevel">14 20 25 30 35 40 44 48 52 56 58 60 62 64 66 68 70 72 74</table>
+		<set name="levelModifier" val="2" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1164" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="activateRate" val="#activateRate" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<enchant1 levels="30" name="Chance">
+			<table name="#activateRate">31 31 31 32 32 32 33 33 33 34 34 34 35 35 35 36 36 36 37 37 37 38 38 38 39 39 39 40 40 40</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#time">31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">13 13 13 12 12 12 12 11 11 11 11 11 10 10 10 10 9 9 9 9 8 8 8 8 8 7 7 7 7 6</table>
+			<table name="#mpConsume2">54 53 52 51 50 49 48 47 46 45 44 44 43 42 41 40 39 38 37 36 35 34 33 33 32 31 30 29 28 27</table>
+		</enchant2>
+		<enchant3 levels="30" name="Modify Speed">
+			<table name="#runSpd">.99 .99 .98 .98 .97 .97 .96 .96 .95 .95 .94 .94 .93 .93 .92 .92 .92 .91 .91 .90 .90 .89 .89 .88 .88 .87 .87 .86 .86 .85</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant3>
+		<enchant4 levels="30" name="Defence">
+			<table name="#pDef">.99 .99 .98 .98 .97 .97 .96 .96 .95 .95 .94 .94 .93 .93 .92 .92 .92 .91 .91 .90 .90 .89 .89 .88 .88 .87 .87 .86 .86 .85</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant4>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="pAtkDown" time="#time" val="0">
+				<mul order="0x30" stat="runSpd" val="#runSpd" />
+				<mul order="0x30" stat="pDef" val="#pDef" />
+				<mul order="0x30" stat="pAtk" val="#Tab-pAtk" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1167" levels="6" name="Poisonous Cloud">
+		<!--
+			Description: Instantaneous poison cloud attack.  Effect 3,4,5,6,7,8.
+		-->
+		<table name="#effectPoint">243 331 457 532 597 655</table>
+		<table name="#abnormal_lv">3 4 5 6 7 8</table>
+		<table name="#activateRate">30</table>
+		<table name="#mpConsume2">27 36 52 61 71 82</table>
+		<table name="#mpConsume1">7 9 13 16 18 21</table>
+		<table name="#magicLevel">25 35 48 56 64 74</table>
+		<set name="levelModifier" val="1" />
+		<set name="magicType" val="MAGIC" />
+		<set name="affectLimit" val="9;10" />
+		<set name="icon" val="icon.skill1167" />
+		<set name="reuseDelay" val="5000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="500" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="activateRate" val="#activateRate" />
+		<set name="target" val="TARGET_AREA" />
+		<set name="skillRadius" val="200" />
+		<set name="skillType" val="POISON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="POISON" />
+		<set name="saveVs" val="CON" />
+		<enchant1 levels="30" name="Power">
+			<table name="#abnormal_lv">9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 10 10 10 10 10 11 11 11 11 11 11 11 11 11 11</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">21 20 20 20 19 19 19 18 18 18 17 17 16 16 16 15 15 15 14 14 14 13 13 13 12 12 12 11 11 11</table>
+			<table name="#mpConsume2">81 79 78 77 75 74 73 71 70 69 67 66 64 63 62 60 59 58 56 55 54 52 51 50 48 47 45 44 43 41</table>
+		</enchant2>
+		<enchant3 levels="30" name="Chance">
+			<table name="#activateRate">31 31 31 32 32 32 33 33 33 34 34 34 35 35 35 36 36 36 37 37 37 38 38 38 39 39 39 40 40 40</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant3>
+		<for>
+			<effect abnormal="poison" count="10" name="Poison" stackOrder="#abnormal_lv" time="3" val="0" />
+		</for>
+	</skill>
+	<skill id="1168" levels="7" name="Curse: Poison">
+		<table name="#effectPoint">121 204 285 418 495 582 646</table>
+		<table name="#mpConsume2">8 16 21 31 38 46 53</table>
+		<table name="#mpConsume1">2 4 6 8 10 12 14</table>
+		<table name="#magicLevel">7 20 30 44 52 62 72</table>
+		<table name="#power">1 3 4 5 6 7 8</table>
+		<set name="levelModifier" val="1" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1168" />
+		<set name="reuseDelay" val="3000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="activateRate" val="20" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="POISON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="POISON" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect abnormal="poison" count="10" name="Poison" stackOrder="#power" time="3" val="0" />
+		</for>
+	</skill>
+	<skill id="1169" levels="14" name="Curse Fear">
+		<table name="#effectPoint">379 418 457 495 532 549 566 582 597 611 624 635 646 655</table>
+		<table name="#activateRate">6</table>
+		<table name="#count">5</table>
+		<table name="#mpConsume2">28 31 35 38 41 43 44 46 48 49 51 52 53 55</table>
+		<table name="#mpConsume1">7 8 9 10 11 11 11 12 12 13 13 13 14 14</table>
+		<table name="#magicLevel">40 44 48 52 56 58 60 62 64 66 68 70 72 74</table>
+		<set name="levelModifier" val="1" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1169" />
+		<set name="reuseDelay" val="5000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="activateRate" val="#activateRate" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="DERANGEMENT" />
+		<set name="saveVs" val="MEN" />
+		<enchant2 levels="30" name="Cost">
+			<table name="#count">5 5 5 5 6 6 6 7 7 7 7 8 8 8 8 8 8 8 8 8 8 8 8 9 9 9 9 10 10 10</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant2>
+		<enchant2 levels="30" name="Chance">
+			<table name="#activateRate">11 11 11 11 12 12 12 12 12 13 13 13 13 13 13 13 13 13 14 14 14 14 14 14 14 14 15 15 15</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant2>
+		<for>
+			<effect count="#count" name="Fear" stackOrder="-1" stackType="Fear" time="2" val="0"/>
+		</for>
+	</skill>
+	<skill id="1170" levels="13" name="Anchor">
+		<table name="#effectPoint">418 457 495 532 549 566 582 597 611 624 635 646 655</table>
+		<table name="#activateRate">10</table>
+		<table name="#mpConsume2">31 35 38 41 43 44 46 48 49 51 52 53 55</table>
+		<table name="#mpConsume1">8 9 10 11 11 11 12 12 13 13 13 14 14</table>
+		<table name="#magicLevel">44 48 52 56 58 60 62 64 66 68 70 72 74</table>
+		<set name="levelModifier" val="1" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1170" />
+		<set name="reuseDelay" val="60000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="activateRate" val="#activateRate" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="delayedEffect" val="6091" />
+		<set name="trait" val="PARALYZE" />
+		<set name="saveVs" val="MEN" />
+		<enchant1 levels="30" name="Chance">
+			<table name="#activateRate">11 11 11 11 11 12 12 12 12 12 13 13 13 13 13 13 13 13 14 14 14 14 14 14 14 14 15 15 15 15</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">13 13 13 12 12 12 12 11 11 11 11 10 10 10 10 10 9 9 9 9 8 8 8 8 7 7 7 7 7 6</table>
+			<table name="#mpConsume2">54 53 52 51 50 49 48 47 46 45 44 43 42 42 41 40 39 38 37 36 35 34 33 32 31 30 29 29 28 27</table>
+		</enchant2>
+		<for>
+			<effect count="1" name="Debuff" time="5" val="0">
+				<mul order="0x30" stat="runSpd" val="0.5" />
+				<mul order="0x30" stat="pAtkSpd" val="0.5" />
+				<mul order="0x30" stat="mAtkSpd" val="0.5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1171" levels="19" name="Blazing Circle">
+		<table name="#effectPoint">180 190 200 209 219 229 239 248 257 266 275 283 291 299 306 312 318 323 328</table>
+		<table name="#elementPower">0</table>
+		<table name="#mpConsume2">40 42 44 47 49 52 54 56 59 61 64 66 69 71 74 76 78 80 82</table>
+		<table name="#mpConsume1">10 11 11 12 13 13 14 14 15 16 16 17 18 18 19 19 20 20 21</table>
+		<table name="#magicLevel">38 40 42 44 46 48 50 52 54 56 58 60 62 64 66 68 70 72 74</table>
+		<table name="#power">29 30 32 34 36 38 40 42 44 46 48 50 52 55 57 58 60 62 64</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="affectLimit" val="6;12" />
+		<set name="icon" val="icon.skill1171" />
+		<set name="reuseDelay" val="4000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="elementPower" val="#elementPower" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="skillRadius" val="200" />
+		<set name="element" val="fire" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Power">
+			<table name="#power">65 66 66 67 67 67 68 68 69 69 69 70 70 70 71 71 72 72 72 73 73 74 74 74 75 75 75 76 76 77</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#power">65 65 65 65 65 65 66 66 66 66 66 66 67 67 67 67 67 67 68 68 68 68 68 68 69 69 69 69 69 70</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">20 19 19 19 18 18 18 17 17 17 16 16 16 15 15 15 14 14 14 13 13 13 12 12 11 11 11 10 10 10</table>
+			<table name="#mpConsume2">80 79 78 76 75 73 72 71 69 68 67 65 64 62 61 60 58 57 56 54 53 52 50 49 47 46 45 43 42 41</table>
+		</enchant2>
+		<enchant3 levels="30" name="Fire Attack">
+			<table name="#elementPower">21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant3>
+	</skill>
+	<skill id="1172" levels="8" name="Aura Burn">
+		<table name="#effectPoint">146 163 181 194 214 228 250 265</table>
+		<table name="#mpConsume2">14 16 17 18 20 21 23 24</table>
+		<table name="#mpConsume1">4 4 5 5 5 6 6 6</table>
+		<table name="#magicLevel">17 20 23 25 28 30 33 35</table>
+		<table name="#power">19 21 24 25 28 30 33 36</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1172" />
+		<set name="reuseDelay" val="1000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="150" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="element" val="wind" />
+	</skill>
+	<skill id="1174" levels="22" name="Frost Wall">
+		<table name="#effectPoint">286 297 309 319 325 330 335 340 345 349 354 358 363 367 371 374 378 381 385 388 390 393</table>
+		<table name="#elementPower">0</table>
+		<table name="#mpConsume2">54 56 59 61 63 64 65 66 68 69 70 71 72 74 75 76 77 78 79 80 81 82</table>
+		<table name="#mpConsume1">14 14 15 16 16 16 17 17 17 18 18 18 18 19 19 19 20 20 20 20 21 21</table>
+		<table name="#magicLevel">50 52 54 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74</table>
+		<table name="#power">48 50 53 55 56 57 59 60 61 62 63 65 66 67 68 69 70 72 73 74 75 76</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="affectLimit" val="5;12" />
+		<set name="icon" val="icon.skill1174" />
+		<set name="reuseDelay" val="4000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="elementPower" val="#elementPower" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_MULTIFACE" />
+		<set name="skillRadius" val="200" />
+		<set name="element" val="water" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Power">
+			<table name="#power">78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#power">77 78 78 79 79 80 80 81 81 82 82 83 83 84 84 85 85 86 86 87 87 88 88 89 89 90 90 91 91 92</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">20 19 19 19 18 18 18 17 17 17 16 16 16 15 15 15 14 14 13 13 13 12 12 12 11 11 11 10 10 10</table>
+			<table name="#mpConsume2">80 79 77 76 75 73 72 71 69 68 66 65 64 62 61 60 58 57 55 54 53 51 50 49 47 46 44 43 42 40</table>
+		</enchant2>
+		<enchant3 levels="30" name="Water Attack">
+			<table name="#elementPower">21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant3>
+		<for>
+		</for>
+	</skill>
+	<skill id="1175" levels="8" name="Aqua Swirl">
+		<table name="#effectPoint">182 204 227 243 268 285 313 331</table>
+		<table name="#mpConsume2">14 16 17 18 20 21 23 24</table>
+		<table name="#mpConsume1">4 4 5 5 5 6 6 6</table>
+		<table name="#magicLevel">17 20 23 25 28 30 33 35</table>
+		<table name="#power">23 26 29 32 35 38 42 44</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1175" />
+		<set name="reuseDelay" val="1200" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="750" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="element" val="water" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="shieldignore" val="true" />
+	</skill>
+	<skill id="1176" levels="15" name="Tempest">
+		<table name="#effectPoint">219 229 239 248 257 266 275 283 291 299 306 312 318 323 328</table>
+		<table name="#mpConsume2">49 52 54 56 59 61 64 66 69 71 74 76 78 80 82</table>
+		<table name="#mpConsume1">13 13 14 14 15 16 16 17 18 18 19 19 20 20 21</table>
+		<table name="#magicLevel">46 48 50 52 54 56 58 60 62 64 66 68 70 72 74</table>
+		<table name="#power">31 33 34 36 38 39 41 43 45 46 48 50 51 53 54</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="affectLimit" val="5;12" />
+		<set name="icon" val="icon.skill1176" />
+		<set name="reuseDelay" val="4000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="500" />
+		<set name="hitTime" val="5000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<table name="#elementPower">0</table>
+		<set name="elementPower" val="#elementPower" />
+		<set name="target" val="TARGET_AREA" />
+		<set name="skillRadius" val="200" />
+		<set name="element" val="wind" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Power">
+			<table name="#power">55 55 56 56 57 57 58 58 59 59 60 60 61 61 62 62 63 63 64 64 65 65 66 66 67 67 68 68 69 70</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">20 19 19 19 18 18 18 17 17 17 16 16 16 15 15 15 14 14 13 13 13 12 12 12 11 11 11 10 10 10</table>
+			<table name="#mpConsume2">80 79 77 76 75 73 72 71 69 68 66 65 64 62 61 60 58 57 55 54 53 51 50 49 47 46 44 43 42 40</table>
+		</enchant2>
+		<enchant3 levels="30" name="Wind Attack">
+			<table name="#elementPower">21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant3>
+	</skill>
+	<skill id="1177" levels="5" name="Wind Strike">
+		<table name="#effectPoint">92 106 121 143 162</table>
+		<table name="#mpConsume2">7 7 8 11 12</table>
+		<table name="#mpConsume1">2 2 2 3 3</table>
+		<table name="#magicLevel">1 4 7 11 14</table>
+		<table name="#power">12 13 15 18 21</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1177" />
+		<set name="reuseDelay" val="1200" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="element" val="wind" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="shieldignore" val="true" />
+	</skill>
+	<skill id="1178" levels="8" name="Twister">
+		<table name="#effectPoint">182 204 227 243 268 285 313 331</table>
+		<table name="#mpConsume2">14 16 17 18 20 21 23 24</table>
+		<table name="#mpConsume1">4 4 5 5 5 6 6 6</table>
+		<table name="#magicLevel">17 20 23 25 28 30 33 35</table>
+		<table name="#power">23 26 29 32 35 38 42 44</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1178" />
+		<set name="reuseDelay" val="1200" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="750" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="element" val="wind" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="shieldignore" val="true" />
+	</skill>
+	<skill id="1181" levels="3" name="Flame Strike">
+		<table name="#effectPoint">204 243 285</table>
+		<table name="#mpConsume2">23 27 32</table>
+		<table name="#mpConsume1">6 7 8</table>
+		<table name="#magicLevel">20 25 30</table>
+		<table name="#power">13 14 14</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="affectLimit" val="5;12" />
+		<set name="icon" val="icon.skill1181" />
+		<set name="reuseDelay" val="4000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="500" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_AREA" />
+		<set name="skillRadius" val="200" />
+		<set name="element" val="fire" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="1182" levels="3" name="Resist Aqua">
+		<table name="#res">10 15 20</table>
+		<table name="#effectPoint">243 379 418</table>
+		<table name="#abnormal_lv">1 2 3</table>
+		<table name="#abnormal_time">7200</table>
+		<table name="#mpConsume2">18 28 31</table>
+		<table name="#mpConsume1">5 7 8</table>
+		<table name="#magicLevel">25 40 44</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1182" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Time">
+			<table name="#abnormal_time">7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#res">21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">7 7 7 7 7 7 7 6 6 6 6 6 6 6 6 5 5 5 5 5 5 5 4 4 4 4 4 4 4 4</table>
+			<table name="#mpConsume2">30 29 29 28 28 27 27 26 26 25 25 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17 16 16 15</table>
+		</enchant2>
+		<enchant3 levels="30" name="Power">
+			<table name="#res">24 28 33 37 41 46 50 54 59 63 67 72 76 80 85 89 93 98 102 106 111 115 119 124 128 132 137 141 145 150</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant3>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="AquaAtr" time="#abnormal_time" val="0">
+				<add order="0x40" stat="defenceWater" val="#res" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1183" levels="4" name="Freezing Shackle">
+		<table name="#dmg">102 125 144 157</table>
+		<table name="#effectPoint">523 619 746 818</table>
+		<table name="#mpConsume2">47 56 71 82</table>
+		<table name="#mpConsume1">12 14 18 21</table>
+		<table name="#magicLevel">44 52 64 74</table>
+		<table name="#power">5 6 7 8</table>
+		<set name="levelModifier" val="2" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1183" />
+		<set name="reuseDelay" val="2000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="activateRate" val="50" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="element" val="water" />
+		<set name="skillType" val="DOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="15" name="DamOverTime" time="1" val="#dmg" />
+		</for>
+	</skill>
+	<skill id="1184" levels="6" name="Ice Bolt">
+		<table name="#effectPoint">106 121 143 162 182 204</table>
+		<table name="#mpConsume2">7 8 11 12 14 16</table>
+		<table name="#mpConsume1">2 2 3 3 4 4</table>
+		<table name="#magicLevel">4 7 11 14 17 20</table>
+		<table name="#power">8 9 11 13 14 16</table>
+		<set name="levelModifier" val="1" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1184" />
+		<set name="coolTime" val="200" />
+		<set name="reuseDelay" val="2000" />
+		<set name="power" val="#power" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="3100" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="activateRate" val="40" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="element" val="water" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="RunSpeedDown" time="30" val="0">
+				<mul order="0x50" stat="runSpd" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1189" levels="3" name="Resist Wind">
+		<table name="#res">10 15 20</table>
+		<table name="#effectPoint">331 379 418</table>
+		<table name="#abnormal_lv">1 2 3</table>
+		<table name="#abnormal_time">7200</table>
+		<table name="#mpConsume2">24 28 31</table>
+		<table name="#mpConsume1">6 7 8</table>
+		<table name="#magicLevel">35 40 44</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1189" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Time">
+			<table name="#abnormal_time">7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#res">21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">7 7 7 7 7 7 7 6 6 6 6 6 6 6 6 5 5 5 5 5 5 5 4 4 4 4 4 4 4 4</table>
+			<table name="#mpConsume2">30 29 29 28 28 27 27 26 26 25 25 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17 16 16 15</table>
+		</enchant2>
+		<enchant3 levels="30" name="Power">
+			<table name="#res">24 28 33 37 41 46 50 54 59 63 67 72 76 80 85 89 93 98 102 106 111 115 119 124 128 132 137 141 145 150</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant3>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="WindAtr" time="#abnormal_time" val="0">
+				<add order="0x40" stat="defenceWind" val="#res" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="1191" levels="3" name="Resist Fire">
+		<table name="#res">10 15 20</table>
+		<table name="#effectPoint">285 379 418</table>
+		<table name="#abnormal_lv">1 2 3</table>
+		<table name="#abnormal_time">7200</table>
+		<table name="#mpConsume2">21 28 31</table>
+		<table name="#mpConsume1">6 7 8</table>
+		<table name="#magicLevel">30 40 44</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1191" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="#mpConsume1" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="effectPoint" val="#effectPoint" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<enchant1 levels="30" name="Time">
+			<table name="#abnormal_time">7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200 7200</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant1>
+		<enchant2 levels="30" name="Cost">
+			<table name="#res">21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+			<table name="#mpConsume1">7 7 7 7 7 7 7 6 6 6 6 6 6 6 6 5 5 5 5 5 5 5 4 4 4 4 4 4 4 4</table>
+			<table name="#mpConsume2">30 29 29 28 28 27 27 26 26 25 25 24 24 23 23 22 22 21 21 20 20 19 19 18 18 17 17 16 16 15</table>
+		</enchant2>
+		<enchant3 levels="30" name="Power">
+			<table name="#res">24 28 33 37 41 46 50 54 59 63 67 72 76 80 85 89 93 98 102 106 111 115 119 124 128 132 137 141 145 150</table>
+			<table name="#magicLevel">76 76 76 77 77 77 78 78 78 79 79 79 80 80 80 81 81 81 82 82 82 83 83 83 84 84 84 85 85 85</table>
+		</enchant3>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="FireAtr" time="#abnormal_time" val="0">
+				<add order="0x40" stat="defenceFire" val="#res" />
+			</effect>
+		</for>
+	</skill>
+</list>

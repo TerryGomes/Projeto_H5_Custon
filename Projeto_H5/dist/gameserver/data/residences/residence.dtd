@@ -1,0 +1,78 @@
+<!ELEMENT residence (support|item_create|restore_exp|restore_hp|restore_mp|teleport|platform|curtain|skills|banish_points|owner_restart_points|other_restart_points|chaos_restart_points|related_fortresses|merchant_guards)*>
+<!ATTLIST residence
+	id CDATA #REQUIRED
+	name CDATA #REQUIRED
+	impl CDATA #REQUIRED
+	rental_fee CDATA #IMPLIED
+	min_bid CDATA #IMPLIED
+	deposit CDATA #IMPLIED
+	grade CDATA #IMPLIED>
+<!ELEMENT support (#PCDATA)>
+<!ATTLIST support
+	lease CDATA #REQUIRED
+	level CDATA #REQUIRED>
+<!ELEMENT item_create (#PCDATA)>
+<!ATTLIST item_create
+	level CDATA #REQUIRED
+	npcId CDATA #REQUIRED
+	listId CDATA #REQUIRED
+	lease CDATA #REQUIRED>
+<!ELEMENT restore_exp (#PCDATA)>
+<!ATTLIST restore_exp
+	lease CDATA #REQUIRED
+	level CDATA #REQUIRED>
+<!ELEMENT platform (#PCDATA)>
+<!ATTLIST platform
+	lease CDATA #REQUIRED
+	level CDATA #REQUIRED>
+<!ELEMENT curtain (#PCDATA)>
+<!ATTLIST curtain
+	lease CDATA #REQUIRED
+	level CDATA #REQUIRED>
+<!ELEMENT restore_hp (#PCDATA)>
+<!ATTLIST restore_hp
+	lease CDATA #REQUIRED
+	level CDATA #REQUIRED>
+<!ELEMENT restore_mp (#PCDATA)>
+<!ATTLIST restore_mp
+	lease CDATA #REQUIRED
+	level CDATA #REQUIRED>
+<!ELEMENT teleport (target)*>
+<!ATTLIST teleport
+	lease CDATA #REQUIRED
+	level CDATA #REQUIRED>
+<!ELEMENT target (#PCDATA)>
+<!ATTLIST target
+	loc CDATA #REQUIRED
+	name CDATA #REQUIRED
+	price CDATA #REQUIRED
+	StringName CDATA #REQUIRED
+	StringNameLang CDATA #REQUIRED>
+<!ELEMENT skills (skill)*>
+<!ELEMENT skill (#PCDATA)>
+<!ATTLIST skill
+	id CDATA #REQUIRED
+	level CDATA #REQUIRED>
+<!ELEMENT banish_points (point)*>
+<!ELEMENT owner_restart_points (point)*>
+<!ELEMENT other_restart_points (point)*>
+<!ELEMENT chaos_restart_points (point)*>
+<!ELEMENT point (#PCDATA)>
+<!ATTLIST point
+	x CDATA #REQUIRED
+	y CDATA #REQUIRED
+	z CDATA #REQUIRED>
+<!ELEMENT related_fortresses (domain|boundary)*>
+<!ELEMENT domain (#PCDATA)>
+<!ATTLIST domain
+	fortress CDATA #REQUIRED>
+<!ELEMENT boundary (#PCDATA)>
+<!ATTLIST boundary
+	fortress CDATA #REQUIRED>
+<!ELEMENT merchant_guards (merchant_guard)*>
+<!ELEMENT merchant_guard (#PCDATA)>
+<!ATTLIST merchant_guard
+	item_id CDATA #REQUIRED
+	npc_id CDATA #REQUIRED
+	max CDATA #REQUIRED
+	ssq CDATA #REQUIRED>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE residence SYSTEM "residence.dtd">
+<residence id="113" name="Cloud Mountain Fortress" impl="Fortress">
+	<support level="7" lease="49000"/>
+	<support level="17" lease="490000"/>
+	<support level="8" lease="120000"/>
+	<support level="18" lease="1200000"/>
+	<restore_exp level="45" lease="63000"/>
+	<restore_exp level="50" lease="70000"/>
+	<restore_hp level="300" lease="12000"/>
+	<restore_hp level="400" lease="20000"/>
+	<restore_mp level="40" lease="45000"/>
+	<restore_mp level="50" lease="65000"/>
+	<teleport level="1" lease="1000">
+		<target loc="-54275 89255 -2824" name="1010658" price="0" StringName="Fortress North Gate" StringNameLang="Северные врата Крепости"/><!--Fortress North Gate-->
+		<target loc="-52274 93334 -2816" name="1010659" price="0" StringName="Fortress South Gate" StringNameLang="Южные врата Крепости"/><!--Fortress South Gate-->
+		<target loc="-14393 123671 -3144" name="1010663" price="0" StringName="Gludio Town Square" StringNameLang="Площадь Глудио"/><!--Gludio Town Square-->
+		<target loc="82323 55466 -1480" name="1010681" price="0" StringName="Oren Town Square" StringNameLang="Площадь Орена"/><!--Oren Town Square-->
+	</teleport>
+	<teleport level="2" lease="10000">
+		<target loc="-54275 89255 -2824" name="1010658" price="0" StringName="Fortress North Gate" StringNameLang="Северные врата Крепости"/><!--Fortress North Gate-->
+		<target loc="-52274 93334 -2816" name="1010659" price="0" StringName="Fortress South Gate" StringNameLang="Южные врата Крепости"/><!--Fortress South Gate-->
+		<target loc="-14393 123671 -3144" name="1010663" price="0" StringName="Gludio Town Square" StringNameLang="Площадь Глудио"/><!--Gludio Town Square-->
+		<target loc="82323 55466 -1480" name="1010681" price="0" StringName="Oren Town Square" StringNameLang="Площадь Орена"/><!--Oren Town Square-->
+		<target loc="-9959 176184 -4160" name="1010566" price="500" StringName="The Ant Nest" StringNameLang="Муравейник"/><!--The Ant Nest-->
+		<target loc="-28327 155125 -3496" name="1010102" price="500" StringName="Windawood Manor" StringNameLang="Поместье Виндавуд"/><!--Windawood Manor-->
+		<target loc="64328 26803 -3768" name="1010121" price="500" StringName="Sea of Spores" StringNameLang="Море Спор"/><!--Sea of Spores-->
+		<target loc="118509 -4779 -4000" name="1010127" price="500" StringName="Ancient Battleground" StringNameLang="Древнее Поле Битвы"/><!--Ancient Battleground-->
+	</teleport>
+	<skills>
+		<skill id="610" level="1" /> <!--Residence Death Fortune-->
+		<skill id="606" level="1" /> <!--Residence Fortitude-->
+	</skills>
+	<banish_points>
+		<point x="-50002" y="94962" z="-3360" />
+		<point x="-50066" y="94770" z="-3336" />
+		<point x="-55296" y="87373" z="-3112" />
+		<point x="-55268" y="87618" z="-3024" />
+	</banish_points>
+	<owner_restart_points>
+		<point x="-52789" y="91279" z="-2496" />
+		<point x="-52859" y="91153" z="-2496" />
+		<point x="-52792" y="91022" z="-2496" />
+	</owner_restart_points>
+	<other_restart_points>
+		<point x="-81447" y="152760" z="-3170" />
+		<point x="-81447" y="152880" z="-3170" />
+		<point x="-81447" y="152640" z="-3170" />
+		<point x="-82186" y="152760" z="-3170" />
+		<point x="-82186" y="152880" z="-3170" />
+		<point x="-82186" y="152640" z="-3170" />
+		<point x="-81780" y="152760" z="-3170" />
+		<point x="-81780" y="152880" z="-3170" />
+		<point x="-81780" y="152640" z="-3170" />
+	</other_restart_points>
+	<chaos_restart_points>
+		<point x="-81616" y="157104" z="-3150" />
+		<point x="-80688" y="157216" z="-3150" />
+		<point x="-79568" y="156960" z="-3150" />
+		<point x="-78800" y="157744" z="-3150" />
+		<point x="-80448" y="157968" z="-3130" />
+		<point x="-81712" y="159536" z="-3230" />
+		<point x="-79744" y="160592" z="-3330" />
+		<point x="-79584" y="159408" z="-3180" />
+		<point x="-74016" y="150656" z="-2800" />
+		<point x="-72720" y="149632" z="-2780" />
+		<point x="-75904" y="162000" z="-3300" />
+		<point x="-75488" y="161472" z="-3250" />
+		<point x="-74688" y="160736" z="-3200" />
+		<point x="-74352" y="161488" z="-3250" />
+		<point x="-76656" y="160768" z="-3280" />
+		<point x="-77472" y="160960" z="-3470" />
+		<point x="-77776" y="158752" z="-3270" />
+		<point x="-80448" y="161488" z="-3420" />
+		<point x="-75440" y="162672" z="-3350" />
+		<point x="-81760" y="161248" z="-3200" />
+	</chaos_restart_points>
+</residence>

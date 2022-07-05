@@ -1,0 +1,32 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Gludio Castle Town: NPC Pathfinder (Level 25) -->
+	<instance id="46" name="Rim Kamaloka" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="21" max="31"/>
+		<party min="1" max="1"/>
+		<teleport loc="10025 -219868 -8016"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="true" sharedReuseGroup="2"/>
+		<add_parameters>
+			<param name="pathfinder_loc" value="9252 -219908 -8016"/>
+			<param name="reward_lvl_0" value="13002-4"/>
+			<param name="reward_lvl_1" value="13002-4;12824-1"/>
+			<param name="reward_lvl_2" value="13002-4;10836-1"/>
+			<param name="reward_lvl_3" value="13002-4;10837-1"/>
+			<param name="reward_lvl_4" value="13002-4;10838-1"/>
+			<param name="reward_lvl_5" value="13002-4;10844-1"/>
+		</add_parameters>
+		<spawns>
+			<!-- White Skull Kanabion -->
+			<spawn mobId="22452" count="4" respawn="30" type="loc">
+				<coords loc="8632 -219208 -8016 -8016"/>
+				<coords loc="9880 -219208 -8016 -8016"/>
+				<coords loc="9880 -220536 -8016 -8016"/>
+				<coords loc="8632 -220536 -8016 -8016"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

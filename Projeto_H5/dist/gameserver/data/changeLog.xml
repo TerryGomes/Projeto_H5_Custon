@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- types: "BUG", "NEW_FEATURE", "IMPROVEMENT" -->
+<list>
+	<change date="2014-09-20">
+		<fix type="IMPROVEMENT" desc="Mana Potion Reuse is 10s Now." />
+		<fix type="IMPROVEMENT" desc="Certificate Quest Removed." />
+		<fix type="IMPROVEMENT" desc="Festival Coin Not Tradeable any more." />
+	</change>
+	<change date="2014-09-16">
+		<fix type="BUG" desc="Fixed Community Clan Invitation." />
+	</change>
+	<change date="2014-09-17">
+		<fix type="NEW_FEATURE" desc="Wedding Manager will give you as reward Bow of Love and Ring." />
+		<fix type="NEW_FEATURE" desc="Trader Alexis will sell Wedding Items." />
+		<fix type="BUG" desc="Fixed Antharas." />
+		<fix type="BUG" desc="Fixed Valakas." />
+		<fix type="BUG" desc="Fixed Baium." />
+		<fix type="BUG" desc="Fixed Baylor." />
+	</change>
+	<change date="2014-09-16">
+		<fix type="BUG" desc="Fixed Treasure Chests." />
+		<fix type="BUG" desc="Fixed Mana Heal." />
+		<fix type="BUG" desc="Fixed Find Trap." />
+	</change>
+	<change date="2014-09-15">
+		<fix type="BUG" desc="Fixed Siege Guards." />
+	</change>
+	<change date="2014-09-14">
+		<fix type="BUG" desc="Fixed Chain Heal Retail Working." />
+		<fix type="BUG" desc="Fixed Servitor Share." />
+		<fix type="BUG" desc="Fixed Offline Buffers." />
+	</change>
+	<change date="2014-09-13">
+		<fix type="BUG" desc="Fix Following pets to Owner." />
+		<fix type="BUG" desc="Some HTML Dialogs Fixed." />
+		<fix type="BUG" desc="Fix Retail Summon Pets." />
+		<fix type="BUG" desc="Fixed Kecki." />
+	</change>
+	<change date="2014-09-12">
+		<fix type="BUG" desc="Fix 7rb specific Inteligent Animation." />
+		<fix type="BUG" desc="Fix Kariks specific Inteligent Animation." />
+		<fix type="BUG" desc="Fix Raidbosses LoA. You need Party+CC Retail working." />
+	</change>
+	<change date="2014-09-11">
+		<fix type="IMPROVEMENT" desc="No Carrier Option will keep you in party if you get disconnect. Available for 300 seconds." />
+	</change>
+	<change date="2014-09-10">
+		<fix type="IMPROVEMENT" desc="Fixed Olympiad Disconnect losing Points." />
+		<fix type="IMPROVEMENT" desc="New Character will get new item for fast lvl up" />
+	</change>
+	<change date="2014-09-09">
+		<fix type="IMPROVEMENT" desc="Removed 3 vs 3 Olympiad Option" />
+	</change>
+	<change date="2014-09-08">
+		<fix type="IMPROVEMENT" desc="Improvement of GeoData Clicking in front" />
+		<fix type="BUG" desc="Fix Clan Community Bug." />
+		<fix type="BUG" desc="Fix for Spellbooks." />
+	</change>
+	<change date="2014-09-07">
+		<fix type="NEW_FEATURE" desc="New Accessories Added." />
+		<fix type="NEW_FEATURE" desc="Added Super Pets." />
+		<fix type="NEW_FEATURE" desc="Added Hero Cloak." />
+		<fix type="NEW_FEATURE" desc="Added Castle Cloak." />
+	</change>
+	<change date="2014-09-06">
+		<fix type="IMPROVEMENT" desc="Improvement of GeoData Clicking in front" />
+		<fix type="BUG" desc="Fix Clan Community Bug." />
+	</change>
+	<change date="2014-03-19">
+		<fix type="NEW_FEATURE" desc="Implemented better formula for saveVs, meaning WIT, MEN, CON, STR resistance" />
+		<fix type="IMPROVEMENT" desc="Remove all the buffs of the participants when entering a PvP GM Event" />
+		<fix type="IMPROVEMENT" desc="The damage messages should show the visible names, not the original names. Meaning that you should see Akanamah instead of Fate" />
+		<fix type="IMPROVEMENT" desc="Support to check in all events if the character can cast x skill" />
+		<fix type="IMPROVEMENT" desc="If the player logout when he is participating in a gmevent, but when he logs in he is in the zone but the event ended or there is a new one, then he can use unregister to leave the event zone" />
+		<fix type="IMPROVEMENT" desc="Players that are in instances cannot participate in a gm event" />
+		<fix type="IMPROVEMENT" desc="Now all the transformation sealbooks are destroyable" />
+		<fix type="BUG" desc="Demolition Impact is an AOE skill, not a single target skill" />
+		<fix type="BUG" desc="Reverted Counter Attack system as it was originally" />
+		<fix type="BUG" desc="Fixed 2 enchantments of Guard Stance that had 2xx bonuses, instead of 300" />
+	</change>
+	<change date="2014-03-19">
+		<fix type="NEW_FEATURE" desc="Implemented better formula for saveVs, meaning WIT, MEN, CON, STR resistance" />
+		<fix type="IMPROVEMENT" desc="Remove all the buffs of the participants when entering a PvP GM Event" />
+		<fix type="IMPROVEMENT" desc="The damage messages should show the visible names, not the original names. Meaning that you should see Akanamah instead of Fate" />
+		<fix type="IMPROVEMENT" desc="Support to check in all events if the character can cast x skill" />
+		<fix type="IMPROVEMENT" desc="If the player logout when he is participating in a gmevent, but when he logs in he is in the zone but the event ended or there is a new one, then he can use unregister to leave the event zone" />
+		<fix type="IMPROVEMENT" desc="Players that are in instances cannot participate in a gm event" />
+		<fix type="IMPROVEMENT" desc="Now all the transformation sealbooks are destroyable" />
+		<fix type="BUG" desc="Demolition Impact is an AOE skill, not a single target skill" />
+		<fix type="BUG" desc="Reverted Counter Attack system as it was originally" />
+		<fix type="BUG" desc="Fixed 2 enchantments of Guard Stance that had 2xx bonuses, instead of 300" />
+	</change>
+	<change date="2014-03-09">
+		<fix type="NEW_FEATURE" desc="Created a new mail manager to control sent mails. Now the reuse to send mails is 5 minutes. There is also a spam protector to massive mailing" />
+		<fix type="IMPROVEMENT" desc="Restored the Festival Coins as a reward for the vote system. The rune will stay also, so you will get the rune and the Coins" />
+		<fix type="IMPROVEMENT" desc="Players that are blocked (didn't wrote the secondary password) cannot use chat or commands. This will solve many problems with account security" />
+		<fix type="IMPROVEMENT" desc="Now GM characters are able to see chances of skill success when casting them" />
+		<fix type="IMPROVEMENT" desc="New changes for the Gm Event Engine: The GM can create a pvp event, that will behave like it was an arena" />
+		<fix type="IMPROVEMENT" desc="Gm Event Engine: It can also create a peace event, blocking the players to pvp each other" />
+		<fix type="IMPROVEMENT" desc="Gm Event Engine: New option to enable auto resurrect participants after death" />
+		<fix type="IMPROVEMENT" desc="Gm Event Engine: Players that are registered to the event wont be able to resurrect by themselves when they die (To Village, etc)" />
+		<fix type="IMPROVEMENT" desc="Gm Event Engine: If somehow the player leaves the event instance, he will be removed from the event" />
+		<fix type="BUG" desc="Final fix for Counter Attack skills" />
+		<fix type="BUG" desc="Fix for reuses on vote system. The type on the database was wrong" />
+		<fix type="BUG" desc="Fixed exploit that allow players to buy buffs from offline buffers for free while being in a store, trading, fishing or enchanting" />
+	</change>
+	<change date="2014-03-06">
+		<fix type="BUG" desc="Fix for Counter Attacks. It was adding the original damage in the final value" />
+	</change>
+	<change date="2014-03-05">
+		<fix type="NEW_FEATURE" desc="Retail support for Steal Buff system. Now it doesn't use a general chance but each buff is calculated with several parameters" />
+		<fix type="NEW_FEATURE" desc="Retail Cancel Calculation system. Normal cancellation doesn't use a general chance, but each buff its calculated with many parameters as general chance, lvl difference, resistance, etc" />
+		<fix type="NEW_FEATURE" desc="Retail support for Counter Attacks. Now skills like Eye for Eye will work correctly, returning a damage based on the patk of the defender and the defense of the attacker. Works only with close range phyisical skills" />
+	</change>
+	<change date="2014-02-27">
+		<fix type="IMPROVEMENT" desc="Final fix for admin augmentation system. Now it includes all augmentations with the right classification" />
+		<fix type="BUG" desc="Raised violent temper activation rate again" />
+	</change>
+	<change date="2014-02-26">
+		<fix type="IMPROVEMENT" desc="Added support to put a STAT augmentation and also fixed setting augmentations on target" />
+		<fix type="BUG" desc="Fixed one location of the special raid boss event" />
+	</change>
+	<change date="2014-02-25">
+		<fix type="NEW_FEATURE" desc="New Admin System that allows the GM to set to the target's weapon any particular skill that he desires, choosing from a list. The second augmentation is chosen randomly. Everything always using the max levels, stones, etc for the best results" />
+		<fix type="NEW_FEATURE" desc="New event engine to help GameMasters to handle manual events easier: * Allows creating events in a particular instance * Player can register and unregister to the event using .gmevent * Players will be teleported automatically on registration, and teleported back where it was when the event ends * The GM can control some parameters to put conditions on registration, like min and max level or online time" />
+		<fix type="BUG" desc="Fixed Violent Temper activation rates, specially on enchants" />
+	</change>
+	<change date="2014-02-23">
+		<fix type="IMPROVEMENT" desc="Reverted one more change about hold and shock" />
+		<fix type="IMPROVEMENT" desc="Restored change skills activation from reflect. Using a different method to control chance skills from spamming" />
+		<fix type="BUG" desc="Violent Temper was missing its activation chance, it was there but it wasn't used" />
+		<fix type="BUG" desc="Raised curse fear chance due to its lower time" />
+	</change>
+	<change date="2014-02-22">
+		<fix type="NEW_FEATURE" desc="Improvement for Chance Skills system. Now they should behave better than before, specially with their activation rates. Delays are fine. Also removed damage calls to chance skills from reflect damage, considering that everyone has reflect as buff, it just doubles the chances to activate a chance skill, spamming it" />
+		<fix type="IMPROVEMENT" desc="Fixed offline buffers so they can show the right enchant value" />
+		<fix type="IMPROVEMENT" desc="Added Archmage and Mystic Muse to the allowed buffer classes" />
+		<fix type="IMPROVEMENT" desc="Now you can also set buff stores inside Clan Halls" />
+		<fix type="IMPROVEMENT" desc="Player that belong to the same clan as the buffer wont have to pay anything for the buffs" />
+		<fix type="BUG" desc="Fix No Carrier title on buff stores" />
+		<fix type="BUG" desc="Improved PvP Weapon - Cancel" />
+		<fix type="BUG" desc="Fix for Enchanter Ability - Barrier" />
+		<fix type="BUG" desc="Reduced the time steps on +Time Enchant in the skill Curse Fear" />
+		<fix type="BUG" desc="Now if you set the config to not see stores it wont affect Buff Stores. You will see them always" />
+	</change>
+	<change date="2014-02-21">
+		<fix type="NEW_FEATURE" desc="New Buff Store System! This gives the ability to players to sell their buffs in a convinient store. It acts very similar to the normal private stores" />
+		<fix type="NEW_FEATURE" desc="Buff Store: If you close the client while in buff store, you will go to offline mode, like the other traders" />
+		<fix type="NEW_FEATURE" desc="Buff Store: To create a store make it from the .cp or using .buffstore. You can only set buff stores in the designated areas for it" />
+		<fix type="NEW_FEATURE" desc="Buff Store: 2 new teleport locations were added to the global gk to go fast to buff store zones. You will get a message when you enter and leave one" />
+		<fix type="NEW_FEATURE" desc="Support for temporary name and title colors" />
+		<fix type="NEW_FEATURE" desc="Support for temporary visible name and title" />
+		<fix type="IMPROVEMENT" desc="Reverted trait formula changes temporarily until proper implementation" />
+		<fix type="BUG" desc="Fix for gms that wont able to change their classes" />
+	</change>
+	<change date="2014-02-19">
+		<fix type="NEW_FEATURE" desc="Rework for skill chances: Fixed all trait formulas. Now all proficiencies and vulnerabilities should work as intended" />
+		<fix type="NEW_FEATURE" desc="Rework for skill chances: Added a debug mode for gms to know the chance of each step in the calculation" />
+		<fix type="NEW_FEATURE" desc="Rework for skill chances: Changed some logic in the success formulas" />
+		<fix type="NEW_FEATURE" desc="Rework for skill chances: This should improve a lot effect success calculation and effect duration" />
+		<fix type="IMPROVEMENT" desc="Fix for Clan Warehouse Privileges. Now you can add and remove characters separately" />
+		<fix type="IMPROVEMENT" desc="Increased Seed of Infinity (Hall of Suffering) allowed level to 85" />
+		<fix type="IMPROVEMENT" desc="Joined the vote announce task with the new vote system. Its more efficient and it should fix the problem of messages for people that already voted" />
+		<fix type="IMPROVEMENT" desc="Added to the vote reward system the ability to store and restore the penalties when the server is restarted. So players that voted close to the restart won't receive the message to vote again" />
+		<fix type="BUG" desc="Fix for vote. Removed thread to avoid deadlocks" />
+		<fix type="BUG" desc="Shadow bind uses the wrong display id" />
+	</change>
+	<change date="2014-02-18">
+		<fix type="NEW_FEATURE" desc="Enabled wedding system. Report any bugs you may find" />
+		<fix type="IMPROVEMENT" desc="Now the Vote Reward Rune will also give 1% to Patk, Matk, Pdef, Mdef. PLEASE DOWNLOAD THE NEW SYSTEM" />
+		<fix type="IMPROVEMENT" desc="Improvement for vote system. It a connection error occurs with the vote site, all voting is disabled for 15 minutes and then you can try again" />
+		<fix type="IMPROVEMENT" desc="Avoid creating useless threads on voting. And a little improvement on db connections" />
+		<fix type="IMPROVEMENT" desc="Reworked completely the vote system. Specially the logic of it. Removed queries to db, added checks, make the last part as a thread to avoid locking the server if something fails, and improved a lot performance" />
+		<fix type="IMPROVEMENT" desc="Changed the drop calculation for raids a little. If it cannot find any top damager for the raid, then use the normal aggro as for every raid. Maybe this solves the issue that sometimes they are not dropping" />
+		<fix type="IMPROVEMENT" desc="Added 4 more locations for the special raid boss event" />
+		<fix type="BUG" desc="Fell Swoop and Focus Attack from the warlord should not replace each other" />
+		<fix type="BUG" desc="Delevel skills must be after 9 levels" />
+	</change>
+	<change date="2014-02-15">
+		<fix type="IMPROVEMENT" desc="Enabled again Korean Style event. Report every bug you find with this" />
+		<fix type="IMPROVEMENT" desc="Changed afk time on korean style to 8 seconds" />
+		<fix type="IMPROVEMENT" desc="Enabled the new raid boss event. 20:00 gmt+1 every day" />
+		<fix type="BUG" desc="Fixed those 3 raid bosses respawn announcements. I was using wrong ids" />
+	</change>
+	<change date="2014-02-14">
+		<fix type="NEW_FEATURE" desc="Added a custom announcement notifying when the following npcs respawn: Drake Leader, Behemoth Leader and Dragon Beast" />
+		<fix type="NEW_FEATURE" desc="New Auto Event where a special raid will spawn at a fixed hour every day and will stay for 1 hour waiting for players to challenge it. The time will be 20:00 GMT+1 (Server Time) every day. The raid has special drops and high stats. Announcements will notify you when it spawns and where" />
+		<fix type="IMPROVEMENT" desc="Salvation can no longer be used at Korean Event" />
+		<fix type="BUG" desc="Fixed a price typo in Clan Name Change Service" />
+		<fix type="BUG" desc="Fix for duels. Now the correct duel is created and every error is solved" />
+		<fix type="BUG" desc="Increased Stunning Shot (stun and remove target) chances" />
+		<fix type="BUG" desc="Fix when failing the captcha test on .report that put you on jail for unlimited time" />
+		<fix type="BUG" desc="Fixed Anchor. It was using a wrong id, and 2 chances" />
+	</change>
+	<change date="2014-02-11">
+		<fix type="NEW_FEATURE" desc="Added a new Clan Name Change Service to the Community Board, next to Character Name Change" />
+		<fix type="IMPROVEMENT" desc="Skill Evasion Buffs like ultimate evasion should evade every type of phyisical skills, not only damage skills" />
+		<fix type="IMPROVEMENT" desc="Support for Day of Doom to preventing the character from recieving buffs" />
+		<fix type="BUG" desc="Reverted Chain Heal for now, it heals only allies" />
+		<fix type="BUG" desc="Decreased Dryad Root chance" />
+		<fix type="BUG" desc="Aura Blast must be an AOE skill" />
+		<fix type="BUG" desc="Fixed SA Critical Damage on every dagger. It was using normal critical damage bonus with invented values. Now it uses proper values with static critical damage bonus" />
+		<fix type="BUG" desc="Deadly Roulette cannot be used on non-flagged characters" />
+		<fix type="BUG" desc="Hero debuffs cannot be cleansed" />
+		<fix type="BUG" desc="Fixed Fire Squad critical bonus" />
+	</change>
+	<change date="2014-02-10">
+		<fix type="IMPROVEMENT" desc="Fixed olympiad battle results. It should check if players are dead before comparing damage. This should solve the problems with some losing the battles even when they killed the opponent" />
+		<fix type="BUG" desc="Charm of Courage can always be used, so removing the control tower checks" />
+		<fix type="BUG" desc="Moved the max res time to the final function, to have every kind of res with answer. This fixes Charm of Courage and similar auto res" />
+		<fix type="BUG" desc="Reverted cancel changes. Now it doesn't affect invul chars again" />
+	</change>
+	<change date="2014-02-09">
+		<fix type="IMPROVEMENT" desc="Block Buff feature won't work anymore on olympiad" />
+		<fix type="IMPROVEMENT" desc="Added check so you cannot be ressed with charm of courage on sieges when the conditions are not right. The same as normal resurrection" />
+		<fix type="IMPROVEMENT" desc="Cancel now removes up to 1-3 buffs" />
+		<fix type="IMPROVEMENT" desc="Chain Heal must heal also neutral targets, not only allies. Npcs, neutral characters, etc" />
+		<fix type="BUG" desc="Reverted turn to stone to what it was before" />
+		<fix type="BUG" desc="Fixed aggroList on raids for players without party" />
+		<fix type="BUG" desc="Battle Death Syndrome cannot be cleansed" />
+		<fix type="BUG" desc="Fix for all fishes. Now they can be opened correctly" />
+		<fix type="BUG" desc="Raised chances for Thunder Storm, Shock Stomp and Shock Blast" />
+		<fix type="BUG" desc="Final fix for raid boss looting rights and dropping issues" />
+	</change>
+	<change date="2014-02-07">
+		<fix type="NEW_FEATURE" desc="Complete rework for attacking. Now hit times, damages, reuses and able to act again are calculated correctly. No more extra delay for damage" />
+		<fix type="NEW_FEATURE" desc="Added an experimental change to how drop rights are calculated in raid bosses and grand bosses" />
+		<fix type="NEW_FEATURE" desc="Instead of using single damage dealer for the checks like normal mobs do, we use party damages combined" />
+		<fix type="IMPROVEMENT" desc="Removed gauge for normal attacking that is not retail and it floods" />
+		<fix type="IMPROVEMENT" desc="If two or more Crytals at Castle have been destroyed: Neither the resurrection spell nor the scroll may be used" />
+		<fix type="IMPROVEMENT" desc="Now you must wait 10 seconds after being resurrected to use the buffer" />
+		<fix type="IMPROVEMENT" desc="New rework for aggression system. Now we use a combined code of what it was and the improved one to be sure that no behaviour changes from what it should be" />
+		<fix type="BUG" desc="Chain Heal should not heal invulnerable players" />
+		<fix type="BUG" desc="Fix for Antharas Lair mobs. Added all the necessary checks" />
+		<fix type="BUG" desc="Lowered Dryad Root chance" />
+		<fix type="BUG" desc="Throwing Dagger must be a debuff" />
+		<fix type="BUG" desc="Increased bluff chances" />
+		<fix type="BUG" desc="Raised trick switch chances" />
+		<fix type="BUG" desc="Raised mass banes chances" />
+		<fix type="BUG" desc="Fixed Turn to Stone. Its a buff, not a petrification debuff" />
+		<fix type="BUG" desc="Reverted items files, they were exchanged with old ones in the update" />
+	</change>
+	<change date="2014-02-06">
+		<fix type="NEW_FEATURE" desc="New Decay Task Manager. The old one was highly deficient" />
+		<fix type="NEW_FEATURE" desc="Now hwid logging is only saved when needed. No more continous use of this" />
+		<fix type="NEW_FEATURE" desc="New aggression calculation system, more efficient than before" />
+		<fix type="NEW_FEATURE" desc="Player resurrection only last for 5 minutes. After that you cant accept the res" />
+		<fix type="IMPROVEMENT" desc="Cancel reuse 25 seconds" />
+		<fix type="IMPROVEMENT" desc="Improved a lot how zones give effects and make damage" />
+		<fix type="IMPROVEMENT" desc="Removed locks from zones. They are too slow for what they do" />
+		<fix type="IMPROVEMENT" desc="New configurations for the server and the database, increasing performance" />
+		<fix type="IMPROVEMENT" desc="Raised some intervals to avoid unnecessary flooding" />
+		<fix type="BUG" desc="All this changes fix all lag problems and make the server about 10 times faster than it was" />
+		<fix type="BUG" desc="Fixed guards and mobs that were behaving wrongly caused by aggression rework" />
+	</change>
+	<change date="2014-02-01">
+		<fix type="NEW_FEATURE" desc="Added Death Match Event" />
+		<fix type="IMPROVEMENT" desc="Losing Team on Events will now also get rewards" />
+		<fix type="IMPROVEMENT" desc="Added 3 more Maps to Events" />
+		<fix type="IMPROVEMENT" desc="Capture the Flag will now run automatically" />
+		<fix type="IMPROVEMENT" desc="There will be now only 1 Top Killer per all instances of the event" />
+		<fix type="IMPROVEMENT" desc="You can now set Offline Buffer in Clan Hall" />
+		<fix type="IMPROVEMENT" desc="Removed Salvation and few other overpowered buffs from Offline Buffers" />
+		<fix type="IMPROVEMENT" desc="New look of .poll" />
+		<fix type="IMPROVEMENT" desc="Healers can no longer join FFA Events" />
+		<fix type="IMPROVEMENT" desc="Offline buffers have now Green nicknames" />
+		<fix type="IMPROVEMENT" desc="Disabling Animations, will now also hide Cloaks, Titles, Accessories and Debuff Effects to minimalize the lags" />
+		<fix type="BUG" desc="Fishes are now fixed" />
+		<fix type="BUG" desc="Offline Buffers will now always get rewards for sold buffs" />
+	</change>
+	<change date="2014-01-30">
+		<fix type="NEW_FEATURE" desc="You can now set Offline Buffing Store from .cp" />
+		<fix type="IMPROVEMENT" desc="When 2 players have same killing store in Auto Events, player with more PvP kills will be Top Killer" />
+		<fix type="BUG" desc="You will no longer heal your enemy by Chain Heal if he is in your clan" />
+		<fix type="BUG" desc="Fixed bonus of Vesper Noble Hose" />
+		<fix type="BUG" desc="Fixes few issues regarding Duel" />
+		<fix type="BUG" desc="Territory Wards can no longer be put inside Instances" />
+	</change>
+	<change date="2014-01-28">
+		<fix type="NEW_FEATURE" desc="Option to decrease Level was added to .cp" />
+		<fix type="IMPROVEMENT" desc="Epidos has now 2 hours respawn delay" />
+		<fix type="IMPROVEMENT" desc="PvP Weapon - Cancel will now have decreased Reuse time and increased Land Rate" />
+		<fix type="IMPROVEMENT" desc="Power of Phantom Summoner Death Spike was decreased" />
+		<fix type="IMPROVEMENT" desc="Decreased resistance to Blows while wearing Robe armor by 15%" />
+		<fix type="IMPROVEMENT" desc="Damage of Doombringer will now be increased by 25%" />
+		<fix type="IMPROVEMENT" desc="Rate of quest items dropped in An Ice Merchant's Dream is now affected by Quest Drop Rate" />
+		<fix type="BUG" desc="Daytime Zaken level 83 will now have a chance to drop Vorpal Jewelry depending on time spent in instance" />
+		<fix type="BUG" desc="Fixed Critical Stun Special Ability of Jade Claw" />
+		<fix type="BUG" desc="While losing levels, your skill levels will be lost too" />
+		<fix type="BUG" desc="While losing levels, your skill levels will be lost too" />
+		<fix type="BUG" desc="Seed of Annihilation buffs will now give correct effects" />
+		<fix type="BUG" desc="Mana Burn can no longer be resisted" />
+		<fix type="BUG" desc="Blades of Delusion have now correct Base Critical Rate" />
+		<fix type="BUG" desc="Blacksmith Pushkin chat options are now fixed" />
+	</change>
+	<change date="2014-01-26">
+		<fix type="IMPROVEMENT" desc="Fixed annoying lags during the day" />
+		<fix type="IMPROVEMENT" desc="Random Respawn of Valakas, Antharas, Baium, Queen Ant and Beleth is now 2 Hours" />
+		<fix type="IMPROVEMENT" desc="Dead players are now able to get Party Drops" />
+		<fix type="BUG" desc="Pets will now be healed after every fight in Korean Style" />
+		<fix type="BUG" desc="Fixed Rafforty NPC" />
+		<fix type="BUG" desc="Increased Insane Crusher Radius" />
+	</change>
+	<change date="2014-01-23">
+		<fix type="NEW_FEATURE" desc="Tower of Insolence floors 13 and 14 are now PvP Zone" />
+		<fix type="IMPROVEMENT" desc="Territory Wards will now be teleported back Spawn, if nobody picks them up for 2 minutes" />
+		<fix type="IMPROVEMENT" desc="Minor improvements in Experience Block feature" />
+		<fix type="IMPROVEMENT" desc="Reworked Stun Resistance" />
+		<fix type="IMPROVEMENT" desc="Damage delt using bow increased by 20%" />
+		<fix type="BUG" desc="Cubics will now work correctly against Not Flagged targets" />
+		<fix type="BUG" desc="Infinity Spear has now correct Cancel effect" />
+		<fix type="BUG" desc="Fixed Accessory Life Stones skills effects" />
+		<fix type="BUG" desc="Critical Damage Resistance is no longer affecting skills" />
+		<fix type="BUG" desc="Death Shot and Multiple Shot have now permament reuse delay and Skill Mastery isn't effecting them" />
+		<fix type="BUG" desc="Fixed death with To Village button during Olympiad Match" />
+		<fix type="BUG" desc="Hot Springs Lure can now be bought near Rainbow Springs Chateau" />
+		<fix type="BUG" desc="Fixed Mass Fear effect duration" />
+		<fix type="BUG" desc="Fixed chance of Throwing Dagger skill" />
+	</change>
+	<change date="2014-01-21">
+		<fix type="NEW_FEATURE" desc="You can now disable Auto Announcements by clicking on Question Mark after the message" />
+		<fix type="NEW_FEATURE" desc="Players will now get reward for being Top Killer on Auto Events" />
+		<fix type="IMPROVEMENT" desc="Improved chance of Warlord Stunning Skills" />
+		<fix type="IMPROVEMENT" desc="Journey to a Settlement quest is now giving better reward" />
+		<fix type="IMPROVEMENT" desc="Reworked formula of Root Resistance" />
+		<fix type="BUG" desc="Skills will be recharged before every fight in Korean Style" />
+		<fix type="BUG" desc="Fixed radius of Multiple Shot effect" />
+		<fix type="BUG" desc="Hard Freya has now chance to drop Bottle of Freya Soul" />
+		<fix type="BUG" desc="Fixed order of buffs removed by Cancellation" />
+	</change>
+	<change date="2014-01-19">
+		<fix type="IMPROVEMENT" desc="Disabling Animations will no longer show Soul/Spirit Shots" />
+		<fix type="IMPROVEMENT" desc="Now every player in Party/Command Channel must have Frintezza's Magic Force Field Removal Scroll to fight with Halisha(price was decreased)" />
+		<fix type="IMPROVEMENT" desc="Message when clan captures the castle is now different and everybody on server can see it" />
+		<fix type="IMPROVEMENT" desc="Few more actions were disabled if player didn't yet write correct Secondary Password" />
+		<fix type="IMPROVEMENT" desc="Players who don't have 15 fights in Olympiad, will not be shown in Current Olympiad Ranking" />
+		<fix type="IMPROVEMENT" desc="New GM punishment type: paralyze player for amount of time" />
+		<fix type="BUG" desc="Fixed Daggers Critical Damage Special Ability" />
+		<fix type="BUG" desc="Disabling Animations will now correctly show Skills Reuses" />
+		<fix type="BUG" desc="Players not registered to Castle Siege, may no longer Resurrect in Siege Zone" />
+		<fix type="BUG" desc="Cancellation skills are now taking buffs from beginning of the list(not randomly from whole)" />
+		<fix type="BUG" desc="Fixed minor bugs in Capture The Flag Event" />
+		<fix type="BUG" desc="Bonus of Foundation Vesper Circlet is now correct" />
+		<fix type="BUG" desc="Players will no longer get Karma on Last Hero Event" />
+		<fix type="BUG" desc="Fixed invisible players in Korean Style" />
+	</change>
+	<change date="2014-01-17">
+		<fix type="NEW_FEATURE" desc="You can now decrease lags by disabling Animations from .cp" />
+		<fix type="IMPROVEMENT" desc="Players can no longer Teleport to Queen Ant from Drop Calculator" />
+		<fix type="IMPROVEMENT" desc="Innadril Siege Zone is now smaller, so flags will not fall down into water" />
+		<fix type="IMPROVEMENT" desc="After each fight in Korean Style, negative effects will be removed" />
+		<fix type="IMPROVEMENT" desc="Finished Santa Event" />
+		<fix type="BUG" desc="Necromancer and Spellhowler Death Spike, has now correct attribute power" />
+		<fix type="BUG" desc="Vengeance is now changing Targets of nearby players and cause them attack the user" />
+	</change>
+	<change date="2014-01-15">
+		<fix type="IMPROVEMENT" desc="If players during Korean Style or Last Man Standing are fighting(or being AFK) for too long, one will be killed" />
+		<fix type="IMPROVEMENT" desc="Flagged players in Town, can now use Buffer" />
+		<fix type="IMPROVEMENT" desc="Changed currency required to Unseal the iteams to Adena" />
+		<fix type="IMPROVEMENT" desc="You can now return to Freya instance after leaving it" />
+		<fix type="IMPROVEMENT" desc="Made Giran Siege Zone smaller, so TW Wards will never fall down the hill" />
+		<fix type="IMPROVEMENT" desc="Items dropped by players will be auto destroyed after 20 minutes" />
+		<fix type="IMPROVEMENT" desc="Players are no longer able to drop items in Siege Zone" />
+		<fix type="IMPROVEMENT" desc="If you will get disconnected during Auto Event, you will get same reward as for leaving it" />
+		<fix type="BUG" desc="If player leaves clan during the Castle Siege, he will be removed from Siege participants" />
+	</change>
+	<change date="2014-01-13">
+		<fix type="IMPROVEMENT" desc="Noblesse Blessing can no longer be Cancelled or Stolen" />
+		<fix type="IMPROVEMENT" desc="Increased Land rate of Surrenders, Death Mark, Arrest" />
+		<fix type="IMPROVEMENT" desc="Freya will come back to spawn, when every player is behind the closed doors" />
+		<fix type="BUG" desc="Fixed .lock" />
+		<fix type="BUG" desc="Fixed Antharas Minions which sometimes are not moving at all" />
+		<fix type="BUG" desc="Physical Mirror will no longer have 0% chance to work" />
+	</change>
+	<change date="2014-01-11">
+		<fix type="NEW_FEATURE" desc="Added .lock command to lock character by Pc ID" />
+		<fix type="IMPROVEMENT" desc="If dominator is active on event, he does no longer need 1 Kill to get reward" />
+		<fix type="IMPROVEMENT" desc="Created custom Baium(without drops) for Events" />
+		<fix type="IMPROVEMENT" desc="Reworked few parts of Auto Events to make them work faster" />
+		<fix type="BUG" desc="Players not fighting in Korean Style, can no longer use their Pets" />
+		<fix type="BUG" desc="Fixed Events page in Community Board" />
+	</change>
+	<change date="2014-01-07">
+		<fix type="IMPROVEMENT" desc="Added more Events as Automatic" />
+		<fix type="IMPROVEMENT" desc="Increased Voting Rewards" />
+		<fix type="IMPROVEMENT" desc="Some cool GM Commands(Auto Recall, Setting Team in Range)" />
+		<fix type="IMPROVEMENT" desc="Increased Land Rates of Stunning Skills" />
+		<fix type="BUG" desc="Player that already possess Territory Ward, cannot pick second one" />
+		<fix type="BUG" desc="Fixed bug which doesn't allow you to buff on Events" />
+	</change>
+	<change date="2014-01-02">
+		<fix type="IMPROVEMENT" desc="Buffer(exluding Heal) can be used now outside town(you cannot be flagged, in combat or in Instance Zone)" />
+		<fix type="IMPROVEMENT" desc="Increased chance of all Cancellation Skills" />
+		<fix type="IMPROVEMENT" desc="Steal Divinity have now retail Reuse Delay" />
+		<fix type="BUG" desc="Removed Spawn Protection after being Resurrected" />
+		<fix type="BUG" desc="Fixed effect of Foundation Vesper Noble Helmet" />
+	</change>
+	<change date="2013-12-27">
+		<fix type="IMPROVEMENT" desc="Active Healers in TvT event will no longer need 1 Kill to get Reward" />
+		<fix type="IMPROVEMENT" desc="Decreased duration of Challanger's Blessing" />
+		<fix type="IMPROVEMENT" desc="Chests in Treasure Hunt event will no longer respawn near Players" />
+		<fix type="BUG" desc="Fixed respawn time of Baium(website shows correct info)" />
+		<fix type="BUG" desc="Title will now be updated after opening Chest in Treasure Hunt event" />
+		<fix type="BUG" desc="Fixed some permissions to .report target" />
+	</change>
+	<change date="2013-12-25">
+		<fix type="IMPROVEMENT" desc="Players that didn't kill anybody on Korean Style will now also receive Reward" />
+		<fix type="IMPROVEMENT" desc="Players will now receive reward for PvP Kills on Treasure Hunt Event" />
+		<fix type="BUG" desc="Fixed way of getting attributes on A Grade Weapons" />
+		<fix type="BUG" desc="You can now attack Pets on Korean Style" />
+		<fix type="BUG" desc="Fixed Server Crush after Treasure Hunt Event" />
+		<fix type="BUG" desc="Double messages about finishing Korean Style Event" />
+		<fix type="BUG" desc="Fixed mass kill on Korean Style end" />
+		<fix type="BUG" desc="AFK time on Korean Style will no longer affect players that finished battle" />
+		<fix type="BUG" desc="Fixed Spawn Locations on Korean Style" />
+		<fix type="BUG" desc="Party members will see now correct(full) Hp/Mp/Cp of ressurected players on Events" />
+	</change>
+	<change date="2013-12-22">
+		<fix type="NEW_FEATURE" desc="Korean Style Event" />
+		<fix type="NEW_FEATURE" desc="Treasure Hunt Event" />
+		<fix type="IMPROVEMENT" desc="New Players will get top No Grade equipment and Santa's Hat" />
+		<fix type="IMPROVEMENT" desc="Temporary removed Olympiad Stadium with broken Geodata" />
+		<fix type="IMPROVEMENT" desc="Players will automaticaly leave event(and receive reward) after death on Last Hero event" />
+		<fix type="IMPROVEMENT" desc="Many invisible improvements that fixed Lag problem" />
+		<fix type="BUG" desc="Sorted Ranking of best killers in Events" />
+		<fix type="BUG" desc="Fixed HP/CP/MP restoration after death on TvT" />
+		<fix type="BUG" desc="Death will no longer stop AFK timer" />
+	</change>
+	<change date="2013-12-19">
+		<fix type="NEW_FEATURE" desc="Change Logs are now visible in game" />
+		<fix type="IMPROVEMENT" desc="Improved speed of current features and loading chars while entering the game" />
+		<fix type="IMPROVEMENT" desc="Nerfed Cancellation Skills(most of the players decided it by the poll)" />
+		<fix type="IMPROVEMENT" desc="Removed default buffs on Events" />
+		<fix type="IMPROVEMENT" desc="Window about changing Class, will no longer hide Secondary Password while entering the game" />
+		<fix type="BUG" desc="Fixed problem with staying in Jail Instance forever" />
+		<fix type="BUG" desc="Maximum Clarity Talisman will now work correctly" />
+	</change>
+	<change date="2013-12-17">
+		<fix type="NEW_FEATURE" desc=".report Command to report the bot user" />
+		<fix type="IMPROVEMENT" desc="Winner Team Reward, will no longer be given before event is over" />
+		<fix type="IMPROVEMENT" desc="Players in TvT and CTF will no longer get Winner Team Reward, if they didn't kill anyone" />
+		<fix type="IMPROVEMENT" desc="Number of players in each instance of same event will be now similar(no more situation like 50 ppl on one instance and 10 players on second one)" />
+		<fix type="IMPROVEMENT" desc="Using forbidden word in chat, will now change only that word to -__-, not whole message" />
+		<fix type="IMPROVEMENT" desc="Changed positions of Flags in CTF Baium Room Map" />
+		<fix type="BUG" desc="Fixed Land rate and amount of Stolen Buffs in Steal Divinity Skill" />
+		<fix type="BUG" desc="Steal Divinity will now have retail Reuse Delay while fighting in Olympiad" />
+	</change>
+	<change date="2013-12-16">
+		<fix type="NEW_FEATURE" desc="Holiday Santa Event!" />
+		<fix type="NEW_FEATURE" desc="You are no longer able to PK low level players(30 levels difference)" />
+		<fix type="IMPROVEMENT" desc="Buffer can be now used on Auto Events." />
+		<fix type="IMPROVEMENT" desc="You can no longer teleport to Treasure Chests from Alt+B" />
+		<fix type="BUG" desc="Removed double chance check of Remove Target effects" />
+		<fix type="BUG" desc="Valakas will no longer teleport to players that didn't jump from cliff" />
+		<fix type="BUG" desc="Fixed BUGs in Capture The Flag event" />
+		<fix type="BUG" desc="Fixed Last Hero event not ending at all" />
+		<fix type="BUG" desc="You can no longer obtain Certifications on any subclass level" />
+		<fix type="BUG" desc="Chat Banned players can now use Npcs" />
+		<fix type="BUG" desc="Fixed disappearing buffs of Summon after death on Event" />
+	</change>
+	<change date="2013-12-14">
+		<fix type="IMPROVEMENT" desc="Added 2 new maps to TvT" />
+		<fix type="IMPROVEMENT" desc="Added a lot more spawning spots in TvT Baium Room Map" />
+		<fix type="IMPROVEMENT" desc="Improved way of calculating Element Atk/Element Def formula. It will affect all skills with attached Element" />
+		<fix type="IMPROVEMENT" desc="Waiting time before each Olympiad Battle will be now 60 seconds" />
+		<fix type="BUG" desc="It's no longer possible to have buffs from Npc Buffer on Events" />
+		<fix type="BUG" desc="Fixed number of effects cleared by Cleanse" />
+	</change>
+	<change date="2013-12-13">
+		<fix type="IMPROVEMENT" desc="Changed Formula of counting M.Atk/M.Def in Skill Chances" />
+		<fix type="BUG" desc="Fixed exploit with using skill while changing Subclass" />
+		<fix type="BUG" desc="Summon will now always receive Buffs from you on Olympiad" />
+		<fix type="BUG" desc="Fixed Escaping from Jail" />
+		<fix type="BUG" desc="You can no longer use Flying skills(like Shadow Step) while movement is disabled" />
+		<fix type="BUG" desc="Sonic Blaster is no longer AOE skill" />
+		<fix type="BUG" desc="Fixed Haste and Cheap Shot Special Abilities in Vesper Weapons" />
+		<fix type="BUG" desc="Fixed few Special Abilities of A Grade Weapons" />
+	</change>
+	<change date="2013-12-12">
+		<fix type="IMPROVEMENT" desc="Required number of players to fight with frintezza is now 9" />
+		<fix type="IMPROVEMENT" desc="Added a lot more details to Item Logging system" />
+		<fix type="BUG" desc="Fixed bonus of Vesper Noble Light Set" />
+		<fix type="BUG" desc="Fixed Final Secret Bonus" />
+		<fix type="BUG" desc="Sweeper Festival will now work correctly on Minions" />
+	</change>
+	<change date="2013-12-09">
+		<fix type="IMPROVEMENT" desc="Only one player per PC may fight in Olympiad at the time" />
+		<fix type="IMPROVEMENT" desc="Removed 3vs3 and Class Based games from Olympiad" />
+		<fix type="IMPROVEMENT" desc="Removed way of getting Anakim Transformation" />
+		<fix type="BUG" desc="Ancient Tome of the Demon is now tradable" />
+		<fix type="BUG" desc="Fixed AFK time in events" />
+		<fix type="BUG" desc="Fixed Mass Gloom effect range" />
+		<fix type="BUG" desc="Fixed Insane Crusher and Touch of Death cancel chances" />
+		<fix type="BUG" desc="Fixed chance of Half Kills and Lethals" />
+		<fix type="BUG" desc="Fixed double Kechi issue" />
+	</change>
+	<change date="2013-12-05">
+		<fix type="NEW_FEATURE" desc="Capture The Flag Event" />
+		<fix type="IMPROVEMENT" desc="Required number of players for Normal Freya is now 9" />
+		<fix type="IMPROVEMENT" desc="Increased land rates of Bane Skills" />
+		<fix type="IMPROVEMENT" desc="Images in Community Board will now load since entering the game(you will not be able to open CB for first minute)" />
+		<fix type="IMPROVEMENT" desc="Improved Epic PvP Zones(you will no longer debuff ally members or get PK for killing summon)" />
+		<fix type="IMPROVEMENT" desc="Removed Lethal Skill from Valakas" />
+		<fix type="IMPROVEMENT" desc="Decreased Fear duration from Claw of Destruction" />
+		<fix type="IMPROVEMENT" desc="It's not longer possible to Heal Bosses or Doors" />
+		<fix type="BUG" desc="Drop chances and amounts in Shift+Click and Drop Calculator will now be 100% correct" />
+		<fix type="BUG" desc="Added TvT back" />
+	</change>
+	<change date="2013-12-03">
+		<fix type="NEW_FEATURE" desc="New Command: .siege - check it out" />
+		<fix type="IMPROVEMENT" desc="Improved TvT Event" />
+		<fix type="IMPROVEMENT" desc="You can now unseal and exchange Foundation Items in Blacksmith" />
+		<fix type="IMPROVEMENT" desc="Improved droplist in Shift+Click on Monster" />
+		<fix type="IMPROVEMENT" desc="Checking monster that drop specific items, will now work better in Drop Calculator" />
+		<fix type="IMPROVEMENT" desc="Waking up duration of Antharas and Valakas is now 15 minutes" />
+		<fix type="IMPROVEMENT" desc="Fixed dates of Olympiad Period and Weekly Points" />
+		<fix type="BUG" desc="Fixed Sell button in GM Shop" />
+		<fix type="BUG" desc="Added message to Jack Sage(Gift of Vitality) while you are on Sub-Class" />
+		<fix type="BUG" desc="Fixed problems with auto bans for no reason" />
+	</change>
+	<change date="2013-12-02">
+		<fix type="IMPROVEMENT" desc="Images in Community Board will now load faster" />
+		<fix type="IMPROVEMENT" desc="You will now get a lot better Rewards from Voting!" />
+		<fix type="IMPROVEMENT" desc="Alt+B Blacksmith can now unseal A Grade for Adena" />
+		<fix type="IMPROVEMENT" desc="Message is Main Community Board Page is now Server Officially started" />
+		<fix type="IMPROVEMENT" desc="Teleport to Boss or Monster cannot be used outside peacefull zone anymore" />
+		<fix type="BUG" desc="Fixed .offline Command" />
+		<fix type="BUG" desc="Corrected Respawn Time of Queen Ant" />
+		<fix type="BUG" desc="Removed message: You have moved too far away from the warehouse to perform that action" />
+		<fix type="BUG" desc="Changed Olympiad period to first" />
+		<fix type="BUG" desc="Turn Undead will now work correctly" />
+	</change>
+</list>

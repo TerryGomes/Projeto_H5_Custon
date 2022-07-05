@@ -1,0 +1,150 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Pailaka Song of Ice and Fire (Level 36-42) -->
+	<instance id="43" name="Pailaka (Forgotten Temple)" maxChannels="15" collapseIfEmpty="10" timelimit="180">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="36" max="42"/>
+		<party min="1" max="1"/>
+		<return loc="-80606 151349 -3040"/>
+		<teleport loc="-52855 188199 -4700"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="128"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<spawns>
+			<spawn mobId="18610" type="point" respawn="0">
+				<coords loc="-56301 185708 -4515 31634"/>
+			</spawn>
+			<spawn mobId="18611" type="point" respawn="0">
+				<coords loc="-55256 188243 -4515 40176"/>
+				<coords loc="-55466 188370 -4515 37518"/>
+				<coords loc="-55797 181218 -4514 15805"/>
+				<coords loc="-58604 188184 -4515 1182"/>
+				<coords loc="-59136 188498 -4515 62858"/>
+				<coords loc="-59980 188272 -4515 289"/>
+				<coords loc="-59344 188052 -4515 63492"/>
+				<coords loc="-55607 184476 -4515 33989"/>
+				<coords loc="-54937 183563 -4515 32486"/>
+				<coords loc="-55721 183393 -4517 33938"/>
+				<coords loc="-54801 184598 -4514 42361"/>
+				<coords loc="-55751 188056 -4515 24079"/>
+				<coords loc="-56219 188309 -4515 42954"/>
+				<coords loc="-55551 190439 -4477 60057"/>
+				<coords loc="-55928 190358 -4477 65281"/>
+				<coords loc="-55021 181510 -4514 13557"/>
+				<coords loc="-55362 190608 -4477 4836"/>
+				<coords loc="-57236 188295 -4498 15835"/>
+				<coords loc="-57412 188066 -4498 13572"/>
+				<coords loc="-57617 188305 -4498 25088"/>
+			</spawn>
+
+			<spawn mobId="18612" type="point" respawn="0">
+				<coords loc="-55672 183703 -4517 31753"/>
+				<coords loc="-55226 183363 -4515 30183"/>
+				<coords loc="-57656 185297 -4515 9198"/>
+				<coords loc="-56006 184432 -4515 33555"/>
+				<coords loc="-55765 182578 -4515 17885"/>
+				<coords loc="-54948 182704 -4515 17347"/>
+				<coords loc="-54947 184381 -4514 44912"/>
+				<coords loc="-58202 185319 -4514 1639"/>
+				<coords loc="-58489 185214 -4514 1676"/>
+				<coords loc="-57438 186350 -4515 22295"/>
+				<coords loc="-58644 186283 -4521 64038"/>
+				<coords loc="-58199 186076 -4514 1564"/>
+				<coords loc="-57291 186078 -4515 15516"/>
+				<coords loc="-57299 185404 -4515 23997"/>
+			</spawn>
+
+			<spawn mobId="18613" type="point" respawn="0">
+				<coords loc="-53986 181335 -4555 13207"/>
+				<coords loc="-52640 184847 -4627 50067"/>
+				<coords loc="-53724 184825 -4627 297"/>
+				<coords loc="-53721 181565 -4555 16573"/>
+				<coords loc="-53834 182270 -4555 52461"/>
+			</spawn>
+
+			<spawn mobId="18614" type="point" respawn="0">
+				<coords loc="-62659 181198 -4815 64590"/>
+				<coords loc="-62631 180416 -4815 18854"/>
+				<coords loc="-57351 186133 -4815 63448"/>
+				<coords loc="-61490 179475 -4815 60090"/>
+				<coords loc="-61796 179684 -4815 25793"/>
+				<coords loc="-60165 181059 -4816 508"/>
+				<coords loc="-61059 182372 -4815 56649"/>
+				<coords loc="-54876 186807 -4815 45370"/>
+				<coords loc="-54889 186570 -4815 33922"/>
+				<coords loc="-58780 182176 -4815 25247"/>
+				<coords loc="-59058 182400 -4815 32374"/>
+				<coords loc="-56682 186399 -4815 63876"/>
+				<coords loc="-56974 186496 -4815 34065"/>
+				<coords loc="-57236 186489 -4815 5045"/>
+				<coords loc="-58768 182677 -4815 29616"/>
+				<coords loc="-57079 186238 -4818 16658"/>
+				<coords loc="-55286 186545 -4815 6802"/>
+				<coords loc="-60883 182797 -4815 48366"/>
+				<coords loc="-59022 181508 -4815 40634"/>
+				<coords loc="-55048 186501 -4818 2365"/>
+				<coords loc="-55976 179386 -4815 0"/>
+				<coords loc="-60282 181613 -4815 65163"/>
+				<coords loc="-56342 179173 -4815 595"/>
+			</spawn>
+
+			<spawn mobId="18615" type="point" respawn="0">
+				<coords loc="-59658 184106 -4815 53718"/>
+				<coords loc="-59229 184179 -4818 21220"/>
+				<coords loc="-59620 183234 -4815 52507"/>
+				<coords loc="-61762 182859 -4815 40959"/>
+				<coords loc="-62661 181781 -4815 15938"/>
+				<coords loc="-58725 184116 -4815 28059"/>
+				<coords loc="-59025 182559 -4815 45932"/>
+				<coords loc="-61221 179715 -4815 34611"/>
+				<coords loc="-57364 181389 -4804 34731"/>
+				<coords loc="-55689 179216 -4815 64894"/>
+				<coords loc="-56551 179422 -4815 1313"/>
+				<coords loc="-56564 181308 -4804 37604"/>
+				<coords loc="-57979 181407 -4804 33099"/>
+			</spawn>
+
+			<spawn mobId="18616" type="point" respawn="0">
+				<coords loc="-59264 179443 -4815 6411"/>
+				<coords loc="-57319 190243 -4531 62676"/>
+				<coords loc="-59398 186106 -4815 53399"/>
+				<coords loc="-57289 183656 -4531 14479"/>
+			</spawn>
+
+			<spawn mobId="32492" type="point" respawn="0">
+				<coords loc="-58988 185305 -4521 445"/>
+				<coords loc="-54452 188274 -4514 30971"/>
+				<coords loc="-60339 188262 -4515 65309"/>
+				<coords loc="-55852 184638 -4515 49463"/>
+				<coords loc="-55777 180716 -4521 16187"/>
+				<coords loc="-54879 185137 -4521 48058"/>
+				<coords loc="-54969 180744 -4521 15993"/>
+				<coords loc="-55080 189928 -4477 16544"/>
+				<coords loc="-55752 190778 -4477 50744"/>
+				<coords loc="-58753 186099 -4521 65287"/>
+			</spawn>
+
+			<spawn mobId="32493" type="point" respawn="0">
+				<coords loc="-57426 186264 -4969 612"/>
+				<coords loc="-56993 186286 -4969 28938"/>
+				<coords loc="-58181 184244 -4815 33202"/>
+				<coords loc="-62727 180959 -4815 57343"/>
+				<coords loc="-55706 181340 -4818 32845"/>
+				<coords loc="-60675 182643 -4815 32767"/>
+				<coords loc="-58461 182422 -4815 33843"/>
+				<coords loc="-60786 179650 -4815 30822"/>
+			</spawn>
+
+			<spawn mobId="32500" type="point" respawn="0">
+				<coords loc="-53874 188192 -4665 64829"/>
+			</spawn>
+
+			<spawn mobId="32507" type="point" respawn="0">
+				<coords loc="-59516 181309 -4818 48500"/>
+				<coords loc="-53854 179305 -4641 14171"/>
+				<coords loc="-57104 185707 -4515 33807"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

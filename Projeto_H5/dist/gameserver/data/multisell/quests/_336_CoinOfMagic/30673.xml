@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Exchange of Lorain (level 3) -->
+
+<list>
+  <!-- Внимание: keepenchanted НЕ должно быть установлено в мультиселлах, где в одном блоке возможны два одинаковых нестекуемых предмета (напрмиер dual) -->
+  <!-- ignoreprice не работает с keepencahnted -->
+  <config showall="true" notax="true" keepenchanted="false" />
+
+	<!--
+	3472 Blood Medusa
+	3473 Blood Werewolf
+	3474 Blood Basilisk
+	3475 Blood Drevanul
+	3476 Blood Succubus
+	3477 Blood Dragon
+	3478 Beleths Blood
+	3479 Manaks Blood Werewolf
+	3480 Nia's Blood Medusa
+	3481 Gold Dragon
+	3482 Gold Wyvern
+	3483 Gold Knight
+	3484 Gold Giant
+	3485 Gold Drake
+	3486 Gold Wyrm
+	3487 Beleths Gold
+	3488 Manaks Gold Giant
+	3489 Nia's Gold Wywern
+	3490 Silver Unicorn
+	3491 Silver Fairy
+	3492 Silver Dryad
+	3493 Silver Dragon
+	3494 Silver Golem
+	3495 Silver Undine
+	3496 Beleths Silver
+	3497 Manaks Silver Dryad
+	3498 Nia's Silver Fairy
+	-->
+
+	<!-- 10 G Wywern -> 1 G Knight -->
+  <item>
+    <ingredient id="3482" count="10"/>
+    <production id="3483" count="1"/>
+  </item>
+
+	<!-- 10 S Unicorn -> 1 S Golem -->
+  <item>
+    <ingredient id="3490" count="10"/>
+    <production id="3494" count="1"/>
+  </item>
+
+	<!-- 10 B Medusa -> 1 B Drevanul -->
+  <item>
+    <ingredient id="3472" count="10"/>
+    <production id="3475" count="1"/>
+  </item>
+
+	<!-- 20 G Wyvern -> 1 Nia G Wyvern -->
+  <item>
+    <ingredient id="3482" count="20"/>
+    <production id="3489" count="1"/>
+  </item>
+
+	<!-- 2 Nia B Medusa + 2 B Drevanul + 2 G Drake + 3 G Knight -> Moonstone Earring -->
+  <item>
+    <ingredient id="3480" count="2"/>
+    <ingredient id="3475" count="2"/>
+    <ingredient id="3485" count="2"/>
+    <ingredient id="3483" count="3"/>
+    <production id="852" count="1"/>
+  </item>
+
+	<!-- 7 N B Medusa + 5 B Drevan + 5 S Golem + 5 G Knight -> Nassen's Earring -->
+  <item>
+    <ingredient id="3480" count="5"/>
+    <ingredient id="3475" count="5"/>
+    <ingredient id="3494" count="5"/>
+    <ingredient id="3483" count="5"/>
+    <production id="855" count="1"/>
+  </item>
+
+	<!-- 5 N G Wyvern + 4 G Drake + 4 S Golem + 4 B Drevan -> Ring of Binding -->
+  <item>
+    <ingredient id="3489" count="5"/>
+    <ingredient id="3485" count="4"/>
+    <ingredient id="3494" count="4"/>
+    <ingredient id="3475" count="4"/>
+    <production id="886" count="1"/>
+  </item>
+
+	<!-- 5 N S Fairy + 5 S Fairy + 3 G Knight +3 B Drevan -> Necklace of Protection  -->
+  <item>
+    <ingredient id="3498" count="5"/>
+    <ingredient id="3491" count="5"/>
+    <ingredient id="3483" count="3"/>
+    <ingredient id="3475" count="3"/>
+    <production id="916" count="1"/>
+  </item>
+</list>

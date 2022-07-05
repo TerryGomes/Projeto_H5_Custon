@@ -1,0 +1,41 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Custom: Seer Ugoros -->
+	<instance id="505" name="Seer Ugoros Lair" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="82" max="85"/>
+		<party min="1" max="1"/>
+		<return loc="94224 83019 -3552"/>
+		<teleport loc="95984 85692 -3692"/>
+		<remove itemId="15496" count="1" necessary="true"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<spawns>
+			<spawn mobId="18863" type="point" respawn="0">
+				<coords loc="96804 85604 -3720 -31176"/>
+			</spawn>
+			<spawn mobId="18867" count="6" respawn="40" type="loc">
+				<coords loc="96778 85146 -3780 -3380"/>
+				<coords loc="97387 85738 -3780 -3380"/>
+				<coords loc="97317 86298 -3780 -3380"/>
+				<coords loc="96166 86012 -3780 -3380"/>
+				<coords loc="95526 85644 -3780 -3380"/>
+				<coords loc="95658 84927 -3780 -3380"/>
+				<coords loc="96011 84802 -3780 -3380"/>
+			</spawn>
+			<spawn mobId="18868" count="6" respawn="5" type="loc">
+				<coords loc="96778 85146 -3780 -3380"/>
+				<coords loc="97387 85738 -3780 -3380"/>
+				<coords loc="97317 86298 -3780 -3380"/>
+				<coords loc="96166 86012 -3780 -3380"/>
+				<coords loc="95526 85644 -3780 -3380"/>
+				<coords loc="95658 84927 -3780 -3380"/>
+				<coords loc="96011 84802 -3780 -3380"/>
+			</spawn>
+		</spawns>
+		<zones>
+			<zone name="[oren21_mb2220_ugoz01]" active="true"/>
+		</zones>
+	</instance>
+</list>

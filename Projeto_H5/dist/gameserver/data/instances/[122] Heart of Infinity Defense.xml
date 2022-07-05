@@ -1,0 +1,49 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Heart of Infinity Defense -->
+	<instance id="122" name="Seed of Infinity (Heart of Infinity)" maxChannels="3" collapseIfEmpty="10" timelimit="40" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="75" max="85"/>
+		<party min="18" max="27"/>
+		<return loc="-183656 206264 -12928"/>
+		<teleport loc="-179284 205990 -15520"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="698"/>
+		<geodata map="14_24"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+		<spawns>
+			<group name="soi_hoi_defence_mob_1" spawned="false"/>
+			<group name="soi_hoi_defence_mob_2" spawned="false"/>
+			<group name="soi_hoi_defence_mob_3" spawned="false"/>
+			<group name="soi_hoi_defence_mob_4" spawned="false"/>
+			<group name="soi_hoi_defence_mob_5" spawned="false"/>
+			<group name="soi_hoi_defence_mob_6" spawned="false"/>
+			<group name="soi_hoi_defence_tumors" spawned="false"/>
+			<group name="soi_hoi_defence_alivetumors" spawned="false"/>
+			<group name="soi_hoi_defence_wards" spawned="false"/>
+			<group name="soi_hoi_defence_central_tumor" spawned="true"/>
+			<group name="soi_hoi_defence_bosses" spawned="false"/>
+		</spawns>
+		<doors>
+			<door id="14240102" opened="false"/>
+		</doors>
+		<zones>
+			<zone name="[soi_hoi_attack_attackup_1]" active="true"/>
+			<zone name="[soi_hoi_attack_attackup_2]" active="true"/>
+			<zone name="[soi_hoi_attack_attackup_3]" active="true"/>
+			<zone name="[soi_hoi_attack_attackup_4]" active="true"/>
+			<zone name="[soi_hoi_attack_attackup_5]" active="true"/>
+			<zone name="[soi_hoi_attack_attackup_6]" active="true"/>
+
+			<zone name="[soi_hoi_attack_defenceup_1]" active="true"/>
+			<zone name="[soi_hoi_attack_defenceup_2]" active="true"/>
+			<zone name="[soi_hoi_attack_defenceup_3]" active="true"/>
+			<zone name="[soi_hoi_attack_defenceup_4]" active="true"/>
+			<zone name="[soi_hoi_attack_defenceup_5]" active="true"/>
+			<zone name="[soi_hoi_attack_defenceup_6]" active="true"/>
+
+			<zone name="[soi_hoi_attack_echmusroom]" active="true"/>
+		</zones>
+	</instance>
+</list>

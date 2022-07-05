@@ -1,0 +1,43 @@
+<html>
+<head>
+<body scroll="no">
+<title>Request for clan</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td valign="top">
+			<table width=290 height=330>
+					<tr>
+						<td valign="top" align="center">
+							<br><font color="FFFF00">Add a note</font>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" align="center" height=270>
+							<table border=0 width=260>
+								<tr>
+									<td width=260 align=center valign=top height=210>
+										<multiedit var="textarea" width=260 height=200>
+									</td>
+								</tr>
+							</table>
+							<table border=0 width=260>
+								<tr>
+									<td fixwidth=260 align=center valign=top>
+										*Council:* Select prime and age.<br1> 
+										This will speed up decision clan!
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" align="center">
+							<button action="bypass -h scripts_services.ClanPanel:sendRequest <?clan?> $textarea" value="Send request" width=220 height=31 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						</td>
+					</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

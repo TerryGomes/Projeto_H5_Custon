@@ -1,0 +1,28 @@
+<html><head><title>Character Control Panel</title></head><body>
+
+<center>
+<font name="hs12" color="c88f05">L2fandc</font>
+
+<img src="L2UI.squaregray" width="280" height="1">
+<table width=280 bgcolor=222120>
+	<tr>
+		<td>
+			<center>
+			<font color = 3f6293>%online%</font><br>
+			</center>
+		</td>
+	</tr>
+</table>
+<img src="L2UI.squaregray" width="280" height="1">
+<br><br>
+<font color=686764>
+To continue, answer Security Question:<br>
+</font>
+%question%<br>
+<table width=280>
+<tr><td><font color=686764>Answer:</font></td><td><multiedit var="answer" width=160 height=30 /></td></tr>
+</table>
+<br><br>
+<button value="Continue" action="bypass -h user_cfg cfgSPRecoverConfirmE | 0 | $answer" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+<button value="Back" action="bypass -h user_cfg back" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /><br>
+</body></html>

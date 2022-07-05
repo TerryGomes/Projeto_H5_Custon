@@ -1,0 +1,1685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <armor id="14600" name="Schuttgart Dark Protection Ring">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessary_inferno_ring_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_FINGER"/>
+      <slot id="LEFT_FINGER"/>
+    </equip>
+    <skills>
+      <skill id="8387" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="42"/>
+      <add stat="maxMp" order="0x10" value="17"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="14601" name="Ancient Cloak - Kamael exclusive" add_name="Kamael Use">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="S80"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.vesper_cloack_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="220"/>
+    <equip>
+      <slot id="BACK"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="20"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="14602" name="Ancient Cloak">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="S80"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.vesper_cloack_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="220"/>
+    <equip>
+      <slot id="BACK"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="20"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <etcitem id="14603" name="Sealed Ancient Cloak">
+    <set name="class" value="ARMOR"/>
+    <set name="crystal_type" value="S80"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.sealed_vesper_cloack_i01"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="220"/>
+  </etcitem>
+  <armor id="14604" name="Red Talisman - Territory Guardian">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="66"/>
+    <set name="icon" value="icon.etc_talisman_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="8308" level="1"/>
+    </skills>
+  </armor>
+  <armor id="14605" name="Red Talisman - Territory Guard">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="66"/>
+    <set name="icon" value="icon.etc_talisman_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="8309" level="1"/>
+    </skills>
+  </armor>
+  <weapon id="14606" name="Gracian Soldier Two-Handed Sword">
+    <set name="crystal_count" value="1373"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_mon_gracia_soldier_sword_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="2180"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="78"/>
+      <add stat="mAtk" order="0x10" value="39"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <etcitem id="14607" name="Mark of Gracia">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coins_silver_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <armor id="14608" name="Ancient Cloak - Light Armor exclusive">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="S80"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.vesper_cloack_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="220"/>
+    <equip>
+      <slot id="BACK"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="20"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="14609" name="Ancient Cloak">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="S80"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.vesper_cloack_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="220"/>
+    <equip>
+      <slot id="BACK"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="20"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="14610" name="Ancient Cloak - Robe exclusive">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="S80"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.vesper_cloack_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="220"/>
+    <equip>
+      <slot id="BACK"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="20"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="14611" name="Rudolph's Nose">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="20160"/>
+    <set name="icon" value="icon.Accessory_nose_of_rudolph_mask_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <etcitem id="14612" name="Christmas Red Sock">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.xmas_present_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+  </etcitem>
+  <armor id="14613" name="Rock-Paper-Scissors Santa Hat">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessory_santas_cap_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="6097" level="1"/>
+      <skill id="6098" level="1"/>
+      <skill id="6099" level="1"/>
+    </skills>
+  </armor>
+  <etcitem id="14614" name="Santa's Buff Gift Set">
+    <set name="reuse_delay" value="3600000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_level_bustup_ticket_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14615" name="Scroll of Christmas Festival - Mage Type">
+    <set name="reuse_delay" value="3000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_level_bustup_ticket_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14616" name="Gift from Santa Claus">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.lucky_bag_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <armor id="14617" name="Agathion Seal Bracelet - Rudolph">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="20160"/>
+    <set name="icon" value="icon.etc_rbracelet_aga_agit_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="3425" level="1"/>
+      <skill id="5537" level="1"/>
+    </skills>
+  </armor>
+  <etcitem id="14618" name="Agathion Seal Bracelet - Rudolph">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_rbracelet_aga_agit_i00"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="150"/>
+  </etcitem>
+  <etcitem id="14619" name="Santa Claus' Weapon Exchange Ticket">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_level_bustup_ticket_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+  </etcitem>
+  <etcitem id="14620" name="Santa Claus' Weapon Exchange Ticket">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_level_bustup_ticket_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+  </etcitem>
+  <weapon id="14621" name="Santa Claus' Sirra Blade">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_sirr_blade_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8318" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="51"/>
+      <add stat="mAtk" order="0x10" value="38"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="14622" name="Santa Claus' Sword of Ipos">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_sword_of_ipos_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="1820"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8318" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="62"/>
+      <add stat="mAtk" order="0x10" value="38"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="14623" name="Santa Claus' Barakiel Axe">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_barakiel_axe_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1550"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8318" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="51"/>
+      <add stat="mAtk" order="0x10" value="38"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="14624" name="Santa Claus' Behemoth Tuning Fork">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_tuning_fork_of_behemoth_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1890"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8318" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="62"/>
+      <add stat="mAtk" order="0x10" value="38"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="14625" name="Santa Claus' Naga Storm">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_naga_storm_i00"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="930"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8318" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="45"/>
+      <add stat="mAtk" order="0x10" value="38"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="14626" name="Santa Claus' Tiphon Spear">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_tiphon_spear_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1820"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3599" level="1"/>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="51"/>
+      <add stat="mAtk" order="0x10" value="38"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="14627" name="Santa Claus' Shyeed Bow">
+    <set name="atk_reuse" value="820"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_shyid_bow_i00"/>
+    <set name="mp_consume" value="5"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1640"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8318" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="116"/>
+      <add stat="mAtk" order="0x10" value="42"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="227"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="14628" name="Santa Claus' Sobekk Hurricane">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_sobekk_hurricane_i00"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1330"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8318" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="41"/>
+      <add stat="mAtk" order="0x10" value="38"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="14629" name="Santa Claus' Themis Tongue">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_tongue_of_themis_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="820"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3047" level="1"/>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="41"/>
+      <add stat="mAtk" order="0x10" value="51"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="14630" name="Santa Claus' Hand of Cabrio">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_hand_of_cabrio_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1510"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3047" level="1"/>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="50"/>
+      <add stat="mAtk" order="0x10" value="51"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="14631" name="Santa Claus' Daimon Crystal">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_crystal_of_deamon_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="880"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3047" level="1"/>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="62"/>
+      <add stat="mAtk" order="0x10" value="56"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="14632" name="Santa Claus' Éclair Bijou">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_greed_stinger_i00"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8318" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="46"/>
+      <add stat="mAtk" order="0x10" value="38"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="14633" name="Santa Claus' Screaming Vengeance">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_soul_shooter_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1640"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8318" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="56"/>
+      <add stat="mAtk" order="0x10" value="38"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="14634" name="Santa Claus' Durendal">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_death_bringer_i00"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1820"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8318" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="65"/>
+      <add stat="mAtk" order="0x10" value="38"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <etcitem id="14635" name="Low Quality Battle Reward Chest">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_treasure_box_i07"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14636" name="Middle Quality Battle Reward Chest">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_treasure_box_i06"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14637" name="High Quality Battle Reward Chest">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_treasure_box_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14638" name="Best Quality Battle Reward Chest">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_treasure_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14639" name="Event - Claymore">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_claymore_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14640" name="Event - Bonebreaker">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_bonebreaker_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14641" name="Event - Atuba Hammer">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_atuba_hammer_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14642" name="Event - Ghost Staff">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_ghost_staff_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14643" name="Event - Staff of Life">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_life_stick_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14644" name="Event - Atuba Mace">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_atuba_mace_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14645" name="Event - Mithril Dagger">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_mithril_dagger_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14646" name="Event - Scallop Jamadhr">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_scallop_jamadhr_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14647" name="Event - Light Crossbow">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_cyclone_bow_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14648" name="Event - Glaive">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_glaive_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14649" name="Event - Elven Long Sword">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_elven_long_sword_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14650" name="Event - Samurai Longsword">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_samurai_longsword_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14651" name="Event - Deadman's Staff">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_deadmans_staff_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14652" name="Event - Ghoul's Staff">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_ghouls_staff_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14653" name="Event - Demon's Staff">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_demons_staff_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14654" name="Event - Crystal Dagger">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_crystal_dagger_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14655" name="Event - Great Pata">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_great_pata_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14656" name="Event - Eminence Bow">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_eminence_bow_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14657" name="Event - Orcish Poleaxe">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_orcish_poleaxe_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14658" name="Event - Yaksa Mace">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_yaksa_mace_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14659" name="Event - Berserker Blade">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_berserker_blade_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14660" name="Event - Ecliptic Sword">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_sword_of_eclipse_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14661" name="Event - Ecliptic Axe">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_eclipse_axe_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14662" name="Event - Dwarven Hammer">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_dwarven_hammer_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14663" name="Event - Katana*Katana">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_dual_sword_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <armor id="14664" name="Gludio Protection Earring">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessary_inferno_earing_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_EAR"/>
+      <slot id="LEFT_EAR"/>
+    </equip>
+    <skills>
+      <skill id="8348" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="63"/>
+      <add stat="maxMp" order="0x10" value="25"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="14665" name="Dion Protection Earring">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessary_inferno_earing_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_EAR"/>
+      <slot id="LEFT_EAR"/>
+    </equip>
+    <skills>
+      <skill id="8349" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="63"/>
+      <add stat="maxMp" order="0x10" value="25"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="14666" name="Giran Protection Earring">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessary_inferno_earing_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_EAR"/>
+      <slot id="LEFT_EAR"/>
+    </equip>
+    <skills>
+      <skill id="8350" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="63"/>
+      <add stat="maxMp" order="0x10" value="25"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="14667" name="Oren Protection Earring">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessary_inferno_earing_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_EAR"/>
+      <slot id="LEFT_EAR"/>
+    </equip>
+    <skills>
+      <skill id="8351" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="63"/>
+      <add stat="maxMp" order="0x10" value="25"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="14668" name="Aden Protection Earring">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessary_inferno_earing_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_EAR"/>
+      <slot id="LEFT_EAR"/>
+    </equip>
+    <skills>
+      <skill id="8352" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="63"/>
+      <add stat="maxMp" order="0x10" value="25"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="14669" name="Innadril Protection Earring">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessary_inferno_earing_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_EAR"/>
+      <slot id="LEFT_EAR"/>
+    </equip>
+    <skills>
+      <skill id="8353" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="63"/>
+      <add stat="maxMp" order="0x10" value="25"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="14670" name="Goddard Protection Earring">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessary_inferno_earing_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_EAR"/>
+      <slot id="LEFT_EAR"/>
+    </equip>
+    <skills>
+      <skill id="8354" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="63"/>
+      <add stat="maxMp" order="0x10" value="25"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="14671" name="Rune Protection Earring">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessary_inferno_earing_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_EAR"/>
+      <slot id="LEFT_EAR"/>
+    </equip>
+    <skills>
+      <skill id="8355" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="63"/>
+      <add stat="maxMp" order="0x10" value="25"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="14672" name="Schuttgart Protection Earring">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessary_inferno_earing_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_EAR"/>
+      <slot id="LEFT_EAR"/>
+    </equip>
+    <skills>
+      <skill id="8356" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="63"/>
+      <add stat="maxMp" order="0x10" value="25"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <etcitem id="14673" name="Rudolph's Nose">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.Accessory_nose_of_rudolph_mask_i00"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <weapon id="14674" name="Santa Claus' Tallum Blade*Damascus">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dual_sword_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUAL"/>
+    <set name="weight" value="1890"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="8315" level="1"/>
+      <skill id="8316" level="1"/>
+      <skill id="8317" level="1"/>
+      <skill id="8318" level="1"/>
+      <skill id="8319" level="1"/>
+      <skill id="8320" level="1"/>
+      <skill id="8321" level="1"/>
+      <skill id="8322" level="1"/>
+    </skills>
+    <enchant4_skill id="3045" level="17"/>
+    <!--Special Ability: Haste-->
+    <for>
+      <add stat="pAtk" order="0x10" value="61"/>
+      <add stat="mAtk" order="0x10" value="51"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <armor id="14675" name="Agathion Seal Bracelet - Saerom">
+    <set name="crystal_type" value="NONE"/>
+    <set name="destroyable" value="false"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.pi_high_agathion_bracelet_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="6124" level="1"/>
+      <skill id="8314" level="1"/>
+      <skill id="8323" level="1"/>
+    </skills>
+  </armor>
+  <etcitem id="14676" name="Agathion's New Year's Gift">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i03"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14677" name="Agathion's New Year's Gift">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i03"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="14678" name="Saerom's Bead - B">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_warding_orb_blue_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+  </etcitem>
+  <etcitem id="14679" name="Saerom's Bead - A">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_warding_orb_green_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+  </etcitem>
+  <etcitem id="14680" name="Saerom's Bead - S">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_warding_orb_red_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+  </etcitem>
+  <etcitem id="14681" name="Saerom's Bead - S80">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_warding_orb_black_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+  </etcitem>
+  <etcitem id="14682" name="Greater Elixir of Life (No-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="1"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_hp_potion_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2860" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14683" name="Greater Elixir of Life (D-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="2"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_hp_potion_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2860" level="2"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14684" name="Greater Elixir of Life (C-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="3"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_hp_potion_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2860" level="3"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14685" name="Greater Elixir of Life (B-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="4"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_hp_potion_i03"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2860" level="4"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14686" name="Greater Elixir of Life (A-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="5"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_hp_potion_i04"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2860" level="5"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14687" name="Greater Elixir of Life (S-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="6"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="S"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_hp_potion_i05"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2860" level="6"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14688" name="Greater Elixir of Mental Strength (No-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="1"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_mp_potion_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2861" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14689" name="Greater Elixir of Mental Strength (D-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="2"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_mp_potion_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2861" level="2"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14690" name="Greater Elixir of Mental Strength (C-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="3"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_mp_potion_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2861" level="3"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14691" name="Greater Elixir of Mental Strength (B-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="4"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_mp_potion_i03"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2861" level="4"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14692" name="Greater Elixir of Mental Strength (A-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="5"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_mp_potion_i04"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2861" level="5"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14693" name="Greater Elixir of Mental Strength (S-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="6"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="S"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_mp_potion_i05"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2861" level="6"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14694" name="Greater Elixir of CP (No Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="7"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_cp_potion_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2862" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14695" name="Greater Elixir of CP (D-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="7"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_cp_potion_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2862" level="2"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14696" name="Greater Elixir of CP (C-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="7"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_cp_potion_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2862" level="3"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14697" name="Greater Elixir of CP (B-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="7"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_cp_potion_i03"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2862" level="4"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14698" name="Greater Elixir of CP (A-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="7"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_cp_potion_i04"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2862" level="5"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="14699" name="Greater Elixir of CP (S-Grade)">
+    <set name="reuse_delay" value="300000"/>
+    <set name="delay_share_group" value="7"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="S"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_super_cp_potion_i05"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="2862" level="6"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+</list>

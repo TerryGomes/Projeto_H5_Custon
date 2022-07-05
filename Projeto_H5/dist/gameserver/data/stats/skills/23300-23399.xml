@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="23300" levels="1" name="Ghost Piercing">
+		<set name="icon" val="icon.skill0773" />
+		<set name="magicLevel" val="83" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="10" name="DamOverTime" time="1" val="300" />
+		</for>
+	</skill>
+	<skill id="23301" levels="1" name="Dimensional Door A" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill1050" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23302" levels="1" name="Dimensional Door B" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill1050" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23303" levels="1" name="Move" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23304" levels="1" name="Move" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23305" levels="1" name="Zinenze Agathion - Yunbokhwan" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill_agathion_special" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23306" levels="1" name="Zinenze Agathion Cute Trick" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23307" levels="1" name="Enze Agathion Cute Trick" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="hitTime" val="3000" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<cond msgId="2292">
+			<player agathion="1600" />
+		</cond> 
+	</skill>
+	<skill id="23308" levels="1" name="Totem of Body">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="BranchSys2.icon.totem_of_body" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="totems_epic" time="300" val="0">
+				<mul order="0x40" stat="regHp" val="1.3" />
+				<mul order="0x30" stat="fall" val="0.2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23309" levels="1" name="Totem of Spirit">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="BranchSys2.icon.totem_of_mind" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="totems_epic" time="300" val="0">
+				<mul order="0x40" stat="regMp" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23310" levels="1" name="Totem of Courage">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="BranchSys2.icon.totem_of_bravery" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="totems_epic" time="300" val="0">
+				<mul order="0x40" stat="pDef" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23311" levels="1" name="Totem of Fortitude">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="BranchSys2.icon.totem_of_fortitude" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="totems_epic" time="300" val="0">
+				<mul order="0x40" stat="mDef" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23312" levels="1" name="Fall of the Dragon">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="BranchSys2.icon.the_fall_of_dragon" />
+		<set name="magicLevel" val="85" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Hourglass" stackOrder="1" stackType="Hourglass" time="10800" val="0" />
+		</for>
+	</skill>
+	<skill id="23313" levels="5" name="Action Prohibit Immunity" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0386" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23314" levels="5" name="Control Prohibit Immunity" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0388" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23315" levels="5" name="Paralysis Immunity Enhance" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23316" levels="5" name="Petrification Immunity Enhance" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23317" levels="5" name="Fear Immunity Enhance" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23318" levels="1" name="Cat the Ranger Boots" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="BranchSys2.icon.action5016" />
+		<set name="reuseDelay" val="600000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="2500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="20" />
+		<set name="mpConsume2" val="140" />
+		<set name="target" val="TARGET_OWNER" />
+		<set name="skillRadius" val="1000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="cat" time="60" val="0">
+				<mul order="0x30" stat="pDef" val="1.2" />
+				<mul order="0x30" stat="mDef" val="1.2" />
+				<add order="0x40" stat="debuffResist" val="80" />
+				<mul order="0x40" stat="cancelResist" val="1.4" />
+				<mul order="0x30" stat="runSpd" val="1.1" />
+			</effect>
+			<effect count="1" name="HealPercent" time="0" val="10" />
+		</for>
+	</skill>
+	<skill id="23319" levels="1" name="Blood Seeker">
+		<!--
+		    Inflicts a wound that reduces HP.
+		-->
+		<set name="icon" val="BranchSys2.icon.br_wp_Caladbulg_i00" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="5000" />
+		<set name="castRange" val="400" />
+		<set name="hitCancelTime" val="500" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="BLEED" />
+		<set name="saveVs" val="CON" />
+		<set name="isTrigger" val="true" />
+		<for>
+				<!-- The effect of time from the ceiling -->
+			<effect abnormal="bleeding" count="20" name="Bleed" stackType="Bleed" stackOrder="1" time="1" val="75"/>
+		</for>
+	</skill>
+	<skill id="23320" levels="1" name="Greedy Throat">
+		<!--
+		    Кровоточащая рана, уменьшающая HP.
+		-->
+		<set name="icon" val="BranchSys2.icon.br_wp_habus_knife_i00" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="5000" />
+		<set name="castRange" val="400" />
+		<set name="hitCancelTime" val="500" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="BLEED" />
+		<set name="saveVs" val="CON" />
+		<set name="isTrigger" val="true" />
+		<for>
+				<!-- The effect of time from the ceiling -->
+			<effect abnormal="bleeding" count="20" name="Bleed" stackType="Bleed" stackOrder="1" time="1" val="75"/>
+		</for>
+	</skill>
+	<skill id="23321" levels="1" name="Draconic Evolver">
+		<!--
+		    Purpose loses mind from fear and flees.
+		-->
+		<set name="icon" val="BranchSys2.icon.br_wp_tiatenon_i00" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="5000" />
+		<set name="castRange" val="400" />
+		<set name="hitCancelTime" val="500" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="DERANGEMENT" />
+		<set name="saveVs" val="MEN" />
+		<set name="isTrigger" val="true" />
+		<for>
+				<!-- The effect of time from the ceiling -->
+			<effect count="3" name="Fear" stackOrder="-1" stackType="Fear" time="2" val="0" />
+		</for>
+	</skill>
+	<skill id="23322" levels="1" name="Demonic Desire">
+		<!--
+		    PDef. instantly reduced.
+		-->
+		<set name="icon" val="BranchSys2.icon.br_wp_astarot_i00" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="5000" />
+		<set name="castRange" val="400" />
+		<set name="hitCancelTime" val="500" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="DERANGEMENT" />
+		<set name="saveVs" val="MEN" />
+		<set name="isTrigger" val="true" />
+		<for>
+				<!-- The effect of time from the ceiling -->
+			<effect count="1" name="Debuff" time="15" val="0">
+				<mul order="0x30" stat="pDef" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23323" levels="1" name="Fury of Darkness">
+		<!--
+		    Instantly reduces P.. Def. and sending a shock from which it is impossible to move.
+		-->
+		<set name="icon" val="BranchSys2.icon.br_wp_tirbing_i00" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="5000" />
+		<set name="castRange" val="400" />
+		<set name="hitCancelTime" val="500" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="SHOCK" />
+		<set name="saveVs" val="CON" />
+		<set name="isTrigger" val="true" />
+		<for>
+				<!-- The effect of time from the ceiling -->
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="5" val="0" chance="30" >
+				<mul order="0x30" stat="pDef" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23324" levels="1" name="Jet Black Typhoon">
+		<!--
+		    Instantly increases Atk. Mag. wind and wave.
+		-->
+		<set name="icon" val="BranchSys2.icon.br_wp_wind_of_mardil_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="10000" />
+		<set name="castRange" val="400" />
+		<set name="hitCancelTime" val="500" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isTrigger" val="true" />
+		<for>
+				<!-- Time from the ceiling -->
+			<effect count="1" name="Buff" time="15" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="1.15" />
+				<add order="0x60" stat="attackWind" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="23325" levels="1" name="Enlarge - Luckpy" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23326" levels="1" name="Reduce - Luckpy" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23327" levels="1" name="Boss Test - Weaken" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23328" levels="1" name="Boss Test - Strengthen" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23329" levels="1" name="Lantern Agathion's Gift1" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23330" levels="1" name="Lantern Agathion's Gift2" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23331" levels="1" name="Lantern Agathion's Gift3" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23332" levels="1" name="Lantern Agathion's Gift4" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23333" levels="1" name="Agathion's New Year's Wish" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_pi_gift_box_i03" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23334" levels="1" name="Lantern Agathion Cute Trick" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="hitTime" val="3000" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<cond msgId="2292">
+			<player agathion="1604" />
+		</cond>
+	</skill>
+	<skill id="23335" levels="1" name="Agathion's New Year's Wish" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_pi_gift_box_i03" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23336" levels="1" name="Juju Agathion Cute Trick" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23337" levels="1" name="Juju Agathion's Gift 1" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23338" levels="1" name="Juju Agathion's Gift 2" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23339" levels="1" name="Juju Agathion's Gift 3" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="23340" levels="1" name="Juju Agathion's Gift 4" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+</list>

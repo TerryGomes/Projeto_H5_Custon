@@ -1,0 +1,81 @@
+<html noscrollbar>
+	<head>
+		<title>Welcome</title>
+	</head>
+<body>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=353 background=L2fandc.bg_smoll3>
+<tr>
+	<td align=center>
+	<br>
+		<table width=280>
+			<tr>
+				<td align=center valign=center>
+							<font name=hs12 color=3399FF>Change Secondary Password</font>
+				</td>
+			</tr>
+		</table>
+	<br>
+	</td>
+</tr>
+<tr>
+	<td align=center>
+	<br>
+		<table width=280>
+			<tr>
+				<td align=left>
+					<font color=00FF00>
+						Type your current Secondary Password!<br>
+					</font>
+				</td>
+			</tr>
+		</table>
+		<table width=280>
+			<tr>
+				<td align=center width=100>
+					<font color=686764>Current Password:</font>
+				</td>
+				<td align=center>
+					<multiedit var="pass1" width=150 height=20 />
+				</td>
+			</tr>
+		</table>
+	<br>
+		<table width=280>
+			<tr>
+				<td>
+					<font color=00FF00>Write your New Secondary Password</font>: 
+					<br>
+					- <font color=FF9900>Use a Unique Password</font>.<br1>
+					- <font color=FF9900>Password Request 6 characters</font>. <br1>
+					- <font color=FF9900>Password Require Only Numbers and Symbols</font>. <br1>
+					<font color=00FF00>Numbers</font>: <font color=FF9900>0 1 2 3 4 5 6 7 8 9</font> <br1>
+					<font  color=00FF00>Symbols</font>: <font color=FF9900>! # $ % ^ & * ( ) + =</font>
+					<br>
+					<font color=00FF00>Example of a password</font>: <font color=FF9900>#123456#</font> <br1>
+					<br>
+				</td>
+			</tr>
+		</table>
+		<table width=280>
+			<tr>
+				<td align=center width=100>
+					<font color=686764>New Password:</font>
+				</td>
+				<td align=center>
+					<multiedit var="pass2" width=150 height=25 />
+				</td>
+			</tr>
+		</table>
+		<table width=280>
+			<tr>
+				<td align=center>
+					<br><br>
+					<button value="Change My Password" action="bypass -h user_control secondaryPassC | $pass1 | $pass2" width=250 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"/>
+				</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+</table>
+</body>
+</html>

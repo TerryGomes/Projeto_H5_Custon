@@ -1,0 +1,52 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Heart of Infinity -->
+	<instance id="121" name="Seed of Infinity (Heart of Infinity)" maxChannels="3" collapseIfEmpty="10" timelimit="40" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="75" max="85"/>
+		<party min="18" max="27"/>
+		<return loc="-183656 206264 -12928"/>
+		<teleport loc="-179284 205990 -15520"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<geodata map="14_24"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+		<spawns>
+			<group name="soi_hoi_attack_init" spawned="false"/>
+			<group name="soi_hoi_attack_mob_1" spawned="false"/>
+			<group name="soi_hoi_attack_mob_2" spawned="false"/>
+			<group name="soi_hoi_attack_mob_3" spawned="false"/>
+			<group name="soi_hoi_attack_mob_4" spawned="false"/>
+			<group name="soi_hoi_attack_mob_5" spawned="false"/>
+			<group name="soi_hoi_attack_mob_6" spawned="false"/>
+			<group name="soi_hoi_attack_tumors" spawned="false"/>
+			<group name="soi_hoi_attack_wards" spawned="false"/>
+			<group name="soi_hoi_attack_bosses" spawned="false"/>
+		</spawns>
+		<doors>
+			<door id="14240102" opened="false"/>
+		</doors>
+		<zones>
+			<zone name="[soi_hoi_attack_attackup_1]" active="false"/>
+			<zone name="[soi_hoi_attack_attackup_2]" active="false"/>
+			<zone name="[soi_hoi_attack_attackup_3]" active="false"/>
+			<zone name="[soi_hoi_attack_attackup_4]" active="false"/>
+			<zone name="[soi_hoi_attack_attackup_5]" active="false"/>
+			<zone name="[soi_hoi_attack_attackup_6]" active="false"/>
+
+			<zone name="[soi_hoi_attack_defenceup_1]" active="false"/>
+			<zone name="[soi_hoi_attack_defenceup_2]" active="false"/>
+			<zone name="[soi_hoi_attack_defenceup_3]" active="false"/>
+			<zone name="[soi_hoi_attack_defenceup_4]" active="false"/>
+			<zone name="[soi_hoi_attack_defenceup_5]" active="false"/>
+			<zone name="[soi_hoi_attack_defenceup_6]" active="false"/>
+
+			<zone name="[soi_hoi_attack_echdebuff_1]" active="false"/>
+			<zone name="[soi_hoi_attack_echdebuff_2]" active="false"/>
+			<zone name="[soi_hoi_attack_echdebuff_3]" active="false"/>
+			<zone name="[soi_hoi_attack_echdebuff_4]" active="false"/>
+			<zone name="[soi_hoi_attack_echmusroom]" active="true"/>
+		</zones>
+	</instance>
+</list>

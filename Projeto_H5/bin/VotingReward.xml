@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="VotingReward.xsd">
+	<config enableVoteReward="True" />
+	<api zone="Hopzone" id="100963" key="HRwkTigJV4fnAzaO" /> <!-- #HOPZONE# 12 hours -->
+	<api zone="Topzone" id="0" key="" /> <!-- #TOPZONE# 12 hours -->
+	<voting command="getreward" interval="12hours" />
+	<nameColor enable="false" color="FFFFFF" /> <!-- Color picker: http://www.lineage2.es/misc/l2-user_name_color.php -->
+	<messages>
+		<message type="ON_SUCCESS">Thank you for voting! Here is small reward from us!</message>
+		<message type="ON_NOT_VOTED">You haven't voted yet in %zoneName%!</message>
+		<message type="ON_REUSE">You can vote again after: %hours% hours, %mins% minutes and %secs% seconds!</message>
+	</messages>
+	<rewards>
+		<!-- 1st group chance to enter 100% -->
+		<group chance="100">
+			<!-- The sum of chance inside the group must be always 100% so it always selects at least one item from it! -->
+			<!-- Only one item will be selected from a group -->
+			<item id="17031" min="1" max="1" chance="100" /> <!-- Vote Box -->
+			<item id="6673" min="1" max="4" chance="100" /> <!-- Festival Adena -->
+		</group>
+		<group chance="60">
+			<!-- Elemental Stones -->
+			<item id="9546" min="4" max="7" chance="26.66" /> <!-- Fire Stone -->
+			<item id="9547" min="4" max="7" chance="26.66" /> <!-- Water Stone -->
+			<item id="9548" min="4" max="7" chance="26.66" /> <!-- Earth Stone -->
+			<item id="9549" min="4" max="7" chance="26.66" /> <!-- Wind Stone -->
+			<item id="9550" min="4" max="7" chance="26.66" /> <!-- Dark Stone -->
+			<item id="9551" min="4" max="7" chance="26.66" /> <!-- Holy Stone -->
+		</group>
+		<group chance="60">
+			<!-- Elemental Crystals -->
+			<item id="9552" min="1" max="3" chance="16.66" /> <!-- Fire Crystal -->
+			<item id="9553" min="1" max="3" chance="16.66" /> <!-- Water Crystal -->
+			<item id="9554" min="1" max="3" chance="16.66" /> <!-- Earth Crystal -->
+			<item id="9555" min="1" max="3" chance="16.66" /> <!-- Wind Crystal -->
+			<item id="9556" min="1" max="3" chance="16.66" /> <!-- Dark Crystal -->
+			<item id="9557" min="1" max="3" chance="16.66" /> <!-- Holy Crystal -->
+		</group>
+		<group chance="50">
+			<!-- Enchants -->
+			<item id="959" min="1" max="3" chance="45" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+			<item id="960" min="1" max="3" chance="45" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+			<!-- Blessed Enchants -->
+			<item id="6577" min="1" max="1" chance="5" /> <!-- Blessed Scroll: Enchant Weapon (S-Grade) -->
+			<item id="6578" min="1" max="3" chance="5" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
+		</group>
+	</rewards>
+</list>

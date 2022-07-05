@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<list>
+  <config showall="true" notax="true" ignoreprice="true" keepenchanted="false" />
+
+<!--
+9546	Fire Stone		"Applied to a weapon, it increases the weapon's fire attack by 5. Applied to a shield or armor, it improves that item's water resistance by 3. It can be applied up to Level 3."	-1							0	
+9547	Water Stone		"Applied to a weapon, it increases the weapon's water attack by 5. Applied to a shield or armor, it improves that item's fire resistance by 3. It can be applied up to Level 3."	-1							0	
+9548	Earth Stone		"Applied to a weapon, it increases the weapon's earth attack by 5. Applied to a shield or armor, it improves that item's wind resistance by 3. It can be applied up to Level 3."	-1							0	
+9549	Wind Stone		"Applied to a weapon, it increases the weapon's wind attack by 5. Applied to a shield or armor, it improves that item's earth resistance by 3. It can be applied up to Level 3."	-1							0	
+9550	Dark Stone		"Applied to a weapon, it increases the weapon's dark attack by 5. Applied to a shield or armor, it improves that item's divine resistance by 3. It can be applied up to Level 3."	-1							0	
+9551	Divine Stone		"Applied to a weapon, it increases the weapon's divine attack by 5. Applied to a shield or armor, it improves that item's dark resistance by 3. It can be applied up to Level 3."	-1							0	
+-->
+
+ <!-- Fire Stone for Water Stone -->
+  <item>
+    <ingredient id="9547" count="1" />
+    <production id="9546" count="1" />
+ </item>
+
+ <!-- Water Stone for Fire Stone -->
+  <item>
+    <ingredient id="9546" count="1" />
+    <production id="9547" count="1" />
+ </item>
+
+ <!-- Earth Stone for Wind Stone -->
+  <item>
+    <ingredient id="9549" count="1" />
+    <production id="9548" count="1" />
+ </item>
+
+ <!-- Wind Stone for Earth Stone -->
+  <item>
+    <ingredient id="9548" count="1" />
+    <production id="9549" count="1" />
+ </item>
+
+ <!-- Divine Stone for Dark Stone -->
+  <item>
+    <ingredient id="9550" count="1" />
+    <production id="9551" count="1" />
+ </item>
+
+ <!-- Dark Stone for 30000 adena -->
+  <item>
+    <ingredient id="9551" count="1" />
+    <production id="9550" count="1" />
+ </item>
+
+  <item>
+    <ingredient id="9546" count="5" />
+    <ingredient id="57" count="1500000" />
+    <production id="9552" count="1" />
+ </item>
+
+  <item>
+    <ingredient id="9547" count="5" />
+    <ingredient id="57" count="1500000" />
+    <production id="9553" count="1" />
+ </item>
+
+  <item>
+    <ingredient id="9548" count="5" />
+    <ingredient id="57" count="1500000" />
+    <production id="9554" count="1" />
+ </item>
+
+  <item>
+    <ingredient id="9549" count="5" />
+    <ingredient id="57" count="1500000" />
+    <production id="9555" count="1" />
+ </item>
+
+  <item>
+    <ingredient id="9550" count="5" />
+    <ingredient id="57" count="1500000" />
+    <production id="9556" count="1" />
+ </item>
+
+  <item>
+    <ingredient id="9551" count="5" />
+    <ingredient id="57" count="1500000" />
+    <production id="9557" count="1" />
+ </item>
+</list>

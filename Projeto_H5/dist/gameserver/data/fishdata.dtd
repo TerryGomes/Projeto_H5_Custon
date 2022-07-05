@@ -1,0 +1,32 @@
+<!ELEMENT list (distribution|lure|fish)*>
+<!ELEMENT distribution (for_lure)*>
+<!ATTLIST distribution
+	id CDATA #REQUIRED>
+<!ELEMENT for_lure (chance)*>
+<!ATTLIST for_lure
+	type CDATA #REQUIRED>
+<!ELEMENT lure (chance)*>
+<!ATTLIST lure
+	item_id CDATA #REQUIRED
+	length_bonus CDATA #REQUIRED
+	rate_bonus CDATA #REQUIRED
+	revision_number CDATA #REQUIRED
+	type CDATA #REQUIRED>
+<!ELEMENT chance (#PCDATA)>
+<!ATTLIST chance
+	type CDATA #REQUIRED
+	value CDATA #REQUIRED>
+<!ELEMENT fish (set|reward)*>
+<!ATTLIST fish
+	id CDATA #REQUIRED
+	name CDATA #REQUIRED>
+<!ELEMENT set (#PCDATA)>
+<!ATTLIST set
+	name CDATA #REQUIRED
+	value CDATA #REQUIRED>
+<!ELEMENT reward (#PCDATA)>
+<!ATTLIST reward
+	id CDATA #REQUIRED
+	mindrop CDATA #REQUIRED
+	maxdrop CDATA #REQUIRED
+	chance CDATA #REQUIRED>

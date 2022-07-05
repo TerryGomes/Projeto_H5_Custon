@@ -1,0 +1,106 @@
+<html noscrollbar>
+<body>
+<title>Admin Panel</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td align=center>
+		<br>
+			<table cellpadding=0 cellspacing=-5 width=260>
+				<tr>
+					<td><button value="Main" action="bypass -h admin_admin" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Events" action="bypass -h admin_show_html events/events.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Chars" action="bypass -h admin_char_manage" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Server" action="bypass -h admin_server admserver.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="GM Shop" action="bypass -h admin_gmshop" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+		<br><br>
+			<center>
+				<table cellpadding=0 cellspacing=0 width=260>
+					<tr>
+						<td><button value="GM Room" action="bypass -h admin_move_to -113360 -244676 -15536" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Create Event" action="bypass -h admin_show_html events/gmevent_create.htm" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Edit Event" action="bypass -h admin_show_html events/gmevent_control.htm" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+				</table>
+			<br>
+				<table cellpadding=1 cellspacing=1 width=260>
+					<tr>
+						<td><button value="Announce" action="bypass -h admin_list_announcements" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Teleport Menu" action="bypass -h admin_show_moves" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Create Item" action="bypass -h admin_itemcreate" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+					<tr>
+						<td><button value="Petitions" action="bypass -h admin_view_petitions" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="EPICS" action="bypass -h admin_epic" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="PHANTOMS" action="bypass -h admin_phantoms" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+					<tr>
+						<td><button value="List Spawns" action="bypass -h admin_list_spawns $menu_command" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Residences" action="bypass -h admin_residence_list" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Augmentation" action="bypass -h admin_augmentation" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+					<tr>
+						<td><button value="Edit Class" action="bypass -h admin_show_html setclass.htm" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Char Sublass" action="bypass -h admin_show_html charsubclasses.htm" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Enchant" action="bypass -h admin_enchant" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+					<tr>
+						<td><button value="Clans" action="bypass -h admin_show_html pledgemanage.htm" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Manor" action="bypass -h admin_manor" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Masterwork" action="bypass -h admin_masterwork" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+					<tr>
+						<td><button value="Olympiad" action="bypass -h admin_show_html olympiad.htm" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Poll System" action="bypass -h admin_poll" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Enchant Atri" action="bypass -h admin_show_html attribute.htm" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+				</table>
+			</center>
+		<br>
+			<center>
+				<table>
+					<tr>
+						<td><button value="FIND BOTS" action="bypass -h admin_show_ips_over 6 1" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Invis/Vis" action="bypass -h admin_vis" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Invul" action="bypass -h admin_invul" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+				</table>
+				<table width=270>
+					<tr>
+						<td><button value="Silence" action="bypass -h admin_silence" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Kill" action="bypass -h admin_kill" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Res" action="bypass -h admin_res" width=90 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+				</table>
+		<br><br>
+				<table cellpadding=0 cellspacing=-5 width=270 >
+					<tr>
+						<td><font color="LEVEL">GM Speed:</font></td>
+						<td><button value="1" action="bypass -h admin_gmspeed 1" width=48 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="2" action="bypass -h admin_gmspeed 2" width=48 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="3" action="bypass -h admin_gmspeed 3" width=48 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="4" action="bypass -h admin_gmspeed 4" width=48 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+						<td><button value="Off" action="bypass -h admin_gmspeed 0" width=40 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+				</table>
+			<br>
+				<table>
+					<tr>
+						<td>ID:</td>
+						<td>Count:</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><edit var="id_1" width=70 height=12></td>
+						<td><edit var="count_2" width=70 height=12></td>
+						<td><button value="Global Give All" action="bypass -h admin_create_item_hwid $id_1 $count_2" width=100 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					</tr>
+				</table>
+			<br>
+			</center>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

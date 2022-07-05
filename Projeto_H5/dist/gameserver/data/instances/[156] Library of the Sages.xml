@@ -1,0 +1,41 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<instance id="156" name="Library of the Sages" maxChannels="50" collapseIfEmpty="1" timelimit="30" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="81" max="85"/>
+		<return loc="37128 -49768 -1128"/>
+		<teleport loc="37205 -49753 -1128"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="10293"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<spawns>
+			<spawn mobId="32861" type="point" respawn="0">
+				<coords loc="37384 -49784 -1128 16384"/>
+			</spawn>
+			<spawn mobId="32785" type="point" respawn="0">
+				<coords loc="37384 -49320 -1128 49152"/>
+			</spawn>
+
+			<spawn mobId="32863" type="point" respawn="0">
+				<coords loc="37352 -50904 -1176 16384"/>
+			</spawn>
+
+			<spawn mobId="32809" type="point" respawn="0">
+				<coords loc="37256 -50984 -1176 16384"/>
+			</spawn>
+			<spawn mobId="32810" type="point" respawn="0">
+				<coords loc="37448 -50984 -1176 16384"/>
+			</spawn>
+			<spawn mobId="32811" type="point" respawn="0">
+				<coords loc="37592 -50904 -1176 16384"/>
+			</spawn>
+			<spawn mobId="32812" type="point" respawn="0">
+				<coords loc="37592 -50568 -1176 16384"/>
+			</spawn>
+			<spawn mobId="32813" type="point" respawn="0">
+				<coords loc="37112 -50616 -1176 16384"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

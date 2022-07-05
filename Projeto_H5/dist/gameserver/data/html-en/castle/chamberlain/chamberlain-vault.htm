@@ -1,0 +1,26 @@
+<center>*[Castle Vault Management]*</center>
+
+There is currently <font color="00ffff"> %tax_income% Adena</font> in the castle vault.
+
+Please enter the amount you wish to withdraw or deposit.
+
+<center>
+
+<table height=27 width=280 bgColor="cccccc">
+<tbody><tr>
+<td align=middle width=40>Amount</td>
+<td align=left width=190><edit width="180" var="amount" type="number"></td>
+<td align=left width=40>Adena</td>
+</tr></tbody>
+</table>
+
+<button value="Withdraw" action="bypass -h npc_%objectId%_manage_vault withdraw $amount" width=90 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+
+<button value="Deposit" action="bypass -h npc_%objectId%_manage_vault deposit $amount" width=90 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+
+<button value="Cancel" action="bypass -h npc_%objectId%_Link chamberlain/chamberlain.htm" width=90 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+
+</center>
+
+
+  

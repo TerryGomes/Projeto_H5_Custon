@@ -1,0 +1,18 @@
+<html><body>
+<font color="LEVEL">
+You can enable or disable link your account to your current IP address. 
+Time parameter is used to avoid the loss of your account. 
+If you do not enter the number of days the lock will be removed. 
+Maximum time of 14 days. Default is 7 days. 
+You can specify the subnet in the format of CIDR.
+</font><font color="FF0000">
+Early unlock impossible.
+</font>
+<br>
+Current IP address: %IP%
+<br><br>
+<center>IP/CIDR address: <edit var="IP" width=80 height=15 /></center>
+<center>Block time (days): <edit var="time" width=80 height=15 /></center>
+<center><button value="Enable" action="bypass -h user_lock on $time $IP" width=100 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /></center>
+<center><button value="Disable" action="bypass -h user_lock off" width=100 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /></center>
+</body></html>

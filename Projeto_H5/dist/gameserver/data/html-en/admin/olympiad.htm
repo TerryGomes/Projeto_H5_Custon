@@ -1,0 +1,46 @@
+<html noscrollbar>
+<body>
+<title>Olympiad Menu</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td align=center>
+		<br>
+			<table cellpadding=0 cellspacing=-5 width=260>
+				<tr>
+					<td><button value="Main" action="bypass -h admin_admin" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Events" action="bypass -h admin_show_html events/events.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Chars" action="bypass -h admin_char_manage" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Server" action="bypass -h admin_server admserver.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="GM Shop" action="bypass -h admin_gmshop" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<br><br>
+			<table width=260>
+				<tr>
+					<td align=center><font name=hs12 color="LEVEL">Olympiad Menu</font></td>
+				</tr>
+			</table>
+			<br><br>
+			<table width=260>
+				<tr>
+					<td align=center>Command: <edit var="command" width=150 height=11></td>
+				</tr>
+			</table>
+			<br><br>
+			<table width=260 cellpadding=0 cellspacing=0>
+				<tr>
+					<td>
+						<button value="Save olympiad status" action="bypass -h admin_oly_save" width=260 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Add oly points (arg:<name> <points>)" action="bypass -h admin_add_oly_points $command" width=260 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Start olympiad" action="bypass -h admin_oly_start" width=260 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Stop olympiad" action="bypass -h admin_oly_stop" width=260 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Add hero (arg:<char_name>)" action="bypass -h admin_add_hero $command" width=260 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Fix noble name (target:noble)" action="bypass -h admin_fix_noble_name" width=260 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

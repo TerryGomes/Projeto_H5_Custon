@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "events.dtd">
+<list>
+	<event id="0" name="AdenGracia_Airship" type="BOAT_EVENT" impl="BoatWay">
+		<parameter name="class" value="AirShip" />
+		<parameter name="spawn_point" value="-149378 252552 198 33837" />
+		<parameter name="return_point" value="-149379 255246 -80" />
+		<on_time>
+			<on time="0">
+				<npc_say npc="32609" chat="SHOUT" range="-1" text="AIRSHIP_IS_ARRIVED_IT_WILL_DEPART_TO_GRACIA_IN_1_MINUTE"/>
+			</on>
+			<on time="60">
+				<npc_say npc="32609" chat="SHOUT" range="-1" text="AIRSHIP_IS_DEPARTED_TO_GRACIA"/>
+				<start name="event"/>
+			</on>
+		</on_time>
+		<objects name="boat_points">
+			<boat_point speed1="300" speed2="4000" x="-151202" y="252556" z="231"/>
+			<boat_point speed1="300" speed2="4000" x="-160403" y="256144" z="222"/>
+			<boat_point speed1="300" speed2="4000" x="-167672" y="256936" z="-594" teleport="true"/>
+			<boat_point speed1="300" speed2="4000" x="-169763" y="254815" z="282"/>
+			<boat_point speed1="300" speed2="4000" x="-171822" y="250061" z="425" />
+			<boat_point speed1="300" speed2="4000" x="-172595" y="247737" z="398" />
+			<boat_point speed1="300" speed2="4000" x="-174538" y="246185" z="39"/>
+			<boat_point speed1="300" speed2="4000" x="-179440" y="243651" z="1337"/>
+			<boat_point speed1="300" speed2="4000" x="-182601" y="243957" z="2739"/>
+			<boat_point speed1="300" speed2="4000" x="-184952" y="245122" z="2694"/>
+			<boat_point speed1="300" speed2="4000" x="-186936" y="244563" z="2617"/>
+	</objects>
+	</event>
+	<event id="1" name="AdenGracia_Airship" type="BOAT_EVENT" impl="BoatWay">
+		<parameter name="return_point" value="-186563 243590 2608" />
+		<on_time>
+			<on time="0">
+				<npc_say npc="32607" chat="SHOUT" range="-1" text="AIRSHIP_IS_ARRIVED_IT_WILL_DEPART_TO_ADEN_IN_1_MINUTE"/>
+			</on>
+			<on time="60">
+				<npc_say npc="32607" chat="SHOUT" range="-1" text="AIRSHIP_IS_DEPARTED_TO_ADEN"/>
+				<start name="event"/>
+			</on>
+		</on_time>
+		<objects name="boat_points">
+			<boat_point speed1="300" speed2="4000" x="-187801" y="244997" z="2672" />
+			<boat_point speed1="300" speed2="4000" x="-188520" y="245932" z="2465" />
+			<boat_point speed1="300" speed2="4000" x="-189932" y="245243" z="1682" />
+			<boat_point speed1="300" speed2="4000" x="-191192" y="242969" z="1523" />
+			<boat_point speed1="300" speed2="4000" x="-190406" y="239078" z="1706" />
+			<boat_point speed1="300" speed2="4000" x="-187475" y="237113" z="2768" />
+			<boat_point speed1="300" speed2="4000" x="-184673" y="238433" z="2802" />
+			<boat_point speed1="300" speed2="4000" x="-184524" y="241119" z="2816" />
+			<boat_point speed1="300" speed2="4000" x="-182129" y="243385" z="2733" />
+			<boat_point speed1="300" speed2="4000" x="-179440" y="243651" z="1337" />
+			<boat_point speed1="300" speed2="4000" x="-174538" y="246185" z="39" />
+			<boat_point speed1="300" speed2="4000" x="-172595" y="247737" z="398" />
+			<boat_point speed1="300" speed2="4000" x="-171822" y="250061" z="425" />
+			<boat_point speed1="300" speed2="4000" x="-169763" y="254815" z="282" />
+			<boat_point speed1="300" speed2="4000" x="-168067" y="256626" z="343" />
+			<boat_point speed1="300" speed2="4000" x="-157411" y="255675" z="221" teleport="true"/>
+			<boat_point speed1="300" speed2="4000" x="-153414" y="255385" z="221" />
+			<boat_point speed1="300" speed2="4000" x="-149548" y="258172" z="221" />
+			<boat_point speed1="300" speed2="4000" x="-146884" y="258247" z="221" />
+			<boat_point speed1="300" speed2="4000" x="-146672" y="254239" z="221" />
+			<boat_point speed1="300" speed2="4000" x="-147855" y="252712" z="206" />
+			<boat_point speed1="300" speed2="4000" x="-149378" y="252552" z="198" />
+	</objects>
+	</event>
+</list>

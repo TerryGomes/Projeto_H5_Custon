@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- 5006 Exchange SealStones -> AA -->
+
+<list>
+  <!-- Внимание: keepenchanted НЕ должно быть установлено в мультиселлах, где в одном блоке возможны два одинаковых нестекуемых предмета (напрмиер dual) -->
+  <!-- ignoreprice не работает с keepencahnted -->
+  <config showall="true" notax="true" keepenchanted="false" />
+
+  <item>
+    <ingredient id="6360" count="1"/>
+    <production id="5575" count="3"/>
+  </item>
+
+  <item>
+    <ingredient id="6361" count="1"/>
+    <production id="5575" count="5"/>
+  </item>
+
+  <item>
+    <ingredient id="6362" count="1"/>
+    <production id="5575" count="10"/>
+  </item>
+</list>

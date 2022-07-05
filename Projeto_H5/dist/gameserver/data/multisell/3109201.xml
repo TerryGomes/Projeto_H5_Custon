@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Black Marketer of Mammon: "Make a transaction for black market goods." -->
+<list>
+  <!-- Внимание: keepenchanted НЕ должно быть установлено в мультиселлах, где в одном блоке возможны два одинаковых нестекуемых предмета (напрмиер dual) -->
+  <!-- ignoreprice не работает с keepencahnted -->
+  <config showall="true" notax="true" keepenchanted="false" />
+
+  <!-- Ancient Book - Divine Inspiration (Modern Language Version) -->
+  <item>
+    <ingredient id="57" count="400000"/>
+    <production id="8618" count="1"/>
+  </item>
+
+  <!-- Transform Sealbook - Death Blader -->
+  <item>
+    <ingredient id="5575" count="660000"/>
+    <production id="9649" count="1"/>
+  </item>
+
+  <!-- Silver Bolt -->
+  <item>
+    <ingredient id="1343" count="100"/>
+    <production id="9635" count="100"/>
+  </item>
+
+  <!-- Mithril Bolt -->
+  <item>
+    <ingredient id="1344" count="100"/>
+    <production id="9636" count="100"/>
+  </item>
+
+  <!-- Shining Bolt -->
+  <item>
+    <ingredient id="1345" count="100"/>
+    <production id="9637" count="100"/>
+  </item>
+
+</list>

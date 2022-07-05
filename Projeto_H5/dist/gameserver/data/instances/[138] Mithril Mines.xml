@@ -1,0 +1,19 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Freya - Acquision Of Divine Sword -->
+	<instance id="138" name="Mithril Mine" maxChannels="20" collapseIfEmpty="0" timelimit="30" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="82" max="85"/>
+		<return loc="172136 -173464 3444"/>
+		<teleport loc="186852 -173492 -3900"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="10284"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<spawns>
+			<spawn mobId="18846" type="point" respawn="0">
+				<coords loc="185198 -184818 -3288 6800"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

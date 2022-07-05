@@ -1,0 +1,1499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <armor id="9900" name="Quiet Footsteps Ring">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="400"/>
+    <set name="icon" value="icon.accessary_ring_of_mana_i00"/>
+    <set name="price" value="25"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_FINGER"/>
+      <slot id="LEFT_FINGER"/>
+    </equip>
+    <skills>
+      <skill id="3407" level="1"/>
+    </skills>
+  </armor>
+  <weapon id="9901" name="Improved Falchion">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_falchion_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1530"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="31"/>
+      <add stat="mAtk" order="0x10" value="21"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9902" name="Improved Great Spear">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_long_spear_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="2120"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3599" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="31"/>
+      <add stat="mAtk" order="0x10" value="21"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9903" name="Improved Iron Hammer">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_iron_hammer_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1850"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="31"/>
+      <add stat="mAtk" order="0x10" value="21"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9904" name="Improved Sword Breaker">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_sword_breaker_i00"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="1110"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="27"/>
+      <add stat="mAtk" order="0x10" value="21"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9905" name="Improved Viper Fang">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_vipers_canine_i00"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1560"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="38"/>
+      <add stat="mAtk" order="0x10" value="21"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9906" name="Improved Composite Bow">
+    <set name="atk_reuse" value="1500"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_composition_bow_i00"/>
+    <set name="mp_consume" value="1"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="7"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1880"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="64"/>
+      <add stat="mAtk" order="0x10" value="21"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="293"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9907" name="Improved Flanged Mace">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_buzdygan_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1800"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="31"/>
+      <add stat="mAtk" order="0x10" value="21"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9908" name="Improved Mage Staff">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_apprentices_staff_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1050"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="30"/>
+      <add stat="mAtk" order="0x10" value="31"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <armor id="9909" name="Agathion Seal Bracelet">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="700"/>
+    <set name="icon" value="icon.etc_rbracelet_aga_agit_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="3361" level="1"/>
+      <skill id="5458" level="1"/>
+    </skills>
+  </armor>
+  <etcitem id="9910" name="Blood Oath">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="100"/>
+    <set name="icon" value="icon.etc_broken_crystal_red_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="true"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="9911" name="Blood Alliance">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="100"/>
+    <set name="icon" value="icon.etc_broken_crystal_red_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="9912" name="Knight's Epaulette">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="100"/>
+    <set name="icon" value="icon.etc_shoulder_strap_of_knight_i00"/>
+    <set name="price" value="1000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <armor id="9913" name="Talisman_Test">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_crystal_ball_silver_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+  </armor>
+  <armor id="9914" name="Blue Talisman of Power">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i01"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3271" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9915" name="Blue Talisman of Wild Magic">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="75"/>
+    <set name="icon" value="icon.etc_talisman_i01"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3277" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9916" name="Blue Talisman of Defense">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i01"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3285" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9917" name="Red Talisman of Minimum Clarity">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3281" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9918" name="Red Talisman of Maximum Clarity">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="74"/>
+    <set name="icon" value="icon.etc_talisman_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3282" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9919" name="Blue Talisman of Reflection">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i01"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3410" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9920" name="Blue Talisman of Invisibility">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="64"/>
+    <set name="icon" value="icon.etc_talisman_i01"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3280" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9921" name="Blue Talisman - Shield Protection">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i01"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3274" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9922" name="Black Talisman - Mending">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i05"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3286" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9923" name="Black Talisman - Escape">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i05"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3289" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9924" name="Blue Talisman of Healing">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="64"/>
+    <set name="icon" value="icon.etc_talisman_i01"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3283" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9925" name="Red Talisman of Recovery">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="64"/>
+    <set name="icon" value="icon.etc_talisman_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3273" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9926" name="Blue Talisman of Defense">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i01"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3272" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9927" name="Blue Talisman of Magic Defense">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i01"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3276" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9928" name="Red Talisman of Mental Regeneration">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3278" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9929" name="Blue Talisman of Protection">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i01"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3275" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9930" name="Blue Talisman of Evasion">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i01"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3321" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9931" name="Red Talisman of Meditation">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="74"/>
+    <set name="icon" value="icon.etc_talisman_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3279" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9932" name="Blue Talisman - Divine Protection">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="74"/>
+    <set name="icon" value="icon.etc_talisman_i01"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3284" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9933" name="Yellow Talisman of Power">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3293" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9934" name="Yellow Talisman of Violent Haste">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3301" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9935" name="Yellow Talisman of Arcane Defense">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3296" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9936" name="Yellow Talisman of Arcane Power">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3294" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9937" name="Yellow Talisman of Arcane Haste">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3302" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9938" name="Yellow Talisman of Accuracy">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3297" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9939" name="Yellow Talisman of Defense">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3295" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9940" name="Yellow Talisman of Alacrity">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3313" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9941" name="Yellow Talisman of Speed">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3300" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9942" name="Yellow Talisman of Critical Reduction">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3317" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9943" name="Yellow Talisman of Critical Power">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3299" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9944" name="Yellow Talisman of Critical Dodging">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3316" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9945" name="Yellow Talisman of Evasion">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3298" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9946" name="Yellow Talisman of Healing">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3312" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9947" name="Yellow Talisman of CP Regeneration">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3311" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9948" name="Yellow Talisman of Physical Regeneration">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3310" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9949" name="Yellow Talisman of Mental Regeneration">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i02"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3320" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9950" name="Grey Talisman of Weight Training">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i07"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3314" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9951" name="Grey Talisman of Mid-Grade Fishing">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i07"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3315" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9952" name="Orange Talisman - Hot Springs CP Potion">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="64"/>
+    <set name="icon" value="icon.etc_talisman_i04"/>
+    <set name="price" value="15000"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3332" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9953" name="Orange Talisman - Elixir of Life">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="64"/>
+    <set name="icon" value="icon.etc_talisman_i04"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3333" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9954" name="Orange Talisman - Elixir of Mental Strength">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i04"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3334" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9955" name="Black Talisman of Vocalization">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i05"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3291" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9956" name="Black Talisman of Arcane Freedom">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i05"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3288" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9957" name="Black Talisman of Physical Freedom">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i05"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3287" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9958" name="Black Talisman of Rescue">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i05"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3290" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9959" name="Black Talisman of Free Speech">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="65"/>
+    <set name="icon" value="icon.etc_talisman_i05"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3292" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9960" name="White Talisman of Bravery">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i06"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3306" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9961" name="White Talisman of Motion">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i06"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3307" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9962" name="White Talisman of Grounding">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i06"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3305" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9963" name="White Talisman of Attention">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i06"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3304" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9964" name="White Talisman of Bandages">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i06"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3303" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9965" name="White Talisman of Protection">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i06"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3309" level="1"/>
+    </skills>
+  </armor>
+  <armor id="9966" name="White Talisman of Freedom">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.etc_talisman_i06"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="TALISMAN"/>
+    </equip>
+    <skills>
+      <skill id="3308" level="1"/>
+    </skills>
+  </armor>
+  <etcitem id="9967" name="Recipe - Dynasty Sword (60%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9968" name="Recipe - Dynasty Blade (60%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9969" name="Recipe - Dynasty Phantom (60%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9970" name="Recipe - Dynasty Bow (60%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9971" name="Recipe - Dynasty Knife (60%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9972" name="Recipe - Dynasty Halberd (60%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9973" name="Recipe - Dynasty Cudgel (60%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9974" name="Recipe - Dynasty Mace (60%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9975" name="Recipe - Dynasty Bagh-Nakh (60%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9976" name="Recipe - Dynasty Sword (100%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9977" name="Recipe - Dynasty Blade (100%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9978" name="Recipe - Dynasty Phantom (100%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9979" name="Recipe - Dynasty Bow (100%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9980" name="Recipe - Dynasty Knife (100%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9981" name="Recipe - Dynasty Halberd (100%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9982" name="Recipe - Dynasty Cudgel (100%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9983" name="Recipe - Dynasty Mace (100%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9984" name="Recipe - Dynasty Bagh-Nakh (100%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="1493000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9985" name="Recipe - Sealed Dynasty Earrings (70%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="243700"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9986" name="Recipe - Sealed Dynasty Necklace (70%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="324920"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9987" name="Recipe - Sealed Dynasty Ring (70%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="162460"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9988" name="Recipe - Sealed Dynasty Earrings (100%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="243700"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9989" name="Recipe - Sealed Dynasty Necklace (100%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="324920"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9990" name="Recipe - Sealed Dynasty Ring (100%)">
+    <set name="class" value="RECIPIES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.etc_recipe_black_i00"/>
+    <set name="price" value="162460"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="RECIPE"/>
+    <set name="weight" value="30"/>
+  </etcitem>
+  <etcitem id="9991" name="Sealed Dynasty Earring Gemstone">
+    <set name="class" value="PIECES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_crystal_ball_gold_i00"/>
+    <set name="price" value="56866"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="MATERIAL"/>
+    <set name="weight" value="60"/>
+  </etcitem>
+  <etcitem id="9992" name="Sealed Dynasty Necklace Gemstone">
+    <set name="class" value="PIECES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_jewel_box_i00"/>
+    <set name="price" value="74095"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="MATERIAL"/>
+    <set name="weight" value="60"/>
+  </etcitem>
+  <etcitem id="9993" name="Sealed Dynasty Ring Gemstone">
+    <set name="class" value="PIECES"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_jewel_box_i00"/>
+    <set name="price" value="40464"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="MATERIAL"/>
+    <set name="weight" value="60"/>
+  </etcitem>
+  <etcitem id="9994" name="Map of Hellbound">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="100"/>
+    <set name="icon" value="icon.etc_letter_red_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="QUEST"/>
+  </etcitem>
+  <weapon id="9995" name="Hand Crossbow">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="915"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_hunting_gun_i00"/>
+    <set name="kamael_convert" value="276"/>
+    <set name="price" value="495500"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="4"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1850"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="64"/>
+      <add stat="mAtk" order="0x10" value="32"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="9996" name="Hand Crossbow">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_count" value="915"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_hunting_gun_i00"/>
+    <set name="kamael_convert" value="277"/>
+    <set name="price" value="495500"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="4"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1850"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="64"/>
+      <add stat="mAtk" order="0x10" value="32"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <etcitem id="9997" name="Fire Potion">
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_fire_potion_i00"/>
+    <set name="price" value="10000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="10"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="9998" name="Water Potion">
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_water_potion_i00"/>
+    <set name="price" value="10000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="10"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="9999" name="Earth Potion">
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_earth_potion_i00"/>
+    <set name="price" value="10000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="10"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+</list>

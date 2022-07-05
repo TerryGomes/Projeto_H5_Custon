@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (item_group|augmentation_data|variants)*>
+<!ELEMENT augmentation_data (#PCDATA)>
+<!ATTLIST augmentation_data
+	fee_item_id CDATA #REQUIRED
+	fee_item_count CDATA #REQUIRED
+	fee_item_count CDATA #REQUIRED
+	cancel_fee CDATA #REQUIRED
+	item_group CDATA #REQUIRED
+	mineral_id CDATA #REQUIRED>
+<!ELEMENT item_group (item)*>
+<!ATTLIST item_group
+	name CDATA #REQUIRED>
+<!ELEMENT item (#PCDATA)>
+<!ATTLIST item
+	id CDATA #REQUIRED>
+<!ELEMENT variants (warrior_variation|mage_variation)*>
+<!ATTLIST variants
+	mineral_id CDATA #REQUIRED>
+<!ELEMENT warrior_variation (variant)*>
+<!ELEMENT mage_variation (variant)*>
+<!ELEMENT variant (group)*>
+<!ELEMENT group (option)*>
+<!ATTLIST group
+	chance CDATA #REQUIRED>
+<!ELEMENT option (#PCDATA)>
+<!ATTLIST option
+	id CDATA #REQUIRED
+	chance CDATA #REQUIRED>

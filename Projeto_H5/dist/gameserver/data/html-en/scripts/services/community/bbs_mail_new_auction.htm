@@ -1,0 +1,266 @@
+<html><body>
+<title>Your Auctions</title>
+<table width=750>
+	<tr>
+		<td width=130>
+			<button value="Auction List" action="bypass _bbsAuction_ 1 _ -1 _ All _  _ 1 _ 0 _ 0 _ 0" width=200 height=28 back="L2UI_CT1.OlympiadWnd_DF_BuyEtc_Down" fore="L2UI_CT1.OlympiadWnd_DF_BuyEtc">
+		</td>
+		<td width=620>
+			<button value="Your Auctions" action="bypass _bbsNewAuction_ c0 _ 0" width=200 height=28 back="L2UI_CT1.OlympiadWnd_DF_Watch_Down" fore="L2UI_CT1.OlympiadWnd_DF_Watch">
+		</td>
+	</tr>
+</table>
+<br>
+<table border=0 cellspacing=0 cellpadding=0 width=800 height=15>
+	<tr>
+		<td width=250 height=25>
+			<center><font name="hs12" color="c88f05">Place an item for Auction</font></center>
+		</td>
+		<td width=550>
+			<center><font name="hs12" color="c88f05">Current Auctions</font></center>
+		</td>
+	</tr>
+</table>
+<table border=0 cellspacing=0 cellpadding=0 width=720 height=370>
+	<tr>
+		<td width=5>
+		</td>
+		<td width=250>
+			<table border=0 cellspacing=0 cellpadding=0 height=370>
+				<tr>
+					<td width=250 height=115>
+						<table border=0 cellspacing=0 cellpadding=0 width=250 height=115 bgcolor=14140f>
+							<tr>
+								<td height=5>
+								<br>
+								</td>
+							</tr>
+							<tr>
+								<td height=15>
+									<center>   Auctionable Items</center>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table width=250 height=105>
+										<tr>
+											<td width=10>
+											</td>
+											<td>
+												<table border=0 cellspacing=0 cellpadding=0 width=240 height=105>
+													%auctionableItems%
+												</table>
+											</td>
+											<td>
+												<table width=20 height=120>
+													<tr>
+														<td>
+															<button value="" action="bypass _bbsNewAuction_ %currentItem% _ 0" width=15 height=15 back="L2UI_CH3.joypad_shortcut_down" fore="L2UI_CH3.joypad_shortcut">
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<button value="" action="bypass _bbsNewAuction_ %currentItem% _ %prevLine%" width=15 height=15 back="L2UI_CH3.shortcut_nextv_down" fore="L2UI_CH3.shortcut_nextv">
+														</td>
+													</tr>
+													<tr>
+														<td height=20>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<button value="" action="bypass _bbsNewAuction_ %currentItem% _ %nextLine%" width=15 height=15 back="L2UI_CH3.shortcut_prevv_down" fore="L2UI_CH3.shortcut_prevv">
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<button value="" action="bypass _bbsNewAuction_ %currentItem% _ %lastLine%" width=15 height=15 back="L2UI_CH3.joypad_shortcut_down" fore="L2UI_CH3.joypad_shortcut">
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td height=20>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border=0 cellspacing=0 cellpadding=0 width=280 height=155 bgcolor=14140f>
+							<tr>
+								<td height=10>
+									<br>
+								</td>
+							</tr>
+							<tr>
+								<td height=20>
+									Items to be Auctioned
+								</td>
+							</tr>
+							<tr>
+								<td height=10>
+								</td>
+							</tr>
+							<tr>
+								<td height=60>
+									<center>
+									<table width=250 height=55 bgcolor=0d0d0a>
+										<tr>
+											<td height=10>
+											</td>
+										</tr>
+										<tr>
+											<td width=250 height=45>
+												<center>
+												<table width=230 height=45>
+													<tr>
+														<td width=50 height=45>
+															<center>
+															%choosenImage%
+															</center>
+														</td>
+														%choosenItem%
+													</tr>
+												</table>
+												</center>
+											</td>
+										</tr>
+									</table>
+									</center>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table width=280 height=55>
+										<tr>
+											<td width=40 align=left>
+												Quantity
+											</td>
+											<td width=20>
+											</td>
+											<td width=160 align=left>
+												%quantity%
+											</td>
+										</tr>
+										<tr>
+											<td width=50 align=left>
+												Price per item
+											</td>
+											<td width=20 align=right>
+												<img src="icon.Adena" width="16" height="16">
+											</td>
+											<td width=160 align=left>
+												<edit var="sale_price" value="" width=160 height=12>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr><tr>
+					<td height=20>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table border=0 cellspacing=0 cellpadding=0 width=280 height=105 bgcolor=14140f>
+							<tr>
+								<td width=40 align=left>
+									Sale Fee
+								</td>
+								<td width=20>
+									<img src="icon.Adena" width="16" height="16">
+								</td>
+								<td width=120 align=left>
+									%saleFee%
+								</td>
+							</tr>
+							<tr>
+								<td width=40 align=left>
+									Total Adena
+								</td>
+								<td width=20>
+									<img src="icon.Adena" width="16" height="16">
+								</td>
+								<td width=120 align=left>
+									%adena%
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width=9>
+		</td>
+		<td width=470>
+			<table border=0 cellspacing=0 cellpadding=0 width=530 height=405 bgcolor=14140f>
+				<tr>
+					<td height=10>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Item List<font color=7c786d>(%auctioned%/10)</font>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table>
+							<tr>
+								<td>
+									<table border=0 cellspacing=0 cellpadding=0 width=470 bgcolor=23221d>
+										<tr>
+											<td width=260>
+												<button value="Item" action="bypass _bbsNewAuction_ %currentItem% _ %curLine%" width=260 height=25 back="L2UI_CT1.ListCTRL_DF_Title_Down" fore="L2UI_CT1.ListCTRL_DF_Title">
+											</td>
+											<td width=55>
+												<button value="Grade" action="bypass _bbsNewAuction_ %currentItem% _ %curLine%" width=55 height=25 back="L2UI_CT1.ListCTRL_DF_Title_Down" fore="L2UI_CT1.ListCTRL_DF_Title">
+											</td>
+											<td width=55>
+												<button value="Quantity" action="bypass _bbsNewAuction_ %currentItem% _ %curLine%" width=55 height=25 back="L2UI_CT1.ListCTRL_DF_Title_Down" fore="L2UI_CT1.ListCTRL_DF_Title">
+											</td>
+											<td width=100>
+												<button value="Sale Price" action="bypass _bbsNewAuction_ %currentItem% _ %curLine%" width=100 height=25 back="L2UI_CT1.ListCTRL_DF_Title_Down" fore="L2UI_CT1.ListCTRL_DF_Title">
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									%auctionItems%
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+<table width=720>
+	<tr>
+		<td width=5>
+		</td>
+		<td width=250>
+			<br>
+			%NewAuctionButton%
+		</td>
+		<td width=9>
+		</td>
+		<td width=470>
+			<br>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="35000" levels="1" name="Lucky Chests - Default stats">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="criticalRate" val="1" />
+		<for>
+			<set order="0x40" stat="maxHp" val="1000" />
+			<set order="0x40" stat="maxMp" val="500" />
+			<set order="0x40" stat="maxCp" val="100" />
+			<set order="0x40" stat="regHp" val="1.5" />
+			<set order="0x40" stat="regCp" val="1.5" />
+			<set order="0x40" stat="regMp" val="1.5" />
+			<set order="0x40" stat="pAtk" val="1100" />
+			<set order="0x40" stat="mAtk" val="1800" />
+			<set order="0x40" stat="pDef" val="300" />
+			<set order="0x40" stat="mDef" val="300" />
+			<set order="0x40" stat="pAtkSpd" val="600" />
+			<set order="0x40" stat="mAtkSpd" val="500" />
+			<set order="0x40" stat="cAtk" val="1.25" />
+			
+			<set order="0x40" stat="rEvas" val="140" />
+			<set order="0x40" stat="rCrit" val="150" />
+			<set order="0x40" stat="blowRate" val="1" />
+			<set order="0x40" stat="accCombat" val="145" />
+			<set order="0x40" stat="runSpd" val="140" />
+			
+			<set order="0x40" stat="STR" val="40" />
+			<set order="0x40" stat="CON" val="43" />
+			<set order="0x40" stat="DEX" val="30" />
+			<set order="0x40" stat="INT" val="21" />
+			<set order="0x40" stat="WIT" val="11" />
+			<set order="0x40" stat="MEN" val="25" />
+			
+			<set order="0x40" stat="bleedResist" val="2" />
+			<set order="0x40" stat="poisonResist" val="2" />
+			<set order="0x40" stat="stunResist" val="2" />
+			<set order="0x40" stat="paralyzeResist" val="2" />
+			<set order="0x40" stat="rootResist" val="2" />
+			<set order="0x40" stat="sleepResist" val="2" />
+			<set order="0x40" stat="cancelResist" val="2" />
+			
+			<set order="0x40" stat="reflectDam" val="0" />
+			<set order="0x40" stat="reflectMagicDebuff" val="0" />
+			<set order="0x40" stat="reflectPhysicDebuff" val="0" />
+
+		</for>
+	</skill>
+	<skill id="35001" levels="1" name="Lucky Chests - Bow">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="pAtkSpd" val="500" />
+			<set order="0x50" stat="pAtk" val="1000" />
+			<set order="0x50" stat="rCrit" val="50" />
+			<sub order="0x50" stat="runSpd" val="10" />
+		</for>
+	</skill>
+	<skill id="35002" levels="1" name="Lucky Chests - Lance">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="pAtkSpd" val="800" />
+			<set order="0x50" stat="pAtk" val="400" />
+			<!-->
+			<set order="0x50" stat="atkCountMax" val="3" />
+			<set order="0x50" stat="pAtkAngle" val="360" />
+			<add order="0x50" stat="pAtkRange" val="80" />
+			<!--> 
+		</for>
+	</skill>
+	<skill id="35003" levels="1" name="Lucky Chests - Dirk">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="pAtkSpd" val="900" />
+			<set order="0x50" stat="pAtk" val="200" />
+			<set order="0x50" stat="rCrit" val="200" />
+			<set order="0x50" stat="blowRate" val="150" />
+		</for>
+	</skill>
+	<skill id="35004" levels="1" name="Lucky Chests - Hammer">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="pAtkSpd" val="550" />
+			<set order="0x50" stat="pAtk" val="1100" />
+			<set order="0x50" stat="rCrit" val="100" />
+			<set order="0x50" stat="stunResist" val="80" />
+		</for>
+	</skill>
+	<skill id="35005" levels="1" name="Lucky Chests - Zweihander">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="pAtkSpd" val="200" />
+			<set order="0x50" stat="pAtk" val="3500" />
+		</for>
+	</skill>
+	<skill id="35006" levels="1" name="Lucky Chests - Shield">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="rShld" val="40" />
+			<add order="0x50" stat="pDef" val="300" />
+		</for>
+	</skill>
+	<skill id="35007" levels="1" name="Lucky Chests - Knightsword">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="pAtk" val="1100" />
+			<set order="0x50" stat="pAtkSpd" val="800" />
+		</for>
+	</skill>
+	<skill id="35008" levels="1" name="Lucky Chests - Crafted Dagger">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="pAtkSpd" val="900" />
+			<set order="0x50" stat="pAtk" val="200" />
+			<set order="0x50" stat="rCrit" val="300" />
+			<set order="0x50" stat="blowRate" val="150" />
+			<set order="0x50" stat="blowRate" val="0" />
+		</for>
+	</skill>
+	<skill id="35009" levels="1" name="Lucky Chests - Long Bow">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="pAtkSpd" val="930" />
+			<set order="0x50" stat="pAtk" val="500" />
+			<mul order="0x40" stat="pAtkRange" val="0.6" />
+			<set order="0x50" stat="rCrit" val="50" />
+		</for>
+	</skill>
+	<skill id="35010" levels="1" name="Lucky Chests - Pike">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="pAtkSpd" val="800" />
+			<set order="0x50" stat="pAtk" val="400" />
+			<!-->
+			<set order="0x50" stat="atkCountMax" val="3" />
+			<set order="0x50" stat="pAtkAngle" val="360" />
+			<add order="0x50" stat="pAtkRange" val="80" />
+			<!-->
+		</for>
+	</skill>
+	<skill id="35011" levels="1" name="Lucky Chests - 2H Heavy Sword">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="pAtkSpd" val="125" />
+			<set order="0x50" stat="runSpd" val="110" />
+			<set order="0x50" stat="pAtk" val="8000" />
+			<set order="0x50" stat="rCrit" val="500" />
+		</for>
+	</skill>
+	<skill id="35012" levels="1" name="Lucky Chests - Reinforced Bow">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="pAtkSpd" val="250" />
+			<set order="0x50" stat="pAtk" val="4000" />
+			<set order="0x50" stat="rCrit" val="200" />
+			<sub order="0x50" stat="runSpd" val="10" />
+		</for>
+	</skill>
+	<skill id="35013" levels="1" name="Lucky Chests - 2H Heavy Blunt">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="pAtkSpd" val="200" />
+			<set order="0x50" stat="pAtk" val="3500" />
+		</for>
+	</skill>
+	<skill id="35014" levels="1" name="Lucky Chests - Saber">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x50" stat="pAtk" val="280" />
+			<set order="0x50" stat="pAtkSpd" val="2300" />
+			<set order="0x50" stat="runSpd" val="170" />
+		</for>
+	</skill>
+	
+	
+	<skill id="35015" levels="1" name="Joker Chest stun">
+		<set name="magicType" val="MAGIC" />
+		<set name="isMagic" val="true" />
+		<set name="isDebuff" val="true" />
+		<set name="magicLvl" val="80" />
+		<set name="icon" val="icon.skill0484" />
+		<set name="castRange" val="40" />
+		<set name="coolTime" val="200" />
+		<set name="power" val="100" />
+		<set name="flyToBack" val="false" />
+		<set name="reuseDelay" val="10000" />
+		<set name="effectRange" val="400" />
+		<set name="magicLevel" val="32" />
+		<set name="hitTime" val="100" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="10" />
+		<set name="mpConsume2" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="flyType" val="DUMMY" />
+		<set name="flyRadius" val="500" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<!-->
+			<effect name="Warp" noicon="1" val="0" />
+			<effect count="1" name="Warp" stackOrder="-1" stackType="Warp" val="0" />
+			<!-->
+			<effect name="Stun" abnormalTime="4" noicon="1" val="0" abnormalLvl="1" abnormalType="stun" />
+			<!-->
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="4" val="0" chance="30" />
+			<!-->
+		</for>
+	</skill>
+	
+	
+	<skill id="35016" levels="1" name="Chest paralyzation">
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<set name="hitTime" val="200" />
+		<set name="isDebuff" val="true" />
+		<set name="isMagic" val="true" />
+		<set name="magicLvl" val="80" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="power" val="100" /> <!-- Base Land Rate -->
+		<set name="skillType" val="BUFF" />
+		<set name="target" val="TARGET_ONE" />
+		<for>
+			<effect name="Paralyze" abnormalTime="6" noicon="1" val="0" abnormalLvl="1" abnormalType="paralyze" />
+		</for>
+	</skill>
+	<skill id="35017" levels="1" name="Chest slow">
+		<set name="magicLvl" val="80" />
+		<set name="power" val="80" /> <!-- Base Land Rate -->
+		<set name="lvlDepend" val="2" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="2000" />
+		<set name="hitTime" val="4000" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="isMagic" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isDebuff" val="true" />
+		<set name="castRange" val="600" />
+		<set name="effectRange" val="1100" />
+		<for>
+			<effect name="Debuff" abnormalTime="10" noicon="1" val="0">
+				<set order="0x60" stat="runSpd" val="50" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="35018" levels="4" name="Wind Walk">
+		<table name="#runSpd"> 20 30 40 50 </table>
+		<table name="#abnormalLvl"> 1 2 3 4 </table>
+		<set name="displayId" val="1204" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="2000" />
+		<set name="hitTime" val="4000" />
+		<set name="skillType" val="BUFF" />
+		<set name="isMagic" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<for>
+			<effect name="Buff" abnormalTime="-1" val="0" abnormalLvl="#abnormalLvl" abnormalType="speed_up">
+				<add order="0x61" stat="runSpd" val="#runSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="35019" levels="5" name="Crit rate up">
+		<table name="#critRate"> 50 100 200 300 400 </table>
+		<table name="#abnormalLvl"> 1 2 3 4 5 </table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="2000" />
+		<set name="hitTime" val="4000" />
+		<set name="skillType" val="BUFF" />
+		<set name="isMagic" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<for>
+			<effect name="Buff" abnormalTime="-1" val="0" abnormalLvl="#abnormalLvl" abnormalType="crit_up">
+				<add order="0x61" stat="rCrit" val="#critRate" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="35020" levels="1" name="Wind Walk">
+		<set name="displayId" val="1204" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="2000" />
+		<set name="hitTime" val="4000" />
+		<set name="skillType" val="BUFF" />
+		<set name="isMagic" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<for>
+			<effect name="Buff" abnormalTime="-1" val="0" abnormalLvl="5" abnormalType="speed_up_un">
+				<set order="0x61" stat="runSpd" val="200" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="35021" levels="1" name="Rabbit stats">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="criticalRate" val="1" />
+		<for>
+			<set order="0x62" stat="maxHp" val="300" />
+			<set order="0x62" stat="maxMp" val="500" />
+			<set order="0x62" stat="maxCp" val="100" />
+			<set order="0x62" stat="regHp" val="1.5" />
+			<set order="0x62" stat="regCp" val="1.5" />
+			<set order="0x62" stat="regMp" val="1.5" />
+			<set order="0x62" stat="pAtk" val="300" />
+			<set order="0x62" stat="mAtk" val="1800" />
+			<set order="0x62" stat="pDef" val="300" />
+			<set order="0x62" stat="mDef" val="300" />
+			<set order="0x62" stat="pAtkSpd" val="900" />
+			<set order="0x62" stat="mAtkSpd" val="500" />
+			<set order="0x62" stat="cAtk" val="1.25" />
+
+			<set order="0x62" stat="rEvas" val="175" />
+			<set order="0x62" stat="rCrit" val="10" />
+			<set order="0x62" stat="blowRate" val="1" />
+			<set order="0x62" stat="accCombat" val="145" />
+			<set order="0x62" stat="runSpd" val="175" />
+		</for>
+	</skill>
+	<skill id="35022" levels="1" name="Frog stats">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<set order="0x62" stat="maxHp" val="3" />
+			<set order="0x62" stat="runSpd" val="175" />
+		</for>
+	</skill>
+	<skill id="35023" levels="1" name="Pig stats">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="criticalRate" val="1" />
+		<for>
+			<set order="0x62" stat="maxHp" val="2500" />
+			<set order="0x62" stat="maxMp" val="500" />
+			<set order="0x62" stat="maxCp" val="100" />
+			<set order="0x62" stat="regHp" val="1.5" />
+			<set order="0x62" stat="regCp" val="1.5" />
+			<set order="0x62" stat="regMp" val="1.5" />
+			<set order="0x62" stat="pAtk" val="600" />
+			<set order="0x62" stat="mAtk" val="1800" />
+			<set order="0x62" stat="pDef" val="300" />
+			<set order="0x62" stat="mDef" val="300" />
+			<set order="0x62" stat="pAtkSpd" val="700" />
+			<set order="0x62" stat="mAtkSpd" val="500" />
+			<set order="0x62" stat="cAtk" val="1.25" />
+
+			<set order="0x62" stat="rEvas" val="130" />
+			<set order="0x62" stat="rCrit" val="10" />
+			<set order="0x62" stat="blowRate" val="1" />
+			<set order="0x62" stat="accCombat" val="145" />
+			<set order="0x62" stat="runSpd" val="135" />
+		</for>
+	</skill>
+	<skill id="35024" levels="1" name="Yeti stats">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="criticalRate" val="1" />
+		<for>
+			<set order="0x62" stat="maxHp" val="10000" />
+			<set order="0x62" stat="maxMp" val="500" />
+			<set order="0x62" stat="maxCp" val="100" />
+			<set order="0x62" stat="regHp" val="1.5" />
+			<set order="0x62" stat="regCp" val="1.5" />
+			<set order="0x62" stat="regMp" val="1.5" />
+			<set order="0x62" stat="pAtk" val="3000" />
+			<set order="0x62" stat="mAtk" val="1800" />
+			<set order="0x62" stat="pDef" val="300" />
+			<set order="0x62" stat="mDef" val="300" />
+			<set order="0x62" stat="pAtkSpd" val="500" />
+			<set order="0x62" stat="mAtkSpd" val="500" />
+			<set order="0x62" stat="cAtk" val="1.25" />
+
+			<set order="0x62" stat="rEvas" val="100" />
+			<set order="0x62" stat="rCrit" val="500" />
+			<set order="0x62" stat="blowRate" val="1" />
+			<set order="0x62" stat="accCombat" val="145" />
+			<set order="0x62" stat="runSpd" val="140" />
+		</for>
+	</skill>
+	<skill id="35025" levels="10" name="Kill streak bonus">
+		<table name="#critRate"> 50 100 200 300 400 400 400 400 400 400 </table>
+		<table name="#abnormalLvl"> 1 2 3 4 5 6 7 8 9 10 </table>
+		<set name="target" val="TARGET_ONE" />
+		<set name="reuseDelay" val="2000" />
+		<set name="hitTime" val="4000" />
+		<set name="skillType" val="BUFF" />
+		<set name="isMagic" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="castRange" val="400" />
+		<set name="effectRange" val="900" />
+		<for>
+			<effect name="Buff" abnormalTime="-1" val="0" abnormalLvl="#abnormalLvl" abnormalType="crit_up">
+				<add order="0x61" stat="rCrit" val="#critRate" />
+			</effect>
+		</for>
+	</skill>
+
+
+	<skill id="35100" levels="1" name="Hunting Grounds - Default stats">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="criticalRate" val="1" />
+		<for>
+			<set order="0x40" stat="maxHp" val="1000" />
+			<set order="0x40" stat="maxMp" val="1000" />
+			<set order="0x40" stat="maxCp" val="100" />
+			<set order="0x40" stat="regHp" val="1.5" />
+			<set order="0x40" stat="regCp" val="1.5" />
+			<set order="0x40" stat="regMp" val="0" />
+			<set order="0x40" stat="pAtk" val="1100" />
+			<set order="0x40" stat="mAtk" val="1800" />
+			<set order="0x40" stat="pDef" val="300" />
+			<set order="0x40" stat="mDef" val="300" />
+			<set order="0x40" stat="pAtkSpd" val="600" />
+			<set order="0x40" stat="mAtkSpd" val="500" />
+			<set order="0x40" stat="cAtk" val="1.25" />
+						
+			<set order="0x40" stat="rEvas" val="140" />
+			<set order="0x40" stat="rCrit" val="150" />
+			<set order="0x40" stat="blowRate" val="1" />
+			
+			<set order="0x40" stat="accCombat" val="145" />
+			<set order="0x40" stat="runSpd" val="170" />
+			
+			<set order="0x40" stat="STR" val="40" />
+			<set order="0x40" stat="CON" val="43" />
+			<set order="0x40" stat="DEX" val="30" />
+			<set order="0x40" stat="INT" val="21" />
+			<set order="0x40" stat="WIT" val="11" />
+			<set order="0x40" stat="MEN" val="25" />
+			
+			
+			<set order="0x40" stat="reflectDam" val="0" />
+			<set order="0x40" stat="reflectMagicDebuff" val="0" />
+			<set order="0x40" stat="reflectPhysicDebuff" val="0" />
+			<set order="0x40" stat="absorbDam" val="0" />
+			 
+		</for>
+	</skill>
+	<skill id="35101" levels="1" name="Zombies event - Survivor stats">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="criticalRate" val="1" />
+		<for>
+			<set order="0x40" stat="maxHp" val="1000" />
+			<set order="0x40" stat="maxMp" val="1000" />
+			<set order="0x40" stat="maxCp" val="100" />
+			<set order="0x40" stat="regHp" val="1.5" />
+			<set order="0x40" stat="regCp" val="1.5" />
+			<set order="0x40" stat="regMp" val="0" />
+			<set order="0x40" stat="pAtk" val="1100" />
+			<set order="0x40" stat="mAtk" val="1800" />
+			<set order="0x40" stat="pDef" val="300" />
+			<set order="0x40" stat="mDef" val="300" />
+			<set order="0x40" stat="pAtkSpd" val="500" />
+			<set order="0x40" stat="mAtkSpd" val="500" />
+			<set order="0x40" stat="cAtk" val="1.25" />
+			 
+			
+			<set order="0x40" stat="rEvas" val="140" />
+			<set order="0x40" stat="rCrit" val="150" />
+			<set order="0x40" stat="blowRate" val="1" />
+			<set order="0x40" stat="accCombat" val="200" />
+			<set order="0x40" stat="runSpd" val="160" />
+			
+			<set order="0x40" stat="STR" val="40" />
+			<set order="0x40" stat="CON" val="43" />
+			<set order="0x40" stat="DEX" val="30" />
+			<set order="0x40" stat="INT" val="21" />
+			<set order="0x40" stat="WIT" val="11" />
+			<set order="0x40" stat="MEN" val="25" />
+			
+			
+			<set order="0x40" stat="reflectDam" val="0" />
+			<set order="0x40" stat="reflectMagicDebuff" val="0" />
+			<set order="0x40" stat="reflectPhysicDebuff" val="0" />
+			<set order="0x40" stat="absorbDam" val="0" />
+			 
+		</for>
+	</skill>
+	<skill id="35102" levels="1" name="Zombies event - Zombie stats">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="criticalRate" val="1" />
+		<for>
+			<set order="0x40" stat="maxHp" val="1000" />
+			<set order="0x40" stat="maxMp" val="1000" />
+			<set order="0x40" stat="maxCp" val="100" />
+			<set order="0x40" stat="regHp" val="1.5" />
+			<set order="0x40" stat="regCp" val="1.5" />
+			<set order="0x40" stat="regMp" val="0" />
+			<set order="0x40" stat="pAtk" val="1100" />
+			<set order="0x40" stat="mAtk" val="1800" />
+			<set order="0x40" stat="pDef" val="300" />
+			<set order="0x40" stat="mDef" val="300" />
+			<set order="0x40" stat="pAtkSpd" val="600" />
+			<set order="0x40" stat="mAtkSpd" val="500" />
+			<set order="0x40" stat="cAtk" val="1.25" />
+			 
+			
+			<set order="0x40" stat="rEvas" val="140" />
+			<set order="0x40" stat="rCrit" val="150" />
+			<set order="0x40" stat="blowRate" val="1" />
+			<set order="0x40" stat="accCombat" val="200" />
+			<set order="0x40" stat="runSpd" val="245" />
+			
+			<set order="0x40" stat="STR" val="40" />
+			<set order="0x40" stat="CON" val="43" />
+			<set order="0x40" stat="DEX" val="30" />
+			<set order="0x40" stat="INT" val="21" />
+			<set order="0x40" stat="WIT" val="11" />
+			<set order="0x40" stat="MEN" val="25" />
+			
+			<set order="0x40" stat="reflectDam" val="0" />
+			<set order="0x40" stat="reflectMagicDebuff" val="0" />
+			<set order="0x40" stat="reflectPhysicDebuff" val="0" />
+			<set order="0x40" stat="absorbDam" val="0" />
+			 
+		</for>
+	</skill>
+	<skill id="35103" levels="1" name="Mutants event - Mutant stats">
+		<set name="magicLvl" val="20" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="criticalRate" val="1" />
+		<for>
+			<set order="0x40" stat="maxHp" val="3000" />
+			<set order="0x40" stat="maxMp" val="1000" />
+			<set order="0x40" stat="maxCp" val="100" />
+			<set order="0x40" stat="regHp" val="1.5" />
+			<set order="0x40" stat="regCp" val="1.5" />
+			<set order="0x40" stat="regMp" val="0" />
+			<set order="0x40" stat="pAtk" val="1100" />
+			<set order="0x40" stat="mAtk" val="1800" />
+			<set order="0x40" stat="pDef" val="300" />
+			<set order="0x40" stat="mDef" val="300" />
+			<set order="0x40" stat="pAtkSpd" val="600" />
+			<set order="0x40" stat="mAtkSpd" val="500" />
+			<set order="0x40" stat="cAtk" val="1.25" />
+			 
+			
+			<set order="0x40" stat="rEvas" val="140" />
+			<set order="0x40" stat="rCrit" val="150" />
+			<set order="0x40" stat="blowRate" val="1" />
+			<set order="0x40" stat="accCombat" val="145" />
+			<set order="0x40" stat="runSpd" val="245" />
+			
+			<set order="0x40" stat="STR" val="40" />
+			<set order="0x40" stat="CON" val="43" />
+			<set order="0x40" stat="DEX" val="30" />
+			<set order="0x40" stat="INT" val="21" />
+			<set order="0x40" stat="WIT" val="11" />
+			<set order="0x40" stat="MEN" val="25" />
+			
+			 
+			
+			<set order="0x40" stat="reflectDam" val="0" />
+			<set order="0x40" stat="reflectMagicDebuff" val="0" />
+			<set order="0x40" stat="reflectPhysicDebuff" val="0" />
+			<set order="0x40" stat="absorbDam" val="0" />
+		</for>
+	</skill>
+	</list>

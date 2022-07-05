@@ -1,0 +1,90 @@
+<html noscrollbar>
+<body>
+<title>Items</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td align=center>
+		<br>
+			<table cellpadding=0 cellspacing=-5 width=260>
+				<tr>
+					<td><button value="Main" action="bypass -h admin_admin" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Events" action="bypass -h admin_show_html events/events.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Chars" action="bypass -h admin_char_manage" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Server" action="bypass -h admin_server admserver.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="GM Shop" action="bypass -h admin_gmshop" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<br><br>
+			<table width=260>
+				<tr>
+					<td align=center><font name=hs12 color="LEVEL">To create an item fill in all fields.</font></td>
+				</tr>
+			</table>
+			<br>
+			<table width=260>
+				<tr>
+					<td width=70 align=center>ID</td>
+					<td width=70 align=center>Count</td>
+					<td width=20></td>
+				</tr>
+				<tr>
+					<td align=center><edit var="itemid" type=number width=70 height=15></td>
+					<td align=center><edit var="itemnum" type=number width=70 height=15></td>
+					<td align=center><button value="Create" action="bypass -h admin_create_item $itemid $itemnum" width=80 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table cellpadding=0 cellspacing=0 width=260>
+				<tr>
+					<td align=center><button value="Char Item" action="bypass -h admin_create_item_char $itemid $itemnum" width=140 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td align=center><button value="HWID Item" action="bypass -h admin_create_item_hwid $itemid $itemnum" width=140 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<br>
+			<table width=260>
+				<tr>
+					<td align=center>Assets: <edit var="asset" width=150 height=11></td>
+				</tr>
+			</table>
+			<br>
+			<table cellpadding=0 cellspacing=0 width=260>
+				<tr>
+					<td>
+						<button value="Shop" action="bypass -h admin_gmshop" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Adena" action="bypass -h admin_create_item 57 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Ancient Adena" action="bypass -h admin_create_item 5575 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+					</td>
+					<td>
+						<button value="Donator Coin" action="bypass -h admin_create_item 37000 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Special Mana" action="bypass -h admin_create_item 37001 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Vote Box" action="bypass -h admin_create_item 37004 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+					</td>
+					<td>
+						<button value="Special HP" action="bypass -h admin_create_item 37003 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Special CP" action="bypass -h admin_create_item 37002 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Cloak of Hero" action="bypass -h admin_create_item 37032 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button value="GM Helmet" action="bypass -h admin_create_item 37010 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="GM Breastplate" action="bypass -h admin_create_item 37011 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="GM Gaiters" action="bypass -h admin_create_item 37012 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+					</td>
+					<td>
+						<button value="GM Gauntlets" action="bypass -h admin_create_item 37013 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="GM Boots" action="bypass -h admin_create_item 37014 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Cloak of Aden" action="bypass -h admin_create_item 37015 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+					</td>
+					<td>
+						<button value="Cloak of Giran" action="bypass -h admin_create_item 37017 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Cloak of Dion" action="bypass -h admin_create_item 37016 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Cloak of Gludio" action="bypass -h admin_create_item 37018 $asset" width=95 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,452 @@
+<html noscrollbar>
+<body>
+<title>Drop Calculator</title>
+<br>
+<center>&nbsp;
+<table border=0 cellpadding=0 cellspacing=0 width=800 height=508 background="l2fandc.bg2">
+	<tr>
+		<td>
+			<br1>
+			<table width=760 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td>
+						<table width=510>
+							<tr>
+								<td fixwidth=50>
+									<center><img src="Icon.etc_scroll_of_memory_i00" width=32 height=32></center>
+								</td>
+								<td fixwidth=460>
+									<table>
+										<tr>
+											<td>
+												<font name="__SYSTEMWORLDFONT" color=31B404>Drop Calculator</font>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<font color=31B404>Shows exact informations about Drop and Spoil List of all Monsters</font>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table width=250 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=20>
+									<br>
+								</td>
+							</tr>
+							<tr>
+								<td fixwidth=250>
+									<center><button value="Back" action="bypass _dropItemsByName_%searchItem%_%searchItemPage%" width=200 height=32 back="L2UI_CT1.OlympiadWnd_DF_Back_Down" fore="L2UI_ct1.OlympiadWnd_DF_Back"></center>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br><br><br>
+			<table width=760 height=20 border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td fixwidth=220>
+						<button value="Monster Name" action="bypass _dropMonstersByItem_%itemChosenId%_%monsterPage%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=220 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=60>
+						<button value="Level" action="bypass _dropMonstersByItem_%itemChosenId%_%monsterPage%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=60 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=60>
+						<button value="Type" action="bypass _dropMonstersByItem_%itemChosenId%_%monsterPage%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=60 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=175>
+						<button value="Count" action="bypass _dropMonstersByItem_%itemChosenId%_%monsterPage%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=175 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=115>
+						<button value="Chance" action="bypass _dropMonstersByItem_%itemChosenId%_%monsterPage%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=115 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+					<td fixwidth=130>
+						<button value="Show Details" action="bypass _dropMonstersByItem_%itemChosenId%_%monsterPage%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=130 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=35 border=0 cellpadding=0 cellspacing=0 bgcolor=0d1b25>
+				<tr>
+					<td fixwidth=220>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterName0%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterLevel0%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterType0%</font></center>
+					</td>
+					<td fixwidth=175>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterCount0%</font></center>
+					</td>
+					<td fixwidth=115>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterChance0%</font></center>
+					</td>
+					<td fixwidth=130>
+						<table width=130 height=35 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=34>
+									<center>
+									%showDetails0%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=35 border=0 cellpadding=0 cellspacing=0 bgcolor=15262c>
+				<tr>
+					<td fixwidth=220>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterName1%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterLevel1%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterType1%</font></center>
+					</td>
+					<td fixwidth=175>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterCount1%</font></center>
+					</td>
+					<td fixwidth=115>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterChance1%</font></center>
+					</td>
+					<td fixwidth=130>
+						<table width=130 height=35 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=34>
+									<center>
+									%showDetails1%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=35 border=0 cellpadding=0 cellspacing=0 bgcolor=0d1b25>
+				<tr>
+					<td fixwidth=220>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterName2%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterLevel2%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterType2%</font></center>
+					</td>
+					<td fixwidth=175>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterCount2%</font></center>
+					</td>
+					<td fixwidth=115>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterChance2%</font></center>
+					</td>
+					<td fixwidth=130>
+						<table width=130 height=35 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=34>
+									<center>
+									%showDetails2%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=35 border=0 cellpadding=0 cellspacing=0 bgcolor=15262c>
+				<tr>
+					<td fixwidth=220>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterName3%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterLevel3%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterType3%</font></center>
+					</td>
+					<td fixwidth=175>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterCount3%</font></center>
+					</td>
+					<td fixwidth=115>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterChance3%</font></center>
+					</td>
+					<td fixwidth=130>
+						<table width=130 height=35 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=34>
+									<center>
+									%showDetails3%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=35 border=0 cellpadding=0 cellspacing=0 bgcolor=0d1b25>
+				<tr>
+					<td fixwidth=220>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterName4%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterLevel4%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterType4%</font></center>
+					</td>
+					<td fixwidth=175>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterCount4%</font></center>
+					</td>
+					<td fixwidth=115>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterChance4%</font></center>
+					</td>
+					<td fixwidth=130>
+						<table width=130 height=35 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=34>
+									<center>
+									%showDetails4%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=35 border=0 cellpadding=0 cellspacing=0 bgcolor=15262c>
+				<tr>
+					<td fixwidth=220>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterName5%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterLevel5%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterType5%</font></center>
+					</td>
+					<td fixwidth=175>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterCount5%</font></center>
+					</td>
+					<td fixwidth=115>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterChance5%</font></center>
+					</td>
+					<td fixwidth=130>
+						<table width=130 height=35 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=34>
+									<center>
+									%showDetails5%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=35 border=0 cellpadding=0 cellspacing=0 bgcolor=0d1b25>
+				<tr>
+					<td fixwidth=220>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterName6%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterLevel6%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterType6%</font></center>
+					</td>
+					<td fixwidth=175>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterCount6%</font></center>
+					</td>
+					<td fixwidth=115>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterChance6%</font></center>
+					</td>
+					<td fixwidth=130>
+						<table width=130 height=35 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=34>
+									<center>
+									%showDetails6%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=35 border=0 cellpadding=0 cellspacing=0 bgcolor=15262c>
+				<tr>
+					<td fixwidth=220>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterName7%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterLevel7%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterType7%</font></center>
+					</td>
+					<td fixwidth=175>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterCount7%</font></center>
+					</td>
+					<td fixwidth=115>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterChance7%</font></center>
+					</td>
+					<td fixwidth=130>
+						<table width=130 height=35 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=34>
+									<center>
+									%showDetails7%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=35 border=0 cellpadding=0 cellspacing=0 bgcolor=0d1b25>
+				<tr>
+					<td fixwidth=220>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterName8%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterLevel8%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterType8%</font></center>
+					</td>
+					<td fixwidth=175>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterCount8%</font></center>
+					</td>
+					<td fixwidth=115>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterChance8%</font></center>
+					</td>
+					<td fixwidth=130>
+						<table width=130 height=35 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=34>
+									<center>
+									%showDetails8%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table width=760 height=35 border=0 cellpadding=0 cellspacing=0 bgcolor=15262c>
+				<tr>
+					<td fixwidth=220>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterName9%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterLevel9%</font></center>
+					</td>
+					<td fixwidth=60>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterType9%</font></center>
+					</td>
+					<td fixwidth=175>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterCount9%</font></center>
+					</td>
+					<td fixwidth=115>
+						<center><font name="__SYSTEMWORLDFONT" color=31B404>%monsterChance9%</font></center>
+					</td>
+					<td fixwidth=130>
+						<table width=130 height=35 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td height=1>
+									<br1>
+								</td>
+							</tr>
+							<tr>
+								<td height=34>
+									<center>
+									%showDetails9%
+									</center>
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<br>
+			<center>
+			<table width=760 bgcolor=12171b border=0 cellpadding=0 cellspacing=0>
+				<tr>
+					<td fixwidth=380 align=right>
+						%previousButton%
+					</td>
+					<td fixwidth=380 align=left>
+						%nextButton%
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>

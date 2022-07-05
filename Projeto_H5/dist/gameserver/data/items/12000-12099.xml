@@ -1,0 +1,1909 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <weapon id="12000" name="Common Item - Arcana Mace">
+    <set name="enchantable" value="false"/>
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_count" value="174"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_arcana_mace_i00"/>
+    <set name="price" value="3477000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="433"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="225"/>
+      <add stat="mAtk" order="0x10" value="175"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12001" name="Common Item - Angel Slayer">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="174"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_angel_slayer_i00"/>
+    <set name="price" value="3477000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="317"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="246"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12002" name="Common Item - Imperial Staff">
+    <set name="enchantable" value="false"/>
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_count" value="174"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_imperial_staff_i00"/>
+    <set name="price" value="3477000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="303"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="274"/>
+      <add stat="mAtk" order="0x10" value="193"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12003" name="Common Item - Tallum Blade*Dark Legion">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="174"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_dual_sword_i00"/>
+    <set name="price" value="3477000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DUAL"/>
+    <set name="weight" value="693"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3570" level="1"/>
+    <!--Special Ability: Robust Health-->
+    <for>
+      <add stat="pAtk" order="0x10" value="342"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12004" name="Common Item - Forgotten Blade">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="174"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_forgotten_blade_i00"/>
+    <set name="kamael_convert" value="11996"/>
+    <set name="price" value="3477000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="433"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="281"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12005" name="Common Item - Heaven's Divider">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="174"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_heavens_divider_i00"/>
+    <set name="kamael_convert" value="11992"/>
+    <set name="price" value="3477000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="460"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="342"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <armor id="12006" name="Common Item - Leather Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t09_b_i00"/>
+    <set name="price" value="890"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="433"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="19"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12007" name="Common Item - Crafted Leather Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t09_g_i00"/>
+    <set name="price" value="890"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="217"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="19"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12008" name="Common Item - Ring Mail Breastplate">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t12_u_i00"/>
+    <set name="price" value="3560"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="2940"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="77"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12009" name="Common Item - Bone Helmet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="1340"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="213"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="29"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12010" name="Common Item - Cursed Tunic">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t14_u_i00"/>
+    <set name="price" value="2670"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="697"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="39"/>
+      <add stat="maxMp" order="0x10" value="106"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12011" name="Common Item - Cursed Stockings">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="3"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t14_l_i00"/>
+    <set name="price" value="1670"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="340"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <add stat="maxMp" order="0x10" value="66"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12012" name="Common Item - Iron Plate Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="4"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t12_l_i00"/>
+    <set name="price" value="2230"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="1273"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="48"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="12013" name="Common Item - Bronze Shield">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.shield_bronze_shield_i00"/>
+    <set name="price" value="935"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="457"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="101"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="12014" name="Common Item - Puma Skin Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="3"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t09_l_i00"/>
+    <set name="price" value="1670"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="533"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="36"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12015" name="Common Item - Puma Skin Shirt">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t09_u_i00"/>
+    <set name="price" value="2670"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1567"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="58"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12016" name="Common Item - Leather Gauntlet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t18_g_i00"/>
+    <set name="price" value="1350"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="213"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="22"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12017" name="Common Item - Dark Stockings">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t16_l_i00"/>
+    <set name="price" value="2520"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="333"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="27"/>
+      <add stat="maxMp" order="0x10" value="79"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12018" name="Common Item - Mystic's Tunic">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t17_u_i00"/>
+    <set name="price" value="4040"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="677"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="43"/>
+      <add stat="maxMp" order="0x10" value="126"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12019" name="Common Item - Mystic's Stockings">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t17_l_i00"/>
+    <set name="price" value="2520"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="330"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="27"/>
+      <add stat="maxMp" order="0x10" value="79"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12020" name="Common Item - Lion Skin Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t18_l_i00"/>
+    <set name="price" value="2520"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="523"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="41"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12021" name="Common Item - Lion Skin Shirt">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t18_u_i00"/>
+    <set name="price" value="4040"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1527"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="65"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12022" name="Common Item - White Tunic">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t16_u_i00"/>
+    <set name="price" value="4040"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="680"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="43"/>
+      <add stat="maxMp" order="0x10" value="126"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12023" name="Common Item - Scale Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="6"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t08_l_i00"/>
+    <set name="price" value="3360"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="1287"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="54"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12024" name="Common Item - Scale Mail">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="10"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t08_u_i00"/>
+    <set name="price" value="5380"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="2907"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="87"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="12025" name="Common Item - Aspis">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="3"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.shield_aspis_i00"/>
+    <set name="price" value="1410"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="450"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="114"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="12026" name="Common Item - Elven Tunic">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t11_u_i00"/>
+    <set name="price" value="4040"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="693"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="43"/>
+      <add stat="maxMp" order="0x10" value="126"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12027" name="Common Item - Elven Stockings">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t11_l_i00"/>
+    <set name="price" value="2520"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="337"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="27"/>
+      <add stat="maxMp" order="0x10" value="79"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12028" name="Common Item - Bronze Helmet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="4"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i00"/>
+    <set name="price" value="2020"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="210"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="33"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12029" name="Common Item - Blue Buckskin Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t18_b_i00"/>
+    <set name="price" value="1350"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="433"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="22"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12030" name="Common Item - Dwarven Scale Mail">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="13"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t15_u_i00"/>
+    <set name="price" value="7160"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="2847"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="95"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12031" name="Common Item - Mithril Breastplate">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="13"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t19_u_i00"/>
+    <set name="price" value="7160"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="2890"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="95"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12032" name="Common Item - Compound Scale Mail">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="13"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t20_u_i00"/>
+    <set name="price" value="7160"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="2873"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="95"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12033" name="Common Item - Iron Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="4"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t10_b_i00"/>
+    <set name="price" value="1960"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="427"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12034" name="Common Item - Reinforced Leather Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t13_l_i00"/>
+    <set name="price" value="3680"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="523"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="46"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12035" name="Common Item - Reinforced Leather Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="4"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t13_b_i00"/>
+    <set name="price" value="1960"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="427"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12036" name="Common Item - Reinforced Leather Shirt">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="11"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t13_u_i00"/>
+    <set name="price" value="5890"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1523"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12037" name="Common Item - Reinforced Leather Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="4"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t13_g_i00"/>
+    <set name="price" value="1960"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="213"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12038" name="Common Item - Gauntlet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="4"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t10_g_i00"/>
+    <set name="price" value="1960"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="213"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12039" name="Common Item - Dwarven Scale Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="9"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t15_l_i00"/>
+    <set name="price" value="4910"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="1280"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="61"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12040" name="Common Item - Linen Shirt">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="39"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.etc_shirts_d_i01"/>
+    <set name="price" value="4910"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="43"/>
+    <equip>
+      <slot id="UNDERWEAR"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="12"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12041" name="Common Item - Mithril Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="9"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t19_l_i00"/>
+    <set name="price" value="4910"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="1277"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="61"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12042" name="Common Item - Mithril Banded Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t10_l_i00"/>
+    <set name="price" value="3680"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="527"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="46"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12043" name="Common Item - Mithril Banded Mail">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="11"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t10_u_i00"/>
+    <set name="price" value="5890"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1523"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12044" name="Common Item - Blast Plate">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="15"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t40_u_i00"/>
+    <set name="price" value="7860"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="2807"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="97"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12045" name="Common Item - Boots of Knowledge">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="4"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t41_b_i00"/>
+    <set name="price" value="1960"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="423"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12046" name="Common Item - Gloves of Knowledge">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="4"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t41_g_i00"/>
+    <set name="price" value="1960"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="213"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12047" name="Common Item - Tunic of Knowledge">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="11"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t41_u_i00"/>
+    <set name="price" value="5890"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="673"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="49"/>
+      <add stat="maxMp" order="0x10" value="147"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12048" name="Common Item - Stockings of Knowledge">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t41_l_i00"/>
+    <set name="price" value="3680"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="333"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="30"/>
+      <add stat="maxMp" order="0x10" value="92"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12049" name="Common Item - Compound Scale Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="9"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t20_l_i00"/>
+    <set name="price" value="4910"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="1257"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="61"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12050" name="Common Item - Helmet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i00"/>
+    <set name="price" value="2950"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="213"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="37"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="12051" name="Common Item - Hoplon">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="4"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.shield_hoplon_i00"/>
+    <set name="price" value="2060"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="447"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="128"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="12052" name="Common Item - Manticore Skin Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="10"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t42_l_i00"/>
+    <set name="price" value="5220"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="517"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="48"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12053" name="Common Item - Manticore Skin Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t42_b_i00"/>
+    <set name="price" value="2780"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="420"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="27"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12054" name="Common Item - Manticore Skin Shirt">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="15"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t42_u_i00"/>
+    <set name="price" value="8350"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1507"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="77"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12055" name="Common Item - Manticore Skin Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t42_g_i00"/>
+    <set name="price" value="2780"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="210"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="27"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12056" name="Common Item - Mithril Scale Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="13"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t40_l_i00"/>
+    <set name="price" value="6960"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="1290"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="64"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12057" name="Common Item - Mithril Tunic">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="15"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t51_u_i00"/>
+    <set name="price" value="8350"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="670"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="52"/>
+      <add stat="maxMp" order="0x10" value="169"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12058" name="Common Item - Mithril Stockings">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="10"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t51_l_i00"/>
+    <set name="price" value="5220"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="327"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="32"/>
+      <add stat="maxMp" order="0x10" value="105"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12059" name="Common Item - Brigandine">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="20"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t43_u_i00"/>
+    <set name="price" value="11100"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="2773"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="103"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12060" name="Common Item - Brigandine Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="13"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t43_l_i00"/>
+    <set name="price" value="6960"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="1273"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="64"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12061" name="Common Item - Brigandine Gauntlet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t43_g_i00"/>
+    <set name="price" value="2780"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="210"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="27"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12062" name="Common Item - Brigandine Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t43_b_i00"/>
+    <set name="price" value="2780"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="417"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="27"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="12063" name="Common Item - Brigandine Shield">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.shield_brigandine_shield_i00"/>
+    <set name="price" value="2920"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="440"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="142"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="12064" name="Common Item - Brigandine Helmet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="8"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="4170"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="210"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="41"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12065" name="Common Item - Elven Mithril Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t51_g_i00"/>
+    <set name="price" value="2780"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="213"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="27"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12066" name="Common Item - Elven Mithril Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t51_b_i00"/>
+    <set name="price" value="2780"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="417"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="27"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12067" name="Common Item - Striped Linen Shirt">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="75"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.etc_stripe_shirts_d_i01"/>
+    <set name="price" value="6960"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="43"/>
+    <equip>
+      <slot id="UNDERWEAR"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="14"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12068" name="Common Item - Rip Gauntlet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t40_g_i00"/>
+    <set name="price" value="2780"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="210"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="27"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="12069" name="Common Item - Kite Shield">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.shield_kite_shield_i00"/>
+    <set name="price" value="2920"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="440"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="142"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="12070" name="Common Item - Boots of Power">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t40_b_i00"/>
+    <set name="price" value="2780"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="417"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="27"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12071" name="Common Item - Assault Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t44_b_i00"/>
+    <set name="price" value="3560"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="413"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="29"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12072" name="Common Item - Mithril Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t46_g_i00"/>
+    <set name="price" value="3560"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="210"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="29"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="12073" name="Common Item - Square Shield">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.shield_square_shield_i00"/>
+    <set name="price" value="3730"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="437"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="154"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="12074" name="Common Item - Salamander Skin Mail">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="32"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t45_ul_i00"/>
+    <set name="price" value="17300"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="2033"/>
+    <equip>
+      <slot id="FULL_ARMOR"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="136"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12075" name="Common Item - Salamander Skin Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t45_b_i00"/>
+    <set name="price" value="3560"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="410"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="29"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12076" name="Common Item - Ogre Power Gauntlet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t45_g_i00"/>
+    <set name="price" value="3560"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="207"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="29"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12077" name="Common Item - Plate Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t46_b_i00"/>
+    <set name="price" value="3560"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="413"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="29"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="12078" name="Common Item - Plate Shield">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.shield_plate_shield_i00"/>
+    <set name="price" value="3730"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="437"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="154"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="12079" name="Common Item - Plate Helmet">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="10"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="5340"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="210"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="44"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12080" name="Common Item - Plate Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="16"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t46_l_i00"/>
+    <set name="price" value="8890"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="1257"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="70"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12081" name="Common Item - Half Plate Armor">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="26"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t46_u_i00"/>
+    <set name="price" value="14200"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="2740"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="111"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12082" name="Common Item - Sage's Worn Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t44_g_i00"/>
+    <set name="price" value="3560"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="210"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="29"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12083" name="Common Item - Sage's Rag">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="32"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t44_ul_i00"/>
+    <set name="price" value="17300"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="860"/>
+    <equip>
+      <slot id="FULL_ARMOR"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="90"/>
+      <add stat="maxMp" order="0x10" value="320"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12084" name="Common Item - Tempered Mithril Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="3"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t47_l_i00"/>
+    <set name="price" value="8430"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="510"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="56"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12085" name="Common Item - Tempered Mithril Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t47_b_i00"/>
+    <set name="price" value="4500"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="410"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="32"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12086" name="Common Item - Tempered Mithril Shirt">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t47_u_i00"/>
+    <set name="price" value="13500"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1490"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="90"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12087" name="Common Item - Reinforced Mithril Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t47_g_i00"/>
+    <set name="price" value="4500"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="207"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="32"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12088" name="Common Item - Dwarven Chain Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t60_b_i00"/>
+    <set name="price" value="4500"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="403"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="32"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12089" name="Common Item - Boots of Seal">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t44_b_i00"/>
+    <set name="price" value="4500"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="407"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="32"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12090" name="Common Item - Chain Hood">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="3"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="6740"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="207"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="47"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="12091" name="Common Item - Eldarake">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.shield_eldarake_i00"/>
+    <set name="price" value="4720"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="430"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="166"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="12092" name="Common Item - Chain Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t48_g_i00"/>
+    <set name="price" value="4500"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="207"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="32"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12093" name="Common Item - Chain Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t48_b_i00"/>
+    <set name="price" value="4500"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="407"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="32"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12094" name="Common Item - Chain Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="4"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t48_l_i00"/>
+    <set name="price" value="11200"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="1227"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="75"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12095" name="Common Item - Chain Mail Shirt">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="7"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t48_u_i00"/>
+    <set name="price" value="18000"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="2707"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="120"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <weapon id="12096" name="Common Item - Chain Shield">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.shield_chain_shield_i00"/>
+    <set name="price" value="4720"/>
+    <set name="rnd_dam" value="0"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="427"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="sDef" order="0x10" value="166"/>
+      <add stat="rShld" order="0x10" value="20"/>
+      <add stat="rEvas" order="0x10" value="-8.0000"/>
+      <enchant stat="sDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </weapon>
+  <armor id="12097" name="Common Item - Karmian Gloves">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t53_g_i00"/>
+    <set name="price" value="4500"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="207"/>
+    <equip>
+      <slot id="GLOVES"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="32"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12098" name="Common Item - Karmian Boots">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="2"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t53_b_i00"/>
+    <set name="price" value="4500"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="410"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="32"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12099" name="Common Item - Karmian Tunic">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="5"/>
+    <set name="crystal_type" value="C"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_t53_u_i00"/>
+    <set name="price" value="13500"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="660"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="60"/>
+      <add stat="maxMp" order="0x10" value="225"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+</list>

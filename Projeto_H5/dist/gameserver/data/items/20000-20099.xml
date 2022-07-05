@@ -1,0 +1,1485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <etcitem id="20000" name="Spicy Kimchee">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.etc_kimchi_power_i00"/>
+    <set name="type" value="HERB"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="20001" name="Spicy Kimchee">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.etc_kimchi_power_i00"/>
+    <set name="type" value="HERB"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="20002" name="Spicy Kimchee">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.etc_kimchi_power_i00"/>
+    <set name="type" value="HERB"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="20003" name="Sweet-and-Sour White Kimchee">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.etc_kimchi_time_i00"/>
+    <set name="type" value="HERB"/>
+    <skills>
+      <skill id="22003" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="20004" name="Energy Ginseng">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.etc_ginseng_recovery_i00"/>
+    <set name="type" value="HERB"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="20005" name="Energy Red Ginseng">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value=""/>
+    <set name="type" value="HERB"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <armor id="20006" name="Agathion Seal Bracelet - Majo">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_bracelet_aga_mazu_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21000" level="1"/>
+      <skill id="23000" level="1"/>
+    </skills>
+  </armor>
+  <armor id="20007" name="Agathion Seal Bracelet - Gold Majo">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_bracelet_aga_mazu_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21001" level="1"/>
+      <skill id="23001" level="1"/>
+    </skills>
+  </armor>
+  <armor id="20008" name="Agathion Seal Bracelet - Black Majo">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_bracelet_aga_mazu_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21002" level="1"/>
+      <skill id="23002" level="1"/>
+    </skills>
+  </armor>
+  <armor id="20009" name="Agathion Seal Bracelet - Majo" add_name="Big Head 30 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="43200"/>
+    <set name="icon" value="BranchSys.icon.br_bracelet_aga_mazu_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21000" level="1"/>
+      <skill id="23000" level="1"/>
+      <skill id="23004" level="1"/>
+    </skills>
+  </armor>
+  <armor id="20010" name="Agathion Seal Bracelet - Gold Majo" add_name="Resurrection 30 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="43200"/>
+    <set name="icon" value="BranchSys.icon.br_bracelet_aga_mazu_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21001" level="1"/>
+      <skill id="23001" level="1"/>
+      <skill id="23005" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20011" name="Agathion Seal Bracelet - Black Majo" add_name="Escape 30 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="43200"/>
+    <set name="icon" value="BranchSys.icon.br_bracelet_aga_mazu_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21002" level="1"/>
+      <skill id="23002" level="1"/>
+      <skill id="23006" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20012" name="Agathion Seal Bracelet - Plaipitak">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_bracelet_aga_pitak_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21003" level="1"/>
+      <skill id="23003" level="1"/>
+    </skills>
+  </armor>
+  <armor id="20013" name="Agathion Seal Bracelet - Plaipitak" add_name="Big Head 30 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="43200"/>
+    <set name="icon" value="BranchSys.icon.br_bracelet_aga_pitak_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21003" level="1"/>
+      <skill id="23003" level="1"/>
+      <skill id="23007" level="1"/>
+    </skills>
+  </armor>
+  <armor id="20014" name="Agathion Seal Bracelet - Plaipitak" add_name="Resurrection 30 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="43200"/>
+    <set name="icon" value="BranchSys.icon.br_bracelet_aga_pitak_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21003" level="1"/>
+      <skill id="23003" level="1"/>
+      <skill id="23009" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20015" name="Agathion Seal Bracelet - Plaipitak" add_name="Escape 30 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="43200"/>
+    <set name="icon" value="BranchSys.icon.br_bracelet_aga_pitak_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21003" level="1"/>
+      <skill id="23003" level="1"/>
+      <skill id="23008" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20016" name="Horn-Rimmed Glasses" add_name="Agility">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_Eye_Glasses_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FACE"/>
+    </equip>
+    <skills>
+      <skill id="21005" level="3"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20017" name="Afro Hair">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_Afro_hair_i00"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20018" name="Afro Hair" add_name="Big Head, Firework">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_Afro_hair_i00"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="21006" level="1"/>
+      <skill id="21007" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20019" name="Afro Hair" add_name="Wind Walk">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_Afro_hair_i00"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="21004" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20020" name="Uniform Hat">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_Uniform_Hat_i00"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20021" name="Assassin's Bamboo Hat">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_Bamboo_Hat_i00"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20022" name="Ruthless Tribe Mask">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_mask_i00"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FACE"/>
+    </equip>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20023" name="Ribbon Hairband">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_Ribbon_i00"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FACE"/>
+    </equip>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20024" name="Visor">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_Eye_Visor_i00"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <etcitem id="20025" name="My Teleport Spellbook">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.bookmark_scroll_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+  </etcitem>
+  <etcitem id="20026" name="Extra Entrance Pass - Kamaloka (Hall of the Abyss)">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.ticket_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+  </etcitem>
+  <etcitem id="20027" name="Extra Entrance Pass - Near Kamaloka">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.ticket_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+  </etcitem>
+  <etcitem id="20028" name="Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss)">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.ticket_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+  </etcitem>
+  <armor id="20029" name="Light Purple-Maned Horse Mounting Bracelet">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_rbracelet_aga_agit_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="30"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="8247" level="1"/>
+    </skills>
+  </armor>
+  <armor id="20030" name="Light Purple-Maned Horse Mounting Bracelet" add_name="30 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="43200"/>
+    <set name="icon" value="icon.etc_rbracelet_aga_agit_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="30"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="8247" level="1"/>
+    </skills>
+  </armor>
+  <armor id="20031" name="Kat the Cat Hat">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.accessory_cat_the_cat_cap_i00"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20032" name="Skull Hat">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.accessory_skeleton_cap_i00"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <etcitem id="20033" name="My Teleport Flag">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_flag_of_bookmark_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+  </etcitem>
+  <etcitem id="20034" name="Revita-Pop">
+    <set name="reuse_delay" value="3000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.br_hallowinday_candy_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SCROLL"/>
+    <set name="weight" value="5"/>
+    <skills>
+      <skill id="22006" level="1"/>
+    </skills>
+  </etcitem>
+  <etcitem id="20035" name="Majo Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20036" name="Gold Crown Majo Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20037" name="Black Crown Majo Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20038" name="Majo Agathion 30-Day Pack" add_name="Big Head">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20039" name="Gold Crown Majo Agathion 30-Day Pack" add_name="Resurrection">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20040" name="Black Crown Majo Agathion 30-Day Pack" add_name="Leave">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20041" name="Plaipitak Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20042" name="Plaipitak Agathion 30-Day Pack" add_name="Big Head">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20043" name="Plaipitak Agathion 30-Day Pack" add_name="Resurrection">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20044" name="Plaipitak Agathion 30-Day Pack" add_name="Leave">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20045" name="Horn-Rimmed Glasses Pack" add_name="Agility">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20046" name="Afro Hair Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20047" name="Afro Hair Pack" add_name="Big Head, Firework">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20048" name="Afro Hair Pack" add_name="Wind Walk">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20049" name="Uniform Hat Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20050" name="Assassin's Bamboo Hat Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20051" name="Ruthless Tribe Mask Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20052" name="Ribbon Hairband Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20053" name="Visor Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20054" name="My Teleport Spellbook 1-Sheet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20055" name="Extra Entrance Pass - Kamaloka (Hall of the Abyss) 1-Sheet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20056" name="Extra Entrance Pass - Near Kamaloka 1-Sheet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20057" name="Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) 1-Sheet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20058" name="Light Purple-Maned Horse Bracelet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20059" name="Light Purple Maned Horse Bracelet 30-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20060" name="Kat the Cat Hat Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20061" name="Skull Hat Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20062" name="My Teleport Flag Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <armor id="20063" name="Agathion Seal Bracelet - Baby Panda">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_baby_panda_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21008" level="1"/>
+      <skill id="23010" level="1"/>
+    </skills>
+  </armor>
+  <armor id="20064" name="Agathion Seal Bracelet - Bamboo Panda">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_kunfu_panda_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21009" level="1"/>
+      <skill id="23011" level="1"/>
+    </skills>
+  </armor>
+  <armor id="20065" name="Agathion Seal Bracelet - Sexy Panda">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_sexy_panda_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21010" level="1"/>
+      <skill id="23012" level="1"/>
+    </skills>
+  </armor>
+  <armor id="20066" name="Agathion Seal Bracelet - Baby Panda" add_name="Big Head-15 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="21600"/>
+    <set name="icon" value="BranchSys.icon.br_baby_panda_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21008" level="1"/>
+      <skill id="23013" level="1"/>
+    </skills>
+  </armor>
+  <armor id="20067" name="Agathion Seal Bracelet - Bamboo Panda" add_name="Resurrection-15 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="21600"/>
+    <set name="icon" value="BranchSys.icon.br_kunfu_panda_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21009" level="1"/>
+      <skill id="23014" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20068" name="Agathion Seal Bracelet - Sexy Panda" add_name="Escape-15 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="21600"/>
+    <set name="icon" value="BranchSys.icon.br_sexy_panda_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21010" level="1"/>
+      <skill id="23015" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <etcitem id="20069" name="Baby Panda Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20070" name="Bamboo Panda Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20071" name="Sexy Panda Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20072" name="Agathion of Baby Panda 15 Day Pack" add_name="Big Head">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20073" name="Bamboo Panda Agathion 15 Day Pack" add_name="Resurrection">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20074" name="Agathion of Sexy Panda 15 Day Pack" add_name="Escape">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20075" name="Santa Claus' Gift - Joy" add_name="4 Hour Expiration Period">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="240"/>
+    <set name="icon" value="BranchSys.icon.br_xmas_present_joy_i00"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+    <skills>
+      <skill id="22011" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="20076" name="Santa Claus' Gift - Enjoyment" add_name="4 Hour Expiration Period">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="240"/>
+    <set name="icon" value="BranchSys.icon.br_xmas_present_fun_i00"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+    <skills>
+      <skill id="22012" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="20077" name="Santa Claus' Gift - Luck" add_name="4 Hour Expiration Period">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="240"/>
+    <set name="icon" value="BranchSys.icon.br_xmas_present_luck_i00"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+    <skills>
+      <skill id="22017" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="20078" name="Santa Claus' Gift - Luck" add_name="4 Hour Expiration Period">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="240"/>
+    <set name="icon" value="BranchSys.icon.br_xmas_present_luck_i00"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+    <skills>
+      <skill id="22018" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="20079" name="Good Luck Lucky Bag Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20080" name="Lucky Four-leaf Clover Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20081" name="Good Luck Lucky Bag">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_lucky_bag_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+    <skills>
+      <skill id="22007" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="20082" name="Lucky Four-leaf Clover">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+    <skills>
+      <skill id="22008" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <armor id="20083" name="Afro Hair" add_name="Energy - 3 Hour Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="BranchSys.icon.br_Afro_hair_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="21011" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20084" name="Afro Hair" add_name="Energy - 3 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="4320"/>
+    <set name="icon" value="BranchSys.icon.br_Afro_hair_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="21011" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20085" name="Afro Hair" add_name="Energy - 30 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="43200"/>
+    <set name="icon" value="BranchSys.icon.br_Afro_hair_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="21011" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20086" name="Horn Rimmed Glasses" add_name="Energy - 3 Hour Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="BranchSys.icon.br_Eye_Glasses_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FACE"/>
+    </equip>
+    <skills>
+      <skill id="21012" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20087" name="Horn Rimmed Glasses" add_name="Energy - 3 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="4320"/>
+    <set name="icon" value="BranchSys.icon.br_Eye_Glasses_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FACE"/>
+    </equip>
+    <skills>
+      <skill id="21012" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20088" name="Horn Rimmed Glasses" add_name="Energy - 30 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="43200"/>
+    <set name="icon" value="BranchSys.icon.br_Eye_Glasses_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FACE"/>
+    </equip>
+    <skills>
+      <skill id="21012" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20089" name="Assassin's Bamboo Hat" add_name="Energy - 3 Hour Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="BranchSys.icon.br_Bamboo_Hat_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="21013" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20090" name="Assassin's Bamboo Hat" add_name="Energy - 3 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="4320"/>
+    <set name="icon" value="BranchSys.icon.br_Bamboo_Hat_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="21013" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <armor id="20091" name="Assassin's Bamboo Hat" add_name="Energy - 30 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="43200"/>
+    <set name="icon" value="BranchSys.icon.br_Bamboo_Hat_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="21013" level="1"/>
+    </skills>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </armor>
+  <etcitem id="20092" name="Holiday Spirit Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20093" name="Spirit of the Holiday">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_xmas_miracle_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <skills>
+      <skill id="22009" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <armor id="20094" name="Agathion Seal Bracelet: Rudolph" add_name="Energy - 30 Day Expiration Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="43200"/>
+    <set name="icon" value="icon.etc_rbracelet_aga_agit_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="3425" level="1"/>
+      <skill id="5537" level="1"/>
+      <skill id="23016" level="1"/>
+    </skills>
+  </armor>
+  <armor id="20095" name="Santa Horn Hat">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessory_santas_antler_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <etcitem id="20096" name="Mysterious Formal Dress - Event Pack">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_lucky_bag_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="20097" name="Mysterious Formal Dress - Event Pack">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys.icon.br_mysterious_wedding_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <armor id="20098" name="Formal Dress - Event" add_name="1 hour Shadow time">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="60"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1000"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+  <armor id="20099" name="Formal Dress - Event" add_name="7 Day Expiration Period">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.armor_t2000_ul_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="1000"/>
+    <equip>
+      <slot id="FORMAL_WEAR"/>
+    </equip>
+  </armor>
+</list>

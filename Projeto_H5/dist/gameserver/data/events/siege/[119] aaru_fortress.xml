@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "events.dtd">
+<list>
+	<event id="119" name="Aaru Fortress" type="SIEGE_EVENT" impl="FortressSiege">
+		<on_init>
+			<init name="upgradeable_doors" />
+			<init name="commander_doors" />
+			<init name="enter_doors" />
+			<init name="siege_zones" />
+			<init name="flag_zones" />
+			<spawn name="flag_pole" />
+			
+			<spawn name="peace_commanders" />
+		</on_init>
+		<on_start>
+			<despawn name="peace_commanders" />
+			<!--Спавним гвардов-->
+			<spawn name="default_guards" />
+			<spawn name="guards_live_with_c_center" />
+			<spawn name="siege_commanders" />
+			<if name="old_owner">
+				<spawn name="owner_flagdef"/>
+				<spawn name="mercenary" />
+			</if>
+			<else>
+				<spawn name="noowner_flagdef" />
+			</else>
+			<if name="reinforce_1">
+				<spawn name="reinforce_1" />
+			</if>
+			<if name="reinforce_2">
+				<spawn name="reinforce_2" />
+			</if>
+			<if name="dwarvens">
+				<spawn name="dwarvens" />
+			</if>
+			<!--Обновляем двери-->
+			<refresh name="upgradeable_doors" />
+			<refresh name="commander_doors" />
+			<active name="siege_zones" />
+			<teleport_players id="attackers"/>
+			<teleport_players id="spectators"/>
+		</on_start>
+		<on_stop>
+			<if name="old_owner">
+				<despawn name="owner_flagdef"/>
+				<despawn name="mercenary" />
+			</if>
+			<else>
+				<despawn name="noowner_flagdef" />
+			</else>
+			<despawn name="reinforce_1"/>
+			<despawn name="reinforce_2"/>
+			<despawn name="dwarvens"/>
+			<despawn name="default_guards" />
+			<despawn name="guards_live_with_c_center" />
+			<despawn name="siege_commanders" />
+
+			<start name="registration" />
+			<!--Капитаны и менчант-->
+			<spawn name="peace_commanders" />
+			
+			<!--Обновляем двери-->
+			<refresh name="upgradeable_doors" />
+			<refresh name="commander_doors" />
+			<teleport_players id="spectators"/>
+			<deactive name="siege_zones" />
+		</on_stop>
+		<on_time>
+			<on time="-3600">
+				<announce val="3600" />
+			</on>
+			<on time="-1800">
+				<announce val="1800" />
+			</on>
+			<on time="-600"> <!--10 min to siege-->
+				<announce val="600" />
+				<stop name="registration" />
+				<despawn name="merchant"/>
+			</on>
+			<on time="-5">
+				<announce val="5" />
+			</on>
+			<on time="-4">
+				<announce val="4" />
+			</on>
+			<on time="-3">
+				<announce val="3" />
+			</on>
+			<on time="-2">
+				<announce val="2" />
+			</on>
+			<on time="-1">
+				<announce val="1" />
+			</on>
+			<on time="0">
+				<start name="event" />
+				<play_sound type="SOUND" range="-1" sound="NS20_F" />
+			</on>
+			<on time="98">
+				<play_sound type="SOUND" range="-1" sound="NB02_F" />
+			</on>
+			<on time="200">
+				<play_sound type="SOUND" range="-1" sound="NS19_S01" />
+			</on>
+			<on time="300">
+				<give_item id="-300" count="31" />
+			</on>
+			<on time="310">
+				<play_sound type="SOUND" range="-1" sound="NS12_F" />
+			</on>
+			<on time="403">
+				<play_sound type="SOUND" range="-1" sound="NS19_F" />
+			</on>
+			<on time="512">
+				<play_sound type="SOUND" range="-1" sound="NS18_S01" />
+			</on>
+			<on time="596">
+				<play_sound type="SOUND" range="-1" sound="NS02_F" />
+			</on>
+			<on time="600">
+				<give_item id="-300" count="31" />
+			</on>
+			<on time="691">
+				<play_sound type="SOUND" range="-1" sound="NS12_S01" />
+			</on>
+			<on time="785">
+				<play_sound type="SOUND" range="-1" sound="NS18_F" />
+			</on>
+			<on time="883">
+				<play_sound type="SOUND" range="-1" sound="NS02_S01" />
+			</on>
+			<on time="900">
+				<give_item id="-300" count="31" />
+			</on>
+			<on time="978">
+				<play_sound type="SOUND" range="-1" sound="NS20_F" />
+			</on>
+			<on time="1076">
+				<play_sound type="SOUND" range="-1" sound="NB02_F" />
+			</on>
+			<on time="1178">
+				<play_sound type="SOUND" range="-1" sound="NS19_S01" />
+			</on>
+			<on time="1200">
+				<give_item id="-300" count="31" />
+			</on>
+			<on time="1288">
+				<play_sound type="SOUND" range="-1" sound="NS12_F" />
+			</on>
+			<on time="1381">
+				<play_sound type="SOUND" range="-1" sound="NS19_F" />
+			</on>
+			<on time="1490">
+				<play_sound type="SOUND" range="-1" sound="NS18_S01" />
+			</on>
+			<on time="1500">
+				<give_item id="-300" count="31" />
+			</on>
+			<on time="1574">
+				<play_sound type="SOUND" range="-1" sound="NS02_F" />
+			</on>
+			<on time="1669">
+				<play_sound type="SOUND" range="-1" sound="NS12_S01" />
+			</on>
+			<on time="1763">
+				<play_sound type="SOUND" range="-1" sound="NS18_F" />
+			</on>
+			<on time="1800">
+				<give_item id="-300" count="31" />
+			</on>
+			<on time="1861">
+				<play_sound type="SOUND" range="-1" sound="NS02_S01" />
+			</on>
+			<on time="1956">
+				<play_sound type="SOUND" range="-1" sound="NS20_F" />
+			</on>
+			<on time="2054">
+				<play_sound type="SOUND" range="-1" sound="NB02_F" />
+			</on>
+			<on time="2100">
+				<give_item id="-300" count="31" />
+			</on>
+			<on time="2156">
+				<play_sound type="SOUND" range="-1" sound="NS19_S01" />
+			</on>
+			<on time="2266">
+				<play_sound type="SOUND" range="-1" sound="NS12_F" />
+			</on>
+			<on time="2359">
+				<play_sound type="SOUND" range="-1" sound="NS19_F" />
+			</on>
+			<on time="2400">
+				<give_item id="-300" count="31" />
+			</on>
+			<on time="2468">
+				<play_sound type="SOUND" range="-1" sound="NS18_S01" />
+			</on>
+			<on time="2552">
+				<play_sound type="SOUND" range="-1" sound="NS02_F" />
+			</on>
+			<on time="2647">
+				<play_sound type="SOUND" range="-1" sound="NS12_S01" />
+			</on>
+			<on time="2700">
+				<give_item id="-300" count="31" />
+			</on>
+			<on time="2741">
+				<play_sound type="SOUND" range="-1" sound="NS18_F" />
+			</on>
+			<on time="2839">
+				<play_sound type="SOUND" range="-1" sound="NS02_S01" />
+			</on>
+			<on time="2934">
+				<play_sound type="SOUND" range="-1" sound="NS20_F" />
+			</on>
+			<on time="3000">
+				<give_item id="-300" count="31" />
+			</on>
+			<on time="3032">
+				<play_sound type="SOUND" range="-1" sound="NB02_F" />
+			</on>
+			<on time="3134">
+				<play_sound type="SOUND" range="-1" sound="NS19_S01" />
+			</on>
+			<on time="3227">
+				<play_sound type="SOUND" range="-1" sound="NS12_F" />
+			</on>
+			<on time="3300">
+				<give_item id="-300" count="31" />
+			</on>
+			<on time="3320">
+				<play_sound type="SOUND" range="-1" sound="NS19_F" />
+			</on>
+			<on time="3429">
+				<play_sound type="SOUND" range="-1" sound="NS18_S01" />
+			</on>
+			<on time="3513">
+				<play_sound type="SOUND" range="-1" sound="NS02_F" />
+			</on>
+			<on time="3600">
+				<stop name="event" />
+			</on>
+		</on_time>
+		<objects name="merchant">
+			<spawn_ex name="aaru_fortress_peace_merchant" />
+		</objects>
+		<objects name="flag_pole">
+			<static_object id="22230500" />
+		</objects>
+		<objects name="combat_flags">
+			<combat_flag x="72891" y="186169" z="-2450" />
+			<combat_flag x="72974" y="186214" z="-2450" />
+			<combat_flag x="73046" y="186258" z="-2450" />
+		</objects>
+		<objects name="peace_commanders">
+			<spawn_ex name="aaru_fortress_peace_commanders" />
+		</objects>
+		<objects name="siege_commanders">
+			<spawn_ex name="aaru_fortress_siege_commanders" />
+		</objects>
+		<objects name="envoy">
+			<spawn_ex name="aaru_fortress_envoy" />
+		</objects>
+		<objects name="default_guards"> <!--дефольтные гварды спавнятся при любых условиях-->
+			<spawn_ex name="aaru_fortress_default_guards" />
+		</objects>
+		<objects name="guards_live_with_c_center"> <!--гварды которые будут стоят пока не вворвутся в командый центр-->
+			<spawn_ex name="aaru_fortress_live_with_c_center" />
+		</objects>
+		<objects name="noowner_flagdef"> <!--гварды охраняемые Флагполе, когда нету овнера-->
+			<spawn_ex name="aaru_fortress_noowner_flagdef" />
+		</objects>
+		<objects name="owner_flagdef"> <!--гварды охраняемые Флагполе, когда есть овнера-->
+			<spawn_ex name="aaru_fortress_owner_flagdef" />
+		</objects>
+		<objects name="dwarvens">
+			<spawn_ex name="aaru_fortress_gunner" />
+		</objects>
+		<objects name="reinforce_1">
+			<spawn_ex name="aaru_fortress_reinforce_1" />
+		</objects>
+		<objects name="reinforce_2">
+			<spawn_ex name="aaru_fortress_reinforce_2" />
+		</objects>
+		<objects name="enter_doors">
+			<door id="22230001" />
+			<door id="22230008" />
+		</objects>
+		<objects name="upgradeable_doors">
+			<door id="22230001" />
+			<door id="22230008" />
+			<door id="22230003" />
+			<door id="22230002" />
+		</objects>
+		<objects name="commander_doors">
+			<door id="22230004" />
+			<door id="22230005" />
+			<door id="22230006" />
+			<door id="22230007" />
+		</objects>
+		<objects name="mercenary_points">
+			<point x="72637" y="188462" z="-2584" />
+			<point x="72662" y="188248" z="-2584" />
+			<point x="72843" y="188053" z="-2584" />
+			<point x="72962" y="187937" z="-2584" />
+			<point x="73126" y="187676" z="-2584" />
+			<point x="73213" y="187450" z="-2584" />
+			<point x="73137" y="187219" z="-2584" />
+			<point x="72939" y="187027" z="-2584" />
+			<point x="72652" y="186758" z="-2584" />
+			<point x="72713" y="186612" z="-2584" />
+		</objects>
+		<objects name="mercenary">
+			<spawn_ex name="aaru_fortress_mercenary" />
+		</objects>
+		<objects name="siege_zones">
+			<zone name="[inna_gi_fort_siege]" />
+		</objects>
+		<objects name="flag_zones">
+			<zone name="[inna_gi_fort_hq]" />
+		</objects>
+	</event>
+</list>

@@ -1,0 +1,32 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Town of Heine: NPC Pathfinder (Level 50) -->
+	<instance id="51" name="Kamaloka, Hall of the Nightmares" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="45" max="55"/>
+		<party min="1" max="1"/>
+		<teleport loc="23038 -213052 -8008"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="true" sharedReuseGroup="2"/>
+		<add_parameters>
+			<param name="pathfinder_loc" value="23655 -213043 -8008"/>
+			<param name="reward_lvl_0" value="13002-5"/>
+			<param name="reward_lvl_1" value="13002-5;12828-1"/>
+			<param name="reward_lvl_2" value="13002-5;10847-1"/>
+			<param name="reward_lvl_3" value="13002-5;10848-1"/>
+			<param name="reward_lvl_4" value="13002-5;10851-1"/>
+			<param name="reward_lvl_5" value="13002-5;12831-1"/>
+		</add_parameters>
+		<spawns>
+			<!-- Savage Kanabion -->
+			<spawn mobId="22467" count="4" respawn="30" type="loc">
+				<coords loc="23112 -212504 -8008 -8008"/>
+				<coords loc="24200 -212504 -8008 -8008"/>
+				<coords loc="24200 -213592 -8008 -8008"/>
+				<coords loc="23112 -213592 -8008 -8008"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

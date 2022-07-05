@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Exchange of Ralford (level 2) -->
+
+<list>
+  <!-- Внимание: keepenchanted НЕ должно быть установлено в мультиселлах, где в одном блоке возможны два одинаковых нестекуемых предмета (напрмиер dual) -->
+  <!-- ignoreprice не работает с keepencahnted -->
+  <config showall="true" notax="true" keepenchanted="false" />
+
+	<!--
+	3472 Blood Medusa
+	3473 Blood Werewolf
+	3474 Blood Basilisk
+	3475 Blood Drevanul
+	3476 Blood Succubus
+	3477 Blood Dragon
+	3478 Beleths Blood
+	3479 Manaks Blood Werewolf
+	3480 Nia's Blood Medusa
+	3481 Gold Dragon
+	3482 Gold Wyvern
+	3483 Gold Knight
+	3484 Gold Giant
+	3485 Gold Drake
+	3486 Gold Wyrm
+	3487 Beleths Gold
+	3488 Manaks Gold Giant
+	3489 Nia's Gold Wywern
+	3490 Silver Unicorn
+	3491 Silver Fairy
+	3492 Silver Dryad
+	3493 Silver Dragon
+	3494 Silver Golem
+	3495 Silver Undine
+	3496 Beleths Silver
+	3497 Manaks Silver Dryad
+	3498 Nia's Silver Fairy
+	-->
+
+	<!-- 5 G Drake + 5 G Knight -> 1 G Wyrm -->
+  <item>
+    <ingredient id="3485" count="5"/>
+    <ingredient id="3483" count="5"/>
+    <production id="3486" count="1"/>
+  </item>
+
+	<!-- 5 S Fairy + 5 S Golem -> 1 S Dryad -->
+  <item>
+    <ingredient id="3491" count="5"/>
+    <ingredient id="3494" count="5"/>
+    <production id="3492" count="1"/>
+  </item>
+
+	<!-- 5 S Fairy + 5 S Golem -> 1 S Undine -->
+  <item>
+    <ingredient id="3491" count="5"/>
+    <ingredient id="3494" count="5"/>
+    <production id="3495" count="1"/>
+  </item>
+
+	<!-- 10 B Werewolf + 10 B Drevanul -> 1 Manak B Werewolf -->
+  <item>
+    <ingredient id="3473" count="10"/>
+    <ingredient id="3475" count="10"/>
+    <production id="3479" count="1"/>
+  </item>
+
+	<!-- 1 Manak G Giant -> Demon Boots -->
+  <item>
+    <ingredient id="3488" count="1"/>
+    <production id="2435" count="1"/>
+  </item>
+
+	<!-- 1 Manak S Dryad + 1 S Dryad  -> Demon Stockings -->
+  <item>
+    <ingredient id="3497" count="1"/>
+    <ingredient id="3492" count="1"/>
+    <production id="472" count="1"/>
+  </item>
+
+	<!-- 1 Manak G Giant -> Demon Gloves -->
+  <item>
+    <ingredient id="3488" count="1"/>
+    <production id="2459" count="1"/>
+  </item>
+
+	<!-- 1 Manak B Werewolf + 1 G Wyrm + 1 G Giant -> Full Plate Helmet -->
+  <item>
+    <ingredient id="3479" count="1"/>
+    <ingredient id="3486" count="1"/>
+    <ingredient id="3484" count="1"/>
+    <production id="2414" count="1"/>
+  </item>
+</list>

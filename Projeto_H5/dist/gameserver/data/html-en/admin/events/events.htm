@@ -1,0 +1,219 @@
+<html>
+<body>
+<title>Admin Panel- Manage Events</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td align=center>
+		<br>
+			<table cellpadding=0 cellspacing=-5 width=260>
+				<tr>
+					<td><button value="Main" action="bypass -h admin_admin" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Events" action="bypass -h admin_show_html events/events.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Chars" action="bypass -h admin_char_manage" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Server" action="bypass -h admin_server admserver.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="GM Shop" action="bypass -h admin_gmshop" width=65 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+		<br><br>
+			<table width=280>
+				<tr>
+					<td width=140>*Coffer of Shadows*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.CofferofShadows.CofferofShadows:startEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.CofferofShadows.CofferofShadows:stopEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Freya Celebration*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.FreyaEvent.FreyaEvent:startEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.FreyaEvent.FreyaEvent:stopEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Pirate Treasure*</td>
+					<td width=45><edit var="id" width=30 height=15 /></td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.PiratesTreasure.PiratesTreasure:startEvent $id" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.PiratesTreasure.PiratesTreasure:stopEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Transport Event*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.transport.Transport:startEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.transport.Transport:stopEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<table width=280 bgcolor=3E9B00>
+				<tr>
+					<td width=160>*GM Hunter*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.GmHunter.GmHunter:startEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.GmHunter.GmHunter:stopEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+				<tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Korean Event*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.KoreanStyle.KoreanStyle:activateEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.KoreanStyle.KoreanStyle:deactivateEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*April Fool's Day*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.AprilFoolsDay.AprilFoolsDay:startEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.AprilFoolsDay.AprilFoolsDay:stopEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Master Of Enchanting*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.MasterOfEnchanting.MasterOfEnchanting:startEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.MasterOfEnchanting.MasterOfEnchanting:stopEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Gift of Vitality*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.GiftOfVitality.GiftOfVitality:startEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.GiftOfVitality.GiftOfVitality:stopEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*PcCafe Points Exchange*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.PcCafePointsExchange.PcCafePointsExchange:startEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.PcCafePointsExchange.PcCafePointsExchange:stopEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Summer Meleons*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.SummerMeleons.SummerMeleons:startEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.SummerMeleons.SummerMeleons:stopEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*GvG*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.GvG.GvG:activateEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.GvG.GvG:deactivateEvent" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td width=45><button value="Stats" action="bypass -h scripts_events.GvG.GvG:showStats" width=40 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Korean Style*</td>
+					<td width=45><button value="On" action="bypass -h scripts_events.KoreanStyle.KoreanStyle:activateEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Off" action="bypass -h scripts_events.KoreanStyle.KoreanStyle:deactivateEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Last Hero*</td>
+					<td width=45><button value="Edit" action="bypass -h admin_show_html events/lastHero.htm" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="On" action="bypass -h scripts_events.lastHero.LastHero:activateEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Off" action="bypass -h scripts_events.lastHero.LastHero:deactivateEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*TvT*</td>
+					<td width=45><button value="Edit" action="bypass -h admin_show_html events/tvt.htm" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="On" action="bypass -h scripts_events.TvT.TvT:activateEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Off" action="bypass -h scripts_events.TvT.TvT:deactivateEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*CtF*</td>
+					<td width=45><button value="Edit" action="bypass -h admin_show_html events/ctf.htm" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="On" action="bypass -h scripts_events.CtF.CtF:activateEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Off" action="bypass -h scripts_events.CtF.CtF:deactivateEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*The Flow Of The Horror*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.TheFlowOfTheHorror.TheFlowOfTheHorror:start" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.TheFlowOfTheHorror.TheFlowOfTheHorror:stop" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Wave" action="bypass -h scripts_events.TheFlowOfTheHorror.TheFlowOfTheHorror:spawnNewWave" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*The Fall Harvest*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.TheFallHarvest.TheFallHarvest:startEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.TheFallHarvest.TheFallHarvest:stopEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*L2 Day*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.l2day.l2day:startEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.l2day.l2day:stopEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*L2 Collect Medal*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.glitmedal.glitmedal:startEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.glitmedal.glitmedal:stopEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*World-Drop(Item)*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.worlddrop.worlddrop:startEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.worlddrop.worlddrop:stopEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Christmas*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.Christmas.Christmas:startEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.Christmas.Christmas:stopEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Saving Snowman*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.SavingSnowman.SavingSnowman:startEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.SavingSnowman.SavingSnowman:stopEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Change of Heart*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.heart.heart:startEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.heart.heart:stopEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Fantasy Isle*</td>
+					<td width=90><button value="Start" action="bypass -h scripts_services.FantasyIsle:manualStart" width=90 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*March 8*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.March8.March8:startEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.March8.March8:stopEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<table width=280>
+				<tr>
+					<td width=140>*Trick Of Trans*</td>
+					<td width=45><button value="Start" action="bypass -h scripts_events.TrickOfTrans.TrickOfTrans:startEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td width=45><button value="Stop" action="bypass -h scripts_events.TrickOfTrans.TrickOfTrans:stopEvent" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<br>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

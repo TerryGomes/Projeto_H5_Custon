@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (spawn|territory)*>
+<!ELEMENT spawn (territory|npc|point)*>
+<!ATTLIST spawn
+	group CDATA #IMPLIED
+	respawn CDATA #IMPLIED
+	count CDATA #IMPLIED
+	respawn_random CDATA #IMPLIED
+	period_of_day CDATA #IMPLIED>
+<!ELEMENT territory (banned_territory|add)*>
+<!ATTLIST territory
+	name CDATA #IMPLIED>
+<!ELEMENT banned_territory (add)*>
+<!ELEMENT add (#PCDATA)>
+<!ATTLIST add
+	x CDATA #REQUIRED
+	y CDATA #REQUIRED
+	zmin CDATA #REQUIRED
+	zmax CDATA #REQUIRED>
+<!ELEMENT npc (set)*>
+<!ATTLIST npc
+	id CDATA #REQUIRED
+	max CDATA #IMPLIED>
+<!ELEMENT set (#PCDATA)>
+<!ATTLIST set
+	name CDATA #REQUIRED
+	value CDATA #REQUIRED>
+<!ELEMENT point (#PCDATA)>
+<!ATTLIST point
+	x CDATA #REQUIRED
+	y CDATA #REQUIRED
+	z CDATA #REQUIRED
+	h CDATA #IMPLIED>

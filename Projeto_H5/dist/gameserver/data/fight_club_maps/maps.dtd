@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (map)*>
+<!ELEMENT map (parameter|objects)*>
+<!ATTLIST map
+		name CDATA #REQUIRED>
+
+		<!ELEMENT parameter (#PCDATA)>
+		<!ATTLIST parameter
+				name CDATA #REQUIRED
+				value CDATA #REQUIRED>
+		<!ELEMENT objects (door|point|zone|npcLoc)*>
+		<!ATTLIST objects
+				name CDATA #REQUIRED
+				teamType CDATA #IMPLIED
+				index CDATA #IMPLIED>
+		<!ELEMENT door (#PCDATA)>
+		<!ATTLIST door
+				id CDATA #REQUIRED>
+		<!ELEMENT zone (#PCDATA)>
+		<!ATTLIST zone
+				name CDATA #REQUIRED>
+		<!ELEMENT point (#PCDATA)>
+		<!ATTLIST point
+				x CDATA #REQUIRED
+				y CDATA #REQUIRED
+				z CDATA #REQUIRED
+				h CDATA #IMPLIED>
+		<!ELEMENT npcLoc (#PCDATA)>
+		<!ATTLIST npcLoc
+				name CDATA #REQUIRED
+				npc_id CDATA #REQUIRED
+				x CDATA #REQUIRED
+				y CDATA #REQUIRED
+				z CDATA #REQUIRED
+				h CDATA #IMPLIED>

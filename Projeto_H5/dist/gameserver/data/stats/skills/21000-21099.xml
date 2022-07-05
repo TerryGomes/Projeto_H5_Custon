@@ -1,0 +1,1988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="21000" levels="1" name="Release Seal on Agathion - Majo">
+		<!--
+			Last modify:	29.12.2008
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1501" />
+		<set name="summonType" val="agathion" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="21001" levels="1" name="Release Seal on Agathion - Gold Majo">
+		<!--
+			Last modify:	29.12.2008
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1502" />
+		<set name="summonType" val="agathion" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="21002" levels="1" name="Release Seal on Agathion - Black Majo">
+		<!--
+			Last modify:	29.12.2008
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1503" />
+		<set name="summonType" val="agathion" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="21003" levels="1" name="Release Seal on Agathion - Plaipitak">
+		<!--
+			Last modify:	29.12.2008
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1504" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21004" levels="1" name="Wind Walk">
+		<!--  Automatically generated from The Gracia part II client files.
+		      Description: Speed is temporarily increased. Effect 1.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 04-11-2008  23:21
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
+		<set name="reuseDelay" val="1080000" />
+		<set name="hitTime" val="4000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="SpeedUp" time="120" val="0">
+				<add order="0x40" stat="runSpd" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21005" levels="3" name="Agility">
+		<!--  Automatically generated from The Gracia part II client files.
+		      Description: Evasion is temporarily increased. Effect 3.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 04-11-2008  23:21
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_Eye_Glasses_i00" />
+		<set name="reuseDelay" val="86400000" />
+		<set name="hitTime" val="4000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="rEvas" time="3600" val="0">
+				<add order="0x40" stat="rEvas" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21006" levels="1" name="Large Firework Effect">
+		<!--
+			Description: Sets off a string of firecrackers.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HOT" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="21007" levels="1" name="Ability of Doubt">
+		<!--  
+		      Automatically generated from The Gracia part II client files.
+		      Last modify: 31.10.2009
+		      Description: Enlarges your head.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="trait" val="ETC" />
+		<for>
+			<effect abnormal="bighead" count="1" name="Buff" stackType="BigHead" time="120" val="0" />
+		</for>
+	</skill>
+	<skill id="21008" levels="1" name="Release Seal on Agathion Baby Panda" >
+		<!--
+			Last modify:	29.01.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1505" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21009" levels="1" name="Release Seal on Agathion Bamboo Panda" >
+		<!--
+			Last modify:	29.01.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1506" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21010" levels="1" name="Release Seal on Agathion Sexy Panda" >
+		<!--
+			Last modify:	29.01.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1507" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21011" levels="1" name="Energy Recovery" >
+		<!--
+			Last modify:	29.07.2009
+
+			Description: Recovers energy when acquiring Exp. for 5 minutes. Reuse Delay 1 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
+		<set name="reuseDelay" val="43200000" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="300" val="0" />
+		</for>
+	</skill>
+	<skill id="21012" levels="1" name="Energy Recovery" >
+		<!--
+			Last modify:	29.07.2009
+
+			Description: Recovers energy when acquiring Exp. for 5 minutes. Reuse Delay 1 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_Eye_Glasses_i00" />
+		<set name="reuseDelay" val="43200000" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="300" val="0" />
+		</for>
+	</skill>
+	<skill id="21013" levels="1" name="Energy Recovery" >
+		<!--
+			Last modify:	29.07.2009
+
+			Description: Recovers energy when acquiring Exp. for 5 minutes. Reuse Delay 1 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_Bamboo_Hat_i00" />
+		<set name="reuseDelay" val="43200000" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="300" val="0" />
+		</for>
+	</skill>
+	<skill id="21014" levels="1" name="Scissors" >
+		<!--  Automatically generated from The Gracia part II client files.
+		      Description: "Challenge opponent with ""Scissors."" Can only be used on Thomas D. Turkey."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 28-1-2009  22:00
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_xmas_gawi_i00" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="1000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="21015" levels="1" name="Rock" >
+		<!--  Automatically generated from The Gracia part II client files.
+		      Description: "Challenge opponent with ""Rock."" Can only be used on Thomas D. Turkey."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 28-1-2009  22:00
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_xmas_bawi_i00" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="1000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="21016" levels="1" name="Paper" >
+		<!--  Automatically generated from The Gracia part II client files.
+		      Description: "Challenge opponent with ""Paper."" Can only be used on Thomas D. Turkey."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 28-1-2009  22:00
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_xmas_bo_i00" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="1000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="21017" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP is increased. The rate of critical attacks is increased. Bestow the ability to regenerate HP by using some of the damage inflicted on the enemy. Excludes damage caused by skills and long-range attacks.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<mul order="0x30" stat="cAtk" val="1.1" />
+			<add order="0x40" stat="absorbDam" val="8" />
+		</for>
+	</skill>
+	<skill id="21018" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP is increased. The rate and power of critical attacks are increased.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<mul order="0x30" stat="cAtk" val="1.1" />
+			<add order="0x40" stat="rCrit" val="10" />
+		</for>
+	</skill>
+	<skill id="21019" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP is increased. The probability of deadly attacks is increased, and MP consumption for skills is decreased.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<mul order="0x30" stat="blowRate" val="1.1" />
+			<mul order="0x30" stat="mpConsumePhysical" val="0.8" />
+		</for>
+	</skill>
+	<skill id="21020" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP and critical attack rate are increased.  Will also regenerate HP by using some of the damage inflicted on the enemy. Excludes damage caused by skills and long-range attacks.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<mul order="0x30" stat="cAtk" val="1.1" />
+			<add order="0x40" stat="absorbDam" val="8" />
+		</for>
+	</skill>
+	<skill id="21021" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP is increased. The rate and power of critical attacks are increased.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<mul order="0x30" stat="cAtk" val="1.1" />
+			<add order="0x40" stat="rCrit" val="10" />
+		</for>
+	</skill>
+	<skill id="21022" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP is increased. Casting speed is increased, and MP consumption for skills is decreased.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<mul order="0x30" stat="mAtkSpd" val="1.15" />
+			<mul order="0x30" stat="mpConsum" val="0.8" />
+		</for>
+	</skill>
+	<skill id="21023" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP and M. Atk. are increased, and MP consumption for skills is decreased.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<mul order="0x30" stat="mAtk" val="1.55" />
+			<mul order="0x30" stat="mpConsum" val="0.8" />
+		</for>
+	</skill>
+	<skill id="21024" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP is increased. MP consumption per skill is decreased. Bestow the ability to regenerate HP by using some of the damage inflicted on the enemy. Excludes damage caused by skills and long-range attacks.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<add order="0x40" stat="absorbDam" val="8" />
+			<mul order="0x30" stat="mpConsumePhysical" val="0.8" />
+		</for>
+	</skill>
+	<skill id="21025" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP is increased. The rate and range of critical attacks are increased.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<mul order="0x30" stat="cAtk" val="1.1" />
+			<add order="0x10" stat="pAtkRange" val="50">
+				<using kind="Bow, Crossbow" />
+			</add>
+		</for>
+	</skill>
+	<skill id="21026" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP is increased. Number of enemies which can be attacked at the same time increases. Bestow the ability to regenerate HP by using some of the damage inflicted on the enemy. Excludes damage caused by skills and long-range attacks.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<add order="0x40" stat="absorbDam" val="8" />
+			<add order="0x40" stat="poleTargetCount" val="5">
+				<using kind="Pole" />
+			</add>
+		</for>
+	</skill>
+	<skill id="21027" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP is increased. Atk. Spd. increases, and MP consumption for skills is decreased.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<mul order="0x50" stat="pAtkSpd" val="1.1" />
+			<mul order="0x30" stat="mpDanceConsume" val="0.8" />
+		</for>
+	</skill>
+	<skill id="21028" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP is increased. The rate of critical attacks is increased. Bestow the ability to regenerate HP by using some of the damage inflicted on the enemy. Excludes damage caused by skills and long-range attacks.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<mul order="0x30" stat="cAtk" val="1.1" />
+			<add order="0x40" stat="absorbDam" val="8" />
+		</for>
+	</skill>
+	<skill id="21029" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP is increased. The rate and power of critical attacks are increased.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<mul order="0x30" stat="cAtk" val="1.1" />
+			<add order="0x40" stat="rCrit" val="10" />
+		</for>
+	</skill>
+	<skill id="21030" levels="1" name="Holiday Dream Weapon" >
+		<!--
+			Description: Max CP is increased. Evasion and Accuracy are increased.
+		-->
+		<set name="icon" val="BranchSys.icon.br_xmas_weapon_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x50" stat="maxCp" val="1.25" />
+			<add order="0x40" stat="rEvas" val="4" />
+			<add order="0x40" stat="accCombat" val="6" />
+		</for>
+	</skill>
+	<skill id="21031" levels="1" name="Agathion Seal Release - Charming Cupid" >
+		<!--
+			Last modify:	15.02.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1508" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21032" levels="1" name="Agathion Seal Release - Naughty Cupid" >
+		<!--
+			Last modify:	15.02.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1509" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21033" levels="1" name="Release Seal on Agathion - White Maneki Neko" >
+		<!--
+			Last modify:	15.02.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1510" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21034" levels="1" name="Release Seal on Agathion - Black Maneki Neko" >
+		<!--
+			Last modify:	15.02.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1511" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21035" levels="1" name="Release Seal on Agathion - Brown Maneki Neko" >
+		<!--
+			Last modify:	15.02.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1512" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21036" levels="1" name="Release Seal on Agathion - One-eyed Bat Drove" >
+		<!--
+			Last modify:	15.02.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1513" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21037" levels="1" name="Release Seal on Agathion - Pegasus" >
+		<!--
+			Last modify:	15.02.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1514" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21038" levels="1" name="Release Seal on Agathion - Yellow-robed Tojigong" >
+		<!--
+			Last modify:	15.02.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1515" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21039" levels="1" name="Release Seal on Agathion - Blue-robed Tojigong" >
+		<!--
+			Last modify:	15.02.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1516" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21040" levels="1" name="Release Seal on Agathion - Green-Robed Tojigong" >
+		<!--
+			Last modify:	15.02.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1517" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21041" levels="1" name="Release Seal on Agathion - Bugbear" >
+		<!--
+			Last modify:	15.02.2009
+			Description:	Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1518" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21042" levels="1" name="Baguette's Blessing" >
+		<!--  Automatically generated from The Gracia part II client files.
+		      Description: Baguette's Blessing. Fully restores HP and greatly recovers CP and MP.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 14-2-2009  21:42
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill3123" />
+		<set name="reuseDelay" val="1800000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="HealPercent" time="0" val="100" />
+			<effect count="1" name="ManaHealPercent" time="0" val="50" />
+		</for>
+	</skill>
+	<skill id="21043" levels="1" name="Agathion Seal Cancel - Red Sumo Wrestler" >
+		<!--
+			Last modify:	29.07.2009
+
+			Description: Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1519" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21044" levels="1" name="Agathion Seal Cancel - Blue Sumo Wrestler Agathion" >
+		<!--
+			Last modify:	29.07.2009
+
+			Description: Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1520" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21045" levels="1" name="Agathion Seal Cancel - Great Sumo Match" >
+		<!--
+			Last modify:	29.07.2009
+
+			Description: Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1521" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21046" levels="1" name="Agathion Seal Cancel - Button-Eyed Bear Doll" >
+		<!--
+			Last modify:	29.07.2009
+
+			Description: Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1522" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21047" levels="1" name="Agathion Seal Cancel - God of Fortune" >
+		<!--
+			Last modify:	29.07.2009
+
+			Description: Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1523" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21048" levels="1" name="Agathion Seal Cancel - Dryad" >
+		<!--
+			Last modify:	29.07.2009
+
+			Description: Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1524" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21049" levels="1" name="Agathion Seal Cancel - Wonboso" >
+		<!--
+			Last modify:	29.07.2009
+
+			Description: Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1525" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21050" levels="1" name="Agathion Seal Cancel - Daewoonso" >
+		<!--
+			Last modify:	29.07.2009
+
+			Description: Summon an Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1526" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21051" levels="1" name="Steam Beatle Mount" >
+   <!--  Last modify: 28.02.2014 
+		 Description: Mounts a Steam Beatle. 
+ 	--> 
+		<set name="magicType" val="SPECIAL" /> 
+ 		<set name="icon" val="icon.skilltransform3" /> 
+ 		<set name="target" val="TARGET_SELF" /> 
+		<set name="skillType" val="TRANSFORMATION" /> 
+		<set name="addSkills" val="619;1;5491;1" /> 
+		<set name="npcId" val="13147" /> 
+		<set name="operateType" val="OP_ACTIVE" /> 
+		<set name="isCommon" val="true" /> 
+		<set name="useSS" val="false" /> 
+		<set name="isReuseDelayPermanent" val="true" /> 
+			<cond msgId="1509"> 
+				<not> 
+					<player olympiad="true" /> 
+				</not> 
+			</cond> 
+			<for> 
+				<effect count="1" name="Transformation" time="3600" val="110"> 
+					<mul order="0x30" stat="runSpd" val="1.4" /> 
+					<mul order="0x30" stat="pAtk" val="0.23" /> 
+					<mul order="0x30" stat="mAtk" val="0.05" /> 
+					<mul order="0x30" stat="accCombat" val="0.60 " /> 
+				</effect> 
+			</for> 
+	</skill>
+	<skill id="21052" levels="4" name="Bless the Body" >
+		<!--  
+		      Last modify: 31.10.2009
+		      Description: Increases Max HP by 25% for 30 minutes.
+		-->
+		<table name="#Tab-maxHp">1.25</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_people_cap_i00" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="6" stackType="hp_up" time="1800" val="0">
+				<mul order="0x30" stat="maxHp" val="#Tab-maxHp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21053" levels="4" name="Bless the Soul" >
+		<!--  
+		      Last modify: 31.10.2009
+		      Description: Increases Max MP by 25% for 30 minutes.
+		-->
+		<table name="#Tab-maxMp">1.25</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_people_cap_i00" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="6" stackType="mp_up" time="1800" val="0">
+				<mul order="0x30" stat="maxMp" val="#Tab-maxMp" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21054" levels="1" name="Blessed Resurrection Ability" >
+		<!--
+		      Last modify: 03.01.2009
+		      Description: Can use the ability of Blessed Resurrection. Reuse Delay 12 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_Uniform_Hat_i00" />
+		<set name="reuseDelay" val="43200000" />
+		<set name="power" val="100" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_CORPSE_PLAYER" />
+		<set name="corpse" val="true" />
+		<set name="skillType" val="RESURRECT" />
+		<set name="useSS" val="false" />
+		<set name="canPet" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="21055" levels="1" name="Wind Walk" >
+		<!--  
+		      Last modify: 31.10.2009
+		      Description: Increases moving speed by 20 for 2 minutes. Reuse delay 18 minutes.
+		-->
+		<table name="#Tab-runSpd">20</table>
+		<table name="#abnormal_time">120</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_Bamboo_Hat_i00" />
+		<set name="reuseDelay" val="1080000" />
+		<set name="hitTime" val="4000" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="SpeedUp" time="#abnormal_time" val="0">
+				<add order="0x40" stat="runSpd" val="#Tab-runSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21056" levels="3" name="Agility" >
+		<!--  
+		      Last modify: 31.10.2009
+		      Description: Increases evasion rate by 4 for 1 hour. Reuse Delay 24 hours.
+		-->
+		<table name="#Tab-rEvas">2 3 4</table>
+		<table name="#abnormal_lv">1 2 3</table>
+		<table name="#abnormal_time">3600</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_mask_i00" />
+		<set name="reuseDelay" val="86400000" />
+		<set name="hitTime" val="4000" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="rEvas" time="#abnormal_time" val="0">
+				<add order="0x40" stat="rEvas" val="#Tab-rEvas" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21057" levels="1" name="Reflect" >
+		<!--  
+		      Last modify: 06.11.2009
+		      Description: For 5 minutes, returns 20% of the damage back to the enemy. Excludes skill and long-range attacks. Reuse Delay 1 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_Ribbon_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="DmgShield" time="300" val="0">
+				<add order="0x40" stat="reflectDam" val="20" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21058" levels="1" name="Mana Regeneration" >
+		<!--  
+		      Last modify: 06.11.2009
+		      Description: Increases MP Regeneration by 3% for 5 minutes. Reuse Delay 1 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_Eye_Visor_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="mpregen" time="300" val="0">
+				<mul order="0x30" stat="regMp" val="1.03" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21059" levels="1" name="Greater Heal" >
+		<!--  Automatically generated from The Gracia Final client files.
+		      Description: Recovers HP by 444 and increases HP Recovery by 30 for 15 seconds. Reuse Delay 4 hours.
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 01-7-2009  11:04
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_cat_the_cat_cap_i00" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="3000" />
+		<set name="power" val="444"/>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="15" name="HealOverTime" stackOrder="1" stackType="HpRecoverCast" time="1" val="30"/>
+		</for>
+	</skill>
+	<skill id="21060" levels="1" name="Death Whisper" >
+		<!--  
+		      Last modify: 06.11.2009
+		      Description: Increases Critical attack power by 35% for 5 minutes. Reuse Delay 1 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_skeleton_cap_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="cAtk" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21061" levels="3" name="Agility" >
+		<table name="#Tab-rEvas">2 3 4</table>
+		<table name="#abnormal_lv">1 2 3</table>
+		<table name="#abnormal_time">3600</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
+		<set name="reuseDelay" val="86400000" />
+		<set name="hitTime" val="4000" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="rEvas" time="#abnormal_time" val="0">
+				<add order="0x40" stat="rEvas" val="#Tab-rEvas"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21062" levels="1" name="Wild Magic" >
+		<!--  
+		      Last modify: 06.11.2009
+		      Description: For 5 minutes, increases by 2% the occurrence rate of damage that is caused by damage magic. Reuse Delay 1 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<add order="0x40" stat="mCritRate" val="2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21063" levels="1" name="Wind Walk" >
+		<!--  
+		      Last modify: 31.10.2009
+		      Description: Increases moving speed by 20 for 2 minutes. Reuse delay 18 minutes.
+		-->
+		<table name="#Tab-runSpd">20</table>
+		<table name="#abnormal_time">120</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_goggles_i00" />
+		<set name="reuseDelay" val="1080000" />
+		<set name="hitTime" val="4000" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="SpeedUp" time="#abnormal_time" val="0">
+				<add order="0x40" stat="runSpd" val="#Tab-runSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21064" levels="1" name="Mana Regeneration" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_napoleonic_cap_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="mpregen" time="300" val="0">
+				<mul order="0x30" stat="regMp" val="1.03"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21065" levels="1" name="Reflect" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_horn_hairband_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="DmgShield" time="300" val="0">
+				<add order="0x40" stat="reflectDam" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21066" levels="1" name="Energy Recovery" >
+		<!--
+			Last modify:	29.07.2009
+
+			Description: Recovers energy when acquiring Exp. for 5 minutes. Reuse Delay 1 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_black_gem_mask_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="300" val="0" />
+		</for>
+	</skill>
+	<skill id="21067" levels="1" name="Blessed Escape Ability" >
+		<!--  
+		      Last modify: 06.11.2009
+		      Description: Can use the ability of Blessed Return. Reuse Delay 12 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_plastic_hair_f_i00" />
+		<set name="reuseDelay" val="43200000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="200" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="RECALL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="21068" levels="1" name="Resist Unholy" >
+		<!--  
+		      Last modify: 06.11.2009
+		      Description: Increases resistance to darkness type attacks by 30 for 5 minutes. Reuse Delay 1 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_daisy_hairpin_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="defenceUnholy" time="300" val="0">
+				<add order="0x40" stat="defenceUnholy" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21069" levels="1" name="Wind Walk" >
+		<table name="#Tab-runSpd">20</table>
+		<table name="#abnormal_time">120</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_forget_me_not_hairpin_i00" />
+		<set name="reuseDelay" val="1080000" />
+		<set name="hitTime" val="4000" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="SpeedUp" time="#abnormal_time" val="0">
+				<add order="0x40" stat="runSpd" val="#Tab-runSpd"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21070" levels="1" name="Death Whisper" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_outlaw_eyepatch_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="cAtk" val="1.35"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21071" levels="3" name="Agility" >
+		<table name="#Tab-rEvas">2 3 4</table>
+		<table name="#abnormal_lv">1 2 3</table>
+		<table name="#abnormal_time">3600</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_eye_bandage_i00" />
+		<set name="reuseDelay" val="86400000" />
+		<set name="hitTime" val="4000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="rEvas" time="#abnormal_time" val="0">
+				<add order="0x40" stat="rEvas" val="#Tab-rEvas"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21072" levels="1" name="Wild Magic" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_glasses_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<add order="0x40" stat="mCritRate" val="2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21073" levels="1" name="Mana Regeneration" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_worldcup_mask_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="mpregen" time="300" val="0">
+				<mul order="0x30" stat="regMp" val="1.03"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21074" levels="1" name="Reflect" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_hair_cornu_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="DmgShield" time="300" val="0">
+				<add order="0x40" stat="reflectDam" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21075" levels="1" name="Greater Heal" >
+		<!--  
+		      Last modify: 06.11.2009
+		      Description: Recovers HP by 444 and increases HP Recovery by 30 for 15 seconds. Reuse Delay 4 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_party_mask_i00" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="power" val="444" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="15" name="HealOverTime" stackOrder="1" stackType="HpRecoverCast" time="1" val="30" />
+		</for>
+	</skill>
+	<skill id="21076" levels="1" name="Resist Unholy" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_party_mask_i01" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="defenceUnholy" time="300" val="0">
+				<sub order="0x40" stat="defenceUnholy" val="30"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21077" levels="1" name="Wind Walk" >
+		<table name="#Tab-runSpd">20</table>
+		<table name="#abnormal_time">120</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_cat_ear_i00" />
+		<set name="reuseDelay" val="1080000" />
+		<set name="hitTime" val="4000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="SpeedUp" time="#abnormal_time" val="0">
+				<add order="0x40" stat="runSpd" val="#Tab-runSpd"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21078" levels="1" name="Death Whisper" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_hairpin_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="cAtk" val="1.35"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21079" levels="3" name="Agility" >
+		<table name="#Tab-rEvas">2 3 4</table>
+		<table name="#abnormal_lv">1 2 3</table>
+		<table name="#abnormal_time">3600</table>
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_racoon_ear_i00" />
+		<set name="reuseDelay" val="86400000" />
+		<set name="hitTime" val="4000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="rEvas" time="#abnormal_time" val="0">
+				<add order="0x40" stat="rEvas" val="#Tab-rEvas"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21080" levels="1" name="Wild Magic" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true"/>
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<add order="0x40" stat="mCritRate" val="2"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21081" levels="1" name="Mana Regeneration" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_hair_ring_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="mpregen" time="300" val="0">
+				<mul order="0x30" stat="regMp" val="1.03"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21082" levels="1" name="Reflect" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_hair_feeler_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="DmgShield" time="300" val="0">
+				<add order="0x40" stat="reflectDam" val="20"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="21083" levels="1" name="Greater Heal" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_archer_hat_i00" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="3000" />
+		<set name="power" val="444"/>
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="15" name="HealOverTime" stackOrder="1" stackType="HpRecoverCast" time="1" val="30"/>
+		</for>
+	</skill>
+	<skill id="21084" levels="1" name="Energy Recovery" >
+		<!--
+			Last modify:	29.07.2009
+
+			Description: Recovers energy when acquiring Exp. for 5 minutes. Reuse Delay 1 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.accessory_dwarf_goggle_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="300" val="0" />
+		</for>
+	</skill>
+	<skill id="21085" levels="1" name="Agathion Seal Cancel - Pomona" >
+		<!--
+			Last modify:	29.07.2009
+			Description:	Removes the seal on the Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1527" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21086" levels="1" name="Blessing of Love" >
+		<!--
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_garland_i00" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect abnormal="invul2" count="1" name="Invulnerable" stackOrder="-1" stackType="Invulnerable" time="10" val="0" cancelOnAction="true" />
+		</for>
+	</skill>
+	<skill id="21087" levels="1" name="Berserker Spirit" >
+		<!--  .
+		      Last modify: 31.10.2009
+		      Description: Decreases P. Def. by 8%, M. Def. by 16%, and evasion by 4, and increases P. Atk. by 8%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and moving speed by 8 for 20 minutes.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_circlet_of_eva_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="berserk" time="1200" val="0">
+				<mul order="0x30" stat="mAtk" val="1.16" />
+				<mul order="0x30" stat="pAtk" val="1.08" />
+				<mul order="0x30" stat="pDef" val="0.92" />
+				<mul order="0x30" stat="mDef" val="0.84" />
+				<mul order="0x30" stat="mAtkSpd" val="1.08" />
+				<mul order="0x30" stat="pAtkSpd" val="1.08" />
+				<add order="0x40" stat="runSpd" val="8" />
+				<sub order="0x40" stat="rEvas" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21088" levels="1" name="Summon Friend" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill_agathion_special" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="10000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_PARTY_ONE" />
+		<set name="skillType" val="CALL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="castRange" val="32767" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="21089" levels="1" name="Dance of Shadows" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_invokespirit_stick_a_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="2500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="SilentMove" time="120" val="0">
+				<mul order="0x30" stat="runSpd" val="0.5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21090" levels="1" name="Soul of Phoenix" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="BranchSys.icon.br_comfortspirit_hat_a_i00" />
+		<set name="reuseDelay" val="86400000" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Salvation" stackOrder="0" stackType="Salvation" time="3600" val="0" />
+		</for>
+	</skill>
+	<skill id="21091" levels="1" name="Agathion Seal Cancel - Weaver" >
+		<!--  
+		      Last modify: 31.10.2009
+		      Description: Removes the seal on the Agathion.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_summon_aga_agit_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<set name="useSS" val="false" />
+		<set name="npcId" val="1528" />
+		<set name="summonType" val="agathion" />
+	</skill>
+	<skill id="21092" levels="1" name="Theme - Love" >
+		<!--  Automatically generated from The Gracia Final client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 31-10-2009  14:08
+		-->
+		<set name="icon" val="BranchSys.icon.br_headphone_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="21093" levels="1" name="Theme - Hero" >
+		<!--  Automatically generated from The Gracia Final client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 31-10-2009  14:08
+		-->
+		<set name="icon" val="BranchSys.icon.br_headphone_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="21094" levels="1" name="Theme - Theme Park" >
+		<!--  Automatically generated from The Gracia Final client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 31-10-2009  14:08
+		-->
+		<set name="icon" val="BranchSys.icon.br_headphone_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="21095" levels="1" name="Blessed Resurrection" >
+		<!--  
+		      Last modify: 31.10.2009
+		      Description: Can use the ability of Blessed Resurrection. Reuse Delay 12 hours.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_comfortspirit_hat_a_i00" />
+		<set name="reuseDelay" val="43200000" />
+		<set name="power" val="100" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_CORPSE_PLAYER" />
+		<set name="corpse" val="true" />
+		<set name="skillType" val="RESURRECT" />
+		<set name="useSS" val="false" />
+		<set name="canPet" val="true" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isReuseDelayPermanent" val="true" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="21096" levels="1" name="Ability of Cool Watermelon" >
+		<!--  
+		      Last modify: 31.10.2009
+		      Description: For 30 minutes, increases critical rate by 30% and critical power by 35%.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_watermelon_cap_a_i00" />
+		<set name="reuseDelay" val="14400000" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="10" stackType="rCrit" stackType2="cAtk" time="1800" val="0">
+				<add order="0x40" stat="rCrit" val="30" />
+				<mul order="0x30" stat="cAtk" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21097" levels="1" name="Summon Friend" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill_agathion_special" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="10000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_PARTY_ONE" />
+		<set name="skillType" val="CALL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="castRange" val="32767" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="21098" levels="1" name="Great Adventurer's Soul Power : Endless" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_valkyrie_cap_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="maxHp" val="20" />
+				<mul order="0x30" stat="maxMp" val="20" />
+				<add order="0x40" stat="runSpd" val="20" />
+				<add order="0x40" stat="debuffResist" val="10" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="21099" levels="1" name="Great Warrior's Soul Power: Strength" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys.icon.br_tiger_cap_i00" />
+		<set name="reuseDelay" val="3600000" />
+		<set name="hitTime" val="4000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" time="300" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="20"/>
+				<mul order="0x30" stat="pAtk" val="10"/>
+				<mul order="0x40" stat="pDef" val="20"/>
+				<add order="0x40" stat="absorbDam" val="5" />
+			</effect>
+		</for>
+	</skill>
+</list>

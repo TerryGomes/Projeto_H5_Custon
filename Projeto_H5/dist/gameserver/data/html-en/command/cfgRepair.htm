@@ -1,0 +1,24 @@
+<html noscrollbar><head><title>Control Panel</title></head><body>
+
+<center>
+<img src="L2UI.squaregray" width="285" height="1">
+<table width=280 bgcolor=222120>
+	<tr>
+		<td>
+			<center>
+			<font name="hs12" color="a22020">L2fandc</font>
+			</center>
+		</td>
+	</tr>
+</table>
+<img src="L2UI.squaregray" width="285" height="1">
+<br><br>
+<center>
+
+<font color=c1b33a>Which character do you wish to repair?</font><br>
+<combobox width=100 var="character" list="%charsOnAccount%">
+<br><br>
+<button value="Repair character" action="bypass -h user_control repairCharacter $character" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" />
+<button value="Back" action="bypass -h user_control back" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" /><br>
+</center>
+</body></html>

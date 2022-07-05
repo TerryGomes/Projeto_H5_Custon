@@ -1,0 +1,46 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- GvG -->
+	<instance id="504" name="GvG Instance" maxChannels="20" collapseIfEmpty="10" timelimit="30" dispelBuffs="false" respawn="60">
+		<level min="80" max="85"/>
+		<return loc="43816 -48232 -822"/>
+		<collapse on-party-dismiss="false" timer="60"/>
+		<teleport loc="-23768 -8968 -5412"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<geodata map="24_22"/>
+		<spawns/>
+		<doors>
+			<door id="24220030" opened="true"/>
+			<door id="24220031" opened="true"/>
+			<door id="24220032" opened="true"/>
+			<door id="24220033" opened="true"/>
+			<door id="24220034" opened="true"/>
+			<door id="24220035" opened="true"/>
+			<door id="24220036" opened="true"/>
+			<door id="24220037" opened="true"/>
+			<door id="24220038" opened="true"/>
+			<door id="24220035" opened="true"/>
+			<door id="24220039" opened="true"/>
+			<door id="24220040" opened="true"/>
+			<door id="24220041" opened="true"/>
+			<door id="24220042"/>
+			<door id="24220043" opened="true"/>
+			<door id="24220044" opened="true"/>
+			<door id="24220045" opened="true"/>
+			<door id="24220046" opened="true"/>
+			<door id="24220047" opened="true"/>
+			<door id="24220048" opened="true"/>
+			<door id="24220049" opened="true"/>
+			<door id="24220050" opened="true"/>
+			<door id="24220060" opened="true"/>
+		</doors>
+		<zones>
+			<zone name="[gvg_battle_zone]" active="true"/>
+			<zone name="[gvg_1_peace]" active="true"/>
+			<zone name="[gvg_2_peace]" active="true"/>
+		</zones>
+	</instance>
+</list>

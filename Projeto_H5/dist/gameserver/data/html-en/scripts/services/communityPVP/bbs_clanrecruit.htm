@@ -1,0 +1,208 @@
+<html noscrollbar>
+<head>
+	<title>Recruitment menu for %clanName% Clan</title>
+</head>
+<body>
+<table width=770 height=480 background="L2UI_CT1.Windows_DF_TooltipBG">
+	<tr>
+		<td>
+			<table border=0 cellpadding=0 cellspacing=0 width=700>
+				<tr>
+					<td>
+						<br>
+						<center><font name="hs12" color="FFFFFF">Recruitment management for</font> <font name="hs12" color="0099FF">%clanName%</font></center>
+						<br>
+					</td>
+				</tr>
+			</table>
+			<table border=0 cellpadding=0 cellspacing=0 width=700>
+				<tr>
+					<td align=center width=300>
+						<table border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td>
+									<img src="L2UI_CT1.Frame_DF_Hor_Large_Left" width="32" height="44">
+								</td>
+								<td>
+									<img src="L2UI_CT1.Frame_DF_Hor_Large_Tile" width="56" height="44">
+								</td>
+								<td>
+									<img src="L2UI_CT1.Frame_DF_Hor_Large_Center" width="128" height="44">
+								</td>
+								<td>
+									<img src="L2UI_CT1.Frame_DF_Hor_Large_Tile" width="56" height="44">
+								</td>
+								<td>
+									<img src="L2UI_CT1.Frame_DF_Hor_Large_Right" width="32" height="44">
+								</td>
+							</tr>
+						</table>
+						<table border=0 width=300 cellpadding=0 cellspacing=0 background="L2UI_CT1.Windows_DF_Large_Bg_Darker">
+							<tr>
+								<td align=center width=300>
+									<br>
+									<font name="hs12" color="FFFFFF">What classes do you want to recruit?</font>
+									
+								</td>
+							</tr>
+							<tr>
+								<td align=center height=150>
+									<table border=0>
+										<tr>
+											<td align=center width=100>
+												<table>
+													<tr>
+														<td align=center width=20>
+														<br>
+															<button action="bypass _clbbsmanage_1" value="" width=16 height=16 back="L2UI.CheckBox%checked1%" fore="L2UI.CheckBox%checked1%">
+														</td>
+														<td align=center width=80>
+														<br>
+															<font color="FFFFFF">Any Class</font>
+															<br>
+															<br>
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td align=center width=100>
+												<table>
+													<tr>
+														<td align=center width=20>
+														<br>
+															<button action="bypass _clbbsmanage_2" value="" width=16 height=16 back="L2UI.CheckBox%checked2%" fore="L2UI.CheckBox%checked2%">
+														</td>
+														<td align=center width=120>
+														<br>
+															<font color="FFFFFF">Specific Classes</font>
+															<br>
+															<br>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td width=140>
+												<font color="FFFFFF">   First group:</font>
+											</td>
+											<td width=140>
+												<font color="FFFFFF">   Second group:</font>
+											</td>
+										</tr>
+										<tr>
+											<td align=center width=150>
+												<combobox width=130 var=classes1 list="%firstClassGroup%">
+												<br>
+											</td>
+											<td align=center width=150>
+												<combobox width=130 var=classes2 list="%secondClassGroup%">
+												<br>
+											</td>
+										</tr>
+										<tr>
+											<td align=center width=150>
+												<button action="bypass _clbbsmanage_3 $classes1" value="Add" width=100 height=31 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.button_df">
+												
+											</td>
+											<td align=center width=150>
+												<button action="bypass _clbbsmanage_3 $classes2" value="Add" width=100 height=31 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.button_df">
+												
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td width=400>
+						<table border=0>
+							<tr>
+								<td width=450>
+									<table width=420>
+										<tr>
+											<td align=center width=400>
+												<br>
+												<font name="hs12" color="FFFFFF">Classes you have choosen:</font>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<table>
+										%choosenClasses%
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+			<table border=0 cellpadding=0 cellspacing=0 width=700>
+				<tr>
+					<td align=center width=700>
+						<table border=0 width=700>
+							<tr>
+								<td align=center width=700>
+									<br>
+									<br>
+									<font name="hs12" color="FFFFFF">Questions you want to ask:</font>
+									<br>
+								</td>
+							</tr>
+						</table>
+						<table width=700>
+							<tr>
+								<td align=center>
+									<font color="FFFFFF">%question1%</font>
+									<edit var="question1" width=300 height=15>
+									<br>
+								</td>
+								<td align=center>
+									<font color="FFFFFF">%question2%</font>
+									<edit var="question2" width=300 height=15>
+									<br>
+								</td>
+							</tr>
+							<tr>
+								<td align=center>
+									<font color="FFFFFF">%question3%</font>
+									<edit var="question3" width=300 height=15>
+									<br>
+								</td>
+								<td align=center>
+									<font color="FFFFFF">%question4%</font>
+									<edit var="question4" width=300 height=15>
+									<br>
+								</td>
+							</tr>
+						</table>
+						<table width=750>
+							<tr>
+								<td align=center>
+									<button action="bypass _clbbsmanage_6 | $question1 | $question2 | $question3 | $question4 | $question5 | $question6 | $question7 | $question8 |" value="Save Questions" width=370 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.button_df">
+									<br>
+								</td>
+								<td align=center>
+									<button action="bypass _clbbsmanage_7" value="%recrutation% Recrutation" width=370 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.button_df">
+									<br>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td align=center>
+						<br>
+							<button action="bypass _bbsclan" value="Back" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.button_df">
+						<br>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

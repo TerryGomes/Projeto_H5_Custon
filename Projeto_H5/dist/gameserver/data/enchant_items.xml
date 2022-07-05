@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "enchant_items.dtd">
+<list>
+	<!--Стандартные настройки для енчанта, -1 в макс , означает нелимитирова-->
+	<default chance="66" magic_chance="66" max_enchant="20" visual_effect="false" />
+	<!--Scroll: Enchant Weapon (A-Grade)-->
+	<!--<enchant_scroll id="729" on_fail="CRYSTALS">
+		<grade_list>
+			<grade id="A" />
+		</grade_list>
+	</enchant_scroll>   -->
+	<!--Master Yogi's Scroll: Enchant Weapon-->
+	<enchant_scroll id="13540" on_fail="CRYSTALS" visual_effect="true">
+		<item_list>
+			<item id="13539" />  <!--Staff of Master Yogi-->
+		</item_list>
+	</enchant_scroll>
+	<!--                        Olf                                           -->
+	<!--Olf's T-shirt Enchant Scroll-->
+	<enchant_scroll id="21581" on_fail="CRYSTALS" max_enchant="10">
+		<item_list>
+			<item id="21580" /> <!--Olf's T-shirt-->
+		</item_list>
+	</enchant_scroll>
+	<!--Blessed Olf's T-shirt Enchant Scroll-->
+	<enchant_scroll id="21582" on_fail="DROP_ENCHANT" max_enchant="10">
+		<item_list>
+			<item id="21580" /> <!--Olf's T-shirt-->
+		</item_list>
+	</enchant_scroll>
+ 	<!--                        Love scrolls                                           -->
+	<!--Event - Herdsman's Love Scroll-->
+	<enchant_scroll id="15381" on_fail="CRYSTALS" max_enchant="50">
+		<item_list>
+			<item id="15383" /> <!--Weaver's Multi-colored Clothes 7 day-->
+			<item id="15384" /> <!--Weaver's Multi-colored Clothes 30 day-->
+			<item id="15385" /> <!--Weaver's Multi-colored Clothes 60 day-->
+			<item id="15386" /> <!--Weaver's Multi-colored Clothes 90 day-->
+			<item id="15387" /> <!--Weaver's Multi-colored Clothes Permanent-->
+			<item id="15388" /> <!--Weaver's Multi-colored Clothes (Event) 7 day-->
+			<item id="15389" /> <!--Weaver's Multi-colored Clothes (Event) 30 day-->
+			<item id="15390" /> <!--Weaver's Multi-colored Clothes (Event) 60 day-->
+			<item id="15391" /> <!--Weaver's Multi-colored Clothes (Event) 90 day-->
+			<item id="15392" /> <!--Weaver's Multi-colored Clothes (Event) Permanent-->
+		</item_list>
+	</enchant_scroll>
+</list>

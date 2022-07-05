@@ -1,0 +1,22 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- SSQ - Girl of Doubt, Franz -->
+	<instance id="145" name="Girl of Doubt, Franz" maxChannels="20" collapseIfEmpty="1" timelimit="30" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="81" max="85"/>
+		<return loc="147020 23775 -1984"/>
+		<teleport loc="-23743 -8947 -5384"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="10292"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<spawns>
+			<spawn mobId="32597" type="point" respawn="0">
+				<coords loc="-23976 -8968 -5384 0"/>
+			</spawn>
+			<spawn mobId="32617" type="point" respawn="0">
+				<coords loc="-23960 -8888 -5384 0"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

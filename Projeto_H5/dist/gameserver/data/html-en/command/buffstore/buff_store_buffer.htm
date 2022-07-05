@@ -1,0 +1,88 @@
+<html noscrollbar>
+<head>
+	<title>%bufferName% Buff Store</title>
+</head>
+<body>
+<center>
+<table width=285 height=358 cellspacing=0 cellpadding=0 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td width=5></td>
+		<td align=center>
+			<table cellspacing=0 cellpadding=0 width=280 height=10>
+				<tr>
+					<td height=10></td>
+				</tr>
+				<tr>
+					<td fixwidth=280 align=center>
+						<font name=__SYSTEMWORLDFONT>Class: <font color=319131 name=__SYSTEMWORLDFONT>%bufferClass%</font> ›› Level: </font><font color=319131 name=__SYSTEMWORLDFONT>%bufferLvl%+</font>
+					</td>
+				</tr>
+			</table>
+			<img src=L2UI.SquareGray width=280 height=1>
+			<table width=280 cellspacing=1 cellpadding=0>
+				<tr>
+					<td height=10></td>
+				</tr>
+			</table>
+			<table cellspacing=0 cellpadding=2 width=280 height=10>
+				<tr>
+					<td height=2></td>
+				</tr>
+				<tr>
+					<td fixwidth=280 align=center>
+						<font color=FFFFFF name="__SYSTEMWORLDFONT">Buff Price:</font> <font color=319131 name="__SYSTEMWORLDFONT">%buffPrice%</font> <font color=FFFFFF name="__SYSTEMWORLDFONT">- Target:</font> <font color=319131 name="__SYSTEMWORLDFONT">%bufferName%</font>
+					</td>
+				</tr>
+			</table>
+			<img src=L2UI.SquareGray width=280 height=1>
+			<table width=280 cellspacing=1 cellpadding=0>
+				<tr>
+					<td height=10></td>
+				</tr>
+			</table>
+			<table width=280 cellspacing=2 cellpadding=0>
+				<tr>
+					<td height=2></td>
+				</tr>
+				%buffs%
+			</table>
+			<img src=L2UI.SquareGray width=280 height=1>
+			<table width=280 cellspacing=1 cellpadding=0>
+				<tr>
+					<td height=10></td>
+				</tr>
+			</table>
+			<table border=0 cellspacing=0 cellpadding=0 fixwidth=280 height=16 bgcolor=171612>
+				<tr>
+					<td valign=top width=40></td>
+					<td valign=top width=16 height=16 align=center background=L2UI_CH3.shortcut_prev>
+						%previousPageButton%
+					</td>
+					<td width=40></td>
+					<td width=40 align=center>
+						<font name="__SYSTEMWORLDFONT">%pageCount%</font>
+					</td>
+					<td width=40></td>
+					<td valign=top width=16 height=16 align=center background=L2UI_CH3.shortcut_next>
+						%nextPageButton%
+					</td>
+					<td width=40></td>
+				</tr>
+			</table>
+			<img src=L2UI.SquareGray width=280 height=1>
+			<table width=280>
+				<tr>
+					<td width=150>
+						<button value="For Player" action="bypass -h BuffStore bufflist %bufferId% player %page%" width=140 height=25 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>
+					</td>
+					<td>
+						<button value="For Summon" action="bypass -h BuffStore bufflist %bufferId% summon %page%" width=140 height=25 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>

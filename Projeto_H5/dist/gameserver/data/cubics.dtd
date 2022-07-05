@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT list (cubic)*>
+<!ELEMENT cubic (skills)*>
+<!ATTLIST cubic
+	id CDATA #REQUIRED
+	level CDATA #REQUIRED
+	delay CDATA #REQUIRED>
+<!ELEMENT skills (skill)*>
+<!ATTLIST skills
+	chance CDATA #REQUIRED>
+<!ELEMENT skill (chance)*>
+<!ATTLIST skill
+	id CDATA #REQUIRED
+	level CDATA #REQUIRED
+	action_type CDATA #REQUIRED
+	can_attack_door CDATA #REQUIRED
+	chance CDATA #IMPLIED>
+<!ELEMENT chance (#PCDATA)>
+<!ATTLIST chance
+	min CDATA #REQUIRED
+	max CDATA #REQUIRED
+	value CDATA #REQUIRED>

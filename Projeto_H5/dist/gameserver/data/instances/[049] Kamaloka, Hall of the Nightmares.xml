@@ -1,0 +1,32 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Town of Dion: NPC Pathfinder (Level 40) -->
+	<instance id="49" name="Rim Kamaloka" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="35" max="45"/>
+		<party min="1" max="1"/>
+		<teleport loc="8559 -212987 -7800"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="true" sharedReuseGroup="2"/>
+		<add_parameters>
+			<param name="pathfinder_loc" value="9296 -212995 -7800"/>
+			<param name="reward_lvl_0" value="13002-5"/>
+			<param name="reward_lvl_1" value="13002-5;12826-1"/>
+			<param name="reward_lvl_2" value="13002-5;10842-1"/>
+			<param name="reward_lvl_3" value="13002-5;10843-1"/>
+			<param name="reward_lvl_4" value="13002-5;10846-1"/>
+			<param name="reward_lvl_5" value="13002-5;12829-1"/>
+		</add_parameters>
+		<spawns>
+			<!-- Gluttonous Kanabion -->
+			<spawn mobId="22461" count="4" respawn="30" type="loc">
+				<coords loc="8616 -212312 -7800 -7800"/>
+				<coords loc="10008 -212312 -7800 -7800"/>
+				<coords loc="10008 -213688 -7800 -7800"/>
+				<coords loc="8616 -213688 -7800 -7800"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

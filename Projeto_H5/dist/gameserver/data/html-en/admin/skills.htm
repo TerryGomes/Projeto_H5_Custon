@@ -1,0 +1,37 @@
+<title>Skills Menu</title>
+<table width=260 bgcolor="0099FF" background="L2UI_CT1.Windows_DF_Drawer_Bg">
+<tr>
+	<td width=40><button value="Main" action="bypass -h admin_admin" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+	<td width=180><center>Skills Menu</center></td>
+	<td width=40><button value="Back" action="bypass -h admin_show_skills" width=40 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+<br>
+<center>
+<table width=200 bgcolor="0099FF" background="L2UI_CT1.Windows_DF_Drawer_Bg">
+	<tr><td align=center><button action="bypass -h admin_show_html skills/Special/GM_Skills.htm" value="GM Skills" width=210 height=24 back="L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down" fore="L2UI_CT1.OlympiadWnd_DF_HeroConfirm"></td></tr>
+	<tr><td align=center><button action="bypass -h admin_show_html skills/Human/human.htm" value="Human Skills" width=210 height=24 back="L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down" fore="L2UI_CT1.OlympiadWnd_DF_HeroConfirm"></td></tr>
+	<tr><td align=center><button action="bypass -h admin_show_html skills/Elf/elf.htm" value="Elf Skills" width=210 height=24 back="L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down" fore="L2UI_CT1.OlympiadWnd_DF_HeroConfirm"></td></tr>
+	<tr><td align=center><button action="bypass -h admin_show_html skills/Orc/orc.htm" value="Orc Skills" width=210 height=24 back="L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down" fore="L2UI_CT1.OlympiadWnd_DF_HeroConfirm"></td></tr>
+	<tr><td align=center><button action="bypass -h admin_show_html skills/Dwarf/dwarf.htm" value="Dwarf Skills" width=210 height=24 back="L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down" fore="L2UI_CT1.OlympiadWnd_DF_HeroConfirm"></td></tr>
+	<tr><td align=center><button action="bypass -h admin_show_html skills/Special/Clan_Skills.htm" value="Clan Skills" width=210 height=24 back="L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down" fore="L2UI_CT1.OlympiadWnd_DF_HeroConfirm"></td></tr>
+	<tr><td align=center><button action="bypass -h admin_show_html skills/Special/Common_Skills.htm" value="Common Skills" width=210 height=24 back="L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down" fore="L2UI_CT1.OlympiadWnd_DF_HeroConfirm"></td></tr>
+	<tr><td align=center><button action="bypass -h admin_show_html skills/Special/Hero_Skills.htm" value="Hero Skills" width=210 height=24 back="L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down" fore="L2UI_CT1.OlympiadWnd_DF_HeroConfirm"></td></tr>
+	<tr><td align=center><button action="bypass -h admin_show_html skills/Special/Nobless_Skills.htm" value="Nobless Skills" width=210 height=24 back="L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down" fore="L2UI_CT1.OlympiadWnd_DF_HeroConfirm"></td></tr>
+	<tr><td align=center><button action="bypass -h admin_show_html skills/Special/Fishing_Skills.htm" value="Fishing Skills" width=210 height=24 back="L2UI_CT1.OlympiadWnd_DF_HeroConfirm_Down" fore="L2UI_CT1.OlympiadWnd_DF_HeroConfirm"></td></tr>
+</table>
+</center>
+<center><br>Add Skill through ID:<br>
+<table>
+		<tr>
+			<td>ID:</td>
+			<td>Level:</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><edit var="id" width=70 height=12></td>
+			<td><edit var="level" width=70 height=12></td>
+			<td><button value="Give Skill" action="bypass -h admin_add_skill $id $level" width=100 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+		</tr>
+	</table>
+</center>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "../events.dtd">
+<list>
+	<event id="5" name="Treasure Hunt" type="FIGHT_CLUB_EVENT" impl="fightclub.FFATreasureHunt">
+		<parameter name="icon" value="BranchSys2.br_Skill0444_a"/>
+		<parameter name="desc" value="Free For All Event. Your goal is to find chests and open them! Look at other players too, you are also getting points for killing them. 1 Festival Coin per Chest."/>
+		<parameter name="roundRunTime" value="600"/>
+		<parameter name="isAutoTimed" value="true"/>
+		<parameter name="autoTimes" value="03:00,11:00,19:00"/>
+		<parameter name="roundEvent" value="false"/>
+		<parameter name="teamed" value="false"/>
+		<parameter name="buffer" value="false"/>
+		<parameter name="rootBetweenRounds" value="true"/>
+		<parameter name="excludedClasses" value="HEALERS"/>
+		<parameter name="respawnTime" value="5"/>
+		<parameter name="ressAllowed" value="false"/>
+		<parameter name="showPersonality" value="true"/>
+		<parameter name="scoreForChest" value="1"/>
+		<parameter name="scoreForKilledPlayer" value="0"/>
+		<parameter name="badgesOpenChest" value="1"/>
+		<parameter name="badgesKillPlayer" value="0.3"/>
+		<parameter name="badgesKillPet" value="0"/>
+		<parameter name="badgesDie" value="0"/>
+		<parameter name="numberOfChests" value="7"/>
+		<parameter name="timeForRespawningChest" value="15"/>
+		<parameter name="topKillerReward" value="3"/>
+	</event>
+</list>

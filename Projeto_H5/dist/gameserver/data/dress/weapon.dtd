@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (weapon)*>
+<!ELEMENT weapon (price)*>
+<!ATTLIST weapon
+	id CDATA #REQUIRED
+	name CDATA #REQUIRED
+	type CDATA #REQUIRED>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price
+	id CDATA #REQUIRED
+	count CDATA #REQUIRED>

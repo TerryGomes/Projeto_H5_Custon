@@ -1,0 +1,32 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Dark Cloud Mansion -->
+	<instance id="9" name="Dark Cloud Mansion" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="78" max="85"/>
+		<party min="2" max="2"/>
+		<return loc="139968 150367 -3111"/>
+		<teleport loc="146534 180464 -6117"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<geodata map="24_23"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<spawns/>
+		<doors>
+			<door id="24230001"/>
+			<door id="24230002"/>
+			<door id="24230003"/>
+			<door id="24230004"/>
+			<door id="24230005"/>
+			<door id="24230006"/>
+			<door id="24230007"/>
+			<door id="24230008"/>
+			<door id="24230009"/>
+			<door id="24230010"/>
+			<door id="24230011"/>
+			<door id="24230012"/>
+			<door id="24230013"/>
+		</doors>
+	</instance>
+</list>

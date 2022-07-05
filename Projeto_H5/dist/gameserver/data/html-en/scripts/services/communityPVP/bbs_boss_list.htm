@@ -1,0 +1,90 @@
+<html noscrollbar>
+<head><title>Raid Boss Status</title></head>
+<body>
+<table width=755>
+	<tr>
+		<td align=center valign="top">
+			<table border=0 cellpadding=0 cellspacing=0 width=800 height=508 background="l2fandc.bg17">
+				<tr>
+					<td>
+						<table width=760 border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td>
+									<table width=280>
+										<tr>
+											<td width=40 align=center>
+												<img src="Icon.skill5861" width=32 height=32>
+											</td>
+											<td>
+												<table>
+													<tr>
+														<td>
+															<font name="__SYSTEMWORLDFONT" color=F26262>Raid Boss Status</font>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<font color=AFA196 name=__SYSTEMWORLDFONT>Detailed informations about Raids</font>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td>
+									<table>
+										<tr>
+											<td>
+												<table width=260 height=30>
+													<tr>
+														<td align=center width=200 height=30>
+															<edit var="search" width=200 height=15>
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td width=100 align=left>
+												<button value="Search" action="bypass _bbsbosslist_%sort%_0_ $search" width=100 height=28 back="L2UI_CT1.Button_DF_Down" fore="L2UI_ct1.Button_DF">
+											</td>
+											<td width=110 align=right>
+												<button value="Refresh" action="bypass _bbsbosslist_%sort%_%page%_%search%" width=100 height=29 back="L2UI_CT1.Button_DF_Down" fore="L2UI_ct1.Button_DF">
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<br><br>
+						<img src="L2UI_CT1.Gauge_DF_CP_Center" width=755 height=2>
+						<table border=0 cellpadding=0 cellspacing=0>
+							<tr>
+								<td>
+									<table width=760 border=0 cellpadding=0 cellspacing=0>
+										<tr>
+											<td>
+												<button value="Raid Boss Name" action="bypass _bbsbosslist_%sort1%_0_%search%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=285 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+											</td>
+											<td>
+												<button value="Level" action="bypass _bbsbosslist_%sort2%_0_%search%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=100 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+											</td>
+											<td>
+												<button value="Status" action="bypass _bbsbosslist_%sort3%_0_%search%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=130 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+											</td>
+											<td>
+												<button value="Show Details" action="bypass _bbsbosslist_%sort%_0_%search%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=240 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+											</td>
+										</tr>
+									</table>
+									%bosses%
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

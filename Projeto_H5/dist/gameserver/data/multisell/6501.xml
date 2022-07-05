@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- New year event -->
+<list>
+  <!-- Внимание: keepenchanted НЕ должно быть установлено в мультиселлах, где в одном блоке возможны два одинаковых нестекуемых предмета (напрмиер dual) -->
+  <!-- ignoreprice не работает с keepencahnted -->
+  <config showall="false" notax="false" keepenchanted="true" />
+
+  <item>
+    <ingredient id="5556" count="4"/>
+    <ingredient id="5557" count="4"/>
+    <ingredient id="5558" count="10"/>
+    <ingredient id="5559" count="1"/>
+    <production id="5560" count="1"/>
+  </item>
+
+  <item>
+    <ingredient id="5560" count="10"/>
+    <production id="5561" count="1"/>
+  </item>
+
+  <item>
+    <ingredient id="5560" count="10"/>
+    <production id="7836" count="1"/>
+  </item>
+
+</list>

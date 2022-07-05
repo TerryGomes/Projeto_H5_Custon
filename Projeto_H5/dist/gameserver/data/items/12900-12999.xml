@@ -1,0 +1,3228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <weapon id="12900" name="Demon Splinter - Thunder {PvP}" add_name="Critical Stun">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_demon_splinter_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1350"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3070" level="3" type="CRIT" chance="100" />
+    </triggers>
+    <skills>
+      <skill id="3552" level="3"/>
+      <skill id="3651" level="1"/>
+      <skill id="3652" level="1"/>
+      <skill id="3883" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="342"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12901" name="Draconic Bow - Earth {PvP}" add_name="Cheap Shot">
+    <set name="atk_reuse" value="1500"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_draconic_bow_i01"/>
+    <set name="mp_consume" value="6"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1650"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="3"/>
+      <skill id="3655" level="1"/>
+      <skill id="3867" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="581"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="293"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <set stat="cheapShot" order="0x08" value="1"/>
+      <set stat="cheapShotChance" order="0x08" value="26"/>
+      <mul stat="pAtk" order="0x30" value="1.05">
+        <target pvp="true"/>
+      </mul>
+      <mul stat="mAtk" order="0x30" value="1.05">
+        <target pvp="true"/>
+      </mul>
+    </for>
+  </weapon>
+  <weapon id="12902" name="Draconic Bow - Earth {PvP}" add_name="Focus">
+    <set name="atk_reuse" value="1500"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_draconic_bow_i01"/>
+    <set name="mp_consume" value="6"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1650"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3567" level="1"/>
+      <skill id="3655" level="1"/>
+      <skill id="3867" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="581"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="293"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12903" name="Draconic Bow - Earth {PvP}" add_name="Crt. Slow">
+    <set name="atk_reuse" value="1500"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_draconic_bow_i01"/>
+    <set name="mp_consume" value="6"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1650"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <triggers>
+		<trigger id="3574" level="1" type="CRIT" chance="100" />
+	</triggers>
+    <skills>
+      <skill id="3552" level="3"/>
+      <skill id="3655" level="1"/>
+      <skill id="3867" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="581"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="293"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12904" name="Dragon Hunter Axe - Thunder {PvP}" add_name="HP Regeneration">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dragon_hunter_axe_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1820"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3569" level="1"/>
+      <skill id="3653" level="1"/>
+      <skill id="3894" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="342"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12905" name="Dragon Hunter Axe - Thunder {PvP}" add_name="Health">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dragon_hunter_axe_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1820"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+      <skill id="3552" level="1"/>
+      <skill id="3653" level="1"/>
+      <skill id="3894" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="342"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12906" name="Dragon Hunter Axe - Thunder {PvP}" add_name="HP Drain">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dragon_hunter_axe_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1820"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3568" level="1"/>
+      <skill id="3653" level="1"/>
+      <skill id="3894" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="342"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12907" name="Laevateinn - Lightning {PvP}" add_name="Haste">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_leavatein_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3564" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3833" level="1"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="255"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12908" name="Laevateinn - Lightning {PvP}" add_name="Health">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_leavatein_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+      <skill id="3552" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3833" level="1"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="255"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12909" name="Laevateinn - Lightning {PvP}" add_name="Focus">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_leavatein_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3566" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3833" level="1"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="255"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12910" name="Basalt Battlehammer - Concentration {PvP}" add_name="HP Drain">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_basalt_battlehammer_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1570"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3568" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3888" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="281"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12911" name="Basalt Battlehammer - Concentration {PvP}" add_name="Health">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_basalt_battlehammer_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1570"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+      <skill id="3552" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3888" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="281"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12912" name="Basalt Battlehammer - Concentration {PvP}" add_name="HP Regeneration">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_basalt_battlehammer_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1570"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3569" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3888" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="281"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12913" name="Sarunga - Earth {PvP}" add_name="Cheap Shot">
+    <set name="atk_reuse" value="400"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_sarnga_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1600"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3360" level="1"/>
+      <skill id="3552" level="3"/>
+      <skill id="3655" level="1"/>
+      <skill id="3872" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="356"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <mul stat="mpConsumePhysical" order="0x30" value="0.88"/>
+      <mul stat="pAtk" order="0x30" value="1.05">
+        <target pvp="true"/>
+      </mul>
+      <mul stat="mAtk" order="0x30" value="1.05">
+        <target pvp="true"/>
+      </mul>
+    </for>
+  </weapon>
+  <weapon id="12914" name="Sarunga - Earth {PvP}" add_name="Focus">
+    <set name="atk_reuse" value="400"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_sarnga_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1600"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3567" level="1"/>
+      <skill id="3655" level="1"/>
+      <skill id="3872" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="356"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12915" name="Sarunga - Earth {PvP}" add_name="Crt. Slow">
+    <set name="atk_reuse" value="400"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_sarnga_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1600"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="3"/>
+      <skill id="3655" level="1"/>
+      <skill id="3872" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="356"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12916" name="Saint Spear - Destruction {PvP}" add_name="Health">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_saint_spear_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1800"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="4"/>
+      <skill id="3552" level="1"/>
+      <skill id="3653" level="1"/>
+      <skill id="3878" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="281"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12917" name="Saint Spear - Destruction {PvP}" add_name="Guidance">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_saint_spear_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1800"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3602" level="9"/>
+      <skill id="3653" level="1"/>
+      <skill id="3878" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="281"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12918" name="Saint Spear - Destruction {PvP}" add_name="Haste">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_saint_spear_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1800"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3601" level="9"/>
+      <skill id="3653" level="1"/>
+      <skill id="3878" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="281"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12919" name="Arcana Mace - Nature {PvP}" add_name="Acumen">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_arcana_mace_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3047" level="2"/>
+      <skill id="3552" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3890" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="225"/>
+      <add stat="mAtk" order="0x10" value="175"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12920" name="Arcana Mace - Nature {PvP}" add_name="MP Regeneration">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_arcana_mace_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3576" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3890" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="225"/>
+      <add stat="mAtk" order="0x10" value="175"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12921" name="Arcana Mace - Nature {PvP}" add_name="Mana Up">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_arcana_mace_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3014" level="2"/>
+      <skill id="3552" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3890" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="225"/>
+      <add stat="mAtk" order="0x10" value="175"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12922" name="Angel Slayer - Concentration {PvP}" add_name="Crt. Damage">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_angel_slayer_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="950"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3572" level="1"/>
+      <skill id="3651" level="1"/>
+      <skill id="3652" level="1"/>
+      <skill id="3862" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="246"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12923" name="Angel Slayer - Concentration {PvP}" add_name="HP Drain">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_angel_slayer_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="950"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3568" level="1"/>
+      <skill id="3651" level="1"/>
+      <skill id="3652" level="1"/>
+      <skill id="3862" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="246"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12924" name="Angel Slayer - Concentration {PvP}" add_name="Haste">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_angel_slayer_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="950"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3564" level="1"/>
+      <skill id="3651" level="1"/>
+      <skill id="3652" level="1"/>
+      <skill id="3862" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="246"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12925" name="Imperial Staff - Nature {PvP}" add_name="Empower">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_imperial_staff_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="910"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3575" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3901" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="274"/>
+      <add stat="mAtk" order="0x10" value="193"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12926" name="Imperial Staff - Nature {PvP}" add_name="MP Regeneration">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_imperial_staff_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="910"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3576" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3901" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="274"/>
+      <add stat="mAtk" order="0x10" value="193"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12927" name="Imperial Staff - Nature {PvP}" add_name="Magic Hold">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_imperial_staff_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="910"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <triggers>
+		<trigger id="3577" level="1" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="20" />
+	</triggers>
+    <skills>
+      <skill id="3552" level="3"/>
+      <skill id="3654" level="1"/>
+      <skill id="3901" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="274"/>
+      <add stat="mAtk" order="0x10" value="193"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12928" name="Tallum Blade*Dark Legion - Lightning {PvP}">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dual_sword_i00"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUAL"/>
+    <set name="weight" value="2080"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="3"/>
+      <skill id="3656" level="1"/>
+      <skill id="3838" level="1"/>
+    </skills>
+    <enchant4_skill id="3570" level="1"/>
+    <!--Special Ability: Robust Health-->
+    <for>
+      <add stat="pAtk" order="0x10" value="342"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12929" name="Forgotten Blade - Lightning {PvP}" add_name="Haste">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_forgotten_blade_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3564" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3828" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="281"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12930" name="Forgotten Blade - Lightning {PvP}" add_name="Health">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_forgotten_blade_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+      <skill id="3552" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3828" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="281"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12931" name="Forgotten Blade - Lightning {PvP}" add_name="Focus">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_forgotten_blade_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3566" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3828" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="281"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12932" name="Heavens Divider - Thunder {PvP}" add_name="Haste">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_heavens_divider_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="1380"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3564" level="1"/>
+      <skill id="3653" level="1"/>
+      <skill id="3844" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="342"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12933" name="Heavens Divider - Thunder {PvP}" add_name="Health">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_heavens_divider_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="1380"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+      <skill id="3552" level="1"/>
+      <skill id="3653" level="1"/>
+      <skill id="3844" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="342"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12934" name="Heavens Divider - Thunder {PvP}" add_name="Focus">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="2052"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_heavens_divider_i01"/>
+    <set name="price" value="42759400"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="1380"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3566" level="1"/>
+      <skill id="3653" level="1"/>
+      <skill id="3844" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="342"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12935" name="Dynasty Ancient Sword - Great Gale {PvP}" add_name="Focus">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_ancient_sword_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1800"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3566" level="2"/>
+      <skill id="3653" level="1"/>
+      <skill id="3846" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="361"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12936" name="Dynasty Ancient Sword - Great Gale {PvP}" add_name="Health">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_ancient_sword_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1800"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+      <skill id="3552" level="1"/>
+      <skill id="3653" level="1"/>
+      <skill id="3846" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="361"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12937" name="Dynasty Ancient Sword - Great Gale {PvP}" add_name="Light">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_ancient_sword_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1800"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3498" level="1"/>
+      <skill id="3552" level="3"/>
+      <skill id="3653" level="1"/>
+      <skill id="3846" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="361"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12938" name="Dynasty Knife - Great Gale {PvP}" add_name="Focus">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_dagger_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3567" level="2"/>
+      <skill id="3651" level="1"/>
+      <skill id="3652" level="1"/>
+      <skill id="3859" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="291"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12939" name="Dynasty Knife - Great Gale {PvP}" add_name="Evasion">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_dagger_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3009" level="8"/>
+      <skill id="3552" level="3"/>
+      <skill id="3651" level="1"/>
+      <skill id="3652" level="1"/>
+      <skill id="3859" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="291"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12940" name="Dynasty Knife - Great Gale {PvP}" add_name="Critical Damage">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_dagger_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3066" level="4"/>
+      <skill id="3651" level="1"/>
+      <skill id="3652" level="1"/>
+      <skill id="3859" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="291"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12941" name="Dynasty Dual Sword - Earth {PvP}">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dual_sword_i00"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUAL"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="3"/>
+      <skill id="3656" level="1"/>
+      <skill id="3836" level="2"/>
+    </skills>
+    <enchant4_skill id="3411" level="1"/>
+    <!--Special Ability: Focus-->
+    <for>
+      <add stat="pAtk" order="0x10" value="405"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12942" name="Dynasty Rapier - Earth {PvP}" add_name="Focus">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_rapier_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1280"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3566" level="2"/>
+      <skill id="3650" level="1"/>
+      <skill id="3831" level="2"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="302"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12943" name="Dynasty Rapier - Earth {PvP}" add_name="Health">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_rapier_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1280"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+      <skill id="3552" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3831" level="2"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="302"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12944" name="Dynasty Rapier - Earth {PvP}" add_name="Light">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_rapier_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1280"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3498" level="1"/>
+      <skill id="3552" level="3"/>
+      <skill id="3650" level="1"/>
+      <skill id="3831" level="2"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="302"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12945" name="Dynasty Mace - Earth {PvP}" add_name="Mana Up">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_staff_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1080"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3014" level="2"/>
+      <skill id="3552" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3891" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="267"/>
+      <add stat="mAtk" order="0x10" value="202"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12946" name="Dynasty Mace - Earth {PvP}" add_name="Conversion">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_staff_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1080"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3048" level="2"/>
+      <skill id="3552" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3891" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="267"/>
+      <add stat="mAtk" order="0x10" value="202"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12947" name="Dynasty Mace - Earth {PvP}" add_name="Acumen">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_staff_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1080"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3047" level="2"/>
+      <skill id="3552" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3891" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="267"/>
+      <add stat="mAtk" order="0x10" value="202"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12948" name="Dynasty Bagh-Nakh - Great Gale {PvP}" add_name="Rsk. Evasion">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_jamadhr_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1550"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3069" level="1"/>
+      <skill id="3552" level="3"/>
+      <skill id="3651" level="1"/>
+      <skill id="3652" level="1"/>
+      <skill id="3880" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="405"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12949" name="Dynasty Bagh-Nakh - Great Gale {PvP}" add_name="Focus">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_jamadhr_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1550"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3565" level="2"/>
+      <skill id="3651" level="1"/>
+      <skill id="3652" level="1"/>
+      <skill id="3880" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="405"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12950" name="Dynasty Bagh-Nakh - Great Gale {PvP}" add_name="Haste">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_jamadhr_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1550"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3564" level="2"/>
+      <skill id="3651" level="1"/>
+      <skill id="3652" level="1"/>
+      <skill id="3880" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="405"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12951" name="Dynasty Bow - Great Gale {PvP}" add_name="Cheap Shot">
+    <set name="atk_reuse" value="1500"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_bow_i01"/>
+    <set name="mp_consume" value="6"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="3"/>
+      <skill id="3655" level="1"/>
+      <skill id="3864" level="2"/>
+      <skill id="8312" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="654"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="293"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <mul stat="mpConsumePhysical" order="0x30" value="0.96"/>
+      <mul stat="pAtk" order="0x30" value="1.05">
+        <target pvp="true"/>
+      </mul>
+      <mul stat="mAtk" order="0x30" value="1.05">
+        <target pvp="true"/>
+      </mul>
+    </for>
+  </weapon>
+  <weapon id="12952" name="Dynasty Bow - Great Gale {PvP}" add_name="Guidance">
+    <set name="atk_reuse" value="1500"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_bow_i01"/>
+    <set name="mp_consume" value="6"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3573" level="2"/>
+      <skill id="3655" level="1"/>
+      <skill id="3864" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="654"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="293"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12953" name="Dynasty Bow - Great Gale {PvP}" add_name="Focus">
+    <set name="atk_reuse" value="1500"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_bow_i01"/>
+    <set name="mp_consume" value="6"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3567" level="2"/>
+      <skill id="3655" level="1"/>
+      <skill id="3864" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="654"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="293"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12954" name="Dynasty Blade - Great Gale {PvP}" add_name="Focus">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_twohand_sword_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="1740"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3566" level="2"/>
+      <skill id="3653" level="1"/>
+      <skill id="3840" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="405"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12955" name="Dynasty Blade - Great Gale {PvP}" add_name="Health">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_twohand_sword_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="1740"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+      <skill id="3552" level="1"/>
+      <skill id="3653" level="1"/>
+      <skill id="3840" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="405"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12956" name="Dynasty Blade - Great Gale {PvP}" add_name="Light">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_twohand_sword_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="1740"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3498" level="1"/>
+      <skill id="3552" level="3"/>
+      <skill id="3653" level="1"/>
+      <skill id="3840" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="405"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12957" name="Dynasty Sword - Earth {PvP}" add_name="Focus">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_blade_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3566" level="2"/>
+      <skill id="3650" level="1"/>
+      <skill id="3826" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="333"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12958" name="Dynasty Sword - Earth {PvP}" add_name="Health">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_blade_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+      <skill id="3552" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3826" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="333"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12959" name="Dynasty Sword - Earth {PvP}" add_name="Light">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_blade_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3498" level="1"/>
+      <skill id="3552" level="3"/>
+      <skill id="3650" level="1"/>
+      <skill id="3826" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="333"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12960" name="Dynasty Staff - Holy Spirit {PvP}" add_name="Mana Up">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_twohand_staff_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1080"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3014" level="2"/>
+      <skill id="3552" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3900" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="325"/>
+      <add stat="mAtk" order="0x10" value="222"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12961" name="Dynasty Staff - Holy Spirit {PvP}" add_name="Conversion">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_twohand_staff_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1080"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3048" level="2"/>
+      <skill id="3552" level="1"/>
+      <skill id="3653" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3900" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="325"/>
+      <add stat="mAtk" order="0x10" value="222"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12962" name="Dynasty Staff - Holy Spirit {PvP}" add_name="Acumen">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_twohand_staff_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1080"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3047" level="2"/>
+      <skill id="3552" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3900" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="325"/>
+      <add stat="mAtk" order="0x10" value="222"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12963" name="Dynasty Cudgel - Landslide {PvP}" add_name="Anger">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_hammer_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1740"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3057" level="4"/>
+      <skill id="3552" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3885" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="333"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12964" name="Dynasty Cudgel - Landslide {PvP}" add_name="Health">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_hammer_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1740"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+      <skill id="3552" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3885" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="333"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12965" name="Dynasty Cudgel - Landslide {PvP}" add_name="Rsk. Focus">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_hammer_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1740"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3027" level="7"/>
+      <skill id="3552" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3885" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="333"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12966" name="Dynasty Crusher - Great Gale {PvP}" add_name="Anger">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_crusher_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1740"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3057" level="4"/>
+      <skill id="3552" level="1"/>
+      <skill id="3653" level="1"/>
+      <skill id="3896" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="405"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12967" name="Dynasty Crusher - Great Gale {PvP}" add_name="Health">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_crusher_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1740"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+      <skill id="3552" level="1"/>
+      <skill id="3653" level="1"/>
+      <skill id="3896" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="405"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12968" name="Dynasty Crusher - Great Gale {PvP}" add_name="Rsk. Focus">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_crusher_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1740"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3027" level="7"/>
+      <skill id="3552" level="1"/>
+      <skill id="3653" level="1"/>
+      <skill id="3896" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="405"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12969" name="Dynasty Crossbow - Great Gale {PvP}" add_name="Cheap Shot">
+    <set name="atk_reuse" value="400"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_crossbow_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1580"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3360" level="1"/>
+      <skill id="3552" level="3"/>
+      <skill id="3655" level="1"/>
+      <skill id="3869" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="401"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <mul stat="mpConsumePhysical" order="0x30" value="0.88"/>
+      <mul stat="pAtk" order="0x30" value="1.05">
+        <target pvp="true"/>
+      </mul>
+      <mul stat="mAtk" order="0x30" value="1.05">
+        <target pvp="true"/>
+      </mul>
+    </for>
+  </weapon>
+  <weapon id="12970" name="Dynasty Crossbow - Great Gale {PvP}" add_name="Guidance">
+    <set name="atk_reuse" value="400"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_crossbow_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1580"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3573" level="2"/>
+      <skill id="3655" level="1"/>
+      <skill id="3869" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="401"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12971" name="Dynasty Crossbow - Great Gale {PvP}" add_name="Focus">
+    <set name="atk_reuse" value="400"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_crossbow_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1580"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3567" level="2"/>
+      <skill id="3655" level="1"/>
+      <skill id="3869" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="401"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12972" name="Dynasty Phantom - Nature {PvP}" add_name="Acumen">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_magic_sword_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3047" level="2"/>
+      <skill id="3552" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3852" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="267"/>
+      <add stat="mAtk" order="0x10" value="202"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12973" name="Dynasty Phantom - Nature {PvP}" add_name="Mana Up">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_magic_sword_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3014" level="2"/>
+      <skill id="3552" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3852" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="267"/>
+      <add stat="mAtk" order="0x10" value="202"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12974" name="Dynasty Phantom - Nature {PvP}" add_name="Conversion">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_magic_sword_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3048" level="2"/>
+      <skill id="3552" level="1"/>
+      <skill id="3650" level="1"/>
+      <skill id="3654" level="1"/>
+      <skill id="3852" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="267"/>
+      <add stat="mAtk" order="0x10" value="202"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12975" name="Dynasty Halberd - Earth {PvP}" add_name="Anger">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_spear_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="2010"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+      <skill id="3600" level="10"/>
+      <skill id="3653" level="1"/>
+      <skill id="3877" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="333"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12976" name="Dynasty Halberd - Earth {PvP}" add_name="Critical Stun">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_spear_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="2010"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3070" level="1" type="CRIT" chance="100" />
+    </triggers>
+    <skills>
+      <skill id="3552" level="4"/>
+      <skill id="3653" level="1"/>
+      <skill id="3877" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="333"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="12977" name="Dynasty Halberd - Earth {PvP}" add_name="Light">
+    <set name="attributable" value="false"/>
+    <set name="augmentable" value="false"/>
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.weapon_dynasty_spear_i01"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="2010"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3498" level="1"/>
+      <skill id="3552" level="4"/>
+      <skill id="3653" level="1"/>
+      <skill id="3877" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="333"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <armor id="12978" name="Zubei's Helmet" add_name="Light Armor Use">
+    <set name="crystal_count" value="80"/>
+    <set name="crystal_type" value="B"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i00"/>
+    <set name="price" value="598600"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="590"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="8233" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="62"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12979" name="Zubei's Helmet" add_name="Robe Use">
+    <set name="crystal_count" value="80"/>
+    <set name="crystal_type" value="B"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i00"/>
+    <set name="price" value="598600"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="590"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="8234" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="62"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12980" name="Avadon Circlet" add_name="Light Armor Use">
+    <set name="crystal_count" value="80"/>
+    <set name="crystal_type" value="B"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="598600"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="590"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="3688" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="62"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12981" name="Avadon Circlet" add_name="Robe Use">
+    <set name="crystal_count" value="80"/>
+    <set name="crystal_type" value="B"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="598600"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="590"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="3692" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="62"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12982" name="Doom Helmet" add_name="Light Armor Use">
+    <set name="crystal_count" value="124"/>
+    <set name="crystal_type" value="B"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="928300"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="580"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="3704" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="66"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12983" name="Doom Helmet" add_name="Robe Use">
+    <set name="crystal_count" value="124"/>
+    <set name="crystal_type" value="B"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="928300"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="580"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="3709" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="66"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12984" name="Blue Wolf Helmet" add_name="Light Armor Use">
+    <set name="crystal_count" value="124"/>
+    <set name="crystal_type" value="B"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="928300"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="580"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="3718" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="66"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12985" name="Blue Wolf Helmet" add_name="Robe Use">
+    <set name="crystal_count" value="124"/>
+    <set name="crystal_type" value="B"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="928300"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="580"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="3723" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="66"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12986" name="Dark Crystal Helmet" add_name="Light Armor Use">
+    <set name="crystal_count" value="107"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i00"/>
+    <set name="price" value="1336000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="570"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="3733" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="69"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12987" name="Dark Crystal Helmet" add_name="Robe Use">
+    <set name="crystal_count" value="107"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i00"/>
+    <set name="price" value="1336000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="570"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="3738" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="69"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12988" name="Tallum Helmet" add_name="Light Armor Use">
+    <set name="crystal_count" value="107"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i00"/>
+    <set name="price" value="1336000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="570"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="3746" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="69"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12989" name="Tallum Helmet" add_name="Robe Use">
+    <set name="crystal_count" value="107"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i00"/>
+    <set name="price" value="1336000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="570"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="3751" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="69"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12990" name="Majestic Circlet" add_name="Light Armor Use">
+    <set name="crystal_count" value="163"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="2032000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="550"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="3759" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12991" name="Majestic Circlet" add_name="Robe Use">
+    <set name="crystal_count" value="163"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="2032000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="550"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="3763" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12992" name="Helm of Nightmare" add_name="Light Armor Use">
+    <set name="crystal_count" value="163"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="2032000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="560"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="8235" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12993" name="Helm of Nightmare" add_name="Robe Use">
+    <set name="crystal_count" value="163"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i00"/>
+    <set name="price" value="2032000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="560"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <skills>
+      <skill id="8236" level="1"/>
+    </skills>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12994" name="Sealed Dark Crystal Helmet" add_name="Light Armor Use">
+    <set name="crystal_count" value="107"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i02"/>
+    <set name="price" value="1336000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="570"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="69"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12995" name="Sealed Dark Crystal Helmet" add_name="Robe Use">
+    <set name="crystal_count" value="107"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i02"/>
+    <set name="price" value="1336000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="570"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="69"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12996" name="Sealed Tallum Helmet" add_name="Light Armor Use">
+    <set name="crystal_count" value="107"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i02"/>
+    <set name="price" value="1336000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="570"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="69"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12997" name="Sealed Tallum Helmet" add_name="Robe Use">
+    <set name="crystal_count" value="107"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_helmet_i02"/>
+    <set name="price" value="1336000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="570"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="69"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12998" name="Sealed Majestic Circlet" add_name="Light Armor Use">
+    <set name="crystal_count" value="163"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i02"/>
+    <set name="price" value="2032000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="550"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="12999" name="Sealed Majestic Circlet" add_name="Robe Use">
+    <set name="crystal_count" value="163"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.armor_leather_helmet_i02"/>
+    <set name="price" value="2032000"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="550"/>
+    <equip>
+      <slot id="HEAD"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="73"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+</list>

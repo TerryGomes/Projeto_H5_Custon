@@ -1,0 +1,46 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <!-- Crystal Caverns -->
+    <instance id="10" name="Crystal Caverns" maxChannels="20" collapseIfEmpty="10" timelimit="90">
+        <collapse on-party-dismiss="true" timer="60"/>
+        <level min="78" max="85"/>
+        <party min="2" max="9"/>
+        <return loc="42673 -47988 -797"/>
+        <teleport loc="140486 148895 -11817"/>
+        <remove itemId="9690" count="1" necessary="true"/>
+        <give itemId="0" count="0"/>
+        <quest id="0"/>
+        <reuse resetReuse="30 6 * * *" setUponEntry="true" sharedReuseGroup="0"/>
+        <spawns/>
+		<geodata map="24_22"/>
+        <doors>
+            <door id="24220001"/>
+            <door id="24220002"/>
+            <door id="24220003"/>
+            <door id="24220004"/>
+            <door id="24220005"/>
+            <door id="24220006"/>
+            <door id="24220007"/>
+            <door id="24220008"/>
+            <door id="24220009"/>
+            <door id="24220010"/>
+            <door id="24220011"/>
+            <door id="24220012"/>
+            <door id="24220013"/>
+            <door id="24220014"/>
+            <door id="24220015"/>
+            <door id="24220016"/>
+            <door id="24220017"/>
+            <door id="24220018"/>
+            <door id="24220019"/>
+            <door id="24220020"/>
+            <door id="24220021"/>
+            <door id="24220022"/>
+            <door id="24220023"/>
+            <door id="24220024"/>
+            <door id="24220025"/>
+            <door id="24220026"/>
+            <door id="24220061"/>
+        </doors>
+    </instance>
+</list>

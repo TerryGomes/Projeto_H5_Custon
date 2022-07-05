@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LII - Multverso" default="dist" basedir=".">
+	<property name="build.version" value="2.0" />
+	<property name="debug" value="on" />
+	
+	<property name="src.gameserver" location="java/l2f/gameserver" />
+	<property name="src.loginserver" location="java/l2f/loginserver" />
+	<property name="src.commons" location="java/l2f/commons" />
+	<property name="src.scripts" location="dist/gameserver/data/scripts" />
+	
+	<property name="datapack" location="dist" />
+	<property name="dist" location="dist" />
+	<property name="lib" location="dist/libs" />
+	
+	<property name="build" location="build" />
+	<property name="build.classes" location="${build}/classes" />
+	<property name="build.dist" location="${build}/dist" />
+	<property name="build.dist.loginserver" location="${build.dist}/loginserver" />
+	<property name="build.dist.gameserver" location="${build.dist}/gameserver" />
+	<property name="build.dist.gameserver.data" location="${build.dist.gameserver}/data" />
+	<property name="build.dist.tools" location="${build.dist}/tools" />
+	<property name="build.Name" value="TerryMaster" />
+	<property name="build.revision" value="MultVerso" />
+	<property name="build.version" value="High Five Pt 5" />
+	<path id="classpath">
+		<fileset dir="${lib}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<pathconvert property="jar.list" pathsep=" " refid="classpath">
+		<mapper type="flatten" />
+	</pathconvert>
+
+	<property name="build.classpath" refid="classpath" />
+
+	<tstamp>
+		<format property="build.tstamp" pattern="yyyy.MM.dd HH:mm" />
+	</tstamp>
+
+	<target name="clean" description="Remove the output directories.">
+		<delete dir="${build}" />
+	</target>
+
+	<target name="init" description="Create the output directories.">
+		<mkdir dir="${build}" />
+	</target>
+
+	<!-- commons.jar -->
+	<target name="compile-commons" depends="init">
+		<delete dir="${build.classes}" />
+		<mkdir dir="${build.classes}" />
+		<javac srcdir="${src.commons}" destdir="${build.classes}" optimize="on" debug="${debug}" source="18" target="18" includeantruntime="false" encoding="UTF-8" nowarn="true" classpath="${build.classpath}">
+			<compilerarg value="-Xlint:all,-serial" />
+		</javac>
+	</target>
+
+	<target name="commons-jar" depends="compile-commons">
+		<jar destfile="${build}/commons.jar">
+			<fileset dir="${build.classes}" />
+			<manifest>
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${build.tstamp}" />
+				<attribute name="Build-Name" value="${build.Name}" />
+				<attribute name="Implementation-Build" value="${build.revision}" />
+				<attribute name="Implementation-Version" value="${build.version}" />
+			</manifest>
+		</jar>
+	</target>
+	<!-- END OF commons.jar -->
+
+	<!-- gameserver.jar -->
+	<target name="compile-gameserver" depends="commons-jar">
+		<delete dir="${build.classes}" />
+		<mkdir dir="${build.classes}" />
+		<javac srcdir="${src.gameserver}" optimize="on" destdir="${build.classes}" debug="${debug}" source="18" target="18" includeantruntime="false" encoding="UTF-8" nowarn="true" classpath="${build.classpath}:${build}/commons.jar:${build}/loginserver.jar">
+			<compilerarg value="-Xlint:all,-serial,-path" />
+		</javac>
+	</target>
+
+	<target name="gameserver-jar" depends="compile-gameserver">
+		<jar destfile="${build}/gameserver.jar">
+			<fileset dir="${build.classes}" />
+			<manifest>
+				<attribute name="Main-Class" value="l2f.gameserver.GameServer" />
+				<attribute name="Class-Path" value=". " />
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${build.tstamp}" />
+				<attribute name="Build-Name" value="${build.Name}" />
+				<attribute name="Implementation-Build" value="${build.revision}" />
+				<attribute name="Implementation-Version" value="${build.version}" />
+			</manifest>
+		</jar>
+	</target>
+	<!-- END OF gameserver.jar -->
+
+	<!-- Copying of datapack contents -->
+	<target name="gameserver" depends="gameserver-jar">
+		<mkdir dir="${build.dist}" />
+		<mkdir dir="${build.dist.tools}" />
+		<mkdir dir="${build.dist.gameserver}" />
+		<mkdir dir="${build.dist.gameserver}/data" />
+		<mkdir dir="${build.dist.gameserver}/geodata" />
+		<mkdir dir="${build.dist.gameserver}/log" />
+		<mkdir dir="${build.dist.gameserver}/serverstats" />
+		<mkdir dir="${build.dist.gameserver.data}/scripts" />
+
+		<copy todir="${build.dist}/libs">
+			<fileset dir="${build}">
+				<include name="gameserver.jar" />
+				<include name="commons.jar" />
+			</fileset>
+		</copy>
+
+		<fixcrlf srcdir="${build.dist.gameserver}" eol="lf" eof="remove" includes="**/*.sh">
+		</fixcrlf>
+		<fixcrlf srcdir="${build.dist.gameserver}" eol="crlf" eof="remove" includes="**/*.bat">
+		</fixcrlf>
+
+		<delete dir="${build.classes}" />
+
+		<copy todir="${build.dist.gameserver}" preservelastmodified="true">
+			<fileset dir="${dist}/gameserver">
+				<include name="**/*.*" />
+			</fileset>
+		</copy>
+		<copy todir="${build.dist.gameserver}/data" preservelastmodified="true">
+			<fileset dir="${datapack}">
+				<include name="**/*.*" />
+				<exclude name="/scripts/**/*" />
+			</fileset>
+		</copy>
+		<copy todir="${build.dist.tools}" preservelastmodified="true">
+			<fileset dir="${dist}/tools">
+				<include name="**/*.*" />
+			</fileset>
+		</copy>
+	</target>
+	<!-- END OF Copying of datapack contents -->
+
+	<!-- scripts.jar -->
+	<target name="scripts" depends="scripts-jar">
+		<copy todir="${build.dist}/libs">
+			<fileset dir="${build}">
+				<include name="scripts.jar" />
+			</fileset>
+		</copy>
+	</target>
+	<target name="compile-scripts" depends="commons-jar" description="Compile the source.">
+		<copy todir="${lib}">
+			<fileset dir="${build}">
+				<include name="gameserver.jar" />
+				<include name="commons.jar" />
+			</fileset>
+		</copy>
+		<delete dir="${build.classes}" />
+		<mkdir dir="${build.classes}" />
+		<javac destdir="${build.classes}" optimize="on" debug="on" source="18" target="18" encoding="UTF-8" includeantruntime="false" nowarn="true">
+			<compilerarg value="-Xlint:unchecked" />
+			<src path="${src.scripts}" />
+			<classpath refid="classpath" />
+		</javac>
+	</target>
+
+	<target name="scripts-jar" depends="compile-scripts">
+		<jar destfile="${build}/scripts.jar" level="9">
+			<fileset dir="${build.classes}" />
+			<manifest>
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${build.tstamp}" />
+				<attribute name="Main-Class" value="l2f.gameserver.GameServer" />
+				<attribute name="Class-Path" value=". " />
+			</manifest>
+		</jar>
+	</target>
+	<!-- END OF scripts.jar -->
+
+	<!-- loginserver.jar -->
+	<target name="compile-loginserver" depends="commons-jar">
+		<delete dir="${build.classes}" />
+		<mkdir dir="${build.classes}" />
+		<javac srcdir="${src.loginserver}" optimize="on" destdir="${build.classes}" debug="${debug}" source="18" target="18" includeantruntime="false" encoding="UTF-8" nowarn="off" classpath="${build.classpath}:${build}/commons.jar">
+			<compilerarg value="-Xlint:all,-serial" />
+		</javac>
+	</target> 
+	
+	<target name="loginserver-jar" depends="compile-loginserver">
+		<jar destfile="${build}/loginserver.jar">
+			<fileset dir="${build.classes}" />
+			<manifest>
+				<attribute name="Main-Class" value="l2f.loginserver.loginserver" />
+				<attribute name="Class-Path" value="${jar.list} commons.jar" />
+				<attribute name="Build-By" value="${user.name}" />
+				<attribute name="Build-Date" value="${build.tstamp}" />
+				<attribute name="Build-Name" value="${build.Name}" />
+				<attribute name="Implementation-Build" value="${build.revision}" />
+				<attribute name="Implementation-Version" value="${build.version}" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="loginserver" depends="loginserver-jar">
+		<mkdir dir="${build.dist}" />
+		<mkdir dir="${build.dist.loginserver}" />
+		<mkdir dir="${build.dist.loginserver}/log" />
+		<mkdir dir="${build.dist.loginserver}/config" />
+
+		<copy todir="${build.dist}/loginserver">
+			<fileset dir="${dist}/loginserver">
+				<include name="**/*.*" />
+			</fileset>
+		</copy>
+
+		<copy todir="${build.dist}/libs">
+			<fileset dir="${build}">
+				<include name="loginserver.jar" />
+				<include name="commons.jar" />
+			</fileset>
+		</copy>
+		<copy todir="${build.dist}/libs">
+			<fileset dir="${lib}">
+				<include name="*.jar" />
+				<exclude name="loginserver.jar" />
+			</fileset>
+		</copy>
+		<copy todir="${build.dist}/libs">
+			<fileset dir="${lib}">
+				<include name="*.jar" />
+				<exclude name="gameserver.jar" />
+			</fileset>
+		</copy>
+
+		<fixcrlf srcdir="${build.dist.loginserver}" eol="lf" eof="remove" includes="**/*.sh">
+		</fixcrlf>
+		<fixcrlf srcdir="${build.dist.loginserver}" eol="crlf" eof="remove" includes="**/*.bat">
+		</fixcrlf>
+	</target>
+	<!-- END OF loginserver.jar -->
+	
+	<target name="dist" depends="loginserver, gameserver, scripts" description="Create the Zip file.">
+		<delete file="${lib}/gameserver.jar" />
+		<delete file="${lib}/commons.jar" />
+		<zip destfile="${build}/LII - Multverso-H5.zip" basedir="${build.dist}" level="9" />
+	</target>
+</project>

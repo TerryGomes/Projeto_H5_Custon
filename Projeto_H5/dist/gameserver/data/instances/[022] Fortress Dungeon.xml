@@ -1,0 +1,15 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <!-- Fortress Dungeon -->
+    <instance id="22" name="Monster Dungeon" maxChannels="30" collapseIfEmpty="10" timelimit="60" dispelBuffs="false">
+        <collapse on-party-dismiss="true" timer="60"/>
+        <level min="60" max="85"/>
+        <party min="2" max="9"/>
+        <teleport loc="53321 246314 -6452"/>
+        <remove itemId="0" count="0" necessary="false"/>
+        <give itemId="0" count="0"/>
+        <quest id="511"/>
+        <reuse resetReuse="* */4 * * *" setUponEntry="true" sharedReuseGroup="0"/>
+        <spawns/>
+    </instance>
+</list>

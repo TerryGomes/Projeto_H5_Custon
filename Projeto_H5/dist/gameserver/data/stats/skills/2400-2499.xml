@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="2400" levels="1" name="Red Coral Treasure Chest Key">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="3000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2401" levels="1" name="Lesser Battlefield Mana Potion">
+		<!--
+			Need correct:   reuseDelay, power
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="600000" />
+		<set name="power" val="500" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="10153" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="isHandler" val="true" />
+		<set name="altUse" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="MANAHEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="113" addName="1">
+			<zone type="SIEGE" />
+		</cond>
+	</skill>
+	<skill id="2402" levels="1" name="Lesser Battlefield CP Potion">
+		<!--
+			Need correct:   reuseDelay, power
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="600000" />
+		<set name="power" val="1000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="10154" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="isHandler" val="true" />
+		<set name="altUse" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="COMBATPOINTHEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="113" addName="1">
+			<zone type="SIEGE" />
+		</cond>
+	</skill>
+	<skill id="2403" levels="1" name="Spring CP Potion">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="600000" />
+		<set name="power" val="1000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="10166" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="COMBATPOINTHEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<set name="isHandler" val="true" />
+	</skill>
+	<skill id="2404" levels="1" name="Might">
+		<!--
+			Temporarily increases P. Atk. Effect 2.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="20" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="pAtk" time="3600" val="0">
+				<mul order="0x30" stat="pAtk" val="1.12" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2405" levels="1" name="Shield">
+		<!--
+			Temporarily increases P. Def. Effect 2.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="25" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="pDef" time="3600" val="0">
+				<mul order="0x30" stat="pDef" val="1.12" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2406" levels="1" name="Wind Walk">
+		<!--
+			Temporarily increases Speed. Effect 2.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="30" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="SpeedUp" time="3600" val="0">
+				<add order="0x40" stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2407" levels="1" name="Focus">
+		<!--
+			Temporarily increases the success rate of critical attacks. Effect 2.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="44" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="rCrit" time="3600" val="0">
+				<add order="0x40" stat="rCrit" val="25" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2408" levels="1" name="Death Whisper">
+		<!--
+			Temporarily increases critical attack power. Effect 2.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="48" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="cAtk" time="3600" val="0">
+				<mul order="0x30" stat="cAtk" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2409" levels="1" name="Guidance">
+		<!--
+			Temporarily increases Accuracy. Effect 2.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="48" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="accuracyUp" time="3600" val="0">
+				<add order="0x40" stat="accCombat" val="3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2410" levels="1" name="Bless Shield">
+		<!--
+			Temporarily increases Shield Defense Rate. Effect 2.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="48" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="shieldProbUp" time="3600" val="0">
+				<mul order="0x30" stat="rShld" val="1.1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2411" levels="1" name="Blessed Body">
+		<!--
+			Temporarily increases maximum HP. Effect 3.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="52" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="hp_up" time="3600" val="0">
+				<mul order="0x30" stat="maxHp" val="1.2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2412" levels="1" name="Haste">
+		<!--
+			Temporarily increases Attack Speed. Effect 1.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="44" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="pAtkSpeedUp" time="3600" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2413" levels="1" name="Vampiric Rage">
+		<!--
+			Temporarily bestows the ability to recover HP with some damage redirected to an enemy. It does not include damage from skill or ranged attacks. Effect 2.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="44" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="7" stackType="vampRage" time="3600" val="0">
+				<add order="0x40" stat="absorbDam" val="7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2414" levels="1" name="Berserker Spirit">
+		<!--
+			Temporarily decreases P. Def./magic resistance/evasion and increases P. Atk/M Atk/attack speed/cast speed/speed. Effect 1.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="35" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="berserk" time="3600" val="0">
+				<mul order="0x30" stat="mAtk" val="1.1" />
+				<mul order="0x30" stat="pAtk" val="1.05" />
+				<mul order="0x30" stat="pDef" val="0.95" />
+				<mul order="0x30" stat="mDef" val="0.90" />
+				<mul order="0x30" stat="mAtkSpd" val="1.05" />
+				<mul order="0x30" stat="pAtkSpd" val="1.05" />
+				<add order="0x40" stat="runSpd" val="5" />
+				<sub order="0x40" stat="rEvas" val="2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2415" levels="1" name="Magic Barrier">
+		<!--
+			Temporarily increases magic resistance. Effect 2.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="44" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="MagicDefUp" time="3600" val="0">
+				<mul order="0x30" stat="mDef" val="1.23" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2416" levels="1" name="Blessed Soul">
+		<!--
+			Temporarily increases maximum MP. Effect 3.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="52" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mp_up" time="3600" val="0">
+				<mul order="0x30" stat="maxMp" val="1.2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2417" levels="1" name="Empower">
+		<!--
+			Temporarily increases magic power. Effect 2.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="44" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="mAtk" time="3600" val="0">
+				<mul order="0x30" stat="mAtk" val="1.65" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2418" levels="1" name="Acumen">
+		<!--
+			Temporarily increases cast speed. Effect 2.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="35" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="mAtkSpeedUp" time="3600" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="1.23" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2419" levels="1" name="Clarity">
+		<!--
+			Temporarily decreases skill consumption MP of target. Effect 1.
+		-->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.etc_hot_spring_nectar_i00" />
+		<set name="magicLevel" val="58" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="1" stackType="clarity" time="3600" val="0">
+				<mul order="0x30" stat="mpConsum" val="0.96" />
+				<mul order="0x30" stat="mpConsumePhysical" val="0.9" />
+				<mul order="0x30" stat="mpDanceConsume" val="0.9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2420" levels="1" name="White Seed of Evil LUmp">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2421" levels="1" name="Black Seed of Evil LUmp">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2422" levels="1" name="1st Place Treasure Sack">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2423" levels="2" name="2nd Place Treasure Sack">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2424" levels="3" name="3rd Place Treasure Sack">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2425" levels="4" name="4th Place Treasure Sack">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2426" levels="5" name="5th Place Treasure sack">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2427" levels="6" name="6th Place Treasure Sack">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2428" levels="1" name="Scroll of Transformation  - Rabbit">
+		<!--
+			Last modify: 11.03.2009
+
+			Description: Transform into a cute bunny.
+			Item 10274 description: A scroll that transforms you into a rabbit for 10 minutes. Locates treasure when used on Fantasy Island. It will have no effect if used while a pet or servitor is summoned or while in a transformed state.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0298" />
+		<set name="itemConsumeId" val="10274" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="isHandler" val="true" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="629;1;630;1;619;1;5491;1" />
+		<set name="npcId" val="13096" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<player olympiad="false" />
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="600" val="105" />
+		</for>
+	</skill>
+	<skill id="2429" levels="1" name="Haste Juice">
+		<!--
+			Last modify:	08.08.2008
+			Description: Increases the drinker's Atk. Spd. Effect 2.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i00" />
+		<set name="magicLevel" val="1" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="10260" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="pAtkSpeedUp" time="3600" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2430" levels="1" name="Accuracy Juice">
+		<!--
+			Last modify:	08.08.2008
+			Description: Increases the drinker's Accuracy. Effect 3.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i01" />
+		<set name="magicLevel" val="1" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="10261" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="accuracyUp" time="3600" val="0">
+				<add order="0x40" stat="accCombat" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2431" levels="1" name="Critical Power Juice">
+		<!--
+			Last modify:	08.08.2008
+			Description: Increases the drinker's Critical Attack Power. Effect 3.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i02" />
+		<set name="magicLevel" val="1" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="10262" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="cAtk" time="3600" val="0">
+				<mul order="0x30" stat="cAtk" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2432" levels="1" name="Critical Attack Juice">
+		<!--
+			Last modify:	08.08.2008
+			Description: Increases the drinker's Critical Attack Rate. Effect 3.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i03" />
+		<set name="magicLevel" val="1" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="10263" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="rCrit" time="3600" val="0">
+				<add order="0x40" stat="rCrit" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2433" levels="1" name="Casting Speed Juice">
+		<!--
+			Last modify:	08.08.2008
+			Description: Increases the drinker's Casting Spd. Effect 3.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i04" />
+		<set name="magicLevel" val="1" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="10264" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mAtkSpeedUp" time="3600" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2434" levels="1" name="Evasion Juice">
+		<!--
+			Last modify:	08.08.2008
+			Description: Increases the drinker's Evasion. Effect 3.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i05" />
+		<set name="magicLevel" val="1" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="10265" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="rEvas" time="3600" val="0">
+				<add order="0x40" stat="rEvas" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2435" levels="1" name="Magic Power Juice">
+		<!--
+			Last modify:	08.08.2008
+			Description: Increases the drinker's M. Atk. Effect 3.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i06" />
+		<set name="magicLevel" val="1" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="10266" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mAtk" time="3600" val="0">
+				<mul order="0x30" stat="mAtk" val="1.75" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2436" levels="1" name="Power Juice">
+		<!--
+			Last modify:	08.08.2008
+			Description: Increases the drinker's P. Atk. Effect 3.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i07" />
+		<set name="magicLevel" val="1" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="10267" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtk" time="3600" val="0">
+				<mul order="0x30" stat="pAtk" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2437" levels="1" name="Speed Juice">
+		<!--
+			Last modify:	08.08.2008
+			Description: Increases the drinker's Movement Speed. Effect 2.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i08" />
+		<set name="magicLevel" val="1" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="10268" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="SpeedUp" time="3600" val="0">
+				<add order="0x40" stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2438" levels="1" name="Defense Juice">
+		<!--
+			Last modify:	08.08.2008
+			Description: Increases the drinker's P. Def. Effect 3.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i09" />
+		<set name="magicLevel" val="1" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="10269" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pDef" time="3600" val="0">
+				<mul order="0x30" stat="pDef" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2439" levels="1" name="MP Consumption Juice">
+		<!--
+			Last modify:	08.08.2008
+			Description: Decreases the drinker's MP consumption on skill use. Effect 1.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i10" />
+		<set name="magicLevel" val="1" />
+		<set name="hitCancelTime" val="500" />
+		<set name="itemConsumeId" val="10270" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="altUse" val="true" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="clarity" time="3600" val="0">
+				<mul order="0x30" stat="mpConsum" val="0.96" />
+				<mul order="0x30" stat="mpConsumePhysical" val="0.9" />
+				<mul order="0x30" stat="mpDanceConsume" val="0.9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="2440" levels="1" name="Ancient Tome of the Demon">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2441" levels="1" name="Protection of Rune">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2442" levels="1" name="Protection of Elemental">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2443" levels="1" name="Protection of Alignment">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2444" levels="1" name="Fighter's Will">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2445" levels="1" name="Archer's Will">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2446" levels="1" name="Anti-magic Armor">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2447" levels="1" name="Seed of Revenge">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2448" levels="1" name="Hell Scream">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2449" levels="1" name="Song of Wind Strom">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2450" levels="1" name="Blade Storm">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2451" levels="1" name="Sixth Sense">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2452" levels="1" name="Expose Weak Point">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2453" levels="1" name="Exciting Adventure">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2454" levels="1" name="Wind Riding">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2455" levels="1" name="Ghost Walking">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2456" levels="1" name="Flame Hawk">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2457" levels="1" name="Rain of Arrow">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2458" levels="1" name="Ghost Piercing">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2459" levels="1" name="Dread Pook">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2460" levels="1" name="Weapon Blockade">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2461" levels="1" name="Post of Destruction">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2462" levels="1" name="Demolition Impact">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2463" levels="1" name="Golem Armor">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2464" levels="1" name="Flame Armor">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2465" levels="1" name="Frost Armor">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2466" levels="1" name="Hurricane Armor">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2467" levels="1" name="Vampiric Mist">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2468" levels="1" name="Servitor Barrier">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2469" levels="1" name="Excessive Royalty">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2470" levels="1" name="Mutual Response">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2471" levels="1" name="Improve Combat">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2472" levels="1" name="Improve Magic">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2473" levels="1" name="Improve Condition">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2474" levels="1" name="Improve Critical">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2475" levels="1" name="Improve Shield Defense">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2476" levels="1" name="Improve Movement">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2477" levels="1" name="Sublime Self-sacrifice">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2478" levels="1" name="Blessing of Eva">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2479" levels="1" name="Loard of Vampire">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2480" levels="1" name="Throne Route">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2481" levels="1" name="Seal of Limit">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2482" levels="1" name="Spirit of Phoenix">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2483" levels="1" name="Eva's Will">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2484" levels="1" name="Pain of Shillien">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2485" levels="1" name="Herb of Life">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="40" />
+		<set name="hitTime" val="100" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2486" levels="1" name="Herb of Mana">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="reuseDelay" val="2000" />
+		<set name="magicLevel" val="40" />
+		<set name="hitTime" val="100" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2487" levels="1" name="Item - Special Sound Crystal">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2488" levels="1" name="Wild Shot">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2489" levels="1" name="Lightning Stuns">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2490" levels="1" name="Magic Defense Toolkit for beginners">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2491" levels="1" name="Transform Zaken">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2492" levels="1" name="Transform Anakim">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2493" levels="1" name="Transform Venom">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2494" levels="1" name="Transform Gordon">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2495" levels="1" name="Transform Ranku">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2496" levels="1" name="Transform Kietch">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2497" levels="1" name="Transform Demon Prince">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="2498" levels="1" name="Bottle of Empty Soul">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="500" />
+		<set name="itemConsumeId" val="10409" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="SUMMON_ITEM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="SummonItemId" val="10410" />
+		<set name="SummonMinCount" val="1" />
+		<set name="soulsConsume" val="5" />
+		<set name="isHandler" val="true" />
+		<set name="altUse" val="true" />
+	</skill>
+	<skill id="2499" levels="1" name="Bottle of Full Soul">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="itemConsumeId" val="10410" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="CHARGE_SOUL" />
+		<set name="numSouls" val="5" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="altUse" val="true" />
+	</skill>
+</list>

@@ -1,0 +1,20 @@
+<!ELEMENT list (zone)*>
+<!ELEMENT zone (polygon|circle|rectangle|banned_polygon|set|restart_point|PKrestart_point)*>
+<!ATTLIST zone
+	name CDATA #REQUIRED
+	type CDATA #REQUIRED>
+<!ELEMENT polygon (coords)*>
+<!ELEMENT circle (coords)*>
+<!ELEMENT rectangle (coords)*>
+<!ELEMENT restart_point (coords)*>
+<!ELEMENT PKrestart_point (coords)*>
+<!ELEMENT banned_polygon (coords)*>
+<!ELEMENT coords (#PCDATA)>
+<!ATTLIST coords
+	loc CDATA #REQUIRED>
+<!ATTLIST circle
+	loc CDATA #IMPLIED>
+<!ELEMENT set (#PCDATA)>
+<!ATTLIST set
+	name CDATA #REQUIRED
+	val CDATA #REQUIRED>

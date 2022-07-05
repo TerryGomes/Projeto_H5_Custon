@@ -1,0 +1,402 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Frintezza -->
+	<instance id="136" name="Final Emperial Tomb" maxChannels="10" collapseIfEmpty="10" timelimit="120" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="80" max="85"/>
+		<party min="9" max="45"/>
+		<return loc="181384 -80840 -2757"/>
+		<teleport loc="-88015 -141153 -9168"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * 3,6" setUponEntry="false" sharedReuseGroup="0"/>
+		<geodata map="17_13" />
+		<spawns>
+			<spawn mobId="18328" type="point" respawn="0">
+				<coords loc="-87904 -141296 -9168 0"/>
+			</spawn>
+			<spawn mobId="18330" count="3" type="loc">
+				<coords loc="-89294 -141847 -9184 -8984"/>
+				<coords loc="-88970 -141605 -9184 -8984"/>
+				<coords loc="-88968 -141044 -9184 -8984"/>
+				<coords loc="-89304 -140802 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18331" count="10" type="loc">
+				<coords loc="-89294 -141847 -9184 -8984"/>
+				<coords loc="-88970 -141605 -9184 -8984"/>
+				<coords loc="-88968 -141044 -9184 -8984"/>
+				<coords loc="-89304 -140802 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18329" count="10" type="loc">
+				<coords loc="-89294 -141847 -9184 -8984"/>
+				<coords loc="-88970 -141605 -9184 -8984"/>
+				<coords loc="-88968 -141044 -9184 -8984"/>
+				<coords loc="-89304 -140802 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18330" count="10" type="loc">
+				<coords loc="-89294 -141847 -9184 -8984"/>
+				<coords loc="-88970 -141605 -9184 -8984"/>
+				<coords loc="-88968 -141044 -9184 -8984"/>
+				<coords loc="-89304 -140802 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18333" count="10" type="loc">
+				<coords loc="-89294 -141847 -9184 -8984"/>
+				<coords loc="-88970 -141605 -9184 -8984"/>
+				<coords loc="-88968 -141044 -9184 -8984"/>
+				<coords loc="-89304 -140802 -9184 -8984"/>
+			</spawn>
+
+			<spawn mobId="18330" count="3" type="loc">
+				<coords loc="-88512 -142679 -9184 -8984"/>
+				<coords loc="-88417 -142318 -9184 -8984"/>
+				<coords loc="-88906 -141825 -9184 -8984"/>
+				<coords loc="-89271 -141896 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18331" count="10" type="loc">
+				<coords loc="-88512 -142679 -9184 -8984"/>
+				<coords loc="-88417 -142318 -9184 -8984"/>
+				<coords loc="-88906 -141825 -9184 -8984"/>
+				<coords loc="-89271 -141896 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18329" count="10" type="loc">
+				<coords loc="-88512 -142679 -9184 -8984"/>
+				<coords loc="-88417 -142318 -9184 -8984"/>
+				<coords loc="-88906 -141825 -9184 -8984"/>
+				<coords loc="-89271 -141896 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18330" count="10" type="loc">
+				<coords loc="-88512 -142679 -9184 -8984"/>
+				<coords loc="-88417 -142318 -9184 -8984"/>
+				<coords loc="-88906 -141825 -9184 -8984"/>
+				<coords loc="-89271 -141896 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18333" count="10" type="loc">
+				<coords loc="-88512 -142679 -9184 -8984"/>
+				<coords loc="-88417 -142318 -9184 -8984"/>
+				<coords loc="-88906 -141825 -9184 -8984"/>
+				<coords loc="-89271 -141896 -9184 -8984"/>
+			</spawn>
+
+			<spawn mobId="18330" count="3" type="loc">
+				<coords loc="-88455 -142693 -9184 -8984"/>
+				<coords loc="-87361 -142677 -9184 -8984"/>
+				<coords loc="-87645 -142372 -9184 -8984"/>
+				<coords loc="-88201 -142374 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18331" count="10" type="loc">
+				<coords loc="-88455 -142693 -9184 -8984"/>
+				<coords loc="-87361 -142677 -9184 -8984"/>
+				<coords loc="-87645 -142372 -9184 -8984"/>
+				<coords loc="-88201 -142374 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18329" count="10" type="loc">
+				<coords loc="-88455 -142693 -9184 -8984"/>
+				<coords loc="-87361 -142677 -9184 -8984"/>
+				<coords loc="-87645 -142372 -9184 -8984"/>
+				<coords loc="-88201 -142374 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18330" count="10" type="loc">
+				<coords loc="-88455 -142693 -9184 -8984"/>
+				<coords loc="-87361 -142677 -9184 -8984"/>
+				<coords loc="-87645 -142372 -9184 -8984"/>
+				<coords loc="-88201 -142374 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18333" count="10" type="loc">
+				<coords loc="-88455 -142693 -9184 -8984"/>
+				<coords loc="-87361 -142677 -9184 -8984"/>
+				<coords loc="-87645 -142372 -9184 -8984"/>
+				<coords loc="-88201 -142374 -9184 -8984"/>
+			</spawn>
+
+			<spawn mobId="18330" count="3" type="loc">
+				<coords loc="-87321 -142651 -9184 -8984"/>
+				<coords loc="-86557 -141902 -9184 -8984"/>
+				<coords loc="-86900 -141818 -9184 -8984"/>
+				<coords loc="-87412 -142316 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18331" count="10" type="loc">
+				<coords loc="-87321 -142651 -9184 -8984"/>
+				<coords loc="-86557 -141902 -9184 -8984"/>
+				<coords loc="-86900 -141818 -9184 -8984"/>
+				<coords loc="-87412 -142316 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18329" count="10" type="loc">
+				<coords loc="-87321 -142651 -9184 -8984"/>
+				<coords loc="-86557 -141902 -9184 -8984"/>
+				<coords loc="-86900 -141818 -9184 -8984"/>
+				<coords loc="-87412 -142316 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18330" count="10" type="loc">
+				<coords loc="-87321 -142651 -9184 -8984"/>
+				<coords loc="-86557 -141902 -9184 -8984"/>
+				<coords loc="-86900 -141818 -9184 -8984"/>
+				<coords loc="-87412 -142316 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18333" count="10" type="loc">
+				<coords loc="-87321 -142651 -9184 -8984"/>
+				<coords loc="-86557 -141902 -9184 -8984"/>
+				<coords loc="-86900 -141818 -9184 -8984"/>
+				<coords loc="-87412 -142316 -9184 -8984"/>
+			</spawn>
+
+			<spawn mobId="18330" count="3" type="loc">
+				<coords loc="-86857 -141595 -9184 -8984"/>
+				<coords loc="-86536 -141863 -9184 -8984"/>
+				<coords loc="-86540 -140772 -9184 -8984"/>
+				<coords loc="-86848 -141016 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18331" count="10" type="loc">
+				<coords loc="-86857 -141595 -9184 -8984"/>
+				<coords loc="-86536 -141863 -9184 -8984"/>
+				<coords loc="-86540 -140772 -9184 -8984"/>
+				<coords loc="-86848 -141016 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18329" count="10" type="loc">
+				<coords loc="-86857 -141595 -9184 -8984"/>
+				<coords loc="-86536 -141863 -9184 -8984"/>
+				<coords loc="-86540 -140772 -9184 -8984"/>
+				<coords loc="-86848 -141016 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18330" count="10" type="loc">
+				<coords loc="-86857 -141595 -9184 -8984"/>
+				<coords loc="-86536 -141863 -9184 -8984"/>
+				<coords loc="-86540 -140772 -9184 -8984"/>
+				<coords loc="-86848 -141016 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18333" count="10" type="loc">
+				<coords loc="-86857 -141595 -9184 -8984"/>
+				<coords loc="-86536 -141863 -9184 -8984"/>
+				<coords loc="-86540 -140772 -9184 -8984"/>
+				<coords loc="-86848 -141016 -9184 -8984"/>
+			</spawn>
+
+			<spawn mobId="18330" count="3" type="loc">
+				<coords loc="-87404 -140315 -9184 -8984"/>
+				<coords loc="-86911 -140809 -9184 -8984"/>
+				<coords loc="-86557 -140709 -9184 -8984"/>
+				<coords loc="-87326 -139949 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18331" count="10" type="loc">
+				<coords loc="-87404 -140315 -9184 -8984"/>
+				<coords loc="-86911 -140809 -9184 -8984"/>
+				<coords loc="-86557 -140709 -9184 -8984"/>
+				<coords loc="-87326 -139949 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18329" count="10" type="loc">
+				<coords loc="-87404 -140315 -9184 -8984"/>
+				<coords loc="-86911 -140809 -9184 -8984"/>
+				<coords loc="-86557 -140709 -9184 -8984"/>
+				<coords loc="-87326 -139949 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18330" count="10" type="loc">
+				<coords loc="-87404 -140315 -9184 -8984"/>
+				<coords loc="-86911 -140809 -9184 -8984"/>
+				<coords loc="-86557 -140709 -9184 -8984"/>
+				<coords loc="-87326 -139949 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18333" count="10" type="loc">
+				<coords loc="-87404 -140315 -9184 -8984"/>
+				<coords loc="-86911 -140809 -9184 -8984"/>
+				<coords loc="-86557 -140709 -9184 -8984"/>
+				<coords loc="-87326 -139949 -9184 -8984"/>
+			</spawn>
+
+			<spawn mobId="18330" count="3" type="loc">
+				<coords loc="-88197 -140256 -9184 -8984"/>
+				<coords loc="-87615 -140252 -9184 -8984"/>
+				<coords loc="-87364 -139933 -9184 -8984"/>
+				<coords loc="-88459 -139926 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18331" count="10" type="loc">
+				<coords loc="-88197 -140256 -9184 -8984"/>
+				<coords loc="-87615 -140252 -9184 -8984"/>
+				<coords loc="-87364 -139933 -9184 -8984"/>
+				<coords loc="-88459 -139926 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18329" count="10" type="loc">
+				<coords loc="-88197 -140256 -9184 -8984"/>
+				<coords loc="-87615 -140252 -9184 -8984"/>
+				<coords loc="-87364 -139933 -9184 -8984"/>
+				<coords loc="-88459 -139926 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18330" count="10" type="loc">
+				<coords loc="-88197 -140256 -9184 -8984"/>
+				<coords loc="-87615 -140252 -9184 -8984"/>
+				<coords loc="-87364 -139933 -9184 -8984"/>
+				<coords loc="-88459 -139926 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18333" count="10" type="loc">
+				<coords loc="-88197 -140256 -9184 -8984"/>
+				<coords loc="-87615 -140252 -9184 -8984"/>
+				<coords loc="-87364 -139933 -9184 -8984"/>
+				<coords loc="-88459 -139926 -9184 -8984"/>
+			</spawn>
+
+			<spawn mobId="18330" count="3" type="loc">
+				<coords loc="-88921 -140820 -9184 -8984"/>
+				<coords loc="-88399 -140306 -9184 -8984"/>
+				<coords loc="-88500 -139940 -9184 -8984"/>
+				<coords loc="-89255 -140698 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18331" count="10" type="loc">
+				<coords loc="-88921 -140820 -9184 -8984"/>
+				<coords loc="-88399 -140306 -9184 -8984"/>
+				<coords loc="-88500 -139940 -9184 -8984"/>
+				<coords loc="-89255 -140698 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18329" count="10" type="loc">
+				<coords loc="-88921 -140820 -9184 -8984"/>
+				<coords loc="-88399 -140306 -9184 -8984"/>
+				<coords loc="-88500 -139940 -9184 -8984"/>
+				<coords loc="-89255 -140698 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18330" count="10" type="loc">
+				<coords loc="-88921 -140820 -9184 -8984"/>
+				<coords loc="-88399 -140306 -9184 -8984"/>
+				<coords loc="-88500 -139940 -9184 -8984"/>
+				<coords loc="-89255 -140698 -9184 -8984"/>
+			</spawn>
+			<spawn mobId="18333" count="10" type="loc">
+				<coords loc="-88921 -140820 -9184 -8984"/>
+				<coords loc="-88399 -140306 -9184 -8984"/>
+				<coords loc="-88500 -139940 -9184 -8984"/>
+				<coords loc="-89255 -140698 -9184 -8984"/>
+			</spawn>
+
+			<spawn mobId="18339" count="4" type="loc">
+				<coords loc="-88059 -147379 -9184 -9028"/>
+				<coords loc="-87699 -147371 -9184 -9028"/>
+				<coords loc="-87707 -146959 -9184 -9028"/>
+				<coords loc="-88075 -146975 -9184 -9028"/>
+			</spawn>
+
+			<spawn mobId="18334" type="point" respawn="0">
+				<coords loc="-88755 -147395 -9184 -9028"/>
+				<coords loc="-88755 -147187 -9184 -9028"/>
+				<coords loc="-88755 -146963 -9184 -9028"/>
+				<coords loc="-88755 -146723 -9184 -9028"/>
+				<coords loc="-87155 -147411 -9184 -9028"/>
+				<coords loc="-87155 -147219 -9184 -9028"/>
+				<coords loc="-87155 -146963 -9184 -9028"/>
+				<coords loc="-87171 -146739 -9184 -9028"/>
+			</spawn>
+			<spawn mobId="18336" type="point" respawn="0">
+				<coords loc="-88467 -148467 -9184 -9028"/>
+				<coords loc="-88467 -148403 -9184 -9028"/>
+				<coords loc="-88467 -148339 -9184 -9028"/>
+				<coords loc="-88467 -148271 -9184 -9028"/>
+				<coords loc="-88471 -148199 -9184 -9028"/>
+				<coords loc="-88499 -148435 -9184 -9028"/>
+				<coords loc="-88503 -148375 -9184 -9028"/>
+				<coords loc="-88499 -148307 -9184 -9028"/>
+				<coords loc="-88503 -148239 -9184 -9028"/>
+				<coords loc="-87427 -148191 -9184 -9028"/>
+				<coords loc="-87427 -148263 -9184 -9028"/>
+				<coords loc="-87427 -148331 -9184 -9028"/>
+				<coords loc="-87427 -148395 -9184 -9028"/>
+				<coords loc="-87427 -148467 -9184 -9028"/>
+				<coords loc="-87395 -148435 -9184 -9028"/>
+				<coords loc="-87395 -148371 -9184 -9028"/>
+				<coords loc="-87395 -148303 -9184 -9028"/>
+				<coords loc="-87395 -148227 -9184 -9028"/>
+				<coords loc="-87427 -145683 -9184 -9028"/>
+				<coords loc="-87427 -145747 -9184 -9028"/>
+				<coords loc="-87427 -145883 -9184 -9028"/>
+				<coords loc="-87427 -145819 -9184 -9028"/>
+				<coords loc="-87427 -145955 -9184 -9028"/>
+				<coords loc="-87395 -145715 -9184 -9028"/>
+				<coords loc="-87395 -145779 -9184 -9028"/>
+				<coords loc="-87395 -145859 -9184 -9028"/>
+				<coords loc="-87395 -145923 -9184 -9028"/>
+				<coords loc="-88463 -145971 -9184 -9028"/>
+				<coords loc="-88467 -145899 -9184 -9028"/>
+				<coords loc="-88467 -145827 -9184 -9028"/>
+				<coords loc="-88467 -145763 -9184 -9028"/>
+				<coords loc="-88471 -145699 -9184 -9028"/>
+				<coords loc="-88495 -145939 -9184 -9028"/>
+				<coords loc="-88499 -145863 -9184 -9028"/>
+				<coords loc="-88499 -145795 -9184 -9028"/>
+				<coords loc="-88499 -145731 -9184 -9028"/>
+			</spawn>
+
+			<spawn mobId="18335" count="10" type="loc">
+				<coords loc="-88963 -146803 -9184 -9052"/>
+				<coords loc="-88587 -146095 -9184 -9052"/>
+				<coords loc="-88595 -145659 -9184 -9052"/>
+				<coords loc="-88991 -146071 -9184 -9052"/>
+			</spawn>
+			<spawn mobId="18335" count="10" type="loc">
+				<coords loc="-88963 -148107 -9184 -9052"/>
+				<coords loc="-88527 -148471 -9184 -9052"/>
+				<coords loc="-88527 -148151 -9184 -9052"/>
+				<coords loc="-88971 -147299 -9184 -9052"/>
+			</spawn>
+			<spawn mobId="18335" count="10" type="loc">
+				<coords loc="-87339 -148071 -9184 -9052"/>
+				<coords loc="-87371 -148463 -9184 -9052"/>
+				<coords loc="-87003 -148127 -9184 -9052"/>
+				<coords loc="-86991 -147451 -9184 -9052"/>
+			</spawn>
+			<spawn mobId="18335" count="10" type="loc">
+				<coords loc="-87347 -146047 -9184 -9052"/>
+				<coords loc="-86971 -146711 -9184 -9052"/>
+				<coords loc="-86927 -146063 -9184 -9052"/>
+				<coords loc="-87335 -145711 -9184 -9052"/>
+			</spawn>
+
+			<spawn mobId="18337" count="10" type="loc">
+				<coords loc="-89395 -147615 -9184 -9052"/>
+				<coords loc="-88971 -148119 -9184 -9052"/>
+				<coords loc="-89011 -146091 -9184 -9052"/>
+				<coords loc="-89399 -146511 -9184 -9052"/>
+			</spawn>
+			<spawn mobId="18338" count="10" type="loc">
+				<coords loc="-89395 -147615 -9184 -9052"/>
+				<coords loc="-88971 -148119 -9184 -9052"/>
+				<coords loc="-89011 -146091 -9184 -9052"/>
+				<coords loc="-89399 -146511 -9184 -9052"/>
+			</spawn>
+
+			<spawn mobId="18337" count="10" type="loc">
+				<coords loc="-89395 -147615 -9184 -9052"/>
+				<coords loc="-88971 -148119 -9184 -9052"/>
+				<coords loc="-89011 -146091 -9184 -9052"/>
+				<coords loc="-89399 -146511 -9184 -9052"/>
+			</spawn>
+			<spawn mobId="18338" count="10" type="loc">
+				<coords loc="-86975 -148119 -9184 -9052"/>
+				<coords loc="-86583 -147711 -9184 -9052"/>
+				<coords loc="-86543 -146519 -9184 -9052"/>
+				<coords loc="-86915 -146055 -9184 -9052"/>
+			</spawn>
+		</spawns>
+		<doors>
+			<door id="17130045"/>
+			<door id="17130051"/>
+			<door id="17130046"/>
+			<door id="17130043"/>
+			<door id="17130042"/>
+			<door id="17130052"/>
+			<door id="17130053"/>
+			<door id="17130054"/>
+			<door id="17130055"/>
+			<door id="17130056"/>
+			<door id="17130057"/>
+			<door id="17130058"/>
+			<door id="17130068"/>
+			<door id="17130069"/>
+			<door id="17130070"/>
+			<door id="17130066"/>
+			<door id="17130067"/>
+			<door id="17130063"/>
+			<door id="17130064"/>
+			<door id="17130065"/>
+			<door id="17130062"/>
+			<door id="17130061"/>
+		</doors>
+		<zones>
+			<zone name="[Frintezza]" active="true"/>
+		</zones>
+	</instance>
+</list>

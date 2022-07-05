@@ -1,0 +1,38 @@
+<html><head><title>Clan Notice Management Menu</title></head><body>
+<table border=0 cellpadding=0 cellspacing=0 width=700>
+	<tr>
+		<td width=50></td>
+		<td>
+			<br>
+			<br>
+			
+			<font color="e0d7b9">Every Clan member will see this notice, while logging into game.<br>
+			<br>
+			<br>
+			Clan notice: %off% %on%
+		</td>
+	</tr>
+	<tr>
+		<td width=50></td>
+		<td>
+			<br><br>
+			<font name="hs12">Edit notice content:</font>
+			<br>
+		</td>
+	</tr>
+	<tr>
+		<td width=50></td>
+		<td>
+			<MultiEdit var="Content" width=730 height=100>
+		</td>
+	</tr>
+	<tr>
+		<td width=50></td>
+		<td>
+			<br><br>
+			<center><button value="&$140;" action="Write _announcepledgewrite_%flag% 0 0 Content Content Content" back="l2ui_ct1.button.button_df_small_down" width=70 height=25 fore="l2ui_ct1.button.button_df_small" ></center>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (template)*>
+<!ELEMENT template (set|item)*>
+<!ATTLIST template
+	id CDATA #REQUIRED
+	name CDATA #REQUIRED>
+<!ELEMENT set (#PCDATA)>
+<!ATTLIST set
+	name CDATA #REQUIRED
+	value CDATA #REQUIRED>
+<!ELEMENT item (#PCDATA)>
+<!ATTLIST item
+	id CDATA #REQUIRED
+	count CDATA #REQUIRED
+	equipable CDATA #IMPLIED
+	shortcut CDATA #IMPLIED>

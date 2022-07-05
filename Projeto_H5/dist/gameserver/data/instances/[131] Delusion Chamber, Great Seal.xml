@@ -1,0 +1,13 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <instance id="131" name="Delusion Chamber, Great Seal" maxChannels="20" collapseIfEmpty="0">
+        <collapse on-party-dismiss="true" timer="60"/>
+        <level min="80" max="85"/>
+        <party min="2" max="9"/>
+        <remove itemId="0" count="0" necessary="false"/>
+        <give itemId="0" count="0"/>
+        <quest id="0"/>
+        <reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="0"/>
+        <spawns/>
+    </instance>
+</list>

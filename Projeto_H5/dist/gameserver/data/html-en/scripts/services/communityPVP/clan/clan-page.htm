@@ -1,0 +1,171 @@
+<html noscrollbar>
+<title>Clan Community</title>
+<body><br>
+<table width=755>
+	<tr>
+		<center><td>
+			<table border=0 cellpadding=0 cellspacing=0 width=769 height=492 background="l2ui_ct1.Windows_DF_TooltipBG">
+				<tr>
+					<td valign="top" align="center" valign=top>
+						<table width=755 height=468>
+							<tr>
+								<td width=755><br>
+									<table width=750 height=175>
+										<tr>
+											<td WIDTH=300 height=146 align=right valign=top>
+												<table width=300 cellspacing=2 cellpadding=4 height=20 bgcolor=333333>
+													<tr>
+														<td width=140 align=right valign=top>
+															<font color="LEVEL" name="hs9">Clan Info:</font>
+														</td>
+														<td width=160 valign=top>
+															<table cellspacing=0 cellpadding=0>
+																<tr>
+																	<td width=8 align=right valign=center>
+																		<img src="<?ally_crest?>" width="8" height="16"/>
+																	</td>
+																	<td width=22 align=left valign=center>
+																		<img src="<?clan_crest?>" width="16" height="16"/>
+																	</td>
+																	<td width=130 align=left valign=top>
+																		<font color="006600"><?clan_name?></font>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<table width=300 cellspacing=2 cellpadding=4 bgcolor=666666>
+													<tr>
+														<td width=300 align=center valign=top>
+															<table width=280 cellspacing=2 cellpadding=3>
+																<tr>
+																	<td width=5 align=center valign=top>
+																		<font color="LEVEL">›</font>
+																	</td>
+																	<td width=210 height=18 align=left valign=top>
+																		Leader: <?clan_owner?>
+																	</td>
+																</tr>
+																<tr>
+																	<td width=5 align=center valign=top>
+																		<font color="LEVEL">›</font>
+																	</td>
+																	<td width=210 height=18 align=left valign=top>
+																		Alliance: <?clan_ally?>
+																	</td>
+																</tr>
+																<tr>
+																	<td width=5 align=center valign=top>
+																		<font color="LEVEL">›</font>
+																	</td>
+																	<td width=210 height=18 align=left valign=top>
+																		Level: <?clan_level?>
+																	</td>
+																</tr>
+																<tr>
+																	<td width=5 align=center valign=top>
+																		<font color="LEVEL">›</font>
+																	</td>
+																	<td width=210 height=18 align=left valign=top>
+																		Base (Castle\Fortress): <?clan_base?>
+																	</td>
+																</tr>
+																<tr>
+																	<td width=5 align=center valign=top>
+																		<font color="LEVEL">›</font>
+																	</td>
+																	<td width=210 height=18 align=left valign=top>
+																		Clan Hall: <?clan_hall?>
+																	</td>
+																</tr>
+																<tr>
+																	<td width=5 align=center valign=top>
+																		<font color="LEVEL">›</font>
+																	</td>
+																	<td width=210 height=18 align=left valign=top>
+																		Members: <?clan_members?>
+																	</td>
+																</tr>
+																<tr>
+																	<td width=5 align=center valign=top>
+																		<font color="LEVEL">›</font>
+																	</td>
+																	<td width=210 height=18 align=left valign=top>
+																		Reputation: <?clan_point?>
+																	</td>
+																</tr>
+																<tr>
+																	<td width=5 align=center valign=top>
+																		<font color="LEVEL">›</font>
+																	</td>
+																	<td width=210 height=18 align=left valign=top>
+																		Average members level: <?clan_avarage_level?>
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+												<table width=300 cellspacing=2 cellpadding=4 height=20 bgcolor=555555>
+													<tr>
+														<td width=300 align=center valign=top>
+															<button action="bypass -h scripts_services.ClanPanel:online <?clan_id?>" value="Members in game: <?clan_online?>" width=260 height=31 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+														</td>
+													</tr>
+												</table>
+												<?container?>
+												<?war?>
+												<table width=300 cellspacing=2 cellpadding=4 height=20 bgcolor=333333>
+													<tr>
+														<td width=300 align=center valign=top>
+															<font color="LEVEL" name="hs9">Descriptions</font>
+														</td>
+													</tr>
+												</table>
+												<table width=300 cellspacing=2 cellpadding=4 bgcolor=666666>
+													<tr>
+														<td FIXWIDTH=300 align=center valign=top>
+															<?clan_notice?>
+															<?edit_notice?>
+														</td>
+													</tr>
+												</table>
+												<table width=300 cellspacing=2 cellpadding=4 height=40 bgcolor=333333>
+													<tr>
+														<td FIXWIDTH=300 align=center valign=top>
+															<button action="bypass _bbsclan:list:clan:1" value="Back" width=260 height=31 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td WIDTH=458 height=172 align=left valign=top>
+												<table border=0 cellspacing=2 cellpadding=4 width=457 height=29 bgcolor=303030>
+													<tr>
+														<td FIXWIDTH=300 align=center valign=top>
+															<font color="f0ff00" name="hs9">Clan Skills</font>
+														</td>
+													</tr>
+												</table>
+												<?clan_skill?>
+												<table border=0 cellspacing=2 cellpadding=4 width=457 height=29 bgcolor=303030>
+													<tr>
+														<td FIXWIDTH=300 align=center valign=top>
+															<font color="CC3333" name="hs9">Clan Wars</font>
+														</td>
+													</tr>
+												</table>
+												<?clan_warlist?>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td></center>
+	</tr>
+</table>
+</body></html>

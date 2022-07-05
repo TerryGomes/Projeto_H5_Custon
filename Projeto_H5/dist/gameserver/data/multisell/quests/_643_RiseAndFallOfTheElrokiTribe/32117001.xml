@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Exchange of dynasty recipe for quest q643 -->
+
+<list>
+  <!-- Внимание: keepenchanted НЕ должно быть установлено в мультиселлах, где в одном блоке возможны два одинаковых нестекуемых предмета (напрмиер dual) -->
+  <!-- ignoreprice не работает с keepencahnted -->
+  <config showall="true" notax="true" keepenchanted="false" />
+
+	<!-- Recipe: Sealed Dynasty Tunic (60%) -->
+  <item>
+    <ingredient id="8776" count="400"/>
+    <production id="9492" count="1"/>
+  </item>
+
+	<!-- Recipe: Sealed Dynasty Stockings (60%) -->
+  <item>
+    <ingredient id="8776" count="250"/>
+    <production id="9493" count="1"/>
+  </item>
+
+	<!-- Recipe: Sealed Dynasty Circlet (60%) -->
+  <item>
+    <ingredient id="8776" count="200"/>
+    <production id="9494" count="1"/>
+  </item>
+
+	<!-- Recipe: Sealed Dynasty Gloves (60%) -->
+  <item>
+    <ingredient id="8776" count="134"/>
+    <production id="9495" count="1"/>
+  </item>
+
+	<!-- Recipe: Sealed Dynasty Shoes (60%) -->
+  <item>
+    <ingredient id="8776" count="134"/>
+    <production id="9496" count="1"/>
+  </item>
+
+	<!-- Recipe: Sealed Dynasty Sigil (60%) -->
+  <item>
+    <ingredient id="8776" count="287"/>
+    <production id="10115" count="1"/>
+  </item>
+</list>

@@ -1,0 +1,43 @@
+<!ELEMENT list (donation)*>
+<!ELEMENT donation (simples|foundations|enchant|attribution)*>
+	<!ATTLIST donation
+		id CDATA #REQUIRED
+		name CDATA #REQUIRED
+		icon CDATA #REQUIRED
+		group CDATA #REQUIRED
+		found CDATA #REQUIRED>
+		
+<!ELEMENT simples (simple)*>
+	<!ATTLIST simples
+		cost_id CDATA #REQUIRED
+		cost_count CDATA #REQUIRED>
+
+<!ELEMENT simple (#PCDATA)*>
+	<!ATTLIST simple
+		id CDATA #REQUIRED
+		count CDATA #REQUIRED
+		enchant CDATA #REQUIRED>
+
+<!ELEMENT foundations (foundation)*>
+	<!ATTLIST foundations
+		cost_id CDATA #REQUIRED
+		cost_count CDATA #REQUIRED>
+
+<!ELEMENT foundation (#PCDATA)*>
+	<!ATTLIST foundation
+		id CDATA #REQUIRED
+		count CDATA #REQUIRED
+		enchant CDATA #REQUIRED>
+
+<!ELEMENT enchant (#PCDATA)*>
+	 <!ATTLIST enchant
+		cost_id CDATA #REQUIRED
+		cost_count CDATA #REQUIRED
+		value CDATA #REQUIRED>
+
+<!ELEMENT attribution (#PCDATA)*>
+	 <!ATTLIST attribution
+		cost_id CDATA #REQUIRED
+		cost_count CDATA #REQUIRED
+		value CDATA #REQUIRED
+		size CDATA #REQUIRED>

@@ -1,0 +1,52 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+    <!-- Rune Township: NPC Mathias (Level 83) -->
+	<instance id="134" name="Kamaloka (Labyrinth of the Abyss)" maxChannels="10" collapseIfEmpty="10" timelimit="45" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60" />
+		<level min="78" max="85" />
+		<party min="2" max="9" />
+		<return loc="42767 -48016 -800" />
+		<teleport loc="22010 -174867 -10904" />
+		<remove itemId="0" count="0" necessary="false" />
+		<give itemId="0" count="0" />
+		<quest id="0" />
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="3" />
+		<add_parameters>
+			<param name="tele_device_loc" value="12047 -174887 -9944"/>
+		</add_parameters>
+		<spawns>
+			<!-- Escape Device -->
+			<spawn mobId="32496" type="point">
+				<coords loc="21837 -174885 -10904 0" />
+			</spawn>
+			<!-- Lost Watcher -->
+			<spawn mobId="25706" type="point">
+				<coords loc="20409 -174827 -10912 0" />
+				<coords loc="20409 -174947 -10912 0" />
+				<coords loc="20494 -174887 -10912 0" />
+				<coords loc="20494 -174767 -10912 0" />
+				<coords loc="20614 -174887 -10912 0" />
+				<coords loc="20579 -174827 -10912 0" />
+				<coords loc="20579 -174947 -10912 0" />
+				<coords loc="20494 -175007 -10912 0" />
+				<coords loc="20374 -174887 -10912 0" />
+			</spawn>
+			<!-- Lost Beholder -->
+			<spawn mobId="25708" type="point">
+				<coords loc="18175 -174991 -10653 0" />
+				<coords loc="18070 -174890 -10655 0" />
+				<coords loc="18157 -174886 -10655 0" />
+				<coords loc="18249 -174885 -10653 0" />
+				<coords loc="18144 -174821 -10648 0" />
+			</spawn>
+			<!-- Lost Warden -->
+			<spawn mobId="25709" type="point">
+				<coords loc="15828 -174885 -10384 0" />
+			</spawn>
+			<!-- BOSS: Lost Captain -->
+			<spawn mobId="25710" type="point">
+				<coords loc="12047 -174887 -9944 0" />
+			</spawn>
+		</spawns>
+	</instance>
+</list>

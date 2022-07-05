@@ -1,0 +1,7 @@
+-- Table for clan stats
+
+CREATE TABLE IF NOT EXISTS `clan_stats` (
+  `clanId` INT UNSIGNED NOT NULL DEFAULT 0,
+  `variable` VARCHAR(255) NOT NULL,
+  `value` BIGINT UNSIGNED NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

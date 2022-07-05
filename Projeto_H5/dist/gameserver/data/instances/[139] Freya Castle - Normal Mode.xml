@@ -1,0 +1,41 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Freya Castle - Normal Mode -->
+	<instance id="139" name="Ice Queen's Castle" maxChannels="10" collapseIfEmpty="10" timelimit="120" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="82" max="85"/>
+		<party min="9" max="27"/>
+		<return loc="115576 -125688 -3456"/>
+		<teleport loc="113880 -112296 -11225"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * 3,6" setUponEntry="false" sharedReuseGroup="0"/>
+		<geodata map="23_14"/>
+		<spawns>
+			<spawn mobId="32762" type="point" respawn="0">
+				<coords loc="114776 -113208 -11225 16384"/>
+			</spawn>
+			<spawn mobId="18932" type="point" respawn="0">
+				<coords loc="114707 -114797 -11199 0"/>
+			</spawn>
+		</spawns>
+		<doors>
+			<door id="23140101" opened="true"/>
+		</doors>
+		<zones>
+			<zone name="[freya_normal_epic]" active="true"/>
+			<zone name="[freya_landing_room_epic]" active="true"/>
+			<zone name="[freya_attack_up]"/>
+			<zone name="[freya_pc_buff1]"/>
+			<zone name="[freya_pc_buff2]"/>
+			<zone name="[freya_normal_freezing_01]"/>
+			<zone name="[freya_normal_freezing_02]"/>
+			<zone name="[freya_normal_freezing_03]"/>
+			<zone name="[freya_normal_freezing_04]"/>
+			<zone name="[freya_normal_freezing_05]"/>
+			<zone name="[freya_normal_freezing_06]"/>
+			<zone name="[freya_normal_freezing_07]"/>
+		</zones>
+	</instance>
+</list>

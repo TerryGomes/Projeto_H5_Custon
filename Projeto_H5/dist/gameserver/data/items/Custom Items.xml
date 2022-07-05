@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+	<etcitem id="40000" name="Vote Reward Rune" add_name="12 Hour Expiration Period">
+		<set name="freightable" value="false"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="720"/>
+		<set name="icon" value="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+		<set name="temporal" value="true"/>
+		<set name="tradeable" value="false"/>
+		<set name="type" value="RUNE"/>
+		<set name="weight" value="120"/>
+		<skills>
+			<skill id="91000" level="1"/>
+		</skills>
+	</etcitem>
+	<etcitem id="37000" name="Donator Coin">
+		<set name="class" value="OTHER" />
+		<set name="crystal_type" value="NONE" />
+		<set name="icon" value="icon.etc_coin_of_fair_i00" />
+		<set name="price" value="1"/>
+		<set name="stackable" value="true" />
+		<set name="tradeable" value="true" />
+		<set name="dropable" value="false" />
+		<set name="type" value="MONEY" />
+	</etcitem>
+	<etcitem id="37001" name="Special Mana Potion">
+		<set name="class" value="CONSUMABLE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_reagent_blue_i00"/>
+		<set name="price" value="2000"/>
+		<set name="reuse_delay" value="6000"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="type" value="POTION"/>
+		<set name="weight" value="1"/>
+		<skills>
+			<skill id="90001" level="2"/>
+		</skills>
+		<cond msgId="1508">
+			<not>
+				<player olympiad="true"/>
+			</not>
+		</cond>
+	</etcitem>
+	<etcitem id="37002" name="Special CP Potion">
+		<set name="reuse_delay" value="500"/>
+		<set name="class" value="CONSUMABLE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_cp_potion_i01"/>
+		<set name="price" value="500"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="type" value="POTION"/>
+		<set name="weight" value="1"/>
+		<skills>
+			<skill id="2166" level="3"/>
+		</skills>
+		<cond msgId="1508">
+			<player olympiad="false"/>
+		</cond>
+	</etcitem>
+	<etcitem id="37003" name="Special Healing Potion">
+		<set name="reuse_delay" value="5500"/>
+		<set name="class" value="CONSUMABLE"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_potion_gold_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="type" value="OTHER"/>
+		<set name="weight" value="1"/>
+		<skills>
+			<skill id="2038" level="2"/>
+		</skills>
+		<cond msgId="1508">
+			<player olympiad="false"/>
+		</cond>
+	</etcitem>
+	<etcitem id="37004" name="Vote Box" add_name="1 Hour Expiration Period">
+		<set name="icon" value="icon.etc_pi_gift_box_i03"/>
+		<set name="weight" value="1"/>
+		<set name="dropable" value="false"/>
+		<set name="durability" value="60"/>
+		<set name="stackable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="temporal" value="true"/>
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="type" value="OTHER"/>
+	</etcitem>
+	<etcitem id="37006" name="Offline Ticket">
+		<set name="class" value="OTHER" />
+		<set name="crystal_type" value="NONE" />
+		<set name="icon" value="icon.etc_ticket_i00" />
+		<set name="stackable" value="true" />
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false" />
+		<set name="dropable" value="false" />
+		<set name="type" value="OTHER" />
+	</etcitem>
+	<etcitem id="37007" name="Vote Coin">
+		<set name="class" value="OTHER" />
+		<set name="crystal_type" value="NONE" />
+		<set name="icon" value="icon.mouse_coin_i00" />
+		<set name="stackable" value="true" />
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="true" />
+		<set name="dropable" value="false" />
+		<set name="type" value="OTHER" />
+	</etcitem>
+	<etcitem id="37008" name="Festival Coin">
+		<set name="class" value="OTHER"/>
+		<set name="crystal_type" value="NONE"/>
+		<set name="icon" value="icon.etc_coin_of_fair_i00"/>
+		<set name="stackable" value="true"/>
+		<set name="tradeable" value="false" />
+		<set name="sellable" value="false"/>
+		<set name="dropable" value="false" />
+		<set name="type" value="OTHER"/>
+	</etcitem>
+
+	<armor id="37010" name="GameMaster Helmet">
+		<set name="crystal_count" value="1205"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.armor_helmet_i00"/>
+		<set name="price" value="25107000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="530"/>
+		<equip>
+			<slot id="HEAD"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="110"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37011" name="GameMaster Breastplate">
+		<set name="crystal_count" value="3214"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.armor_t97_u_i00"/>
+		<set name="price" value="66953000"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="7520"/>
+		<equip>
+			<slot id="CHEST"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="272"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37012" name="GameMaster Gaiters">
+		<set name="crystal_count" value="2009"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.armor_t97_l_i00"/>
+		<set name="price" value="41846000"/>
+		<set name="type" value="HEAVY"/>
+		<set name="weight" value="3170"/>
+		<equip>
+			<slot id="LEGS"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="170"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37013" name="GameMaster Gauntlets">
+		<set name="crystal_count" value="803"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.armor_t97_g_i00"/>
+		<set name="price" value="16738000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="510"/>
+		<equip>
+			<slot id="GLOVES"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="74"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37014" name="GameMaster Boots">
+		<set name="crystal_count" value="803"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="crystallizable" value="true"/>
+		<set name="icon" value="icon.armor_t97_b_i00"/>
+		<set name="price" value="16738000"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1070"/>
+		<equip>
+			<slot id="FEET"/>
+		</equip>
+		<for>
+			<add stat="pDef" order="0x10" value="74"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+
+	<armor id="37015" name="Cloak of Aden">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="28671000"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false" />
+		<set name="storeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<attributes>
+			<attribute element="unholy" value="30"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="80"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37016" name="Cloak of Dion">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="28671000"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false" />
+		<set name="storeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<attributes>
+			<attribute element="unholy" value="30"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="80"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37017" name="Cloak of Giran">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="28671000"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false" />
+		<set name="storeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<attributes>
+			<attribute element="unholy" value="30"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="80"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37018" name="Cloak of Gludio">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="28671000"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false" />
+		<set name="storeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<attributes>
+			<attribute element="unholy" value="30"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="80"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37019" name="Cloak of Goddard">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="28671000"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false" />
+		<set name="storeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<attributes>
+			<attribute element="unholy" value="30"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="80"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37020" name="Cloak of Innadril">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="28671000"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false" />
+		<set name="storeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<attributes>
+			<attribute element="unholy" value="30"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="80"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37021" name="Cloak of Oren">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="28671000"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false" />
+		<set name="storeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<attributes>
+			<attribute element="unholy" value="30"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="80"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37022" name="Cloak of Rune">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="28671000"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false" />
+		<set name="storeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<attributes>
+			<attribute element="unholy" value="30"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="80"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37023" name="Cloak of Schuttgart">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="28671000"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false" />
+		<set name="storeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<attributes>
+			<attribute element="unholy" value="30"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="80"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+
+	<armor id="37028" name="Cloak of Loyalty">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="500000000"/>
+		<set name="destroyable" value="true"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="dropable" value="false" />
+		<set name="storeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<skills>
+			<skill id="21242" level="1"/>
+			<skill id="21243" level="1"/>
+			<skill id="21244" level="1"/>
+		</skills>
+		<attributes>
+			<attribute element="fire" value="15"/>
+			<attribute element="water" value="25"/>
+			<attribute element="wind" value="25"/>
+			<attribute element="earth" value="15"/>
+			<attribute element="holy" value="25"/>
+			<attribute element="unholy" value="15"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="80"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37029" name="Cloak of Darkness">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="500000000"/>
+		<set name="destroyable" value="true"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="dropable" value="true" />
+		<set name="storeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<skills>
+			<skill id="21242" level="1"/>
+			<skill id="21243" level="1"/>
+			<skill id="21244" level="1"/>
+		</skills>
+		<attributes>
+			<attribute element="fire" value="15"/>
+			<attribute element="water" value="25"/>
+			<attribute element="wind" value="25"/>
+			<attribute element="earth" value="15"/>
+			<attribute element="holy" value="25"/>
+			<attribute element="unholy" value="15"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="80"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="37032" name="Cloak of Hero">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="Cloak_Elixine.White_cloak_icon"/>
+		<set name="price" value="500000000"/>
+		<set name="destroyable" value="true"/>
+		<set name="sellable" value="false"/>
+		<set name="tradeable" value="false"/>
+		<set name="dropable" value="false" />
+		<set name="storeable" value="false"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<skills>
+			<skill id="21242" level="1"/>
+			<skill id="21243" level="1"/>
+			<skill id="21244" level="1"/>
+		</skills>
+		<attributes>
+			<attribute element="fire" value="15"/>
+			<attribute element="water" value="25"/>
+			<attribute element="wind" value="25"/>
+			<attribute element="earth" value="15"/>
+			<attribute element="holy" value="25"/>
+			<attribute element="unholy" value="15"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="80"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="38031" name="Cloak of Hero White">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="hero.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<skills>
+			<skill id="21243" level="1"/>
+		</skills>
+		<for>
+		  <add stat="pDef" order="0x10" value="90"/>
+		  <add stat="mDef" order="0x40" value="150"/>
+		  <enchant stat="pDef" order="0x0C" value="0"/>
+		  <enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+		
+		<attributes>
+			<attribute element="fire" value="15"/>
+			<attribute element="water" value="25"/>
+			<attribute element="wind" value="25"/>
+			<attribute element="earth" value="15"/>
+			<attribute element="holy" value="25"/>
+			<attribute element="unholy" value="15"/>
+		</attributes>
+	</armor>
+	<armor id="38032" name="Cloak of Hero Black">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="hero.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<skills>
+		  <skill id="21243" level="1"/>
+		</skills>
+		<for>
+		  <add stat="pDef" order="0x10" value="90"/>
+		  <add stat="mDef" order="0x40" value="150"/>
+		  <enchant stat="pDef" order="0x0C" value="0"/>
+		  <enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+		<attributes>
+			<attribute element="fire" value="15"/>
+			<attribute element="water" value="25"/>
+			<attribute element="wind" value="25"/>
+			<attribute element="earth" value="15"/>
+			<attribute element="holy" value="25"/>
+			<attribute element="unholy" value="15"/>
+		</attributes>
+	</armor>
+	<armor id="57000" name="School Uniform" add_name="A">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="true"/>
+		<set name="icon" value="Uniform_As.Br_schoollook"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1000"/>
+		<equip>
+		  <slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="57001" name="School Uniform" add_name="B">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="true"/>
+		<set name="icon" value="Uniform_As.Br_schoollook"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1000"/>
+		<equip>
+		  <slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="57002" name="Christmas Uniform">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="true"/>
+		<set name="icon" value="Uniform_As.armor_ev_santas_clothes"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1000"/>
+		<equip>
+		  <slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="57003" name="Dark Knight" add_name="Uniform">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="true"/>
+		<set name="icon" value="Uniform_As.Dark_Kninght"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1000"/>
+		<equip>
+		  <slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="57004" name="Quipao Uniform" add_name="">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="true"/>
+		<set name="icon" value="Uniform_As.qipao_armor_c_u_i00"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1000"/>
+		<equip>
+		  <slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="57005" name="Navi Uniform" add_name="">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="true"/>
+		<set name="icon" value="Uniform_As.navy_uniform_a_i00"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1000"/>
+		<equip>
+		  <slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="57006" name="Cloak of Hero">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="BranchSys2.Icon.br_freya_cloak_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="220"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+	</armor>
+	<armor id="57007" name="Pirat Uniform" add_name="">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="true"/>
+		<set name="icon" value="Uniform_As.captain_a_i00"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1000"/>
+		<equip>
+		  <slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="57008" name="Musketeer Uniform" add_name="">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="true"/>
+		<set name="icon" value="icon.armor_t2000_ul_i00"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1000"/>
+		<equip>
+		  <slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="57009" name="Magician Uniform" add_name="">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="true"/>
+		<set name="icon" value="icon.armor_t2000_ul_i00"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1000"/>
+		<equip>
+		  <slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="57010" name="Magician Uniform" add_name="Upgraded">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="true"/>
+		<set name="icon" value="icon.armor_t2000_ul_i00"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1000"/>
+		<equip>
+		  <slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="57011" name="Ninja Suit" add_name="">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="true"/>
+		<set name="icon" value="L2Liona.icon1.g_co_ninja_u"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1000"/>
+		<equip>
+		  <slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="57012" name="Dark Assasin Suit" add_name="">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="true"/>
+		<set name="icon" value="L2Liona.ico.Asm_ico"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1000"/>
+		<equip>
+		  <slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="57013" name="Metal Suit" add_name="">
+		<set name="crystal_type" value="NONE"/>
+		<set name="dropable" value="true"/>
+		<set name="icon" value="icon.armor_t2000_ul_i00"/>
+		<set name="sellable" value="true"/>
+		<set name="tradeable" value="true"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="1000"/>
+		<equip>
+		  <slot id="FORMAL_WEAR"/>
+		</equip>
+	</armor>
+	<armor id="31721" name="Santa Cloak">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="cloak.g_christmas_cloak"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="110"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<attributes>
+			<attribute element="fire" value="5"/>
+			<attribute element="water" value="15"/>
+			<attribute element="wind" value="15"/>
+			<attribute element="earth" value="5"/>
+			<attribute element="holy" value="15"/>
+			<attribute element="unholy" value="5"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="60"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="31722" name="Russian Cloak">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="cloak.g_cloak_anniversary"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="110"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<attributes>
+			<attribute element="fire" value="5"/>
+			<attribute element="water" value="15"/>
+			<attribute element="wind" value="15"/>
+			<attribute element="earth" value="5"/>
+			<attribute element="holy" value="15"/>
+			<attribute element="unholy" value="5"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="60"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="31723" name="Polish Cloak">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="cloak.g_pl_cape"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="110"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<attributes>
+			<attribute element="fire" value="5"/>
+			<attribute element="water" value="15"/>
+			<attribute element="wind" value="15"/>
+			<attribute element="earth" value="5"/>
+			<attribute element="holy" value="15"/>
+			<attribute element="unholy" value="5"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="60"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+	<armor id="31724" name="Halloween Cloak">
+		<set name="enchantable" value="false"/>
+		<set name="crystal_type" value="S84"/>
+		<set name="icon" value="cloak.g_halloween_cloack_i00"/>
+		<set name="price" value="0"/>
+		<set name="type" value="NONE"/>
+		<set name="weight" value="110"/>
+		<equip>
+			<slot id="BACK"/>
+		</equip>
+		<attributes>
+			<attribute element="fire" value="5"/>
+			<attribute element="water" value="15"/>
+			<attribute element="wind" value="15"/>
+			<attribute element="earth" value="5"/>
+			<attribute element="holy" value="15"/>
+			<attribute element="unholy" value="5"/>
+		</attributes>
+		<for>
+			<add stat="pDef" order="0x10" value="60"/>
+			<enchant stat="pDef" order="0x0C" value="0"/>
+			<enchant stat="maxHp" order="0x80" value="0"/>
+		</for>
+	</armor>
+</list>

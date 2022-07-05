@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "events.dtd">
+<list>
+	<event id="1" name="dominion_siege_runner" type="MAIN_EVENT" impl="DominionSiegeRunner">
+		<on_init>
+			<start name="registration" />
+		</on_init>
+		<on_time>
+			<on time="-7200">
+				<stop name="registration" />
+			</on>
+			<on time="-1200">
+				<announce val="-20" />
+				<start name="battlefield" />
+			</on>
+			<on time="-600">
+				<announce val="-10" />
+			</on>
+			<on time="-300">
+				<announce val="-5" />
+			</on>
+			<on time="-60">
+				<announce val="-1" />
+			</on>
+			<on time="0">
+				<start name="event" />
+			</on>
+			<on time="3600">
+				<announce val="3600" />
+			</on>
+			<on time="6600">
+				<announce val="600" />
+			</on>
+			<on time="6900">
+				<announce val="300" />
+			</on>
+			<on time="7140">
+				<announce val="60" />
+			</on>
+			<on time="7190">
+				<announce val="10" />
+			</on>
+			<on time="7195">
+				<announce val="5" />
+			</on>
+			<on time="7196">
+				<announce val="4" />
+			</on>
+			<on time="7197">
+				<announce val="3" />
+			</on>
+			<on time="7198">
+				<announce val="2" />
+			</on>
+			<on time="7199">
+				<announce val="1" />
+			</on>
+			<on time="7200">
+				<stop name="event" />
+			</on>
+		</on_time>
+	</event>
+</list>

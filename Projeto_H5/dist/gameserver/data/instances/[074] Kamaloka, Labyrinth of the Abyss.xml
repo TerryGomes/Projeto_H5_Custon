@@ -1,0 +1,52 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Town of Dion: NPC Lucas (Level 39) -->
+	<instance id="74" name="Kamaloka (Labyrinth of the Abyss)" maxChannels="5" collapseIfEmpty="10" timelimit="45" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="34" max="44"/>
+		<party min="2" max="9"/>
+		<return loc="18181 145987 -3104"/>
+		<teleport loc="21944 -174888 -10904"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="3"/>
+		<add_parameters>
+			<param name="tele_device_loc" value="12056 -174888 -9944"/>
+		</add_parameters>
+		<spawns>
+			<!-- Escape Device -->
+			<spawn mobId="32496" type="point">
+				<coords loc="21848 -174888 -10904 0"/>
+			</spawn>
+			<!-- Lost Watcher -->
+			<spawn mobId="22488" type="point">
+				<coords loc="20504 -174888 -10912 0"/>
+				<coords loc="20632 -174888 -10912 0"/>
+				<coords loc="20360 -174888 -10912 0"/>
+				<coords loc="20488 -174760 -10912 0"/>
+				<coords loc="20488 -175016 -10912 0"/>
+				<coords loc="20424 -174968 -10912 0"/>
+				<coords loc="20584 -174968 -10912 0"/>
+				<coords loc="20568 -174808 -10912 0"/>
+				<coords loc="20408 -174808 -10912 0"/>
+			</spawn>
+			<!-- Lost Beholder -->
+			<spawn mobId="22490" type="point">
+				<coords loc="18168 -174904 -10648 0"/>
+				<coords loc="18152 -175016 -10648 0"/>
+				<coords loc="18280 -174888 -10648 0"/>
+				<coords loc="18152 -174760 -10648 0"/>
+				<coords loc="18024 -174888 -10648 0"/>
+			</spawn>
+			<!-- Lost Warden -->
+			<spawn mobId="25617" type="point">
+				<coords loc="15832 -174888 -10384 0"/>
+			</spawn>
+			<!-- BOSS: Lost Captain -->
+			<spawn mobId="29132" type="point">
+				<coords loc="12056 -174888 -9944 0"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

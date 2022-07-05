@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "events.dtd">
+<list>
+	<event id="2" name="RunePrimeval_Vehicle" type="BOAT_EVENT" impl="BoatWay">
+		<parameter name="class" value="Vehicle" />
+		<parameter name="ticketId" value="8925" />
+		<parameter name="spawn_point" value="37885 -35767 -3615 0" />
+		<parameter name="return_point" value="34513 -38009 -3640" />
+		<on_time>
+			<on time="0">
+				<play_sound type="SOUND" range="-1" sound="itemsound.ship_arrival_departure" />
+				<say how="PASSENGER_BOAT_INFO" chat="SYSTEM_MESSAGE" range="-1" text="WELCOME_TO_RUNE_HARBOR"/>
+				<say how="PASSENGER_BOAT_INFO" chat="SYSTEM_MESSAGE" range="-1" text="THE_FERRY_WILL_LEAVE_FOR_PRIMEVAL_ISLE_AFTER_ANCHORING_FOR_THREE_MINUTES"/>
+			</on>
+			<on time="180">
+				<say how="PASSENGER_BOAT_INFO" chat="SYSTEM_MESSAGE" range="-1" text="THE_FERRY_IS_NOW_DEPARTING_RUNE_HARBOR_FOR_PRIMEVAL_ISLE"/>
+				<start name="event"/>
+			</on>
+		</on_time>
+		<objects name="boat_points">
+			<boat_point speed1="180" speed2="1800" x="40500" y="-35767" z="-3610"/>
+			<boat_point speed1="200" speed2="1800" x="42200" y="-33000" z="-3610"/>
+			<boat_point speed1="250" speed2="1800" x="40439" y="-30475" z="-3610"/>
+			<boat_point speed1="300" speed2="1800" x="34439" y="-29475" z="-3610"/>
+			<boat_point speed1="300" speed2="1800" x="20439" y="-33475" z="-3610"/>
+			<boat_point speed1="300" speed2="1800" x="11963" y="-33475" z="-3610"/>
+			<boat_point speed1="250" speed2="1800" x="8063" y="-32580" z="-3610"/>
+			<boat_point speed1="180" speed2="1800" x="5063" y="-29700" z="-3610"/>
+			<boat_point speed1="180" speed2="1800" x="8063" y="-27276" z="-3610"/>
+			<boat_point speed1="180" speed2="1800" x="10363" y="-27276" z="-3610"/>
+	</objects>
+	</event>
+	<event id="3" name="RunePrimeval_Vehicle" type="BOAT_EVENT" impl="BoatWay">
+		<parameter name="return_point" value="10447 -24982 -3664" />
+		<parameter name="ticketId" value="8924" />
+		<on_time>
+			<on time="0">
+				<play_sound type="SOUND" range="-1" sound="itemsound.ship_arrival_departure" />
+				<say how="PASSENGER_BOAT_INFO" chat="SYSTEM_MESSAGE" range="-1" text="THE_FERRY_HAS_ARRIVED_AT_PRIMEVAL_ISLE"/>
+				<say how="PASSENGER_BOAT_INFO" chat="SYSTEM_MESSAGE" range="-1" text="THE_FERRY_WILL_LEAVE_FOR_RUNE_HARBOR_AFTER_ANCHORING_FOR_THREE_MINUTES"/>
+			</on>
+			<on time="180">
+				<say how="PASSENGER_BOAT_INFO" chat="SYSTEM_MESSAGE" range="-1" text="THE_FERRY_IS_NOW_DEPARTING_PRIMEVAL_ISLE_FOR_RUNE_HARBOR"/>
+				<start name="event"/>
+			</on>
+		</on_time>
+		<objects name="boat_points">
+			<boat_point speed1="180" speed2="1800" x="11800" y="-27276" z="-3610"/>
+			<boat_point speed1="200" speed2="1800" x="13800" y="-28300" z="-3610"/>
+			<boat_point speed1="250" speed2="1800" x="15700" y="-29700" z="-3610"/>
+			<boat_point speed1="250" speed2="1800" x="25300" y="-35700" z="-3610"/>
+			<boat_point speed1="200" speed2="1800" x="28300" y="-36000" z="-3610"/>
+			<boat_point speed1="180" speed2="1800" x="31300" y="-35767" z="-3610"/>
+			<boat_point speed1="180" speed2="1800" x="37890" y="-35765" z="-3610"/>
+	</objects>
+	</event>
+</list>

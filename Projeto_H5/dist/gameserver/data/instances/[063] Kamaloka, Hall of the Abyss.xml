@@ -1,0 +1,34 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Town of Heine: NPC Gosta (Level 43) -->
+	<instance id="63" name="Kamaloka, Hall of the Abyss" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="38" max="48"/>
+		<party min="2" max="6"/>
+		<return loc="108453 221646 -3592"/>
+		<teleport loc="-89040 -206896 -8100"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="1"/>
+		<add_parameters>
+			<param name="tele_device_loc" value="-89032 -206152 -8112"/>
+		</add_parameters>
+		<spawns>
+			<!-- Blade Otis -->
+			<spawn mobId="18562" type="loc">
+				<coords loc="-89224 -206392 -8100 -8100"/>
+				<coords loc="-89224 -205902 -8100 -8100"/>
+				<coords loc="-88810 -205902 -8100 -8100"/>
+				<coords loc="-88810 -206392 -8100 -8100"/>
+			</spawn>
+			<!-- Follower of Otis -->
+			<spawn mobId="18563" count="4" respawn="30" type="loc">
+				<coords loc="-89224 -206392 -8100 -8100"/>
+				<coords loc="-89224 -205902 -8100 -8100"/>
+				<coords loc="-88810 -205902 -8100 -8100"/>
+				<coords loc="-88810 -206392 -8100 -8100"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

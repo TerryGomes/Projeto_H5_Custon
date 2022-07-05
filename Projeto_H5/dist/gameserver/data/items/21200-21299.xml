@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <etcitem id="21200" name="Mysterious Scroll - Prophecy of Wind">
+    <set name="icon" value="BranchSys.icon.br_xmas_scroll_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21201" name="Magic Glasses 30-Day Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <armor id="21202" name="Magic Glasses" add_name="30 day limited period">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_Eye_Glasses_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FACE"/>
+    </equip>
+  </armor>
+  <etcitem id="21203" name="Queen Ant's Ring 30-Day Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21204" name="Baium's Ring 30-Day Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21205" name="Earring of Zaken 30-Day Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <armor id="21206" name="Queen Ant's Ring" add_name="30 day limited period">
+    <set name="crystal_type" value="B"/>
+    <set name="icon" value="icon.accessory_ring_of_queen_ant_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="43200"/>
+    <set name="temporal" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <equip>
+      <slot id="RIGHT_FINGER"/>
+      <slot id="LEFT_FINGER"/>
+    </equip>
+    <skills>
+      <skill id="3562" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="48"/>
+      <add stat="maxMp" order="0x10" value="21"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="21207" name="Baium's Ring" add_name="30 day limited period">
+    <set name="crystal_type" value="S"/>
+    <set name="icon" value="icon.accessory_ring_of_baium_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="43200"/>
+    <set name="temporal" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <equip>
+      <slot id="RIGHT_FINGER"/>
+      <slot id="LEFT_FINGER"/>
+    </equip>
+    <skills>
+      <skill id="3561" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="48"/>
+      <add stat="maxMp" order="0x10" value="21"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="21208" name="Earring of Zaken" add_name="30 day limited period">
+    <set name="crystal_type" value="S"/>
+    <set name="icon" value="icon.accessory_earring_of_zaken_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="43200"/>
+    <set name="temporal" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <equip>
+      <slot id="RIGHT_EAR"/>
+      <slot id="LEFT_EAR"/>
+    </equip>
+    <skills>
+      <skill id="3559" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="71"/>
+      <add stat="maxMp" order="0x10" value="31"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <etcitem id="21209" name="MP Recovery Potion Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21210" name="MP Recovery Potion">
+    <set name="icon" value="BranchSys.icon.br_vitality_potion_i00"/>
+    <set name="weight" value="5"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21211" name="Vitality Replenishing Herb Tea Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21212" name="Vitality Replenishing Herb Tea">
+    <set name="icon" value="icon.etc_hot_spring_mineral_i00"/>
+    <set name="weight" value="80"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21213" name="Queen Ant's Ring 180-Day Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21214" name="Baium's Ring 180-Day Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21215" name="Earring of Zaken 180-Day Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21216" name="Valakas's Necklace 180-Day Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21217" name="Antharas's Earring 180-Day Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <armor id="21218" name="Queen Ant's Ring" add_name="180 day limited period">
+    <set name="crystal_type" value="B"/>
+    <set name="icon" value="icon.accessory_ring_of_queen_ant_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="259200"/>
+    <set name="temporal" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <equip>
+      <slot id="RIGHT_FINGER"/>
+      <slot id="LEFT_FINGER"/>
+    </equip>
+    <skills>
+      <skill id="3562" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="48"/>
+      <add stat="maxMp" order="0x10" value="21"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="21219" name="Baium's Ring" add_name="180 day limited period">
+    <set name="crystal_type" value="S"/>
+    <set name="icon" value="icon.accessory_ring_of_baium_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="259200"/>
+    <set name="temporal" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <equip>
+      <slot id="RIGHT_FINGER"/>
+      <slot id="LEFT_FINGER"/>
+    </equip>
+    <skills>
+      <skill id="3561" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="48"/>
+      <add stat="maxMp" order="0x10" value="21"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="21220" name="Earring of Zaken" add_name="180 day limited period">
+    <set name="crystal_type" value="S"/>
+    <set name="icon" value="icon.accessory_earring_of_zaken_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="259200"/>
+    <set name="temporal" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <equip>
+      <slot id="RIGHT_EAR"/>
+      <slot id="LEFT_EAR"/>
+    </equip>
+    <skills>
+      <skill id="3559" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="71"/>
+      <add stat="maxMp" order="0x10" value="31"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="21221" name="Valakas's Necklace" add_name="180 day limited period">
+    <set name="crystal_type" value="S"/>
+    <set name="icon" value="icon.accessory_necklace_of_valakas_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="259200"/>
+    <set name="temporal" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <equip>
+      <slot id="NECKLACE"/>
+    </equip>
+    <skills>
+      <skill id="3557" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="125"/>
+      <add stat="maxMp" order="0x10" value="50"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="21222" name="Antharas's Earring" add_name="180 day limited period">
+    <set name="crystal_type" value="S"/>
+    <set name="icon" value="icon.accessory_earring_of_antaras_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="259200"/>
+    <set name="temporal" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <equip>
+      <slot id="RIGHT_EAR"/>
+      <slot id="LEFT_EAR"/>
+    </equip>
+    <skills>
+      <skill id="3558" level="1"/>
+    </skills>
+    <for>
+      <add stat="mDef" order="0x10" value="94"/>
+      <add stat="maxMp" order="0x10" value="37"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <etcitem id="21223" name="Transformation Scroll: Anakim Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21224" name="Transformation Scroll: Anakim">
+    <set name="icon" value="icon.etc_trans_4f_s_b_01"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21225" name="Sweet Fruit Cocktail Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21226" name="Sweet Fruit Cocktail Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21227" name="Sweet Fruit Cocktail">
+    <set name="icon" value="icon.etc_fruit_cocktail_i00"/>
+    <set name="weight" value="5"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21228" name="Sweet Fruit Cocktail" add_name="Event">
+    <set name="icon" value="icon.etc_fruit_cocktail_i00"/>
+    <set name="weight" value="5"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21229" name="Fresh Fruit Cocktail Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21230" name="Fresh Fruit Cocktail Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21231" name="Fresh Fruit Cocktail">
+    <set name="icon" value="icon.etc_fruit_cocktail_i01"/>
+    <set name="weight" value="5"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21232" name="Fresh Fruit Cocktail" add_name="Event">
+    <set name="icon" value="icon.etc_fruit_cocktail_i01"/>
+    <set name="weight" value="5"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21233" name="Fresh Milk Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21234" name="Fresh Milk Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21235" name="Fresh Milk">
+      <set name="reuse_delay" value="3000"/>
+      <set name="class" value="OTHER"/>
+      <set name="crystal_type" value="NONE"/>
+      <set name="icon" value="icon.etc_fresh_milk_i00"/>
+      <set name="stackable" value="true"/>
+      <set name="dropable" value="false"/>
+      <set name="sellable" value="false"/>
+      <set name="tradeable" value="false"/>
+      <set name="type" value="OTHER"/>
+      <set name="weight" value="1"/>
+      <cond msgId="1508">
+          <player olympiad="false"/>
+      </cond>
+  </etcitem>
+  <etcitem id="21236" name="Fresh Milk" add_name="Event">
+      <set name="reuse_delay" value="3000"/>
+      <set name="class" value="OTHER"/>
+      <set name="crystal_type" value="NONE"/>
+      <set name="icon" value="icon.etc_fresh_milk_i00"/>
+      <set name="stackable" value="true"/>
+      <set name="dropable" value="false"/>
+      <set name="sellable" value="false"/>
+      <set name="tradeable" value="false"/>
+      <set name="type" value="OTHER"/>
+      <set name="weight" value="1"/>
+      <cond msgId="1508">
+          <player olympiad="false"/>
+      </cond>
+  </etcitem>
+  <etcitem id="21237" name="Super Healthy Juice (HP) Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21238" name="Super Healthy Juice (HP) Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21239" name="Super Healthy Juice (HP)">
+    <set name="icon" value="BranchSys2.icon.etc_health_juice_i00"/>
+    <set name="weight" value="180"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false" />
+    <set name="dropable" value="false" />
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="POTION"/>
+    <skills>
+      <skill id="22217" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <player olympiad="false"/>
+    </cond>
+  </etcitem>
+  <etcitem id="21240" name="Super Healthy Juice (HP)" add_name="Event">
+    <set name="icon" value="BranchSys2.icon.etc_health_juice_i00"/>
+    <set name="weight" value="180"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21241" name="Super Healthy Juice (CP) Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21242" name="Super Healthy Juice (CP) Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21243" name="Super Healthy Juice (CP)">
+    <set name="icon" value="BranchSys2.icon.etc_health_juice_i01"/>
+    <set name="weight" value="180"/>
+    <set name="tradeable" value="false" />
+    <set name="dropable" value="false" />
+    <set name="stackable" value="true"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="POTION"/>
+    <skills>
+      <skill id="22219" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <player olympiad="false"/>
+    </cond>
+  </etcitem>
+  <etcitem id="21244" name="Super Healthy Juice (CP)" add_name="Event">
+    <set name="icon" value="BranchSys2.icon.etc_health_juice_i01"/>
+    <set name="weight" value="180"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21245" name="Vitality Replenishing Beverage Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21246" name="Vitality Replenishing Beverage Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21247" name="Vitality Replenishing Beverage">
+    <set name="icon" value="icon.etc_potion_of_energy_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21248" name="Vitality Replenishing Beverage" add_name="Event">
+    <set name="icon" value="icon.etc_potion_of_energy_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21249" name="Vitality Maintainig Potion (30 Minutes) Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21250" name="Vitality Maintainig Potion (30 Minutes) Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21251" name="Vitality Maintainig Potion (30 Minutes)">
+    <set name="icon" value="BranchSys2.br_essence_rose_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21252" name="Vitality Maintainig Potion (30 Minutes)" add_name="Event">
+    <set name="icon" value="BranchSys2.br_essence_rose_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21253" name="Gludio Homemade Cookie Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21254" name="Gludio Homemade Cookie Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21255" name="Gludio Homemade Cookie">
+    <set name="icon" value="BranchSys.icon.br_valentine_cookie_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21256" name="Gludio Homemade Cookie" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_valentine_cookie_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21257" name="Dion Homemade Cookie Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21258" name="Dion Homemade Cookie Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21259" name="Dion Homemade Cookie">
+    <set name="icon" value="BranchSys.icon.br_valentine_cookie_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21260" name="Dion Homemade Cookie" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_valentine_cookie_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21261" name="Aden Designer Cookie Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21262" name="Aden Designer Cookie Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21263" name="Aden Designer Cookie">
+    <set name="icon" value="BranchSys.icon.br_valentine_cookie_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21264" name="Aden Designer Cookie" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_valentine_cookie_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21265" name="Giran Designer Cookie Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21266" name="Giran Designer Cookie Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21267" name="Giran Designer Cookie">
+    <set name="icon" value="BranchSys.icon.br_valentine_cookie_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21268" name="Giran Designer Cookie" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_valentine_cookie_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21269" name="Rune Designer Cookie Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21270" name="Rune Designer Cookie Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21271" name="Rune Designer Cookie">
+    <set name="icon" value="BranchSys.icon.br_valentine_cookie_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21272" name="Rune Designer Cookie" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_valentine_cookie_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21273" name="Hunting Helper Exchange Coupon Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21274" name="Hunting Helper Exchange Coupon Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21275" name="Hunting Helper Exchange Coupon">
+    <set name="icon" value="icon.etc_ticket_red_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21276" name="Hunting Helper Exchange Coupon" add_name="Event">
+    <set name="icon" value="icon.etc_ticket_red_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21277" name="High-Grade Hunting Helper Exchange Coupon Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21278" name="High-Grade Hunting Helper Exchange Coupon Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21279" name="High-Grade Hunting Helper Exchange Coupon">
+    <set name="icon" value="icon.etc_ticket_red_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21280" name="High-Grade Hunting Helper Exchange Coupon" add_name="Event">
+    <set name="icon" value="icon.etc_ticket_red_i00"/>
+    <set name="weight" value="120"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21281" name="Feather of Blessing Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21282" name="Feather of Blessing Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21283" name="Free Teleport Scroll Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21284" name="Free Teleport Scroll Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21285" name="Free Teleport Scroll Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21286" name="Free Teleport Scroll Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21287" name="Extra Entrance Pass - Near Kamaloka Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21288" name="Extra Entrance Pass - Near Kamaloka Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21289" name="Extra Entrance Pass - Kamaloka (Hall of the Abyss) Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21290" name="Extra Entrance Pass - Kamaloka (Hall of the Abyss) Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21291" name="Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21292" name="Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21293" name="Weapon-type Enhance Backup Stone (A-Grade) Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21294" name="Weapon-type Enhance Backup Stone (A-Grade) Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21295" name="Weapon-type Enhance Backup Stone (S-Grade) Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21296" name="Weapon-type Enhance Backup Stone (S-Grade) Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21297" name="Armor-type Enhance Backup Stone (A-Grade) Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21298" name="Armor-type Enhance Backup Stone (A-Grade) Pack" add_name="Event">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21299" name="Armor-type Enhance Backup Stone (S-Grade) Pack">
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+</list>

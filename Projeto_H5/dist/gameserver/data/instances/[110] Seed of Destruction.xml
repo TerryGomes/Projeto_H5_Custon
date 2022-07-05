@@ -1,0 +1,1301 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Seed of Destruction: Tiat alive -->
+	<instance id="110" name="Seed of Destruction" maxChannels="3" collapseIfEmpty="20" timelimit="130" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="75" max="85"/>
+		<party min="11" max="45"/>
+		<return loc="-248376 250440 4344"/>
+		<teleport loc="-242738 219995 -9984"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * 3,6" setUponEntry="false" sharedReuseGroup="0"/>
+		<geodata map="12_24"/>
+		<spawns>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-239504 219984 -10112 32767"/>
+				<coords loc="-239294 219728 -9776 32767"/>
+				<coords loc="-239294 219806 -9760 32767"/>
+				<coords loc="-239290 219890 -9744 32767"/>
+				<coords loc="-239294 220064 -9744 32767"/>
+				<coords loc="-239294 220137 -9760 32767"/>
+				<coords loc="-239298 220214 -9776 32767"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-239294 219984 -9744 32767"/>
+			</spawn>
+			<spawn mobId="22550 22551 22552 22575" count="5" type="loc" respawn="0">
+				<coords loc="-240766 219168 -10178 -9978"/>
+				<coords loc="-240755 220795 -10178 -9978"/>
+				<coords loc="-240667 220889 -10178 -9978"/>
+				<coords loc="-239595 220886 -10178 -9978"/>
+				<coords loc="-239487 220765 -10178 -9978"/>
+				<coords loc="-239490 219170 -10178 -9978"/>
+				<coords loc="-239583 219059 -10178 -9978"/>
+				<coords loc="-240665 219065 -10178 -9978"/>
+			</spawn>
+			<spawn mobId="22575 22544" count="3" type="loc" respawn="0">
+				<coords loc="-238353 219165 -10175 -9975"/>
+				<coords loc="-238340 220788 -10175 -9975"/>
+				<coords loc="-238431 220888 -10175 -9975"/>
+				<coords loc="-238933 220890 -10175 -9975"/>
+				<coords loc="-239027 220789 -10175 -9975"/>
+				<coords loc="-239034 219195 -10175 -9975"/>
+				<coords loc="-238924 219067 -10175 -9975"/>
+				<coords loc="-238445 219065 -10175 -9975"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-239152 219934 -10112 32767"/>
+				<coords loc="-239152 219988 -10112 32767"/>
+				<coords loc="-239151 220044 -10112 32767"/>
+			</spawn>
+			<spawn mobId="32601" type="point" respawn="0">
+				<coords loc="-238256 219984 -10128 0"/>
+			</spawn>
+			<spawn mobId="18776" type="point" respawn="0">
+				<coords loc="-245817 217075 -12208 0"/>
+			</spawn>
+			<spawn mobId="22540 22575 22542 22543 22544 22547" count="1" type="loc" respawn="0">
+				<coords loc="-245049 215765 -12270 -12070"/>
+				<coords loc="-244918 215845 -12270 -12070"/>
+				<coords loc="-244589 216174 -12270 -12070"/>
+				<coords loc="-245684 216898 -12270 -12070"/>
+				<coords loc="-245813 216897 -12270 -12070"/>
+				<coords loc="-245479 215581 -12270 -12070"/>
+			</spawn>
+			<spawn mobId="22540 22575 22542 22543 22544 22547" count="1" type="loc" respawn="0">
+				<coords loc="-244337 216699 -12259 -12059"/>
+				<coords loc="-244302 216842 -12259 -12059"/>
+				<coords loc="-244315 217320 -12259 -12059"/>
+				<coords loc="-245646 217060 -12259 -12059"/>
+				<coords loc="-245644 216934 -12259 -12059"/>
+				<coords loc="-244506 216255 -12259 -12059"/>
+			</spawn>
+			<spawn mobId="22540 22575 22542 22543 22544 22547" count="1" type="loc" respawn="0">
+				<coords loc="-245646 217097 -12265 -12065"/>
+				<coords loc="-245643 217211 -12265 -12065"/>
+				<coords loc="-244921 218317 -12265 -12065"/>
+				<coords loc="-244585 217990 -12265 -12065"/>
+				<coords loc="-244501 217868 -12265 -12065"/>
+				<coords loc="-244325 217437 -12265 -12065"/>
+			</spawn>
+			<spawn mobId="22540 22575 22542 22543 22544 22547" count="1" type="loc" respawn="0">
+				<coords loc="-245044 218381 -12265 -12065"/>
+				<coords loc="-245453 218553 -12265 -12065"/>
+				<coords loc="-245595 218587 -12265 -12065"/>
+				<coords loc="-246059 218591 -12265 -12065"/>
+				<coords loc="-245817 217263 -12265 -12065"/>
+				<coords loc="-245681 217264 -12265 -12065"/>
+			</spawn>
+			<spawn mobId="22540 22575 22542 22543 22544 22547" count="1" type="loc" respawn="0">
+				<coords loc="-245957 217259 -12265 -12065"/>
+				<coords loc="-247063 217975 -12265 -12065"/>
+				<coords loc="-246737 218306 -12265 -12065"/>
+				<coords loc="-246624 218383 -12265 -12065"/>
+				<coords loc="-246183 218566 -12265 -12065"/>
+				<coords loc="-245842 217262 -12265 -12065"/>
+			</spawn>
+			<spawn mobId="22540 22575 22542 22543 22544 22547" count="1" type="loc" respawn="0">
+				<coords loc="-246003 217082 -12263 -12063"/>
+				<coords loc="-246001 217263 -12263 -12063"/>
+				<coords loc="-247137 217871 -12263 -12063"/>
+				<coords loc="-247322 217439 -12263 -12063"/>
+				<coords loc="-247347 217315 -12263 -12063"/>
+				<coords loc="-247353 216826 -12263 -12063"/>
+			</spawn>
+			<spawn mobId="22540 22575 22542 22543 22544 22547" count="1" type="loc" respawn="0">
+				<coords loc="-247061 216172 -12262 -12062"/>
+				<coords loc="-246707 215838 -12262 -12062"/>
+				<coords loc="-246014 216933 -12262 -12062"/>
+				<coords loc="-246011 217046 -12262 -12062"/>
+				<coords loc="-247315 216715 -12262 -12062"/>
+				<coords loc="-247138 216271 -12262 -12062"/>
+			</spawn>
+			<spawn mobId="22540 22575 22542 22543 22544 22547" count="1" type="loc" respawn="0">
+				<coords loc="-246180 215593 -12263 -12063"/>
+				<coords loc="-246072 215568 -12263 -12063"/>
+				<coords loc="-245574 215573 -12263 -12063"/>
+				<coords loc="-245842 216895 -12263 -12063"/>
+				<coords loc="-245969 216892 -12263 -12063"/>
+				<coords loc="-246628 215784 -12263 -12063"/>
+			</spawn>
+
+			<spawn mobId="22575 22543 22544" count="1" type="loc" respawn="0">
+				<coords loc="-245049 215765 -12270 -12070"/>
+				<coords loc="-244918 215845 -12270 -12070"/>
+				<coords loc="-244589 216174 -12270 -12070"/>
+				<coords loc="-245684 216898 -12270 -12070"/>
+				<coords loc="-245813 216897 -12270 -12070"/>
+				<coords loc="-245479 215581 -12270 -12070"/>
+			</spawn>
+			<spawn mobId="22575 22543 22544" count="1" type="loc" respawn="0">
+				<coords loc="-244337 216699 -12259 -12059"/>
+				<coords loc="-244302 216842 -12259 -12059"/>
+				<coords loc="-244315 217320 -12259 -12059"/>
+				<coords loc="-245646 217060 -12259 -12059"/>
+				<coords loc="-245644 216934 -12259 -12059"/>
+				<coords loc="-244506 216255 -12259 -12059"/>
+			</spawn>
+			<spawn mobId="22575 22543 22544" count="1" type="loc" respawn="0">
+				<coords loc="-245646 217097 -12265 -12065"/>
+				<coords loc="-245643 217211 -12265 -12065"/>
+				<coords loc="-244921 218317 -12265 -12065"/>
+				<coords loc="-244585 217990 -12265 -12065"/>
+				<coords loc="-244501 217868 -12265 -12065"/>
+				<coords loc="-244325 217437 -12265 -12065"/>
+			</spawn>
+			<spawn mobId="22575 22543 22544" count="1" type="loc" respawn="0">
+				<coords loc="-245044 218381 -12265 -12065"/>
+				<coords loc="-245453 218553 -12265 -12065"/>
+				<coords loc="-245595 218587 -12265 -12065"/>
+				<coords loc="-246059 218591 -12265 -12065"/>
+				<coords loc="-245817 217263 -12265 -12065"/>
+				<coords loc="-245681 217264 -12265 -12065"/>
+			</spawn>
+			<spawn mobId="22575 22543 22544" count="1" type="loc" respawn="0">
+				<coords loc="-245957 217259 -12265 -12065"/>
+				<coords loc="-247063 217975 -12265 -12065"/>
+				<coords loc="-246737 218306 -12265 -12065"/>
+				<coords loc="-246624 218383 -12265 -12065"/>
+				<coords loc="-246183 218566 -12265 -12065"/>
+				<coords loc="-245842 217262 -12265 -12065"/>
+			</spawn>
+			<spawn mobId="22575 22543 22544" count="1" type="loc" respawn="0">
+				<coords loc="-246003 217082 -12263 -12063"/>
+				<coords loc="-246001 217263 -12263 -12063"/>
+				<coords loc="-247137 217871 -12263 -12063"/>
+				<coords loc="-247322 217439 -12263 -12063"/>
+				<coords loc="-247347 217315 -12263 -12063"/>
+				<coords loc="-247353 216826 -12263 -12063"/>
+			</spawn>
+			<spawn mobId="22575 22543 22544" count="1" type="loc" respawn="0">
+				<coords loc="-247061 216172 -12262 -12062"/>
+				<coords loc="-246707 215838 -12262 -12062"/>
+				<coords loc="-246014 216933 -12262 -12062"/>
+				<coords loc="-246011 217046 -12262 -12062"/>
+				<coords loc="-247315 216715 -12262 -12062"/>
+				<coords loc="-247138 216271 -12262 -12062"/>
+			</spawn>
+			<spawn mobId="22575 22543 22544" count="1" type="loc" respawn="0">
+				<coords loc="-246180 215593 -12263 -12063"/>
+				<coords loc="-246072 215568 -12263 -12063"/>
+				<coords loc="-245574 215573 -12263 -12063"/>
+				<coords loc="-245842 216895 -12263 -12063"/>
+				<coords loc="-245969 216892 -12263 -12063"/>
+				<coords loc="-246628 215784 -12263 -12063"/>
+			</spawn>
+
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-241168 217840 -12032 32767"/>
+				<coords loc="-241168 217936 -12000 32767"/>
+				<coords loc="-241168 218032 -11984 32767"/>
+				<coords loc="-241168 218336 -12016 32767"/>
+				<coords loc="-241168 218256 -12000 32767"/>
+				<coords loc="-241168 218176 -11984 32767"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-241173 218104 -11984 32767"/>
+			</spawn>
+			<spawn mobId="22540 22575" count="3" type="loc" respawn="0">
+				<coords loc="-242621 217288 -12426 -12226"/>
+				<coords loc="-242610 218916 -12426 -12226"/>
+				<coords loc="-242522 219010 -12426 -12226"/>
+				<coords loc="-241449 219006 -12426 -12226"/>
+				<coords loc="-241342 218886 -12426 -12226"/>
+				<coords loc="-241344 217290 -12426 -12226"/>
+				<coords loc="-241438 217179 -12426 -12226"/>
+				<coords loc="-242520 217185 -12426 -12226"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-240992 218176 -12352 32767"/>
+				<coords loc="-240992 218128 -12352 32767"/>
+				<coords loc="-240992 218080 -12352 32767"/>
+				<coords loc="-240992 218032 -12352 32767"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-238939 215886 -12272 16384"/>
+				<coords loc="-238853 215888 -12256 16384"/>
+				<coords loc="-238466 215890 -12288 16384"/>
+				<coords loc="-238545 215891 -12256 16384"/>
+				<coords loc="-238634 215891 -12240 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-238736 215888 -12240 16384"/>
+			</spawn>
+			<spawn mobId="22546 22539" count="3" type="loc" respawn="0">
+				<coords loc="-239622 216216 -12676 -12476"/>
+				<coords loc="-239593 217191 -12676 -12476"/>
+				<coords loc="-239466 217305 -12676 -12476"/>
+				<coords loc="-237955 217295 -12676 -12476"/>
+				<coords loc="-237849 217192 -12676 -12476"/>
+				<coords loc="-237863 216189 -12676 -12476"/>
+				<coords loc="-237933 216097 -12676 -12476"/>
+				<coords loc="-239505 216094 -12676 -12476"/>
+			</spawn>
+			<spawn mobId="22548 22575" count="3" type="loc" respawn="0">
+				<coords loc="-237824 215035 -12679 -12479"/>
+				<coords loc="-237817 215506 -12679 -12479"/>
+				<coords loc="-237911 215595 -12679 -12479"/>
+				<coords loc="-239522 215604 -12679 -12479"/>
+				<coords loc="-239609 215503 -12679 -12479"/>
+				<coords loc="-239613 215032 -12679 -12479"/>
+				<coords loc="-239520 214937 -12679 -12479"/>
+				<coords loc="-237927 214940 -12679 -12479"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-238696 215696 -12608 16384"/>
+				<coords loc="-238784 215696 -12608 16384"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-238736 215696 -12608 16384"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-238688 212400 -12736 16384"/>
+				<coords loc="-238784 212400 -12736 16384"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-238736 212400 -12736 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-238848 212272 -12384 16384"/>
+				<coords loc="-238960 212272 -12400 16384"/>
+				<coords loc="-238640 212272 -12368 16384"/>
+				<coords loc="-238560 212272 -12384 16384"/>
+				<coords loc="-238912 212272 -12384 16384"/>
+				<coords loc="-238464 212256 -12416 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-238738 212263 -12368 16384"/>
+			</spawn>
+			<spawn mobId="22546 22539" count="4" type="loc" respawn="0">
+				<coords loc="-239636 212608 -12810 -12610"/>
+				<coords loc="-239606 213583 -12810 -12610"/>
+				<coords loc="-239479 213697 -12810 -12610"/>
+				<coords loc="-237968 213687 -12810 -12610"/>
+				<coords loc="-237862 213584 -12810 -12610"/>
+				<coords loc="-237876 212581 -12810 -12610"/>
+				<coords loc="-237947 212489 -12810 -12610"/>
+				<coords loc="-239519 212486 -12810 -12610"/>
+			</spawn>
+			<spawn mobId="22546 22575" count="3" type="loc" respawn="0">
+				<coords loc="-237837 211427 -12813 -12613"/>
+				<coords loc="-237831 211898 -12813 -12613"/>
+				<coords loc="-237924 211987 -12813 -12613"/>
+				<coords loc="-239535 211996 -12813 -12613"/>
+				<coords loc="-239622 211895 -12813 -12613"/>
+				<coords loc="-239626 211424 -12813 -12613"/>
+				<coords loc="-239534 211329 -12813 -12613"/>
+				<coords loc="-237940 211332 -12813 -12613"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-238784 212095 -12736 16384"/>
+				<coords loc="-238736 212096 -12736 16384"/>
+				<coords loc="-238688 212096 -12736 16384"/>
+			</spawn>
+			<spawn mobId="18777" type="point" respawn="0">
+				<coords loc="-238736 211248 -12736 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-243003 213166 -12128 16384"/>
+				<coords loc="-242912 213166 -12128 16384"/>
+				<coords loc="-242559 213163 -12160 16384"/>
+				<coords loc="-242676 213164 -12128 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-242800 213152 -12112 16384"/>
+			</spawn>
+			<spawn mobId="22548" count="3" type="loc" respawn="0">
+				<coords loc="-243691 213504 -12559 -12359"/>
+				<coords loc="-243661 214480 -12559 -12359"/>
+				<coords loc="-243534 214593 -12559 -12359"/>
+				<coords loc="-242024 214583 -12559 -12359"/>
+				<coords loc="-241917 214480 -12559 -12359"/>
+				<coords loc="-241932 213477 -12559 -12359"/>
+				<coords loc="-242002 213386 -12559 -12359"/>
+				<coords loc="-243574 213382 -12559 -12359"/>
+			</spawn>
+			<spawn mobId="22540 22543" count="3" type="loc" respawn="0">
+				<coords loc="-241892 212324 -12562 -12362"/>
+				<coords loc="-241886 212794 -12562 -12362"/>
+				<coords loc="-241980 212883 -12562 -12362"/>
+				<coords loc="-243590 212892 -12562 -12362"/>
+				<coords loc="-243678 212792 -12562 -12362"/>
+				<coords loc="-243681 212320 -12562 -12362"/>
+				<coords loc="-243589 212225 -12562 -12362"/>
+				<coords loc="-241996 212228 -12562 -12362"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-243158 209561 -12304 16384"/>
+				<coords loc="-243239 209563 -12304 16384"/>
+				<coords loc="-243310 209564 -12304 16384"/>
+				<coords loc="-243375 209564 -12304 16384"/>
+				<coords loc="-243448 209565 -12304 16384"/>
+				<coords loc="-243537 209567 -12304 16384"/>
+				<coords loc="-243616 209568 -12304 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-242920 209561 -12256 16384"/>
+				<coords loc="-243035 209559 -12272 16384"/>
+				<coords loc="-242560 209568 -12272 16384"/>
+				<coords loc="-242661 209569 -12256 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-242800 209557 -12240 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-242494 209567 -12288 16384"/>
+				<coords loc="-242422 209568 -12304 16384"/>
+				<coords loc="-242349 209565 -12304 16384"/>
+				<coords loc="-242270 209565 -12304 16384"/>
+				<coords loc="-242180 209563 -12304 16384"/>
+				<coords loc="-242103 209561 -12304 16384"/>
+				<coords loc="-242026 209558 -12304 16384"/>
+			</spawn>
+			<spawn mobId="22546 22539 22548" count="2" type="loc" respawn="0">
+				<coords loc="-243715 209886 -12681 -12481"/>
+				<coords loc="-243685 210861 -12681 -12481"/>
+				<coords loc="-243558 210975 -12681 -12481"/>
+				<coords loc="-242048 210965 -12681 -12481"/>
+				<coords loc="-241941 210861 -12681 -12481"/>
+				<coords loc="-241956 209859 -12681 -12481"/>
+				<coords loc="-242026 209767 -12681 -12481"/>
+				<coords loc="-243598 209764 -12681 -12481"/>
+			</spawn>
+			<spawn mobId="22575 22548 22547" count="3" type="loc" respawn="0">
+				<coords loc="-241916 208705 -12684 -12484"/>
+				<coords loc="-241910 209176 -12684 -12484"/>
+				<coords loc="-242004 209264 -12684 -12484"/>
+				<coords loc="-243614 209273 -12684 -12484"/>
+				<coords loc="-243702 209173 -12684 -12484"/>
+				<coords loc="-243706 208702 -12684 -12484"/>
+				<coords loc="-243613 208607 -12684 -12484"/>
+				<coords loc="-242020 208610 -12684 -12484"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-240048 207824 -12880 32767"/>
+				<coords loc="-240064 207888 -12864 32767"/>
+				<coords loc="-240064 207760 -12880 32767"/>
+				<coords loc="-240016 207776 -12864 32767"/>
+				<coords loc="-240016 207872 -12864 32767"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-239897 207519 -12544 32764"/>
+				<coords loc="-239897 207455 -12560 32764"/>
+				<coords loc="-239897 207391 -12560 32764"/>
+				<coords loc="-239897 207327 -12560 32764"/>
+				<coords loc="-239897 207263 -12560 32764"/>
+				<coords loc="-239897 207199 -12560 32764"/>
+				<coords loc="-239897 207135 -12560 32764"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-239885 207822 -12496 32764"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-239890 207714 -12512 32764"/>
+				<coords loc="-239890 207623 -12528 32764"/>
+				<coords loc="-239893 208036 -12528 32764"/>
+				<coords loc="-239893 207943 -12512 32764"/>
+				<coords loc="-239840 207984 -12512 32764"/>
+				<coords loc="-239840 207888 -12496 32764"/>
+				<coords loc="-239840 207776 -12496 32764"/>
+				<coords loc="-239840 207680 -12512 32764"/>
+			</spawn>
+			<spawn mobId="22547" type="point" respawn="0">
+				<coords loc="-239792 207824 -12512 32764"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-239897 208143 -12560 32764"/>
+				<coords loc="-239897 208207 -12560 32764"/>
+				<coords loc="-239897 208271 -12560 32764"/>
+				<coords loc="-239897 208351 -12560 32764"/>
+				<coords loc="-239881 208447 -12560 32764"/>
+				<coords loc="-239881 208511 -12560 32764"/>
+				<coords loc="-239881 208591 -12560 32764"/>
+			</spawn>
+			<spawn mobId="22546" count="2" type="loc" respawn="0">
+				<coords loc="-241343 207015 -12930 -12730"/>
+				<coords loc="-241332 208643 -12930 -12730"/>
+				<coords loc="-241243 208737 -12930 -12730"/>
+				<coords loc="-240171 208733 -12930 -12730"/>
+				<coords loc="-240063 208613 -12930 -12730"/>
+				<coords loc="-240066 207017 -12930 -12730"/>
+				<coords loc="-240159 206906 -12930 -12730"/>
+				<coords loc="-241242 206912 -12930 -12730"/>
+			</spawn>
+			<spawn mobId="22548" count="7" type="loc" respawn="0">
+				<coords loc="-238929 207013 -12921 -12721"/>
+				<coords loc="-238916 208635 -12921 -12721"/>
+				<coords loc="-239007 208736 -12921 -12721"/>
+				<coords loc="-239509 208737 -12921 -12721"/>
+				<coords loc="-239604 208636 -12921 -12721"/>
+				<coords loc="-239610 207042 -12921 -12721"/>
+				<coords loc="-239500 206914 -12921 -12721"/>
+				<coords loc="-239021 206913 -12921 -12721"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-239696 207824 -12864 32767"/>
+				<coords loc="-239696 207872 -12864 32767"/>
+				<coords loc="-239696 207776 -12864 32767"/>
+			</spawn>
+			<spawn mobId="18777" type="point" respawn="0">
+				<coords loc="-238848 207824 -12864 0"/>
+			</spawn>
+			<spawn mobId="18777" type="point" respawn="0">
+				<coords loc="-241936 206432 -12736 0"/>
+			</spawn>
+			<spawn mobId="18778" type="point" respawn="0">
+				<coords loc="-250324 213588 -11570 16384"/>
+				<coords loc="-252556 213600 -11570 16384"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-245879 211967 -12412 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-246119 211796 -12032 16384"/>
+				<coords loc="-246029 211797 -12000 16384"/>
+				<coords loc="-245652 211793 -12016 16384"/>
+				<coords loc="-245754 211796 -12000 16384"/>
+				<coords loc="-245888 211792 -11984 16384"/>
+			</spawn>
+			<spawn mobId="22575" count="3" type="loc" respawn="0">
+				<coords loc="-244981 210932 -12423 -12223"/>
+				<coords loc="-244975 211402 -12423 -12223"/>
+				<coords loc="-245069 211491 -12423 -12223"/>
+				<coords loc="-246679 211500 -12423 -12223"/>
+				<coords loc="-246767 211400 -12423 -12223"/>
+				<coords loc="-246771 210928 -12423 -12223"/>
+				<coords loc="-246678 210833 -12423 -12223"/>
+				<coords loc="-245085 210836 -12423 -12223"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-245882 208369 -12541 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-246128 208176 -12160 16384"/>
+				<coords loc="-246032 208176 -12128 16384"/>
+				<coords loc="-245632 208160 -12144 16384"/>
+				<coords loc="-245728 208176 -12128 16384"/>
+			</spawn>
+			<spawn mobId="22547" type="point" respawn="0">
+				<coords loc="-245892 208165 -12118 16384"/>
+			</spawn>
+			<spawn mobId="22575" count="3" type="loc" respawn="0">
+				<coords loc="-246789 208504 -12562 -12362"/>
+				<coords loc="-246760 209480 -12562 -12362"/>
+				<coords loc="-246632 209593 -12562 -12362"/>
+				<coords loc="-245122 209583 -12562 -12362"/>
+				<coords loc="-245016 209480 -12562 -12362"/>
+				<coords loc="-245030 208477 -12562 -12362"/>
+				<coords loc="-245100 208386 -12562 -12362"/>
+				<coords loc="-246672 208382 -12562 -12362"/>
+			</spawn>
+			<spawn mobId="22540" count="4" type="loc" respawn="0">
+				<coords loc="-244990 207324 -12565 -12365"/>
+				<coords loc="-244984 207794 -12565 -12365"/>
+				<coords loc="-245078 207883 -12565 -12365"/>
+				<coords loc="-246688 207892 -12565 -12365"/>
+				<coords loc="-246776 207792 -12565 -12365"/>
+				<coords loc="-246780 207320 -12565 -12365"/>
+				<coords loc="-246687 207225 -12565 -12365"/>
+				<coords loc="-245094 207228 -12565 -12365"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-243177 206476 -12798 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-242969 206445 -12368 32764"/>
+				<coords loc="-242969 206349 -12384 32764"/>
+				<coords loc="-242969 206237 -12384 32764"/>
+				<coords loc="-242969 206541 -12384 32764"/>
+				<coords loc="-242969 206669 -12400 32764"/>
+			</spawn>
+			<spawn mobId="22575 22546" count="2" type="loc" respawn="0">
+				<coords loc="-244430 205650 -12807 -12607"/>
+				<coords loc="-244419 207278 -12807 -12607"/>
+				<coords loc="-244331 207371 -12807 -12607"/>
+				<coords loc="-243259 207368 -12807 -12607"/>
+				<coords loc="-243151 207247 -12807 -12607"/>
+				<coords loc="-243154 205652 -12807 -12607"/>
+				<coords loc="-243247 205541 -12807 -12607"/>
+				<coords loc="-244329 205547 -12807 -12607"/>
+			</spawn>
+			<spawn mobId="22544" count="5" type="loc" respawn="0">
+				<coords loc="-242007 205634 -12799 -12399"/>
+				<coords loc="-241994 207256 -12799 -12399"/>
+				<coords loc="-242085 207357 -12799 -12399"/>
+				<coords loc="-242587 207358 -12799 -12399"/>
+				<coords loc="-242681 207257 -12799 -12399"/>
+				<coords loc="-242688 205664 -12799 -12399"/>
+				<coords loc="-242578 205536 -12799 -12399"/>
+				<coords loc="-242099 205534 -12799 -12399"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-242770 206439 -12752 32767"/>
+				<coords loc="-242770 206384 -12736 32767"/>
+				<coords loc="-242770 206496 -12736 32767"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-241936 206432 -12736 0"/>
+			</spawn>
+			<spawn mobId="22540 22538 22542 22546 22547" count="1" type="loc" respawn="0">
+				<coords loc="-245049 215765 -12270 -12070"/>
+				<coords loc="-244918 215845 -12270 -12070"/>
+				<coords loc="-244589 216174 -12270 -12070"/>
+				<coords loc="-245684 216898 -12270 -12070"/>
+				<coords loc="-245813 216897 -12270 -12070"/>
+				<coords loc="-245479 215581 -12270 -12070"/>
+			</spawn>
+			<spawn mobId="22540 22538 22542 22546 22547" count="1" type="loc" respawn="0">
+				<coords loc="-244337 216699 -12259 -12059"/>
+				<coords loc="-244302 216842 -12259 -12059"/>
+				<coords loc="-244315 217320 -12259 -12059"/>
+				<coords loc="-245646 217060 -12259 -12059"/>
+				<coords loc="-245644 216934 -12259 -12059"/>
+				<coords loc="-244506 216255 -12259 -12059"/>
+			</spawn>
+			<spawn mobId="22540 22538 22542 22546 22547" count="1" type="loc" respawn="0">
+				<coords loc="-245646 217097 -12265 -12065"/>
+				<coords loc="-245643 217211 -12265 -12065"/>
+				<coords loc="-244921 218317 -12265 -12065"/>
+				<coords loc="-244585 217990 -12265 -12065"/>
+				<coords loc="-244501 217868 -12265 -12065"/>
+				<coords loc="-244325 217437 -12265 -12065"/>
+			</spawn>
+			<spawn mobId="22540 22538 22542 22546 22547" count="1" type="loc" respawn="0">
+				<coords loc="-245044 218381 -12265 -12065"/>
+				<coords loc="-245453 218553 -12265 -12065"/>
+				<coords loc="-245595 218587 -12265 -12065"/>
+				<coords loc="-246059 218591 -12265 -12065"/>
+				<coords loc="-245817 217263 -12265 -12065"/>
+				<coords loc="-245681 217264 -12265 -12065"/>
+			</spawn>
+			<spawn mobId="22540 22538 22542 22546 22547" count="1" type="loc" respawn="0">
+				<coords loc="-245957 217259 -12265 -12065"/>
+				<coords loc="-247063 217975 -12265 -12065"/>
+				<coords loc="-246737 218306 -12265 -12065"/>
+				<coords loc="-246624 218383 -12265 -12065"/>
+				<coords loc="-246183 218566 -12265 -12065"/>
+				<coords loc="-245842 217262 -12265 -12065"/>
+			</spawn>
+			<spawn mobId="22540 22538 22542 22546 22547" count="1" type="loc" respawn="0">
+				<coords loc="-246003 217082 -12263 -11863"/>
+				<coords loc="-246001 217263 -12263 -11863"/>
+				<coords loc="-247137 217871 -12263 -11863"/>
+				<coords loc="-247322 217439 -12263 -11863"/>
+				<coords loc="-247347 217315 -12263 -11863"/>
+				<coords loc="-247353 216826 -12263 -11863"/>
+			</spawn>
+			<spawn mobId="22540 22538 22542 22546 22547" count="1" type="loc" respawn="0">
+				<coords loc="-247061 216172 -12262 -12062"/>
+				<coords loc="-246707 215838 -12262 -12062"/>
+				<coords loc="-246014 216933 -12262 -12062"/>
+				<coords loc="-246011 217046 -12262 -12062"/>
+				<coords loc="-247315 216715 -12262 -12062"/>
+				<coords loc="-247138 216271 -12262 -12062"/>
+			</spawn>
+			<spawn mobId="22540 22538 22542 22546 22547" count="1" type="loc" respawn="0">
+				<coords loc="-246180 215593 -12263 -12063"/>
+				<coords loc="-246072 215568 -12263 -12063"/>
+				<coords loc="-245574 215573 -12263 -12063"/>
+				<coords loc="-245842 216895 -12263 -12063"/>
+				<coords loc="-245969 216892 -12263 -12063"/>
+				<coords loc="-246628 215784 -12263 -12063"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-249728 219728 -12112 0"/>
+				<coords loc="-249717 219565 -12112 0"/>
+				<coords loc="-249732 219349 -12112 0"/>
+				<coords loc="-249714 219498 -12112 0"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-249727 219649 -12112 0"/>
+				<coords loc="-249730 219266 -12112 0"/>
+				<coords loc="-249721 219421 -12112 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-249712 220176 -12064 0"/>
+				<coords loc="-249712 220272 -12064 0"/>
+				<coords loc="-249712 219984 -12048 0"/>
+				<coords loc="-249712 219888 -12064 0"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-249712 220080 -12048 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-249696 220848 -12112 0"/>
+				<coords loc="-249696 220704 -12112 0"/>
+				<coords loc="-249696 220576 -12112 0"/>
+				<coords loc="-249696 220416 -12112 0"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-249696 220768 -12112 0"/>
+				<coords loc="-249696 220640 -12112 0"/>
+				<coords loc="-249696 220496 -12112 0"/>
+			</spawn>
+			<spawn mobId="22540 22538 22546 22539" count="1" type="loc" respawn="0">
+				<coords loc="-249545 219269 -12484 -12284"/>
+				<coords loc="-249534 220897 -12484 -12284"/>
+				<coords loc="-249445 220991 -12484 -12284"/>
+				<coords loc="-248373 220987 -12484 -12284"/>
+				<coords loc="-248265 220867 -12484 -12284"/>
+				<coords loc="-248268 219271 -12484 -12284"/>
+				<coords loc="-248362 219160 -12484 -12284"/>
+				<coords loc="-249444 219166 -12484 -12284"/>
+			</spawn>
+			<spawn mobId="22540 22538 22539" count="3" type="loc" respawn="0">
+				<coords loc="-250008 219250 -12492 -12292"/>
+				<coords loc="-249995 220872 -12492 -12292"/>
+				<coords loc="-250086 220973 -12492 -12292"/>
+				<coords loc="-250588 220975 -12492 -12292"/>
+				<coords loc="-250682 220874 -12492 -12292"/>
+				<coords loc="-250689 219280 -12492 -12292"/>
+				<coords loc="-250579 219152 -12492 -12292"/>
+				<coords loc="-250100 219150 -12492 -12292"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-251494 214912 -12064 16384"/>
+				<coords loc="-251424 214912 -12080 16384"/>
+				<coords loc="-251351 214912 -12080 16384"/>
+				<coords loc="-251565 214912 -12080 16384"/>
+				<coords loc="-251280 214911 -12064 16384"/>
+				<coords loc="-251569 214672 -12064 16384"/>
+				<coords loc="-251505 214672 -12064 16384"/>
+				<coords loc="-251441 214672 -12064 16384"/>
+				<coords loc="-251361 214671 -12064 16384"/>
+				<coords loc="-251281 214671 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22547" type="point" respawn="0">
+				<coords loc="-251427 214790 -12080 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-251568 214789 -12080 16384"/>
+				<coords loc="-251495 214792 -12080 16384"/>
+				<coords loc="-251352 214787 -12080 16384"/>
+				<coords loc="-251281 214786 -12080 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252288 214446 -11734 16384"/>
+				<coords loc="-252224 214446 -11734 16384"/>
+				<coords loc="-252160 214446 -11734 16384"/>
+				<coords loc="-252096 214446 -11734 16384"/>
+				<coords loc="-252016 214446 -11734 16384"/>
+			</spawn>
+			<spawn mobId="22537" type="point" respawn="0">
+				<coords loc="-251434 214460 -11668 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-251237 214460 -11668 16384"/>
+				<coords loc="-251326 214460 -11668 16384"/>
+				<coords loc="-251550 214460 -11668 16384"/>
+				<coords loc="-251643 214460 -11668 16384"/>
+				<coords loc="-251146 214460 -11668 16384"/>
+				<coords loc="-251730 214460 -11668 16384"/>
+				<coords loc="-251237 214290 -11668 16384"/>
+				<coords loc="-251147 214290 -11668 16384"/>
+				<coords loc="-251331 214290 -11668 16384"/>
+				<coords loc="-251540 214290 -11668 16384"/>
+				<coords loc="-251633 214290 -11668 16384"/>
+				<coords loc="-251722 214290 -11668 16384"/>
+				<coords loc="-251154 214222 -11668 16384"/>
+				<coords loc="-251718 214222 -11668 16384"/>
+				<coords loc="-251720 214564 -11668 16384"/>
+				<coords loc="-251157 214564 -11668 16384"/>
+			</spawn>
+			<spawn mobId="22537" type="point" respawn="0">
+				<coords loc="-251434 214460 -11668 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250896 214446 -11734 16384"/>
+				<coords loc="-250832 214446 -11734 16384"/>
+				<coords loc="-250768 214446 -11734 16384"/>
+				<coords loc="-250704 214446 -11734 16384"/>
+				<coords loc="-250644 214446 -11734 16384"/>
+			</spawn>
+			<spawn mobId="22536" type="point" respawn="0">
+				<coords loc="-251600 214224 -12064 16384"/>
+				<coords loc="-251482 214219 -12064 16384"/>
+				<coords loc="-251264 214224 -12064 16384"/>
+				<coords loc="-251373 214220 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22537" type="point" respawn="0">
+				<coords loc="-251289 213567 -12064 16384"/>
+				<coords loc="-251431 213567 -12064 16384"/>
+				<coords loc="-251585 213567 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-251430 213684 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-251522 213683 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-251338 213683 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-251606 213684 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-251693 213683 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-251774 213683 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-251853 213683 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-251929 213686 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-251261 213681 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-251183 213684 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-251114 213686 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-251040 213689 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22597" type="point" respawn="0">
+				<coords loc="-250966 213689 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250960 213573 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-251039 213570 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-251114 213570 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-251921 213570 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-251854 213572 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-251781 213572 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-251696 213566 -12080 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-251613 213561 -12080 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-251183 213564 -12080 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-251264 213566 -12080 16384"/>
+			</spawn>
+			<spawn mobId="22547" type="point" respawn="0">
+				<coords loc="-251332 213563 -12080 16384"/>
+			</spawn>
+			<spawn mobId="22547" type="point" respawn="0">
+				<coords loc="-251522 213558 -12080 16384"/>
+			</spawn>
+			<spawn mobId="22593" type="point" respawn="0">
+				<coords loc="-251424 213565 -12064 16384"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-250799 213260 -12016 32767"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-250797 213103 -12032 32767"/>
+			</spawn>
+			<spawn mobId="22547" type="point" respawn="0">
+				<coords loc="-250732 213177 -12032 32767"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-250803 213178 -12032 32767"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250222 213775 -11552 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250288 213824 -11552 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250368 213824 -11552 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250432 213808 -11552 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250485 213745 -11552 32767"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250515 213689 -11552 32767"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250534 213627 -11552 32767"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250543 213547 -11552 32767"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250151 213713 -11536 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250097 213617 -11536 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250110 213513 -11536 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250172 213429 -11552 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250269 213387 -11536 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250378 213389 -11536 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-250462 213441 -11536 0"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-252096 213120 -12016 0"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-252089 213271 -12016 0"/>
+			</spawn>
+			<spawn mobId="22596" type="point" respawn="0">
+				<coords loc="-252094 213194 -12016 0"/>
+			</spawn>
+			<spawn mobId="22547" type="point" respawn="0">
+				<coords loc="-252210 213189 -12000 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252339 213566 -11536 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252674 213818 -11536 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252603 213852 -11536 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252514 213830 -11552 16384"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252443 213819 -11536 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252383 213776 -11536 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252342 213712 -11536 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252337 213645 -11536 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252362 213478 -11552 49152"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252407 213415 -11552 49152"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252480 213364 -11552 49152"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252569 213372 -11552 49152"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252665 213390 -11552 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252736 213452 -11552 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252781 213527 -11552 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252779 213627 -11552 0"/>
+			</spawn>
+			<spawn mobId="22549" type="point" respawn="0">
+				<coords loc="-252747 213732 -11552 0"/>
+			</spawn>
+			<spawn mobId="22546 22540 22544 22547 22575" count="3" type="loc" respawn="0">
+				<coords loc="-253210 217086 -12335 -11935"/>
+				<coords loc="-249653 217077 -12335 -11935"/>
+				<coords loc="-249648 217678 -12335 -11935"/>
+				<coords loc="-253196 217670 -12335 -11935"/>
+			</spawn>
+			<spawn mobId="22540 22575 22539 22546" count="2" type="loc" respawn="0">
+				<coords loc="-253202 216420 -12299 -11899"/>
+				<coords loc="-252605 216424 -12299 -11899"/>
+				<coords loc="-252600 216738 -12299 -11899"/>
+				<coords loc="-253206 216737 -12299 -11899"/>
+			</spawn>
+			<spawn mobId="22542 22543 22544 22547" count="2" type="loc" respawn="0">
+				<coords loc="-251806 216452 -12292 -11892"/>
+				<coords loc="-251102 216450 -12292 -11892"/>
+				<coords loc="-251106 216773 -12292 -11892"/>
+				<coords loc="-251804 216777 -12292 -11892"/>
+			</spawn>
+			<spawn mobId="22548 22547 22540 22575" count="2" type="loc" respawn="0">
+				<coords loc="-250381 216459 -12290 -11890"/>
+				<coords loc="-249677 216457 -12290 -11890"/>
+				<coords loc="-249681 216780 -12290 -11890"/>
+				<coords loc="-250379 216784 -12290 -11890"/>
+			</spawn>
+			<spawn mobId="22539 22542 22536 22537" count="1" type="loc" respawn="0">
+				<coords loc="-253177 215692 -12273 -11873"/>
+				<coords loc="-252538 215689 -12273 -11873"/>
+				<coords loc="-252542 216012 -12273 -11873"/>
+				<coords loc="-253187 216013 -12273 -11873"/>
+			</spawn>
+			<spawn mobId="22539 22542 22536 22537" count="1" type="loc" respawn="0">
+				<coords loc="-250334 215701 -12274 -11874"/>
+				<coords loc="-249676 215698 -12274 -11874"/>
+				<coords loc="-249680 216021 -12274 -11874"/>
+				<coords loc="-250333 216025 -12274 -11874"/>
+			</spawn>
+			<spawn mobId="22546" type="point" respawn="0">
+				<coords loc="-251425 215856 -12176 16384"/>
+				<coords loc="-251584 215856 -12176 16384"/>
+				<coords loc="-251265 215856 -12176 16384"/>
+				<coords loc="-251536 215728 -12192 16384"/>
+				<coords loc="-251345 215712 -12192 16384"/>
+			</spawn>
+			<spawn mobId="29162" type="point" respawn="10">
+				<coords loc="-250680 207512 -11968 16384"/>
+				<coords loc="-250136 207512 -11968 16384"/>
+				<coords loc="-250232 207304 -11968 16384"/>
+				<coords loc="-250584 207304 -11968 16384"/>
+			</spawn>
+			<spawn mobId="22536" type="point" respawn="0">
+				<coords loc="-250881 207587 -11920 16384"/>
+			</spawn>
+			<spawn mobId="22536" type="point" respawn="0">
+				<coords loc="-251086 207587 -11920 16384"/>
+			</spawn>
+			<spawn mobId="22536" type="point" respawn="0">
+				<coords loc="-250688 207587 -11952 16384"/>
+			</spawn>
+			<spawn mobId="22536" type="point" respawn="0">
+				<coords loc="-250071 207587 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22536" type="point" respawn="0">
+				<coords loc="-249848 207587 -11920 16384"/>
+			</spawn>
+			<spawn mobId="22536" type="point" respawn="0">
+				<coords loc="-249621 207587 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22537" type="point" respawn="0">
+				<coords loc="-251086 207344 -11952 16384"/>
+			</spawn>
+			<spawn mobId="22537" type="point" respawn="0">
+				<coords loc="-250688 207344 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22537" type="point" respawn="0">
+				<coords loc="-250071 207344 -11952 16384"/>
+			</spawn>
+			<spawn mobId="22537" type="point" respawn="0">
+				<coords loc="-249848 207344 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22543" type="point" respawn="0">
+				<coords loc="-251496 208287 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22543" type="point" respawn="0">
+				<coords loc="-251332 208287 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22543" type="point" respawn="0">
+				<coords loc="-251168 208287 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22543" type="point" respawn="0">
+				<coords loc="-251004 208287 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22542" type="point" respawn="0">
+				<coords loc="-250839 208287 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22542" type="point" respawn="0">
+				<coords loc="-250687 208287 -11952 16384"/>
+			</spawn>
+			<spawn mobId="22542" type="point" respawn="0">
+				<coords loc="-250094 208293 -11952 16384"/>
+			</spawn>
+			<spawn mobId="22542" type="point" respawn="0">
+				<coords loc="-249927 208286 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22543" type="point" respawn="0">
+				<coords loc="-249763 208286 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22543" type="point" respawn="0">
+				<coords loc="-249601 208284 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22543" type="point" respawn="0">
+				<coords loc="-249437 208286 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22543" type="point" respawn="0">
+				<coords loc="-249273 208284 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22539" type="point" respawn="0">
+				<coords loc="-251496 208133 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22539" type="point" respawn="0">
+				<coords loc="-251332 208133 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22539" type="point" respawn="0">
+				<coords loc="-251168 208133 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22539" type="point" respawn="0">
+				<coords loc="-251004 208133 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22538" type="point" respawn="0">
+				<coords loc="-250839 208133 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22538" type="point" respawn="0">
+				<coords loc="-250687 208133 -11952 16384"/>
+			</spawn>
+			<spawn mobId="22538" type="point" respawn="0">
+				<coords loc="-250094 208133 -11952 16384"/>
+			</spawn>
+			<spawn mobId="22538" type="point" respawn="0">
+				<coords loc="-249927 208133 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22539" type="point" respawn="0">
+				<coords loc="-249763 208133 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22539" type="point" respawn="0">
+				<coords loc="-249601 208133 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22539" type="point" respawn="0">
+				<coords loc="-249437 208133 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22539" type="point" respawn="0">
+				<coords loc="-249273 208133 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22543" type="point" respawn="0">
+				<coords loc="-251004 207968 -11936 16384"/>
+			</spawn>
+			<spawn mobId="22542" type="point" respawn="0">
+				<coords loc="-250839 207968 -11952 16384"/>
+			</spawn>
+			<spawn mobId="22542" type="point" respawn="0">
+				<coords loc="-250687 207968 -11952 16384"/>
+			</spawn>
+			<spawn mobId="22542" type="point" respawn="0">
+				<coords loc="-250094 207968 -11968 16384"/>
+			</spawn>
+			<spawn mobId="22542" type="point" respawn="0">
+				<coords loc="-249927 207968 -11952 16384"/>
+			</spawn>
+			<spawn mobId="22543" type="point" respawn="0">
+				<coords loc="-249763 207968 -11952 16384"/>
+			</spawn>
+			<spawn mobId="18720" type="point" respawn="0">
+				<coords loc="-245888 213056 -12384 0"/>
+			</spawn>
+			<spawn mobId="18737" type="point" respawn="0">
+				<coords loc="-245696 212608 -12384 0"/>
+			</spawn>
+			<spawn mobId="18738" type="point" respawn="0">
+				<coords loc="-246112 212608 -12384 0"/>
+			</spawn>
+			<spawn mobId="18721" type="point" respawn="0">
+				<coords loc="-245920 212256 -12384 0"/>
+			</spawn>
+			<spawn mobId="18739" type="point" respawn="0">
+				<coords loc="-245888 211296 -12384 0"/>
+			</spawn>
+			<spawn mobId="18722" type="point" respawn="0">
+				<coords loc="-245888 211008 -12384 0"/>
+			</spawn>
+			<spawn mobId="18740" type="point" respawn="0">
+				<coords loc="-245888 209984 -12448 0"/>
+			</spawn>
+			<spawn mobId="18723" type="point" respawn="0">
+				<coords loc="-246048 209376 -12512 0"/>
+			</spawn>
+			<spawn mobId="18771" type="point" respawn="0">
+				<coords loc="-245664 209376 -12512 0"/>
+			</spawn>
+			<spawn mobId="18724" type="point" respawn="0">
+				<coords loc="-246080 208960 -12512 0"/>
+			</spawn>
+			<spawn mobId="18741" type="point" respawn="0">
+				<coords loc="-245632 208960 -12512 0"/>
+			</spawn>
+			<spawn mobId="18772" type="point" respawn="0">
+				<coords loc="-246080 208608 -12512 0"/>
+			</spawn>
+			<spawn mobId="18742" type="point" respawn="0">
+				<coords loc="-245632 208608 -12512 0"/>
+			</spawn>
+			<spawn mobId="18773" type="point" respawn="0">
+				<coords loc="-246048 207744 -12512 0"/>
+			</spawn>
+			<spawn mobId="18743" type="point" respawn="0">
+				<coords loc="-245664 207776 -12512 0"/>
+			</spawn>
+			<spawn mobId="18744" type="point" respawn="0">
+				<coords loc="-246048 207424 -12512 0"/>
+			</spawn>
+			<spawn mobId="18725" type="point" respawn="0">
+				<coords loc="-245664 207424 -12512 0"/>
+			</spawn>
+			<spawn mobId="18745" type="point" respawn="0">
+				<coords loc="-245888 206816 -12512 0"/>
+			</spawn>
+			<spawn mobId="18746" type="point" respawn="0">
+				<coords loc="-243872 205792 -12768 0"/>
+			</spawn>
+			<spawn mobId="18747" type="point" respawn="0">
+				<coords loc="-243520 205792 -12768 0"/>
+			</spawn>
+			<spawn mobId="18772" type="point" respawn="0">
+				<coords loc="-243808 206112 -12768 0"/>
+			</spawn>
+			<spawn mobId="18748" type="point" respawn="0">
+				<coords loc="-243520 206112 -12768 0"/>
+			</spawn>
+			<spawn mobId="18729" type="point" respawn="0">
+				<coords loc="-243872 206464 -12768 0"/>
+			</spawn>
+			<spawn mobId="18749" type="point" respawn="0">
+				<coords loc="-243520 206464 -12768 0"/>
+			</spawn>
+			<spawn mobId="18750" type="point" respawn="0">
+				<coords loc="-243872 206752 -12768 0"/>
+			</spawn>
+			<spawn mobId="18726" type="point" respawn="0">
+				<coords loc="-243552 206752 -12768 0"/>
+			</spawn>
+			<spawn mobId="18730" type="point" respawn="0">
+				<coords loc="-243840 207040 -12768 0"/>
+			</spawn>
+			<spawn mobId="18727" type="point" respawn="0">
+				<coords loc="-243488 207040 -12768 0"/>
+			</spawn>
+			<spawn mobId="18751" type="point" respawn="0">
+				<coords loc="-242496 205952 -12768 0"/>
+			</spawn>
+			<spawn mobId="18752" type="point" respawn="0">
+				<coords loc="-242144 205920 -12768 0"/>
+			</spawn>
+			<spawn mobId="18753" type="point" respawn="0">
+				<coords loc="-242528 206336 -12768 0"/>
+			</spawn>
+			<spawn mobId="18754" type="point" respawn="0">
+				<coords loc="-242144 206336 -12768 0"/>
+			</spawn>
+			<spawn mobId="18755" type="point" respawn="0">
+				<coords loc="-242496 206592 -12768 0"/>
+			</spawn>
+			<spawn mobId="18756" type="point" respawn="0">
+				<coords loc="-242176 206656 -12768 0"/>
+			</spawn>
+			<spawn mobId="18757" type="point" respawn="0">
+				<coords loc="-242496 206912 -12768 0"/>
+			</spawn>
+			<spawn mobId="18758" type="point" respawn="0">
+				<coords loc="-242176 206976 -12768 0"/>
+			</spawn>
+			<spawn mobId="18759" type="point" respawn="0">
+				<coords loc="-251776 218240 -12320 0"/>
+			</spawn>
+			<spawn mobId="18760" type="point" respawn="0">
+				<coords loc="-251424 218208 -12320 0"/>
+			</spawn>
+			<spawn mobId="18761" type="point" respawn="0">
+				<coords loc="-251136 218240 -12320 0"/>
+			</spawn>
+			<spawn mobId="18762" type="point" respawn="0">
+				<coords loc="-252896 217984 -12320 0"/>
+			</spawn>
+			<spawn mobId="18734" type="point" respawn="0">
+				<coords loc="-252640 217984 -12320 0"/>
+			</spawn>
+			<spawn mobId="18763" type="point" respawn="0">
+				<coords loc="-250208 217984 -12320 0"/>
+			</spawn>
+			<spawn mobId="18735" type="point" respawn="0">
+				<coords loc="-249952 217984 -12320 0"/>
+			</spawn>
+			<spawn mobId="18764" type="point" respawn="0">
+				<coords loc="-251712 217792 -12288 0"/>
+			</spawn>
+			<spawn mobId="18771" type="point" respawn="0">
+				<coords loc="-251456 217792 -12320 0"/>
+			</spawn>
+			<spawn mobId="18765" type="point" respawn="0">
+				<coords loc="-251200 217792 -12320 0"/>
+			</spawn>
+			<spawn mobId="18772" type="point" respawn="0">
+				<coords loc="-252160 216928 -12288 0"/>
+			</spawn>
+			<spawn mobId="18773" type="point" respawn="0">
+				<coords loc="-250656 216928 -12288 0"/>
+			</spawn>
+			<spawn mobId="18731" type="point" respawn="0">
+				<coords loc="-252960 216000 -12224 0"/>
+			</spawn>
+			<spawn mobId="18766" type="point" respawn="0">
+				<coords loc="-252704 216000 -12224 0"/>
+			</spawn>
+			<spawn mobId="18767" type="point" respawn="0">
+				<coords loc="-251552 216000 -12224 0"/>
+			</spawn>
+			<spawn mobId="18768" type="point" respawn="0">
+				<coords loc="-251296 216000 -12224 0"/>
+			</spawn>
+			<spawn mobId="18769" type="point" respawn="0">
+				<coords loc="-250112 216064 -12224 0"/>
+			</spawn>
+			<spawn mobId="18728" type="point" respawn="0">
+				<coords loc="-249824 216032 -12224 0"/>
+			</spawn>
+			<spawn mobId="32528" type="point">
+				<coords loc="-246520 217256 -12224 0"/>
+			</spawn>
+			<spawn mobId="29164" type="point"> <!-- Tiat Camera -->
+				<coords loc="-250968 211672 -11955 0"/>
+			</spawn>
+		</spawns>
+		<doors>
+			<door id="12240001" invul="false"/>
+			<door id="12240002" invul="false"/>
+			<door id="12240003" invul="false"/>
+			<door id="12240004" invul="false"/>
+			<door id="12240005" invul="false"/>
+			<door id="12240006" invul="false"/>
+			<door id="12240007" invul="false"/>
+			<door id="12240008" invul="false"/>
+			<door id="12240009" invul="false"/>
+			<door id="12240010" invul="false"/>
+			<door id="12240011" invul="false"/>
+			<door id="12240012" invul="false"/>
+			<door id="12240013" invul="false"/>
+			<door id="12240014" invul="false"/>
+			<door id="12240015" invul="false"/>
+			<door id="12240016" invul="false"/>
+			<door id="12240017" invul="false"/>
+			<door id="12240018" invul="false"/>
+			<door id="12240019" invul="false"/>
+			<door id="12240020" invul="false"/>
+			<door id="12240021" invul="false"/>
+			<door id="12240022" invul="false"/>
+			<door id="12240023" invul="false"/>
+			<door id="12240024" invul="false"/>
+			<door id="12240025" invul="false"/>
+			<door id="12240026" invul="false"/>
+			<door id="12240027"/>
+			<door id="12240028" invul="false"/>
+			<door id="12240029" invul="false"/>
+			<door id="12240030" invul="false"/>
+			<door id="12240031"/>
+		</doors>
+		<zones>
+			<zone name="[tiat_room_epic]" active="true"/>
+			<zone name="[rumwarsha04_1224_area_01]" active="true"/>
+			<zone name="[rumwarsha04_1224_area_02]" active="true"/>
+		</zones>
+	</instance>
+</list>

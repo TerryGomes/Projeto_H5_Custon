@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "npc.dtd">
+<list>
+	<npc id="12621" name="Wyvern" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="40" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2444.468" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="7.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="780" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="382" />
+		<set name="baseMEN" value="25" />
+		<set name="baseMpMax" value="1345.8" />
+		<set name="baseMpReg" value="2.7" />
+		<set name="basePAtk" value="1303" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="471" />
+		<set name="baseRunSpd" value="170" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="80.0" />
+		<set name="collision_radius" value="60.0" />
+		<set name="level" value="70" />
+		<set name="rewardExp" value="0" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="0" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<skills>
+			<skill id="4289" level="1" />	<!--Wyvern Breath-->
+			<skill id="4416" level="10" />	<!--Dragons-->
+		</skills>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+</list>

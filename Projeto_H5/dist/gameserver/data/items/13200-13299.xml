@@ -1,0 +1,1704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <weapon id="13200" name="For PC Cafe Use - Bellion Cestus" add_name="Weapons for PC Cafe Use">
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_bellion_cestus_i00"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1390"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3034" level="6"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="236"/>
+      <add stat="mAtk" order="0x10" value="99"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13201" name="For PC cafe use - Hazard Bow" add_name="Weapons for PC Cafe Use ">
+    <set name="atk_reuse" value="1310"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_hazard_bow_i00"/>
+    <set name="mp_consume" value="4"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1700"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="400"/>
+      <add stat="mAtk" order="0x10" value="99"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="293"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13202" name="For PC Cafe Use - Samurai*Samurai" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_dual_sword_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUAL"/>
+    <set name="weight" value="2080"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3045" level="14"/>
+    <!--Special Ability: Haste-->
+    <for>
+      <add stat="pAtk" order="0x10" value="236"/>
+      <add stat="mAtk" order="0x10" value="99"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13203" name="For PC Cafe Use - Guardian's Sword" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_guardians_sword_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="1930"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="236"/>
+      <add stat="mAtk" order="0x10" value="99"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13204" name="For PC Cafe Use - Wizard's Tear" add_name="Weapons for PC Cafe Use ">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_tears_of_wizard_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1350"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3047" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="155"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13205" name="For PC Cafe Use - Kaim Vanul's Bones" add_name="Weapons for PC Cafe Use ">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_bone_of_kaim_vanul_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1570"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3014" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="155"/>
+      <add stat="mAtk" order="0x10" value="132"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13206" name="For PC Cafe Use - Star Buster" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_star_buster_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1930"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3036" level="6"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="236"/>
+      <add stat="mAtk" order="0x10" value="99"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13207" name="For PC cafe use - Colichemarde" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_colichemarde_i00"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1350"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3010" level="6"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="176"/>
+      <add stat="mAtk" order="0x10" value="99"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13208" name="For PC cafe use - Dismantler" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_dismantler_i00"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1930"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="210"/>
+      <add stat="mAtk" order="0x10" value="99"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13209" name="For PC Cafe Use - Hell Hound" add_name="Weapons for PC Cafe Use ">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_hell_hound_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1700"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3360" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="245"/>
+      <add stat="mAtk" order="0x10" value="99"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13210" name="PC cafe' exclusive - Sirra's Blade" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_sirr_blade_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="5"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="251"/>
+      <add stat="mAtk" order="0x10" value="121"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13211" name="For PC Cafe Use - Sword of Ipos" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_sword_of_ipos_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="1820"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3050" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="305"/>
+      <add stat="mAtk" order="0x10" value="121"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13212" name="For PC Cafe Use - Barakiel's Axe" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_barakiel_axe_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1550"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3050" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="251"/>
+      <add stat="mAtk" order="0x10" value="121"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13213" name="For PC Cafe Use - Behemoth Tuning Fork" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_tuning_fork_of_behemoth_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1890"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3050" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="305"/>
+      <add stat="mAtk" order="0x10" value="121"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13214" name="For PC Cafe Use - Naga Storm" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_naga_storm_i00"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="930"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3051" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="220"/>
+      <add stat="mAtk" order="0x10" value="121"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13215" name="For PC cafe use - Tiphon's Spear" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_tiphon_spear_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1820"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="251"/>
+      <add stat="mAtk" order="0x10" value="121"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13216" name="For PC cafe use - Shyeed's Bow" add_name="Weapons for PC Cafe Use ">
+    <set name="atk_reuse" value="820"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_shyid_bow_i00"/>
+    <set name="mp_consume" value="5"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1640"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3050" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="570"/>
+      <add stat="mAtk" order="0x10" value="133"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="227"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13217" name="For PC Cafe Use - Sobekk's Hurricane" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_sobekk_hurricane_i00"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1330"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3068" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="305"/>
+      <add stat="mAtk" order="0x10" value="121"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13218" name="For PC Cafe Use - Themis' Tongue" add_name="Weapons for PC Cafe Use ">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_tongue_of_themis_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="820"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3014" level="3"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="202"/>
+      <add stat="mAtk" order="0x10" value="161"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13219" name="For PC Cafe Use - Cabrio's Hand" add_name="Weapons for PC Cafe Use ">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_hand_of_cabrio_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1510"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3048" level="3"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="202"/>
+      <add stat="mAtk" order="0x10" value="161"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13220" name="For PC Cafe Use - Daimon Crystal" add_name="Weapons for PC Cafe Use ">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_crystal_of_deamon_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="880"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3047" level="3"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="245"/>
+      <add stat="mAtk" order="0x10" value="177"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13221" name="For PC cafe use - Tallum Blade*Damascus" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_dual_sword_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="DUAL"/>
+    <set name="weight" value="1890"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3045" level="17"/>
+    <!--Special Ability: Haste-->
+    <for>
+      <add stat="pAtk" order="0x10" value="305"/>
+      <add stat="mAtk" order="0x10" value="121"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13222" name="For PC Cafe Use - Eclair Bijou" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_greed_stinger_i00"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1300"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3068" level="2"/>
+    </skills>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="228"/>
+      <add stat="mAtk" order="0x10" value="121"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13223" name="For PC cafe use - Durendal" add_name="Weapons for PC Cafe Use ">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_death_bringer_i00"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="1820"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3050" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="272"/>
+      <add stat="mAtk" order="0x10" value="121"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13224" name="For PC Cafe Use - Screaming Vengeance" add_name="Weapons for PC Cafe Use ">
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="180"/>
+    <set name="icon" value="icon.weapon_soul_shooter_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="1640"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3050" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="318"/>
+      <add stat="mAtk" order="0x10" value="121"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <etcitem id="13225" name="Kamaloka (Hall of the Abyss) 15-Sheet Box">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13226" name="Near Kamaloka 15-Sheet Box">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13227" name="Kamaloka (Labyrinth of the Abyss) 15-Sheet Box">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13228" name="Kamaloka (Hall of the Abyss) 15-Sheet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13229" name="Near Kamaloka 15-Sheet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13230" name="Kamaloka (Labyrinth of the Abyss) 15-Sheet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13231" name="Kamaloka (Hall of the Abyss) 5-Sheet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13232" name="Near Kamaloka 5-Sheet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13233" name="Kamaloka (Labyrinth of the Abyss) 5-Sheet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <armor id="13234" name="Varka Karm (used by Varka Silenos)">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessory_barka_karm_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="13235" name="Ketra Karm (used by Ketra Orcs)">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessory_ketra_karm_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="13236" name="AU Karm">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessory_au_karm_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="13237" name="AR Karm">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessory_ar_karm_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="13238" name="AE Karm">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.accessory_ae_karm_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="13239" name="Kat the Cat Hat" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.accessory_cat_the_cat_cap_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="13240" name="Feline Queen Hat" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.accessory_queen_of_cat_cap_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="13241" name="Monster Eye Hat" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.accessory_monstereye_cap_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="13242" name="Brown Bear Hat" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.accessory_brown_bear_cap_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="13243" name="Fungus Hat" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.accessory_fungus_cap_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="13244" name="Skull Hat" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.accessory_skeleton_cap_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="13245" name="Ornithomimus Hat" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.accessory_ornithomimus_cap_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="13246" name="Feline King Hat" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.accessory_king_of_cat_cap_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="13247" name="Kai the Cat Hat" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.accessory_chi_the_cat_cap_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <weapon id="13248" name="O-type Stick" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.weapon_o_stick_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13249" name="X-type Stick" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.weapon_x_stick_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13250" name="Scissors-type Stick" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.weapon_scissors_stick_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13251" name="Rock-type Stick" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.weapon_rock_stick_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13252" name="Paper-type Stick" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.weapon_diver_stick_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="13253" name="Pumpkin Transformation Stick" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.weapon_pumpkin_stick_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="0"/>
+    <set name="spiritshots" value="0"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="SWORD"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="8246" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <armor id="13254" name="Agathion of Love" add_name="7-day Limited Period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="10080"/>
+    <set name="icon" value="icon.etc_rbracelet_aga_agit_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="30"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="5763" level="1"/>
+      <skill id="8245" level="1"/>
+    </skills>
+  </armor>
+  <etcitem id="13255" name="Gran Kain's Gift Box - 7 Day">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.special_cube_i00"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <etcitem id="13256" name="Gran Kain's Gift Box Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i04"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <etcitem id="13257" name="Gran Kain's Gift Box Pack (Event)">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i04"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <etcitem id="13258" name="Gran Kain's Blessed Scroll of Escape">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_scroll_of_return_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="13259" name="Gran Kain's Blessed Scroll of Resurrection">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_scroll_of_resurrection_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <armor id="13260" name="Gran Kain's Squeaking Shoes" add_name="10 hours limited period">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="600"/>
+    <set name="icon" value="icon.armor_t02_b_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="50"/>
+    <equip>
+      <slot id="FEET"/>
+    </equip>
+  </armor>
+  <etcitem id="13261" name="Gran Kain's Echo Crystal - Theme of Journey">
+    <set name="reuse_delay" value="20000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_echo_crystal_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <etcitem id="13262" name="Gran Kain's Echo Crystal - Theme of Battle">
+    <set name="reuse_delay" value="24000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_echo_crystal_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <etcitem id="13263" name="Gran Kain's Echo Crystal - Theme of Love">
+    <set name="reuse_delay" value="24000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_echo_crystal_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <etcitem id="13264" name="Gran Kain's Echo Crystal - Theme of Solitude">
+    <set name="reuse_delay" value="20000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_echo_crystal_i03"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <etcitem id="13265" name="Gran Kain's Echo Crystal - Theme of the Feast">
+    <set name="reuse_delay" value="3000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_echo_crystal_i04"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <etcitem id="13266" name="Gran Kain's Echo Crystal - Theme of Celebration">
+    <set name="reuse_delay" value="3000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_echo_crystal_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <etcitem id="13267" name="Gran Kain's Echo Crystal - Theme of Comedy">
+    <set name="reuse_delay" value="3000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_echo_crystal_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <etcitem id="13268" name="Gran Kain's Firework">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_small_ultra_bomb_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="13269" name="Gran Kain's Large Firework">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_ultra_bomb_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="13270" name="Pathfinder's Reward - AU Karm">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bead_gold_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13271" name="Pathfinder's Reward - AR Karm">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bead_gold_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13272" name="Pathfinder's Reward - AE Karm">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_bead_gold_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13273" name="Hunting Helper Exchange Coupon - 5 hours">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_ticket_red_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13274" name="Hunting Helper Exchange Coupon - 7 days">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_ticket_blue_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13275" name="Hunting Helper Exchange Coupon 3-Sheet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13276" name="Hunting Helper Exchange Coupon 1-Sheet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13277" name="Energy Star Stone">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_int_symbol_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+    <skills>
+      <skill id="2647" level="1"/>
+    </skills>
+  </etcitem>
+  <etcitem id="13278" name="High Quality Energy Star Stone">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_int_symbol_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13279" name="Feather of Blessing 1-Sheet Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13280" name="Agathion of Love 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13281" name="Pumpkin Transformation Stick 7 Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13282" name="Kat the Cat Hat 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13283" name="Feline Queen Hat 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13284" name="Monster Eye Hat 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13285" name="Brown Bear Hat 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13286" name="Fungus Hat 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13287" name="Skull Hat 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13288" name="Ornithomimus Hat 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13289" name="Feline King Hat 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13290" name="Kai the Cat Hat 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13291" name="OX Stick 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="13292" name="Rock-Paper-Scissors Stick 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_pi_gift_box_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <armor id="13293" name="Pailaka Earring">
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="enchantable" value="false"/>
+    <set name="icon" value="icon.accessary_onyxbeastseye_earing_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_EAR"/>
+      <slot id="LEFT_EAR"/>
+    </equip>
+    <for>
+      <add stat="mDef" order="0x10" value="43"/>
+      <add stat="maxMp" order="0x10" value="20"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="13294" name="Pailaka Ring">
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="enchantable" value="false"/>
+    <set name="icon" value="icon.accessary_mithril_ring_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_FINGER"/>
+      <slot id="LEFT_FINGER"/>
+    </equip>
+    <for>
+      <add stat="mDef" order="0x10" value="29"/>
+      <add stat="maxMp" order="0x10" value="15"/>
+      <enchant stat="mDef" order="0x0C" value="0"/>
+    </for>
+  </armor>
+  <armor id="13295" name="Pailaka Bracelet">
+    <set name="crystal_type" value="B"/>
+    <set name="dropable" value="false"/>
+    <set name="enchantable" value="false"/>
+    <set name="icon" value="icon.etc_rbracelet_c_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="RIGHT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3323" level="1"/>
+    </skills>
+    <for>
+      <add stat="maxMp" order="0x10" value="20"/>
+    </for>
+  </armor>
+  <armor id="13296" name="Pailaka Shirt">
+    <set name="crystal_type" value="A"/>
+    <set name="dropable" value="false"/>
+    <set name="enchantable" value="false"/>
+    <set name="icon" value="icon.etc_shirts_a_i04"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="130"/>
+    <equip>
+      <slot id="UNDERWEAR"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="28"/>
+      <add stat="maxMp" order="0x10" value="40"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <etcitem id="13297" name="Extra Entrance Pass - Kamaloka (Hall of the Abyss) (Event)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.ticket_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+  </etcitem>
+  <etcitem id="13298" name="Extra Entrance Pass - Near Kamaloka (Event)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.ticket_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+  </etcitem>
+  <etcitem id="13299" name="Extra Entrance Pass - Kamaloka (Labyrinth of the Abyss) (Event)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.ticket_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+  </etcitem>
+</list>

@@ -1,0 +1,1198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <weapon id="7900" name="Ice Storm Hammer">
+    <set name="crystal_count" value="891"/>
+    <set name="crystal_type" value="B"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_ice_storm_hammer_i00"/>
+    <set name="price" value="763124"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1950"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="91"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="7901" name="Star Buster">
+    <set name="crystal_count" value="1346"/>
+    <set name="crystal_type" value="B"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_star_buster_i00"/>
+    <set name="price" value="10091400"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1930"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="236"/>
+      <add stat="mAtk" order="0x10" value="99"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="7902" name="Doom Crusher">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_doom_crusher_i00"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="1900"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="282"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="7903" name="Frintezza's Sword">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.weapon_monster_i00"/>
+    <set name="price" value="967000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="2180"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="78"/>
+      <add stat="mAtk" order="0x10" value="39"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <etcitem id="7904" name="Boat Ticket: Rune to Gludin">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_ticket_red_i00"/>
+    <set name="price" value="5000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+  </etcitem>
+  <etcitem id="7905" name="Boat Ticket: Gludin to Rune">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_ticket_red_i00"/>
+    <set name="price" value="5000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+  </etcitem>
+  <etcitem id="7906" name="Blessing of Fire">
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_fire_crystal_1_i00"/>
+    <set name="price" value="2000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+    <skills>
+      <skill id="2248" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="7907" name="Blessing of Water">
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_water_crystal_1_i00"/>
+    <set name="price" value="2000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+    <skills>
+      <skill id="2249" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="7908" name="Blessing of Wind">
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_wind_crystal_1_i00"/>
+    <set name="price" value="2000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+    <skills>
+      <skill id="2250" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="7909" name="Blessing of Earth">
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_earth_crystal_1_i00"/>
+    <set name="price" value="2000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+    <skills>
+      <skill id="2251" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="7910" name="Blessing of Darkness">
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_unholy_crystal_1_i00"/>
+    <set name="price" value="5000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+    <skills>
+      <skill id="2252" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="7911" name="Blessing of Sanctity">
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_holy_crystal_1_i00"/>
+    <set name="price" value="5000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+    <skills>
+      <skill id="2253" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="7912" name="Fire Crystal">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_fire_crystal_1_i00"/>
+    <set name="price" value="2000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+    <skills>
+      <skill id="2254" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="7913" name="Water Crystal">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_water_crystal_1_i00"/>
+    <set name="price" value="2000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+    <skills>
+      <skill id="2255" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="7914" name="Wind Crystal">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_wind_crystal_1_i00"/>
+    <set name="price" value="2000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+    <skills>
+      <skill id="2256" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="7915" name="Earth Crystal">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_earth_crystal_1_i00"/>
+    <set name="price" value="2000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+    <skills>
+      <skill id="2257" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="7916" name="Dark Shard">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_unholy_crystal_1_i00"/>
+    <set name="price" value="3000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+    <skills>
+      <skill id="2258" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="7917" name="Sanctity Crystal">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_holy_crystal_1_i00"/>
+    <set name="price" value="3000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+    <skills>
+      <skill id="2259" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="7918" name="Mercenary Posting Ticket (Sword/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_fix_i00"/>
+    <set name="price" value="50000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7919" name="Mercenary Posting Ticket (Spear/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_fix_i00"/>
+    <set name="price" value="60000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7920" name="Mercenary Posting Ticket (Bow/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_fix_i00"/>
+    <set name="price" value="70000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7921" name="Mercenary Posting Ticket (Cleric/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_fix_i00"/>
+    <set name="price" value="170000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7922" name="Mercenary Posting Ticket (Wizard/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_fix_i00"/>
+    <set name="price" value="170000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7923" name="Mercenary Posting Ticket (Sword/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_move_i00"/>
+    <set name="price" value="50000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7924" name="Mercenary Posting Ticket (Spear/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_move_i00"/>
+    <set name="price" value="60000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7925" name="Mercenary Posting Ticket (Bow/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_move_i00"/>
+    <set name="price" value="70000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7926" name="Mercenary Posting Ticket (Cleric/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_move_i00"/>
+    <set name="price" value="170000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7927" name="Mercenary Posting Ticket (Wizard/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_move_i00"/>
+    <set name="price" value="170000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7928" name="Mercenary Posting Ticket (Teleporter1)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_teleporter_fix_i00"/>
+    <set name="price" value="100000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7929" name="Mercenary Posting Ticket (Teleporter2)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_teleporter_fix_i00"/>
+    <set name="price" value="100000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7930" name="Mercenary Posting Ticket (Teleporter3)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_teleporter_fix_i00"/>
+    <set name="price" value="100000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7931" name="Greater Mercenary Posting Ticket (Sword/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_fix_i00"/>
+    <set name="price" value="80000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7932" name="Greater Mercenary Posting Ticket (Spear/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_fix_i00"/>
+    <set name="price" value="100000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7933" name="Greater Mercenary Posting Ticket (Bow/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_fix_i00"/>
+    <set name="price" value="120000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7934" name="Greater Mercenary Posting Ticket (Cleric/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_fix_i00"/>
+    <set name="price" value="250000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7935" name="Greater Mercenary Posting Ticket (Wizard/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_fix_i00"/>
+    <set name="price" value="250000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7936" name="Greater Mercenary Posting Ticket (Sword/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_move_i00"/>
+    <set name="price" value="80000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7937" name="Greater Mercenary Posting Ticket (Spear/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_move_i00"/>
+    <set name="price" value="100000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7938" name="Greater Mercenary Posting Ticket (Bow/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_move_i00"/>
+    <set name="price" value="120000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7939" name="Greater Mercenary Posting Ticket (Cleric/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_move_i00"/>
+    <set name="price" value="250000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7940" name="Greater Mercenary Posting Ticket (Wizard/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_move_i00"/>
+    <set name="price" value="250000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7941" name="Dawn Mercenary Posting Ticket (Sword/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_fix_i00"/>
+    <set name="price" value="140000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7942" name="Dawn Mercenary Posting Ticket (Spear/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_fix_i00"/>
+    <set name="price" value="170000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7943" name="Dawn Mercenary Posting Ticket (Bow/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_fix_i00"/>
+    <set name="price" value="200000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7944" name="Dawn Mercenary Posting Ticket (Cleric/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_fix_i00"/>
+    <set name="price" value="350000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7945" name="Dawn Mercenary Posting Ticket (Wizard/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_fix_i00"/>
+    <set name="price" value="350000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7946" name="Dawn Mercenary Posting Ticket (Sword/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_move_i00"/>
+    <set name="price" value="140000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7947" name="Dawn Mercenary Posting Ticket (Spear/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_move_i00"/>
+    <set name="price" value="170000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7948" name="Dawn Mercenary Posting Ticket (Bow/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_move_i00"/>
+    <set name="price" value="200000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7949" name="Dawn Mercenary Posting Ticket (Cleric/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_move_i00"/>
+    <set name="price" value="350000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7950" name="Dawn Mercenary Posting Ticket (Wizard/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_move_i00"/>
+    <set name="price" value="350000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7951" name="Greater Recruit Posting Ticket (Sword/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_fix_i00"/>
+    <set name="price" value="70000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7952" name="Greater Recruit Posting Ticket (Spear/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_fix_i00"/>
+    <set name="price" value="90000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7953" name="Greater Recruit Posting Ticket (Bow/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_fix_i00"/>
+    <set name="price" value="110000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7954" name="Greater Recruit Posting Ticket (Cleric/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_fix_i00"/>
+    <set name="price" value="230000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7955" name="Greater Recruit Posting Ticket (Wizard/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_fix_i00"/>
+    <set name="price" value="230000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7956" name="Greater Recruit Posting Ticket (Sword/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_move_i00"/>
+    <set name="price" value="70000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7957" name="Greater Recruit Posting Ticket (Spear/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_move_i00"/>
+    <set name="price" value="90000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7958" name="Greater Recruit Posting Ticket (Bow/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_move_i00"/>
+    <set name="price" value="110000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7959" name="Greater Recruit Posting Ticket (Cleric/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_move_i00"/>
+    <set name="price" value="230000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7960" name="Greater Recruit Posting Ticket (Wizard/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_move_i00"/>
+    <set name="price" value="230000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7961" name="Recruit Posting Ticket (Sword/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_fix_i00"/>
+    <set name="price" value="40000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7962" name="Recruit Posting Ticket (Spear/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_fix_i00"/>
+    <set name="price" value="50000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7963" name="Recruit Posting Ticket (Bow/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_fix_i00"/>
+    <set name="price" value="60000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7964" name="Recruit Posting Ticket (Cleric/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_fix_i00"/>
+    <set name="price" value="150000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7965" name="Recruit Posting Ticket (Wizard/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_fix_i00"/>
+    <set name="price" value="150000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7966" name="Recruit Posting Ticket (Sword/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_move_i00"/>
+    <set name="price" value="40000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7967" name="Recruit Posting Ticket (Spear/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_move_i00"/>
+    <set name="price" value="50000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7968" name="Recruit Posting Ticket (Bow/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_move_i00"/>
+    <set name="price" value="60000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7969" name="Recruit Posting Ticket (Cleric/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_move_i00"/>
+    <set name="price" value="150000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7970" name="Recruit Posting Ticket (Wizard/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_move_i00"/>
+    <set name="price" value="150000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7971" name="Nephilim Warrior Posting Ticket">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_move_i00"/>
+    <set name="price" value="2500000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7972" name="Nephilim Shaman Posting Ticket">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_move_i00"/>
+    <set name="price" value="5000000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7973" name="Mercenary Posting Ticket (Sword/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.mticket_sword_fix_i00"/>
+    <set name="price" value="50000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7974" name="Mercenary Posting Ticket (Spear/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_fix_i00"/>
+    <set name="price" value="60000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7975" name="Mercenary Posting Ticket (Bow/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_fix_i00"/>
+    <set name="price" value="70000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7976" name="Mercenary Posting Ticket (Cleric/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_fix_i00"/>
+    <set name="price" value="170000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7977" name="Mercenary Posting Ticket (Wizard/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_fix_i00"/>
+    <set name="price" value="170000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7978" name="Mercenary Posting Ticket (Sword/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_move_i00"/>
+    <set name="price" value="50000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7979" name="Mercenary Posting Ticket (Spear/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_move_i00"/>
+    <set name="price" value="60000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7980" name="Mercenary Posting Ticket (Bow/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_move_i00"/>
+    <set name="price" value="70000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7981" name="Mercenary Posting Ticket (Cleric/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_move_i00"/>
+    <set name="price" value="170000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7982" name="Mercenary Posting Ticket (Wizard/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_move_i00"/>
+    <set name="price" value="170000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7983" name="Mercenary Posting Ticket (Teleporter1)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_teleporter_fix_i00"/>
+    <set name="price" value="100000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7984" name="Mercenary Posting Ticket (Teleporter2)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_teleporter_fix_i00"/>
+    <set name="price" value="100000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7985" name="Mercenary Posting Ticket (Teleporter3)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_teleporter_fix_i00"/>
+    <set name="price" value="100000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7986" name="Mercenary Posting Ticket (Teleporter4)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_teleporter_fix_i00"/>
+    <set name="price" value="100000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7987" name="Mercenary Posting Ticket (Teleporter5)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_teleporter_fix_i00"/>
+    <set name="price" value="100000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7988" name="Greater Mercenary Posting Ticket (Sword/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_fix_i00"/>
+    <set name="price" value="120000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7989" name="Greater Mercenary Posting Ticket (Spear/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_fix_i00"/>
+    <set name="price" value="250000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7990" name="Greater Mercenary Posting Ticket (Bow/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_fix_i00"/>
+    <set name="price" value="250000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7991" name="Greater Mercenary Posting Ticket (Cleric/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_fix_i00"/>
+    <set name="price" value="80000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7992" name="Greater Mercenary Posting Ticket (Wizard/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_fix_i00"/>
+    <set name="price" value="100000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7993" name="Greater Mercenary Posting Ticket (Sword/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_move_i00"/>
+    <set name="price" value="120000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7994" name="Greater Mercenary Posting Ticket (Spear/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_move_i00"/>
+    <set name="price" value="250000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7995" name="Greater Mercenary Posting Ticket (Bow/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_bow_move_i00"/>
+    <set name="price" value="250000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7996" name="Greater Mercenary Posting Ticket (Cleric/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_cleric_move_i00"/>
+    <set name="price" value="140000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7997" name="Greater Mercenary Posting Ticket (Wizard/Mobile)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_wizard_move_i00"/>
+    <set name="price" value="170000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7998" name="Dawn Mercenary Posting Ticket (Sword/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_sword_fix_i00"/>
+    <set name="price" value="200000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+  <etcitem id="7999" name="Dawn Mercenary Posting Ticket (Spear/Stationary)">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.mticket_pole_fix_i00"/>
+    <set name="price" value="350000"/>
+    <set name="stackable" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MERCENARY_TICKET"/>
+  </etcitem>
+</list>

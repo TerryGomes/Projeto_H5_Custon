@@ -1,0 +1,23 @@
+<!ELEMENT list (enchant_scroll | default)*>
+<!ELEMENT default (#PCDATA)>
+<!ATTLIST default
+	chance CDATA #REQUIRED
+	magic_chance CDATA #REQUIRED
+	max_enchant CDATA #REQUIRED
+	visual_effect CDATA #REQUIRED>
+<!ELEMENT enchant_scroll (item_list|grade_list)*>
+<!ATTLIST enchant_scroll
+	id CDATA #REQUIRED
+	chance CDATA #IMPLIED
+	magic_chance CDATA #IMPLIED
+	visual_effect CDATA #IMPLIED
+	on_fail CDATA #REQUIRED
+	max_enchant CDATA #IMPLIED>
+<!ELEMENT grade_list (grade)*>
+<!ELEMENT item_list (item)*>
+<!ELEMENT item (#PCDATA)>
+<!ATTLIST item
+	id CDATA #REQUIRED>
+<!ELEMENT grade (#PCDATA)>
+<!ATTLIST grade
+	id CDATA #REQUIRED>

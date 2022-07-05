@@ -1,0 +1,18 @@
+<html><title>Security Services</title><body>
+<font color="00ff66">Choose to block your account:</font><br1>
+- Blocking by IP address <font color="LEVEL">(%ip_block%)</font><br1>
+- Blocking by HWID <font color="LEVEL">(%hwid_block%)</font>
+<br>
+<font color="00ff66">Warning for precautionary:</font><br1>
+- IP changes are periodically<br1>
+- HWid - it ID: <font color="LEVEL">%hwid_val%</font><br1>
+- HWid changes when you upgrade your PC
+<br>
+<font color="00ff66">Status of the current session:</font><br1>
+IP address: <font color="LEVEL">%curIP%</font>
+<br>
+<button value="Set IP blocking" action="bypass -h user_lockIp" width=280 height=22 back="L2UI_CT1.Button_DF" fore="L2UI_CT1.Button_DF"/><br1>
+<button value="Set HWid blocking" action="bypass -h user_lockHwid" width=280 height=22 back="L2UI_CT1.Button_DF" fore="L2UI_CT1.Button_DF"/><br1>
+<button value="Remove IP blocking" action="bypass -h user_unlockIp" width=280 height=22 back="L2UI_CT1.Button_DF" fore="L2UI_CT1.Button_DF"/><br1>
+<button value="Remove Hwid blocking" action="bypass -h user_unlockHwid" width=280 height=22 back="L2UI_CT1.Button_DF" fore="L2UI_CT1.Button_DF"/>
+</body></html>

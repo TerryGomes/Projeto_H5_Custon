@@ -1,0 +1,1403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <etcitem id="21000" name="Ball Trapping Gnosian Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21001" name="Ball Trapping Orodriel Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21002" name="Penalty Kick Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21003" name="Ball Trapping Gnosian Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21004" name="Ball Trapping Orodriel Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21005" name="Penalty Kick Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21006" name="Ball Trapping Gnosian Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21007" name="Ball Trapping Orodriel Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21008" name="Penalty Kick Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <armor id="21009" name="Soccer Ball Afro Hair - White">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_hair_i00"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </armor>
+  <armor id="21010" name="Soccer Ball Afro Hair - Blue">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_hair_i01"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <cond msgId="1507">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </armor>
+  <armor id="21011" name="Soccer Ball Afro Hair - Red" add_name="Blessing of Victory">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_hair_i02"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+    <skills>
+      <skill id="21211" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21012" name="Mark of Victory - Korea">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_face_deco_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FACE"/>
+    </equip>
+  </armor>
+  <armor id="21013" name="Mark of Victory - Japan">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_face_deco_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FACE"/>
+    </equip>
+  </armor>
+  <armor id="21014" name="Mark of Cheers">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_face_deco_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="FACE"/>
+    </equip>
+  </armor>
+  <weapon id="21015" name="Balloon Stick of Cheers - Red">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_stick_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="SWORD"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="rnd_dam" value="1"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <set stat="baseCrit" order="0x08" value="8.0"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="21016" name="Balloon Stick of Cheers - Orange">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_stick_i01"/>
+    <set name="price" value="0"/>
+    <set name="type" value="SWORD"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="rnd_dam" value="1"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <set stat="baseCrit" order="0x08" value="8.0"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="21017" name="Balloon Stick of Cheers - Yellow">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_stick_i02"/>
+    <set name="price" value="0"/>
+    <set name="type" value="SWORD"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="rnd_dam" value="1"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <set stat="baseCrit" order="0x08" value="8.0"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="21018" name="Balloon Stick of Cheers - Green">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_stick_i03"/>
+    <set name="price" value="0"/>
+    <set name="type" value="SWORD"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="rnd_dam" value="1"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <set stat="baseCrit" order="0x08" value="8.0"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="21019" name="Balloon Stick of Cheers - Blue">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_stick_i04"/>
+    <set name="price" value="0"/>
+    <set name="type" value="SWORD"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="rnd_dam" value="1"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <set stat="baseCrit" order="0x08" value="8.0"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="21020" name="Balloon Stick of Cheers - Indigo Blue">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_stick_i05"/>
+    <set name="price" value="0"/>
+    <set name="type" value="SWORD"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="rnd_dam" value="1"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <set stat="baseCrit" order="0x08" value="8.0"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="21021" name="Balloon Stick of Cheers - Purple">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_stick_i06"/>
+    <set name="price" value="0"/>
+    <set name="type" value="SWORD"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="rnd_dam" value="1"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <set stat="baseCrit" order="0x08" value="8.0"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="21022" name="Balloon Stick of Cheers - Black">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_stick_i07"/>
+    <set name="price" value="0"/>
+    <set name="type" value="SWORD"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="rnd_dam" value="1"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <set stat="baseCrit" order="0x08" value="8.0"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="21023" name="Balloon Stick of Cheers - White">
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_worldcup_stick_i08"/>
+    <set name="price" value="0"/>
+    <set name="type" value="SWORD"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="rnd_dam" value="1"/>
+    <equip>
+      <slot id="LEFT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="1"/>
+      <add stat="mAtk" order="0x10" value="1"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <set stat="baseCrit" order="0x08" value="8.0"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <etcitem id="21024" name="Soccer Hall Afro Hair (White) Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21025" name="Soccer Hall Afro Hair (Blue) Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21026" name="Soccer Hall Afro Hair (Red) Pack" add_name="Blessing of Victory">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21027" name="Mark of Victory (Korea) Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21028" name="Mark of Victory (Japan) Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21029" name="Mark of Cheers Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21030" name="Hardin's Divine Protection">
+    <set name="freightable" value="true"/>
+    <set name="reuse_delay" value="900000"/>
+    <set name="delay_share_group" value="103"/>
+    <set name="tradeable" value="false" />
+    <set name="dropable" value="false" />
+    <set name="destroyable" value="false"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_protection_hadin_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="1"/>
+    <skills>
+      <skill id="22170" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="21031" name="Hardin's Blessing">
+    <set name="freightable" value="true"/>
+    <set name="reuse_delay" value="900000"/>
+    <set name="delay_share_group" value="103"/>
+    <set name="tradeable" value="false" />
+    <set name="dropable" value="false" />
+    <set name="destroyable" value="false"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_bless_of hadin_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="1"/>
+    <skills>
+      <skill id="22171" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="21032" name="Silpeed's Wing">
+  	<set name="reuse_delay" value="900000" />
+    <set name="freightable" value="true"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="tradeable" value="false" />
+    <set name="dropable" value="false" />
+    <set name="destroyable" value="false"/>
+    <set name="icon" value="BranchSys2.icon.br_wing_of_sylphide_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="storeable" value="false"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="10"/>
+    <skills>
+      <skill id="22172" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="21033" name="Silpeed's Blessing">
+  	<set name="reuse_delay" value="900000" />
+    <set name="freightable" value="true"/>
+    <set name="tradeable" value="false" />
+    <set name="dropable" value="false" />
+    <set name="destroyable" value="false"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_bless_of_sylphide_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="10"/>
+    <skills>
+      <skill id="22173" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="21034" name="Evain's Recovery Scroll">
+    <set name="freightable" value="true"/>
+    <set name="reuse_delay" value="1800000"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_scroll_of_yibein_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SCROLL"/>
+    <set name="weight" value="10"/>
+    <skills>
+      <skill id="22174" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="21035" name="Good/Bad of Life">
+    <set name="freightable" value="true"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value=""/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="120"/>
+    <skills>
+      <skill id="22175" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="21036" name="Good/Bad of Mind">
+    <set name="freightable" value="true"/>
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value=""/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="120"/>
+    <skills>
+      <skill id="22176" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="21037" name="Warrior's Breath">
+    <set name="freightable" value="true"/>
+    <set name="delay_share_group" value="104"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="tradeable" value="false" />
+    <set name="dropable" value="false" />
+    <set name="destroyable" value="false"/>
+    <set name="icon" value="BranchSys2.icon.br_breath_of_hero_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="1"/>
+    <skills>
+      <skill id="22177" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="21038" name="Potion of a Hero">
+    <set name="freightable" value="true"/>
+    <set name="reuse_delay" value="60000"/>
+    <set name="delay_share_group" value="105"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="tradeable" value="false" />
+    <set name="dropable" value="false" />
+    <set name="destroyable" value="false"/>
+    <set name="icon" value="BranchSys2.icon.br_hero_potion_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="1"/>
+    <skills>
+      <skill id="22178" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="21039" name="Highest Power Healing Potion">
+    <set name="freightable" value="true"/>
+    <set name="reuse_delay" value="10000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_reagent_white_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="1"/>
+    <skills>
+      <skill id="2863" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="21040" name="Highest Power Temporary Healing Potion">
+    <set name="freightable" value="true"/>
+    <set name="reuse_delay" value="10000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_potion_gold_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="1"/>
+    <skills>
+      <skill id="2864" level="1"/>
+    </skills>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="21041" name="Fortuna of Chaos">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_fortuna_box_chaos_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <armor id="21042" name="Flag Hat" add_name="7-day limited period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_flag_cap_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <set name="durability" value="10080"/>
+    <set name="temporal" value="true"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="21043" name="Flag Hat">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_flag_cap_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="21044" name="Granny Tiger Hat">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_tiger_grandma_cap_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="21045" name="Mischievous Bee Hat">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value=""/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <armor id="21046" name="Agathion Seal Bracelet - Granny Tiger" add_name="7 day limited period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_tiger_grandma_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="10080"/>
+    <set name="temporal" value="true"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21212" level="1"/>
+      <skill id="23216" level="1"/>
+      <skill id="23217" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21047" name="Agathion Seal Bracelet - Granny Tiger">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_tiger_grandma_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21212" level="1"/>
+      <skill id="23216" level="1"/>
+      <skill id="23217" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21048" name="Agathion Seal Bracelet - Flower Fairy Spirit">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_flower_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21213" level="1"/>
+      <skill id="23219" level="1"/>
+      <skill id="23218" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21049" name="Agathion Seal Bracelet - Cheerleader Orodriel" add_name="7 day limited period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_cheer_FElf_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="10080"/>
+    <set name="temporal" value="true"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21214" level="1"/>
+      <skill id="23221" level="1"/>
+      <skill id="23220" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21050" name="Agathion Seal Bracelet - Cheerleader Orodriel">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_cheer_FElf_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21214" level="1"/>
+      <skill id="23221" level="1"/>
+      <skill id="23220" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21051" name="Agathion Seal Bracelet - Cheerleader Lana" add_name="7 day limited period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_cheer_FFighter_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="10080"/>
+    <set name="temporal" value="true"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21215" level="1"/>
+      <skill id="23223" level="1"/>
+      <skill id="23222" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21052" name="Agathion Seal Bracelet - Cheerleader Lana">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_cheer_FFighter_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21215" level="1"/>
+      <skill id="23223" level="1"/>
+      <skill id="23222" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21053" name="Agathion Seal Bracelet - Cheerleader Naonin" add_name="7 day limited period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_cheer_FKamael_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="10080"/>
+    <set name="temporal" value="true"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21216" level="1"/>
+      <skill id="23225" level="1"/>
+      <skill id="23224" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21054" name="Agathion Seal Bracelet - Cheerleader Naonin">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_cheer_FKamael_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21216" level="1"/>
+      <skill id="23225" level="1"/>
+      <skill id="23224" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21055" name="Agathion Seal Bracelet - Cheerleader Mortia" add_name="7 day limited period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_cheer_FDarkelf_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="10080"/>
+    <set name="temporal" value="true"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21217" level="1"/>
+      <skill id="23227" level="1"/>
+      <skill id="23226" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21056" name="Agathion Seal Bracelet - Cheerleader Mortia">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_cheer_FDarkelf_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21217" level="1"/>
+      <skill id="23227" level="1"/>
+      <skill id="23226" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21057" name="Agathion Seal Bracelet - Cheerleader Kaurin" add_name="7 day limited period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_cheer_FOrc_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="10080"/>
+    <set name="temporal" value="true"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21218" level="1"/>
+      <skill id="23229" level="1"/>
+      <skill id="23228" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21058" name="Agathion Seal Bracelet - Cheerleader Kaurin">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_cheer_FOrc_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21218" level="1"/>
+      <skill id="23229" level="1"/>
+      <skill id="23228" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21059" name="Agathion Seal Bracelet - Cheerleader Meruril" add_name="7 day limited period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_cheer_FDwarf_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="10080"/>
+    <set name="temporal" value="true"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21219" level="1"/>
+      <skill id="23231" level="1"/>
+      <skill id="23230" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21060" name="Agathion Seal Bracelet - Cheerleader Meruril">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_cheer_FDwarf_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21219" level="1"/>
+      <skill id="23231" level="1"/>
+      <skill id="23230" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21061" name="Agathion Seal Bracelet - Handy" add_name="7 day limited period">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_block_mother_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <set name="durability" value="10080"/>
+    <set name="temporal" value="true"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21220" level="1"/>
+      <skill id="23233" level="1"/>
+      <skill id="23232" level="1"/>
+    </skills>
+  </armor>
+  <armor id="21062" name="Agathion Seal Bracelet - Handy">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_aga_block_mother_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="21220" level="1"/>
+      <skill id="23233" level="1"/>
+      <skill id="23232" level="1"/>
+    </skills>
+  </armor>
+  <etcitem id="21063" name="Flag Hat 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21064" name="Flag Hat Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21065" name="Granny Tiger Hat Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21066" name="Mischievous Bee Hat Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value=""/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21067" name="Granny Tiger Agathion 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21068" name="Granny Tiger Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21069" name="Flower Fairy Spirit Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21070" name="Cheerleader Orodriel Agathion 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21071" name="Cheerleader Orodriel Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21072" name="Cheerleader Lana Agathion 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21073" name="Cheerleader Lana Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21074" name="Cheerleader Naonin Agathion 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21075" name="Cheerleader Naonin Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21076" name="Cheerleader Mortia Agathion 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21077" name="Cheerleader Mortia Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21078" name="Cheerleader Kaurin Agathion 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21079" name="Cheerleader Kaurin Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21080" name="Cheerleader Meruril Agathion 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21081" name="Cheerleader Meruril Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21082" name="Handy Agathion 7-Day Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21083" name="Handy Agathion Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21084" name="Rune of Experience Points 30%">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="br_cashtex.item.br_cash_rune_of_exp_i00"/>
+    <set name="weight" value="120"/>
+	<set name="dropable" value="false"/>
+    <set name="durability" value="300"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="RUNE"/>
+	<skills>
+      <skill id="22039" level="1"/>
+    </skills>
+  </etcitem>
+  <etcitem id="21085" name="Rune of Experience Points 30% 1 hours pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21086" name="Rune of SP 30%">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="br_cashtex.item.br_cash_rune_of_sp_i00"/>
+    <set name="weight" value="120"/>
+	<set name="dropable" value="false"/>
+    <set name="durability" value="300"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="temporal" value="true"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="RUNE"/>
+	<skills>
+      <skill id="22040" level="1"/>
+    </skills>
+  </etcitem>
+  <etcitem id="21087" name="Rune of SP 30% 1-Hour Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <armor id="21088" name="Jet Bike Mounting Bracelet">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys2.icon.br_z_bike_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="30"/>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="21238" level="1"/>
+    </skills>
+  </armor>
+  <etcitem id="21089" name="Jet Bike Pack">
+    <set name="freightable" value="true"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="weight" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <armor id="21090" name="Plastic Hair">
+    <set name="freightable" value="true"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_plastic_hair_f_i00"/>
+    <set name="price" value="0"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="10"/>
+    <equip>
+      <slot id="HAIR_ALL"/>
+    </equip>
+  </armor>
+  <etcitem id="21091" name="Rune of Exp. Points 50% 7 day pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21092" name="Rune of SP 50% 7 day pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21093" name="Sweet Fruit Cocktail">
+    <set name="freightable" value="true"/>
+    <set name="reuse_delay" value="3000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_fruit_cocktail_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="21094" name="Fresh Fruit Cocktail">
+    <set name="freightable" value="true"/>
+    <set name="reuse_delay" value="3000"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_fruit_cocktail_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="5"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+	  <cond msgId="1983">
+		  <not>
+			  <player fightClub="true" />
+		  </not>
+	  </cond>
+  </etcitem>
+  <etcitem id="21095" name="Circlet of Freeze Pack">
+    <set name="freightable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="BranchSys.icon.br_four_leaf_clover_box_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="100"/>
+  </etcitem>
+  <etcitem id="21096" name="Shiny Cube Fragment Armor - D">
+    <set name="icon" value="Branchsys2.icon.shine_cubic_a_piece_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21097" name="Shiny Cube Fragment Armor - C">
+    <set name="icon" value="Branchsys2.icon.shine_cubic_a_piece_i01"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21098" name="Shiny Cube Fragment Armor - B">
+    <set name="icon" value="Branchsys2.icon.shine_cubic_a_piece_i02"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="21099" name="Shiny Cube Fragment Armor - A">
+    <set name="icon" value="Branchsys2.icon.shine_cubic_a_piece_i03"/>
+    <set name="stackable" value="true"/>
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+</list>

@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "npc.dtd">
+<list>
+	<npc id="37100" name="Knoriks" title="Land Dragon's Patroller">
+		<set name="displayId" value="22857" />
+		<set name="aggroRange" value="600"/>
+		<set name="ai_type" value="dragonvalley.Knoriks1"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseHpMax" value="534494"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="110"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMAtk" value="20016"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="768"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="2253"/>
+		<set name="baseMpReg" value="6"/>
+		<set name="basePAtk" value="37353"/>
+		<set name="basePAtkSpd" value="278"/>
+		<set name="basePDef" value="1468"/>
+		<set name="baseRunSpd" value="198"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="20"/>
+		<set name="baseWalkSpd" value="30"/>
+		<set name="collision_height" value="42.0"/>
+		<set name="collision_radius" value="20.0"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="3301825"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="348153"/>
+		<set name="shots" value="NONE"/>
+		<set name="texture" value=""/>
+		<set name="type" value="Monster"/>
+		<faction name="loa_antharas_clan" range="400"/>
+		<ai_params>
+			<set name="canSeeInSilentMove" value="true"/>
+		</ai_params>
+		<skills>
+			<skill id="4416" level="6"/>	<!--Humanoids-->
+			<skill id="5467" level="1"/>	<!--Dark Attacks-->
+			<!--<skill id="4410" level="17"/>	Very Strong P. Atk.-->
+			<!--<skill id="4411" level="13"/>	Slightly Strong M. Atk.-->
+			<!--<skill id="4412" level="15"/>	Strong P. Def.-->
+			<!--<skill id="4413" level="5"/>	Very Weak M. Def.-->
+			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
+			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
+			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
+			<skill id="4441" level="5"/>	<!--Greater Resist Mental Derangement-->
+			<skill id="4440" level="4"/>	<!--Greater Resist Paralysis-->
+			<skill id="6743" level="1"/>	<!--Dark Wind-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="195846" max="45686" chance="100.0000"/>	<!--Adena-->
+			</group>
+			<group chance="0.0013">
+				<reward item_id="15558" min="1" max="1" chance="5.0"/>	<!--Periel Sword-->
+				<reward item_id="15570" min="1" max="1" chance="5.0"/>	<!--Finale Blade-->
+				<reward item_id="15569" min="1" max="1" chance="5.0"/>	<!--Gemtail Rapier-->
+				<reward item_id="15568" min="1" max="1" chance="5.0"/>	<!--Skull Carnium Bow-->
+				<reward item_id="15567" min="1" max="1" chance="5.0"/>	<!--Veniplant Sword-->
+				<reward item_id="15566" min="1" max="1" chance="5.0"/>	<!--Black Visage-->
+				<reward item_id="15565" min="1" max="1" chance="5.0"/>	<!--Rising Star-->
+				<reward item_id="15564" min="1" max="1" chance="5.0"/>	<!--Doubletop Spear-->
+				<reward item_id="15563" min="1" max="1" chance="5.0"/>	<!--Octo Claw-->
+				<reward item_id="15562" min="1" max="1" chance="5.0"/>	<!--Feather Eye Blade-->
+				<reward item_id="15561" min="1" max="1" chance="5.0"/>	<!--Devilish Maul-->
+				<reward item_id="15560" min="1" max="1" chance="5.0"/>	<!--Vigwik Axe-->
+				<reward item_id="15559" min="1" max="1" chance="5.0"/>	<!--Skull Edge-->
+				<reward item_id="15571" min="1" max="1" chance="5.0"/>	<!--Dominion Crossbow-->
+				<reward item_id="13893" min="1" max="1" chance="30.0"/>	<!--Sealed Holy Spirit's Cloak-->
+			</group>
+			<group chance="33.334">
+				<reward item_id="14052" min="3" max="9" chance="11.87"/>	<!--Noble Enhancement Stone-->
+				<reward item_id="4040" min="3" max="9" chance="7.964"/>	<!--Mold Lubricant-->
+				<reward item_id="4042" min="4" max="12" chance="5.767"/>	<!--Enria-->
+				<reward item_id="2134" min="1" max="1" chance="5.643"/>	<!--Gemstone S-->
+				<reward item_id="1895" min="108" max="324" chance="3.658"/>	<!--Metallic Fiber-->
+				<reward item_id="14167" min="1" max="1" chance="3.421"/>	<!--Mid-Grade Life Stone - Level 84-->
+				<reward item_id="9549" min="5" max="15" chance="2.263"/>	<!--Wind Stone-->
+				<reward item_id="4043" min="27" max="81" chance="1.663"/>	<!--Leonard-->
+				<reward item_id="14166" min="6" max="18" chance="1.173"/>	<!--Life Stone - Level 84-->
+				<reward item_id="959" min="1" max="1" chance="0.5"/>	<!--Scroll: Enchant Weapon (S-Grade)-->
+				<reward item_id="14168" min="1" max="1" chance="0.5"/>	<!--High-Grade Life Stone - Level 84-->
+				<reward item_id="14169" min="1" max="1" chance="0.1"/>	<!--Top-Grade Life Stone - Level 84-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="2134" min="1" max="1" chance="99.00"/>	<!--Gemstone S-->
+			<reward item_id="14052" min="1" max="25" chance="98.82"/>	<!--Noble Enhancement Stone-->
+			<reward item_id="6578" min="1" max="1" chance="1.166"/>	<!--Blessed Scroll: Enchant Armor (S-Grade)-->
+			<reward item_id="6577" min="1" max="1" chance="0.5"/>	<!--Blessed Scroll: Enchant Weapon (S-Grade)-->
+		</rewardlist>
+		<attributes>
+			<attack attribute="unholy" value="250"/>
+			<defence attribute="fire" value="220"/>
+			<defence attribute="water" value="220"/>
+			<defence attribute="wind" value="220"/>
+			<defence attribute="earth" value="220"/>
+			<defence attribute="holy" value="170"/>
+			<defence attribute="unholy" value="250"/>
+		</attributes>
+	</npc>
+	<npc id="37101" name="Knoriks" title="Land Dragon's Patroller">
+		<set name="displayId" value="22857" />
+		<set name="aggroRange" value="600"/>
+		<set name="ai_type" value="dragonvalley.Knoriks2"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseHpMax" value="534494"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="110"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMAtk" value="20016"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="768"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="2253"/>
+		<set name="baseMpReg" value="6"/>
+		<set name="basePAtk" value="37353"/>
+		<set name="basePAtkSpd" value="278"/>
+		<set name="basePDef" value="1468"/>
+		<set name="baseRunSpd" value="198"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="20"/>
+		<set name="baseWalkSpd" value="30"/>
+		<set name="collision_height" value="42.0"/>
+		<set name="collision_radius" value="20.0"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="3301825"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="348153"/>
+		<set name="shots" value="NONE"/>
+		<set name="texture" value=""/>
+		<set name="type" value="Monster"/>
+		<faction name="loa_antharas_clan" range="400"/>
+		<ai_params>
+			<set name="canSeeInSilentMove" value="true"/>
+		</ai_params>
+		<skills>
+			<skill id="4416" level="6"/>	<!--Humanoids-->
+			<skill id="5467" level="1"/>	<!--Dark Attacks-->
+			<!--<skill id="4410" level="17"/>	Very Strong P. Atk.-->
+			<!--<skill id="4411" level="13"/>	Slightly Strong M. Atk.-->
+			<!--<skill id="4412" level="15"/>	Strong P. Def.-->
+			<!--<skill id="4413" level="5"/>	Very Weak M. Def.-->
+			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
+			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
+			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
+			<skill id="4441" level="5"/>	<!--Greater Resist Mental Derangement-->
+			<skill id="4440" level="4"/>	<!--Greater Resist Paralysis-->
+			<skill id="6743" level="1"/>	<!--Dark Wind-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="195846" max="45686" chance="100.0000"/>	<!--Adena-->
+			</group>
+			<group chance="0.0013">
+				<reward item_id="15558" min="1" max="1" chance="5.0"/>	<!--Periel Sword-->
+				<reward item_id="15570" min="1" max="1" chance="5.0"/>	<!--Finale Blade-->
+				<reward item_id="15569" min="1" max="1" chance="5.0"/>	<!--Gemtail Rapier-->
+				<reward item_id="15568" min="1" max="1" chance="5.0"/>	<!--Skull Carnium Bow-->
+				<reward item_id="15567" min="1" max="1" chance="5.0"/>	<!--Veniplant Sword-->
+				<reward item_id="15566" min="1" max="1" chance="5.0"/>	<!--Black Visage-->
+				<reward item_id="15565" min="1" max="1" chance="5.0"/>	<!--Rising Star-->
+				<reward item_id="15564" min="1" max="1" chance="5.0"/>	<!--Doubletop Spear-->
+				<reward item_id="15563" min="1" max="1" chance="5.0"/>	<!--Octo Claw-->
+				<reward item_id="15562" min="1" max="1" chance="5.0"/>	<!--Feather Eye Blade-->
+				<reward item_id="15561" min="1" max="1" chance="5.0"/>	<!--Devilish Maul-->
+				<reward item_id="15560" min="1" max="1" chance="5.0"/>	<!--Vigwik Axe-->
+				<reward item_id="15559" min="1" max="1" chance="5.0"/>	<!--Skull Edge-->
+				<reward item_id="15571" min="1" max="1" chance="5.0"/>	<!--Dominion Crossbow-->
+				<reward item_id="13893" min="1" max="1" chance="30.0"/>	<!--Sealed Holy Spirit's Cloak-->
+			</group>
+			<group chance="33.334">
+				<reward item_id="14052" min="3" max="9" chance="11.87"/>	<!--Noble Enhancement Stone-->
+				<reward item_id="4040" min="3" max="9" chance="7.964"/>	<!--Mold Lubricant-->
+				<reward item_id="4042" min="4" max="12" chance="5.767"/>	<!--Enria-->
+				<reward item_id="2134" min="1" max="1" chance="5.643"/>	<!--Gemstone S-->
+				<reward item_id="1895" min="108" max="324" chance="3.658"/>	<!--Metallic Fiber-->
+				<reward item_id="14167" min="1" max="1" chance="3.421"/>	<!--Mid-Grade Life Stone - Level 84-->
+				<reward item_id="9549" min="5" max="15" chance="2.263"/>	<!--Wind Stone-->
+				<reward item_id="4043" min="27" max="81" chance="1.663"/>	<!--Leonard-->
+				<reward item_id="14166" min="6" max="18" chance="1.173"/>	<!--Life Stone - Level 84-->
+				<reward item_id="959" min="1" max="1" chance="0.5"/>	<!--Scroll: Enchant Weapon (S-Grade)-->
+				<reward item_id="14168" min="1" max="1" chance="0.5"/>	<!--High-Grade Life Stone - Level 84-->
+				<reward item_id="14169" min="1" max="1" chance="0.1"/>	<!--Top-Grade Life Stone - Level 84-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="2134" min="1" max="1" chance="99.00"/>	<!--Gemstone S-->
+			<reward item_id="14052" min="1" max="25" chance="98.82"/>	<!--Noble Enhancement Stone-->
+			<reward item_id="6578" min="1" max="1" chance="1.166"/>	<!--Blessed Scroll: Enchant Armor (S-Grade)-->
+			<reward item_id="6577" min="1" max="1" chance="0.5"/>	<!--Blessed Scroll: Enchant Weapon (S-Grade)-->
+		</rewardlist>
+		<attributes>
+			<attack attribute="unholy" value="250"/>
+			<defence attribute="fire" value="220"/>
+			<defence attribute="water" value="220"/>
+			<defence attribute="wind" value="220"/>
+			<defence attribute="earth" value="220"/>
+			<defence attribute="holy" value="170"/>
+			<defence attribute="unholy" value="250"/>
+		</attributes>
+	</npc>
+	<npc id="37102" name="Knoriks" title="Land Dragon's Patroller">
+		<set name="displayId" value="22857" />
+		<set name="aggroRange" value="600"/>
+		<set name="ai_type" value="dragonvalley.Knoriks3"/>
+		<set name="baseAtkRange" value="40"/>
+		<set name="baseCON" value="43"/>
+		<set name="baseCritRate" value="40"/>
+		<set name="baseDEX" value="30"/>
+		<set name="baseHpMax" value="534494"/>
+		<set name="baseHpRate" value="1"/>
+		<set name="baseHpReg" value="110"/>
+		<set name="baseINT" value="21"/>
+		<set name="baseMAtk" value="20016"/>
+		<set name="baseMAtkSpd" value="333"/>
+		<set name="baseMDef" value="768"/>
+		<set name="baseMEN" value="20"/>
+		<set name="baseMpMax" value="2253"/>
+		<set name="baseMpReg" value="6"/>
+		<set name="basePAtk" value="37353"/>
+		<set name="basePAtkSpd" value="278"/>
+		<set name="basePDef" value="1468"/>
+		<set name="baseRunSpd" value="198"/>
+		<set name="baseSTR" value="40"/>
+		<set name="baseShldDef" value="0"/>
+		<set name="baseShldRate" value="0"/>
+		<set name="baseWIT" value="20"/>
+		<set name="baseWalkSpd" value="30"/>
+		<set name="collision_height" value="42.0"/>
+		<set name="collision_radius" value="20.0"/>
+		<set name="level" value="85"/>
+		<set name="rewardExp" value="3301825"/>
+		<set name="rewardRp" value="0"/>
+		<set name="rewardSp" value="348153"/>
+		<set name="shots" value="NONE"/>
+		<set name="texture" value=""/>
+		<set name="type" value="Monster"/>
+		<faction name="loa_antharas_clan" range="400"/>
+		<ai_params>
+			<set name="canSeeInSilentMove" value="true"/>
+		</ai_params>
+		<skills>
+			<skill id="4416" level="6"/>	<!--Humanoids-->
+			<skill id="5467" level="1"/>	<!--Dark Attacks-->
+			<!--<skill id="4410" level="17"/>	Very Strong P. Atk.-->
+			<!--<skill id="4411" level="13"/>	Slightly Strong M. Atk.-->
+			<!--<skill id="4412" level="15"/>	Strong P. Def.-->
+			<!--<skill id="4413" level="5"/>	Very Weak M. Def.-->
+			<skill id="4435" level="2"/>	<!--Greater Resist Stun-->
+			<skill id="4438" level="4"/>	<!--Greater Resist Sleep-->
+			<skill id="4439" level="4"/>	<!--Greater Resist Hold-->
+			<skill id="4441" level="5"/>	<!--Greater Resist Mental Derangement-->
+			<skill id="4440" level="4"/>	<!--Greater Resist Paralysis-->
+			<skill id="6743" level="1"/>	<!--Dark Wind-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="195846" max="45686" chance="100.0000"/>	<!--Adena-->
+			</group>
+			<group chance="0.0013">
+				<reward item_id="15558" min="1" max="1" chance="5.0"/>	<!--Periel Sword-->
+				<reward item_id="15570" min="1" max="1" chance="5.0"/>	<!--Finale Blade-->
+				<reward item_id="15569" min="1" max="1" chance="5.0"/>	<!--Gemtail Rapier-->
+				<reward item_id="15568" min="1" max="1" chance="5.0"/>	<!--Skull Carnium Bow-->
+				<reward item_id="15567" min="1" max="1" chance="5.0"/>	<!--Veniplant Sword-->
+				<reward item_id="15566" min="1" max="1" chance="5.0"/>	<!--Black Visage-->
+				<reward item_id="15565" min="1" max="1" chance="5.0"/>	<!--Rising Star-->
+				<reward item_id="15564" min="1" max="1" chance="5.0"/>	<!--Doubletop Spear-->
+				<reward item_id="15563" min="1" max="1" chance="5.0"/>	<!--Octo Claw-->
+				<reward item_id="15562" min="1" max="1" chance="5.0"/>	<!--Feather Eye Blade-->
+				<reward item_id="15561" min="1" max="1" chance="5.0"/>	<!--Devilish Maul-->
+				<reward item_id="15560" min="1" max="1" chance="5.0"/>	<!--Vigwik Axe-->
+				<reward item_id="15559" min="1" max="1" chance="5.0"/>	<!--Skull Edge-->
+				<reward item_id="15571" min="1" max="1" chance="5.0"/>	<!--Dominion Crossbow-->
+				<reward item_id="13893" min="1" max="1" chance="30.0"/>	<!--Sealed Holy Spirit's Cloak-->
+			</group>
+			<group chance="33.334">
+				<reward item_id="14052" min="3" max="9" chance="11.87"/>	<!--Noble Enhancement Stone-->
+				<reward item_id="4040" min="3" max="9" chance="7.964"/>	<!--Mold Lubricant-->
+				<reward item_id="4042" min="4" max="12" chance="5.767"/>	<!--Enria-->
+				<reward item_id="2134" min="1" max="1" chance="5.643"/>	<!--Gemstone S-->
+				<reward item_id="1895" min="108" max="324" chance="3.658"/>	<!--Metallic Fiber-->
+				<reward item_id="14167" min="1" max="1" chance="3.421"/>	<!--Mid-Grade Life Stone - Level 84-->
+				<reward item_id="9549" min="5" max="15" chance="2.263"/>	<!--Wind Stone-->
+				<reward item_id="4043" min="27" max="81" chance="1.663"/>	<!--Leonard-->
+				<reward item_id="14166" min="6" max="18" chance="1.173"/>	<!--Life Stone - Level 84-->
+				<reward item_id="959" min="1" max="1" chance="0.5"/>	<!--Scroll: Enchant Weapon (S-Grade)-->
+				<reward item_id="14168" min="1" max="1" chance="0.5"/>	<!--High-Grade Life Stone - Level 84-->
+				<reward item_id="14169" min="1" max="1" chance="0.1"/>	<!--Top-Grade Life Stone - Level 84-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="2134" min="1" max="1" chance="99.00"/>	<!--Gemstone S-->
+			<reward item_id="14052" min="1" max="25" chance="98.82"/>	<!--Noble Enhancement Stone-->
+			<reward item_id="6578" min="1" max="1" chance="1.166"/>	<!--Blessed Scroll: Enchant Armor (S-Grade)-->
+			<reward item_id="6577" min="1" max="1" chance="0.5"/>	<!--Blessed Scroll: Enchant Weapon (S-Grade)-->
+		</rewardlist>
+		<attributes>
+			<attack attribute="unholy" value="250"/>
+			<defence attribute="fire" value="220"/>
+			<defence attribute="water" value="220"/>
+			<defence attribute="wind" value="220"/>
+			<defence attribute="earth" value="220"/>
+			<defence attribute="holy" value="170"/>
+			<defence attribute="unholy" value="250"/>
+		</attributes>
+	</npc>
+	<npc id="53001" template_id="22544" name="Magic Soldier" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Mystic" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="40" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="14093.427" />
+		<set name="baseHpRate" value="0.5" />
+		<set name="baseHpReg" value="114.4" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="7354" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="1125" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1674.8" />
+		<set name="baseMpReg" value="3" />
+		<set name="basePAtk" value="11557" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="923" />
+		<set name="baseRunSpd" value="180" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="110" />
+		<set name="collision_height" value="34.5" />
+		<set name="collision_radius" value="25.0" />
+		<set name="level" value="80" />
+		<set name="rewardExp" value="84936" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="9090" />
+		<set name="shots" value="SOUL_BSPIRIT" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<equip>
+			<rhand item_id="13981" />	<!--Exclusive to Monsters (Mounted Troops Tactics)-->
+		</equip>
+		<skills>
+			<skill id="4408" level="9" />	<!--HP Increase (1/2x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="3" />	<!--One-handed Sword-->
+			<skill id="4416" level="10" />	<!--Dragons-->
+			<skill id="5462" level="1" />	<!--Fire Attacks-->
+			<skill id="5312" level="5" />	<!--NPC(party) -Magic Single Long Range DD - Fire-->
+			<skill id="5829" level="4" />	<!--Fire Flare-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="7.0">
+				<reward item_id="6673" min="1" max="1" chance="100.0" />	<!--Festival Adena-->
+			</group>
+			<group chance="0.3">
+				<reward item_id="6622" min="1" max="1" chance="25.0" />	<!--Giant's Codex-->
+				<reward item_id="9627" min="1" max="1" chance="2.0" />	<!--Giant's Codex - Mastery-->
+			</group>
+			<group chance="1.0">
+				<reward item_id="9546" min="1" max="2" chance="16.0" />	<!--Fire Stone-->
+				<reward item_id="9547" min="1" max="2" chance="16.0" />	<!--Water Stone-->
+				<reward item_id="9548" min="1" max="2" chance="16.0" />	<!--Earth Stone-->
+				<reward item_id="9549" min="1" max="2" chance="16.0" />	<!--Wind Stone-->
+				<reward item_id="9550" min="1" max="2" chance="16.0" />	<!--Dark Stone-->
+				<reward item_id="9551" min="1" max="2" chance="16.0" />	<!--Divine Stone-->
+			</group>
+			<group chance="0.5">
+				<reward item_id="9552" min="1" max="2" chance="16.0" />	<!--Fire Crystal-->
+				<reward item_id="9553" min="1" max="2" chance="16.0" />	<!--Water Crystal-->
+				<reward item_id="9554" min="1" max="2" chance="16.0" />	<!--Earth Crystal-->
+				<reward item_id="9555" min="1" max="2" chance="16.0" />	<!--Wind Crystal-->
+				<reward item_id="9556" min="1" max="2" chance="16.0" />	<!--Dark Crystal-->
+				<reward item_id="9557" min="1" max="2" chance="16.0" />	<!--Divine Crystal-->
+			</group>
+			<group chance="0.05">
+				<reward item_id="6578" min="1" max="1" chance="30.0" />	<!--Blessed Scroll: Enchant Armor (S)-->
+			</group>
+			<group chance="0.05">
+				<reward item_id="6577" min="1" max="1" chance="1.0" />	<!--Blessed Scroll: Enchant Weapon (S)-->
+			</group>
+			<group chance="5.0">
+				<reward item_id="1540" min="1" max="10" chance="50.0" />	<!--Quick Healing Potion-->
+			</group>
+			<group chance="1.0">
+				<reward item_id="14168" min="1" max="1" chance="3.0" />	<!--High-Grade Life Stone - level 84-->
+			</group>
+			<group chance="1.0">
+				<reward item_id="14169" min="1" max="1" chance="1.0" />	<!--Top-Grade Life Stone - level 84-->
+			</group>
+			<group chance="1.0">
+				<reward item_id="6408" min="1" max="1" chance="0.5" />	<!--Formal Wear-->
+			</group>
+			<group chance="0.01">
+				<reward item_id="21583" min="1" max="1" chance="0.3" />	<!--Festival's Cloak - True Black-->
+				<reward item_id="21587" min="1" max="1" chance="0.3" />	<!--Festival's Cloak - Bloody Red-->
+				<reward item_id="21588" min="1" max="1" chance="0.3" />	<!--Festival's Cloak - Pearl White-->
+			</group>
+			<group chance="5.0">
+				<reward item_id="1538" min="1" max="3" chance="4.0" />	<!--Blessed Scroll of Escape-->
+				<reward item_id="3936" min="1" max="3" chance="4.0" />	<!--Blessed Scroll of Resurrection-->
+			</group>
+		</rewardlist>
+		<attributes>
+			<attack attribute="fire" value="130" />
+			<defence attribute="fire" value="180" />
+			<defence attribute="water" value="120" />
+			<defence attribute="wind" value="150" />
+			<defence attribute="earth" value="150" />
+			<defence attribute="holy" value="150" />
+			<defence attribute="unholy" value="150" />
+		</attributes>
+	</npc>	
+</list>

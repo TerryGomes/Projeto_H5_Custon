@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="6700" levels="1" name="Ball Trapping Orodriel Agathion Cute Trick" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6701" levels="1" name="Penalty Kick Agathion Cute Trick" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill_agathion_cute" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6702" levels="1" name="Blessing of Cheers" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6703" levels="1" name="Blessing of Cheers" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6704" levels="1" name="Blessing of Cheers" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6705" levels="1" name="Stun" >
+		<set name="icon" val="icon.skill0100"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="15000"/>
+		<set name="power" val="4623"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="3000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="skillRaduis" val="300"/>
+		<set name="target" val="TARGET_MULTIFACE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="trait" val="SHOCK"/>
+		<set name="saveVs" val="CON"/>
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="9" val="0"/>
+		</for>
+	</skill>
+	<skill id="6706" levels="1" name="Piercing Attack" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6707" levels="1" name="Self-destruction" >
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="80000"/>
+		<set name="power" val="41654"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="skillRaduis" val="300"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isSuicideAttack" val="true"/>
+	</skill>
+	<skill id="6708" levels="1" name="Self-destruction" >
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="80000"/>
+		<set name="power" val="41654"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="skillRaduis" val="300"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="isSuicideAttack" val="true"/>
+	</skill>
+	<skill id="6709" levels="1" name="Multi Shot" >
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="6000" />
+		<set name="skillRaduis" val="300" />
+		<set name="hitTime" val="1500" />
+		<set name="reuseDelay" val="15000" />
+		<set name="target" val="TARGET_MULTIFACE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6710" levels="1" name="Etis Haste" >
+		<set name="icon" val="icon.skill0000" />
+		<set name="hitTime" val="1000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="15000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect name="Buff" time="30" val="0">
+				<mul order="0x40" stat="pAtkSpd" val="1.1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6711" levels="3" name="Etis Power Up" >
+		<set name="icon" val="icon.skill0000" />
+		<set name="hitTime" val="1000" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="reuseDelay" val="15000" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect name="Buff" time="30" val="0">
+				<mul order="0x40" stat="pAtk" val="1.1" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6714" levels="1" name="Wind Walk of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1204" />
+		<set name="magicLevel" val="60" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="SpeedUp" time="600" val="0">
+				<add order="0x40" stat="runSpd" val="33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6715" levels="1" name="Haste of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1086" />
+		<set name="magicLevel" val="60" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="pAtkSpeedUp" time="600" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.33" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6716" levels="1" name="Might of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1068" />
+		<set name="magicLevel" val="60" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtk" time="600" val="0">
+				<mul order="0x30" stat="pAtk" val="1.15" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6717" levels="1" name="Berserker Spirit of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1062" />
+		<set name="magicLevel" val="60" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="2" stackType="berserk" time="600" val="0">
+				<mul order="0x30" stat="mAtk" val="1.16" />
+				<mul order="0x30" stat="pAtk" val="0.92" />
+				<mul order="0x30" stat="pDef" val="1.08" />
+				<mul order="0x30" stat="mDef" val="0.84" />
+				<mul order="0x30" stat="mAtkSpd" val="1.08" />
+				<mul order="0x30" stat="pAtkSpd" val="1.08" />
+				<add order="0x40" stat="runSpd" val="8" />
+				<sub order="0x40" stat="rEvas" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6718" levels="1" name="Death Whisper of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1242" />
+		<set name="magicLevel" val="60" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="cAtk" time="600" val="0">
+				<mul order="0x30" stat="cAtk" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6719" levels="1" name="Guidance of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1240" />
+		<set name="magicLevel" val="60" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="accuracyUp" time="600" val="0">
+				<add order="0x40" stat="accCombat" val="4" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6720" levels="1" name="Focus of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLevel" val="60" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="rCrit" time="600" val="0">
+				<add order="0x40" stat="rCrit" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6721" levels="1" name="Empower of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1059" />
+		<set name="magicLevel" val="60" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mAtk" time="600" val="0">
+				<mul order="0x30" stat="mAtk" val="1.75" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6722" levels="1" name="Acumen of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1085" />
+		<set name="magicLevel" val="60" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mAtkSpeedUp" time="600" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="1.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6723" levels="1" name="Concentration of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1078" />
+		<set name="magicLevel" val="60" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="6" stackType="concentration" time="600" val="0">
+				<mul order="0x30" stat="concentration" val="0.47" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6724" levels="1" name="Greater Heal of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1217" />
+		<set name="magicLevel" val="60" />
+		<set name="power" val="450" />
+		<set name="hitTime" val="1500" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="20000"/>
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="HEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="15" name="HealOverTime" stackOrder="1" stackType="GreatHeal" time="1" val="30" />
+		</for>
+	</skill>
+	<skill id="6725" levels="1" name="Bless the Blood of Elcadia" >
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill1218"/>
+		<set name="reuseDelay" val="20000"/>
+		<set name="magicLevel" val="60"/>
+		<set name="castRange" val="400"/>
+		<set name="coolTime" val="500" />
+		<set name="hitTime" val="1000"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Buff" time="15" val="0">
+				<triggers>
+					<trigger id="6726" level="1" type="RECEIVE_DAMAGE" chance="60">
+						<player damage="60;0"/>
+					</trigger>
+				</triggers>
+			</effect>
+		</for>
+	</skill>
+	<skill id="6726" levels="1" name="Bless the Blood" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill3080" />
+		<set name="reuseDelay" val="4000" />
+		<set name="power" val="560" />
+		<set name="magicLevel" val="60" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HEAL" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="useSS" val="false" />
+	</skill>
+	<skill id="6727" levels="1" name="Vampiric Rage of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1268" />
+		<set name="magicLevel" val="60" />
+		<set name="hitTime" val="500" />
+		<set name="coolTime" val="500" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="20" stackType="vampRage" time="600" val="0">
+				<add order="0x40" stat="absorbDam" val="9" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6728" levels="1" name="Recharge of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1013" />
+		<set name="reuseDelay" val="30000" />
+		<set name="power" val="136" />
+		<set name="magicLevel" val="80" />
+		<set name="castRange" val="400" />
+		<set name="coolTime" val="500" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="MANAHEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6729" levels="1" name="Resist Holy of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1392" />
+		<set name="magicLevel" val="60" />
+		<set name="hitTime" val="1000" />
+		<set name="coolTime" val="500" />
+		<set name="castRange" val="400" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" time="600" val="0">
+				<add order="0x40" stat="defenceHoly" val="30" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6730" levels="1" name="Greater Battle Heal of Elcadia" >
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1218" />
+		<set name="reuseDelay" val="20000" />
+		<set name="power" val="858" />
+		<set name="magicLevel" val="60" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="HEAL" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6731" levels="1" name="Etis Shadow" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6732" levels="1" name="Mirage" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6733" levels="1" name="Antharas's Stigma" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill5860" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6734" levels="1" name="Energy of Destruction" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0129" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6735" levels="1" name="Petrify" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill4111" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6736" levels="1" name="Fierce Attack" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6737" levels="1" name="Heal" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill1401" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6738" levels="1" name="Hold" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill4047" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6739" levels="1" name="Presentation - Behemoth Leader Casting Preparation" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6740" levels="1" name="Presentation - Behemoth Leader Casting" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6741" levels="1" name="Presentation - Behemoth Leader Casting Failure" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6742" levels="1" name="Presentation - Behemoth Object Channeling" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6743" levels="1" name="Dark Wind">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="10000"/>
+		<set name="magicLevel" val="83"/>
+		<set name="power" val="14654"/>
+		<set name="hitTime" val="2000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="castRange" val="400"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="trait" val="BLEED"/>
+		<set name="saveVs" val="CON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect abnormal="bleeding" count="15" name="DamOverTime" stackType="Bleed" stackOrder="7" time="1" val="200">
+				<sub order="0x30" stat="defenceUnholy" val="100"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="6744" levels="3" name="Dark Storm">
+		<table name="#mpConsume1">25 61 75</table>
+        <set name="icon" val="icon.skill1386"/>
+		<set name="castRange" val="900"/>
+		<set name="reuseDelay" val="1000"/>
+		<set name="hitTime" val="2000"/>
+		<set name="mpConsume1" val="#mpConsume1"/>
+        <set name="target" val="TARGET_SELF"/>
+        <set name="skillType" val="BUFF"/>
+        <set name="operateType" val="OP_ACTIVE"/>
+		<for>
+            <effect count="1" name="Buff" time="2" val="0">
+                <sub order="0x30" stat="mAtkSpd" val="90"/>
+                <sub order="0x30" stat="pAtkSpd" val="30"/>
+            </effect>
+        </for>
+    </skill>
+	<skill id="6745" levels="1" name="Dark Space" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill1445" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6746" levels="1" name="Dark Space" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill1445" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6747" levels="1" name="Dark Blade" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill1445" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6748" levels="1" name="Stun Attack">
+		<set name="icon" val="icon.skill6748"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="15000"/>
+		<set name="power" val="13654"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="criticalRate" val="50"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="trait" val="SHOCK"/>
+		<set name="saveVs" val="CON"/>
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="6" val="0"/>
+		</for>
+	</skill>
+	<skill id="6749" levels="1" name="Death Strike">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="8000"/>
+		<set name="power" val="21654"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="criticalRate" val="50"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6750" levels="1" name="Power Strike">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="8000"/>
+		<set name="power" val="17654"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="criticalRate" val="50"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6751" levels="1" name="Blow Attack" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6752" levels="1" name="Revival">
+		<set name="icon" val="icon.skill6861"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="30000"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="2000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Buff" time="60" val="0">
+				<mul order="0x30" stat="pAtk" val="1.2"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.3"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="6753" levels="1" name="Death Blow">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="8000"/>
+		<set name="power" val="17654"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="criticalRate" val="50"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6754" levels="1" name="Bleed">
+		<set name="icon" val="icon.skill6748"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="20000"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="criticalRate" val="50"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="trait" val="BLEED"/>
+		<set name="saveVs" val="CON"/>
+		<for>
+			<effect abnormal="bleeding" count="10" name="DamOverTime" stackType="Bleed" stackOrder="7" time="1" val="200"/>
+		</for>
+	</skill>
+	<skill id="6755" levels="1" name="Death Strike">
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill6874"/>
+		<set name="power" val="264"/>
+		<set name="magicLevel" val="84"/>
+		<set name="reuseDelay" val="8000"/>
+		<set name="coolTime" val="300"/>
+		<set name="castRange" val="600"/>
+		<set name="hitTime" val="2500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume1" val="34"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6756" levels="1" name="Death Talon">
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill6871"/>
+		<set name="power" val="200"/>
+		<set name="reuseDelay" val="25000"/>
+		<set name="magicLevel" val="84"/>
+		<set name="coolTime" val="300"/>
+		<set name="skillRaduis" val="300"/>
+		<set name="hitTime" val="3000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume1" val="34"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6757" levels="1" name="Slow">
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill6873"/>
+		<set name="reuseDelay" val="25000"/>
+		<set name="magicLevel" val="84"/>
+		<set name="coolTime" val="300"/>
+		<set name="castRange" val="900"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume1" val="34"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Debuff" count="1" time="15" val="0">
+				<mul order="0x40" stat="runSpd" val="0.7"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="6758" levels="1" name="Rage">
+		<set name="icon" val="icon.skill6861"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="60000"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="2000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Buff" time="60" val="0">
+				<mul order="0x30" stat="pAtk" val="1.2"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.3"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="6759" levels="1" name="Death Shot">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="12000"/>
+		<set name="power" val="20306"/>
+		<set name="magicLevel" val="83"/>
+		<set name="castRange" val="600"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="criticalRate" val="10"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6760" levels="1" name="Dragon Strike">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="8000"/>
+		<set name="power" val="14312"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6761" levels="1" name="Dragon Blow Strike">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="8000"/>
+		<set name="power" val="18654"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="skillRaduis" val="200"/>
+		<set name="target" val="TARGET_AURA"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6762" levels="1" name="Rage">
+		<set name="icon" val="icon.skill6861"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="60000"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="2000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Buff" time="60" val="0">
+				<mul order="0x30" stat="pAtk" val="1.2"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.3"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="6763" levels="1" name="Dragon Earth Strike">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="8000"/>
+		<set name="power" val="12312"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6764" levels="1" name="Dragon Earth Shot">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="15000"/>
+		<set name="power" val="27654"/>
+		<set name="magicLevel" val="83"/>
+		<set name="castRange" val="600"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="criticalRate" val="10"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6765" levels="1" name="Complete Recovery">
+		<set name="icon" val="icon.skill6861"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="180000"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="2500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="HealPercent" time="0" val="100"/>
+		</for>
+	</skill>
+	<skill id="6766" levels="1" name="Earth Tremor">
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill6874"/>
+		<set name="power" val="184"/>
+		<set name="magicLevel" val="84"/>
+		<set name="coolTime" val="300"/>
+		<set name="castRange" val="600"/>
+		<set name="hitTime" val="2500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume1" val="34"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6767" levels="1" name="Earthquake" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6768" levels="1" name="Stun Attack">
+		<set name="icon" val="icon.skill6748"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="15000"/>
+		<set name="power" val="14654"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="criticalRate" val="50"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="trait" val="SHOCK"/>
+		<set name="saveVs" val="CON"/>
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="5" val="0"/>
+		</for>
+	</skill>
+	<skill id="6769" levels="1" name="Petrification">
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill6873"/>
+		<set name="reuseDelay" val="40000"/>
+		<set name="magicLevel" val="84"/>
+		<set name="coolTime" val="300"/>
+		<set name="castRange" val="900"/>
+		<set name="hitTime" val="2500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume1" val="34"/>
+		<set name="mpConsume2" val="100"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PARALYZE"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="saveVs" val="MEN"/>
+		<for>
+			<effect count="1" name="Petrification" stackOrder="-1" stackType="paralyze" time="30" val="0">
+				<set order="0x80" stat="regHp" val="0"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="6770" levels="1" name="Heal">
+		<set name="icon" val="icon.skill6861"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="20000"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="DispelEffects" time="0" val="0">
+				<def name="dispelType" val="cleanse"/>
+				<def name="cancelRate" val="100"/>
+				<def name="negateCount" val="10"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="6771" levels="1" name="Death Strike">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="8000"/>
+		<set name="power" val="12312"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="criticalRate" val="50"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6772" levels="1" name="Power Strike">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="8000"/>
+		<set name="power" val="22312"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6773" levels="1" name="Rage">
+		<set name="icon" val="icon.skill6861"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="60000"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="2000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Buff" time="60" val="0">
+				<mul order="0x30" stat="pAtk" val="1.2"/>
+				<mul order="0x30" stat="pAtkSpd" val="1.3"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="6774" levels="1" name="Stun Attack">
+		<set name="icon" val="icon.skill6748"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="15000"/>
+		<set name="power" val="14654"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="criticalRate" val="50"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="trait" val="SHOCK"/>
+		<set name="saveVs" val="CON"/>
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="10" val="0"/>
+		</for>
+	</skill>
+	<skill id="6775" levels="1" name="Soul Breath">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="12000"/>
+		<set name="power" val="8312"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="skillRaduis" val="300"/>
+		<set name="target" val="TARGET_MULTIFACE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6776" levels="1" name="Paralysis">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="40000"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="2500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="castRange" val="400"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="delayedEffect" val="5459"/>
+		<set name="trait" val="PARALYZE"/>
+		<set name="saveVs" val="MEN"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Debuff" time="10" val="0">
+				<mul order="0x30" stat="runSpd" val="0.5"/>
+				<mul order="0x30" stat="pAtkSpd" val="0.5"/>
+				<mul order="0x30" stat="mAtkSpd" val="0.5"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="6777" levels="1" name="Bleeding Gash">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="80000"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="2500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="castRange" val="400"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="delayedEffect" val="5459"/>
+		<set name="trait" val="BLEED"/>
+		<set name="saveVs" val="CON"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect abnormal="bleeding" count="1" name="DamOverTime" stackType="Bleed" stackOrder="7" time="20" val="200">
+				<mul order="0x30" stat="runSpd" val="0.7"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="6778" levels="1" name="Death Strike">
+		<set name="icon" val="icon.skill6876"/>
+		<set name="coolTime" val="300"/>
+		<set name="reuseDelay" val="8000"/>
+		<set name="power" val="12312"/>
+		<set name="magicLevel" val="83"/>
+		<set name="hitTime" val="1500"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="34"/>
+		<set name="criticalRate" val="50"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+	</skill>
+	<skill id="6779" levels="1" name="Paralysis" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill1170" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6780" levels="1" name="Presentation - Portal Ray Combined Light Maintenance" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6781" levels="1" name="Presentation - Red Portal Ray" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6782" levels="1" name="Presentation - Blue Portal Ray" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6785" levels="1" name="Presentation - Dialogue with Etis 1" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6786" levels="1" name="Presentation - Etis Transformation Effect" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6787" levels="1" name="Presentation - Etis Pre-Transformation" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6788" levels="1" name="Presentation - Etis Post-Transformation" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6789" levels="1" name="Presentation - Etis's Defeat" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6790" levels="1" name="Presentation - Etis Kneeling" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6791" levels="1" name="Presentation - Dialogue with Elcadia 1" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6792" levels="1" name="Presentation - Dialogue with Elcadia 2" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6793" levels="1" name="Presentation - Dialogue with Elcadia 3" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6794" levels="1" name="Presentation - Elcadia Casting 1" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6795" levels="1" name="Presentation - Elcadia Casting 2" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6796" levels="1" name="Presentation - Meteor Effect" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6797" levels="1" name="Presentation - Eris Scatter Effect" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6798" levels="1" name="Presentation - Etis Summon Effect" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6799" levels="1" name="Presentation - Portal 2_boom_down" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+</list>

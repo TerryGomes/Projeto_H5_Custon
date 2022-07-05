@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "../events.dtd">
+<list>
+	<event id="3" name="Lucky Creatures" type="FIGHT_CLUB_EVENT" impl="fightclub.LuckyCreatures">
+		<parameter name="icon" value="L2UI_CT1.clan_DF_TerritoryWarIcon_Aden"/>
+        <parameter name="desc" value="You have 10 minutes to kill as many monsters as you can. Be quick and obtain great rewards!"/>
+		<parameter name="roundRunTime" value="0"/>
+        <parameter name="roundEvent" value="false"/>
+        <parameter name="isAutoTimed" value="false"/>
+		<parameter name="teamed" value="false"/>
+		<parameter name="buffer" value="false"/>
+		<parameter name="fighterBuffs" value="1204,2;1086,2;1068,3;1045,6;1048,6;1040,3;1062,2;1036,2"/>
+		<parameter name="mageBuffs" value="1204,2;1085,3;1059,3;1045,6;1048,6;1040,3;1062,2;1036,2"/>
+		<parameter name="rootBetweenRounds" value="true"/>
+		<parameter name="excludedClasses" value=""/>
+		<parameter name="ressAllowed" value="false"/>
+		<parameter name="respawnTime" value="-1"/>
+		<parameter name="showPersonality" value="true"/>
+		<parameter name="monstersCount" value="200"/>
+		<parameter name="monstersRespawn" value="60"/>
+		<parameter name="monsterTemplates" value=""/>
+		<parameter name="badgesKillPlayer" value="0"/>
+		<parameter name="badgesKillPet" value="0"/>
+		<parameter name="badgesDie" value="0"/>
+		<parameter name="badgesWin" value="0"/>
+	</event>
+</list>

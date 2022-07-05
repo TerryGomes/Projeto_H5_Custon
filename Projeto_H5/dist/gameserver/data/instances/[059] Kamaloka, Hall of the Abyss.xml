@@ -1,0 +1,24 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Gludio Castle Town: NPC Bathis (Level 23) -->
+	<instance id="59" name="Kamaloka, Hall of the Abyss" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="21" max="31"/>
+		<party min="2" max="6"/>
+		<return loc="-13930 123748 -3120"/>
+		<teleport loc="-74838 -220795 -7868"/>
+		<remove itemId="-100" count="2500" necessary="true"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="1"/>
+		<add_parameters>
+			<!-- TODO --><param name="tele_device_loc" value="-89000 -220065 -7888"/>
+		</add_parameters>
+		<spawns>
+			<!-- Ranc Deumus -->
+			<spawn mobId="18557" count="1" respawn="0" type="point">
+				<coords loc="-74845 -220078 -7904 -16312"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

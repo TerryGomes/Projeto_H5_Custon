@@ -1,0 +1,1592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="6400" levels="1" name="Cokrakon Dwindling Velocity">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1386" />
+		<set name="reuseDelay" val="2000" />
+		<set name="power" val="13688" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="22" />
+		<set name="mpConsume2" val="88" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="skillType" val="PDAM" />
+		<set name="target" val="TARGET_ONE" />
+		<for>
+			<effect name="Debuff" time="30" val="0" stackOrder="0.8" stackType="MatkSpeedDown">
+				<mul order="0x30" stat="mAtkSpd" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6401" levels="1" name="Cokrakon Wheeling Clow">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="1000" />
+		<set name="power" val="13688" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6402" levels="5" name="Torumba Poison Strike">
+		<table name="#power">100 220 440 880 1600</table>
+		<set name="levelModifier" val="1" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0129" />
+		<set name="castRange" val="2000" />
+		<set name="mpConsume1" val="22" />
+		<set name="mpConsume2" val="88" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="skillRadius" val="150" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="trait" val="POISON" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="1" name="DamOverTime" time="30" val="#power" stackType="Poison" stackOrder="3" abnormal="poison" />
+		</for>
+	</skill>
+	<skill id="6403" levels="1" name="Torumba Numbing Poison">
+		<set name="levelModifier" val="2" />
+		<set name="icon" val="icon.skill1160" />
+		<set name="reuseDelay" val="1000" />
+		<set name="power" val="13688" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="60" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="skillRadius" val="150" />
+		<set name="skillType" val="PDAM" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="5" name="DamOverTime" time="10" val="279" stackType="Bleed" stackOrder="3" abnormal="bleeding">
+				<mul order="0x30" stat="runSpd" val="0.8" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6404" levels="1" name="Torumba Poison Swing">
+		<set name="levelModifier" val="2" />
+		<set name="icon" val="icon.skill1160" />
+		<set name="reuseDelay" val="1000" />
+		<set name="power" val="13688" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="magicLvl" val="85" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="skillRadius" val="150" />
+		<set name="skillType" val="PDAM" />
+		<set name="target" val="TARGET_AURA" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="1" name="Debuff" time="30" val="0">
+				<mul order="0x30" stat="runSpd" val="0.3" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6405" levels="1" name="Torumba Roar">
+		<set name="levelModifier" val="2" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1336" />
+		<set name="reuseDelay" val="1000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="14" />
+		<set name="mpConsume2" val="56" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="1" name="Buff" time="20" val="0">
+				<add order="0x40" stat="runSpd" val="20" />
+				<mul order="0x30" stat="pAtkSpd" val="1.2" />
+				<mul order="0x30" stat="mAtkSpd" val="1.2" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6406" levels="1" name="Torumba's Plague">
+		<set name="icon" val="icon.skill4111" />
+		<set name="castRange" val="1500" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="cancelable" val="false" />
+		<for>
+			<effect count="1" name="Petrification" stackOrder="-1" stackType="paralyze" time="300" val="0" />
+		</for>
+	</skill>
+	<skill id="6407" levels="1" name="Torumba's Constraint">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill5919" />
+		<set name="castRange" val="300" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="15" />
+		<set name="mpConsume2" val="60" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Debuff" time="300" val="0" />
+		</for>
+	</skill>
+	<skill id="6408" levels="1" name="Soul Weakness">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill5919" />
+		<set name="castRange" val="500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="power" val="100" />
+		<set name="mpConsume1" val="15" />
+		<set name="mpConsume2" val="60" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="cancelable" val="false" />
+		<for>
+			<effect count="1" name="Debuff" time="2100" val="0" />
+		</for>
+	</skill>
+	<skill id="6409" levels="1" name="Reptilikon Earthquake">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="1000" />
+		<set name="power" val="13688" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6410" levels="1" name="Reptilikon Rush">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill0100" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="1000" />
+		<set name="power" val="9125" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="60" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="SHOCK" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="9" val="0" />
+		</for>
+	</skill>
+	<skill id="6411" levels="1" name="Reptilikon Summon">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6412" levels="1" name="Reptilikon Critical Blow" >
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="1000" />
+		<set name="power" val="13688" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="skillType" val="PDAM" />
+		<set name="blow" val="true" />
+		<set name="lethal1" val="10" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6413" levels="1" name="Reptilikon Missile">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="1000" />
+		<set name="power" val="13688" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6414" levels="1" name="Reptilikon Charge">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill0100" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="1000" />
+		<set name="power" val="9125" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="60" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="SHOCK" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="1" name="Stun" stackOrder="-1" stackType="Stun" time="9" val="0" />
+		</for>
+	</skill>
+	<skill id="6415" levels="1" name="Reptilikon Scratch">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="1000" />
+		<set name="power" val="13688" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="overHit" val="true" />
+		<set name="skillType" val="PDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6416" levels="1" name="Reptilikon Poison Breath">
+		<set name="levelModifier" val="2" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1102" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="1000" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="22" />
+		<set name="mpConsume2" val="88" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="20" name="ManaDamOverTime" time="1" val="1" />
+		</for>
+	</skill>
+	<skill id="6417" levels="1" name="Reptilikon Poison Shot">
+		<set name="levelModifier" val="2" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1102" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="1000" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="22" />
+		<set name="mpConsume2" val="88" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="20" name="ManaDamOverTime" time="1" val="1" />
+		</for>
+	</skill>
+	<skill id="6418" levels="1" name="Reptilikon Fury Poison Bomb">
+		<set name="levelModifier" val="2" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1102" />
+		<set name="coolTime" val="500" />
+		<set name="reuseDelay" val="1000" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="22" />
+		<set name="mpConsume2" val="88" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="20" name="ManaDamOverTime" time="1" val="1" />
+			<effect count="20" name="DamOverTime" time="1" val="15" />
+		</for>
+	</skill>
+	<skill id="6419" levels="1" name="Light of Scout">
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="82" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<!-- <set name="operateType" val="OP_ACTIVE" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="mpConsume" val="121" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="40" />
+		<set name="effectRange" val="200" /> -->
+	</skill>
+	<skill id="6420" levels="1" name="Lizard Strike">
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="83" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<!-- <set name="operateType" val="OP_ACTIVE" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="mpConsume" val="121" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="40" />
+		<set name="effectRange" val="200" /> -->
+	</skill>
+	<skill id="6421" levels="1" name="Rage of Soldier">
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="84" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<!-- <set name="operateType" val="OP_ACTIVE" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="mpConsume" val="121" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="40" />
+		<set name="effectRange" val="200" /> -->
+	</skill>
+	<skill id="6422" levels="1" name="Resistance Explosion">
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="84" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<!-- <set name="operateType" val="OP_ACTIVE" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="mpConsume" val="121" />
+		<set name="hitTime" val="1000" />
+		<set name="castRange" val="40" />
+		<set name="effectRange" val="200" /> -->
+	</skill>
+	<skill id="6423" levels="1" name="Shock">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill0100" />
+		<set name="coolTime" val="1000" />
+		<set name="power" val="600" />
+		<set name="magicLevel" val="84" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="trait" val="SHOCK" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect name="Stun" time="5" val="0" effectPower="60" effectType="STUN" stackOrder="1" stackType="Stun" />
+		</for>
+	</skill>
+	<skill id="6424" levels="1" name="Double Shot">
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="84" />
+		<set name="castRange" val="900" />
+		<set name="hitTime" val="1000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="121" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<!-- <set name="operateType" val="OP_ACTIVE" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="PDAM" />
+		<set name="mpConsume" val="121" />
+		<set name="hitTime" val="2000" />
+		<set name="castRange" val="900" />
+		<set name="effectRange" val="200" /> -->
+	</skill>
+	<skill id="6425" levels="1" name="Demotivation Hex">
+		<set name="levelModifier" val="2" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0122" />
+		<set name="magicLevel" val="84" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="saveVs" val="MEN" />
+	</skill>
+	<skill id="6426" levels="1" name="Priest's Ire">
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="84" />
+		<set name="castRange" val="800" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="MDAM" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="6427" levels="1" name="Medicinal Mushroom 1">
+		<!-- Fantasy Mushroom Skill -->
+		<set name="icon" val="icon.skill0100" />
+		<set name="coolTime" val="1000" />
+		<set name="magicLevel" val="84" />
+		<set name="hitCancelTime" val="500" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="STUN" />
+		<for>
+			<effect count="1" name="Stun" stackOrder="1" stackType="Stun" time="20" val="0" />
+		</for>
+	</skill>
+	<skill id="6428" levels="1" name="Hold">
+		<!-- Sticky Mushroom Skill -->
+		<set name="levelModifier" val="2" />
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1201" />
+		<set name="power" val="90" />
+		<set name="magicLevel" val="84" />
+		<set name="castRange" val="2000" />
+		<set name="mpConsume1" val="22" />
+		<set name="mpConsume2" val="88" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HEAL_PERCENT" />
+		<set name="activateRate" val="30" />
+		<set name="trait" val="HOLD" />
+		<set name="saveVs" val="MEN" />
+		<for>
+			<effect count="1" name="Root" effectType="ROOT" stackOrder="1" stackType="Root" time="5" val="0" />
+		</for>
+	</skill>
+	<skill id="6429" levels="1" name="Cozy Mucus">
+		<!-- Rainbow Frog -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill6429" />
+		<set name="magicLevel" val="84" />
+		<set name="castRange" val="2000" />
+		<set name="mpConsume1" val="22" />
+		<set name="mpConsume2" val="88" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect name="Buff" time="600" val="0">
+				<mul order="0x30" stat="pAtk" val="1.15">
+					<using kind="Bow,Crossbow" />
+				</mul>
+				<mul order="0x30" stat="regHp" val="5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6430" levels="1" name="Roar Hip Heal">
+		<!-- Energy Plant Skill -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="power" val="30" />
+		<set name="magicLevel" val="84" />
+		<set name="castRange" val="2000" />
+		<set name="mpConsume1" val="22" />
+		<set name="mpConsume2" val="88" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="HEAL_PERCENT" />
+	</skill>
+	<skill id="6431" levels="1" name="Feral Might">
+		<!-- P. Atk. increases by 19 % for 5 minutes -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1068" />
+		<set name="reuseDelay" val="90000" />
+		<set name="magicLevel" val="84" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="22" />
+		<set name="mpConsume2" val="88" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="4" stackType="pAtk" time="300" val="0">
+				<mul order="0x30" stat="pAtk" val="1.19" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6432" levels="1" name="Feral Focus">
+		<!-- Critical attack rate increases by 35 % for 5 minutes -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1077" />
+		<set name="reuseDelay" val="90000" />
+		<set name="magicLevel" val="84" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="22" />
+		<set name="mpConsume2" val="88" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="4" stackType="rCrit" time="300" val="0">
+				<mul order="0x30" stat="rCrit" val="1.35" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6433" levels="1" name="Feral Guidance">
+		<!-- Accuracy increases by 7 for 5 minutes. -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1240" />
+		<set name="reuseDelay" val="90000" />
+		<set name="magicLevel" val="84" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="22" />
+		<set name="mpConsume2" val="88" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="4" stackType="accuracyUp" time="300" val="0">
+				<add order="0x40" stat="accCombat" val="7" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6434" levels="1" name="Feral Haste">
+		<!-- Atk. Spd. increases by 38 % for 5 minutes. -->
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1086" />
+		<set name="reuseDelay" val="90000" />
+		<set name="magicLevel" val="84" />
+		<set name="castRange" val="400" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume1" val="22" />
+		<set name="mpConsume2" val="88" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtkSpeedUp" time="300" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="1.38" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6435" levels="3" name="Curse of the Plains">
+		<table name="#cAtk">1.2 1.3 1.4</table>
+		<table name="#rCrit">1.2 1.5 1.75</table>
+		<table name="#dmg">0.5 1 2</table>
+		<table name="#stackOrder">7 8 9</table>
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill6435" />
+		<set name="magicLevel" val="84" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="5" name="DamOverTime" stackOrder="#stackOrder" stackType="multi_debuff" time="1" val="#dmg">
+				<def name="percent" val="true" />
+				<mul order="0x30" stat="cAtk" val="#cAtk">
+					<using kind="Bow,Crossbow" />
+				</mul>
+				<mul order="0x30" stat="rCrit" val="#rCrit">
+					<using kind="Bow,Crossbow" />
+				</mul>
+			</effect>
+		</for>
+	</skill>
+	<skill id="6436" levels="1" name="Curse of the Dark Abyss">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill6435" />
+		<set name="magicLevel" val="84" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="5" name="DamOverTime" stackOrder="10" stackType="multi_debuff" time="1" val="5">
+				<def name="percent" val="true" />
+				<mul order="0x30" stat="cAtk" val="1.5">
+					<using kind="Bow,Crossbow" />
+				</mul>
+				<mul order="0x30" stat="rCrit" val="1.9">
+					<using kind="Bow,Crossbow" />
+				</mul>
+			</effect>
+		</for>
+	</skill>
+	<skill id="6437" levels="7" name="Area of Freezing Core">
+		<table name="#dmg">30 60 90 150 250 350 500</table>
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill1183" />
+		<set name="magicLevel" val="84" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="DEBUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="POISON" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="1" name="DamOverTime" time="5" val="#dmg" />
+		</for>	
+	</skill>
+	<skill id="6438" levels="1" name="Penalty Area">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill4036" />
+		<set name="magicLevel" val="84" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<set name="trait" val="POISON" />
+		<set name="saveVs" val="CON" />
+	</skill>
+	<skill id="6439" levels="1" name="Energy of Wisdom">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill6439" />
+		<set name="magicLevel" val="84" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="POISON" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="1" name="Buff" time="60" val="0" stackType="signal_e">
+				<add order="0x40" stat="swordWpnVuln" val="50" />
+				<add order="0x40" stat="dualWpnVuln" val="50" />
+				<add order="0x40" stat="bluntWpnVuln" val="95" />
+				<add order="0x40" stat="daggerWpnVuln" val="95" />
+				<add order="0x40" stat="bowWpnVuln" val="99" />
+				<add order="0x40" stat="crossbowWpnVuln" val="99" />
+				<add order="0x40" stat="poleWpnVuln" val="95" />
+				<add order="0x40" stat="fistWpnVuln" val="95" />
+				<mul order="0x30" stat="mDef" val="0.70" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6440" levels="1" name="Energy of Strong">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill6440" />
+		<set name="magicLevel" val="84" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="POISON" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="1" name="Buff" time="60" val="0" stackType="signal_e">
+				<mul order="0x30" stat="mDef" val="1.99" />
+				<add order="0x40" stat="bowWpnVuln" val="99" />
+				<add order="0x40" stat="crossbowWpnVuln" val="99" />
+				<sub order="0x40" stat="swordWpnVuln" val="5" />
+				<sub order="0x40" stat="dualWpnVuln" val="5" />
+				<sub order="0x40" stat="bluntWpnVuln" val="5" />
+				<sub order="0x40" stat="daggerWpnVuln" val="5" />
+				<sub order="0x40" stat="poleWpnVuln" val="5" />
+				<sub order="0x40" stat="fistWpnVuln" val="5" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6441" levels="1" name="Energy of Agile">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill6441" />
+		<set name="magicLevel" val="84" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="POISON" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="1" name="Buff" time="60" val="0" stackType="signal_e">
+				<add order="0x40" stat="swordWpnVuln" val="50" />
+				<add order="0x40" stat="dualWpnVuln" val="50" />
+				<add order="0x40" stat="bluntWpnVuln" val="95" />
+				<add order="0x40" stat="daggerWpnVuln" val="95" />
+				<sub order="0x40" stat="bowWpnVuln" val="100" />
+				<sub order="0x40" stat="crossbowWpnVuln" val="100" />
+				<add order="0x40" stat="poleWpnVuln" val="95" />
+				<add order="0x40" stat="fistWpnVuln" val="95" />
+				<mul order="0x30" stat="mDef" val="1.99" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="6442" levels="1" name="Efficacy of Wisdom">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill6439" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="POISON" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="1" name="Buff" time="60" val="0" stackType="signal_e" />
+		</for>
+	</skill>
+	<skill id="6443" levels="1" name="Efficacy of Strength">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill6440" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="POISON" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="1" name="Buff" time="60" val="0" stackType="signal_e" />
+		</for>
+	</skill>
+	<skill id="6444" levels="1" name="Efficacy of Agility">
+		<set name="levelModifier" val="1" />
+		<set name="icon" val="icon.skill6441" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="POISON" />
+		<set name="saveVs" val="CON" />
+		<for>
+			<effect count="1" name="Buff" time="60" val="0" stackType="signal_e" />
+		</for>
+	</skill>
+	<skill id="6445" levels="1" name="Presentation - Freya's Message 1">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="10000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6446" levels="1" name="Presentation - Freya's Message 2">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="8000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6447" levels="1" name="Presentation - Freya's Message 3">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="5000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6448" levels="1" name="Presentation - Freya's Message 4">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="1000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6449" levels="1" name="Presentation - Freya's Message 5">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="7000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6450" levels="1" name="Presentation - Freya Nova">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="5000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6451" levels="1" name="Presentation - Freya Move">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="12000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6452" levels="1" name="Presentation - Freya Space Change">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="5000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6453" levels="1" name="Presentation - Freya Death">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="15000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6454" levels="1" name="Presentation - Freya Frustration">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="6000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6455" levels="1" name="Presentation - Freya Destroy">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="6000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6456" levels="1" name="Presentation - Freya Eternal Blizzard">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="1000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6457" levels="1" name="Presentation - Absorption of Sirr">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="8000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6458" levels="1" name="Presentation - Transform of Sirr">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="6000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6459" levels="1" name="Presentation - Kegor Super Buff">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="10000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6460" levels="1" name="Presentation - Jinia Super Buff">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="10000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6461" levels="1" name="Presentation - Kegor's Message 1">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="6000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6462" levels="1" name="Presentation - Kegor's Message 1">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="hitTime" val="6000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6463" levels="1" name="Presentation - Transfer Achievement">
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="85" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="1000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6464" levels="1" name="Three Siblings' Trickery" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: "By the three sibling's trickery, Max HP/MP/CP are increased by 40% for 10 seconds."
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.ev_rotten_jack_ghost_i00" />
+		<set name="castRange" val="600" />
+		<set name="hitTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="trait" val="ETC" />
+	</skill>
+	<skill id="6465" levels="1" name="Jack O'Lantern Card" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6466" levels="1" name="Rotten Jack O'Lantern Card" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="1" />
+		<set name="hitTime" val="2000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6467" levels="1" name="Jack O'Lantern Card - Confirm Skill" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6468" levels="1" name="Rotten Jack O'Lantern Card - Confirm Skill" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6469" levels="1" name="Halloween Defeat" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6470" levels="1" name="1 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6471" levels="1" name="2 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6472" levels="1" name="3 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6473" levels="1" name="4 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6474" levels="1" name="5 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6475" levels="1" name="6 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6476" levels="1" name="7 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6477" levels="1" name="8 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6478" levels="1" name="9 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6479" levels="1" name="10 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6480" levels="1" name="11 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6481" levels="1" name="12 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6482" levels="1" name="13 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6483" levels="1" name="14 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6484" levels="1" name="15 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6485" levels="1" name="16 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6486" levels="1" name="17 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6487" levels="1" name="18 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6488" levels="1" name="19 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6489" levels="1" name="20 win" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6490" levels="1" name="Jack's game - Gauge" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="500" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6491" levels="1" name="Jack's game - Target" >
+		<!--  Automatically generated from The Gracia Epilogue client files.
+		      Description: none
+		      Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		      created 15-2-2010  12:29
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="1" />
+		<set name="castRange" val="900" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+	</skill>
+	<skill id="6492" levels="28" name="NPC holy attack">
+		<table name="#mpConsume2">13 20 28 38 50 61 65 69 73 75 77 78 80 80 81 82 82 83 83 84 84 84 84 85 85 85 85 85</table>
+		<table name="#magicLevel">10 20 30 40 50 60 64 68 72 74 76 78 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95</table>
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6493" levels="28" name="Jack's game - Target">
+		<table name="#mpConsume2">13 20 28 38 50 61 65 69 73 75 77 78 80 80 81 82 82 83 83 84 84 84 84 85 85 85 85 85</table>
+		<table name="#magicLevel">10 20 30 40 50 60 64 68 72 74 76 78 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95</table>
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6494" levels="28" name="NPC holy attack">
+		<table name="#mpConsume2">13 20 28 38 50 61 65 69 73 75 77 78 80 80 81 82 82 83 83 84 84 84 84 85 85 85 85 85</table>
+		<table name="#magicLevel">10 20 30 40 50 60 64 68 72 74 76 78 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95</table>
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6495" levels="28" name="NPC holy attack">
+		<table name="#mpConsume2">13 20 28 38 50 61 65 69 73 75 77 78 80 80 81 82 82 83 83 84 84 84 84 85 85 85 85 85</table>
+		<table name="#magicLevel">10 20 30 40 50 60 64 68 72 74 76 78 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95</table>
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6496" levels="28" name="NPC holy attack">
+		<table name="#mpConsume2">13 20 28 38 50 61 65 69 73 75 77 78 80 80 81 82 82 83 83 84 84 84 84 85 85 85 85 85</table>
+		<table name="#magicLevel">10 20 30 40 50 60 64 68 72 74 76 78 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95</table>
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6497" levels="28" name="NPC holy attack">
+		<table name="#mpConsume2">13 20 28 38 50 61 65 69 73 75 77 78 80 80 81 82 82 83 83 84 84 84 84 85 85 85 85 85</table>
+		<table name="#magicLevel">10 20 30 40 50 60 64 68 72 74 76 78 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95</table>
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="hitTime" val="1500" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6498" levels="28" name="NPC holy shot">
+		<table name="#mpConsume2">13 20 28 38 50 61 65 69 73 75 77 78 80 80 81 82 82 83 83 84 84 84 84 85 85 85 85 85</table>
+		<table name="#magicLevel">10 20 30 40 50 60 64 68 72 74 76 78 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95</table>
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="700" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="6499" levels="28" name="NPC holy shot">
+		<table name="#mpConsume2">13 20 28 38 50 61 65 69 73 75 77 78 80 80 81 82 82 83 83 84 84 84 84 85 85 85 85 85</table>
+		<table name="#magicLevel">10 20 30 40 50 60 64 68 72 74 76 78 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95</table>
+		<set name="icon" val="icon.skill0000" />
+		<set name="coolTime" val="500" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="castRange" val="700" />
+		<set name="hitTime" val="3000" />
+		<set name="hitCancelTime" val="500" />
+		<set name="mpConsume2" val="#mpConsume2" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+</list>

@@ -1,0 +1,133 @@
+<html noscrollbar>
+<title>Special Shop</title>
+<body>
+<br>
+<table width=755>
+	<tr>
+		<td align=center valign="top">
+			<table border=0 cellpadding=0 cellspacing=0 width=800 height=508 background="l2fandc.bg6">
+				<tr>
+					<td align=center>
+						<table border=0 width=720>
+							<tr>
+								<td width=720 height=350 valign="top" align="center"><br>
+									<table border=0 width=720 >
+										<tr>
+											<td width=50 height=55 align=center><br><img src="Icon.etc_coin_of_fair_i00" width=32 height=32></td>
+											<td width=480 height=30 valign="top" align="left"><br>
+												<font name=hs12 color=FFFFFF> Festival Coin(s)</font> <br1> &nbsp;<font color=0099ff>Festival Adena exchange store.</font>
+											</td>
+											<td width=200 height=30 align="center">
+												<br>
+												<button value="Event Rewards" action="bypass -h scripts_Util:CommunityMultisell 370151" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Reward_Down" fore="L2UI_ct1.OlympiadWnd_DF_Reward">
+											</td>
+										</tr>
+									</table>
+								<br1>
+									<table border=0 width=720 >
+										<tr>
+											<td width=50 height=55 align=center><br><img src="Icon.etc_nias_silver_fairy_i00" width=32 height=32></td>
+											<td width=480 height=30 valign="top" align="left"><br>
+												<font name=hs12 color=FFFFFF> Silver Coin(s)</font> <br1> &nbsp;<font color=0099ff>Get specific upgrade for your farming.</font>
+											</td>
+											<td width=200 height=30 align="center">
+											<br>
+												<button value="Silver Coin(s)" action="bypass -h scripts_Util:CommunityMultisell 370153" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Apply_Down" fore="L2UI_ct1.OlympiadWnd_DF_Apply">
+											</td>
+										</tr>
+									</table>
+								<br1>
+									<table border=0 width=720 >
+										<tr>
+											<td width=50 height=55 align=center><br><img src="Icon.etc_nias_gold_wyvern_i00" width=32 height=32></td>
+											<td width=480 height=30 valign="top" align="left"><br>
+												<font name=hs12 color=FFFFFF> Gold Coin(s)</font> <br1> &nbsp;<font color=0099ff>Get specific upgrade for your farming.</font>
+											</td>
+											<td width=200 height=30 align="center">
+											<br>
+												<button value="Gold Coins" action="bypass -h scripts_Util:CommunityMultisell 370154" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Apply_Down" fore="L2UI_ct1.OlympiadWnd_DF_Apply">
+											</td>
+										</tr>
+									</table>
+								<br1>
+									<table border=0 width=720>
+										<tr>
+											<td width=50 height=55 align=center><br><img src="Icon.skilltransform2" width=32 height=32></td>
+											<td width=480 height=30 valign="top" align="left"><br>
+												<font name=hs12 color=FFFFFF> Decrease PK Points</font> <br1> &nbsp;<font color=0099ff>Don't risk your gear and get this service.</font>
+											</td>
+											<td width=200 height=30 align="center">
+											<br>
+												<button value="Decrease PK" action="bypass -h scripts_services.BuyWashPk:list" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Apply_Down" fore="L2UI_ct1.OlympiadWnd_DF_Apply">
+											</td>
+										</tr>
+									</table>
+								<br1>
+									<table border=0 width=720 >
+										<tr>
+											<td width=50 height=55 align=center><br><img src="Icon.color_name_i00" width=32 height=32></td>
+											<td width=480 height=30 valign="top" align="left"><br>
+												<font name=hs12 color=FFFFFF> Title Color Change Options</font> <br1> &nbsp;<font color=0099ff>Characters:</font> <font color="bbbbbb">All - Price 50 Festival Coins!</font>
+											</td>
+											<td width=200 height=30 align="center">
+											<br>
+												<button value="Change Title Color" action="bypass -h scripts_services.TitleColor:list 1" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Apply_Down" fore="L2UI_ct1.OlympiadWnd_DF_Apply">
+											</td>
+										</tr>
+									</table>
+								<br1>
+									<table border=0 width=720 >
+										<tr>
+											<td width=50 height=55 align=center><br><img src="Icon.skill5243" width=32 height=32></td>
+											<td width=480 height=30 valign="top" align="left"><br>
+												<font name=hs12 color=FFFFFF> Hair Change Options</font> <br1> &nbsp;<font color=0099ff>Characters:</font> <font color="bbbbbb">All - Price 10 Festival Coins!</font>
+											</td>
+											<td width=200 height=30 align="center">
+											<br>
+												<button value="Change Hair Style" action="bypass -h scripts_services.HairChange:show" width=200 height=30 back="L2UI_CT1.OlympiadWnd_DF_Apply_Down" fore="L2UI_ct1.OlympiadWnd_DF_Apply">
+											</td>
+										</tr>
+									</table>
+								<br1>
+									<table width=720 height=50 >
+									<tr>
+										<td fixwidth=50 height=40 align=center><img src=br_cashtex.item.br_cash_rune_of_feather_i00 width=33 height=32></td>
+										<td fixwidth=450><font name=hs12 color=FFFFFF>Change Character Name</font><br1><font color=0099ff>Change your character name for </font>50 Festival Coins!</td>
+										<td valign=center height=40>
+										<br>
+										<multiedit var="newName" width=140 height=20 maxlength=16>
+										</td>
+										<td align=center><br><button value="Change" action="bypass _changeNick_ $newName" width=80 height=27 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF></td>
+									</tr>
+									</table>
+								<br1>
+									<table width=720 height=50 >
+									<tr>
+										<td fixwidth=50 height=40 align=center><img src=L2UI_CH3.bloodhood_icon02 width=33 height=32></td>
+										<td fixwidth=450><font name=hs12 color=FFFFFF>Change Clan Name</font><br1><font color=0099ff>Change your clan name for </font>250 Festival Coins!</td>
+										<td valign=center height=40>
+										<br>
+										<multiedit var="newClanName" width=140 height=20 maxlength=16>
+										</td>
+										<td align=center><br><button value="Change" action="bypass _changeClanName_ $newClanName" width=80 height=27 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF></td>
+									</tr>
+									</table>
+								<br>
+									<table border=0 width=350>
+										<tr>
+											<td align=center>
+												<button value="««« Back »»»" action="bypass _bbsnpcs" width=200 height=20 back="L2UI_ct1.Button_DF_Down" fore="L2UI_ct1.button_df">
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

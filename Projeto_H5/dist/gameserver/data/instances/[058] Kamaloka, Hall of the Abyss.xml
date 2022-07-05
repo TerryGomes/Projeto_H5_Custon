@@ -1,0 +1,27 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Gludio Castle Town: NPC Bathis (Level 26) -->
+	<instance id="58" name="Kamaloka, Hall of the Abyss" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="21" max="31"/>
+		<party min="2" max="6"/>
+		<return loc="-13930 123748 -3120"/>
+		<teleport loc="-81892 -220766 -7900"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="1"/>
+		<add_parameters>
+			<param name="tele_device_loc" value="-81896 -220065 -7888"/>
+		</add_parameters>
+		<spawns>
+			<!-- Ol Ariosh -->
+			<spawn mobId="18555" type="loc">
+				<coords loc="-81704 -219880 -7900 -7900"/>
+				<coords loc="-81704 -220280 -7900 -7900"/>
+				<coords loc="-82104 -220280 -7900 -7900"/>
+				<coords loc="-82104 -219880 -7900 -7900"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

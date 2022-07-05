@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (premium)*>
+<!ELEMENT premium (rate|price|gifts|time)*>
+<!ATTLIST premium
+	id CDATA #REQUIRED
+	name CDATA #REQUIRED
+	icon CDATA #REQUIRED>
+<!ELEMENT rate (#PCDATA)>
+<!ATTLIST rate
+	type CDATA #REQUIRED
+	value CDATA #REQUIRED>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price
+	id CDATA #REQUIRED
+	count CDATA #REQUIRED>
+<!ELEMENT gifts (gift)*>
+<!ELEMENT gift (#PCDATA)>
+<!ATTLIST gift
+	id CDATA #REQUIRED
+	count CDATA #REQUIRED
+	removable CDATA #REQUIRED>
+<!ELEMENT time (#PCDATA)>
+<!ATTLIST time
+	days CDATA #REQUIRED
+	hours CDATA #REQUIRED
+	minutes CDATA #REQUIRED>

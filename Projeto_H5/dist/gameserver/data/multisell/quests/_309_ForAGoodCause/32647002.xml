@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<!-- Exchange of mucrockian leather with discount -->
+
+<list>
+  <!-- Внимание: keepenchanted НЕ должно быть установлено в мультиселлах, где в одном блоке возможны два одинаковых нестекуемых предмета (напрмиер dual) -->
+  <!-- ignoreprice не работает с keepencahnted -->
+  <config showall="true" notax="true" keepenchanted="false" />
+
+	<!-- Recipe - Sealed Dynasty Earrings (70%) -->
+  <item>
+    <ingredient id="14873" count="288"/>
+    <production id="9985" count="1"/>
+  </item>
+
+	<!-- Recipe - Sealed Dynasty Necklace (70%) -->
+  <item>
+    <ingredient id="14873" count="384"/>
+    <production id="9986" count="1"/>
+  </item>
+
+	<!-- Recipe - Sealed Dynasty Ring (70%) -->
+  <item>
+    <ingredient id="14873" count="192"/>
+    <production id="9987" count="1"/>
+  </item>
+
+	<!-- Recipe: Sealed Dynasty Sigil (60%) -->
+  <item>
+    <ingredient id="14873" count="310"/>
+    <production id="10115" count="1"/>
+  </item>
+</list>

@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <etcitem id="10000" name="Wind Potion">
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_wind_potion_i00"/>
+    <set name="price" value="10000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="10"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="10001" name="Dark Potion">
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_unholy_potion_i00"/>
+    <set name="price" value="10000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="10"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <etcitem id="10002" name="Divine Potion">
+    <set name="class" value="CONSUMABLE"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_holy_potion_i00"/>
+    <set name="price" value="10000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="POTION"/>
+    <set name="weight" value="10"/>
+    <cond msgId="1508">
+      <not>
+        <player olympiad="true"/>
+      </not>
+    </cond>
+  </etcitem>
+  <weapon id="10003" name="Fleuret">
+    <set name="crystal_count" value="915"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_rapier_i00"/>
+    <set name="kamael_convert" value="128"/>
+    <set name="price" value="495500"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="1500"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="46"/>
+      <add stat="mAtk" order="0x10" value="32"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="10004" name="Dynasty Dual Sword">
+    <set name="crystal_count" value="3597"/>
+    <set name="crystal_type" value="S"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_dual_sword_i00"/>
+    <set name="price" value="74946000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DUAL"/>
+    <set name="weight" value="1520"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <enchant4_skill id="3411" level="1"/>
+    <!--Special Ability: Focus-->
+    <for>
+      <add stat="pAtk" order="0x10" value="405"/>
+      <add stat="mAtk" order="0x10" value="151"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="10005" name="Shadow Item: Fleuret">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.weapon_rapier_i00"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="500"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="46"/>
+      <add stat="mAtk" order="0x10" value="32"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="10006" name="Shadow Item: Military Talwar">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.weapon_tulwar_i00"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="2"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="693"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="55"/>
+      <add stat="mAtk" order="0x10" value="32"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="10007" name="Shadow Item: Hand Crossbow">
+    <set name="enchantable" value="false"/>
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_type" value="D"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="90"/>
+    <set name="icon" value="icon.weapon_hunting_gun_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="4"/>
+    <set name="spiritshots" value="2"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="693"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="64"/>
+      <add stat="mAtk" order="0x10" value="32"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="10008" name="Shadow Item: Blinzlasher">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="120"/>
+    <set name="icon" value="icon.weapon_blink_slasher_i00"/>
+    <set name="rnd_dam" value="40"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="RAPIER"/>
+    <set name="weight" value="467"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <enchant4_skill id="3426" level="1"/>
+    <!--Maximum Ability-->
+    <for>
+      <add stat="pAtk" order="0x10" value="126"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="406"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="10009" name="Shadow Item: Immortal Edge">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="120"/>
+    <set name="icon" value="icon.weapon_invincible_blade_i00"/>
+    <set name="rnd_dam" value="15"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="ANCIENTSWORD"/>
+    <set name="weight" value="660"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="151"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="350"/>
+      <add stat="accCombat" order="0x10" value="2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="10010" name="Shadow Item: Tathlum">
+    <set name="enchantable" value="false"/>
+    <set name="atk_reuse" value="400"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="120"/>
+    <set name="icon" value="icon.weapon_taslam_i00"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="5"/>
+    <set name="spiritshots" value="3"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="CROSSBOW"/>
+    <set name="weight" value="587"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="176"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="100"/>
+      <set stat="atkBaseSpeed" order="0x08" value="303"/>
+      <add stat="accCombat" order="0x10" value="-2.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="10011" name="Shadow Item - War Axe">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_type" value="C"/>
+    <set name="dropable" value="false"/>
+    <set name="durability" value="120"/>
+    <set name="icon" value="icon.weapon_war_axe_i00"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="sellable" value="false"/>
+    <set name="soulshots" value="3"/>
+    <set name="spiritshots" value="3"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="533"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="139"/>
+      <add stat="mAtk" order="0x10" value="76"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <etcitem id="10012" name="Scorpion Poison Stinger">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="100"/>
+    <set name="icon" value="icon.etc_claw_i00"/>
+    <set name="price" value="1000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+  </etcitem>
+  <etcitem id="10013" name="Race Stamp">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="100"/>
+    <set name="icon" value="icon.etc_hs_agit_war_joining_certificate_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="QUEST"/>
+    <set name="weight" value="20"/>
+  </etcitem>
+  <etcitem id="10014" name="Control Room Card">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="100"/>
+    <set name="icon" value="icon.etc_hs_agit_war_joining_certificate_i00"/>
+    <set name="price" value="250"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="20"/>
+  </etcitem>
+  <etcitem id="10015" name="Prison Gate Key">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="100"/>
+    <set name="icon" value="icon.etc_key_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <etcitem id="10016" name="Underground Warehouse Key">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="100"/>
+    <set name="icon" value="icon.etc_key_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+    <set name="weight" value="10"/>
+  </etcitem>
+  <etcitem id="10017" name="Coral Treasure Chest Key">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="durability" value="100"/>
+    <set name="icon" value="icon.etc_key_i00"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="OTHER"/>
+  </etcitem>
+  <armor id="10018" name="Agathion Seal Bracelet - Fortress">
+    <set name="crystal_type" value="NONE"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.etc_rbracelet_aga_agit_i00"/>
+    <set name="price" value="5000000"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="NONE"/>
+    <set name="weight" value="150"/>
+    <cond msgId="113">
+		<player residence="Fortress;0" />
+    </cond>
+    <equip>
+      <slot id="LEFT_BRACELET"/>
+    </equip>
+    <skills>
+      <skill id="3267" level="1"/>
+      <skill id="3361" level="1"/>
+      <skill id="5458" level="1"/>
+    </skills>
+  </armor>
+  <armor id="10019" name="Ring Mail Breastplate">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="151"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.armor_t12_u_i00"/>
+    <set name="price" value="64210"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="8820"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="77"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="10020" name="Iron Plate Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="94"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.armor_t12_l_i00"/>
+    <set name="price" value="40100"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="HEAVY"/>
+    <set name="weight" value="3820"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="48"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="10021" name="Puma Skin Shirt">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="113"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.armor_t09_u_i00"/>
+    <set name="price" value="48200"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="4700"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="58"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="10022" name="Puma Skin Gaiters">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="71"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.armor_t09_l_i00"/>
+    <set name="price" value="30100"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="LIGHT"/>
+    <set name="weight" value="1600"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="36"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="10023" name="Cursed Tunic">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="113"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.armor_t14_u_i00"/>
+    <set name="price" value="48200"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="2090"/>
+    <equip>
+      <slot id="CHEST"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="39"/>
+      <add stat="maxMp" order="0x10" value="106"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <armor id="10024" name="Cursed Stockings">
+    <set name="enchantable" value="false"/>
+    <set name="crystal_count" value="71"/>
+    <set name="crystal_type" value="D"/>
+    <set name="crystallizable" value="true"/>
+    <set name="dropable" value="false"/>
+    <set name="icon" value="icon.armor_t14_l_i00"/>
+    <set name="price" value="30100"/>
+    <set name="sellable" value="false"/>
+    <set name="tradeable" value="false"/>
+    <set name="type" value="MAGIC"/>
+    <set name="weight" value="1020"/>
+    <equip>
+      <slot id="LEGS"/>
+    </equip>
+    <for>
+      <add stat="pDef" order="0x10" value="24"/>
+      <add stat="maxMp" order="0x10" value="66"/>
+      <enchant stat="pDef" order="0x0C" value="0"/>
+      <enchant stat="maxHp" order="0x80" value="0"/>
+    </for>
+  </armor>
+  <etcitem id="10025" name="Battle Manual - Fallen Arrow">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+    <set name="price" value="75"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10026" name="Battle Manual - Fallen Attack">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+    <set name="price" value="75"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10027" name="Battle Manual - Detect Trap">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+    <set name="price" value="550"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10028" name="Battle Manual - Defuse Trap">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+    <set name="price" value="550"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10029" name="Battle Manual - Dark Strike">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+    <set name="price" value="700"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10030" name="Battle Manual - Dark Smash">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="2900"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10031" name="Battle Manual - Double Thrust">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+    <set name="price" value="700"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10032" name="Battle Manual - Abyssal Blaze">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+    <set name="price" value="700"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10033" name="Battle Manual - Dark Explosion">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="1150"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10034" name="Battle Manual - Shift Target">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="3200"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10035" name="Battle Manual - Change Life Stone">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="2600"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10036" name="Battle Manual - Spread Wing">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="5000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10037" name="Battle Manual - Slashing Blade">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="3850"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10038" name="Battle Manual - Crushing Pain">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="7000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10039" name="Battle Manual - Contagion">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="7950"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10040" name="Battle Manual - Life to Soul">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="3200"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10041" name="Battle Manual - Scorn">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="3700"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10042" name="Battle Manual - Triple Thrust">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="2900"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10043" name="Battle Manual - Shining Edge">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="4400"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10044" name="Battle Manual - Checkmate">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="5400"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10045" name="Battle Manual - Soul of Pain">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="3000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10046" name="Battle Manual - Dark Flame">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="4000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10047" name="Battle Manual - Annihilation Circle">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="6750"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10048" name="Battle Manual - Curse of Divinity">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="8700"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10049" name="Battle Manual - Steal Divinity">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="6000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10050" name="Battle Manual - Blink">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="7200"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10051" name="Battle Manual - Transfer Soul">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="1150"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10052" name="Battle Manual - Twin Shot">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="2900"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10053" name="Battle Manual - Rising Shot">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="3850"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10054" name="Battle Manual - Deadly Roulette">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="8700"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10055" name="Battle Manual - Temptation">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="5400"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10056" name="Battle Manual - Create Bio Potion">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+    <set name="price" value="800"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10057" name="Battle Manual - Create Dark Seed">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="7700"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10058" name="Battle Manual - Fire Trap">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="1550"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10059" name="Battle Manual - Poison Trap">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="4800"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10060" name="Battle Manual - Slow Trap">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="5400"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10061" name="Battle Manual - Flash Trap">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="6000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10062" name="Battle Manual - Binding Trap">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="3200"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10063" name="Battle Manual - Quiver of Bolts - Grade A">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="8700"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10064" name="Battle Manual - Quiver of Bolts - Grade S">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+    <set name="price" value="10000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10065" name="Battle Manual - Cure Dark Seed">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="8200"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10066" name="Battle Manual - Decoy">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="3700"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10067" name="Battle Manual - Chain Lightning">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+    <set name="price" value="10800"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10068" name="Battle Manual - Enuma Elish">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+    <set name="price" value="30000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10069" name="Battle Manual - Leopold">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+    <set name="price" value="30000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10070" name="Battle Manual - Change Weapon">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+    <set name="price" value="800"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10071" name="Battle Manual - Quiver of Bolts - Grade B">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="5400"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10072" name="Battle Manual - Increase Power">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+    <set name="price" value="250"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10073" name="Battle Manual - Rapid Attack">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i00"/>
+    <set name="price" value="250"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10074" name="Battle Manual - Furious Soul">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="1150"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10075" name="Battle Manual - Sword Shield">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="2600"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10076" name="Battle Manual - Disarm">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="2600"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10077" name="Battle Manual - Fast Shot">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="2050"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10078" name="Battle Manual - Death Mark">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="1150"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10079" name="Battle Manual - Courage">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="2600"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10080" name="Battle Manual - Violent Temper">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="4800"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10081" name="Battle Manual - Soul to Empower">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="3700"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10082" name="Battle Manual - Darkness Protection">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="6750"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10083" name="Battle Manual - Dark Weapon">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="4250"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10084" name="Battle Manual - Pride of Kamael">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="4800"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10085" name="Battle Manual - Surrender To Unholy">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="1250"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10086" name="Battle Manual - Bleeding Shot">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="3350"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10087" name="Battle Manual - Sharpshooting">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="7200"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10088" name="Battle Manual - Real Target">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="3200"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10089" name="Battle Manual - Imbue Dark Seed">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="7700"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10090" name="Battle Manual - Prahnah">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+    <set name="price" value="30000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10091" name="Battle Manual - Final Form">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+    <set name="price" value="40000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10092" name="Battle Manual - Shadow Bind">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="5400"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10093" name="Battle Manual - Voice Bind">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="6750"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10094" name="Battle Manual - Rush">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="2050"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10095" name="Battle Manual - Storm Assault">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="4400"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10096" name="Battle Manual - Wing Assault">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i03"/>
+    <set name="price" value="40000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10097" name="Battle Manual - Shoulder Charge">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i01"/>
+    <set name="price" value="2900"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10098" name="Battle Manual - Blade Rush">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_kamael_skill_book_i02"/>
+    <set name="price" value="6000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+  <etcitem id="10099" name="Spellbook - Count of Fire">
+    <set name="class" value="SPELLBOOKS"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_spell_books_element_i00"/>
+    <set name="price" value="30000"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SPELLBOOK"/>
+    <set name="weight" value="120"/>
+  </etcitem>
+</list>

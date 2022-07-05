@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="91000" levels="1" name="Vote Reward Rune" >
+		<!--
+		      Description: Gives 25% Exp Bonus and 25% Adena Drop Bonus. Also 1% Patk, Matk, Pdef, Mdef
+		-->
+		<set name="icon" val="br_cashtex.skill.br_cash_rune_of_exp_buff_1" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x40" stat="ExpMultiplier" val="0.50" />
+			<add order="0x40" stat="AdenaMultiplier" val="0.30" />
+			<mul order="0x30" stat="pAtk" val="1.03" />
+			<mul order="0x30" stat="mAtk" val="1.03" />
+			<mul order="0x30" stat="pDef" val="1.03" />
+			<mul order="0x30" stat="mDef" val="1.03" />
+		</for>
+	</skill>
+</list>

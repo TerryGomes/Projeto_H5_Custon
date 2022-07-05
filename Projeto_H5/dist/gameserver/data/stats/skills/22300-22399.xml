@@ -1,0 +1,1685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="22300" levels="1" name="Fantasy Isle Magic">
+		<!--
+			Magic obtained from Fantasy Isle. Increases Speed by 30%, and decreases fall damage when falling from a high place.
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="BranchSys2.icon.s_g_fantastic_magic" />
+		<set name="magicLevel" val="85" />
+		<set name="target" val="TARGET_ONE" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect name="Buff" time="120" val="0">
+				<mul order="0x40" stat="runSpd" val="1.3" />
+				<mul order="0x30" stat="fall" val="0.6" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22301" levels="1" name="Party Cake" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="BranchSys.icon.br_birthday_cake_i00" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22302" levels="1" name="Sweet Chocolate - 4 hour" >
+		<!--  Восстанавливает энергию при получении опыта посредством охоты. Время действия: 4 часа.
+		-->
+		<set name="icon" val="BranchSys.icon.br_valentine_darkchoco_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="4800" val="0" />
+		</for>
+	</skill>
+	<skill id="22303" levels="1" name="Party Cake" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="BranchSys.icon.br_birthday_cake_i00" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22304" levels="1" name="Campfire's Warmth" >
+		<!--  Ощущается тепло костра. Увеличивает кол-во восстанавливаемых HP на 80%, кол-во восстанавливаемых CP на 60%,
+		кол-во восстанавливаемых MP на 40%.
+		-->
+		<set name="icon" val="icon.etc_torch_on_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+			<effect count="1" name="Buff" time="1200" val="0">
+				<mul order="0x30" stat="regHp" val="1.8" />
+				<mul order="0x30" stat="regMp" val="1.4" />
+				<mul order="0x30" stat="regCp" val="1.6" />
+			</effect>
+	</skill>
+	<skill id="22305" levels="1" name="Campfire Summon" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="despawnDelay" val="1200000" />
+		<set name="isSummonSpawn" val="true" />
+		<set name="itemConsumeId" val="1674"/>
+		<set name="itemConsumeCount" val="30" />
+		<set name="isHandler" val="true" />
+		<set name="magicLvl" val="1" />
+		<set name="npcId" val="148" />
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="icon" val="icon.skill0000" />
+		<set name="skillType" val="SPAWN" />
+		<set name="target" val="TARGET_SELF" />
+	</skill>
+	<skill id="22306" levels="1" name="Angry Bunny Lure Scroll" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22307" levels="1" name="Large Angry Bunny Lure Scroll" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22308" levels="1" name="Fearless Angry Bunny Lure Scroll" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22309" levels="1" name="Large Fearless Bunny Lure Scroll" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_scroll_of_return_i00" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22310" levels="1" name="Bunny Pacifier Juice" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill3260" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22311" levels="1" name="Extra Strength Bunny Pacifier Juice" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill3260" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22312" levels="1" name="Birthday Vitality Buff">
+		<!--
+			Birthday gift received once a year. Increases your Vitality whenever you gain experience. This buff is active for 4 hours and is not lost upon death. However, it will disappear if you change to a subclass
+		-->
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.etc_potion_blue_i00" />
+		<set name="magicLevel" val="85" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isPreservedOnDeath" val="true" />
+		<set name="isCancelable" val="false" />
+		<set name="altUse" val="true" />
+		<set name="isHandler" val="true" />
+		<set name="itemConsumeId" val="21170" />
+		<set name="itemConsumeCount" val="1" />
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="14400" val="0" />
+		</for>
+	</skill>
+	<skill id="22313" levels="1" name="Pa'agrio's Warm Breeze - 4 hour" >
+		<!--  Энергия восстанавливается при получении опыта посредством охоты. Время действия: 4 часа.
+		-->
+		<set name="icon" val="BranchSys.icon.br_valentine_darkchoco_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="4800" val="0" />
+		</for>
+	</skill>
+	<skill id="22314" levels="1" name="Treasure Sack 1st Place" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22315" levels="2" name="Treasure Sack 2nd Place" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22316" levels="3" name="Treasure Sack 3rd Place" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22317" levels="4" name="Treasure Sack 4th Place" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22318" levels="5" name="Treasure Sack 5th Place" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22319" levels="6" name="Treasure Sack 6th Place" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22320" levels="1" name="Berserker Spirit" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i01" />
+		<table name="#Tab-mAtk">1.16</table>
+		<table name="#Tab-rate">1.08</table>
+		<table name="#pDef">0.92</table>
+		<table name="#mDef">0.84</table>
+		<table name="#runSpd">8</table>
+		<table name="#rEvas">4</table>
+		<table name="#abnormal_lv">2</table>
+		<table name="#abnormal_time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1062" />
+		<set name="hitTime" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>		
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="berserk" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="mAtk" val="#Tab-mAtk" />
+				<mul order="0x30" stat="pAtk" val="#Tab-rate" />
+				<mul order="0x30" stat="pDef" val="#pDef" />
+				<mul order="0x30" stat="mDef" val="#mDef" />
+				<mul order="0x30" stat="mAtkSpd" val="#Tab-rate" />
+				<mul order="0x30" stat="pAtkSpd" val="#Tab-rate" />
+				<add order="0x40" stat="runSpd" val="#runSpd" />
+				<add order="0x40" stat="rEvas" val="#rEvas" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22321" levels="1" name="Acumen" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i01" />
+		<table name="#Tab-mAtkSpd">1.3</table>
+		<table name="#abnormal_lv">3</table>
+		<table name="#abnormal_time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1085" />
+		<set name="hitTime" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>		
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="mAtkSpeedUp" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="#Tab-mAtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22322" levels="1" name="Magic Barrier" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<table name="#Tab-mDef">1.3</table>
+		<table name="#abnormal_lv">3</table>
+		<table name="#abnormal_time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1036" />
+		<set name="hitTime" val="2" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="MagicDefUp" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="mDef" val="#Tab-mDef" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22323" levels="1" name="Clarity" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i01" />
+		<table name="#mpConsumePhysical">0.8</table>
+		<table name="#mpConsum">0.9</table>
+		<table name="#mpDanceConsume">0.8</table>
+		<table name="#effect">3</table>
+		<table name="#abnormal_time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1397" />
+		<set name="hitTime" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#effect" stackType="clarity" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="mpConsum" val="#mpConsum" />
+				<mul order="0x30" stat="mpConsumePhysical" val="#mpConsumePhysical" />
+				<mul order="0x30" stat="mpDanceConsume" val="#mpDanceConsume" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22324" levels="1" name="Blessed Soul" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i01" />
+		<table name="#Tab-maxMp">1.35</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mp_up" time="#time" val="0">
+				<mul order="0x30" stat="maxMp" val="#Tab-maxMp" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22325" levels="1" name="Blessed Body" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i01" />
+		<table name="#Tab-maxHp">1.35</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="hp_up" time="#time" val="0">
+				<mul order="0x30" stat="maxHp" val="#Tab-maxHp" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22326" levels="1" name="Empower" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i01" />
+		<table name="#power">1.75</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mAtk" time="#time" val="0">
+				<mul order="0x30" stat="mAtk" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22327" levels="1" name="Wind Walk" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i01" />
+		<table name="#power">33</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="SpeedUp" time="#time" val="0">
+				<add order="0x30" stat="runSpd" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22328" levels="1" name="Shield" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i01" />
+		<table name="#power">1.15</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pDef" time="#time" val="0">
+				<mul order="0x30" stat="pDef" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22329" levels="1" name="Wind Walk" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i00" />
+		<table name="#power">33</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="SpeedUp" time="#time" val="0">
+				<add order="0x30" stat="runSpd" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22330" levels="1" name="Shield" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i00" />
+		<table name="#power">1.15</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pDef" time="#time" val="0">
+				<mul order="0x30" stat="pDef" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22331" levels="1" name="Haste" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i00" />
+		<table name="#power">1.33</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtkSpeedUp" time="#time" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22332" levels="1" name="Death Whisper" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i00" />
+		<table name="#power">1.35</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtkSpeedUp" time="#time" val="0">
+				<mul order="0x30" stat="cAtk" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22333" levels="1" name="Vampiric Rage" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i00" />
+		<table name="#power">6</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="9" stackType="vampRage" time="#time" val="0">
+				<add order="0x30" stat="absorbDam" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22334" levels="1" name="Guidance" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i00" />
+		<table name="#power">4</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="accuracyUp" time="#time" val="0">
+				<add order="0x30" stat="accCombat" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22335" levels="1" name="Might" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i00" />
+		<table name="#power">1.15</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtk" time="#time" val="0">
+				<mul order="0x30" stat="pAtk" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22336" levels="1" name="Blessed Body" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i00" />
+		<table name="#Tab-maxHp">1.35</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="hp_up" time="#time" val="0">
+				<mul order="0x30" stat="maxHp" val="#Tab-maxHp" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22337" levels="1" name="Focus" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i00" />
+		<table name="#rCrit">1.3</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="rCrit" time="#time" val="0">
+				<mul order="0x30" stat="rCrit" val="#rCrit" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22338" levels="1" name="Bless Shield" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i00" />
+		<table name="#power">1.3</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="shieldProbUp" time="#time" val="0">
+				<mul order="0x30" stat="rShld" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22339" levels="1" name="Berserker Spirit" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fruit_cocktail_i00" />
+		<table name="#Tab-mAtk">1.16</table>
+		<table name="#Tab-rate">1.08</table>
+		<table name="#pDef">0.92</table>
+		<table name="#mDef">0.84</table>
+		<table name="#runSpd">8</table>
+		<table name="#rEvas">4</table>
+		<table name="#abnormal_lv">2</table>
+		<table name="#abnormal_time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1062" />
+		<set name="hitTime" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>		
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="berserk" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="mAtk" val="#Tab-mAtk" />
+				<mul order="0x30" stat="pAtk" val="#Tab-rate" />
+				<mul order="0x30" stat="pDef" val="#pDef" />
+				<mul order="0x30" stat="mDef" val="#mDef" />
+				<mul order="0x30" stat="mAtkSpd" val="#Tab-rate" />
+				<mul order="0x30" stat="pAtkSpd" val="#Tab-rate" />
+				<add order="0x40" stat="runSpd" val="#runSpd" />
+				<sub order="0x40" stat="rEvas" val="#rEvas" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22340" levels="1" name="Might" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#power">1.15</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtk" time="#time" val="0">
+				<mul order="0x30" stat="pAtk" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22341" levels="1" name="Wind Walk" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#power">33</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="SpeedUp" time="#time" val="0">
+				<add order="0x30" stat="runSpd" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22342" levels="1" name="Haste" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#power">1.33</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtkSpeedUp" time="#time" val="0">
+				<mul order="0x30" stat="pAtkSpd" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22343" levels="1" name="Vampiric Rage" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#power">6</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="9" stackType="vampRage" time="#time" val="0">
+				<add order="0x30" stat="absorbDam" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22344" levels="1" name="Berserker Spirit" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#Tab-mAtk">1.16</table>
+		<table name="#Tab-rate">1.08</table>
+		<table name="#pDef">0.92</table>
+		<table name="#mDef">0.84</table>
+		<table name="#runSpd">8</table>
+		<table name="#rEvas">4</table>
+		<table name="#abnormal_lv">2</table>
+		<table name="#abnormal_time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1062" />
+		<set name="hitTime" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>		
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="berserk" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="mAtk" val="#Tab-mAtk" />
+				<mul order="0x30" stat="pAtk" val="#Tab-rate" />
+				<mul order="0x30" stat="pDef" val="#pDef" />
+				<mul order="0x30" stat="mDef" val="#mDef" />
+				<mul order="0x30" stat="mAtkSpd" val="#Tab-rate" />
+				<mul order="0x30" stat="pAtkSpd" val="#Tab-rate" />
+				<add order="0x40" stat="runSpd" val="#runSpd" />
+				<sub order="0x40" stat="rEvas" val="#rEvas" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22345" levels="1" name="Empower" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#power">1.75</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="mAtk" time="#time" val="0">
+				<mul order="0x30" stat="mAtk" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22346" levels="1" name="Acumen" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#Tab-mAtkSpd">1.3</table>
+		<table name="#abnormal_lv">3</table>
+		<table name="#abnormal_time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1085" />
+		<set name="hitTime" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>		
+		<for>
+			<effect count="1" name="Buff" stackOrder="#abnormal_lv" stackType="mAtkSpeedUp" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="mAtkSpd" val="#Tab-mAtkSpd" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22347" levels="1" name="Shield" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#power">1.15</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pDef" time="#time" val="0">
+				<mul order="0x30" stat="pDef" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22348" levels="1" name="Focus" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#rCrit">1.3</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="rCrit" time="#time" val="0">
+				<mul order="0x30" stat="rCrit" val="#rCrit" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22349" levels="1" name="Death Whisper" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#power">1.35</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="pAtkSpeedUp" time="#time" val="0">
+				<mul order="0x30" stat="cAtk" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22350" levels="1" name="Guidance" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#power">4</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="accuracyUp" time="#time" val="0">
+				<add order="0x30" stat="accCombat" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22351" levels="1" name="Clarity" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#mpConsumePhysical">0.8</table>
+		<table name="#mpConsum">0.9</table>
+		<table name="#mpDanceConsume">0.8</table>
+		<table name="#effect">3</table>
+		<table name="#abnormal_time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1397" />
+		<set name="hitTime" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="#effect" stackType="clarity" time="#abnormal_time" val="0">
+				<mul order="0x30" stat="mpConsum" val="#mpConsum" />
+				<mul order="0x30" stat="mpConsumePhysical" val="#mpConsumePhysical" />
+				<mul order="0x30" stat="mpDanceConsume" val="#mpDanceConsume" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22352" levels="1" name="Wild Magic" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#power">2</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="magicCritUp" time="#time" val="0">
+				<add order="0x30" stat="mCritRate" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22353" levels="6" name="Concentration" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_fresh_milk_i00" />
+		<table name="#power">0.47</table>
+		<table name="#time">3600</table>
+		<set name="magicType" val="MAGIC" />
+		<set name="icon" val="icon.skill1048" />
+		<set name="magicLevel" val="1" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Buff" stackOrder="3" stackType="concentration" time="#time" val="0">
+				<mul order="0x30" stat="concentration" val="#power" />
+			</effect>
+		</for>	
+	</skill>
+	<skill id="22354" levels="1" name="Lantern Agathion's Gift" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22355" levels="1" name="Soul Crystal Box - Level 17" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22356" levels="1" name="Soul Crystal Box - Level 18" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22357" levels="1" name="S84 High-Grade Weapon Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22358" levels="1" name="Vorpal Armor Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22359" levels="1" name="Scroll: Enchant Weapon of Destruction (S-Grade)" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22360" levels="1" name="Scroll: Enchant Armor of Destruction (S-Grade)" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22361" levels="1" name="Scroll: Enchant Weapon of Destruction (A-Grade)" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22362" levels="1" name="Scroll: Enchant Armor of Destruction (A-Grade)" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22363" levels="1" name="Scroll: Enchant Weapon of Destruction (B-Grade)" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22364" levels="1" name="Scroll: Enchant Armor of Destruction (B-Grade)" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22365" levels="1" name="Scroll: Enchant Weapon of Destruction (C-Grade)" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22366" levels="1" name="Scroll: Enchant Armor of Destruction (C-Grade)" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22367" levels="1" name="Scroll: Enchant Weapon of Destruction (D-Grade)" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22368" levels="1" name="Scroll: Enchant Armor of Destruction (D-Grade)" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22369" levels="1" name="Blessed Spiritshot - S grade" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22370" levels="1" name="Mysterious Soulshot Pack (S-Grade)" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22371" levels="1" name="Mysterious Blessed Spiritshot Pack (S-Grade)" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22372" levels="1" name="Meteor" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22373" levels="1" name="Starfall" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22374" levels="1" name="Sweet Chocolate" >
+		<!--  Восстанавливает энергию при получении опыта посредством охоты. Время действия: 30 мин.
+		-->
+		<set name="icon" val="BranchSys.icon.br_valentine_darkchoco_i00" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Vitality" stackType="vitalityRegen" stackOrder="1" time="1800" val="0" />
+		</for>
+	</skill>
+	<skill id="22375" levels="1" name="Valentine's Day Love Pouch" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22376" levels="1" name="Sweet Chocolate" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="BranchSys.icon.br_valentine_darkchoco_i00" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22377" levels="1" name="Bad Bunny's Necklace Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22378" levels="1" name="Bad Bunny's Earring Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22379" levels="1" name="Bad Bunny's Ring Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22380" levels="1" name="Lantern Agathion's Gift Set" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22381" levels="1" name="Attribute Ore Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22382" levels="1" name="Attribute Crystal Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22383" levels="1" name="Pathfinder Supplies" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22384" levels="1" name="Pathfinder Supplies" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22385" levels="1" name="Pathfinder Supplies" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22386" levels="1" name="PC Cafй Transformation Scroll Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22387" levels="1" name="PC Cafй Gift Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22388" levels="1" name="PC Cafй Transformation Stick Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22389" levels="1" name="PC Cafй Hair Accessory Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22390" levels="1" name="PC Cafй Luxury Gift Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22391" levels="1" name="Jewelry Box - Talisman" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22392" levels="1" name="Happiness Cake - Low Grade" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22393" levels="1" name="Happiness Cake - Medium Grade" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22394" levels="1" name="Happiness Cake - High Grade" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22395" levels="1" name="Happiness Cake - Top Grade" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22396" levels="1" name="Holy Happiness Cake" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22397" levels="1" name="Sweet Chocolate Cookie" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22398" levels="1" name="Allegra Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22399" levels="1" name="Latus Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+</list>

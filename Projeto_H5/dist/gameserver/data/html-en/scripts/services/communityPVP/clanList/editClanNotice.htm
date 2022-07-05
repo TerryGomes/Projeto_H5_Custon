@@ -1,0 +1,106 @@
+<html noscrollbar><head><title>Clan</title></head>
+<body><br>
+	<table width=755>
+		<tr>
+			<td>
+				<center>
+					<table cellpadding=0 cellspacing=0 width=800 height=508 background="l2fandc.bg1">
+						<tr>
+							<td align=center valign=top>
+								<table cellspacing=0 cellpadding=0 width=755>
+									<tr>
+										<td width=375 align=center valign=top>
+											<br>
+											<font name=hs12>Edit Clan Notice</font>
+											<br>
+										</td>
+									</tr>
+								</table>
+								<table width=755>
+									<tr>
+										<td width=755 height=364>
+											<table width=750>
+												<tr>
+													<td WIDTH=370 align=right valign=top>
+														<table cellspacing=2 cellpadding=4 width=370 height=29>
+															<tr>
+																<td FIXWIDTH=370 align=center valign=top>
+																	<font color=LEVEL name=hs9>Edit Clan Notice:</font>
+																</td>
+															</tr>
+														</table>
+														<table width=370 height=330 cellspacing=2 cellpadding=4>
+															<tr>
+																<td width=370 align=center valign=top>
+																	<multiedit var="newNotice" width=275 height=310>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td WIDTH=370 valign=top>
+														<table cellspacing=2 cellpadding=4 width=370 height=29>
+															<tr>
+																<td FIXWIDTH=370 align=center valign=top>
+																	<font color=LEVEL name=hs9>Notice Preview:</font>
+																</td>
+															</tr>
+														</table>
+														<table width=370 height=330 cellspacing=2 cellpadding=4>
+															<tr>
+																<td width=370 align=center valign=top>
+																	<table width=275 height=310 cellspacing=0 cellpadding=0 bgcolor=0a0a09>
+																		<tr>
+																			<td>
+																				<table cellspacing=0 cellpadding=0>
+																					<tr>
+																						<td align=center>
+																							%clanNotice%
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align=center>
+											<table width=745 bgcolor=1d1c1b>
+												<tr>
+													<td align=center>
+														<font color=cd9f00>Max Letters: %clanNoticeMaxLen%. Max Lines: %clanNoticeMaxLineBreaks%. Only English letters. Leave it Empty to Delete.</font>
+														<br1>
+														Tags: <font color=d53a3a>[red]Red[/color]</font> <font color=4cbce5>[blue]Blue[/color]</font> <font color=d6ea2c>[yellow]Yellow[/color]</font> <font color=5be54c>[green]Green[/color]</font>
+														<br1>
+														<table>
+															<tr>
+																<td width=275>
+																	<button value="Back" action="bypass _bbsclan_clanDetails____0_%clanId%" width=150 height=31 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF>
+																</td>
+																<td width=470>
+																	<button value="Change Notice" action="bypass _bbsclan_confirmEditClanNotice_ $newNotice" width=200 height=31 back=L2UI_CT1.OlympiadWnd_DF_HeroConfirm fore=L2UI_CT1.OlympiadWnd_DF_HeroConfirm>
+																</td>
+															</tr>
+														</table>
+														<br>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</center>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

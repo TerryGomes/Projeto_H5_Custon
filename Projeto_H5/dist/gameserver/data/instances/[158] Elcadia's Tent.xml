@@ -1,0 +1,18 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<instance id="158" name="Elcadia's Tent" maxChannels="50" collapseIfEmpty="10" timelimit="30" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="81" max="85"/>
+		<return loc="43347 -87923 -2816"/>
+		<teleport loc="89807 -238074 -9632"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<spawns>
+			<spawn mobId="32784" type="point" respawn="0">
+				<coords loc="89432 -238072 -9632 0"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

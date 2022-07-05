@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "npc.dtd">
+<list>
+	<npc id="60000" name="Lindvior" title="Raid Boss">
+		<set name="displayId" value="13148" />
+		<set name="aggroRange" value="600" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="57" />
+		<set name="baseCritRate" value="40" />
+		<set name="baseDEX" value="73" />
+		<set name="baseHpMax" value="8000000" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="100" />
+		<set name="baseINT" value="76" />
+		<set name="baseMAtk" value="6282" />
+		<set name="baseMAtkSpd" value="333" />
+		<set name="baseMDef" value="13005" />
+		<set name="baseMEN" value="80" />
+		<set name="baseMpMax" value="184680" />
+		<set name="baseMpReg" value="1000" />
+		<set name="basePAtk" value="12285" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="11412" />
+		<set name="baseRunSpd" value="200" />
+		<set name="baseSTR" value="60" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="70" />
+		<set name="baseWalkSpd" value="60" />
+		<set name="collision_height" value="200.0" />
+		<set name="collision_radius" value="40.0" />
+		<set name="level" value="85" />
+		<set name="rewardExp" value="108799553" />
+		<set name="rewardRp" value="15922" />
+		<set name="rewardSp" value="12524212" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="RaidBoss" />
+		<ai_params>
+			<set name="noRandomAnimation" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4416" level="6" /> <!--Humanoids-->
+			<skill id="4408" level="1" /> <!--HP Increase (1x)-->
+			<skill id="4409" level="1" /> <!--MP Increase (1x)-->
+			<skill id="4410" level="11" /> <!--Average P. Atk.-->
+			<skill id="4411" level="11" /> <!--Average M. Atk.-->
+			<skill id="4412" level="11" /> <!--Average P. Def.-->
+			<skill id="4413" level="11" /> <!--Average M. Def.-->
+			<skill id="4414" level="2" /> <!--Standard Type-->
+			<skill id="4415" level="3" /> <!--One-handed Sword-->
+			<skill id="6644" level="1" /> <!--Ice Queen Freya-->
+			<skill id="5463" level="1" /> <!--Water Attacks-->
+			<skill id="4045" level="1" /> <!--Resist Full Magic Attack-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="13457" min="1" max="2" chance="3.8000" />	<!--Vesper Cutter-->
+				<reward item_id="13458" min="1" max="2" chance="3.8000" />	<!--Vesper Slasher-->
+				<reward item_id="13459" min="1" max="2" chance="3.8000" />	<!--Vesper Buster-->
+				<reward item_id="13460" min="1" max="2" chance="3.8000" />	<!--Vesper Shaper-->
+				<reward item_id="13466" min="1" max="2" chance="3.8000" />	<!--Vesper Singer-->
+				<reward item_id="13461" min="1" max="2" chance="3.8000" />	<!--Vesper Fighter-->
+				<reward item_id="13462" min="1" max="2" chance="3.8000" />	<!--Vesper Stormer-->
+				<reward item_id="13463" min="1" max="2" chance="3.8000" />	<!--Vesper Avenger-->
+				<reward item_id="13464" min="1" max="2" chance="3.8000" />	<!--Vesper Retributer-->
+				<reward item_id="13465" min="1" max="2" chance="3.8000" />	<!--Vesper Caster-->
+				<reward item_id="13467" min="1" max="2" chance="3.8000" />	<!--Vesper Thrower-->
+			</group>
+			<group chance="100.0">
+				<reward item_id="15694" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Helmet -->
+				<reward item_id="15695" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Leather Helmet -->
+				<reward item_id="15696" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Circlet -->
+				<reward item_id="15703" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Gauntlet -->
+				<reward item_id="15704" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Leather Gloves -->
+				<reward item_id="15705" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Gloves -->
+				<reward item_id="15706" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Boots -->
+				<reward item_id="15707" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Leather Boots -->
+				<reward item_id="15708" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Shoes -->
+				<reward item_id="15710" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Shield -->
+				<reward item_id="15709" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Sigil -->
+				<reward item_id="15697" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Breastplate -->
+				<reward item_id="15698" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Leather Breastplate -->
+				<reward item_id="15699" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Tunic -->
+				<reward item_id="15700" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Gaiter -->
+				<reward item_id="15701" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Leather Legging -->
+				<reward item_id="15702" min="2" max="4" chance="3.0000" />	<!--Sealed Moirai Stockings -->
+			</group>
+			<group chance="100.0">
+				<reward item_id="13143" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Helmet-->
+				<reward item_id="13144" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Leather Helmet-->
+				<reward item_id="13145" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Circlet-->
+				<reward item_id="14109" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Gauntlet-->
+				<reward item_id="14113" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Leather Gloves-->
+				<reward item_id="14116" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Gloves-->
+				<reward item_id="14110" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Boots-->
+				<reward item_id="14114" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Leather Boots-->
+				<reward item_id="14117" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Shoes-->
+				<reward item_id="14111" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Shield-->
+				<reward item_id="13887" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Sigil-->
+				<reward item_id="14105" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Breastplate-->
+				<reward item_id="14106" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Leather Breastplate-->
+				<reward item_id="14107" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Tunic-->
+				<reward item_id="14108" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Gaiter-->
+				<reward item_id="14112" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Leather Legging-->
+				<reward item_id="14115" min="1" max="4" chance="3.0000" />	   <!--Sealed Vesper Stockings-->
+			</group>
+		</rewardlist>
+		<rewardlist type="NOT_RATED_NOT_GROUPED">
+  	  	  	<reward item_id="6577" min="1" max="2" chance="100.0000" /> <!--Blessed Scroll: Enchant Weapon (S-Grade) -->	    
+  	  	  	<reward item_id="6578" min="1" max="4" chance="100.0000" /> <!--Blessed Scroll: Enchant Armor (S-Grade) -->	    
+  	  	  	<reward item_id="9627" min="10" max="25" chance="100.0000" /> <!--Giant's Codex - Mastery -->	    
+  	  	  	<reward item_id="14169" min="1" max="6" chance="100.0000" /> <!-- Top-Grade Life Stone - Level 84 -->
+  	  	  	<reward item_id="6673" min="20" max="40" chance="100.0000" /> <!-- Festival Coins -->
+		</rewardlist>
+		<attributes>
+  	  	  	<attack attribute="water" value="370" />
+  	  	  	<defence attribute="fire" value="250" />
+  	  	  	<defence attribute="water" value="370" />
+  	  	  	<defence attribute="wind" value="300" />
+  	  	  	<defence attribute="earth" value="300" />
+  	  	  	<defence attribute="holy" value="300" />
+  	  	  	<defence attribute="unholy" value="300" />
+  	  	</attributes>
+  	</npc>
+  	<npc id="60001" name="Son of Baium" title="Raid Boss">
+		<set name="displayId" value="13148" />
+		<set name="aggroRange" value="1000" />
+        <set name="ai_type" value="Fighter" />
+        <set name="baseAtkRange" value="40" />
+        <set name="baseCON" value="57" />
+        <set name="baseCritRate" value="40" />
+        <set name="baseDEX" value="73" />
+        <set name="baseHpMax" value="2709400" />
+        <set name="baseHpRate" value="1" />
+        <set name="baseHpReg" value="750" />
+        <set name="baseINT" value="76" />
+        <set name="baseMAtk" value="4282" />
+        <set name="baseMAtkSpd" value="2362" />
+        <set name="baseMDef" value="12005" />
+        <set name="baseMEN" value="80" />
+        <set name="baseMpMax" value="18000" />
+        <set name="baseMpReg" value="99" />
+        <set name="basePAtk" value="7285" />
+        <set name="basePAtkSpd" value="253" />
+        <set name="basePDef" value="12412" />
+        <set name="baseRunSpd" value="194" />
+        <set name="baseSTR" value="60" />
+        <set name="baseShldDef" value="0" />
+        <set name="baseShldRate" value="0" />
+        <set name="baseWIT" value="70" />
+        <set name="baseWalkSpd" value="129" />
+        <set name="collision_height" value="90.00" />
+        <set name="collision_radius" value="65.0" />
+        <set name="level" value="85" />
+        <set name="rewardExp" value="10253400" />
+        <set name="rewardRp" value="13008" />
+        <set name="rewardSp" value="1081544" />
+        <set name="shots" value="NONE" />
+        <set name="texture" value="" />
+        <set name="type" value="RaidBoss" />
+		<ai_params>
+			<set name="noRandomAnimation" value="true" />
+		</ai_params>
+		<skills>
+            <skill id="4045" level="1" />   <!--Resist Full Magic Attack-->
+            <skill id="4256" level="1" />   <!--100% stun resistance.-->
+            <skill id="4408" level="1" />   <!--HP Increase (1x)-->
+            <skill id="4409" level="1" />   <!--MP Increase (1x)-->
+            <skill id="4410" level="11" />  <!--Average P. Atk.-->
+            <skill id="4411" level="11" />  <!--Average M. Atk.-->
+            <skill id="4412" level="11" />  <!--Average P. Def.-->
+            <skill id="4413" level="11" />  <!--Average M. Def.-->
+            <skill id="4414" level="2" />   <!--Standard Type-->
+            <skill id="4416" level="1" />   <!--Undead-->
+            <skill id="4131" level="1" />   <!--Stun-->
+         </skills>
+		 <attributes>
+			<attack attribute="water" value="270" />
+			<defence attribute="fire" value="150" />
+			<defence attribute="water" value="270" />
+			<defence attribute="wind" value="100" />
+			<defence attribute="earth" value="100" />
+			<defence attribute="holy" value="100" />
+			<defence attribute="unholy" value="200" />
+		</attributes>
+        <rewardlist type="NOT_RATED_NOT_GROUPED">
+            <reward item_id="6673" min="5" max="35" chance="100.0000" />    <!--Festival Coin-->
+        </rewardlist>
+	</npc>
+</list>

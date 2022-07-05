@@ -1,0 +1,12 @@
+<html><body>
+You need to change your account information before the game. Be careful not to re-change! Do not use your old data, otherwise we are not responsible for the security of your account.
+
+Old Password: <edit var="oldpass" width=150 height=10 /><br>
+new e-mail:<br1>
+<table width=220><tr><td><edit var="newmail11" width=85 height=10 /></td><td>@</td><td width=50><edit var="newmail12" width=75 height=10 /></td></tr></table><br>
+Once again, the new e-mail:<br1>
+<table width=220><tr><td><edit var="newmail21" width=85 height=10 /></td><td>@</td><td width=50><edit var="newmail22" width=75 height=10 /></td></tr></table><br>
+New password (at least 8 characters): <edit var="newpass1" width=150 height=10 /><br>
+Once again a new password: <edit var="newpass2" width=150 height=10 /><br>
+<button width=50 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF" action="bypass -h scripts_services.Activation:activation $oldpass $newmail11 $newmail12 $newmail21 $newmail22 $newpass1 $newpass2 conf" value="Ok">
+</body></html>

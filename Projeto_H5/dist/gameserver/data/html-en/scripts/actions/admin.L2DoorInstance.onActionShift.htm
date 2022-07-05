@@ -1,0 +1,39 @@
+<html noscrollbar>
+<body>
+<title>Door</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td align=center>
+		<br>
+			<table width=260>
+				<tr>
+					<td align=center><font name=hs12 color="LEVEL">Door Information</font></td>
+				</tr>
+			</table>
+			<br><br>
+			<table align=center width=260>
+				<tr><td>Current HP</td><td>%CurrentHp%</td></tr>
+				<tr><td>Max HP</td><td>%MaxHp%</td></tr>
+				<tr><td>Upgrade HP</td><td>%upgradeHP%</td></tr>
+				<tr><td>Object ID:</td><td>%ObjectId%</td></tr>
+				<tr><td>Door ID:</td><td>%doorId%</td></tr>
+				<tr><td>P.Def:</td><td>%pdef%</td></tr>
+				<tr><td>M.Def:</td><td>%mdef%</td></tr>
+				<tr><td>Type:</td><td>%type%</td></tr>
+				<tr><td>Event:</td><td>%event%</td></tr>
+			</table>
+			<br><br>
+			<table cellpadding=0 cellspacing=0 width=260>
+				<tr>
+					<td><button value="Open" action="bypass -h admin_open %ObjectId%" width=65 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td><button value="Close" action="bypass -h admin_close %ObjectId%" width=65 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td><button value="Kill" action="bypass -h admin_kill" width=65 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td><button value="Delete" action="bypass -h admin_delete" width=65 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+			<br>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

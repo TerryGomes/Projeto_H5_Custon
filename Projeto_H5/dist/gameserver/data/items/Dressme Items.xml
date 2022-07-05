@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+<list>
+	<weapon id="47800" name="Antharas Avenger-Fragment">
+    <set name="crystal_count" value="7050"/>
+    <set name="crystal_type" value="S84"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_vesper_avenger_i00"/>
+    <set name="masterwork_convert" value="16048" />
+    <set name="price" value="143356000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1740"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <for>
+      <add stat="pAtk" order="0x10" value="396"/>
+      <add stat="mAtk" order="0x10" value="176"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+</list>

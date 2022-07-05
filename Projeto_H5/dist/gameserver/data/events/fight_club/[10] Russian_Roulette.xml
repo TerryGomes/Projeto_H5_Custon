@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "../events.dtd">
+<list>
+	<event id="10" name="Russian Roulette" type="FIGHT_CLUB_EVENT" impl="fightclub.RussianRoulette">
+		<parameter name="icon" value="BranchSys2.skill20006"/>
+		<parameter name="desc" value="Live or die. Left to a random decision. Choose wisely if you want to win. Choose the bad guy and you lose."/>
+		<parameter name="roundRunTime" value="90"/>
+		<parameter name="isAutoTimed" value="false"/>
+		<parameter name="rounds" value="-1"/>
+		<parameter name="roundEvent" value="true"/>
+		<parameter name="isPvPEvent" value="false"/>
+		<parameter name="teamed" value="false"/>
+		<parameter name="buffer" value="false"/>
+		<parameter name="fighterBuffs" value="1204,2;1086,2;1068,3;1045,6;1048,6;1040,3;1062,2;1036,2"/>
+		<parameter name="mageBuffs" value="1204,2;1085,3;1059,3;1045,6;1048,6;1040,3;1062,2;1036,2"/>
+		<parameter name="rootBetweenRounds" value="false"/>
+		<parameter name="excludedClasses" value=""/>
+		<parameter name="excludedSkills" value="" />		
+		<parameter name="ressAllowed" value="false"/>
+		<parameter name="respawnTime" value="-1"/>
+		<parameter name="showPersonality" value="true"/>
+		<parameter name="badgesKillPlayer" value="0"/>
+		<parameter name="badgesKillPet" value="0"/>
+		<parameter name="badgesWin" value="12"/>
+		<parameter name="topKillerReward" value="10"/>
+	</event>
+</list>

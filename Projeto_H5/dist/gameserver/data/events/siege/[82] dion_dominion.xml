@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "events.dtd">
+<list>
+	<event id="82" name="Dion Dominion" type="SIEGE_EVENT" impl="DominionSiege">
+		<parameter name="day_of_week" value="7" />  <!--SATURDAY-->
+		<parameter name="hour_of_day" value="20" />
+		<on_init>
+			<init name="doors" />
+			<init name="catapult_doors" />
+			<init name="siege_zones" />
+			<init name="flag_zones" />
+		</on_init>
+		<on_start>
+			<refresh name="doors" />
+			<refresh name="mass_gatekeeper" />
+			<spawn name="control_towers" />
+			<spawn name="catapult" />
+			<spawn name="catapult_doors" />
+			<spawn name="spawn" />
+
+			<active name="siege_zones"/>
+
+			<teleport_players id="others" />
+		</on_start>
+		<on_stop>
+			<refresh name="doors" />
+			<refresh name="mass_gatekeeper" />
+			<spawn name="control_towers" />
+			<despawn name="catapult" />
+			<despawn name="spawn" />
+
+			<teleport_players id="others" />
+			<deactive name="siege_zones" />
+		</on_stop>
+		<on_time>
+			<on time="0">
+				<start name="event" />
+			</on>
+			<on time="300">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="600">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="900">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="1200">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="1500">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="1800">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="2100">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="2400">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="2700">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="3000">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="3300">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="3600">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="3900">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="4200">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="4500">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="4800">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="5100">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="5400">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="5700">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="6000">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="6300">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="6600">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="6900">
+				<give_item id="-300" count="-1" />
+			</on>
+			<on time="7200">
+				<stop name="event" />
+			</on>
+		</on_time>
+		<objects name="doors">
+			<door id="20220001" />
+			<door id="20220002" />
+			<door id="20220003" />
+			<door id="20220004" />
+			<door id="20220005" />
+			<door id="20220006" />
+			<door id="20220007" />
+			<door id="20220008" />
+			<door id="20220009" />
+			<door id="20230003" />
+			<door id="20230006" />
+			<door id="20230007" />
+			<door id="20230010" />
+		</objects>
+		<objects name="siege_zones">
+			<zone name="[dion_castle_siege]" />
+			<zone name="[dion_fort_siege]" />
+		</objects>
+		<objects name="flag_zones">
+			<zone name="[gludio_castle_hq]" />
+			<zone name="[dion_castle_hq]" />
+			<zone name="[giran_castle_hq]" />
+			<zone name="[oren_castle_hq]" />
+			<zone name="[aden_castle_hq]" />
+			<zone name="[innadrile_castle_hq]" />
+			<zone name="[godad_castle_hq]" />
+			<zone name="[rune_castle_hq]" />
+			<zone name="[schuttgart_castle_hq]" />
+			<zone name="[gludio_fort_a_hq]" />
+			<zone name="[dion_fort_hq]" />
+			<zone name="[giran_fort_hq]" />
+			<zone name="[oren_fort_hq]" />
+			<zone name="[aden_fort_a_hq]" />
+			<zone name="[inna_fort_hq]" />
+			<zone name="[godad_fort_hq]" />
+			<zone name="[rune_fort_hq]" />
+			<zone name="[schutt_fort_hq]" />
+		</objects>
+		<objects name="catapult_doors">
+			<door id="20220001" />
+			<door id="20220002" />
+			<door id="20220005" />
+			<door id="20220006" />
+			<door id="20220007" />
+			<door id="20220008" />
+			<door id="20220009" />
+		</objects>
+		<objects name="territory_npc">
+			<spawn_ex name="territory_manager_2" />
+		</objects>
+		<objects name="catapult">
+			<siege_toggle_npc id="36500" fake_id="36582" x="15996" y="187134" z="-2920" hp="2920" />
+		</objects>
+		<objects name="ward_81">
+			<territory_ward item_id="13560" npc_id="36572" x="21740" y="160500" z="-2693" /> <!--Gludio Ward-->
+		</objects>
+		<objects name="ward_82">
+			<territory_ward item_id="13561" npc_id="36573" x="21820" y="160500" z="-2693" /> <!--Dion Ward-->
+		</objects>
+		<objects name="ward_83">
+			<territory_ward item_id="13562" npc_id="36574" x="21900" y="160500" z="-2693" /> <!--Giran Ward-->
+		</objects>
+		<objects name="ward_84">
+			<territory_ward item_id="13563" npc_id="36575" x="21980" y="160500" z="-2693" /> <!--Oren Ward-->
+		</objects>
+		<objects name="ward_85">
+			<territory_ward item_id="13564" npc_id="36576" x="22060" y="160500" z="-2693" /> <!--Aden Ward-->
+		</objects>
+		<objects name="ward_86">
+			<territory_ward item_id="13565" npc_id="36577" x="22140" y="160500" z="-2693" /> <!--Innadril Ward-->
+		</objects>
+		<objects name="ward_87">
+			<territory_ward item_id="13566" npc_id="36578" x="22220" y="160500" z="-2693" /> <!--Goddard Ward-->
+		</objects>
+		<objects name="ward_88">
+			<territory_ward item_id="13567" npc_id="36579" x="22300" y="160500" z="-2693" /> <!--Rune Ward-->
+		</objects>
+		<objects name="ward_89">
+			<territory_ward item_id="13568" npc_id="36580" x="22380" y="160500" z="-2693" /> <!--Schuttgart Ward-->
+		</objects>
+		<objects name="spawn">
+			<spawn_ex name="dion_dominion_siege" />
+		</objects>
+	</event>
+</list>

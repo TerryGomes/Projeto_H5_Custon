@@ -1,0 +1,27 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Town of Dion: NPC Lucas (Level 33) -->
+	<instance id="60" name="Kamaloka, Hall of the Abyss" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="28" max="38"/>
+		<party min="2" max="6"/>
+		<return loc="18181 145987 -3104"/>
+		<teleport loc="-89182 -214081 -8100"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="1"/>
+		<add_parameters>
+			<param name="tele_device_loc" value="-89180 -213570 -8096"/>
+		</add_parameters>
+		<spawns>
+			<!-- Crimson Hatu Otis -->
+			<spawn mobId="18558" type="loc">
+				<coords loc="-88980 -213340 -8100 -8100"/>
+				<coords loc="-88980 -213740 -8100 -8100"/>
+				<coords loc="-89380 -213740 -8100 -8100"/>
+				<coords loc="-89380 -213340 -8100 -8100"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

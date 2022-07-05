@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (map)*>
+<!ELEMENT map (zone|loc)*>
+<!ATTLIST map
+		name CDATA #REQUIRED>
+
+		<!ELEMENT zone (#PCDATA)>
+		<!ATTLIST zone
+				name CDATA #REQUIRED>
+		<!ELEMENT loc (#PCDATA)>
+		<!ATTLIST loc
+				name CDATA #REQUIRED
+				x CDATA #REQUIRED
+				y CDATA #REQUIRED
+				z CDATA #REQUIRED>

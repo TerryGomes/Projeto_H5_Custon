@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!ELEMENT list (dock)*>
+<!ELEMENT dock (teleportlist|platform)*>
+<!ATTLIST dock
+	id CDATA #REQUIRED>
+<!ELEMENT teleportlist (point)*>
+<!ELEMENT point (#PCDATA)>
+<!ATTLIST point
+	fuel CDATA #IMPLIED
+	x CDATA #REQUIRED
+	y CDATA #REQUIRED
+	z CDATA #REQUIRED
+	speed1 CDATA #IMPLIED
+	speed2 CDATA #IMPLIED>
+<!ELEMENT platform (oust|spawn|arrival|depart)*>
+<!ATTLIST platform
+	movie CDATA #REQUIRED>
+<!ELEMENT oust (#PCDATA)>
+<!ATTLIST oust
+	x CDATA #REQUIRED
+	y CDATA #REQUIRED
+	z CDATA #REQUIRED>
+<!ELEMENT spawn (#PCDATA)>
+<!ATTLIST spawn
+	x CDATA #REQUIRED
+	y CDATA #REQUIRED
+	z CDATA #REQUIRED
+	h CDATA #IMPLIED>
+<!ELEMENT arrival (point)*>
+<!ELEMENT depart (point)*>

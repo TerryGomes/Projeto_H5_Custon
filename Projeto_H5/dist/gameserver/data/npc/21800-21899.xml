@@ -1,0 +1,2646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE list SYSTEM "npc.dtd">
+<list>
+	<npc id="21800" name="Vassal Ghost" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Mystic" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="40" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2762.084" />
+		<set name="baseHpRate" value="2" />
+		<set name="baseHpReg" value="8.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="1032" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="403" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1574" />
+		<set name="baseMpReg" value="3" />
+		<set name="basePAtk" value="1651" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="545" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="15" />
+		<set name="collision_height" value="21.0" />
+		<set name="collision_radius" value="13.0" />
+		<set name="level" value="77" />
+		<set name="rewardExp" value="13234" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="1432" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<skills>
+			<skill id="4274" level="1" />	<!--Blunt Weapon Weak Point-->
+			<skill id="4275" level="2" />	<!--Sacred Attack Weak Point-->
+			<skill id="4278" level="1" />	<!--Dark Attack-->
+			<skill id="4408" level="10" />	<!--HP Increase (2x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="3" />	<!--One-handed Sword-->
+			<skill id="4416" level="1" />	<!--Undead-->
+			<skill id="4567" level="8" />	<!--NPC Eruption - Slow-->
+			<skill id="4789" level="5" />	<!--NPC High Level-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="1853" max="3785" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="0.2536">
+				<reward item_id="11946" min="1" max="1" chance="1.8833" />	<!--Common Item - Dasparion's Staff-->
+				<reward item_id="5543" min="1" max="1" chance="23.2872" />	<!--Dasparion's Staff Head-->
+				<reward item_id="11949" min="1" max="1" chance="1.8833" />	<!--Common Item - Meteor Shower-->
+				<reward item_id="5532" min="1" max="1" chance="23.0697" />	<!--Meteor Shower Head-->
+				<reward item_id="11953" min="1" max="1" chance="1.8833" />	<!--Common Item - Spiritual Eye-->
+				<reward item_id="8341" min="1" max="1" chance="23.0402" />	<!--Spiritual Eye Piece-->
+				<reward item_id="11958" min="1" max="1" chance="1.8833" />	<!--Common Item - Destroyer Hammer-->
+				<reward item_id="8346" min="1" max="1" chance="23.0697" />	<!--Hammer Piece of Destroyer-->
+			</group>
+			<group chance="49.0569">
+				<reward item_id="1867" min="1" max="3" chance="18.8588" />	<!--Animal Skin-->
+				<reward item_id="1872" min="1" max="1" chance="37.7176" />	<!--Animal Bone-->
+				<reward item_id="1882" min="1" max="1" chance="6.2863" />	<!--Leather-->
+				<reward item_id="1894" min="1" max="1" chance="0.9926" />	<!--Crafted Leather-->
+				<reward item_id="4042" min="1" max="1" chance="0.4715" />	<!--Enria-->
+				<reward item_id="5272" min="1" max="1" chance="0.0126" />	<!--Recipe: Greater Soulshot (S) Compressed Package(100%)-->
+				<reward item_id="8732" min="1" max="1" chance="0.2357" />	<!--Life Stone -  Level 76-->
+				<reward item_id="8742" min="1" max="1" chance="0.0589" />	<!--Mid-Grade Life Stone -  Level 76-->
+				<reward item_id="8752" min="1" max="1" chance="0.0059" />	<!--High-Grade Life Stone -  Level 76-->
+				<reward item_id="1344" min="10" max="30" chance="35.3601" />	<!--Mithril Arrow-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="5167" min="1" max="1" chance="0.1670" />	<!--Recipe: Blessed Spiritshot (S) Compressed Package (100%)-->
+			<reward item_id="5529" min="1" max="1" chance="1.0311" />	<!--Dragon Slayer Edge-->
+			<reward item_id="4042" min="1" max="1" chance="6.2641" />	<!--Enria-->
+		</rewardlist>
+		<attributes>
+			<attack attribute="unholy" value="20" />
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="unholy" value="53" />
+		</attributes>
+	</npc>
+	<npc id="21801" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="364.304" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="3.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="26" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="73" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="205.2" />
+		<set name="baseMpReg" value="1.5" />
+		<set name="basePAtk" value="63" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="99" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="21" />
+		<set name="rewardExp" value="631" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="29" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="107" max="191" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="1.3812">
+				<reward item_id="39" min="1" max="1" chance="7.0524" />	<!--Boots-->
+				<reward item_id="1930" min="1" max="1" chance="85.8951" />	<!--Boot Lining-->
+				<reward item_id="51" min="1" max="1" chance="7.0525" />	<!--Bracer-->
+			</group>
+			<group chance="12.7651">
+				<reward item_id="1864" min="1" max="1" chance="54.3692" />	<!--Stem-->
+				<reward item_id="1869" min="1" max="1" chance="27.1846" />	<!--Iron Ore-->
+				<reward item_id="1878" min="1" max="1" chance="10.8738" />	<!--Braided Hemp-->
+				<reward item_id="2151" min="1" max="1" chance="7.5724" />	<!--Recipe: Necklace of Devotion-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1864" min="1" max="1" chance="46.9914" />	<!--Stem-->
+			<reward item_id="1869" min="1" max="1" chance="23.4957" />	<!--Iron Ore-->
+			<reward item_id="1926" min="1" max="1" chance="2.3733" />	<!--Piece Bone Breastplate Fragment-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21802" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="435.344" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="3.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="34" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="82" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="245.52" />
+		<set name="baseMpReg" value="1.5" />
+		<set name="basePAtk" value="81" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="112" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="24" />
+		<set name="rewardExp" value="772" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="38" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="122" max="225" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="0.2781">
+				<reward item_id="625" min="1" max="1" chance="58.9212" />	<!--Bone Shield-->
+				<reward item_id="1148" min="1" max="1" chance="41.0788" />	<!--Hard Leather Helmet-->
+			</group>
+			<group chance="10.728">
+				<reward item_id="1865" min="1" max="1" chance="37.8052" />	<!--Varnish-->
+				<reward item_id="1870" min="1" max="1" chance="37.8052" />	<!--Coal-->
+				<reward item_id="1879" min="1" max="1" chance="6.3009" />	<!--Cokes-->
+				<reward item_id="2176" min="1" max="1" chance="18.0887" />	<!--Recipe: Leather Boots-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="2151" min="1" max="1" chance="7.6492" />	<!--Recipe: Necklace of Devotion-->
+			<reward item_id="1928" min="1" max="1" chance="4.0001" />	<!--Piece Bone Gaiters Fragment-->
+			<reward item_id="2176" min="1" max="1" chance="13.1391" />	<!--Recipe: Leather Boots-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21803" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="515.179" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="3.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="45" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="93" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="286.92" />
+		<set name="baseMpReg" value="1.5" />
+		<set name="basePAtk" value="104" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="126" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="27" />
+		<set name="rewardExp" value="919" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="47" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="137" max="264" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="1.2748">
+				<reward item_id="40" min="1" max="1" chance="4.3392" />	<!--Leather Boots-->
+				<reward item_id="1931" min="1" max="1" chance="45.6608" />	<!--Leather Boots Lining-->
+				<reward item_id="604" min="1" max="1" chance="4.3392" />	<!--Crafted Leather Gloves-->
+				<reward item_id="1934" min="1" max="1" chance="45.6608" />	<!--Crafted Leather Gloves Lining-->
+			</group>
+			<group chance="7.0036">
+				<reward item_id="1866" min="1" max="1" chance="33.9088" />	<!--Suede-->
+				<reward item_id="1871" min="1" max="1" chance="50.8632" />	<!--Charcoal-->
+				<reward item_id="5220" min="1" max="1" chance="2.0345" />	<!--Metal Hardener-->
+				<reward item_id="1885" min="1" max="1" chance="4.2386" />	<!--High-Grade Suede-->
+				<reward item_id="2152" min="1" max="1" chance="8.9549" />	<!--Recipe: Enchanted Necklace-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1899" min="1" max="1" chance="4.9588" />	<!--Necklace of Devotion Chain-->
+			<reward item_id="1871" min="1" max="1" chance="31.7362" />	<!--Charcoal-->
+			<reward item_id="5220" min="1" max="1" chance="1.2695" />	<!--Metal Hardener-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21804" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="604.084" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="3.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="59" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="104" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="329.4" />
+		<set name="baseMpReg" value="1.5" />
+		<set name="basePAtk" value="131" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="141" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="30" />
+		<set name="rewardExp" value="1080" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="59" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="154" max="308" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="0.1261">
+				<reward item_id="627" min="1" max="1" chance="58.8055" />	<!--Aspis-->
+				<reward item_id="46" min="1" max="1" chance="41.1945" />	<!--Bronze Helmet-->
+			</group>
+			<group chance="15.6555">
+				<reward item_id="1867" min="1" max="1" chance="42.4779" />	<!--Animal Skin-->
+				<reward item_id="1872" min="1" max="1" chance="42.4779" />	<!--Animal Bone-->
+				<reward item_id="1882" min="1" max="1" chance="7.0796" />	<!--Leather-->
+				<reward item_id="2250" min="1" max="1" chance="7.9646" />	<!--Recipe: Bone Arrow-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1061" min="1" max="1" chance="22.1263" />	<!--Greater Healing Potion-->
+			<reward item_id="1900" min="1" max="1" chance="3.9943" />	<!--Enchanted Necklace Chain-->
+			<reward item_id="2250" min="1" max="1" chance="9.1271" />	<!--Recipe: Bone Arrow-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21805" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="702.205" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="4.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="76" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="117" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="372.96" />
+		<set name="baseMpReg" value="1.8" />
+		<set name="basePAtk" value="165" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="158" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="33" />
+		<set name="rewardExp" value="1307" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="75" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="184" max="368" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="0.5952">
+				<reward item_id="553" min="1" max="1" chance="2.8426" />	<!--Iron Boots-->
+				<reward item_id="1940" min="1" max="1" chance="82.9444" />	<!--Iron Boots Design-->
+				<reward item_id="2422" min="1" max="1" chance="2.8426" />	<!--Reinforced Leather Boots-->
+				<reward item_id="2423" min="1" max="1" chance="2.8426" />	<!--Boots of Knowledge-->
+				<reward item_id="63" min="1" max="1" chance="2.8426" />	<!--Gauntlets-->
+				<reward item_id="2446" min="1" max="1" chance="2.8426" />	<!--Reinforced Leather Gloves-->
+				<reward item_id="2447" min="1" max="1" chance="2.8426" />	<!--Gloves of Knowledge-->
+			</group>
+			<group chance="12.3822">
+				<reward item_id="1868" min="1" max="1" chance="74.8018" />	<!--Thread-->
+				<reward item_id="1873" min="1" max="1" chance="14.9604" />	<!--Silver Nugget-->
+				<reward item_id="5549" min="1" max="1" chance="3.7401" />	<!--Metallic Thread-->
+				<reward item_id="1889" min="1" max="1" chance="2.4934" />	<!--Compound Braid-->
+				<reward item_id="2154" min="1" max="1" chance="4.0043" />	<!--Recipe: Elven Earring-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1901" min="1" max="1" chance="6.0152" />	<!--Tiger's Eye Earring Stone-->
+			<reward item_id="2154" min="1" max="1" chance="4.6627" />	<!--Recipe: Elven Earring-->
+			<reward item_id="1938" min="1" max="1" chance="2.9277" />	<!--Mithril Banded Mail Material-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21806" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="809.526" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="4.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="97" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="130" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="417.6" />
+		<set name="baseMpReg" value="1.8" />
+		<set name="basePAtk" value="205" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="176" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="36" />
+		<set name="rewardExp" value="1555" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="94" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="216" max="433" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="0.1129">
+				<reward item_id="628" min="1" max="1" chance="58.8353" />	<!--Hoplon-->
+				<reward item_id="47" min="1" max="1" chance="41.1647" />	<!--Helmet-->
+			</group>
+			<group chance="17.8391">
+				<reward item_id="1869" min="1" max="1" chance="30.5451" />	<!--Iron Ore-->
+				<reward item_id="1864" min="1" max="1" chance="61.0902" />	<!--Stem-->
+				<reward item_id="1880" min="1" max="1" chance="3.0545" />	<!--Steel-->
+				<reward item_id="5550" min="1" max="1" chance="0.4073" />	<!--Durable Metal Plate-->
+				<reward item_id="2155" min="1" max="1" chance="4.9029" />	<!--Recipe: Elven Ring-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1864" min="1" max="3" chance="51.2417" />	<!--Stem-->
+			<reward item_id="1880" min="1" max="1" chance="5.1242" />	<!--Steel-->
+			<reward item_id="1939" min="1" max="1" chance="4.5008" />	<!--Mithril Banded Gaiters Material-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21807" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="925.859" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="4.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="122" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="144" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="463.32" />
+		<set name="baseMpReg" value="1.8" />
+		<set name="basePAtk" value="253" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="195" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="39" />
+		<set name="rewardExp" value="1825" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="116" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="253" max="504" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="2.1425">
+				<reward item_id="1124" min="1" max="1" chance="0.3142" />	<!--Boots of Power-->
+				<reward item_id="1948" min="1" max="1" chance="12.1858" />	<!--Boots of Power Pattern-->
+				<reward item_id="2424" min="1" max="1" chance="0.3142" />	<!--Manticore Skin Boots-->
+				<reward item_id="2923" min="1" max="1" chance="12.1858" />	<!--Manticore Skin Boot Lining-->
+				<reward item_id="2425" min="1" max="1" chance="0.3142" />	<!--Brigandine Boots-->
+				<reward item_id="2924" min="1" max="1" chance="12.1858" />	<!--Brigandine Boots Design-->
+				<reward item_id="2426" min="1" max="1" chance="0.3142" />	<!--Elven Mithril Boots-->
+				<reward item_id="2925" min="1" max="1" chance="12.1858" />	<!--Elven Mithril Boots Design-->
+				<reward item_id="606" min="1" max="1" chance="0.3142" />	<!--Rip Gauntlets-->
+				<reward item_id="1946" min="1" max="1" chance="12.1858" />	<!--Rip Gauntlets Pattern-->
+				<reward item_id="2448" min="1" max="1" chance="0.3142" />	<!--Manticore Skin Gloves-->
+				<reward item_id="2926" min="1" max="1" chance="12.1858" />	<!--Manticore Skin Gloves Lining-->
+				<reward item_id="2449" min="1" max="1" chance="0.3142" />	<!--Brigandine Gauntlets-->
+				<reward item_id="2927" min="1" max="1" chance="12.1858" />	<!--Brigandine Gauntlets Pattern-->
+				<reward item_id="2450" min="1" max="1" chance="0.3142" />	<!--Mithril Gloves-->
+				<reward item_id="2928" min="1" max="1" chance="12.1858" />	<!--Mithril Gloves Design-->
+			</group>
+			<group chance="16.6099">
+				<reward item_id="1870" min="1" max="1" chance="46.5265" />	<!--Coal-->
+				<reward item_id="1865" min="1" max="1" chance="46.5265" />	<!--Varnish-->
+				<reward item_id="1874" min="1" max="1" chance="3.1018" />	<!--Oriharukon Ore-->
+				<reward item_id="2157" min="1" max="1" chance="3.8452" />	<!--Recipe: Omen Beast's Eye Earring-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="2157" min="1" max="1" chance="4.9421" />	<!--Recipe: Omen Beast's Eye Earring-->
+			<reward item_id="1902" min="1" max="1" chance="6.0588" />	<!--Elven Earring Beads-->
+			<reward item_id="2158" min="1" max="1" chance="7.4010" />	<!--Recipe: Mithril Ring-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21808" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="1050.817" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="5.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="153" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="160" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="531" />
+		<set name="baseMpReg" value="2.1" />
+		<set name="basePAtk" value="309" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="216" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="42" />
+		<set name="rewardExp" value="2117" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="141" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="282" max="570" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="1.843">
+				<reward item_id="630" min="1" max="1" chance="0.8051" />	<!--Square Shield-->
+				<reward item_id="1956" min="1" max="1" chance="36.0955" />	<!--Square Shield Fragment-->
+				<reward item_id="2494" min="1" max="1" chance="0.8051" />	<!--Plate Shield-->
+				<reward item_id="2934" min="1" max="1" chance="36.0955" />	<!--Plate Shield Fragment-->
+				<reward item_id="2412" min="1" max="1" chance="0.5638" />	<!--Plate Helmet-->
+				<reward item_id="2930" min="1" max="1" chance="25.6350" />	<!--Plate Helmet Design-->
+			</group>
+			<group chance="15.5718">
+				<reward item_id="1871" min="1" max="1" chance="56.4594" />	<!--Charcoal-->
+				<reward item_id="1866" min="1" max="1" chance="37.6396" />	<!--Suede-->
+				<reward item_id="1877" min="1" max="1" chance="2.2584" />	<!--Adamantite Nugget-->
+				<reward item_id="2160" min="1" max="1" chance="3.6426" />	<!--Recipe: Moonstone Earring-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1905" min="1" max="1" chance="6.8125" />	<!--Omen Beast's Eye Earring Gemstone-->
+			<reward item_id="1871" min="1" max="1" chance="70.0321" />	<!--Charcoal-->
+			<reward item_id="1866" min="1" max="1" chance="46.6881" />	<!--Suede-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21809" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="1183.806" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="5.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="189" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="176" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="610.8" />
+		<set name="baseMpReg" value="2.1" />
+		<set name="basePAtk" value="375" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="238" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="45" />
+		<set name="rewardExp" value="2430" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="169" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="320" max="650" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="1.7579">
+				<reward item_id="62" min="1" max="1" chance="0.2489" />	<!--Reinforced Mithril Boots-->
+				<reward item_id="1958" min="1" max="1" chance="10.8622" />	<!--Reinforced Mithril Boots Design-->
+				<reward item_id="2429" min="1" max="1" chance="0.2489" />	<!--Chain Boots-->
+				<reward item_id="2937" min="1" max="1" chance="10.8622" />	<!--Chain Boots Part-->
+				<reward item_id="2430" min="1" max="1" chance="0.2489" />	<!--Karmian Boots-->
+				<reward item_id="2938" min="1" max="1" chance="10.8622" />	<!--Karmian Boots Fabric-->
+				<reward item_id="2431" min="1" max="1" chance="0.2489" />	<!--Plated Leather Boots-->
+				<reward item_id="2939" min="1" max="1" chance="10.8622" />	<!--Plate Leather Boots Lining-->
+				<reward item_id="2432" min="1" max="1" chance="0.2489" />	<!--Dwarven Chain Boots-->
+				<reward item_id="2940" min="1" max="1" chance="10.8622" />	<!--Dwarven Chain Boots Part-->
+				<reward item_id="2433" min="1" max="1" chance="0.2489" />	<!--Boots of Seal-->
+				<reward item_id="2941" min="1" max="1" chance="10.8622" />	<!--Boots of Seal Pattern-->
+				<reward item_id="2452" min="1" max="1" chance="0.2489" />	<!--Reinforced Mithril Gloves-->
+				<reward item_id="2942" min="1" max="1" chance="10.8622" />	<!--Reinforced Mithril Gloves Design-->
+				<reward item_id="2453" min="1" max="1" chance="0.2489" />	<!--Chain Gloves-->
+				<reward item_id="2943" min="1" max="1" chance="10.8622" />	<!--Chain Gloves Design-->
+				<reward item_id="2454" min="1" max="1" chance="0.2489" />	<!--Karmian Gloves-->
+				<reward item_id="2944" min="1" max="1" chance="10.8623" />	<!--Karmian Gloves Fabric-->
+			</group>
+			<group chance="11.3855">
+				<reward item_id="1872" min="1" max="1" chance="44.7791" />	<!--Animal Bone-->
+				<reward item_id="1867" min="1" max="1" chance="44.7791" />	<!--Animal Skin-->
+				<reward item_id="1881" min="1" max="1" chance="4.4779" />	<!--Coarse Bone Powder-->
+				<reward item_id="1875" min="1" max="1" chance="2.2390" />	<!--Stone of Purity-->
+				<reward item_id="4041" min="1" max="1" chance="0.2920" />	<!--Mold Hardener-->
+				<reward item_id="2163" min="1" max="1" chance="1.7135" />	<!--Recipe: Earring of Protection-->
+				<reward item_id="8723" min="1" max="1" chance="1.3434" />	<!--Life Stone -  Level 46-->
+				<reward item_id="8733" min="1" max="1" chance="0.3358" />	<!--Mid-Grade Life Stone -  Level 46-->
+				<reward item_id="8743" min="1" max="1" chance="0.0336" />	<!--High-Grade Life Stone -  Level 46-->
+				<reward item_id="8753" min="1" max="1" chance="0.0066" />	<!--Top-Grade Life Stone -  Level 46-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="4553" min="1" max="1" chance="0.3236" />	<!--Greater Dye of STR <Str+1 Con-1>-->
+			<reward item_id="1908" min="1" max="1" chance="7.6616" />	<!--Moonstone Earring Wire-->
+			<reward item_id="2163" min="1" max="1" chance="4.1279" />	<!--Recipe: Earring of Protection-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21810" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="1324.016" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="5.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="232" />
+		<set name="baseMAtkSpd" value="333" />
+		<set name="baseMDef" value="194" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="692.4" />
+		<set name="baseMpReg" value="2.1" />
+		<set name="basePAtk" value="450" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="262" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="48" />
+		<set name="rewardExp" value="2765" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="202" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="364" max="740" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="1.4747">
+				<reward item_id="2496" min="1" max="1" chance="0.7677" />	<!--Dwarven Chain Shield-->
+				<reward item_id="2947" min="1" max="1" chance="32.9277" />	<!--Dwarven Chain Shield Fragment-->
+				<reward item_id="632" min="1" max="1" chance="0.7087" />	<!--Knight's Shield-->
+				<reward item_id="1972" min="1" max="1" chance="36.8790" />	<!--Knight's Shield Fragment-->
+				<reward item_id="500" min="1" max="1" chance="0.4962" />	<!--Great Helmet-->
+				<reward item_id="1971" min="1" max="1" chance="28.2207" />	<!--Great Helmet Material-->
+			</group>
+			<group chance="12.1512">
+				<reward item_id="1873" min="1" max="1" chance="13.4276" />	<!--Silver Nugget-->
+				<reward item_id="1868" min="1" max="1" chance="67.1378" />	<!--Thread-->
+				<reward item_id="1876" min="1" max="1" chance="6.7138" />	<!--Mithril Ore-->
+				<reward item_id="1895" min="1" max="1" chance="9.5911" />	<!--Metallic Fiber-->
+				<reward item_id="4042" min="1" max="1" chance="0.5595" />	<!--Enria-->
+				<reward item_id="2166" min="1" max="1" chance="1.1379" />	<!--Recipe: Earrings of Binding (100%)-->
+				<reward item_id="8724" min="1" max="1" chance="1.1190" />	<!--Life Stone -  Level 49-->
+				<reward item_id="8734" min="1" max="1" chance="0.2797" />	<!--Mid-Grade Life Stone -  Level 49-->
+				<reward item_id="8744" min="1" max="1" chance="0.0280" />	<!--High-Grade Life Stone -  Level 49-->
+				<reward item_id="8754" min="1" max="1" chance="0.0056" />	<!--Top-Grade Life Stone -  Level 49-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1966" min="1" max="1" chance="3.3611" />	<!--Plated Leather Fragment-->
+			<reward item_id="2166" min="1" max="1" chance="3.1207" />	<!--Recipe: Earrings of Binding (100%)-->
+			<reward item_id="1967" min="1" max="1" chance="5.0211" />	<!--Plated Leather Gaiters Material-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21811" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="1470.416" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="6.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="282" />
+		<set name="baseMAtkSpd" value="333" />
+		<set name="baseMDef" value="212" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="775.8" />
+		<set name="baseMpReg" value="2.4" />
+		<set name="basePAtk" value="535" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="287" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="51" />
+		<set name="rewardExp" value="3121" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="238" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="413" max="839" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="1.2913">
+				<reward item_id="64" min="1" max="1" chance="0.8845" />	<!--Composite Boots-->
+				<reward item_id="2956" min="1" max="1" chance="49.1155" />	<!--Composite Boots Part-->
+				<reward item_id="608" min="1" max="1" chance="0.8845" />	<!--Mithril Gauntlets-->
+				<reward item_id="1981" min="1" max="1" chance="49.1155" />	<!--Mithril Gauntlets Design-->
+			</group>
+			<group chance="17.6905">
+				<reward item_id="1864" min="1" max="1" chance="48.7570" />	<!--Stem-->
+				<reward item_id="1869" min="1" max="1" chance="24.3785" />	<!--Iron Ore-->
+				<reward item_id="1878" min="1" max="1" chance="9.7514" />	<!--Braided Hemp-->
+				<reward item_id="1884" min="1" max="1" chance="15.0022" />	<!--Cord-->
+				<reward item_id="4039" min="1" max="1" chance="0.8126" />	<!--Mold Glue-->
+				<reward item_id="2169" min="1" max="1" chance="0.4315" />	<!--Recipe: Necklace of Seal-->
+				<reward item_id="8725" min="1" max="1" chance="0.6772" />	<!--Life Stone -  Level 52-->
+				<reward item_id="8735" min="1" max="1" chance="0.1693" />	<!--Mid-Grade Life Stone -  Level 52-->
+				<reward item_id="8745" min="1" max="1" chance="0.0169" />	<!--High-Grade Life Stone -  Level 52-->
+				<reward item_id="8755" min="1" max="1" chance="0.0034" />	<!--Top-Grade Life Stone -  Level 52-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1878" min="1" max="1" chance="41.7148" />	<!--Braided Hemp-->
+			<reward item_id="1884" min="1" max="1" chance="64.1767" />	<!--Cord-->
+			<reward item_id="4601" min="1" max="1" chance="0.2317" />	<!--Greater Dye of STR <Str+3 Con-3>-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21812" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="1621.756" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="6.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="340" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="231" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="861" />
+		<set name="baseMpReg" value="2.4" />
+		<set name="basePAtk" value="631" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="313" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="54" />
+		<set name="rewardExp" value="3499" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="279" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="464" max="945" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="0.9812">
+				<reward item_id="2497" min="1" max="1" chance="0.7653" />	<!--Full Plate Shield-->
+				<reward item_id="2966" min="1" max="1" chance="60.4723" />	<!--Full Plate Shield Fragment-->
+				<reward item_id="2414" min="1" max="1" chance="0.5357" />	<!--Full Plate Helmet-->
+				<reward item_id="2959" min="1" max="1" chance="38.2267" />	<!--Full Plate Helmet Design-->
+			</group>
+			<group chance="9.9738">
+				<reward item_id="1865" min="1" max="1" chance="43.4884" />	<!--Varnish-->
+				<reward item_id="1870" min="1" max="1" chance="43.4884" />	<!--Coal-->
+				<reward item_id="1879" min="1" max="1" chance="7.2481" />	<!--Cokes-->
+				<reward item_id="1875" min="1" max="1" chance="2.8992" />	<!--Stone of Purity-->
+				<reward item_id="4040" min="1" max="1" chance="0.8698" />	<!--Mold Lubricant-->
+				<reward item_id="4126" min="1" max="1" chance="0.7176" />	<!--Recipe: Adamantite Earrings (100%)-->
+				<reward item_id="8726" min="1" max="1" chance="1.0067" />	<!--Life Stone -  Level 55-->
+				<reward item_id="8736" min="1" max="1" chance="0.2517" />	<!--Mid-Grade Life Stone -  Level 55-->
+				<reward item_id="8746" min="1" max="1" chance="0.0252" />	<!--High-Grade Life Stone -  Level 55-->
+				<reward item_id="8756" min="1" max="1" chance="0.0049" />	<!--Top-Grade Life Stone -  Level 55-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1984" min="1" max="1" chance="2.5182" />	<!--Theca Leather Armor Pattern-->
+			<reward item_id="4126" min="1" max="1" chance="1.9385" />	<!--Recipe: Adamantite Earrings (100%)-->
+			<reward item_id="1985" min="1" max="1" chance="4.0508" />	<!--Theca Leather Gaiters Pattern-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21813" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="1776.58" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="6.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="405" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="252" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="948" />
+		<set name="baseMpReg" value="2.4" />
+		<set name="basePAtk" value="737" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="340" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="57" />
+		<set name="rewardExp" value="3899" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="324" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="519" max="1060" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="1.1975">
+				<reward item_id="12147" min="1" max="1" chance="3.8829" />	<!--Common Item - Sealed Zubei's Boots-->
+				<reward item_id="4097" min="1" max="1" chance="21.1171" />	<!--Sealed Zubei's Boots Design-->
+				<reward item_id="12149" min="1" max="1" chance="3.8829" />	<!--Common Item - Sealed Avadon Boots-->
+				<reward item_id="4098" min="1" max="1" chance="21.1171" />	<!--Sealed Avadon Boots Design-->
+				<reward item_id="12146" min="1" max="1" chance="3.8829" />	<!--Common Item - Sealed Zubei's Gauntlet-->
+				<reward item_id="4100" min="1" max="1" chance="21.1171" />	<!--Sealed Zubei's Gauntlets Part-->
+				<reward item_id="12148" min="1" max="1" chance="3.8829" />	<!--Common Item - Sealed Avadon Gloves-->
+				<reward item_id="4073" min="1" max="1" chance="21.1171" />	<!--Sealed Avadon Gloves Part-->
+			</group>
+			<group chance="7.1337">
+				<reward item_id="1866" min="1" max="1" chance="36.3283" />	<!--Suede-->
+				<reward item_id="1871" min="1" max="1" chance="54.4924" />	<!--Charcoal-->
+				<reward item_id="5220" min="1" max="1" chance="2.1797" />	<!--Metal Hardener-->
+				<reward item_id="1885" min="1" max="1" chance="4.5410" />	<!--High-Grade Suede-->
+				<reward item_id="4041" min="1" max="1" chance="0.4738" />	<!--Mold Hardener-->
+				<reward item_id="4129" min="1" max="1" chance="0.5897" />	<!--Recipe: Earrings of Black Ore (100%)-->
+				<reward item_id="8727" min="1" max="1" chance="1.0898" />	<!--Life Stone -  Level 58-->
+				<reward item_id="8737" min="1" max="1" chance="0.2725" />	<!--Mid-Grade Life Stone -  Level 58-->
+				<reward item_id="8747" min="1" max="1" chance="0.0272" />	<!--High-Grade Life Stone -  Level 58-->
+				<reward item_id="8757" min="1" max="1" chance="0.0056" />	<!--Top-Grade Life Stone -  Level 58-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="4129" min="1" max="1" chance="1.4243" />	<!--Recipe: Earrings of Black Ore (100%)-->
+			<reward item_id="4049" min="1" max="1" chance="6.9028" />	<!--Adamantite Earring Gemstone-->
+			<reward item_id="947" min="1" max="1" chance="0.0526" />	<!--Scroll: Enchant Weapon (B-Grade)-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21814" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="1933.24" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="6.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="479" />
+		<set name="baseMAtkSpd" value="333" />
+		<set name="baseMDef" value="273" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1036.8" />
+		<set name="baseMpReg" value="2.4" />
+		<set name="basePAtk" value="853" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="369" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="60" />
+		<set name="rewardExp" value="4320" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="375" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="580" max="1179" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="1.3418">
+				<reward item_id="12159" min="1" max="1" chance="3.6853" />	<!--Common Item - Zubei's Shield-->
+				<reward item_id="4101" min="1" max="1" chance="23.3935" />	<!--Zubei's Shield Fragment-->
+				<reward item_id="12171" min="1" max="1" chance="3.6853" />	<!--Common Item - Avadon Shield-->
+				<reward item_id="4439" min="1" max="1" chance="27.8302" />	<!--Avadon Shield Fragment-->
+				<reward item_id="12160" min="1" max="1" chance="2.5785" />	<!--Common Item - Zubei's Helmet-->
+				<reward item_id="4102" min="1" max="1" chance="18.1243" />	<!--Zubei's Helmet Design-->
+				<reward item_id="12170" min="1" max="1" chance="2.5785" />	<!--Common Item - Avadon Circlet-->
+				<reward item_id="4072" min="1" max="1" chance="18.1244" />	<!--Avadon Circlet Pattern-->
+			</group>
+			<group chance="12.9005">
+				<reward item_id="1867" min="1" max="1" chance="44.7696" />	<!--Animal Skin-->
+				<reward item_id="1872" min="1" max="1" chance="44.7696" />	<!--Animal Bone-->
+				<reward item_id="1882" min="1" max="1" chance="7.4616" />	<!--Leather-->
+				<reward item_id="1894" min="1" max="1" chance="1.1781" />	<!--Crafted Leather-->
+				<reward item_id="4042" min="1" max="1" chance="0.5596" />	<!--Enria-->
+				<reward item_id="4130" min="1" max="1" chance="0.5451" />	<!--Recipe: Ring of Black Ore (100%)-->
+				<reward item_id="8728" min="1" max="1" chance="0.5596" />	<!--Life Stone -  Level 61-->
+				<reward item_id="8738" min="1" max="1" chance="0.1399" />	<!--Mid-Grade Life Stone -  Level 61-->
+				<reward item_id="8748" min="1" max="1" chance="0.0140" />	<!--High-Grade Life Stone -  Level 61-->
+				<reward item_id="8758" min="1" max="1" chance="0.0029" />	<!--Top-Grade Life Stone -  Level 61-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1867" min="1" max="5" chance="65.1751" />	<!--Animal Skin-->
+			<reward item_id="1872" min="1" max="5" chance="65.1751" />	<!--Animal Bone-->
+			<reward item_id="4613" min="1" max="1" chance="0.2023" />	<!--Greater Dye of STR <Str+4 Con-4>-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21815" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2089.923" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="7.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="560" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="295" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1127.4" />
+		<set name="baseMpReg" value="2.7" />
+		<set name="basePAtk" value="979" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="399" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="63" />
+		<set name="rewardExp" value="4763" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="430" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="646" max="1308" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="1.2079">
+				<reward item_id="12188" min="1" max="1" chance="2.6483" />	<!--Common Item - Sealed Doom Boots-->
+				<reward item_id="4099" min="1" max="1" chance="22.3517" />	<!--Sealed Doom Boots Part-->
+				<reward item_id="12189" min="1" max="1" chance="2.6483" />	<!--Common Item - Sealed Blue Wolf Boots-->
+				<reward item_id="4090" min="1" max="1" chance="22.3517" />	<!--Sealed Blue Wolf Boots Design-->
+				<reward item_id="12187" min="1" max="1" chance="2.6483" />	<!--Common Item - Sealed Doom Gloves-->
+				<reward item_id="4091" min="1" max="1" chance="22.3517" />	<!--Sealed Doom Gloves Part-->
+				<reward item_id="12190" min="1" max="1" chance="2.6483" />	<!--Common Item - Sealed Blue Wolf Gloves-->
+				<reward item_id="4096" min="1" max="1" chance="22.3517" />	<!--Sealed Blue Wolf Gloves Fabric-->
+			</group>
+			<group chance="12.5979">
+				<reward item_id="1868" min="1" max="1" chance="76.3825" />	<!--Thread-->
+				<reward item_id="1873" min="1" max="1" chance="15.2765" />	<!--Silver Nugget-->
+				<reward item_id="5549" min="1" max="1" chance="3.8191" />	<!--Metallic Thread-->
+				<reward item_id="1889" min="1" max="1" chance="2.5461" />	<!--Compound Braid-->
+				<reward item_id="4044" min="1" max="1" chance="1.2730" />	<!--Thons-->
+				<reward item_id="5230" min="1" max="1" chance="0.0509" />	<!--Recipe: Mithril Arrow (100%)-->
+				<reward item_id="8729" min="1" max="1" chance="0.5092" />	<!--Life Stone -  Level 64-->
+				<reward item_id="8739" min="1" max="1" chance="0.1273" />	<!--Mid-Grade Life Stone -  Level 64-->
+				<reward item_id="8749" min="1" max="1" chance="0.0127" />	<!--High-Grade Life Stone -  Level 64-->
+				<reward item_id="8759" min="1" max="1" chance="0.0027" />	<!--Top-Grade Life Stone -  Level 64-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="4052" min="1" max="1" chance="5.7668" />	<!--Earring of Black Ore Piece-->
+			<reward item_id="5230" min="1" max="1" chance="0.2172" />	<!--Recipe: Mithril Arrow (100%)-->
+			<reward item_id="4053" min="1" max="1" chance="6.9816" />	<!--Ring of Black Ore Gemstone-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21816" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2244.677" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="7.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="650" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="317" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1219.8" />
+		<set name="baseMpReg" value="2.7" />
+		<set name="basePAtk" value="1114" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="429" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="66" />
+		<set name="rewardExp" value="5227" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="492" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="714" max="1448" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="1.1779">
+				<reward item_id="12183" min="1" max="1" chance="3.8238" />	<!--Common Item - Doom Shield-->
+				<reward item_id="4077" min="1" max="1" chance="33.8862" />	<!--Doom Shield Fragment-->
+				<reward item_id="12202" min="1" max="1" chance="2.6760" />	<!--Common Item - Blue Wolf Helmet-->
+				<reward item_id="4088" min="1" max="1" chance="28.4690" />	<!--Blue Wolf Helmet Design-->
+				<reward item_id="12185" min="1" max="1" chance="2.6760" />	<!--Common Item - Doom Helmet-->
+				<reward item_id="4089" min="1" max="1" chance="28.4690" />	<!--Doom Helmet Pattern-->
+			</group>
+			<group chance="16.8454">
+				<reward item_id="1869" min="1" max="1" chance="31.6045" />	<!--Iron Ore-->
+				<reward item_id="1864" min="1" max="1" chance="63.2091" />	<!--Stem-->
+				<reward item_id="1880" min="1" max="1" chance="3.1605" />	<!--Steel-->
+				<reward item_id="5550" min="1" max="1" chance="0.4214" />	<!--Durable Metal Plate-->
+				<reward item_id="4043" min="1" max="1" chance="1.0535" />	<!--Asofe-->
+				<reward item_id="5434" min="1" max="1" chance="0.0117" />	<!--Recipe: Dragon Slayer(60%)-->
+				<reward item_id="8729" min="1" max="1" chance="0.4214" />	<!--Life Stone -  Level 64-->
+				<reward item_id="8739" min="1" max="1" chance="0.1053" />	<!--Mid-Grade Life Stone -  Level 64-->
+				<reward item_id="8749" min="1" max="1" chance="0.0105" />	<!--High-Grade Life Stone -  Level 64-->
+				<reward item_id="8759" min="1" max="1" chance="0.0021" />	<!--Top-Grade Life Stone -  Level 64-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="5438" min="1" max="1" chance="0.0985" />	<!--Recipe: Meteor Shower(60%)-->
+			<reward item_id="4054" min="1" max="1" chance="3.5501" />	<!--Necklace of Black Ore Beads-->
+			<reward item_id="5550" min="1" max="1" chance="2.4032" />	<!--Durable Metal Plate-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21817" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2395.455" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="7.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="747" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="340" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1314" />
+		<set name="baseMpReg" value="2.7" />
+		<set name="basePAtk" value="1255" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="460" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="69" />
+		<set name="rewardExp" value="5713" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="559" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="786" max="1596" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="0.8155">
+				<reward item_id="12224" min="1" max="1" chance="3.9179" />	<!--Common Item - Sealed Dark Crystal Boots-->
+				<reward item_id="5496" min="1" max="1" chance="21.0821" />	<!--Sealed Dark Crystal Boots Lining-->
+				<reward item_id="12231" min="1" max="1" chance="3.9179" />	<!--Common Item - Sealed Tallum Boots-->
+				<reward item_id="5497" min="1" max="1" chance="21.0821" />	<!--Sealed Tallum Boots Lining-->
+				<reward item_id="12221" min="1" max="1" chance="3.9179" />	<!--Common Item - Sealed Dark Crystal Gloves-->
+				<reward item_id="5508" min="1" max="1" chance="21.0821" />	<!--Sealed Dark Crystal Gloves Design-->
+				<reward item_id="12229" min="1" max="1" chance="3.9179" />	<!--Common Item - Sealed Tallum Gloves-->
+				<reward item_id="5509" min="1" max="1" chance="21.0821" />	<!--Sealed Tallum Gloves Design-->
+			</group>
+			<group chance="12.5994">
+				<reward item_id="1870" min="1" max="1" chance="46.5565" />	<!--Coal-->
+				<reward item_id="1865" min="1" max="1" chance="46.5565" />	<!--Varnish-->
+				<reward item_id="1874" min="1" max="1" chance="3.1038" />	<!--Oriharukon Ore-->
+				<reward item_id="4043" min="1" max="1" chance="1.5519" />	<!--Asofe-->
+				<reward item_id="4039" min="1" max="1" chance="1.5519" />	<!--Mold Glue-->
+				<reward item_id="5440" min="1" max="1" chance="0.0172" />	<!--Recipe: Elysian(60%)-->
+				<reward item_id="8730" min="1" max="1" chance="0.5173" />	<!--Life Stone -  Level 67-->
+				<reward item_id="8740" min="1" max="1" chance="0.1293" />	<!--Mid-Grade Life Stone -  Level 67-->
+				<reward item_id="8750" min="1" max="1" chance="0.0129" />	<!--High-Grade Life Stone -  Level 67-->
+				<reward item_id="8760" min="1" max="1" chance="0.0027" />	<!--Top-Grade Life Stone -  Level 67-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1874" min="1" max="1" chance="13.2389" />	<!--Oriharukon Ore-->
+			<reward item_id="5478" min="1" max="1" chance="1.6699" />	<!--Sealed Dark Crystal Leather Armor Pattern-->
+			<reward item_id="5434" min="1" max="1" chance="0.0735" />	<!--Recipe: Dragon Slayer(60%)-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21818" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2540.153" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="8.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="850" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="363" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1410" />
+		<set name="baseMpReg" value="3" />
+		<set name="basePAtk" value="1402" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="492" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="72" />
+		<set name="rewardExp" value="6221" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="632" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+			<skill id="4789" level="2" />	<!--NPC High Level-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="860" max="1756" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="0.6641">
+				<reward item_id="12225" min="1" max="1" chance="6.7053" />	<!--Common Item - Sealed Dark Crystal Shield-->
+				<reward item_id="5494" min="1" max="1" chance="33.9386" />	<!--Sealed Dark Crystal Shield Fragment-->
+				<reward item_id="12226" min="1" max="1" chance="4.6976" />	<!--Common Item - Sealed Dark Crystal Helmet-->
+				<reward item_id="5525" min="1" max="1" chance="24.9804" />	<!--Sealed Dark Crystal Helmet Design-->
+				<reward item_id="12234" min="1" max="1" chance="4.6976" />	<!--Common Item - Sealed Tallum Helmet-->
+				<reward item_id="5526" min="1" max="1" chance="24.9805" />	<!--Sealed Tallum Helm Design-->
+			</group>
+			<group chance="11.2726">
+				<reward item_id="1871" min="1" max="1" chance="57.1238" />	<!--Charcoal-->
+				<reward item_id="1866" min="1" max="1" chance="38.0825" />	<!--Suede-->
+				<reward item_id="1877" min="1" max="1" chance="2.2850" />	<!--Adamantite Nugget-->
+				<reward item_id="4041" min="1" max="1" chance="0.4967" />	<!--Mold Hardener-->
+				<reward item_id="4040" min="1" max="1" chance="1.1425" />	<!--Mold Lubricant-->
+				<reward item_id="6901" min="1" max="1" chance="0.0571" />	<!--Recipe: Shining Arrow (100%)-->
+				<reward item_id="8730" min="1" max="1" chance="0.6347" />	<!--Life Stone -  Level 67-->
+				<reward item_id="8740" min="1" max="1" chance="0.1587" />	<!--Mid-Grade Life Stone -  Level 67-->
+				<reward item_id="8750" min="1" max="1" chance="0.0159" />	<!--High-Grade Life Stone -  Level 67-->
+				<reward item_id="8760" min="1" max="1" chance="0.0031" />	<!--Top-Grade Life Stone -  Level 67-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="5479" min="1" max="1" chance="1.0319" />	<!--Sealed Tallum Leather Armor Pattern-->
+			<reward item_id="5440" min="1" max="1" chance="0.0646" />	<!--Recipe: Elysian(60%)-->
+			<reward item_id="5482" min="1" max="1" chance="2.3018" />	<!--Sealed Dark Crystal Leggings Design-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21819" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2676.659" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="8.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="958" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="387" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1507.8" />
+		<set name="baseMpReg" value="3" />
+		<set name="basePAtk" value="1551" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="524" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="75" />
+		<set name="rewardExp" value="6750" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="712" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+			<skill id="4789" level="4" />	<!--NPC High Level-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="941" max="1920" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="0.9792">
+				<reward item_id="12224" min="1" max="1" chance="3.9179" />	<!--Common Item - Sealed Dark Crystal Boots-->
+				<reward item_id="5496" min="1" max="1" chance="21.0821" />	<!--Sealed Dark Crystal Boots Lining-->
+				<reward item_id="12231" min="1" max="1" chance="3.9179" />	<!--Common Item - Sealed Tallum Boots-->
+				<reward item_id="5497" min="1" max="1" chance="21.0821" />	<!--Sealed Tallum Boots Lining-->
+				<reward item_id="12221" min="1" max="1" chance="3.9179" />	<!--Common Item - Sealed Dark Crystal Gloves-->
+				<reward item_id="5508" min="1" max="1" chance="21.0821" />	<!--Sealed Dark Crystal Gloves Design-->
+				<reward item_id="12229" min="1" max="1" chance="3.9179" />	<!--Common Item - Sealed Tallum Gloves-->
+				<reward item_id="5509" min="1" max="1" chance="21.0821" />	<!--Sealed Tallum Gloves Design-->
+			</group>
+			<group chance="20.3394">
+				<reward item_id="1872" min="1" max="1" chance="46.1735" />	<!--Animal Bone-->
+				<reward item_id="1867" min="1" max="1" chance="46.1735" />	<!--Animal Skin-->
+				<reward item_id="1881" min="1" max="1" chance="4.6174" />	<!--Coarse Bone Powder-->
+				<reward item_id="1875" min="1" max="1" chance="2.3087" />	<!--Stone of Purity-->
+				<reward item_id="4041" min="1" max="1" chance="0.3011" />	<!--Mold Hardener-->
+				<reward item_id="1808" min="1" max="1" chance="0.0154" />	<!--Recipe: Soulshot (S-Grade)-->
+				<reward item_id="8731" min="1" max="1" chance="0.3206" />	<!--Life Stone -  Level 70-->
+				<reward item_id="8741" min="1" max="1" chance="0.0802" />	<!--Mid-Grade Life Stone -  Level 70-->
+				<reward item_id="8751" min="1" max="1" chance="0.0080" />	<!--High-Grade Life Stone -  Level 70-->
+				<reward item_id="8761" min="1" max="1" chance="0.0016" />	<!--Top-Grade Life Stone -  Level 70-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1875" min="1" max="1" chance="12.7175" />	<!--Stone of Purity-->
+			<reward item_id="4041" min="1" max="1" chance="1.6588" />	<!--Mold Hardener-->
+			<reward item_id="5480" min="1" max="1" chance="0.8560" />	<!--Sealed Leather Armor of Nightmare Fabric-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21820" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2802.9" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="8.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="1069" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="411" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1607.4" />
+		<set name="baseMpReg" value="3" />
+		<set name="basePAtk" value="1701" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="556" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="78" />
+		<set name="rewardExp" value="7301" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="799" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+			<skill id="4789" level="5" />	<!--NPC High Level-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="1025" max="2092" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="0.7914">
+				<reward item_id="12225" min="1" max="1" chance="6.7053" />	<!--Common Item - Sealed Dark Crystal Shield-->
+				<reward item_id="5494" min="1" max="1" chance="33.9386" />	<!--Sealed Dark Crystal Shield Fragment-->
+				<reward item_id="12226" min="1" max="1" chance="4.6976" />	<!--Common Item - Sealed Dark Crystal Helmet-->
+				<reward item_id="5525" min="1" max="1" chance="24.9804" />	<!--Sealed Dark Crystal Helmet Design-->
+				<reward item_id="12234" min="1" max="1" chance="4.6976" />	<!--Common Item - Sealed Tallum Helmet-->
+				<reward item_id="5526" min="1" max="1" chance="24.9805" />	<!--Sealed Tallum Helm Design-->
+			</group>
+			<group chance="31.9475">
+				<reward item_id="1873" min="1" max="1" chance="9.6074" />	<!--Silver Nugget-->
+				<reward item_id="1868" min="1" max="1" chance="48.0371" />	<!--Thread-->
+				<reward item_id="1876" min="1" max="1" chance="4.8037" />	<!--Mithril Ore-->
+				<reward item_id="1895" min="1" max="1" chance="6.8624" />	<!--Metallic Fiber-->
+				<reward item_id="4042" min="1" max="1" chance="0.4003" />	<!--Enria-->
+				<reward item_id="3036" min="1" max="1" chance="0.0107" />	<!--Recipe: Spiritshot S-->
+				<reward item_id="8732" min="1" max="1" chance="0.2002" />	<!--Life Stone -  Level 76-->
+				<reward item_id="8742" min="1" max="1" chance="0.0500" />	<!--Mid-Grade Life Stone -  Level 76-->
+				<reward item_id="8752" min="1" max="1" chance="0.0050" />	<!--High-Grade Life Stone -  Level 76-->
+				<reward item_id="1344" min="10" max="30" chance="30.0232" />	<!--Mithril Arrow-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="6901" min="1" max="1" chance="0.2078" />	<!--Recipe: Shining Arrow (100%)-->
+			<reward item_id="5481" min="1" max="1" chance="0.9325" />	<!--Sealed Majestic Leather Armor Fabric-->
+			<reward item_id="1808" min="1" max="1" chance="0.0924" />	<!--Recipe: Soulshot (S-Grade)-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21821" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="3004.406" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="8.755" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="1211" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="440" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1760.064" />
+		<set name="baseMpReg" value="3.09" />
+		<set name="basePAtk" value="1870" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="594" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="78" />
+		<set name="rewardExp" value="7873" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="894" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+			<skill id="4789" level="7" />	<!--NPC High Level-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="1110" max="2273" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="0.8168">
+				<reward item_id="12267" min="1" max="1" chance="3.4690" />	<!--Common Item - Sealed Boots of Nightmare-->
+				<reward item_id="5502" min="1" max="1" chance="21.5310" />	<!--Sealed Boots of Nightmare Lining-->
+				<reward item_id="12260" min="1" max="1" chance="3.4690" />	<!--Common Item - Sealed Majestic Boots-->
+				<reward item_id="5503" min="1" max="1" chance="21.5310" />	<!--Sealed Majestic Boots Lining-->
+				<reward item_id="12264" min="1" max="1" chance="3.4690" />	<!--Common Item - Sealed Gauntlet of Nightmare-->
+				<reward item_id="5514" min="1" max="1" chance="21.5310" />	<!--Sealed Gauntlets of Nightmare Design-->
+				<reward item_id="12257" min="1" max="1" chance="3.4690" />	<!--Common Item - Sealed Majestic Gauntlet-->
+				<reward item_id="5515" min="1" max="1" chance="21.5310" />	<!--Sealed Majestic Gauntlets Design-->
+			</group>
+			<group chance="1.2611">
+				<reward item_id="1894" min="1" max="1" chance="28.9706" />	<!--Crafted Leather-->
+				<reward item_id="4039" min="1" max="1" chance="27.5220" />	<!--Mold Glue-->
+				<reward item_id="4041" min="1" max="1" chance="7.1797" />	<!--Mold Hardener-->
+				<reward item_id="4044" min="1" max="1" chance="27.5220" />	<!--Thons-->
+				<reward item_id="959" min="1" max="1" chance="0.0330" />	<!--Scroll: Enchant Weapon (S-Grade)-->
+				<reward item_id="8732" min="1" max="1" chance="6.8805" />	<!--Life Stone -  Level 76-->
+				<reward item_id="8742" min="1" max="1" chance="1.7201" />	<!--Mid-Grade Life Stone -  Level 76-->
+				<reward item_id="8752" min="1" max="1" chance="0.1721" />	<!--High-Grade Life Stone -  Level 76-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="5487" min="1" max="1" chance="1.0159" />	<!--Sealed Robe of Nightmare Fabric-->
+			<reward item_id="4039" min="1" max="1" chance="7.5202" />	<!--Mold Glue-->
+			<reward item_id="4041" min="1" max="1" chance="1.9618" />	<!--Mold Hardener-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21822" name="Treasure Chest" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="3137.494" />
+		<set name="baseHpRate" value="1" />
+		<set name="baseHpReg" value="8.84" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="1338" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="465" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1884.48" />
+		<set name="baseMpReg" value="3.12" />
+		<set name="basePAtk" value="2022" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="629" />
+		<set name="baseRunSpd" value="165" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="80" />
+		<set name="collision_height" value="8.5" />
+		<set name="collision_radius" value="8.5" />
+		<set name="level" value="80" />
+		<set name="rewardExp" value="8467" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="996" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<ai_params>
+			<set name="noRandomWalk" value="true" />
+		</ai_params>
+		<skills>
+			<skill id="4045" level="1" />	<!--Resist Full Magic Attack-->
+			<skill id="4408" level="1" />	<!--HP Increase (1x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="5" />	<!--Blunt Weapons-->
+			<skill id="4416" level="2" />	<!--Magic Creatures-->
+			<skill id="4789" level="8" />	<!--NPC High Level-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="1200" max="2449" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="0.6788">
+				<reward item_id="12268" min="1" max="1" chance="5.7237" />	<!--Common Item - Sealed Shield of Nightmare-->
+				<reward item_id="5495" min="1" max="1" chance="33.5054" />	<!--Sealed Shield of Nightmare Fragment-->
+				<reward item_id="12269" min="1" max="1" chance="4.0045" />	<!--Common Item - Sealed Helm of Nightmare-->
+				<reward item_id="5527" min="1" max="1" chance="26.3809" />	<!--Sealed Helm of Nightmare Design-->
+				<reward item_id="12261" min="1" max="1" chance="4.0045" />	<!--Common Item - Sealed Majestic Circlet-->
+				<reward item_id="5528" min="1" max="1" chance="26.3810" />	<!--Sealed Majestic Circlet Design-->
+			</group>
+			<group chance="4.1197">
+				<reward item_id="1895" min="1" max="1" chance="77.9066" />	<!--Metallic Fiber-->
+				<reward item_id="4040" min="1" max="1" chance="5.4535" />	<!--Mold Lubricant-->
+				<reward item_id="4042" min="1" max="1" chance="4.5446" />	<!--Enria-->
+				<reward item_id="4043" min="1" max="1" chance="9.0891" />	<!--Asofe-->
+				<reward item_id="960" min="1" max="1" chance="0.1091" />	<!--Scroll: Enchant Armor (S-Grade)-->
+				<reward item_id="8732" min="1" max="1" chance="2.2723" />	<!--Life Stone -  Level 76-->
+				<reward item_id="8742" min="1" max="1" chance="0.5681" />	<!--Mid-Grade Life Stone -  Level 76-->
+				<reward item_id="8752" min="1" max="1" chance="0.0567" />	<!--High-Grade Life Stone -  Level 76-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="6688" min="1" max="1" chance="0.5261" />	<!--Forgotten Blade Edge-->
+			<reward item_id="6689" min="1" max="1" chance="0.5162" />	<!--Basalt Battlehammer Head-->
+			<reward item_id="6690" min="1" max="1" chance="0.5271" />	<!--Imperial Staff Head-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21823" name="Executor of Sacrificial Offerings" title="">
+		<set name="aggroRange" value="0" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="40" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2937.984" />
+		<set name="baseHpRate" value="6" />
+		<set name="baseHpReg" value="8.67" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="1163" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="430" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1708.296" />
+		<set name="baseMpReg" value="3.06" />
+		<set name="basePAtk" value="1814" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="581" />
+		<set name="baseRunSpd" value="190" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="170" />
+		<set name="baseShldRate" value="20" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="39" />
+		<set name="collision_height" value="30.0" />
+		<set name="collision_radius" value="7.0" />
+		<set name="level" value="78" />
+		<set name="rewardExp" value="72252" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="8110" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="Monster" />
+		<faction name="tomb_clan" range="300"/>
+		<equip>
+			<rhand item_id="134" />	<!--Sword of Nightmare-->
+			<lhand item_id="6721" />	<!--Monster Only(Shield of Imperial Warlord Zombie)-->
+		</equip>
+		<skills>
+			<skill id="4077" level="9" />	<!--NPC Aura Burn-->
+			<skill id="4078" level="9" />	<!--NPC Flamestrike-->
+			<skill id="4275" level="2" />	<!--Sacred Attack Weak Point-->
+			<skill id="4278" level="1" />	<!--Dark Attack-->
+			<skill id="4285" level="5" />	<!--Resist Sleep Attacks-->
+			<skill id="4287" level="5" />	<!--Resist Hold Attacks-->
+			<skill id="4408" level="14" />	<!--HP Increase (6x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="11" />	<!--Average P. Atk.-->
+			<skill id="4411" level="11" />	<!--Average M. Atk.-->
+			<skill id="4412" level="11" />	<!--Average P. Def.-->
+			<skill id="4413" level="11" />	<!--Average M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="3" />	<!--One-handed Sword-->
+			<skill id="4416" level="1" />	<!--Undead-->
+			<skill id="4613" level="9" />	<!--NPC Clan Heal-->
+			<skill id="4789" level="6" />	<!--NPC High Level-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="100.0">
+				<reward item_id="57" min="10189" max="20801" chance="100.0000" />	<!--Adena-->
+			</group>
+			<group chance="1.1154">
+				<reward item_id="11975" min="1" max="1" chance="6.0817" />	<!--Common Item - Soul Bow-->
+				<reward item_id="5534" min="1" max="1" chance="93.9183" />	<!--Soul Bow Stave-->
+			</group>
+			<group chance="11.5533">
+				<reward item_id="1894" min="1" max="1" chance="28.9706" />	<!--Crafted Leather-->
+				<reward item_id="4039" min="1" max="1" chance="27.5220" />	<!--Mold Glue-->
+				<reward item_id="4041" min="1" max="1" chance="7.1797" />	<!--Mold Hardener-->
+				<reward item_id="4044" min="1" max="1" chance="27.5220" />	<!--Thons-->
+				<reward item_id="959" min="1" max="1" chance="0.0330" />	<!--Scroll: Enchant Weapon (S-Grade)-->
+				<reward item_id="8732" min="1" max="1" chance="6.8805" />	<!--Life Stone -  Level 76-->
+				<reward item_id="8742" min="1" max="1" chance="1.7201" />	<!--Mid-Grade Life Stone -  Level 76-->
+				<reward item_id="8752" min="1" max="1" chance="0.1721" />	<!--High-Grade Life Stone -  Level 76-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1894" min="1" max="1" chance="72.5194" />	<!--Crafted Leather-->
+			<reward item_id="4039" min="1" max="1" chance="68.8934" />	<!--Mold Glue-->
+			<reward item_id="5480" min="1" max="1" chance="9.2742" />	<!--Sealed Leather Armor of Nightmare Fabric-->
+		</rewardlist>
+		<attributes>
+			<attack attribute="unholy" value="20" />
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="unholy" value="53" />
+		</attributes>
+	</npc>
+	<npc id="21824" name="Alpen Kookaburra" title="">
+		<set name="aggroRange" value="150" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2193.431" />
+		<set name="baseHpRate" value="4" />
+		<set name="baseHpReg" value="7.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="619" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="309" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1188.8" />
+		<set name="baseMpReg" value="2.7" />
+		<set name="basePAtk" value="1068" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="419" />
+		<set name="baseRunSpd" value="170" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="20" />
+		<set name="collision_height" value="31.0" />
+		<set name="collision_radius" value="20.0" />
+		<set name="level" value="65" />
+		<set name="rewardExp" value="30997" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="2880" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="FeedableBeast" />
+		<faction name="pet_clan" range="300"/>
+		<skills>
+			<skill id="4408" level="12" />	<!--HP Increase (4x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="14" />	<!--Strong P. Atk.-->
+			<skill id="4411" level="14" />	<!--Strong M. Atk.-->
+			<skill id="4412" level="8" />	<!--Weak P. Def.-->
+			<skill id="4413" level="8" />	<!--Weak M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="3" />	<!--One-handed Sword-->
+			<skill id="4416" level="3" />	<!--Beasts-->
+			<skill id="4438" level="2" />	<!--Greater Resist Sleep-->
+			<skill id="4589" level="6" />	<!--Decrease Speed-->
+			<skill id="4600" level="6" />	<!--Reducing P. Def Stun-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="0.6835">
+				<reward item_id="171" min="1" max="1" chance="0.0913" />	<!--Deadman's Glory-->
+				<reward item_id="4116" min="1" max="1" chance="20.1270" />	<!--Deadman's Glory Stone-->
+				<reward item_id="175" min="1" max="1" chance="0.0913" />	<!--Art of Battle Axe-->
+				<reward item_id="4117" min="1" max="1" chance="20.1270" />	<!--Art of Battle Axe Blade-->
+				<reward item_id="210" min="1" max="1" chance="0.0913" />	<!--Staff of Evil Spirits-->
+				<reward item_id="4118" min="1" max="1" chance="19.0692" />	<!--Evil Spirit Head-->
+				<reward item_id="7893" min="1" max="1" chance="0.0913" />	<!--Kaim Vanul's Bones-->
+				<reward item_id="8340" min="1" max="1" chance="20.1270" />	<!--Bones Head of Kaim Vanul-->
+				<reward item_id="7901" min="1" max="1" chance="0.0913" />	<!--Star Buster-->
+				<reward item_id="8348" min="1" max="1" chance="20.0933" />	<!--Star Buster Head-->
+			</group>
+			<group chance="4.4655">
+				<reward item_id="1894" min="1" max="1" chance="27.4922" />	<!--Crafted Leather-->
+				<reward item_id="4039" min="1" max="1" chance="26.1176" />	<!--Mold Glue-->
+				<reward item_id="4041" min="1" max="1" chance="6.8133" />	<!--Mold Hardener-->
+				<reward item_id="4044" min="1" max="1" chance="26.1176" />	<!--Thons-->
+				<reward item_id="729" min="1" max="1" chance="0.0871" />	<!--Scroll: Enchant Weapon (A-Grade)-->
+				<reward item_id="8729" min="1" max="1" chance="10.4470" />	<!--Life Stone -  Level 64-->
+				<reward item_id="8739" min="1" max="1" chance="2.6118" />	<!--Mid-Grade Life Stone -  Level 64-->
+				<reward item_id="8749" min="1" max="1" chance="0.2612" />	<!--High-Grade Life Stone -  Level 64-->
+				<reward item_id="8759" min="1" max="1" chance="0.0522" />	<!--Top-Grade Life Stone -  Level 64-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1894" min="1" max="1" chance="37.4050" />	<!--Crafted Leather-->
+			<reward item_id="4052" min="1" max="1" chance="37.7427" />	<!--Earring of Black Ore Piece-->
+			<reward item_id="1807" min="1" max="1" chance="1.4214" />	<!--Recipe: Soulshot (A-Grade)-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21825" name="Alpen Kookaburra" title="">
+		<set name="aggroRange" value="150" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2193.431" />
+		<set name="baseHpRate" value="4" />
+		<set name="baseHpReg" value="7.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="619" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="309" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1188.8" />
+		<set name="baseMpReg" value="2.7" />
+		<set name="basePAtk" value="1068" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="419" />
+		<set name="baseRunSpd" value="170" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="20" />
+		<set name="collision_height" value="31.0" />
+		<set name="collision_radius" value="20.0" />
+		<set name="level" value="65" />
+		<set name="rewardExp" value="29568" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="2747" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="FeedableBeast" />
+		<faction name="pet_clan" range="300"/>
+		<skills>
+			<skill id="4160" level="6" />	<!--NPC Aura Burn - Magic-->
+			<skill id="4408" level="12" />	<!--HP Increase (4x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="14" />	<!--Strong P. Atk.-->
+			<skill id="4411" level="14" />	<!--Strong M. Atk.-->
+			<skill id="4412" level="8" />	<!--Weak P. Def.-->
+			<skill id="4413" level="8" />	<!--Weak M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="3" />	<!--One-handed Sword-->
+			<skill id="4416" level="3" />	<!--Beasts-->
+			<skill id="4438" level="2" />	<!--Greater Resist Sleep-->
+			<skill id="4566" level="1" />	<!--NPC Eruption - Magic-->
+			<skill id="4571" level="1" />	<!--NPC Blazing Circle-->
+			<skill id="4657" level="1" />	<!--Hold-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="2.2676">
+				<reward item_id="358" min="1" max="1" chance="0.1784" />	<!--Blue Wolf Breastplate-->
+				<reward item_id="4078" min="1" max="1" chance="32.2503" />	<!--Blue Wolf Breastplate Part-->
+				<reward item_id="2380" min="1" max="1" chance="0.2854" />	<!--Blue Wolf Gaiters-->
+				<reward item_id="4080" min="1" max="1" chance="45.4152" />	<!--Blue Wolf Gaiters Material-->
+				<reward item_id="2381" min="1" max="1" chance="0.1098" />	<!--Doom Plate Armor-->
+				<reward item_id="4081" min="1" max="1" chance="21.7609" />	<!--Doom Plate Armor Temper-->
+			</group>
+			<group chance="29.785">
+				<reward item_id="1869" min="2" max="6" chance="22.9199" />	<!--Iron Ore-->
+				<reward item_id="1864" min="5" max="15" chance="18.3359" />	<!--Stem-->
+				<reward item_id="1880" min="1" max="1" chance="9.1679" />	<!--Steel-->
+				<reward item_id="5550" min="1" max="1" chance="1.2224" />	<!--Durable Metal Plate-->
+				<reward item_id="4043" min="1" max="1" chance="3.0560" />	<!--Asofe-->
+				<reward item_id="730" min="1" max="1" chance="0.0764" />	<!--Scroll: Enchant Armor (A-Grade)-->
+				<reward item_id="8729" min="1" max="1" chance="1.2224" />	<!--Life Stone -  Level 64-->
+				<reward item_id="8739" min="1" max="1" chance="0.3056" />	<!--Mid-Grade Life Stone -  Level 64-->
+				<reward item_id="8749" min="1" max="1" chance="0.0306" />	<!--High-Grade Life Stone -  Level 64-->
+				<reward item_id="8759" min="1" max="1" chance="0.0061" />	<!--Top-Grade Life Stone -  Level 64-->
+				<reward item_id="1343" min="30" max="90" chance="43.6568" />	<!--Silver Arrow-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="4053" min="1" max="1" chance="43.5874" />	<!--Ring of Black Ore Gemstone-->
+			<reward item_id="3035" min="1" max="1" chance="1.3559" />	<!--Recipe: Spiritshot A-->
+			<reward item_id="4054" min="1" max="1" chance="20.0294" />	<!--Necklace of Black Ore Beads-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21826" name="Alpen Buffalo" title="">
+		<set name="aggroRange" value="150" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2295.482" />
+		<set name="baseHpRate" value="4" />
+		<set name="baseHpReg" value="7.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="681" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="325" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1251" />
+		<set name="baseMpReg" value="2.7" />
+		<set name="basePAtk" value="1160" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="439" />
+		<set name="baseRunSpd" value="170" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="20" />
+		<set name="collision_height" value="31.0" />
+		<set name="collision_radius" value="20.0" />
+		<set name="level" value="67" />
+		<set name="rewardExp" value="32934" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="3137" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="FeedableBeast" />
+		<faction name="pet_clan" range="300"/>
+		<skills>
+			<skill id="4408" level="12" />	<!--HP Increase (4x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="14" />	<!--Strong P. Atk.-->
+			<skill id="4411" level="14" />	<!--Strong M. Atk.-->
+			<skill id="4412" level="8" />	<!--Weak P. Def.-->
+			<skill id="4413" level="8" />	<!--Weak M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="6" />	<!--Blunt Weapons-->
+			<skill id="4416" level="3" />	<!--Beasts-->
+			<skill id="4438" level="2" />	<!--Greater Resist Sleep-->
+			<skill id="4589" level="6" />	<!--Decrease Speed-->
+			<skill id="4600" level="6" />	<!--Reducing P. Def Stun-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="2.5383">
+				<reward item_id="358" min="1" max="1" chance="0.1784" />	<!--Blue Wolf Breastplate-->
+				<reward item_id="4078" min="1" max="1" chance="32.2503" />	<!--Blue Wolf Breastplate Part-->
+				<reward item_id="2380" min="1" max="1" chance="0.2854" />	<!--Blue Wolf Gaiters-->
+				<reward item_id="4080" min="1" max="1" chance="45.4152" />	<!--Blue Wolf Gaiters Material-->
+				<reward item_id="2381" min="1" max="1" chance="0.1098" />	<!--Doom Plate Armor-->
+				<reward item_id="4081" min="1" max="1" chance="21.7609" />	<!--Doom Plate Armor Temper-->
+			</group>
+			<group chance="33.2393">
+				<reward item_id="1870" min="1" max="3" chance="50.5775" />	<!--Coal-->
+				<reward item_id="1865" min="1" max="3" chance="33.7184" />	<!--Varnish-->
+				<reward item_id="1874" min="1" max="1" chance="6.7437" />	<!--Oriharukon Ore-->
+				<reward item_id="4043" min="1" max="1" chance="3.3718" />	<!--Asofe-->
+				<reward item_id="4039" min="1" max="1" chance="3.3718" />	<!--Mold Glue-->
+				<reward item_id="6339" min="1" max="1" chance="0.7781" />	<!--Recipe: Sealed Majestic Ring(70%)-->
+				<reward item_id="8730" min="1" max="1" chance="1.1239" />	<!--Life Stone -  Level 67-->
+				<reward item_id="8740" min="1" max="1" chance="0.2810" />	<!--Mid-Grade Life Stone -  Level 67-->
+				<reward item_id="8750" min="1" max="1" chance="0.0281" />	<!--High-Grade Life Stone -  Level 67-->
+				<reward item_id="8760" min="1" max="1" chance="0.0057" />	<!--Top-Grade Life Stone -  Level 67-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="1874" min="1" max="1" chance="75.8857" />	<!--Oriharukon Ore-->
+			<reward item_id="4043" min="1" max="1" chance="37.9428" />	<!--Asofe-->
+			<reward item_id="4077" min="1" max="1" chance="51.2049" />	<!--Doom Shield Fragment-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21827" name="Alpen Buffalo" title="">
+		<set name="aggroRange" value="150" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2295.482" />
+		<set name="baseHpRate" value="4" />
+		<set name="baseHpReg" value="7.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="681" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="325" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1251" />
+		<set name="baseMpReg" value="2.7" />
+		<set name="basePAtk" value="1160" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="439" />
+		<set name="baseRunSpd" value="170" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="20" />
+		<set name="collision_height" value="31.0" />
+		<set name="collision_radius" value="20.0" />
+		<set name="level" value="67" />
+		<set name="rewardExp" value="31415" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="2992" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="FeedableBeast" />
+		<faction name="pet_clan" range="300"/>
+		<skills>
+			<skill id="4160" level="6" />	<!--NPC Aura Burn - Magic-->
+			<skill id="4408" level="12" />	<!--HP Increase (4x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="14" />	<!--Strong P. Atk.-->
+			<skill id="4411" level="14" />	<!--Strong M. Atk.-->
+			<skill id="4412" level="8" />	<!--Weak P. Def.-->
+			<skill id="4413" level="8" />	<!--Weak M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="6" />	<!--Blunt Weapons-->
+			<skill id="4416" level="3" />	<!--Beasts-->
+			<skill id="4438" level="2" />	<!--Greater Resist Sleep-->
+			<skill id="4566" level="1" />	<!--NPC Eruption - Magic-->
+			<skill id="4571" level="1" />	<!--NPC Blazing Circle-->
+			<skill id="4657" level="1" />	<!--Hold-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="0.7049">
+				<reward item_id="79" min="1" max="1" chance="0.1503" />	<!--Sword of Damascus-->
+				<reward item_id="4114" min="1" max="1" chance="33.2016" />	<!--Sword of Damascus Blade-->
+				<reward item_id="7883" min="1" max="1" chance="0.1503" />	<!--Guardian Sword-->
+				<reward item_id="8330" min="1" max="1" chance="33.1458" />	<!--Guardian Sword Blade-->
+				<reward item_id="7889" min="1" max="1" chance="0.1503" />	<!--Wizard's Tear-->
+				<reward item_id="8336" min="1" max="1" chance="33.2017" />	<!--Blade of the Wizard's Tear-->
+			</group>
+			<group chance="36.7925">
+				<reward item_id="1871" min="1" max="3" chance="26.4160" />	<!--Charcoal-->
+				<reward item_id="1866" min="1" max="1" chance="52.8321" />	<!--Suede-->
+				<reward item_id="1877" min="1" max="1" chance="3.1699" />	<!--Adamantite Nugget-->
+				<reward item_id="4041" min="1" max="1" chance="0.6891" />	<!--Mold Hardener-->
+				<reward item_id="4040" min="1" max="1" chance="1.5850" />	<!--Mold Lubricant-->
+				<reward item_id="5456" min="1" max="1" chance="0.0294" />	<!--Recipe: Tallum Glaive(60%)-->
+				<reward item_id="8730" min="1" max="1" chance="0.8805" />	<!--Life Stone -  Level 67-->
+				<reward item_id="8740" min="1" max="1" chance="0.2201" />	<!--Mid-Grade Life Stone -  Level 67-->
+				<reward item_id="8750" min="1" max="1" chance="0.0220" />	<!--High-Grade Life Stone -  Level 67-->
+				<reward item_id="8760" min="1" max="1" chance="0.0044" />	<!--Top-Grade Life Stone -  Level 67-->
+				<reward item_id="1343" min="80" max="240" chance="14.1515" />	<!--Silver Arrow-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="3956" min="1" max="1" chance="1.4477" />	<!--Recipe: Blessed Spiritshot A-->
+			<reward item_id="4078" min="1" max="1" chance="15.8605" />	<!--Blue Wolf Breastplate Part-->
+			<reward item_id="5156" min="1" max="1" chance="1.4477" />	<!--Recipe: Soulshot (A) Compressed Package (100%)-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21828" name="Alpen Cougar" title="">
+		<set name="aggroRange" value="150" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2395.455" />
+		<set name="baseHpRate" value="4" />
+		<set name="baseHpReg" value="7.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="747" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="340" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1314" />
+		<set name="baseMpReg" value="2.7" />
+		<set name="basePAtk" value="1255" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="460" />
+		<set name="baseRunSpd" value="170" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="20" />
+		<set name="collision_height" value="31.0" />
+		<set name="collision_radius" value="20.0" />
+		<set name="level" value="69" />
+		<set name="rewardExp" value="34929" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="3418" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="FeedableBeast" />
+		<faction name="pet_clan" range="300"/>
+		<skills>
+			<skill id="4408" level="12" />	<!--HP Increase (4x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="14" />	<!--Strong P. Atk.-->
+			<skill id="4411" level="14" />	<!--Strong M. Atk.-->
+			<skill id="4412" level="8" />	<!--Weak P. Def.-->
+			<skill id="4413" level="8" />	<!--Weak M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="3" />	<!--One-handed Sword-->
+			<skill id="4416" level="3" />	<!--Beasts-->
+			<skill id="4438" level="2" />	<!--Greater Resist Sleep-->
+			<skill id="4589" level="6" />	<!--Decrease Speed-->
+			<skill id="4600" level="6" />	<!--Reducing P. Def Stun-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="0.6086">
+				<reward item_id="212" min="1" max="1" chance="0.1045" />	<!--Dasparion's Staff-->
+				<reward item_id="5543" min="1" max="1" chance="25.0791" />	<!--Dasparion's Staff Head-->
+				<reward item_id="2504" min="1" max="1" chance="0.1045" />	<!--Meteor Shower-->
+				<reward item_id="5532" min="1" max="1" chance="24.8449" />	<!--Meteor Shower Head-->
+				<reward item_id="7894" min="1" max="1" chance="0.1045" />	<!--Spiritual Eye-->
+				<reward item_id="8341" min="1" max="1" chance="24.8131" />	<!--Spiritual Eye Piece-->
+				<reward item_id="7899" min="1" max="1" chance="0.1045" />	<!--Destroyer Hammer-->
+				<reward item_id="8346" min="1" max="1" chance="24.8449" />	<!--Hammer Piece of Destroyer-->
+			</group>
+			<group chance="39.4936">
+				<reward item_id="1865" min="1" max="3" chance="45.4026" />	<!--Varnish-->
+				<reward item_id="1870" min="1" max="3" chance="30.2684" />	<!--Coal-->
+				<reward item_id="1879" min="1" max="1" chance="15.1342" />	<!--Cokes-->
+				<reward item_id="1875" min="1" max="1" chance="6.0537" />	<!--Stone of Purity-->
+				<reward item_id="4040" min="1" max="1" chance="1.8161" />	<!--Mold Lubricant-->
+				<reward item_id="5450" min="1" max="1" chance="0.0336" />	<!--Recipe: Dragon Grinder(60%)-->
+				<reward item_id="8730" min="1" max="1" chance="1.0089" />	<!--Life Stone -  Level 67-->
+				<reward item_id="8740" min="1" max="1" chance="0.2522" />	<!--Mid-Grade Life Stone -  Level 67-->
+				<reward item_id="8750" min="1" max="1" chance="0.0252" />	<!--High-Grade Life Stone -  Level 67-->
+				<reward item_id="8760" min="1" max="1" chance="0.0051" />	<!--Top-Grade Life Stone -  Level 67-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="5478" min="1" max="1" chance="10.2093" />	<!--Sealed Dark Crystal Leather Armor Pattern-->
+			<reward item_id="729" min="1" max="1" chance="0.1349" />	<!--Scroll: Enchant Weapon (A-Grade)-->
+			<reward item_id="1875" min="1" max="1" chance="80.9392" />	<!--Stone of Purity-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+	<npc id="21829" name="Alpen Cougar" title="">
+		<set name="aggroRange" value="150" />
+		<set name="ai_type" value="Fighter" />
+		<set name="baseAtkRange" value="40" />
+		<set name="baseCON" value="43" />
+		<set name="baseCritRate" value="10" />
+		<set name="baseDEX" value="30" />
+		<set name="baseHpMax" value="2395.455" />
+		<set name="baseHpRate" value="4" />
+		<set name="baseHpReg" value="7.5" />
+		<set name="baseINT" value="21" />
+		<set name="baseMAtk" value="747" />
+		<set name="baseMAtkSpd" value="500" />
+		<set name="baseMDef" value="340" />
+		<set name="baseMEN" value="20" />
+		<set name="baseMpMax" value="1314" />
+		<set name="baseMpReg" value="2.7" />
+		<set name="basePAtk" value="1255" />
+		<set name="basePAtkSpd" value="253" />
+		<set name="basePDef" value="460" />
+		<set name="baseRunSpd" value="170" />
+		<set name="baseSTR" value="40" />
+		<set name="baseShldDef" value="0" />
+		<set name="baseShldRate" value="0" />
+		<set name="baseWIT" value="20" />
+		<set name="baseWalkSpd" value="20" />
+		<set name="collision_height" value="31.0" />
+		<set name="collision_radius" value="20.0" />
+		<set name="level" value="69" />
+		<set name="rewardExp" value="33319" />
+		<set name="rewardRp" value="0" />
+		<set name="rewardSp" value="3260" />
+		<set name="shots" value="NONE" />
+		<set name="texture" value="" />
+		<set name="type" value="FeedableBeast" />
+		<faction name="pet_clan" range="300"/>
+		<skills>
+			<skill id="4160" level="6" />	<!--NPC Aura Burn - Magic-->
+			<skill id="4408" level="12" />	<!--HP Increase (4x)-->
+			<skill id="4409" level="1" />	<!--MP Increase (1x)-->
+			<skill id="4410" level="14" />	<!--Strong P. Atk.-->
+			<skill id="4411" level="14" />	<!--Strong M. Atk.-->
+			<skill id="4412" level="8" />	<!--Weak P. Def.-->
+			<skill id="4413" level="8" />	<!--Weak M. Def.-->
+			<skill id="4414" level="2" />	<!--Standard Type-->
+			<skill id="4415" level="3" />	<!--One-handed Sword-->
+			<skill id="4416" level="3" />	<!--Beasts-->
+			<skill id="4438" level="2" />	<!--Greater Resist Sleep-->
+			<skill id="4566" level="1" />	<!--NPC Eruption - Magic-->
+			<skill id="4571" level="1" />	<!--NPC Blazing Circle-->
+			<skill id="4657" level="1" />	<!--Hold-->
+		</skills>
+		<rewardlist type="RATED_GROUPED">
+			<group chance="1.5829">
+				<reward item_id="5304" min="1" max="1" chance="0.2697" />	<!--Sealed Tallum Tunic-->
+				<reward item_id="5485" min="1" max="1" chance="30.2857" />	<!--Sealed Tallum Tunic Texture-->
+				<reward item_id="5305" min="1" max="1" chance="0.4313" />	<!--Sealed Tallum Stockings-->
+				<reward item_id="5489" min="1" max="1" chance="47.5362" />	<!--Sealed Tallum Stockings Fabric-->
+				<reward item_id="5308" min="1" max="1" chance="0.1659" />	<!--Sealed Dark Crystal Robe-->
+				<reward item_id="5486" min="1" max="1" chance="21.3112" />	<!--Sealed Dark Crystal Robe Fabric-->
+			</group>
+			<group chance="33.8186">
+				<reward item_id="1869" min="2" max="6" chance="22.9896" />	<!--Iron Ore-->
+				<reward item_id="1864" min="5" max="15" chance="18.3917" />	<!--Stem-->
+				<reward item_id="1880" min="1" max="1" chance="9.1958" />	<!--Steel-->
+				<reward item_id="5550" min="1" max="1" chance="1.2261" />	<!--Durable Metal Plate-->
+				<reward item_id="4043" min="1" max="1" chance="3.0653" />	<!--Asofe-->
+				<reward item_id="5448" min="1" max="1" chance="0.0341" />	<!--Recipe: Soul Separator(60%)-->
+				<reward item_id="8730" min="1" max="1" chance="1.0218" />	<!--Life Stone -  Level 67-->
+				<reward item_id="8740" min="1" max="1" chance="0.2554" />	<!--Mid-Grade Life Stone -  Level 67-->
+				<reward item_id="8750" min="1" max="1" chance="0.0255" />	<!--High-Grade Life Stone -  Level 67-->
+				<reward item_id="8760" min="1" max="1" chance="0.0051" />	<!--Top-Grade Life Stone -  Level 67-->
+				<reward item_id="1343" min="30" max="90" chance="43.7896" />	<!--Silver Arrow-->
+			</group>
+		</rewardlist>
+		<rewardlist type="SWEEP">
+			<reward item_id="4053" min="1" max="1" chance="49.6406" />	<!--Ring of Black Ore Gemstone-->
+			<reward item_id="3035" min="1" max="1" chance="1.5442" />	<!--Recipe: Spiritshot A-->
+			<reward item_id="4054" min="1" max="1" chance="22.8110" />	<!--Necklace of Black Ore Beads-->
+		</rewardlist>
+		<attributes>
+			<defence attribute="fire" value="20" />
+			<defence attribute="water" value="20" />
+			<defence attribute="wind" value="20" />
+			<defence attribute="earth" value="20" />
+			<defence attribute="holy" value="20" />
+			<defence attribute="unholy" value="20" />
+		</attributes>
+	</npc>
+</list>

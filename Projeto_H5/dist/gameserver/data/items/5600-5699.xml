@@ -1,0 +1,1886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE list SYSTEM "item.dtd">
+
+<list>
+  <weapon id="5600" name="Meteor Shower" add_name="Critical Bleed">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_meteor_shower_i01"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1600"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3052" level="1" type="CRIT" chance="100"/>
+    </triggers>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5601" name="Meteor Shower" add_name="Rsk. Haste">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_meteor_shower_i01"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1600"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3056" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5602" name="Elysian" add_name="Health">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_elysian_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1580"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="232"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5603" name="Elysian" add_name="Anger">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_elysian_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1580"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3057" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="232"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5604" name="Elysian" add_name="Critical Drain">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_elysian_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BLUNT"/>
+    <set name="weight" value="1580"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3059" level="2" type="CRIT" chance="100"/>
+    </triggers>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="232"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5605" name="Branch of the Mother Tree" add_name="Conversion">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_worldtrees_branch_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="900"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3048" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="226"/>
+      <add stat="mAtk" order="0x10" value="167"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5606" name="Branch of the Mother Tree" add_name="Magic Damage">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_worldtrees_branch_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="900"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3049" level="2" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="30"/>
+    </triggers>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="226"/>
+      <add stat="mAtk" order="0x10" value="167"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5607" name="Branch of the Mother Tree" add_name="Acumen">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_worldtrees_branch_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="20"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BIGBLUNT"/>
+    <set name="weight" value="900"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3047" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="226"/>
+      <add stat="mAtk" order="0x10" value="167"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5608" name="Carnage Bow" add_name="Light">
+    <set name="atk_reuse" value="1500"/>
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_carnium_bow_i01"/>
+    <set name="kamael_convert" value="9337"/>
+    <set name="mp_consume" value="4"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="900"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3498" level="1"/>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="440"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="293"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5609" name="Carnage Bow" add_name="Critical Bleed">
+    <set name="atk_reuse" value="1500"/>
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_carnium_bow_i01"/>
+    <set name="kamael_convert" value="9338"/>
+    <set name="mp_consume" value="4"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1670"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3053" level="2" type="CRIT" chance="100"/>
+    </triggers>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="440"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="293"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5610" name="Carnage Bow" add_name="Mana Up">
+    <set name="atk_reuse" value="1500"/>
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_carnium_bow_i01"/>
+    <set name="kamael_convert" value="9339"/>
+    <set name="mp_consume" value="4"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1670"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3014" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="440"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="293"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5611" name="Soul Bow" add_name="Cheap Shot">
+    <set name="atk_reuse" value="820"/>
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soul_bow_i01"/>
+    <set name="kamael_convert" value="9349"/>
+    <set name="mp_consume" value="5"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1660"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="528"/>
+      <add stat="mAtk" order="0x10" value="125"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="227"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <set stat="cheapShot" order="0x08" value="2"/>
+      <set stat="cheapShotChance" order="0x08" value="38"/>
+    </for>
+  </weapon>
+  <weapon id="5612" name="Soul Bow" add_name="Quick Recovery">
+    <set name="atk_reuse" value="697"/>
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soul_bow_i01"/>
+    <set name="kamael_convert" value="9350"/>
+    <set name="mp_consume" value="5"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1660"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="528"/>
+      <add stat="mAtk" order="0x10" value="125"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="227"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <mul stat="atkReuse" order="0x50" value="0.85"/>
+      <mul stat="pAtk" order="0x30" value="1.05">
+        <target pvp="true"/>
+      </mul>
+      <mul stat="mAtk" order="0x30" value="1.05">
+        <target pvp="true"/>
+      </mul>
+    </for>
+  </weapon>
+  <weapon id="5613" name="Soul Bow" add_name="Critical Poison">
+    <set name="atk_reuse" value="820"/>
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soul_bow_i01"/>
+    <set name="kamael_convert" value="9351"/>
+    <set name="mp_consume" value="5"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="2"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BOW"/>
+    <set name="weight" value="1660"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3062" level="1" type="CRIT" chance="100"/>
+    </triggers>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="528"/>
+      <add stat="mAtk" order="0x10" value="125"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="227"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5614" name="Bloody Orchid" add_name="Focus">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_bloody_orchid_i01"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="960"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3051" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="186"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5615" name="Bloody Orchid" add_name="Back Blow">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_bloody_orchid_i01"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="960"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3063" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="186"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5616" name="Bloody Orchid" add_name="Critical Bleed">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_bloody_orchid_i01"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="960"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3054" level="2" type="CRIT" chance="100"/>
+    </triggers>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="186"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5617" name="Soul Separator" add_name="Guidance">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soul_separator_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="950"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3064" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="203"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5618" name="Soul Separator" add_name="Critical Damage">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soul_separator_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="950"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3066" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="203"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5619" name="Soul Separator" add_name="Rsk. Haste">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_soul_separator_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DAGGER"/>
+    <set name="weight" value="950"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3056" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="203"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="120"/>
+      <set stat="atkBaseSpeed" order="0x08" value="433"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5620" name="Blood Tornado" add_name="Haste">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blood_tornado_i01"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1370"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3068" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="259"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5621" name="Blood Tornado" add_name="Focus">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blood_tornado_i01"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1370"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3050" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="259"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5622" name="Blood Tornado" add_name="Anger">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_blood_tornado_i01"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1370"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3058" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="259"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5623" name="Dragon Grinder" add_name="Rsk. Evasion">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_dragon_grinder_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1350"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3069" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="282"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5624" name="Dragon Grinder" add_name="Guidance">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_dragon_grinder_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1350"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3065" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="282"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5625" name="Dragon Grinder" add_name="Health">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_dragon_grinder_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="5"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="DUALFIST"/>
+    <set name="weight" value="1350"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="282"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="40"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="5.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5626" name="Halberd" add_name="Haste">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_halbard_i01"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1900"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3601" level="7"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5627" name="Halberd" add_name="Critical Stun">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_halbard_i01"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1900"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3070" level="4" type="CRIT" chance="100"/>
+    </triggers>
+    <skills>
+      <skill id="3552" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5628" name="Halberd" add_name="Wide Blow">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_halbard_i01"/>
+    <set name="price" value="14098000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1900"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <add stat="poleAngle" order="0x40" value="30"/>
+      <mul stat="pAtk" order="0x30" value="1.05">
+        <target pvp="true"/>
+      </mul>
+      <mul stat="mAtk" order="0x30" value="1.09">
+        <target pvp="true"/>
+      </mul>
+    </for>
+  </weapon>
+  <weapon id="5629" name="Orcish Halberd">
+    <set name="crystal_count" value="1704"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_orcish_halbard_i01"/>
+    <set name="price" value="140430"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1880"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3599" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="219"/>
+      <add stat="mAtk" order="0x10" value="109"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5630" name="Orcish Halberd">
+    <set name="crystal_count" value="1704"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_orcish_halbard_i01"/>
+    <set name="price" value="140430"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1880"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3599" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="219"/>
+      <add stat="mAtk" order="0x10" value="109"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5631" name="Orcish Halberd">
+    <set name="crystal_count" value="1704"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_orcish_halbard_i01"/>
+    <set name="price" value="140430"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1880"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3599" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="219"/>
+      <add stat="mAtk" order="0x10" value="109"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5632" name="Tallum Glaive" add_name="Guidance">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_tallum_glaive_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1840"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3602" level="8"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="232"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5633" name="Tallum Glaive" add_name="Health">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_tallum_glaive_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1840"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="4"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="232"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5634" name="Tallum Glaive" add_name="Wide Blow">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_tallum_glaive_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="POLE"/>
+    <set name="weight" value="1840"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3552" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="232"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <add stat="accCombat" order="0x10" value="-4.0000"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+      <add stat="poleAngle" order="0x40" value="30"/>
+      <mul stat="pAtk" order="0x30" value="1.05">
+        <target pvp="true"/>
+      </mul>
+      <mul stat="mAtk" order="0x30" value="1.09">
+        <target pvp="true"/>
+      </mul>
+    </for>
+  </weapon>
+  <weapon id="5635" name="Tallum Blade" add_name="Critical Poison">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_tallum_blade_i01"/>
+    <set name="kamael_convert" value="9329"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1330"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3061" level="1" type="CRIT" chance="100"/>
+    </triggers>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5636" name="Tallum Blade" add_name="Haste">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_tallum_blade_i01"/>
+    <set name="kamael_convert" value="9330"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1330"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3068" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5637" name="Tallum Blade" add_name="Anger">
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_tallum_blade_i01"/>
+    <set name="kamael_convert" value="9331"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1330"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3057" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="213"/>
+      <add stat="mAtk" order="0x10" value="107"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5638" name="Elemental Sword" add_name="Magic Power">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_elemental_sword_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="830"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3073" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="170"/>
+      <add stat="mAtk" order="0x10" value="143"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5639" name="Elemental Sword" add_name="Magic Paralyze">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_elemental_sword_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="830"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3075" level="1" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="5"/>
+    </triggers>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="170"/>
+      <add stat="mAtk" order="0x10" value="143"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5640" name="Elemental Sword" add_name="Empower">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_count" value="1128"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_elemental_sword_i01"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="830"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3072" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="170"/>
+      <add stat="mAtk" order="0x10" value="143"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5641" name="Sword of Miracles" add_name="Magic Power">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_sword_of_miracle_i01"/>
+    <set name="price" value="20741000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="840"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3073" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="186"/>
+      <add stat="mAtk" order="0x10" value="152"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5642" name="Sword of Miracles" add_name="Magic Silence">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_sword_of_miracle_i01"/>
+    <set name="price" value="20741000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="840"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3074" level="2" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="10"/>
+    </triggers>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="186"/>
+      <add stat="mAtk" order="0x10" value="152"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5643" name="Sword of Miracles" add_name="Acumen">
+    <set name="is_magic_weapon" value="true"/>
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_sword_of_miracle_i01"/>
+    <set name="price" value="20741000"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="840"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3047" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="186"/>
+      <add stat="mAtk" order="0x10" value="152"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5644" name="Dragon Slayer" add_name="Health">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_dragon_slayer_i01"/>
+    <set name="kamael_convert" value="9345"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="1840"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="282"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5645" name="Dragon Slayer" add_name="Critical Bleed">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_dragon_slayer_i01"/>
+    <set name="kamael_convert" value="9346"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="1840"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3055" level="2" type="CRIT" chance="100"/>
+    </triggers>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="282"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5646" name="Dragon Slayer" add_name="Critical Drain">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_dragon_slayer_i01"/>
+    <set name="kamael_convert" value="9347"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="BIGSWORD"/>
+    <set name="weight" value="1840"/>
+    <equip>
+      <slot id="LEFT_RIGHT_HAND"/>
+    </equip>
+    <triggers>
+    	<trigger id="3060" level="2" type="CRIT" chance="100"/>
+    </triggers>
+    <skills>
+      <skill id="3552" level="1"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="282"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="325"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5647" name="Dark Legion's Edge" add_name="Critical Damage">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_dark_legions_edge_i01"/>
+    <set name="kamael_convert" value="9341"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1320"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3067" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="232"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5648" name="Dark Legion's Edge" add_name="Health">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_dark_legions_edge_i01"/>
+    <set name="kamael_convert" value="9342"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1320"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3013" level="3"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="232"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <weapon id="5649" name="Dark Legion's Edge" add_name="Rsk. Focus">
+    <set name="crystal_count" value="1659"/>
+    <set name="crystal_type" value="A"/>
+    <set name="crystallizable" value="true"/>
+    <set name="icon" value="icon.weapon_dark_legions_edge_i01"/>
+    <set name="kamael_convert" value="9343"/>
+    <set name="price" value="2672313"/>
+    <set name="rnd_dam" value="10"/>
+    <set name="soulshots" value="1"/>
+    <set name="spiritshots" value="1"/>
+    <set name="type" value="SWORD"/>
+    <set name="weight" value="1320"/>
+    <equip>
+      <slot id="RIGHT_HAND"/>
+    </equip>
+    <skills>
+      <skill id="3071" level="2"/>
+    </skills>
+    <for>
+      <add stat="pAtk" order="0x10" value="232"/>
+      <add stat="mAtk" order="0x10" value="114"/>
+      <set stat="baseCrit" order="0x08" value="80"/>
+      <set stat="atkBaseSpeed" order="0x08" value="379"/>
+      <enchant stat="pAtk" order="0x0C" value="0"/>
+      <enchant stat="mAtk" order="0x0C" value="0"/>
+    </for>
+  </weapon>
+  <etcitem id="5650" name="Alternative Dark Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="5"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5651" name="Alternative Red Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="5"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5652" name="Alternative Chilly Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="5"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5653" name="Alternative Blue Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="10"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5654" name="Alternative Golden Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="20"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5655" name="Alternative Lute Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="30"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5656" name="Alternative Desert Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="20"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5657" name="Alternative Blue Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5658" name="Alternative Blue Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="10"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5659" name="Alternative Golden Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="20"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5660" name="Alternative Lute Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="30"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5661" name="Alternative Desert Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="20"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5662" name="Alternative Red Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="20"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5663" name="Alternative Chilly Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="25"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5664" name="Alternative Thorn Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5665" name="Alternative Golden Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5666" name="Alternative Great Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5667" name="Alternative Red Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="20"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5668" name="Alternative Chilly Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="25"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5669" name="Alternative Blue Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5670" name="Alternative Thorn Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5671" name="Alternative Golden Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5672" name="Alternative Great Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5673" name="Alternative Red Codran Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_codran_seed_i00"/>
+    <set name="price" value="40"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5674" name="Alternative Twin Codran Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_codran_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5675" name="Alternative Desert Codran Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_codran_seed_i00"/>
+    <set name="price" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5676" name="Alternative Dark Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="5"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5677" name="Alternative Red Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="5"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5678" name="Alternative Blue Coda Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_coda_seed_i00"/>
+    <set name="price" value="10"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5679" name="Alternative Red Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5680" name="Alternative Chilly Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="25"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5681" name="Alternative Blue Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5682" name="Alternative Thorn Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5683" name="Alternative Sea Codran Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_codran_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5684" name="Alternative Chilly Codran Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_codran_seed_i00"/>
+    <set name="price" value="40"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5685" name="Alternative Blue Codran Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_codran_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5686" name="Alternative Twin Codran Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_codran_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5687" name="Alternative Thorn Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5688" name="Alternative Golden Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5689" name="Alternative Great Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5690" name="Alternative Red Codran Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_codran_seed_i00"/>
+    <set name="price" value="40"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5691" name="Alternative Chilly Codran Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_codran_seed_i00"/>
+    <set name="price" value="40"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5692" name="Alternative Blue Codran Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_codran_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5693" name="Alternative Twin Codran Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_codran_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5694" name="Alternative Great Codran Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_codran_seed_i00"/>
+    <set name="price" value="75"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5695" name="Alternative Desert Codran Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_codran_seed_i00"/>
+    <set name="price" value="100"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5696" name="Alternative Chilly Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="25"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5697" name="Alternative Blue Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5698" name="Alternative Thorn Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+  <etcitem id="5699" name="Alternative Golden Cobol Seed">
+    <set name="class" value="OTHER"/>
+    <set name="crystal_type" value="NONE"/>
+    <set name="icon" value="icon.etc_cobol_seed_i00"/>
+    <set name="price" value="50"/>
+    <set name="stackable" value="true"/>
+    <set name="type" value="SEED"/>
+    <set name="weight" value="1"/>
+  </etcitem>
+</list>

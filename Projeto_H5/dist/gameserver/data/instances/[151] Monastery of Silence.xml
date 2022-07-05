@@ -1,0 +1,309 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<instance id="151" name="Monastery of Silence" maxChannels="50" collapseIfEmpty="20" timelimit="60" dispelBuffs="false" respawn="60">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="81" max="85"/>
+		<return loc="115944 -86952 -3392"/>
+		<teleport loc="120664 -86968 -3392"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="* * * * *" setUponEntry="true" sharedReuseGroup="0"/>
+		<geodata map="21_10"/>
+		<spawns>
+			<!-- Элькардия -->
+			<spawn mobId="32787" type="point" respawn="0">
+				<coords loc="120696 -86968 -3392 0"/>
+			</spawn>
+			<!-- Эрис -->
+			<spawn mobId="32792" type="point" respawn="0">
+				<coords loc="120888 -86504 -3392 49152"/>
+			</spawn>
+
+			<!-- ================     10294 START               ===============  -->
+			<!-- Стражник Сокровищ -->
+			<spawn mobId="32803" type="point" respawn="0">
+				<coords loc="85800 -249624 -8296 0"/>
+			</spawn>
+
+			<!-- Устройство Управления Движением -->
+			<spawn mobId="32816" type="point" respawn="0">
+				<coords loc="84904 -249624 -8296 0"/>
+			</spawn>
+			<spawn mobId="32817" type="point" respawn="0">
+				<coords loc="86664 -249624 -8296 0"/>
+			</spawn>
+			<spawn mobId="32818" type="point" respawn="0">
+				<coords loc="85784 -248744 -8296 0"/>
+			</spawn>
+			<spawn mobId="32819" type="point" respawn="0">
+				<coords loc="85800 -250504 -8296 0"/>
+			</spawn>
+
+			<!-- Yellow -->
+			<!-- Смотритель Сокровищ -->
+			<spawn mobId="32804" type="point" respawn="0">
+				<coords loc="82536 -249624 -8296 0"/>
+			</spawn>
+
+			<!-- Постамент для Книг -->
+			<spawn mobId="32821" type="point" respawn="0">
+				<coords loc="83640 -249624 -8320 0"/>
+			</spawn>
+			<spawn mobId="32822" type="point" respawn="0">
+				<coords loc="81432 -249624 -8320 0"/>
+			</spawn>
+			<spawn mobId="32823" type="point" respawn="0">
+				<coords loc="82520 -248520 -8320 0"/>
+			</spawn>
+			<spawn mobId="32824" type="point" respawn="0">
+				<coords loc="82536 -250728 -8320 0"/>
+			</spawn>
+			<!-- END Yellow -->
+
+			<!-- Green -->
+			<!-- Смотритель Сокровищ -->
+			<spawn mobId="32805" type="point" respawn="0">
+				<coords loc="88680 -249624 -8296 0"/>
+			</spawn>
+
+			<!-- Постамент для Книг -->
+			<spawn mobId="32825" type="point" respawn="0">
+				<coords loc="88664 -248520 -8320 0"/>
+			</spawn>
+			<spawn mobId="32826" type="point" respawn="0">
+				<coords loc="89784 -249624 -8320 0"/>
+			</spawn>
+			<spawn mobId="32827" type="point" respawn="0">
+				<coords loc="88664 -250744 -8320 0"/>
+			</spawn>
+			<spawn mobId="32828" type="point" respawn="0">
+				<coords loc="87576 -249624 -8320 0"/>
+			</spawn>
+			<!-- END Green -->
+
+			<!-- Blue -->
+			<!-- Смотритель Сокровищ -->
+			<spawn mobId="32806" type="point" respawn="0">
+				<coords loc="85784 -246728 -8296 0"/>
+			</spawn>
+
+			<!-- Постамент для Книг -->
+			<spawn mobId="32829" type="point" respawn="0">
+				<coords loc="85784 -245624 -8320 0"/>
+			</spawn>
+			<spawn mobId="32830" type="point" respawn="0">
+				<coords loc="86904 -246744 -8320 0"/>
+			</spawn>
+			<spawn mobId="32831" type="point" respawn="0">
+				<coords loc="85784 -247848 -8320 0"/>
+			</spawn>
+			<spawn mobId="32832" type="point" respawn="0">
+				<coords loc="84696 -246728 -8320 0"/>
+			</spawn>
+			<!-- END Blue -->
+
+			<!-- Red -->
+			<!-- Смотритель Сокровищ -->
+			<spawn mobId="32807" type="point" respawn="0">
+				<coords loc="85784 -252504 -8296 0"/>
+			</spawn>
+
+			<!-- Постамент для Книг -->
+			<spawn mobId="32833" type="point" respawn="0">
+				<coords loc="84696 -252504 -8320 0"/>
+			</spawn>
+			<spawn mobId="32834" type="point" respawn="0">
+				<coords loc="85800 -251400 -8320 0"/>
+			</spawn>
+			<spawn mobId="32835" type="point" respawn="0">
+				<coords loc="86904 -252504 -8320 0"/>
+			</spawn>
+			<spawn mobId="32836" type="point" respawn="0">
+				<coords loc="85784 -253640 -8320 0"/>
+			</spawn>
+			<!-- END Red -->
+
+			<!-- ================     10294 END               ===============  -->
+
+			<!-- ================     10295 START               ===============  -->
+			<!-- Устройство управления движением -->
+			<spawn mobId="32820" type="point" respawn="0">
+				<coords loc="45395 -249635 -6728 0"/>
+			</spawn>
+
+			<!-- Контроллер грани -->
+			<spawn mobId="32838" type="point" respawn="0">
+				<coords loc="45394 -247720 -6758 0"/>
+			</spawn>
+			<spawn mobId="32839" type="point" respawn="0">
+				<coords loc="47319 -249634 -6758 0"/>
+			</spawn>
+			<spawn mobId="32840" type="point" respawn="0">
+				<coords loc="45400 -251544 -6758 0"/>
+			</spawn>
+			<spawn mobId="32841" type="point" respawn="0">
+				<coords loc="43468 -249639 -6758 0"/>
+			</spawn>
+
+			<!-- Стражник Солины -->
+			<spawn mobId="18952" type="point" respawn="0">
+				<coords loc="41784 -249640 -6754 0"/>
+			</spawn>
+			<spawn mobId="18953" type="point" respawn="0">
+				<coords loc="45400 -246072 -6754 49152"/>
+			</spawn>
+			<spawn mobId="18954" type="point" respawn="0">
+				<coords loc="48968 -249640 -6754 32768"/>
+			</spawn>
+			<spawn mobId="18955" type="point" respawn="0">
+				<coords loc="45400 -253208 -6754 16384"/>
+			</spawn>
+
+			<!-- Алтарь Даров -->
+			<spawn mobId="32858" type="point" respawn="0">
+				<coords loc="46673 -248367 -6733 0"/>
+			</spawn>
+			<spawn mobId="32860" type="point" respawn="0">
+				<coords loc="46672 -250912 -6733 0"/>
+			</spawn>
+			<spawn mobId="32859" type="point" respawn="0">
+				<coords loc="44113 -250912 -6733 0"/>
+			</spawn>
+			<spawn mobId="32857" type="point" respawn="0">
+				<coords loc="44114 -248368 -6733 0"/>
+			</spawn>
+
+			<!-- Мобы -->
+			<spawn mobId="27412 27413" count="4" type="loc" respawn="0">
+				<coords loc="45784 -248152 -6800 -6700"/>
+				<coords loc="45768 -247368 -6800 -6700"/>
+				<coords loc="45048 -247368 -6800 -6700"/>
+				<coords loc="45032 -248088 -6800 -6700"/>
+			</spawn>
+			<spawn mobId="27412 27413" count="4" type="loc" respawn="0">
+				<coords loc="46968 -249992 -6800 -6700"/>
+				<coords loc="47688 -249992 -6800 -6700"/>
+				<coords loc="47672 -249304 -6800 -6700"/>
+				<coords loc="46984 -249288 -6800 -6700"/>
+			</spawn>
+			<spawn mobId="27412 27413" count="4" type="loc" respawn="0">
+				<coords loc="45048 -251192 -6800 -6700"/>
+				<coords loc="45048 -251912 -6800 -6700"/>
+				<coords loc="45720 -251912 -6800 -6700"/>
+				<coords loc="45736 -251192 -6800 -6700"/>
+			</spawn>
+			<spawn mobId="27412 27413" count="4" type="loc" respawn="0">
+				<coords loc="43816 -249304 -6800 -6700"/>
+				<coords loc="43128 -249304 -6800 -6700"/>
+				<coords loc="43144 -249976 -6800 -6700"/>
+				<coords loc="43816 -249992 -6800 -6700"/>
+			</spawn>
+
+
+			<spawn mobId="27414 27407" count="4" type="loc" respawn="0">
+				<coords loc="44488 -251288 -6800 -6700"/>
+				<coords loc="43768 -251304 -6800 -6700"/>
+				<coords loc="43736 -250552 -6800 -6700"/>
+				<coords loc="44440 -250568 -6800 -6700"/>
+			</spawn>
+			<spawn mobId="27417 27418" count="4" type="loc" respawn="0">
+				<coords loc="46360 -250584 -6800 -6700"/>
+				<coords loc="47016 -250568 -6800 -6700"/>
+				<coords loc="47000 -251256 -6800 -6700"/>
+				<coords loc="46296 -251240 -6800 -6700"/>
+			</spawn>
+			<spawn mobId="27409 27410" count="4" type="loc" respawn="0">
+				<coords loc="46328 -248696 -6800 -6700"/>
+				<coords loc="46344 -248024 -6800 -6700"/>
+				<coords loc="47000 -248040 -6800 -6700"/>
+				<coords loc="47000 -248712 -6800 -6700"/>
+			</spawn>
+			<spawn mobId="27414 27407" count="4" type="loc" respawn="0">
+				<coords loc="44472 -248712 -6800 -6700"/>
+				<coords loc="43768 -248696 -6800 -6700"/>
+				<coords loc="43784 -248040 -6800 -6700"/>
+				<coords loc="44456 -248040 -6800 -6700"/>
+			</spawn>
+
+			<!-- Гробница Солины (ложная) -->
+			<!-- Устройство управления движением (в Келью) -->
+			<spawn mobId="32837" type="point" respawn="0">
+				<coords loc="56088 -253240 -6760 0"/>
+			</spawn>
+			<!-- Гроб Святой -->
+			<spawn mobId="32843" type="point" respawn="0">
+				<coords loc="56136 -252472 -6736 0"/>
+			</spawn>
+			<!-- Стражники Могилы -->
+			<spawn mobId="18956" type="point" respawn="0">
+				<coords loc="56728 -252776 -6760 32768"/>
+			</spawn>
+			<spawn mobId="18957" type="point" respawn="0">
+				<coords loc="55464 -252776 -6760 0"/>
+			</spawn>
+			<spawn mobId="18958" type="point" respawn="0">
+				<coords loc="55496 -252168 -6760 0"/>
+			</spawn>
+			<spawn mobId="18959" type="point" respawn="0">
+				<coords loc="56680 -252168 -6760 32768"/>
+			</spawn>
+
+			<group name="tombguards1" spawned="false" />
+			<group name="tombguards2" spawned="false" />
+			<group name="tombguards3" spawned="false" />
+			<group name="tombguards4" spawned="false" />
+
+			<!-- Устройство управления движением (к Солине) -->
+			<spawn mobId="32842" type="point" respawn="0">
+				<coords loc="56088 -251688 -6760 32768"/>
+			</spawn>
+			<!-- Солина -->
+			<spawn mobId="32793" type="point" respawn="0">
+				<coords loc="55960 -250568 -6760 32768"/>
+			</spawn>
+
+
+			<!-- ================     10295 END               ===============  -->
+
+
+			<!-- ================     10296 START               ===============  -->
+
+			<spawn mobId="18949" type="point" respawn="0">
+				<coords loc="76280 -241224 -10832 0"/>
+			</spawn>
+
+			<!-- ================     10296 END               ===============  -->
+		</spawns>
+
+		<doors>
+			<door id="21100016" opened="true"/>
+			<door id="21100012" opened="true"/>
+			<door id="21100008" opened="true"/>
+			<door id="21100003" opened="true"/>
+			<door id="21100015" opened="true"/>
+			<door id="21100013" opened="true"/>
+			<door id="21100002" opened="true"/>
+			<door id="21100004" opened="true"/>
+			<door id="21100005" opened="true"/>
+			<door id="21100007" opened="true"/>
+			<door id="21100009" opened="true"/>
+			<door id="21100011" opened="true"/>
+
+			<door id="21100010" opened="true"/>
+			<door id="21100001" opened="true"/>
+			<door id="21100014" opened="true"/>
+			<door id="21100006" opened="true"/>
+
+			<door id="21100104"/>
+			<door id="21100103"/>
+			<door id="21100102"/>
+			<door id="21100101"/>
+			<door id="21100018"/>
+		</doors>
+		<zones>
+			<zone name="[ssq_holy_burial_ground]" active="true"/>
+			<zone name="[ssq_holy_seal]" active="true"/>
+		</zones>
+	</instance>
+</list>

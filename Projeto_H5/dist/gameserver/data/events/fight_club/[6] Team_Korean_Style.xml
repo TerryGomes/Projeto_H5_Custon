@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "../events.dtd">
+<list>
+	<event id="6" name="Korean Style" type="FIGHT_CLUB_EVENT" impl="fightclub.KoreanStyle">
+		<parameter name="icon" value="L2Ui_CT1.PVP_DF_TriggerBtn_Over"/>
+		<parameter name="desc" value="Team Event. You will need to defeat enemy Team in 1 VS 1 Fights. Prove you are the best and kill enemy in fair battle!"/>
+		<parameter name="roundRunTime" value="-1"/>
+		<parameter name="roundEvent" value="false"/>
+		<parameter name="isAutoTimed" value="true"/>
+		<parameter name="autoTimes" value="04:00,12:00,20:00"/>
+		<parameter name="teamed" value="true"/>
+		<parameter name="buffer" value="false"/>
+		<parameter name="rootBetweenRounds" value="true"/>
+		<parameter name="excludedClasses" value="HEALERS"/>
+		<parameter name="excludedSkills" value="1410;438;21090;23118;7008;90001"/> <!-- Salvation-type skills, and Mana Potion -->
+		<parameter name="ressAllowed" value="false"/>
+		<parameter name="respawnTime" value="-1"/>
+		<parameter name="showPersonality" value="true"/>
+		<parameter name="badgesKillPlayer" value="1"/>
+		<parameter name="badgesKillPet" value="0"/>
+		<parameter name="badgesDie" value="0"/>
+		<parameter name="badgesWin" value="6"/>
+		<parameter name="badgesLose" value="2"/>
+		<parameter name="topKillerReward" value="3"/>
+ </event>
+</list>

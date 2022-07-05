@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "airship_docks.dtd">
+<list>
+	<!--Keucereus Base 32517/32606-->
+	<dock id="100">
+		<teleportlist>
+			<point x="-186373" y="234000" z="2500" fuel="0" /> <!---1-->
+			<point x="-206692" y="220997" z="3000" fuel="50" /> <!--0-->
+			<point x="-235693" y="248843" z="5100" fuel="100" /> <!--1-->
+			<point x="-179557" y="165491" z="4105" fuel="150" /> <!--2-->
+		</teleportlist>
+		<platform movie="LANDING_KSERTH_LEFT">
+			<oust  x="-186148" y="246296" z="1360" />
+			<spawn x="-184527" y="243611" z="3000" />
+			<arrival>
+				<point x="-185312" y="246544" z="2500" speed1="280" speed2="2000"/>
+				<point x="-185312" y="246544" z="1336" speed1="280" speed2="2000"/>
+			</arrival>
+			<depart>
+				<point x="-185312" y="246544" z="1700" speed1="280" speed2="2000"/>
+				<point x="-186900" y="251699" z="1700" speed1="280" speed2="2000"/>
+			</depart>
+		</platform>
+		<platform movie="LANDING_KSERTH_RIGHT">
+			<oust x="-183900" y="239384" z="1320" />
+			<spawn x="-184145" y="242373" z="3000" />
+			<arrival>
+				<point x="-183218" y="239494" z="2500" speed1="280" speed2="2000"/>
+				<point x="-183218" y="239494" z="1336" speed1="280" speed2="2000"/>
+			</arrival>
+			<depart>
+				<point x="-183218" y="239494" z="1700" speed1="280" speed2="2000"/>
+				<point x="-181974" y="235358" z="1700" speed1="280" speed2="2000"/>
+			</depart>
+		</platform>
+	</dock>
+	<!--SoI 32604-->
+	<dock id="101">
+		<teleportlist>
+			<point x="-206692" y="220997" z="3000" fuel="0" /> <!-- -1 -->
+			<point x="-195357" y="233430" z="2500" fuel="50" /> <!-- 0 -->
+		</teleportlist>
+		<platform movie="LANDING_INFINITY">
+			<oust x="-213401" y="210401" z="4408" />
+			<spawn x="-212719" y="213348" z="5000" />
+			<arrival>
+				<point x="-214422" y="211396" z="5000" speed1="280" speed2="2000"/>
+				<point x="-214422" y="211396" z="4422" speed1="280" speed2="2000"/>
+			</arrival>
+			<depart>
+				<point x="-214422" y="211396" z="5000" speed1="280" speed2="2000"/>
+				<point x="-215877" y="209709" z="5000" speed1="280" speed2="2000"/>
+			</depart>
+		</platform>
+	</dock>
+	<!--SoD 32605-->
+	<dock id="102">
+		<teleportlist>
+			<point x="-235693" y="248843" z="5100" fuel="0" /> <!-- -1 -->
+			<point x="-195357" y="233430" z="2500" fuel="100" /> <!-- 0 -->
+		</teleportlist>
+		<platform movie="LANDING_DESTRUCTION">
+			<oust x="-247746" y="251079" z="4328" />
+			<spawn x="-247702" y="253631" z="4359" />
+			<arrival>
+				<point x="-246445" y="252331" z="4359" speed1="280" speed2="2000"/>
+			</arrival>
+			<depart>
+				<point x="-245245" y="251040" z="4359" speed1="280" speed2="2000"/>
+			</depart>
+		</platform>
+	</dock>
+	<!--SoA 32779-->
+	<dock id="103">
+		<teleportlist>
+			<point x="-179438" y="162776" z="5129" fuel="0" /> <!---1-->
+			<point x="-195357" y="233430" z="2500" fuel="150" /> <!--0-->
+		</teleportlist>
+		<platform movie="LANDING_ANNIHILATION">
+			<oust x="-175689" y="154160" z="2712" />
+			<spawn x="-178118" y="156415" z="5809" h="62027"/>
+			<arrival>
+				<point x="-174946" y="155306" z="4605" speed1="280" speed2="2000"/>
+				<point x="-174946" y="155306" z="3105" speed1="280" speed2="2000"/>
+			</arrival>
+			<depart>
+				<point x="-175063" y="155726" z="4105" speed1="280" speed2="2000"/>
+				<point x="-179546" y="161425" z="5105" speed1="280" speed2="2000"/>
+			</depart>
+		</platform>
+	</dock>
+</list>

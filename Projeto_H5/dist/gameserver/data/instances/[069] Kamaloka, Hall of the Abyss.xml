@@ -1,0 +1,34 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Town of Schuttgart: NPC Vishotsky (Level 63) -->
+	<instance id="69" name="Kamaloka, Hall of the Abyss" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="58" max="68"/>
+		<party min="2" max="6"/>
+		<return loc="85962 -142187 -1344"/>
+		<teleport loc="16496 -206288 -8000"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="1"/>
+		<add_parameters>
+			<param name="tele_device_loc" value="16500 -205735 -8000"/>
+		</add_parameters>
+		<spawns>
+			<!-- Venomous Storace -->
+			<spawn mobId="18571" type="loc">
+				<coords loc="16315 -205507 -8000 -8000"/>
+				<coords loc="16315 -205907 -8000 -8000"/>
+				<coords loc="16715 -205907 -8000 -8000"/>
+				<coords loc="16715 -205507 -8000 -8000"/>
+			</spawn>
+			<!-- Follower of Storace -->
+			<spawn mobId="18572" respawn="30" type="loc">
+				<coords loc="16315 -205507 -8000 -8000"/>
+				<coords loc="16315 -205907 -8000 -8000"/>
+				<coords loc="16715 -205907 -8000 -8000"/>
+				<coords loc="16715 -205507 -8000 -8000"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

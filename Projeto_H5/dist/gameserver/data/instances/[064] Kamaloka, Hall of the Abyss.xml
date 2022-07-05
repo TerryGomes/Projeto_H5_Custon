@@ -1,0 +1,27 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Town of Heine: NPC Gosta (Level 46) -->
+	<instance id="64" name="Kamaloka, Hall of the Abyss" maxChannels="10" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="41" max="51"/>
+		<party min="2" max="6"/>
+		<return loc="108453 221646 -3592"/>
+		<teleport loc="-81936 -206672 -8096"/>
+		<remove itemId="0" count="0" necessary="false"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * *" setUponEntry="false" sharedReuseGroup="1"/>
+		<add_parameters>
+			<param name="tele_device_loc" value="-81935 -206075 -8100"/>
+		</add_parameters>
+		<spawns>
+			<!-- Weird Bunei -->
+			<spawn mobId="18564" type="loc">
+				<coords loc="-81716 -205875 -8100 -8100"/>
+				<coords loc="-81716 -206275 -8100 -8100"/>
+				<coords loc="-82116 -206275 -8100 -8100"/>
+				<coords loc="-82116 -205875 -8100 -8100"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

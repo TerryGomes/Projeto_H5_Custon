@@ -1,0 +1,20 @@
+<!DOCTYPE list SYSTEM "instances.dtd">
+<list>
+	<!-- Tower of Infinitum - Demon Prince -->
+	<instance id="3" name="Tower of Infinitum Demon Prince" maxChannels="5" collapseIfEmpty="10" timelimit="30" dispelBuffs="false">
+		<collapse on-party-dismiss="true" timer="60"/>
+		<level min="75" max="85"/>
+		<party min="2" max="9"/>
+		<return loc="-19024 277122 -8256"/>
+		<teleport loc="-22208 277056 -8239"/>
+		<remove itemId="15515" count="1" necessary="true"/>
+		<give itemId="0" count="0"/>
+		<quest id="0"/>
+		<reuse resetReuse="30 6 * * 4,7" setUponEntry="false" sharedReuseGroup="0"/>
+		<spawns>
+			<spawn mobId="25540" type="point" respawn="0">
+				<coords loc="-22144 278744 -8239 0"/>
+			</spawn>
+		</spawns>
+	</instance>
+</list>

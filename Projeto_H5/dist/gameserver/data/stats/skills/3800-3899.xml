@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="3800" levels="1" name="Dynasty Stockings">
+		<!--
+		      Description: A Masterwork Item that increases Max MP/M. Atk./resistance to darkness.
+		-->
+		<set name="icon" val="icon.armor_t93_l_i00" />
+		<set name="magicLevel" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="mAtk" val="1.02" />
+			<mul order="0x30" stat="maxMp" val="1.01" />
+			<add order="0x60" stat="defenceUnholy" val="5" />
+		</for>
+	</skill>
+	<skill id="3801" levels="1" name="Dynasty Gloves">
+		<!--
+		      Description: A Masterwork Item that increases Max MP/M. Atk./resistance to darkness.
+		-->
+		<set name="icon" val="icon.armor_t93_g_i00" />
+		<set name="magicLevel" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="mAtk" val="1.02" />
+			<mul order="0x30" stat="maxMp" val="1.01" />
+			<add order="0x60" stat="defenceUnholy" val="5" />
+		</for>
+	</skill>
+	<skill id="3802" levels="1" name="Dynasty Shoes">
+		<!--
+		      Description: A Masterwork Item that increases Maximum MP, resistance to darkness, and M. Atk.
+		-->
+		<set name="icon" val="icon.armor_t93_b_i00" />
+		<set name="magicLevel" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="mAtk" val="1.02" />
+			<mul order="0x30" stat="maxMp" val="1.01" />
+			<add order="0x60" stat="defenceUnholy" val="5" />
+		</for>
+	</skill>
+	<skill id="3803" levels="1" name="Dynasty Circlet">
+		<!--
+		      Description: A Masterwork Item that increases Maximum MP, resistance to darkness, and M. Atk.
+		-->
+		<set name="icon" val="icon.armor_circlet_i00" />
+		<set name="magicLevel" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="mAtk" val="1.02" />
+			<mul order="0x30" stat="maxMp" val="1.01" />
+			<add order="0x60" stat="defenceUnholy" val="5" />
+		</for>
+	</skill>
+	<skill id="3804" levels="1" name="Dynasty Silver Satin Tunic">
+		<!--
+		      Description: A Masterwork Item that increases P. Def., Max HP and dark resistance, and decreases MP consumption rate.
+		-->
+		<set name="icon" val="icon.armor_t93_uw_i00" />
+		<set name="magicLevel" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pDef" val="1.02" />
+			<mul order="0x30" stat="maxHp" val="1.02" />
+			<add order="0x60" stat="defenceUnholy" val="7" />
+			<mul order="0x30" stat="mpConsum" val="0.98" />
+		</for>
+	</skill>
+	<skill id="3805" levels="1" name="Dynasty Jewel Leather Mail">
+		<!--
+		      Description: A Masterwork Item that increases Accuracy, Evasion, Max HP, dark resistance and Atk. Spd.
+		-->
+		<set name="icon" val="icon.armor_t92_ud_i00" />
+		<set name="magicLevel" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="accCombat" val="2" />
+			<add order="0x60" stat="rEvas" val="2" />
+			<add order="0x60" stat="defenceUnholy" val="7" />
+			<mul order="0x30" stat="pAtkSpd" val="1.02" />
+			<mul order="0x30" stat="maxHp" val="1.02" />
+			<add order="0x10" stat="openCloakSlot" val="1" />
+		</for>
+	</skill>
+	<skill id="3806" levels="1" name="Dynasty Platinum Plate">
+		<!--
+		      Description: A Masterwork Item that has the effect of increased P. Def., increased Max HP, increased resistance to darkness, and decreased MP Consumption upon skill use.
+		-->
+		<set name="icon" val="icon.armor_t91_uf_i00" />
+		<set name="magicLevel" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pDef" val="1.02" />
+			<mul order="0x30" stat="maxHp" val="1.02" />
+			<add order="0x60" stat="defenceUnholy" val="7" />
+			<mul order="0x30" stat="mpConsum" val="0.98" />
+		</for>
+	</skill>
+	<skill id="3807" levels="1" name="Adamantite Earring">
+		<!--
+		      Description: A Masterwork Item that increases Max MP.
+		-->
+		<set name="icon" val="icon.accessary_adamantite_earing_i00" />
+		<set name="magicLevel" val="58" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxMp" val="11" />
+		</for>
+	</skill>
+	<skill id="3808" levels="1" name="Adamantite Necklace">
+		<!--
+		      Description: A Masterwork Item that increases stun resistance.
+		-->
+		<set name="icon" val="icon.accessary_adamantite_necklace_i00" />
+		<set name="magicLevel" val="58" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="stunResist" val="7" />
+		</for>
+	</skill>
+	<skill id="3809" levels="1" name="Adamantite Ring">
+		<!--
+		      Description: A Masterwork Item that increases MP regeneration rate.
+		-->
+		<set name="icon" val="icon.accessary_adamantite_ring_i00" />
+		<set name="magicLevel" val="58" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="regMp" val="1.071" />
+		</for>
+	</skill>
+	<skill id="3810" levels="1" name="Earring of Black Ore">
+		<!--
+		      Description: A Masterwork Item that increases dark resistance.
+		-->
+		<set name="icon" val="icon.accessary_earing_of_black_ore_i00" />
+		<set name="magicLevel" val="61" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="defenceUnholy" val="5" />
+		</for>
+	</skill>
+	<skill id="3811" levels="1" name="Necklace of Black Ore">
+		<!--
+		      Description: A Masterwork Item that increases stun resistance.
+		-->
+		<set name="icon" val="icon.accessary_necklace_of_black_ore_i00" />
+		<set name="magicLevel" val="61" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="stunResist" val="7" />
+		</for>
+	</skill>
+	<skill id="3812" levels="1" name="Ring of Black Ore">
+		<!--
+		      Description: A Masterwork Item that increases Max MP.
+		-->
+		<set name="icon" val="icon.accessary_ring_of_black_ore_i00" />
+		<set name="magicLevel" val="61" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxMp" val="7" />
+		</for>
+	</skill>
+	<skill id="3813" levels="1" name="Phoenix Necklace">
+		<!--
+		      Description: Masterwork Item that has the effect of increased MP +26 and Max MP +21.
+		-->
+		<set name="icon" val="icon.accessary_phoenixs_necklace_i00" />
+		<set name="magicLevel" val="64" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxMp" val="21" />
+		</for>
+	</skill>
+	<skill id="3814" levels="1" name="Phoenix Ring">
+		<!--
+		      Description: Masterwork Item that has the effect of increased MP +13 and MP Recovery Rate +0.71%.
+		-->
+		<set name="icon" val="icon.accessary_phoenixs_ring_i00" />
+		<set name="magicLevel" val="64" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="regMp" val="1.0071" />
+		</for>
+	</skill>
+	<skill id="3815" levels="1" name="Phoenix Earring">
+		<!--
+		      Description: Masterwork Item that has the effect of increased MP +20 and M. Def. +1%.
+		-->
+		<set name="icon" val="icon.accessary_phoenixs_earing_i00" />
+		<set name="magicLevel" val="64" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="mDef" val="1.01" />
+		</for>
+	</skill>
+	<skill id="3816" levels="1" name="Majestic Necklace">
+		<!--
+		      Description: Masterwork Item that has the effect of increased MP +33 and M. Def. +1%.
+		-->
+		<set name="icon" val="icon.accessary_inferno_necklace_i00" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="mDef" val="1.01" />
+		</for>
+	</skill>
+	<skill id="3817" levels="1" name="Majestic Ring">
+		<!--
+		      Description: Masterwork Item that has the effect of increased MP +17 and Max MP +11.
+		-->
+		<set name="icon" val="icon.accessary_inferno_ring_i00" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxMp" val="11" />
+		</for>
+	</skill>
+	<skill id="3818" levels="1" name="Majestic Earring">
+		<!--
+		      Description: Masterwork Item that has the effect of MP +25 and increased resistance to poison +5.71.
+		-->
+		<set name="icon" val="icon.accessary_inferno_earing_i00" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="poisonResist" val="5" />
+		</for>
+	</skill>
+	<skill id="3819" levels="1" name="Tateossian Necklace">
+		<!--
+		      Description: Masterwork Item that has the effect of MP +42 and increased resistance to bleed +7.61.
+		-->
+		<set name="icon" val="icon.accessory_tateossian_necklace_i00" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="bleedResist" val="7" />
+		</for>
+	</skill>
+	<skill id="3820" levels="1" name="Tateossian Ring">
+		<!--
+		      Description: Masterwork Item that has the effect of MP +21 and increased resistance to earth +1.14.
+		-->
+		<set name="icon" val="icon.accessory_tateossian_ring_i00" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="defenceEarth" val="1" />
+		</for>
+	</skill>
+	<skill id="3821" levels="1" name="Tateossian Earring">
+		<!--
+		      Description: Masterwork Item that has the effect of increased MP +31 and Max MP +20.
+		-->
+		<set name="icon" val="icon.accessory_tateossian_earring_i00" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxMp" val="20" />
+		</for>
+	</skill>
+	<skill id="3822" levels="1" name="Dynasty Necklace">
+		<!--
+		      Description: Masterwork Item that has the effect of increased MP +46 and Max MP +30.
+		-->
+		<set name="icon" val="icon.accessary_dynasty_necklace_i00" />
+		<set name="magicLevel" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxMp" val="30" />
+		</for>
+	</skill>
+	<skill id="3823" levels="1" name="Dynasty Ring">
+		<!--
+		      Description: Masterwork Item that has the effect of MP +23 and increased resistance to darkness +1.14.
+		-->
+		<set name="icon" val="icon.accessary_dynasty_ring_i00" />
+		<set name="magicLevel" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="defenceUnholy" val="1" />
+		</for>
+	</skill>
+	<skill id="3824" levels="1" name="Dynasty Earring">
+		<!--
+		      Description: Masterwork Item that has the effect of MP +35 and increased resistance to sleep +5.
+		-->
+		<set name="icon" val="icon.accessary_dynasty_earing_i00" />
+		<set name="magicLevel" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="sleepResist" val="5" />
+		</for>
+	</skill>
+	<skill id="3825" levels="3" name="Sword of Might">
+		<!--
+		      Description: Increases P. Atk. when a sword is equipped.
+		-->
+		<table name="#patak">17.42 22.1 42.12</table>
+		<table name="#magicLevel">58 64 82</table>
+		<set name="icon" val="icon.skill1068" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="pAtk" val="#patak" />
+		</for>
+	</skill>
+	<skill id="3826" levels="2" name="Sword of Boost HP">
+		<!--
+		      Description: Increases maximum HP.
+		-->
+		<table name="#maxHp">319 492</table>
+		<table name="#magicLevel">61 80</table>
+		<set name="icon" val="icon.skill0211" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxHp" val="#maxHp" />
+		</for>
+	</skill>
+	<skill id="3827" levels="1" name="Sword of Critical Power">
+		<!--
+		      Description: Increases critical attack power.
+		-->
+		<set name="icon" val="icon.skill0193" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="cAtkStatic" val="220" />
+		</for>
+	</skill>
+	<skill id="3828" levels="1" name="Sword of Critical Chance">
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="baseCrit" val="54.4" />
+		</for>
+	</skill>
+	<skill id="3829" levels="1" name="Sword of Stun">
+		<!--
+		      Description: Inflicts shock on the enemy during a regular attack with a fixed rate.
+		-->
+		<set name="icon" val="icon.skill0100" />
+		<set name="magicLevel" val="70" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<triggers>
+			<trigger id="5665" level="1" type="ATTACK" chance="6" />
+		</triggers>	
+	</skill>
+	<skill id="3830" levels="3" name="Rapier of Might">
+		<!--
+		      Description: Increases P. Atk. when a short sword is equipped.
+		-->
+		<table name="#patak">16.25 20.62 39.8</table>
+		<table name="#magicLevel">58 64 82</table>
+		<set name="icon" val="icon.skill1068" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="pAtk" val="#patak" />
+		</for>
+	</skill>
+	<skill id="3831" levels="2" name="Rapier of Boost HP">
+		<!--
+		      Description: Increases maximum HP.
+		-->
+		<table name="#maxHp">319 492</table>
+		<table name="#magicLevel">61 80</table>
+		<set name="icon" val="icon.skill0211" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxHp" val="#maxHp" />
+		</for>
+	</skill>
+	<skill id="3832" levels="1" name="Rapier of Critical Power">
+		<!--
+		      Description: Increases critical attack power.
+		-->
+		<set name="icon" val="icon.skill0193" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="cAtkStatic" val="169" />
+		</for>
+	</skill>
+	<skill id="3833" levels="1" name="Rapier of Critical Chance">
+		<!--
+		      Description: Critical rate increases.
+		-->
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="baseCrit" val="54.4" />
+		</for>
+	</skill>
+	<skill id="3834" levels="1" name="Rapier of Stun">
+		<!--
+		      Description: Inflicts shock on the enemy during a regular attack with a fixed rate.
+		-->
+		<set name="icon" val="icon.skill0100" />
+		<set name="magicLevel" val="70" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<triggers>
+			<trigger id="5666" level="1" type="ATTACK" chance="6" />
+		</triggers>	
+	</skill>
+	<skill id="3835" levels="3" name="Dual-Blade Weapon of Might">
+		<!--
+		      Description: Increases P. Atk. when a dual-blade weapon is equipped.
+		-->
+		<table name="#patak">21.2 26.9 51.26</table>
+		<table name="#magicLevel">58 64 82</table>
+		<set name="icon" val="icon.skill1068" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="pAtk" val="#patak" />
+		</for>
+	</skill>
+	<skill id="3836" levels="2" name="Dual-Blade Weapon of Boost HP">
+		<!--
+		      Description: Increases maximum HP.
+		-->
+		<table name="#maxHp">319 492</table>
+		<table name="#magicLevel">61 80</table>
+		<set name="icon" val="icon.skill0211" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxHp" val="#maxHp" />
+		</for>
+	</skill>
+	<skill id="3837" levels="1" name="Dual-Blade Weapon of Critical Power">
+		<!--
+		      Description: Increases critical attack power.
+		-->
+		<set name="icon" val="icon.skill0193" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="cAtkStatic" val="268" />
+		</for>
+	</skill>
+	<skill id="3838" levels="1" name="Dual-Blade Weapon of Critical Chance">
+		<!--
+		      Description: Critical rate increases.
+		-->
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="baseCrit" val="54.4" />
+		</for>
+	</skill>
+	<skill id="3839" levels="1" name="Dual-Blade Weapon of Stun">
+		<!--
+		      Description: Inflicts shock on the enemy during a regular attack with a fixed rate.
+		-->
+		<set name="icon" val="icon.skill0100" />
+		<set name="magicLevel" val="70" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<triggers>
+			<trigger id="5667" level="1" type="ATTACK" chance="6" />
+		</triggers>	
+	</skill>
+	<skill id="3840" levels="2" name="Two-handed Sword of Haste">
+		<!--
+		      Description: Increases Atk. Spd. when a two-handed sword is equipped.
+		-->
+		<table name="#magicLevel">61 80</table>
+		<set name="icon" val="icon.skill1086" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="1.05" />
+		</for>
+	</skill>
+	<skill id="3841" levels="1" name="Two-handed Sword of Guidance">
+		<!--
+		      Description: Increases Atk. Spd. when a two-handed sword is equipped.
+		-->
+		<set name="icon" val="icon.skill1240" />
+		<set name="magicLevel" val="64" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="accCombat" val="3.9" />
+		</for>
+	</skill>
+	<skill id="3842" levels="1" name="Two-handed Sword of Vampiric Rage">
+		<!--
+		      Description: Increases Atk. Spd. when a two-handed sword is equipped.
+		-->
+		<set name="icon" val="icon.skill1268" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="absorbDam" val="3" />
+		</for>
+	</skill>
+	<skill id="3843" levels="1" name="Two-handed Sword of Boost HP">
+		<!--
+		      Description: Increases maximum HP.
+		-->
+		<set name="icon" val="icon.skill0211" />
+		<set name="magicLevel" val="70" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxHp" val="398" />
+		</for>
+	</skill>
+	<skill id="3844" levels="1" name="Two-handed Sword of Critical Power">
+		<!--
+		      Description: Increases critical attack power.
+		-->
+		<set name="icon" val="icon.skill0193" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="cAtkStatic" val="340" />
+		</for>
+	</skill>
+	<skill id="3845" levels="2" name="Two-handed Sword of Critical Chance">
+		<!--
+		      Description: Critical rate increases.
+		-->
+		<table name="#magicLevel">58 82</table>
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="baseCrit" val="54.4" />
+		</for>
+	</skill>
+	<skill id="3846" levels="2" name="Ancient Sword of Haste">
+		<!--
+		      Description: Increases Atk. Spd. when an ancient sword is equipped.
+		-->
+		<table name="#magicLevel">61 80</table>
+		<set name="icon" val="icon.skill1086" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="1.05" />
+		</for>
+	</skill>
+	<skill id="3847" levels="1" name="Ancient Sword of Guidance">
+		<set name="icon" val="icon.skill1240" />
+		<set name="magicLevel" val="64" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="accCombat" val="3.9" />
+		</for>
+	</skill>
+	<skill id="3848" levels="1" name="Ancient Sword of Vampiric Rage">
+		<set name="icon" val="icon.skill1268" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="absorbDam" val="3" />
+		</for>
+	</skill>
+	<skill id="3849" levels="1" name="Ancient Sword of Boost HP">
+		<!--
+		      Description: Increases maximum HP.
+		-->
+		<set name="icon" val="icon.skill0211" />
+		<set name="magicLevel" val="70" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxHp" val="398" />
+		</for>
+	</skill>
+	<skill id="3850" levels="1" name="Ancient Sword of Critical Power">
+		<!--
+		      Description: Increases critical attack power.
+		-->
+		<set name="icon" val="icon.skill0193" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="cAtkStatic" val="303" />
+		</for>
+	</skill>
+	<skill id="3851" levels="2" name="Ancient Sword of Critical Chance">
+		<!--
+		      Description: Critical rate increases.
+		-->
+		<table name="#magicLevel">58 82</table>
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="baseCrit" val="54.4" />
+		</for>
+	</skill>
+	<skill id="3852" levels="3" name="Sword of Mana Boost">
+		<!--
+		      Description: Increases maximum MP.
+		-->
+		<table name="#maxMp">187 289 334</table>
+		<table name="#magicLevel">58 75 82</table>
+		<set name="icon" val="icon.skill0213" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxMp" val="#maxMp" />
+		</for>
+	</skill>
+	<skill id="3853" levels="2" name="Sword of Mana Regeneration">
+		<!--
+		      Description: Increases MP regeneration.
+		-->
+		<table name="#magicLevel">61 70</table>
+		<set name="icon" val="icon.skill1047" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="regMp" val="1.05" />
+		</for>
+	</skill>
+	<skill id="3854" levels="1" name="Sword of Empower">
+		<!--
+		      Description: Increases M. Atk.
+		-->
+		<set name="icon" val="icon.skill1059" />
+		<set name="magicLevel" val="64" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="mAtk" val="21.77" />
+		</for>
+	</skill>
+	<skill id="3855" levels="1" name="not_used">
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="3856" levels="1" name="Sword of Divine Power">
+		<!--
+		      Description: Increases one's own recovery magic power.
+		-->
+		<set name="icon" val="icon.skill1459" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="healPower" val="37" />
+		</for>
+	</skill>
+	<skill id="3857" levels="1" name="Sword of Clarity">
+		<!--
+		      Description: Decreases magic's MP consumption.
+		-->
+		<set name="icon" val="icon.skill1397" />
+		<set name="magicLevel" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="mpConsum" val="0.95" />
+			<mul order="0x30" stat="mpConsumePhysical" val="0.95" />
+		</for>
+	</skill>
+	<skill id="3858" levels="3" name="Dagger of Avoid">
+		<!--
+		      Description: Increases Evasion when a dagger is equipped.
+		-->
+		<table name="#magicLevel">58 64 82</table>
+		<set name="icon" val="icon.skill1087" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="rEvas" val="3.3" />
+		</for>
+	</skill>
+	<skill id="3859" levels="2" name="Dagger of Haste">
+		<table name="#magicLevel">61 80</table>
+		<set name="icon" val="icon.skill1086" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="1.05" />
+		</for>
+	</skill>
+	<skill id="3860" levels="1" name="Dagger of Regeneration">
+		<!--
+		      Description: Increases HP regeneration.
+		-->
+		<set name="icon" val="icon.skill1044" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="regHp" val="1.05" />
+		</for>
+	</skill>
+	<skill id="3861" levels="1" name="Dagger of Poison">
+		<!--
+		      Description: Inflicts poison on the enemy during a regular attack with a fixed rate.
+		-->
+		<set name="icon" val="icon.skill0129" />
+		<set name="magicLevel" val="70" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<triggers>
+			<trigger id="5668" level="1" type="ATTACK" chance="5" />
+		</triggers>	
+	</skill>
+	<skill id="3862" levels="1" name="Dagger of Guidance">
+		<!--
+		      Description: A Masterwork Item that increases Accuracy.
+		-->
+		<set name="icon" val="icon.skill1240" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="accCombat" val="3.3" />
+		</for>
+	</skill>
+	<skill id="3863" levels="4" name="Bow of Guidance">
+		<table name="#magicLevel">58 64 70 82</table>
+		<set name="icon" val="icon.skill1240" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="accCombat" val="3.3" />
+		</for>
+	</skill>
+	<skill id="3864" levels="2" name="Bow of Haste">
+		<table name="#magicLevel">61 80</table>
+		<set name="icon" val="icon.skill1086" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="1.05" />
+		</for>
+	</skill>
+	<skill id="3865" levels="1" name="Bow of Long Shot">
+		<!--
+		      Description: Increase the range of the bow.
+		-->
+		<set name="icon" val="icon.skill0113" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="pAtkRange" val="100">
+				<using kind="Bow" />
+			</add>
+		</for>
+	</skill>
+	<skill id="3866" levels="1" name="Dynasty Leather Gloves">
+		<!--
+		      Description: A Masterwork Item that increases accuracy/evasion/Max HP/Atk. Spd./resistance to darkness.
+		-->
+		<set name="icon" val="icon.armor_t92_g_i00" />
+		<set name="magicLevel" val="80" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="accCombat" val="1" />
+			<add order="0x60" stat="rEvas" val="1" />
+			<mul order="0x30" stat="maxHp" val="1.01" />
+			<mul order="0x30" stat="pAtkSpd" val="1.01" />
+			<add order="0x60" stat="defenceUnholy" val="5" />
+		</for>
+	</skill>
+	<skill id="3867" levels="1" name="Bow of Boost HP">
+		<!--
+		      Description: Increases maximum HP.
+		-->
+		<set name="icon" val="icon.skill0211" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxHp" val="444" />
+		</for>
+	</skill>
+	<skill id="3868" levels="4" name="Crossbow of Guidance">
+		<!--
+		      Description: Increases accuracy.
+		-->
+		<table name="#magicLevel">58 64 70 82</table>
+		<set name="icon" val="icon.skill1240" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="accCombat" val="3.7" />
+		</for>
+	</skill>
+	<skill id="3869" levels="2" name="Crossbow of Haste">
+		<!--
+		      Description: Increases Atk. Spd.
+		-->
+		<table name="#magicLevel">61 80</table>
+		<set name="icon" val="icon.skill1086" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="1.05" />
+		</for>
+	</skill>
+	<skill id="3870" levels="1" name="Crossbow of Long Shot">
+		<!--
+		      Description: Increases the crossbow's range.
+		-->
+		<set name="icon" val="icon.skill0486" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="pAtkRange" val="100" />
+		</for>
+	</skill>
+	<skill id="3871" levels="1" name="not_used">
+		<set name="icon" val="icon.skill0000" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_PASSIVE" />
+	</skill>
+	<skill id="3872" levels="1" name="Crossbow of Boost HP">
+		<!--
+		      Description: Increases maximum HP.
+		-->
+		<set name="icon" val="icon.skill0211" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxHp" val="444" />
+		</for>
+	</skill>
+	<skill id="3873" levels="2" name="Polearm of Critical Power">
+		<!--
+		      Description: Increases critical attack power.
+		-->
+		<table name="#cAtk">156 277</table>
+		<table name="#magicLevel">58 82</table>
+		<set name="icon" val="icon.skill0193" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="cAtkStatic" val="#cAtk" />
+		</for>
+	</skill>
+	<skill id="3874" levels="1" name="Polearm of Critical Chance">
+		<!--
+		      Description: Critical rate increases.
+		-->
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLevel" val="64" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="baseCrit" val="54.4" />
+		</for>
+	</skill>
+	<skill id="3875" levels="1" name="Polearm of Regeneration">
+		<!--
+		      Description: Increases HP regeneration.
+		-->
+		<set name="icon" val="icon.skill1044" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="regHp" val="1.05" />
+		</for>
+	</skill>
+	<skill id="3876" levels="1" name="Polearm of Stun">
+		<!--
+		      Description: Inflicts shock on the enemy during a regular attack with a fixed rate.
+		-->
+		<set name="icon" val="icon.skill0100" />
+		<set name="magicLevel" val="70" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<triggers>
+			<trigger id="5669" level="1" type="ATTACK" chance="6" />
+		</triggers>	
+	</skill>
+	<skill id="3877" levels="2" name="Polearm of Boost HP">
+		<!--
+		      Description: Increases maximum HP.
+		-->
+		<table name="#maxHp">319 492</table>
+		<table name="#magicLevel">61 80</table>
+		<set name="icon" val="icon.skill0211" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxHp" val="#maxHp" />
+		</for>
+	</skill>
+	<skill id="3878" levels="1" name="Polearm of Might">
+		<!--
+		      Description: Attack power is increased.
+		-->
+		<set name="icon" val="icon.skill1068" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="pAtk" val="31.25" />
+		</for>
+	</skill>
+	<skill id="3879" levels="3" name="Fist Weapon of Might">
+		<!--
+		      Description: Attack power is increased.
+		-->
+		<table name="#patak">21.2 26.9 51.26</table>
+		<table name="#magicLevel">58 64 82</table>
+		<set name="icon" val="icon.skill1068" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="pAtk" val="#patak" />
+		</for>
+	</skill>
+	<skill id="3880" levels="2" name="Fist Weapon of Haste">
+		<!--
+		      Description: Increases Atk. Spd.
+		-->
+		<table name="#magicLevel">61 80</table>
+		<set name="icon" val="icon.skill1086" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="1.05" />
+		</for>
+	</skill>
+	<skill id="3881" levels="1" name="Fist Weapon of Boost HP">
+		<!--
+		      Description: Increases maximum HP.
+		-->
+		<set name="icon" val="icon.skill0211" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxHp" val="372" />
+		</for>
+	</skill>
+	<skill id="3882" levels="1" name="Fist Weapon of Stun">
+		<!--
+		      Description: Inflicts shock on the enemy during a regular attack with a fixed rate.
+		-->
+		<set name="icon" val="icon.skill0100" />
+		<set name="magicLevel" val="70" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<triggers>
+			<trigger id="5670" level="1" type="ATTACK" chance="6" />
+		</triggers>	
+	</skill>
+	<skill id="3883" levels="1" name="Fist Weapon of Critical Power">
+		<!--
+		      Description: Increases critical attack power.
+		-->
+		<set name="icon" val="icon.skill0193" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="cAtkStatic" val="528" />
+		</for>
+	</skill>
+	<skill id="3884" levels="3" name="Blunt Weapon of Boost HP">
+		<!--
+		      Description: Increases maximum HP.
+		-->
+		<table name="#maxHp">294 345 511</table>
+		<table name="#magicLevel">58 64 82</table>
+		<set name="icon" val="icon.skill0211" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxHp" val="#maxHp" />
+		</for>
+	</skill>
+	<skill id="3885" levels="2" name="Blunt Weapon of Stun">
+		<!--
+		      Description: Inflicts shock on the enemy during a regular attack with a fixed rate.
+		-->
+		<set name="icon" val="icon.skill0100" />
+		<set name="magicLevel" val="61" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<triggers>
+			<trigger id="5671" level="1" type="ATTACK" chance="6" />
+		</triggers>	
+	</skill>
+	<skill id="3886" levels="1" name="Blunt Weapon of Haste">
+		<!--
+		      Description: Increases Atk. Spd.
+		-->
+		<set name="icon" val="icon.skill1086" />
+		<set name="magicLevel" val="61" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="1.05" />
+		</for>
+	</skill>
+	<skill id="3887" levels="1" name="Blunt Weapon of Regeneration">
+		<!--
+		      Description: Increases HP regeneration.
+		-->
+		<table name="#regHp">1.05</table>
+		<set name="icon" val="icon.skill1044" />
+		<set name="magicLevel" val="70" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="regHp" val="#regHp" />
+		</for>
+	</skill>
+	<skill id="3888" levels="1" name="Blunt Weapon of Guidance">
+		<!--
+		      Description: Increases accuracy.
+		-->
+		<table name="#accCombat">4.2</table>
+		<set name="icon" val="icon.skill1240" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="accCombat" val="#accCombat" />
+		</for>
+	</skill>
+	<skill id="3889" levels="3" name="Blunt Weapon of Empower">
+		<!--
+		      Description: Increases M. Atk.
+		-->
+		<table name="#mAtk">21.77 27.63 45.81</table>
+		<table name="#magicLevel">58 64 82</table>
+		<set name="icon" val="icon.skill1059" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x40" stat="mAtk" val="#mAtk" />
+		</for>
+	</skill>
+	<skill id="3890" levels="1" name="Blunt Weapon of Mana Boost">
+		<!--
+		      Description: Increases maximum MP.
+		-->
+		<table name="#maxMp">289</table>
+		<set name="icon" val="icon.skill0213" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxMp" val="#maxMp" />
+		</for>
+	</skill>
+	<skill id="3891" levels="2" name="Blunt Weapon of Boost HP">
+		<!--
+		      Description: Increases maximum HP.
+		-->
+		<table name="#maxHp">319 492</table>
+		<table name="#magicLevel">61 80</table>
+		<set name="icon" val="icon.skill0211" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="maxHp" val="#maxHp" />
+		</for>
+	</skill>
+	<skill id="3892" levels="1" name="Blunt Weapon of Clarity">
+		<!--
+		      Description: Decreases magic's MP consumption.
+		-->
+		<set name="icon" val="icon.skill1397" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="mpConsum" val="0.95" />
+			<mul order="0x30" stat="mpConsumePhysical" val="0.95" />
+		</for>
+	</skill>
+	<skill id="3893" levels="1" name="Blunt Weapon of Mana Regeneration">
+		<!--
+		      Description: Increases MP regeneration.
+		-->
+		<table name="#regMp">1.05</table>
+		<set name="icon" val="icon.skill1047" />
+		<set name="magicLevel" val="70" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="regMp" val="#regMp" />
+		</for>
+	</skill>
+	<skill id="3894" levels="1" name="Two-handed Blunt Weapon of Critical Power">
+		<!--
+		      Description: Increases critical attack power.
+		-->
+		<table name="#cAtk">415</table>
+		<set name="icon" val="icon.skill0193" />
+		<set name="magicLevel" val="67" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="cAtkStatic" val="#cAtk" />
+		</for>
+	</skill>
+	<skill id="3895" levels="3" name="Two-handed Blunt Weapon of Critical Chance">
+		<!--
+		      Description: Critical rate increases.
+		-->
+		<table name="#magicLevel">58 64 82</table>
+		<set name="icon" val="icon.skill1077" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="baseCrit" val="52.2" />
+		</for>
+	</skill>
+	<skill id="3896" levels="2" name="Two-handed Blunt Weapon of Haste">
+		<!--
+		      Description: Increases Atk. Spd.
+		-->
+		<table name="#pAtkSpd">1.05 1.05</table>
+		<table name="#magicLevel">61 80</table>
+		<set name="icon" val="icon.skill1086" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<mul order="0x30" stat="pAtkSpd" val="#pAtkSpd" />
+		</for>
+	</skill>
+	<skill id="3897" levels="1" name="Two-handed Blunt Weapon of Might">
+		<!--
+		      Description: Attack power is increased.
+		-->
+		<table name="#patak">32.97</table>
+		<set name="icon" val="icon.skill1068" />
+		<set name="magicLevel" val="58" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="pAtk" val="#patak" />
+		</for>
+	</skill>
+	<skill id="3898" levels="1" name="Two-handed Blunt Weapon of Guidance">
+		<!--
+		      Description: Increases accuracy.
+		-->
+		<table name="#accCombat">4.2</table>
+		<set name="icon" val="icon.skill1240" />
+		<set name="magicLevel" val="75" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="accCombat" val="#accCombat" />
+		</for>
+	</skill>
+	<skill id="3899" levels="3" name="Staff of Empower">
+		<!--
+		      Description: Increases M. Atk.
+		-->
+		<table name="#mAtk">21.77 27.63 45.81</table>
+		<table name="#magicLevel">58 64 82</table>
+		<set name="icon" val="icon.skill1059" />
+		<set name="magicLevel" val="#magicLevel" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="BUFF" />
+		<set name="operateType" val="OP_PASSIVE" />
+		<for>
+			<add order="0x60" stat="mAtk" val="#mAtk" />
+		</for>
+	</skill>
+</list>

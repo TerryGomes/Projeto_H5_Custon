@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<skill id="22400" levels="1" name="Transformation Scroll - Zaken" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="reuseDelay" val="7200000" />
+		<set name="itemConsumeId" val="17140" />
+		<set name="itemConsumeCount" val="1" />
+		<set name="isHandler" val="true" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="717;4;718;4;715;4;716;4;719;1;619;1" />
+		<set name="npcId" val="13099" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="305">
+				<set order="0x40" stat="STR" val="48" />
+				<set order="0x40" stat="DEX" val="30" />
+				<set order="0x40" stat="CON" val="52" />
+				<set order="0x40" stat="INT" val="45" />
+				<set order="0x40" stat="WIT" val="20" />
+				<set order="0x40" stat="MEN" val="45" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22401" levels="1" name="Transformation Scroll - Ranku" >
+		<set name="magicType" val="SPECIAL" />
+		<set name="icon" val="icon.skilltransform1" />
+		<set name="hitTime" val="500" />
+		<set name="target" val="TARGET_SELF" />
+		<set name="skillType" val="TRANSFORMATION" />
+		<set name="addSkills" val="731;1;732;1;619;1;5491;1" />
+		<set name="npcId" val="13103" />
+		<set name="operateType" val="OP_ACTIVE" />
+		<set name="isHandler" val="true" />
+		<set name="itemConsumeId" val="21189" />
+		<set name="itemConsumeCount" val="1" />
+		<cond msgId="1509">
+			<not>
+				<player olympiad="true" />
+			</not>
+		</cond>
+		<for>
+			<effect count="1" name="Transformation" time="1800" val="309">
+				<set order="0x40" stat="STR" val="43" />
+				<set order="0x40" stat="DEX" val="30" />
+				<set order="0x40" stat="CON" val="47" />
+				<set order="0x40" stat="INT" val="46" />
+				<set order="0x40" stat="WIT" val="20" />
+				<set order="0x40" stat="MEN" val="42" />
+			</effect>
+		</for>
+	</skill>
+	<skill id="22402" levels="1" name="Juju Agathion's Gift" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22403" levels="1" name="Extra Entrance Pass - Kamaloka (Hall of the Abyss)" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22404" levels="1" name="Pathfinder's Reward" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22405" levels="1" name="S84 Top-Grade Weapon Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22406" levels="1" name="Ellegia Armor Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22407" levels="1" name="PC Cafe Energy" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.etc_pccafe_point_i00" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22408" levels="1" name="Enchantment Tool Box" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="icon.skill0000" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+	<skill id="22409" levels="2" name="Rune of Fate" >
+		<!--  Automatically generated from The High Five: Part 4.5 client files.
+		  Description: none
+		  Target is set to TARGET_NONE, skillType  to NOTDONE for server compatability.
+		  created 07-7-2011  19:19
+		-->
+		<set name="icon" val="br_cashtex.item.br_cash_rune_of_feather_i00" />
+		<set name="target" val="TARGET_NONE" />
+		<set name="skillType" val="NOTDONE" />
+		<set name="operateType" val="OP_ACTIVE" />
+	</skill>
+</list>

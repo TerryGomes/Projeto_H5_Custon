@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+    [string]
+        font: Small, Normal, Large, VeryLarge, Giant
+        pos: TopRight, TopLeft, TopCenter, MiddleRight, MiddleLeft, MiddleCenter, BottomRight, BottomLeft, BottomCenter, TopRightRelative (необходимо установить координаты)
+        style: Normal, Shadowed
+        msgId: None, FPS
+-->
+<list>
+    <string value="FPS %d | Welcome to FandC" color="FF00F265" font="Small" pos="TopRightRelative" style="Shadowed">
+        <showtime value="60000"/> <!-- время отображения, удалить для отключения -->
+        <fadein value="500"/>
+        <fadeout value="1000"/>
+        <msgId value="FPS"/>
+        <pos x="150" y="35"/>
+    </string>
+</list>
