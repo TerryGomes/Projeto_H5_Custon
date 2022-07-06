@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+	<!-- EXAMPLE: <achievement id="45" cat="5" type="_treasure_box_opened" desc="Open %need% chests."> <level id="1" name="Treasure searcher" icon="icon.skill0419" need="10" fame="0"/> <level id="2" name="Treasure searcher" icon="icon.skill0419" need="100" fame="0"/> <level id="2" name="Treasure searcher" icon="icon.skill0419" need="500" fame="0"/> <level id="2" name="Treasure searcher" icon="icon.skill0419" need="1000" fame="0"> <reward id="14687" count="3" name="Greater Elixir of Life (S-Grade)"/> <reward id="14699" count="5" name="Greater Elixir of CP (S-Grade"/> </lvl> </achievement> -->
+
+	<categories>
+		<cat id="1" name="Farming" desc="Monsters, Epics, Raids." icon="icon.skill5860" />
+		<cat id="2" name="PvP" desc="Everything related to PvP - kills, deaths, etc." icon="icon.skilltransform2" />
+		<cat id="4" name="Clan" desc="Sieges, fortress battles, clan wars, etc." icon="icon.skill5074" />
+		<cat id="5" name="Others" desc="Skills, crafting, materials, etc." icon="icon.skill0818" />
+	</categories>
+
+	<!-- Enemy achievements -->
+	<achievement id="1" cat="1" type="mobsKilled" desc="Defeat %need% monsters.">
+		<level id="1" name="Farmer" icon="icon.skill1539" need="1000" fame="0" />
+		<level id="2" name="Farmer" icon="icon.skill1539" need="5000" fame="0" />
+		<level id="3" name="Farmer" icon="icon.skill1539" need="10000" fame="0" />
+		<level id="4" name="Farmer" icon="icon.skill1539" need="25000" fame="0" />
+		<level id="5" name="Farmer" icon="icon.skill1539" need="50000" fame="0" />
+	</achievement>
+	<achievement id="2" cat="1" type="raidsKilled" desc="Defeat %need% raid bossess.">
+		<level id="1" name="Raid Slayer" icon="icon.skill4289" need="10" fame="0" />
+		<level id="2" name="Raid Slayer" icon="icon.skill4289" need="50" fame="0" />
+		<level id="3" name="Raid Slayer" icon="icon.skill4289" need="100" fame="0" />
+		<level id="4" name="Raid Slayer" icon="icon.skill4289" need="250" fame="0" />
+	</achievement>
+	<achievement id="3" cat="1" type="championsKilled" desc="Defeat %need% champion monsters.">
+		<level id="1" name="Champion" icon="icon.skill1129" need="10" fame="0" />
+		<level id="2" name="Champion" icon="icon.skill1129" need="50" fame="0" />
+		<level id="3" name="Champion" icon="icon.skill1129" need="100" fame="0" />
+		<level id="4" name="Champion" icon="icon.skill1129" need="250" fame="0" />
+	</achievement>
+	<achievement id="4" cat="1" type="antharasKilled" desc="Defeat Antharas">
+		<level id="1" name="Antharas Raider" icon="icon.accessory_earring_of_antaras_i00" need="1" fame="5000">
+			<!-- reward id="21986" count="1" name="Agathion Seal Bracelet - Antharas"/ -->
+		</level>
+	</achievement>
+	<achievement id="5" cat="1" type="baiumKilled" desc="Defeat Baium">
+		<level id="1" name="Baium Raider" icon="icon.accessory_ring_of_baium_i00" need="1" fame="3000" />
+	</achievement>
+	<achievement id="6" cat="1" type="valakasKilled" desc="Defeat Valakas">
+		<level id="1" name="Valakas Raider" icon="icon.accessory_necklace_of_valakas_i00" need="1" fame="5000">
+			<!-- reward id="20725" count="1" name="Red Flame of Valakas"/ -->
+		</level>
+	</achievement>
+	<achievement id="7" cat="1" type="orfenKilled" desc="Defeat Orfen">
+		<level id="1" name="Orfen Raider" icon="icon.accessory_earring_of_orfen_i00" need="1" fame="2000" />
+	</achievement>
+	<achievement id="8" cat="1" type="antQueenKilled" desc="Defeat Queen Ant.">
+		<level id="1" name="Queen Ant Raider" icon="icon.accessory_ring_of_queen_ant_i00" need="1" fame="2000" />
+	</achievement>
+	<achievement id="9" cat="1" type="coreKilled" desc="Defeat Core">
+		<level id="1" name="Core Raider" icon="icon.accessory_ring_of_core_i00" need="1" fame="2000" /> <!-- Jet Bike reward? -->
+	</achievement>
+	<achievement id="10" cat="1" type="belethKilled" desc="Defeat Beleth">
+		<level id="1" name="Beleth Raider" icon="icon.accessary_dynasty_ring_i00" need="1" fame="5000" />
+	</achievement>
+	<achievement id="11" cat="1" type="baylorKilled" desc="Defeat Baylor">
+		<level id="1" name="Baylor Raider" icon="icon.accessary_dynasty_earing_i00" need="1" fame="2000" />
+	</achievement>
+	<achievement id="12" cat="1" type="sailrenKilled" desc="Defeat Sailren">
+		<level id="1" name="Sailren Raider" icon="icon.skill0930" need="1" fame="2000">
+			<reward id="14828" count="1" name="Deinonychus Mesozoic Stone" />
+		</level>
+	</achievement>
+	<achievement id="13" cat="1" type="zakenKilled" desc="Defeat Zaken">
+		<level id="1" name="Zaken Raider" icon="icon.skill0930" need="1" fame="2000">
+			<!-- reward id="21165" count="1" name="Agathion Seal Bracelet - Zaken Spirit Sword"/ -->
+		</level>
+	</achievement>
+	<achievement id="14" cat="1" type="tiatKilled" desc="Defeat Tiat">
+		<level id="1" name="Tiat Raider" icon="icon.skill0930" need="1" fame="5000" />
+	</achievement>
+	<achievement id="15" cat="1" type="freyaKilled" desc="Defeat Freya">
+		<level id="1" name="Freya Raider" icon="icon.skill0930" need="1" fame="2000" />
+	</achievement>
+	<achievement id="16" cat="1" type="frintezzaKilled" desc="Defeat Frintezza">
+		<level id="1" name="Frintezza Raider" icon="icon.skill0930" need="1" fame="2000" />
+	</achievement>
+
+	<!-- Combo achievements -->
+	<achievement id="20" cat="2" type="pvpKills" desc="Kill %need% players.">
+		<level id="1" name="Cry me a river" icon="icon.skill0522" need="100" fame="5000" />
+		<level id="2" name="Cry me a river" icon="icon.skill0522" need="500" fame="10000" />
+		<level id="3" name="Cry me a river" icon="icon.skill0522" need="1000" fame="10000" />
+		<level id="4" name="Cry me a river" icon="icon.skill0522" need="2500" fame="25000" />
+		<level id="5" name="Cry me a river" icon="icon.skill0522" need="5000" fame="50000" />
+	</achievement>
+	<achievement id="21" cat="2" type="olyHiScore" desc="Reach %need% olympiad points.">
+		<level id="1" name="Master of the Arena" icon="icon.skill0522" need="100" fame="5000" />
+		<level id="2" name="Master of the Arena" icon="icon.skill0522" need="250" fame="15000" />
+		<level id="3" name="Master of the Arena" icon="icon.skill0522" need="500" fame="30000" />
+		<level id="4" name="Master of the Arena" icon="icon.skill0522" need="1000" fame="50000" />
+	</achievement>
+	<achievement id="22" cat="2" type="olyGamesWon" desc="Win %need% olympiad games.">
+		<level id="1" name="Gladiator" icon="icon.skill0522" need="100" fame="5000" />
+		<level id="2" name="Gladiator" icon="icon.skill0522" need="500" fame="10000" />
+		<level id="3" name="Gladiator" icon="icon.skill0522" need="1000" fame="15000" />
+		<level id="4" name="Gladiator" icon="icon.skill0522" need="2500" fame="30000" />
+		<level id="5" name="Gladiator" icon="icon.skill0522" need="5000" fame="50000" />
+	</achievement>
+	<achievement id="23" cat="2" type="highestKarma" desc="Reach %need% karma.">
+		<level id="1" name="Tao of the Karma" icon="icon.skill0522" need="111111" fame="1000" />
+		<level id="2" name="Tao of the Karma" icon="icon.skill0522" need="333333" fame="3000" />
+		<level id="3" name="Tao of the Karma" icon="icon.skill0522" need="999999" fame="5000" />
+		<level id="4" name="Tao of the Karma" icon="icon.skill0522" need="3333333" fame="10000" />
+		<level id="5" name="Tao of the Karma" icon="icon.skill0522" need="9999999" fame="10000" />
+	</achievement>
+	<achievement id="24" cat="2" type="pkInARowKills" desc="Make %need% PK kills without losing your karma.">
+		<level id="1" name="Berserk" icon="icon.skill0522" need="5" fame="5" />
+		<level id="2" name="Berserk" icon="icon.skill0522" need="10" fame="10" />
+		<level id="3" name="Berserk" icon="icon.skill0522" need="25" fame="25" />
+		<level id="4" name="Berserk" icon="icon.skill0522" need="50" fame="50" />
+		<level id="5" name="Berserk" icon="icon.skill0522" need="100" fame="100" />
+	</achievement>
+	<achievement id="25" cat="2" type="timesHero" desc="Become a hero.">
+		<level id="1" name="Hero Inside" icon="icon.event_hero_treasure_box_i00" need="1" fame="10000" />
+	</achievement>
+	<achievement id="26" cat="2" type="duelsWon" desc="Win %need% duels.">
+		<level id="1" name="Sir" icon="icon.skill3238" need="50" fame="1000" />
+		<level id="2" name="Sir" icon="icon.skill3238" need="500" fame="2000" />
+		<level id="3" name="Sir" icon="icon.skill3238" need="1000" fame="5000" />
+	</achievement>
+	<!--<achievement id="27" cat="2" type="timesDied" desc="Get killed %need% times."> <level id="1" name="Death Awakens" icon="icon.skill0103" need="100" fame="100"/> <level id="2" name="Death Awakens" icon="icon.skill0103" need="250" fame="250"/> <level id="3" name="Death Awakens" icon="icon.skill0103" need="500" fame="500"/> <level id="4" name="Death Awakens" icon="icon.skill0103" need="1000" fame="1000"/> <level id="5" name="Death Awakens" icon="icon.skill0103" need="2000" fame="2000"/> </achievement> -->
+	<achievement id="28" cat="2" type="playersRessurected" desc="Ressurect %need% dead bodies.">
+		<level id="1" name="Holymancer" icon="icon.skill4450" need="20" fame="1000" />
+		<level id="2" name="Holymancer" icon="icon.skill4450" need="100" fame="3000" />
+		<level id="3" name="Holymancer" icon="icon.skill4450" need="500" fame="5000" />
+		<level id="4" name="Holymancer" icon="icon.skill4450" need="1000" fame="5000" />
+	</achievement>
+	<achievement id="29" cat="2" type="fameAcquired" desc="Acquire %need% fame.">
+		<level id="1" name="Big Guy" icon="icon.skill0522" need="50000" fame="5000" />
+		<level id="2" name="Big Guy" icon="icon.skill0522" need="100000" fame="5000" />
+		<level id="3" name="Big Guy" icon="icon.skill0522" need="500000" fame="10000" />
+		<level id="4" name="Big Guy" icon="icon.skill0522" need="1000000" fame="20000" />
+	</achievement>
+
+	<!-- Clan achievements -->
+	<achievement id="41" cat="4" type="castleSiegesWon" desc="Rule over %need% castle sieges.">
+		<level id="1" name="Rule their soul" icon="icon.skill0316" need="1" fame="5000" />
+		<level id="2" name="Rule their soul" icon="icon.skill0316" need="4" fame="10000" />
+		<level id="3" name="Rule their soul" icon="icon.skill0316" need="10" fame="20000" />
+	</achievement>
+	<achievement id="42" cat="4" type="fortSiegesWon" desc="Rule over %need% fortress battles.">
+		<level id="1" name="Outlaw" icon="icon.skill5662" need="1" fame="1000" />
+		<level id="2" name="Outlaw" icon="icon.skill5662" need="5" fame="3000" />
+		<level id="3" name="Outlaw" icon="icon.skill5662" need="10" fame="5000" />
+	</achievement>
+	<achievement id="43" cat="4" type="dominionSiegesWon" desc="Rule over %need% territory wars.">
+		<level id="1" name="Legionary" icon="icon.skill1472" need="1" fame="5000" />
+		<level id="2" name="Legionary" icon="icon.skill1472" need="4" fame="10000" />
+		<level id="3" name="Legionary" icon="icon.skill1472" need="10" fame="20000" />
+	</achievement>
+	<achievement id="44" cat="4" type="playersKilledInSiege" desc="Kill %need% players during Castle Siege.">
+		<level id="1" name="Castle Control" icon="icon.skill1472" need="50" fame="1000" />
+		<level id="2" name="Castle Control" icon="icon.skill1472" need="100" fame="3000" />
+		<level id="3" name="Castle Control" icon="icon.skill1472" need="250" fame="5000" />
+		<level id="4" name="Castle Control" icon="icon.skill1472" need="500" fame="10000" />
+		<level id="5" name="Castle Control" icon="icon.skill1472" need="1000" fame="20000" />
+	</achievement>
+
+	<!-- Others achievements -->
+	<achievement id="50" cat="5" type="distanceWalked" desc="Walk %need% distance.">
+		<level id="1" name="Wise Walker" icon="icon.skill1368" need="1000000" fame="0" />
+		<level id="2" name="Wise Walker" icon="icon.skill1368" need="10000000" fame="0" />
+	</achievement>
+	<achievement id="51" cat="5" type="adenaDestroyed" desc="Destroy %need% adena.">
+		<level id="1" name="I'm an Idiot" icon="icon.skill1368" need="5000000000" fame="0" />
+		<level id="2" name="I'm even a bigger idiot" icon="icon.skill1368" need="25000000000" fame="0" />
+		<level id="2" name="I don't care" icon="icon.skill1368" need="5000000000" fame="0">
+			<reward id="57" count="35000000000" name="Adena" />
+		</level>
+	</achievement>
+	<achievement id="52" cat="5" type="maxSoulCrystalLevel" desc="Make Soul Crystal Lv. %need%.">
+		<level id="1" name="Soul Collector" icon="icon.skill1368" need="16" fame="0" />
+		<level id="2" name="Soul Collector" icon="icon.skill1368" need="18" fame="0" />
+	</achievement>
+	<achievement id="53" cat="5" type="recommendsMade" desc="Recommend %need% times.">
+		<level id="1" name="Being Friendly" icon="icon.skill1368" need="100" fame="0" />
+		<level id="2" name="Being Friendly" icon="icon.skill1368" need="1000" fame="0" />
+		<level id="2" name="Being Friendly" icon="icon.skill1368" need="5000" fame="0" />
+		<level id="2" name="Being Friendly" icon="icon.skill1368" need="10000" fame="0" />
+	</achievement>
+	<achievement id="54" cat="5" type="manorSeedsSow" desc="Harvest %need% seeds.">
+		<level id="1" name="Seeder" icon="icon.etc_reaper_i00" need="100" fame="1000" />
+		<level id="2" name="Seeder" icon="icon.etc_reaper_i00" need="1000" fame="5000" />
+		<level id="3" name="Seeder" icon="icon.etc_reaper_i00" need="2500" fame="10000" />
+		<level id="4" name="Seeder" icon="icon.etc_reaper_i00" need="5000" fame="20000" />
+	</achievement>
+	<achievement id="55" cat="5" type="fishCaught" desc="Catch %need% fish.">
+		<level id="1" name="Fisherman" icon="icon.skill1319" need="50" fame="0" />
+		<level id="2" name="Fisherman" icon="icon.skill1319" need="100" fame="0" />
+		<level id="3" name="Fisherman" icon="icon.skill1319" need="250" fame="0" />
+		<level id="4" name="Fisherman" icon="icon.skill1319" need="500" fame="0" />
+		<level id="5" name="Fisherman" icon="icon.skill1319" need="1000" fame="0" />
+	</achievement>
+	<achievement id="56" cat="5" type="highestEnchant" desc="Enchant an item up to  +%need%.">
+		<level id="1" name="I Can Enchant" icon="icon.etc_scroll_of_enchant_armor_i05" need="7" fame="0" />
+		<level id="2" name="RNG Master" icon="icon.etc_scroll_of_enchant_armor_i05" need="10" fame="0" />
+		<level id="3" name="RNG God" icon="icon.etc_scroll_of_enchant_armor_i05" need="16" fame="0" />
+	</achievement>
+	<achievement id="57" cat="5" type="treasureBoxesOpened" desc="Open %need% treasure chests.">
+		<level id="1" name="Pirate" icon="icon.skill0419" need="10" fame="0" />
+		<level id="2" name="Pirate" icon="icon.skill0419" need="50" fame="0" />
+		<level id="3" name="Pirate" icon="icon.skill0419" need="100" fame="0" />
+		<level id="4" name="Pirate" icon="icon.skill0419" need="500" fame="0" />
+		<level id="5" name="Pirate" icon="icon.skill0419" need="1000" fame="0" />
+	</achievement>
+	<achievement id="58" cat="5" type="timesMarried" desc="Get Married">
+		<level id="1" name="Meet your Love" icon="icon.mysterious_wedding_i00" need="1" fame="0" />
+	</achievement>
+	<achievement id="59" cat="5" type="timesVoted" desc="Vote for the server %need% times.">
+		<level id="1" name="I love the Server" icon="icon.action051" need="1" fame="1000" />
+		<level id="2" name="I love the Server" icon="icon.action051" need="5" fame="1000" />
+		<level id="3" name="I love the Server" icon="icon.action051" need="10" fame="5000" />
+		<level id="4" name="I love the Server" icon="icon.action051" need="20" fame="5000" />
+		<level id="5" name="I love the Server" icon="icon.action051" need="30" fame="6000" />
+		<level id="6" name="I love the Server" icon="icon.action051" need="40" fame="6000" />
+		<level id="7" name="I love the Server" icon="icon.action051" need="50" fame="7000" />
+		<level id="8" name="I love the Server" icon="icon.action051" need="60" fame="7000" />
+		<level id="9" name="I love the Server" icon="icon.action051" need="70" fame="8000" />
+		<level id="10" name="I love the Server" icon="icon.action051" need="80" fame="8000" />
+		<level id="11" name="I love the Server" icon="icon.action051" need="90" fame="9000" />
+		<level id="12" name="I love the Server" icon="icon.action051" need="100" fame="9000" />
+	</achievement>
+</list>

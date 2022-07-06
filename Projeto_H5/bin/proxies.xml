@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE list SYSTEM "proxies.dtd">
+<!-- In order to make this file be in use, EnableProxies in server.properties MUST be set to true -->
+<!-- This list should contain GameServer IPs. IP of the GameServer will be chosen for Player during Server Selection, based on Mask of his IP -->
+
+<!-- For example, if IP of the player is 153.4.138.226, all of the masks below will be checked if IP matches range of mask -->
+<!-- Mask 0.0.0.0/3 covers IPs from 0.0.0.0 to 31.255.255.255. Mask 32.0.0.0/3 covers IPs from 32.0.0.0 to 63.255.255.255 and so on -->
+<!-- So if IP of the player matches below mask, value in "ip" will be given to him, to connect with GameServer -->
+<!-- If player IP will not match any mask, Error in LoginServer logs will be printed -->
+<list>
+	<level min="40" max="86" ip="127.0.0.1"/>
+	<minChatMessages party="3" clan="5" ip="127.0.0.1"/>
+	<minChatMessages shout="5" ip="127.0.0.1"/>
+	<minChatMessages all="15" trade="5" ip="127.0.0.1"/>
+	<minChatMessages pm="3" clan="5" ip="127.0.0.1"/>
+
+	<mask mask="0.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="16.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="32.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="48.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="64.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="80.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="96.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="112.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="128.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="144.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="160.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="176.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="192.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="208.0.0.0/4" ip="127.0.0.1"/>
+	<mask mask="224.0.0.0/4" ip="127.0.0.1"/>
+</list>

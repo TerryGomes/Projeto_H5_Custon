@@ -48,204 +48,160 @@ public class Config
 
 	public static final int NCPUS = Runtime.getRuntime().availableProcessors();
 	/** Configuration files */
-
-	public static final String CONFIGURATION_FILE = "config/server.ini";
-
-	public static final String GEODATA_CONFIG_FILE = "config/geodata.ini";
-
-	public static final String FAKE_PLAYERS_LIST = "config/fake_players.list";
-
 	public static final String ANUSEWORDS_CONFIG_FILE = "config/abusewords.txt";
 	public static final String ADV_IP_FILE = "config/advipsystem.ini";
-
 	public static final String GM_PERSONAL_ACCESS_FILE = "config/GMAccess.xml";
 	public static final String GM_ACCESS_FILES_DIR = "config/GMAccess.d/";
-
-	/** events */
-	public static final String EVENT_APRIL_FOOLS_CONFIG_FILE = "config/events/AprilFools.ini";
-
 	public static final String EVENT_CHANGE_OF_HEART_CONFIG_FILE = "config/events/ChangeOfHeart.ini";
 	public static final String EVENT_COFFER_OF_SHADOWS_CONFIG_FILE = "config/events/CofferOfShadows.ini";
-
-	public static final String EVENT_GLITTERING_MEDAL_CONFIG_FILE = "config/events/GlitteringMedal.ini";
-
-	public static final String EVENT_L2_DAY_CONFIG_FILE = "config/events/L2Day.ini";
-	public static final String EVENT_LAST_HERO_CONFIG_FILE = "config/events/LastHero.ini";
-	public static final String EVENT_MARCH_8_CONFIG_FILE = "config/events/March8.ini";
-	public static final String EVENT_MASTER_OF_ENCHANING_CONFIG_FILE = "config/events/MasterOfEnchaning.ini";
-	public static final String EVENT_OTHER_EVENTS_CONFIG_FILE = "config/events/OtherEvents.ini";
-	public static final String EVENT_SAVING_SNOWMAN_CONFIG_FILE = "config/events/SavingSnowman.ini";
-
-	public static final String EVENT_THE_FALL_HARVEST_CONFIG_FILE = "config/events/TheFallHarvest.ini";
-	public static final String EVENT_TRICK_OF_TRANSMUTATION_CONFIG_FILE = "config/events/TrickOfTransmutation.ini";
-	public static final String EVENT_WORLD_DROP_CONFIG_FILE = "config/events/WorldDrop.ini";
-	public static final String PC_CONFIG_FILE = "config/events/PcBangPoints.ini";
-	public static final String DEFENSE_TOWNS_CONFIG_FILE = "config/events/DefenseTowns.ini";
-	public static final String VIKTORINA_CONFIG_FILE = "config/events/Victorina.ini";
-
-	// Synerge
-	public static final String RAID_EVENT_CONFIG_FILE = "config/events/RaidEvent.ini";
-
-	public static int HTM_CACHE_MODE;
-	public static boolean LOG_SERVICES;
-	public static boolean ALLOW_ADDONS_CONFIG;
-
-	public static boolean ALLOW_IP_LOCK;
-	public static boolean ALLOW_HWID_LOCK;
-	public static int HWID_LOCK_MASK;
-
-	public static boolean ENABLE_SECONDARY_PASSWORD;
-
-	public static String MAIL_USER;
-	public static String MAIL_PASS;
-	public static String MAIL_SUBJECT;
-	public static String MAIL_MESSAGE;
-
-	/** GameServer ports */
-	public static int[] PORTS_GAME;
-	public static String GAMESERVER_HOSTNAME;
-	public static boolean ADVIPSYSTEM;
-	public static List<AdvIP> GAMEIPS = new ArrayList<AdvIP>();
-	public static String DATABASE_DRIVER;
-	public static int DATABASE_MAX_CONNECTIONS;
-	public static int DATABASE_MAX_IDLE_TIMEOUT;
-	public static int DATABASE_IDLE_TEST_PERIOD;
-	public static String DATABASE_GAME_URL;
-	public static String DATABASE_GAME_USER;
-	public static String DATABASE_GAME_PASSWORD;
-	public static String DATABASE_LOGIN_URL;
-	public static String DATABASE_LOGIN_USER;
-	public static String DATABASE_LOGIN_PASSWORD;
-	public static String MYSQL_DUMP_PATH;
-
-	// Database additional options
-	public static boolean AUTOSAVE;
-
-	public static long USER_INFO_INTERVAL;
-	public static boolean BROADCAST_STATS_INTERVAL;
-	public static long BROADCAST_CHAR_INFO_INTERVAL;
-
-	public static int EFFECT_TASK_MANAGER_COUNT;
-
-	public static int MAXIMUM_ONLINE_USERS;
-	public static int ONLINE_PLUS;
-
-	public static int MAX_REFLECTIONS_COUNT;
-
-	public static int SHIFT_BY;
-	public static int SHIFT_BY_Z;
-	public static int MAP_MIN_Z;
-	public static int MAP_MAX_Z;
-
-	// Donation Store
-
-	public static boolean LEVEL_CHANGE_ENABLED;
-	public static int LEVEL_UP_CHANGE_MAX;
-	public static int LEVEL_UP_CHANGE_PRICE;
-	public static int LEVEL_UP_CHANGE_ITEM;
-	public static int LEVEL_DOWN_CHANGE_MAX;
-	public static int LEVEL_DOWN_CHANGE_PRICE;
-	public static int LEVEL_DOWN_CHANGE_ITEM;
-
-	public static boolean REC_SERVICE;
-	public static int REC_ITEM;
-	public static int REC_PRICE;
-
-	public static boolean CRP_SERVICE;
-	public static int CRP_ITEM;
-	public static int CRP_PRICE;
-	public static int CRP_COUNT;
-
-	public static boolean FAME_SERVICE;
-	public static int FAME_ITEM;
-	public static int FAME_PRICE;
-	public static int FAME_COUNT;
-
-	public static boolean NOBLE_ENABLED;
-	public static int NOBLE_SELL_PRICE;
-	public static int NOBLE_SELL_ITEM;
-
-	public static int DRAGONKNIGHT_2ND_D_CHANCE;
-	public static int DRAGONKNIGHT_3ND_D_CHANCE;
-
-	public static int LOA_CIRCLE_MOB_UNSPAWN_TIME;
-
-	public static boolean AllowBBSSubManager;
-
-
-
-	public static boolean ALLOW_EPIC_BOSSES_PAGE;
-	public static boolean ALLOW_EPIC_BOSSES_TELEPORT;
-	public static boolean EPIC_BOSSES_TELEPORT_ONLY_FROM_PEACE;
-	public static boolean EPIC_BOSSES_TELEPORT_ONLY_FOR_PREMIUM;
-	public static int EPIC_BOSSES_TELEPORT_PRICE_ID;
-	public static int EPIC_BOSSES_TELEPORT_PRICE_COUNT;
-
-	/** Thread pools size */
-	public static int SCHEDULED_THREAD_POOL_SIZE;
-	public static int EXECUTOR_THREAD_POOL_SIZE;
-
-	public static boolean ENABLE_RUNNABLE_STATS;
-
-	/** Network settings */
-	public static SelectorConfig SELECTOR_CONFIG = new SelectorConfig();
-
-	public static int CNAME_MAXLEN = 32;
-
-	public static String CHAR_NAME_TEMPLATE;
-	public static String CLAN_NAME_TEMPLATE;
-	public static String CLAN_TITLE_TEMPLATE;
-	public static String ALLY_NAME_TEMPLATE;
-
-	public static boolean TRADE_CHATS_REPLACE;
-
-	public static String SERVER_NAME;
-	public static String SHORT_SERVER_NAME;
-	public static String SERVER_SUB_NAME;
-
-	/** For test servers - evrybody has admin rights */
-	public static boolean EVERYBODY_HAS_ADMIN_RIGHTS;
-
-	public static boolean ENABLE_VOTE;
-	public static String VOTE_ADDRESS;
-
 	public static Map<Integer, PlayerAccess> gmlist = new HashMap<Integer, PlayerAccess>();
+//     public static final String FAKE_PLAYERS_LIST = "config/fake_players.list";
+//	/** events */
+//	public static final String EVENT_APRIL_FOOLS_CONFIG_FILE = "config/events/AprilFools.ini";
+//	public static final String EVENT_GLITTERING_MEDAL_CONFIG_FILE = "config/events/GlitteringMedal.ini";
+//	public static final String EVENT_L2_DAY_CONFIG_FILE = "config/events/L2Day.ini";
+//	public static final String EVENT_LAST_HERO_CONFIG_FILE = "config/events/LastHero.ini";
+//	public static final String EVENT_MARCH_8_CONFIG_FILE = "config/events/March8.ini";
+//	public static final String EVENT_MASTER_OF_ENCHANING_CONFIG_FILE = "config/events/MasterOfEnchaning.ini";
+//	public static final String EVENT_OTHER_EVENTS_CONFIG_FILE = "config/events/OtherEvents.ini";
+//	public static final String EVENT_SAVING_SNOWMAN_CONFIG_FILE = "config/events/SavingSnowman.ini";
+//	public static final String EVENT_THE_FALL_HARVEST_CONFIG_FILE = "config/events/TheFallHarvest.ini";
+//	public static final String EVENT_TRICK_OF_TRANSMUTATION_CONFIG_FILE = "config/events/TrickOfTransmutation.ini";
+//	public static final String EVENT_WORLD_DROP_CONFIG_FILE = "config/events/WorldDrop.ini";
+//	public static final String PC_CONFIG_FILE = "config/events/PcBangPoints.ini";
+//	public static final String DEFENSE_TOWNS_CONFIG_FILE = "config/events/DefenseTowns.ini";
 
-	public static int AUTODESTROY_ITEM_AFTER;
-	public static int AUTODESTROY_PLAYER_ITEM_AFTER;
+	public static boolean GOODS_INVENTORY_ENABLED = false;
+	// Flutuando
 
-	public static int DELETE_DAYS;
-
-	public static int PURGE_BYPASS_TASK_FREQUENCY;
-
-	/** Datapack root directory */
-	public static File DATAPACK_ROOT;
-
-	public static boolean ALLOW_DISCARDITEM;
-	public static boolean ALLOW_DISCARDITEM_AT_PEACE;
-	public static boolean ALLOW_MAIL;
-	public static boolean ALLOW_WAREHOUSE;
-	public static boolean ALLOW_WATER;
-	public static boolean ALLOW_CURSED_WEAPONS;
-	public static boolean DROP_CURSED_WEAPONS_ON_KICK;
-
-	public static boolean ALLOW_ENTER_INSTANCE;
-	public static boolean ALLOW_PRIVATE_STORES;
-	public static boolean ALLOW_TALK_TO_NPCS;
-	public static boolean ALLOW_JUST_MOVING;
-	public static boolean ALLOW_TUTORIAL;
-	public static boolean ALLOW_HWID_ENGINE;
-	public static boolean ALLOW_SKILLS_STATS_LOGGER;
-	public static boolean ALLOW_ITEMS_LOGGING;
-	public static boolean ALLOW_SPAWN_PROTECTION;
-
-
+//	public static boolean LEVEL_CHANGE_ENABLED;
+//	public static int LEVEL_UP_CHANGE_MAX;
+//	public static int LEVEL_UP_CHANGE_PRICE;
+//	public static int LEVEL_UP_CHANGE_ITEM;
+//	public static int LEVEL_DOWN_CHANGE_MAX;
+//	public static int LEVEL_DOWN_CHANGE_PRICE;
+//	public static int LEVEL_DOWN_CHANGE_ITEM;
+//
+//	public static boolean REC_SERVICE;
+//	public static int REC_ITEM;
+//	public static int REC_PRICE;
+//
+//	public static boolean CRP_SERVICE;
+//	public static int CRP_ITEM;
+//	public static int CRP_PRICE;
+//	public static int CRP_COUNT;
+//
+//	public static boolean FAME_SERVICE;
+//	public static int FAME_ITEM;
+//	public static int FAME_PRICE;
+//	public static int FAME_COUNT;
+//
+//	public static boolean NOBLE_ENABLED;
+//	public static int NOBLE_SELL_PRICE;
+//	public static int NOBLE_SELL_ITEM;
+//
+//	public static int DRAGONKNIGHT_2ND_D_CHANCE;
+//	public static int DRAGONKNIGHT_3ND_D_CHANCE;
+//	public static boolean AllowBBSSubManager;
+//	public static int LOA_CIRCLE_MOB_UNSPAWN_TIME;
+//	public static boolean ALLOW_EPIC_BOSSES_PAGE;
+//	public static boolean ALLOW_EPIC_BOSSES_TELEPORT;
+//	public static boolean EPIC_BOSSES_TELEPORT_ONLY_FROM_PEACE;
+//	public static boolean EPIC_BOSSES_TELEPORT_ONLY_FOR_PREMIUM;
+//	public static int EPIC_BOSSES_TELEPORT_PRICE_ID;
+//	public static int EPIC_BOSSES_TELEPORT_PRICE_COUNT;
+//
+//	public static int CNAME_MAXLEN = 32;
+//
+//	public static boolean TRADE_CHATS_REPLACE;
+//	/** Community Board */
+//	public static boolean USE_BBS_BUFER_IS_COMBAT;
+//	public static boolean USE_BBS_BUFER_IS_CURSE_WEAPON;
+//	public static boolean USE_BBS_BUFER_IS_EVENTS;
+//	public static boolean USE_BBS_TELEPORT_IS_COMBAT;
+//	public static boolean USE_BBS_TELEPORT_IS_EVENTS;
+//	public static boolean USE_BBS_PROF_IS_COMBAT;
+//	public static boolean USE_BBS_PROF_IS_EVENTS;
+//	public static boolean SAVE_BBS_TELEPORT_IS_EPIC;
+//	public static boolean SAVE_BBS_TELEPORT_IS_BZ;
+//
+//	public static boolean ALLOW_COMMUNITYBOARD_IN_COMBAT;
+//	public static boolean ALLOW_COMMUNITYBOARD_IS_IN_SIEGE;
+//	public static boolean COMMUNITYBOARD_BUFFER_ENABLED;
+//	public static boolean COMMUNITYBOARD_BUFFER_MAX_LVL_ALLOW;
+//	public static boolean COMMUNITYBOARD_BUFFER_SIEGE_ENABLED;
+//	public static boolean COMMUNITYBOARD_BUFFER_NO_IS_IN_PEACE_ENABLED;
+//	public static boolean COMMUNITYBOARD_SELL_ENABLED;
+//	public static boolean COMMUNITYBOARD_SHOP_ENABLED;
+//	public static boolean COMMUNITYBOARD_SHOP_NO_IS_IN_PEACE_ENABLED;
+//	public static boolean COMMUNITYBOARD_BUFFER_PET_ENABLED;
+//	public static boolean COMMUNITYBOARD_BUFFER_SAVE_ENABLED;
+//	public static boolean COMMUNITYBOARD_ABNORMAL_ENABLED;
+//	public static boolean COMMUNITYBOARD_INSTANCE_ENABLED;
+//	public static boolean COMMUNITYBOARD_EVENTS_ENABLED;
+//	public static int COMMUNITYBOARD_BUFF_TIME;
+//	public static int COMMUNITYBOARD_BUFFER_MAX_LVL;
+//	public static int COMMUNITYBOARD_BUFF_PETS_TIME;
+//	public static int COMMUNITYBOARD_BUFF_COMBO_TIME;
+//	public static int COMMUNITYBOARD_BUFF_SONGDANCE_TIME;
+//	public static int COMMUNITYBOARD_BUFF_PICE;
+//	public static int COMMUNITYBOARD_BUFF_SAVE_PICE;
+//	public static List<Integer> COMMUNITYBOARD_BUFF_ALLOW = new ArrayList<Integer>();
+//	public static List<Integer> COMMUNITI_LIST_MAGE_SUPPORT = new ArrayList<Integer>();
+//	public static List<Integer> COMMUNITI_LIST_FIGHTER_SUPPORT = new ArrayList<Integer>();
+//	public static List<String> COMMUNITYBOARD_MULTISELL_ALLOW = new ArrayList<String>();
+//
+//	public static boolean COMMUNITYBOARD_TELEPORT_ENABLED;
+//	public static int COMMUNITYBOARD_TELE_PICE;
+//	public static int COMMUNITYBOARD_SAVE_TELE_PICE;
+//	public static boolean COMMUNITYBOARD_TELEPORT_SIEGE_ENABLED;
+//	/* Version Configs */
+//	public static String SERVER_VERSION;
+//	public static String SERVER_BUILD_DATE;
+//
+//	public static boolean COMMUNITYBOARD_BOARD_ALT_ENABLED;
+//	public static int COMMUNITYBOARD_BUFF_PICE_NG;
+//	public static int COMMUNITYBOARD_BUFF_PICE_D;
+//	public static int COMMUNITYBOARD_BUFF_PICE_C;
+//	public static int COMMUNITYBOARD_BUFF_PICE_B;
+//	public static int COMMUNITYBOARD_BUFF_PICE_A;
+//	public static int COMMUNITYBOARD_BUFF_PICE_S;
+//	public static int COMMUNITYBOARD_BUFF_PICE_S80;
+//	public static int COMMUNITYBOARD_BUFF_PICE_S84;
+//	public static int COMMUNITYBOARD_BUFF_PICE_NG_GR;
+//	public static int COMMUNITYBOARD_BUFF_PICE_D_GR;
+//	public static int COMMUNITYBOARD_BUFF_PICE_C_GR;
+//	public static int COMMUNITYBOARD_BUFF_PICE_B_GR;
+//	public static int COMMUNITYBOARD_BUFF_PICE_A_GR;
+//	public static int COMMUNITYBOARD_BUFF_PICE_S_GR;
+//	public static int COMMUNITYBOARD_BUFF_PICE_S80_GR;
+//	public static int COMMUNITYBOARD_BUFF_PICE_S84_GR;
+//	public static int COMMUNITYBOARD_TELEPORT_PICE_NG;
+//	public static int COMMUNITYBOARD_TELEPORT_PICE_D;
+//	public static int COMMUNITYBOARD_TELEPORT_PICE_C;
+//	public static int COMMUNITYBOARD_TELEPORT_PICE_B;
+//	public static int COMMUNITYBOARD_TELEPORT_PICE_A;
+//	public static int COMMUNITYBOARD_TELEPORT_PICE_S;
+//	public static int COMMUNITYBOARD_TELEPORT_PICE_S80;
+//	public static int COMMUNITYBOARD_TELEPORT_PICE_S84;
+//
+//	public static boolean COMMUNITYBOARD_ENCHANT_ENABLED;
+//	public static boolean ALLOW_BBS_ENCHANT_ELEMENTAR;
+//	public static boolean ALLOW_BBS_ENCHANT_ATT;
+//	public static int COMMUNITYBOARD_ENCHANT_ITEM;
+//	public static int COMMUNITYBOARD_MAX_ENCHANT;
+//	public static int[] COMMUNITYBOARD_ENCHANT_LVL;
+//	public static int[] COMMUNITYBOARD_ENCHANT_PRICE_WEAPON;
+//	public static int[] COMMUNITYBOARD_ENCHANT_PRICE_ARMOR;
+//	public static int[] COMMUNITYBOARD_ENCHANT_ATRIBUTE_LVL_WEAPON;
+//	public static int[] COMMUNITYBOARD_ENCHANT_ATRIBUTE_PRICE_WEAPON;
+//	public static int[] COMMUNITYBOARD_ENCHANT_ATRIBUTE_LVL_ARMOR;
+//	public static int[] COMMUNITYBOARD_ENCHANT_ATRIBUTE_PRICE_ARMOR;
+//	public static boolean COMMUNITYBOARD_ENCHANT_ATRIBUTE_PVP;
 
 	// public static boolean ENTER_WORLD_SHOW_HTML_LOCK;
 
-	public static boolean ACCEPT_ALTERNATE_ID;
-	public static int REQUEST_ID;
-
+	public static final String VIKTORINA_CONFIG_FILE = "config/events/Victorina.ini";
 	public static boolean VIKTORINA_ENABLED;// false;
 	public static boolean VIKTORINA_REMOVE_QUESTION;// false;;
 	public static boolean VIKTORINA_REMOVE_QUESTION_NO_ANSWER;// = false;
@@ -259,151 +215,18 @@ public class Config
 	{
 		ExProperties VIKTORINASettings = load(VIKTORINA_CONFIG_FILE);
 
-		VIKTORINA_ENABLED = VIKTORINASettings.getProperty("Victorina_Enabled", false);
-		VIKTORINA_REMOVE_QUESTION = VIKTORINASettings.getProperty("Victorina_Remove_Question", false);
-		VIKTORINA_REMOVE_QUESTION_NO_ANSWER = VIKTORINASettings.getProperty("Victorina_Remove_Question_No_Answer", false);
-		VIKTORINA_START_TIME_HOUR = VIKTORINASettings.getProperty("Victorina_Start_Time_Hour", 16);
-		VIKTORINA_START_TIME_MIN = VIKTORINASettings.getProperty("Victorina_Start_Time_Minute", 16);
-		VIKTORINA_WORK_TIME = VIKTORINASettings.getProperty("Victorina_Work_Time", 2);
-		VIKTORINA_TIME_ANSER = VIKTORINASettings.getProperty("Victorina_Time_Answer", 1);
-		VIKTORINA_TIME_PAUSE = VIKTORINASettings.getProperty("Victorina_Time_Pause", 1);
+		Config.VIKTORINA_ENABLED = VIKTORINASettings.getProperty("Victorina_Enabled", false);
+		Config.VIKTORINA_REMOVE_QUESTION = VIKTORINASettings.getProperty("Victorina_Remove_Question", false);
+		Config.VIKTORINA_REMOVE_QUESTION_NO_ANSWER = VIKTORINASettings.getProperty("Victorina_Remove_Question_No_Answer", false);
+		Config.VIKTORINA_START_TIME_HOUR = VIKTORINASettings.getProperty("Victorina_Start_Time_Hour", 16);
+		Config.VIKTORINA_START_TIME_MIN = VIKTORINASettings.getProperty("Victorina_Start_Time_Minute", 16);
+		Config.VIKTORINA_WORK_TIME = VIKTORINASettings.getProperty("Victorina_Work_Time", 2);
+		Config.VIKTORINA_TIME_ANSER = VIKTORINASettings.getProperty("Victorina_Time_Answer", 1);
+		Config.VIKTORINA_TIME_PAUSE = VIKTORINASettings.getProperty("Victorina_Time_Pause", 1);
 
 	}
 
-	public static boolean HIDE_GM_STATUS;
-	public static boolean SHOW_GM_LOGIN;
-	public static boolean SAVE_GM_EFFECTS; // Silence, gmspeed, etc...
-
-	public static int MOVE_PACKET_DELAY;
-	public static int ATTACK_PACKET_DELAY;
-
-	public static boolean DAMAGE_FROM_FALLING;
-
-	/** Community Board */
-	public static boolean USE_BBS_BUFER_IS_COMBAT;
-	public static boolean USE_BBS_BUFER_IS_CURSE_WEAPON;
-	public static boolean USE_BBS_BUFER_IS_EVENTS;
-	public static boolean USE_BBS_TELEPORT_IS_COMBAT;
-	public static boolean USE_BBS_TELEPORT_IS_EVENTS;
-	public static boolean USE_BBS_PROF_IS_COMBAT;
-	public static boolean USE_BBS_PROF_IS_EVENTS;
-	public static boolean SAVE_BBS_TELEPORT_IS_EPIC;
-	public static boolean SAVE_BBS_TELEPORT_IS_BZ;
-
-	public static boolean ALLOW_COMMUNITYBOARD_IN_COMBAT;
-	public static boolean ALLOW_COMMUNITYBOARD_IS_IN_SIEGE;
-	public static boolean COMMUNITYBOARD_BUFFER_ENABLED;
-	public static boolean COMMUNITYBOARD_BUFFER_MAX_LVL_ALLOW;
-	public static boolean COMMUNITYBOARD_BUFFER_SIEGE_ENABLED;
-	public static boolean COMMUNITYBOARD_BUFFER_NO_IS_IN_PEACE_ENABLED;
-	public static boolean COMMUNITYBOARD_SELL_ENABLED;
-	public static boolean COMMUNITYBOARD_SHOP_ENABLED;
-	public static boolean COMMUNITYBOARD_SHOP_NO_IS_IN_PEACE_ENABLED;
-	public static boolean COMMUNITYBOARD_BUFFER_PET_ENABLED;
-	public static boolean COMMUNITYBOARD_BUFFER_SAVE_ENABLED;
-	public static boolean COMMUNITYBOARD_ABNORMAL_ENABLED;
-	public static boolean COMMUNITYBOARD_INSTANCE_ENABLED;
-	public static boolean COMMUNITYBOARD_EVENTS_ENABLED;
-	public static int COMMUNITYBOARD_BUFF_TIME;
-	public static int COMMUNITYBOARD_BUFFER_MAX_LVL;
-	public static int COMMUNITYBOARD_BUFF_PETS_TIME;
-	public static int COMMUNITYBOARD_BUFF_COMBO_TIME;
-	public static int COMMUNITYBOARD_BUFF_SONGDANCE_TIME;
-	public static int COMMUNITYBOARD_BUFF_PICE;
-	public static int COMMUNITYBOARD_BUFF_SAVE_PICE;
-	public static List<Integer> COMMUNITYBOARD_BUFF_ALLOW = new ArrayList<Integer>();
-	public static List<Integer> COMMUNITI_LIST_MAGE_SUPPORT = new ArrayList<Integer>();
-	public static List<Integer> COMMUNITI_LIST_FIGHTER_SUPPORT = new ArrayList<Integer>();
-	public static List<String> COMMUNITYBOARD_MULTISELL_ALLOW = new ArrayList<String>();
-
-	public static boolean COMMUNITYBOARD_TELEPORT_ENABLED;
-	public static int COMMUNITYBOARD_TELE_PICE;
-	public static int COMMUNITYBOARD_SAVE_TELE_PICE;
-	public static boolean COMMUNITYBOARD_TELEPORT_SIEGE_ENABLED;
-
-	public static int WEAR_DELAY;
-
-	public static boolean GOODS_INVENTORY_ENABLED = false;
-
-	public static boolean AUTH_SERVER_GM_ONLY;
-	public static boolean AUTH_SERVER_BRACKETS;
-	public static boolean AUTH_SERVER_IS_PVP;
-	public static int AUTH_SERVER_AGE_LIMIT;
-	public static int AUTH_SERVER_SERVER_TYPE;
-
-	/* Version Configs */
-	public static String SERVER_VERSION;
-	public static String SERVER_BUILD_DATE;
-
-	public static boolean AUTO_LOOT_PA;
-
-	public static boolean COMMUNITYBOARD_BOARD_ALT_ENABLED;
-	public static int COMMUNITYBOARD_BUFF_PICE_NG;
-	public static int COMMUNITYBOARD_BUFF_PICE_D;
-	public static int COMMUNITYBOARD_BUFF_PICE_C;
-	public static int COMMUNITYBOARD_BUFF_PICE_B;
-	public static int COMMUNITYBOARD_BUFF_PICE_A;
-	public static int COMMUNITYBOARD_BUFF_PICE_S;
-	public static int COMMUNITYBOARD_BUFF_PICE_S80;
-	public static int COMMUNITYBOARD_BUFF_PICE_S84;
-	public static int COMMUNITYBOARD_BUFF_PICE_NG_GR;
-	public static int COMMUNITYBOARD_BUFF_PICE_D_GR;
-	public static int COMMUNITYBOARD_BUFF_PICE_C_GR;
-	public static int COMMUNITYBOARD_BUFF_PICE_B_GR;
-	public static int COMMUNITYBOARD_BUFF_PICE_A_GR;
-	public static int COMMUNITYBOARD_BUFF_PICE_S_GR;
-	public static int COMMUNITYBOARD_BUFF_PICE_S80_GR;
-	public static int COMMUNITYBOARD_BUFF_PICE_S84_GR;
-	public static int COMMUNITYBOARD_TELEPORT_PICE_NG;
-	public static int COMMUNITYBOARD_TELEPORT_PICE_D;
-	public static int COMMUNITYBOARD_TELEPORT_PICE_C;
-	public static int COMMUNITYBOARD_TELEPORT_PICE_B;
-	public static int COMMUNITYBOARD_TELEPORT_PICE_A;
-	public static int COMMUNITYBOARD_TELEPORT_PICE_S;
-	public static int COMMUNITYBOARD_TELEPORT_PICE_S80;
-	public static int COMMUNITYBOARD_TELEPORT_PICE_S84;
-
-	public static double ALT_VITALITY_NEVIT_UP_POINT;
-	public static double ALT_VITALITY_NEVIT_POINT;
-
-	public static boolean COMMUNITYBOARD_ENCHANT_ENABLED;
-	public static boolean ALLOW_BBS_ENCHANT_ELEMENTAR;
-	public static boolean ALLOW_BBS_ENCHANT_ATT;
-	public static int COMMUNITYBOARD_ENCHANT_ITEM;
-	public static int COMMUNITYBOARD_MAX_ENCHANT;
-	public static int[] COMMUNITYBOARD_ENCHANT_LVL;
-	public static int[] COMMUNITYBOARD_ENCHANT_PRICE_WEAPON;
-	public static int[] COMMUNITYBOARD_ENCHANT_PRICE_ARMOR;
-	public static int[] COMMUNITYBOARD_ENCHANT_ATRIBUTE_LVL_WEAPON;
-	public static int[] COMMUNITYBOARD_ENCHANT_ATRIBUTE_PRICE_WEAPON;
-	public static int[] COMMUNITYBOARD_ENCHANT_ATRIBUTE_LVL_ARMOR;
-	public static int[] COMMUNITYBOARD_ENCHANT_ATRIBUTE_PRICE_ARMOR;
-	public static boolean COMMUNITYBOARD_ENCHANT_ATRIBUTE_PVP;
-
-	public static String[] FORBIDDEN_CHAR_NAMES;
-
-	public static boolean NORMAL_PLAYER_RECIEVE_MSG_ON_WRONG_ACCOUNT_PASS;
-	public static ChatType NORMAL_PLAYER_MSG_TYPE_ON_WRONG_ACCOUNT;
-	public static boolean NORMAL_PLAYER_MAIL_ON_WRONG_ACCOUNT_WHILE_OFFLINE;
-	public static boolean NORMAL_PLAYER_MAIL_ON_WRONG_SECONDARY_PASSWORD;
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+// settings
 	public static boolean R_GUARD;
 	/** protocol revision */
 	public static int MIN_PROTOCOL_REVISION;
@@ -425,30 +248,136 @@ public class Config
 	public static int SECOND_AUTH_MAX_ATTEMPTS;
 	public static long SECOND_AUTH_BAN_TIME;
 	public static String SECOND_AUTH_REC_LINK;
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	public static int HTM_CACHE_MODE;
+	public static boolean LOG_SERVICES;
+	public static boolean ALLOW_ADDONS_CONFIG;
+	public static boolean AUTH_SERVER_GM_ONLY;
+	public static boolean AUTH_SERVER_BRACKETS;
+	public static boolean AUTH_SERVER_IS_PVP;
+	public static int AUTH_SERVER_AGE_LIMIT;
+	public static int AUTH_SERVER_SERVER_TYPE;
+	/** GameServer ports */
+	public static int[] PORTS_GAME;
+	public static String GAMESERVER_HOSTNAME;
+	public static boolean ADVIPSYSTEM;
+	public static List<AdvIP> GAMEIPS = new ArrayList<AdvIP>();
+	public static String DATABASE_DRIVER;
+	public static int DATABASE_MAX_CONNECTIONS;
+	public static int DATABASE_MAX_IDLE_TIMEOUT;
+	public static int DATABASE_IDLE_TEST_PERIOD;
+	public static String DATABASE_GAME_URL;
+	public static String DATABASE_GAME_USER;
+	public static String DATABASE_GAME_PASSWORD;
+	public static String DATABASE_LOGIN_URL;
+	public static String DATABASE_LOGIN_USER;
+	public static String DATABASE_LOGIN_PASSWORD;
+	public static String MYSQL_DUMP_PATH;
+	public static boolean ACCEPT_ALTERNATE_ID;
+	public static int REQUEST_ID;
+	public static String SERVER_NAME;
+	public static String SHORT_SERVER_NAME;
+	public static String SERVER_SUB_NAME;
+
+	/** For test servers - evrybody has admin rights */
+	public static boolean EVERYBODY_HAS_ADMIN_RIGHTS;
+	public static boolean ENABLE_VOTE;
+	public static String VOTE_ADDRESS;
+	public static boolean HIDE_GM_STATUS;
+	public static boolean SHOW_GM_LOGIN;
+	public static boolean SAVE_GM_EFFECTS; // Silence, gmspeed, etc...
+	public static String CHAR_NAME_TEMPLATE;
+	public static String CLAN_NAME_TEMPLATE;
+	public static String CLAN_TITLE_TEMPLATE;
+	public static String ALLY_NAME_TEMPLATE;
+	public static boolean PARALIZE_ON_RAID_DIFF;
+	public static int AUTODESTROY_ITEM_AFTER;
+	public static int AUTODESTROY_PLAYER_ITEM_AFTER;
+
+	public static int DELETE_DAYS;
+
+	public static int PURGE_BYPASS_TASK_FREQUENCY;
+	/** Datapack root directory */
+	public static File DATAPACK_ROOT;
+
+	public static boolean ALLOW_DISCARDITEM;
+	public static boolean ALLOW_DISCARDITEM_AT_PEACE;
+	public static boolean ALLOW_MAIL;
+	public static boolean ALLOW_WAREHOUSE;
+	public static boolean ALLOW_WATER;
+	public static boolean ALLOW_CURSED_WEAPONS;
+	public static boolean DROP_CURSED_WEAPONS_ON_KICK;
+
+	public static boolean ALLOW_ENTER_INSTANCE;
+	public static boolean ALLOW_PRIVATE_STORES;
+	public static boolean ALLOW_TALK_TO_NPCS;
+	public static boolean ALLOW_JUST_MOVING;
+	public static boolean ALLOW_TUTORIAL;
+	public static boolean ALLOW_HWID_ENGINE;
+	public static boolean ALLOW_SKILLS_STATS_LOGGER;
+	public static boolean ALLOW_ITEMS_LOGGING;
+	public static boolean ALLOW_SPAWN_PROTECTION;
+	// Database additional options
+	public static boolean AUTOSAVE;
+	public static int MAXIMUM_ONLINE_USERS;
+	public static int ONLINE_PLUS;
+	public static long USER_INFO_INTERVAL;
+	public static boolean BROADCAST_STATS_INTERVAL;
+	public static long BROADCAST_CHAR_INFO_INTERVAL;
+
+	public static int EFFECT_TASK_MANAGER_COUNT;
+	/** Thread pools size */
+	public static int SCHEDULED_THREAD_POOL_SIZE;
+	public static int EXECUTOR_THREAD_POOL_SIZE;
+	public static boolean ENABLE_RUNNABLE_STATS;
+	/** Network settings */
+	public static SelectorConfig SELECTOR_CONFIG = new SelectorConfig();
+	public static String DEFAULT_LANG;
+	public static String DEFAULT_GK_LANG;
+	public static int SHIFT_BY;
+	public static int SHIFT_BY_Z;
+	public static int MAP_MIN_Z;
+	public static int MAP_MAX_Z;
+	public static int MOVE_PACKET_DELAY;
+	public static int ATTACK_PACKET_DELAY;
+	public static boolean DAMAGE_FROM_FALLING;
+	public static int MAX_REFLECTIONS_COUNT;
+	public static int WEAR_DELAY;
+	public static double ALT_VITALITY_NEVIT_UP_POINT;
+	public static double ALT_VITALITY_NEVIT_POINT;
+
+	public static boolean ALLOW_IP_LOCK;
+	public static boolean ALLOW_HWID_LOCK;
+	public static int HWID_LOCK_MASK;
+
+	public static boolean ENABLE_SECONDARY_PASSWORD;
+
+	public static String MAIL_USER;
+	public static String MAIL_PASS;
+	public static String MAIL_SUBJECT;
+	public static String MAIL_MESSAGE;
+
+	public static String[] FORBIDDEN_CHAR_NAMES;
+
+	public static boolean NORMAL_PLAYER_RECIEVE_MSG_ON_WRONG_ACCOUNT_PASS;
+	public static ChatType NORMAL_PLAYER_MSG_TYPE_ON_WRONG_ACCOUNT;
+	public static boolean NORMAL_PLAYER_MAIL_ON_WRONG_ACCOUNT_WHILE_OFFLINE;
+	public static boolean NORMAL_PLAYER_MAIL_ON_WRONG_SECONDARY_PASSWORD;
+	public static final String CONFIGURATION_FILE = "config/server.ini";
+
 	public static void loadServerConfig()
 	{
 		ExProperties serverSettings = load(CONFIGURATION_FILE);
 
-		R_GUARD = serverSettings.getProperty("R_GUARD", true);
-		LOG_SERVICES = serverSettings.getProperty("Services", false);
-		GAME_SERVER_LOGIN_HOST = serverSettings.getProperty("LoginHost", "127.0.0.1");
-		GAME_SERVER_LOGIN_PORT = serverSettings.getProperty("LoginPort", 9013);
-		GAME_SERVER_LOGIN_CRYPT = serverSettings.getProperty("LoginUseCrypt", true);
+		Config.R_GUARD = serverSettings.getProperty("R_GUARD", true);
+		Config.LOG_SERVICES = serverSettings.getProperty("Services", false);
+		Config.GAME_SERVER_LOGIN_HOST = serverSettings.getProperty("LoginHost", "127.0.0.1");
+		Config.GAME_SERVER_LOGIN_PORT = serverSettings.getProperty("LoginPort", 9013);
+		Config.GAME_SERVER_LOGIN_CRYPT = serverSettings.getProperty("LoginUseCrypt", true);
 
-		AUTH_SERVER_AGE_LIMIT = serverSettings.getProperty("ServerAgeLimit", 0);
-		AUTH_SERVER_GM_ONLY = serverSettings.getProperty("ServerGMOnly", false);
-		AUTH_SERVER_BRACKETS = serverSettings.getProperty("ServerBrackets", false);
-		AUTH_SERVER_IS_PVP = serverSettings.getProperty("PvPServer", false);
+		Config.AUTH_SERVER_AGE_LIMIT = serverSettings.getProperty("ServerAgeLimit", 0);
+		Config.AUTH_SERVER_GM_ONLY = serverSettings.getProperty("ServerGMOnly", false);
+		Config.AUTH_SERVER_BRACKETS = serverSettings.getProperty("ServerBrackets", false);
+		Config.AUTH_SERVER_IS_PVP = serverSettings.getProperty("PvPServer", false);
 		for (String a : serverSettings.getProperty("ServerType", ArrayUtils.EMPTY_STRING_ARRAY))
 		{
 			if (a.trim().isEmpty())
@@ -457,124 +386,124 @@ public class Config
 			}
 
 			ServerType t = ServerType.valueOf(a.toUpperCase());
-			AUTH_SERVER_SERVER_TYPE |= t.getMask();
+			Config.AUTH_SERVER_SERVER_TYPE |= t.getMask();
 		}
 
-		SECOND_AUTH_ENABLED = serverSettings.getProperty("SAEnabled", false);
-		SECOND_AUTH_BAN_ACC = serverSettings.getProperty("SABanAccEnabled", false);
-		SECOND_AUTH_STRONG_PASS = serverSettings.getProperty("SAStrongPass", false);
-		SECOND_AUTH_MAX_ATTEMPTS = serverSettings.getProperty("SAMaxAttemps", 5);
-		SECOND_AUTH_BAN_TIME = serverSettings.getProperty("SABanTime", 480);
-		SECOND_AUTH_REC_LINK = serverSettings.getProperty("SARecoveryLink", "http://www.my-domain.com/charPassRec.php");
+		Config.SECOND_AUTH_ENABLED = serverSettings.getProperty("SAEnabled", false);
+		Config.SECOND_AUTH_BAN_ACC = serverSettings.getProperty("SABanAccEnabled", false);
+		Config.SECOND_AUTH_STRONG_PASS = serverSettings.getProperty("SAStrongPass", false);
+		Config.SECOND_AUTH_MAX_ATTEMPTS = serverSettings.getProperty("SAMaxAttemps", 5);
+		Config.SECOND_AUTH_BAN_TIME = serverSettings.getProperty("SABanTime", 480);
+		Config.SECOND_AUTH_REC_LINK = serverSettings.getProperty("SARecoveryLink", "http://www.my-domain.com/charPassRec.php");
 
-		INTERNAL_HOSTNAME = serverSettings.getProperty("InternalHostname", "127.0.0.1");
-		EXTERNAL_HOSTNAME = serverSettings.getProperty("ExternalHostname", "127.0.0.1");
-		ADVIPSYSTEM = serverSettings.getProperty("AdvIPSystem", false);
-		REQUEST_ID = serverSettings.getProperty("RequestServerID", 0);
-		ACCEPT_ALTERNATE_ID = serverSettings.getProperty("AcceptAlternateID", true);
+		Config.INTERNAL_HOSTNAME = serverSettings.getProperty("InternalHostname", "127.0.0.1");
+		Config.EXTERNAL_HOSTNAME = serverSettings.getProperty("ExternalHostname", "127.0.0.1");
+		Config.ADVIPSYSTEM = serverSettings.getProperty("AdvIPSystem", false);
+		Config.REQUEST_ID = serverSettings.getProperty("RequestServerID", 0);
+		Config.ACCEPT_ALTERNATE_ID = serverSettings.getProperty("AcceptAlternateID", true);
 
-		GAMESERVER_HOSTNAME = serverSettings.getProperty("IchsanRserverHostname", "127.0.0.1");
-		PORTS_GAME = serverSettings.getProperty("GameserverPort", new int[]
+		Config.GAMESERVER_HOSTNAME = serverSettings.getProperty("GameserverHostname", "127.0.0.1");
+		Config.PORTS_GAME = serverSettings.getProperty("GameserverPort", new int[]
 		{
 			7777
 		});
 
-		SERVER_NAME = serverSettings.getProperty("ServerName", "Server");
-		SHORT_SERVER_NAME = serverSettings.getProperty("ShortServerName", "Server");
-		SERVER_SUB_NAME = serverSettings.getProperty("ServerSubName", "Server");
+		Config.SERVER_NAME = serverSettings.getProperty("ServerName", "Server");
+		Config.SHORT_SERVER_NAME = serverSettings.getProperty("ShortServerName", "Server");
+		Config.SERVER_SUB_NAME = serverSettings.getProperty("ServerSubName", "Server");
 
-		EVERYBODY_HAS_ADMIN_RIGHTS = serverSettings.getProperty("EverybodyHasAdminRights", false);
+		Config.EVERYBODY_HAS_ADMIN_RIGHTS = serverSettings.getProperty("EverybodyHasAdminRights", false);
 
-		ENABLE_VOTE = serverSettings.getProperty("EnableVoteReward", false);
-		VOTE_ADDRESS = serverSettings.getProperty("VoteAddress", "https://website.com/check/StringTake.php?IP=");
+		Config.ENABLE_VOTE = serverSettings.getProperty("EnableVoteReward", false);
+		Config.VOTE_ADDRESS = serverSettings.getProperty("VoteAddress", "https://website.com/check/StringTake.php?IP=");
 
-		HIDE_GM_STATUS = serverSettings.getProperty("HideGMStatus", false);
-		SHOW_GM_LOGIN = serverSettings.getProperty("ShowGMLogin", true);
-		SAVE_GM_EFFECTS = serverSettings.getProperty("SaveGMEffects", false);
+		Config.HIDE_GM_STATUS = serverSettings.getProperty("HideGMStatus", false);
+		Config.SHOW_GM_LOGIN = serverSettings.getProperty("ShowGMLogin", true);
+		Config.SAVE_GM_EFFECTS = serverSettings.getProperty("SaveGMEffects", false);
 
-		CHAR_NAME_TEMPLATE = serverSettings.getProperty("CnameTemplate", "([0-9A-Za-z]{2,16})|([0-9\u0410-\u044f-\u4e00-\u9fa5]{2,16})");
-		CLAN_NAME_TEMPLATE = serverSettings.getProperty("ClanNameTemplate", "[A-Za-z0-9\u0410-\u042f\u0430-\u044f]{3,16}");
-		CLAN_TITLE_TEMPLATE = serverSettings.getProperty("ClanTitleTemplate", "[A-Za-z0-9\u0410-\u042f\u0430-\u044f \\p{Punct}]{1,16}");
-		ALLY_NAME_TEMPLATE = serverSettings.getProperty("AllyNameTemplate", "[A-Za-z0-9\u0410-\u042f\u0430-\u044f]{3,16}");
+		Config.CHAR_NAME_TEMPLATE = serverSettings.getProperty("CnameTemplate", "([0-9A-Za-z]{2,16})|([0-9\u0410-\u044f-\u4e00-\u9fa5]{2,16})");
+		Config.CLAN_NAME_TEMPLATE = serverSettings.getProperty("ClanNameTemplate", "[A-Za-z0-9\u0410-\u042f\u0430-\u044f]{3,16}");
+		Config.CLAN_TITLE_TEMPLATE = serverSettings.getProperty("ClanTitleTemplate", "[A-Za-z0-9\u0410-\u042f\u0430-\u044f \\p{Punct}]{1,16}");
+		Config.ALLY_NAME_TEMPLATE = serverSettings.getProperty("AllyNameTemplate", "[A-Za-z0-9\u0410-\u042f\u0430-\u044f]{3,16}");
 
-		PARALIZE_ON_RAID_DIFF = serverSettings.getProperty("ParalizeOnRaidLevelDiff", true);
+		Config.PARALIZE_ON_RAID_DIFF = serverSettings.getProperty("ParalizeOnRaidLevelDiff", true);
 
-		AUTODESTROY_ITEM_AFTER = serverSettings.getProperty("AutoDestroyDroppedItemAfter", 0);
-		AUTODESTROY_PLAYER_ITEM_AFTER = serverSettings.getProperty("AutoDestroyPlayerDroppedItemAfter", 0);
-		DELETE_DAYS = serverSettings.getProperty("DeleteCharAfterDays", 7);
-		PURGE_BYPASS_TASK_FREQUENCY = serverSettings.getProperty("PurgeTaskFrequency", 60);
+		Config.AUTODESTROY_ITEM_AFTER = serverSettings.getProperty("AutoDestroyDroppedItemAfter", 0);
+		Config.AUTODESTROY_PLAYER_ITEM_AFTER = serverSettings.getProperty("AutoDestroyPlayerDroppedItemAfter", 0);
+		Config.DELETE_DAYS = serverSettings.getProperty("DeleteCharAfterDays", 7);
+		Config.PURGE_BYPASS_TASK_FREQUENCY = serverSettings.getProperty("PurgeTaskFrequency", 60);
 
 		try
 		{
-			DATAPACK_ROOT = new File(serverSettings.getProperty("DatapackRoot", ".")).getCanonicalFile();
+			Config.DATAPACK_ROOT = new File(serverSettings.getProperty("DatapackRoot", ".")).getCanonicalFile();
 		}
 		catch (IOException e)
 		{
 			_log.error("Error while loading DATAPACK_ROOT", e);
 		}
 
-		ALLOW_DISCARDITEM = serverSettings.getProperty("AllowDiscardItem", true);
-		ALLOW_DISCARDITEM_AT_PEACE = serverSettings.getProperty("AllowDiscardItemInTown", true);
-		ALLOW_MAIL = serverSettings.getProperty("AllowMail", true);
-		ALLOW_WAREHOUSE = serverSettings.getProperty("AllowWarehouse", true);
-		ALLOW_WATER = serverSettings.getProperty("AllowWater", true);
-		ALLOW_CURSED_WEAPONS = serverSettings.getProperty("AllowCursedWeapons", false);
-		DROP_CURSED_WEAPONS_ON_KICK = serverSettings.getProperty("DropCursedWeaponsOnKick", false);
-		ALLOW_ENTER_INSTANCE = serverSettings.getProperty("AllowEnterInstance", true);
-		ALLOW_PRIVATE_STORES = serverSettings.getProperty("AllowStores", true);
-		ALLOW_TALK_TO_NPCS = serverSettings.getProperty("AllowTalkToNpcs", true);
-		ALLOW_JUST_MOVING = serverSettings.getProperty("AllowJustMoving", false);
-		ALLOW_TUTORIAL = serverSettings.getProperty("AllowTutorial", true);
-		ALLOW_HWID_ENGINE = serverSettings.getProperty("AllowHWIDEngine", true);
-		ALLOW_SKILLS_STATS_LOGGER = serverSettings.getProperty("AllowSkillStatsLogger", true);
-		ALLOW_ITEMS_LOGGING = serverSettings.getProperty("AllowItemsLogging", true);
-		ALLOW_SPAWN_PROTECTION = serverSettings.getProperty("AllowSpawnProtection", true);
+		Config.ALLOW_DISCARDITEM = serverSettings.getProperty("AllowDiscardItem", true);
+		Config.ALLOW_DISCARDITEM_AT_PEACE = serverSettings.getProperty("AllowDiscardItemInTown", true);
+		Config.ALLOW_MAIL = serverSettings.getProperty("AllowMail", true);
+		Config.ALLOW_WAREHOUSE = serverSettings.getProperty("AllowWarehouse", true);
+		Config.ALLOW_WATER = serverSettings.getProperty("AllowWater", true);
+		Config.ALLOW_CURSED_WEAPONS = serverSettings.getProperty("AllowCursedWeapons", false);
+		Config.DROP_CURSED_WEAPONS_ON_KICK = serverSettings.getProperty("DropCursedWeaponsOnKick", false);
+		Config.ALLOW_ENTER_INSTANCE = serverSettings.getProperty("AllowEnterInstance", true);
+		Config.ALLOW_PRIVATE_STORES = serverSettings.getProperty("AllowStores", true);
+		Config.ALLOW_TALK_TO_NPCS = serverSettings.getProperty("AllowTalkToNpcs", true);
+		Config.ALLOW_JUST_MOVING = serverSettings.getProperty("AllowJustMoving", false);
+		Config.ALLOW_TUTORIAL = serverSettings.getProperty("AllowTutorial", true);
+		Config.ALLOW_HWID_ENGINE = serverSettings.getProperty("AllowHWIDEngine", true);
+		Config.ALLOW_SKILLS_STATS_LOGGER = serverSettings.getProperty("AllowSkillStatsLogger", true);
+		Config.ALLOW_ITEMS_LOGGING = serverSettings.getProperty("AllowItemsLogging", true);
+		Config.ALLOW_SPAWN_PROTECTION = serverSettings.getProperty("AllowSpawnProtection", true);
 
-		MIN_PROTOCOL_REVISION = serverSettings.getProperty("MinProtocolRevision", 267);
-		MAX_PROTOCOL_REVISION = serverSettings.getProperty("MaxProtocolRevision", 271);
+		Config.MIN_PROTOCOL_REVISION = serverSettings.getProperty("MinProtocolRevision", 267);
+		Config.MAX_PROTOCOL_REVISION = serverSettings.getProperty("MaxProtocolRevision", 271);
 
-		AUTOSAVE = serverSettings.getProperty("Autosave", true);
+		Config.AUTOSAVE = serverSettings.getProperty("Autosave", true);
 
-		MAXIMUM_ONLINE_USERS = serverSettings.getProperty("MaximumOnlineUsers", 3000);
-		ONLINE_PLUS = serverSettings.getProperty("OnlineUsersPlus", 1);
+		Config.MAXIMUM_ONLINE_USERS = serverSettings.getProperty("MaximumOnlineUsers", 3000);
+		Config.ONLINE_PLUS = serverSettings.getProperty("OnlineUsersPlus", 1);
 
-		DATABASE_DRIVER = serverSettings.getProperty("Driver", "com.mysql.jdbc.Driver");
-		DATABASE_MAX_CONNECTIONS = serverSettings.getProperty("MaximumDbConnections", 10);
-		DATABASE_MAX_IDLE_TIMEOUT = serverSettings.getProperty("MaxIdleConnectionTimeout", 600);
-		DATABASE_IDLE_TEST_PERIOD = serverSettings.getProperty("IdleConnectionTestPeriod", 60);
+		Config.DATABASE_DRIVER = serverSettings.getProperty("Driver", "com.mysql.jdbc.Driver");
+		Config.DATABASE_MAX_CONNECTIONS = serverSettings.getProperty("MaximumDbConnections", 10);
+		Config.DATABASE_MAX_IDLE_TIMEOUT = serverSettings.getProperty("MaxIdleConnectionTimeout", 600);
+		Config.DATABASE_IDLE_TEST_PERIOD = serverSettings.getProperty("IdleConnectionTestPeriod", 60);
 
-		DATABASE_GAME_URL = serverSettings.getProperty("GameURL", "jdbc:mysql://localhost/l2jdb");
-		DATABASE_GAME_USER = serverSettings.getProperty("GameUser", "root");
-		DATABASE_GAME_PASSWORD = serverSettings.getProperty("GamePassword", "");
-		DATABASE_LOGIN_URL = serverSettings.getProperty("LoginURL", "jdbc:mysql://localhost/l2jdb");
-		DATABASE_LOGIN_USER = serverSettings.getProperty("LoginUser", "root");
-		DATABASE_LOGIN_PASSWORD = serverSettings.getProperty("LoginPassword", "");
-		MYSQL_DUMP_PATH = serverSettings.getProperty("MySqlDumpPath", "");
-		USER_INFO_INTERVAL = serverSettings.getProperty("UserInfoInterval", 100L);
-		BROADCAST_STATS_INTERVAL = serverSettings.getProperty("BroadcastStatsInterval", true);
-		BROADCAST_CHAR_INFO_INTERVAL = serverSettings.getProperty("BroadcastCharInfoInterval", 100L);
+		Config.DATABASE_GAME_URL = serverSettings.getProperty("GameURL", "jdbc:mysql://localhost/l2jdb");
+		Config.DATABASE_GAME_USER = serverSettings.getProperty("GameUser", "root");
+		Config.DATABASE_GAME_PASSWORD = serverSettings.getProperty("GamePassword", "");
+		Config.DATABASE_LOGIN_URL = serverSettings.getProperty("LoginURL", "jdbc:mysql://localhost/l2jdb");
+		Config.DATABASE_LOGIN_USER = serverSettings.getProperty("LoginUser", "root");
+		Config.DATABASE_LOGIN_PASSWORD = serverSettings.getProperty("LoginPassword", "");
+		Config.MYSQL_DUMP_PATH = serverSettings.getProperty("MySqlDumpPath", "");
+		Config.USER_INFO_INTERVAL = serverSettings.getProperty("UserInfoInterval", 100L);
+		Config.BROADCAST_STATS_INTERVAL = serverSettings.getProperty("BroadcastStatsInterval", true);
+		Config.BROADCAST_CHAR_INFO_INTERVAL = serverSettings.getProperty("BroadcastCharInfoInterval", 100L);
 
-		EFFECT_TASK_MANAGER_COUNT = serverSettings.getProperty("EffectTaskManagers", 2);
+		Config.EFFECT_TASK_MANAGER_COUNT = serverSettings.getProperty("EffectTaskManagers", 2);
 
-		SCHEDULED_THREAD_POOL_SIZE = serverSettings.getProperty("ScheduledThreadPoolSize", NCPUS * 4);
-		EXECUTOR_THREAD_POOL_SIZE = serverSettings.getProperty("ExecutorThreadPoolSize", NCPUS * 2);
+		Config.SCHEDULED_THREAD_POOL_SIZE = serverSettings.getProperty("ScheduledThreadPoolSize", NCPUS * 4);
+		Config.EXECUTOR_THREAD_POOL_SIZE = serverSettings.getProperty("ExecutorThreadPoolSize", NCPUS * 2);
 
-		ENABLE_RUNNABLE_STATS = serverSettings.getProperty("EnableRunnableStats", false);
+		Config.ENABLE_RUNNABLE_STATS = serverSettings.getProperty("EnableRunnableStats", false);
 
-		SELECTOR_CONFIG.SLEEP_TIME = serverSettings.getProperty("SelectorSleepTime", 10L);
-		SELECTOR_CONFIG.INTEREST_DELAY = serverSettings.getProperty("InterestDelay", 30L);
-		SELECTOR_CONFIG.MAX_SEND_PER_PASS = serverSettings.getProperty("MaxSendPerPass", 32);
-		SELECTOR_CONFIG.READ_BUFFER_SIZE = serverSettings.getProperty("ReadBufferSize", 65536);
-		SELECTOR_CONFIG.WRITE_BUFFER_SIZE = serverSettings.getProperty("WriteBufferSize", 131072);
-		SELECTOR_CONFIG.HELPER_BUFFER_COUNT = serverSettings.getProperty("BufferPoolSize", 64);
+		Config.SELECTOR_CONFIG.SLEEP_TIME = serverSettings.getProperty("SelectorSleepTime", 10L);
+		Config.SELECTOR_CONFIG.INTEREST_DELAY = serverSettings.getProperty("InterestDelay", 30L);
+		Config.SELECTOR_CONFIG.MAX_SEND_PER_PASS = serverSettings.getProperty("MaxSendPerPass", 32);
+		Config.SELECTOR_CONFIG.READ_BUFFER_SIZE = serverSettings.getProperty("ReadBufferSize", 65536);
+		Config.SELECTOR_CONFIG.WRITE_BUFFER_SIZE = serverSettings.getProperty("WriteBufferSize", 131072);
+		Config.SELECTOR_CONFIG.HELPER_BUFFER_COUNT = serverSettings.getProperty("BufferPoolSize", 64);
 
-		DEFAULT_LANG = serverSettings.getProperty("DefaultLang", "ru");
-		RESTART_AT_TIME = serverSettings.getProperty("AutoRestartAt", "0 5 * * *");
-		BACKUP_DURING_AUTO_RESTART = serverSettings.getProperty("BackupDuringAutoRestart", false);
+		Config.DEFAULT_LANG = serverSettings.getProperty("DefaultLang", "ru");
+		Config.RESTART_AT_TIME = serverSettings.getProperty("AutoRestartAt", "0 5 * * *");
+		Config.BACKUP_DURING_AUTO_RESTART = serverSettings.getProperty("BackupDuringAutoRestart", false);
 
 		final String backupDates = serverSettings.getProperty("AdditionalBackupDates", "6,40");
 		final String[] datesSplit = backupDates.split(";");
-		ADDITIONAL_BACKUP_DATES = new int[datesSplit.length][2];
+		Config.ADDITIONAL_BACKUP_DATES = new int[datesSplit.length][2];
 		for (int d = 0; d < datesSplit.length; d++)
 		{
 			final String[] dates = datesSplit[d].split(",");
@@ -585,44 +514,44 @@ public class Config
 			}
 		}
 
-		SHIFT_BY = serverSettings.getProperty("HShift", 12);
-		SHIFT_BY_Z = serverSettings.getProperty("VShift", 11);
-		MAP_MIN_Z = serverSettings.getProperty("MapMinZ", -32768);
-		MAP_MAX_Z = serverSettings.getProperty("MapMaxZ", 32767);
+		Config.SHIFT_BY = serverSettings.getProperty("HShift", 12);
+		Config.SHIFT_BY_Z = serverSettings.getProperty("VShift", 11);
+		Config.MAP_MIN_Z = serverSettings.getProperty("MapMinZ", -32768);
+		Config.MAP_MAX_Z = serverSettings.getProperty("MapMaxZ", 32767);
 
-		MOVE_PACKET_DELAY = serverSettings.getProperty("MovePacketDelay", 100);
-		ATTACK_PACKET_DELAY = serverSettings.getProperty("AttackPacketDelay", 500);
+		Config.MOVE_PACKET_DELAY = serverSettings.getProperty("MovePacketDelay", 100);
+		Config.ATTACK_PACKET_DELAY = serverSettings.getProperty("AttackPacketDelay", 500);
 
-		DAMAGE_FROM_FALLING = serverSettings.getProperty("DamageFromFalling", true);
+		Config.DAMAGE_FROM_FALLING = serverSettings.getProperty("DamageFromFalling", true);
 
-		MAX_REFLECTIONS_COUNT = serverSettings.getProperty("MaxReflectionsCount", 300);
+		Config.MAX_REFLECTIONS_COUNT = serverSettings.getProperty("MaxReflectionsCount", 300);
 
-		WEAR_DELAY = serverSettings.getProperty("WearDelay", 5);
+		Config.WEAR_DELAY = serverSettings.getProperty("WearDelay", 5);
 
-		HTM_CACHE_MODE = serverSettings.getProperty("HtmCacheMode", HtmCache.LAZY);
+		Config.HTM_CACHE_MODE = serverSettings.getProperty("HtmCacheMode", HtmCache.LAZY);
 
-		ALT_VITALITY_NEVIT_UP_POINT = serverSettings.getProperty("WebServerDelay", 10);
-		ALT_VITALITY_NEVIT_POINT = serverSettings.getProperty("WebServerDelay", 10);
+		Config.ALT_VITALITY_NEVIT_UP_POINT = serverSettings.getProperty("WebServerDelay", 10);
+		Config.ALT_VITALITY_NEVIT_POINT = serverSettings.getProperty("WebServerDelay", 10);
 
-		ALLOW_ADDONS_CONFIG = serverSettings.getProperty("AllowAddonsConfig", false);
+		Config.ALLOW_ADDONS_CONFIG = serverSettings.getProperty("AllowAddonsConfig", false);
 
-		ALLOW_IP_LOCK = serverSettings.getProperty("AllowLockIP", false);
-		ALLOW_HWID_LOCK = serverSettings.getProperty("AllowLockHwid", false);
-		HWID_LOCK_MASK = serverSettings.getProperty("HwidLockMask", 10);
+		Config.ALLOW_IP_LOCK = serverSettings.getProperty("AllowLockIP", false);
+		Config.ALLOW_HWID_LOCK = serverSettings.getProperty("AllowLockHwid", false);
+		Config.HWID_LOCK_MASK = serverSettings.getProperty("HwidLockMask", 10);
 
-		ENABLE_SECONDARY_PASSWORD = serverSettings.getProperty("EnableSecondaryPassword", true);
+		Config.ENABLE_SECONDARY_PASSWORD = serverSettings.getProperty("EnableSecondaryPassword", true);
 
-		MAIL_USER = serverSettings.getProperty("MailUser", "");
-		MAIL_PASS = serverSettings.getProperty("MailPass", "");
-		MAIL_SUBJECT = serverSettings.getProperty("MailSubject", "");
-		MAIL_MESSAGE = serverSettings.getProperty("MailMessage", "");
+		Config.MAIL_USER = serverSettings.getProperty("MailUser", "");
+		Config.MAIL_PASS = serverSettings.getProperty("MailPass", "");
+		Config.MAIL_SUBJECT = serverSettings.getProperty("MailSubject", "");
+		Config.MAIL_MESSAGE = serverSettings.getProperty("MailMessage", "");
 
-		NORMAL_PLAYER_RECIEVE_MSG_ON_WRONG_ACCOUNT_PASS = serverSettings.getProperty("NormalPlayerReceiveMsgOnWrongAccountPass", true);
-		NORMAL_PLAYER_MSG_TYPE_ON_WRONG_ACCOUNT = ChatType.getTypeFromName(serverSettings.getProperty("NormalPlayerMsgTypeOnWrongAccount", "TELL"));
-		NORMAL_PLAYER_MAIL_ON_WRONG_ACCOUNT_WHILE_OFFLINE = serverSettings.getProperty("NormalPlayerMailOnWrongAccountWhileOffline", false);
-		NORMAL_PLAYER_MAIL_ON_WRONG_SECONDARY_PASSWORD = serverSettings.getProperty("NormalPlayerMailOnWrongSecondaryPassword", true);
+		Config.NORMAL_PLAYER_RECIEVE_MSG_ON_WRONG_ACCOUNT_PASS = serverSettings.getProperty("NormalPlayerReceiveMsgOnWrongAccountPass", true);
+		Config.NORMAL_PLAYER_MSG_TYPE_ON_WRONG_ACCOUNT = ChatType.getTypeFromName(serverSettings.getProperty("NormalPlayerMsgTypeOnWrongAccount", "TELL"));
+		Config.NORMAL_PLAYER_MAIL_ON_WRONG_ACCOUNT_WHILE_OFFLINE = serverSettings.getProperty("NormalPlayerMailOnWrongAccountWhileOffline", false);
+		Config.NORMAL_PLAYER_MAIL_ON_WRONG_SECONDARY_PASSWORD = serverSettings.getProperty("NormalPlayerMailOnWrongSecondaryPassword", true);
 
-		FORBIDDEN_CHAR_NAMES = serverSettings.getProperty("ForbiddenCharNames", "").split(",");
+		Config.FORBIDDEN_CHAR_NAMES = serverSettings.getProperty("ForbiddenCharNames", "").split(",");
 	}
 
 	public static final String EVENT_HITMAN = "config/events/Hitman.ini";
@@ -1247,7 +1176,6 @@ public class Config
 	public static double RATE_EPIC_DEFENSE;
 	public static double RATE_EPIC_ATTACK;
 	public static int RAID_MAX_LEVEL_DIFF;
-	public static boolean PARALIZE_ON_RAID_DIFF;
 	public static int MUTATED_ELPY_COUNT;
 
 	public static boolean FRINTEZZA_ALL_MEMBERS_NEED_SCROLL;
@@ -3208,9 +3136,6 @@ public class Config
 
 	public static boolean ALLOW_MULTILANG_GATEKEEPER;
 
-	public static String DEFAULT_LANG;
-	public static String DEFAULT_GK_LANG;
-
 	/* Fake List */
 	public static boolean ALLOW_FAKE_PLAYERS;
 	public static boolean FAKE_PLAYERS_SIT;
@@ -4042,6 +3967,7 @@ public class Config
 	public static String PATHFIND_BUFFERS;
 
 	public static int GEODATA_SKILL_CHECK_TASK_INTERVAL;
+	public static final String GEODATA_CONFIG_FILE = "config/geodata.ini";
 
 	public static void loadGeodataSettings()
 	{
@@ -4528,7 +4454,7 @@ public class Config
 	public static double SERVICES_BONUS_ADENA;
 	public static double SERVICES_BONUS_ITEMS;
 	public static double SERVICES_BONUS_SPOIL;
-
+	public static boolean AUTO_LOOT_PA;
 	public static int ALT_NEW_CHAR_PREMIUM_ID;
 	public static boolean USE_ALT_ENCHANT_PA;
 	public static ArrayList<Integer> ENCHANT_WEAPON_FIGHT_PA = new ArrayList<Integer>();
@@ -4828,21 +4754,20 @@ public class Config
 	public static int RAID_EVENT_NOTIFY_DELAY;
 	public static int RAID_EVENT_TIME_HOUR;
 	public static int RAID_EVENT_TIME_MINUTE;
+	public static final String RAID_EVENT_CONFIG_FILE = "config/events/RaidEvent.ini";
 
-	// public static void loadRaidEventConfig()
-	// {
-	// ExProperties raidEventConfig = load(RAID_EVENT_CONFIG_FILE);
-	//
-	// // Raid Event
-	// RAID_EVENT_RAID_ID = raidEventConfig.getProperty("RaidNpcId", 60000);
-	//
-	// RAID_EVENT_DURATION = raidEventConfig.getProperty("EventDuration", 60) * 60 * 1000;
-	// RAID_EVENT_NOTIFY_DELAY = raidEventConfig.getProperty("EventNotifyDelay", 2) * 60 * 1000;
-	//
-	// final String[] time = raidEventConfig.getProperty("EventTime", "20:00").split(":");
-	// RAID_EVENT_TIME_HOUR = Integer.parseInt(time[0]);
-	// RAID_EVENT_TIME_MINUTE = Integer.parseInt(time[1]);
-	// }
+	public static void loadRaidEventConfig()
+	{
+		final ExProperties raidEventConfig = load(RAID_EVENT_CONFIG_FILE);
+
+		// Raid Event
+		Config.RAID_EVENT_RAID_ID = raidEventConfig.getProperty("RaidNpcId", 60000);
+		Config.RAID_EVENT_DURATION = raidEventConfig.getProperty("EventDuration", 60) * 60 * 1000;
+		Config.RAID_EVENT_NOTIFY_DELAY = raidEventConfig.getProperty("EventNotifyDelay", 2) * 60 * 1000;
+		final String[] time = raidEventConfig.getProperty("EventTime", "20:00").split(":");
+		Config.RAID_EVENT_TIME_HOUR = Integer.parseInt(time[0]);
+		Config.RAID_EVENT_TIME_MINUTE = Integer.parseInt(time[1]);
+	}
 
 	public static final String BUFF_STORE_CONFIG_FILE = "config/mod/OfflineBuffer.ini";
 
@@ -5370,7 +5295,7 @@ public class Config
 		loadCaptureTheFlagSettings();
 
 		// Synerge
-		// loadRaidEventConfig();
+		loadRaidEventConfig();
 		loadBuffStoreConfig();
 		loadRankingCBConfig();
 		loadAntiFeedSettings();
