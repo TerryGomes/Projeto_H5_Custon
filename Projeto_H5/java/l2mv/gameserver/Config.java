@@ -49,28 +49,14 @@ public class Config
 	public static final int NCPUS = Runtime.getRuntime().availableProcessors();
 	/** Configuration files */
 
-	public static final String RESIDENCE_CONFIG_FILE = "config/residence.ini";
-
-	public static final String TELNET_CONFIGURATION_FILE = "config/telnet.ini";
 	public static final String CONFIGURATION_FILE = "config/server.ini";
 
 	public static final String GEODATA_CONFIG_FILE = "config/geodata.ini";
 
-	public static final String RATES_FILE = "config/rates.ini";
-	public static final String WEDDING_FILE = "config/services/Wedding.ini";
-	public static final String CHAT_FILE = "config/chat.ini";
-	
-	public static final String BOSS_FILE = "config/boss.ini";
 	public static final String FAKE_PLAYERS_LIST = "config/fake_players.list";
-
-	public static final String ITEM_USE_FILE = "config/UseItems.ini";
 
 	public static final String ANUSEWORDS_CONFIG_FILE = "config/abusewords.txt";
 	public static final String ADV_IP_FILE = "config/advipsystem.ini";
-	public static final String NPCBUFFER_CONFIG_FILE = "config/npcbuffer.ini";
-	public static final String DONATE_CONFIG_FILE = "config/DonatorManager.ini";
-
-	public static final String DONATION_STORE = "config/services/DonationStore.ini";
 
 	public static final String GM_PERSONAL_ACCESS_FILE = "config/GMAccess.xml";
 	public static final String GM_ACCESS_FILES_DIR = "config/GMAccess.d/";
@@ -80,9 +66,9 @@ public class Config
 
 	public static final String EVENT_CHANGE_OF_HEART_CONFIG_FILE = "config/events/ChangeOfHeart.ini";
 	public static final String EVENT_COFFER_OF_SHADOWS_CONFIG_FILE = "config/events/CofferOfShadows.ini";
-	public static final String EVENT_FIGHT_CLUB_FILE = "config/events/FightClub.ini";
+
 	public static final String EVENT_GLITTERING_MEDAL_CONFIG_FILE = "config/events/GlitteringMedal.ini";
-	public static final String EVENT_HITMAN = "config/events/Hitman.ini";
+
 	public static final String EVENT_L2_DAY_CONFIG_FILE = "config/events/L2Day.ini";
 	public static final String EVENT_LAST_HERO_CONFIG_FILE = "config/events/LastHero.ini";
 	public static final String EVENT_MARCH_8_CONFIG_FILE = "config/events/March8.ini";
@@ -99,12 +85,6 @@ public class Config
 
 	// Synerge
 	public static final String RAID_EVENT_CONFIG_FILE = "config/events/RaidEvent.ini";
-
-	public static boolean EVENT_HITMAN_ENABLED;
-	public static int EVENT_HITMAN_COST_ITEM_ID;
-	public static int EVENT_HITMAN_COST_ITEM_COUNT;
-	public static int EVENT_HITMAN_TASKS_PER_PAGE;
-	public static String[] EVENT_HITMAN_ALLOWED_ITEM_LIST;
 
 	public static int HTM_CACHE_MODE;
 	public static boolean LOG_SERVICES;
@@ -157,26 +137,6 @@ public class Config
 	public static int MAP_MIN_Z;
 	public static int MAP_MAX_Z;
 
-	/** ChatBan */
-	public static int CHAT_MESSAGE_MAX_LEN;
-	public static boolean ABUSEWORD_BANCHAT;
-	public static int[] BAN_CHANNEL_LIST = new int[18];
-	public static boolean ABUSEWORD_REPLACE;
-	public static String ABUSEWORD_REPLACE_STRING;
-	public static int ABUSEWORD_BANTIME;
-	public static Pattern[] ABUSEWORD_LIST = {};
-	public static boolean BANCHAT_ANNOUNCE;
-	public static boolean BANCHAT_ANNOUNCE_FOR_ALL_WORLD;
-	public static boolean BANCHAT_ANNOUNCE_NICK;
-
-	public static int[] CHATFILTER_CHANNELS = new int[18];
-	public static int CHATFILTER_MIN_LEVEL = 0;
-	public static int CHATFILTER_WORK_TYPE = 1;
-
-	public static boolean RECORD_WROTE_CHAT_MSGS_COUNT;
-
-	public static int ANNOUNCE_VOTE_DELAY;
-
 	// Donation Store
 
 	public static boolean LEVEL_CHANGE_ENABLED;
@@ -186,9 +146,6 @@ public class Config
 	public static int LEVEL_DOWN_CHANGE_MAX;
 	public static int LEVEL_DOWN_CHANGE_PRICE;
 	public static int LEVEL_DOWN_CHANGE_ITEM;
-
-	public static boolean SERVICES_UNBAN_ENABLED;
-	public static int[] SERVICES_UNBAN_ITEM;
 
 	public static boolean REC_SERVICE;
 	public static int REC_ITEM;
@@ -208,112 +165,14 @@ public class Config
 	public static int NOBLE_SELL_PRICE;
 	public static int NOBLE_SELL_ITEM;
 
-	public static boolean SERVICES_CLAN_LEVEL_ENABLED;
-	public static int SERVICES_CLAN_LEVEL_ITEM;
-	public static int SERVICES_CLAN_LEVEL_8_PRICE;
-	public static int SERVICES_CLAN_LEVEL_9_PRICE;
-	public static int SERVICES_CLAN_LEVEL_10_PRICE;
-	public static int SERVICES_CLAN_LEVEL_11_PRICE;
-
-	public static boolean SERVICES_CLAN_SKILLS_ENABLED;
-	public static int SERVICES_CLAN_SKILLS_ITEM;
-	public static int SERVICES_CLAN_SKILLS_8_PRICE;
-	public static int SERVICES_CLAN_SKILLS_9_PRICE;
-	public static int SERVICES_CLAN_SKILLS_10_PRICE;
-	public static int SERVICES_CLAN_SKILLS_11_PRICE;
-
-	public static boolean SERVICES_OLF_STORE_ENABLED;
-	public static int SERVICES_OLF_STORE_ITEM;
-	public static int SERVICES_OLF_STORE_0_PRICE;
-	public static int SERVICES_OLF_STORE_6_PRICE;
-	public static int SERVICES_OLF_STORE_7_PRICE;
-	public static int SERVICES_OLF_STORE_8_PRICE;
-	public static int SERVICES_OLF_STORE_9_PRICE;
-	public static int SERVICES_OLF_STORE_10_PRICE;
-
-	public static boolean SERVICES_OLF_TRANSFER_ENABLED;
-	public static int[] SERVICES_OLF_TRANSFER_ITEM;
-
-	public static boolean SERVICES_SOUL_CLOAK_TRANSFER_ENABLED;
-	public static int[] SERVICES_SOUL_CLOAK_TRANSFER_ITEM;
-
-	public static boolean SERVICES_EXCHANGE_EQUIP;
-	public static int SERVICES_EXCHANGE_EQUIP_ITEM;
-	public static int SERVICES_EXCHANGE_EQUIP_ITEM_PRICE;
-	public static int SERVICES_EXCHANGE_UPGRADE_EQUIP_ITEM;
-	public static int SERVICES_EXCHANGE_UPGRADE_EQUIP_ITEM_PRICE;
-
-	// Donate
-	public static int DONATE_ID;
-	public static int DONATOR_NPC_ITEM;
-	public static String DONATOR_NPC_ITEM_NAME;
-	public static int DONATOR_NPC_COUNT_FAME;
-	public static int DONATOR_NPC_FAME;
-	public static int DONATOR_NPC_COUNT_REP;
-	public static int DONATOR_NPC_REP;
-	public static int DONATOR_NPC_COUNT_NOBLESS;
-	public static int DONATOR_NPC_COUNT_SEX;
-	public static int DONATOR_NPC_COUNT_LEVEL;
-	public static boolean DONATE_NOBLESS_ENABLE;
-	public static int DONATE_NOBLESS_SELL_ITEM;
-	public static long DONATE_NOBLESS_SELL_PRICE;
-
 	public static int DRAGONKNIGHT_2ND_D_CHANCE;
 	public static int DRAGONKNIGHT_3ND_D_CHANCE;
 
 	public static int LOA_CIRCLE_MOB_UNSPAWN_TIME;
 
-	// Scheme Buffer
-	public static boolean NpcBuffer_VIP;
-	public static int NpcBuffer_VIP_ALV;
-	public static boolean NpcBuffer_EnableBuff;
-	public static boolean NpcBuffer_EnableScheme;
-	public static boolean NpcBuffer_EnableHeal;
-	public static boolean NpcBuffer_EnableBuffs;
-	public static boolean NpcBuffer_EnableResist;
-	public static boolean NpcBuffer_EnableSong;
-	public static boolean NpcBuffer_EnableDance;
-	public static boolean NpcBuffer_EnableChant;
-	public static boolean NpcBuffer_EnableOther;
-	public static boolean NpcBuffer_EnableSpecial;
-	public static boolean NpcBuffer_EnableCubic;
-	public static boolean NpcBuffer_EnableCancel;
-	public static boolean NpcBuffer_EnableBuffSet;
-	public static boolean NpcBuffer_EnableBuffPK;
-	public static boolean NpcBuffer_EnableFreeBuffs;
-	public static boolean NpcBuffer_EnableTimeOut;
-	public static int NpcBuffer_TimeOutTime;
-	public static int NpcBuffer_MinLevel;
-	public static int NpcBuffer_PriceCancel;
-	public static int NpcBuffer_PriceHeal;
-	public static int NpcBuffer_PriceBuffs;
-	public static int NpcBuffer_PriceResist;
-	public static int NpcBuffer_PriceSong;
-	public static int NpcBuffer_PriceDance;
-	public static int NpcBuffer_PriceChant;
-	public static int NpcBuffer_PriceOther;
-	public static int NpcBuffer_PriceSpecial;
-	public static int NpcBuffer_PriceCubic;
-	public static int NpcBuffer_PriceSet;
-	public static int NpcBuffer_PriceScheme;
-	public static int NpcBuffer_MaxScheme;
-	public static boolean NpcBuffer_EnablePremiumBuffs;
-	public static boolean SCHEME_ALLOW_FLAG;
-	public static List<int[]> NpcBuffer_BuffSetMage = new ArrayList<int[]>();
-	public static List<int[]> NpcBuffer_BuffSetFighter = new ArrayList<int[]>();
-	public static List<int[]> NpcBuffer_BuffSetDagger = new ArrayList<int[]>();
-	public static List<int[]> NpcBuffer_BuffSetSupport = new ArrayList<int[]>();
-	public static List<int[]> NpcBuffer_BuffSetTank = new ArrayList<int[]>();
-	public static List<int[]> NpcBuffer_BuffSetArcher = new ArrayList<int[]>();
-
 	public static boolean AllowBBSSubManager;
 
-	public static boolean R_GUARD;
 
-	public static boolean SERVICES_LEVEL_UP_ENABLE;
-	public static int[] SERVICES_LEVEL_UP;
-	public static boolean SERVICES_DELEVEL_ENABLE;
-	public static int[] SERVICES_DELEVEL;
 
 	public static boolean ALLOW_EPIC_BOSSES_PAGE;
 	public static boolean ALLOW_EPIC_BOSSES_TELEPORT;
@@ -321,17 +180,6 @@ public class Config
 	public static boolean EPIC_BOSSES_TELEPORT_ONLY_FOR_PREMIUM;
 	public static int EPIC_BOSSES_TELEPORT_PRICE_ID;
 	public static int EPIC_BOSSES_TELEPORT_PRICE_COUNT;
-
-	public static boolean SERVICES_AUGMENTATION_ENABLED;
-	public static int SERVICES_AUGMENTATION_PRICE;
-	public static int SERVICES_AUGMENTATION_ITEM;
-	public static List<Integer> SERVICES_AUGMENTATION_DISABLED_LIST = new ArrayList<>();
-
-	public static Calendar CASTLE_VALIDATION_DATE;
-	public static int[] CASTLE_SELECT_HOURS;
-	public static int PERIOD_CASTLE_SIEGE;
-
-	public static boolean RETURN_WARDS_WHEN_TW_STARTS;
 
 	/** Thread pools size */
 	public static int SCHEDULED_THREAD_POOL_SIZE;
@@ -349,13 +197,6 @@ public class Config
 	public static String CLAN_TITLE_TEMPLATE;
 	public static String ALLY_NAME_TEMPLATE;
 
-	/** Global chat state */
-	public static boolean GLOBAL_SHOUT;
-	public static boolean GLOBAL_TRADE_CHAT;
-	public static int CHAT_RANGE;
-	public static int SHOUT_OFFSET;
-
-	public static GArray<String> TRADE_WORDS;
 	public static boolean TRADE_CHATS_REPLACE;
 
 	public static String SERVER_NAME;
@@ -368,90 +209,7 @@ public class Config
 	public static boolean ENABLE_VOTE;
 	public static String VOTE_ADDRESS;
 
-	/** ÐšÐ¾Ð½Ñ„Ð¸Ð³ÑƒÑ€Ð°Ñ†Ð¸Ñ� Ð¸Ñ�Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ� Ð¸Ñ‚ÐµÐ¼Ð¾Ð² Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ Ð¿Ð¾ÑƒÑˆÐµÐ½Ñ‹ */
-	public static int[] ITEM_USE_LIST_ID;
-	public static boolean ITEM_USE_IS_COMBAT_FLAG;
-	public static boolean ITEM_USE_IS_ATTACK;
-	public static boolean ITEM_USE_IS_EVENTS;
-	public static long MAX_ADENA;
-
-	/** Ð�Ð°Ñ�Ñ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð´Ð»Ñ� ÐµÐ²ÐµÐ½Ñ‚Ð° Ð¤Ð°Ð¹Ñ‚ ÐšÐ»ÑƒÐ± */
-	public static boolean FIGHT_CLUB_ENABLED;
-	public static int MINIMUM_LEVEL_TO_PARRICIPATION;
-	public static int MAXIMUM_LEVEL_TO_PARRICIPATION;
-	public static int MAXIMUM_LEVEL_DIFFERENCE;
-	public static String[] ALLOWED_RATE_ITEMS;
-	public static int PLAYERS_PER_PAGE;
-	public static int ARENA_TELEPORT_DELAY;
-	public static boolean CANCEL_BUFF_BEFORE_FIGHT;
-	public static boolean UNSUMMON_PETS;
-	public static boolean UNSUMMON_SUMMONS;
-	public static boolean REMOVE_CLAN_SKILLS;
-	public static boolean REMOVE_HERO_SKILLS;
-	public static int TIME_TO_PREPARATION;
-	public static int FIGHT_TIME;
-	public static boolean ALLOW_DRAW;
-	public static int TIME_TELEPORT_BACK;
-	public static boolean FIGHT_CLUB_ANNOUNCE_RATE;
-	public static boolean FIGHT_CLUB_ANNOUNCE_RATE_TO_SCREEN;
-	public static boolean FIGHT_CLUB_ANNOUNCE_START_TO_SCREEN;
-	public static boolean FIGHT_CLUB_ANNOUNCE_TOP_KILLER;
-	public static boolean FIGHT_CLUB_SUMMON_LOSE_BUFFS_ON_DEATH;
-
-	/** Logging Chat Window */
-	public static boolean LOG_CHAT;
-
 	public static Map<Integer, PlayerAccess> gmlist = new HashMap<Integer, PlayerAccess>();
-
-	/** Rate control */
-	public static double RATE_XP;
-	public static double RATE_SP;
-	public static double RATE_QUESTS_REWARD;
-	public static double RATE_QUESTS_DROP;
-	public static double RATE_CLAN_REP_SCORE;
-	public static int RATE_CLAN_REP_SCORE_MAX_AFFECTED;
-	public static double RATE_DROP_ADENA;
-	public static double RATE_DROP_CHAMPION;
-	public static double RATE_CHAMPION_DROP_ADENA;
-	public static double RATE_DROP_SPOIL_CHAMPION;
-	public static double RATE_DROP_ITEMS;
-	public static double RATE_CHANCE_GROUP_DROP_ITEMS;
-	public static double RATE_CHANCE_DROP_ITEMS;
-	public static double RATE_CHANCE_DROP_HERBS;
-	public static double RATE_CHANCE_SPOIL;
-	public static double RATE_CHANCE_SPOIL_WEAPON_ARMOR_ACCESSORY;
-	public static double RATE_CHANCE_DROP_WEAPON_ARMOR_ACCESSORY;
-	public static double RATE_CHANCE_DROP_EPOLET;
-	public static boolean NO_RATE_ENCHANT_SCROLL;
-	public static double RATE_ENCHANT_SCROLL;
-	public static boolean CHAMPION_DROP_ONLY_ADENA;
-	public static boolean NO_RATE_HERBS;
-	public static double RATE_DROP_HERBS;
-	public static boolean NO_RATE_ATT;
-	public static double RATE_DROP_ATT;
-	public static boolean NO_RATE_LIFE_STONE;
-	public static boolean NO_RATE_FORGOTTEN_SCROLL;
-	public static double RATE_DROP_LIFE_STONE;
-	public static boolean NO_RATE_KEY_MATERIAL;
-	public static double RATE_DROP_KEY_MATERIAL;
-	public static boolean NO_RATE_RECIPES;
-	public static double RATE_DROP_RECIPES;
-	public static double RATE_DROP_COMMON_ITEMS;
-	public static boolean NO_RATE_RAIDBOSS;
-	public static double RATE_DROP_RAIDBOSS;
-	public static double RATE_DROP_SPOIL;
-	public static int[] NO_RATE_ITEMS;
-	public static boolean NO_RATE_SIEGE_GUARD;
-	public static double RATE_DROP_SIEGE_GUARD;
-	public static double RATE_MANOR;
-	public static double RATE_FISH_DROP_COUNT;
-	public static boolean RATE_PARTY_MIN;
-	public static double RATE_HELLBOUND_CONFIDENCE;
-	public static boolean NO_RATE_EQUIPMENT;
-
-	public static int RATE_MOB_SPAWN;
-	public static int RATE_MOB_SPAWN_MIN_LEVEL;
-	public static int RATE_MOB_SPAWN_MAX_LEVEL;
 
 	public static int AUTODESTROY_ITEM_AFTER;
 	public static int AUTODESTROY_PLAYER_ITEM_AFTER;
@@ -481,79 +239,9 @@ public class Config
 	public static boolean ALLOW_ITEMS_LOGGING;
 	public static boolean ALLOW_SPAWN_PROTECTION;
 
-	/** protocol revision */
-	public static int MIN_PROTOCOL_REVISION;
-	public static int MAX_PROTOCOL_REVISION;
 
-
-
-	public static String RESTART_AT_TIME;
-	public static boolean BACKUP_DURING_AUTO_RESTART;
-	public static int[][] ADDITIONAL_BACKUP_DATES;
-
-	public static int GAME_SERVER_LOGIN_PORT;
-	public static boolean GAME_SERVER_LOGIN_CRYPT;
-	public static String GAME_SERVER_LOGIN_HOST;
-	public static String INTERNAL_HOSTNAME;
-	public static String EXTERNAL_HOSTNAME;
-
-	public static boolean SECOND_AUTH_ENABLED;
-	public static boolean SECOND_AUTH_BAN_ACC;
-	public static boolean SECOND_AUTH_STRONG_PASS;
-	public static int SECOND_AUTH_MAX_ATTEMPTS;
-	public static long SECOND_AUTH_BAN_TIME;
-	public static String SECOND_AUTH_REC_LINK;
-
-
-
-	public static double RATE_RAID_REGEN;
-	public static double RATE_RAID_DEFENSE;
-	public static double RATE_RAID_ATTACK;
-	public static double RATE_EPIC_DEFENSE;
-	public static double RATE_EPIC_ATTACK;
-	public static int RAID_MAX_LEVEL_DIFF;
-	public static boolean PARALIZE_ON_RAID_DIFF;
-	public static int MUTATED_ELPY_COUNT;
-
-	public static boolean FRINTEZZA_ALL_MEMBERS_NEED_SCROLL;
 
 	// public static boolean ENTER_WORLD_SHOW_HTML_LOCK;
-
-	/** telnet enabled */
-	public static boolean IS_TELNET_ENABLED;
-	public static String TELNET_DEFAULT_ENCODING;
-	public static String TELNET_PASSWORD;
-	public static String TELNET_HOSTNAME;
-	public static int TELNET_PORT;
-
-	public static int CH_BID_GRADE1_MINCLANLEVEL;
-	public static int CH_BID_GRADE1_MINCLANMEMBERS;
-	public static int CH_BID_GRADE1_MINCLANMEMBERSLEVEL;
-	public static int CH_BID_GRADE2_MINCLANLEVEL;
-	public static int CH_BID_GRADE2_MINCLANMEMBERS;
-	public static int CH_BID_GRADE2_MINCLANMEMBERSLEVEL;
-	public static int CH_BID_GRADE3_MINCLANLEVEL;
-	public static int CH_BID_GRADE3_MINCLANMEMBERS;
-	public static int CH_BID_GRADE3_MINCLANMEMBERSLEVEL;
-	public static double RESIDENCE_LEASE_FUNC_MULTIPLIER;
-	public static double RESIDENCE_LEASE_MULTIPLIER;
-	// Fame Reward
-	public static boolean ENABLE_ALT_FAME_REWARD;
-	public static long ALT_FAME_CASTLE;
-	public static long ALT_FAME_FORTRESS;
-	public static int INTERVAL_FLAG_DROP;
-
-	// Synerge
-	public static int SIEGE_WINNER_REPUTATION_REWARD;
-	public static boolean ALLOW_START_FORTRESS_SIEGE_FEE;
-	public static int START_FORTRESS_SIEGE_PRICE_ID;
-	public static int START_FORTRESS_SIEGE_PRICE_AMOUNT;
-	public static boolean FORTRESS_SIEGE_ALLOW_SINGLE_PLAYERS;
-	public static boolean SIEGE_ALLOW_FAME_WHILE_DEAD;
-	public static boolean SIEGE_ALLOW_FAME_IN_SAFE;
-	public static int[][] SIEGE_REWARDS_NEAR_FAME = null;
-	public static boolean FORTRESS_REMOVE_FLAG_ON_LEAVE_ZONE;
-	public static boolean DOMINION_REMOVE_FLAG_ON_LEAVE_ZONE;
 
 	public static boolean ACCEPT_ALTERNATE_ID;
 	public static int REQUEST_ID;
@@ -633,17 +321,6 @@ public class Config
 	public static int COMMUNITYBOARD_SAVE_TELE_PICE;
 	public static boolean COMMUNITYBOARD_TELEPORT_SIEGE_ENABLED;
 
-	/** Wedding Options */
-	public static boolean ALLOW_WEDDING;
-	public static int WEDDING_PRICE;
-	public static boolean WEDDING_PUNISH_INFIDELITY;
-	public static boolean WEDDING_TELEPORT;
-	public static int WEDDING_TELEPORT_PRICE;
-	public static int WEDDING_TELEPORT_INTERVAL;
-	public static boolean WEDDING_SAMESEX;
-	public static boolean WEDDING_FORMALWEAR;
-	public static int WEDDING_DIVORCE_COSTS;
-
 	public static int WEAR_DELAY;
 
 	public static boolean GOODS_INVENTORY_ENABLED = false;
@@ -710,13 +387,61 @@ public class Config
 	public static boolean NORMAL_PLAYER_MAIL_ON_WRONG_ACCOUNT_WHILE_OFFLINE;
 	public static boolean NORMAL_PLAYER_MAIL_ON_WRONG_SECONDARY_PASSWORD;
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public static boolean R_GUARD;
+	/** protocol revision */
+	public static int MIN_PROTOCOL_REVISION;
+	public static int MAX_PROTOCOL_REVISION;
+
+	public static String RESTART_AT_TIME;
+	public static boolean BACKUP_DURING_AUTO_RESTART;
+	public static int[][] ADDITIONAL_BACKUP_DATES;
+
+	public static int GAME_SERVER_LOGIN_PORT;
+	public static boolean GAME_SERVER_LOGIN_CRYPT;
+	public static String GAME_SERVER_LOGIN_HOST;
+	public static String INTERNAL_HOSTNAME;
+	public static String EXTERNAL_HOSTNAME;
+
+	public static boolean SECOND_AUTH_ENABLED;
+	public static boolean SECOND_AUTH_BAN_ACC;
+	public static boolean SECOND_AUTH_STRONG_PASS;
+	public static int SECOND_AUTH_MAX_ATTEMPTS;
+	public static long SECOND_AUTH_BAN_TIME;
+	public static String SECOND_AUTH_REC_LINK;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public static void loadServerConfig()
 	{
 		ExProperties serverSettings = load(CONFIGURATION_FILE);
 
 		R_GUARD = serverSettings.getProperty("R_GUARD", true);
 		LOG_SERVICES = serverSettings.getProperty("Services", false);
-		GAME_SERVER_LOGIN_HOST = serverSettings.getProperty("LoginHost", "202.83.122.90");
+		GAME_SERVER_LOGIN_HOST = serverSettings.getProperty("LoginHost", "127.0.0.1");
 		GAME_SERVER_LOGIN_PORT = serverSettings.getProperty("LoginPort", 9013);
 		GAME_SERVER_LOGIN_CRYPT = serverSettings.getProperty("LoginUseCrypt", true);
 
@@ -742,8 +467,8 @@ public class Config
 		SECOND_AUTH_BAN_TIME = serverSettings.getProperty("SABanTime", 480);
 		SECOND_AUTH_REC_LINK = serverSettings.getProperty("SARecoveryLink", "http://www.my-domain.com/charPassRec.php");
 
-		INTERNAL_HOSTNAME = serverSettings.getProperty("KoneksiDalamIchsan", "127.0.0.1");
-		EXTERNAL_HOSTNAME = serverSettings.getProperty("KoneksiLuarIchsan", "127.0.0.1");
+		INTERNAL_HOSTNAME = serverSettings.getProperty("InternalHostname", "127.0.0.1");
+		EXTERNAL_HOSTNAME = serverSettings.getProperty("ExternalHostname", "127.0.0.1");
 		ADVIPSYSTEM = serverSettings.getProperty("AdvIPSystem", false);
 		REQUEST_ID = serverSettings.getProperty("RequestServerID", 0);
 		ACCEPT_ALTERNATE_ID = serverSettings.getProperty("AcceptAlternateID", true);
@@ -900,9 +625,17 @@ public class Config
 		FORBIDDEN_CHAR_NAMES = serverSettings.getProperty("ForbiddenCharNames", "").split(",");
 	}
 
+	public static final String EVENT_HITMAN = "config/events/Hitman.ini";
+
+	public static boolean EVENT_HITMAN_ENABLED;
+	public static int EVENT_HITMAN_COST_ITEM_ID;
+	public static int EVENT_HITMAN_COST_ITEM_COUNT;
+	public static int EVENT_HITMAN_TASKS_PER_PAGE;
+	public static String[] EVENT_HITMAN_ALLOWED_ITEM_LIST;
+
 	public static void loadHitmanSettings()
 	{
-		ExProperties eventHitmanSettings = load("config/events/Hitman.ini");
+		final ExProperties eventHitmanSettings = load(EVENT_HITMAN);
 
 		EVENT_HITMAN_ENABLED = eventHitmanSettings.getProperty("HitmanEnabled", false);
 		EVENT_HITMAN_COST_ITEM_ID = eventHitmanSettings.getProperty("CostItemId", 57);
@@ -915,56 +648,83 @@ public class Config
 		});
 	}
 
+	public static final String CHAT_FILE = "config/chat.ini";
+	/** Global chat state */
+	public static boolean GLOBAL_SHOUT;
+	public static boolean GLOBAL_TRADE_CHAT;
+	public static int CHAT_RANGE;
+	public static int SHOUT_OFFSET;
+
 	public static int CHATS_REQUIRED_LEVEL;
 	public static int PM_REQUIRED_LEVEL;
 	public static int SHOUT_REQUIRED_LEVEL;
+	public static GArray<String> TRADE_WORDS;
+	/** Logging Chat Window */
+	public static boolean LOG_CHAT;
+	/** ChatBan */
+	public static int CHAT_MESSAGE_MAX_LEN;
+	public static boolean ABUSEWORD_BANCHAT;
+	public static int[] BAN_CHANNEL_LIST = new int[18];
+	public static boolean ABUSEWORD_REPLACE;
+	public static String ABUSEWORD_REPLACE_STRING;
+	public static int ABUSEWORD_BANTIME;
+	public static Pattern[] ABUSEWORD_LIST = {};
+	public static boolean BANCHAT_ANNOUNCE;
+	public static boolean BANCHAT_ANNOUNCE_FOR_ALL_WORLD;
+	public static boolean BANCHAT_ANNOUNCE_NICK;
+
+	public static int[] CHATFILTER_CHANNELS = new int[18];
+	public static int CHATFILTER_MIN_LEVEL = 0;
+	public static int CHATFILTER_WORK_TYPE = 1;
+	public static boolean RECORD_WROTE_CHAT_MSGS_COUNT;
+	public static int ANNOUNCE_VOTE_DELAY;
 
 	public static void loadChatConfig()
 	{
-		ExProperties chatSettings = load(CHAT_FILE);
+		final ExProperties chatSettings = load(CHAT_FILE);
 
-		GLOBAL_SHOUT = chatSettings.getProperty("GlobalShout", false);
-		GLOBAL_TRADE_CHAT = chatSettings.getProperty("GlobalTradeChat", false);
-		CHAT_RANGE = chatSettings.getProperty("ChatRange", 1250);
-		SHOUT_OFFSET = chatSettings.getProperty("ShoutOffset", 0);
+		Config.GLOBAL_SHOUT = chatSettings.getProperty("GlobalShout", false);
+		Config.GLOBAL_TRADE_CHAT = chatSettings.getProperty("GlobalTradeChat", false);
+		Config.CHAT_RANGE = chatSettings.getProperty("ChatRange", 1250);
+		Config.SHOUT_OFFSET = chatSettings.getProperty("ShoutOffset", 0);
 
-		TRADE_WORDS = new GArray<String>();
+		Config.TRADE_WORDS = new GArray<String>();
 
 		String T_WORLD = chatSettings.getProperty("TradeWords", "trade,sell,selling,buy,exchange,barter,Ð’Ð¢Ð¢,Ð’Ð¢S,WTB,WTB,WTT,WTS");
 		String[] T_WORLDS = T_WORLD.split(",", -1);
 		for (String w : T_WORLDS)
 		{
-			TRADE_WORDS.add(w);
+			Config.TRADE_WORDS.add(w);
 		}
 		_log.info("Loaded " + TRADE_WORDS.size() + " trade words.");
 
-		LOG_CHAT = chatSettings.getProperty("LogChat", false);
-		CHAT_MESSAGE_MAX_LEN = chatSettings.getProperty("ChatMessageLimit", 1000);
-		ABUSEWORD_BANCHAT = chatSettings.getProperty("ABUSEWORD_BANCHAT", false);
+		Config.LOG_CHAT = chatSettings.getProperty("LogChat", false);
+		Config.CHAT_MESSAGE_MAX_LEN = chatSettings.getProperty("ChatMessageLimit", 1000);
+		Config.ABUSEWORD_BANCHAT = chatSettings.getProperty("ABUSEWORD_BANCHAT", false);
 		int counter = 0;
 		for (int id : chatSettings.getProperty("ABUSEWORD_BAN_CHANNEL", new int[]
 		{
 			0
 		}))
 		{
-			BAN_CHANNEL_LIST[counter] = id;
+			Config.BAN_CHANNEL_LIST[counter] = id;
 			counter++;
 		}
-		ABUSEWORD_REPLACE = chatSettings.getProperty("ABUSEWORD_REPLACE", false);
-		ABUSEWORD_REPLACE_STRING = chatSettings.getProperty("ABUSEWORD_REPLACE_STRING", "[censored]");
-		BANCHAT_ANNOUNCE = chatSettings.getProperty("BANCHAT_ANNOUNCE", true);
-		BANCHAT_ANNOUNCE_FOR_ALL_WORLD = chatSettings.getProperty("BANCHAT_ANNOUNCE_FOR_ALL_WORLD", true);
-		BANCHAT_ANNOUNCE_NICK = chatSettings.getProperty("BANCHAT_ANNOUNCE_NICK", true);
-		ABUSEWORD_BANTIME = chatSettings.getProperty("ABUSEWORD_UNBAN_TIMER", 30);
-		CHATFILTER_MIN_LEVEL = chatSettings.getProperty("ChatFilterMinLevel", 0);
+		Config.ABUSEWORD_REPLACE = chatSettings.getProperty("ABUSEWORD_REPLACE", false);
+		Config.ABUSEWORD_REPLACE_STRING = chatSettings.getProperty("ABUSEWORD_REPLACE_STRING", "[censored]");
+		Config.BANCHAT_ANNOUNCE = chatSettings.getProperty("BANCHAT_ANNOUNCE", true);
+		Config.BANCHAT_ANNOUNCE_FOR_ALL_WORLD = chatSettings.getProperty("BANCHAT_ANNOUNCE_FOR_ALL_WORLD", true);
+		Config.BANCHAT_ANNOUNCE_NICK = chatSettings.getProperty("BANCHAT_ANNOUNCE_NICK", true);
+		Config.ABUSEWORD_BANTIME = chatSettings.getProperty("ABUSEWORD_UNBAN_TIMER", 30);
+		Config.CHATFILTER_MIN_LEVEL = chatSettings.getProperty("ChatFilterMinLevel", 0);
 
-		CHATS_REQUIRED_LEVEL = chatSettings.getProperty("ChatsRequiredLevel", 21);
-		PM_REQUIRED_LEVEL = chatSettings.getProperty("PMPlayersInChat", 61);
-		SHOUT_REQUIRED_LEVEL = chatSettings.getProperty("ShoutingInChat", 61);
+		Config.CHATS_REQUIRED_LEVEL = chatSettings.getProperty("ChatsRequiredLevel", 21);
+		Config.PM_REQUIRED_LEVEL = chatSettings.getProperty("PMPlayersInChat", 61);
+		Config.SHOUT_REQUIRED_LEVEL = chatSettings.getProperty("ShoutingInChat", 61);
 
-		RECORD_WROTE_CHAT_MSGS_COUNT = chatSettings.getProperty("RecordWroteChatMsgsCount", false);
+		Config.RECORD_WROTE_CHAT_MSGS_COUNT = chatSettings.getProperty("RecordWroteChatMsgsCount", false);
 
-		ANNOUNCE_VOTE_DELAY = chatSettings.getProperty("AnnounceVoteDelay", 60);
+		Config.ANNOUNCE_VOTE_DELAY = chatSettings.getProperty("AnnounceVoteDelay", 60);
 		counter = 0;
 		for (int id : chatSettings.getProperty("ChatFilterChannels", new int[]
 		{
@@ -972,59 +732,111 @@ public class Config
 			8
 		}))
 		{
-			CHATFILTER_CHANNELS[counter] = id;
+			Config.CHATFILTER_CHANNELS[counter] = id;
 			counter++;
 		}
-		CHATFILTER_WORK_TYPE = chatSettings.getProperty("ChatFilterWorkType", 1);
+		Config.CHATFILTER_WORK_TYPE = chatSettings.getProperty("ChatFilterWorkType", 1);
 	}
+
+	public static final String TELNET_CONFIGURATION_FILE = "config/telnet.ini";
+	/** telnet enabled */
+	public static boolean IS_TELNET_ENABLED;
+	public static String TELNET_DEFAULT_ENCODING;
+	public static String TELNET_PASSWORD;
+	public static String TELNET_HOSTNAME;
+	public static int TELNET_PORT;
 
 	public static void loadTelnetConfig()
 	{
-		ExProperties telnetSettings = load(TELNET_CONFIGURATION_FILE);
+		final ExProperties telnetSettings = load(TELNET_CONFIGURATION_FILE);
 
-		IS_TELNET_ENABLED = telnetSettings.getProperty("EnableTelnet", false);
-		TELNET_DEFAULT_ENCODING = telnetSettings.getProperty("TelnetEncoding", "UTF-8");
-		TELNET_PORT = telnetSettings.getProperty("Port", 7000);
-		TELNET_HOSTNAME = telnetSettings.getProperty("BindAddress", "127.0.0.1");
-		TELNET_PASSWORD = telnetSettings.getProperty("Password", "");
+		Config.IS_TELNET_ENABLED = telnetSettings.getProperty("EnableTelnet", false);
+		Config.TELNET_DEFAULT_ENCODING = telnetSettings.getProperty("TelnetEncoding", "UTF-8");
+		Config.TELNET_PORT = telnetSettings.getProperty("Port", 7000);
+		Config.TELNET_HOSTNAME = telnetSettings.getProperty("BindAddress", "127.0.0.1");
+		Config.TELNET_PASSWORD = telnetSettings.getProperty("Password", "");
 	}
 
+	public static final String WEDDING_FILE = "config/services/Wedding.ini";
+	/** Wedding Options */
+	public static boolean ALLOW_WEDDING;
+	public static int WEDDING_PRICE;
+	public static boolean WEDDING_PUNISH_INFIDELITY;
+	public static boolean WEDDING_TELEPORT;
+	public static int WEDDING_TELEPORT_PRICE;
+	public static int WEDDING_TELEPORT_INTERVAL;
+	public static boolean WEDDING_SAMESEX;
+	public static boolean WEDDING_FORMALWEAR;
+	public static int WEDDING_DIVORCE_COSTS;
 	public static boolean SPAWN_WEDDING;
 
 	public static void loadWeddingConfig()
 	{
-		ExProperties weddingSettings = load(WEDDING_FILE);
+		final ExProperties weddingSettings = load(WEDDING_FILE);
 
-		ALLOW_WEDDING = weddingSettings.getProperty("AllowWedding", false);
-		WEDDING_PRICE = weddingSettings.getProperty("WeddingPrice", 500000);
-		WEDDING_PUNISH_INFIDELITY = weddingSettings.getProperty("WeddingPunishInfidelity", true);
-		WEDDING_TELEPORT = weddingSettings.getProperty("WeddingTeleport", true);
-		WEDDING_TELEPORT_PRICE = weddingSettings.getProperty("WeddingTeleportPrice", 500000);
-		WEDDING_TELEPORT_INTERVAL = weddingSettings.getProperty("WeddingTeleportInterval", 120);
-		WEDDING_SAMESEX = weddingSettings.getProperty("WeddingAllowSameSex", true);
-		WEDDING_FORMALWEAR = weddingSettings.getProperty("WeddingFormalWear", true);
-		WEDDING_DIVORCE_COSTS = weddingSettings.getProperty("WeddingDivorceCosts", 20);
-		SPAWN_WEDDING = weddingSettings.getProperty("SPAWN_WEDDING", false);
+		Config.ALLOW_WEDDING = weddingSettings.getProperty("AllowWedding", false);
+		Config.WEDDING_PRICE = weddingSettings.getProperty("WeddingPrice", 500000);
+		Config.WEDDING_PUNISH_INFIDELITY = weddingSettings.getProperty("WeddingPunishInfidelity", true);
+		Config.WEDDING_TELEPORT = weddingSettings.getProperty("WeddingTeleport", true);
+		Config.WEDDING_TELEPORT_PRICE = weddingSettings.getProperty("WeddingTeleportPrice", 500000);
+		Config.WEDDING_TELEPORT_INTERVAL = weddingSettings.getProperty("WeddingTeleportInterval", 120);
+		Config.WEDDING_SAMESEX = weddingSettings.getProperty("WeddingAllowSameSex", true);
+		Config.WEDDING_FORMALWEAR = weddingSettings.getProperty("WeddingFormalWear", true);
+		Config.WEDDING_DIVORCE_COSTS = weddingSettings.getProperty("WeddingDivorceCosts", 20);
+		Config.SPAWN_WEDDING = weddingSettings.getProperty("SPAWN_WEDDING", false);
 	}
+
+	public static final String RESIDENCE_CONFIG_FILE = "config/residence.ini";
+	public static int CH_BID_GRADE1_MINCLANLEVEL;
+	public static int CH_BID_GRADE1_MINCLANMEMBERS;
+	public static int CH_BID_GRADE1_MINCLANMEMBERSLEVEL;
+	public static int CH_BID_GRADE2_MINCLANLEVEL;
+	public static int CH_BID_GRADE2_MINCLANMEMBERS;
+	public static int CH_BID_GRADE2_MINCLANMEMBERSLEVEL;
+	public static int CH_BID_GRADE3_MINCLANLEVEL;
+	public static int CH_BID_GRADE3_MINCLANMEMBERS;
+	public static int CH_BID_GRADE3_MINCLANMEMBERSLEVEL;
+	public static double RESIDENCE_LEASE_FUNC_MULTIPLIER;
+	public static double RESIDENCE_LEASE_MULTIPLIER;
+	public static Calendar CASTLE_VALIDATION_DATE;
+	public static int[] CASTLE_SELECT_HOURS;
+	public static int PERIOD_CASTLE_SIEGE;
+	public static boolean RETURN_WARDS_WHEN_TW_STARTS;
+	// Fame Reward
+	public static boolean ENABLE_ALT_FAME_REWARD;
+	public static long ALT_FAME_CASTLE;
+	public static long ALT_FAME_FORTRESS;
+	public static int INTERVAL_FLAG_DROP;
+	// Synerge
+	public static int SIEGE_WINNER_REPUTATION_REWARD;
+	public static boolean ALLOW_START_FORTRESS_SIEGE_FEE;
+	public static int START_FORTRESS_SIEGE_PRICE_ID;
+	public static int START_FORTRESS_SIEGE_PRICE_AMOUNT;
+	public static boolean FORTRESS_SIEGE_ALLOW_SINGLE_PLAYERS;
+	public static boolean SIEGE_ALLOW_FAME_WHILE_DEAD;
+	public static boolean SIEGE_ALLOW_FAME_IN_SAFE;
+	public static int[][] SIEGE_REWARDS_NEAR_FAME = null;
+	public static boolean FORTRESS_REMOVE_FLAG_ON_LEAVE_ZONE;
+	public static boolean DOMINION_REMOVE_FLAG_ON_LEAVE_ZONE;
 
 	public static void loadResidenceConfig()
 	{
-		ExProperties residenceSettings = load(RESIDENCE_CONFIG_FILE);
+		final ExProperties residenceSettings = load(RESIDENCE_CONFIG_FILE);
 
-		CH_BID_GRADE1_MINCLANLEVEL = residenceSettings.getProperty("ClanHallBid_Grade1_MinClanLevel", 2);
-		CH_BID_GRADE1_MINCLANMEMBERS = residenceSettings.getProperty("ClanHallBid_Grade1_MinClanMembers", 1);
-		CH_BID_GRADE1_MINCLANMEMBERSLEVEL = residenceSettings.getProperty("ClanHallBid_Grade1_MinClanMembersAvgLevel", 1);
-		CH_BID_GRADE2_MINCLANLEVEL = residenceSettings.getProperty("ClanHallBid_Grade2_MinClanLevel", 2);
-		CH_BID_GRADE2_MINCLANMEMBERS = residenceSettings.getProperty("ClanHallBid_Grade2_MinClanMembers", 1);
-		CH_BID_GRADE2_MINCLANMEMBERSLEVEL = residenceSettings.getProperty("ClanHallBid_Grade2_MinClanMembersAvgLevel", 1);
-		CH_BID_GRADE3_MINCLANLEVEL = residenceSettings.getProperty("ClanHallBid_Grade3_MinClanLevel", 2);
-		CH_BID_GRADE3_MINCLANMEMBERS = residenceSettings.getProperty("ClanHallBid_Grade3_MinClanMembers", 1);
-		CH_BID_GRADE3_MINCLANMEMBERSLEVEL = residenceSettings.getProperty("ClanHallBid_Grade3_MinClanMembersAvgLevel", 1);
-		RESIDENCE_LEASE_FUNC_MULTIPLIER = residenceSettings.getProperty("ResidenceLeaseFuncMultiplier", 1.);
-		RESIDENCE_LEASE_MULTIPLIER = residenceSettings.getProperty("ResidenceLeaseMultiplier", 1.);
+		Config.CH_BID_GRADE1_MINCLANLEVEL = residenceSettings.getProperty("ClanHallBid_Grade1_MinClanLevel", 2);
+		Config.CH_BID_GRADE1_MINCLANMEMBERS = residenceSettings.getProperty("ClanHallBid_Grade1_MinClanMembers", 1);
+		Config.CH_BID_GRADE1_MINCLANMEMBERSLEVEL = residenceSettings.getProperty("ClanHallBid_Grade1_MinClanMembersAvgLevel", 1);
+		Config.CH_BID_GRADE2_MINCLANLEVEL = residenceSettings.getProperty("ClanHallBid_Grade2_MinClanLevel", 2);
+		Config.CH_BID_GRADE2_MINCLANMEMBERS = residenceSettings.getProperty("ClanHallBid_Grade2_MinClanMembers", 1);
+		Config.CH_BID_GRADE2_MINCLANMEMBERSLEVEL = residenceSettings.getProperty("ClanHallBid_Grade2_MinClanMembersAvgLevel", 1);
+		Config.CH_BID_GRADE3_MINCLANLEVEL = residenceSettings.getProperty("ClanHallBid_Grade3_MinClanLevel", 2);
+		Config.CH_BID_GRADE3_MINCLANMEMBERS = residenceSettings.getProperty("ClanHallBid_Grade3_MinClanMembers", 1);
+		Config.CH_BID_GRADE3_MINCLANMEMBERSLEVEL = residenceSettings.getProperty("ClanHallBid_Grade3_MinClanMembersAvgLevel", 1);
+		Config.RESIDENCE_LEASE_FUNC_MULTIPLIER = residenceSettings.getProperty("ResidenceLeaseFuncMultiplier", 1.);
+		Config.RESIDENCE_LEASE_MULTIPLIER = residenceSettings.getProperty("ResidenceLeaseMultiplier", 1.);
 
-		PERIOD_CASTLE_SIEGE = residenceSettings.getProperty("CastleSiegeIntervalWeeks", 2);
-		CASTLE_SELECT_HOURS = residenceSettings.getProperty("CastleSelectHours", new int[]
+		Config.PERIOD_CASTLE_SIEGE = residenceSettings.getProperty("CastleSiegeIntervalWeeks", 2);
+		Config.CASTLE_SELECT_HOURS = residenceSettings.getProperty("CastleSelectHours", new int[]
 		{
 			16,
 			20
@@ -1035,113 +847,166 @@ public class Config
 			4,
 			2003
 		});
-		CASTLE_VALIDATION_DATE = Calendar.getInstance();
-		CASTLE_VALIDATION_DATE.set(Calendar.DAY_OF_MONTH, tempCastleValidatonTime[0]);
-		CASTLE_VALIDATION_DATE.set(Calendar.MONTH, tempCastleValidatonTime[1] - 1);
-		CASTLE_VALIDATION_DATE.set(Calendar.YEAR, tempCastleValidatonTime[2]);
-		CASTLE_VALIDATION_DATE.set(Calendar.HOUR_OF_DAY, 0);
-		CASTLE_VALIDATION_DATE.set(Calendar.MINUTE, 0);
-		CASTLE_VALIDATION_DATE.set(Calendar.SECOND, 0);
-		CASTLE_VALIDATION_DATE.set(Calendar.MILLISECOND, 0);
+		Config.CASTLE_VALIDATION_DATE = Calendar.getInstance();
+		Config.CASTLE_VALIDATION_DATE.set(Calendar.DAY_OF_MONTH, tempCastleValidatonTime[0]);
+		Config.CASTLE_VALIDATION_DATE.set(Calendar.MONTH, tempCastleValidatonTime[1] - 1);
+		Config.CASTLE_VALIDATION_DATE.set(Calendar.YEAR, tempCastleValidatonTime[2]);
+		Config.CASTLE_VALIDATION_DATE.set(Calendar.HOUR_OF_DAY, 0);
+		Config.CASTLE_VALIDATION_DATE.set(Calendar.MINUTE, 0);
+		Config.CASTLE_VALIDATION_DATE.set(Calendar.SECOND, 0);
+		Config.CASTLE_VALIDATION_DATE.set(Calendar.MILLISECOND, 0);
 
-		RETURN_WARDS_WHEN_TW_STARTS = residenceSettings.getProperty("ReturnWardsWhenTWStarts", false);
+		Config.RETURN_WARDS_WHEN_TW_STARTS = residenceSettings.getProperty("ReturnWardsWhenTWStarts", false);
 
-		ENABLE_ALT_FAME_REWARD = residenceSettings.getProperty("AltEnableCustomFame", false);
-		ALT_FAME_CASTLE = residenceSettings.getProperty("CastleFame", 125);
-		ALT_FAME_FORTRESS = residenceSettings.getProperty("FortressFame", 31);
+		Config.ENABLE_ALT_FAME_REWARD = residenceSettings.getProperty("AltEnableCustomFame", false);
+		Config.ALT_FAME_CASTLE = residenceSettings.getProperty("CastleFame", 125);
+		Config.ALT_FAME_FORTRESS = residenceSettings.getProperty("FortressFame", 31);
 
-		FORTRESS_REMOVE_FLAG_ON_LEAVE_ZONE = residenceSettings.getProperty("FortFlagReturnOnLeaveZone", false);
-		DOMINION_REMOVE_FLAG_ON_LEAVE_ZONE = residenceSettings.getProperty("ReturnFlagOnSiegeZoneLeave", false);
+		Config.FORTRESS_REMOVE_FLAG_ON_LEAVE_ZONE = residenceSettings.getProperty("FortFlagReturnOnLeaveZone", false);
+		Config.DOMINION_REMOVE_FLAG_ON_LEAVE_ZONE = residenceSettings.getProperty("ReturnFlagOnSiegeZoneLeave", false);
 
-		INTERVAL_FLAG_DROP = residenceSettings.getProperty("IntervalFlagDrop", 60);
-		SIEGE_WINNER_REPUTATION_REWARD = residenceSettings.getProperty("SiegeWinnerReputationReward", 0);
+		Config.INTERVAL_FLAG_DROP = residenceSettings.getProperty("IntervalFlagDrop", 60);
+		Config.SIEGE_WINNER_REPUTATION_REWARD = residenceSettings.getProperty("SiegeWinnerReputationReward", 0);
 
-		ALLOW_START_FORTRESS_SIEGE_FEE = residenceSettings.getProperty("AllowStartFortressSiegeFee", true);
-		START_FORTRESS_SIEGE_PRICE_ID = residenceSettings.getProperty("StartFortressSiegePriceId", 57);
-		START_FORTRESS_SIEGE_PRICE_AMOUNT = residenceSettings.getProperty("StartFortressSiegePriceAmount", 250000);
-		FORTRESS_SIEGE_ALLOW_SINGLE_PLAYERS = residenceSettings.getProperty("FortressSiegeAllowSinglePlayers", false);
+		Config.ALLOW_START_FORTRESS_SIEGE_FEE = residenceSettings.getProperty("AllowStartFortressSiegeFee", true);
+		Config.START_FORTRESS_SIEGE_PRICE_ID = residenceSettings.getProperty("StartFortressSiegePriceId", 57);
+		Config.START_FORTRESS_SIEGE_PRICE_AMOUNT = residenceSettings.getProperty("StartFortressSiegePriceAmount", 250000);
+		Config.FORTRESS_SIEGE_ALLOW_SINGLE_PLAYERS = residenceSettings.getProperty("FortressSiegeAllowSinglePlayers", false);
 
-		SIEGE_ALLOW_FAME_WHILE_DEAD = residenceSettings.getProperty("SiegeAllowFameWhileDead", false);
-		SIEGE_ALLOW_FAME_IN_SAFE = residenceSettings.getProperty("SiegeAllowFameInSafe", false);
+		Config.SIEGE_ALLOW_FAME_WHILE_DEAD = residenceSettings.getProperty("SiegeAllowFameWhileDead", false);
+		Config.SIEGE_ALLOW_FAME_IN_SAFE = residenceSettings.getProperty("SiegeAllowFameInSafe", false);
 		final String rewards = residenceSettings.getProperty("SiegeRewardsNearFame", "");
 		if (!rewards.isEmpty())
 		{
 			final String[] rews = rewards.split(";");
 			int i = 0;
-			SIEGE_REWARDS_NEAR_FAME = new int[rews.length][2];
+			Config.SIEGE_REWARDS_NEAR_FAME = new int[rews.length][2];
 			for (String reward : rews)
 			{
 				final String[] parts = reward.split(",");
-				SIEGE_REWARDS_NEAR_FAME[i][0] = Integer.parseInt(parts[0]);
-				SIEGE_REWARDS_NEAR_FAME[i][1] = Integer.parseInt(parts[1]);
+				Config.SIEGE_REWARDS_NEAR_FAME[i][0] = Integer.parseInt(parts[0]);
+				Config.SIEGE_REWARDS_NEAR_FAME[i][1] = Integer.parseInt(parts[1]);
 				i++;
 			}
 		}
 	}
 
+	public static final String ITEM_USE_FILE = "config/mod/UseItems.ini";
+	/** ÐšÐ¾Ð½Ñ„Ð¸Ð³ÑƒÑ€Ð°Ñ†Ð¸Ñ� Ð¸Ñ�Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ð½Ð¸Ñ� Ð¸Ñ‚ÐµÐ¼Ð¾Ð² Ð¿Ð¾ ÑƒÐ¼Ð¾Ð»Ñ‡Ð°Ð½Ð¸ÑŽ Ð¿Ð¾ÑƒÑˆÐµÐ½Ñ‹ */
+	public static int[] ITEM_USE_LIST_ID;
+	public static boolean ITEM_USE_IS_COMBAT_FLAG;
+	public static boolean ITEM_USE_IS_ATTACK;
+	public static boolean ITEM_USE_IS_EVENTS;
+	public static long MAX_ADENA;
+
 	public static void loadItemsUseConfig()
 	{
-		ExProperties itemsUseSettings = load(ITEM_USE_FILE);
+		final ExProperties itemsUseSettings = load(ITEM_USE_FILE);
 
-		ITEM_USE_LIST_ID = itemsUseSettings.getProperty("ItemUseListId", new int[]
+		Config.ITEM_USE_LIST_ID = itemsUseSettings.getProperty("ItemUseListId", new int[]
 		{
 			725,
 			726,
 			727,
 			728
 		});
-		ITEM_USE_IS_COMBAT_FLAG = itemsUseSettings.getProperty("ItemUseIsCombatFlag", true);
-		ITEM_USE_IS_ATTACK = itemsUseSettings.getProperty("ItemUseIsAttack", true);
-		ITEM_USE_IS_EVENTS = itemsUseSettings.getProperty("ItemUseIsEvents", true);
-		MAX_ADENA = itemsUseSettings.getProperty("MaxAdena", -1);
+		Config.ITEM_USE_IS_COMBAT_FLAG = itemsUseSettings.getProperty("ItemUseIsCombatFlag", true);
+		Config.ITEM_USE_IS_ATTACK = itemsUseSettings.getProperty("ItemUseIsAttack", true);
+		Config.ITEM_USE_IS_EVENTS = itemsUseSettings.getProperty("ItemUseIsEvents", true);
+		Config.MAX_ADENA = itemsUseSettings.getProperty("MaxAdena", -1);
 	}
+
+	public static final String NPCBUFFER_CONFIG_FILE = "config/npcbuffer.ini";
+
+	// Scheme Buffer
+	public static boolean NpcBuffer_VIP;
+	public static int NpcBuffer_VIP_ALV;
+	public static boolean NpcBuffer_EnableBuff;
+	public static boolean NpcBuffer_EnableScheme;
+	public static boolean NpcBuffer_EnableHeal;
+	public static boolean NpcBuffer_EnableBuffs;
+	public static boolean NpcBuffer_EnableResist;
+	public static boolean NpcBuffer_EnableSong;
+	public static boolean NpcBuffer_EnableDance;
+	public static boolean NpcBuffer_EnableChant;
+	public static boolean NpcBuffer_EnableOther;
+	public static boolean NpcBuffer_EnableSpecial;
+	public static boolean NpcBuffer_EnableCubic;
+	public static boolean NpcBuffer_EnableCancel;
+	public static boolean NpcBuffer_EnableBuffSet;
+	public static boolean NpcBuffer_EnableBuffPK;
+	public static boolean NpcBuffer_EnableFreeBuffs;
+	public static boolean NpcBuffer_EnableTimeOut;
+	public static int NpcBuffer_TimeOutTime;
+	public static int NpcBuffer_MinLevel;
+	public static int NpcBuffer_PriceCancel;
+	public static int NpcBuffer_PriceHeal;
+	public static int NpcBuffer_PriceBuffs;
+	public static int NpcBuffer_PriceResist;
+	public static int NpcBuffer_PriceSong;
+	public static int NpcBuffer_PriceDance;
+	public static int NpcBuffer_PriceChant;
+	public static int NpcBuffer_PriceOther;
+	public static int NpcBuffer_PriceSpecial;
+	public static int NpcBuffer_PriceCubic;
+	public static int NpcBuffer_PriceSet;
+	public static int NpcBuffer_PriceScheme;
+	public static int NpcBuffer_MaxScheme;
+	public static boolean NpcBuffer_EnablePremiumBuffs;
+	public static boolean SCHEME_ALLOW_FLAG;
+	public static List<int[]> NpcBuffer_BuffSetMage = new ArrayList<int[]>();
+	public static List<int[]> NpcBuffer_BuffSetFighter = new ArrayList<int[]>();
+	public static List<int[]> NpcBuffer_BuffSetDagger = new ArrayList<int[]>();
+	public static List<int[]> NpcBuffer_BuffSetSupport = new ArrayList<int[]>();
+	public static List<int[]> NpcBuffer_BuffSetTank = new ArrayList<int[]>();
+	public static List<int[]> NpcBuffer_BuffSetArcher = new ArrayList<int[]>();
 
 	public static void loadSchemeBuffer()
 	{
-		ExProperties npcbuffer = load(NPCBUFFER_CONFIG_FILE);
+		final ExProperties npcbuffer = load(NPCBUFFER_CONFIG_FILE);
 
-		NpcBuffer_VIP = npcbuffer.getProperty("EnableVIP", false);
-		NpcBuffer_VIP_ALV = npcbuffer.getProperty("VipAccesLevel", 1);
-		NpcBuffer_EnableBuff = npcbuffer.getProperty("EnableBuffSection", true);
-		NpcBuffer_EnableScheme = npcbuffer.getProperty("EnableScheme", true);
-		NpcBuffer_EnableHeal = npcbuffer.getProperty("EnableHeal", true);
-		NpcBuffer_EnableBuffs = npcbuffer.getProperty("EnableBuffs", true);
-		NpcBuffer_EnableResist = npcbuffer.getProperty("EnableResist", true);
-		NpcBuffer_EnableSong = npcbuffer.getProperty("EnableSongs", true);
-		NpcBuffer_EnableDance = npcbuffer.getProperty("EnableDances", true);
-		NpcBuffer_EnableChant = npcbuffer.getProperty("EnableChants", true);
-		NpcBuffer_EnableOther = npcbuffer.getProperty("EnableOther", true);
-		NpcBuffer_EnableSpecial = npcbuffer.getProperty("EnableSpecial", true);
-		NpcBuffer_EnableCubic = npcbuffer.getProperty("EnableCubic", false);
-		NpcBuffer_EnableCancel = npcbuffer.getProperty("EnableRemoveBuffs", true);
-		NpcBuffer_EnableBuffSet = npcbuffer.getProperty("EnableBuffSet", true);
-		NpcBuffer_EnableBuffPK = npcbuffer.getProperty("EnableBuffForPK", false);
-		NpcBuffer_EnableFreeBuffs = npcbuffer.getProperty("EnableFreeBuffs", true);
-		NpcBuffer_EnableTimeOut = npcbuffer.getProperty("EnableTimeOut", true);
-		SCHEME_ALLOW_FLAG = npcbuffer.getProperty("EnableBuffforFlag", false);
-		NpcBuffer_TimeOutTime = npcbuffer.getProperty("TimeoutTime", 10);
-		NpcBuffer_MinLevel = npcbuffer.getProperty("MinimumLevel", 20);
-		NpcBuffer_PriceCancel = npcbuffer.getProperty("RemoveBuffsPrice", 100000);
-		NpcBuffer_PriceHeal = npcbuffer.getProperty("HealPrice", 100000);
-		NpcBuffer_PriceBuffs = npcbuffer.getProperty("BuffsPrice", 100000);
-		NpcBuffer_PriceResist = npcbuffer.getProperty("ResistPrice", 100000);
-		NpcBuffer_PriceSong = npcbuffer.getProperty("SongPrice", 100000);
-		NpcBuffer_PriceDance = npcbuffer.getProperty("DancePrice", 100000);
-		NpcBuffer_PriceChant = npcbuffer.getProperty("ChantsPrice", 100000);
-		NpcBuffer_PriceOther = npcbuffer.getProperty("OtherPrice", 100000);
-		NpcBuffer_PriceSpecial = npcbuffer.getProperty("SpecialPrice", 100000);
-		NpcBuffer_PriceCubic = npcbuffer.getProperty("CubicPrice", 100000);
-		NpcBuffer_PriceSet = npcbuffer.getProperty("SetPrice", 100000);
-		NpcBuffer_PriceScheme = npcbuffer.getProperty("SchemePrice", 100000);
-		NpcBuffer_MaxScheme = npcbuffer.getProperty("MaxScheme", 4);
-		NpcBuffer_EnablePremiumBuffs = npcbuffer.getProperty("EnablePremiumBuffs", false);
+		Config.NpcBuffer_VIP = npcbuffer.getProperty("EnableVIP", false);
+		Config.NpcBuffer_VIP_ALV = npcbuffer.getProperty("VipAccesLevel", 1);
+		Config.NpcBuffer_EnableBuff = npcbuffer.getProperty("EnableBuffSection", true);
+		Config.NpcBuffer_EnableScheme = npcbuffer.getProperty("EnableScheme", true);
+		Config.NpcBuffer_EnableHeal = npcbuffer.getProperty("EnableHeal", true);
+		Config.NpcBuffer_EnableBuffs = npcbuffer.getProperty("EnableBuffs", true);
+		Config.NpcBuffer_EnableResist = npcbuffer.getProperty("EnableResist", true);
+		Config.NpcBuffer_EnableSong = npcbuffer.getProperty("EnableSongs", true);
+		Config.NpcBuffer_EnableDance = npcbuffer.getProperty("EnableDances", true);
+		Config.NpcBuffer_EnableChant = npcbuffer.getProperty("EnableChants", true);
+		Config.NpcBuffer_EnableOther = npcbuffer.getProperty("EnableOther", true);
+		Config.NpcBuffer_EnableSpecial = npcbuffer.getProperty("EnableSpecial", true);
+		Config.NpcBuffer_EnableCubic = npcbuffer.getProperty("EnableCubic", false);
+		Config.NpcBuffer_EnableCancel = npcbuffer.getProperty("EnableRemoveBuffs", true);
+		Config.NpcBuffer_EnableBuffSet = npcbuffer.getProperty("EnableBuffSet", true);
+		Config.NpcBuffer_EnableBuffPK = npcbuffer.getProperty("EnableBuffForPK", false);
+		Config.NpcBuffer_EnableFreeBuffs = npcbuffer.getProperty("EnableFreeBuffs", true);
+		Config.NpcBuffer_EnableTimeOut = npcbuffer.getProperty("EnableTimeOut", true);
+		Config.SCHEME_ALLOW_FLAG = npcbuffer.getProperty("EnableBuffforFlag", false);
+		Config.NpcBuffer_TimeOutTime = npcbuffer.getProperty("TimeoutTime", 10);
+		Config.NpcBuffer_MinLevel = npcbuffer.getProperty("MinimumLevel", 20);
+		Config.NpcBuffer_PriceCancel = npcbuffer.getProperty("RemoveBuffsPrice", 100000);
+		Config.NpcBuffer_PriceHeal = npcbuffer.getProperty("HealPrice", 100000);
+		Config.NpcBuffer_PriceBuffs = npcbuffer.getProperty("BuffsPrice", 100000);
+		Config.NpcBuffer_PriceResist = npcbuffer.getProperty("ResistPrice", 100000);
+		Config.NpcBuffer_PriceSong = npcbuffer.getProperty("SongPrice", 100000);
+		Config.NpcBuffer_PriceDance = npcbuffer.getProperty("DancePrice", 100000);
+		Config.NpcBuffer_PriceChant = npcbuffer.getProperty("ChantsPrice", 100000);
+		Config.NpcBuffer_PriceOther = npcbuffer.getProperty("OtherPrice", 100000);
+		Config.NpcBuffer_PriceSpecial = npcbuffer.getProperty("SpecialPrice", 100000);
+		Config.NpcBuffer_PriceCubic = npcbuffer.getProperty("CubicPrice", 100000);
+		Config.NpcBuffer_PriceSet = npcbuffer.getProperty("SetPrice", 100000);
+		Config.NpcBuffer_PriceScheme = npcbuffer.getProperty("SchemePrice", 100000);
+		Config.NpcBuffer_MaxScheme = npcbuffer.getProperty("MaxScheme", 4);
+		Config.NpcBuffer_EnablePremiumBuffs = npcbuffer.getProperty("EnablePremiumBuffs", false);
 
 		String[] parts;
 		String[] skills = npcbuffer.getProperty("BuffSetMage", "192,1").split(";");
 		for (String sk : skills)
 		{
 			parts = sk.split(",");
-			NpcBuffer_BuffSetMage.add(new int[]
+			Config.NpcBuffer_BuffSetMage.add(new int[]
 			{
 				Integer.parseInt(parts[0]),
 				Integer.parseInt(parts[1])
@@ -1152,7 +1017,7 @@ public class Config
 		for (String sk : skills)
 		{
 			parts = sk.split(",");
-			NpcBuffer_BuffSetFighter.add(new int[]
+			Config.NpcBuffer_BuffSetFighter.add(new int[]
 			{
 				Integer.parseInt(parts[0]),
 				Integer.parseInt(parts[1])
@@ -1163,7 +1028,7 @@ public class Config
 		for (String sk : skills)
 		{
 			parts = sk.split(",");
-			NpcBuffer_BuffSetDagger.add(new int[]
+			Config.NpcBuffer_BuffSetDagger.add(new int[]
 			{
 				Integer.parseInt(parts[0]),
 				Integer.parseInt(parts[1])
@@ -1174,7 +1039,7 @@ public class Config
 		for (String sk : skills)
 		{
 			parts = sk.split(",");
-			NpcBuffer_BuffSetSupport.add(new int[]
+			Config.NpcBuffer_BuffSetSupport.add(new int[]
 			{
 				Integer.parseInt(parts[0]),
 				Integer.parseInt(parts[1])
@@ -1185,7 +1050,7 @@ public class Config
 		for (String sk : skills)
 		{
 			parts = sk.split(",");
-			NpcBuffer_BuffSetTank.add(new int[]
+			Config.NpcBuffer_BuffSetTank.add(new int[]
 			{
 				Integer.parseInt(parts[0]),
 				Integer.parseInt(parts[1])
@@ -1196,7 +1061,7 @@ public class Config
 		for (String sk : skills)
 		{
 			parts = sk.split(",");
-			NpcBuffer_BuffSetArcher.add(new int[]
+			Config.NpcBuffer_BuffSetArcher.add(new int[]
 			{
 				Integer.parseInt(parts[0]),
 				Integer.parseInt(parts[1])
@@ -1204,74 +1069,150 @@ public class Config
 		}
 	}
 
+	public static final String EVENT_FIGHT_CLUB_FILE = "config/events/FightClub.ini";
+
+	/** Ð�Ð°Ñ�Ñ‚Ñ€Ð¾Ð¹ÐºÐ¸ Ð´Ð»Ñ� ÐµÐ²ÐµÐ½Ñ‚Ð° Ð¤Ð°Ð¹Ñ‚ ÐšÐ»ÑƒÐ± */
+	public static boolean FIGHT_CLUB_ENABLED;
+	public static int MINIMUM_LEVEL_TO_PARRICIPATION;
+	public static int MAXIMUM_LEVEL_TO_PARRICIPATION;
+	public static int MAXIMUM_LEVEL_DIFFERENCE;
+	public static String[] ALLOWED_RATE_ITEMS;
+	public static int PLAYERS_PER_PAGE;
+	public static int ARENA_TELEPORT_DELAY;
+	public static boolean CANCEL_BUFF_BEFORE_FIGHT;
+	public static boolean UNSUMMON_PETS;
+	public static boolean UNSUMMON_SUMMONS;
+	public static boolean REMOVE_CLAN_SKILLS;
+	public static boolean REMOVE_HERO_SKILLS;
+	public static int TIME_TO_PREPARATION;
+	public static int FIGHT_TIME;
+	public static boolean ALLOW_DRAW;
+	public static int TIME_TELEPORT_BACK;
+	public static boolean FIGHT_CLUB_ANNOUNCE_RATE;
+	public static boolean FIGHT_CLUB_ANNOUNCE_RATE_TO_SCREEN;
+	public static boolean FIGHT_CLUB_ANNOUNCE_START_TO_SCREEN;
+	public static boolean FIGHT_CLUB_ANNOUNCE_TOP_KILLER;
+	public static boolean FIGHT_CLUB_SUMMON_LOSE_BUFFS_ON_DEATH;
+
 	public static void loadFightClubSettings()
 	{
-		ExProperties eventFightClubSettings = load(EVENT_FIGHT_CLUB_FILE);
+		final ExProperties eventFightClubSettings = load(EVENT_FIGHT_CLUB_FILE);
 
-		FIGHT_CLUB_ENABLED = eventFightClubSettings.getProperty("FightClubEnabled", false);
-		MINIMUM_LEVEL_TO_PARRICIPATION = eventFightClubSettings.getProperty("MinimumLevel", 1);
-		MAXIMUM_LEVEL_TO_PARRICIPATION = eventFightClubSettings.getProperty("MaximumLevel", 85);
-		MAXIMUM_LEVEL_DIFFERENCE = eventFightClubSettings.getProperty("MaximumLevelDifference", 10);
-		ALLOWED_RATE_ITEMS = eventFightClubSettings.getProperty("AllowedItems", "").trim().replaceAll(" ", "").split(",");
-		PLAYERS_PER_PAGE = eventFightClubSettings.getProperty("RatesOnPage", 10);
-		ARENA_TELEPORT_DELAY = eventFightClubSettings.getProperty("ArenaTeleportDelay", 5);
-		CANCEL_BUFF_BEFORE_FIGHT = eventFightClubSettings.getProperty("CancelBuffs", true);
-		UNSUMMON_PETS = eventFightClubSettings.getProperty("UnsummonPets", true);
-		UNSUMMON_SUMMONS = eventFightClubSettings.getProperty("UnsummonSummons", true);
-		REMOVE_CLAN_SKILLS = eventFightClubSettings.getProperty("RemoveClanSkills", false);
-		REMOVE_HERO_SKILLS = eventFightClubSettings.getProperty("RemoveHeroSkills", false);
-		TIME_TO_PREPARATION = eventFightClubSettings.getProperty("TimeToPreparation", 10);
-		FIGHT_TIME = eventFightClubSettings.getProperty("TimeToDraw", 300);
-		ALLOW_DRAW = eventFightClubSettings.getProperty("AllowDraw", true);
-		TIME_TELEPORT_BACK = eventFightClubSettings.getProperty("TimeToBack", 10);
-		FIGHT_CLUB_ANNOUNCE_RATE = eventFightClubSettings.getProperty("AnnounceRate", false);
-		FIGHT_CLUB_ANNOUNCE_RATE_TO_SCREEN = eventFightClubSettings.getProperty("AnnounceRateToAllScreen", false);
-		FIGHT_CLUB_ANNOUNCE_START_TO_SCREEN = eventFightClubSettings.getProperty("AnnounceStartBatleToAllScreen", false);
-		FIGHT_CLUB_ANNOUNCE_TOP_KILLER = eventFightClubSettings.getProperty("FightClubAnnounceTopKiller", false);
-		FIGHT_CLUB_SUMMON_LOSE_BUFFS_ON_DEATH = eventFightClubSettings.getProperty("SummonLoseBuffsOnDeath", true);
+		Config.FIGHT_CLUB_ENABLED = eventFightClubSettings.getProperty("FightClubEnabled", false);
+		Config.MINIMUM_LEVEL_TO_PARRICIPATION = eventFightClubSettings.getProperty("MinimumLevel", 1);
+		Config.MAXIMUM_LEVEL_TO_PARRICIPATION = eventFightClubSettings.getProperty("MaximumLevel", 85);
+		Config.MAXIMUM_LEVEL_DIFFERENCE = eventFightClubSettings.getProperty("MaximumLevelDifference", 10);
+		Config.ALLOWED_RATE_ITEMS = eventFightClubSettings.getProperty("AllowedItems", "").trim().replaceAll(" ", "").split(",");
+		Config.PLAYERS_PER_PAGE = eventFightClubSettings.getProperty("RatesOnPage", 10);
+		Config.ARENA_TELEPORT_DELAY = eventFightClubSettings.getProperty("ArenaTeleportDelay", 5);
+		Config.CANCEL_BUFF_BEFORE_FIGHT = eventFightClubSettings.getProperty("CancelBuffs", true);
+		Config.UNSUMMON_PETS = eventFightClubSettings.getProperty("UnsummonPets", true);
+		Config.UNSUMMON_SUMMONS = eventFightClubSettings.getProperty("UnsummonSummons", true);
+		Config.REMOVE_CLAN_SKILLS = eventFightClubSettings.getProperty("RemoveClanSkills", false);
+		Config.REMOVE_HERO_SKILLS = eventFightClubSettings.getProperty("RemoveHeroSkills", false);
+		Config.TIME_TO_PREPARATION = eventFightClubSettings.getProperty("TimeToPreparation", 10);
+		Config.FIGHT_TIME = eventFightClubSettings.getProperty("TimeToDraw", 300);
+		Config.ALLOW_DRAW = eventFightClubSettings.getProperty("AllowDraw", true);
+		Config.TIME_TELEPORT_BACK = eventFightClubSettings.getProperty("TimeToBack", 10);
+		Config.FIGHT_CLUB_ANNOUNCE_RATE = eventFightClubSettings.getProperty("AnnounceRate", false);
+		Config.FIGHT_CLUB_ANNOUNCE_RATE_TO_SCREEN = eventFightClubSettings.getProperty("AnnounceRateToAllScreen", false);
+		Config.FIGHT_CLUB_ANNOUNCE_START_TO_SCREEN = eventFightClubSettings.getProperty("AnnounceStartBatleToAllScreen", false);
+		Config.FIGHT_CLUB_ANNOUNCE_TOP_KILLER = eventFightClubSettings.getProperty("FightClubAnnounceTopKiller", false);
+		Config.FIGHT_CLUB_SUMMON_LOSE_BUFFS_ON_DEATH = eventFightClubSettings.getProperty("SummonLoseBuffsOnDeath", true);
 	}
+
+	public static final String RATES_FILE = "config/rates.ini";
+	/** Rate control */
+	public static double RATE_XP;
+	public static double RATE_SP;
+	public static double RATE_QUESTS_REWARD;
+	public static double RATE_QUESTS_DROP;
+	public static double RATE_CLAN_REP_SCORE;
+	public static int RATE_CLAN_REP_SCORE_MAX_AFFECTED;
+	public static double RATE_DROP_ADENA;
+	public static double RATE_DROP_CHAMPION;
+	public static double RATE_CHAMPION_DROP_ADENA;
+	public static double RATE_DROP_SPOIL_CHAMPION;
+	public static double RATE_DROP_ITEMS;
+	public static double RATE_CHANCE_GROUP_DROP_ITEMS;
+	public static double RATE_CHANCE_DROP_ITEMS;
+	public static double RATE_CHANCE_DROP_HERBS;
+	public static double RATE_CHANCE_SPOIL;
+	public static double RATE_CHANCE_SPOIL_WEAPON_ARMOR_ACCESSORY;
+	public static double RATE_CHANCE_DROP_WEAPON_ARMOR_ACCESSORY;
+	public static double RATE_CHANCE_DROP_EPOLET;
+	public static boolean NO_RATE_ENCHANT_SCROLL;
+	public static double RATE_ENCHANT_SCROLL;
+	public static boolean CHAMPION_DROP_ONLY_ADENA;
+	public static boolean NO_RATE_HERBS;
+	public static double RATE_DROP_HERBS;
+	public static boolean NO_RATE_ATT;
+	public static double RATE_DROP_ATT;
+	public static boolean NO_RATE_LIFE_STONE;
+	public static boolean NO_RATE_FORGOTTEN_SCROLL;
+	public static double RATE_DROP_LIFE_STONE;
+	public static boolean NO_RATE_KEY_MATERIAL;
+	public static double RATE_DROP_KEY_MATERIAL;
+	public static boolean NO_RATE_RECIPES;
+	public static double RATE_DROP_RECIPES;
+	public static double RATE_DROP_COMMON_ITEMS;
+	public static boolean NO_RATE_RAIDBOSS;
+	public static double RATE_DROP_RAIDBOSS;
+	public static double RATE_DROP_SPOIL;
+	public static int[] NO_RATE_ITEMS;
+	public static boolean NO_RATE_SIEGE_GUARD;
+	public static double RATE_DROP_SIEGE_GUARD;
+	public static double RATE_MANOR;
+	public static double RATE_FISH_DROP_COUNT;
+	public static boolean RATE_PARTY_MIN;
+	public static double RATE_HELLBOUND_CONFIDENCE;
+	public static boolean NO_RATE_EQUIPMENT;
+
+	public static int RATE_MOB_SPAWN;
+	public static int RATE_MOB_SPAWN_MIN_LEVEL;
+	public static int RATE_MOB_SPAWN_MAX_LEVEL;
 
 	public static void loadRatesConfig()
 	{
-		ExProperties ratesSettings = load(RATES_FILE);
+		final ExProperties ratesSettings = load(RATES_FILE);
 
-		RATE_XP = ratesSettings.getProperty("RateXp", 1.);
-		RATE_SP = ratesSettings.getProperty("RateSp", 1.);
-		RATE_QUESTS_REWARD = ratesSettings.getProperty("RateQuestsReward", 1.);
-		RATE_QUESTS_DROP = ratesSettings.getProperty("RateQuestsDrop", 1.);
-		RATE_DROP_CHAMPION = ratesSettings.getProperty("RateDropChampion", 1.);
-		RATE_CLAN_REP_SCORE = ratesSettings.getProperty("RateClanRepScore", 1.);
-		RATE_CLAN_REP_SCORE_MAX_AFFECTED = ratesSettings.getProperty("RateClanRepScoreMaxAffected", 2);
-		RATE_DROP_ADENA = ratesSettings.getProperty("RateDropAdena", 1.);
-		RATE_CHAMPION_DROP_ADENA = ratesSettings.getProperty("RateChampionDropAdena", 1.);
-		RATE_DROP_SPOIL_CHAMPION = ratesSettings.getProperty("RateSpoilChampion", 1.);
-		RATE_DROP_ITEMS = ratesSettings.getProperty("RateDropItems", 1.);
-		RATE_CHANCE_GROUP_DROP_ITEMS = ratesSettings.getProperty("RateChanceGroupDropItems", 1.);
-		RATE_CHANCE_DROP_ITEMS = ratesSettings.getProperty("RateChanceDropItems", 1.);
-		RATE_CHANCE_DROP_HERBS = ratesSettings.getProperty("RateChanceDropHerbs", 1.);
-		RATE_CHANCE_SPOIL = ratesSettings.getProperty("RateChanceSpoil", 1.);
-		RATE_CHANCE_SPOIL_WEAPON_ARMOR_ACCESSORY = ratesSettings.getProperty("RateChanceSpoilWAA", 1.);
-		RATE_CHANCE_DROP_WEAPON_ARMOR_ACCESSORY = ratesSettings.getProperty("RateChanceDropWAA", 1.);
-		RATE_CHANCE_DROP_EPOLET = ratesSettings.getProperty("RateChanceDropEpolets", 1.);
-		NO_RATE_ENCHANT_SCROLL = ratesSettings.getProperty("NoRateEnchantScroll", true);
-		CHAMPION_DROP_ONLY_ADENA = ratesSettings.getProperty("ChampionDropOnlyAdena", false);
-		RATE_ENCHANT_SCROLL = ratesSettings.getProperty("RateDropEnchantScroll", 1.);
-		NO_RATE_HERBS = ratesSettings.getProperty("NoRateHerbs", true);
-		RATE_DROP_HERBS = ratesSettings.getProperty("RateDropHerbs", 1.);
-		NO_RATE_ATT = ratesSettings.getProperty("NoRateAtt", true);
-		RATE_DROP_ATT = ratesSettings.getProperty("RateDropAtt", 1.);
-		NO_RATE_LIFE_STONE = ratesSettings.getProperty("NoRateLifeStone", true);
-		NO_RATE_FORGOTTEN_SCROLL = ratesSettings.getProperty("NoRateForgottenScroll", true);
-		RATE_DROP_LIFE_STONE = ratesSettings.getProperty("RateDropLifeStone", 1.);
-		NO_RATE_KEY_MATERIAL = ratesSettings.getProperty("NoRateKeyMaterial", true);
-		RATE_DROP_KEY_MATERIAL = ratesSettings.getProperty("RateDropKeyMaterial", 1.);
-		NO_RATE_RECIPES = ratesSettings.getProperty("NoRateRecipes", true);
-		RATE_DROP_RECIPES = ratesSettings.getProperty("RateDropRecipes", 1.);
-		RATE_DROP_COMMON_ITEMS = ratesSettings.getProperty("RateDropCommonItems", 1.);
-		NO_RATE_RAIDBOSS = ratesSettings.getProperty("NoRateRaidBoss", false);
-		RATE_DROP_RAIDBOSS = ratesSettings.getProperty("RateRaidBoss", 1.);
-		RATE_DROP_SPOIL = ratesSettings.getProperty("RateDropSpoil", 1.);
-		NO_RATE_ITEMS = ratesSettings.getProperty("NoRateItemIds", new int[]
+		Config.RATE_XP = ratesSettings.getProperty("RateXp", 1.);
+		Config.RATE_SP = ratesSettings.getProperty("RateSp", 1.);
+		Config.RATE_QUESTS_REWARD = ratesSettings.getProperty("RateQuestsReward", 1.);
+		Config.RATE_QUESTS_DROP = ratesSettings.getProperty("RateQuestsDrop", 1.);
+		Config.RATE_DROP_CHAMPION = ratesSettings.getProperty("RateDropChampion", 1.);
+		Config.RATE_CLAN_REP_SCORE = ratesSettings.getProperty("RateClanRepScore", 1.);
+		Config.RATE_CLAN_REP_SCORE_MAX_AFFECTED = ratesSettings.getProperty("RateClanRepScoreMaxAffected", 2);
+		Config.RATE_DROP_ADENA = ratesSettings.getProperty("RateDropAdena", 1.);
+		Config.RATE_CHAMPION_DROP_ADENA = ratesSettings.getProperty("RateChampionDropAdena", 1.);
+		Config.RATE_DROP_SPOIL_CHAMPION = ratesSettings.getProperty("RateSpoilChampion", 1.);
+		Config.RATE_DROP_ITEMS = ratesSettings.getProperty("RateDropItems", 1.);
+		Config.RATE_CHANCE_GROUP_DROP_ITEMS = ratesSettings.getProperty("RateChanceGroupDropItems", 1.);
+		Config.RATE_CHANCE_DROP_ITEMS = ratesSettings.getProperty("RateChanceDropItems", 1.);
+		Config.RATE_CHANCE_DROP_HERBS = ratesSettings.getProperty("RateChanceDropHerbs", 1.);
+		Config.RATE_CHANCE_SPOIL = ratesSettings.getProperty("RateChanceSpoil", 1.);
+		Config.RATE_CHANCE_SPOIL_WEAPON_ARMOR_ACCESSORY = ratesSettings.getProperty("RateChanceSpoilWAA", 1.);
+		Config.RATE_CHANCE_DROP_WEAPON_ARMOR_ACCESSORY = ratesSettings.getProperty("RateChanceDropWAA", 1.);
+		Config.RATE_CHANCE_DROP_EPOLET = ratesSettings.getProperty("RateChanceDropEpolets", 1.);
+		Config.NO_RATE_ENCHANT_SCROLL = ratesSettings.getProperty("NoRateEnchantScroll", true);
+		Config.CHAMPION_DROP_ONLY_ADENA = ratesSettings.getProperty("ChampionDropOnlyAdena", false);
+		Config.RATE_ENCHANT_SCROLL = ratesSettings.getProperty("RateDropEnchantScroll", 1.);
+		Config.NO_RATE_HERBS = ratesSettings.getProperty("NoRateHerbs", true);
+		Config.RATE_DROP_HERBS = ratesSettings.getProperty("RateDropHerbs", 1.);
+		Config.NO_RATE_ATT = ratesSettings.getProperty("NoRateAtt", true);
+		Config.RATE_DROP_ATT = ratesSettings.getProperty("RateDropAtt", 1.);
+		Config.NO_RATE_LIFE_STONE = ratesSettings.getProperty("NoRateLifeStone", true);
+		Config.NO_RATE_FORGOTTEN_SCROLL = ratesSettings.getProperty("NoRateForgottenScroll", true);
+		Config.RATE_DROP_LIFE_STONE = ratesSettings.getProperty("RateDropLifeStone", 1.);
+		Config.NO_RATE_KEY_MATERIAL = ratesSettings.getProperty("NoRateKeyMaterial", true);
+		Config.RATE_DROP_KEY_MATERIAL = ratesSettings.getProperty("RateDropKeyMaterial", 1.);
+		Config.NO_RATE_RECIPES = ratesSettings.getProperty("NoRateRecipes", true);
+		Config.RATE_DROP_RECIPES = ratesSettings.getProperty("RateDropRecipes", 1.);
+		Config.RATE_DROP_COMMON_ITEMS = ratesSettings.getProperty("RateDropCommonItems", 1.);
+		Config.NO_RATE_RAIDBOSS = ratesSettings.getProperty("NoRateRaidBoss", false);
+		Config.RATE_DROP_RAIDBOSS = ratesSettings.getProperty("RateRaidBoss", 1.);
+		Config.RATE_DROP_SPOIL = ratesSettings.getProperty("RateDropSpoil", 1.);
+		Config.NO_RATE_ITEMS = ratesSettings.getProperty("NoRateItemIds", new int[]
 		{
 			6660,
 			6662,
@@ -1286,51 +1227,77 @@ public class Config
 			16025,
 			16026
 		});
-		NO_RATE_EQUIPMENT = ratesSettings.getProperty("NoRateEquipment", true);
-		NO_RATE_SIEGE_GUARD = ratesSettings.getProperty("NoRateSiegeGuard", false);
-		RATE_DROP_SIEGE_GUARD = ratesSettings.getProperty("RateSiegeGuard", 1.);
-		RATE_MANOR = ratesSettings.getProperty("RateManor", 1.);
-		RATE_FISH_DROP_COUNT = ratesSettings.getProperty("RateFishDropCount", 1.);
-		RATE_PARTY_MIN = ratesSettings.getProperty("RatePartyMin", false);
-		RATE_HELLBOUND_CONFIDENCE = ratesSettings.getProperty("RateHellboundConfidence", 1.);
+		Config.NO_RATE_EQUIPMENT = ratesSettings.getProperty("NoRateEquipment", true);
+		Config.NO_RATE_SIEGE_GUARD = ratesSettings.getProperty("NoRateSiegeGuard", false);
+		Config.RATE_DROP_SIEGE_GUARD = ratesSettings.getProperty("RateSiegeGuard", 1.);
+		Config.RATE_MANOR = ratesSettings.getProperty("RateManor", 1.);
+		Config.RATE_FISH_DROP_COUNT = ratesSettings.getProperty("RateFishDropCount", 1.);
+		Config.RATE_PARTY_MIN = ratesSettings.getProperty("RatePartyMin", false);
+		Config.RATE_HELLBOUND_CONFIDENCE = ratesSettings.getProperty("RateHellboundConfidence", 1.);
 
-		RATE_MOB_SPAWN = ratesSettings.getProperty("RateMobSpawn", 1);
-		RATE_MOB_SPAWN_MIN_LEVEL = ratesSettings.getProperty("RateMobMinLevel", 1);
-		RATE_MOB_SPAWN_MAX_LEVEL = ratesSettings.getProperty("RateMobMaxLevel", 100);
+		Config.RATE_MOB_SPAWN = ratesSettings.getProperty("RateMobSpawn", 1);
+		Config.RATE_MOB_SPAWN_MIN_LEVEL = ratesSettings.getProperty("RateMobMinLevel", 1);
+		Config.RATE_MOB_SPAWN_MAX_LEVEL = ratesSettings.getProperty("RateMobMaxLevel", 100);
 	}
+
+	public static final String BOSS_FILE = "config/boss.ini";
+	public static double RATE_RAID_REGEN;
+	public static double RATE_RAID_DEFENSE;
+	public static double RATE_RAID_ATTACK;
+	public static double RATE_EPIC_DEFENSE;
+	public static double RATE_EPIC_ATTACK;
+	public static int RAID_MAX_LEVEL_DIFF;
+	public static boolean PARALIZE_ON_RAID_DIFF;
+	public static int MUTATED_ELPY_COUNT;
+
+	public static boolean FRINTEZZA_ALL_MEMBERS_NEED_SCROLL;
 
 	public static void loadBossConfig()
 	{
-		ExProperties bossSettings = load(BOSS_FILE);
+		final ExProperties bossSettings = load(BOSS_FILE);
 
-		RATE_RAID_REGEN = bossSettings.getProperty("RateRaidRegen", 1.);
-		RATE_RAID_DEFENSE = bossSettings.getProperty("RateRaidDefense", 1.);
-		RATE_RAID_ATTACK = bossSettings.getProperty("RateRaidAttack", 1.);
-		RATE_EPIC_DEFENSE = bossSettings.getProperty("RateEpicDefense", RATE_RAID_DEFENSE);
-		RATE_EPIC_ATTACK = bossSettings.getProperty("RateEpicAttack", RATE_RAID_ATTACK);
-		RAID_MAX_LEVEL_DIFF = bossSettings.getProperty("RaidMaxLevelDiff", 8);
-		MUTATED_ELPY_COUNT = bossSettings.getProperty("MutatedElpyCount", 16);
+		Config.RATE_RAID_REGEN = bossSettings.getProperty("RateRaidRegen", 1.);
+		Config.RATE_RAID_DEFENSE = bossSettings.getProperty("RateRaidDefense", 1.);
+		Config.RATE_RAID_ATTACK = bossSettings.getProperty("RateRaidAttack", 1.);
+		Config.RATE_EPIC_DEFENSE = bossSettings.getProperty("RateEpicDefense", RATE_RAID_DEFENSE);
+		Config.RATE_EPIC_ATTACK = bossSettings.getProperty("RateEpicAttack", RATE_RAID_ATTACK);
+		Config.RAID_MAX_LEVEL_DIFF = bossSettings.getProperty("RaidMaxLevelDiff", 8);
+		Config.MUTATED_ELPY_COUNT = bossSettings.getProperty("MutatedElpyCount", 16);
 
-		FRINTEZZA_ALL_MEMBERS_NEED_SCROLL = bossSettings.getProperty("FrintezzaAllMembersNeedScroll", true);
+		Config.FRINTEZZA_ALL_MEMBERS_NEED_SCROLL = bossSettings.getProperty("FrintezzaAllMembersNeedScroll", true);
 	}
+
+	public static final String DONATE_CONFIG_FILE = "config/DonatorManager.ini";
+	// Donate
+	public static int DONATE_ID;
+	public static int DONATOR_NPC_ITEM;
+	public static String DONATOR_NPC_ITEM_NAME;
+	public static int DONATOR_NPC_COUNT_FAME;
+	public static int DONATOR_NPC_FAME;
+	public static int DONATOR_NPC_COUNT_REP;
+	public static int DONATOR_NPC_REP;
+	public static int DONATOR_NPC_COUNT_NOBLESS;
+	public static int DONATOR_NPC_COUNT_SEX;
+	public static int DONATOR_NPC_COUNT_LEVEL;
 
 	public static void loadDonateConfig()
 	{
-		ExProperties donateConfig = load(DONATE_CONFIG_FILE);
+		final ExProperties donateConfig = load(DONATE_CONFIG_FILE);
 
-		DONATE_ID = donateConfig.getProperty("DonateId", 37000);
-		DONATOR_NPC_ITEM = donateConfig.getProperty("DonatorNPCitem", 6673);
-		DONATOR_NPC_ITEM_NAME = donateConfig.getProperty("DonatorNPCitemName", "Donator Coin");
-		DONATOR_NPC_COUNT_FAME = donateConfig.getProperty("DonateFame", 10000);
-		DONATOR_NPC_FAME = donateConfig.getProperty("DonateCountFame", 5);
-		DONATOR_NPC_COUNT_REP = donateConfig.getProperty("DonateRep", 10000);
-		DONATOR_NPC_REP = donateConfig.getProperty("DonateCountClanRep", 5);
-		DONATOR_NPC_COUNT_NOBLESS = donateConfig.getProperty("DonateCountNobless", 5);
-		DONATOR_NPC_COUNT_SEX = donateConfig.getProperty("DonateCountChangeSex", 5);
-		DONATOR_NPC_COUNT_LEVEL = donateConfig.getProperty("DonateCountMaxLevel", 5);
+		Config.DONATE_ID = donateConfig.getProperty("DonateId", 37000);
+		Config.DONATOR_NPC_ITEM = donateConfig.getProperty("DonatorNPCitem", 6673);
+		Config.DONATOR_NPC_ITEM_NAME = donateConfig.getProperty("DonatorNPCitemName", "Donator Coin");
+		Config.DONATOR_NPC_COUNT_FAME = donateConfig.getProperty("DonateFame", 10000);
+		Config.DONATOR_NPC_FAME = donateConfig.getProperty("DonateCountFame", 5);
+		Config.DONATOR_NPC_COUNT_REP = donateConfig.getProperty("DonateRep", 10000);
+		Config.DONATOR_NPC_REP = donateConfig.getProperty("DonateCountClanRep", 5);
+		Config.DONATOR_NPC_COUNT_NOBLESS = donateConfig.getProperty("DonateCountNobless", 5);
+		Config.DONATOR_NPC_COUNT_SEX = donateConfig.getProperty("DonateCountChangeSex", 5);
+		Config.DONATOR_NPC_COUNT_LEVEL = donateConfig.getProperty("DonateCountMaxLevel", 5);
 
 	}
 
+	public static final String DONATION_STORE = "config/services/DonationStore.ini";
 	public static boolean SERVICES_CHANGE_NICK_ALLOW_SYMBOL;
 	public static boolean SERVICES_CHANGE_NICK_ENABLED;
 	public static int SERVICES_CHANGE_NICK_PRICE;
@@ -1356,119 +1323,165 @@ public class Config
 	public static boolean SERVICES_NOBLESS_SELL_ENABLED;
 	public static int SERVICES_NOBLESS_SELL_PRICE;
 	public static int SERVICES_NOBLESS_SELL_ITEM;
+	public static boolean SERVICES_AUGMENTATION_ENABLED;
+	public static int SERVICES_AUGMENTATION_PRICE;
+	public static int SERVICES_AUGMENTATION_ITEM;
+	public static List<Integer> SERVICES_AUGMENTATION_DISABLED_LIST = new ArrayList<>();
+	public static boolean SERVICES_LEVEL_UP_ENABLE;
+	public static int[] SERVICES_LEVEL_UP;
+	public static boolean SERVICES_DELEVEL_ENABLE;
+	public static int[] SERVICES_DELEVEL;
+	public static boolean SERVICES_UNBAN_ENABLED;
+	public static int[] SERVICES_UNBAN_ITEM;
+	public static boolean DONATE_NOBLESS_ENABLE;
+	public static int DONATE_NOBLESS_SELL_ITEM;
+	public static long DONATE_NOBLESS_SELL_PRICE;
+	public static boolean SERVICES_CLAN_LEVEL_ENABLED;
+	public static int SERVICES_CLAN_LEVEL_ITEM;
+	public static int SERVICES_CLAN_LEVEL_8_PRICE;
+	public static int SERVICES_CLAN_LEVEL_9_PRICE;
+	public static int SERVICES_CLAN_LEVEL_10_PRICE;
+	public static int SERVICES_CLAN_LEVEL_11_PRICE;
+
+	public static boolean SERVICES_CLAN_SKILLS_ENABLED;
+	public static int SERVICES_CLAN_SKILLS_ITEM;
+	public static int SERVICES_CLAN_SKILLS_8_PRICE;
+	public static int SERVICES_CLAN_SKILLS_9_PRICE;
+	public static int SERVICES_CLAN_SKILLS_10_PRICE;
+	public static int SERVICES_CLAN_SKILLS_11_PRICE;
+
+	public static boolean SERVICES_OLF_STORE_ENABLED;
+	public static int SERVICES_OLF_STORE_ITEM;
+	public static int SERVICES_OLF_STORE_0_PRICE;
+	public static int SERVICES_OLF_STORE_6_PRICE;
+	public static int SERVICES_OLF_STORE_7_PRICE;
+	public static int SERVICES_OLF_STORE_8_PRICE;
+	public static int SERVICES_OLF_STORE_9_PRICE;
+	public static int SERVICES_OLF_STORE_10_PRICE;
+
+	public static boolean SERVICES_OLF_TRANSFER_ENABLED;
+	public static int[] SERVICES_OLF_TRANSFER_ITEM;
+
+	public static boolean SERVICES_SOUL_CLOAK_TRANSFER_ENABLED;
+	public static int[] SERVICES_SOUL_CLOAK_TRANSFER_ITEM;
+
+	public static boolean SERVICES_EXCHANGE_EQUIP;
+	public static int SERVICES_EXCHANGE_EQUIP_ITEM;
+	public static int SERVICES_EXCHANGE_EQUIP_ITEM_PRICE;
+	public static int SERVICES_EXCHANGE_UPGRADE_EQUIP_ITEM;
+	public static int SERVICES_EXCHANGE_UPGRADE_EQUIP_ITEM_PRICE;
 
 	public static void loadDonationStore()
 	{
-		ExProperties DonationStore = load(DONATION_STORE);
+		final ExProperties DonationStore = load(DONATION_STORE);
 
-		SERVICES_AUGMENTATION_ENABLED = DonationStore.getProperty("AugmentationEnabled", false);
-		SERVICES_AUGMENTATION_PRICE = DonationStore.getProperty("AugmentationPrice", 50);
-		SERVICES_AUGMENTATION_ITEM = DonationStore.getProperty("AugmentationItem", 37000);
+		Config.SERVICES_AUGMENTATION_ENABLED = DonationStore.getProperty("AugmentationEnabled", false);
+		Config.SERVICES_AUGMENTATION_PRICE = DonationStore.getProperty("AugmentationPrice", 50);
+		Config.SERVICES_AUGMENTATION_ITEM = DonationStore.getProperty("AugmentationItem", 37000);
 		final String[] augs = DonationStore.getProperty("AugmentationDisabledList", "0").trim().split(",");
 		for (String aug : augs)
 		{
 			if (!aug.isEmpty())
 			{
-				SERVICES_AUGMENTATION_DISABLED_LIST.add(Integer.parseInt(aug.trim()));
+				Config.SERVICES_AUGMENTATION_DISABLED_LIST.add(Integer.parseInt(aug.trim()));
 			}
 		}
 
-		SERVICES_CHANGE_NICK_ALLOW_SYMBOL = DonationStore.getProperty("NickChangeAllowSimbol", false);
-		SERVICES_CHANGE_NICK_ENABLED = DonationStore.getProperty("NickChangeEnabled", false);
-		SERVICES_CHANGE_NICK_PRICE = DonationStore.getProperty("NickChangePrice", 100);
-		SERVICES_CHANGE_NICK_ITEM = DonationStore.getProperty("NickChangeItem", 37000);
+		Config.SERVICES_CHANGE_NICK_ALLOW_SYMBOL = DonationStore.getProperty("NickChangeAllowSimbol", false);
+		Config.SERVICES_CHANGE_NICK_ENABLED = DonationStore.getProperty("NickChangeEnabled", false);
+		Config.SERVICES_CHANGE_NICK_PRICE = DonationStore.getProperty("NickChangePrice", 100);
+		Config.SERVICES_CHANGE_NICK_ITEM = DonationStore.getProperty("NickChangeItem", 37000);
 
-		SERVICES_CHANGE_CLAN_NAME_ENABLED = DonationStore.getProperty("ClanNameChangeEnabled", false);
-		SERVICES_CHANGE_CLAN_NAME_PRICE = DonationStore.getProperty("ClanNameChangePrice", 100);
-		SERVICES_CHANGE_CLAN_NAME_ITEM = DonationStore.getProperty("ClanNameChangeItem", 4037);
+		Config.SERVICES_CHANGE_CLAN_NAME_ENABLED = DonationStore.getProperty("ClanNameChangeEnabled", false);
+		Config.SERVICES_CHANGE_CLAN_NAME_PRICE = DonationStore.getProperty("ClanNameChangePrice", 100);
+		Config.SERVICES_CHANGE_CLAN_NAME_ITEM = DonationStore.getProperty("ClanNameChangeItem", 4037);
 
-		SERVICES_LEVEL_UP_ENABLE = DonationStore.getProperty("LevelChangeEnabled", false);
-		SERVICES_DELEVEL_ENABLE = DonationStore.getProperty("DeLevelChangeEnabled", false);
-		SERVICES_LEVEL_UP = DonationStore.getProperty("LevelUp", new int[]
+		Config.SERVICES_LEVEL_UP_ENABLE = DonationStore.getProperty("LevelChangeEnabled", false);
+		Config.SERVICES_DELEVEL_ENABLE = DonationStore.getProperty("DeLevelChangeEnabled", false);
+		Config.SERVICES_LEVEL_UP = DonationStore.getProperty("LevelUp", new int[]
 		{
 			37000,
 			1
 		});
-		SERVICES_DELEVEL = DonationStore.getProperty("LevelDown", new int[]
+		Config.SERVICES_DELEVEL = DonationStore.getProperty("LevelDown", new int[]
 		{
 			37000,
 			1
 		});
 
-		SERVICES_UNBAN_ENABLED = DonationStore.getProperty("UnbanService", true);
-		SERVICES_UNBAN_ITEM = DonationStore.getProperty("UnbanItem", new int[]
+		Config.SERVICES_UNBAN_ENABLED = DonationStore.getProperty("UnbanService", true);
+		Config.SERVICES_UNBAN_ITEM = DonationStore.getProperty("UnbanItem", new int[]
 		{
 			37000,
 			150
 		});
 
-		SERVICES_BUY_RECOMMENDS_ENABLED = DonationStore.getProperty("BuyRecommendsEnabled", false);
-		SERVICES_BUY_RECOMMENDS_PRICE = DonationStore.getProperty("BuyRecommendsPrice", 50);
-		SERVICES_BUY_RECOMMENDS_ITEM = DonationStore.getProperty("BuyRecommendsItem", 37000);
+		Config.SERVICES_BUY_RECOMMENDS_ENABLED = DonationStore.getProperty("BuyRecommendsEnabled", false);
+		Config.SERVICES_BUY_RECOMMENDS_PRICE = DonationStore.getProperty("BuyRecommendsPrice", 50);
+		Config.SERVICES_BUY_RECOMMENDS_ITEM = DonationStore.getProperty("BuyRecommendsItem", 37000);
 
-		SERVICES_BUY_CLAN_REPUTATION_ENABLED = DonationStore.getProperty("BuyClanReputationEnabled", false);
-		SERVICES_BUY_CLAN_REPUTATION_PRICE = DonationStore.getProperty("BuyClanReputationPrice", 100);
-		SERVICES_BUY_CLAN_REPUTATION_ITEM = DonationStore.getProperty("BuyClanReputationItem", 37000);
-		SERVICES_BUY_CLAN_REPUTATION_COUNT = DonationStore.getProperty("BuyClanReputationCount", 40000);
+		Config.SERVICES_BUY_CLAN_REPUTATION_ENABLED = DonationStore.getProperty("BuyClanReputationEnabled", false);
+		Config.SERVICES_BUY_CLAN_REPUTATION_PRICE = DonationStore.getProperty("BuyClanReputationPrice", 100);
+		Config.SERVICES_BUY_CLAN_REPUTATION_ITEM = DonationStore.getProperty("BuyClanReputationItem", 37000);
+		Config.SERVICES_BUY_CLAN_REPUTATION_COUNT = DonationStore.getProperty("BuyClanReputationCount", 40000);
 
-		SERVICES_BUY_FAME_ENABLED = DonationStore.getProperty("BuyFameEnabled", false);
-		SERVICES_BUY_FAME_PRICE = DonationStore.getProperty("BuyFamePrice", 100);
-		SERVICES_BUY_FAME_ITEM = DonationStore.getProperty("BuyFameItem", 37000);
-		SERVICES_BUY_FAME_COUNT = DonationStore.getProperty("BuyFameCount", 37000);
+		Config.SERVICES_BUY_FAME_ENABLED = DonationStore.getProperty("BuyFameEnabled", false);
+		Config.SERVICES_BUY_FAME_PRICE = DonationStore.getProperty("BuyFamePrice", 100);
+		Config.SERVICES_BUY_FAME_ITEM = DonationStore.getProperty("BuyFameItem", 37000);
+		Config.SERVICES_BUY_FAME_COUNT = DonationStore.getProperty("BuyFameCount", 37000);
 
-		SERVICES_NOBLESS_SELL_ENABLED = DonationStore.getProperty("NoblessSellEnabled", false);
-		SERVICES_NOBLESS_SELL_PRICE = DonationStore.getProperty("NoblessSellPrice", 1000);
-		SERVICES_NOBLESS_SELL_ITEM = DonationStore.getProperty("NoblessSellItem", 4037);
+		Config.SERVICES_NOBLESS_SELL_ENABLED = DonationStore.getProperty("NoblessSellEnabled", false);
+		Config.SERVICES_NOBLESS_SELL_PRICE = DonationStore.getProperty("NoblessSellPrice", 1000);
+		Config.SERVICES_NOBLESS_SELL_ITEM = DonationStore.getProperty("NoblessSellItem", 4037);
 
-		DONATE_NOBLESS_ENABLE = DonationStore.getProperty("DonateNoblessEnabled", false);
-		DONATE_NOBLESS_SELL_ITEM = DonationStore.getProperty("DonateNoblessItemId", 37000);
-		DONATE_NOBLESS_SELL_PRICE = DonationStore.getProperty("DonateNoblessItemCont", 100);
+		Config.DONATE_NOBLESS_ENABLE = DonationStore.getProperty("DonateNoblessEnabled", false);
+		Config.DONATE_NOBLESS_SELL_ITEM = DonationStore.getProperty("DonateNoblessItemId", 37000);
+		Config.DONATE_NOBLESS_SELL_PRICE = DonationStore.getProperty("DonateNoblessItemCont", 100);
 
-		SERVICES_CLAN_LEVEL_ENABLED = DonationStore.getProperty("ClanLvlService", true);
-		SERVICES_CLAN_LEVEL_ITEM = DonationStore.getProperty("ClanLvLItem", 37000);
-		SERVICES_CLAN_LEVEL_8_PRICE = DonationStore.getProperty("ClanLvl8Price", 150);
-		SERVICES_CLAN_LEVEL_9_PRICE = DonationStore.getProperty("ClanLvl9Price", 400);
-		SERVICES_CLAN_LEVEL_10_PRICE = DonationStore.getProperty("ClanLvl10Price", 650);
-		SERVICES_CLAN_LEVEL_11_PRICE = DonationStore.getProperty("ClanLvl11Price", 900);
+		Config.SERVICES_CLAN_LEVEL_ENABLED = DonationStore.getProperty("ClanLvlService", true);
+		Config.SERVICES_CLAN_LEVEL_ITEM = DonationStore.getProperty("ClanLvLItem", 37000);
+		Config.SERVICES_CLAN_LEVEL_8_PRICE = DonationStore.getProperty("ClanLvl8Price", 150);
+		Config.SERVICES_CLAN_LEVEL_9_PRICE = DonationStore.getProperty("ClanLvl9Price", 400);
+		Config.SERVICES_CLAN_LEVEL_10_PRICE = DonationStore.getProperty("ClanLvl10Price", 650);
+		Config.SERVICES_CLAN_LEVEL_11_PRICE = DonationStore.getProperty("ClanLvl11Price", 900);
 
-		SERVICES_CLAN_SKILLS_ENABLED = DonationStore.getProperty("ClanSkillsService", true);
-		SERVICES_CLAN_SKILLS_ITEM = DonationStore.getProperty("ClanSkillsItem", 37000);
-		SERVICES_CLAN_SKILLS_8_PRICE = DonationStore.getProperty("ClanSkillLvl8Price", 150);
-		SERVICES_CLAN_SKILLS_9_PRICE = DonationStore.getProperty("ClanSkillLvl9Price", 400);
-		SERVICES_CLAN_SKILLS_10_PRICE = DonationStore.getProperty("ClanSkillLvl10Price", 650);
-		SERVICES_CLAN_SKILLS_11_PRICE = DonationStore.getProperty("ClanSkillLvl11Price", 900);
+		Config.SERVICES_CLAN_SKILLS_ENABLED = DonationStore.getProperty("ClanSkillsService", true);
+		Config.SERVICES_CLAN_SKILLS_ITEM = DonationStore.getProperty("ClanSkillsItem", 37000);
+		Config.SERVICES_CLAN_SKILLS_8_PRICE = DonationStore.getProperty("ClanSkillLvl8Price", 150);
+		Config.SERVICES_CLAN_SKILLS_9_PRICE = DonationStore.getProperty("ClanSkillLvl9Price", 400);
+		Config.SERVICES_CLAN_SKILLS_10_PRICE = DonationStore.getProperty("ClanSkillLvl10Price", 650);
+		Config.SERVICES_CLAN_SKILLS_11_PRICE = DonationStore.getProperty("ClanSkillLvl11Price", 900);
 
-		SERVICES_OLF_STORE_ENABLED = DonationStore.getProperty("OlfStoreService", true);
-		SERVICES_OLF_STORE_ITEM = DonationStore.getProperty("OlfStoreItem", 37000);
-		SERVICES_OLF_STORE_0_PRICE = DonationStore.getProperty("OlfStore0", 100);
-		SERVICES_OLF_STORE_6_PRICE = DonationStore.getProperty("OlfStore6", 200);
-		SERVICES_OLF_STORE_7_PRICE = DonationStore.getProperty("OlfStore7", 275);
-		SERVICES_OLF_STORE_8_PRICE = DonationStore.getProperty("OlfStore8", 350);
-		SERVICES_OLF_STORE_9_PRICE = DonationStore.getProperty("OlfStore9", 425);
-		SERVICES_OLF_STORE_10_PRICE = DonationStore.getProperty("OlfStore10", 500);
+		Config.SERVICES_OLF_STORE_ENABLED = DonationStore.getProperty("OlfStoreService", true);
+		Config.SERVICES_OLF_STORE_ITEM = DonationStore.getProperty("OlfStoreItem", 37000);
+		Config.SERVICES_OLF_STORE_0_PRICE = DonationStore.getProperty("OlfStore0", 100);
+		Config.SERVICES_OLF_STORE_6_PRICE = DonationStore.getProperty("OlfStore6", 200);
+		Config.SERVICES_OLF_STORE_7_PRICE = DonationStore.getProperty("OlfStore7", 275);
+		Config.SERVICES_OLF_STORE_8_PRICE = DonationStore.getProperty("OlfStore8", 350);
+		Config.SERVICES_OLF_STORE_9_PRICE = DonationStore.getProperty("OlfStore9", 425);
+		Config.SERVICES_OLF_STORE_10_PRICE = DonationStore.getProperty("OlfStore10", 500);
 
-		SERVICES_OLF_TRANSFER_ENABLED = DonationStore.getProperty("OlfTransfer", true);
-		SERVICES_OLF_TRANSFER_ITEM = DonationStore.getProperty("OlfTransferItem", new int[]
+		Config.SERVICES_OLF_TRANSFER_ENABLED = DonationStore.getProperty("OlfTransfer", true);
+		Config.SERVICES_OLF_TRANSFER_ITEM = DonationStore.getProperty("OlfTransferItem", new int[]
 		{
 			10639,
 			100
 		});
 
-		SERVICES_SOUL_CLOAK_TRANSFER_ENABLED = DonationStore.getProperty("SCTransfer", true);
-		SERVICES_SOUL_CLOAK_TRANSFER_ITEM = DonationStore.getProperty("SCTransferItem", new int[]
+		Config.SERVICES_SOUL_CLOAK_TRANSFER_ENABLED = DonationStore.getProperty("SCTransfer", true);
+		Config.SERVICES_SOUL_CLOAK_TRANSFER_ITEM = DonationStore.getProperty("SCTransferItem", new int[]
 		{
 			37000,
 			50
 		});
 
-		SERVICES_EXCHANGE_EQUIP = DonationStore.getProperty("ExchangeEquipService", true);
-		SERVICES_EXCHANGE_EQUIP_ITEM = DonationStore.getProperty("ExchangeEquipItem", 37000);
-		SERVICES_EXCHANGE_EQUIP_ITEM_PRICE = DonationStore.getProperty("ExchangeEquipPrice", 50);
-		SERVICES_EXCHANGE_UPGRADE_EQUIP_ITEM = DonationStore.getProperty("ExchangeUpgradeEquipItem", 37000);
-		SERVICES_EXCHANGE_UPGRADE_EQUIP_ITEM_PRICE = DonationStore.getProperty("ExchangeUpgradeEquipPrice", 50);
+		Config.SERVICES_EXCHANGE_EQUIP = DonationStore.getProperty("ExchangeEquipService", true);
+		Config.SERVICES_EXCHANGE_EQUIP_ITEM = DonationStore.getProperty("ExchangeEquipItem", 37000);
+		Config.SERVICES_EXCHANGE_EQUIP_ITEM_PRICE = DonationStore.getProperty("ExchangeEquipPrice", 50);
+		Config.SERVICES_EXCHANGE_UPGRADE_EQUIP_ITEM = DonationStore.getProperty("ExchangeUpgradeEquipItem", 37000);
+		Config.SERVICES_EXCHANGE_UPGRADE_EQUIP_ITEM_PRICE = DonationStore.getProperty("ExchangeUpgradeEquipPrice", 50);
 	}
 
-	
 	public static final String NPC_FILE = "config/mod/npc.ini";
 	/** random animation interval */
 	public static int MIN_NPC_ANIMATION;
@@ -1476,7 +1489,7 @@ public class Config
 	public static boolean SERVER_SIDE_NPC_NAME;
 	public static boolean SERVER_SIDE_NPC_TITLE;
 	public static boolean SERVER_SIDE_NPC_TITLE_ETC;
-	
+
 	public static void loadNpcConfig()
 	{
 		final ExProperties npcSettings = load(NPC_FILE);
