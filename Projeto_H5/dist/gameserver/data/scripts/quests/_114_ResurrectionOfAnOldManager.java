@@ -1,15 +1,15 @@
 package quests;
 
-import l2f.gameserver.ai.CtrlEvent;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
-import l2f.gameserver.network.serverpackets.ExShowScreenMessage.ScreenMessageAlign;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.ai.CtrlEvent;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.network.serverpackets.ExShowScreenMessage;
+import l2mv.gameserver.network.serverpackets.ExShowScreenMessage.ScreenMessageAlign;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class _114_ResurrectionOfAnOldManager extends Quest implements ScriptFile
 {

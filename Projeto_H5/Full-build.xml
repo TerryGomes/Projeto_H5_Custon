@@ -3,9 +3,9 @@
 	<property name="build.version" value="2.0" />
 	<property name="debug" value="on" />
 	
-	<property name="src.gameserver" location="java/l2f/gameserver" />
-	<property name="src.loginserver" location="java/l2f/loginserver" />
-	<property name="src.commons" location="java/l2f/commons" />
+	<property name="src.gameserver" location="java/l2mv/gameserver" />
+	<property name="src.loginserver" location="java/l2mv/loginserver" />
+	<property name="src.commons" location="java/l2mv/commons" />
 	<property name="src.scripts" location="dist/gameserver/data/scripts" />
 	
 	<property name="datapack" location="dist" />
@@ -82,7 +82,7 @@
 		<jar destfile="${build}/gameserver.jar">
 			<fileset dir="${build.classes}" />
 			<manifest>
-				<attribute name="Main-Class" value="l2f.gameserver.GameServer" />
+				<attribute name="Main-Class" value="l2mv.gameserver.GameServer" />
 				<attribute name="Class-Path" value=". " />
 				<attribute name="Build-By" value="${user.name}" />
 				<attribute name="Build-Date" value="${build.tstamp}" />
@@ -168,7 +168,7 @@
 			<manifest>
 				<attribute name="Build-By" value="${user.name}" />
 				<attribute name="Build-Date" value="${build.tstamp}" />
-				<attribute name="Main-Class" value="l2f.gameserver.GameServer" />
+				<attribute name="Main-Class" value="l2mv.gameserver.GameServer" />
 				<attribute name="Class-Path" value=". " />
 			</manifest>
 		</jar>
@@ -188,7 +188,7 @@
 		<jar destfile="${build}/loginserver.jar">
 			<fileset dir="${build.classes}" />
 			<manifest>
-				<attribute name="Main-Class" value="l2f.loginserver.loginserver" />
+				<attribute name="Main-Class" value="l2mv.loginserver.loginserver" />
 				<attribute name="Class-Path" value="${jar.list} commons.jar" />
 				<attribute name="Build-By" value="${user.name}" />
 				<attribute name="Build-Date" value="${build.tstamp}" />

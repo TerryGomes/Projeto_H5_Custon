@@ -11,9 +11,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.utils.Util;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.utils.Util;
 
 public class EventsConfig extends Functions implements ScriptFile
 {

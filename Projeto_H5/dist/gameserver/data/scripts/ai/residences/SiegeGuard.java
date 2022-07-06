@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
-import l2f.gameserver.ai.CtrlIntention;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.geodata.GeoEngine;
-import l2f.gameserver.model.AggroList;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Playable;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.ai.CtrlIntention;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.geodata.GeoEngine;
+import l2mv.gameserver.model.AggroList;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Playable;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.utils.Location;
 import npc.model.residences.SiegeGuardInstance;
 
 public abstract class SiegeGuard extends Fighter

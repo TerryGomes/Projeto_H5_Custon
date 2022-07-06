@@ -1,10 +1,10 @@
 package ai.residences.fortress.siege;
 
 import ai.residences.SiegeGuardFighter;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.scripts.Functions;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.scripts.Functions;
 
 /**
  * @author VISTALL

@@ -4,16 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
-import l2f.gameserver.model.AggroList;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Playable;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestEventType;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.model.AggroList;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Playable;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestEventType;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL

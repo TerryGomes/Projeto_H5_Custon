@@ -1,7 +1,7 @@
 package npc.model;
 
-import l2f.gameserver.model.instances.MonsterInstance;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.instances.MonsterInstance;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author pchayka

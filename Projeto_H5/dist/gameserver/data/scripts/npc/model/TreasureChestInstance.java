@@ -1,12 +1,12 @@
 package npc.model;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.instances.ChestInstance;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.instances.ChestInstance;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 public class TreasureChestInstance extends ChestInstance
 {

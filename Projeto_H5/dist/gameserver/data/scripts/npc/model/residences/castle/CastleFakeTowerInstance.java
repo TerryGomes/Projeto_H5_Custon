@@ -1,9 +1,9 @@
 package npc.model.residences.castle;
 
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @Author: Death

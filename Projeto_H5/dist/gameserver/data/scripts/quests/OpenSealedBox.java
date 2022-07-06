@@ -3,9 +3,9 @@ package quests;
 import java.util.HashMap;
 import java.util.Map;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.model.quest.QuestState;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.model.quest.QuestState;
 
 /**
  * @author Drin

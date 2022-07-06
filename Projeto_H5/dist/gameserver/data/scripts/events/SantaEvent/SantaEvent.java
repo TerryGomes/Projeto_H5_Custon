@@ -1,14 +1,14 @@
 package events.SantaEvent;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
-import l2f.gameserver.listener.actor.OnDeathListener;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.actor.listener.CharListenerList;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.listener.actor.OnDeathListener;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.actor.listener.CharListenerList;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.utils.Location;
 
 public class SantaEvent extends Functions implements ScriptFile, OnDeathListener
 {

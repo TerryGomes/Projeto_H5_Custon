@@ -1,8 +1,8 @@
 package ai;
 
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 public class HekatonPrime extends Fighter
 {

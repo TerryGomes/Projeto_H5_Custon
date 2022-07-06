@@ -1,10 +1,10 @@
 package npc.model;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.MerchantInstance;
-import l2f.gameserver.network.serverpackets.PackageToList;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.WarehouseFunctions;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.MerchantInstance;
+import l2mv.gameserver.network.serverpackets.PackageToList;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.WarehouseFunctions;
 
 /**
  * @author VISTALL

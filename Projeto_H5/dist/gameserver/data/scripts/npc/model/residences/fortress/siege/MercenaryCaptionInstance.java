@@ -3,16 +3,16 @@ package npc.model.residences.fortress.siege;
 import java.util.List;
 
 import ai.residences.fortress.siege.MercenaryCaption;
-import l2f.gameserver.listener.actor.OnDeathListener;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.entity.events.impl.FortressSiegeEvent;
-import l2f.gameserver.model.entity.events.objects.DoorObject;
-import l2f.gameserver.model.entity.events.objects.SiegeClanObject;
-import l2f.gameserver.model.entity.residence.Fortress;
-import l2f.gameserver.model.instances.MonsterInstance;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.listener.actor.OnDeathListener;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.entity.events.impl.FortressSiegeEvent;
+import l2mv.gameserver.model.entity.events.objects.DoorObject;
+import l2mv.gameserver.model.entity.events.objects.SiegeClanObject;
+import l2mv.gameserver.model.entity.residence.Fortress;
+import l2mv.gameserver.model.instances.MonsterInstance;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL

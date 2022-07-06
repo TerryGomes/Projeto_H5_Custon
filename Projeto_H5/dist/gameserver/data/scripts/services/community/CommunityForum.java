@@ -10,27 +10,27 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javolution.util.FastList;
-import l2f.gameserver.Config;
-import l2f.gameserver.ConfigHolder;
-import l2f.gameserver.cache.ImagesCache;
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.data.xml.holder.ItemHolder;
-import l2f.gameserver.handler.bbs.CommunityBoardManager;
-import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.forum.ForumBoard;
-import l2f.gameserver.model.entity.forum.ForumBoardType;
-import l2f.gameserver.model.entity.forum.ForumHandler;
-import l2f.gameserver.model.entity.forum.ForumMember;
-import l2f.gameserver.model.entity.forum.ForumMemberGroup;
-import l2f.gameserver.model.entity.forum.ForumMembersHolder;
-import l2f.gameserver.model.entity.forum.ForumPost;
-import l2f.gameserver.model.entity.forum.ForumTopic;
-import l2f.gameserver.network.serverpackets.Say2;
-import l2f.gameserver.network.serverpackets.ShowBoard;
-import l2f.gameserver.network.serverpackets.components.ChatType;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.utils.Util;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.ConfigHolder;
+import l2mv.gameserver.cache.ImagesCache;
+import l2mv.gameserver.data.htm.HtmCache;
+import l2mv.gameserver.data.xml.holder.ItemHolder;
+import l2mv.gameserver.handler.bbs.CommunityBoardManager;
+import l2mv.gameserver.handler.bbs.ICommunityBoardHandler;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.forum.ForumBoard;
+import l2mv.gameserver.model.entity.forum.ForumBoardType;
+import l2mv.gameserver.model.entity.forum.ForumHandler;
+import l2mv.gameserver.model.entity.forum.ForumMember;
+import l2mv.gameserver.model.entity.forum.ForumMemberGroup;
+import l2mv.gameserver.model.entity.forum.ForumMembersHolder;
+import l2mv.gameserver.model.entity.forum.ForumPost;
+import l2mv.gameserver.model.entity.forum.ForumTopic;
+import l2mv.gameserver.network.serverpackets.Say2;
+import l2mv.gameserver.network.serverpackets.ShowBoard;
+import l2mv.gameserver.network.serverpackets.components.ChatType;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.utils.Util;
 
 public class CommunityForum implements ScriptFile, ICommunityBoardHandler
 {

@@ -2,15 +2,15 @@ package ai.residences.dominion;
 
 import java.util.Calendar;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.data.xml.holder.EventHolder;
-import l2f.gameserver.model.entity.events.EventType;
-import l2f.gameserver.model.entity.events.impl.DominionSiegeRunnerEvent;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.taskmanager.AiTaskManager;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.data.xml.holder.EventHolder;
+import l2mv.gameserver.model.entity.events.EventType;
+import l2mv.gameserver.model.entity.events.impl.DominionSiegeRunnerEvent;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.taskmanager.AiTaskManager;
 
 public class MercenaryCaptain extends DefaultAI
 {

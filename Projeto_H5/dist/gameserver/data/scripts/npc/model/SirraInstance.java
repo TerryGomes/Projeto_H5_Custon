@@ -2,12 +2,12 @@ package npc.model;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.DoorInstance;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.ExChangeClientEffectInfo;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.Location;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.DoorInstance;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.ExChangeClientEffectInfo;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.Location;
 
 /**
  * @author pchayka

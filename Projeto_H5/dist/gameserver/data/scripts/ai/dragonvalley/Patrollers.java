@@ -2,12 +2,12 @@ package ai.dragonvalley;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.instances.MonsterInstance;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.instances.MonsterInstance;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.utils.Location;
 
 /**
  * @author FandC

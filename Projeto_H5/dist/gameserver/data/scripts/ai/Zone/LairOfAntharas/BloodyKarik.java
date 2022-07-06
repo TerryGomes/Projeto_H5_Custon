@@ -1,12 +1,12 @@
 package ai.Zone.LairOfAntharas;
 
 import gnu.trove.map.hash.TIntIntHashMap;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.CtrlEvent;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.data.xml.holder.NpcHolder;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.CtrlEvent;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.data.xml.holder.NpcHolder;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 /**
  * @author FandC

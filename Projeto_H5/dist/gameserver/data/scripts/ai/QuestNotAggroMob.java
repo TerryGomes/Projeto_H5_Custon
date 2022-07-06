@@ -2,12 +2,12 @@ package ai;
 
 import java.util.List;
 
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.QuestEventType;
-import l2f.gameserver.model.quest.QuestState;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.QuestEventType;
+import l2mv.gameserver.model.quest.QuestState;
 
 /**
  * @author VISTALL

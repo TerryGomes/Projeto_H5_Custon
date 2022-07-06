@@ -9,16 +9,16 @@ import java.util.TreeMap;
 
 import org.apache.commons.lang3.math.NumberUtils;
 
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.network.serverpackets.components.CustomMessage;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.Util;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.network.serverpackets.components.CustomMessage;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.Util;
 
 public final class DPSTestInstance extends NpcInstance
 {

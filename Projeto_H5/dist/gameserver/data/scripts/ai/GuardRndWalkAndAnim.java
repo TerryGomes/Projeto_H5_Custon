@@ -1,7 +1,7 @@
 package ai;
 
-import l2f.gameserver.ai.Guard;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.ai.Guard;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 public class GuardRndWalkAndAnim extends Guard
 {

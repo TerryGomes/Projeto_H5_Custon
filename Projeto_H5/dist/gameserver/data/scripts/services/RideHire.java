@@ -1,12 +1,12 @@
 package services;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.cache.Msg;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.SetupGauge;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.tables.PetDataTable;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.cache.Msg;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.SetupGauge;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.tables.PetDataTable;
 
 public class RideHire extends Functions
 {

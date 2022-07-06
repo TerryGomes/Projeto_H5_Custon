@@ -5,12 +5,12 @@ import java.util.concurrent.ScheduledFuture;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.World;
-import l2f.gameserver.network.serverpackets.SystemMessage;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.network.serverpackets.SystemMessage;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 public class KamalokaBossInstance extends LostCaptainInstance
 {

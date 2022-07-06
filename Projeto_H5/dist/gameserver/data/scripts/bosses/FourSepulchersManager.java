@@ -10,22 +10,22 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import bosses.FourSepulchersSpawn.GateKeeper;
-import l2f.commons.threading.RunnableImpl;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.idfactory.IdFactory;
-import l2f.gameserver.listener.actor.OnDeathListener;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Zone;
-import l2f.gameserver.model.actor.listener.CharListenerList;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.idfactory.IdFactory;
+import l2mv.gameserver.listener.actor.OnDeathListener;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Zone;
+import l2mv.gameserver.model.actor.listener.CharListenerList;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.ReflectionUtils;
 import npc.model.SepulcherNpcInstance;
 
 public class FourSepulchersManager extends Functions implements ScriptFile, OnDeathListener

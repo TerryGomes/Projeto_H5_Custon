@@ -1,9 +1,9 @@
 package ai;
 
-import l2f.gameserver.GameTimeController;
-import l2f.gameserver.ai.Mystic;
-import l2f.gameserver.listener.game.OnDayNightChangeListener;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.GameTimeController;
+import l2mv.gameserver.ai.Mystic;
+import l2mv.gameserver.listener.game.OnDayNightChangeListener;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 /**
  * АИ для мобов, меняющих агресивность в ночное время.<BR>

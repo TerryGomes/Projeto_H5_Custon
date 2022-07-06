@@ -6,19 +6,19 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.commons.lang.reference.HardReference;
-import l2f.commons.lang.reference.HardReferences;
-import l2f.gameserver.data.xml.holder.NpcHolder;
-import l2f.gameserver.idfactory.IdFactory;
-import l2f.gameserver.instancemanager.ServerVariables;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.MonsterInstance;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.lang.reference.HardReference;
+import l2mv.commons.lang.reference.HardReferences;
+import l2mv.gameserver.data.xml.holder.NpcHolder;
+import l2mv.gameserver.idfactory.IdFactory;
+import l2mv.gameserver.instancemanager.ServerVariables;
+import l2mv.gameserver.model.GameObjectsStorage;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.MonsterInstance;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.Location;
 
 public class TheFlowOfTheHorror extends Functions implements ScriptFile
 {

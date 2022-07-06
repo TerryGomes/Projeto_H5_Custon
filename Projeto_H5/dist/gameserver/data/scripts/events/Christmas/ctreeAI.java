@@ -2,16 +2,16 @@ package events.Christmas;
 
 import java.io.File;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.skills.SkillsEngine;
-import l2f.gameserver.skills.effects.EffectTemplate;
-import l2f.gameserver.stats.Stats;
-import l2f.gameserver.stats.funcs.FuncTemplate;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.skills.SkillsEngine;
+import l2mv.gameserver.skills.effects.EffectTemplate;
+import l2mv.gameserver.stats.Stats;
+import l2mv.gameserver.stats.funcs.FuncTemplate;
 
 public class ctreeAI extends DefaultAI
 {

@@ -1,9 +1,9 @@
 package events.GvG;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class GvG extends Functions implements ScriptFile
 {

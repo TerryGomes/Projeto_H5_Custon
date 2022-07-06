@@ -1,11 +1,11 @@
 package ai.hellbound;
 
-import l2f.gameserver.ai.CtrlEvent;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
+import l2mv.gameserver.ai.CtrlEvent;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.scripts.Functions;
 
 public class OutpostCaptain extends Fighter
 {

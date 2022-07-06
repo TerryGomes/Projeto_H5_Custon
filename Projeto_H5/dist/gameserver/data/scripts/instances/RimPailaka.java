@@ -3,15 +3,15 @@ package instances;
 import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
-import l2f.gameserver.network.serverpackets.ExShowScreenMessage.ScreenMessageAlign;
-import l2f.gameserver.network.serverpackets.SystemMessage;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.network.serverpackets.ExShowScreenMessage;
+import l2mv.gameserver.network.serverpackets.ExShowScreenMessage.ScreenMessageAlign;
+import l2mv.gameserver.network.serverpackets.SystemMessage;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.utils.Location;
 
 /**
  * Класс контролирует Rim Pailaka - Rune

@@ -2,18 +2,18 @@ package handler.items;
 
 import java.util.Collection;
 
-import l2f.gameserver.cache.Msg;
-import l2f.gameserver.data.xml.holder.RecipeHolder;
-import l2f.gameserver.handler.items.ItemHandler;
-import l2f.gameserver.model.Playable;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Recipe;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.network.serverpackets.RecipeBookItemList;
-import l2f.gameserver.network.serverpackets.SystemMessage;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.cache.Msg;
+import l2mv.gameserver.data.xml.holder.RecipeHolder;
+import l2mv.gameserver.handler.items.ItemHandler;
+import l2mv.gameserver.model.Playable;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Recipe;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.network.serverpackets.RecipeBookItemList;
+import l2mv.gameserver.network.serverpackets.SystemMessage;
+import l2mv.gameserver.network.serverpackets.components.SystemMsg;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class Recipes extends ScriptItemHandler implements ScriptFile
 {

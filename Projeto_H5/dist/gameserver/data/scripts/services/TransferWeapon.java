@@ -3,19 +3,19 @@ package services;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2f.commons.dao.JdbcEntityState;
-import l2f.gameserver.Config;
-import l2f.gameserver.dao.CharacterDAO;
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.CCPHelpers.itemLogs.ItemActionType;
-import l2f.gameserver.model.entity.CCPHelpers.itemLogs.ItemLogHandler;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.model.items.ItemInstance.ItemLocation;
-import l2f.gameserver.model.mail.Mail;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.utils.ItemFunctions;
+import l2mv.commons.dao.JdbcEntityState;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.dao.CharacterDAO;
+import l2mv.gameserver.data.htm.HtmCache;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.CCPHelpers.itemLogs.ItemActionType;
+import l2mv.gameserver.model.entity.CCPHelpers.itemLogs.ItemLogHandler;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.model.items.ItemInstance.ItemLocation;
+import l2mv.gameserver.model.mail.Mail;
+import l2mv.gameserver.network.serverpackets.components.SystemMsg;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.utils.ItemFunctions;
 
 /**
  * Service to transfer pvp and augmented weapons to another character

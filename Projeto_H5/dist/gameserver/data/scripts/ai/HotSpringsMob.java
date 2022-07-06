@@ -5,13 +5,13 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.Mystic;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Effect;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.tables.SkillTable;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.Mystic;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Effect;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.tables.SkillTable;
 
 /**
  * AI for:

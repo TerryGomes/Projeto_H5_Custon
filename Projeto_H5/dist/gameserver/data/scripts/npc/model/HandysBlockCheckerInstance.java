@@ -1,16 +1,16 @@
 package npc.model;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.instancemanager.games.HandysBlockCheckerManager;
-import l2f.gameserver.instancemanager.games.HandysBlockCheckerManager.ArenaParticipantsHolder;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.ExCubeGameChangeTimeToStart;
-import l2f.gameserver.network.serverpackets.ExCubeGameRequestReady;
-import l2f.gameserver.network.serverpackets.ExCubeGameTeamList;
-import l2f.gameserver.network.serverpackets.SystemMessage;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.instancemanager.games.HandysBlockCheckerManager;
+import l2mv.gameserver.instancemanager.games.HandysBlockCheckerManager.ArenaParticipantsHolder;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.ExCubeGameChangeTimeToStart;
+import l2mv.gameserver.network.serverpackets.ExCubeGameRequestReady;
+import l2mv.gameserver.network.serverpackets.ExCubeGameTeamList;
+import l2mv.gameserver.network.serverpackets.SystemMessage;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @authors BiggBoss, Gigiikun, n0nam3

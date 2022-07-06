@@ -8,18 +8,18 @@ import java.util.concurrent.ScheduledFuture;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.listener.actor.OnDeathListener;
-import l2f.gameserver.listener.zone.OnZoneEnterLeaveListener;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Zone;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.utils.ItemFunctions;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.listener.actor.OnDeathListener;
+import l2mv.gameserver.listener.zone.OnZoneEnterLeaveListener;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Zone;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.utils.ItemFunctions;
+import l2mv.gameserver.utils.Location;
 
 /**
  * @author claww

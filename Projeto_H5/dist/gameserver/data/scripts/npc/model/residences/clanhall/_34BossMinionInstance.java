@@ -1,9 +1,9 @@
 package npc.model.residences.clanhall;
 
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 import npc.model.residences.SiegeGuardInstance;
 
 /**

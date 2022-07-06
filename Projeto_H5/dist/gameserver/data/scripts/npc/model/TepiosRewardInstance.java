@@ -2,12 +2,12 @@ package npc.model;
 
 import instances.SufferingHallAttack;
 import instances.SufferingHallDefence;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.ItemFunctions;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.ItemFunctions;
 import quests._694_BreakThroughTheHallOfSuffering;
 import quests._695_DefendtheHallofSuffering;
 

@@ -1,15 +1,15 @@
 package npc.model.residences.fortress.siege;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Spawner;
-import l2f.gameserver.model.entity.events.impl.FortressSiegeEvent;
-import l2f.gameserver.model.entity.events.objects.SpawnExObject;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Spawner;
+import l2mv.gameserver.model.entity.events.impl.FortressSiegeEvent;
+import l2mv.gameserver.model.entity.events.objects.SpawnExObject;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.network.serverpackets.components.SystemMsg;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL

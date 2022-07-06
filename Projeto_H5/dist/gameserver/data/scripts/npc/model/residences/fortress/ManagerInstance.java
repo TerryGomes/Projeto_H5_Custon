@@ -1,17 +1,17 @@
 package npc.model.residences.fortress;
 
-import l2f.gameserver.data.xml.holder.EventHolder;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.events.EventType;
-import l2f.gameserver.model.entity.events.impl.DominionSiegeRunnerEvent;
-import l2f.gameserver.model.entity.residence.Fortress;
-import l2f.gameserver.model.entity.residence.Residence;
-import l2f.gameserver.model.pledge.Clan;
-import l2f.gameserver.network.serverpackets.L2GameServerPacket;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.HtmlUtils;
+import l2mv.gameserver.data.xml.holder.EventHolder;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.events.EventType;
+import l2mv.gameserver.model.entity.events.impl.DominionSiegeRunnerEvent;
+import l2mv.gameserver.model.entity.residence.Fortress;
+import l2mv.gameserver.model.entity.residence.Residence;
+import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.network.serverpackets.L2GameServerPacket;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.HtmlUtils;
 import npc.model.residences.ResidenceManager;
 
 public class ManagerInstance extends ResidenceManager

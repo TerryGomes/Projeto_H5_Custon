@@ -1,11 +1,11 @@
 package ai.dragonvalley;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.CtrlEvent;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.utils.NpcUtils;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.CtrlEvent;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.utils.NpcUtils;
 
 public class DragonKnight extends Fighter
 {

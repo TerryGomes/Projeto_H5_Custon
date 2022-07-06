@@ -1,7 +1,7 @@
 package quests;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class _068_SagaOfTheSoulHound extends SagasSuperclass implements ScriptFile
 {

@@ -3,18 +3,18 @@ package npc.model.residences;
 import java.util.List;
 import java.util.Map;
 
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.base.Experience;
-import l2f.gameserver.model.entity.events.impl.AbstractFightClub;
-import l2f.gameserver.model.entity.events.impl.SiegeEvent;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.pledge.Clan;
-import l2f.gameserver.model.reward.RewardItem;
-import l2f.gameserver.model.reward.RewardList;
-import l2f.gameserver.model.reward.RewardType;
-import l2f.gameserver.stats.Stats;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.base.Experience;
+import l2mv.gameserver.model.entity.events.impl.AbstractFightClub;
+import l2mv.gameserver.model.entity.events.impl.SiegeEvent;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.model.reward.RewardItem;
+import l2mv.gameserver.model.reward.RewardList;
+import l2mv.gameserver.model.reward.RewardType;
+import l2mv.gameserver.stats.Stats;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 public class SiegeGuardInstance extends NpcInstance
 {

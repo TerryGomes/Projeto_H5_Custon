@@ -1,14 +1,14 @@
 package ai.hellbound;
 
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.geodata.GeoEngine;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Playable;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.utils.Location;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.geodata.GeoEngine;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Playable;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.utils.Location;
 
 public class Sandstorm extends DefaultAI
 {

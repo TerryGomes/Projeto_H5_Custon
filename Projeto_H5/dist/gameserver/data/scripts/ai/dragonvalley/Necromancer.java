@@ -1,13 +1,13 @@
 package ai.dragonvalley;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
-import l2f.gameserver.ai.CtrlEvent;
-import l2f.gameserver.ai.CtrlIntention;
-import l2f.gameserver.ai.Mystic;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.utils.NpcUtils;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.ai.CtrlEvent;
+import l2mv.gameserver.ai.CtrlIntention;
+import l2mv.gameserver.ai.Mystic;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.utils.NpcUtils;
 
 /**
  * @author FandC После каждой атаки имеет шанс призвать одного из двух мобов.

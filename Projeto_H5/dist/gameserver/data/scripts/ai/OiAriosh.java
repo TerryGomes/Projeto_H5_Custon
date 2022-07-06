@@ -3,13 +3,13 @@ package ai;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.ai.CtrlEvent;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.data.xml.holder.NpcHolder;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.SimpleSpawner;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.utils.Location;
+import l2mv.gameserver.ai.CtrlEvent;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.data.xml.holder.NpcHolder;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.SimpleSpawner;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.utils.Location;
 
 /**
  * AI босса Oi Ariosh для Kamaloka.<br>

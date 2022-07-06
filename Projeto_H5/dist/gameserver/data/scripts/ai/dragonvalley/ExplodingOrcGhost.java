@@ -1,11 +1,11 @@
 package ai.dragonvalley;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.tables.SkillTable;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.tables.SkillTable;
 
 /**
  * @author FandC

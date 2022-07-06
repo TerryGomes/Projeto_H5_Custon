@@ -1,14 +1,14 @@
 package npc.model;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.base.Experience;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.network.serverpackets.SystemMessage2;
-import l2f.gameserver.network.serverpackets.components.CustomMessage;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.HtmlUtils;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.base.Experience;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.network.serverpackets.SystemMessage2;
+import l2mv.gameserver.network.serverpackets.components.CustomMessage;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.HtmlUtils;
 
 public final class DelevelManagerInstance extends NpcInstance
 {

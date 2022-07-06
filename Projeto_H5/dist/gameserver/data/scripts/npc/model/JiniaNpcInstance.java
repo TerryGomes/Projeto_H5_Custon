@@ -2,11 +2,11 @@ package npc.model;
 
 import instances.FreyaHard;
 import instances.FreyaNormal;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 /**
  * @author pchayka

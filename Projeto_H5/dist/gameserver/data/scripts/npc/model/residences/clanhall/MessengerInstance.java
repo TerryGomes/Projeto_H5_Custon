@@ -1,11 +1,11 @@
 package npc.model.residences.clanhall;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.events.impl.ClanHallSiegeEvent;
-import l2f.gameserver.model.entity.residence.ClanHall;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.CastleSiegeInfo;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.events.impl.ClanHallSiegeEvent;
+import l2mv.gameserver.model.entity.residence.ClanHall;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.CastleSiegeInfo;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL

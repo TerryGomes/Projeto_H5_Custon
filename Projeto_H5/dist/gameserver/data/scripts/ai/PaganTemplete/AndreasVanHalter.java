@@ -2,21 +2,21 @@ package ai.PaganTemplete;
 
 import java.util.concurrent.ScheduledFuture;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.instances.DoorInstance;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.PlaySound;
-import l2f.gameserver.network.serverpackets.SocialAction;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.NpcUtils;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.GameObjectsStorage;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.instances.DoorInstance;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.PlaySound;
+import l2mv.gameserver.network.serverpackets.SocialAction;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.NpcUtils;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 /**
  * @author FandC

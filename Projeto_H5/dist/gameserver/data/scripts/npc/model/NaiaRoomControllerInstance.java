@@ -3,18 +3,18 @@ package npc.model;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2f.commons.geometry.Rectangle;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.data.xml.holder.NpcHolder;
-import l2f.gameserver.instancemanager.naia.NaiaTowerManager;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.SimpleSpawner;
-import l2f.gameserver.model.Territory;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.commons.geometry.Rectangle;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.data.xml.holder.NpcHolder;
+import l2mv.gameserver.instancemanager.naia.NaiaTowerManager;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.SimpleSpawner;
+import l2mv.gameserver.model.Territory;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 /**
  * @author pchayka

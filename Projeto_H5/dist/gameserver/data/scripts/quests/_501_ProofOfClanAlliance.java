@@ -6,19 +6,19 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import l2f.commons.dbutils.DbUtils;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.pledge.Clan;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.tables.SkillTable;
+import l2mv.commons.dbutils.DbUtils;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.database.DatabaseFactory;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.GameObjectsStorage;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.tables.SkillTable;
 
 public class _501_ProofOfClanAlliance extends Quest implements ScriptFile
 {

@@ -1,16 +1,16 @@
 //package services;
 //
-//import l2f.commons.dbutils.DbUtils;
-//import l2f.commons.lang.ArrayUtils;
-//import l2f.gameserver.Config;
-//import l2f.gameserver.database.DatabaseFactory;
-//import l2f.gameserver.model.Player;
-//import l2f.gameserver.network.GameClient;
-//import l2f.gameserver.network.loginservercon.AuthServerCommunication;
-//import l2f.gameserver.network.loginservercon.gspackets.ChangeAllowedHwid;
-//import l2f.gameserver.network.loginservercon.gspackets.ChangeAllowedIp;
-//import l2f.gameserver.network.serverpackets.MagicSkillUse;
-//import l2f.gameserver.network.serverpackets.components.CustomMessage;
+//import l2mv.commons.dbutils.DbUtils;
+//import l2mv.commons.lang.ArrayUtils;
+//import l2mv.gameserver.Config;
+//import l2mv.gameserver.database.DatabaseFactory;
+//import l2mv.gameserver.model.Player;
+//import l2mv.gameserver.network.GameClient;
+//import l2mv.gameserver.network.loginservercon.AuthServerCommunication;
+//import l2mv.gameserver.network.loginservercon.gspackets.ChangeAllowedHwid;
+//import l2mv.gameserver.network.loginservercon.gspackets.ChangeAllowedIp;
+//import l2mv.gameserver.network.serverpackets.MagicSkillUse;
+//import l2mv.gameserver.network.serverpackets.components.CustomMessage;
 //
 //import java.sql.Connection;
 //import java.sql.PreparedStatement;

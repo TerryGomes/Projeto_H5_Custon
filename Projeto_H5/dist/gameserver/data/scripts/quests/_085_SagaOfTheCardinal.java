@@ -1,6 +1,6 @@
 package quests;
 
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class _085_SagaOfTheCardinal extends SagasSuperclass implements ScriptFile
 {

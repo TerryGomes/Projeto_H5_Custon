@@ -1,11 +1,11 @@
 package services;
 
-import l2f.gameserver.model.Party;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.utils.Location;
+import l2mv.gameserver.model.Party;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.utils.Location;
 import quests._240_ImTheOnlyOneYouCanTrust;
 
 public class TeleToStakatoNest extends Functions

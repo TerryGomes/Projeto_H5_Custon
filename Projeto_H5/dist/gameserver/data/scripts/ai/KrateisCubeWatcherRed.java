@@ -2,17 +2,17 @@ package ai;
 
 import java.util.List;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.data.xml.holder.NpcHolder;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.data.xml.holder.NpcHolder;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * Author: VISTALL

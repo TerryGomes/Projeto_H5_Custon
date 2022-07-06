@@ -1,15 +1,15 @@
 package handler.items;
 
 import gnu.trove.set.hash.TIntHashSet;
-import l2f.gameserver.data.xml.holder.ItemHolder;
-import l2f.gameserver.handler.items.ItemHandler;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Playable;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.templates.item.ItemTemplate;
+import l2mv.gameserver.data.xml.holder.ItemHolder;
+import l2mv.gameserver.handler.items.ItemHandler;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Playable;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.templates.item.ItemTemplate;
 
 public class ItemSkills extends ScriptItemHandler implements ScriptFile
 {

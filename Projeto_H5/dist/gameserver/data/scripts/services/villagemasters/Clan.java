@@ -1,8 +1,8 @@
 package services.villagemasters;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.VillageMasterInstance;
-import l2f.gameserver.scripts.Functions;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.VillageMasterInstance;
+import l2mv.gameserver.scripts.Functions;
 
 public class Clan extends Functions
 {

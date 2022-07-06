@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.listener.actor.OnDeathListener;
-import l2f.gameserver.listener.actor.player.OnPlayerExitListener;
-import l2f.gameserver.listener.actor.player.OnTeleportListener;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.actor.listener.CharListenerList;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.gameserver.data.htm.HtmCache;
+import l2mv.gameserver.listener.actor.OnDeathListener;
+import l2mv.gameserver.listener.actor.player.OnPlayerExitListener;
+import l2mv.gameserver.listener.actor.player.OnTeleportListener;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.actor.listener.CharListenerList;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 public class GludinArena extends Functions implements ScriptFile, OnDeathListener, OnTeleportListener, OnPlayerExitListener
 {

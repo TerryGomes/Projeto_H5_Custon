@@ -1,13 +1,13 @@
 package ai.seedofinfinity;
 
-import l2f.commons.lang.ArrayUtils;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.CtrlEvent;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.Effect;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.lang.ArrayUtils;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.CtrlEvent;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.Effect;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.utils.Location;
 
 public class YehanBrother extends Fighter
 {

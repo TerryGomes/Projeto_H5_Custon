@@ -1,0 +1,76 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="list">
+		<xs:complexType>
+			<xs:choice>
+				<xs:element name="quest" maxOccurs="unbounded" minOccurs="0">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="display">
+								<xs:complexType>
+									<xs:attribute type="xs:string" name="name" use="required" />
+									<xs:attribute type="xs:string" name="description" use="required" />
+									<xs:attribute type="xs:boolean" name="enabled" use="optional" />
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="levels" minOccurs="0">
+								<xs:complexType>
+									<xs:attribute type="xs:byte" name="min" use="optional" />
+									<xs:attribute type="xs:byte" name="max" use="optional" />
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="rewards" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="category" maxOccurs="unbounded" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+														<xs:complexType>
+															<xs:attribute type="xs:int" name="id" use="required" />
+															<xs:attribute type="xs:int" name="min" use="required" />
+															<xs:attribute type="xs:int" name="max" use="required" />
+															<xs:attribute type="xs:double" name="chance" use="required" />
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+												<xs:attribute type="xs:byte" name="chance" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute type="xs:boolean" name="protectReward" use="optional" />
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="classes" minOccurs="0">
+								<xs:complexType>
+									<xs:choice maxOccurs="unbounded" minOccurs="0">
+										<xs:element name="class">
+											<xs:complexType>
+												<xs:attribute type="xs:short" name="id" use="required" />
+												<xs:attribute type="xs:string" name="name" use="required" />
+												<xs:attribute type="xs:byte" name="min" use="required" />
+												<xs:attribute type="xs:byte" name="max" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:choice>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="params" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="param" maxOccurs="unbounded" minOccurs="0">
+											<xs:complexType>
+												<xs:attribute type="xs:string" name="name" use="required" />
+												<xs:attribute type="xs:string" name="val" use="required" />
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute type="xs:string" name="name" use="optional" />
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

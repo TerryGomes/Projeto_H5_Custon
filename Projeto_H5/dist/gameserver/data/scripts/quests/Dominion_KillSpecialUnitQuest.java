@@ -2,18 +2,18 @@ package quests;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.data.xml.holder.EventHolder;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.base.ClassId;
-import l2f.gameserver.model.entity.events.EventType;
-import l2f.gameserver.model.entity.events.impl.DominionSiegeEvent;
-import l2f.gameserver.model.entity.events.impl.DominionSiegeRunnerEvent;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.data.xml.holder.EventHolder;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.base.ClassId;
+import l2mv.gameserver.model.entity.events.EventType;
+import l2mv.gameserver.model.entity.events.impl.DominionSiegeEvent;
+import l2mv.gameserver.model.entity.events.impl.DominionSiegeRunnerEvent;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.network.serverpackets.ExShowScreenMessage;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public abstract class Dominion_KillSpecialUnitQuest extends Quest implements ScriptFile
 {

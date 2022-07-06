@@ -2,11 +2,11 @@ package ai.seedofdestruction;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.utils.Location;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.utils.Location;
 
 public class ThroneofDestruction extends DefaultAI
 {

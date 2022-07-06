@@ -1,16 +1,16 @@
 package ai.hellbound;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.CtrlEvent;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.data.xml.holder.NpcHolder;
-import l2f.gameserver.idfactory.IdFactory;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Zone;
-import l2f.gameserver.model.instances.MonsterInstance;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.CtrlEvent;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.data.xml.holder.NpcHolder;
+import l2mv.gameserver.idfactory.IdFactory;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Zone;
+import l2mv.gameserver.model.instances.MonsterInstance;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 public class MasterFestina extends Fighter
 {

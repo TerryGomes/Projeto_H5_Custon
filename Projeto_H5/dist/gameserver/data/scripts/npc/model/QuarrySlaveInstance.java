@@ -2,12 +2,12 @@ package npc.model;
 
 import java.util.StringTokenizer;
 
-import l2f.gameserver.instancemanager.HellboundManager;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.instancemanager.HellboundManager;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 public final class QuarrySlaveInstance extends NpcInstance
 {

@@ -1,10 +1,10 @@
 package npc.model;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.DoorInstance;
-import l2f.gameserver.model.instances.GuardInstance;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.DoorInstance;
+import l2mv.gameserver.model.instances.GuardInstance;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 /**
  * @author VISTALL

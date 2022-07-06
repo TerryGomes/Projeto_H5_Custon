@@ -10,24 +10,24 @@ import java.util.StringTokenizer;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import l2f.gameserver.ConfigHolder;
-import l2f.gameserver.cache.ImagesCache;
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.data.xml.holder.ItemHolder;
-import l2f.gameserver.handler.bypass.BypassHandler;
-import l2f.gameserver.handler.bypass.IBypassHandler;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.tournament.ActiveBattleManager;
-import l2f.gameserver.model.entity.tournament.BattleInstance;
-import l2f.gameserver.model.entity.tournament.BattleRecord;
-import l2f.gameserver.model.entity.tournament.BattleScheduleManager;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.instances.SchemeBufferInstance;
-import l2f.gameserver.network.serverpackets.TutorialCloseHtml;
-import l2f.gameserver.network.serverpackets.TutorialEnableClientEvent;
-import l2f.gameserver.network.serverpackets.TutorialShowHtml;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.templates.item.ItemTemplate;
+import l2mv.gameserver.ConfigHolder;
+import l2mv.gameserver.cache.ImagesCache;
+import l2mv.gameserver.data.htm.HtmCache;
+import l2mv.gameserver.data.xml.holder.ItemHolder;
+import l2mv.gameserver.handler.bypass.BypassHandler;
+import l2mv.gameserver.handler.bypass.IBypassHandler;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.tournament.ActiveBattleManager;
+import l2mv.gameserver.model.entity.tournament.BattleInstance;
+import l2mv.gameserver.model.entity.tournament.BattleRecord;
+import l2mv.gameserver.model.entity.tournament.BattleScheduleManager;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.instances.SchemeBufferInstance;
+import l2mv.gameserver.network.serverpackets.TutorialCloseHtml;
+import l2mv.gameserver.network.serverpackets.TutorialEnableClientEvent;
+import l2mv.gameserver.network.serverpackets.TutorialShowHtml;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.templates.item.ItemTemplate;
 
 /**
  * Bypass support for tournament system

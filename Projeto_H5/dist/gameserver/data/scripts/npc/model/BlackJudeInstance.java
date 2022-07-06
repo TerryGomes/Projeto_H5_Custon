@@ -1,10 +1,10 @@
 package npc.model;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.components.SystemMsg;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL

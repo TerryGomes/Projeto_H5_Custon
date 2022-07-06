@@ -5,16 +5,16 @@ import org.napile.primitive.maps.impl.HashIntObjectMap;
 import org.napile.primitive.sets.IntSet;
 import org.napile.primitive.sets.impl.HashIntSet;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.base.ClassId;
-import l2f.gameserver.model.instances.DoorInstance;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.base.ClassId;
+import l2mv.gameserver.model.instances.DoorInstance;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 /**
  * Открывает двери 5го этажа Tully Workshop

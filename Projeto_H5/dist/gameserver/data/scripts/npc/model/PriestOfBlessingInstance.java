@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.network.serverpackets.SystemMessage;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.Util;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.network.serverpackets.SystemMessage;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.Util;
 
 public class PriestOfBlessingInstance extends NpcInstance
 {

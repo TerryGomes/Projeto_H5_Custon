@@ -1,17 +1,17 @@
 package ai.residences.castle;
 
-import l2f.commons.lang.reference.HardReference;
-import l2f.commons.threading.RunnableImpl;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.ai.CharacterAI;
-import l2f.gameserver.ai.CtrlEvent;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.entity.events.impl.SiegeEvent;
-import l2f.gameserver.model.entity.events.objects.SiegeClanObject;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.commons.lang.reference.HardReference;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.ai.CharacterAI;
+import l2mv.gameserver.ai.CtrlEvent;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.entity.events.impl.SiegeEvent;
+import l2mv.gameserver.model.entity.events.objects.SiegeClanObject;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 /**
  * @author VISTALL

@@ -1,14 +1,14 @@
 package npc.model.residences.castle;
 
-import l2f.gameserver.ai.CtrlIntention;
-import l2f.gameserver.instancemanager.CastleManorManager;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.pledge.Clan;
-import l2f.gameserver.network.serverpackets.MyTargetSelected;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.network.serverpackets.ValidateLocation;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.ai.CtrlIntention;
+import l2mv.gameserver.instancemanager.CastleManorManager;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.network.serverpackets.MyTargetSelected;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.network.serverpackets.ValidateLocation;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 public class BlacksmithInstance extends NpcInstance
 {

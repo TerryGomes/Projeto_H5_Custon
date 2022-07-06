@@ -5,25 +5,25 @@ import java.util.StringTokenizer;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.TeleportLocation;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.entity.residence.Residence;
-import l2f.gameserver.model.entity.residence.ResidenceFunction;
-import l2f.gameserver.model.instances.MerchantInstance;
-import l2f.gameserver.model.pledge.Clan;
-import l2f.gameserver.network.serverpackets.L2GameServerPacket;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.HtmlUtils;
-import l2f.gameserver.utils.ReflectionUtils;
-import l2f.gameserver.utils.TimeUtils;
-import l2f.gameserver.utils.WarehouseFunctions;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.TeleportLocation;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.entity.residence.Residence;
+import l2mv.gameserver.model.entity.residence.ResidenceFunction;
+import l2mv.gameserver.model.instances.MerchantInstance;
+import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.network.serverpackets.L2GameServerPacket;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.network.serverpackets.components.SystemMsg;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.HtmlUtils;
+import l2mv.gameserver.utils.ReflectionUtils;
+import l2mv.gameserver.utils.TimeUtils;
+import l2mv.gameserver.utils.WarehouseFunctions;
 
 /**
  * some rework by VISTALL

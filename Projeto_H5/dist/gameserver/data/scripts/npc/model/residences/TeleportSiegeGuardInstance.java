@@ -1,7 +1,7 @@
 package npc.model.residences;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL

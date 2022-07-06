@@ -1,7 +1,7 @@
 package ai.dragonvalley;
 
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.utils.Location;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.utils.Location;
 
 public class Knoriks2 extends Patrollers
 {

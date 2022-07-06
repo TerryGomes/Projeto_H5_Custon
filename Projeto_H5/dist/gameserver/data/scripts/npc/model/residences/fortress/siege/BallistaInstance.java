@@ -1,11 +1,11 @@
 package npc.model.residences.fortress.siege;
 
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.SystemMessage2;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.SystemMessage2;
+import l2mv.gameserver.network.serverpackets.components.SystemMsg;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * Данный инстанс используется NPC Ballista на осадах фортов

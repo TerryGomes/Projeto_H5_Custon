@@ -1,13 +1,13 @@
 package ai.residences.fortress.siege;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.entity.events.impl.FortressSiegeEvent;
-import l2f.gameserver.model.entity.events.impl.SiegeEvent;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.entity.events.impl.FortressSiegeEvent;
+import l2mv.gameserver.model.entity.events.impl.SiegeEvent;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 /**
  * Данный AI используется NPC Ballista на осадах фортов

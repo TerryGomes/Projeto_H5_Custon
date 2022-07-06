@@ -1,14 +1,14 @@
 package ai.custom;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.data.xml.holder.NpcHolder;
-import l2f.gameserver.model.GameObject;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.data.xml.holder.NpcHolder;
+import l2mv.gameserver.model.GameObject;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.utils.Location;
 
 /**
  * @autor 4ipolino

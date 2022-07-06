@@ -2,13 +2,13 @@ package npc.model.events;
 
 import java.util.List;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.instancemanager.ReflectionManager;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.events.impl.KrateisCubeEvent;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.instancemanager.ReflectionManager;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.events.impl.KrateisCubeEvent;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.Location;
 
 /**
  * @author VISTALL

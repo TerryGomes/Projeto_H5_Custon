@@ -1,7 +1,7 @@
 package npc.model.residences.clanhall;
 
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL

@@ -1,15 +1,15 @@
 package npc.model;
 
-import l2f.gameserver.listener.zone.OnZoneEnterLeaveListener;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Zone;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.EventTrigger;
-import l2f.gameserver.network.serverpackets.ExStartScenePlayer;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.gameserver.listener.zone.OnZoneEnterLeaveListener;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Zone;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.EventTrigger;
+import l2mv.gameserver.network.serverpackets.ExStartScenePlayer;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 /**
  * @author pchayka

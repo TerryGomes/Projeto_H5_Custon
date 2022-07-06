@@ -4,19 +4,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 import gnu.trove.map.hash.TIntObjectHashMap;
-import l2f.commons.threading.RunnableImpl;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.data.xml.holder.NpcHolder;
-import l2f.gameserver.idfactory.IdFactory;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.instances.TrapInstance;
-import l2f.gameserver.network.serverpackets.MagicSkillUse;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.data.xml.holder.NpcHolder;
+import l2mv.gameserver.idfactory.IdFactory;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.instances.TrapInstance;
+import l2mv.gameserver.network.serverpackets.MagicSkillUse;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.utils.Location;
 
 public class Darnel extends DefaultAI
 {

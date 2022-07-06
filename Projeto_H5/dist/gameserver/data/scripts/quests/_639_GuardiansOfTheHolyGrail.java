@@ -1,10 +1,10 @@
 package quests;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class _639_GuardiansOfTheHolyGrail extends Quest implements ScriptFile
 {

@@ -1,11 +1,11 @@
 package ai;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.Playable;
-import l2f.gameserver.model.Zone;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.Playable;
+import l2mv.gameserver.model.Zone;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 public class Anais extends Fighter
 {

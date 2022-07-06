@@ -1,7 +1,7 @@
 package ai.Zone.DragonValley.DV_RB;
 
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 /**
  * @author FandC PTS http://www.youtube.com/watch?v=jl091irKH30

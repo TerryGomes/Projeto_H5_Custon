@@ -5,17 +5,17 @@ import java.util.StringTokenizer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.data.xml.holder.MultiSellHolder;
-import l2f.gameserver.instancemanager.UnderGroundColliseumManager;
-import l2f.gameserver.model.Party;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.base.Experience;
-import l2f.gameserver.model.entity.Coliseum;
-import l2f.gameserver.model.entity.residence.Castle;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.network.serverpackets.SystemMessage;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.data.xml.holder.MultiSellHolder;
+import l2mv.gameserver.instancemanager.UnderGroundColliseumManager;
+import l2mv.gameserver.model.Party;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.base.Experience;
+import l2mv.gameserver.model.entity.Coliseum;
+import l2mv.gameserver.model.entity.residence.Castle;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.network.serverpackets.SystemMessage;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 //TODO: check gameserver.instancemanager.UnderGroundColliseumManager
 public class UngergroundColiseumInstance extends NpcInstance

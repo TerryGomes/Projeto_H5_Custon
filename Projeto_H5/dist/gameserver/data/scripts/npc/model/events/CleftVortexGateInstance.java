@@ -1,7 +1,7 @@
 package npc.model.events;
 
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL

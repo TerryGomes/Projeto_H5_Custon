@@ -1,12 +1,12 @@
 package ai;
 
-import l2f.gameserver.GameTimeController;
-import l2f.gameserver.ai.CharacterAI;
-import l2f.gameserver.data.xml.holder.EventHolder;
-import l2f.gameserver.listener.game.OnDayNightChangeListener;
-import l2f.gameserver.model.entity.events.EventType;
-import l2f.gameserver.model.entity.events.impl.FantasiIsleParadEvent;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.GameTimeController;
+import l2mv.gameserver.ai.CharacterAI;
+import l2mv.gameserver.data.xml.holder.EventHolder;
+import l2mv.gameserver.listener.game.OnDayNightChangeListener;
+import l2mv.gameserver.model.entity.events.EventType;
+import l2mv.gameserver.model.entity.events.impl.FantasiIsleParadEvent;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 public class FantasyIslePaddies extends CharacterAI
 {

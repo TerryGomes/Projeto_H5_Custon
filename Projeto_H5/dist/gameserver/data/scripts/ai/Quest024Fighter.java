@@ -1,12 +1,12 @@
 package ai;
 
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.instancemanager.QuestManager;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.instancemanager.QuestManager;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
 import quests._024_InhabitantsOfTheForestOfTheDead;
 
 /**

@@ -1,8 +1,8 @@
 package services;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.scripts.Functions;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.scripts.Functions;
 
 public class TeleToCatacomb extends Functions
 {

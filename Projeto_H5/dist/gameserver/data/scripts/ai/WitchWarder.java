@@ -1,7 +1,7 @@
 package ai;
 
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 /**
  * AI штрафных мобов Witch Warder на Isle of Prayer, спавнятся из АИ IsleOfPrayerMystic/Fighter.<br>

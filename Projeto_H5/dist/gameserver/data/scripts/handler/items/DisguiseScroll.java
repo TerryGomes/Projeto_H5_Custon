@@ -1,16 +1,16 @@
 package handler.items;
 
-import l2f.gameserver.data.xml.holder.EventHolder;
-import l2f.gameserver.handler.items.ItemHandler;
-import l2f.gameserver.model.Playable;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.events.EventType;
-import l2f.gameserver.model.entity.events.impl.DominionSiegeEvent;
-import l2f.gameserver.model.entity.events.impl.DominionSiegeRunnerEvent;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.network.serverpackets.SystemMessage2;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.data.xml.holder.EventHolder;
+import l2mv.gameserver.handler.items.ItemHandler;
+import l2mv.gameserver.model.Playable;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.events.EventType;
+import l2mv.gameserver.model.entity.events.impl.DominionSiegeEvent;
+import l2mv.gameserver.model.entity.events.impl.DominionSiegeRunnerEvent;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.network.serverpackets.SystemMessage2;
+import l2mv.gameserver.network.serverpackets.components.SystemMsg;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class DisguiseScroll extends ScriptItemHandler implements ScriptFile
 {

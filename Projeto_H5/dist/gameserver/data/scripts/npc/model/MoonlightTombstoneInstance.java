@@ -3,13 +3,13 @@ package npc.model;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import l2f.gameserver.cache.Msg;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.SystemMessage;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.Location;
+import l2mv.gameserver.cache.Msg;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.SystemMessage;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.Location;
 
 /**
  * Данный инстанс используется в городе-инстансе на Hellbound как точка выхода

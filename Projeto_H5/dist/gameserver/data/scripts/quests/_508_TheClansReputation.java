@@ -1,14 +1,14 @@
 package quests;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.pledge.Clan;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.network.serverpackets.SystemMessage;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.utils.Util;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.network.serverpackets.SystemMessage;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.utils.Util;
 
 public class _508_TheClansReputation extends Quest implements ScriptFile
 {

@@ -8,19 +8,19 @@ import java.util.concurrent.Future;
 import bosses.FourSepulchersManager;
 import bosses.FourSepulchersSpawn;
 import bosses.FourSepulchersSpawn.GateKeeper;
-import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.network.serverpackets.Say2;
-import l2f.gameserver.network.serverpackets.components.ChatType;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.ItemFunctions;
-import l2f.gameserver.utils.PositionUtils;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.model.GameObjectsStorage;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.network.serverpackets.Say2;
+import l2mv.gameserver.network.serverpackets.components.ChatType;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.ItemFunctions;
+import l2mv.gameserver.utils.PositionUtils;
 
 public class SepulcherNpcInstance extends NpcInstance
 {

@@ -6,20 +6,20 @@ import java.util.Locale;
 
 import org.apache.commons.lang3.StringUtils;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.base.Experience;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.instances.RaidBossInstance;
-import l2f.gameserver.model.reward.CalculateRewardChances;
-import l2f.gameserver.model.reward.RewardData;
-import l2f.gameserver.model.reward.RewardGroup;
-import l2f.gameserver.model.reward.RewardList;
-import l2f.gameserver.model.reward.RewardType;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.stats.Stats;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.HtmlUtils;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.base.Experience;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.instances.RaidBossInstance;
+import l2mv.gameserver.model.reward.CalculateRewardChances;
+import l2mv.gameserver.model.reward.RewardData;
+import l2mv.gameserver.model.reward.RewardGroup;
+import l2mv.gameserver.model.reward.RewardList;
+import l2mv.gameserver.model.reward.RewardType;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.stats.Stats;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.HtmlUtils;
 import services.community.CommunityDropCalculator;
 
 public abstract class RewardListInfo

@@ -2,23 +2,23 @@ package ai.seedofdestruction;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.ai.CtrlEvent;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.instancemanager.SoDManager;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
-import l2f.gameserver.network.serverpackets.ExShowScreenMessage.ScreenMessageAlign;
-import l2f.gameserver.network.serverpackets.ExStartScenePlayer;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.ai.CtrlEvent;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.instancemanager.SoDManager;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.ExShowScreenMessage;
+import l2mv.gameserver.network.serverpackets.ExShowScreenMessage.ScreenMessageAlign;
+import l2mv.gameserver.network.serverpackets.ExStartScenePlayer;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.utils.Location;
 
 public class Tiat extends Fighter
 {

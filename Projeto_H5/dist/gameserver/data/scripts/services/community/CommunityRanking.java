@@ -16,27 +16,27 @@ import java.util.concurrent.Future;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.handler.bbs.CommunityBoardManager;
-import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
-import l2f.gameserver.idfactory.IdFactory;
-import l2f.gameserver.instancemanager.ServerVariables;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.base.ClassId;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.model.items.ItemInstance.ItemLocation;
-import l2f.gameserver.model.mail.Mail;
-import l2f.gameserver.model.pledge.Clan;
-import l2f.gameserver.network.serverpackets.ExNoticePostArrived;
-import l2f.gameserver.network.serverpackets.ShowBoard;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.tables.ClanTable;
-import l2f.gameserver.utils.Util;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.data.htm.HtmCache;
+import l2mv.gameserver.database.DatabaseFactory;
+import l2mv.gameserver.handler.bbs.CommunityBoardManager;
+import l2mv.gameserver.handler.bbs.ICommunityBoardHandler;
+import l2mv.gameserver.idfactory.IdFactory;
+import l2mv.gameserver.instancemanager.ServerVariables;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.base.ClassId;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.model.items.ItemInstance.ItemLocation;
+import l2mv.gameserver.model.mail.Mail;
+import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.network.serverpackets.ExNoticePostArrived;
+import l2mv.gameserver.network.serverpackets.ShowBoard;
+import l2mv.gameserver.network.serverpackets.components.SystemMsg;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.tables.ClanTable;
+import l2mv.gameserver.utils.Util;
 
 /**
  * Custom ranking community system

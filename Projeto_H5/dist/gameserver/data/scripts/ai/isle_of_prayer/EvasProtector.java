@@ -1,10 +1,10 @@
 package ai.isle_of_prayer;
 
 import instances.CrystalCaverns;
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 public class EvasProtector extends DefaultAI
 {

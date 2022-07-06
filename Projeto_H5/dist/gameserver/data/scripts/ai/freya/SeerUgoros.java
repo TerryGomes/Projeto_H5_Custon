@@ -1,14 +1,14 @@
 package ai.freya;
 
-import l2f.gameserver.ai.CtrlEvent;
-import l2f.gameserver.ai.Mystic;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.utils.Location;
+import l2mv.gameserver.ai.CtrlEvent;
+import l2mv.gameserver.ai.Mystic;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.utils.Location;
 import quests._288_HandleWithCare;
 
 public class SeerUgoros extends Mystic

@@ -6,18 +6,18 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.Announcements;
-import l2f.gameserver.Config;
-import l2f.gameserver.cache.Msg;
-import l2f.gameserver.listener.actor.player.OnPlayerEnterListener;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.SimpleSpawner;
-import l2f.gameserver.model.actor.listener.CharListenerList;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.components.CustomMessage;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.utils.Util;
+import l2mv.gameserver.Announcements;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.cache.Msg;
+import l2mv.gameserver.listener.actor.player.OnPlayerEnterListener;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.SimpleSpawner;
+import l2mv.gameserver.model.actor.listener.CharListenerList;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.components.CustomMessage;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.utils.Util;
 
 // Эвент Coffer of Shadows
 public class CofferofShadows extends Functions implements ScriptFile, OnPlayerEnterListener

@@ -2,11 +2,11 @@ package npc.model;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.instances.MonsterInstance;
-import l2f.gameserver.templates.npc.MinionData;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.instances.MonsterInstance;
+import l2mv.gameserver.templates.npc.MinionData;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * У монстров в Seed of Annihilation список минионов может быть разный.

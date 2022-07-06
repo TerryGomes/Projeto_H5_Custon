@@ -1,9 +1,9 @@
 package services;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.scripts.Functions;
 
 /**
  * Используется в Luxor Shop NPC Alexandria (id: 30098), для продажи Agathion-ов.

@@ -1,16 +1,16 @@
 package services;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.listener.actor.player.OnAnswerListener;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.base.Experience;
-import l2f.gameserver.network.serverpackets.ConfirmDlg;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.network.serverpackets.components.CustomMessage;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.utils.Util;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.data.htm.HtmCache;
+import l2mv.gameserver.listener.actor.player.OnAnswerListener;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.base.Experience;
+import l2mv.gameserver.network.serverpackets.ConfirmDlg;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.network.serverpackets.components.CustomMessage;
+import l2mv.gameserver.network.serverpackets.components.SystemMsg;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.utils.Util;
 
 public class LevelPanel extends Functions
 {

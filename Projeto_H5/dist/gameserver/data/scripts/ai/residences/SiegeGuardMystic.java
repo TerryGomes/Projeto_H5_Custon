@@ -1,6 +1,6 @@
 package ai.residences;
 
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 public class SiegeGuardMystic extends SiegeGuard
 {

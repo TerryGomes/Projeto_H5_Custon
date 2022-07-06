@@ -1,10 +1,10 @@
 package ai.isle_of_prayer;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 public class WaterDragonDetractor extends Fighter
 {

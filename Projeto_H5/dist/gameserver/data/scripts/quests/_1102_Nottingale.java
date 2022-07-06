@@ -1,11 +1,11 @@
 package quests;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.network.serverpackets.RadarControl;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.network.serverpackets.RadarControl;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class _1102_Nottingale extends Quest implements ScriptFile
 {

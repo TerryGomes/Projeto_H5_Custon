@@ -1,12 +1,12 @@
 package handler.items;
 
-import l2f.gameserver.handler.items.ItemHandler;
-import l2f.gameserver.model.Playable;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.tables.PetDataTable;
-import l2f.gameserver.tables.SkillTable;
+import l2mv.gameserver.handler.items.ItemHandler;
+import l2mv.gameserver.model.Playable;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.tables.PetDataTable;
+import l2mv.gameserver.tables.SkillTable;
 
 public class PetSummon extends ScriptItemHandler implements ScriptFile
 {

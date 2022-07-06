@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.listener.zone.OnZoneEnterLeaveListener;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Zone;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.gameserver.listener.zone.OnZoneEnterLeaveListener;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Zone;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.utils.Location;
 
 public abstract class ArenaTemplate extends Functions
 {

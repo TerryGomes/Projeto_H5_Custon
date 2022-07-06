@@ -1,12 +1,12 @@
 package npc.model.residences.fortress.peace;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.events.impl.FortressSiegeEvent;
-import l2f.gameserver.model.entity.events.impl.SiegeEvent;
-import l2f.gameserver.model.entity.residence.Fortress;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.events.impl.FortressSiegeEvent;
+import l2mv.gameserver.model.entity.events.impl.SiegeEvent;
+import l2mv.gameserver.model.entity.residence.Fortress;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 public class SuspiciousMerchantInstance extends NpcInstance
 {

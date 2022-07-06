@@ -19,25 +19,25 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import actions.RewardListInfo;
-import l2f.gameserver.Config;
-import l2f.gameserver.ConfigHolder;
-import l2f.gameserver.cache.ImagesCache;
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.data.xml.holder.NpcHolder;
-import l2f.gameserver.handler.bbs.CommunityBoardManager;
-import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
-import l2f.gameserver.instancemanager.RaidBossSpawnManager;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.olympiad.Olympiad;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.RadarControl;
-import l2f.gameserver.network.serverpackets.ShowBoard;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.templates.StatsSet;
-import l2f.gameserver.templates.npc.MinionData;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.HtmlUtils;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.ConfigHolder;
+import l2mv.gameserver.cache.ImagesCache;
+import l2mv.gameserver.data.htm.HtmCache;
+import l2mv.gameserver.data.xml.holder.NpcHolder;
+import l2mv.gameserver.handler.bbs.CommunityBoardManager;
+import l2mv.gameserver.handler.bbs.ICommunityBoardHandler;
+import l2mv.gameserver.instancemanager.RaidBossSpawnManager;
+import l2mv.gameserver.model.GameObjectsStorage;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.olympiad.Olympiad;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.RadarControl;
+import l2mv.gameserver.network.serverpackets.ShowBoard;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.templates.StatsSet;
+import l2mv.gameserver.templates.npc.MinionData;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.HtmlUtils;
 
 public class CommunityBosses implements ScriptFile, ICommunityBoardHandler
 {

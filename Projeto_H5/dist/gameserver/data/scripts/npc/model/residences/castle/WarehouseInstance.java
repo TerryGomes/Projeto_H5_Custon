@@ -1,18 +1,18 @@
 package npc.model.residences.castle;
 
-import l2f.commons.dao.JdbcEntityState;
-import l2f.gameserver.cache.Msg;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.residence.Castle;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.pledge.Clan;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.ItemFunctions;
-import l2f.gameserver.utils.Log;
-import l2f.gameserver.utils.WarehouseFunctions;
+import l2mv.commons.dao.JdbcEntityState;
+import l2mv.gameserver.cache.Msg;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.residence.Castle;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.network.serverpackets.components.SystemMsg;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.ItemFunctions;
+import l2mv.gameserver.utils.Log;
+import l2mv.gameserver.utils.WarehouseFunctions;
 
 public class WarehouseInstance extends NpcInstance
 {

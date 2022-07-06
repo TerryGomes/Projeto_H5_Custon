@@ -3,11 +3,11 @@ package ai.hellbound;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.data.xml.holder.NpcHolder;
-import l2f.gameserver.model.SimpleSpawner;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.utils.Location;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.data.xml.holder.NpcHolder;
+import l2mv.gameserver.model.SimpleSpawner;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.utils.Location;
 
 public class Pylon extends Fighter
 {

@@ -1,8 +1,8 @@
 package ai.groups;
 
-import l2f.gameserver.handler.voicecommands.IVoicedCommandHandler;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.handler.voicecommands.IVoicedCommandHandler;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class FlyingGracia implements IVoicedCommandHandler, ScriptFile
 {

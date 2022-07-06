@@ -1,12 +1,12 @@
 package services;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.cache.Msg;
-import l2f.gameserver.data.xml.holder.ItemHolder;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.templates.item.ItemTemplate;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.cache.Msg;
+import l2mv.gameserver.data.xml.holder.ItemHolder;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.network.serverpackets.components.SystemMsg;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.templates.item.ItemTemplate;
 
 public class ExpandInventory extends Functions
 {

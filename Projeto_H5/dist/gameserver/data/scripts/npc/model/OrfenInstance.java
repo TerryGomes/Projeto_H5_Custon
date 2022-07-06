@@ -1,13 +1,13 @@
 package npc.model;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.CtrlIntention;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.instances.BossInstance;
-import l2f.gameserver.network.serverpackets.PlaySound;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.CtrlIntention;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.instances.BossInstance;
+import l2mv.gameserver.network.serverpackets.PlaySound;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.Location;
 
 public class OrfenInstance extends BossInstance
 {

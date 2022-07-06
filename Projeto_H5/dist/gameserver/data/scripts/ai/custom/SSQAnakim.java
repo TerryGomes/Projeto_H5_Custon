@@ -2,14 +2,14 @@ package ai.custom;
 
 import java.util.List;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.Mystic;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.MagicSkillUse;
-import l2f.gameserver.scripts.Functions;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.Mystic;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.MagicSkillUse;
+import l2mv.gameserver.scripts.Functions;
 
 public class SSQAnakim extends Mystic
 {

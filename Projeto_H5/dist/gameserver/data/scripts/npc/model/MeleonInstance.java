@@ -1,11 +1,11 @@
 package npc.model;
 
-import l2f.commons.lang.reference.HardReference;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.instances.SpecialMonsterInstance;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.commons.lang.reference.HardReference;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.instances.SpecialMonsterInstance;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 public class MeleonInstance extends SpecialMonsterInstance
 {

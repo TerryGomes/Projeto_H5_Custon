@@ -5,25 +5,25 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.ai.CtrlIntention;
-import l2f.gameserver.cache.Msg;
-import l2f.gameserver.data.xml.holder.NpcHolder;
-import l2f.gameserver.instancemanager.ServerVariables;
-import l2f.gameserver.listener.zone.OnZoneEnterLeaveListener;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Zone;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.ai.CtrlIntention;
+import l2mv.gameserver.cache.Msg;
+import l2mv.gameserver.data.xml.holder.NpcHolder;
+import l2mv.gameserver.instancemanager.ServerVariables;
+import l2mv.gameserver.listener.zone.OnZoneEnterLeaveListener;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Zone;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 public class SeedOfAnnihilation extends Functions implements ScriptFile
 {

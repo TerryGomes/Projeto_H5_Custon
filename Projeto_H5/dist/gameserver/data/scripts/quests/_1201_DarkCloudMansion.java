@@ -6,23 +6,23 @@ import java.util.List;
 import java.util.Map;
 
 import gnu.trove.map.hash.TIntObjectHashMap;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.CharacterAI;
-import l2f.gameserver.instancemanager.ReflectionManager;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.network.serverpackets.MagicSkillUse;
-import l2f.gameserver.network.serverpackets.SystemMessage;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.stats.Stats;
-import l2f.gameserver.stats.funcs.FuncMul;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.CharacterAI;
+import l2mv.gameserver.instancemanager.ReflectionManager;
+import l2mv.gameserver.model.GameObjectsStorage;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.network.serverpackets.MagicSkillUse;
+import l2mv.gameserver.network.serverpackets.SystemMessage;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.stats.Stats;
+import l2mv.gameserver.stats.funcs.FuncMul;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 public class _1201_DarkCloudMansion extends Quest implements ScriptFile
 {

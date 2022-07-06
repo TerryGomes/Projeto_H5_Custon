@@ -3,20 +3,20 @@ package events.TheFallHarvest;
 import java.util.List;
 import java.util.concurrent.ScheduledFuture;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.data.xml.holder.NpcHolder;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.SimpleSpawner;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.reward.RewardData;
-import l2f.gameserver.model.reward.RewardItem;
-import l2f.gameserver.network.serverpackets.MagicSkillUse;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.utils.Log;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.data.xml.holder.NpcHolder;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.SimpleSpawner;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.reward.RewardData;
+import l2mv.gameserver.model.reward.RewardItem;
+import l2mv.gameserver.network.serverpackets.MagicSkillUse;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.utils.Log;
 import npc.model.SquashInstance;
 
 public class SquashAI extends Fighter

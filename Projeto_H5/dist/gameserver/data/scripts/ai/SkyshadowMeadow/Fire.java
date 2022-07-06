@@ -1,12 +1,12 @@
 package ai.SkyshadowMeadow;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.NpcUtils;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.NpcUtils;
 
 /**
  * @author claww

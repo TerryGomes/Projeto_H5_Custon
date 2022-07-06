@@ -4,12 +4,12 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 
 import bosses.FourSepulchersManager;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class _620_FourGoblets extends Quest implements ScriptFile
 {

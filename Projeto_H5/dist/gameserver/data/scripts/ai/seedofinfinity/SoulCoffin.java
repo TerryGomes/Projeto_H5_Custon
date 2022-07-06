@@ -5,10 +5,10 @@ import instances.ErosionHallDefence;
 import instances.HeartInfinityAttack;
 import instances.HeartInfinityDefence;
 import instances.SufferingHallDefence;
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 public class SoulCoffin extends DefaultAI
 {

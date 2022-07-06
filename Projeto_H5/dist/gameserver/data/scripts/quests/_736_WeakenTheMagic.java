@@ -1,7 +1,7 @@
 package quests;
 
-import l2f.gameserver.model.base.ClassId;
-import l2f.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.model.base.ClassId;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
 
 /**
  * @author VISTALL

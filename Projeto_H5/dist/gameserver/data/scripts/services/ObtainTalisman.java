@@ -3,11 +3,11 @@ package services;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.cache.Msg;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.cache.Msg;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.scripts.Functions;
 
 /**
  * Используется для выдачи талисманов в крепостях и замках за Knight's Epaulette.

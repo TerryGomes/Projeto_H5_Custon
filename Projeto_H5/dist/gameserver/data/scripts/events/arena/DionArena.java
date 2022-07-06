@@ -1,14 +1,14 @@
 package events.arena;
 
-import l2f.gameserver.listener.actor.OnDeathListener;
-import l2f.gameserver.listener.actor.player.OnPlayerExitListener;
-import l2f.gameserver.listener.actor.player.OnTeleportListener;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.actor.listener.CharListenerList;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.listener.actor.OnDeathListener;
+import l2mv.gameserver.listener.actor.player.OnPlayerExitListener;
+import l2mv.gameserver.listener.actor.player.OnTeleportListener;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.actor.listener.CharListenerList;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class DionArena extends Functions implements ScriptFile, OnDeathListener, OnTeleportListener, OnPlayerExitListener
 {

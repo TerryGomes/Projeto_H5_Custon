@@ -2,18 +2,18 @@ package quests;
 
 import org.apache.commons.lang3.ArrayUtils;
 
-import l2f.gameserver.data.xml.holder.EventHolder;
-import l2f.gameserver.listener.actor.player.OnPlayerEnterListener;
-import l2f.gameserver.listener.event.OnStartStopListener;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.actor.listener.PlayerListenerList;
-import l2f.gameserver.model.entity.events.EventType;
-import l2f.gameserver.model.entity.events.GlobalEvent;
-import l2f.gameserver.model.entity.events.impl.DominionSiegeEvent;
-import l2f.gameserver.model.entity.events.impl.DominionSiegeRunnerEvent;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
+import l2mv.gameserver.data.xml.holder.EventHolder;
+import l2mv.gameserver.listener.actor.player.OnPlayerEnterListener;
+import l2mv.gameserver.listener.event.OnStartStopListener;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.actor.listener.PlayerListenerList;
+import l2mv.gameserver.model.entity.events.EventType;
+import l2mv.gameserver.model.entity.events.GlobalEvent;
+import l2mv.gameserver.model.entity.events.impl.DominionSiegeEvent;
+import l2mv.gameserver.model.entity.events.impl.DominionSiegeRunnerEvent;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
 
 /**
  * @author pchayka

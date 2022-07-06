@@ -1,11 +1,11 @@
 package npc.model.residences.clanhall;
 
-import l2f.gameserver.model.entity.residence.ClanHall;
-import l2f.gameserver.model.entity.residence.Residence;
-import l2f.gameserver.model.pledge.Clan;
-import l2f.gameserver.network.serverpackets.AgitDecoInfo;
-import l2f.gameserver.network.serverpackets.L2GameServerPacket;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.entity.residence.ClanHall;
+import l2mv.gameserver.model.entity.residence.Residence;
+import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.network.serverpackets.AgitDecoInfo;
+import l2mv.gameserver.network.serverpackets.L2GameServerPacket;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 import npc.model.residences.ResidenceManager;
 
 public class ManagerInstance extends ResidenceManager

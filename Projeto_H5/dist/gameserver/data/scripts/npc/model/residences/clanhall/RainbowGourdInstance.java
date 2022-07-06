@@ -2,19 +2,19 @@ package npc.model.residences.clanhall;
 
 import java.util.List;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Spawner;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.entity.events.impl.ClanHallMiniGameEvent;
-import l2f.gameserver.model.entity.events.objects.CMGSiegeClanObject;
-import l2f.gameserver.model.entity.events.objects.SpawnExObject;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.NpcUtils;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Spawner;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.entity.events.impl.ClanHallMiniGameEvent;
+import l2mv.gameserver.model.entity.events.objects.CMGSiegeClanObject;
+import l2mv.gameserver.model.entity.events.objects.SpawnExObject;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.NpcUtils;
 
 /**
  * @author VISTALL

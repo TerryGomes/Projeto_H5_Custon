@@ -8,22 +8,22 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.commons.text.PrintfFormat;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.Announcements;
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.listener.actor.OnDeathListener;
-import l2f.gameserver.listener.actor.player.OnPlayerEnterListener;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.SimpleSpawner;
-import l2f.gameserver.model.actor.listener.CharListenerList;
-import l2f.gameserver.model.instances.MonsterInstance;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.utils.Util;
+import l2mv.commons.text.PrintfFormat;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.Announcements;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.data.htm.HtmCache;
+import l2mv.gameserver.listener.actor.OnDeathListener;
+import l2mv.gameserver.listener.actor.player.OnPlayerEnterListener;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.SimpleSpawner;
+import l2mv.gameserver.model.actor.listener.CharListenerList;
+import l2mv.gameserver.model.instances.MonsterInstance;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.utils.Util;
 
 /**
  * Event Change of Heart

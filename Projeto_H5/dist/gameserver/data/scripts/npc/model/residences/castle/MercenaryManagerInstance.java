@@ -1,7 +1,7 @@
 package npc.model.residences.castle;
 
-import l2f.gameserver.model.instances.MerchantInstance;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.instances.MerchantInstance;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL

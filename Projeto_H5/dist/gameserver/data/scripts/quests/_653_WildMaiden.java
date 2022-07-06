@@ -3,15 +3,15 @@ package quests;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2f.gameserver.instancemanager.SpawnManager;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Spawner;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.network.serverpackets.MagicSkillUse;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.templates.spawn.PeriodOfDay;
+import l2mv.gameserver.instancemanager.SpawnManager;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Spawner;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.network.serverpackets.MagicSkillUse;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.templates.spawn.PeriodOfDay;
 
 public class _653_WildMaiden extends Quest implements ScriptFile
 {

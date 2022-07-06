@@ -1,14 +1,14 @@
 package services;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
-import l2f.gameserver.cache.Msg;
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.network.serverpackets.components.CustomMessage;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.utils.GameStats;
-import l2f.gameserver.utils.Util;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.cache.Msg;
+import l2mv.gameserver.data.htm.HtmCache;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.network.serverpackets.components.CustomMessage;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.utils.GameStats;
+import l2mv.gameserver.utils.Util;
 
 public class Roulette extends Functions
 {

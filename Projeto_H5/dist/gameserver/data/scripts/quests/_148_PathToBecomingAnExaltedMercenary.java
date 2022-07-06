@@ -1,14 +1,14 @@
 package quests;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.events.impl.DominionSiegeEvent;
-import l2f.gameserver.model.entity.residence.Castle;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.events.impl.DominionSiegeEvent;
+import l2mv.gameserver.model.entity.residence.Castle;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.network.serverpackets.ExShowScreenMessage;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.scripts.ScriptFile;
 
 /**
  * @author pchayka

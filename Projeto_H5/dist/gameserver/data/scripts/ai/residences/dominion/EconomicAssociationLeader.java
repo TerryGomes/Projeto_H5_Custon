@@ -4,19 +4,19 @@ import org.napile.primitive.maps.IntObjectMap;
 import org.napile.primitive.maps.impl.HashIntObjectMap;
 
 import ai.residences.SiegeGuardFighter;
-import l2f.gameserver.Config;
-import l2f.gameserver.instancemanager.QuestManager;
-import l2f.gameserver.listener.actor.player.OnPlayerEnterListener;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.actor.listener.PlayerListenerList;
-import l2f.gameserver.model.entity.events.impl.DominionSiegeEvent;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.network.serverpackets.ExShowScreenMessage;
-import l2f.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.instancemanager.QuestManager;
+import l2mv.gameserver.listener.actor.player.OnPlayerEnterListener;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.GameObjectsStorage;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.actor.listener.PlayerListenerList;
+import l2mv.gameserver.model.entity.events.impl.DominionSiegeEvent;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.network.serverpackets.ExShowScreenMessage;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
 import quests._733_ProtectTheEconomicAssociationLeader;
 
 /**

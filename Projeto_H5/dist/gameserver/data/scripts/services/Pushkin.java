@@ -1,18 +1,18 @@
 package services;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.xml.holder.ItemHolder;
-import l2f.gameserver.data.xml.holder.MultiSellHolder;
-import l2f.gameserver.data.xml.holder.MultiSellHolder.MultiSellListContainer;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.base.MultiSellEntry;
-import l2f.gameserver.model.base.MultiSellIngredient;
-import l2f.gameserver.model.entity.residence.Castle;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.items.Inventory;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.templates.item.ItemTemplate;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.data.xml.holder.ItemHolder;
+import l2mv.gameserver.data.xml.holder.MultiSellHolder;
+import l2mv.gameserver.data.xml.holder.MultiSellHolder.MultiSellListContainer;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.base.MultiSellEntry;
+import l2mv.gameserver.model.base.MultiSellIngredient;
+import l2mv.gameserver.model.entity.residence.Castle;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.items.Inventory;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.templates.item.ItemTemplate;
 
 public class Pushkin extends Functions
 {

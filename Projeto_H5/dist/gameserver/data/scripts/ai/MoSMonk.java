@@ -1,11 +1,11 @@
 package ai;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.CtrlIntention;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.CtrlIntention;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.scripts.Functions;
 
 /**
  * AI монахов в Monastery of Silence<br>

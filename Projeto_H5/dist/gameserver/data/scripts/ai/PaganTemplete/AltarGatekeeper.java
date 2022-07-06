@@ -1,11 +1,11 @@
 package ai.PaganTemplete;
 
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.model.instances.DoorInstance;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.model.instances.DoorInstance;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 /**
  * @author claww

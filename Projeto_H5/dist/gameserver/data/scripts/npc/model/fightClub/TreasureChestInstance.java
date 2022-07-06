@@ -1,14 +1,14 @@
 package npc.model.fightClub;
 
-import l2f.gameserver.ai.CtrlIntention;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.events.impl.fightclub.FFATreasureHuntEvent;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.ActionFail;
-import l2f.gameserver.network.serverpackets.MyTargetSelected;
-import l2f.gameserver.network.serverpackets.StatusUpdate;
-import l2f.gameserver.network.serverpackets.ValidateLocation;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.ai.CtrlIntention;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.events.impl.fightclub.FFATreasureHuntEvent;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.ActionFail;
+import l2mv.gameserver.network.serverpackets.MyTargetSelected;
+import l2mv.gameserver.network.serverpackets.StatusUpdate;
+import l2mv.gameserver.network.serverpackets.ValidateLocation;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 public class TreasureChestInstance extends NpcInstance
 {

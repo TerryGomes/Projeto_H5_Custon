@@ -1,11 +1,11 @@
 package ai.hellbound;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.NpcUtils;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.NpcUtils;
 
 /**
  * Darion Faithful Servant 6го этажа Tully Workshop

@@ -2,19 +2,19 @@ package ai.residences.clanhall;
 
 import java.util.List;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.ai.CharacterAI;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.entity.events.impl.ClanHallMiniGameEvent;
-import l2f.gameserver.model.entity.events.objects.CMGSiegeClanObject;
-import l2f.gameserver.model.entity.events.objects.SpawnExObject;
-import l2f.gameserver.model.entity.events.objects.ZoneObject;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.utils.NpcUtils;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.ai.CharacterAI;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.entity.events.impl.ClanHallMiniGameEvent;
+import l2mv.gameserver.model.entity.events.objects.CMGSiegeClanObject;
+import l2mv.gameserver.model.entity.events.objects.SpawnExObject;
+import l2mv.gameserver.model.entity.events.objects.ZoneObject;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.utils.NpcUtils;
 import npc.model.residences.clanhall.RainbowGourdInstance;
 import npc.model.residences.clanhall.RainbowYetiInstance;
 

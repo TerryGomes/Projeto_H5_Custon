@@ -1,15 +1,15 @@
 package ai.residences.fortress.siege;
 
 import ai.residences.SiegeGuardFighter;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.entity.events.impl.FortressSiegeEvent;
-import l2f.gameserver.model.entity.residence.Fortress;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.tables.SkillTable;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.entity.events.impl.FortressSiegeEvent;
+import l2mv.gameserver.model.entity.residence.Fortress;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.network.serverpackets.components.SystemMsg;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.tables.SkillTable;
 import npc.model.residences.SiegeGuardInstance;
 
 /**

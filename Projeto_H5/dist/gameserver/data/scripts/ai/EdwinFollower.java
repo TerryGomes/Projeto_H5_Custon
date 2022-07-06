@@ -1,12 +1,12 @@
 package ai;
 
-import l2f.commons.lang.reference.HardReference;
-import l2f.commons.lang.reference.HardReferences;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.commons.lang.reference.HardReference;
+import l2mv.commons.lang.reference.HardReferences;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 public class EdwinFollower extends DefaultAI
 {

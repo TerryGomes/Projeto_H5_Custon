@@ -1,10 +1,10 @@
 package services.community;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.data.htm.HtmCache;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
 
 /**
  * info_folder = папка для категорий страниц - String

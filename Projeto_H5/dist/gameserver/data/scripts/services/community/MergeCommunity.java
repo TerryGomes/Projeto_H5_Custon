@@ -11,22 +11,22 @@ import java.util.regex.Pattern;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.ConfigHolder;
-import l2f.gameserver.cache.ImagesCache;
-import l2f.gameserver.dao.CharacterDAO;
-import l2f.gameserver.data.HtmPropHolder;
-import l2f.gameserver.data.HtmPropList;
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.database.merge.MergeAuthDatabaseFactory;
-import l2f.gameserver.database.merge.MergeDatabaseFactory;
-import l2f.gameserver.handler.bbs.CommunityBoardManager;
-import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.pledge.Clan;
-import l2f.gameserver.network.serverpackets.ShowBoard;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.ConfigHolder;
+import l2mv.gameserver.cache.ImagesCache;
+import l2mv.gameserver.dao.CharacterDAO;
+import l2mv.gameserver.data.HtmPropHolder;
+import l2mv.gameserver.data.HtmPropList;
+import l2mv.gameserver.data.htm.HtmCache;
+import l2mv.gameserver.database.DatabaseFactory;
+import l2mv.gameserver.database.merge.MergeAuthDatabaseFactory;
+import l2mv.gameserver.database.merge.MergeDatabaseFactory;
+import l2mv.gameserver.handler.bbs.CommunityBoardManager;
+import l2mv.gameserver.handler.bbs.ICommunityBoardHandler;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.network.serverpackets.ShowBoard;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class MergeCommunity implements ScriptFile, ICommunityBoardHandler
 {

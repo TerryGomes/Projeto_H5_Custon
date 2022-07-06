@@ -1,10 +1,10 @@
 package ai;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.Ranger;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.Ranger;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.scripts.Functions;
 
 /**
  * AI для Delu Lizardman Special Agent ID: 21105

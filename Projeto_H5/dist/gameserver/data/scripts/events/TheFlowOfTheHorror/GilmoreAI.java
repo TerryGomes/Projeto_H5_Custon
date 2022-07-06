@@ -1,17 +1,17 @@
 package events.TheFlowOfTheHorror;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.CtrlIntention;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.instances.MonsterInstance;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.MagicSkillUse;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.stats.Stats;
-import l2f.gameserver.stats.funcs.FuncMul;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.CtrlIntention;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.instances.MonsterInstance;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.MagicSkillUse;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.stats.Stats;
+import l2mv.gameserver.stats.funcs.FuncMul;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.utils.Location;
 
 public class GilmoreAI extends Fighter
 {

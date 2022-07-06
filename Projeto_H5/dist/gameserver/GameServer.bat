@@ -8,7 +8,7 @@ set JAVA_OPTS=%JAVA_OPTS% -Xmn128m
 set JAVA_OPTS=%JAVA_OPTS% -Xms2G
 set JAVA_OPTS=%JAVA_OPTS% -Xmx4G
 
-java -server %JAVA_OPTS% -Dfile.encoding=UTF-8 -cp config;./../libs/* l2f.gameserver.GameServer
+java -server %JAVA_OPTS% -Dfile.encoding=UTF-8 -cp config;./../libs/* l2mv.gameserver.GameServer
 
 if ERRORLEVEL 2 goto restart
 if ERRORLEVEL 1 goto error

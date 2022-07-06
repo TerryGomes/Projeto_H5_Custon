@@ -1,18 +1,18 @@
 package ai.residences.clanhall;
 
 import ai.residences.SiegeGuardFighter;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.Zone;
-import l2f.gameserver.model.entity.events.impl.ClanHallSiegeEvent;
-import l2f.gameserver.model.entity.events.objects.SpawnExObject;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.utils.PositionUtils;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.Zone;
+import l2mv.gameserver.model.entity.events.impl.ClanHallSiegeEvent;
+import l2mv.gameserver.model.entity.events.objects.SpawnExObject;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.utils.PositionUtils;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 /**
  * @author VISTALL

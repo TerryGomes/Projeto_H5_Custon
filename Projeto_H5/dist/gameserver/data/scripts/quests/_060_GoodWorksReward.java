@@ -3,16 +3,16 @@ package quests;
 import java.util.HashMap;
 import java.util.Map;
 
-import l2f.commons.text.PrintfFormat;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.CtrlEvent;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.base.Race;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.commons.text.PrintfFormat;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.CtrlEvent;
+import l2mv.gameserver.model.GameObjectsStorage;
+import l2mv.gameserver.model.base.Race;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class _060_GoodWorksReward extends Quest implements ScriptFile
 {

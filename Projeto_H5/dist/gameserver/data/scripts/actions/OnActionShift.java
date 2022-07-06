@@ -8,30 +8,30 @@ import java.util.TreeSet;
 
 import org.apache.commons.lang3.StringUtils;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.handler.admincommands.impl.AdminEditChar;
-import l2f.gameserver.model.AggroList.HateComparator;
-import l2f.gameserver.model.AggroList.HateInfo;
-import l2f.gameserver.model.Effect;
-import l2f.gameserver.model.GameObject;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.base.Element;
-import l2f.gameserver.model.entity.events.GlobalEvent;
-import l2f.gameserver.model.instances.DoorInstance;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.instances.PetInstance;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestEventType;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.stats.Stats;
-import l2f.gameserver.utils.HtmlUtils;
-import l2f.gameserver.utils.PositionUtils;
-import l2f.gameserver.utils.Util;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.data.htm.HtmCache;
+import l2mv.gameserver.handler.admincommands.impl.AdminEditChar;
+import l2mv.gameserver.model.AggroList.HateComparator;
+import l2mv.gameserver.model.AggroList.HateInfo;
+import l2mv.gameserver.model.Effect;
+import l2mv.gameserver.model.GameObject;
+import l2mv.gameserver.model.GameObjectsStorage;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.base.Element;
+import l2mv.gameserver.model.entity.events.GlobalEvent;
+import l2mv.gameserver.model.instances.DoorInstance;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.instances.PetInstance;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestEventType;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.stats.Stats;
+import l2mv.gameserver.utils.HtmlUtils;
+import l2mv.gameserver.utils.PositionUtils;
+import l2mv.gameserver.utils.Util;
 
 public class OnActionShift extends Functions
 {

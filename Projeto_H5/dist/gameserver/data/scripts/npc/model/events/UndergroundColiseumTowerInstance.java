@@ -1,10 +1,10 @@
 package npc.model.events;
 
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.base.TeamType;
-import l2f.gameserver.model.entity.events.impl.UndergroundColiseumBattleEvent;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.base.TeamType;
+import l2mv.gameserver.model.entity.events.impl.UndergroundColiseumBattleEvent;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 /**
  * @author VISTALL

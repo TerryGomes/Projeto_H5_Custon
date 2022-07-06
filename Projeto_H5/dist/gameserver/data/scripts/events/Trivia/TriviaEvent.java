@@ -18,23 +18,23 @@ import java.util.concurrent.ScheduledFuture;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.commons.dbutils.DbUtils;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.handler.voicecommands.IVoicedCommandHandler;
-import l2f.gameserver.handler.voicecommands.VoicedCommandHandler;
-import l2f.gameserver.instancemanager.ServerVariables;
-import l2f.gameserver.listener.actor.player.OnPlayerEnterListener;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.actor.listener.CharListenerList;
-import l2f.gameserver.network.serverpackets.Say2;
-import l2f.gameserver.network.serverpackets.components.ChatType;
-import l2f.gameserver.network.serverpackets.components.CustomMessage;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.commons.dbutils.DbUtils;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.database.DatabaseFactory;
+import l2mv.gameserver.handler.voicecommands.IVoicedCommandHandler;
+import l2mv.gameserver.handler.voicecommands.VoicedCommandHandler;
+import l2mv.gameserver.instancemanager.ServerVariables;
+import l2mv.gameserver.listener.actor.player.OnPlayerEnterListener;
+import l2mv.gameserver.model.GameObjectsStorage;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.actor.listener.CharListenerList;
+import l2mv.gameserver.network.serverpackets.Say2;
+import l2mv.gameserver.network.serverpackets.components.ChatType;
+import l2mv.gameserver.network.serverpackets.components.CustomMessage;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class TriviaEvent extends Functions implements ScriptFile, IVoicedCommandHandler, OnPlayerEnterListener
 {

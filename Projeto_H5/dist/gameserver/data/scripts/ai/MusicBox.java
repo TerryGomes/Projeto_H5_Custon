@@ -1,11 +1,11 @@
 package ai;
 
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.ai.CharacterAI;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.PlaySound;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.ai.CharacterAI;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.PlaySound;
 
 /**
 	* - AI for Music Box (32437).

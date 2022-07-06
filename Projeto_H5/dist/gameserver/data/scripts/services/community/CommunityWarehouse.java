@@ -5,17 +5,17 @@ import java.util.StringTokenizer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.htm.HtmCache;
-import l2f.gameserver.handler.bbs.CommunityBoardManager;
-import l2f.gameserver.handler.bbs.ICommunityBoardHandler;
-import l2f.gameserver.instancemanager.ReflectionManager;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Zone.ZoneType;
-import l2f.gameserver.network.serverpackets.ShowBoard;
-import l2f.gameserver.network.serverpackets.components.ChatType;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.utils.WarehouseFunctions;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.data.htm.HtmCache;
+import l2mv.gameserver.handler.bbs.CommunityBoardManager;
+import l2mv.gameserver.handler.bbs.ICommunityBoardHandler;
+import l2mv.gameserver.instancemanager.ReflectionManager;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Zone.ZoneType;
+import l2mv.gameserver.network.serverpackets.ShowBoard;
+import l2mv.gameserver.network.serverpackets.components.ChatType;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.utils.WarehouseFunctions;
 
 /**
  * @author RuleZzz

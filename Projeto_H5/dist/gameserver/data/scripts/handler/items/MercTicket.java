@@ -5,23 +5,23 @@ import java.util.Collection;
 import org.napile.primitive.sets.IntSet;
 import org.napile.primitive.sets.impl.HashIntSet;
 
-import l2f.commons.dao.JdbcEntityState;
-import l2f.gameserver.dao.CastleHiredGuardDAO;
-import l2f.gameserver.data.xml.holder.ResidenceHolder;
-import l2f.gameserver.handler.items.ItemHandler;
-import l2f.gameserver.instancemanager.ReflectionManager;
-import l2f.gameserver.model.Playable;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Zone;
-import l2f.gameserver.model.entity.residence.Castle;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.model.pledge.Privilege;
-import l2f.gameserver.network.serverpackets.ActionFail;
-import l2f.gameserver.network.serverpackets.components.SystemMsg;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.templates.item.support.MerchantGuard;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.PositionUtils;
+import l2mv.commons.dao.JdbcEntityState;
+import l2mv.gameserver.dao.CastleHiredGuardDAO;
+import l2mv.gameserver.data.xml.holder.ResidenceHolder;
+import l2mv.gameserver.handler.items.ItemHandler;
+import l2mv.gameserver.instancemanager.ReflectionManager;
+import l2mv.gameserver.model.Playable;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Zone;
+import l2mv.gameserver.model.entity.residence.Castle;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.model.pledge.Privilege;
+import l2mv.gameserver.network.serverpackets.ActionFail;
+import l2mv.gameserver.network.serverpackets.components.SystemMsg;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.templates.item.support.MerchantGuard;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.PositionUtils;
 
 public class MercTicket extends ScriptItemHandler implements ScriptFile
 {

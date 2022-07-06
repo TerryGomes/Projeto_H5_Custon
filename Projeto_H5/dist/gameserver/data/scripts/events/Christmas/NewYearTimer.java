@@ -2,16 +2,16 @@ package events.Christmas;
 
 import java.util.Calendar;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.Announcements;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.instancemanager.ServerVariables;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.network.serverpackets.MagicSkillUse;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.tables.SkillTable;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.gameserver.Announcements;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.instancemanager.ServerVariables;
+import l2mv.gameserver.model.GameObjectsStorage;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.network.serverpackets.MagicSkillUse;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.tables.SkillTable;
 
 /**
  * User: Death

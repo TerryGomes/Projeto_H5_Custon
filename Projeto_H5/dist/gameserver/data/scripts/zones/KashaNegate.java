@@ -6,26 +6,26 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Future;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.cache.Msg;
-import l2f.gameserver.listener.zone.OnZoneEnterLeaveListener;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Effect;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.World;
-import l2f.gameserver.model.Zone;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.DeleteObject;
-import l2f.gameserver.network.serverpackets.L2GameServerPacket;
-import l2f.gameserver.network.serverpackets.MagicSkillUse;
-import l2f.gameserver.network.serverpackets.NpcInfo;
-import l2f.gameserver.network.serverpackets.StatusUpdate;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.cache.Msg;
+import l2mv.gameserver.listener.zone.OnZoneEnterLeaveListener;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Effect;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.World;
+import l2mv.gameserver.model.Zone;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.DeleteObject;
+import l2mv.gameserver.network.serverpackets.L2GameServerPacket;
+import l2mv.gameserver.network.serverpackets.MagicSkillUse;
+import l2mv.gameserver.network.serverpackets.NpcInfo;
+import l2mv.gameserver.network.serverpackets.StatusUpdate;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 /**
  * @author n0nam3

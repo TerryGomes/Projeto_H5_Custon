@@ -1,10 +1,10 @@
 package instances;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.utils.Location;
 
 /**
  * Class controls Night Zaken

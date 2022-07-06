@@ -1,14 +1,14 @@
 package services.petevolve;
 
-import l2f.commons.dao.JdbcEntityState;
-import l2f.gameserver.Config;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.Summon;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.tables.PetDataTable;
-import l2f.gameserver.tables.PetDataTable.L2Pet;
+import l2mv.commons.dao.JdbcEntityState;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.Summon;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.tables.PetDataTable;
+import l2mv.gameserver.tables.PetDataTable.L2Pet;
 
 /**
  * User: darkevil

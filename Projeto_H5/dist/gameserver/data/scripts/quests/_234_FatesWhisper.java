@@ -2,16 +2,16 @@ package quests;
 
 import java.util.List;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.Config;
-import l2f.gameserver.model.GameObjectsStorage;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.items.Inventory;
-import l2f.gameserver.model.items.ItemInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.model.GameObjectsStorage;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.items.Inventory;
+import l2mv.gameserver.model.items.ItemInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class _234_FatesWhisper extends Quest implements ScriptFile
 {

@@ -1,9 +1,9 @@
 package ai.hellbound;
 
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.instancemanager.naia.NaiaCoreManager;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.instancemanager.naia.NaiaCoreManager;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 public class MutatedElpy extends Fighter
 {

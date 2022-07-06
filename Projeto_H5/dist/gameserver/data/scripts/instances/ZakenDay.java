@@ -1,11 +1,11 @@
 package instances;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.network.serverpackets.ExSendUIEvent;
-import l2f.gameserver.network.serverpackets.components.NpcString;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.network.serverpackets.ExSendUIEvent;
+import l2mv.gameserver.network.serverpackets.components.NpcString;
+import l2mv.gameserver.utils.Location;
 
 /**
  * Класс контролирует дневного Закена

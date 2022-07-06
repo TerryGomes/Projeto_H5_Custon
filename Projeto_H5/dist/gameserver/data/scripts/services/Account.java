@@ -5,13 +5,13 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.data.xml.holder.ItemHolder;
-import l2f.gameserver.database.DatabaseFactory;
-import l2f.gameserver.database.LoginDatabaseFactory;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.data.xml.holder.ItemHolder;
+import l2mv.gameserver.database.DatabaseFactory;
+import l2mv.gameserver.database.LoginDatabaseFactory;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class Account extends Functions implements ScriptFile
 {

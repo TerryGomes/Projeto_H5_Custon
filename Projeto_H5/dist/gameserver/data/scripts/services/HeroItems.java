@@ -1,15 +1,15 @@
 package services;
 
-import static l2f.gameserver.model.entity.olympiad.Olympiad.OLYMPIAD_HTML_PATH;
+import static l2mv.gameserver.model.entity.olympiad.Olympiad.OLYMPIAD_HTML_PATH;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.base.Race;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.utils.ItemFunctions;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.base.Race;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.utils.ItemFunctions;
 
 public class HeroItems extends Functions
 {

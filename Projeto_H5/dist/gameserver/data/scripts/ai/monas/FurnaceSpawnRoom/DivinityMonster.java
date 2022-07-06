@@ -1,12 +1,12 @@
 package ai.monas.FurnaceSpawnRoom;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.data.xml.holder.EventHolder;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.entity.events.EventType;
-import l2f.gameserver.model.entity.events.impl.MonasteryFurnaceEvent;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.data.xml.holder.EventHolder;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.entity.events.EventType;
+import l2mv.gameserver.model.entity.events.impl.MonasteryFurnaceEvent;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 /**
  * @author PaInKiLlEr

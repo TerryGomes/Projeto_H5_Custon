@@ -4,21 +4,21 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.data.xml.holder.InstantZoneHolder;
-import l2f.gameserver.instancemanager.ReflectionManager;
-import l2f.gameserver.model.Party;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.network.serverpackets.SystemMessage;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.templates.InstantZone;
-import l2f.gameserver.utils.Location;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.data.xml.holder.InstantZoneHolder;
+import l2mv.gameserver.instancemanager.ReflectionManager;
+import l2mv.gameserver.model.Party;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.network.serverpackets.SystemMessage;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.templates.InstantZone;
+import l2mv.gameserver.utils.Location;
 
 public class _512_AwlUnderFoot extends Quest implements ScriptFile
 {

@@ -2,10 +2,10 @@ package services;
 
 import java.util.ArrayList;
 
-import l2f.gameserver.Config;
-import l2f.gameserver.model.SimpleSpawner;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.model.SimpleSpawner;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class FightClub extends Functions implements ScriptFile
 {

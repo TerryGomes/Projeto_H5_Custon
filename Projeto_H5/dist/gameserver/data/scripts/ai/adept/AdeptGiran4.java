@@ -1,7 +1,7 @@
 package ai.adept;
 
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.utils.Location;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.utils.Location;
 
 public class AdeptGiran4 extends Adept
 {

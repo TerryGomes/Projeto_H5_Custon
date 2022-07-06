@@ -1,10 +1,10 @@
 package npc.model;
 
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Skill;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.instances.RaidBossInstance;
-import l2f.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Skill;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.instances.RaidBossInstance;
+import l2mv.gameserver.templates.npc.NpcTemplate;
 
 public class YehanBrotherInstance extends RaidBossInstance
 {

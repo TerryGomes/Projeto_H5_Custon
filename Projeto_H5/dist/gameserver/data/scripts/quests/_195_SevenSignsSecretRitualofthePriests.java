@@ -3,19 +3,19 @@ package quests;
 import ai.GuardofDawn;
 import ai.GuardofDawnFemale;
 import ai.GuardofDawnStat;
-import l2f.gameserver.cache.Msg;
-import l2f.gameserver.model.Effect;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.quest.Quest;
-import l2f.gameserver.model.quest.QuestState;
-import l2f.gameserver.network.serverpackets.ExStartScenePlayer;
-import l2f.gameserver.network.serverpackets.SystemMessage;
-import l2f.gameserver.scripts.ScriptFile;
-import l2f.gameserver.tables.SkillTable;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.gameserver.cache.Msg;
+import l2mv.gameserver.model.Effect;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.quest.Quest;
+import l2mv.gameserver.model.quest.QuestState;
+import l2mv.gameserver.network.serverpackets.ExStartScenePlayer;
+import l2mv.gameserver.network.serverpackets.SystemMessage;
+import l2mv.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.tables.SkillTable;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 public class _195_SevenSignsSecretRitualofthePriests extends Quest implements ScriptFile
 {

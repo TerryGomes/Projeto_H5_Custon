@@ -3,16 +3,16 @@ package ai;
 import java.util.ArrayList;
 import java.util.List;
 
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.CtrlIntention;
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.geodata.GeoEngine;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Zone;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.MagicSkillUse;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.CtrlIntention;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.geodata.GeoEngine;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Zone;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.MagicSkillUse;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 /**
  * @author PaInKiLlEr

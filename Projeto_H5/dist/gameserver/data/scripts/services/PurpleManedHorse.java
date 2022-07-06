@@ -1,12 +1,12 @@
 package services;
 
-import l2f.commons.text.PrintfFormat;
-import l2f.gameserver.Config;
-import l2f.gameserver.data.xml.holder.MultiSellHolder;
-import l2f.gameserver.data.xml.holder.MultiSellHolder.MultiSellListContainer;
-import l2f.gameserver.model.base.MultiSellEntry;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.commons.text.PrintfFormat;
+import l2mv.gameserver.Config;
+import l2mv.gameserver.data.xml.holder.MultiSellHolder;
+import l2mv.gameserver.data.xml.holder.MultiSellHolder.MultiSellListContainer;
+import l2mv.gameserver.model.base.MultiSellEntry;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class PurpleManedHorse extends Functions implements ScriptFile
 {

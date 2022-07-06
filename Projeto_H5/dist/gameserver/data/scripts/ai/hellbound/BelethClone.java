@@ -1,9 +1,9 @@
 package ai.hellbound;
 
-import l2f.gameserver.ai.Mystic;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.Playable;
-import l2f.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.ai.Mystic;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.Playable;
+import l2mv.gameserver.model.instances.NpcInstance;
 
 public class BelethClone extends Mystic
 {

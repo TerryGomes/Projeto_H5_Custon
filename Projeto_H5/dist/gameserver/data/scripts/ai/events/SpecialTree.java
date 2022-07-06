@@ -1,11 +1,11 @@
 package ai.events;
 
-import l2f.commons.math.random.RndSelector;
-import l2f.commons.util.Rnd;
-import l2f.gameserver.ai.DefaultAI;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.MagicSkillUse;
-import l2f.gameserver.tables.SkillTable;
+import l2mv.commons.math.random.RndSelector;
+import l2mv.commons.util.Rnd;
+import l2mv.gameserver.ai.DefaultAI;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.MagicSkillUse;
+import l2mv.gameserver.tables.SkillTable;
 
 public class SpecialTree extends DefaultAI
 {

@@ -1,13 +1,13 @@
 package npc.model.residences.castle;
 
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.residence.Castle;
-import l2f.gameserver.model.entity.residence.Residence;
-import l2f.gameserver.model.pledge.Clan;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.ReflectionUtils;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.residence.Castle;
+import l2mv.gameserver.model.entity.residence.Residence;
+import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.ReflectionUtils;
 
 /**
  * @author VISTALL

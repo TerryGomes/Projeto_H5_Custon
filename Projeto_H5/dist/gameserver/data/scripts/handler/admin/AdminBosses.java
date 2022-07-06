@@ -5,11 +5,11 @@ import java.util.Calendar;
 import bosses.AntharasManager;
 import bosses.BaiumManager;
 import bosses.ValakasManager;
-import l2f.gameserver.handler.admincommands.AdminCommandHandler;
-import l2f.gameserver.handler.admincommands.IAdminCommandHandler;
-import l2f.gameserver.instancemanager.ServerVariables;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.scripts.ScriptFile;
+import l2mv.gameserver.handler.admincommands.AdminCommandHandler;
+import l2mv.gameserver.handler.admincommands.IAdminCommandHandler;
+import l2mv.gameserver.instancemanager.ServerVariables;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.scripts.ScriptFile;
 
 public class AdminBosses implements IAdminCommandHandler, ScriptFile
 {

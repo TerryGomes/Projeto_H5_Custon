@@ -1,7 +1,7 @@
 package ai.door;
 
-import l2f.gameserver.ai.DoorAI;
-import l2f.gameserver.model.instances.DoorInstance;
+import l2mv.gameserver.ai.DoorAI;
+import l2mv.gameserver.model.instances.DoorInstance;
 
 public class SiegeDoor extends DoorAI
 {

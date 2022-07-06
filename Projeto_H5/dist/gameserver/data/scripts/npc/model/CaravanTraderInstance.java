@@ -3,20 +3,20 @@ package npc.model;
 import java.util.List;
 import java.util.StringTokenizer;
 
-import l2f.commons.threading.RunnableImpl;
-import l2f.gameserver.ThreadPoolManager;
-import l2f.gameserver.data.xml.holder.MultiSellHolder;
-import l2f.gameserver.instancemanager.HellboundManager;
-import l2f.gameserver.instancemanager.ServerVariables;
-import l2f.gameserver.model.Player;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2f.gameserver.scripts.Functions;
-import l2f.gameserver.templates.npc.NpcTemplate;
-import l2f.gameserver.utils.Location;
-import l2f.gameserver.utils.ReflectionUtils;
-import l2f.gameserver.utils.Util;
+import l2mv.commons.threading.RunnableImpl;
+import l2mv.gameserver.ThreadPoolManager;
+import l2mv.gameserver.data.xml.holder.MultiSellHolder;
+import l2mv.gameserver.instancemanager.HellboundManager;
+import l2mv.gameserver.instancemanager.ServerVariables;
+import l2mv.gameserver.model.Player;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
+import l2mv.gameserver.scripts.Functions;
+import l2mv.gameserver.templates.npc.NpcTemplate;
+import l2mv.gameserver.utils.Location;
+import l2mv.gameserver.utils.ReflectionUtils;
+import l2mv.gameserver.utils.Util;
 
 /**
  * @author pchayka

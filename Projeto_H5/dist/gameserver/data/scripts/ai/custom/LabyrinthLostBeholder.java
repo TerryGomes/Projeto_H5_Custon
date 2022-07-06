@@ -1,12 +1,12 @@
 package ai.custom;
 
-import l2f.gameserver.ai.Fighter;
-import l2f.gameserver.model.Creature;
-import l2f.gameserver.model.entity.Reflection;
-import l2f.gameserver.model.instances.NpcInstance;
-import l2f.gameserver.model.instances.ReflectionBossInstance;
-import l2f.gameserver.stats.Stats;
-import l2f.gameserver.stats.funcs.FuncSet;
+import l2mv.gameserver.ai.Fighter;
+import l2mv.gameserver.model.Creature;
+import l2mv.gameserver.model.entity.Reflection;
+import l2mv.gameserver.model.instances.NpcInstance;
+import l2mv.gameserver.model.instances.ReflectionBossInstance;
+import l2mv.gameserver.stats.Stats;
+import l2mv.gameserver.stats.funcs.FuncSet;
 
 public class LabyrinthLostBeholder extends Fighter
 {
