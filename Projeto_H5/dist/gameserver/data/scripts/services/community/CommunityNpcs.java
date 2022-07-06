@@ -108,13 +108,11 @@ public class CommunityNpcs implements ScriptFile, ICommunityBoardHandler
 			player.deleteQuickVar("SubToRemove");
 		}
 
-		/*
-		 * if ("bbsgetfav".equals(cmd) || "bbsnpcs".equals(cmd))
-		 * {
-		 * sendFileToPlayer(player, "bbs_npcs.htm", true);
-		 * return;
-		 * }
-		 */
+		if ("bbsgetfav".equals(cmd) || "bbsnpcs".equals(cmd))
+		{
+			sendFileToPlayer(player, "bbs_npcs.htm", true);
+			return;
+		}
 
 		if ("bbsnpcs".equals(cmd))
 		{
