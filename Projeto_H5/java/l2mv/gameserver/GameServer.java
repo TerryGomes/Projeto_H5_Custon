@@ -23,6 +23,7 @@ import l2mv.gameserver.fandc.tournament.TournamentHolder;
 import l2mv.gameserver.fandc.votingengine.VotingRewardAPI;
 import l2mv.gameserver.kara.twitch.TwitchManager;
 import l2mv.gameserver.kara.vote.VoteManager;
+import l2mv.commons.lang.StatsUtils;
 import l2mv.commons.listener.Listener;
 import l2mv.commons.listener.ListenerList;
 import l2mv.commons.net.AdvIP;
@@ -454,11 +455,6 @@ public class GameServer
 			_log.info("Emotions Loaded....");
 		}
 
-		Shutdown.getInstance().schedule(Config.RESTART_AT_TIME, Shutdown.ShutdownMode.RESTART, Config.BACKUP_DURING_AUTO_RESTART);
-		printSection("");
-		_log.info(">>>>>>>>>>>>>>> GameServer Started <<<<<<<<<<<<<<");
-		_log.info("Maximum Numbers of Connected Players: " + Config.MAXIMUM_ONLINE_USERS);
-
 		CharacterDAO.getInstance().markTooOldChars();
 		printSection("DataBase Cleaner Loaded");
 		CharacterDAO.getInstance().checkCharactersToDelete();
@@ -553,7 +549,16 @@ public class GameServer
 		{
 			_log.info("Telnet server is currently disabled.");
 		}
-
+		Shutdown.getInstance().schedule(Config.RESTART_AT_TIME, Shutdown.ShutdownMode.RESTART, Config.BACKUP_DURING_AUTO_RESTART);
+		printSection("");
+		_log.info(">>>>>>>>>>>>>>> GameServer Started <<<<<<<<<<<<<<");
+		_log.info("Maximum Numbers of Connected Players: " + Config.MAXIMUM_ONLINE_USERS);
+		String memUsage = new StringBuilder().append(StatsUtils.getMemUsage()).toString();
+		for (String line : memUsage.split("\n"))
+		{
+			_log.info(line);
+		}
+		_log.info("=================================================");
 		AuthServerCommunication.getInstance().start();
 		server_started = new Date();
 	}
