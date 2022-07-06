@@ -111,16 +111,13 @@ public class Config
 //	public static int EPIC_BOSSES_TELEPORT_PRICE_ID;
 //	public static int EPIC_BOSSES_TELEPORT_PRICE_COUNT;
 //
-//	public static int CNAME_MAXLEN = 32;
 //
-//	public static boolean TRADE_CHATS_REPLACE;
 //	/** Community Board */
 //	public static boolean USE_BBS_BUFER_IS_COMBAT;
 //	public static boolean USE_BBS_BUFER_IS_CURSE_WEAPON;
 //	public static boolean USE_BBS_BUFER_IS_EVENTS;
 //	public static boolean USE_BBS_TELEPORT_IS_COMBAT;
 //	public static boolean USE_BBS_TELEPORT_IS_EVENTS;
-//	public static boolean USE_BBS_PROF_IS_COMBAT;
 //	public static boolean USE_BBS_PROF_IS_EVENTS;
 //	public static boolean SAVE_BBS_TELEPORT_IS_EPIC;
 //	public static boolean SAVE_BBS_TELEPORT_IS_BZ;
@@ -198,8 +195,7 @@ public class Config
 //	public static int[] COMMUNITYBOARD_ENCHANT_ATRIBUTE_LVL_ARMOR;
 //	public static int[] COMMUNITYBOARD_ENCHANT_ATRIBUTE_PRICE_ARMOR;
 //	public static boolean COMMUNITYBOARD_ENCHANT_ATRIBUTE_PVP;
-
-	// public static boolean ENTER_WORLD_SHOW_HTML_LOCK;
+//    public static boolean ENTER_WORLD_SHOW_HTML_LOCK;
 
 	public static final String VIKTORINA_CONFIG_FILE = "config/events/Victorina.ini";
 	public static boolean VIKTORINA_ENABLED;// false;
@@ -362,6 +358,9 @@ public class Config
 	public static ChatType NORMAL_PLAYER_MSG_TYPE_ON_WRONG_ACCOUNT;
 	public static boolean NORMAL_PLAYER_MAIL_ON_WRONG_ACCOUNT_WHILE_OFFLINE;
 	public static boolean NORMAL_PLAYER_MAIL_ON_WRONG_SECONDARY_PASSWORD;
+
+	public static int CNAME_MAXLEN;
+
 	public static final String CONFIGURATION_FILE = "config/server.ini";
 
 	public static void loadServerConfig()
@@ -425,6 +424,7 @@ public class Config
 		Config.CLAN_NAME_TEMPLATE = serverSettings.getProperty("ClanNameTemplate", "[A-Za-z0-9\u0410-\u042f\u0430-\u044f]{3,16}");
 		Config.CLAN_TITLE_TEMPLATE = serverSettings.getProperty("ClanTitleTemplate", "[A-Za-z0-9\u0410-\u042f\u0430-\u044f \\p{Punct}]{1,16}");
 		Config.ALLY_NAME_TEMPLATE = serverSettings.getProperty("AllyNameTemplate", "[A-Za-z0-9\u0410-\u042f\u0430-\u044f]{3,16}");
+		Config.CNAME_MAXLEN = serverSettings.getProperty("NameMaxlen", 32);
 
 		Config.PARALIZE_ON_RAID_DIFF = serverSettings.getProperty("ParalizeOnRaidLevelDiff", true);
 
@@ -607,12 +607,14 @@ public class Config
 	public static int CHATFILTER_WORK_TYPE = 1;
 	public static boolean RECORD_WROTE_CHAT_MSGS_COUNT;
 	public static int ANNOUNCE_VOTE_DELAY;
-
+	public static boolean TRADE_CHATS_REPLACE;
+	
 	public static void loadChatConfig()
 	{
 		final ExProperties chatSettings = load(CHAT_FILE);
 
 		Config.GLOBAL_SHOUT = chatSettings.getProperty("GlobalShout", false);
+		Config.TRADE_CHATS_REPLACE = chatSettings.getProperty("TradeChats", false);
 		Config.GLOBAL_TRADE_CHAT = chatSettings.getProperty("GlobalTradeChat", false);
 		Config.CHAT_RANGE = chatSettings.getProperty("ChatRange", 1250);
 		Config.SHOUT_OFFSET = chatSettings.getProperty("ShoutOffset", 0);
@@ -3450,7 +3452,7 @@ public class Config
 		return result;
 	}
 
-	public static final String COMMANDS_CONFIG_FILE = "config/mod/commands.ini";
+	
 	public static boolean NOT_USE_USER_VOICED;
 	public static boolean ALLOW_TOTAL_ONLINE;
 	public static boolean show_rates;
@@ -3511,7 +3513,7 @@ public class Config
 	// CustomSpawnNewChar
 
 	public static boolean ALT_SHOW_SERVER_TIME;
-
+	public static final String COMMANDS_CONFIG_FILE = "config/mod/commands.ini";
 	public static void loadCommandssettings()
 	{
 		final ExProperties CommandsSettings = load(COMMANDS_CONFIG_FILE);
@@ -3568,8 +3570,8 @@ public class Config
 		Config.COMMAND_DRESSME_ENABLE = CommandsSettings.getProperty("DressMe", true);
 	}
 
-	/** Community PvP */
-	public static final String BOARD_MANAGER_CONFIG_FILE = "config/CommunityPvP/board_manager.ini";
+	
+	
 	/** Community Board PVP */
 	public static boolean ALLOW_BBS_WAREHOUSE;
 	public static boolean BBS_WAREHOUSE_ALLOW_PK;
@@ -3583,6 +3585,8 @@ public class Config
 
 	public static boolean ALLOW_SENDING_IMAGES;
 	public static boolean COMMUNITYBOARD_CLAN_ENABLED;
+	public static boolean USE_BBS_PROF_IS_COMBAT;
+	public static final String BOARD_MANAGER_CONFIG_FILE = "config/CommunityPvP/board_manager.ini";
 
 	public static void loadCommunityPvPboardsettings()
 	{
@@ -3600,6 +3604,7 @@ public class Config
 
 		Config.ALLOW_SENDING_IMAGES = CommunityPvPboardSettings.getProperty("AllowSendingImages", true);
 		Config.COMMUNITYBOARD_CLAN_ENABLED = CommunityPvPboardSettings.getProperty("ClanEnable", false);
+		Config.USE_BBS_PROF_IS_COMBAT = CommunityPvPboardSettings.getProperty("NoUserEmCombat", false);
 	}
 
 	public static final String BUFFER_MANAGER_CONFIG_FILE = "config/CommunityPvP/buffer_manager.ini";
