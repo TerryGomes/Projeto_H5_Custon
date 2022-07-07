@@ -96,9 +96,9 @@ public class ImagesCache
 				file
 			}))
 			{
-				if (newFile.getName().endsWith(".png"))
+				if ((newFile.getName().endsWith(".jpg") || newFile.getName().endsWith(".png") || newFile.getName().endsWith(".bmp")))
 				{
-					// newFile = resizeImage(newFile);
+					newFile = resizeImage(newFile);
 
 					int id = -1;
 					try

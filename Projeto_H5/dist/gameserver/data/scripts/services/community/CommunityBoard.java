@@ -111,7 +111,7 @@ public class CommunityBoard implements ScriptFile, ICommunityBoardHandler
 				html = html.replace("<?player_premium?>", player.hasBonus() ? "<font color=\"18FF00\">Yes</font>" : "<font color=\"FF0000\">No</font>");
 				html = html.replace("<?geolocation?>", GeoLocation.getInstance().getCountryCode(player) + "/" + GeoLocation.getInstance().getCity(player));
 				html = html.replace("<?server_uptime?>", String.valueOf(uptime()));
-				/*
+				html = html.replace("%PlayerImage%", "%image:" + player.getRace() + ".png%");	/*
 				 * @claww - is working but useless....
 				 * try {
 				 * if (!FileUtils.readFileToString(new File("/lucia/gameserver/data/html-en/scripts/services/communityPVP/pages/news.txt"), "UTF-8").trim().isEmpty())
