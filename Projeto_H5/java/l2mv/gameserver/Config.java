@@ -608,7 +608,7 @@ public class Config
 	public static boolean RECORD_WROTE_CHAT_MSGS_COUNT;
 	public static int ANNOUNCE_VOTE_DELAY;
 	public static boolean TRADE_CHATS_REPLACE;
-	
+
 	public static void loadChatConfig()
 	{
 		final ExProperties chatSettings = load(CHAT_FILE);
@@ -1713,7 +1713,6 @@ public class Config
 		Config.ALLOW_MACROS_ENCHANT_BUG = otherSettings.getProperty("AllowMacrosEnchantBug", false);
 	}
 
-	public static final String SPOIL_CONFIG_FILE = "config/spoil.ini";
 	/** Spoil Rates */
 	public static double BASE_SPOIL_RATE;
 	public static double MINIMUM_SPOIL_RATE;
@@ -1743,6 +1742,7 @@ public class Config
 
 	/** Manor Maintenance Time */
 	public static int MANOR_MAINTENANCE_PERIOD;
+	public static final String SPOIL_CONFIG_FILE = "config/spoil.ini";
 
 	public static void loadSpoilConfig()
 	{
@@ -3452,7 +3452,6 @@ public class Config
 		return result;
 	}
 
-	
 	public static boolean NOT_USE_USER_VOICED;
 	public static boolean ALLOW_TOTAL_ONLINE;
 	public static boolean show_rates;
@@ -3514,6 +3513,7 @@ public class Config
 
 	public static boolean ALT_SHOW_SERVER_TIME;
 	public static final String COMMANDS_CONFIG_FILE = "config/mod/commands.ini";
+
 	public static void loadCommandssettings()
 	{
 		final ExProperties CommandsSettings = load(COMMANDS_CONFIG_FILE);
@@ -3570,8 +3570,6 @@ public class Config
 		Config.COMMAND_DRESSME_ENABLE = CommandsSettings.getProperty("DressMe", true);
 	}
 
-	
-	
 	/** Community Board PVP */
 	public static boolean ALLOW_BBS_WAREHOUSE;
 	public static boolean BBS_WAREHOUSE_ALLOW_PK;

@@ -1,7 +1,7 @@
 @echo off
-title Login Server Console
+title LII MultVerso [LOGIN SERVER]
 :start
-echo Starting LoginServer.
+echo Starting [LOGIN SERVER].
 echo.
 
 set JAVA_OPTS=%JAVA_OPTS% -Xmn16m

@@ -1,0 +1,30 @@
+CREATE TABLE `merge_data` (
+  `old_login` varchar(32) DEFAULT NULL,
+  `new_login` varchar(32) DEFAULT NULL,
+  `email` varchar(45) DEFAULT NULL,
+  `finished` tinyint(1) DEFAULT '0',
+  `old_char_id_1` int(11) DEFAULT NULL,
+  `new_char_name_1` varchar(35) DEFAULT NULL,
+  `old_char_id_2` int(11) DEFAULT NULL,
+  `new_char_name_2` varchar(35) DEFAULT NULL,
+  `old_char_id_3` int(11) DEFAULT NULL,
+  `new_char_name_3` varchar(35) DEFAULT NULL,
+  `old_char_id_4` int(11) DEFAULT NULL,
+  `new_char_name_4` varchar(35) DEFAULT NULL,
+  `old_char_id_5` int(11) DEFAULT NULL,
+  `new_char_name_5` varchar(35) DEFAULT NULL,
+  `old_char_id_6` int(11) DEFAULT NULL,
+  `new_char_name_6` varchar(35) DEFAULT NULL,
+  `old_char_id_7` int(11) DEFAULT NULL,
+  `new_char_name_7` varchar(35) DEFAULT NULL,
+  `old_char_id_8` int(11) DEFAULT NULL,
+  `new_char_name_8` varchar(35) DEFAULT NULL
+ ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+ CREATE TABLE `merge_data_clan` (
+  `old_clan_id` int(11) NOT NULL,
+  `new_clan_id` int(11) DEFAULT NULL,
+  `old_clan_name` varchar(45) DEFAULT NULL,
+  `new_clan_name` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`old_clan_id`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
