@@ -661,6 +661,8 @@ public class AdminPhantoms implements IAdminCommandHandler
 		case admin_getphantomcount:
 			activeChar.sendMessage(PhantomPlayers.getSpawnedPhantomsCount());
 			break;
+		default:
+			break;
 		}
 		return true;
 	}

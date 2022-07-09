@@ -346,7 +346,7 @@ public final class NpcTemplate extends CharTemplate
 		return faction;
 	}
 
-	@SuppressWarnings("incomplete-switch")
+
 	public void addSkill(Skill skill)
 	{
 		if (_skills.isEmpty())
@@ -388,6 +388,8 @@ public final class NpcTemplate extends CharTemplate
 					case LDManaDamOverTime:
 						_dotSkills = ArrayUtils.add(_dotSkills, skill);
 						added = true;
+						break;
+					default:
 						break;
 					}
 				}

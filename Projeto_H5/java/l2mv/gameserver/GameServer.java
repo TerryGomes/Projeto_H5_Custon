@@ -219,11 +219,8 @@ public class GameServer
 		_instance = this;
 		_serverStarted = time();
 		_listeners = new GameServerListenerList();
-
 		new File(Config.DATAPACK_ROOT + "/log/").mkdir();
-
 		version = new Version(GameServer.class);
-
 		_log.info("============================================================================");
 		_log.info("Nome: ............................................... " + "GAME SERVER");
 		_log.info("Project Revision: ................................... " + PROJECT_REVISION);
