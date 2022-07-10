@@ -53,11 +53,11 @@ public class AuthServer
 		_selectorThread = new SelectorThread<L2LoginClient>(sc, loginPacketHandler, sh, sh, sh);
 
 		_gameServerListener = GameServerCommunication.getInstance();
-		_gameServerListener.openServerSocket(Config.GAME_SERVER_LOGIN_HOST.equals("*") ? null : InetAddress.getByName(Config.GAME_SERVER_LOGIN_HOST), Config.GAME_SERVER_LOGIN_PORT);
+		_gameServerListener.openServerSocket(Config.GAME_SERVER_LOGIN_HOST.equals("127.0.0.1") ? null : InetAddress.getByName(Config.GAME_SERVER_LOGIN_HOST), Config.GAME_SERVER_LOGIN_PORT);
 		_gameServerListener.start();
 		_log.info("Listening for gameservers on " + Config.GAME_SERVER_LOGIN_HOST + ":" + Config.GAME_SERVER_LOGIN_PORT);
 
-		_selectorThread.openServerSocket(Config.LOGIN_HOST.equals("*") ? null : InetAddress.getByName(Config.LOGIN_HOST), Config.PORT_LOGIN);
+		_selectorThread.openServerSocket(Config.LOGIN_HOST.equals("127.0.0.1") ? null : InetAddress.getByName(Config.LOGIN_HOST), Config.PORT_LOGIN);
 		_selectorThread.start();
 		_log.info("Listening for clients on " + Config.LOGIN_HOST + ":" + Config.PORT_LOGIN);
 
@@ -111,7 +111,7 @@ public class AuthServer
 		// Check binding address
 		checkFreePorts();
 		// Initialize database
-		Class.forName(Config.DATABASE_DRIVER).newInstance();
+		Class.forName(Config.DATABASE_DRIVER).getDeclaredConstructor().newInstance();
 		L2DatabaseFactory.getInstance().getConnection().close();
 
 		authServer = new AuthServer();

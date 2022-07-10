@@ -216,20 +216,22 @@ public class GameServer
 
 	public GameServer() throws Exception
 	{
+		version = new Version(GameServer.class);
+		_log.info("============================================================================");
+		_log.info("Nome: .................................................................... " + "GAME SERVER");
+		_log.info("Project Revision: ........................................................ " + PROJECT_REVISION);
+		_log.info("Update: .................................................................. " + UPDATE_NAME);
+		_log.info("Numero da Revision:....................................................... " + version.getVersionNumber());
+		_log.info("Build Revision: .......................................................... " + version.getRevisionNumber());
+		_log.info("Build date: .............................................................. " + version.getBuildDate());
+		_log.info("Compiler version: ........................................................ " + version.getBuildJdk());
+		_log.info("============================================================================");
+		
 		_instance = this;
 		_serverStarted = time();
 		_listeners = new GameServerListenerList();
 		new File(Config.DATAPACK_ROOT + "/log/").mkdir();
-		version = new Version(GameServer.class);
-		_log.info("============================================================================");
-		_log.info("Nome: ............................................... " + "GAME SERVER");
-		_log.info("Project Revision: ................................... " + PROJECT_REVISION);
-		_log.info("Update: ............................................. " + UPDATE_NAME);
-		_log.info("Numero da Revision:.................................. " + version.getVersionNumber());
-		_log.info("Build Revision: ..................................... " + version.getRevisionNumber());
-		_log.info("Build date: ......................................... " + version.getBuildDate());
-		_log.info("Compiler version: ................................... " + version.getBuildJdk());
-		_log.info("============================================================================");
+
 
 		// Initialize config
 		Config.load();
@@ -276,8 +278,10 @@ public class GameServer
 //		}
 
 		// Initialize database
-		_log.info("Licensed IP " + Config.EXTERNAL_HOSTNAME);
-		_log.info("Licensed IP " + "Please Contact Ichsan Rinaldi Sjofka");
+		_log.info("IP Externo" + Config.EXTERNAL_HOSTNAME);
+		_log.info("IP Interno" + Config.INTERNAL_HOSTNAME);
+		_log.info("Maximo Online IP " + Config.MAXIMUM_ONLINE_USERS);
+		_log.info("Hora do Restart " + Config.RESTART_AT_TIME, Shutdown.ShutdownMode.RESTART);
 
 		Class.forName(Config.DATABASE_DRIVER).getDeclaredConstructor().newInstance();
 		DatabaseFactory.getInstance().getConnection().close();
@@ -607,7 +611,7 @@ public class GameServer
 				try
 				{
 					ServerSocket ss;
-					if (Config.GAMESERVER_HOSTNAME.equalsIgnoreCase("*"))
+					if (Config.GAMESERVER_HOSTNAME.equalsIgnoreCase("127.0.0.1"))
 					{
 						ss = new ServerSocket(PORT_GAME);
 					}

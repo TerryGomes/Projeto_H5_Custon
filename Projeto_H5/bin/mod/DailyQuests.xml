@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" ns0:noNamespaceSchemaLocation="DailyQuests.xsd">
+	<quest name="ClassSpecificPvPDailyQuest">
+		<display name="Class Specific PvP Quest" description="You must kill some players (Specific classes)" enabled="false" />
+		<levels min="80" max="86" />
+		<rewards>
+			<category chance="100">
+				<item id="6622" min="1" max="5" chance="35" /> <!-- Giant's Codex -->
+				<item id="9627" min="1" max="3" chance="35" /> <!-- Giant's Codex - Mastery -->
+				<item id="959" min="1" max="3" chance="10" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+				<item id="960" min="1" max="3" chance="10" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+				<item id="6577" min="1" max="1" chance="5" /> <!-- Blessed Scroll: Enchant Weapon (S-Grade) -->
+				<item id="6578" min="1" max="1" chance="5" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
+			</category>
+		</rewards>
+		<classes>
+			<class id="88" name="Duelist" min="2" max="5" />
+			<class id="89" name="Dreadnought" min="1" max="3" />
+			<class id="90" name="Phoenix Knight" min="3" max="5" />
+			<class id="91" name="Hell Knight" min="2" max="4" />
+			<class id="93" name="Adventurer" min="1" max="3" />
+			<class id="94" name="Archmage" min="1" max="2" />
+			<class id="95" name="Soultaker" min="3" max="5" />
+			<class id="97" name="Cardinal" min="3" max="5" />
+			<class id="99" name="Eva's Templar" min="3" max="5" />
+			<class id="101" name="Wind Rider" min="3" max="5" />
+			<class id="103" name="Mystic Muse" min="2" max="4" />
+			<class id="106" name="Shillien Templar" min="3" max="5" />
+			<class id="108" name="Ghost Hunter" min="3" max="5" />
+			<class id="110" name="Storm Screamer" min="3" max="5" />
+			<class id="113" name="Titan" min="2" max="5" />
+			<class id="114" name="Grand Khavatari" min="2" max="4" />
+			<class id="115" name="Dominator" min="3" max="5" />
+			<class id="117" name="Fortune Seeker" min="3" max="6" />
+			<class id="131" name="Doombringer" min="1" max="2" />
+			<class id="132" name="Male Soul Hound" min="2" max="4" />
+			<class id="133" name="Female Soul Hound" min="2" max="4" />
+			<class id="134" name="Trickster" min="1" max="2" />
+		</classes>
+		<params>
+			<!-- Formula: KillStaticCount + (KillAddonCount * getRandom(KillAddonMinCount, KillAddonMaxCount) -->
+			<param name="KillStaticCount" val="5" />
+			<param name="KillAddonCount" val="1" />
+			<param name="KillAddonMinCount" val="0" />
+			<param name="KillAddonMaxCount" val="5" />
+		</params>
+	</quest>
+	<quest name="FishingDailyQuest">
+		<display name="Fishing Quest" description="You must catch some fishes (any grade)" enabled="true" />
+		<levels min="40" max="86" />
+		<rewards protectReward="false">
+			<category chance="100">
+				<item id="7609" min="50" max="150" chance="30" /> <!-- Proof Of Catching A Fish -->
+				<item id="7586" min="20" max="60" chance="30" /> <!-- Sweet Fluid -->
+				<item id="13258" min="5" max="10" chance="10" /> <!-- Gran Kain's Blessed Scroll of Escape -->
+				<item id="13259" min="5" max="10" chance="10" /> <!-- Gran Kain's Blessed Scroll of Resurrection -->
+				<item id="6540" min="20" max="50" chance="10" /> <!-- Fishing Shot (S-Grade) -->
+				<item id="10178" min="1" max="2" chance="5" /> <!-- Sweet Fruit Cocktail -->
+				<item id="10179" min="1" max="2" chance="5" /> <!-- Fresh Fruit Cocktail -->
+			</category>
+		</rewards>
+		<params>
+			<!-- Formula: KillStaticCount + (KillsAddonCount * getRandom(KillsAddonMinCount, KillsAddonMaxCount) -->
+			<param name="KillStaticCount" val="20" />
+			<param name="KillAddonCount" val="10" />
+			<param name="KillAddonMinCount" val="1" />
+			<param name="KillAddonMaxCount" val="5" />
+		</params>
+	</quest>
+	<quest name="GeneralPvPDailyQuest">
+		<display name="General PvP Quest" description="You must kill some players (Any class)" enabled="true" />
+		<levels min="80" max="86" />
+		<rewards>
+			<category chance="100">
+				<item id="6622" min="1" max="5" chance="35" /> <!-- Giant's Codex -->
+				<item id="9627" min="1" max="3" chance="35" /> <!-- Giant's Codex - Mastery -->
+				<item id="959" min="1" max="3" chance="10" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+				<item id="960" min="1" max="3" chance="10" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+				<item id="6577" min="1" max="1" chance="5" /> <!-- Blessed Scroll: Enchant Weapon (S-Grade) -->
+				<item id="6578" min="1" max="1" chance="5" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
+			</category>
+			<category chance="100">
+				<item id="-300" min="1000" max="2000" chance="50" /> <!-- Fame -->
+				<item id="-200" min="200" max="600" chance="50" /> <!-- Clan Reputation -->
+			</category>
+		</rewards>
+		<params>
+			<!-- Formula: KillStaticCount + (KillsAddonCount * getRandom(KillsAddonMinCount, KillsAddonMaxCount) -->
+			<param name="KillStaticCount" val="40" />
+			<param name="KillAddonCount" val="10" />
+			<param name="KillAddonMinCount" val="1" />
+			<param name="KillAddonMaxCount" val="3" />
+		</params>
+	</quest>
+	<quest name="PKHunterDailyQuest">
+		<display name="PK Hunter Quest" description="You must kill 5-10 players with karma (Any class)" enabled="true" />
+		<levels min="70" max="86" />
+		<rewards>
+			<category chance="100">
+				<item id="6622" min="1" max="5" chance="35" /> <!-- Giant's Codex -->
+				<item id="9627" min="1" max="3" chance="35" /> <!-- Giant's Codex - Mastery -->
+				<item id="959" min="1" max="3" chance="10" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+				<item id="960" min="1" max="3" chance="10" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+				<item id="6577" min="1" max="1" chance="5" /> <!-- Blessed Scroll: Enchant Weapon (S-Grade) -->
+				<item id="6578" min="1" max="1" chance="5" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
+			</category>
+			<category chance="100">
+				<item id="9552" min="1" max="3" chance="16.66" /> <!-- Fire Crystal -->
+				<item id="9553" min="1" max="3" chance="16.66" /> <!-- Water Crystal -->
+				<item id="9554" min="1" max="3" chance="16.66" /> <!-- Earth Crystal -->
+				<item id="9555" min="1" max="3" chance="16.66" /> <!-- Wind Crystal -->
+				<item id="9556" min="1" max="3" chance="16.66" /> <!-- Dark Crystal -->
+				<item id="9557" min="1" max="3" chance="16.66" /> <!-- Holy Crystal -->
+			</category>
+		</rewards>
+		<params>
+			<!-- Formula: KillStaticCount + (KillAddonCount * getRandom(KillAddonMinCount, KillAddonMaxCount) -->
+			<param name="KillStaticCount" val="5" />
+			<param name="KillAddonCount" val="1" />
+			<param name="KillAddonMinCount" val="0" />
+			<param name="KillAddonMaxCount" val="5" />
+		</params>
+	</quest>
+	<quest name="EnchantingDailyQuest">
+		<display name="Enchanting Daily Quest" description="You must enchant 5-10 S-Grade items" enabled="true" />
+		<levels min="76" max="86" />
+		<rewards>
+			<category chance="100">
+				<item id="959" min="5" max="10" chance="50" /> <!-- Scroll: Enchant Weapon (S-Grade) -->
+				<item id="960" min="5" max="15" chance="50" /> <!-- Scroll: Enchant Armor (S-Grade) -->
+			</category>
+			<category chance="100">
+				<item id="6577" min="1" max="2" chance="45" /> <!-- Blessed Scroll: Enchant Weapon (S-Grade) -->
+				<item id="6578" min="1" max="3" chance="45" /> <!-- Blessed Scroll: Enchant Armor (S-Grade) -->
+			</category>
+		</rewards>
+		<params>
+			<!-- Formula: KillStaticCount + (KillAddonCount * getRandom(KillAddonMinCount, KillAddonMaxCount) -->
+			<param name="KillStaticCount" val="5" />
+			<param name="KillAddonCount" val="1" />
+			<param name="KillAddonMinCount" val="0" />
+			<param name="KillAddonMaxCount" val="5" />
+
+			<param name="ArmorMinEnchant" val="5" />
+			<param name="WeaponMinEnchant" val="7" />
+		</params>
+	</quest>
+</list>
