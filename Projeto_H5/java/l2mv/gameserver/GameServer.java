@@ -278,10 +278,10 @@ public class GameServer
 //		}
 
 		// Initialize database
-		_log.info("IP Externo" + Config.EXTERNAL_HOSTNAME);
-		_log.info("IP Interno" + Config.INTERNAL_HOSTNAME);
-		_log.info("Maximo Online IP " + Config.MAXIMUM_ONLINE_USERS);
-		_log.info("Hora do Restart " + Config.RESTART_AT_TIME, Shutdown.ShutdownMode.RESTART);
+		_log.info("IP EXTERNO =============================" + Config.EXTERNAL_HOSTNAME);
+		_log.info("IP INTERNO =============================" + Config.INTERNAL_HOSTNAME);
+		_log.info("Maximo Online IP ====================== " + Config.MAXIMUM_ONLINE_USERS);
+		_log.info("Hora do Restart  =======================" + Config.RESTART_AT_TIME, Shutdown.ShutdownMode.RESTART);
 
 		Class.forName(Config.DATABASE_DRIVER).getDeclaredConstructor().newInstance();
 		DatabaseFactory.getInstance().getConnection().close();
