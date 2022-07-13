@@ -239,7 +239,8 @@
 	
 	<target name="dist" depends="loginserver, gameserver, scripts" description="Create the Zip file.">
 		<delete file="${lib}/gameserver.jar" />
+		<delete file="${lib}/loginserver.jar" />
 		<delete file="${lib}/commons.jar" />
-		<zip destfile="${build}/LII - Multverso-H5.zip" basedir="${build.dist}" level="9" />
+		<delete file="${lib}/scripts.jar" />
 	</target>
 </project>
