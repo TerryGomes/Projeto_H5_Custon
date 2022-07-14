@@ -90,6 +90,6 @@ cls
 echo ======================================================================
 echo #                         Thank you for using                        #
 echo #                          our product FandC                         #
-echo #                      Visit us on : www.fandc.ro                    #
+echo #                      Visit us on : www.l2multverso.com.br                  #
 echo ======================================================================
 pause > nul

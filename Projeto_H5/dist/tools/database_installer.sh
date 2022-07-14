@@ -356,14 +356,14 @@ finish(){
 clear
 echo "Script execution finished."
 echo ""
-echo "(C) 2012-2016 FandC Java Development"
+echo "(C) 2012-2022 MultVerso Java Development Base FandC"
 echo "database_installer comes with ABSOLUTELY NO WARRANTY;"
 echo "This is free software, and you are welcome to redistribute it"
 echo "under certain conditions; See the file gpl.txt for further"
 echo "details."
 echo ""
 echo "Thanks for using our source code."
-echo "visit http://www.fandc.ro for more info about"
+echo "visit http://www.l2mulverso.com.br for more info about"
 echo "our project."
 exit 0
 }
