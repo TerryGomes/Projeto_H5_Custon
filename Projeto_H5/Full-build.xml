@@ -6,7 +6,7 @@
 	<property name="src.gameserver" location="java/l2mv/gameserver" />
 	<property name="src.loginserver" location="java/l2mv/loginserver" />
 	<property name="src.commons" location="java/l2mv/commons" />
-	<property name="src.scripts" location="dist/gameserver/data/scripts" />
+	<property name="src.scripts" location="scripts/scripts" />
 	
 	<property name="datapack" location="dist" />
 	<property name="dist" location="dist" />
@@ -124,12 +124,7 @@
 				<include name="**/*.*" />
 			</fileset>
 		</copy>
-		<copy todir="${build.dist.gameserver}/data" preservelastmodified="true">
-			<fileset dir="${datapack}">
-				<include name="**/*.*" />
-				<exclude name="/scripts/**/*" />
-			</fileset>
-		</copy>
+
 		<copy todir="${build.dist.tools}" preservelastmodified="true">
 			<fileset dir="${dist}/tools">
 				<include name="**/*.*" />
