@@ -1,0 +1,25 @@
+<html noscrollbar><head>
+<body>
+	<center>
+		<font name=hs12>Community Services</font>
+		<br>
+		<img src=L2UI.SquareGray width=250 height=1>
+		<br>
+		<font name=hs12 color=AE9977>Transfer Weapon to Another Character</font>
+		<br1>
+		<br>
+		<img src=L2UI.SquareGray width=250 height=1>
+		<img src=%icon% width=32 height=32>
+		<br>
+		<font color=LEVEL>%weaponName%</font>
+		<br>
+		Input the character's name that you want to transfer to weapon to
+		<br>
+		<edit var="charName" width=100 height=15>
+		<br>
+		<button value="Transfer!" action="bypass -h scripts_services.TransferWeapon:transferWeapon %weaponId% $charName" width=40 height=21 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF>
+		<button value="Go Back" action="bypass -h scripts_services.TransferWeapon:list" width=40 height=21 back=L2UI_CT1.Button_DF_Down fore=L2UI_CT1.Button_DF>
+		<br>
+	</center>
+</body>
+</html>

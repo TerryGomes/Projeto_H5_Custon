@@ -1,0 +1,100 @@
+<html noscrollbar>
+<title>Soul Cloak transfer</title>
+<body>
+	<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+		<tr>
+			<td valign="top">
+				<table width=280 align="center">
+					<tr>
+						<td valign="top" align="center">
+							<table width=270 height=35>
+								<tr>
+									<td width=270 height=50 align=center valign=top>
+										<center>
+										<table border=0 width=277 height=97 cellspacing=1 cellpadding=0 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+											<tr>
+												<td valign=top align=center>
+													<table width=277 height=24 cellspacing=1 cellpadding=1 bgcolor=111111>
+														<tr>
+															<td width=281 align=center valign=center>
+																<font color=FF6600>Character name to send Soul Cloak</font>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td valign=top align=center>
+													<table width=281 height=76 cellspacing=1 cellpadding=1 bgcolor=444444>
+														<tr>
+															<td valign="top" align="center" width=90>
+																<table border=0 width=270>
+																	<tr>
+																		<td valign="center" align="right" width="30" height="24">
+																			<table cellspacing="1" cellpadding="1" width="16">
+																				<tr>
+																					<td width="20" height="16">
+																						<img src="l2ui_ch3.shortcut_joypad2_down" width="16" height="16"/>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																		<td valign="center" align="center" width="20">
+																			<font color=CC3333>Attention:</font> Receiver must be online!
+																		</td>
+																		<td valign="center" align="left" width="30" height="24">
+																			<table cellspacing="1" cellpadding="1" width="16">
+																				<tr>
+																					<td width="20" height="16">
+																						<img src="l2ui_ch3.shortcut_joypad2_down" width="16" height="16"/>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<table border=0 width=270>
+																	<tr>
+																		<td valign="top" align="right" width="20">
+																			<table cellspacing="1" cellpadding="1" width="1">
+																				<tr>
+																					<td width="20" height="22">
+																						<img src="l2ui_ch3.shortcut_minimizev_down" width="16" height="16"/>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																		<td valign="top" align="center" width="200" height=1>
+																			<edit var="name" width="200" height="12" length="25">
+																		</td>
+																		<td valign="top" align="left" width="20">
+																			<table cellspacing="1" cellpadding="1" width="1">
+																				<tr>
+																					<td width="20" height="18">
+																						<img src="l2ui_ch3.shortcut_expandv_down" width="16" height="16"/>
+																					</td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+																<button value="SEND" action="bypass -h scripts_services.Donations:cloak_send $name" width=64 height=22 back="l2ui_ch3.chatting_tab1" fore="l2ui_ch3.chatting_tab2">
+															</td>
+														</tr>
+													</table>
+
+												</td>
+											</tr>
+										</table><br><font color=FFCC00>Total cost:</font> %price%											
+										</center>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

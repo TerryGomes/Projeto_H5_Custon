@@ -1,0 +1,126 @@
+<html noscrollbar>
+<title>Exchange items</title>
+<body>
+	<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+		<tr>
+			<td valign="top">
+				<table width=280 align="center">
+					<tr>
+						<td valign="top" align="center">
+							<table width=270 height=35>
+								<tr>
+									<td width=270 height=50 align=center valign=top>
+										<center>
+										<table border=0 width=277 height=56 cellspacing=1 cellpadding=0 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+											<tr>
+												<td valign=top align=center>
+													<table width=277 height=22 cellspacing=1 cellpadding=1 bgcolor=111111>
+														<tr>
+															<td width=281 align=center valign=center>
+																<font color=FF6600>You give</font>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td valign=top align=center>
+													<table width=281 height=36 cellspacing=1 cellpadding=1 bgcolor=666666>
+														<tr>
+															<td FIXWIDTH=40 align=center valign=top>
+																<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="%my_icon%">
+																	<tr>
+																		<td width=32 align=center valign=top>
+																			<img src="L2UI.item_click" width="34" height="34">
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td FIXWIDTH=170 align=left valign=center>
+																<font color="99CC33">%my_name%</font>
+																<br1>› *Enchant:* %my_ench%
+															</td>
+															<td valign="top" align="center">
+																<button value="CHANGE" action="bypass -h scripts_services.Exchanger:change_page 1" width=48 height=32 back="L2UI_CT1.ListCTRL_DF_Title_Down" fore="L2UI_CT1.ListCTRL_DF_Title">
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table><br>
+										<table border=0 width=277 height=56 cellspacing=1 cellpadding=0 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+											<tr>
+												<td valign=top align=center>
+													<table width=277 height=22 cellspacing=1 cellpadding=1 bgcolor=111111>
+														<tr>
+															<td width=281 align=center valign=center>
+																<font color=FF6600>You take</font>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td valign=top align=center>
+													<table width=281 height=36 cellspacing=1 cellpadding=1 bgcolor=666666>
+														<tr>
+															<td FIXWIDTH=40 align=center valign=top>
+																<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="%new_icon%">
+																	<tr>
+																		<td width=32 align=center valign=top>
+																			<img src="L2UI.item_click" width="34" height="34">
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td FIXWIDTH=170 align=left valign=center>
+																<font color="99CC33">%new_name%</font>
+																<br1>› *Enchant:* %my_ench%
+															</td>
+															<td valign="top" align="center">
+																<button value="OTHER" action="bypass -h scripts_services.Exchanger:change_list %new_id% %is_upgrade%" width=48 height=32 back="L2UI_CT1.ListCTRL_DF_Title_Down" fore="L2UI_CT1.ListCTRL_DF_Title">
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table><br>
+										%att_info%<br>
+										<table border=0 width=277 height=24 cellspacing=1 cellpadding=0 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+											<tr>
+												<td valign=top align=center>
+													<table width=278 height=22 cellspacing=1 cellpadding=1 bgcolor=111111>
+														<tr>
+															<td width=281 align=center valign=center>
+																<font color=4ACACC>Exchange cost:</font> %cost%
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										<table width=290 height=35>
+											<tr>
+												<td width=94 height=30 align=center valign=top>
+													<table width=90 height=28 background="l2ui_ct1.Windows_DF_TooltipBG">
+														<tr>
+															<td width=88 height=26 align=center valign=top>
+																<button value="EXCHANGE" action="bypass -h scripts_services.Exchanger:exchange %is_upgrade%" width=86 height=24 back="L2UI_CT1.ListCTRL_DF_Title_Down" fore="L2UI_CT1.ListCTRL_DF_Title">
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+										</center>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<html noscrollbar>
+<body>
+<title>Admin Panel</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td align=center>
+		<br>
+			<table cellpadding=0 border=0  cellspacing=-5 width=280>
+				<tr>
+					<td><button value="Main" action="bypass -h admin_admin" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Events" action="bypass -h admin_show_html events/events.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Chars" action="bypass -h admin_char_manage" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Server" action="bypass -h admin_server admserver.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="GM Shop" action="bypass -h admin_gmshop" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+		<br><br>
+			<table cellpadding=0 cellspacing=-5 width=280>
+				<tr>
+					<td><button value="Character list" action="bypass -h admin_show_characters 0" width=95 height=23 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td><button value="Clan Manager" action="bypass -h admin_show_html pledgemanage.htm" width=95 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Ban menu" action="bypass -h admin_show_html banmenu.htm" width=95 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+		<br><br>
+			<table width=280>
+				<tr>
+					<td>Value:</td><td><edit var="value" width=165 height=10></td>
+				</tr>
+			</table>
+		<br><br>
+			<table cellpadding=0 cellspacing=-4 width=280>
+				<tr>
+					<td><button value="LvL"  action="bypass -h admin_setlevel $value" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Rec"  action="bypass -h admin_rec $value" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Sex"  action="bypass -h admin_setsex $value" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Title"  action="bypass -h admin_settitle $value" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Name"  action="bypass -h admin_setname $value" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				<tr>
+					<td><button value="Color"  action="bypass -h admin_setcolor $value" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Hero"  action="bypass -h admin_sethero" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Noble"  action="bypass -h admin_setnoble" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Add Fame" action="bypass -h admin_addfame $value" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="No Karma" action="bypass -h admin_nokarma" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				<tr>
+					<td><button value="Oly Pts" action="bypass -h admin_add_oly_points $value" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Transform" action="bypass -h admin_show_html transform.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Class" action="bypass -h admin_show_html setclass.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="SubClass" action="bypass -h admin_show_html charsubclasses.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Repair" action="bypass -h admin_restore $qbox" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+		<br>
+			<table width=280>
+				<tr>
+					<td align=center>
+						<font color="LEVEL">Jail & Chat Ban Options:</font>
+					</td>
+				</tr>
+			</table>
+		<br1>
+			<table width=280>
+				<tr>
+					<td width=280>
+						<table width=280>
+							<tr>
+								<td align=left width=55>CharName:</td>
+								<td align=center>For Jail or Chat ban <edit var="char" width=200 height=10></td>
+							</tr>
+						</table>
+						<table cellpadding=0 width=280>
+							<tr>
+								<td align=left width=55>Time:</td>
+								<td align=center>For Jail <edit var="time" width=100 type=number height=10></td>
+								<td align=center>For ChatBan <edit var="time1" width=100 type=number height=10></td>
+							</tr>
+						</table>
+						<table width=280>
+							<tr>
+								<td align=left width=55>Reason:</td>
+								<td align=center>For Jail or Chat ban <edit var="reason" width=200 height=10></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		<br>
+			<table width=280>
+				<tr>
+					<td><button value="Jail" action="bypass -h admin_jail $char $time $reason" width=140 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Jail Out" action="bypass -h admin_unjail $char" width=140 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				<tr>
+					<td><button value="Ban chat"  action="bypass -h admin_chatban $char $time1 $reason" width=140 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td><button value="Unban chat" action="bypass -h admin_chatunban $char" width=140 height=20 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<br>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

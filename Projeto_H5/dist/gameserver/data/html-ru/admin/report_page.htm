@@ -1,0 +1,55 @@
+<html noscrollbar>
+<title>Checking ticket #%ticket%</title><body>
+<table width=290>
+<tr>
+	<td width=40><button value="Main" action="bypass -h admin_admin" width=40 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+	<td width=180><center><font name=hs12>Ticket #%ticket%</font></center></td>
+	<td width=40><button value="Back" action="bypass -h admin_checkbots" width=40 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+</tr>
+</table>
+<br>
+<img src="L2UI.SquareWhite" width=290 height=1>
+<br>
+<center>
+<table width=290 cellpadding=0>
+<tr>
+<td>»Reported: %reported%</td>
+<td>»Times: <font name=hs9>%reportedTimes%</font></td>
+</tr>
+<tr>
+<td>»Reporter: <font name=hs9>%reporter%</font></td>
+<td>»Captcha Fail: <font name=hs9>%captchaFails%</font></td>
+</tr>
+<tr>
+<td>»Date: <font name=hs9>%date%</font></td>
+</tr>
+</table>
+<img src="L2UI.SquareWhite" width=290 height=1>
+<table width=290 cellpadding=0>
+<tr>
+<td>»Type: <font name=hs9>%type%</font></td>
+</tr>
+<tr>
+<td valign=top height=95>»Info: <font name=hs9>%info%</font></td>
+</tr>
+</table>
+<img src="L2UI.SquareWhite" width=290 height=1>
+<table width=290 cellpadding=0>
+<tr>
+<td align="center"><a action="bypass -h admin_markbotreaded %ticket%">Mark Report as Read</a></td>
+</tr>
+<tr>
+<td align="center" height=45>Punishment: <combobox width=100 var="typeofreason" list="CHATBAN;BANCHAR;BANACC;KICK"></td>
+</tr>
+<tr>
+<td align="center" height=45>Time: <edit var=\"time\" type=number width=100></td>
+</tr>
+<tr>
+<td align="center"><button value="Punish %reportedplayer%" action="bypass -h admin_punish_bot %reportedplayer% $typeofreason $time" width=170 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+<tr>
+<td align="center"><button value="Report List"  action="bypass -h admin_checkbots" width=100 height=20 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+</tr>
+</table>
+</center>
+</body></html>

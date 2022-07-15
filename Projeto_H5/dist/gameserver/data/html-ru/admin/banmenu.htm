@@ -1,0 +1,61 @@
+﻿<html noscrollbar>
+	<title>Character Manage</title>
+<body>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=340>
+	<tr>
+		<td align=center>
+		<br>
+			<table cellpadding=0 cellspacing=-5 width=260>
+				<tr>
+					<td><button value="Main" action="bypass -h admin_admin" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Events" action="bypass -h admin_show_html events/events.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Chars" action="bypass -h admin_char_manage" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Server" action="bypass -h admin_server admserver.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="GM Shop" action="bypass -h admin_gmshop" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+		<br><br>
+			<table width=260>
+				<tr>
+					<td><font color="LEVEL">Character name:</font></td><td><edit var="name" width=90></td>
+				</tr>
+				<tr>
+					<td><font color="LEVEL">Time/Karma:</font></td><td><edit var="time" width=90></td>
+				</tr>
+				<tr>
+					<td><font color="LEVEL">Reason:</font></td><td><edit var="reason" width=90></td>
+				</tr>
+			</table>
+			<br>
+			<table width=290>
+				<tr>
+					<td align=center><button value="Unban"  action="bypass -h admin_unban $name" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button value="Ban"  action="bypass -h admin_ban $name $time $reason" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button value="Karma"  action="bypass -h admin_setkarma $name" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				<tr>
+					<td align=center><button value="Kick" action="bypass -h admin_kick $name" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button value="Go to" action="bypass -h admin_goto $name" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button value="Kill" action="bypass -h admin_kill $name" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				<tr>
+					<td align=center><button value="AccBan" action="bypass -h admin_acc_ban $name" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button value="AccUnBan" action="bypass -h admin_acc_unban $name" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button value="IpBan" action="bypass -h admin_banip $name" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				<tr>	
+					<td align=center><button value="Ipchar" action="bypass -h admin_char $name" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button value="Recall" action="bypass -h admin_recall $name" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				
+				</tr>
+				<tr>
+					<td align=center><button value="Unban" action="bypass -h admin_unban $name" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button value="Trade Ban" action="bypass -h admin_trade_ban $name" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button value="Trade Unb" action="bypass -h admin_trade_unban $name" width=70 height=15 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<html noscrollbar>
+<title>Donate</title>
+<body>
+	<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+		<tr>
+			<td valign="top">
+				<table width=280 align="center">
+					<tr>
+						<td valign="top" align="center">
+							<table width=270 height=35>
+								<tr>
+									<td width=270 height=50 align=center valign=top>
+										<table border=0 width=277 height=56 cellspacing=1 cellpadding=0 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+											<tr>
+												<td valign=top align=center>
+													<table width=277 height=22 cellspacing=1 cellpadding=1 bgcolor=111111>
+														<tr>
+															<td width=281 align=center valign=center>
+																<font color=FFCC00>Your choice</font>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td valign=top align=center>
+													<table width=281 height=36 cellspacing=1 cellpadding=1 bgcolor=666666>
+														<tr>
+															<td FIXWIDTH=40 align=center valign=top>
+																<table border=0 cellspacing=0 cellpadding=0 width=32 height=32 background="%icon%">
+																	<tr>
+																		<td width=32 align=center valign=top>
+																			<img src="L2UI.PETITEM_CLICK" width="32" height="32">
+																		</td>
+																	</tr>
+																</table>
+															</td>
+															<td FIXWIDTH=220 align=left valign=center>
+																<font color="99CC33">%name%</font>
+																<br1>› %cost%
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table><br>
+										<center>
+											%content%
+										</center><br>
+										<center>
+											<font color=FFCC00>Total cost:</font> %total%
+										</center><br>
+										<table width=270 height=35>
+											<tr>
+												<td width=94 height=30 align=center valign=top>
+													<table width=90 height=28 background="l2ui_ct1.Windows_DF_TooltipBG">
+														<tr>
+															<td width=88 height=26 align=center valign=top>
+																<button value="BUY" action="bypass -h scripts_services.Donations:buy %id%" width=86 height=24 back="L2UI_CT1.ListCTRL_DF_Title_Down" fore="L2UI_CT1.ListCTRL_DF_Title">
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td width=94 height=30 align=center valign=top>
+													<table width=90 height=28 background="l2ui_ct1.Windows_DF_TooltipBG">
+														<tr>
+															<td width=88 height=26 align=center valign=top>
+																<button value="BACK" action="bypass -h scripts_services.Donations:list %group%" width=86 height=24 back="L2UI_CT1.ListCTRL_DF_Title_Down" fore="L2UI_CT1.ListCTRL_DF_Title">
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

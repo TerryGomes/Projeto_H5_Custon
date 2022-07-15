@@ -1,0 +1,41 @@
+<html><head><title>Item Info</title></head>
+<body>
+<br>
+<img src="l2ui.squaregray" width="300" height="1">
+<table width=300 height=20 bgcolor=000000>
+        <tr>
+                <td>
+                        <center>
+                        <font color=ac6c34>%name%</font>
+                        </center>
+                </td>
+        </tr>
+</table>
+<img src="l2ui.squaregray" width="300" height="1">
+<table width=300 height=60>
+        <tr>
+                <td height=32 width=50>
+                        %icon%
+                </td>
+                <td height=32 width=300>
+                        <font color=2d9298>%name%</font><br1>
+                        <font color=565857>Type:</font> %itemType%
+                </td>
+        </tr>
+</table>
+<center><font color=62587e>Choose Min Bid</font>
+<img src="l2ui.squaregray" width="300" height="1"><br>
+<font color=979b29>5% of min bid, will be collected from your    inventory when auction is created.</font><br>
+<edit var="bid" width=150 length=11>
+ 
+<font color=4b7d9a>Choose auction duration</font>
+<img src="l2ui.squaregray" width="300" height="1">
+<font color=979b29>How many minutes, auction has to be listed   (cannot be more than 1 week - 10080)</font><br>
+<edit var="dur" width=150 length=10>
+<br>
+ 
+<center><font color=913b3b>Do you want to start auction?</font>
+<img src="l2ui.squaregray" width="300" height="1"><br>
+<button value="Start" action="bypass _createAuction_%itemObjId%_ $bid _ $dur" width=80 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+</body>
+</html>

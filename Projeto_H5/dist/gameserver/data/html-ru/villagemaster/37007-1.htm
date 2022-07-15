@@ -1,0 +1,30 @@
+<html>
+<body>
+	<title>Clan and Alliance Services</title>
+<br>
+<center>
+<font color="LEVEL">Alliance Manager</font>
+<img src=L2UI_CT1.Button_DF.Icon_DF_MenuWnd_Clan_Over width=34 height=40>
+<img src="L2UI_CH3.onscrmsg_pattern01_1" width=300 height=32>
+<button value="Enter the name of Alliance" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind">
+<table>
+	<tr>
+		<td><edit var="name" width=117  height=18></td>
+		<td><button value="Create Alliance" action="bypass -h npc_%objectId%_create_ally $name" width=130 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind_bg"></td>
+	</tr>
+</table>
+<br>
+<img src="L2UI.SquareGray" width=250 height=1><br>
+<button value="Dissolve Alliance" action="bypass -h npc_%objectId%_dissolve_ally" width=255 height=27 back="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind" fore="L2UI_CT1.Button_DF.Gauge_DF_Attribute_Wind_bg">
+<br>
+<img src="L2UI_CH3.onscrmsg_pattern01_2" width=300 height=32>
+<table>
+	<tr>
+		<td><img src="L2UI_CH3.shortcut_prev_over" width=16 height=16></td>
+		<td><button value="Back" action="bypass -h npc_%objectId%_Chat 0" width=80 height=27 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+	</tr>
+</table>
+</center>
+<br>
+</body>
+</html>

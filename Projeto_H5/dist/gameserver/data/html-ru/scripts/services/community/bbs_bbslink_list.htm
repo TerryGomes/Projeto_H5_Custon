@@ -1,0 +1,86 @@
+<html>
+<head><title>Boss Status</title></head>
+<body>
+<table width=760 border=0 cellpadding=0 cellspacing=0>
+			<tr>
+				<td>
+					<table width=350>
+						<tr>
+							<td>
+								<img src="L2UI.MainSkill_large" width=32 height=32>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<td>
+											<font color=8f3d3f>Boss Status</font>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<font color=327b39>Informations about bosses, updated every minute</font>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<td width=100>
+								<button value="Refresh" action="bypass _bbsmemo_%sort%_%page%_%search%" width=100 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_ct1.Button_DF">
+							</td>
+							<td>
+								<table width=310 height=30>
+									<tr>
+										<td width=100 height=30>
+											<font name="hs12" color=8f3d3f>Boss Name:</font>
+										</td>
+										<td width=100 height=30>
+											<edit var="search" width=100 height=12>
+										</td>
+										<td width=110>
+											<button value="Search" action="bypass _bbslink_%sort%_0_ $search" width=100 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_ct1.Button_DF">
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+</table>
+<br><br>
+		<img src="L2UI_CT1.Gauge_DF_CP_Center" width=755 height=2>
+		<table border=0 cellpadding=0 cellspacing=0>
+			<tr>
+				<td>
+					<table width=760 border=0 cellpadding=0 cellspacing=0>
+						<tr>
+							<td>
+								<button value="Raid Boss Name" action="bypass _bbslink_%sort1%_0_%search%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=285 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+							</td>
+							<td>
+								<button value="Level" action="bypass _bbslink_%sort2%_0_%search%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=70 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+							</td>
+							<td>
+								<button value="Status" action="bypass _bbslink_%sort4%_0_%search%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=85 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+							</td>
+							<td>
+								<button value="Date of Death" action="bypass _bbslink_%sort5%_0_%search%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=170 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+							</td>
+							<td>
+								<button value="Last Killer" action="bypass _bbslink_%sort6%_0_%search%" back="L2UI_CT1.ListCTRL_DF_Title_Down" width=150 height=20 fore="L2UI_CT1.ListCTRL_DF_Title">
+							</td>
+						</tr>
+					</table>
+					%bosses%
+				</td>
+			</tr>
+		</table>
+<br><br>
+</body>
+</body>
+</html>

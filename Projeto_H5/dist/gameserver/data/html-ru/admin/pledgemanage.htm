@@ -1,0 +1,52 @@
+<html noscrollbar>
+<body>
+<title>Clans Manager</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td align=center>
+		<br>
+			<table cellpadding=0 cellspacing=-5 width=260>
+				<tr>
+					<td><button value="Main" action="bypass -h admin_admin" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Events" action="bypass -h admin_show_html events/events.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Chars" action="bypass -h admin_char_manage" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Server" action="bypass -h admin_server admserver.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="GM Shop" action="bypass -h admin_gmshop" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<br><br>
+			<table width=270>
+				<tr>
+					<td align=center><font name=hs12 color="LEVEL">Clans Manager</font></td>
+				</tr>
+			</table>
+			<table width=270>
+				<tr>
+					<td><center>Command or Character Name: <edit var="command" width=150 height=11></center></td>
+				</tr>
+			</table>
+			<br><br>
+			<table width=270>
+				<tr>
+					<td>
+						<button value="Create clan (arg:name|target:leader)" action="bypass -h admin_pledge create $command" width=270 height=23 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Set level (arg:level|target:any member)" action="bypass -h admin_pledge setlevel $command" width=270 height=23 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Set leader (arg:name|target:any member)" action="bypass -h admin_pledge setleader $command" width=270 height=23 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Reset creation penalty (target:any member)" action="bypass -h admin_pledge resetcreate" width=270 height=23 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Reset leaving penalty (target:anyone)" action="bypass -h admin_pledge resetwait" width=270 height=23 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Give Clan Points (target:anyone)" action="bypass -h admin_pledge addrep $command" width=270 height=23 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						<button value="Show Clan Warehouse" action="bypass -h admin_show_cwh $command" width=270 height=23 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button value="Reset ally penalty (target:anyone)" action="bypass -h admin_pledge resetally" width=270 height=23 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</center>
+</body>
+</html>

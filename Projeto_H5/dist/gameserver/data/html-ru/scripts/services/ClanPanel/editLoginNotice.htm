@@ -1,0 +1,43 @@
+<html>
+<head>
+<body scroll="no">
+<title>Edit a Login Notice of Clan Members</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td valign="top">
+			<table width=290 height=330>
+					<tr>
+						<td valign="top" align="center">
+							<br><font color="FFFF00">Fill in the Notice</font>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" align="center" height=270>
+							<table border=0 width=260>
+								<tr>
+									<td width=260 align=center valign=top height=210>
+										<multiedit var="textarea" width=260 height=200>
+									</td>
+								</tr>
+							</table>
+							<table border=0 width=260>
+								<tr>
+									<td fixwidth=260 align=left valign=top>
+										*Info:* <font name="CREDITTEXTNORMAL"> Put most importat news. <br1>
+										Your clan members will read it!</font>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" align="center">
+							<button action="bypass -h scripts_services.ClanPanel:doEditLoginNotice $textarea" value="Save Login Notice" width=220 height=31 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF">
+						</td>
+					</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
