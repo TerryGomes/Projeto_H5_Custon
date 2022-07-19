@@ -4387,7 +4387,8 @@ public final class Player extends Playable implements PlayerGroup
 		if (AntiFeedManager.getInstance().check(killer, this))
 		{
 			killer.setPvpKills(killer.getPvpKills() + 1);
-
+			killer.sendPacket(new ExShowScreenMessage(("*Você*  Matou  => ") + getPlayer().getName(), 3000, ScreenMessageAlign.BOTTOM_RIGHT, true));
+			sendPacket(new ExShowScreenMessage((killer.getPlayer().getName()) + " Matou  =>  *Você*", 3000, ScreenMessageAlign.BOTTOM_RIGHT, true));
 			getRPSCookie().runPvpTask(killer, this);
 		}
 	}
@@ -4440,6 +4441,8 @@ public final class Player extends Playable implements PlayerGroup
 		{
 			return;
 		}
+		killer.sendPacket(new ExShowScreenMessage(("*Você*  Matou  => ") + getPlayer().getName(), 3000, ScreenMessageAlign.BOTTOM_RIGHT, true));
+		sendPacket(new ExShowScreenMessage((killer.getPlayer().getName()) + " Matou  =>  *Você*", 3000, ScreenMessageAlign.BOTTOM_RIGHT, true));
 
 		if (isInFightClub() || killer.isPlayable() && killer.getPlayer().isInFightClub())
 		{
@@ -4551,7 +4554,6 @@ public final class Player extends Playable implements PlayerGroup
 				if (AntiFeedManager.getInstance().check(killer, this))
 				{
 					pk.setPvpKills(pk.getPvpKills() + 1);
-
 					// Synerge - Killing Spree System
 					addKillingSpreeKill();
 
@@ -14725,7 +14727,7 @@ public final class Player extends Playable implements PlayerGroup
 		_killingSpreeKills++;
 
 		// Send the current killing spree
-		sendPacket(new ExShowScreenMessage("+" + _killingSpreeKills + " PvPs", 6000, ScreenMessageAlign.MIDDLE_RIGHT, false));
+		sendPacket(new ExShowScreenMessage("+" + _killingSpreeKills + " PvPs", 6000, ScreenMessageAlign.BOTTOM_RIGHT, false));
 
 		// Change color on breakpoint
 		if (Config.KILLING_SPREE_COLORS.containsKey(_killingSpreeKills))
