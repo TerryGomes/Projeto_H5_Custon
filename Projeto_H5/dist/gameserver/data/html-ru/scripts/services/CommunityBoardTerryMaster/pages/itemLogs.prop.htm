@@ -1,0 +1,114 @@
+page_max_height
+{
+	300
+}
+
+table
+{
+	<table border=0 width=350 cellspacing=4 cellpadding=3 background="l2ui_ct1.ComboBox_DF_Dropmenu_Bg">
+		<tr>
+			<td width=260 align=left valign=top>
+				%header%
+				%items%
+				<table width=300 height=5>
+					<tr>
+						<td>
+							<br>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<br>
+}
+
+table_height
+{
+	5
+}
+
+header
+{
+	<table width=355 height=25 bgcolor=0e0d0d>
+		<tr>
+			<td width=355 align=center valign=center>
+				<font name="hs12" color="FF6600">%actionType%</font><br1>
+			</td>
+		</tr>
+	</table>
+}
+
+header_height
+{
+	25
+}
+
+item
+{
+	<table width=350 height=42 bgcolor=%itemTableColor%>
+		<tr>
+			<td width=35 height=42>
+				<img src="%icon%" width=32 height=32>
+			</td>
+			<td width=315 height=32 align=left valign=center>
+				<table width=310 height=32 border=0 cellpadding=0 cellspacing=0>
+					<tr>
+						<td width=310>
+							<font name="hs12" color="cfcd13">%itemName%</font>
+						</td>
+					</tr>
+					<tr>
+						<td width=310>
+							<table width=310 border=0 cellpadding=0 cellspacing=0>
+								<tr>
+									<td>
+										<font color="99CC33">Time:</font> <font color="CCFF99">%time%</font>
+									</td>
+									<td>
+										<font color="99CC33">Receiver:</font> <font color="%receiverColor%">%receiverName%</font>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>	
+			</td>
+		</tr>
+	</table>
+}
+
+item_height
+{
+	30
+}
+
+item_table_color_0
+{
+	666666
+}
+
+item_table_color_1
+{
+	333333
+}
+
+receiver_color_owner
+{
+	6cd526
+}
+
+receiver_color_alien
+{
+	f12929
+}
+
+PreviousBtn
+{
+	<button action="bypass -h user_itemlogs %page%" width=50 height=20 back="L2UI_CT1.Inventory_DF_Btn_RotateRight_Down" fore="L2UI_CT1.Inventory_DF_Btn_RotateRight"/>
+}
+
+NextBtn
+{
+	<button action="bypass -h user_itemlogs %page%" width=50 height=20 back="L2UI_CT1.Inventory_DF_Btn_RotateLeft_Down" fore="L2UI_CT1.Inventory_DF_Btn_RotateLeft"/>
+}
