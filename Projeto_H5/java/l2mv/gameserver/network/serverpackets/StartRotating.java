@@ -8,19 +8,19 @@ public class StartRotating extends L2GameServerPacket
 
 	public StartRotating(Creature cha, int degree, int side, int speed)
 	{
-		_charId = cha.getObjectId();
-		_degree = degree;
-		_side = side;
-		_speed = speed;
+		this._charId = cha.getObjectId();
+		this._degree = degree;
+		this._side = side;
+		this._speed = speed;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x7a);
-		writeD(_charId);
-		writeD(_degree);
-		writeD(_side);
-		writeD(_speed);
+		this.writeC(0x7a);
+		this.writeD(this._charId);
+		this.writeD(this._degree);
+		this.writeD(this._side);
+		this.writeD(this._speed);
 	}
 }

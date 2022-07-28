@@ -13,45 +13,45 @@ public class CharMoveToLocation extends L2GameServerPacket
 
 	public CharMoveToLocation(Creature cha)
 	{
-		_objectId = cha.getObjectId();
-		_current = cha.getLoc();
-		_destination = cha.getDestination();
+		this._objectId = cha.getObjectId();
+		this._current = cha.getLoc();
+		this._destination = cha.getDestination();
 		if (!cha.isFlying())
 		{
-			_client_z_shift = Config.CLIENT_Z_SHIFT;
+			this._client_z_shift = Config.CLIENT_Z_SHIFT;
 		}
 		if (cha.isInWater())
 		{
-			_client_z_shift += Config.CLIENT_Z_SHIFT;
+			this._client_z_shift += Config.CLIENT_Z_SHIFT;
 		}
 
-		if (_destination == null)
+		if (this._destination == null)
 		{
-			Log.debug("CharMoveToLocation: desc is null, but moving. L2Character: " + cha.getObjectId() + ":" + cha.getName() + "; Loc: " + _current);
-			_destination = _current;
+			Log.debug("CharMoveToLocation: desc is null, but moving. L2Character: " + cha.getObjectId() + ":" + cha.getName() + "; Loc: " + this._current);
+			this._destination = this._current;
 		}
 	}
 
 	public CharMoveToLocation(int objectId, Location from, Location to)
 	{
-		_objectId = objectId;
-		_current = from;
-		_destination = to;
+		this._objectId = objectId;
+		this._current = from;
+		this._destination = to;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x2f);
+		this.writeC(0x2f);
 
-		writeD(_objectId);
+		this.writeD(this._objectId);
 
-		writeD(_destination.x);
-		writeD(_destination.y);
-		writeD(_destination.z + _client_z_shift);
+		this.writeD(this._destination.x);
+		this.writeD(this._destination.y);
+		this.writeD(this._destination.z + this._client_z_shift);
 
-		writeD(_current.x);
-		writeD(_current.y);
-		writeD(_current.z + _client_z_shift);
+		this.writeD(this._current.x);
+		this.writeD(this._current.y);
+		this.writeD(this._current.z + this._client_z_shift);
 	}
 }

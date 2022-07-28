@@ -14,15 +14,15 @@ public class RequestPledgeSetMemberPowerGrade extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS(16);
-		_powerGrade = readD();
+		this._name = this.readS(16);
+		this._powerGrade = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if ((activeChar == null) || _powerGrade < Clan.RANK_FIRST || _powerGrade > Clan.RANK_LAST)
+		Player activeChar = this.getClient().getActiveChar();
+		if ((activeChar == null) || this._powerGrade < Clan.RANK_FIRST || this._powerGrade > Clan.RANK_LAST)
 		{
 			return;
 		}
@@ -35,7 +35,7 @@ public class RequestPledgeSetMemberPowerGrade extends L2GameClientPacket
 
 		if ((activeChar.getClanPrivileges() & Clan.CP_CL_MANAGE_RANKS) == Clan.CP_CL_MANAGE_RANKS)
 		{
-			UnitMember member = activeChar.getClan().getAnyMember(_name);
+			UnitMember member = activeChar.getClan().getAnyMember(this._name);
 			if (member != null)
 			{
 				if (Clan.isAcademy(member.getPledgeType()))
@@ -43,13 +43,13 @@ public class RequestPledgeSetMemberPowerGrade extends L2GameClientPacket
 					activeChar.sendMessage("You cannot change academy member grade.");
 					return;
 				}
-				if (_powerGrade > 5)
+				if (this._powerGrade > 5)
 				{
 					member.setPowerGrade(clan.getAffiliationRank(member.getPledgeType()));
 				}
 				else
 				{
-					member.setPowerGrade(_powerGrade);
+					member.setPowerGrade(this._powerGrade);
 				}
 				if (member.isOnline())
 				{

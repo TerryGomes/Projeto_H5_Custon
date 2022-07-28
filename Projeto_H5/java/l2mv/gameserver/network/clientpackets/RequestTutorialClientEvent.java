@@ -15,13 +15,13 @@ public class RequestTutorialClientEvent extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		event = readD();
+		this.event = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -30,7 +30,7 @@ public class RequestTutorialClientEvent extends L2GameClientPacket
 		Quest tutorial = QuestManager.getQuest(255);
 		if (tutorial != null)
 		{
-			player.processQuestEvent(tutorial.getName(), "CE" + event, null);
+			player.processQuestEvent(tutorial.getName(), "CE" + this.event, null);
 		}
 	}
 }

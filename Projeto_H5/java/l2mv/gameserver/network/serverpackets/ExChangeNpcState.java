@@ -7,15 +7,15 @@ public class ExChangeNpcState extends L2GameServerPacket
 
 	public ExChangeNpcState(int objId, int state)
 	{
-		_objId = objId;
-		_state = state;
+		this._objId = objId;
+		this._state = state;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xBE);
-		writeD(_objId);
-		writeD(_state);
+		this.writeEx(0xBE);
+		this.writeD(this._objId);
+		this.writeD(this._state);
 	}
 }

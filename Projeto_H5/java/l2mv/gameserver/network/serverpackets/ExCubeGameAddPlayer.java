@@ -17,21 +17,21 @@ public class ExCubeGameAddPlayer extends L2GameServerPacket
 
 	public ExCubeGameAddPlayer(Player player, boolean isRedTeam)
 	{
-		_objectId = player.getObjectId();
-		_name = player.getName();
-		_isRedTeam = isRedTeam;
+		this._objectId = player.getObjectId();
+		this._name = player.getName();
+		this._isRedTeam = isRedTeam;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x97);
-		writeD(0x01);
+		this.writeEx(0x97);
+		this.writeD(0x01);
 
-		writeD(0xffffffff);
+		this.writeD(0xffffffff);
 
-		writeD(_isRedTeam ? 0x01 : 0x00);
-		writeD(_objectId);
-		writeS(_name);
+		this.writeD(this._isRedTeam ? 0x01 : 0x00);
+		this.writeD(this._objectId);
+		this.writeS(this._name);
 	}
 }

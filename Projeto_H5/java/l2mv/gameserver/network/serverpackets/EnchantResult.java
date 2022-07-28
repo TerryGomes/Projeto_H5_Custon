@@ -15,17 +15,17 @@ public class EnchantResult extends L2GameServerPacket
 
 	public EnchantResult(int resultId, int crystalId, long count)
 	{
-		_resultId = resultId;
-		_crystalId = crystalId;
-		_count = count;
+		this._resultId = resultId;
+		this._crystalId = crystalId;
+		this._count = count;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x87);
-		writeD(_resultId);
-		writeD(_crystalId); // item id кристаллов
-		writeQ(_count); // количество кристаллов
+		this.writeC(0x87);
+		this.writeD(this._resultId);
+		this.writeD(this._crystalId); // item id кристаллов
+		this.writeQ(this._count); // количество кристаллов
 	}
 }

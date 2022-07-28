@@ -10,21 +10,21 @@ public class RequestRecipeBookOpen extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		if (_buf.hasRemaining())
+		if (this._buf.hasRemaining())
 		{
-			isDwarvenCraft = readD() == 0;
+			this.isDwarvenCraft = this.readD() == 0;
 		}
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		sendPacket(new RecipeBookItemList(activeChar, isDwarvenCraft));
+		this.sendPacket(new RecipeBookItemList(activeChar, this.isDwarvenCraft));
 	}
 }

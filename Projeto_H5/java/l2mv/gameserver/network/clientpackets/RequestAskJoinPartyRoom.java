@@ -19,13 +19,13 @@ public class RequestAskJoinPartyRoom extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS(16);
+		this._name = this.readS(16);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -33,7 +33,7 @@ public class RequestAskJoinPartyRoom extends L2GameClientPacket
 
 		player.isntAfk();
 
-		Player targetPlayer = World.getPlayer(_name);
+		Player targetPlayer = World.getPlayer(this._name);
 
 		if (targetPlayer == null || targetPlayer == player)
 		{

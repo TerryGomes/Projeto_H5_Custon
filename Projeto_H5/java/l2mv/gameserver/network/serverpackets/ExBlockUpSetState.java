@@ -7,9 +7,9 @@ public class ExBlockUpSetState extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x98);
-		writeD(BlockUpStateType);
-		switch (BlockUpStateType)
+		this.writeEx(0x98);
+		this.writeD(this.BlockUpStateType);
+		switch (this.BlockUpStateType)
 		{
 		case 0:
 			// dddddd

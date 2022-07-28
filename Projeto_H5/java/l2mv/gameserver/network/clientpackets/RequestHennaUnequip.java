@@ -14,13 +14,13 @@ public class RequestHennaUnequip extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_symbolId = readD();
+		this._symbolId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -34,7 +34,7 @@ public class RequestHennaUnequip extends L2GameClientPacket
 				continue;
 			}
 
-			if (henna.getSymbolId() == _symbolId)
+			if (henna.getSymbolId() == this._symbolId)
 			{
 				long price = henna.getPrice() / 5;
 				if (player.getAdena() < price)

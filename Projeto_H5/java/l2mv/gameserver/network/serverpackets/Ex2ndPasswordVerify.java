@@ -10,15 +10,15 @@ public class Ex2ndPasswordVerify extends L2GameServerPacket
 
 	public Ex2ndPasswordVerify(int mode, int wrongTentatives)
 	{
-		_mode = mode;
-		_wrongTentatives = wrongTentatives;
+		this._mode = mode;
+		this._wrongTentatives = wrongTentatives;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xE6);
-		writeD(_mode);
-		writeD(_wrongTentatives);
+		this.writeEx(0xE6);
+		this.writeD(this._mode);
+		this.writeD(this._wrongTentatives);
 	}
 }

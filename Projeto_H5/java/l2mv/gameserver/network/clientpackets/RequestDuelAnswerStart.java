@@ -17,15 +17,15 @@ public class RequestDuelAnswerStart extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_duelType = readD();
-		readD(); // 1 посылается если ниже -1(при включеной опции клиента Отменять дуели)
-		_response = readD();
+		this._duelType = this.readD();
+		this.readD(); // 1 посылается если ниже -1(при включеной опции клиента Отменять дуели)
+		this._response = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -53,20 +53,20 @@ public class RequestDuelAnswerStart extends L2GameClientPacket
 			return;
 		}
 
-		if ((requestor.getRequest() != request) || (_duelType != request.getInteger("duelType")))
+		if ((requestor.getRequest() != request) || (this._duelType != request.getInteger("duelType")))
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		DuelEvent duelEvent = EventHolder.getInstance().getEvent(EventType.PVP_EVENT, _duelType);
+		DuelEvent duelEvent = EventHolder.getInstance().getEvent(EventType.PVP_EVENT, this._duelType);
 
-		switch (_response)
+		switch (this._response)
 		{
 		case 0:
 			request.cancel();
-			if (_duelType == 1)
+			if (this._duelType == 1)
 			{
 				requestor.sendPacket(SystemMsg.THE_OPPOSING_PARTY_HAS_DECLINED_YOUR_CHALLENGE_TO_A_DUEL);
 			}
@@ -87,7 +87,7 @@ public class RequestDuelAnswerStart extends L2GameClientPacket
 			}
 
 			SystemMessage2 msg1, msg2;
-			if (_duelType == 1)
+			if (this._duelType == 1)
 			{
 				msg1 = new SystemMessage2(SystemMsg.YOU_HAVE_ACCEPTED_C1S_CHALLENGE_TO_A_PARTY_DUEL);
 				msg2 = new SystemMessage2(SystemMsg.S1_HAS_ACCEPTED_YOUR_CHALLENGE_TO_DUEL_AGAINST_THEIR_PARTY);

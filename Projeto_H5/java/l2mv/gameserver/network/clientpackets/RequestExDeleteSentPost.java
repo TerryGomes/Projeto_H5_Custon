@@ -25,24 +25,24 @@ public class RequestExDeleteSentPost extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_count = readD(); // количество элементов для удаления
-		if (_count * 4 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		this._count = this.readD(); // количество элементов для удаления
+		if (this._count * 4 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1)
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
-		_list = new int[_count];
-		for (int i = 0; i < _count; i++)
+		this._list = new int[this._count];
+		for (int i = 0; i < this._count; i++)
 		{
-			_list[i] = readD(); // уникальный номер письма
+			this._list[i] = this.readD(); // уникальный номер письма
 		}
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || _count == 0)
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar == null || this._count == 0)
 		{
 			return;
 		}
@@ -52,7 +52,7 @@ public class RequestExDeleteSentPost extends L2GameClientPacket
 		{
 			for (Mail mail : mails)
 			{
-				if (ArrayUtils.contains(_list, mail.getMessageId()))
+				if (ArrayUtils.contains(this._list, mail.getMessageId()))
 				{
 					if (mail.getAttachments().isEmpty())
 					{

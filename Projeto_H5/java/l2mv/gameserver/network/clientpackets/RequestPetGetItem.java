@@ -16,13 +16,13 @@ public class RequestPetGetItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
+		this._objectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -41,7 +41,7 @@ public class RequestPetGetItem extends L2GameClientPacket
 			return;
 		}
 
-		ItemInstance item = (ItemInstance) activeChar.getVisibleObject(_objectId);
+		ItemInstance item = (ItemInstance) activeChar.getVisibleObject(this._objectId);
 		if (item == null)
 		{
 			activeChar.sendActionFailed();
@@ -61,7 +61,7 @@ public class RequestPetGetItem extends L2GameClientPacket
 				sm = new SystemMessage2(SystemMsg.YOU_HAVE_FAILED_TO_PICK_UP_S1);
 				sm.addItemName(item.getItemId());
 			}
-			sendPacket(sm);
+			this.sendPacket(sm);
 			activeChar.sendActionFailed();
 			return;
 		}

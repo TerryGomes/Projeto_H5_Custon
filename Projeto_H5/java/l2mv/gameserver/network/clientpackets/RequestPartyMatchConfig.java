@@ -21,15 +21,15 @@ public class RequestPartyMatchConfig extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_page = readD();
-		_region = readD(); // 0 to 15, or -1
-		_allLevels = readD(); // 1 -> all levels, 0 -> only levels matching my level
+		this._page = this.readD();
+		this._region = this.readD(); // 0 to 15, or -1
+		this._allLevels = this.readD(); // 1 -> all levels, 0 -> only levels matching my level
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -68,7 +68,7 @@ public class RequestPartyMatchConfig extends L2GameClientPacket
 			{
 				MatchingRoomManager.getInstance().addToWaitingList(player);
 			}
-			player.sendPacket(new ListPartyWaiting(_region, _allLevels == 1, _page, player));
+			player.sendPacket(new ListPartyWaiting(this._region, this._allLevels == 1, this._page, player));
 		}
 	}
 }

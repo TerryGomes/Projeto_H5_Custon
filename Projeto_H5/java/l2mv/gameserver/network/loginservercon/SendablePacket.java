@@ -18,7 +18,7 @@ public abstract class SendablePacket extends l2mv.commons.net.nio.SendablePacket
 	@Override
 	protected ByteBuffer getByteBuffer()
 	{
-		return getClient().getWriteBuffer();
+		return this.getClient().getWriteBuffer();
 	}
 
 	@Override
@@ -26,7 +26,7 @@ public abstract class SendablePacket extends l2mv.commons.net.nio.SendablePacket
 	{
 		try
 		{
-			writeImpl();
+			this.writeImpl();
 		}
 		catch (RuntimeException e)
 		{

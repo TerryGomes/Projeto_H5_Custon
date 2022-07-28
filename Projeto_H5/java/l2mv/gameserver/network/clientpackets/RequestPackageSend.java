@@ -29,24 +29,24 @@ public class RequestPackageSend extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
-		_count = readD();
-		if (((_count * 12) > _buf.remaining()) || (_count > Short.MAX_VALUE) || (_count < 1))
+		this._objectId = this.readD();
+		this._count = this.readD();
+		if (((this._count * 12) > this._buf.remaining()) || (this._count > Short.MAX_VALUE) || (this._count < 1))
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
 
-		_items = new int[_count];
-		_itemQ = new long[_count];
+		this._items = new int[this._count];
+		this._itemQ = new long[this._count];
 
-		for (int i = 0; i < _count; i++)
+		for (int i = 0; i < this._count; i++)
 		{
-			_items[i] = readD();
-			_itemQ[i] = readQ();
-			if ((_itemQ[i] < 1) || (ArrayUtils.indexOf(_items, _items[i]) < i))
+			this._items[i] = this.readD();
+			this._itemQ[i] = this.readQ();
+			if ((this._itemQ[i] < 1) || (ArrayUtils.indexOf(this._items, this._items[i]) < i))
 			{
-				_count = 0;
+				this._count = 0;
 				return;
 			}
 		}
@@ -55,8 +55,8 @@ public class RequestPackageSend extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
-		if ((player == null) || (_count == 0))
+		Player player = this.getClient().getActiveChar();
+		if ((player == null) || (this._count == 0))
 		{
 			return;
 		}
@@ -81,13 +81,13 @@ public class RequestPackageSend extends L2GameClientPacket
 
 		// To detect the npc and distance
 		NpcInstance whkeeper = player.getLastNpc();
-		if ((whkeeper == null) || !player.isInRangeZ(whkeeper, Creature.INTERACTION_DISTANCE) || !player.getAccountChars().containsKey(_objectId))
+		if ((whkeeper == null) || !player.isInRangeZ(whkeeper, Creature.INTERACTION_DISTANCE) || !player.getAccountChars().containsKey(this._objectId))
 		{
 			return;
 		}
 
 		PcInventory inventory = player.getInventory();
-		PcFreight freight = new PcFreight(_objectId);
+		PcFreight freight = new PcFreight(this._objectId);
 		freight.restore();
 
 		inventory.writeLock();
@@ -102,13 +102,13 @@ public class RequestPackageSend extends L2GameClientPacket
 			int items = 0;
 
 			// Create a new list of items passed on the basis of the data
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < this._count; i++)
 			{
-				ItemInstance item = inventory.getItemByObjectId(_items[i]);
-				if ((item == null) || (item.getCount() < _itemQ[i]) || !item.getTemplate().isFreightable())
+				ItemInstance item = inventory.getItemByObjectId(this._items[i]);
+				if ((item == null) || (item.getCount() < this._itemQ[i]) || !item.getTemplate().isFreightable())
 				{
-					_items[i] = 0; // Null, a thing not to be transferred
-					_itemQ[i] = 0L;
+					this._items[i] = 0; // Null, a thing not to be transferred
+					this._itemQ[i] = 0L;
 					continue;
 				}
 
@@ -116,8 +116,8 @@ public class RequestPackageSend extends L2GameClientPacket
 				{
 					if (slotsleft <= 0) // если слоты кончились нестекуемые вещи и отсутствующие стекуемые пропускаем
 					{
-						_items[i] = 0; // Обнуляем, вещь не будет передана
-						_itemQ[i] = 0L;
+						this._items[i] = 0; // Обнуляем, вещь не будет передана
+						this._itemQ[i] = 0L;
 						continue;
 					}
 					slotsleft--; // если слот есть то его уже нет
@@ -125,7 +125,7 @@ public class RequestPackageSend extends L2GameClientPacket
 
 				if (item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
 				{
-					adenaDeposit = _itemQ[i];
+					adenaDeposit = this._itemQ[i];
 				}
 
 				items++;
@@ -158,13 +158,13 @@ public class RequestPackageSend extends L2GameClientPacket
 				return;
 			}
 
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < this._count; i++)
 			{
-				if (_items[i] == 0)
+				if (this._items[i] == 0)
 				{
 					continue;
 				}
-				ItemInstance item = inventory.removeItemByObjectId(_items[i], _itemQ[i], "Freight");
+				ItemInstance item = inventory.removeItemByObjectId(this._items[i], this._itemQ[i], "Freight");
 				freight.addItem(item, "Freight " + player.toString(), "Freight");
 			}
 		}

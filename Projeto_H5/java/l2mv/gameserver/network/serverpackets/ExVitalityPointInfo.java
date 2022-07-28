@@ -6,13 +6,13 @@ public class ExVitalityPointInfo extends L2GameServerPacket
 
 	public ExVitalityPointInfo(int vitality)
 	{
-		_vitality = vitality;
+		this._vitality = vitality;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xA0);
-		writeD(_vitality);
+		this.writeEx(0xA0);
+		this.writeD(this._vitality);
 	}
 }

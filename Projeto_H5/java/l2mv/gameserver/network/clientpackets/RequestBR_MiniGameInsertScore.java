@@ -11,18 +11,18 @@ public class RequestBR_MiniGameInsertScore extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_score = readD();
+		this._score = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null || !Config.EX_JAPAN_MINIGAME)
 		{
 			return;
 		}
 
-		MiniGameScoreManager.getInstance().insertScore(player, _score);
+		MiniGameScoreManager.getInstance().insertScore(player, this._score);
 	}
 }

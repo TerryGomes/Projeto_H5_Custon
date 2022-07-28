@@ -10,21 +10,21 @@ public class StopMoveToLocationInVehicle extends L2GameServerPacket
 
 	public StopMoveToLocationInVehicle(Player player)
 	{
-		_boatObjectId = player.getBoat().getObjectId();
-		_playerObjectId = player.getObjectId();
-		_loc = player.getInBoatPosition();
-		_heading = player.getHeading();
+		this._boatObjectId = player.getBoat().getObjectId();
+		this._playerObjectId = player.getObjectId();
+		this._loc = player.getInBoatPosition();
+		this._heading = player.getHeading();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x7f);
-		writeD(_playerObjectId);
-		writeD(_boatObjectId);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeD(_heading);
+		this.writeC(0x7f);
+		this.writeD(this._playerObjectId);
+		this.writeD(this._boatObjectId);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
+		this.writeD(this._heading);
 	}
 }

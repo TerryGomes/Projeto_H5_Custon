@@ -40,26 +40,26 @@ public class RelationChanged extends L2GameServerPacket
 
 	protected RelationChanged(int s)
 	{
-		_data = new ArrayList<RelationChangedData>(s);
+		this._data = new ArrayList<RelationChangedData>(s);
 	}
 
 	protected void add(RelationChangedData data)
 	{
-		_data.add(data);
+		this._data.add(data);
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0xCE);
-		writeD(_data.size());
-		for (RelationChangedData d : _data)
+		this.writeC(0xCE);
+		this.writeD(this._data.size());
+		for (RelationChangedData d : this._data)
 		{
-			writeD(d.charObjId);
-			writeD(d.relation);
-			writeD(d.isAutoAttackable ? 1 : 0);
-			writeD(d.karma);
-			writeD(d.pvpFlag);
+			this.writeD(d.charObjId);
+			this.writeD(d.relation);
+			this.writeD(d.isAutoAttackable ? 1 : 0);
+			this.writeD(d.karma);
+			this.writeD(d.pvpFlag);
 		}
 	}
 
@@ -71,11 +71,11 @@ public class RelationChanged extends L2GameServerPacket
 
 		public RelationChangedData(Playable cha, boolean _isAutoAttackable, int _relation)
 		{
-			isAutoAttackable = _isAutoAttackable;
-			relation = _relation;
-			charObjId = cha.getObjectId();
-			karma = cha.getKarma();
-			pvpFlag = cha.getPvpFlag();
+			this.isAutoAttackable = _isAutoAttackable;
+			this.relation = _relation;
+			this.charObjId = cha.getObjectId();
+			this.karma = cha.getKarma();
+			this.pvpFlag = cha.getPvpFlag();
 		}
 	}
 

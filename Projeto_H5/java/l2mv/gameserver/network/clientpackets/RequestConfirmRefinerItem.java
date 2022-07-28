@@ -21,21 +21,21 @@ public class RequestConfirmRefinerItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_targetItemObjId = readD();
-		_refinerItemObjId = readD();
+		this._targetItemObjId = this.readD();
+		this._refinerItemObjId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		ItemInstance targetItem = activeChar.getInventory().getItemByObjectId(_targetItemObjId);
-		ItemInstance refinerItem = activeChar.getInventory().getItemByObjectId(_refinerItemObjId);
+		ItemInstance targetItem = activeChar.getInventory().getItemByObjectId(this._targetItemObjId);
+		ItemInstance refinerItem = activeChar.getInventory().getItemByObjectId(this._refinerItemObjId);
 
 		if (targetItem == null || refinerItem == null)
 		{
@@ -127,6 +127,6 @@ public class RequestConfirmRefinerItem extends L2GameClientPacket
 		}
 
 		SystemMessage2 sm = new SystemMessage2(SystemMsg.REQUIRES_S2_S1).addInteger(gemstoneCount).addItemName(gemstoneItemId);
-		activeChar.sendPacket(new ExPutIntensiveResultForVariationMake(_refinerItemObjId, refinerItemId, gemstoneItemId, gemstoneCount), sm);
+		activeChar.sendPacket(new ExPutIntensiveResultForVariationMake(this._refinerItemObjId, refinerItemId, gemstoneItemId, gemstoneCount), sm);
 	}
 }

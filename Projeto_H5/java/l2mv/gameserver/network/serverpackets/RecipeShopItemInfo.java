@@ -13,23 +13,23 @@ public class RecipeShopItemInfo extends L2GameServerPacket
 
 	public RecipeShopItemInfo(Player activeChar, Player manufacturer, int recipeId, long price, int success)
 	{
-		_recipeId = recipeId;
-		_shopId = manufacturer.getObjectId();
-		_price = price;
-		_success = success;
-		_curMp = (int) manufacturer.getCurrentMp();
-		_maxMp = manufacturer.getMaxMp();
+		this._recipeId = recipeId;
+		this._shopId = manufacturer.getObjectId();
+		this._price = price;
+		this._success = success;
+		this._curMp = (int) manufacturer.getCurrentMp();
+		this._maxMp = manufacturer.getMaxMp();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xe0);
-		writeD(_shopId);
-		writeD(_recipeId);
-		writeD(_curMp);
-		writeD(_maxMp);
-		writeD(_success);
-		writeQ(_price);
+		this.writeC(0xe0);
+		this.writeD(this._shopId);
+		this.writeD(this._recipeId);
+		this.writeD(this._curMp);
+		this.writeD(this._maxMp);
+		this.writeD(this._success);
+		this.writeQ(this._price);
 	}
 }

@@ -60,65 +60,65 @@ public class ExPVPMatchRecord extends L2GameServerPacket
 
 	public ExPVPMatchRecord(int type, TeamType winnerTeam, UndergroundColiseumBattleEvent battleEvent)
 	{
-		_type = type;
-		_winnerTeam = winnerTeam;
+		this._type = type;
+		this._winnerTeam = winnerTeam;
 
 		UCTeamObject blueTeam = battleEvent.getFirstObject(TeamType.BLUE.name());
-		_blueKills = blueTeam.getKills();
+		this._blueKills = blueTeam.getKills();
 		UCTeamObject redTeam = battleEvent.getFirstObject(TeamType.RED.name());
-		_redKills = redTeam.getKills();
+		this._redKills = redTeam.getKills();
 
-		_blueList = new ArrayList<Member>(9);
+		this._blueList = new ArrayList<Member>(9);
 		for (UCMemberObject memberObject : blueTeam)
 		{
 			if (memberObject != null)
 			{
-				_blueList.add(new Member(memberObject.getName(), memberObject.getKills(), memberObject.getDeaths()));
+				this._blueList.add(new Member(memberObject.getName(), memberObject.getKills(), memberObject.getDeaths()));
 			}
 		}
 
-		_redList = new ArrayList<Member>(9);
+		this._redList = new ArrayList<Member>(9);
 		for (UCMemberObject memberObject : redTeam)
 		{
 			if (memberObject != null)
 			{
-				_redList.add(new Member(memberObject.getName(), memberObject.getKills(), memberObject.getDeaths()));
+				this._redList.add(new Member(memberObject.getName(), memberObject.getKills(), memberObject.getDeaths()));
 			}
 		}
 	}
 
 	public ExPVPMatchRecord(int type, TeamType winnerTeam, int blueKills, int redKills, List<Member> blueTeam, List<Member> redTeam)
 	{
-		_type = type;
-		_winnerTeam = winnerTeam;
-		_blueKills = blueKills;
-		_redKills = redKills;
-		_blueList = blueTeam;
-		_redList = redTeam;
+		this._type = type;
+		this._winnerTeam = winnerTeam;
+		this._blueKills = blueKills;
+		this._redKills = redKills;
+		this._blueList = blueTeam;
+		this._redList = redTeam;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x7E);
-		writeD(_type);
-		writeD(_winnerTeam.ordinal());
-		writeD(_winnerTeam.revert().ordinal());
-		writeD(_blueKills);
-		writeD(_redKills);
-		writeD(_blueList.size());
-		for (Member member : _blueList)
+		this.writeEx(0x7E);
+		this.writeD(this._type);
+		this.writeD(this._winnerTeam.ordinal());
+		this.writeD(this._winnerTeam.revert().ordinal());
+		this.writeD(this._blueKills);
+		this.writeD(this._redKills);
+		this.writeD(this._blueList.size());
+		for (Member member : this._blueList)
 		{
-			writeS(member.name);
-			writeD(member.kills);
-			writeD(member.deaths);
+			this.writeS(member.name);
+			this.writeD(member.kills);
+			this.writeD(member.deaths);
 		}
-		writeD(_redList.size());
-		for (Member member : _redList)
+		this.writeD(this._redList.size());
+		for (Member member : this._redList)
 		{
-			writeS(member.name);
-			writeD(member.kills);
-			writeD(member.deaths);
+			this.writeS(member.name);
+			this.writeD(member.kills);
+			this.writeD(member.deaths);
 		}
 	}
 }

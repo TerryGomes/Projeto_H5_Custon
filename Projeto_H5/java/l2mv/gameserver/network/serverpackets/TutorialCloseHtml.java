@@ -7,6 +7,6 @@ public class TutorialCloseHtml extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xa9);
+		this.writeC(0xa9);
 	}
 }

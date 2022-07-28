@@ -17,26 +17,26 @@ public class DropItem extends L2GameServerPacket
 	 */
 	public DropItem(ItemInstance item, int playerId)
 	{
-		_playerId = playerId;
-		item_obj_id = item.getObjectId();
-		item_id = item.getItemId();
-		_loc = item.getLoc();
-		_stackable = item.isStackable() ? 1 : 0;
-		_count = item.getCount();
+		this._playerId = playerId;
+		this.item_obj_id = item.getObjectId();
+		this.item_id = item.getItemId();
+		this._loc = item.getLoc();
+		this._stackable = item.isStackable() ? 1 : 0;
+		this._count = item.getCount();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x16);
-		writeD(_playerId);
-		writeD(item_obj_id);
-		writeD(item_id);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z + Config.CLIENT_Z_SHIFT);
-		writeD(_stackable);
-		writeQ(_count);
-		writeD(1); // unknown
+		this.writeC(0x16);
+		this.writeD(this._playerId);
+		this.writeD(this.item_obj_id);
+		this.writeD(this.item_id);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z + Config.CLIENT_Z_SHIFT);
+		this.writeD(this._stackable);
+		this.writeQ(this._count);
+		this.writeD(1); // unknown
 	}
 }

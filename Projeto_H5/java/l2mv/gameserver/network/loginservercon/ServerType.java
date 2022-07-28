@@ -8,11 +8,11 @@ public enum ServerType
 
 	ServerType()
 	{
-		_mask = 1 << ordinal();
+		this._mask = 1 << this.ordinal();
 	}
 
 	public int getMask()
 	{
-		return _mask;
+		return this._mask;
 	}
 }

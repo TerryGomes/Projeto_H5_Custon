@@ -13,26 +13,26 @@ public class ExReplyRegisterDominion extends L2GameServerPacket
 
 	public ExReplyRegisterDominion(Dominion dominion, boolean success, boolean join, boolean asClan)
 	{
-		_success = success;
-		_join = join;
-		_asClan = asClan;
-		_dominionId = dominion.getId();
+		this._success = success;
+		this._join = join;
+		this._asClan = asClan;
+		this._dominionId = dominion.getId();
 
 		DominionSiegeEvent siegeEvent = dominion.getSiegeEvent();
 
-		_playerCount = siegeEvent.getObjects(DominionSiegeEvent.DEFENDER_PLAYERS).size();
-		_clanCount = siegeEvent.getObjects(DominionSiegeEvent.DEFENDERS).size() + 1;
+		this._playerCount = siegeEvent.getObjects(DominionSiegeEvent.DEFENDER_PLAYERS).size();
+		this._clanCount = siegeEvent.getObjects(DominionSiegeEvent.DEFENDERS).size() + 1;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x91);
-		writeD(_dominionId);
-		writeD(_asClan);
-		writeD(_join);
-		writeD(_success);
-		writeD(_clanCount);
-		writeD(_playerCount);
+		this.writeEx(0x91);
+		this.writeD(this._dominionId);
+		this.writeD(this._asClan);
+		this.writeD(this._join);
+		this.writeD(this._success);
+		this.writeD(this._clanCount);
+		this.writeD(this._playerCount);
 	}
 }

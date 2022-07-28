@@ -359,13 +359,13 @@ public class ExBasicActionList extends L2GameServerPacket
 
 	public ExBasicActionList(Player activeChar)
 	{
-		actions = activeChar.getTransformation() == 0 ? BasicActions : TransformationActions;
+		this.actions = activeChar.getTransformation() == 0 ? BasicActions : TransformationActions;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x5f);
-		writeDD(actions, true);
+		this.writeEx(0x5f);
+		this.writeDD(this.actions, true);
 	}
 }

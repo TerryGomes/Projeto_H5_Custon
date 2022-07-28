@@ -36,118 +36,118 @@ public class CharacterSelectionInfo extends L2GameServerPacket
 	{
 		this.sessionId = sessionId;
 		this.loginName = loginName;
-		characterPackages = loadCharacterSelectInfo(loginName);
+		this.characterPackages = loadCharacterSelectInfo(loginName);
 	}
 
 	public CharSelectInfoPackage[] getCharInfo()
 	{
-		return characterPackages;
+		return this.characterPackages;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		int size = characterPackages != null ? characterPackages.length : 0;
+		int size = this.characterPackages != null ? this.characterPackages.length : 0;
 
-		writeC(0x09);
-		writeD(size);
-		writeD(0x07); // Kamael, 0x07 ?
-		writeC(0);
+		this.writeC(0x09);
+		this.writeD(size);
+		this.writeD(0x07); // Kamael, 0x07 ?
+		this.writeC(0);
 
 		long lastAccess = -1L;
 		int lastUsed = -1;
 		for (int i = 0; i < size; i++)
 		{
-			if (lastAccess < characterPackages[i].getLastAccess())
+			if (lastAccess < this.characterPackages[i].getLastAccess())
 			{
-				lastAccess = characterPackages[i].getLastAccess();
+				lastAccess = this.characterPackages[i].getLastAccess();
 				lastUsed = i;
 			}
 		}
 
 		for (int i = 0; i < size; i++)
 		{
-			CharSelectInfoPackage charInfoPackage = characterPackages[i];
+			CharSelectInfoPackage charInfoPackage = this.characterPackages[i];
 
-			writeS(charInfoPackage.getName());
-			writeD(charInfoPackage.getCharId()); // ?
-			writeS(loginName);
-			writeD(sessionId);
-			writeD(charInfoPackage.getClanId());
-			writeD(0x00); // ??
+			this.writeS(charInfoPackage.getName());
+			this.writeD(charInfoPackage.getCharId()); // ?
+			this.writeS(this.loginName);
+			this.writeD(this.sessionId);
+			this.writeD(charInfoPackage.getClanId());
+			this.writeD(0x00); // ??
 
-			writeD(charInfoPackage.getSex());
-			writeD(charInfoPackage.getRace());
-			writeD(charInfoPackage.getBaseClassId());
+			this.writeD(charInfoPackage.getSex());
+			this.writeD(charInfoPackage.getRace());
+			this.writeD(charInfoPackage.getBaseClassId());
 
-			writeD(0x01); // active ??
+			this.writeD(0x01); // active ??
 
-			writeD(charInfoPackage.getX());
-			writeD(charInfoPackage.getY());
-			writeD(charInfoPackage.getZ());
+			this.writeD(charInfoPackage.getX());
+			this.writeD(charInfoPackage.getY());
+			this.writeD(charInfoPackage.getZ());
 
-			writeF(charInfoPackage.getCurrentHp());
-			writeF(charInfoPackage.getCurrentMp());
+			this.writeF(charInfoPackage.getCurrentHp());
+			this.writeF(charInfoPackage.getCurrentMp());
 
-			writeD(charInfoPackage.getSp());
-			writeQ(charInfoPackage.getExp());
+			this.writeD(charInfoPackage.getSp());
+			this.writeQ(charInfoPackage.getExp());
 			int lvl = charInfoPackage.getLevel();
-			writeF(Experience.getExpPercent(lvl, charInfoPackage.getExp()));
-			writeD(lvl);
+			this.writeF(Experience.getExpPercent(lvl, charInfoPackage.getExp()));
+			this.writeD(lvl);
 
-			writeD(charInfoPackage.getKarma());
-			writeD(charInfoPackage.getPk());
-			writeD(charInfoPackage.getPvP());
+			this.writeD(charInfoPackage.getKarma());
+			this.writeD(charInfoPackage.getPk());
+			this.writeD(charInfoPackage.getPvP());
 
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
+			this.writeD(0x00);
+			this.writeD(0x00);
+			this.writeD(0x00);
+			this.writeD(0x00);
+			this.writeD(0x00);
+			this.writeD(0x00);
+			this.writeD(0x00);
 
 			for (int paperdollId : Inventory.PAPERDOLL_ORDER)
 			{
-				writeD(charInfoPackage.getPaperdollItemId(paperdollId));
+				this.writeD(charInfoPackage.getPaperdollItemId(paperdollId));
 			}
 
-			writeD(charInfoPackage.getHairStyle());
-			writeD(charInfoPackage.getHairColor());
-			writeD(charInfoPackage.getFace());
+			this.writeD(charInfoPackage.getHairStyle());
+			this.writeD(charInfoPackage.getHairColor());
+			this.writeD(charInfoPackage.getFace());
 
-			writeF(charInfoPackage.getMaxHp()); // hp max
-			writeF(charInfoPackage.getMaxMp()); // mp max
+			this.writeF(charInfoPackage.getMaxHp()); // hp max
+			this.writeF(charInfoPackage.getMaxMp()); // mp max
 
-			writeD(charInfoPackage.getAccessLevel() > -100 ? charInfoPackage.getDeleteTimer() : -1);
-			writeD(charInfoPackage.getClassId());
-			writeD(i == lastUsed ? 1 : 0);
+			this.writeD(charInfoPackage.getAccessLevel() > -100 ? charInfoPackage.getDeleteTimer() : -1);
+			this.writeD(charInfoPackage.getClassId());
+			this.writeD(i == lastUsed ? 1 : 0);
 
-			writeC(Math.min(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_RHAND), 127));
-			writeD(charInfoPackage.getPaperdollAugmentationId(Inventory.PAPERDOLL_RHAND));
+			this.writeC(Math.min(charInfoPackage.getPaperdollEnchantEffect(Inventory.PAPERDOLL_RHAND), 127));
+			this.writeD(charInfoPackage.getPaperdollAugmentationId(Inventory.PAPERDOLL_RHAND));
 			int weaponId = charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RHAND);
 			if (weaponId == 8190)
 			{
-				writeD(301);
+				this.writeD(301);
 			}
 			else if (weaponId == 8689)
 			{
-				writeD(302);
+				this.writeD(302);
 			}
 			else
 			{
-				writeD(0x00);
+				this.writeD(0x00);
 			}
 
 			// Freya by Vistall:
-			writeD(0x00); // npdid - 16024 Tame Tiny Baby Kookaburra A9E89C
-			writeD(0x00); // level
-			writeD(0x00); // ?
-			writeD(0x00); // food? - 1200
-			writeF(0x00); // max Hp
-			writeF(0x00); // cur Hp
+			this.writeD(0x00); // npdid - 16024 Tame Tiny Baby Kookaburra A9E89C
+			this.writeD(0x00); // level
+			this.writeD(0x00); // ?
+			this.writeD(0x00); // food? - 1200
+			this.writeF(0x00); // max Hp
+			this.writeF(0x00); // cur Hp
 
-			writeD(charInfoPackage.getVitalityPoints());
+			this.writeD(charInfoPackage.getVitalityPoints());
 		}
 	}
 

@@ -16,20 +16,20 @@ public class AnswerJoinPartyRoom extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		if (_buf.hasRemaining())
+		if (this._buf.hasRemaining())
 		{
-			_response = readD();
+			this._response = this.readD();
 		}
 		else
 		{
-			_response = 0;
+			this._response = 0;
 		}
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -67,7 +67,7 @@ public class AnswerJoinPartyRoom extends L2GameClientPacket
 		}
 
 		// отказ
-		if (_response == 0)
+		if (this._response == 0)
 		{
 			request.cancel();
 			requestor.sendPacket(SystemMsg.THE_PLAYER_DECLINED_TO_JOIN_YOUR_PARTY);

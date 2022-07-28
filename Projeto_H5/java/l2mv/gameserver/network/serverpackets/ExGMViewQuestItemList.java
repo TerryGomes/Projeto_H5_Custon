@@ -18,24 +18,24 @@ public class ExGMViewQuestItemList extends L2GameServerPacket
 
 	public ExGMViewQuestItemList(Player player, ItemInstance[] items, int size)
 	{
-		_items = items;
-		_size = size;
-		_name = player.getName();
-		_limit = Config.QUEST_INVENTORY_MAXIMUM;
+		this._items = items;
+		this._size = size;
+		this._name = player.getName();
+		this._limit = Config.QUEST_INVENTORY_MAXIMUM;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0xC7);
-		writeS(_name);
-		writeD(_limit);
-		writeH(_size);
-		for (ItemInstance temp : _items)
+		this.writeEx(0xC7);
+		this.writeS(this._name);
+		this.writeD(this._limit);
+		this.writeH(this._size);
+		for (ItemInstance temp : this._items)
 		{
 			if (temp.getTemplate().isQuest())
 			{
-				writeItemInfo(temp);
+				this.writeItemInfo(temp);
 			}
 		}
 	}

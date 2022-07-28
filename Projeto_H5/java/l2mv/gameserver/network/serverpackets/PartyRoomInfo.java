@@ -14,25 +14,25 @@ public class PartyRoomInfo extends L2GameServerPacket
 
 	public PartyRoomInfo(MatchingRoom room)
 	{
-		_id = room.getId();
-		_minLevel = room.getMinLevel();
-		_maxLevel = room.getMaxLevel();
-		_lootDist = room.getLootType();
-		_maxMembers = room.getMaxMembersSize();
-		_location = room.getLocationId();
-		_title = room.getTopic();
+		this._id = room.getId();
+		this._minLevel = room.getMinLevel();
+		this._maxLevel = room.getMaxLevel();
+		this._lootDist = room.getLootType();
+		this._maxMembers = room.getMaxMembersSize();
+		this._location = room.getLocationId();
+		this._title = room.getTopic();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x9d);
-		writeD(_id); // room id
-		writeD(_maxMembers); // max members
-		writeD(_minLevel); // min level
-		writeD(_maxLevel); // max level
-		writeD(_lootDist); // loot distribution 1-Random 2-Random includ. etc
-		writeD(_location); // location
-		writeS(_title); // room name
+		this.writeC(0x9d);
+		this.writeD(this._id); // room id
+		this.writeD(this._maxMembers); // max members
+		this.writeD(this._minLevel); // min level
+		this.writeD(this._maxLevel); // max level
+		this.writeD(this._lootDist); // loot distribution 1-Random 2-Random includ. etc
+		this.writeD(this._location); // location
+		this.writeS(this._title); // room name
 	}
 }

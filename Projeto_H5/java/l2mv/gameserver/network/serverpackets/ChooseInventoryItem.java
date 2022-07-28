@@ -6,13 +6,13 @@ public class ChooseInventoryItem extends L2GameServerPacket
 
 	public ChooseInventoryItem(int id)
 	{
-		ItemID = id;
+		this.ItemID = id;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x7c);
-		writeD(ItemID);
+		this.writeC(0x7c);
+		this.writeD(this.ItemID);
 	}
 }

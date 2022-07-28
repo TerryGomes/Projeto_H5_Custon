@@ -19,7 +19,7 @@ public class FriendList extends L2GameServerPacket
 	public FriendList(Player player)
 	{
 		Map<Integer, Friend> friends = player.getFriendList().getList();
-		_friends = new ArrayList<FriendInfo>(friends.size());
+		this._friends = new ArrayList<FriendInfo>(friends.size());
 		for (Map.Entry<Integer, Friend> entry : friends.entrySet())
 		{
 			Friend friend = entry.getValue();
@@ -29,23 +29,23 @@ public class FriendList extends L2GameServerPacket
 			f.objectId = entry.getKey();
 			f.level = friend.getLevel();
 			f.online = friend.isOnline();
-			_friends.add(f);
+			this._friends.add(f);
 		}
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0x58);
-		writeD(_friends.size());
-		for (FriendInfo f : _friends)
+		this.writeC(0x58);
+		this.writeD(this._friends.size());
+		for (FriendInfo f : this._friends)
 		{
-			writeD(f.objectId);
-			writeS(f.name);
-			writeD(f.online);
-			writeD(f.online ? f.objectId : 0);
-			writeD(f.classId);
-			writeD(f.level);
+			this.writeD(f.objectId);
+			this.writeS(f.name);
+			this.writeD(f.online);
+			this.writeD(f.online ? f.objectId : 0);
+			this.writeD(f.classId);
+			this.writeD(f.level);
 		}
 	}
 

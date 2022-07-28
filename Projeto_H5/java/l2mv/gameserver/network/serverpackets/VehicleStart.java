@@ -8,15 +8,15 @@ public class VehicleStart extends L2GameServerPacket
 
 	public VehicleStart(Boat boat)
 	{
-		_objectId = boat.getObjectId();
-		_state = boat.getRunState();
+		this._objectId = boat.getObjectId();
+		this._state = boat.getRunState();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0xC0);
-		writeD(_objectId);
-		writeD(_state);
+		this.writeC(0xC0);
+		this.writeD(this._objectId);
+		this.writeD(this._state);
 	}
 }

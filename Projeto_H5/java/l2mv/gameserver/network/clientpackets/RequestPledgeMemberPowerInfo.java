@@ -15,14 +15,14 @@ public class RequestPledgeMemberPowerInfo extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_not_known = readD();
-		_target = readS(16);
+		this._not_known = this.readD();
+		this._target = this.readS(16);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -30,7 +30,7 @@ public class RequestPledgeMemberPowerInfo extends L2GameClientPacket
 		Clan clan = activeChar.getClan();
 		if (clan != null)
 		{
-			UnitMember cm = clan.getAnyMember(_target);
+			UnitMember cm = clan.getAnyMember(this._target);
 			if (cm != null)
 			{
 				activeChar.sendPacket(new PledgeReceivePowerInfo(cm));

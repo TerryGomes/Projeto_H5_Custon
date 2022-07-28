@@ -12,6 +12,6 @@ public class RequestQuestList extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		sendPacket(new QuestList(getClient().getActiveChar()));
+		this.sendPacket(new QuestList(this.getClient().getActiveChar()));
 	}
 }

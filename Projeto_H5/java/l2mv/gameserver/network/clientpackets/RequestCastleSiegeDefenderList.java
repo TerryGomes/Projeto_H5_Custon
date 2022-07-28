@@ -12,19 +12,19 @@ public class RequestCastleSiegeDefenderList extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_unitId = readD();
+		this._unitId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, _unitId);
+		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, this._unitId);
 		if (castle == null)
 		{
 			return;

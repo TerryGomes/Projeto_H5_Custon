@@ -12,26 +12,26 @@ public class PartyMemberPosition extends L2GameServerPacket
 
 	public PartyMemberPosition add(Player actor)
 	{
-		positions.put(actor.getObjectId(), actor.getLoc());
+		this.positions.put(actor.getObjectId(), actor.getLoc());
 		return this;
 	}
 
 	public int size()
 	{
-		return positions.size();
+		return this.positions.size();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xba);
-		writeD(positions.size());
-		for (Map.Entry<Integer, Location> e : positions.entrySet())
+		this.writeC(0xba);
+		this.writeD(this.positions.size());
+		for (Map.Entry<Integer, Location> e : this.positions.entrySet())
 		{
-			writeD(e.getKey());
-			writeD(e.getValue().x);
-			writeD(e.getValue().y);
-			writeD(e.getValue().z);
+			this.writeD(e.getKey());
+			this.writeD(e.getValue().x);
+			this.writeD(e.getValue().y);
+			this.writeD(e.getValue().z);
 		}
 	}
 }

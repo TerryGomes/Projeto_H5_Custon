@@ -18,13 +18,13 @@ public class CharacterSelected extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_charSlot = readD();
+		this._charSlot = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		GameClient client = getClient();
+		GameClient client = this.getClient();
 
 		if (Config.SECOND_AUTH_ENABLED && !client.getSecondaryAuth().isAuthed())
 		{
@@ -37,17 +37,17 @@ public class CharacterSelected extends L2GameClientPacket
 			return;
 		}
 
-		int objId = client.getObjectIdForSlot(_charSlot);
+		int objId = client.getObjectIdForSlot(this._charSlot);
 		if (AutoBan.checkIsBanned(objId))
 		{
-			sendPacket(ActionFail.STATIC);
+			this.sendPacket(ActionFail.STATIC);
 			return;
 		}
 
-		Player activeChar = client.loadCharFromDisk(_charSlot, objId);
+		Player activeChar = client.loadCharFromDisk(this._charSlot, objId);
 		if (activeChar == null)
 		{
-			sendPacket(ActionFail.STATIC);
+			this.sendPacket(ActionFail.STATIC);
 			return;
 		}
 
@@ -58,6 +58,6 @@ public class CharacterSelected extends L2GameClientPacket
 
 		client.setState(GameClientState.IN_GAME);
 
-		sendPacket(new CharSelected(activeChar, client.getSessionKey().playOkID1));
+		this.sendPacket(new CharSelected(activeChar, client.getSessionKey().playOkID1));
 	}
 }

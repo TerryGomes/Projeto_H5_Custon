@@ -10,31 +10,31 @@ public class ExPartyPetWindowUpdate extends L2GameServerPacket
 
 	public ExPartyPetWindowUpdate(Summon summon)
 	{
-		obj_id = summon.getObjectId();
-		owner_obj_id = summon.getPlayer().getObjectId();
-		npc_id = summon.getTemplate().npcId + 1000000;
-		_type = summon.getSummonType();
-		_name = summon.getName();
-		curHp = (int) summon.getCurrentHp();
-		maxHp = summon.getMaxHp();
-		curMp = (int) summon.getCurrentMp();
-		maxMp = summon.getMaxMp();
-		level = summon.getLevel();
+		this.obj_id = summon.getObjectId();
+		this.owner_obj_id = summon.getPlayer().getObjectId();
+		this.npc_id = summon.getTemplate().npcId + 1000000;
+		this._type = summon.getSummonType();
+		this._name = summon.getName();
+		this.curHp = (int) summon.getCurrentHp();
+		this.maxHp = summon.getMaxHp();
+		this.curMp = (int) summon.getCurrentMp();
+		this.maxMp = summon.getMaxMp();
+		this.level = summon.getLevel();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x19);
-		writeD(obj_id);
-		writeD(npc_id);
-		writeD(_type);
-		writeD(owner_obj_id);
-		writeS(_name);
-		writeD(curHp);
-		writeD(maxHp);
-		writeD(curMp);
-		writeD(maxMp);
-		writeD(level);
+		this.writeEx(0x19);
+		this.writeD(this.obj_id);
+		this.writeD(this.npc_id);
+		this.writeD(this._type);
+		this.writeD(this.owner_obj_id);
+		this.writeS(this._name);
+		this.writeD(this.curHp);
+		this.writeD(this.maxHp);
+		this.writeD(this.curMp);
+		this.writeD(this.maxMp);
+		this.writeD(this.level);
 	}
 }

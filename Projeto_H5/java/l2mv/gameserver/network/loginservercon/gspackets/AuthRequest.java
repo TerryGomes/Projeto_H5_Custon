@@ -9,25 +9,25 @@ public class AuthRequest extends SendablePacket
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0x00);
-		writeD(GameServer.AUTH_SERVER_PROTOCOL);
-		writeC(Config.REQUEST_ID);
-		writeC(Config.ACCEPT_ALTERNATE_ID ? 0x01 : 0x00);
-		writeD(Config.AUTH_SERVER_SERVER_TYPE);
-		writeD(Config.AUTH_SERVER_AGE_LIMIT);
-		writeC(Config.AUTH_SERVER_GM_ONLY ? 0x01 : 0x00);
-		writeC(Config.AUTH_SERVER_BRACKETS ? 0x01 : 0x00);
-		writeC(Config.AUTH_SERVER_IS_PVP ? 0x01 : 0x00);
-		writeS(Config.EXTERNAL_HOSTNAME);
-		writeS(Config.INTERNAL_HOSTNAME);
+		this.writeC(0x00);
+		this.writeD(GameServer.AUTH_SERVER_PROTOCOL);
+		this.writeC(Config.REQUEST_ID);
+		this.writeC(Config.ACCEPT_ALTERNATE_ID ? 0x01 : 0x00);
+		this.writeD(Config.AUTH_SERVER_SERVER_TYPE);
+		this.writeD(Config.AUTH_SERVER_AGE_LIMIT);
+		this.writeC(Config.AUTH_SERVER_GM_ONLY ? 0x01 : 0x00);
+		this.writeC(Config.AUTH_SERVER_BRACKETS ? 0x01 : 0x00);
+		this.writeC(Config.AUTH_SERVER_IS_PVP ? 0x01 : 0x00);
+		this.writeS(Config.EXTERNAL_HOSTNAME);
+		this.writeS(Config.INTERNAL_HOSTNAME);
 
 		// ports
-		writeH(Config.PORTS_GAME.length);
+		this.writeH(Config.PORTS_GAME.length);
 		for (int PORT_GAME : Config.PORTS_GAME)
 		{
-			writeH(PORT_GAME);
+			this.writeH(PORT_GAME);
 		}
 
-		writeD(Config.MAXIMUM_ONLINE_USERS);
+		this.writeD(Config.MAXIMUM_ONLINE_USERS);
 	}
 }

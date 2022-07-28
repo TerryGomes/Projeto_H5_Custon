@@ -19,13 +19,13 @@ public final class RequestRefineCancel extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_targetItemObjId = readD();
+		this._targetItemObjId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -43,7 +43,7 @@ public final class RequestRefineCancel extends L2GameClientPacket
 			return;
 		}
 
-		ItemInstance targetItem = activeChar.getInventory().getItemByObjectId(_targetItemObjId);
+		ItemInstance targetItem = activeChar.getInventory().getItemByObjectId(this._targetItemObjId);
 
 		// cannot remove augmentation from a not augmented item
 		if (targetItem == null || !targetItem.isAugmented())

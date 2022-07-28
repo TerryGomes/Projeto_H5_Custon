@@ -11,22 +11,22 @@ public class GMViewWarehouseWithdrawList extends L2GameServerPacket
 
 	public GMViewWarehouseWithdrawList(Player cha)
 	{
-		_charName = cha.getName();
-		_charAdena = cha.getAdena();
-		_items = cha.getWarehouse().getItems();
+		this._charName = cha.getName();
+		this._charAdena = cha.getAdena();
+		this._items = cha.getWarehouse().getItems();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x9b);
-		writeS(_charName);
-		writeQ(_charAdena);
-		writeH(_items.length);
-		for (ItemInstance temp : _items)
+		this.writeC(0x9b);
+		this.writeS(this._charName);
+		this.writeQ(this._charAdena);
+		this.writeH(this._items.length);
+		for (ItemInstance temp : this._items)
 		{
-			writeItemInfo(temp);
-			writeD(temp.getObjectId());
+			this.writeItemInfo(temp);
+			this.writeD(temp.getObjectId());
 		}
 	}
 }

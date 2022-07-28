@@ -42,18 +42,18 @@ public final class SendStatus extends L2GameServerPacket
 	{
 		Random ppc = new Random();
 
-		writeC(0x00); // Packet ID
-		writeD(0x01); // World ID
-		writeD(max_online_players); // Max Online
-		writeD(online_players); // Current Online
-		writeD(online_players); // Current Online
-		writeD(online_priv_store); // Priv.Store Chars
+		this.writeC(0x00); // Packet ID
+		this.writeD(0x01); // World ID
+		this.writeD(max_online_players); // Max Online
+		this.writeD(online_players); // Current Online
+		this.writeD(online_players); // Current Online
+		this.writeD(online_priv_store); // Priv.Store Chars
 		if (Config.RWHO_SEND_TRASH)
 		{
-			writeH(0x30);
-			writeH(0x2C);
-			writeH(0x36);
-			writeH(0x2C);
+			this.writeH(0x30);
+			this.writeH(0x2C);
+			this.writeH(0x36);
+			this.writeH(0x2C);
 
 			if (Config.RWHO_ARRAY[12] == Config.RWHO_KEEP_STAT)
 			{
@@ -88,15 +88,15 @@ public final class SendStatus extends L2GameServerPacket
 				{
 					Config.RWHO_ARRAY[z] -= 1;
 				}
-				writeH(Config.RWHO_ARRAY[z]);
+				this.writeH(Config.RWHO_ARRAY[z]);
 			}
-			writeD(Config.RWHO_ARRAY[8]);
-			writeD(Config.RWHO_ARRAY[9]);
-			writeD(Config.RWHO_ARRAY[10]);
-			writeD(Config.RWHO_ARRAY[11]);
+			this.writeD(Config.RWHO_ARRAY[8]);
+			this.writeD(Config.RWHO_ARRAY[9]);
+			this.writeD(Config.RWHO_ARRAY[10]);
+			this.writeD(Config.RWHO_ARRAY[11]);
 			Config.RWHO_ARRAY[12]++;
-			writeD(0x00);
-			writeD(0x02);
+			this.writeD(0x00);
+			this.writeD(0x02);
 		}
 	}
 }

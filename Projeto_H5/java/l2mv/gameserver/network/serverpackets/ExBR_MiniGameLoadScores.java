@@ -33,18 +33,18 @@ public class ExBR_MiniGameLoadScores extends L2GameServerPacket
 		{
 			for (String name : entry.getValue())
 			{
-				List<Map.Entry<String, Integer>> set = _entries.get(i);
+				List<Map.Entry<String, Integer>> set = this._entries.get(i);
 				if (set == null)
 				{
-					_entries.put(i, (set = new ArrayList<Map.Entry<String, Integer>>()));
+					this._entries.put(i, (set = new ArrayList<Map.Entry<String, Integer>>()));
 				}
 
 				if (name.equalsIgnoreCase(player.getName()))
 				{
 					if (entry.getKey() > lastBig)
 					{
-						_place = i;
-						_score = (lastBig = entry.getKey());
+						this._place = i;
+						this._score = (lastBig = entry.getKey());
 					}
 				}
 
@@ -52,7 +52,7 @@ public class ExBR_MiniGameLoadScores extends L2GameServerPacket
 
 				i++;
 
-				_lastScore = entry.getKey();
+				this._lastScore = entry.getKey();
 
 				if (i > 100)
 				{
@@ -65,18 +65,18 @@ public class ExBR_MiniGameLoadScores extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xDD);
-		writeD(_place); // place of last big score of player
-		writeD(_score); // last big score of player
-		writeD(0x00); // ?
-		writeD(_lastScore); // last score of list
-		for (IntObjectMap.Entry<List<Map.Entry<String, Integer>>> entry : _entries.entrySet())
+		this.writeEx(0xDD);
+		this.writeD(this._place); // place of last big score of player
+		this.writeD(this._score); // last big score of player
+		this.writeD(0x00); // ?
+		this.writeD(this._lastScore); // last score of list
+		for (IntObjectMap.Entry<List<Map.Entry<String, Integer>>> entry : this._entries.entrySet())
 		{
 			for (Map.Entry<String, Integer> scoreEntry : entry.getValue())
 			{
-				writeD(entry.getKey());
-				writeS(scoreEntry.getKey());
-				writeD(scoreEntry.getValue());
+				this.writeD(entry.getKey());
+				this.writeS(scoreEntry.getKey());
+				this.writeD(scoreEntry.getValue());
 			}
 		}
 	}

@@ -24,14 +24,14 @@ public class RequestExRemoveItemAttribute extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
-		_attributeId = readD();
+		this._objectId = this.readD();
+		this._attributeId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -44,7 +44,7 @@ public class RequestExRemoveItemAttribute extends L2GameClientPacket
 		}
 
 		PcInventory inventory = activeChar.getInventory();
-		ItemInstance itemToUnnchant = inventory.getItemByObjectId(_objectId);
+		ItemInstance itemToUnnchant = inventory.getItemByObjectId(this._objectId);
 
 		if (itemToUnnchant == null)
 		{
@@ -53,7 +53,7 @@ public class RequestExRemoveItemAttribute extends L2GameClientPacket
 		}
 
 		ItemAttributes set = itemToUnnchant.getAttributes();
-		Element element = Element.getElementById(_attributeId);
+		Element element = Element.getElementById(this._attributeId);
 
 		if (element == Element.NONE || set.getValue(element) <= 0)
 		{

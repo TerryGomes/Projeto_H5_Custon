@@ -14,16 +14,16 @@ public class RequestSaveBookMarkSlot extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		name = readS(32);
-		icon = readD();
-		acronym = readS(4);
+		this.name = this.readS(32);
+		this.icon = this.readD();
+		this.acronym = this.readS(4);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar != null && activeChar.bookmarks.add(name, acronym, icon))
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar != null && activeChar.bookmarks.add(this.name, this.acronym, this.icon))
 		{
 			activeChar.sendPacket(new ExGetBookMarkInfo(activeChar));
 		}

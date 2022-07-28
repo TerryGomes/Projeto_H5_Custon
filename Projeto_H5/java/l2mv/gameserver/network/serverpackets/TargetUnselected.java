@@ -13,18 +13,18 @@ public class TargetUnselected extends L2GameServerPacket
 
 	public TargetUnselected(GameObject obj)
 	{
-		_targetId = obj.getObjectId();
-		_loc = obj.getLoc();
+		this._targetId = obj.getObjectId();
+		this._loc = obj.getLoc();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x24);
-		writeD(_targetId);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeD(0x00);
+		this.writeC(0x24);
+		this.writeD(this._targetId);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
+		this.writeD(0x00);
 	}
 }

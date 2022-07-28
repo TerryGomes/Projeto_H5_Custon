@@ -34,24 +34,24 @@ public class RequestBuyItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_listId = readD();
-		_count = readD();
-		if (_count * 12 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		this._listId = this.readD();
+		this._count = this.readD();
+		if (this._count * 12 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1)
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
 
-		_items = new int[_count];
-		_itemQ = new long[_count];
+		this._items = new int[this._count];
+		this._itemQ = new long[this._count];
 
-		for (int i = 0; i < _count; i++)
+		for (int i = 0; i < this._count; i++)
 		{
-			_items[i] = readD();
-			_itemQ[i] = readQ();
-			if (_itemQ[i] < 1)
+			this._items[i] = this.readD();
+			this._itemQ[i] = this.readQ();
+			if (this._itemQ[i] < 1)
 			{
-				_count = 0;
+				this._count = 0;
 				break;
 			}
 		}
@@ -60,9 +60,9 @@ public class RequestBuyItem extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		// Проверяем, не подменили ли id
-		if (activeChar == null || _count == 0 || (activeChar.getBuyListId() != _listId))
+		if (activeChar == null || this._count == 0 || (activeChar.getBuyListId() != this._listId))
 		{
 			// TODO audit
 			return;
@@ -106,7 +106,7 @@ public class RequestBuyItem extends L2GameClientPacket
 			return;
 		}
 
-		NpcTradeList list = BuyListHolder.getInstance().getBuyList(_listId);
+		NpcTradeList list = BuyListHolder.getInstance().getBuyList(this._listId);
 		if (list == null)
 		{
 			// TODO audit
@@ -130,15 +130,15 @@ public class RequestBuyItem extends L2GameClientPacket
 			}
 		}
 
-		List<TradeItem> buyList = new ArrayList<TradeItem>(_count);
+		List<TradeItem> buyList = new ArrayList<TradeItem>(this._count);
 		List<TradeItem> tradeList = list.getItems();
 		try
 		{
 			loop:
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < this._count; i++)
 			{
-				int itemId = _items[i];
-				long count = _itemQ[i];
+				int itemId = this._items[i];
+				long count = this._itemQ[i];
 				long price = 0;
 
 				for (TradeItem ti : tradeList)
@@ -222,7 +222,7 @@ public class RequestBuyItem extends L2GameClientPacket
 			return;
 		}
 
-		sendPacket(new ExBuySellList.SellRefundList(activeChar, true));
+		this.sendPacket(new ExBuySellList.SellRefundList(activeChar, true));
 		activeChar.sendChanges();
 	}
 }

@@ -18,60 +18,60 @@ public class ExNpcQuestHtmlMessage extends NpcHtmlMessage
 	public ExNpcQuestHtmlMessage(int npcObjId, int questId)
 	{
 		super(npcObjId);
-		_questId = questId;
+		this._questId = questId;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		if (_file != null) // TODO may not be very good to do it here ...
+		if (this._file != null) // TODO may not be very good to do it here ...
 		{
 			if (player.isGM())
 			{
-				Functions.sendDebugMessage(player, "HTML: " + _file);
+				Functions.sendDebugMessage(player, "HTML: " + this._file);
 			}
-			String content = HtmCache.getInstance().getNotNull(_file, player);
-			String content2 = HtmCache.getInstance().getNullable(_file, player);
+			String content = HtmCache.getInstance().getNotNull(this._file, player);
+			String content2 = HtmCache.getInstance().getNullable(this._file, player);
 			if (content2 == null)
 			{
-				setHtml(have_appends && _file.endsWith(".htm") ? "" : content);
+				this.setHtml(this.have_appends && this._file.endsWith(".htm") ? "" : content);
 			}
 			else
 			{
-				setHtml(content);
+				this.setHtml(content);
 			}
 		}
 
-		for (int i = 0; i < _replaces.size(); i += 2)
+		for (int i = 0; i < this._replaces.size(); i += 2)
 		{
-			_html = _html.replaceAll(_replaces.get(i), _replaces.get(i + 1));
+			this._html = this._html.replaceAll(this._replaces.get(i), this._replaces.get(i + 1));
 		}
 
-		if (_html == null)
+		if (this._html == null)
 		{
 			return;
 		}
 
-		Matcher m = objectId.matcher(_html);
+		Matcher m = objectId.matcher(this._html);
 		if (m != null)
 		{
-			_html = m.replaceAll(String.valueOf(_npcObjId));
+			this._html = m.replaceAll(String.valueOf(this._npcObjId));
 		}
 
-		_html = playername.matcher(_html).replaceAll(player.getName());
+		this._html = playername.matcher(this._html).replaceAll(player.getName());
 
 		player.cleanBypasses(BypassType.NPC);
-		_html = player.encodeBypasses(_html, BypassType.NPC);
+		this._html = player.encodeBypasses(this._html, BypassType.NPC);
 
-		writeEx(0x8d);
-		writeD(_npcObjId);
-		writeS(_html);
-		writeD(_questId);
+		this.writeEx(0x8d);
+		this.writeD(this._npcObjId);
+		this.writeS(this._html);
+		this.writeD(this._questId);
 	}
 }

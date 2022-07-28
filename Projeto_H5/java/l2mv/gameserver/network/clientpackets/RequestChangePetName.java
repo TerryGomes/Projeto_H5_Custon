@@ -11,13 +11,13 @@ public class RequestChangePetName extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS();
+		this._name = this.readS();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		PetInstance pet = activeChar.getPet() != null && activeChar.getPet().isPet() ? (PetInstance) activeChar.getPet() : null;
 		if (pet == null)
 		{
@@ -26,12 +26,12 @@ public class RequestChangePetName extends L2GameClientPacket
 
 		if (pet.isDefaultName())
 		{
-			if (_name.length() < 1 || _name.length() > 25)
+			if (this._name.length() < 1 || this._name.length() > 25)
 			{
 				activeChar.sendPacket(SystemMsg.YOUR_PETS_NAME_CAN_BE_UP_TO_8_CHARACTERS_IN_LENGTH);
 				return;
 			}
-			pet.setName("." + _name);
+			pet.setName("." + this._name);
 			pet.broadcastCharInfo();
 			pet.updateControlItem();
 		}

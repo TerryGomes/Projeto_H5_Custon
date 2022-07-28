@@ -19,43 +19,43 @@ public final class RequestExCubeGameChangeTeam extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_arena = readD() + 1;
-		_team = readD();
+		this._arena = this.readD() + 1;
+		this._team = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		if (HandysBlockCheckerManager.getInstance().arenaIsBeingUsed(_arena))
+		if (HandysBlockCheckerManager.getInstance().arenaIsBeingUsed(this._arena))
 		{
 			return;
 		}
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null || activeChar.isDead())
 		{
 			return;
 		}
 
-		switch (_team)
+		switch (this._team)
 		{
 		case 0:
 		case 1:
 			// Change Player Team
-			HandysBlockCheckerManager.getInstance().changePlayerToTeam(activeChar, _arena, _team);
+			HandysBlockCheckerManager.getInstance().changePlayerToTeam(activeChar, this._arena, this._team);
 			break;
 		case -1:
 		{
-			int team = HandysBlockCheckerManager.getInstance().getHolder(_arena).getPlayerTeam(activeChar);
+			int team = HandysBlockCheckerManager.getInstance().getHolder(this._arena).getPlayerTeam(activeChar);
 			// client sends two times this packet if click on exit
 			// client did not send this packet on restart
 			if (team > -1)
 			{
-				HandysBlockCheckerManager.getInstance().removePlayer(activeChar, _arena, team);
+				HandysBlockCheckerManager.getInstance().removePlayer(activeChar, this._arena, team);
 			}
 			break;
 		}
 		default:
-			_log.warn("Wrong Team ID: " + _team);
+			_log.warn("Wrong Team ID: " + this._team);
 			break;
 		}
 	}

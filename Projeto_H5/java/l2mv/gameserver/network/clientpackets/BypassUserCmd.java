@@ -17,27 +17,27 @@ public class BypassUserCmd extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_command = readD();
+		this._command = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		IUserCommandHandler handler = UserCommandHandler.getInstance().getUserCommandHandler(_command);
+		IUserCommandHandler handler = UserCommandHandler.getInstance().getUserCommandHandler(this._command);
 
 		if (handler == null)
 		{
-			activeChar.sendMessage(new CustomMessage("common.S1NotImplemented", activeChar).addString(String.valueOf(_command)));
+			activeChar.sendMessage(new CustomMessage("common.S1NotImplemented", activeChar).addString(String.valueOf(this._command)));
 		}
 		else
 		{
-			handler.useUserCommand(_command, activeChar);
+			handler.useUserCommand(this._command, activeChar);
 		}
 	}
 }

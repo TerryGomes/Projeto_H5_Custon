@@ -28,16 +28,16 @@ public class MyTargetSelected extends L2GameServerPacket
 	 */
 	public MyTargetSelected(int objectId, int color)
 	{
-		_objectId = objectId;
-		_color = color;
+		this._objectId = objectId;
+		this._color = color;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xb9);
-		writeD(_objectId);
-		writeH(_color);
-		writeD(0x00);
+		this.writeC(0xb9);
+		this.writeD(this._objectId);
+		this.writeH(this._color);
+		this.writeD(0x00);
 	}
 }

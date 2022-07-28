@@ -64,29 +64,29 @@ public class UserInfo extends L2GameServerPacket
 	{
 		if (player.getTransformationName() != null)
 		{
-			_name = player.getTransformationName();
-			title = "";
-			clan_crest_id = 0;
-			ally_crest_id = 0;
-			large_clan_crest_id = 0;
-			cw_level = CursedWeaponsManager.getInstance().getLevel(player.getCursedWeaponEquippedId());
+			this._name = player.getTransformationName();
+			this.title = "";
+			this.clan_crest_id = 0;
+			this.ally_crest_id = 0;
+			this.large_clan_crest_id = 0;
+			this.cw_level = CursedWeaponsManager.getInstance().getLevel(player.getCursedWeaponEquippedId());
 		}
 		else
 		{
-			_name = player.getVisibleName();
+			this._name = player.getVisibleName();
 
 			Clan clan = player.getClan();
 			Alliance alliance = clan == null ? null : clan.getAlliance();
 			//
-			clan_id = clan == null ? 0 : clan.getClanId();
-			clan_crest_id = clan == null ? 0 : clan.getCrestId();
-			large_clan_crest_id = clan == null ? 0 : clan.getCrestLargeId();
+			this.clan_id = clan == null ? 0 : clan.getClanId();
+			this.clan_crest_id = clan == null ? 0 : clan.getCrestId();
+			this.large_clan_crest_id = clan == null ? 0 : clan.getCrestLargeId();
 			//
-			ally_id = alliance == null ? 0 : alliance.getAllyId();
-			ally_crest_id = alliance == null ? 0 : alliance.getAllyCrestId();
+			this.ally_id = alliance == null ? 0 : alliance.getAllyId();
+			this.ally_crest_id = alliance == null ? 0 : alliance.getAllyCrestId();
 
-			cw_level = 0;
-			title = player.getVisibleTitle();
+			this.cw_level = 0;
+			this.title = player.getVisibleTitle();
 		}
 
 //		if (player.getPlayerAccess().GodMode && player.isInvisible())
@@ -95,308 +95,308 @@ public class UserInfo extends L2GameServerPacket
 		{
 			if (NpcHolder.getInstance().getTemplate(player.getPolyId()) != null)
 			{
-				title += " - " + NpcHolder.getInstance().getTemplate(player.getPolyId()).name;
+				this.title += " - " + NpcHolder.getInstance().getTemplate(player.getPolyId()).name;
 			}
 			else
 			{
-				title += " - Polymorphed";
+				this.title += " - Polymorphed";
 			}
 		}
 
 		if (player.isMounted())
 		{
-			_enchant = 0;
-			mount_id = player.getMountNpcId() + 1000000;
-			mount_type = player.getMountType();
+			this._enchant = 0;
+			this.mount_id = player.getMountNpcId() + 1000000;
+			this.mount_type = player.getMountType();
 		}
 		else
 		{
-			_enchant = player.getEnchantEffect();
-			mount_id = 0;
-			mount_type = 0;
+			this._enchant = player.getEnchantEffect();
+			this.mount_id = 0;
+			this.mount_type = 0;
 		}
 
-		_weaponFlag = player.getActiveWeaponInstance() == null ? 0x14 : 0x28;
+		this._weaponFlag = player.getActiveWeaponInstance() == null ? 0x14 : 0x28;
 
-		move_speed = player.getMovementSpeedMultiplier();
-		_runSpd = (int) (player.getRunSpeed() / move_speed);
-		_walkSpd = (int) (player.getWalkSpeed() / move_speed);
+		this.move_speed = player.getMovementSpeedMultiplier();
+		this._runSpd = (int) (player.getRunSpeed() / this.move_speed);
+		this._walkSpd = (int) (player.getWalkSpeed() / this.move_speed);
 
-		_flRunSpd = 0; // TODO
-		_flWalkSpd = 0; // TODO
+		this._flRunSpd = 0; // TODO
+		this._flWalkSpd = 0; // TODO
 
 		if (player.isFlying())
 		{
-			_flyRunSpd = _runSpd;
-			_flyWalkSpd = _walkSpd;
+			this._flyRunSpd = this._runSpd;
+			this._flyWalkSpd = this._walkSpd;
 		}
 		else
 		{
-			_flyRunSpd = 0;
-			_flyWalkSpd = 0;
+			this._flyRunSpd = 0;
+			this._flyWalkSpd = 0;
 		}
 
-		_swimRunSpd = player.getSwimSpeed();
-		_swimWalkSpd = player.getSwimSpeed();
+		this._swimRunSpd = player.getSwimSpeed();
+		this._swimWalkSpd = player.getSwimSpeed();
 
-		_inv = new int[Inventory.PAPERDOLL_MAX][3];
+		this._inv = new int[Inventory.PAPERDOLL_MAX][3];
 		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 		{
-			_inv[PAPERDOLL_ID][0] = player.getInventory().getPaperdollObjectId(PAPERDOLL_ID);
-			_inv[PAPERDOLL_ID][1] = player.isInOlympiadMode() ? player.getInventory().getPaperdollItemId(PAPERDOLL_ID) : player.getInventory().getPaperdollVisualItemId(PAPERDOLL_ID);
-			_inv[PAPERDOLL_ID][2] = player.getInventory().getPaperdollAugmentationId(PAPERDOLL_ID);
+			this._inv[PAPERDOLL_ID][0] = player.getInventory().getPaperdollObjectId(PAPERDOLL_ID);
+			this._inv[PAPERDOLL_ID][1] = player.isInOlympiadMode() ? player.getInventory().getPaperdollItemId(PAPERDOLL_ID) : player.getInventory().getPaperdollVisualItemId(PAPERDOLL_ID);
+			this._inv[PAPERDOLL_ID][2] = player.getInventory().getPaperdollAugmentationId(PAPERDOLL_ID);
 		}
 
-		_relation = player.isClanLeader() ? 0x40 : 0;
+		this._relation = player.isClanLeader() ? 0x40 : 0;
 		for (GlobalEvent e : player.getEvents())
 		{
-			_relation = e.getUserRelation(player, _relation);
+			this._relation = e.getUserRelation(player, this._relation);
 		}
 
-		_loc = player.getLoc();
-		obj_id = player.getObjectId();
-		vehicle_obj_id = player.isInBoat() ? player.getBoat().getObjectId() : 0x00;
-		_race = player.getRace().ordinal();
-		sex = player.getSex();
-		base_class = player.getBaseClassId();
-		level = player.getLevel();
-		_exp = player.getExp();
-		_expPercent = Experience.getExpPercent(player.getLevel(), player.getExp());
-		_str = player.getSTR();
-		_dex = player.getDEX();
-		_con = player.getCON();
-		_int = player.getINT();
-		_wit = player.getWIT();
-		_men = player.getMEN();
-		curHp = (int) player.getCurrentHp();
-		maxHp = player.getMaxHp();
-		curMp = (int) player.getCurrentMp();
-		maxMp = player.getMaxMp();
-		curLoad = player.getCurrentLoad();
-		maxLoad = player.getMaxLoad();
-		_sp = player.getIntSp();
-		_patk = player.getPAtk(null);
-		_patkspd = player.getPAtkSpd();
-		_pdef = player.getPDef(null);
-		evasion = player.getEvasionRate(null);
-		accuracy = player.getAccuracy();
-		crit = player.getCriticalHit(null, null);
-		_matk = player.getMAtk(null, null);
-		_matkspd = player.getMAtkSpd();
-		_mdef = player.getMDef(null, null);
-		pvp_flag = player.getPvpFlag(); // 0=white, 1=purple, 2=purpleblink
-		karma = player.getKarma();
-		attack_speed = player.getAttackSpeedMultiplier();
-		col_radius = player.getColRadius();
-		col_height = player.getColHeight();
-		hair_style = player.getHairStyle();
-		hair_color = player.getHairColor();
-		face = player.getFace();
-		gm_commands = player.isGM() || player.getPlayerAccess().CanUseGMCommand ? 1 : 0;
+		this._loc = player.getLoc();
+		this.obj_id = player.getObjectId();
+		this.vehicle_obj_id = player.isInBoat() ? player.getBoat().getObjectId() : 0x00;
+		this._race = player.getRace().ordinal();
+		this.sex = player.getSex();
+		this.base_class = player.getBaseClassId();
+		this.level = player.getLevel();
+		this._exp = player.getExp();
+		this._expPercent = Experience.getExpPercent(player.getLevel(), player.getExp());
+		this._str = player.getSTR();
+		this._dex = player.getDEX();
+		this._con = player.getCON();
+		this._int = player.getINT();
+		this._wit = player.getWIT();
+		this._men = player.getMEN();
+		this.curHp = (int) player.getCurrentHp();
+		this.maxHp = player.getMaxHp();
+		this.curMp = (int) player.getCurrentMp();
+		this.maxMp = player.getMaxMp();
+		this.curLoad = player.getCurrentLoad();
+		this.maxLoad = player.getMaxLoad();
+		this._sp = player.getIntSp();
+		this._patk = player.getPAtk(null);
+		this._patkspd = player.getPAtkSpd();
+		this._pdef = player.getPDef(null);
+		this.evasion = player.getEvasionRate(null);
+		this.accuracy = player.getAccuracy();
+		this.crit = player.getCriticalHit(null, null);
+		this._matk = player.getMAtk(null, null);
+		this._matkspd = player.getMAtkSpd();
+		this._mdef = player.getMDef(null, null);
+		this.pvp_flag = player.getPvpFlag(); // 0=white, 1=purple, 2=purpleblink
+		this.karma = player.getKarma();
+		this.attack_speed = player.getAttackSpeedMultiplier();
+		this.col_radius = player.getColRadius();
+		this.col_height = player.getColHeight();
+		this.hair_style = player.getHairStyle();
+		this.hair_color = player.getHairColor();
+		this.face = player.getFace();
+		this.gm_commands = player.isGM() || player.getPlayerAccess().CanUseGMCommand ? 1 : 0;
 		// builder level активирует в клиенте админские команды
-		clan_id = player.getClanId();
-		ally_id = player.getAllyId();
-		private_store = (player.isInBuffStore() ? 0 : player.getPrivateStoreType());
-		can_crystalize = player.getSkillLevel(Skill.SKILL_CRYSTALLIZE) > 0 ? 1 : 0;
-		pk_kills = player.getPkKills();
-		pvp_kills = player.getPvpKills();
-		cubics = player.getCubics().toArray(new EffectCubic[player.getCubics().size()]);
-		_abnormalEffect = player.getAbnormalEffect();
-		_abnormalEffect2 = player.getAbnormalEffect2();
-		ClanPrivs = player.getClanPrivileges();
-		rec_left = player.getRecomLeft(); // c2 recommendations remaining
-		rec_have = player.getRecomHave(); // c2 recommendations received
-		InventoryLimit = player.getInventoryLimit();
-		class_id = player.getClassId().getId();
-		maxCp = player.getMaxCp();
-		curCp = (int) player.getCurrentCp();
-		_team = player.getTeam();
-		noble = player.isNoble() || player.isGM() && Config.GM_HERO_AURA ? 1 : 0; // 0x01: symbol on char menu ctrl+I
-		hero = player.isHero() || player.isHeroAura() || player.isGM() && Config.GM_HERO_AURA ? 1 : 0; // 0x01: Hero Aura and symbol
+		this.clan_id = player.getClanId();
+		this.ally_id = player.getAllyId();
+		this.private_store = (player.isInBuffStore() ? 0 : player.getPrivateStoreType());
+		this.can_crystalize = player.getSkillLevel(Skill.SKILL_CRYSTALLIZE) > 0 ? 1 : 0;
+		this.pk_kills = player.getPkKills();
+		this.pvp_kills = player.getPvpKills();
+		this.cubics = player.getCubics().toArray(new EffectCubic[player.getCubics().size()]);
+		this._abnormalEffect = player.getAbnormalEffect();
+		this._abnormalEffect2 = player.getAbnormalEffect2();
+		this.ClanPrivs = player.getClanPrivileges();
+		this.rec_left = player.getRecomLeft(); // c2 recommendations remaining
+		this.rec_have = player.getRecomHave(); // c2 recommendations received
+		this.InventoryLimit = player.getInventoryLimit();
+		this.class_id = player.getClassId().getId();
+		this.maxCp = player.getMaxCp();
+		this.curCp = (int) player.getCurrentCp();
+		this._team = player.getTeam();
+		this.noble = player.isNoble() || player.isGM() && Config.GM_HERO_AURA ? 1 : 0; // 0x01: symbol on char menu ctrl+I
+		this.hero = player.isHero() || player.isHeroAura() || player.isGM() && Config.GM_HERO_AURA ? 1 : 0; // 0x01: Hero Aura and symbol
 		// fishing = _cha.isFishing() ? 1 : 0; // Fishing Mode
-		_fishLoc = player.getFishLoc();
-		name_color = player.getVisibleNameColor();
-		running = player.isRunning() ? 0x01 : 0x00; // changes the Speed display on Status Window
-		pledge_class = player.getPledgeClass();
-		pledge_type = player.getPledgeType();
-		title_color = player.getVisibleTitleColor();
-		transformation = player.getTransformation();
-		attackElement = player.getAttackElement();
-		attackElementValue = player.getAttack(attackElement);
-		defenceFire = player.getDefence(Element.FIRE);
-		defenceWater = player.getDefence(Element.WATER);
-		defenceWind = player.getDefence(Element.WIND);
-		defenceEarth = player.getDefence(Element.EARTH);
-		defenceHoly = player.getDefence(Element.HOLY);
-		defenceUnholy = player.getDefence(Element.UNHOLY);
-		agathion = player.getAgathionId();
-		fame = player.getFame();
-		vitality = (int) player.getVitality();
-		partyRoom = player.getMatchingRoom() != null && player.getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING && player.getMatchingRoom().getLeader() == player;
-		isFlying = player.isInFlyingTransform();
-		talismans = player.getTalismanCount();
-		openCloak = player.getOpenCloak();
-		_allowMap = player.isActionBlocked(Zone.BLOCKED_ACTION_MINIMAP);
+		this._fishLoc = player.getFishLoc();
+		this.name_color = player.getVisibleNameColor();
+		this.running = player.isRunning() ? 0x01 : 0x00; // changes the Speed display on Status Window
+		this.pledge_class = player.getPledgeClass();
+		this.pledge_type = player.getPledgeType();
+		this.title_color = player.getVisibleTitleColor();
+		this.transformation = player.getTransformation();
+		this.attackElement = player.getAttackElement();
+		this.attackElementValue = player.getAttack(this.attackElement);
+		this.defenceFire = player.getDefence(Element.FIRE);
+		this.defenceWater = player.getDefence(Element.WATER);
+		this.defenceWind = player.getDefence(Element.WIND);
+		this.defenceEarth = player.getDefence(Element.EARTH);
+		this.defenceHoly = player.getDefence(Element.HOLY);
+		this.defenceUnholy = player.getDefence(Element.UNHOLY);
+		this.agathion = player.getAgathionId();
+		this.fame = player.getFame();
+		this.vitality = (int) player.getVitality();
+		this.partyRoom = player.getMatchingRoom() != null && player.getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING && player.getMatchingRoom().getLeader() == player;
+		this.isFlying = player.isInFlyingTransform();
+		this.talismans = player.getTalismanCount();
+		this.openCloak = player.getOpenCloak();
+		this._allowMap = player.isActionBlocked(Zone.BLOCKED_ACTION_MINIMAP);
 
-		can_writeImpl = true;
+		this.can_writeImpl = true;
 
 		if (player.isInFightClub())
 		{
 			AbstractFightClub fightClubEvent = player.getFightClubEvent();
-			_name = fightClubEvent.getVisibleName(player, _name, true);
-			title = fightClubEvent.getVisibleTitle(player, title, true);
-			title_color = fightClubEvent.getVisibleTitleColor(player, title_color, true);
-			name_color = fightClubEvent.getVisibleNameColor(player, name_color, true);
+			this._name = fightClubEvent.getVisibleName(player, this._name, true);
+			this.title = fightClubEvent.getVisibleTitle(player, this.title, true);
+			this.title_color = fightClubEvent.getVisibleTitleColor(player, this.title_color, true);
+			this.name_color = fightClubEvent.getVisibleNameColor(player, this.name_color, true);
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		if (!can_writeImpl)
+		if (!this.can_writeImpl)
 		{
 			return;
 		}
 
-		writeC(0x32);
+		this.writeC(0x32);
 
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z + Config.CLIENT_Z_SHIFT);
-		writeD(vehicle_obj_id);
-		writeD(obj_id);
-		writeS(_name);
-		writeD(_race);
-		writeD(sex);
-		writeD(base_class);
-		writeD(level);
-		writeQ(_exp);
-		writeF(_expPercent);
-		writeD(_str);
-		writeD(_dex);
-		writeD(_con);
-		writeD(_int);
-		writeD(_wit);
-		writeD(_men);
-		writeD(maxHp);
-		writeD(curHp);
-		writeD(maxMp);
-		writeD(curMp);
-		writeD(_sp);
-		writeD(curLoad);
-		writeD(maxLoad);
-		writeD(_weaponFlag);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z + Config.CLIENT_Z_SHIFT);
+		this.writeD(this.vehicle_obj_id);
+		this.writeD(this.obj_id);
+		this.writeS(this._name);
+		this.writeD(this._race);
+		this.writeD(this.sex);
+		this.writeD(this.base_class);
+		this.writeD(this.level);
+		this.writeQ(this._exp);
+		this.writeF(this._expPercent);
+		this.writeD(this._str);
+		this.writeD(this._dex);
+		this.writeD(this._con);
+		this.writeD(this._int);
+		this.writeD(this._wit);
+		this.writeD(this._men);
+		this.writeD(this.maxHp);
+		this.writeD(this.curHp);
+		this.writeD(this.maxMp);
+		this.writeD(this.curMp);
+		this.writeD(this._sp);
+		this.writeD(this.curLoad);
+		this.writeD(this.maxLoad);
+		this.writeD(this._weaponFlag);
 
 		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 		{
-			writeD(_inv[PAPERDOLL_ID][0]);
+			this.writeD(this._inv[PAPERDOLL_ID][0]);
 		}
 
 		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 		{
-			writeD(_inv[PAPERDOLL_ID][1]);
+			this.writeD(this._inv[PAPERDOLL_ID][1]);
 		}
 
 		for (int PAPERDOLL_ID : Inventory.PAPERDOLL_ORDER)
 		{
-			writeD(_inv[PAPERDOLL_ID][2]);
+			this.writeD(this._inv[PAPERDOLL_ID][2]);
 		}
 
-		writeD(talismans);
-		writeD(openCloak ? 0x01 : 0x00);
+		this.writeD(this.talismans);
+		this.writeD(this.openCloak ? 0x01 : 0x00);
 
-		writeD(_patk);
-		writeD(_patkspd);
-		writeD(_pdef);
-		writeD(evasion);
-		writeD(accuracy);
-		writeD(crit);
-		writeD(_matk);
-		writeD(_matkspd);
-		writeD(_patkspd);
-		writeD(_mdef);
-		writeD(pvp_flag);
-		writeD(karma);
-		writeD(_runSpd);
-		writeD(_walkSpd);
-		writeD(_swimRunSpd); // swimspeed
-		writeD(_swimWalkSpd); // swimspeed
-		writeD(_flRunSpd);
-		writeD(_flWalkSpd);
-		writeD(_flyRunSpd);
-		writeD(_flyWalkSpd);
-		writeF(move_speed);
-		writeF(attack_speed);
-		writeF(col_radius);
-		writeF(col_height);
-		writeD(hair_style);
-		writeD(hair_color);
-		writeD(face);
-		writeD(gm_commands);
-		writeS(title);
-		writeD(clan_id);
-		writeD(clan_crest_id);
-		writeD(ally_id);
-		writeD(ally_crest_id);
+		this.writeD(this._patk);
+		this.writeD(this._patkspd);
+		this.writeD(this._pdef);
+		this.writeD(this.evasion);
+		this.writeD(this.accuracy);
+		this.writeD(this.crit);
+		this.writeD(this._matk);
+		this.writeD(this._matkspd);
+		this.writeD(this._patkspd);
+		this.writeD(this._mdef);
+		this.writeD(this.pvp_flag);
+		this.writeD(this.karma);
+		this.writeD(this._runSpd);
+		this.writeD(this._walkSpd);
+		this.writeD(this._swimRunSpd); // swimspeed
+		this.writeD(this._swimWalkSpd); // swimspeed
+		this.writeD(this._flRunSpd);
+		this.writeD(this._flWalkSpd);
+		this.writeD(this._flyRunSpd);
+		this.writeD(this._flyWalkSpd);
+		this.writeF(this.move_speed);
+		this.writeF(this.attack_speed);
+		this.writeF(this.col_radius);
+		this.writeF(this.col_height);
+		this.writeD(this.hair_style);
+		this.writeD(this.hair_color);
+		this.writeD(this.face);
+		this.writeD(this.gm_commands);
+		this.writeS(this.title);
+		this.writeD(this.clan_id);
+		this.writeD(this.clan_crest_id);
+		this.writeD(this.ally_id);
+		this.writeD(this.ally_crest_id);
 		// 0x40 leader rights
 		// siege flags: attacker - 0x180 sword over name, defender - 0x80 shield, 0xC0 crown (|leader), 0x1C0 flag (|leader)
-		writeD(_relation);
-		writeC(mount_type); // mount type
-		writeC(private_store);
-		writeC(can_crystalize);
-		writeD(pk_kills);
-		writeD(pvp_kills);
-		writeH(cubics.length);
-		for (EffectCubic cubic : cubics)
+		this.writeD(this._relation);
+		this.writeC(this.mount_type); // mount type
+		this.writeC(this.private_store);
+		this.writeC(this.can_crystalize);
+		this.writeD(this.pk_kills);
+		this.writeD(this.pvp_kills);
+		this.writeH(this.cubics.length);
+		for (EffectCubic cubic : this.cubics)
 		{
-			writeH(cubic == null ? 0 : cubic.getId());
+			this.writeH(cubic == null ? 0 : cubic.getId());
 		}
-		writeC(partyRoom ? 0x01 : 0x00); // 1-find party members
-		writeD(_abnormalEffect);
-		writeC(isFlying ? 0x02 : 0x00);
-		writeD(ClanPrivs);
-		writeH(rec_left);
-		writeH(rec_have);
-		writeD(mount_id);
-		writeH(InventoryLimit);
-		writeD(class_id);
-		writeD(0x00); // special effects? circles around player...
-		writeD(maxCp);
-		writeD(curCp);
-		writeC(_enchant);
-		writeC(_team.ordinal());
-		writeD(large_clan_crest_id);
-		writeC(noble);
-		writeC(hero);
-		writeC(0x00);
-		writeD(_fishLoc.x);
-		writeD(_fishLoc.y);
-		writeD(_fishLoc.z);
-		writeD(name_color);
-		writeC(running);
-		writeD(pledge_class);
-		writeD(pledge_type);
-		writeD(title_color);
-		writeD(cw_level);
-		writeD(transformation); // Transformation id
+		this.writeC(this.partyRoom ? 0x01 : 0x00); // 1-find party members
+		this.writeD(this._abnormalEffect);
+		this.writeC(this.isFlying ? 0x02 : 0x00);
+		this.writeD(this.ClanPrivs);
+		this.writeH(this.rec_left);
+		this.writeH(this.rec_have);
+		this.writeD(this.mount_id);
+		this.writeH(this.InventoryLimit);
+		this.writeD(this.class_id);
+		this.writeD(0x00); // special effects? circles around player...
+		this.writeD(this.maxCp);
+		this.writeD(this.curCp);
+		this.writeC(this._enchant);
+		this.writeC(this._team.ordinal());
+		this.writeD(this.large_clan_crest_id);
+		this.writeC(this.noble);
+		this.writeC(this.hero);
+		this.writeC(0x00);
+		this.writeD(this._fishLoc.x);
+		this.writeD(this._fishLoc.y);
+		this.writeD(this._fishLoc.z);
+		this.writeD(this.name_color);
+		this.writeC(this.running);
+		this.writeD(this.pledge_class);
+		this.writeD(this.pledge_type);
+		this.writeD(this.title_color);
+		this.writeD(this.cw_level);
+		this.writeD(this.transformation); // Transformation id
 
 		// AttackElement (0 - Fire, 1 - Water, 2 - Wind, 3 - Earth, 4 - Holy, 5 - Dark, -2 - None)
-		writeH(attackElement.getId());
-		writeH(attackElementValue); // AttackElementValue
-		writeH(defenceFire); // DefAttrFire
-		writeH(defenceWater); // DefAttrWater
-		writeH(defenceWind); // DefAttrWind
-		writeH(defenceEarth); // DefAttrEarth
-		writeH(defenceHoly); // DefAttrHoly
-		writeH(defenceUnholy); // DefAttrUnholy
+		this.writeH(this.attackElement.getId());
+		this.writeH(this.attackElementValue); // AttackElementValue
+		this.writeH(this.defenceFire); // DefAttrFire
+		this.writeH(this.defenceWater); // DefAttrWater
+		this.writeH(this.defenceWind); // DefAttrWind
+		this.writeH(this.defenceEarth); // DefAttrEarth
+		this.writeH(this.defenceHoly); // DefAttrHoly
+		this.writeH(this.defenceUnholy); // DefAttrUnholy
 
-		writeD(agathion);
+		this.writeD(this.agathion);
 
 		// T2 Starts
-		writeD(fame); // Fame
-		writeD(_allowMap ? 1 : 0); // Minimap on Hellbound
+		this.writeD(this.fame); // Fame
+		this.writeD(this._allowMap ? 1 : 0); // Minimap on Hellbound
 
-		writeD(vitality); // Vitality Points
-		writeD(_abnormalEffect2);
+		this.writeD(this.vitality); // Vitality Points
+		this.writeD(this._abnormalEffect2);
 	}
 }

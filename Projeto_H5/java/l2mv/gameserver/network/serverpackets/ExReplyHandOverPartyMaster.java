@@ -12,13 +12,13 @@ public class ExReplyHandOverPartyMaster extends L2GameServerPacket
 
 	public ExReplyHandOverPartyMaster(boolean leader)
 	{
-		_isLeader = leader;
+		this._isLeader = leader;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xC4);
-		writeD(_isLeader);
+		this.writeEx(0xC4);
+		this.writeD(this._isLeader);
 	}
 }

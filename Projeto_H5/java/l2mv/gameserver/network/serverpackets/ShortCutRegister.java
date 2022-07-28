@@ -9,14 +9,14 @@ public class ShortCutRegister extends ShortCutPacket
 
 	public ShortCutRegister(Player player, ShortCut sc)
 	{
-		_shortcutInfo = convert(player, sc);
+		this._shortcutInfo = convert(player, sc);
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x44);
+		this.writeC(0x44);
 
-		_shortcutInfo.write(this);
+		this._shortcutInfo.write(this);
 	}
 }

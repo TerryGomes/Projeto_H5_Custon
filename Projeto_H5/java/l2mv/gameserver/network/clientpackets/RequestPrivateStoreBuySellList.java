@@ -35,31 +35,31 @@ public class RequestPrivateStoreBuySellList extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_buyerId = readD();
-		_count = readD();
+		this._buyerId = this.readD();
+		this._count = this.readD();
 
-		if (_count * 28 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		if (this._count * 28 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1)
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
 
-		_items = new int[_count];
-		_itemQ = new long[_count];
-		_itemP = new long[_count];
+		this._items = new int[this._count];
+		this._itemQ = new long[this._count];
+		this._itemP = new long[this._count];
 
-		for (int i = 0; i < _count; i++)
+		for (int i = 0; i < this._count; i++)
 		{
-			_items[i] = readD();
-			readD(); // itemId
-			readH();
-			readH();
-			_itemQ[i] = readQ();
-			_itemP[i] = readQ();
+			this._items[i] = this.readD();
+			this.readD(); // itemId
+			this.readH();
+			this.readH();
+			this._itemQ[i] = this.readQ();
+			this._itemP[i] = this.readQ();
 
-			if (_itemQ[i] < 1 || _itemP[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
+			if (this._itemQ[i] < 1 || this._itemP[i] < 1 || ArrayUtils.indexOf(this._items, this._items[i]) < i)
 			{
-				_count = 0;
+				this._count = 0;
 				break;
 			}
 		}
@@ -68,8 +68,8 @@ public class RequestPrivateStoreBuySellList extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player seller = getClient().getActiveChar();
-		if (seller == null || _count == 0)
+		Player seller = this.getClient().getActiveChar();
+		if (seller == null || this._count == 0)
 		{
 			return;
 		}
@@ -104,7 +104,7 @@ public class RequestPrivateStoreBuySellList extends L2GameClientPacket
 			return;
 		}
 
-		Player buyer = (Player) seller.getVisibleObject(_buyerId);
+		Player buyer = (Player) seller.getVisibleObject(this._buyerId);
 		if (buyer == null || buyer.getPrivateStoreType() != Player.STORE_PRIVATE_BUY || !seller.isInRangeZ(buyer, Creature.INTERACTION_DISTANCE))
 		{
 			seller.sendPacket(SystemMsg.THE_ATTEMPT_TO_SELL_HAS_FAILED);
@@ -131,11 +131,11 @@ public class RequestPrivateStoreBuySellList extends L2GameClientPacket
 		try
 		{
 			loop:
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < this._count; i++)
 			{
-				int objectId = _items[i];
-				long count = _itemQ[i];
-				long price = _itemP[i];
+				int objectId = this._items[i];
+				long count = this._itemQ[i];
+				long price = this._itemP[i];
 
 				ItemInstance item = seller.getInventory().getItemByObjectId(objectId);
 				if (item == null || item.getCount() < count || !item.canBeTraded(seller))
@@ -183,7 +183,7 @@ public class RequestPrivateStoreBuySellList extends L2GameClientPacket
 			seller.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_QUANTITY_THAT_CAN_BE_INPUTTED);
 			try
 			{
-				if (sellList.size() != _count)
+				if (sellList.size() != this._count)
 				{
 					seller.sendPacket(SystemMsg.THE_ATTEMPT_TO_SELL_HAS_FAILED);
 					seller.sendActionFailed();
@@ -250,7 +250,7 @@ public class RequestPrivateStoreBuySellList extends L2GameClientPacket
 		{
 			try
 			{
-				if (sellList.size() != _count)
+				if (sellList.size() != this._count)
 				{
 					seller.sendPacket(SystemMsg.THE_ATTEMPT_TO_SELL_HAS_FAILED);
 					seller.sendActionFailed();

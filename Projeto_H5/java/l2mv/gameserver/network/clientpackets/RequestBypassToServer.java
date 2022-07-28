@@ -7,9 +7,9 @@ import java.util.StringTokenizer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2mv.gameserver.fandc.managers.OfflineBufferManager;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.data.xml.holder.MultiSellHolder;
+import l2mv.gameserver.fandc.managers.OfflineBufferManager;
 import l2mv.gameserver.handler.admincommands.AdminCommandHandler;
 import l2mv.gameserver.handler.bypass.BypassHandler;
 import l2mv.gameserver.handler.voicecommands.IVoicedCommandHandler;
@@ -17,6 +17,7 @@ import l2mv.gameserver.handler.voicecommands.VoicedCommandHandler;
 import l2mv.gameserver.instancemanager.BypassManager.DecodedBypass;
 import l2mv.gameserver.instancemanager.OlympiadHistoryManager;
 import l2mv.gameserver.instancemanager.QuestManager;
+import l2mv.gameserver.masteriopack.rankpvpsystem.RPSBypass;
 import l2mv.gameserver.model.Creature;
 import l2mv.gameserver.model.GameObject;
 import l2mv.gameserver.model.Party;
@@ -33,7 +34,6 @@ import l2mv.gameserver.network.serverpackets.SystemMessage;
 import l2mv.gameserver.network.serverpackets.SystemMessage2;
 import l2mv.gameserver.network.serverpackets.components.SystemMsg;
 import l2mv.gameserver.scripts.Scripts;
-import l2mv.gameserver.masteriopack.rankpvpsystem.RPSBypass;
 
 public class RequestBypassToServer extends L2GameClientPacket
 {
@@ -44,26 +44,26 @@ public class RequestBypassToServer extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		String bypass = readS();
+		String bypass = this.readS();
 		if (!bypass.isEmpty())
 		{
-			bp = getClient().getActiveChar().decodeBypass(bypass);
+			this.bp = this.getClient().getActiveChar().decodeBypass(bypass);
 		}
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || bp == null || activeChar.isJailed() || (activeChar.isBlocked() && !activeChar.isInObserverMode() && (bp.bypass == null || !(bp.bypass.contains("secondaryPassS") || bp.bypass.contains("ProposePass") || bp.bypass.contains("TryPass") || bp.bypass.contains("user_report")))))
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar == null || this.bp == null || activeChar.isJailed() || (activeChar.isBlocked() && !activeChar.isInObserverMode() && (this.bp.bypass == null || !(this.bp.bypass.contains("secondaryPassS") || this.bp.bypass.contains("ProposePass") || this.bp.bypass.contains("TryPass") || this.bp.bypass.contains("user_report")))))
 		{
 			return;
 		}
-		if ((bp.handler == null && !Config.ALLOW_TALK_TO_NPCS) || (bp.handler != null && !Config.COMMUNITYBOARD_ENABLED))
+		if ((this.bp.handler == null && !Config.ALLOW_TALK_TO_NPCS) || (this.bp.handler != null && !Config.COMMUNITYBOARD_ENABLED))
 		{
 			return;
 		}
-		if (bp.handler != null && activeChar.isCursedWeaponEquipped())
+		if (this.bp.handler != null && activeChar.isCursedWeaponEquipped())
 		{
 			return;
 		}
@@ -71,7 +71,7 @@ public class RequestBypassToServer extends L2GameClientPacket
 		// Synerge - Bypass debug
 		if (activeChar.isDebug())
 		{
-			activeChar.sendMessage("Bypass: " + bp.bypass + " - Handler: " + (bp.handler != null));
+			activeChar.sendMessage("Bypass: " + this.bp.bypass + " - Handler: " + (this.bp.handler != null));
 		}
 
 		try
@@ -83,29 +83,29 @@ public class RequestBypassToServer extends L2GameClientPacket
 				npc = (NpcInstance) target;
 			}
 
-			if (bp.bypass.startsWith("admin_"))
+			if (this.bp.bypass.startsWith("admin_"))
 			{
-				AdminCommandHandler.getInstance().useAdminCommandHandler(activeChar, bp.bypass);
+				AdminCommandHandler.getInstance().useAdminCommandHandler(activeChar, this.bp.bypass);
 			}
-			else if (bp.bypass.startsWith("openURL "))
+			else if (this.bp.bypass.startsWith("openURL "))
 			{
-				openURL(activeChar, bp.bypass.substring("openURL ".length()));
+				openURL(activeChar, this.bp.bypass.substring("openURL ".length()));
 			}
-			else if (bp.bypass.equals("come_here") && activeChar.isGM())
+			else if (this.bp.bypass.equals("come_here") && activeChar.isGM())
 			{
-				comeHere(getClient());
+				comeHere(this.getClient());
 			}
-			else if (bp.bypass.startsWith("player_help "))
+			else if (this.bp.bypass.startsWith("player_help "))
 			{
-				playerHelp(activeChar, bp.bypass.substring(12));
+				playerHelp(activeChar, this.bp.bypass.substring(12));
 			}
-			else if (bp.bypass.startsWith("RPS.")) // Rank PvP System by Masterio
+			else if (this.bp.bypass.startsWith("RPS.")) // Rank PvP System by Masterio
 			{
-				RPSBypass.executeCommand(activeChar, bp.bypass);
+				RPSBypass.executeCommand(activeChar, this.bp.bypass);
 			}
-			else if (bp.bypass.startsWith("scripts_"))
+			else if (this.bp.bypass.startsWith("scripts_"))
 			{
-				String command = bp.bypass.substring(8).trim();
+				String command = this.bp.bypass.substring(8).trim();
 				String[] word = command.split("\\s+");
 				String[] args = command.substring(word[0].length()).trim().split("\\s+");
 				String[] path = word[0].split(":");
@@ -134,9 +134,9 @@ public class RequestBypassToServer extends L2GameClientPacket
 					}, variables);
 				}
 			}
-			else if (bp.bypass.startsWith("user_"))
+			else if (this.bp.bypass.startsWith("user_"))
 			{
-				String command = bp.bypass.substring(5).trim();
+				String command = this.bp.bypass.substring(5).trim();
 				String word = command.split("\\s+")[0];
 				String args = command.substring(word.length()).trim();
 				IVoicedCommandHandler vch = VoicedCommandHandler.getInstance().getVoicedCommandHandler(word);
@@ -150,28 +150,28 @@ public class RequestBypassToServer extends L2GameClientPacket
 					_log.warn("Unknow voiced command '" + word + "'");
 				}
 			}
-			else if (bp.bypass.startsWith("npc_"))
+			else if (this.bp.bypass.startsWith("npc_"))
 			{
-				int endOfId = bp.bypass.indexOf('_', 5);
+				int endOfId = this.bp.bypass.indexOf('_', 5);
 				String id;
 				if (endOfId > 0)
 				{
-					id = bp.bypass.substring(4, endOfId);
+					id = this.bp.bypass.substring(4, endOfId);
 				}
 				else
 				{
-					id = bp.bypass.substring(4);
+					id = this.bp.bypass.substring(4);
 				}
 				GameObject object = activeChar.getVisibleObject(Integer.parseInt(id));
 				if (object != null && object.isNpc() && endOfId > 0 && activeChar.isInRange(object.getLoc(), Creature.INTERACTION_DISTANCE))
 				{
 					activeChar.setLastNpc((NpcInstance) object);
-					((NpcInstance) object).onBypassFeedback(activeChar, bp.bypass.substring(endOfId + 1));
+					((NpcInstance) object).onBypassFeedback(activeChar, this.bp.bypass.substring(endOfId + 1));
 				}
 			}
-			else if (bp.bypass.startsWith("twitch"))
+			else if (this.bp.bypass.startsWith("twitch"))
 			{
-				StringTokenizer st = new StringTokenizer(bp.bypass, " ");
+				StringTokenizer st = new StringTokenizer(this.bp.bypass, " ");
 				st.nextToken();
 
 				String token = st.nextToken();
@@ -195,9 +195,9 @@ public class RequestBypassToServer extends L2GameClientPacket
 					activeChar.sendMessage("Your twitch channel has been erased.");
 				}
 			}
-			else if (bp.bypass.startsWith("_olympiad?"))
+			else if (this.bp.bypass.startsWith("_olympiad?"))
 			{
-				String[] ar = bp.bypass.replace("_olympiad?", "").split("&");
+				String[] ar = this.bp.bypass.replace("_olympiad?", "").split("&");
 				String firstVal = ar[0].split("=")[1];
 				String secondVal = ar[1].split("=")[1];
 
@@ -215,9 +215,9 @@ public class RequestBypassToServer extends L2GameClientPacket
 					}
 				}
 			}
-			else if (bp.bypass.startsWith("_diary"))
+			else if (this.bp.bypass.startsWith("_diary"))
 			{
-				String params = bp.bypass.substring(bp.bypass.indexOf("?") + 1);
+				String params = this.bp.bypass.substring(this.bp.bypass.indexOf("?") + 1);
 				StringTokenizer st = new StringTokenizer(params, "&");
 				int heroclass = Integer.parseInt(st.nextToken().split("=")[1]);
 				int heropage = Integer.parseInt(st.nextToken().split("=")[1]);
@@ -227,28 +227,28 @@ public class RequestBypassToServer extends L2GameClientPacket
 					Hero.getInstance().showHeroDiary(activeChar, heroclass, heroid, heropage);
 				}
 			}
-			else if (bp.bypass.startsWith("_match"))
+			else if (this.bp.bypass.startsWith("_match"))
 			{
-				String params = bp.bypass.substring(bp.bypass.indexOf("?") + 1);
+				String params = this.bp.bypass.substring(this.bp.bypass.indexOf("?") + 1);
 				StringTokenizer st = new StringTokenizer(params, "&");
 				int heroclass = Integer.parseInt(st.nextToken().split("=")[1]);
 				int heropage = Integer.parseInt(st.nextToken().split("=")[1]);
 
 				OlympiadHistoryManager.getInstance().showHistory(activeChar, heroclass, heropage);
 			}
-			else if (bp.bypass.startsWith("manor_menu_select?")) // Navigate throught Manor windows
+			else if (this.bp.bypass.startsWith("manor_menu_select?")) // Navigate throught Manor windows
 			{
 				GameObject object = activeChar.getTarget();
 				if (object != null && object.isNpc())
 				{
-					((NpcInstance) object).onBypassFeedback(activeChar, bp.bypass);
+					((NpcInstance) object).onBypassFeedback(activeChar, this.bp.bypass);
 				}
 			}
-			else if (bp.bypass.startsWith("partyMatchingInvite"))
+			else if (this.bp.bypass.startsWith("partyMatchingInvite"))
 			{
 				try
 				{
-					String targetName = bp.bypass.substring(20);
+					String targetName = this.bp.bypass.substring(20);
 					Player receiver = World.getPlayer(targetName);
 					SystemMessage sm;
 
@@ -332,13 +332,13 @@ public class RequestBypassToServer extends L2GameClientPacket
 					e.printStackTrace();
 				}
 			}
-			else if (bp.bypass.startsWith("multisell "))
+			else if (this.bp.bypass.startsWith("multisell "))
 			{
-				MultiSellHolder.getInstance().SeparateAndSend(Integer.parseInt(bp.bypass.substring(10)), activeChar, 0);
+				MultiSellHolder.getInstance().SeparateAndSend(Integer.parseInt(this.bp.bypass.substring(10)), activeChar, 0);
 			}
-			else if (bp.bypass.startsWith("Quest "))
+			else if (this.bp.bypass.startsWith("Quest "))
 			{
-				String p = bp.bypass.substring(6).trim();
+				String p = this.bp.bypass.substring(6).trim();
 				int idx = p.indexOf(' ');
 				if (idx < 0)
 				{
@@ -350,17 +350,17 @@ public class RequestBypassToServer extends L2GameClientPacket
 				}
 			}
 			// Synerge - Bypass for Buff Store
-			else if (bp.bypass.startsWith("BuffStore"))
+			else if (this.bp.bypass.startsWith("BuffStore"))
 			{
 				try
 				{
-					OfflineBufferManager.getInstance().processBypass(activeChar, bp.bypass);
+					OfflineBufferManager.getInstance().processBypass(activeChar, this.bp.bypass);
 				}
 				catch (Exception ex)
 				{
 				}
 			}
-			else if (bp.handler != null)
+			else if (this.bp.handler != null)
 			{
 				if (!Config.COMMUNITYBOARD_ENABLED)
 				{
@@ -368,27 +368,27 @@ public class RequestBypassToServer extends L2GameClientPacket
 				}
 				else
 				{
-					bp.handler.onBypassCommand(activeChar, bp.bypass);
+					this.bp.handler.onBypassCommand(activeChar, this.bp.bypass);
 				}
 			}
 			// Synerge - Support for secondary password on cb
-			else if (bp.bypass.startsWith("ProposePass") || bp.bypass.startsWith("TryPass"))
+			else if (this.bp.bypass.startsWith("ProposePass") || this.bp.bypass.startsWith("TryPass"))
 			{
 				Quest tutorial = QuestManager.getQuest(255);
 				if (tutorial != null)
 				{
-					activeChar.processQuestEvent(tutorial.getName(), bp.bypass, null);
+					activeChar.processQuestEvent(tutorial.getName(), this.bp.bypass, null);
 				}
 			}
 			// Synerge - Bypass handler
 			else
 			{
-				BypassHandler.getInstance().useBypassCommandHandler(activeChar, bp.bypass);
+				BypassHandler.getInstance().useBypassCommandHandler(activeChar, this.bp.bypass);
 			}
 		}
 		catch (Exception e)
 		{
-			String st = "Char '" + activeChar.getName() + "' sent Bad RequestBypassToServer: " + bp.bypass;
+			String st = "Char '" + activeChar.getName() + "' sent Bad RequestBypassToServer: " + this.bp.bypass;
 			GameObject target = activeChar.getTarget();
 			if (target != null && target.isNpc())
 			{

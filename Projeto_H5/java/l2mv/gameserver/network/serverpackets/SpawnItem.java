@@ -25,27 +25,27 @@ public class SpawnItem extends L2GameServerPacket
 
 	public SpawnItem(ItemInstance item)
 	{
-		_objectId = item.getObjectId();
-		_itemId = item.getItemId();
-		_x = item.getX();
-		_y = item.getY();
-		_z = item.getZ();
-		_stackable = item.isStackable() ? 0x01 : 0x00;
-		_count = item.getCount();
+		this._objectId = item.getObjectId();
+		this._itemId = item.getItemId();
+		this._x = item.getX();
+		this._y = item.getY();
+		this._z = item.getZ();
+		this._stackable = item.isStackable() ? 0x01 : 0x00;
+		this._count = item.getCount();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x05);
-		writeD(_objectId);
-		writeD(_itemId);
+		this.writeC(0x05);
+		this.writeD(this._objectId);
+		this.writeD(this._itemId);
 
-		writeD(_x);
-		writeD(_y);
-		writeD(_z + Config.CLIENT_Z_SHIFT);
-		writeD(_stackable);
-		writeQ(_count);
-		writeD(0x00); // c2
+		this.writeD(this._x);
+		this.writeD(this._y);
+		this.writeD(this._z + Config.CLIENT_Z_SHIFT);
+		this.writeD(this._stackable);
+		this.writeQ(this._count);
+		this.writeD(0x00); // c2
 	}
 }

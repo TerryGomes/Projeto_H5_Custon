@@ -13,9 +13,9 @@ public class ExCleftState extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x95);
-		writeD(CleftState);
-		switch (CleftState)
+		this.writeEx(0x95);
+		this.writeD(this.CleftState);
+		switch (this.CleftState)
 		{
 		case CleftState_Total:
 			// dddddSS - BTeam Point:%d CatID:%d CatName:%s RemainSec:%d RTeam Point:%d CatID:%d CatName:%s RemainSec:%d

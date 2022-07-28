@@ -15,20 +15,20 @@ public class RequestSetCastleSiegeTime extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_id = readD();
-		_time = readD();
+		this._id = this.readD();
+		this._time = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, _id);
+		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, this._id);
 		if ((castle == null) || (player.getClan().getCastle() != castle.getId()))
 		{
 			return;
@@ -42,7 +42,7 @@ public class RequestSetCastleSiegeTime extends L2GameClientPacket
 
 		CastleSiegeEvent siegeEvent = castle.getSiegeEvent();
 
-		siegeEvent.setNextSiegeTime(_time);
+		siegeEvent.setNextSiegeTime(this._time);
 
 		player.sendPacket(new CastleSiegeInfo(castle, player));
 	}

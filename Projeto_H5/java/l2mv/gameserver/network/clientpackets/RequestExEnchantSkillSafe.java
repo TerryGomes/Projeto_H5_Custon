@@ -30,14 +30,14 @@ public final class RequestExEnchantSkillSafe extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_skillId = readD();
-		_skillLvl = readD();
+		this._skillId = this.readD();
+		this._skillLvl = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -72,20 +72,20 @@ public final class RequestExEnchantSkillSafe extends L2GameClientPacket
 			return;
 		}
 
-		EnchantSkillLearn sl = SkillTreeTable.getSkillEnchant(_skillId, _skillLvl);
+		EnchantSkillLearn sl = SkillTreeTable.getSkillEnchant(this._skillId, this._skillLvl);
 
 		if (sl == null)
 		{
 			return;
 		}
 
-		int slevel = activeChar.getSkillLevel(_skillId);
+		int slevel = activeChar.getSkillLevel(this._skillId);
 		if (slevel == -1)
 		{
 			return;
 		}
 
-		int enchantLevel = SkillTreeTable.convertEnchantLevel(sl.getBaseLevel(), _skillLvl, sl.getMaxLevel());
+		int enchantLevel = SkillTreeTable.convertEnchantLevel(sl.getBaseLevel(), this._skillLvl, sl.getMaxLevel());
 
 		// already knows the skill with this level
 		if (slevel >= enchantLevel)
@@ -94,13 +94,13 @@ public final class RequestExEnchantSkillSafe extends L2GameClientPacket
 		}
 
 		// Можем ли мы перейти с текущего уровня скилла на данную заточку
-		if (slevel == sl.getBaseLevel() ? _skillLvl % 100 != 1 : slevel != enchantLevel - 1)
+		if (slevel == sl.getBaseLevel() ? this._skillLvl % 100 != 1 : slevel != enchantLevel - 1)
 		{
 			activeChar.sendMessage("Incorrect enchant level.");
 			return;
 		}
 
-		Skill skill = SkillTable.getInstance().getInfo(_skillId, enchantLevel);
+		Skill skill = SkillTable.getInstance().getInfo(this._skillId, enchantLevel);
 		if (skill == null)
 		{
 			return;
@@ -144,23 +144,23 @@ public final class RequestExEnchantSkillSafe extends L2GameClientPacket
 			activeChar.addSkill(skill, true);
 			activeChar.addExpAndSp(0, -1 * requiredSp);
 			Functions.removeItem(activeChar, 57, requiredAdena, "SkillEnchantSafe");
-			activeChar.sendPacket(new SystemMessage2(SystemMsg.YOUR_SP_HAS_DECREASED_BY_S1).addInteger(requiredSp), new SystemMessage2(SystemMsg.SKILL_ENCHANT_WAS_SUCCESSFUL_S1_HAS_BEEN_ENCHANTED).addSkillName(_skillId, _skillLvl), new ExEnchantSkillResult(1));
+			activeChar.sendPacket(new SystemMessage2(SystemMsg.YOUR_SP_HAS_DECREASED_BY_S1).addInteger(requiredSp), new SystemMessage2(SystemMsg.SKILL_ENCHANT_WAS_SUCCESSFUL_S1_HAS_BEEN_ENCHANTED).addSkillName(this._skillId, this._skillLvl), new ExEnchantSkillResult(1));
 			activeChar.sendPacket(new SkillList(activeChar));
-			RequestExEnchantSkill.updateSkillShortcuts(activeChar, _skillId, _skillLvl);
-			Log.add(activeChar.getName() + "|Successfully safe enchanted|" + _skillId + "|to+" + _skillLvl + "|" + rate, "enchant_skills");
+			RequestExEnchantSkill.updateSkillShortcuts(activeChar, this._skillId, this._skillLvl);
+			Log.add(activeChar.getName() + "|Successfully safe enchanted|" + this._skillId + "|to+" + this._skillLvl + "|" + rate, "enchant_skills");
 		}
 		else
 		{
-			activeChar.sendPacket(new SystemMessage(SystemMessage.Skill_enchant_failed_Current_level_of_enchant_skill_S1_will_remain_unchanged).addSkillName(_skillId, _skillLvl), new ExEnchantSkillResult(0));
-			Log.add(activeChar.getName() + "|Failed to safe enchant|" + _skillId + "|to+" + _skillLvl + "|" + rate, "enchant_skills");
+			activeChar.sendPacket(new SystemMessage(SystemMessage.Skill_enchant_failed_Current_level_of_enchant_skill_S1_will_remain_unchanged).addSkillName(this._skillId, this._skillLvl), new ExEnchantSkillResult(0));
+			Log.add(activeChar.getName() + "|Failed to safe enchant|" + this._skillId + "|to+" + this._skillLvl + "|" + rate, "enchant_skills");
 		}
 
-		activeChar.sendPacket(new ExEnchantSkillInfo(_skillId, activeChar.getSkillDisplayLevel(_skillId)));
+		activeChar.sendPacket(new ExEnchantSkillInfo(this._skillId, activeChar.getSkillDisplayLevel(this._skillId)));
 
 		// Synerge - In retail server there is a bug when you enchant a skill, its reuse gets reset if you try to use it from a macro.
 		if (!Config.ALLOW_MACROS_ENCHANT_BUG)
 		{
-			TimeStamp oldSkillReuse = activeChar.getSkillReuses().stream().filter(ts -> ts.getId() == _skillId).findFirst().orElse(null);
+			TimeStamp oldSkillReuse = activeChar.getSkillReuses().stream().filter(ts -> ts.getId() == this._skillId).findFirst().orElse(null);
 			if (oldSkillReuse != null)
 			{
 				activeChar.disableSkill(skill, oldSkillReuse.getReuseCurrent());

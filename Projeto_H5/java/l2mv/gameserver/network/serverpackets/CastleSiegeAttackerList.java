@@ -44,48 +44,48 @@ public class CastleSiegeAttackerList extends L2GameServerPacket
 
 	public CastleSiegeAttackerList(Residence residence)
 	{
-		_id = residence.getId();
-		_registrationValid = !residence.getSiegeEvent().isRegistrationOver() ? 1 : 0;
-		_clans = residence.getSiegeEvent().getObjects(SiegeEvent.ATTACKERS);
+		this._id = residence.getId();
+		this._registrationValid = !residence.getSiegeEvent().isRegistrationOver() ? 1 : 0;
+		this._clans = residence.getSiegeEvent().getObjects(SiegeEvent.ATTACKERS);
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xCA);
+		this.writeC(0xCA);
 
-		writeD(_id);
+		this.writeD(this._id);
 
-		writeD(0x00);
-		writeD(_registrationValid);
-		writeD(0x00);
+		this.writeD(0x00);
+		this.writeD(this._registrationValid);
+		this.writeD(0x00);
 
-		writeD(_clans.size());
-		writeD(_clans.size());
+		this.writeD(this._clans.size());
+		this.writeD(this._clans.size());
 
-		for (SiegeClanObject siegeClan : _clans)
+		for (SiegeClanObject siegeClan : this._clans)
 		{
 			Clan clan = siegeClan.getClan();
 
-			writeD(clan.getClanId());
-			writeS(clan.getName());
-			writeS(clan.getLeaderName());
-			writeD(clan.getCrestId());
-			writeD((int) (siegeClan.getDate() / 1000L));
+			this.writeD(clan.getClanId());
+			this.writeS(clan.getName());
+			this.writeS(clan.getLeaderName());
+			this.writeD(clan.getCrestId());
+			this.writeD((int) (siegeClan.getDate() / 1000L));
 
 			Alliance alliance = clan.getAlliance();
-			writeD(clan.getAllyId());
+			this.writeD(clan.getAllyId());
 			if (alliance != null)
 			{
-				writeS(alliance.getAllyName());
-				writeS(alliance.getAllyLeaderName());
-				writeD(alliance.getAllyCrestId());
+				this.writeS(alliance.getAllyName());
+				this.writeS(alliance.getAllyLeaderName());
+				this.writeD(alliance.getAllyCrestId());
 			}
 			else
 			{
-				writeS(StringUtils.EMPTY);
-				writeS(StringUtils.EMPTY);
-				writeD(0);
+				this.writeS(StringUtils.EMPTY);
+				this.writeS(StringUtils.EMPTY);
+				this.writeD(0);
 			}
 		}
 	}

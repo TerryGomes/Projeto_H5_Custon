@@ -38,26 +38,26 @@ public class RequestPreviewItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_unknow = readD();
-		_listId = readD();
-		_count = readD();
-		if (_count * 4 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		this._unknow = this.readD();
+		this._listId = this.readD();
+		this._count = this.readD();
+		if (this._count * 4 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1)
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
-		_items = new int[_count];
-		for (int i = 0; i < _count; i++)
+		this._items = new int[this._count];
+		for (int i = 0; i < this._count; i++)
 		{
-			_items[i] = readD();
+			this._items[i] = this.readD();
 		}
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || _count == 0)
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar == null || this._count == 0)
 		{
 			return;
 		}
@@ -88,7 +88,7 @@ public class RequestPreviewItem extends L2GameClientPacket
 			return;
 		}
 
-		NpcTradeList list = BuyListHolder.getInstance().getBuyList(_listId);
+		NpcTradeList list = BuyListHolder.getInstance().getBuyList(this._listId);
 		if (list == null)
 		{
 			// TODO audit
@@ -102,9 +102,9 @@ public class RequestPreviewItem extends L2GameClientPacket
 		Map<Integer, Integer> itemList = new HashMap<Integer, Integer>();
 		try
 		{
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < this._count; i++)
 			{
-				int itemId = _items[i];
+				int itemId = this._items[i];
 				if (list.getItemByItemId(itemId) == null)
 				{
 					activeChar.sendActionFailed();
@@ -174,14 +174,14 @@ public class RequestPreviewItem extends L2GameClientPacket
 
 		public RemoveWearItemsTask(Player activeChar)
 		{
-			_activeChar = activeChar;
+			this._activeChar = activeChar;
 		}
 
 		@Override
 		public void runImpl() throws Exception
 		{
-			_activeChar.sendPacket(SystemMsg.YOU_ARE_NO_LONGER_TRYING_ON_EQUIPMENT_);
-			_activeChar.sendUserInfo(true);
+			this._activeChar.sendPacket(SystemMsg.YOU_ARE_NO_LONGER_TRYING_ON_EQUIPMENT_);
+			this._activeChar.sendUserInfo(true);
 		}
 	}
 }

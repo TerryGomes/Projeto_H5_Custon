@@ -9,35 +9,35 @@ public class TradeOtherAdd extends L2GameServerPacket
 
 	public TradeOtherAdd(ItemInfo item, long amount)
 	{
-		_temp = item;
-		_amount = amount;
+		this._temp = item;
+		this._amount = amount;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x1b);
-		writeH(1); // item count
-		writeH(_temp.getItem().getType1());
-		writeD(_temp.getObjectId());
-		writeD(_temp.getItemId());
-		writeQ(_amount);
-		writeH(_temp.getItem().getType2ForPackets());
-		writeH(_temp.getCustomType1());
-		writeD(_temp.getItem().getBodyPart());
-		writeH(_temp.getEnchantLevel());
-		writeH(0x00);
-		writeH(_temp.getCustomType2());
-		writeH(_temp.getAttackElement());
-		writeH(_temp.getAttackElementValue());
-		writeH(_temp.getDefenceFire());
-		writeH(_temp.getDefenceWater());
-		writeH(_temp.getDefenceWind());
-		writeH(_temp.getDefenceEarth());
-		writeH(_temp.getDefenceHoly());
-		writeH(_temp.getDefenceUnholy());
-		writeH(0);
-		writeH(0);
-		writeH(0);
+		this.writeC(0x1b);
+		this.writeH(1); // item count
+		this.writeH(this._temp.getItem().getType1());
+		this.writeD(this._temp.getObjectId());
+		this.writeD(this._temp.getItemId());
+		this.writeQ(this._amount);
+		this.writeH(this._temp.getItem().getType2ForPackets());
+		this.writeH(this._temp.getCustomType1());
+		this.writeD(this._temp.getItem().getBodyPart());
+		this.writeH(this._temp.getEnchantLevel());
+		this.writeH(0x00);
+		this.writeH(this._temp.getCustomType2());
+		this.writeH(this._temp.getAttackElement());
+		this.writeH(this._temp.getAttackElementValue());
+		this.writeH(this._temp.getDefenceFire());
+		this.writeH(this._temp.getDefenceWater());
+		this.writeH(this._temp.getDefenceWind());
+		this.writeH(this._temp.getDefenceEarth());
+		this.writeH(this._temp.getDefenceHoly());
+		this.writeH(this._temp.getDefenceUnholy());
+		this.writeH(0);
+		this.writeH(0);
+		this.writeH(0);
 	}
 }

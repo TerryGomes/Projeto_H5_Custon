@@ -15,19 +15,19 @@ public class RequestHennaUnequipInfo extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_symbolId = readD();
+		this._symbolId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		Henna henna = HennaHolder.getInstance().getHenna(_symbolId);
+		Henna henna = HennaHolder.getInstance().getHenna(this._symbolId);
 		if (henna != null)
 		{
 			player.sendPacket(new HennaUnequipInfo(henna, player));

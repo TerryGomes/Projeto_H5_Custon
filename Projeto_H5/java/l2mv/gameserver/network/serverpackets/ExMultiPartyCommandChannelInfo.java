@@ -15,16 +15,16 @@ public class ExMultiPartyCommandChannelInfo extends L2GameServerPacket
 
 	public ExMultiPartyCommandChannelInfo(CommandChannel channel)
 	{
-		ChannelLeaderName = channel.getLeader().getName();
-		MemberCount = channel.size();
+		this.ChannelLeaderName = channel.getLeader().getName();
+		this.MemberCount = channel.size();
 
-		parties = new ArrayList<ChannelPartyInfo>();
+		this.parties = new ArrayList<ChannelPartyInfo>();
 		for (Party party : channel.getParties())
 		{
 			Player leader = party.getLeader();
 			if (leader != null)
 			{
-				parties.add(new ChannelPartyInfo(leader.getName(), leader.getObjectId(), party.size()));
+				this.parties.add(new ChannelPartyInfo(leader.getName(), leader.getObjectId(), party.size()));
 			}
 		}
 	}
@@ -32,17 +32,17 @@ public class ExMultiPartyCommandChannelInfo extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x31);
-		writeS(ChannelLeaderName); // имя лидера CC
-		writeD(0); // Looting type?
-		writeD(MemberCount); // общее число человек в СС
-		writeD(parties.size()); // общее число партий в СС
+		this.writeEx(0x31);
+		this.writeS(this.ChannelLeaderName); // имя лидера CC
+		this.writeD(0); // Looting type?
+		this.writeD(this.MemberCount); // общее число человек в СС
+		this.writeD(this.parties.size()); // общее число партий в СС
 
-		for (ChannelPartyInfo party : parties)
+		for (ChannelPartyInfo party : this.parties)
 		{
-			writeS(party.Leader_name); // имя лидера партии
-			writeD(party.Leader_obj_id); // ObjId пати лидера
-			writeD(party.MemberCount); // количество мемберов в пати
+			this.writeS(party.Leader_name); // имя лидера партии
+			this.writeD(party.Leader_obj_id); // ObjId пати лидера
+			this.writeD(party.MemberCount); // количество мемберов в пати
 		}
 	}
 
@@ -53,9 +53,9 @@ public class ExMultiPartyCommandChannelInfo extends L2GameServerPacket
 
 		public ChannelPartyInfo(String _Leader_name, int _Leader_obj_id, int _MemberCount)
 		{
-			Leader_name = _Leader_name;
-			Leader_obj_id = _Leader_obj_id;
-			MemberCount = _MemberCount;
+			this.Leader_name = _Leader_name;
+			this.Leader_obj_id = _Leader_obj_id;
+			this.MemberCount = _MemberCount;
 		}
 	}
 }

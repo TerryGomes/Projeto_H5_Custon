@@ -15,14 +15,14 @@ public class RequestExDeletePostFriendForPostBox extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS();
+		this._name = this.readS();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
-		if ((player == null) || StringUtils.isEmpty(_name))
+		Player player = this.getClient().getActiveChar();
+		if ((player == null) || StringUtils.isEmpty(this._name))
 		{
 			return;
 		}
@@ -31,7 +31,7 @@ public class RequestExDeletePostFriendForPostBox extends L2GameClientPacket
 		IntObjectMap<String> postFriends = player.getPostFriends();
 		for (IntObjectMap.Entry<String> entry : postFriends.entrySet())
 		{
-			if (entry.getValue().equalsIgnoreCase(_name))
+			if (entry.getValue().equalsIgnoreCase(this._name))
 			{
 				key = entry.getKey();
 			}
@@ -46,6 +46,6 @@ public class RequestExDeletePostFriendForPostBox extends L2GameClientPacket
 		player.getPostFriends().remove(key);
 
 		CharacterPostFriendDAO.delete(player, key);
-		player.sendPacket(new SystemMessage2(SystemMsg.S1_WAS_SUCCESSFULLY_DELETED_FROM_YOUR_CONTACT_LIST).addString(_name));
+		player.sendPacket(new SystemMessage2(SystemMsg.S1_WAS_SUCCESSFULLY_DELETED_FROM_YOUR_CONTACT_LIST).addString(this._name));
 	}
 }

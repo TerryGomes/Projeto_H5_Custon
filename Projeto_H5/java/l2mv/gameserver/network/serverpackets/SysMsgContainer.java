@@ -58,20 +58,20 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> extends L2Ga
 			throw new IllegalArgumentException("SystemMsg is null");
 		}
 
-		_message = message;
-		_arguments = new ArrayList<IArgument>(_message.size());
+		this._message = message;
+		this._arguments = new ArrayList<IArgument>(this._message.size());
 	}
 
 	protected void writeElements()
 	{
-		if (_message.size() != _arguments.size())
+		if (this._message.size() != this._arguments.size())
 		{
-			throw new IllegalArgumentException("Wrong count of arguments: " + _message);
+			throw new IllegalArgumentException("Wrong count of arguments: " + this._message);
 		}
 
-		writeD(_message.getId());
-		writeD(_arguments.size());
-		for (IArgument argument : _arguments)
+		this.writeD(this._message.getId());
+		this.writeD(this._arguments.size());
+		for (IArgument argument : this._arguments)
 		{
 			argument.write(this);
 		}
@@ -82,126 +82,126 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> extends L2Ga
 	{
 		if (object == null)
 		{
-			return add(new StringArgument(null));
+			return this.add(new StringArgument(null));
 		}
 
 		if (object.isNpc())
 		{
-			return add(new NpcNameArgument(((NpcInstance) object).getNpcId() + 1000000));
+			return this.add(new NpcNameArgument(((NpcInstance) object).getNpcId() + 1000000));
 		}
 		else if (object instanceof Summon)
 		{
-			return add(new NpcNameArgument(((Summon) object).getNpcId() + 1000000));
+			return this.add(new NpcNameArgument(((Summon) object).getNpcId() + 1000000));
 		}
 		else if (object.isItem())
 		{
-			return add(new ItemNameArgument(((ItemInstance) object).getItemId()));
+			return this.add(new ItemNameArgument(((ItemInstance) object).getItemId()));
 		}
 		else if (object.isPlayer())
 		{
-			return add(new PlayerNameArgument((Player) object));
+			return this.add(new PlayerNameArgument((Player) object));
 		}
 		else if (object.isDoor())
 		{
-			return add(new StaticObjectNameArgument(((DoorInstance) object).getDoorId()));
+			return this.add(new StaticObjectNameArgument(((DoorInstance) object).getDoorId()));
 		}
 		else if (object instanceof StaticObjectInstance)
 		{
-			return add(new StaticObjectNameArgument(((StaticObjectInstance) object).getUId()));
+			return this.add(new StaticObjectNameArgument(((StaticObjectInstance) object).getUId()));
 		}
 
-		return add(new StringArgument(object.getName()));
+		return this.add(new StringArgument(object.getName()));
 	}
 
 	public T addInstanceName(int id)
 	{
-		return add(new InstanceNameArgument(id));
+		return this.add(new InstanceNameArgument(id));
 	}
 
 	public T addSysString(int id)
 	{
-		return add(new SysStringArgument(id));
+		return this.add(new SysStringArgument(id));
 	}
 
 	public T addSkillName(Skill skill)
 	{
-		return addSkillName(skill.getDisplayId(), skill.getDisplayLevel());
+		return this.addSkillName(skill.getDisplayId(), skill.getDisplayLevel());
 	}
 
 	public T addSkillName(int id, int level)
 	{
-		return add(new SkillArgument(id, level));
+		return this.add(new SkillArgument(id, level));
 	}
 
 	public T addItemName(int item_id)
 	{
-		return add(new ItemNameArgument(item_id));
+		return this.add(new ItemNameArgument(item_id));
 	}
 
 	public T addItemNameWithAugmentation(ItemInstance item)
 	{
-		return add(new ItemNameWithAugmentationArgument(item.getItemId(), item.getAugmentationId()));
+		return this.add(new ItemNameWithAugmentationArgument(item.getItemId(), item.getAugmentationId()));
 	}
 
 	public T addZoneName(Creature c)
 	{
-		return addZoneName(c.getX(), c.getY(), c.getZ());
+		return this.addZoneName(c.getX(), c.getY(), c.getZ());
 	}
 
 	public T addZoneName(Location loc)
 	{
-		return add(new ZoneArgument(loc.x, loc.y, loc.z));
+		return this.add(new ZoneArgument(loc.x, loc.y, loc.z));
 	}
 
 	public T addZoneName(int x, int y, int z)
 	{
-		return add(new ZoneArgument(x, y, z));
+		return this.add(new ZoneArgument(x, y, z));
 	}
 
 	public T addResidenceName(Residence r)
 	{
-		return add(new ResidenceArgument(r.getId()));
+		return this.add(new ResidenceArgument(r.getId()));
 	}
 
 	public T addResidenceName(int i)
 	{
-		return add(new ResidenceArgument(i));
+		return this.add(new ResidenceArgument(i));
 	}
 
 	public T addElementName(int i)
 	{
-		return add(new ElementNameArgument(i));
+		return this.add(new ElementNameArgument(i));
 	}
 
 	public T addElementName(Element i)
 	{
-		return add(new ElementNameArgument(i.getId()));
+		return this.add(new ElementNameArgument(i.getId()));
 	}
 
 	public T addInteger(double i)
 	{
-		return add(new IntegerArgument((int) i));
+		return this.add(new IntegerArgument((int) i));
 	}
 
 	public T addLong(long i)
 	{
-		return add(new LongArgument(i));
+		return this.add(new LongArgument(i));
 	}
 
 	public T addString(String t)
 	{
-		return add(new StringArgument(t));
+		return this.add(new StringArgument(t));
 	}
 
 	public T addNumber(int number)
 	{
-		return add(new IntegerArgument(number));
+		return this.add(new IntegerArgument(number));
 	}
 
 	@SuppressWarnings("unchecked")
 	public T add(IArgument arg)
 	{
-		_arguments.add(arg);
+		this._arguments.add(arg);
 
 		return (T) this;
 	}
@@ -214,9 +214,9 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> extends L2Ga
 	{
 		void write(SysMsgContainer m)
 		{
-			m.writeD(getType().ordinal());
+			m.writeD(this.getType().ordinal());
 
-			writeData(m);
+			this.writeData(m);
 		}
 
 		abstract Types getType();
@@ -231,13 +231,13 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> extends L2Ga
 
 		public IntegerArgument(int da)
 		{
-			_data = da;
+			this._data = da;
 		}
 
 		@Override
 		public void writeData(SysMsgContainer message)
 		{
-			message.writeD(_data);
+			message.writeD(this._data);
 		}
 
 		@Override
@@ -283,8 +283,8 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> extends L2Ga
 
 		public ItemNameWithAugmentationArgument(int itemId, int augmentationId)
 		{
-			_itemId = itemId;
-			_augmentationId = augmentationId;
+			this._itemId = itemId;
+			this._augmentationId = augmentationId;
 		}
 
 		@Override
@@ -296,8 +296,8 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> extends L2Ga
 		@Override
 		void writeData(SysMsgContainer message)
 		{
-			message.writeD(_itemId);
-			message.writeD(_augmentationId);
+			message.writeD(this._itemId);
+			message.writeD(this._augmentationId);
 		}
 	}
 
@@ -364,13 +364,13 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> extends L2Ga
 
 		public LongArgument(long da)
 		{
-			_data = da;
+			this._data = da;
 		}
 
 		@Override
 		void writeData(SysMsgContainer message)
 		{
-			message.writeQ(_data);
+			message.writeQ(this._data);
 		}
 
 		@Override
@@ -387,13 +387,13 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> extends L2Ga
 
 		public StringArgument(String da)
 		{
-			_data = da == null ? "null" : da;
+			this._data = da == null ? "null" : da;
 		}
 
 		@Override
 		void writeData(SysMsgContainer message)
 		{
-			message.writeS(_data);
+			message.writeS(this._data);
 		}
 
 		@Override
@@ -411,15 +411,15 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> extends L2Ga
 
 		public SkillArgument(int t1, int t2)
 		{
-			_skillId = t1;
-			_skillLevel = t2;
+			this._skillId = t1;
+			this._skillLevel = t2;
 		}
 
 		@Override
 		void writeData(SysMsgContainer message)
 		{
-			message.writeD(_skillId);
-			message.writeD(_skillLevel);
+			message.writeD(this._skillId);
+			message.writeD(this._skillLevel);
 		}
 
 		@Override
@@ -438,17 +438,17 @@ public abstract class SysMsgContainer<T extends SysMsgContainer<T>> extends L2Ga
 
 		public ZoneArgument(int t1, int t2, int t3)
 		{
-			_x = t1;
-			_y = t2;
-			_z = t3;
+			this._x = t1;
+			this._y = t2;
+			this._z = t3;
 		}
 
 		@Override
 		void writeData(SysMsgContainer message)
 		{
-			message.writeD(_x);
-			message.writeD(_y);
-			message.writeD(_z);
+			message.writeD(this._x);
+			message.writeD(this._y);
+			message.writeD(this._z);
 		}
 
 		@Override

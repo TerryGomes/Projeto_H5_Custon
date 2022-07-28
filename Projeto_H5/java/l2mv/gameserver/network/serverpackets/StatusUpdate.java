@@ -59,31 +59,31 @@ public class StatusUpdate extends L2GameServerPacket
 
 	public StatusUpdate(int objectId)
 	{
-		_objectId = objectId;
+		this._objectId = objectId;
 	}
 
 	public StatusUpdate addAttribute(int id, int level)
 	{
-		_attributes.add(new Attribute(id, level));
+		this._attributes.add(new Attribute(id, level));
 		return this;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x18);
-		writeD(_objectId);
-		writeD(_attributes.size());
+		this.writeC(0x18);
+		this.writeD(this._objectId);
+		this.writeD(this._attributes.size());
 
-		for (Attribute temp : _attributes)
+		for (Attribute temp : this._attributes)
 		{
-			writeD(temp.id);
-			writeD(temp.value);
+			this.writeD(temp.id);
+			this.writeD(temp.value);
 		}
 	}
 
 	public boolean hasAttributes()
 	{
-		return !_attributes.isEmpty();
+		return !this._attributes.isEmpty();
 	}
 }

@@ -25,7 +25,7 @@ public class GetAccountInfo extends ReceivablePacket
 	@Override
 	protected void readImpl()
 	{
-		_account = readS();
+		this._account = this.readS();
 	}
 
 	@Override
@@ -36,7 +36,7 @@ public class GetAccountInfo extends ReceivablePacket
 
 		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("SELECT deletetime FROM characters WHERE account_name=?"))
 		{
-			statement.setString(1, _account);
+			statement.setString(1, this._account);
 
 			try (ResultSet rset = statement.executeQuery())
 			{
@@ -61,6 +61,6 @@ public class GetAccountInfo extends ReceivablePacket
 			_log.error("GetAccountInfo:runImpl() ", e);
 		}
 
-		AuthServerCommunication.getInstance().sendPacket(new SetAccountInfo(_account, playerSize, deleteChars.toArray()));
+		AuthServerCommunication.getInstance().sendPacket(new SetAccountInfo(this._account, playerSize, deleteChars.toArray()));
 	}
 }

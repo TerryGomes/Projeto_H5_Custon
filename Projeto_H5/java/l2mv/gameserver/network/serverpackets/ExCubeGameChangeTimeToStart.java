@@ -10,15 +10,15 @@ public class ExCubeGameChangeTimeToStart extends L2GameServerPacket
 
 	public ExCubeGameChangeTimeToStart(int seconds)
 	{
-		_seconds = seconds;
+		this._seconds = seconds;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x97);
-		writeD(0x03);
+		this.writeEx(0x97);
+		this.writeD(0x03);
 
-		writeD(_seconds);
+		this.writeD(this._seconds);
 	}
 }

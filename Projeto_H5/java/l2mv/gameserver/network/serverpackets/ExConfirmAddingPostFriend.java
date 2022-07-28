@@ -19,15 +19,15 @@ public class ExConfirmAddingPostFriend extends L2GameServerPacket
 
 	public ExConfirmAddingPostFriend(String name, int s)
 	{
-		_name = name;
-		_result = s;
+		this._name = name;
+		this._result = s;
 	}
 
 	@Override
 	public void writeImpl()
 	{
-		writeEx(0xD2);
-		writeS(_name);
-		writeD(_result);
+		this.writeEx(0xD2);
+		this.writeS(this._name);
+		this.writeD(this._result);
 	}
 }

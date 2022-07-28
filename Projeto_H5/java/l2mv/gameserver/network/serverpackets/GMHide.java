@@ -6,13 +6,13 @@ public class GMHide extends L2GameServerPacket
 
 	public GMHide(int id)
 	{
-		obj_id = id; // TODO хз чей id должен посылатся, нужно эксперементировать
+		this.obj_id = id; // TODO хз чей id должен посылатся, нужно эксперементировать
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0x93);
-		writeD(obj_id);
+		this.writeC(0x93);
+		this.writeD(this.obj_id);
 	}
 }

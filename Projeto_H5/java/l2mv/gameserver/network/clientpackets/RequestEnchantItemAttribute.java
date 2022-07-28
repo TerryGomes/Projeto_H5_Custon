@@ -27,19 +27,19 @@ public class RequestEnchantItemAttribute extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
+		this._objectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		if (_objectId == -1)
+		if (this._objectId == -1)
 		{
 			activeChar.setEnchantScroll(null);
 			activeChar.sendPacket(Msg.ELEMENTAL_POWER_ENCHANCER_USAGE_HAS_BEEN_CANCELLED);
@@ -65,7 +65,7 @@ public class RequestEnchantItemAttribute extends L2GameClientPacket
 		}
 
 		PcInventory inventory = activeChar.getInventory();
-		ItemInstance itemToEnchant = inventory.getItemByObjectId(_objectId);
+		ItemInstance itemToEnchant = inventory.getItemByObjectId(this._objectId);
 		ItemInstance stone = activeChar.getEnchantScroll();
 		activeChar.setEnchantScroll(null);
 

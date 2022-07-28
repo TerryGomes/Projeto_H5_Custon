@@ -18,25 +18,25 @@ public class TeleportToLocation extends L2GameServerPacket
 
 	public TeleportToLocation(GameObject cha, Location loc)
 	{
-		_targetId = cha.getObjectId();
-		_loc = loc;
+		this._targetId = cha.getObjectId();
+		this._loc = loc;
 	}
 
 	public TeleportToLocation(GameObject cha, int x, int y, int z)
 	{
-		_targetId = cha.getObjectId();
-		_loc = new Location(x, y, z, cha.getHeading());
+		this._targetId = cha.getObjectId();
+		this._loc = new Location(x, y, z, cha.getHeading());
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x22);
-		writeD(_targetId);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z + Config.CLIENT_Z_SHIFT);
-		writeD(0x00); // IsValidation
-		writeD(_loc.h);
+		this.writeC(0x22);
+		this.writeD(this._targetId);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z + Config.CLIENT_Z_SHIFT);
+		this.writeD(0x00); // IsValidation
+		this.writeD(this._loc.h);
 	}
 }

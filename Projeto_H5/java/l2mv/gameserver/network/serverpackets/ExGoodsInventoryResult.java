@@ -27,13 +27,13 @@ public class ExGoodsInventoryResult extends L2GameServerPacket
 
 	private ExGoodsInventoryResult(int result)
 	{
-		_result = result;
+		this._result = result;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xE4);
-		writeD(_result);
+		this.writeEx(0xE4);
+		this.writeD(this._result);
 	}
 }

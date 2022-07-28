@@ -8,13 +8,13 @@ public class ExCursedWeaponList extends L2GameServerPacket
 
 	public ExCursedWeaponList()
 	{
-		cursedWeapon_ids = CursedWeaponsManager.getInstance().getCursedWeaponsIds();
+		this.cursedWeapon_ids = CursedWeaponsManager.getInstance().getCursedWeaponsIds();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x46);
-		writeDD(cursedWeapon_ids, true);
+		this.writeEx(0x46);
+		this.writeDD(this.cursedWeapon_ids, true);
 	}
 }

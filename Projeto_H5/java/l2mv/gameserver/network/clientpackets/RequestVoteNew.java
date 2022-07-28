@@ -12,20 +12,20 @@ public class RequestVoteNew extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_targetObjectId = readD();
+		this._targetObjectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if ((activeChar == null) || !activeChar.getPlayerAccess().CanEvaluate)
 		{
 			return;
 		}
 
 		GameObject target = activeChar.getTarget();
-		if (target == null || !target.isPlayer() || target.getObjectId() != _targetObjectId)
+		if (target == null || !target.isPlayer() || target.getObjectId() != this._targetObjectId)
 		{
 			activeChar.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);
 			return;

@@ -20,14 +20,14 @@ public class RequestCrystallizeItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
-		unk = readQ(); // FIXME: count??
+		this._objectId = this.readD();
+		this.unk = this.readQ(); // FIXME: count??
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 
 		if (activeChar == null)
 		{
@@ -52,7 +52,7 @@ public class RequestCrystallizeItem extends L2GameClientPacket
 			return;
 		}
 
-		ItemInstance item = activeChar.getInventory().getItemByObjectId(_objectId);
+		ItemInstance item = activeChar.getInventory().getItemByObjectId(this._objectId);
 		if (item == null)
 		{
 			activeChar.sendActionFailed();
@@ -101,7 +101,7 @@ public class RequestCrystallizeItem extends L2GameClientPacket
 			return;
 		}
 
-		if (!activeChar.getInventory().destroyItemByObjectId(_objectId, 1L, "Crystalize"))
+		if (!activeChar.getInventory().destroyItemByObjectId(this._objectId, 1L, "Crystalize"))
 		{
 			activeChar.sendActionFailed();
 			return;

@@ -12,14 +12,14 @@ public class ExAskJoinMPCC extends L2GameServerPacket
 	 */
 	public ExAskJoinMPCC(String requestorName)
 	{
-		_requestorName = requestorName;
+		this._requestorName = requestorName;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x1a);
-		writeS(_requestorName); // лидер CC
-		writeD(0x00);
+		this.writeEx(0x1a);
+		this.writeS(this._requestorName); // лидер CC
+		this.writeD(0x00);
 	}
 }

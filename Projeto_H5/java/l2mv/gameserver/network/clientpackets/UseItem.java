@@ -35,15 +35,15 @@ public class UseItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
-		_ctrlPressed = readD() == 1;
-		_timeSent = System.currentTimeMillis();
+		this._objectId = this.readD();
+		this._ctrlPressed = this.readD() == 1;
+		this._timeSent = System.currentTimeMillis();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -51,12 +51,12 @@ public class UseItem extends L2GameClientPacket
 
 		activeChar.setActive();
 
-		ItemInstance item = activeChar.getInventory().getItemByObjectId(_objectId);
+		ItemInstance item = activeChar.getInventory().getItemByObjectId(this._objectId);
 		if (item == null) // Support for GMs deleting items from alt+g inventory.
 		{
 			for (Player player : GameObjectsStorage.getAllPlayersForIterate()) // There is no way to get item by objectId!!! Or im very stupid to not know such.
 			{
-				if ((item = player.getInventory().getItemByObjectId(_objectId)) != null)
+				if ((item = player.getInventory().getItemByObjectId(this._objectId)) != null)
 				{
 					break;
 				}
@@ -162,7 +162,7 @@ public class UseItem extends L2GameClientPacket
 		}
 
 		// Synerge - Support for auto potions like toogles. There is no support for right click on other items than soulshots, so we use ctrl
-		if (_ctrlPressed && activeChar.getObjectId() == item.getOwnerId() && Util.arrayContains(AUTO_POTIONS_IDS, item.getItemId()))
+		if (this._ctrlPressed && activeChar.getObjectId() == item.getOwnerId() && Util.arrayContains(AUTO_POTIONS_IDS, item.getItemId()))
 		{
 			if (activeChar.getAutoPotions().contains(item.getItemId()))
 			{
@@ -192,12 +192,12 @@ public class UseItem extends L2GameClientPacket
 
 		if (activeChar.getObjectId() == item.getOwnerId())
 		{
-			if (!activeChar.getPermissions().canUseItem(item, _ctrlPressed, true))
+			if (!activeChar.getPermissions().canUseItem(item, this._ctrlPressed, true))
 			{
 				return;
 			}
 
-			boolean success = item.getTemplate().getHandler().useItem(activeChar, item, _ctrlPressed);
+			boolean success = item.getTemplate().getHandler().useItem(activeChar, item, this._ctrlPressed);
 			if (success)
 			{
 				long nextTimeUse = item.getTemplate().getReuseType().next(item);
@@ -221,7 +221,7 @@ public class UseItem extends L2GameClientPacket
 				return;
 			}
 
-			boolean success = item.getTemplate().getHandler().useItem(owner, item, _ctrlPressed);
+			boolean success = item.getTemplate().getHandler().useItem(owner, item, this._ctrlPressed);
 			if (success)
 			{
 				long nextTimeUse = item.getTemplate().getReuseType().next(item);

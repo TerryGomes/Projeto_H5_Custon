@@ -15,23 +15,23 @@ public class Dice extends L2GameServerPacket
 	 */
 	public Dice(int playerId, int itemId, int number, int x, int y, int z)
 	{
-		_playerId = playerId;
-		_itemId = itemId;
-		_number = number;
-		_x = x;
-		_y = y;
-		_z = z;
+		this._playerId = playerId;
+		this._itemId = itemId;
+		this._number = number;
+		this._x = x;
+		this._y = y;
+		this._z = z;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xda);
-		writeD(_playerId); // object id of player
-		writeD(_itemId); // item id of dice (spade) 4625,4626,4627,4628
-		writeD(_number); // number rolled
-		writeD(_x); // x
-		writeD(_y); // y
-		writeD(_z); // z
+		this.writeC(0xda);
+		this.writeD(this._playerId); // object id of player
+		this.writeD(this._itemId); // item id of dice (spade) 4625,4626,4627,4628
+		this.writeD(this._number); // number rolled
+		this.writeD(this._x); // x
+		this.writeD(this._y); // y
+		this.writeD(this._z); // z
 	}
 }

@@ -14,13 +14,13 @@ public class RequestOustPartyMember extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS(16);
+		this._name = this.readS(16);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -39,7 +39,7 @@ public class RequestOustPartyMember extends L2GameClientPacket
 			return;
 		}
 
-		Player member = party.getPlayerByName(_name);
+		Player member = party.getPlayerByName(this._name);
 
 		if ((member == activeChar) || (member == null))
 		{

@@ -11,19 +11,19 @@ public class ShowSiegeKillResults extends L2GameServerPacket
 
 	public ShowSiegeKillResults(Clan[] bestClans)
 	{
-		_clans = bestClans;
+		this._clans = bestClans;
 	}
 
 	@Override
 	public void writeImpl()
 	{
-		writeEx(0x89);
-		writeD(0x00); // Open/Dont Open
-		writeD(_clans.length);
-		for (Clan c : _clans)
+		this.writeEx(0x89);
+		this.writeD(0x00); // Open/Dont Open
+		this.writeD(this._clans.length);
+		for (Clan c : this._clans)
 		{
-			writeS(c == null ? "" : c.getName());
-			writeD(c == null ? 0 : c.getSiegeKills());
+			this.writeS(c == null ? "" : c.getName());
+			this.writeD(c == null ? 0 : c.getSiegeKills());
 		}
 	}
 }

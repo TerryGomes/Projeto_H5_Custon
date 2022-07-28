@@ -8,18 +8,18 @@ public class ClickersSignatures extends L2GameServerPacket
 
 	public ClickersSignatures()
 	{
-		signatures = ClickersSignatureDao.getInstance().getSignatures();
+		this.signatures = ClickersSignatureDao.getInstance().getSignatures();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x0E);
-		writeD(signatures.length);
+		this.writeC(0x0E);
+		this.writeD(this.signatures.length);
 
-		for (int sig : signatures)
+		for (int sig : this.signatures)
 		{
-			writeD(sig);
+			this.writeD(sig);
 		}
 	}
 }

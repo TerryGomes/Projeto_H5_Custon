@@ -42,14 +42,14 @@ public class NpcHtmlMessage extends L2GameServerPacket
 		List<ScriptClassAndMethod> appends = Scripts.dialogAppends.get(npcId);
 		if ((appends != null) && (appends.size() > 0))
 		{
-			have_appends = true;
+			this.have_appends = true;
 			if ((filename != null) && filename.equalsIgnoreCase("npcdefault.htm"))
 			{
-				setHtml("");
+				this.setHtml("");
 			}
 			else
 			{
-				setFile(filename);
+				this.setFile(filename);
 			}
 
 			String replaces = "";
@@ -69,12 +69,12 @@ public class NpcHtmlMessage extends L2GameServerPacket
 
 			if (!replaces.equals(""))
 			{
-				replace("</body>", "\n" + Strings.bbParse(replaces) + "</body>");
+				this.replace("</body>", "\n" + Strings.bbParse(replaces) + "</body>");
 			}
 		}
 		else
 		{
-			setFile(filename);
+			this.setFile(filename);
 		}
 	}
 
@@ -82,34 +82,34 @@ public class NpcHtmlMessage extends L2GameServerPacket
 	{
 		this(player, npc.getNpcId(), filename, val);
 
-		_npcObjId = npc.getObjectId();
+		this._npcObjId = npc.getObjectId();
 
 		player.setLastNpc(npc);
 
-		replace("%npcId%", String.valueOf(npc.getNpcId()));
-		replace("%npcname%", npc.getName());
-		replace("%nick%", player.getName());
-		replace("%class%", player.getClassId().getLevel());
-		replace("%festivalMins%", SevenSignsFestival.getInstance().getTimeToNextFestivalStr());
+		this.replace("%npcId%", String.valueOf(npc.getNpcId()));
+		this.replace("%npcname%", npc.getName());
+		this.replace("%nick%", player.getName());
+		this.replace("%class%", player.getClassId().getLevel());
+		this.replace("%festivalMins%", SevenSignsFestival.getInstance().getTimeToNextFestivalStr());
 	}
 
 	public NpcHtmlMessage(Player player, NpcInstance npc)
 	{
 		if (npc == null)
 		{
-			_npcObjId = 5;
+			this._npcObjId = 5;
 			player.setLastNpc(null);
 		}
 		else
 		{
-			_npcObjId = npc.getObjectId();
+			this._npcObjId = npc.getObjectId();
 			player.setLastNpc(npc);
 		}
 	}
 
 	public NpcHtmlMessage(int npcObjId)
 	{
-		_npcObjId = npcObjId;
+		this._npcObjId = npcObjId;
 	}
 
 	public final NpcHtmlMessage setHtml(String text)
@@ -118,24 +118,24 @@ public class NpcHtmlMessage extends L2GameServerPacket
 		{
 			text = "<html><body>" + text + "</body></html>"; // <title>Message:</title> <br><br><br>
 		}
-		_html = text;
+		this._html = text;
 		return this;
 	}
 
 	public final NpcHtmlMessage setFile(String file)
 	{
-		_file = file;
-		if (_file.startsWith("data/html/"))
+		this._file = file;
+		if (this._file.startsWith("data/html/"))
 		{
 			_log.info("NpcHtmlMessage: need fix : " + file, new Exception());
-			_file = _file.replace("data/html/", "");
+			this._file = this._file.replace("data/html/", "");
 		}
 		return this;
 	}
 
 	public NpcHtmlMessage replace(String pattern, int value)
 	{
-		return replace(pattern, String.valueOf(value));
+		return this.replace(pattern, String.valueOf(value));
 	}
 
 	public NpcHtmlMessage replace(String pattern, String value)
@@ -144,8 +144,8 @@ public class NpcHtmlMessage extends L2GameServerPacket
 		{
 			return this;
 		}
-		_replaces.add(pattern);
-		_replaces.add(value);
+		this._replaces.add(pattern);
+		this._replaces.add(value);
 		return this;
 	}
 
@@ -161,65 +161,65 @@ public class NpcHtmlMessage extends L2GameServerPacket
 			throw new IllegalArgumentException("Not valid size of parameters: " + npcString);
 		}
 
-		_replaces.add(pattern);
-		_replaces.add(HtmlUtils.htmlNpcString(npcString, arg));
+		this._replaces.add(pattern);
+		this._replaces.add(HtmlUtils.htmlNpcString(npcString, arg));
 		return this;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		if (_file != null)
+		if (this._file != null)
 		{
-			String content = HtmCache.getInstance().getNotNull(_file, player);
-			String content2 = HtmCache.getInstance().getNullable(_file, player);
+			String content = HtmCache.getInstance().getNotNull(this._file, player);
+			String content2 = HtmCache.getInstance().getNullable(this._file, player);
 			if (content2 == null)
 			{
-				setHtml(have_appends && _file.endsWith(".htm") ? "" : content);
+				this.setHtml(this.have_appends && this._file.endsWith(".htm") ? "" : content);
 			}
 			else
 			{
-				setHtml(content);
+				this.setHtml(content);
 			}
 		}
 
-		if (_html == null)
+		if (this._html == null)
 		{
 			return;
 		}
 
-		for (int i = 0; i < _replaces.size(); i += 2)
+		for (int i = 0; i < this._replaces.size(); i += 2)
 		{
-			_html = _html.replace(_replaces.get(i), _replaces.get(i + 1));
+			this._html = this._html.replace(this._replaces.get(i), this._replaces.get(i + 1));
 		}
 
-		Matcher m = objectId.matcher(_html);
+		Matcher m = objectId.matcher(this._html);
 		if (m != null)
 		{
-			_html = m.replaceAll(String.valueOf(_npcObjId));
+			this._html = m.replaceAll(String.valueOf(this._npcObjId));
 		}
 
-		_html = playername.matcher(_html).replaceAll(player.getName());
+		this._html = playername.matcher(this._html).replaceAll(player.getName());
 
 		// Synerge - Replace and send all images and crests of this html
-		_html = ImagesCache.getInstance().sendUsedImages(_html, player);
-		if (_html.startsWith("CREST"))
+		this._html = ImagesCache.getInstance().sendUsedImages(this._html, player);
+		if (this._html.startsWith("CREST"))
 		{
-			_html = _html.substring(5);
+			this._html = this._html.substring(5);
 		}
 
 		player.cleanBypasses(BypassType.NPC);
-		_html = player.encodeBypasses(_html, BypassType.NPC);
+		this._html = player.encodeBypasses(this._html, BypassType.NPC);
 
-		writeC(0x19);
-		writeD(_npcObjId);
-		writeS(_html);
-		writeD(0x00);
+		this.writeC(0x19);
+		this.writeD(this._npcObjId);
+		this.writeS(this._html);
+		this.writeD(0x00);
 	}
 }

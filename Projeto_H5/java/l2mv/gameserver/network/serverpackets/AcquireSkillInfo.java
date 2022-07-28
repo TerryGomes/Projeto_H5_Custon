@@ -18,32 +18,32 @@ public class AcquireSkillInfo extends L2GameServerPacket
 
 	public AcquireSkillInfo(AcquireType type, SkillLearn learn)
 	{
-		_type = type;
-		_learn = learn;
-		if (_learn.getItemId() != 0)
+		this._type = type;
+		this._learn = learn;
+		if (this._learn.getItemId() != 0)
 		{
-			_reqs = new ArrayList<Require>(1);
-			_reqs.add(new Require(99, _learn.getItemId(), _learn.getItemCount(), 50));
+			this._reqs = new ArrayList<Require>(1);
+			this._reqs.add(new Require(99, this._learn.getItemId(), this._learn.getItemCount(), 50));
 		}
 	}
 
 	@Override
 	public void writeImpl()
 	{
-		writeC(0x91);
-		writeD(_learn.getId());
-		writeD(_learn.getLevel());
-		writeD(_learn.getCost()); // sp/rep
-		writeD(_type.ordinal());
+		this.writeC(0x91);
+		this.writeD(this._learn.getId());
+		this.writeD(this._learn.getLevel());
+		this.writeD(this._learn.getCost()); // sp/rep
+		this.writeD(this._type.ordinal());
 
-		writeD(_reqs.size()); // requires size
+		this.writeD(this._reqs.size()); // requires size
 
-		for (Require temp : _reqs)
+		for (Require temp : this._reqs)
 		{
-			writeD(temp.type);
-			writeD(temp.itemId);
-			writeQ(temp.count);
-			writeD(temp.unk);
+			this.writeD(temp.type);
+			this.writeD(temp.itemId);
+			this.writeQ(temp.count);
+			this.writeD(temp.unk);
 		}
 	}
 
@@ -56,10 +56,10 @@ public class AcquireSkillInfo extends L2GameServerPacket
 
 		public Require(int pType, int pItemId, long pCount, int pUnk)
 		{
-			itemId = pItemId;
-			type = pType;
-			count = pCount;
-			unk = pUnk;
+			this.itemId = pItemId;
+			this.type = pType;
+			this.count = pCount;
+			this.unk = pUnk;
 		}
 	}
 }

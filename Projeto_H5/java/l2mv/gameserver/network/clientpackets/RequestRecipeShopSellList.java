@@ -14,13 +14,13 @@ public class RequestRecipeShopSellList extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_manufacturerId = readD();
+		this._manufacturerId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -32,7 +32,7 @@ public class RequestRecipeShopSellList extends L2GameClientPacket
 			return;
 		}
 
-		Player manufacturer = (Player) activeChar.getVisibleObject(_manufacturerId);
+		Player manufacturer = (Player) activeChar.getVisibleObject(this._manufacturerId);
 		if (manufacturer == null || manufacturer.getPrivateStoreType() != Player.STORE_PRIVATE_MANUFACTURE || !manufacturer.isInRangeZ(activeChar, Creature.INTERACTION_DISTANCE))
 		{
 			activeChar.sendActionFailed();

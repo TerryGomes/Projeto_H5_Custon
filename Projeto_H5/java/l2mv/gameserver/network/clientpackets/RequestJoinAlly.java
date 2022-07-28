@@ -17,13 +17,13 @@ public class RequestJoinAlly extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
+		this._objectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null || activeChar.getClan() == null || activeChar.getAlliance() == null)
 		{
 			return;
@@ -47,7 +47,7 @@ public class RequestJoinAlly extends L2GameClientPacket
 			return;
 		}
 
-		GameObject obj = activeChar.getVisibleObject(_objectId);
+		GameObject obj = activeChar.getVisibleObject(this._objectId);
 		if (obj == null || !obj.isPlayer() || obj == activeChar)
 		{
 			activeChar.sendPacket(SystemMsg.THAT_IS_AN_INCORRECT_TARGET);

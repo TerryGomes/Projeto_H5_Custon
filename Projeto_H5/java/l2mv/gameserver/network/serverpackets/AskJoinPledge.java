@@ -7,15 +7,15 @@ public class AskJoinPledge extends L2GameServerPacket
 
 	public AskJoinPledge(int requestorId, String pledgeName)
 	{
-		_requestorId = requestorId;
-		_pledgeName = pledgeName;
+		this._requestorId = requestorId;
+		this._pledgeName = pledgeName;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x2c);
-		writeD(_requestorId);
-		writeS(_pledgeName);
+		this.writeC(0x2c);
+		this.writeD(this._requestorId);
+		this.writeS(this._pledgeName);
 	}
 }

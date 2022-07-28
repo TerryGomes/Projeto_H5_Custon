@@ -18,13 +18,13 @@ public class AnswerTradeRequest extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_response = readD();
+		this._response = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -61,7 +61,7 @@ public class AnswerTradeRequest extends L2GameClientPacket
 		}
 
 		// отказ
-		if (_response == 0)
+		if (this._response == 0)
 		{
 			request.cancel();
 			requestor.sendPacket(new SystemMessage2(SystemMsg.C1_HAS_DENIED_YOUR_REQUEST_TO_TRADE).addString(activeChar.getName()));

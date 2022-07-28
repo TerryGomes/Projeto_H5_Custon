@@ -22,26 +22,26 @@ public class ExCubeGameExtendedChangePoints extends L2GameServerPacket
 
 	public ExCubeGameExtendedChangePoints(int timeLeft, int bluePoints, int redPoints, boolean isRedTeam, Player player, int playerPoints)
 	{
-		_timeLeft = timeLeft;
-		_bluePoints = bluePoints;
-		_redPoints = redPoints;
-		_isRedTeam = isRedTeam;
-		_objectId = player.getObjectId();
-		_playerPoints = playerPoints;
+		this._timeLeft = timeLeft;
+		this._bluePoints = bluePoints;
+		this._redPoints = redPoints;
+		this._isRedTeam = isRedTeam;
+		this._objectId = player.getObjectId();
+		this._playerPoints = playerPoints;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x98);
-		writeD(0x00);
+		this.writeEx(0x98);
+		this.writeD(0x00);
 
-		writeD(_timeLeft);
-		writeD(_bluePoints);
-		writeD(_redPoints);
+		this.writeD(this._timeLeft);
+		this.writeD(this._bluePoints);
+		this.writeD(this._redPoints);
 
-		writeD(_isRedTeam ? 0x01 : 0x00);
-		writeD(_objectId);
-		writeD(_playerPoints);
+		this.writeD(this._isRedTeam ? 0x01 : 0x00);
+		this.writeD(this._objectId);
+		this.writeD(this._playerPoints);
 	}
 }

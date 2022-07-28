@@ -14,13 +14,13 @@ public class RequestExOustFromMpccRoom extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
+		this._objectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -32,7 +32,7 @@ public class RequestExOustFromMpccRoom extends L2GameClientPacket
 			return;
 		}
 
-		Player member = GameObjectsStorage.getPlayer(_objectId);
+		Player member = GameObjectsStorage.getPlayer(this._objectId);
 		if ((member == null) || (member == room.getLeader()))
 		{
 			return;

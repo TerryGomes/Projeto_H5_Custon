@@ -17,28 +17,28 @@ public class RequestGetOnVehicle extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
-		_loc.x = readD();
-		_loc.y = readD();
-		_loc.z = readD();
+		this._objectId = this.readD();
+		this._loc.x = this.readD();
+		this._loc.y = this.readD();
+		this._loc.z = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		Boat boat = BoatHolder.getInstance().getBoat(_objectId);
+		Boat boat = BoatHolder.getInstance().getBoat(this._objectId);
 		if (boat == null)
 		{
 			return;
 		}
 
 		player._stablePoint = boat.getCurrentWay().getReturnLoc();
-		boat.addPlayer(player, _loc);
+		boat.addPlayer(player, this._loc);
 	}
 }

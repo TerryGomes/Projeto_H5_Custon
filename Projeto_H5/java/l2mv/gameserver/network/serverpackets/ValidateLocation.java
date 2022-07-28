@@ -13,19 +13,19 @@ public class ValidateLocation extends L2GameServerPacket
 
 	public ValidateLocation(Creature cha)
 	{
-		_chaObjId = cha.getObjectId();
-		_loc = cha.getLoc();
+		this._chaObjId = cha.getObjectId();
+		this._loc = cha.getLoc();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x79);
+		this.writeC(0x79);
 
-		writeD(_chaObjId);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeD(_loc.h);
+		this.writeD(this._chaObjId);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
+		this.writeD(this._loc.h);
 	}
 }

@@ -8,20 +8,20 @@ public class ExUseSharedGroupItem extends L2GameServerPacket
 
 	public ExUseSharedGroupItem(int grpId, TimeStamp timeStamp)
 	{
-		_grpId = grpId;
-		_itemId = timeStamp.getId();
-		_remainedTime = (int) (timeStamp.getReuseCurrent() / 1000);
-		_totalTime = (int) (timeStamp.getReuseBasic() / 1000);
+		this._grpId = grpId;
+		this._itemId = timeStamp.getId();
+		this._remainedTime = (int) (timeStamp.getReuseCurrent() / 1000);
+		this._totalTime = (int) (timeStamp.getReuseBasic() / 1000);
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x4a);
+		this.writeEx(0x4a);
 
-		writeD(_itemId);
-		writeD(_grpId);
-		writeD(_remainedTime);
-		writeD(_totalTime);
+		this.writeD(this._itemId);
+		this.writeD(this._grpId);
+		this.writeD(this._remainedTime);
+		this.writeD(this._totalTime);
 	}
 }

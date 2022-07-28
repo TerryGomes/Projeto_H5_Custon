@@ -13,16 +13,16 @@ public abstract class NpcStringContainer extends L2GameServerPacket
 
 	protected NpcStringContainer(NpcString npcString, String... arg)
 	{
-		_npcString = npcString;
-		System.arraycopy(arg, 0, _parameters, 0, arg.length);
+		this._npcString = npcString;
+		System.arraycopy(arg, 0, this._parameters, 0, arg.length);
 	}
 
 	protected void writeElements()
 	{
-		writeD(_npcString.getId());
-		for (String st : _parameters)
+		this.writeD(this._npcString.getId());
+		for (String st : this._parameters)
 		{
-			writeS(st);
+			this.writeS(st);
 		}
 	}
 }

@@ -35,18 +35,18 @@ public class RequestExMagicSkillUseGround extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_loc.x = readD();
-		_loc.y = readD();
-		_loc.z = readD();
-		_skillId = readD();
-		_ctrlPressed = readD() != 0;
-		_shiftPressed = readC() != 0;
+		this._loc.x = this.readD();
+		this._loc.y = this.readD();
+		this._loc.z = this.readD();
+		this._skillId = this.readD();
+		this._ctrlPressed = this.readD() != 0;
+		this._shiftPressed = this.readC() != 0;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -58,7 +58,7 @@ public class RequestExMagicSkillUseGround extends L2GameClientPacket
 			return;
 		}
 
-		Skill skill = SkillTable.getInstance().getInfo(_skillId, activeChar.getSkillLevel(_skillId));
+		Skill skill = SkillTable.getInstance().getInfo(this._skillId, activeChar.getSkillLevel(this._skillId));
 		if (skill != null)
 		{
 			// В режиме трансформации доступны только скилы трансформы
@@ -67,7 +67,7 @@ public class RequestExMagicSkillUseGround extends L2GameClientPacket
 				return;
 			}
 
-			if (!activeChar.isInRange(_loc, skill.getCastRange()))
+			if (!activeChar.isInRange(this._loc, skill.getCastRange()))
 			{
 				activeChar.sendPacket(SystemMsg.YOUR_TARGET_IS_OUT_OF_RANGE);
 				activeChar.sendActionFailed();
@@ -76,10 +76,10 @@ public class RequestExMagicSkillUseGround extends L2GameClientPacket
 
 			Creature target = skill.getAimingTarget(activeChar, activeChar.getTarget());
 
-			if (skill.checkCondition(activeChar, target, _ctrlPressed, _shiftPressed, true))
+			if (skill.checkCondition(activeChar, target, this._ctrlPressed, this._shiftPressed, true))
 			{
-				activeChar.setGroundSkillLoc(_loc);
-				activeChar.getAI().Cast(skill, target, _ctrlPressed, _shiftPressed);
+				activeChar.setGroundSkillLoc(this._loc);
+				activeChar.getAI().Cast(skill, target, this._ctrlPressed, this._shiftPressed);
 			}
 			else
 			{

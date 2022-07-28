@@ -20,21 +20,21 @@ public class RequestRecipeShopListSet extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_count = readD();
-		if (_count * 12 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		this._count = this.readD();
+		if (this._count * 12 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1)
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
-		_recipes = new int[_count];
-		_prices = new long[_count];
-		for (int i = 0; i < _count; i++)
+		this._recipes = new int[this._count];
+		this._prices = new long[this._count];
+		for (int i = 0; i < this._count; i++)
 		{
-			_recipes[i] = readD();
-			_prices[i] = readQ();
-			if (_prices[i] < 0)
+			this._recipes[i] = this.readD();
+			this._prices[i] = this.readQ();
+			if (this._prices[i] < 0)
 			{
-				_count = 0;
+				this._count = 0;
 				return;
 			}
 		}
@@ -43,8 +43,8 @@ public class RequestRecipeShopListSet extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player manufacturer = getClient().getActiveChar();
-		if (manufacturer == null || _count == 0)
+		Player manufacturer = this.getClient().getActiveChar();
+		if (manufacturer == null || this._count == 0)
 		{
 			return;
 		}
@@ -55,17 +55,17 @@ public class RequestRecipeShopListSet extends L2GameClientPacket
 			return;
 		}
 
-		if (_count > Config.MAX_PVTCRAFT_SLOTS)
+		if (this._count > Config.MAX_PVTCRAFT_SLOTS)
 		{
 			manufacturer.sendPacket(SystemMsg.YOU_HAVE_EXCEEDED_THE_QUANTITY_THAT_CAN_BE_INPUTTED);
 			return;
 		}
 
 		List<ManufactureItem> createList = new CopyOnWriteArrayList<ManufactureItem>();
-		for (int i = 0; i < _count; i++)
+		for (int i = 0; i < this._count; i++)
 		{
-			int recipeId = _recipes[i];
-			long price = _prices[i];
+			int recipeId = this._recipes[i];
+			long price = this._prices[i];
 			if (!manufacturer.findRecipe(recipeId))
 			{
 				continue;

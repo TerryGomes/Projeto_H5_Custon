@@ -19,32 +19,32 @@ public class ExPartyRoomMember extends L2GameServerPacket
 
 	public ExPartyRoomMember(MatchingRoom room, Player activeChar)
 	{
-		_type = room.getMemberType(activeChar);
-		_members = new ArrayList<PartyRoomMemberInfo>(room.getPlayers().size());
+		this._type = room.getMemberType(activeChar);
+		this._members = new ArrayList<PartyRoomMemberInfo>(room.getPlayers().size());
 		for (Player $member : room.getPlayers())
 		{
-			_members.add(new PartyRoomMemberInfo($member, room.getMemberType($member)));
+			this._members.add(new PartyRoomMemberInfo($member, room.getMemberType($member)));
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x08);
-		writeD(_type);
-		writeD(_members.size());
-		for (PartyRoomMemberInfo member_info : _members)
+		this.writeEx(0x08);
+		this.writeD(this._type);
+		this.writeD(this._members.size());
+		for (PartyRoomMemberInfo member_info : this._members)
 		{
-			writeD(member_info.objectId);
-			writeS(member_info.name);
-			writeD(member_info.classId);
-			writeD(member_info.level);
-			writeD(member_info.location);
-			writeD(member_info.memberType);
-			writeD(member_info.instanceReuses.length);
+			this.writeD(member_info.objectId);
+			this.writeS(member_info.name);
+			this.writeD(member_info.classId);
+			this.writeD(member_info.level);
+			this.writeD(member_info.location);
+			this.writeD(member_info.memberType);
+			this.writeD(member_info.instanceReuses.length);
 			for (int i : member_info.instanceReuses)
 			{
-				writeD(i);
+				this.writeD(i);
 			}
 		}
 	}
@@ -57,13 +57,13 @@ public class ExPartyRoomMember extends L2GameServerPacket
 
 		public PartyRoomMemberInfo(Player member, int type)
 		{
-			objectId = member.getObjectId();
-			name = member.getName();
-			classId = member.getClassId().ordinal();
-			level = member.getLevel();
-			location = MatchingRoomManager.getInstance().getLocation(member);
-			memberType = type;
-			instanceReuses = ArrayUtils.toArray(member.getInstanceReuses().keySet());
+			this.objectId = member.getObjectId();
+			this.name = member.getName();
+			this.classId = member.getClassId().ordinal();
+			this.level = member.getLevel();
+			this.location = MatchingRoomManager.getInstance().getLocation(member);
+			this.memberType = type;
+			this.instanceReuses = ArrayUtils.toArray(member.getInstanceReuses().keySet());
 		}
 	}
 }

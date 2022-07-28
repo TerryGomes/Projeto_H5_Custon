@@ -10,6 +10,6 @@ public class ExDissmissMpccRoom extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x9D);
+		this.writeEx(0x9D);
 	}
 }

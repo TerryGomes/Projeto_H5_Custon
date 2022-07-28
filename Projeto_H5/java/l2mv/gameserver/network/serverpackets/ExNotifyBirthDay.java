@@ -7,6 +7,6 @@ public class ExNotifyBirthDay extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x8F);
+		this.writeEx(0x8F);
 	}
 }

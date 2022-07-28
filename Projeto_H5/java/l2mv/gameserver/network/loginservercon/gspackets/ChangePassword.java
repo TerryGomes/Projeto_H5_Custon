@@ -20,10 +20,10 @@ public class ChangePassword extends SendablePacket
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0x08);
-		writeS(account);
-		writeS(oldPass);
-		writeS(newPass);
-		writeS(hwid);
+		this.writeC(0x08);
+		this.writeS(this.account);
+		this.writeS(this.oldPass);
+		this.writeS(this.newPass);
+		this.writeS(this.hwid);
 	}
 }

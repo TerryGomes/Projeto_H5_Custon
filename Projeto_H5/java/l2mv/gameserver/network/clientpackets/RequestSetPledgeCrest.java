@@ -13,18 +13,18 @@ public class RequestSetPledgeCrest extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_length = readD();
-		if (_length == CrestCache.CREST_SIZE && _length == _buf.remaining())
+		this._length = this.readD();
+		if (this._length == CrestCache.CREST_SIZE && this._length == this._buf.remaining())
 		{
-			_data = new byte[_length];
-			readB(_data);
+			this._data = new byte[this._length];
+			this.readB(this._data);
 		}
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -46,9 +46,9 @@ public class RequestSetPledgeCrest extends L2GameClientPacket
 
 			int crestId = 0;
 
-			if (_data != null)
+			if (this._data != null)
 			{
-				crestId = CrestCache.getInstance().savePledgeCrest(clan.getClanId(), _data);
+				crestId = CrestCache.getInstance().savePledgeCrest(clan.getClanId(), this._data);
 			}
 			else if (clan.hasCrest())
 			{

@@ -18,11 +18,11 @@ public class RequestEx2ndPasswordReq extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_changePass = readC();
-		_password = readS();
-		if (_changePass == 2)
+		this._changePass = this.readC();
+		this._password = this.readS();
+		if (this._changePass == 2)
 		{
-			_newPassword = readS();
+			this._newPassword = this.readS();
 		}
 	}
 
@@ -34,21 +34,21 @@ public class RequestEx2ndPasswordReq extends L2GameClientPacket
 			return;
 		}
 
-		SecondaryPasswordAuth spa = getClient().getSecondaryAuth();
+		SecondaryPasswordAuth spa = this.getClient().getSecondaryAuth();
 		boolean exVal = false;
 
-		if (_changePass == 0 && !spa.passwordExist())
+		if (this._changePass == 0 && !spa.passwordExist())
 		{
-			exVal = spa.savePassword(_password);
+			exVal = spa.savePassword(this._password);
 		}
-		else if (_changePass == 2 && spa.passwordExist())
+		else if (this._changePass == 2 && spa.passwordExist())
 		{
-			exVal = spa.changePassword(_password, _newPassword);
+			exVal = spa.changePassword(this._password, this._newPassword);
 		}
 
 		if (exVal)
 		{
-			getClient().sendPacket(new Ex2ndPasswordAck(Ex2ndPasswordAck.SUCCESS));
+			this.getClient().sendPacket(new Ex2ndPasswordAck(Ex2ndPasswordAck.SUCCESS));
 		}
 	}
 }

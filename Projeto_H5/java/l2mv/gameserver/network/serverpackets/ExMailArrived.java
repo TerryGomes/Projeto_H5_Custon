@@ -7,6 +7,6 @@ public class ExMailArrived extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x2e);
+		this.writeEx(0x2e);
 	}
 }

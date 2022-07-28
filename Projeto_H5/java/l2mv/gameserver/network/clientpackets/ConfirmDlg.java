@@ -12,28 +12,28 @@ public class ConfirmDlg extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		readD();
-		_answer = readD();
-		_requestId = readD();
+		this.readD();
+		this._answer = this.readD();
+		this._requestId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
 		Pair<Integer, OnAnswerListener> entry = activeChar.getAskListener(true);
-		if (entry == null || entry.getKey() != _requestId)
+		if (entry == null || entry.getKey() != this._requestId)
 		{
 			return;
 		}
 
 		OnAnswerListener listener = entry.getValue();
-		if (_answer == 1)
+		if (this._answer == 1)
 		{
 			listener.sayYes();
 		}

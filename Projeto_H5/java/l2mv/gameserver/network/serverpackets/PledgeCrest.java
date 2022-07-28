@@ -8,17 +8,17 @@ public class PledgeCrest extends L2GameServerPacket
 
 	public PledgeCrest(int crestId, byte[] data)
 	{
-		_crestId = crestId;
-		_data = data;
-		_crestSize = _data.length;
+		this._crestId = crestId;
+		this._data = data;
+		this._crestSize = this._data.length;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x6a);
-		writeD(_crestId);
-		writeD(_crestSize);
-		writeB(_data);
+		this.writeC(0x6a);
+		this.writeD(this._crestId);
+		this.writeD(this._crestSize);
+		this.writeB(this._data);
 	}
 }

@@ -13,7 +13,7 @@ public class RequestCursedWeaponList extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Creature activeChar = getClient().getActiveChar();
+		Creature activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;

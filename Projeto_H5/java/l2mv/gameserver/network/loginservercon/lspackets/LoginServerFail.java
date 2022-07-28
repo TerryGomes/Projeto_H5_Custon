@@ -25,19 +25,19 @@ public class LoginServerFail extends ReceivablePacket
 
 	public String getReason()
 	{
-		return reasons[_reason];
+		return reasons[this._reason];
 	}
 
 	@Override
 	protected void readImpl()
 	{
-		_reason = readC();
+		this._reason = this.readC();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		_log.warn("Authserver registration failed! Reason: " + getReason());
+		_log.warn("Authserver registration failed! Reason: " + this.getReason());
 		AuthServerCommunication.getInstance().restart();
 	}
 }

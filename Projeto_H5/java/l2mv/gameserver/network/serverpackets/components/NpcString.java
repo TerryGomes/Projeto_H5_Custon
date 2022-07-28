@@ -819,38 +819,38 @@ public enum NpcString
 
 	NpcString(int id)
 	{
-		_id = id;
+		this._id = id;
 
-		if (name().contains("S4"))
+		if (this.name().contains("S4"))
 		{
-			_size = 4;
+			this._size = 4;
 		}
-		else if (name().contains("S3"))
+		else if (this.name().contains("S3"))
 		{
-			_size = 3;
+			this._size = 3;
 		}
-		else if (name().contains("S2"))
+		else if (this.name().contains("S2"))
 		{
-			_size = 2;
+			this._size = 2;
 		}
-		else if (name().contains("S1"))
+		else if (this.name().contains("S1"))
 		{
-			_size = 1;
+			this._size = 1;
 		}
 		else
 		{
-			_size = 0;
+			this._size = 0;
 		}
 	}
 
 	public int getId()
 	{
-		return _id;
+		return this._id;
 	}
 
 	public int getSize()
 	{
-		return _size;
+		return this._size;
 	}
 
 	public static NpcString valueOf(int id)

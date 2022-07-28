@@ -13,17 +13,17 @@ public class ExMpccPartymasterList extends L2GameServerPacket
 
 	public ExMpccPartymasterList(Set<String> s)
 	{
-		_members = s;
+		this._members = s;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xA2);
-		writeD(_members.size());
-		for (String t : _members)
+		this.writeEx(0xA2);
+		this.writeD(this._members.size());
+		for (String t : this._members)
 		{
-			writeS(t);
+			this.writeS(t);
 		}
 	}
 }

@@ -14,13 +14,13 @@ public class RequestOustAlly extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_clanName = readS(32);
+		this._clanName = this.readS(32);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -47,12 +47,12 @@ public class RequestOustAlly extends L2GameClientPacket
 			return;
 		}
 
-		if (_clanName == null)
+		if (this._clanName == null)
 		{
 			return;
 		}
 
-		clan = ClanTable.getInstance().getClanByName(_clanName);
+		clan = ClanTable.getInstance().getClanByName(this._clanName);
 		if (clan != null)
 		{
 			if (!alliance.isMember(clan.getClanId()))

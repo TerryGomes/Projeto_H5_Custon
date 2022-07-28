@@ -17,36 +17,36 @@ package l2mv.gameserver.network.clientpackets;
 	/*	*/
 	/*	*/ public CannotMoveAnymoreInVehicle()
 	/*	*/ {
-		/* 10 */ _loc = new Location();
+		/* 10 */ this._loc = new Location();
 		/*	*/ }
 
 	/*	*/
 	/*	*/ @Override
 	protected void readImpl()
 	/*	*/ {
-		/* 16 */ _boatid = readD();
-		/* 17 */ _loc.x = readD();
-		/* 18 */ _loc.y = readD();
-		/* 19 */ _loc.z = readD();
-		/* 20 */ _loc.h = readD();
+		/* 16 */ this._boatid = this.readD();
+		/* 17 */ this._loc.x = this.readD();
+		/* 18 */ this._loc.y = this.readD();
+		/* 19 */ this._loc.z = this.readD();
+		/* 20 */ this._loc.h = this.readD();
 		/*	*/ }
 
 	/*	*/
 	/*	*/ @Override
 	protected void runImpl()
 	/*	*/ {
-		/* 26 */ Player player = ((GameClient) getClient()).getActiveChar();
+		/* 26 */ Player player = ((GameClient) this.getClient()).getActiveChar();
 		/* 27 */ if (player == null)
 		{
 			/* 28 */ return;
 			/*	*/ }
 		/* 30 */ Boat boat = player.getBoat();
-		/* 31 */ if ((boat == null) || (boat.getObjectId() != _boatid))
+		/* 31 */ if ((boat == null) || (boat.getObjectId() != this._boatid))
 		{
 			/*	*/ return;
 		}
-		/* 33 */ player.setInBoatPosition(_loc);
-		/* 34 */ player.setHeading(_loc.h);
+		/* 33 */ player.setInBoatPosition(this._loc);
+		/* 34 */ player.setHeading(this._loc.h);
 		/* 35 */ player.broadcastPacket(new L2GameServerPacket[]
 		{
 			boat.inStopMovePacket(player)

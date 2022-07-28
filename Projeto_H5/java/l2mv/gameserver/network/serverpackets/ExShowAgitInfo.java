@@ -20,7 +20,7 @@ public class ExShowAgitInfo extends L2GameServerPacket
 	public ExShowAgitInfo()
 	{
 		List<ClanHall> chs = ResidenceHolder.getInstance().getResidenceList(ClanHall.class);
-		_clanHalls = new ArrayList<AgitInfo>(chs.size());
+		this._clanHalls = new ArrayList<AgitInfo>(chs.size());
 
 		for (ClanHall clanHall : chs)
 		{
@@ -42,21 +42,21 @@ public class ExShowAgitInfo extends L2GameServerPacket
 			Clan clan = ClanTable.getInstance().getClan(clanHall.getOwnerId());
 			String clan_name = clanHall.getOwnerId() == 0 || clan == null ? StringUtils.EMPTY : clan.getName();
 			String leader_name = clanHall.getOwnerId() == 0 || clan == null ? StringUtils.EMPTY : clan.getLeaderName();
-			_clanHalls.add(new AgitInfo(clan_name, leader_name, ch_id, getType));
+			this._clanHalls.add(new AgitInfo(clan_name, leader_name, ch_id, getType));
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x16);
-		writeD(_clanHalls.size());
-		for (AgitInfo info : _clanHalls)
+		this.writeEx(0x16);
+		this.writeD(this._clanHalls.size());
+		for (AgitInfo info : this._clanHalls)
 		{
-			writeD(info.ch_id);
-			writeS(info.clan_name);
-			writeS(info.leader_name);
-			writeD(info.getType);
+			this.writeD(info.ch_id);
+			this.writeS(info.clan_name);
+			this.writeS(info.leader_name);
+			this.writeD(info.getType);
 		}
 	}
 
@@ -70,7 +70,7 @@ public class ExShowAgitInfo extends L2GameServerPacket
 			this.clan_name = clan_name;
 			this.leader_name = leader_name;
 			this.ch_id = ch_id;
-			getType = lease;
+			this.getType = lease;
 		}
 	}
 }

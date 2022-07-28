@@ -11,32 +11,32 @@ public class RequestShortCutReg extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_type = readD();
-		int slot = readD();
-		_id = readD();
-		_lvl = readD();
-		_characterType = readD();
+		this._type = this.readD();
+		int slot = this.readD();
+		this._id = this.readD();
+		this._lvl = this.readD();
+		this._characterType = this.readD();
 
-		_slot = slot % 12;
-		_page = slot / 12;
+		this._slot = slot % 12;
+		this._page = slot / 12;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		if (_page < 0 || _page > ShortCut.PAGE_MAX || _slot < 0 || _type < 1 || _type > ShortCut.TYPE_MAX)
+		if (this._page < 0 || this._page > ShortCut.PAGE_MAX || this._slot < 0 || this._type < 1 || this._type > ShortCut.TYPE_MAX)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		ShortCut shortCut = new ShortCut(_slot, _page, _type, _id, _lvl, _characterType);
+		ShortCut shortCut = new ShortCut(this._slot, this._page, this._type, this._id, this._lvl, this._characterType);
 		activeChar.sendPacket(new ShortCutRegister(activeChar, shortCut));
 		activeChar.registerShortCut(shortCut);
 	}

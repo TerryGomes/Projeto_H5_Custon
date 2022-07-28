@@ -11,23 +11,23 @@ public class RequestRecipeShopMessageSet extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS(16);
+		this._name = this.readS(16);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		if (Config.containsAbuseWord(_name))
+		if (Config.containsAbuseWord(this._name))
 		{
-			_name = "....";
+			this._name = "....";
 		}
 
-		activeChar.setManufactureName(_name);
+		activeChar.setManufactureName(this._name);
 	}
 }

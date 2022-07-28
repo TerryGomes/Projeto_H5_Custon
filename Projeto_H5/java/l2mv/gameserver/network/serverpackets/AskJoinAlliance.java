@@ -19,18 +19,18 @@ public class AskJoinAlliance extends L2GameServerPacket
 
 	public AskJoinAlliance(int requestorId, String requestorName, String requestorAllyName)
 	{
-		_requestorName = requestorName;
-		_requestorAllyName = requestorAllyName;
-		_requestorId = requestorId;
+		this._requestorName = requestorName;
+		this._requestorAllyName = requestorAllyName;
+		this._requestorId = requestorId;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xbb);
-		writeD(_requestorId);
-		writeS(_requestorName);
-		writeS("");
-		writeS(_requestorAllyName);
+		this.writeC(0xbb);
+		this.writeD(this._requestorId);
+		this.writeS(this._requestorName);
+		this.writeS("");
+		this.writeS(this._requestorAllyName);
 	}
 }

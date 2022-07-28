@@ -13,14 +13,14 @@ public class RequestPledgeWarList extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_page = readD();
-		_type = readD();
+		this._page = this.readD();
+		_type = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -29,7 +29,7 @@ public class RequestPledgeWarList extends L2GameClientPacket
 		Clan clan = activeChar.getClan();
 		if (clan != null)
 		{
-			activeChar.sendPacket(new PledgeReceiveWarList(clan, _type, _page));
+			activeChar.sendPacket(new PledgeReceiveWarList(clan, _type, this._page));
 		}
 	}
 }

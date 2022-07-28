@@ -25,20 +25,20 @@ public class RequestAquireSkill extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_id = readD();
-		_level = readD();
-		_type = ArrayUtils.valid(AcquireType.VALUES, readD());
-		if (_type == AcquireType.SUB_UNIT)
+		this._id = this.readD();
+		this._level = this.readD();
+		this._type = ArrayUtils.valid(AcquireType.VALUES, this.readD());
+		if (this._type == AcquireType.SUB_UNIT)
 		{
-			_subUnit = readD();
+			this._subUnit = this.readD();
 		}
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
-		if (player == null || player.getTransformation() != 0 || _type == null)
+		Player player = this.getClient().getActiveChar();
+		if (player == null || player.getTransformation() != 0 || this._type == null)
 		{
 			return;
 		}
@@ -49,13 +49,13 @@ public class RequestAquireSkill extends L2GameClientPacket
 			return;
 		}
 
-		Skill skill = SkillTable.getInstance().getInfo(_id, _level);
-		if ((skill == null) || !SkillAcquireHolder.getInstance().isSkillPossible(player, skill, _type))
+		Skill skill = SkillTable.getInstance().getInfo(this._id, this._level);
+		if ((skill == null) || !SkillAcquireHolder.getInstance().isSkillPossible(player, skill, this._type))
 		{
 			return;
 		}
 
-		SkillLearn skillLearn = SkillAcquireHolder.getInstance().getSkillLearn(player, _id, _level, _type);
+		SkillLearn skillLearn = SkillAcquireHolder.getInstance().getSkillLearn(player, this._id, this._level, this._type);
 
 		if (skillLearn == null)
 		{
@@ -68,7 +68,7 @@ public class RequestAquireSkill extends L2GameClientPacket
 			return;
 		}
 
-		switch (_type)
+		switch (this._type)
 		{
 		case NORMAL:
 			learnSimpleNextLevel(player, skillLearn, skill);
@@ -111,7 +111,7 @@ public class RequestAquireSkill extends L2GameClientPacket
 			learnClanSkill(player, skillLearn, trainer, skill);
 			break;
 		case SUB_UNIT:
-			learnSubUnitSkill(player, skillLearn, trainer, skill, _subUnit);
+			learnSubUnitSkill(player, skillLearn, trainer, skill, this._subUnit);
 			break;
 		case CERTIFICATION:
 			if (!player.getActiveClass().isBase())

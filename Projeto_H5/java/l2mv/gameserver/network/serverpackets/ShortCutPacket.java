@@ -56,21 +56,21 @@ public abstract class ShortCutPacket extends L2GameServerPacket
 		public ItemShortcutInfo(int type, int page, int id, int reuseGroup, int currentReuse, int basicReuse, int augmentationId, int characterType)
 		{
 			super(type, page, id, characterType);
-			_reuseGroup = reuseGroup;
-			_currentReuse = currentReuse;
-			_basicReuse = basicReuse;
-			_augmentationId = augmentationId;
+			this._reuseGroup = reuseGroup;
+			this._currentReuse = currentReuse;
+			this._basicReuse = basicReuse;
+			this._augmentationId = augmentationId;
 		}
 
 		@Override
 		protected void write0(ShortCutPacket p)
 		{
-			p.writeD(_id);
-			p.writeD(_characterType);
-			p.writeD(_reuseGroup);
-			p.writeD(_currentReuse);
-			p.writeD(_basicReuse);
-			p.writeD(_augmentationId);
+			p.writeD(this._id);
+			p.writeD(this._characterType);
+			p.writeD(this._reuseGroup);
+			p.writeD(this._currentReuse);
+			p.writeD(this._basicReuse);
+			p.writeD(this._augmentationId);
 		}
 	}
 
@@ -81,21 +81,21 @@ public abstract class ShortCutPacket extends L2GameServerPacket
 		public SkillShortcutInfo(int type, int page, int id, int level, int characterType)
 		{
 			super(type, page, id, characterType);
-			_level = level;
+			this._level = level;
 		}
 
 		public int getLevel()
 		{
-			return _level;
+			return this._level;
 		}
 
 		@Override
 		protected void write0(ShortCutPacket p)
 		{
-			p.writeD(_id);
-			p.writeD(_level);
+			p.writeD(this._id);
+			p.writeD(this._level);
 			p.writeC(0x00);
-			p.writeD(_characterType);
+			p.writeD(this._characterType);
 		}
 	}
 
@@ -108,23 +108,23 @@ public abstract class ShortCutPacket extends L2GameServerPacket
 
 		public ShortcutInfo(int type, int page, int id, int characterType)
 		{
-			_type = type;
-			_page = page;
-			_id = id;
-			_characterType = characterType;
+			this._type = type;
+			this._page = page;
+			this._id = id;
+			this._characterType = characterType;
 		}
 
 		protected void write(ShortCutPacket p)
 		{
-			p.writeD(_type);
-			p.writeD(_page);
-			write0(p);
+			p.writeD(this._type);
+			p.writeD(this._page);
+			this.write0(p);
 		}
 
 		protected void write0(ShortCutPacket p)
 		{
-			p.writeD(_id);
-			p.writeD(_characterType);
+			p.writeD(this._id);
+			p.writeD(this._characterType);
 		}
 	}
 }

@@ -23,18 +23,18 @@ public class PrivateStoreManageListSell extends L2GameServerPacket
 	 */
 	public PrivateStoreManageListSell(Player seller, boolean pkg)
 	{
-		_sellerId = seller.getObjectId();
-		_adena = seller.getAdena();
-		_package = pkg;
-		_sellList0 = seller.getSellList(_package);
-		_sellList = new ArrayList<TradeItem>();
+		this._sellerId = seller.getObjectId();
+		this._adena = seller.getAdena();
+		this._package = pkg;
+		this._sellList0 = seller.getSellList(this._package);
+		this._sellList = new ArrayList<TradeItem>();
 
 		// Проверяем список вещей в инвентаре, если вещь остутствует - убираем из списка продажи
-		for (TradeItem si : _sellList0)
+		for (TradeItem si : this._sellList0)
 		{
 			if (si.getCount() <= 0)
 			{
-				_sellList0.remove(si);
+				this._sellList0.remove(si);
 				continue;
 			}
 
@@ -47,7 +47,7 @@ public class PrivateStoreManageListSell extends L2GameServerPacket
 
 			if (item == null || !item.canBeTraded(seller) || item.getItemId() == ItemTemplate.ITEM_ID_ADENA)
 			{
-				_sellList0.remove(si);
+				this._sellList0.remove(si);
 				continue;
 			}
 
@@ -68,7 +68,7 @@ public class PrivateStoreManageListSell extends L2GameServerPacket
 					continue loop;
 				}
 
-				for (TradeItem si : _sellList0)
+				for (TradeItem si : this._sellList0)
 				{
 					if (si.getObjectId() == item.getObjectId())
 					{
@@ -80,11 +80,11 @@ public class PrivateStoreManageListSell extends L2GameServerPacket
 						// Показывает остаток вещей для продажи
 						TradeItem ti = new TradeItem(item);
 						ti.setCount(item.getCount() - si.getCount());
-						_sellList.add(ti);
+						this._sellList.add(ti);
 						continue loop;
 					}
 				}
-				_sellList.add(new TradeItem(item));
+				this._sellList.add(new TradeItem(item));
 			}
 		}
 	}
@@ -92,27 +92,27 @@ public class PrivateStoreManageListSell extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xA0);
+		this.writeC(0xA0);
 		// section 1
-		writeD(_sellerId);
-		writeD(_package ? 1 : 0);
-		writeQ(_adena);
+		this.writeD(this._sellerId);
+		this.writeD(this._package ? 1 : 0);
+		this.writeQ(this._adena);
 
 		// Список имеющихся вещей
-		writeD(_sellList.size());
-		for (TradeItem si : _sellList)
+		this.writeD(this._sellList.size());
+		for (TradeItem si : this._sellList)
 		{
-			writeItemInfo(si);
-			writeQ(si.getStorePrice());
+			this.writeItemInfo(si);
+			this.writeQ(si.getStorePrice());
 		}
 
 		// Список вещей уже поставленых на продажу
-		writeD(_sellList0.size());
-		for (TradeItem si : _sellList0)
+		this.writeD(this._sellList0.size());
+		for (TradeItem si : this._sellList0)
 		{
-			writeItemInfo(si);
-			writeQ(si.getOwnersPrice());
-			writeQ(si.getStorePrice());
+			this.writeItemInfo(si);
+			this.writeQ(si.getOwnersPrice());
+			this.writeQ(si.getStorePrice());
 		}
 	}
 }

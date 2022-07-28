@@ -14,7 +14,7 @@ public class ExReplyDominionInfo extends L2GameServerPacket
 	public ExReplyDominionInfo()
 	{
 		List<Dominion> dominions = ResidenceHolder.getInstance().getResidenceList(Dominion.class);
-		_dominionList = new ArrayList<TerritoryInfo>(dominions.size());
+		this._dominionList = new ArrayList<TerritoryInfo>(dominions.size());
 
 		for (Dominion dominion : dominions)
 		{
@@ -23,26 +23,26 @@ public class ExReplyDominionInfo extends L2GameServerPacket
 				continue;
 			}
 
-			_dominionList.add(new TerritoryInfo(dominion.getId(), dominion.getName(), dominion.getOwner().getName(), dominion.getFlags(), (int) (dominion.getSiegeDate().getTimeInMillis() / 1000L)));
+			this._dominionList.add(new TerritoryInfo(dominion.getId(), dominion.getName(), dominion.getOwner().getName(), dominion.getFlags(), (int) (dominion.getSiegeDate().getTimeInMillis() / 1000L)));
 		}
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x92);
-		writeD(_dominionList.size());
-		for (TerritoryInfo cf : _dominionList)
+		this.writeEx(0x92);
+		this.writeD(this._dominionList.size());
+		for (TerritoryInfo cf : this._dominionList)
 		{
-			writeD(cf.id);
-			writeS(cf.terr);
-			writeS(cf.clan);
-			writeD(cf.flags.length);
+			this.writeD(cf.id);
+			this.writeS(cf.terr);
+			this.writeS(cf.clan);
+			this.writeD(cf.flags.length);
 			for (int f : cf.flags)
 			{
-				writeD(f);
+				this.writeD(f);
 			}
-			writeD(cf.startTime);
+			this.writeD(cf.startTime);
 		}
 	}
 

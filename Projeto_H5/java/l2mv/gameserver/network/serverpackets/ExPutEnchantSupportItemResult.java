@@ -6,13 +6,13 @@ public class ExPutEnchantSupportItemResult extends L2GameServerPacket
 
 	public ExPutEnchantSupportItemResult(int result)
 	{
-		_result = result;
+		this._result = result;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x82);
-		writeD(_result);
+		this.writeEx(0x82);
+		this.writeD(this._result);
 	}
 }

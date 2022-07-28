@@ -14,14 +14,14 @@ public class TradeStart extends L2GameServerPacket
 
 	public TradeStart(Player player, Player target)
 	{
-		targetId = target.getObjectId();
+		this.targetId = target.getObjectId();
 
 		ItemInstance[] items = player.getInventory().getItems();
 		for (ItemInstance item : items)
 		{
 			if (item.canBeTraded(player))
 			{
-				_tradelist.add(new ItemInfo(item));
+				this._tradelist.add(new ItemInfo(item));
 			}
 		}
 	}
@@ -29,12 +29,12 @@ public class TradeStart extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x14);
-		writeD(targetId);
-		writeH(_tradelist.size());
-		for (ItemInfo item : _tradelist)
+		this.writeC(0x14);
+		this.writeD(this.targetId);
+		this.writeH(this._tradelist.size());
+		for (ItemInfo item : this._tradelist)
 		{
-			writeItemInfo(item);
+			this.writeItemInfo(item);
 		}
 	}
 }

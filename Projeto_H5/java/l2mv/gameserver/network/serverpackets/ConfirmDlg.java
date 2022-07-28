@@ -14,20 +14,20 @@ public class ConfirmDlg extends SysMsgContainer<ConfirmDlg>
 	public ConfirmDlg(SystemMsg msg, int time)
 	{
 		super(msg);
-		_time = time;
+		this._time = time;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xf3);
-		writeElements();
-		writeD(_time);
-		writeD(_requestId);
+		this.writeC(0xf3);
+		this.writeElements();
+		this.writeD(this._time);
+		this.writeD(this._requestId);
 	}
 
 	public void setRequestId(int requestId)
 	{
-		_requestId = requestId;
+		this._requestId = requestId;
 	}
 }

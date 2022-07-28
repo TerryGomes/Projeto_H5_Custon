@@ -50,19 +50,19 @@ public class CharacterCreate extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS();
-		readD(); // race
-		_sex = readD();
-		_classId = readD();
-		readD(); // int
-		readD(); // str
-		readD(); // con
-		readD(); // men
-		readD(); // dex
-		readD(); // wit
-		_hairStyle = readD();
-		_hairColor = readD();
-		_face = readD();
+		this._name = this.readS();
+		this.readD(); // race
+		this._sex = this.readD();
+		this._classId = this.readD();
+		this.readD(); // int
+		this.readD(); // str
+		this.readD(); // con
+		this.readD(); // men
+		this.readD(); // dex
+		this.readD(); // wit
+		this._hairStyle = this.readD();
+		this._hairColor = this.readD();
+		this._face = this.readD();
 	}
 
 	@Override
@@ -70,49 +70,49 @@ public class CharacterCreate extends L2GameClientPacket
 	{
 		for (ClassId cid : ClassId.VALUES)
 		{
-			if (cid.getId() == _classId && cid.getLevel() != 1)
+			if (cid.getId() == this._classId && cid.getLevel() != 1)
 			{
 				return;
 			}
 		}
-		if (CharacterDAO.getInstance().accountCharNumber(getClient().getLogin()) >= 8)
+		if (CharacterDAO.getInstance().accountCharNumber(this.getClient().getLogin()) >= 8)
 		{
-			sendPacket(CharacterCreateFail.REASON_TOO_MANY_CHARACTERS);
+			this.sendPacket(CharacterCreateFail.REASON_TOO_MANY_CHARACTERS);
 			return;
 		}
-		if (!checkName(_name) || _name.length() > 16)
+		if (!checkName(this._name) || this._name.length() > 16)
 		{
-			sendPacket(CharacterCreateFail.REASON_16_ENG_CHARS);
+			this.sendPacket(CharacterCreateFail.REASON_16_ENG_CHARS);
 			return;
 		}
-		else if (CharacterDAO.getInstance().getObjectIdByName(_name) > 0 || Util.contains(Config.FORBIDDEN_CHAR_NAMES, _name))
+		else if (CharacterDAO.getInstance().getObjectIdByName(this._name) > 0 || Util.contains(Config.FORBIDDEN_CHAR_NAMES, this._name))
 		{
-			sendPacket(CharacterCreateFail.REASON_NAME_ALREADY_EXISTS);
-			return;
-		}
-
-		if ((_face > 2) || (_face < 0))
-		{
-			return;
-		}
-		if ((_hairStyle < 0) || ((_sex == 0) && (_hairStyle > 4)) || ((_sex != 0) && (_hairStyle > 6)))
-		{
-			return;
-		}
-		if ((_hairColor > 3) || (_hairColor < 0))
-		{
+			this.sendPacket(CharacterCreateFail.REASON_NAME_ALREADY_EXISTS);
 			return;
 		}
 
-		Player newChar = Player.create(_classId, _sex, getClient().getLogin(), _name, _hairStyle, _hairColor, _face);
+		if ((this._face > 2) || (this._face < 0))
+		{
+			return;
+		}
+		if ((this._hairStyle < 0) || ((this._sex == 0) && (this._hairStyle > 4)) || ((this._sex != 0) && (this._hairStyle > 6)))
+		{
+			return;
+		}
+		if ((this._hairColor > 3) || (this._hairColor < 0))
+		{
+			return;
+		}
+
+		Player newChar = Player.create(this._classId, this._sex, this.getClient().getLogin(), this._name, this._hairStyle, this._hairColor, this._face);
 		if (newChar == null)
 		{
 			return;
 		}
 
-		sendPacket(CharacterCreateSuccess.STATIC);
+		this.sendPacket(CharacterCreateSuccess.STATIC);
 
-		initNewChar(getClient(), newChar);
+		this.initNewChar(this.getClient(), newChar);
 	}
 
 	private void initNewChar(GameClient client, Player newChar)
@@ -198,7 +198,7 @@ public class CharacterCreate extends L2GameClientPacket
 			}
 		}
 
-		ClassId nclassId = ClassId.VALUES[_classId];
+		ClassId nclassId = ClassId.VALUES[this._classId];
 		if (Config.ALLOW_START_ITEMS)
 		{
 			if (nclassId.isMage())

@@ -17,14 +17,14 @@ public class PartySmallWindowAll extends L2GameServerPacket
 
 	public PartySmallWindowAll(Party party, Player exclude)
 	{
-		leaderId = party.getLeader().getObjectId();
-		loot = party.getLootDistribution();
+		this.leaderId = party.getLeader().getObjectId();
+		this.loot = party.getLootDistribution();
 
 		for (Player member : party.getMembers())
 		{
 			if (member != exclude)
 			{
-				members.add(new PartySmallWindowMemberInfo(member));
+				this.members.add(new PartySmallWindowMemberInfo(member));
 			}
 		}
 	}
@@ -39,41 +39,41 @@ public class PartySmallWindowAll extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x4E);
-		writeD(leaderId); // c3 party leader id
-		writeD(loot); // c3 party loot type (0,1,2,....)
-		writeD(members.size());
-		for (PartySmallWindowMemberInfo member : members)
+		this.writeC(0x4E);
+		this.writeD(this.leaderId); // c3 party leader id
+		this.writeD(this.loot); // c3 party loot type (0,1,2,....)
+		this.writeD(this.members.size());
+		for (PartySmallWindowMemberInfo member : this.members)
 		{
-			writeD(member._id);
-			writeS(member._name);
-			writeD(member.curCp);
-			writeD(member.maxCp);
-			writeD(member.curHp);
-			writeD(member.maxHp);
-			writeD(member.curMp);
-			writeD(member.maxMp);
-			writeD(member.level);
-			writeD(member.class_id);
-			writeD(0);// writeD(0x01); ??
-			writeD(member.race_id);
-			writeD(0);
-			writeD(0);
+			this.writeD(member._id);
+			this.writeS(member._name);
+			this.writeD(member.curCp);
+			this.writeD(member.maxCp);
+			this.writeD(member.curHp);
+			this.writeD(member.maxHp);
+			this.writeD(member.curMp);
+			this.writeD(member.maxMp);
+			this.writeD(member.level);
+			this.writeD(member.class_id);
+			this.writeD(0);// writeD(0x01); ??
+			this.writeD(member.race_id);
+			this.writeD(0);
+			this.writeD(0);
 
 			if (member.pet_id != 0)
 			{
-				writeD(member.pet_id);
-				writeD(member.pet_NpcId);
-				writeS(member.pet_Name);
-				writeD(member.pet_curHp);
-				writeD(member.pet_maxHp);
-				writeD(member.pet_curMp);
-				writeD(member.pet_maxMp);
-				writeD(member.pet_level);
+				this.writeD(member.pet_id);
+				this.writeD(member.pet_NpcId);
+				this.writeS(member.pet_Name);
+				this.writeD(member.pet_curHp);
+				this.writeD(member.pet_maxHp);
+				this.writeD(member.pet_curMp);
+				this.writeD(member.pet_maxMp);
+				this.writeD(member.pet_level);
 			}
 			else
 			{
-				writeD(0);
+				this.writeD(0);
 			}
 		}
 	}
@@ -86,62 +86,62 @@ public class PartySmallWindowAll extends L2GameServerPacket
 
 		public PartySmallWindowMemberInfo(Player member)
 		{
-			_name = member.getName();
-			_id = member.getObjectId();
-			curCp = (int) member.getCurrentCp();
-			maxCp = member.getMaxCp();
-			curHp = (int) member.getCurrentHp();
-			maxHp = member.getMaxHp();
-			curMp = (int) member.getCurrentMp();
-			maxMp = member.getMaxMp();
-			level = member.getLevel();
-			class_id = member.getClassId().getId();
-			race_id = member.getRace().ordinal();
+			this._name = member.getName();
+			this._id = member.getObjectId();
+			this.curCp = (int) member.getCurrentCp();
+			this.maxCp = member.getMaxCp();
+			this.curHp = (int) member.getCurrentHp();
+			this.maxHp = member.getMaxHp();
+			this.curMp = (int) member.getCurrentMp();
+			this.maxMp = member.getMaxMp();
+			this.level = member.getLevel();
+			this.class_id = member.getClassId().getId();
+			this.race_id = member.getRace().ordinal();
 
 			Summon pet = member.getPet();
 			if (pet != null)
 			{
-				pet_id = pet.getObjectId();
-				pet_NpcId = pet.getNpcId() + 1000000;
-				pet_Name = pet.getName();
-				pet_curHp = (int) pet.getCurrentHp();
-				pet_maxHp = pet.getMaxHp();
-				pet_curMp = (int) pet.getCurrentMp();
-				pet_maxMp = pet.getMaxMp();
-				pet_level = pet.getLevel();
+				this.pet_id = pet.getObjectId();
+				this.pet_NpcId = pet.getNpcId() + 1000000;
+				this.pet_Name = pet.getName();
+				this.pet_curHp = (int) pet.getCurrentHp();
+				this.pet_maxHp = pet.getMaxHp();
+				this.pet_curMp = (int) pet.getCurrentMp();
+				this.pet_maxMp = pet.getMaxMp();
+				this.pet_level = pet.getLevel();
 			}
 			else
 			{
-				pet_id = 0;
+				this.pet_id = 0;
 			}
 		}
 
 		public PartySmallWindowMemberInfo(String name, int objectId, int level, int classId, int raceId, boolean barsFull)
 		{
-			_name = name;
-			_id = objectId;
+			this._name = name;
+			this._id = objectId;
 			if (barsFull)
 			{
-				curCp = 1;
-				maxCp = 1;
-				curHp = 1;
-				maxHp = 1;
-				curMp = 1;
-				maxMp = 1;
+				this.curCp = 1;
+				this.maxCp = 1;
+				this.curHp = 1;
+				this.maxHp = 1;
+				this.curMp = 1;
+				this.maxMp = 1;
 			}
 			else
 			{
-				curCp = 0;
-				maxCp = 1;
-				curHp = 0;
-				maxHp = 1;
-				curMp = 0;
-				maxMp = 1;
+				this.curCp = 0;
+				this.maxCp = 1;
+				this.curHp = 0;
+				this.maxHp = 1;
+				this.curMp = 0;
+				this.maxMp = 1;
 			}
 			this.level = level;
-			class_id = classId;
-			race_id = raceId;
-			pet_id = 0;
+			this.class_id = classId;
+			this.race_id = raceId;
+			this.pet_id = 0;
 		}
 	}
 }

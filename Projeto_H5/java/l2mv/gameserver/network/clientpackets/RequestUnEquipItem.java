@@ -17,13 +17,13 @@ public class RequestUnEquipItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_slot = readD();
+		this._slot = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -43,12 +43,12 @@ public class RequestUnEquipItem extends L2GameClientPacket
 		}
 
 		// Нельзя снимать проклятое оружие и флаги
-		if ((_slot == ItemTemplate.SLOT_R_HAND || _slot == ItemTemplate.SLOT_L_HAND || _slot == ItemTemplate.SLOT_LR_HAND) && (activeChar.isCursedWeaponEquipped() || activeChar.getActiveWeaponFlagAttachment() != null))
+		if ((this._slot == ItemTemplate.SLOT_R_HAND || this._slot == ItemTemplate.SLOT_L_HAND || this._slot == ItemTemplate.SLOT_LR_HAND) && (activeChar.isCursedWeaponEquipped() || activeChar.getActiveWeaponFlagAttachment() != null))
 		{
 			return;
 		}
 
-		if (_slot == ItemTemplate.SLOT_R_HAND)
+		if (this._slot == ItemTemplate.SLOT_R_HAND)
 		{
 			ItemInstance weapon = activeChar.getActiveWeaponInstance();
 			if (weapon == null)
@@ -60,6 +60,6 @@ public class RequestUnEquipItem extends L2GameClientPacket
 			activeChar.sendDisarmMessage(weapon);
 		}
 
-		activeChar.getInventory().unEquipItemInBodySlot(_slot);
+		activeChar.getInventory().unEquipItemInBodySlot(this._slot);
 	}
 }

@@ -8,15 +8,15 @@ public class RestartResponse extends L2GameServerPacket
 
 	public RestartResponse(int param)
 	{
-		_message = "bye";
-		_param = param;
+		this._message = "bye";
+		this._param = param;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x71);
-		writeD(_param); // 01-ok
-		writeS(_message);
+		this.writeC(0x71);
+		this.writeD(this._param); // 01-ok
+		this.writeS(this._message);
 	}
 }

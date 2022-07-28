@@ -26,34 +26,34 @@ public class ExOlympiadSpelledInfo extends L2GameServerPacket
 
 	public ExOlympiadSpelledInfo()
 	{
-		_effects = new ArrayList<Effect>();
+		this._effects = new ArrayList<Effect>();
 	}
 
 	public void addEffect(int skillId, int level, int duration)
 	{
-		_effects.add(new Effect(skillId, level, duration));
+		this._effects.add(new Effect(skillId, level, duration));
 	}
 
 	public void addSpellRecivedPlayer(Player cha)
 	{
 		if (cha != null)
 		{
-			char_obj_id = cha.getObjectId();
+			this.char_obj_id = cha.getObjectId();
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x7b);
+		this.writeEx(0x7b);
 
-		writeD(char_obj_id);
-		writeD(_effects.size());
-		for (Effect temp : _effects)
+		this.writeD(this.char_obj_id);
+		this.writeD(this._effects.size());
+		for (Effect temp : this._effects)
 		{
-			writeD(temp.skillId);
-			writeH(temp.level);
-			writeD(temp.duration);
+			this.writeD(temp.skillId);
+			this.writeH(temp.level);
+			this.writeD(temp.duration);
 		}
 	}
 }

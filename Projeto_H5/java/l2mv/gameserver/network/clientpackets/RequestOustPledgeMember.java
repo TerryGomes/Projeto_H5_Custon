@@ -16,13 +16,13 @@ public class RequestOustPledgeMember extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_target = readS(16);
+		this._target = this.readS(16);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 
 		if (activeChar == null || !((activeChar.getClanPrivileges() & Clan.CP_CL_DISMISS) == Clan.CP_CL_DISMISS))
 		{
@@ -30,7 +30,7 @@ public class RequestOustPledgeMember extends L2GameClientPacket
 		}
 
 		Clan clan = activeChar.getClan();
-		UnitMember member = clan.getAnyMember(_target);
+		UnitMember member = clan.getAnyMember(this._target);
 		if (member == null)
 		{
 			activeChar.sendPacket(SystemMsg.THE_TARGET_MUST_BE_A_CLAN_MEMBER);
@@ -60,7 +60,7 @@ public class RequestOustPledgeMember extends L2GameClientPacket
 
 		int subUnitType = member.getPledgeType();
 		clan.removeClanMember(subUnitType, member.getObjectId());
-		clan.broadcastToOnlineMembers(new SystemMessage2(SystemMsg.CLAN_MEMBER_S1_HAS_BEEN_EXPELLED).addString(_target), new PledgeShowMemberListDelete(_target));
+		clan.broadcastToOnlineMembers(new SystemMessage2(SystemMsg.CLAN_MEMBER_S1_HAS_BEEN_EXPELLED).addString(this._target), new PledgeShowMemberListDelete(this._target));
 		clan.setExpelledMember();
 
 		if (memberPlayer == null)

@@ -4636,43 +4636,43 @@ public enum SystemMsg implements IStaticPacket
 
 	SystemMsg(int i)
 	{
-		_id = i;
+		this._id = i;
 
-		if (name().contains("S4") || name().contains("C4"))
+		if (this.name().contains("S4") || this.name().contains("C4"))
 		{
-			_size = 4;
-			_message = null;
+			this._size = 4;
+			this._message = null;
 		}
-		else if (name().contains("S3") || name().contains("C3"))
+		else if (this.name().contains("S3") || this.name().contains("C3"))
 		{
-			_size = 3;
-			_message = null;
+			this._size = 3;
+			this._message = null;
 		}
-		else if (name().contains("S2") || name().contains("C2"))
+		else if (this.name().contains("S2") || this.name().contains("C2"))
 		{
-			_size = 2;
-			_message = null;
+			this._size = 2;
+			this._message = null;
 		}
-		else if (name().contains("S1") || name().contains("C1"))
+		else if (this.name().contains("S1") || this.name().contains("C1"))
 		{
-			_size = 1;
-			_message = null;
+			this._size = 1;
+			this._message = null;
 		}
 		else
 		{
-			_size = 0;
-			_message = new SystemMessage2(this);
+			this._size = 0;
+			this._message = new SystemMessage2(this);
 		}
 	}
 
 	public int getId()
 	{
-		return _id;
+		return this._id;
 	}
 
 	public byte size()
 	{
-		return _size;
+		return this._size;
 	}
 
 	public static SystemMsg valueOf(int id)
@@ -4691,11 +4691,11 @@ public enum SystemMsg implements IStaticPacket
 	@Override
 	public L2GameServerPacket packet(Player player)
 	{
-		if (_message == null)
+		if (this._message == null)
 		{
-			throw new NoSuchElementException("Running SystemMsg.packet(Player), but message require arguments: " + name());
+			throw new NoSuchElementException("Running SystemMsg.packet(Player), but message require arguments: " + this.name());
 		}
 
-		return _message;
+		return this._message;
 	}
 }

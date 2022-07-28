@@ -11,24 +11,24 @@ public class ExMoveToTargetInAirShip extends L2GameServerPacket
 
 	public ExMoveToTargetInAirShip(Player cha, Boat boat, int targetId, int dist, Location origin)
 	{
-		char_id = cha.getObjectId();
-		boat_id = boat.getObjectId();
-		target_id = targetId;
-		_dist = dist;
-		_loc = origin;
+		this.char_id = cha.getObjectId();
+		this.boat_id = boat.getObjectId();
+		this.target_id = targetId;
+		this._dist = dist;
+		this._loc = origin;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x71);
+		this.writeEx(0x71);
 
-		writeD(char_id); // ID:%d
-		writeD(target_id); // TargetID:%d
-		writeD(_dist); // Dist:%d
-		writeD(_loc.y); // OriginX:%d
-		writeD(_loc.z); // OriginY:%d
-		writeD(_loc.h); // OriginZ:%d
-		writeD(boat_id); // AirShipID:%d
+		this.writeD(this.char_id); // ID:%d
+		this.writeD(this.target_id); // TargetID:%d
+		this.writeD(this._dist); // Dist:%d
+		this.writeD(this._loc.y); // OriginX:%d
+		this.writeD(this._loc.z); // OriginY:%d
+		this.writeD(this._loc.h); // OriginZ:%d
+		this.writeD(this.boat_id); // AirShipID:%d
 	}
 }

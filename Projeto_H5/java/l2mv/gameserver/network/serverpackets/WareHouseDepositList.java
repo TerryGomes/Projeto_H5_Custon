@@ -18,40 +18,40 @@ public class WareHouseDepositList extends L2GameServerPacket
 
 	public WareHouseDepositList(Player cha, WarehouseType whtype)
 	{
-		_whtype = whtype.ordinal();
-		_adena = cha.getAdena();
+		this._whtype = whtype.ordinal();
+		this._adena = cha.getAdena();
 
 		ItemInstance[] items = cha.getInventory().getItems();
 		ArrayUtils.eqSort(items, ItemClassComparator.getInstance());
-		_itemList = new ArrayList<ItemInfo>(items.length);
+		this._itemList = new ArrayList<ItemInfo>(items.length);
 		for (ItemInstance item : items)
 		{
-			switch (_whtype)
+			switch (this._whtype)
 			{
 			case 1:
 				if (item.canBeStored(cha, true))
 				{
-					_itemList.add(new ItemInfo(item));
+					this._itemList.add(new ItemInfo(item));
 				}
 				break;
 			case 2:
 				if (item.canBeStored(cha, false))
 				{
-					_itemList.add(new ItemInfo(item));
+					this._itemList.add(new ItemInfo(item));
 				}
 				break;
 			case 3:
 				if (item.canBeStored(cha, false))
 				{
-					_itemList.add(new ItemInfo(item));
+					this._itemList.add(new ItemInfo(item));
 				}
 				break;
 			default:
-				if (_whtype == WarehouseType.FREIGHT.ordinal())
+				if (this._whtype == WarehouseType.FREIGHT.ordinal())
 				{
 					if (item.canBeTraded(cha) && !item.isStackable() || item.getCrystalType().externalOrdinal >= 4)
 					{
-						_itemList.add(new ItemInfo(item));
+						this._itemList.add(new ItemInfo(item));
 					}
 				}
 				break;
@@ -62,14 +62,14 @@ public class WareHouseDepositList extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x41);
-		writeH(_whtype);
-		writeQ(_adena);
-		writeH(_itemList.size());
-		for (ItemInfo item : _itemList)
+		this.writeC(0x41);
+		this.writeH(this._whtype);
+		this.writeQ(this._adena);
+		this.writeH(this._itemList.size());
+		for (ItemInfo item : this._itemList)
 		{
-			writeItemInfo(item);
-			writeD(item.getObjectId());
+			this.writeItemInfo(item);
+			this.writeD(item.getObjectId());
 		}
 	}
 }

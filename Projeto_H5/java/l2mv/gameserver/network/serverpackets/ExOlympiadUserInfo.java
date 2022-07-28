@@ -10,27 +10,27 @@ public class ExOlympiadUserInfo extends L2GameServerPacket
 
 	public ExOlympiadUserInfo(Player player, int side)
 	{
-		_side = side;
-		obj_id = player.getObjectId();
-		class_id = player.getClassId().getId();
-		_name = player.getName();
-		curHp = (int) player.getCurrentHp();
-		maxHp = player.getMaxHp();
-		curCp = (int) player.getCurrentCp();
-		maxCp = player.getMaxCp();
+		this._side = side;
+		this.obj_id = player.getObjectId();
+		this.class_id = player.getClassId().getId();
+		this._name = player.getName();
+		this.curHp = (int) player.getCurrentHp();
+		this.maxHp = player.getMaxHp();
+		this.curCp = (int) player.getCurrentCp();
+		this.maxCp = player.getMaxCp();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x7a);
-		writeC(_side);
-		writeD(obj_id);
-		writeS(_name);
-		writeD(class_id);
-		writeD(curHp);
-		writeD(maxHp);
-		writeD(curCp);
-		writeD(maxCp);
+		this.writeEx(0x7a);
+		this.writeC(this._side);
+		this.writeD(this.obj_id);
+		this.writeS(this._name);
+		this.writeD(this.class_id);
+		this.writeD(this.curHp);
+		this.writeD(this.maxHp);
+		this.writeD(this.curCp);
+		this.writeD(this.maxCp);
 	}
 }

@@ -16,18 +16,18 @@ public class RequestSSQStatus extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_page = readC();
+		this._page = this.readC();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if ((activeChar == null) || ((SevenSigns.getInstance().isSealValidationPeriod() || SevenSigns.getInstance().isCompResultsPeriod()) && _page == 4))
+		Player activeChar = this.getClient().getActiveChar();
+		if ((activeChar == null) || ((SevenSigns.getInstance().isSealValidationPeriod() || SevenSigns.getInstance().isCompResultsPeriod()) && this._page == 4))
 		{
 			return;
 		}
 
-		activeChar.sendPacket(new SSQStatus(activeChar, _page));
+		activeChar.sendPacket(new SSQStatus(activeChar, this._page));
 	}
 }

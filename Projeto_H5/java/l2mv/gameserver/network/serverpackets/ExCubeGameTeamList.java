@@ -27,31 +27,31 @@ public class ExCubeGameTeamList extends L2GameServerPacket
 
 	public ExCubeGameTeamList(List<Player> redPlayers, List<Player> bluePlayers, int roomNumber)
 	{
-		_redPlayers = redPlayers;
-		_bluePlayers = bluePlayers;
-		_roomNumber = roomNumber - 1;
+		this._redPlayers = redPlayers;
+		this._bluePlayers = bluePlayers;
+		this._roomNumber = roomNumber - 1;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x97);
-		writeD(0x00);
+		this.writeEx(0x97);
+		this.writeD(0x00);
 
-		writeD(_roomNumber);
-		writeD(0xffffffff);
+		this.writeD(this._roomNumber);
+		this.writeD(0xffffffff);
 
-		writeD(_bluePlayers.size());
-		for (Player player : _bluePlayers)
+		this.writeD(this._bluePlayers.size());
+		for (Player player : this._bluePlayers)
 		{
-			writeD(player.getObjectId());
-			writeS(player.getName());
+			this.writeD(player.getObjectId());
+			this.writeS(player.getName());
 		}
-		writeD(_redPlayers.size());
-		for (Player player : _redPlayers)
+		this.writeD(this._redPlayers.size());
+		for (Player player : this._redPlayers)
 		{
-			writeD(player.getObjectId());
-			writeS(player.getName());
+			this.writeD(player.getObjectId());
+			this.writeS(player.getName());
 		}
 	}
 }

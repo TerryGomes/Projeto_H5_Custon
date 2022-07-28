@@ -61,7 +61,7 @@ public class CharInfo extends L2GameServerPacket
 
 		if (cha.isInvisible())
 		{
-			_invis = true;
+			this._invis = true;
 		}
 
 		if (cha.isDeleted())
@@ -77,64 +77,64 @@ public class CharInfo extends L2GameServerPacket
 
 		if (player.isInBoat())
 		{
-			_loc = player.getInBoatPosition();
+			this._loc = player.getInBoatPosition();
 			if (player.isClanAirShipDriver())
 			{
-				_clanBoatObjectId = player.getBoat().getObjectId();
+				this._clanBoatObjectId = player.getBoat().getObjectId();
 			}
 		}
 
-		if (_loc == null)
+		if (this._loc == null)
 		{
-			_loc = cha.getLoc();
+			this._loc = cha.getLoc();
 		}
 
-		_objId = cha.getObjectId();
+		this._objId = cha.getObjectId();
 
 		// Cursed weapon and transformation to hide the name of the TV and all the other markings
 		if (player.getTransformationName() != null || (player.getReflection() == ReflectionManager.GIRAN_HARBOR || player.getReflection() == ReflectionManager.PARNASSUS) && player.getPrivateStoreType() != Player.STORE_PRIVATE_NONE)
 		{
-			_name = player.getTransformationName() != null ? player.getTransformationName() : player.getVisibleName();
-			_title = "";
-			clan_id = 0;
-			clan_crest_id = 0;
-			ally_id = 0;
-			ally_crest_id = 0;
-			large_clan_crest_id = 0;
+			this._name = player.getTransformationName() != null ? player.getTransformationName() : player.getVisibleName();
+			this._title = "";
+			this.clan_id = 0;
+			this.clan_crest_id = 0;
+			this.ally_id = 0;
+			this.ally_crest_id = 0;
+			this.large_clan_crest_id = 0;
 			if (player.isCursedWeaponEquipped())
 			{
-				cw_level = CursedWeaponsManager.getInstance().getLevel(player.getCursedWeaponEquippedId());
+				this.cw_level = CursedWeaponsManager.getInstance().getLevel(player.getCursedWeaponEquippedId());
 			}
 		}
 		else
 		{
-			_name = player.getVisibleName();
+			this._name = player.getVisibleName();
 			if (player.getPrivateStoreType() != Player.STORE_PRIVATE_NONE && !player.isInBuffStore())
 			{
-				_title = "";
+				this._title = "";
 			}
 			else if (!player.isConnected() && !player.isFakePlayer() && !player.isInBuffStore() && !player.isPhantom())
 			{
-				_title = "No Carrier";
-				_title_color = 255;
+				this._title = "No Carrier";
+				this._title_color = 255;
 			}
 			else
 			{
-				_title = player.getVisibleTitle();
-				_title_color = player.getVisibleTitleColor();
+				this._title = player.getVisibleTitle();
+				this._title_color = player.getVisibleTitleColor();
 			}
 
 			Clan clan = player.getClan();
 			Alliance alliance = clan == null ? null : clan.getAlliance();
 			//
-			clan_id = clan == null ? 0 : clan.getClanId();
-			clan_crest_id = clan == null ? 0 : clan.getCrestId();
-			large_clan_crest_id = clan == null ? 0 : clan.getCrestLargeId();
+			this.clan_id = clan == null ? 0 : clan.getClanId();
+			this.clan_crest_id = clan == null ? 0 : clan.getCrestId();
+			this.large_clan_crest_id = clan == null ? 0 : clan.getCrestLargeId();
 			//
-			ally_id = alliance == null ? 0 : alliance.getAllyId();
-			ally_crest_id = alliance == null ? 0 : alliance.getAllyCrestId();
+			this.ally_id = alliance == null ? 0 : alliance.getAllyId();
+			this.ally_crest_id = alliance == null ? 0 : alliance.getAllyCrestId();
 
-			cw_level = 0;
+			this.cw_level = 0;
 		}
 
 //		if (_invis)
@@ -142,305 +142,305 @@ public class CharInfo extends L2GameServerPacket
 
 		if (player.isMounted())
 		{
-			_enchant = 0;
-			mount_id = player.getMountNpcId() + 1000000;
-			mount_type = player.getMountType();
+			this._enchant = 0;
+			this.mount_id = player.getMountNpcId() + 1000000;
+			this.mount_type = player.getMountType();
 		}
 		else
 		{
-			_enchant = player.getEnchantEffect();
-			mount_id = 0;
-			mount_type = 0;
+			this._enchant = player.getEnchantEffect();
+			this.mount_id = 0;
+			this.mount_type = 0;
 		}
 
-		_inv = new int[Inventory.PAPERDOLL_MAX][2];
+		this._inv = new int[Inventory.PAPERDOLL_MAX][2];
 		for (int PAPERDOLL_ID : PAPERDOLL_ORDER)
 		{
-			_inv[PAPERDOLL_ID][0] = player.isInOlympiadMode() ? player.getInventory().getPaperdollItemId(PAPERDOLL_ID) : player.getInventory().getPaperdollVisualItemId(PAPERDOLL_ID);
-			_inv[PAPERDOLL_ID][1] = player.getInventory().getPaperdollAugmentationId(PAPERDOLL_ID);
+			this._inv[PAPERDOLL_ID][0] = player.isInOlympiadMode() ? player.getInventory().getPaperdollItemId(PAPERDOLL_ID) : player.getInventory().getPaperdollVisualItemId(PAPERDOLL_ID);
+			this._inv[PAPERDOLL_ID][1] = player.getInventory().getPaperdollAugmentationId(PAPERDOLL_ID);
 		}
 
-		_mAtkSpd = player.getMAtkSpd();
-		_pAtkSpd = player.getPAtkSpd();
-		speed_move = player.getMovementSpeedMultiplier();
-		_runSpd = (int) (player.getRunSpeed() / speed_move);
-		_walkSpd = (int) (player.getWalkSpeed() / speed_move);
+		this._mAtkSpd = player.getMAtkSpd();
+		this._pAtkSpd = player.getPAtkSpd();
+		this.speed_move = player.getMovementSpeedMultiplier();
+		this._runSpd = (int) (player.getRunSpeed() / this.speed_move);
+		this._walkSpd = (int) (player.getWalkSpeed() / this.speed_move);
 
-		_flRunSpd = 0; // TODO
-		_flWalkSpd = 0; // TODO
+		this._flRunSpd = 0; // TODO
+		this._flWalkSpd = 0; // TODO
 
 		if (player.isFlying())
 		{
-			_flyRunSpd = _runSpd;
-			_flyWalkSpd = _walkSpd;
+			this._flyRunSpd = this._runSpd;
+			this._flyWalkSpd = this._walkSpd;
 		}
 		else
 		{
-			_flyRunSpd = 0;
-			_flyWalkSpd = 0;
+			this._flyRunSpd = 0;
+			this._flyWalkSpd = 0;
 		}
 
-		_swimSpd = player.getSwimSpeed();
-		_race = player.getBaseTemplate().race.ordinal();
-		_sex = player.getSex();
-		base_class = player.getBaseClassId();
-		pvp_flag = player.getPvpFlag();
-		karma = player.getKarma();
+		this._swimSpd = player.getSwimSpeed();
+		this._race = player.getBaseTemplate().race.ordinal();
+		this._sex = player.getSex();
+		this.base_class = player.getBaseClassId();
+		this.pvp_flag = player.getPvpFlag();
+		this.karma = player.getKarma();
 
-		speed_atack = player.getAttackSpeedMultiplier();
-		col_radius = player.getColRadius();
-		col_height = player.getColHeight();
-		hair_style = player.getHairStyle();
-		hair_color = player.getHairColor();
-		face = player.getFace();
-		if (clan_id > 0 && player.getClan() != null)
+		this.speed_atack = player.getAttackSpeedMultiplier();
+		this.col_radius = player.getColRadius();
+		this.col_height = player.getColHeight();
+		this.hair_style = player.getHairStyle();
+		this.hair_color = player.getHairColor();
+		this.face = player.getFace();
+		if (this.clan_id > 0 && player.getClan() != null)
 		{
-			clan_rep_score = player.getClan().getReputationScore();
+			this.clan_rep_score = player.getClan().getReputationScore();
 		}
 		else
 		{
-			clan_rep_score = 0;
+			this.clan_rep_score = 0;
 		}
-		_sit = player.isSitting() ? 0 : 1; // standing = 1 sitting = 0
-		_run = player.isRunning() ? 1 : 0; // running = 1 walking = 0
-		_combat = player.isInCombat() ? 1 : 0;
-		_dead = player.isAlikeDead() ? 1 : 0;
-		private_store = player.isInObserverMode() ? Player.STORE_OBSERVING_GAMES : (player.isInBuffStore() ? 0 : player.getPrivateStoreType());
-		cubics = player.getCubics().toArray(new EffectCubic[player.getCubics().size()]);
-		_abnormalEffect = player.getAbnormalEffect();
-		_abnormalEffect2 = player.getAbnormalEffect2();
-		rec_have = player.isGM() ? 0 : player.getRecomHave();
-		class_id = player.getClassId().getId();
-		_team = player.getTeam();
+		this._sit = player.isSitting() ? 0 : 1; // standing = 1 sitting = 0
+		this._run = player.isRunning() ? 1 : 0; // running = 1 walking = 0
+		this._combat = player.isInCombat() ? 1 : 0;
+		this._dead = player.isAlikeDead() ? 1 : 0;
+		this.private_store = player.isInObserverMode() ? Player.STORE_OBSERVING_GAMES : (player.isInBuffStore() ? 0 : player.getPrivateStoreType());
+		this.cubics = player.getCubics().toArray(new EffectCubic[player.getCubics().size()]);
+		this._abnormalEffect = player.getAbnormalEffect();
+		this._abnormalEffect2 = player.getAbnormalEffect2();
+		this.rec_have = player.isGM() ? 0 : player.getRecomHave();
+		this.class_id = player.getClassId().getId();
+		this._team = player.getTeam();
 
-		_noble = player.isNoble() ? 1 : 0; // 0x01: symbol on char menu ctrl+I
-		_hero = player.isHero() || player.isHeroAura() || player.isGM() && Config.GM_HERO_AURA ? 1 : 0; // 0x01: Hero Aura
-		_fishing = player.isFishing() ? 1 : 0;
-		_fishLoc = player.getFishLoc();
-		_nameColor = player.getVisibleNameColor(); // New C5
-		plg_class = player.getPledgeClass();
-		pledge_type = player.getPledgeType();
-		_transform = player.getTransformation();
-		_agathion = player.getAgathionId();
-		_isPartyRoomLeader = player.getMatchingRoom() != null && player.getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING && player.getMatchingRoom().getLeader() == player;
-		_isFlying = player.isInFlyingTransform();
+		this._noble = player.isNoble() ? 1 : 0; // 0x01: symbol on char menu ctrl+I
+		this._hero = player.isHero() || player.isHeroAura() || player.isGM() && Config.GM_HERO_AURA ? 1 : 0; // 0x01: Hero Aura
+		this._fishing = player.isFishing() ? 1 : 0;
+		this._fishLoc = player.getFishLoc();
+		this._nameColor = player.getVisibleNameColor(); // New C5
+		this.plg_class = player.getPledgeClass();
+		this.pledge_type = player.getPledgeType();
+		this._transform = player.getTransformation();
+		this._agathion = player.getAgathionId();
+		this._isPartyRoomLeader = player.getMatchingRoom() != null && player.getMatchingRoom().getType() == MatchingRoom.PARTY_MATCHING && player.getMatchingRoom().getLeader() == player;
+		this._isFlying = player.isInFlyingTransform();
 
 		// Minimalizing Lags in towns
 		if (player.getPrivateStoreType() != Player.STORE_PRIVATE_NONE && !player.isInBuffStore())
 		{
-			_title = "";
-			clan_crest_id = 0;
-			ally_crest_id = 0;
+			this._title = "";
+			this.clan_crest_id = 0;
+			this.ally_crest_id = 0;
 			// Weapon
-			_inv[Inventory.PAPERDOLL_LHAND][0] = 0;
-			_inv[Inventory.PAPERDOLL_LHAND][1] = 0;
-			_inv[Inventory.PAPERDOLL_RHAND][0] = 0;
-			_inv[Inventory.PAPERDOLL_RHAND][1] = 0;
-			_inv[Inventory.PAPERDOLL_LRHAND][0] = 0;
-			_inv[Inventory.PAPERDOLL_LRHAND][1] = 0;
+			this._inv[Inventory.PAPERDOLL_LHAND][0] = 0;
+			this._inv[Inventory.PAPERDOLL_LHAND][1] = 0;
+			this._inv[Inventory.PAPERDOLL_RHAND][0] = 0;
+			this._inv[Inventory.PAPERDOLL_RHAND][1] = 0;
+			this._inv[Inventory.PAPERDOLL_LRHAND][0] = 0;
+			this._inv[Inventory.PAPERDOLL_LRHAND][1] = 0;
 			// Cloak
-			_inv[Inventory.PAPERDOLL_BACK][0] = 0;
-			_inv[Inventory.PAPERDOLL_BACK][1] = 0;
+			this._inv[Inventory.PAPERDOLL_BACK][0] = 0;
+			this._inv[Inventory.PAPERDOLL_BACK][1] = 0;
 			// Accessory
-			_inv[Inventory.PAPERDOLL_HAIR][0] = 0;
-			_inv[Inventory.PAPERDOLL_HAIR][1] = 0;
-			_inv[Inventory.PAPERDOLL_DHAIR][0] = 0;
-			_inv[Inventory.PAPERDOLL_DHAIR][1] = 0;
+			this._inv[Inventory.PAPERDOLL_HAIR][0] = 0;
+			this._inv[Inventory.PAPERDOLL_HAIR][1] = 0;
+			this._inv[Inventory.PAPERDOLL_DHAIR][0] = 0;
+			this._inv[Inventory.PAPERDOLL_DHAIR][1] = 0;
 
 		}
 
 		if (player.isInFightClub())
 		{
 			AbstractFightClub fightClubEvent = player.getFightClubEvent();
-			_name = fightClubEvent.getVisibleName(player, _name, false);
-			_title = fightClubEvent.getVisibleTitle(player, _title, false);
-			_title_color = fightClubEvent.getVisibleTitleColor(player, _title_color, false);
-			_nameColor = fightClubEvent.getVisibleNameColor(player, _nameColor, false);
+			this._name = fightClubEvent.getVisibleName(player, this._name, false);
+			this._title = fightClubEvent.getVisibleTitle(player, this._title, false);
+			this._title_color = fightClubEvent.getVisibleTitleColor(player, this._title_color, false);
+			this._nameColor = fightClubEvent.getVisibleNameColor(player, this._nameColor, false);
 		}
 	}
 
 	public CharInfo(IFakePlayer fakePlayer)
 	{
-		_objId = fakePlayer.getObjectId();
-		_name = fakePlayer.getName();
-		_title = fakePlayer.getTitle();
-		_loc = fakePlayer.getLocation();
-		pvp_flag = fakePlayer.getPvPFlag();
-		karma = fakePlayer.getKarma();
-		rec_have = fakePlayer.getRecommendations();
-		_nameColor = fakePlayer.getNameColor();
-		_title_color = fakePlayer.getTitleColor();
-		_race = fakePlayer.getRace();
-		_sex = fakePlayer.getSex();
-		class_id = fakePlayer.getClassId();
-		base_class = fakePlayer.getClassId();
-		col_radius = fakePlayer.getCollisionRadius();
-		col_height = fakePlayer.getCollisionHeight();
-		hair_style = fakePlayer.getHairStyle();
-		hair_color = fakePlayer.getHairColor();
-		face = fakePlayer.getFace();
-		_abnormalEffect = fakePlayer.getAbnormalEffect();
-		_abnormalEffect2 = fakePlayer.getAbnormalEffect2();
-		_noble = fakePlayer.getNoble();
-		_hero = fakePlayer.getHero();
-		_invis = fakePlayer.isInvis();
-		_transform = fakePlayer.getTransform();
-		cw_level = fakePlayer.getCursedWeaponLevel();
-		_agathion = fakePlayer.getAgathion();
-		cubics = fakePlayer.getCubics();
-		_team = fakePlayer.getTeam();
-		_fishing = fakePlayer.getFishing();
-		_fishLoc = fakePlayer.getFishLocation();
-		mount_type = fakePlayer.getMountType();
-		mount_id = fakePlayer.getMountId();
-		_sit = fakePlayer.getSit();
-		_run = fakePlayer.getRun();
-		_combat = fakePlayer.getCombat();
-		_dead = fakePlayer.getDead();
-		private_store = fakePlayer.getPrivateStore();
-		_mAtkSpd = fakePlayer.getMAtkSpd();
-		_pAtkSpd = fakePlayer.getPAtkSpd();
-		_runSpd = fakePlayer.getRunSpeed();
-		_walkSpd = fakePlayer.getWalkSpeed();
-		speed_move = fakePlayer.getSpeedMove();
-		speed_atack = fakePlayer.getSpeedAttack();
-		_swimSpd = fakePlayer.getSwimSpd();
-		_flyRunSpd = fakePlayer.getFlySpd();
-		_flyWalkSpd = fakePlayer.getFlyWalkSpd();
-		_isFlying = fakePlayer.isFlying();
-		_inv = fakePlayer.getInventory();
-		_enchant = fakePlayer.getEnchant();
-		_isPartyRoomLeader = fakePlayer.isPartyRoomLeader();
-		clan_id = fakePlayer.getClanId();
-		clan_crest_id = fakePlayer.getClanCrestId();
-		large_clan_crest_id = fakePlayer.getLargeClanCrestId();
-		ally_id = fakePlayer.getAllyId();
-		ally_crest_id = fakePlayer.getAllyCrestId();
-		plg_class = fakePlayer.getPledgeClass();
-		pledge_type = fakePlayer.getPledgeType();
-		clan_rep_score = fakePlayer.getClanReputationScore();
-		_clanBoatObjectId = fakePlayer.getClanBoatObjectId();
+		this._objId = fakePlayer.getObjectId();
+		this._name = fakePlayer.getName();
+		this._title = fakePlayer.getTitle();
+		this._loc = fakePlayer.getLocation();
+		this.pvp_flag = fakePlayer.getPvPFlag();
+		this.karma = fakePlayer.getKarma();
+		this.rec_have = fakePlayer.getRecommendations();
+		this._nameColor = fakePlayer.getNameColor();
+		this._title_color = fakePlayer.getTitleColor();
+		this._race = fakePlayer.getRace();
+		this._sex = fakePlayer.getSex();
+		this.class_id = fakePlayer.getClassId();
+		this.base_class = fakePlayer.getClassId();
+		this.col_radius = fakePlayer.getCollisionRadius();
+		this.col_height = fakePlayer.getCollisionHeight();
+		this.hair_style = fakePlayer.getHairStyle();
+		this.hair_color = fakePlayer.getHairColor();
+		this.face = fakePlayer.getFace();
+		this._abnormalEffect = fakePlayer.getAbnormalEffect();
+		this._abnormalEffect2 = fakePlayer.getAbnormalEffect2();
+		this._noble = fakePlayer.getNoble();
+		this._hero = fakePlayer.getHero();
+		this._invis = fakePlayer.isInvis();
+		this._transform = fakePlayer.getTransform();
+		this.cw_level = fakePlayer.getCursedWeaponLevel();
+		this._agathion = fakePlayer.getAgathion();
+		this.cubics = fakePlayer.getCubics();
+		this._team = fakePlayer.getTeam();
+		this._fishing = fakePlayer.getFishing();
+		this._fishLoc = fakePlayer.getFishLocation();
+		this.mount_type = fakePlayer.getMountType();
+		this.mount_id = fakePlayer.getMountId();
+		this._sit = fakePlayer.getSit();
+		this._run = fakePlayer.getRun();
+		this._combat = fakePlayer.getCombat();
+		this._dead = fakePlayer.getDead();
+		this.private_store = fakePlayer.getPrivateStore();
+		this._mAtkSpd = fakePlayer.getMAtkSpd();
+		this._pAtkSpd = fakePlayer.getPAtkSpd();
+		this._runSpd = fakePlayer.getRunSpeed();
+		this._walkSpd = fakePlayer.getWalkSpeed();
+		this.speed_move = fakePlayer.getSpeedMove();
+		this.speed_atack = fakePlayer.getSpeedAttack();
+		this._swimSpd = fakePlayer.getSwimSpd();
+		this._flyRunSpd = fakePlayer.getFlySpd();
+		this._flyWalkSpd = fakePlayer.getFlyWalkSpd();
+		this._isFlying = fakePlayer.isFlying();
+		this._inv = fakePlayer.getInventory();
+		this._enchant = fakePlayer.getEnchant();
+		this._isPartyRoomLeader = fakePlayer.isPartyRoomLeader();
+		this.clan_id = fakePlayer.getClanId();
+		this.clan_crest_id = fakePlayer.getClanCrestId();
+		this.large_clan_crest_id = fakePlayer.getLargeClanCrestId();
+		this.ally_id = fakePlayer.getAllyId();
+		this.ally_crest_id = fakePlayer.getAllyCrestId();
+		this.plg_class = fakePlayer.getPledgeClass();
+		this.pledge_type = fakePlayer.getPledgeType();
+		this.clan_rep_score = fakePlayer.getClanReputationScore();
+		this._clanBoatObjectId = fakePlayer.getClanBoatObjectId();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if ((activeChar == null) || (_objId == 0))
+		Player activeChar = this.getClient().getActiveChar();
+		if ((activeChar == null) || (this._objId == 0))
 		{
 			return;
 		}
 
-		if (activeChar.getObjectId() == _objId)
+		if (activeChar.getObjectId() == this._objId)
 		{
 			_log.error("You cant send CharInfo about his character to active user!!!");
 			return;
 		}
 
-		if (_invis && !activeChar.isGM())
+		if (this._invis && !activeChar.isGM())
 		{
 			return;
 		}
 
-		writeC(0x31);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z + Config.CLIENT_Z_SHIFT);
-		writeD(_clanBoatObjectId);
-		writeD(_objId);
-		writeS(_name);
-		writeD(_race);
-		writeD(_sex);
-		writeD(base_class);
+		this.writeC(0x31);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z + Config.CLIENT_Z_SHIFT);
+		this.writeD(this._clanBoatObjectId);
+		this.writeD(this._objId);
+		this.writeS(this._name);
+		this.writeD(this._race);
+		this.writeD(this._sex);
+		this.writeD(this.base_class);
 
 		for (int PAPERDOLL_ID : PAPERDOLL_ORDER)
 		{
-			writeD(_inv[PAPERDOLL_ID][0]);
+			this.writeD(this._inv[PAPERDOLL_ID][0]);
 		}
 
 		for (int PAPERDOLL_ID : PAPERDOLL_ORDER)
 		{
-			writeD(_inv[PAPERDOLL_ID][1]);
+			this.writeD(this._inv[PAPERDOLL_ID][1]);
 		}
 
-		writeD(0x01); // TODO talisman count(VISTALL)
-		writeD(0x00); // TODO cloak status(VISTALL)
+		this.writeD(0x01); // TODO talisman count(VISTALL)
+		this.writeD(0x00); // TODO cloak status(VISTALL)
 
-		writeD(pvp_flag);
-		writeD(karma);
+		this.writeD(this.pvp_flag);
+		this.writeD(this.karma);
 
-		writeD(_mAtkSpd);
-		writeD(_pAtkSpd);
+		this.writeD(this._mAtkSpd);
+		this.writeD(this._pAtkSpd);
 
-		writeD(0x00);
+		this.writeD(0x00);
 
-		writeD(_runSpd);
-		writeD(_walkSpd);
-		writeD(_swimSpd);
-		writeD(_swimSpd);
-		writeD(_flRunSpd);
-		writeD(_flWalkSpd);
-		writeD(_flyRunSpd);
-		writeD(_flyWalkSpd);
+		this.writeD(this._runSpd);
+		this.writeD(this._walkSpd);
+		this.writeD(this._swimSpd);
+		this.writeD(this._swimSpd);
+		this.writeD(this._flRunSpd);
+		this.writeD(this._flWalkSpd);
+		this.writeD(this._flyRunSpd);
+		this.writeD(this._flyWalkSpd);
 
-		writeF(speed_move); // _cha.getProperMultiplier()
-		writeF(speed_atack); // _cha.getAttackSpeedMultiplier()
-		writeF(col_radius);
-		writeF(col_height);
-		writeD(hair_style);
-		writeD(hair_color);
-		writeD(face);
-		writeS(_title);
-		writeD(clan_id);
-		writeD(clan_crest_id);
-		writeD(ally_id);
-		writeD(ally_crest_id);
+		this.writeF(this.speed_move); // _cha.getProperMultiplier()
+		this.writeF(this.speed_atack); // _cha.getAttackSpeedMultiplier()
+		this.writeF(this.col_radius);
+		this.writeF(this.col_height);
+		this.writeD(this.hair_style);
+		this.writeD(this.hair_color);
+		this.writeD(this.face);
+		this.writeS(this._title);
+		this.writeD(this.clan_id);
+		this.writeD(this.clan_crest_id);
+		this.writeD(this.ally_id);
+		this.writeD(this.ally_crest_id);
 
-		writeC(_sit);
-		writeC(_run);
-		writeC(_combat);
-		writeC(_dead);
-		writeC(0x00); // is invisible
-		writeC(mount_type); // 1-on Strider, 2-on Wyvern, 3-on Great Wolf, 0-no mount
-		writeC(private_store);
-		writeH(cubics.length);
-		for (EffectCubic cubic : cubics)
+		this.writeC(this._sit);
+		this.writeC(this._run);
+		this.writeC(this._combat);
+		this.writeC(this._dead);
+		this.writeC(0x00); // is invisible
+		this.writeC(this.mount_type); // 1-on Strider, 2-on Wyvern, 3-on Great Wolf, 0-no mount
+		this.writeC(this.private_store);
+		this.writeH(this.cubics.length);
+		for (EffectCubic cubic : this.cubics)
 		{
-			writeH(cubic == null ? 0 : cubic.getId());
+			this.writeH(cubic == null ? 0 : cubic.getId());
 		}
-		writeC(_isPartyRoomLeader ? 0x01 : 0x00); // find party members
-		writeD(_abnormalEffect);
-		writeC(_isFlying ? 0x02 : 0x00);
-		writeH(rec_have);
-		writeD(mount_id);
-		writeD(class_id);
-		writeD(0x00);
-		writeC(_enchant);
+		this.writeC(this._isPartyRoomLeader ? 0x01 : 0x00); // find party members
+		this.writeD(this._abnormalEffect);
+		this.writeC(this._isFlying ? 0x02 : 0x00);
+		this.writeH(this.rec_have);
+		this.writeD(this.mount_id);
+		this.writeD(this.class_id);
+		this.writeD(0x00);
+		this.writeC(this._enchant);
 
-		writeC(_team.ordinal()); // team circle around feet 1 = Blue, 2 = red
+		this.writeC(this._team.ordinal()); // team circle around feet 1 = Blue, 2 = red
 
-		writeD(large_clan_crest_id);
-		writeC(_noble);
-		writeC(_hero);
+		this.writeD(this.large_clan_crest_id);
+		this.writeC(this._noble);
+		this.writeC(this._hero);
 
-		writeC(_fishing);
-		writeD(_fishLoc.x);
-		writeD(_fishLoc.y);
-		writeD(_fishLoc.z);
+		this.writeC(this._fishing);
+		this.writeD(this._fishLoc.x);
+		this.writeD(this._fishLoc.y);
+		this.writeD(this._fishLoc.z);
 
-		writeD(_nameColor);
-		writeD(_loc.h);
-		writeD(plg_class);
-		writeD(pledge_type);
-		writeD(_title_color);
-		writeD(cw_level);
-		writeD(clan_rep_score);
-		writeD(_transform);
-		writeD(_agathion);
+		this.writeD(this._nameColor);
+		this.writeD(this._loc.h);
+		this.writeD(this.plg_class);
+		this.writeD(this.pledge_type);
+		this.writeD(this._title_color);
+		this.writeD(this.cw_level);
+		this.writeD(this.clan_rep_score);
+		this.writeD(this._transform);
+		this.writeD(this._agathion);
 
-		writeD(0x01); // T2
+		this.writeD(0x01); // T2
 
-		writeD(_abnormalEffect2);
+		this.writeD(this._abnormalEffect2);
 	}
 
 	public static final int[] PAPERDOLL_ORDER =

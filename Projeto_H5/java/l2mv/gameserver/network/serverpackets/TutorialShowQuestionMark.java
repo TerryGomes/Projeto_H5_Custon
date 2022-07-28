@@ -9,13 +9,13 @@ public class TutorialShowQuestionMark extends L2GameServerPacket
 
 	public TutorialShowQuestionMark(int number)
 	{
-		_number = number;
+		this._number = number;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xa7);
-		writeD(_number);
+		this.writeC(0xa7);
+		this.writeD(this._number);
 	}
 }

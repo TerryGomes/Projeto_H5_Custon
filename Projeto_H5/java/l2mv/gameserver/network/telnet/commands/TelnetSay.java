@@ -17,7 +17,7 @@ public class TelnetSay implements TelnetCommandHolder
 
 	public TelnetSay()
 	{
-		_commands.add(new TelnetCommand("announce", "ann")
+		this._commands.add(new TelnetCommand("announce", "ann")
 		{
 			@Override
 			public String getUsage()
@@ -39,7 +39,7 @@ public class TelnetSay implements TelnetCommandHolder
 			}
 		});
 
-		_commands.add(new TelnetCommand("message", "msg")
+		this._commands.add(new TelnetCommand("message", "msg")
 		{
 			@Override
 			public String getUsage()
@@ -73,6 +73,6 @@ public class TelnetSay implements TelnetCommandHolder
 	@Override
 	public Set<TelnetCommand> getCommands()
 	{
-		return _commands;
+		return this._commands;
 	}
 }

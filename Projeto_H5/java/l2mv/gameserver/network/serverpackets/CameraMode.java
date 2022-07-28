@@ -12,13 +12,13 @@ public class CameraMode extends L2GameServerPacket
 	 */
 	public CameraMode(int mode)
 	{
-		_mode = mode;
+		this._mode = mode;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xf7);
-		writeD(_mode);
+		this.writeC(0xf7);
+		this.writeD(this._mode);
 	}
 }

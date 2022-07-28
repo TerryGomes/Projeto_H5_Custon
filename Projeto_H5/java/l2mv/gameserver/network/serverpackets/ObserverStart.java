@@ -9,18 +9,18 @@ public class ObserverStart extends L2GameServerPacket
 
 	public ObserverStart(Location loc)
 	{
-		_loc = loc;
+		this._loc = loc;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xeb);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeC(0x00);
-		writeC(0xc0);
-		writeC(0x00);
+		this.writeC(0xeb);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
+		this.writeC(0x00);
+		this.writeC(0xc0);
+		this.writeC(0x00);
 	}
 }

@@ -25,24 +25,24 @@ public class RequestSellItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_listId = readD();
-		_count = readD();
-		if (_count * 16 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		this._listId = this.readD();
+		this._count = this.readD();
+		if (this._count * 16 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1)
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
-		_items = new int[_count];
-		_itemQ = new long[_count];
+		this._items = new int[this._count];
+		this._itemQ = new long[this._count];
 
-		for (int i = 0; i < _count; i++)
+		for (int i = 0; i < this._count; i++)
 		{
-			_items[i] = readD(); // object id
-			readD(); // item id
-			_itemQ[i] = readQ(); // count
-			if (_itemQ[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
+			this._items[i] = this.readD(); // object id
+			this.readD(); // item id
+			this._itemQ[i] = this.readQ(); // count
+			if (this._itemQ[i] < 1 || ArrayUtils.indexOf(this._items, this._items[i]) < i)
 			{
-				_count = 0;
+				this._count = 0;
 				break;
 			}
 		}
@@ -51,8 +51,8 @@ public class RequestSellItem extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || _count == 0)
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar == null || this._count == 0)
 		{
 			return;
 		}
@@ -90,10 +90,10 @@ public class RequestSellItem extends L2GameClientPacket
 		activeChar.getInventory().writeLock();
 		try
 		{
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < this._count; i++)
 			{
-				int objectId = _items[i];
-				long count = _itemQ[i];
+				int objectId = this._items[i];
+				long count = this._itemQ[i];
 
 				ItemInstance item = activeChar.getInventory().getItemByObjectId(objectId);
 				if (item == null || item.getCount() < count || !item.canBeSold(activeChar))

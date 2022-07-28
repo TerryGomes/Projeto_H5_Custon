@@ -9,15 +9,15 @@ public class RecipeShopMsg extends L2GameServerPacket
 
 	public RecipeShopMsg(Player player)
 	{
-		_objectId = player.getObjectId();
-		_storeName = player.getManufactureName();
+		this._objectId = player.getObjectId();
+		this._storeName = player.getManufactureName();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xe1);
-		writeD(_objectId);
-		writeS(_storeName);
+		this.writeC(0xe1);
+		this.writeD(this._objectId);
+		this.writeS(this._storeName);
 	}
 }

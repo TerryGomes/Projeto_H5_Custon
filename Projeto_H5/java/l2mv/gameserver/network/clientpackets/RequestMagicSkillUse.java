@@ -16,19 +16,19 @@ public class RequestMagicSkillUse extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_magicId = readD();
-		_ctrlPressed = readD() != 0;
-		_shiftPressed = readC() != 0;
+		this._magicId = this.readD();
+		this._ctrlPressed = this.readD() != 0;
+		this._shiftPressed = this.readC() != 0;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 
 		if (activeChar == null)
 		{
-			getClient().sendPacket(ActionFail.STATIC);
+			this.getClient().sendPacket(ActionFail.STATIC);
 			return;
 		}
 
@@ -43,9 +43,9 @@ public class RequestMagicSkillUse extends L2GameClientPacket
 
 		if (activeChar.getMacroSkill() != null)
 		{
-			_magicId = Integer.valueOf(activeChar.getMacroSkill().getId());
+			this._magicId = Integer.valueOf(activeChar.getMacroSkill().getId());
 		}
-		Skill skill = SkillTable.getInstance().getInfo(_magicId.intValue(), activeChar.getSkillLevel(_magicId));
+		Skill skill = SkillTable.getInstance().getInfo(this._magicId.intValue(), activeChar.getSkillLevel(this._magicId));
 
 		if (activeChar.isPendingOlyEnd())
 		{
@@ -108,7 +108,7 @@ public class RequestMagicSkillUse extends L2GameClientPacket
 //			{
 //				activeChar.broadcastPacket(new MoveToPawn(activeChar, target, (int) activeChar.getDistance(target)));
 //			}
-			activeChar.getAI().Cast(skill, target, _ctrlPressed, _shiftPressed);
+			activeChar.getAI().Cast(skill, target, this._ctrlPressed, this._shiftPressed);
 		}
 		else
 		{

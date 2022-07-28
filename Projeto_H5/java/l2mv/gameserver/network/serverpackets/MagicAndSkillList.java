@@ -19,17 +19,17 @@ public class MagicAndSkillList extends L2GameServerPacket
 
 	public MagicAndSkillList(Creature cha, int unk1, int unk2)
 	{
-		_chaId = cha.getObjectId();
-		_unk1 = unk1;
-		_unk2 = unk2;
+		this._chaId = cha.getObjectId();
+		this._unk1 = unk1;
+		this._unk2 = unk2;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x40);
-		writeD(_chaId);
-		writeD(_unk1); // в снифе было 20670
-		writeD(_unk2); // в снифе было 730502
+		this.writeC(0x40);
+		this.writeD(this._chaId);
+		this.writeD(this._unk1); // в снифе было 20670
+		this.writeD(this._unk2); // в снифе было 730502
 	}
 }

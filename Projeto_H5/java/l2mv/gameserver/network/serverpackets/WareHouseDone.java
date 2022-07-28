@@ -6,7 +6,7 @@ public class WareHouseDone extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0x43);
-		writeD(0); // ?
+		this.writeC(0x43);
+		this.writeD(0); // ?
 	}
 }

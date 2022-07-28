@@ -12,21 +12,21 @@ public class RequestFortressMapInfo extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_fortressId = readD();
+		this._fortressId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
-		Fortress fortress = ResidenceHolder.getInstance().getResidence(Fortress.class, _fortressId);
+		Fortress fortress = ResidenceHolder.getInstance().getResidence(Fortress.class, this._fortressId);
 		if (fortress != null)
 		{
-			sendPacket(new ExShowFortressMapInfo(fortress));
+			this.sendPacket(new ExShowFortressMapInfo(fortress));
 		}
 	}
 }

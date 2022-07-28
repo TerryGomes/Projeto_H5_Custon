@@ -13,33 +13,33 @@ public class RequestExRqItemLink extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
+		this._objectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
 		ItemInfo item;
-		if ((item = ItemInfoCache.getInstance().get(_objectId)) == null)
+		if ((item = ItemInfoCache.getInstance().get(this._objectId)) == null)
 		{
 			// Nik: Support for question mark listeners. Used for party find and other shits. objectId is used as the questionMarkId. Use with caution.
-			getClient().getActiveChar().getListeners().onQuestionMarkClicked(_objectId);
+			this.getClient().getActiveChar().getListeners().onQuestionMarkClicked(this._objectId);
 
-			if (_objectId >= 5000000 && _objectId < 6000000)
+			if (this._objectId >= 5000000 && this._objectId < 6000000)
 			{
-				Player player = getClient().getActiveChar();
-				String varName = "DisabledAnnounce" + _objectId;
+				Player player = this.getClient().getActiveChar();
+				String varName = "DisabledAnnounce" + this._objectId;
 				if (!player.containsQuickVar(varName))
 				{
 					player.addQuickVar(varName, "true");
 					player.sendMessage("Announcement Disabled!");
 				}
 			}
-			sendPacket(ActionFail.STATIC);
+			this.sendPacket(ActionFail.STATIC);
 		}
 		else
 		{
-			sendPacket(new ExRpItemLink(item));
+			this.sendPacket(new ExRpItemLink(item));
 		}
 	}
 }

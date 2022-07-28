@@ -2,8 +2,8 @@ package l2mv.gameserver.network.clientpackets;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-import l2mv.gameserver.fandc.managers.GmEventManager;
 import l2mv.commons.lang.ArrayUtils;
+import l2mv.gameserver.fandc.managers.GmEventManager;
 import l2mv.gameserver.instancemanager.ReflectionManager;
 import l2mv.gameserver.listener.actor.player.OnAnswerListener;
 import l2mv.gameserver.listener.actor.player.impl.ReviveAnswerListener;
@@ -30,15 +30,15 @@ public class RequestRestartPoint extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_restartType = ArrayUtils.valid(RestartType.VALUES, readD());
+		this._restartType = ArrayUtils.valid(RestartType.VALUES, this.readD());
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 
-		if (_restartType == null || activeChar == null)
+		if (this._restartType == null || activeChar == null)
 		{
 			return;
 		}
@@ -67,7 +67,7 @@ public class RequestRestartPoint extends L2GameClientPacket
 			return;
 		}
 
-		switch (_restartType)
+		switch (this._restartType)
 		{
 		case AGATHION:
 			if (activeChar.isAgathionResAvailable())
@@ -84,12 +84,7 @@ public class RequestRestartPoint extends L2GameClientPacket
 			{
 				activeChar.doRevive(100);
 			}
-			else if (ItemFunctions.removeItem(activeChar, 13300, 1, true, "RequestRestartPoint") == 1)
-			{
-				activeChar.sendPacket(SystemMsg.YOU_HAVE_USED_THE_FEATHER_OF_BLESSING_TO_RESURRECT);
-				activeChar.doRevive(100);
-			}
-			else if (ItemFunctions.removeItem(activeChar, 10649, 1, true, "RequestRestartPoint") == 1)
+			else if ((ItemFunctions.removeItem(activeChar, 13300, 1, true, "RequestRestartPoint") == 1) || (ItemFunctions.removeItem(activeChar, 10649, 1, true, "RequestRestartPoint") == 1))
 			{
 				activeChar.sendPacket(SystemMsg.YOU_HAVE_USED_THE_FEATHER_OF_BLESSING_TO_RESURRECT);
 				activeChar.doRevive(100);
@@ -107,18 +102,18 @@ public class RequestRestartPoint extends L2GameClientPacket
 			{
 				for (GlobalEvent e : activeChar.getEvents())
 				{
-					loc = e.getRestartLoc(activeChar, _restartType);
+					loc = e.getRestartLoc(activeChar, this._restartType);
 				}
 			}
 
 			if (loc == null)
 			{
-				loc = defaultLoc(_restartType, activeChar);
+				loc = defaultLoc(this._restartType, activeChar);
 			}
 
 			if (activeChar.isInFightClub())
 			{
-				activeChar.getFightClubEvent().requestRespawn(activeChar, _restartType);
+				activeChar.getFightClubEvent().requestRespawn(activeChar, this._restartType);
 				return;
 			}
 

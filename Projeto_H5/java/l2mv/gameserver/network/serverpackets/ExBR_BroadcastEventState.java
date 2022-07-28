@@ -21,35 +21,35 @@ public class ExBR_BroadcastEventState extends L2GameServerPacket
 
 	public ExBR_BroadcastEventState(int eventId, int eventState)
 	{
-		_eventId = eventId;
-		_eventState = eventState;
+		this._eventId = eventId;
+		this._eventState = eventState;
 	}
 
 	public ExBR_BroadcastEventState(int eventId, int eventState, int param0, int param1, int param2, int param3, int param4, String param5, String param6)
 	{
-		_eventId = eventId;
-		_eventState = eventState;
-		_param0 = param0;
-		_param1 = param1;
-		_param2 = param2;
-		_param3 = param3;
-		_param4 = param4;
-		_param5 = param5;
-		_param6 = param6;
+		this._eventId = eventId;
+		this._eventState = eventState;
+		this._param0 = param0;
+		this._param1 = param1;
+		this._param2 = param2;
+		this._param3 = param3;
+		this._param4 = param4;
+		this._param5 = param5;
+		this._param6 = param6;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xBC);
-		writeD(_eventId);
-		writeD(_eventState);
-		writeD(_param0);
-		writeD(_param1);
-		writeD(_param2);
-		writeD(_param3);
-		writeD(_param4);
-		writeS(_param5);
-		writeS(_param6);
+		this.writeEx(0xBC);
+		this.writeD(this._eventId);
+		this.writeD(this._eventState);
+		this.writeD(this._param0);
+		this.writeD(this._param1);
+		this.writeD(this._param2);
+		this.writeD(this._param3);
+		this.writeD(this._param4);
+		this.writeS(this._param5);
+		this.writeS(this._param6);
 	}
 }

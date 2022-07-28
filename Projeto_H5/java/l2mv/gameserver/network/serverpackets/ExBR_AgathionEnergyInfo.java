@@ -12,26 +12,26 @@ public class ExBR_AgathionEnergyInfo extends L2GameServerPacket
 
 	public ExBR_AgathionEnergyInfo(int size, ItemInstance... item)
 	{
-		_itemList = item;
-		_size = size;
+		this._itemList = item;
+		this._size = size;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xDE);
-		writeD(_size);
-		for (ItemInstance item : _itemList)
+		this.writeEx(0xDE);
+		this.writeD(this._size);
+		for (ItemInstance item : this._itemList)
 		{
 			if (item.getTemplate().getAgathionEnergy() == 0)
 			{
 				continue;
 			}
-			writeD(item.getObjectId());
-			writeD(item.getItemId());
-			writeD(0x200000);
-			writeD(item.getAgathionEnergy());// current energy
-			writeD(item.getTemplate().getAgathionEnergy()); // max energy
+			this.writeD(item.getObjectId());
+			this.writeD(item.getItemId());
+			this.writeD(0x200000);
+			this.writeD(item.getAgathionEnergy());// current energy
+			this.writeD(item.getTemplate().getAgathionEnergy()); // max energy
 		}
 	}
 }

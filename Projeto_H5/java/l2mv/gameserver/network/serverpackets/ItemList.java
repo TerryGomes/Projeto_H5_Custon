@@ -14,37 +14,37 @@ public class ItemList extends L2GameServerPacket
 
 	public ItemList(int size, ItemInstance[] items, boolean showWindow, LockType lockType, int[] lockItems)
 	{
-		_size = size;
-		_items = items;
-		_showWindow = showWindow;
-		_lockType = lockType;
-		_lockItems = lockItems;
+		this._size = size;
+		this._items = items;
+		this._showWindow = showWindow;
+		this._lockType = lockType;
+		this._lockItems = lockItems;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x11);
-		writeH(_showWindow ? 1 : 0);
+		this.writeC(0x11);
+		this.writeH(this._showWindow ? 1 : 0);
 
-		writeH(_size);
-		for (ItemInstance temp : _items)
+		this.writeH(this._size);
+		for (ItemInstance temp : this._items)
 		{
 			if (temp.getTemplate().isQuest())
 			{
 				continue;
 			}
 
-			writeItemInfo(temp);
+			this.writeItemInfo(temp);
 		}
 
-		writeH(_lockItems.length);
-		if (_lockItems.length > 0)
+		this.writeH(this._lockItems.length);
+		if (this._lockItems.length > 0)
 		{
-			writeC(_lockType.ordinal());
-			for (int i : _lockItems)
+			this.writeC(this._lockType.ordinal());
+			for (int i : this._lockItems)
 			{
-				writeD(i);
+				this.writeD(i);
 			}
 		}
 	}

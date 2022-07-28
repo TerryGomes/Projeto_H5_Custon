@@ -11,12 +11,12 @@ public class GMHennaInfo extends L2GameServerPacket
 
 	public GMHennaInfo(Player cha)
 	{
-		_str = cha.getHennaStatSTR();
-		_con = cha.getHennaStatCON();
-		_dex = cha.getHennaStatDEX();
-		_int = cha.getHennaStatINT();
-		_wit = cha.getHennaStatWIT();
-		_men = cha.getHennaStatMEN();
+		this._str = cha.getHennaStatSTR();
+		this._con = cha.getHennaStatCON();
+		this._dex = cha.getHennaStatDEX();
+		this._int = cha.getHennaStatINT();
+		this._wit = cha.getHennaStatWIT();
+		this._men = cha.getHennaStatMEN();
 
 		int j = 0;
 		for (int i = 0; i < 3; i++)
@@ -24,29 +24,29 @@ public class GMHennaInfo extends L2GameServerPacket
 			Henna h = cha.getHenna(i + 1);
 			if (h != null)
 			{
-				_hennas[j++] = h;
+				this._hennas[j++] = h;
 			}
 		}
-		_count = j;
+		this._count = j;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xf0);
+		this.writeC(0xf0);
 
-		writeC(_int);
-		writeC(_str);
-		writeC(_con);
-		writeC(_men);
-		writeC(_dex);
-		writeC(_wit);
-		writeD(3);
-		writeD(_count);
-		for (int i = 0; i < _count; i++)
+		this.writeC(this._int);
+		this.writeC(this._str);
+		this.writeC(this._con);
+		this.writeC(this._men);
+		this.writeC(this._dex);
+		this.writeC(this._wit);
+		this.writeD(3);
+		this.writeD(this._count);
+		for (int i = 0; i < this._count; i++)
 		{
-			writeD(_hennas[i].getSymbolId());
-			writeD(_hennas[i].getSymbolId());
+			this.writeD(this._hennas[i].getSymbolId());
+			this.writeD(this._hennas[i].getSymbolId());
 		}
 	}
 }

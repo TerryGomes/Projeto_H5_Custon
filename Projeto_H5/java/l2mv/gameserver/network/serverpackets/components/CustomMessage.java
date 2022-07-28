@@ -21,19 +21,19 @@ public class CustomMessage
 
 	public CustomMessage(String text)
 	{
-		_text = text;
+		this._text = text;
 	}
 
 	public CustomMessage(String address, Player player, Object... args)
 	{
-		_text = StringHolder.getInstance().getNotNull(player, address);
-		add(args);
+		this._text = StringHolder.getInstance().getNotNull(player, address);
+		this.add(args);
 	}
 
 	public CustomMessage addNumber(long number)
 	{
-		_text = _text.replace("{" + mark + "}", String.valueOf(number));
-		mark++;
+		this._text = this._text.replace("{" + this.mark + "}", String.valueOf(number));
+		this.mark++;
 		return this;
 	}
 
@@ -43,27 +43,27 @@ public class CustomMessage
 		{
 			if (arg instanceof String)
 			{
-				addString((String) arg);
+				this.addString((String) arg);
 			}
 			else if (arg instanceof Integer)
 			{
-				addNumber((Integer) arg);
+				this.addNumber((Integer) arg);
 			}
 			else if (arg instanceof Long)
 			{
-				addNumber((Long) arg);
+				this.addNumber((Long) arg);
 			}
 			else if (arg instanceof ItemTemplate)
 			{
-				addItemName((ItemTemplate) arg);
+				this.addItemName((ItemTemplate) arg);
 			}
 			else if (arg instanceof ItemInstance)
 			{
-				addItemName((ItemInstance) arg);
+				this.addItemName((ItemInstance) arg);
 			}
 			else if (arg instanceof Creature)
 			{
-				addCharName((Creature) arg);
+				this.addCharName((Creature) arg);
 			}
 			else if (arg instanceof Skill)
 			{
@@ -81,50 +81,50 @@ public class CustomMessage
 
 	public CustomMessage addString(String str)
 	{
-		_text = _text.replace("{" + mark + "}", str);
-		mark++;
+		this._text = this._text.replace("{" + this.mark + "}", str);
+		this.mark++;
 		return this;
 	}
 
 	public CustomMessage addSkillName(Skill skill)
 	{
-		_text = _text.replace("{" + mark + "}", skill.getName());
-		mark++;
+		this._text = this._text.replace("{" + this.mark + "}", skill.getName());
+		this.mark++;
 		return this;
 	}
 
 	public CustomMessage addSkillName(int skillId, int skillLevel)
 	{
-		return addSkillName(SkillTable.getInstance().getInfo(skillId, skillLevel));
+		return this.addSkillName(SkillTable.getInstance().getInfo(skillId, skillLevel));
 	}
 
 	public CustomMessage addItemName(ItemTemplate item)
 	{
-		_text = _text.replace("{" + mark + "}", item.getName());
-		mark++;
+		this._text = this._text.replace("{" + this.mark + "}", item.getName());
+		this.mark++;
 		return this;
 	}
 
 	public CustomMessage addItemName(int itemId)
 	{
-		return addItemName(ItemHolder.getInstance().getTemplate(itemId));
+		return this.addItemName(ItemHolder.getInstance().getTemplate(itemId));
 	}
 
 	public CustomMessage addItemName(ItemInstance item)
 	{
-		return addItemName(item.getTemplate());
+		return this.addItemName(item.getTemplate());
 	}
 
 	public CustomMessage addCharName(Creature cha)
 	{
-		_text = _text.replace("{" + mark + "}", cha.getName());
-		mark++;
+		this._text = this._text.replace("{" + this.mark + "}", cha.getName());
+		this.mark++;
 		return this;
 	}
 
 	@Override
 	public String toString()
 	{
-		return _text;
+		return this._text;
 	}
 }

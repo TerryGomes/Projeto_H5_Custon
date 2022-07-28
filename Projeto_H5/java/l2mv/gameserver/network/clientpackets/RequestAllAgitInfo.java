@@ -12,6 +12,6 @@ public class RequestAllAgitInfo extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		getClient().getActiveChar().sendPacket(new ExShowAgitInfo());
+		this.getClient().getActiveChar().sendPacket(new ExShowAgitInfo());
 	}
 }

@@ -24,16 +24,16 @@ public class ExListPartyMatchingWaitingRoom extends L2GameServerPacket
 		int i = 0;
 
 		List<Player> temp = MatchingRoomManager.getInstance().getWaitingList(minLevel, maxLevel, classes);
-		_fullSize = temp.size();
+		this._fullSize = temp.size();
 
-		_waitingList = new ArrayList<PartyMatchingWaitingInfo>(_fullSize);
+		this._waitingList = new ArrayList<PartyMatchingWaitingInfo>(this._fullSize);
 		for (Player pc : temp)
 		{
 			if (i < first || i >= firstNot)
 			{
 				continue;
 			}
-			_waitingList.add(new PartyMatchingWaitingInfo(pc));
+			this._waitingList.add(new PartyMatchingWaitingInfo(pc));
 			i++;
 		}
 	}
@@ -41,20 +41,20 @@ public class ExListPartyMatchingWaitingRoom extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x36);
+		this.writeEx(0x36);
 
-		writeD(_fullSize);
-		writeD(_waitingList.size());
-		for (PartyMatchingWaitingInfo waiting_info : _waitingList)
+		this.writeD(this._fullSize);
+		this.writeD(this._waitingList.size());
+		for (PartyMatchingWaitingInfo waiting_info : this._waitingList)
 		{
-			writeS(waiting_info.name);
-			writeD(waiting_info.classId);
-			writeD(waiting_info.level);
-			writeD(waiting_info.currentInstance);
-			writeD(waiting_info.instanceReuses.length);
+			this.writeS(waiting_info.name);
+			this.writeD(waiting_info.classId);
+			this.writeD(waiting_info.level);
+			this.writeD(waiting_info.currentInstance);
+			this.writeD(waiting_info.instanceReuses.length);
 			for (int i : waiting_info.instanceReuses)
 			{
-				writeD(i);
+				this.writeD(i);
 			}
 		}
 	}
@@ -67,12 +67,12 @@ public class ExListPartyMatchingWaitingRoom extends L2GameServerPacket
 
 		public PartyMatchingWaitingInfo(Player member)
 		{
-			name = member.getName();
-			classId = member.getClassId().getId();
-			level = member.getLevel();
+			this.name = member.getName();
+			this.classId = member.getClassId().getId();
+			this.level = member.getLevel();
 			Reflection ref = member.getReflection();
-			currentInstance = ref == null ? 0 : ref.getInstancedZoneId();
-			instanceReuses = ArrayUtils.toArray(member.getInstanceReuses().keySet());
+			this.currentInstance = ref == null ? 0 : ref.getInstancedZoneId();
+			this.instanceReuses = ArrayUtils.toArray(member.getInstanceReuses().keySet());
 		}
 	}
 }

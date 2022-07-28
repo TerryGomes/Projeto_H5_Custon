@@ -9,19 +9,19 @@ public class ManagePledgePower extends L2GameServerPacket
 
 	public ManagePledgePower(Player player, int action, int rank)
 	{
-		_clanId = player.getClanId();
-		_action = action;
+		this._clanId = player.getClanId();
+		this._action = action;
 		RankPrivs temp = player.getClan().getRankPrivs(rank);
-		privs = temp == null ? 0 : temp.getPrivs();
-		player.sendPacket(new PledgeReceiveUpdatePower(privs));
+		this.privs = temp == null ? 0 : temp.getPrivs();
+		player.sendPacket(new PledgeReceiveUpdatePower(this.privs));
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x2a);
-		writeD(_clanId);
-		writeD(_action);
-		writeD(privs);
+		this.writeC(0x2a);
+		this.writeD(this._clanId);
+		this.writeD(this._action);
+		this.writeD(this.privs);
 	}
 }

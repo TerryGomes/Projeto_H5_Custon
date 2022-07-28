@@ -27,34 +27,34 @@ public class ExEventMatchSpelledInfo extends L2GameServerPacket
 
 	public ExEventMatchSpelledInfo()
 	{
-		_effects = new ArrayList<Effect>();
+		this._effects = new ArrayList<Effect>();
 	}
 
 	public void addEffect(int skillId, int dat, int duration)
 	{
-		_effects.add(new Effect(skillId, dat, duration));
+		this._effects.add(new Effect(skillId, dat, duration));
 	}
 
 	public void addSpellRecivedPlayer(Player cha)
 	{
 		if (cha != null)
 		{
-			char_obj_id = cha.getObjectId();
+			this.char_obj_id = cha.getObjectId();
 		}
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x04);
+		this.writeEx(0x04);
 
-		writeD(char_obj_id);
-		writeD(_effects.size());
-		for (Effect temp : _effects)
+		this.writeD(this.char_obj_id);
+		this.writeD(this._effects.size());
+		for (Effect temp : this._effects)
 		{
-			writeD(temp.skillId);
-			writeH(temp.dat);
-			writeD(temp.duration);
+			this.writeD(temp.skillId);
+			this.writeH(temp.dat);
+			this.writeD(temp.duration);
 		}
 	}
 }

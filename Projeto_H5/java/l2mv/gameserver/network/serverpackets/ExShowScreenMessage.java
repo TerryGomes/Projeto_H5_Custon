@@ -26,12 +26,12 @@ public class ExShowScreenMessage extends NpcStringContainer
 	public ExShowScreenMessage(String text, int time, ScreenMessageAlign text_align, boolean big_font, int type, int messageId, boolean showEffect)
 	{
 		super(NpcString.NONE, text);
-		_type = type;
-		_sysMessageId = messageId;
-		_time = time;
-		_text_align = text_align;
-		_big_font = big_font;
-		_effect = showEffect;
+		this._type = type;
+		this._sysMessageId = messageId;
+		this._time = time;
+		this._text_align = text_align;
+		this._big_font = big_font;
+		this._effect = showEffect;
 	}
 
 	public ExShowScreenMessage(NpcString t, int time, ScreenMessageAlign text_align, String... params)
@@ -52,28 +52,28 @@ public class ExShowScreenMessage extends NpcStringContainer
 	public ExShowScreenMessage(NpcString npcString, int time, ScreenMessageAlign text_align, boolean big_font, int type, int systemMsg, boolean showEffect, String... params)
 	{
 		super(npcString, params);
-		_type = type;
-		_sysMessageId = systemMsg;
-		_time = time;
-		_text_align = text_align;
-		_big_font = big_font;
-		_effect = showEffect;
+		this._type = type;
+		this._sysMessageId = systemMsg;
+		this._time = time;
+		this._text_align = text_align;
+		this._big_font = big_font;
+		this._effect = showEffect;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x39);
-		writeD(_type); // 0 - system messages, 1 - your defined text
-		writeD(_sysMessageId); // system message id (_type must be 0 otherwise no effect)
-		writeD(_text_align.ordinal() + 1); // размещение текста
-		writeD(0x00); // ?
-		writeD(_big_font ? 0 : 1); // размер текста
-		writeD(0x00); // ?
-		writeD(0x00); // ?
-		writeD(_effect ? 1 : 0); // upper effect (0 - disabled, 1 enabled) - _position must be 2 (center) otherwise no effect
-		writeD(_time); // время отображения сообщения в милисекундах
-		writeD(0x01); // ?
-		writeElements();
+		this.writeEx(0x39);
+		this.writeD(this._type); // 0 - system messages, 1 - your defined text
+		this.writeD(this._sysMessageId); // system message id (_type must be 0 otherwise no effect)
+		this.writeD(this._text_align.ordinal() + 1); // размещение текста
+		this.writeD(0x00); // ?
+		this.writeD(this._big_font ? 0 : 1); // размер текста
+		this.writeD(0x00); // ?
+		this.writeD(0x00); // ?
+		this.writeD(this._effect ? 1 : 0); // upper effect (0 - disabled, 1 enabled) - _position must be 2 (center) otherwise no effect
+		this.writeD(this._time); // время отображения сообщения в милисекундах
+		this.writeD(0x01); // ?
+		this.writeElements();
 	}
 }

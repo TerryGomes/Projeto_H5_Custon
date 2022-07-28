@@ -14,17 +14,17 @@ public class ExReceiveShowPostFriend extends L2GameServerPacket
 
 	public ExReceiveShowPostFriend(Player player)
 	{
-		_list = player.getPostFriends();
+		this._list = player.getPostFriends();
 	}
 
 	@Override
 	public void writeImpl()
 	{
-		writeEx(0xD3);
-		writeD(_list.size());
-		for (String t : _list.values())
+		this.writeEx(0xD3);
+		this.writeD(this._list.size());
+		for (String t : this._list.values())
 		{
-			writeS(t);
+			this.writeS(t);
 		}
 	}
 }

@@ -12,6 +12,6 @@ public class RequestAllCastleInfo extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		getClient().getActiveChar().sendPacket(new ExShowCastleInfo());
+		this.getClient().getActiveChar().sendPacket(new ExShowCastleInfo());
 	}
 }

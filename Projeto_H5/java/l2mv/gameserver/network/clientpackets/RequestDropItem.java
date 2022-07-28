@@ -17,21 +17,21 @@ public class RequestDropItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
-		_count = readQ();
-		_loc = new Location(readD(), readD(), readD());
+		this._objectId = this.readD();
+		this._count = this.readQ();
+		this._loc = new Location(this.readD(), this.readD(), this.readD());
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		if (_count < 1 || _loc.isNull() || activeChar.isActionsDisabled() || activeChar.isBlocked())
+		if (this._count < 1 || this._loc.isNull() || activeChar.isActionsDisabled() || activeChar.isBlocked())
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -61,13 +61,13 @@ public class RequestDropItem extends L2GameClientPacket
 			return;
 		}
 
-		if (!activeChar.isInRangeSq(_loc, 22500) || Math.abs(_loc.z - activeChar.getZ()) > 50)
+		if (!activeChar.isInRangeSq(this._loc, 22500) || Math.abs(this._loc.z - activeChar.getZ()) > 50)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_DISCARD_SOMETHING_THAT_FAR_AWAY_FROM_YOU);
 			return;
 		}
 
-		ItemInstance item = activeChar.getInventory().getItemByObjectId(_objectId);
+		ItemInstance item = activeChar.getInventory().getItemByObjectId(this._objectId);
 		if (item == null)
 		{
 			activeChar.sendActionFailed();
@@ -86,6 +86,6 @@ public class RequestDropItem extends L2GameClientPacket
 			return;
 		}
 
-		item.getTemplate().getHandler().dropItem(activeChar, item, _count, _loc);
+		item.getTemplate().getHandler().dropItem(activeChar, item, this._count, this._loc);
 	}
 }

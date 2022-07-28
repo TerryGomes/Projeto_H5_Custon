@@ -33,34 +33,34 @@ public class SSQInfo extends L2GameServerPacket
 		{
 			if (compWinner == SevenSigns.CABAL_DAWN)
 			{
-				_state = 2;
+				this._state = 2;
 			}
 			else if (compWinner == SevenSigns.CABAL_DUSK)
 			{
-				_state = 1;
+				this._state = 1;
 			}
 		}
 	}
 
 	public SSQInfo(int state)
 	{
-		_state = state;
+		this._state = state;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x73);
-		switch (_state)
+		this.writeC(0x73);
+		switch (this._state)
 		{
 		case 1:
-			writeH(257);
+			this.writeH(257);
 			break;
 		case 2:
-			writeH(258);
+			this.writeH(258);
 			break;
 		default:
-			writeH(256);
+			this.writeH(256);
 			break;
 		}
 	}

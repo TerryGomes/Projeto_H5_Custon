@@ -19,21 +19,21 @@ public class ExShowTrace extends L2GameServerPacket
 
 		public Trace(int x, int y, int z, int time)
 		{
-			_x = x;
-			_y = y;
-			_z = z;
-			_time = time;
+			this._x = x;
+			this._y = y;
+			this._z = z;
+			this._time = time;
 		}
 	}
 
 	public void addTrace(int x, int y, int z, int time)
 	{
-		_traces.add(new Trace(x, y, z, time));
+		this._traces.add(new Trace(x, y, z, time));
 	}
 
 	public void addLine(Location from, Location to, int step, int time)
 	{
-		addLine(from.x, from.y, from.z, to.x, to.y, to.z, step, time);
+		this.addLine(from.x, from.y, from.z, to.x, to.y, to.z, step, time);
 	}
 
 	public void addLine(int from_x, int from_y, int from_z, int to_x, int to_y, int to_z, int step, int time)
@@ -45,7 +45,7 @@ public class ExShowTrace extends L2GameServerPacket
 		double full_dist = Math.sqrt(xy_dist * xy_dist + z_diff * z_diff);
 		int steps = (int) (full_dist / step);
 
-		addTrace(from_x, from_y, from_z, time);
+		this.addTrace(from_x, from_y, from_z, time);
 		if (steps > 1)
 		{
 			int step_x = x_diff / steps;
@@ -54,10 +54,10 @@ public class ExShowTrace extends L2GameServerPacket
 
 			for (int i = 1; i < steps; i++)
 			{
-				addTrace(from_x + step_x * i, from_y + step_y * i, from_z + step_z * i, time);
+				this.addTrace(from_x + step_x * i, from_y + step_y * i, from_z + step_z * i, time);
 			}
 		}
-		addTrace(to_x, to_y, to_z, time);
+		this.addTrace(to_x, to_y, to_z, time);
 	}
 
 	public void addTrace(GameObject obj, int time)
@@ -68,15 +68,15 @@ public class ExShowTrace extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x67);
+		this.writeEx(0x67);
 
-		writeH(_traces.size());
-		for (Trace t : _traces)
+		this.writeH(this._traces.size());
+		for (Trace t : this._traces)
 		{
-			writeD(t._x);
-			writeD(t._y);
-			writeD(t._z);
-			writeH(t._time);
+			this.writeD(t._x);
+			this.writeD(t._y);
+			this.writeD(t._z);
+			this.writeH(t._time);
 		}
 	}
 }

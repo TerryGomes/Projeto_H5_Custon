@@ -15,13 +15,13 @@ public class RequestTargetCanceld extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_unselect = readH();
+		this._unselect = this.readH();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -38,17 +38,10 @@ public class RequestTargetCanceld extends L2GameClientPacket
 			return;
 		}
 
-		if (_unselect == 0)
+		if ((this._unselect == 0) && activeChar.isCastingNow())
 		{
-			if (activeChar.isCastingNow())
-			{
-				Skill skill = activeChar.getCastingSkill();
-				activeChar.abortCast(skill != null && (skill.isHandler() || skill.getHitTime(activeChar) > 1000), false);
-			}
-			else if (activeChar.getTarget() != null)
-			{
-				activeChar.setTarget(null);
-			}
+			Skill skill = activeChar.getCastingSkill();
+			activeChar.abortCast(skill != null && (skill.isHandler() || skill.getHitTime(activeChar) > 1000), false);
 		}
 		else if (activeChar.getTarget() != null)
 		{

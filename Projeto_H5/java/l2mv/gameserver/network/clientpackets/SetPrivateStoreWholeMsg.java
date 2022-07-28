@@ -10,23 +10,23 @@ public class SetPrivateStoreWholeMsg extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_storename = readS(32);
+		this._storename = this.readS(32);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		if (Config.containsAbuseWord(_storename))
+		if (Config.containsAbuseWord(this._storename))
 		{
-			_storename = "...";
+			this._storename = "...";
 		}
 
-		activeChar.setSellStoreName(_storename);
+		activeChar.setSellStoreName(this._storename);
 	}
 }

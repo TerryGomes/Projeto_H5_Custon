@@ -21,19 +21,19 @@ public abstract class ExBuySellList extends L2GameServerPacket
 		public BuyList(NpcTradeList tradeList, Player activeChar, double taxRate)
 		{
 			super(0);
-			_adena = activeChar.getAdena();
-			_taxRate = taxRate;
+			this._adena = activeChar.getAdena();
+			this._taxRate = taxRate;
 
 			if (tradeList != null)
 			{
-				_listId = tradeList.getListId();
-				_buyList = tradeList.getItems();
-				activeChar.setBuyListId(_listId);
+				this._listId = tradeList.getListId();
+				this._buyList = tradeList.getItems();
+				activeChar.setBuyListId(this._listId);
 			}
 			else
 			{
-				_listId = 0;
-				_buyList = Collections.emptyList();
+				this._listId = 0;
+				this._buyList = Collections.emptyList();
 				activeChar.setBuyListId(0);
 			}
 		}
@@ -42,13 +42,13 @@ public abstract class ExBuySellList extends L2GameServerPacket
 		protected void writeImpl()
 		{
 			super.writeImpl();
-			writeQ(_adena); // current money
-			writeD(_listId);
-			writeH(_buyList.size());
-			for (TradeItem item : _buyList)
+			this.writeQ(this._adena); // current money
+			this.writeD(this._listId);
+			this.writeH(this._buyList.size());
+			for (TradeItem item : this._buyList)
 			{
-				writeItemInfo(item, item.getCurrentValue());
-				writeQ((long) (item.getOwnersPrice() * (1. + _taxRate)));
+				this.writeItemInfo(item, item.getCurrentValue());
+				this.writeQ((long) (item.getOwnersPrice() * (1. + this._taxRate)));
 			}
 		}
 	}
@@ -62,28 +62,28 @@ public abstract class ExBuySellList extends L2GameServerPacket
 		public SellRefundList(Player activeChar, boolean done)
 		{
 			super(1);
-			_done = done ? 1 : 0;
+			this._done = done ? 1 : 0;
 			if (done)
 			{
-				_refundList = Collections.emptyList();
-				_sellList = Collections.emptyList();
+				this._refundList = Collections.emptyList();
+				this._sellList = Collections.emptyList();
 			}
 			else
 			{
 				ItemInstance[] items = activeChar.getRefund().getItems();
-				_refundList = new ArrayList<TradeItem>(items.length);
+				this._refundList = new ArrayList<TradeItem>(items.length);
 				for (ItemInstance item : items)
 				{
-					_refundList.add(new TradeItem(item));
+					this._refundList.add(new TradeItem(item));
 				}
 
 				items = activeChar.getInventory().getItems();
-				_sellList = new ArrayList<TradeItem>(items.length);
+				this._sellList = new ArrayList<TradeItem>(items.length);
 				for (ItemInstance item : items)
 				{
 					if (item.canBeSold(activeChar))
 					{
-						_sellList.add(new TradeItem(item));
+						this._sellList.add(new TradeItem(item));
 					}
 				}
 			}
@@ -93,20 +93,20 @@ public abstract class ExBuySellList extends L2GameServerPacket
 		protected void writeImpl()
 		{
 			super.writeImpl();
-			writeH(_sellList.size());
-			for (TradeItem item : _sellList)
+			this.writeH(this._sellList.size());
+			for (TradeItem item : this._sellList)
 			{
-				writeItemInfo(item);
-				writeQ(item.getReferencePrice() / 2);
+				this.writeItemInfo(item);
+				this.writeQ(item.getReferencePrice() / 2);
 			}
-			writeH(_refundList.size());
-			for (TradeItem item : _refundList)
+			this.writeH(this._refundList.size());
+			for (TradeItem item : this._refundList)
 			{
-				writeItemInfo(item);
-				writeD(item.getObjectId());
-				writeQ(item.getCount() * item.getReferencePrice() / 2);
+				this.writeItemInfo(item);
+				this.writeD(item.getObjectId());
+				this.writeQ(item.getCount() * item.getReferencePrice() / 2);
 			}
-			writeC(_done);
+			this.writeC(this._done);
 		}
 	}
 
@@ -114,13 +114,13 @@ public abstract class ExBuySellList extends L2GameServerPacket
 
 	public ExBuySellList(int type)
 	{
-		_type = type;
+		this._type = type;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xB7);
-		writeD(_type);
+		this.writeEx(0xB7);
+		this.writeD(this._type);
 	}
 }

@@ -26,17 +26,17 @@ public final class RequestExEnchantSkillInfoDetail extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_type = readD();
-		_skillId = readD();
-		_skillLvl = readD();
+		this._type = this.readD();
+		this._skillId = this.readD();
+		this._skillLvl = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 
-		if ((activeChar == null) || (_skillId == 0))
+		if ((activeChar == null) || (this._skillId == 0))
 		{
 			return;
 		}
@@ -77,34 +77,34 @@ public final class RequestExEnchantSkillInfoDetail extends L2GameClientPacket
 
 		EnchantSkillLearn esd = null;
 
-		switch (_type)
+		switch (this._type)
 		{
 		case TYPE_NORMAL_ENCHANT:
-			if (_skillLvl % 100 == 1)
+			if (this._skillLvl % 100 == 1)
 			{
 				bookId = SkillTreeTable.NORMAL_ENCHANT_BOOK;
 			}
-			esd = SkillTreeTable.getSkillEnchant(_skillId, _skillLvl);
+			esd = SkillTreeTable.getSkillEnchant(this._skillId, this._skillLvl);
 			break;
 		case TYPE_SAFE_ENCHANT:
 			bookId = SkillTreeTable.SAFE_ENCHANT_BOOK;
-			esd = SkillTreeTable.getSkillEnchant(_skillId, _skillLvl);
+			esd = SkillTreeTable.getSkillEnchant(this._skillId, this._skillLvl);
 			spMult = SkillTreeTable.SAFE_ENCHANT_COST_MULTIPLIER;
 			break;
 		case TYPE_UNTRAIN_ENCHANT:
 			bookId = SkillTreeTable.UNTRAIN_ENCHANT_BOOK;
-			esd = SkillTreeTable.getSkillEnchant(_skillId, _skillLvl + 1);
+			esd = SkillTreeTable.getSkillEnchant(this._skillId, this._skillLvl + 1);
 			break;
 		case TYPE_CHANGE_ENCHANT:
 			bookId = SkillTreeTable.CHANGE_ENCHANT_BOOK;
 			try
 			{
-				esd = SkillTreeTable.getEnchantsForChange(_skillId, _skillLvl).get(0);
+				esd = SkillTreeTable.getEnchantsForChange(this._skillId, this._skillLvl).get(0);
 				spMult = 1f / SkillTreeTable.SAFE_ENCHANT_COST_MULTIPLIER;
 			}
 			catch (RuntimeException e)
 			{
-				LOG.error("Error while loading Change Skill Enchant Details for skill id:" + _skillId + " level:" + _skillLvl, e);
+				LOG.error("Error while loading Change Skill Enchant Details for skill id:" + this._skillId + " level:" + this._skillLvl, e);
 			}
 			break;
 		}
@@ -119,12 +119,12 @@ public final class RequestExEnchantSkillInfoDetail extends L2GameClientPacket
 
 		sp = (int) (cost[1] * spMult);
 
-		if (_type != TYPE_UNTRAIN_ENCHANT)
+		if (this._type != TYPE_UNTRAIN_ENCHANT)
 		{
 			adenaCount = (int) (cost[0] * spMult);
 		}
 
 		// send skill enchantment detail
-		activeChar.sendPacket(new ExEnchantSkillInfoDetail(_skillId, _skillLvl, sp, esd.getRate(activeChar), bookId, adenaCount));
+		activeChar.sendPacket(new ExEnchantSkillInfoDetail(this._skillId, this._skillLvl, sp, esd.getRate(activeChar), bookId, adenaCount));
 	}
 }

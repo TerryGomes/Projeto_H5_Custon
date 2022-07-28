@@ -12,37 +12,37 @@ public class NewCharacterSuccess extends L2GameServerPacket
 
 	public void addChar(PlayerTemplate template)
 	{
-		_chars.add(template);
+		this._chars.add(template);
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x0d);
-		writeD(_chars.size());
+		this.writeC(0x0d);
+		this.writeD(this._chars.size());
 
-		for (PlayerTemplate temp : _chars)
+		for (PlayerTemplate temp : this._chars)
 		{
-			writeD(temp.race.ordinal());
-			writeD(temp.classId.getId());
-			writeD(0x46);
-			writeD(temp.baseSTR);
-			writeD(0x0a);
-			writeD(0x46);
-			writeD(temp.baseDEX);
-			writeD(0x0a);
-			writeD(0x46);
-			writeD(temp.baseCON);
-			writeD(0x0a);
-			writeD(0x46);
-			writeD(temp.baseINT);
-			writeD(0x0a);
-			writeD(0x46);
-			writeD(temp.baseWIT);
-			writeD(0x0a);
-			writeD(0x46);
-			writeD(temp.baseMEN);
-			writeD(0x0a);
+			this.writeD(temp.race.ordinal());
+			this.writeD(temp.classId.getId());
+			this.writeD(0x46);
+			this.writeD(temp.baseSTR);
+			this.writeD(0x0a);
+			this.writeD(0x46);
+			this.writeD(temp.baseDEX);
+			this.writeD(0x0a);
+			this.writeD(0x46);
+			this.writeD(temp.baseCON);
+			this.writeD(0x0a);
+			this.writeD(0x46);
+			this.writeD(temp.baseINT);
+			this.writeD(0x0a);
+			this.writeD(0x46);
+			this.writeD(temp.baseWIT);
+			this.writeD(0x0a);
+			this.writeD(0x46);
+			this.writeD(temp.baseMEN);
+			this.writeD(0x0a);
 		}
 	}
 }

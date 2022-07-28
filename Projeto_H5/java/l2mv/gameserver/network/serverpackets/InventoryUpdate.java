@@ -17,38 +17,38 @@ public class InventoryUpdate extends L2GameServerPacket
 
 	public InventoryUpdate addNewItem(ItemInstance item)
 	{
-		addItem(item).setLastChange(ADDED);
+		this.addItem(item).setLastChange(ADDED);
 		return this;
 	}
 
 	public InventoryUpdate addModifiedItem(ItemInstance item)
 	{
-		addItem(item).setLastChange(MODIFIED);
+		this.addItem(item).setLastChange(MODIFIED);
 		return this;
 	}
 
 	public InventoryUpdate addRemovedItem(ItemInstance item)
 	{
-		addItem(item).setLastChange(REMOVED);
+		this.addItem(item).setLastChange(REMOVED);
 		return this;
 	}
 
 	private ItemInfo addItem(ItemInstance item)
 	{
 		ItemInfo info;
-		_items.add(info = new ItemInfo(item));
+		this._items.add(info = new ItemInfo(item));
 		return info;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x21);
-		writeH(_items.size());
-		for (ItemInfo temp : _items)
+		this.writeC(0x21);
+		this.writeH(this._items.size());
+		for (ItemInfo temp : this._items)
 		{
-			writeH(temp.getLastChange());
-			writeItemInfo(temp);
+			this.writeH(temp.getLastChange());
+			this.writeItemInfo(temp);
 		}
 	}
 }

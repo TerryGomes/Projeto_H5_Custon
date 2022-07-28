@@ -16,24 +16,24 @@ public class RequestPartyMatchDetail extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_roomId = readD(); // room id, если 0 то autojoin
-		_locations = readD(); // location
-		_level = readD(); // 1 - all, 0 - my level (только при autojoin)
+		this._roomId = this.readD(); // room id, если 0 то autojoin
+		this._locations = this.readD(); // location
+		this._level = this.readD(); // 1 - all, 0 - my level (только при autojoin)
 		// readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if ((player == null) || (player.getMatchingRoom() != null))
 		{
 			return;
 		}
 
-		if (_roomId > 0)
+		if (this._roomId > 0)
 		{
-			MatchingRoom room = MatchingRoomManager.getInstance().getMatchingRoom(MatchingRoom.PARTY_MATCHING, _roomId);
+			MatchingRoom room = MatchingRoomManager.getInstance().getMatchingRoom(MatchingRoom.PARTY_MATCHING, this._roomId);
 			if (room == null)
 			{
 				return;
@@ -43,7 +43,7 @@ public class RequestPartyMatchDetail extends L2GameClientPacket
 		}
 		else
 		{
-			for (MatchingRoom room : MatchingRoomManager.getInstance().getMatchingRooms(MatchingRoom.PARTY_MATCHING, _locations, _level == 1, player))
+			for (MatchingRoom room : MatchingRoomManager.getInstance().getMatchingRooms(MatchingRoom.PARTY_MATCHING, this._locations, this._level == 1, player))
 			{
 				if (room.addMember(player))
 				{

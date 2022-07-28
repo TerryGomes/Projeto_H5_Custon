@@ -13,14 +13,14 @@ public class ChangePasswordResponse extends ReceivablePacket
 	@Override
 	public void readImpl()
 	{
-		account = readS();
-		changed = readD() == 1;
+		this.account = this.readS();
+		this.changed = this.readD() == 1;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		final GameClient client = AuthServerCommunication.getInstance().getAuthedClient(account);
+		final GameClient client = AuthServerCommunication.getInstance().getAuthedClient(this.account);
 		if (client == null)
 		{
 			return;
@@ -31,7 +31,7 @@ public class ChangePasswordResponse extends ReceivablePacket
 			return;
 		}
 
-		if (changed)
+		if (this.changed)
 		{
 			activeChar.sendMessage("Your password has been changed!");
 

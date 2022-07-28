@@ -12,13 +12,13 @@ public class RequestRecipeItemDelete extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_recipeId = readD();
+		this._recipeId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -30,14 +30,14 @@ public class RequestRecipeItemDelete extends L2GameClientPacket
 			return;
 		}
 
-		Recipe rp = RecipeHolder.getInstance().getRecipeByRecipeId(_recipeId);
+		Recipe rp = RecipeHolder.getInstance().getRecipeByRecipeId(this._recipeId);
 		if (rp == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		activeChar.unregisterRecipe(_recipeId);
+		activeChar.unregisterRecipe(this._recipeId);
 		activeChar.sendPacket(new RecipeBookItemList(activeChar, rp.isDwarvenRecipe()));
 	}
 }

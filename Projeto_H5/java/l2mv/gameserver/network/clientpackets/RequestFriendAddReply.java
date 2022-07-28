@@ -14,13 +14,13 @@ public class RequestFriendAddReply extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_response = _buf.hasRemaining() ? readD() : 0;
+		this._response = this._buf.hasRemaining() ? this.readD() : 0;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -55,7 +55,7 @@ public class RequestFriendAddReply extends L2GameClientPacket
 			return;
 		}
 
-		if (_response == 0)
+		if (this._response == 0)
 		{
 			request.cancel();
 			requestor.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_ADD_A_FRIEND_TO_YOUR_FRIENDS_LIST);

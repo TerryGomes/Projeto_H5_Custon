@@ -26,21 +26,21 @@ public class RequestChangeNicknameColor extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_colorNum = readD();
-		_title = readS();
-		_itemObjectId = readD();
+		this._colorNum = this.readD();
+		this._title = this.readS();
+		this._itemObjectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if ((activeChar == null) || _colorNum < 0 || _colorNum >= COLORS.length)
+		Player activeChar = this.getClient().getActiveChar();
+		if ((activeChar == null) || this._colorNum < 0 || this._colorNum >= COLORS.length)
 		{
 			return;
 		}
 
-		ItemInstance item = activeChar.getInventory().getItemByObjectId(_itemObjectId);
+		ItemInstance item = activeChar.getInventory().getItemByObjectId(this._itemObjectId);
 		if (item == null)
 		{
 			return;
@@ -54,8 +54,8 @@ public class RequestChangeNicknameColor extends L2GameClientPacket
 
 		if (activeChar.consumeItem(item.getItemId(), 1))
 		{
-			activeChar.setTitleColor(COLORS[_colorNum]);
-			activeChar.setTitle(_title);
+			activeChar.setTitleColor(COLORS[this._colorNum]);
+			activeChar.setTitle(this._title);
 			activeChar.broadcastUserInfo(true);
 		}
 	}

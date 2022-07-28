@@ -29,54 +29,54 @@ public class ExShowDominionRegistry extends L2GameServerPacket
 
 	public ExShowDominionRegistry(Player activeChar, Dominion dominion)
 	{
-		_dominionId = dominion.getId();
+		this._dominionId = dominion.getId();
 
 		Clan owner = dominion.getOwner();
 		Alliance alliance = owner.getAlliance();
 
 		DominionSiegeEvent siegeEvent = dominion.getSiegeEvent();
-		_ownerClanName = owner.getName();
-		_ownerLeaderName = owner.getLeaderName();
-		_ownerAllyName = alliance == null ? StringUtils.EMPTY : alliance.getAllyName();
-		_warTime = (int) (dominion.getSiegeDate().getTimeInMillis() / 1000L);
-		_currentTime = (int) (System.currentTimeMillis() / 1000L);
-		_mercReq = siegeEvent.getObjects(DominionSiegeEvent.DEFENDER_PLAYERS).size();
-		_clanReq = siegeEvent.getObjects(DominionSiegeEvent.DEFENDERS).size() + 1;
-		_registeredAsPlayer = siegeEvent.getObjects(DominionSiegeEvent.DEFENDER_PLAYERS).contains(activeChar.getObjectId());
-		_registeredAsClan = siegeEvent.getSiegeClan(DominionSiegeEvent.DEFENDERS, activeChar.getClan()) != null;
+		this._ownerClanName = owner.getName();
+		this._ownerLeaderName = owner.getLeaderName();
+		this._ownerAllyName = alliance == null ? StringUtils.EMPTY : alliance.getAllyName();
+		this._warTime = (int) (dominion.getSiegeDate().getTimeInMillis() / 1000L);
+		this._currentTime = (int) (System.currentTimeMillis() / 1000L);
+		this._mercReq = siegeEvent.getObjects(DominionSiegeEvent.DEFENDER_PLAYERS).size();
+		this._clanReq = siegeEvent.getObjects(DominionSiegeEvent.DEFENDERS).size() + 1;
+		this._registeredAsPlayer = siegeEvent.getObjects(DominionSiegeEvent.DEFENDER_PLAYERS).contains(activeChar.getObjectId());
+		this._registeredAsClan = siegeEvent.getSiegeClan(DominionSiegeEvent.DEFENDERS, activeChar.getClan()) != null;
 
 		List<Dominion> dominions = ResidenceHolder.getInstance().getResidenceList(Dominion.class);
-		_flags = new ArrayList<TerritoryFlagsInfo>(dominions.size());
+		this._flags = new ArrayList<TerritoryFlagsInfo>(dominions.size());
 		for (Dominion d : dominions)
 		{
-			_flags.add(new TerritoryFlagsInfo(d.getId(), d.getFlags()));
+			this._flags.add(new TerritoryFlagsInfo(d.getId(), d.getFlags()));
 		}
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x90);
+		this.writeEx(0x90);
 
-		writeD(_dominionId);
-		writeS(_ownerClanName);
-		writeS(_ownerLeaderName);
-		writeS(_ownerAllyName);
-		writeD(_clanReq); // Clan Request
-		writeD(_mercReq); // Merc Request
-		writeD(_warTime); // War Time
-		writeD(_currentTime); // Current Time
-		writeD(_registeredAsClan); // Состояние клановой кнопки: 0 - не подписал, 1 - подписан на эту территорию
-		writeD(_registeredAsPlayer); // Состояние персональной кнопки: 0 - не подписал, 1 - подписан на эту территорию
-		writeD(0x01);
-		writeD(_flags.size()); // Territory Count
-		for (TerritoryFlagsInfo cf : _flags)
+		this.writeD(this._dominionId);
+		this.writeS(this._ownerClanName);
+		this.writeS(this._ownerLeaderName);
+		this.writeS(this._ownerAllyName);
+		this.writeD(this._clanReq); // Clan Request
+		this.writeD(this._mercReq); // Merc Request
+		this.writeD(this._warTime); // War Time
+		this.writeD(this._currentTime); // Current Time
+		this.writeD(this._registeredAsClan); // Состояние клановой кнопки: 0 - не подписал, 1 - подписан на эту территорию
+		this.writeD(this._registeredAsPlayer); // Состояние персональной кнопки: 0 - не подписал, 1 - подписан на эту территорию
+		this.writeD(0x01);
+		this.writeD(this._flags.size()); // Territory Count
+		for (TerritoryFlagsInfo cf : this._flags)
 		{
-			writeD(cf.id); // Territory Id
-			writeD(cf.flags.length); // Emblem Count
+			this.writeD(cf.id); // Territory Id
+			this.writeD(cf.flags.length); // Emblem Count
 			for (int flag : cf.flags)
 			{
-				writeD(flag); // Emblem ID - should be in for loop for emblem count
+				this.writeD(flag); // Emblem ID - should be in for loop for emblem count
 			}
 		}
 	}
@@ -88,8 +88,8 @@ public class ExShowDominionRegistry extends L2GameServerPacket
 
 		public TerritoryFlagsInfo(int id_, int[] flags_)
 		{
-			id = id_;
-			flags = flags_;
+			this.id = id_;
+			this.flags = flags_;
 		}
 	}
 }

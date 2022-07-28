@@ -7,16 +7,16 @@ public class AllianceCrest extends L2GameServerPacket
 
 	public AllianceCrest(int crestId, byte[] data)
 	{
-		_crestId = crestId;
-		_data = data;
+		this._crestId = crestId;
+		this._data = data;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xaf);
-		writeD(_crestId);
-		writeD(_data.length);
-		writeB(_data);
+		this.writeC(0xaf);
+		this.writeD(this._crestId);
+		this.writeD(this._data.length);
+		this.writeB(this._data);
 	}
 }

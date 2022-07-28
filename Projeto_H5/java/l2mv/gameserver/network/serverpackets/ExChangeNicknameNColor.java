@@ -6,13 +6,13 @@ public class ExChangeNicknameNColor extends L2GameServerPacket
 
 	public ExChangeNicknameNColor(int itemObjId)
 	{
-		_itemObjId = itemObjId;
+		this._itemObjId = itemObjId;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x83);
-		writeD(_itemObjId);
+		this.writeEx(0x83);
+		this.writeD(this._itemObjId);
 	}
 }

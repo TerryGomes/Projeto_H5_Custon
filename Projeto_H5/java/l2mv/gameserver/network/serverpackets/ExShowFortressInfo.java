@@ -17,25 +17,25 @@ public class ExShowFortressInfo extends L2GameServerPacket
 	public ExShowFortressInfo()
 	{
 		List<Fortress> forts = ResidenceHolder.getInstance().getResidenceList(Fortress.class);
-		_infos = new ArrayList<FortressInfo>(forts.size());
+		this._infos = new ArrayList<FortressInfo>(forts.size());
 		for (Fortress fortress : forts)
 		{
 			Clan owner = fortress.getOwner();
-			_infos.add(new FortressInfo(owner == null ? StringUtils.EMPTY : owner.getName(), fortress.getId(), fortress.getSiegeEvent().isInProgress(), owner == null ? 0 : (int) ((System.currentTimeMillis() - fortress.getOwnDate().getTimeInMillis()) / 1000L)));
+			this._infos.add(new FortressInfo(owner == null ? StringUtils.EMPTY : owner.getName(), fortress.getId(), fortress.getSiegeEvent().isInProgress(), owner == null ? 0 : (int) ((System.currentTimeMillis() - fortress.getOwnDate().getTimeInMillis()) / 1000L)));
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x15);
-		writeD(_infos.size());
-		for (FortressInfo _info : _infos)
+		this.writeEx(0x15);
+		this.writeD(this._infos.size());
+		for (FortressInfo _info : this._infos)
 		{
-			writeD(_info._id);
-			writeS(_info._owner);
-			writeD(_info._status);
-			writeD(_info._siege);
+			this.writeD(_info._id);
+			this.writeS(_info._owner);
+			this.writeD(_info._status);
+			this.writeD(_info._siege);
 		}
 	}
 
@@ -47,10 +47,10 @@ public class ExShowFortressInfo extends L2GameServerPacket
 
 		public FortressInfo(String owner, int id, boolean status, int siege)
 		{
-			_owner = owner;
-			_id = id;
-			_status = status;
-			_siege = siege;
+			this._owner = owner;
+			this._id = id;
+			this._status = status;
+			this._siege = siege;
 		}
 	}
 }

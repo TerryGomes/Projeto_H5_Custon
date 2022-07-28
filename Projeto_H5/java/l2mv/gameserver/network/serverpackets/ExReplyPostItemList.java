@@ -24,7 +24,7 @@ public class ExReplyPostItemList extends L2GameServerPacket
 		{
 			if (item.canBeTraded(activeChar))
 			{
-				_itemsList.add(new ItemInfo(item));
+				this._itemsList.add(new ItemInfo(item));
 			}
 		}
 	}
@@ -32,11 +32,11 @@ public class ExReplyPostItemList extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xB2);
-		writeD(_itemsList.size());
-		for (ItemInfo item : _itemsList)
+		this.writeEx(0xB2);
+		this.writeD(this._itemsList.size());
+		for (ItemInfo item : this._itemsList)
 		{
-			writeItemInfo(item);
+			this.writeItemInfo(item);
 		}
 	}
 }

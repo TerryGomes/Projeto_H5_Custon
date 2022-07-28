@@ -14,13 +14,13 @@ public class RequestTutorialQuestionMark extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_number = readD();
+		this._number = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -37,10 +37,10 @@ public class RequestTutorialQuestionMark extends L2GameClientPacket
 			Quest q = QuestManager.getQuest(255);
 			if (q != null)
 			{
-				player.processQuestEvent(q.getName(), "QM" + _number, null);
+				player.processQuestEvent(q.getName(), "QM" + this._number, null);
 			}
 
-			if (_number == player.getObjectId())
+			if (this._number == player.getObjectId())
 			{
 				Achievements.getInstance().onBypass(player, "_bbs_achievements", null);
 			}

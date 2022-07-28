@@ -14,26 +14,26 @@ public class ExMpccRoomInfo extends L2GameServerPacket
 
 	public ExMpccRoomInfo(MatchingRoom matching)
 	{
-		_index = matching.getId();
-		_locationId = matching.getLocationId();
-		_topic = matching.getTopic();
-		_minLevel = matching.getMinLevel();
-		_maxLevel = matching.getMaxLevel();
-		_memberSize = matching.getMaxMembersSize();
-		_lootType = matching.getLootType();
+		this._index = matching.getId();
+		this._locationId = matching.getLocationId();
+		this._topic = matching.getTopic();
+		this._minLevel = matching.getMinLevel();
+		this._maxLevel = matching.getMaxLevel();
+		this._memberSize = matching.getMaxMembersSize();
+		this._lootType = matching.getLootType();
 	}
 
 	@Override
 	public void writeImpl()
 	{
-		writeEx(0x9B);
+		this.writeEx(0x9B);
 		//
-		writeD(_index); // index
-		writeD(_memberSize); // member size 1-50
-		writeD(_minLevel); // min level
-		writeD(_maxLevel); // max level
-		writeD(_lootType); // loot type
-		writeD(_locationId); // location id as party room
-		writeS(_topic); // topic
+		this.writeD(this._index); // index
+		this.writeD(this._memberSize); // member size 1-50
+		this.writeD(this._minLevel); // min level
+		this.writeD(this._maxLevel); // max level
+		this.writeD(this._lootType); // loot type
+		this.writeD(this._locationId); // location id as party room
+		this.writeS(this._topic); // topic
 	}
 }

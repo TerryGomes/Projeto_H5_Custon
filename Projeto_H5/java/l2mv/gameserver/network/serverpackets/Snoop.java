@@ -10,23 +10,23 @@ public class Snoop extends L2GameServerPacket
 
 	public Snoop(int id, String name, int type, String speaker, String msg)
 	{
-		_convoID = id;
-		_name = name;
-		_type = type;
-		_speaker = speaker;
-		_msg = msg;
+		this._convoID = id;
+		this._name = name;
+		this._type = type;
+		this._speaker = speaker;
+		this._msg = msg;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xdb);
+		this.writeC(0xdb);
 
-		writeD(_convoID);
-		writeS(_name);
-		writeD(0x00);
-		writeD(_type);
-		writeS(_speaker);
-		writeS(_msg);
+		this.writeD(this._convoID);
+		this.writeS(this._name);
+		this.writeD(0x00);
+		this.writeD(this._type);
+		this.writeS(this._speaker);
+		this.writeS(this._msg);
 	}
 }

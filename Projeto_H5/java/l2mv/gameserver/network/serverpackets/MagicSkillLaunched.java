@@ -14,33 +14,33 @@ public class MagicSkillLaunched extends L2GameServerPacket
 
 	public MagicSkillLaunched(int casterId, int skillId, int skillLevel, Creature target)
 	{
-		_casterId = casterId;
-		_skillId = skillId;
-		_skillLevel = skillLevel;
-		_targets = Collections.singletonList(target);
+		this._casterId = casterId;
+		this._skillId = skillId;
+		this._skillLevel = skillLevel;
+		this._targets = Collections.singletonList(target);
 	}
 
 	public MagicSkillLaunched(int casterId, int skillId, int skillLevel, Collection<Creature> targets)
 	{
-		_casterId = casterId;
-		_skillId = skillId;
-		_skillLevel = skillLevel;
-		_targets = targets;
+		this._casterId = casterId;
+		this._skillId = skillId;
+		this._skillLevel = skillLevel;
+		this._targets = targets;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x54);
-		writeD(_casterId);
-		writeD(_skillId);
-		writeD(_skillLevel);
-		writeD(_targets.size());
-		for (Creature target : _targets)
+		this.writeC(0x54);
+		this.writeD(this._casterId);
+		this.writeD(this._skillId);
+		this.writeD(this._skillLevel);
+		this.writeD(this._targets.size());
+		for (Creature target : this._targets)
 		{
 			if (target != null)
 			{
-				writeD(target.getObjectId());
+				this.writeD(target.getObjectId());
 			}
 		}
 	}

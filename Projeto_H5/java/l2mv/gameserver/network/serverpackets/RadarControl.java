@@ -21,21 +21,21 @@ public class RadarControl extends L2GameServerPacket
 
 	public RadarControl(int showRadar, int type, int x, int y, int z)
 	{
-		_showRadar = showRadar; // showRadar?? 0 = showRadar; 1 = delete radar;
-		_type = type; // 1 - только стрелка над головой, 2 - флажок на карте
-		_x = x;
-		_y = y;
-		_z = z;
+		this._showRadar = showRadar; // showRadar?? 0 = showRadar; 1 = delete radar;
+		this._type = type; // 1 - только стрелка над головой, 2 - флажок на карте
+		this._x = x;
+		this._y = y;
+		this._z = z;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xf1);
-		writeD(_showRadar);
-		writeD(_type); // maybe type
-		writeD(_x); // x
-		writeD(_y); // y
-		writeD(_z); // z
+		this.writeC(0xf1);
+		this.writeD(this._showRadar);
+		this.writeD(this._type); // maybe type
+		this.writeD(this._x); // x
+		this.writeD(this._y); // y
+		this.writeD(this._z); // z
 	}
 }

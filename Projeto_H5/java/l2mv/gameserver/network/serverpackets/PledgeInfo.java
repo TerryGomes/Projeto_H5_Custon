@@ -9,17 +9,17 @@ public class PledgeInfo extends L2GameServerPacket
 
 	public PledgeInfo(Clan clan)
 	{
-		clan_id = clan.getClanId();
-		clan_name = clan.getName();
-		ally_name = clan.getAlliance() == null ? "" : clan.getAlliance().getAllyName();
+		this.clan_id = clan.getClanId();
+		this.clan_name = clan.getName();
+		this.ally_name = clan.getAlliance() == null ? "" : clan.getAlliance().getAllyName();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x89);
-		writeD(clan_id);
-		writeS(clan_name);
-		writeS(ally_name);
+		this.writeC(0x89);
+		this.writeD(this.clan_id);
+		this.writeS(this.clan_name);
+		this.writeS(this.ally_name);
 	}
 }

@@ -40,38 +40,38 @@ public class ExEnchantSkillInfoDetail extends L2GameServerPacket
 
 	public ExEnchantSkillInfoDetail(int skillId, int skillLvl, int sp, int chance, int bookId, int adenaCount)
 	{
-		_skillId = skillId;
-		_skillLvl = skillLvl;
-		_sp = sp;
-		_chance = chance;
-		_bookId = bookId;
-		_adenaCount = adenaCount;
+		this._skillId = skillId;
+		this._skillLvl = skillLvl;
+		this._sp = sp;
+		this._chance = chance;
+		this._bookId = bookId;
+		this._adenaCount = adenaCount;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x5e);
+		this.writeEx(0x5e);
 		// FIXME GraciaEpilogue ddddd dx[dd]
 
-		writeD(_unk); // ?
-		writeD(_skillId);
-		writeD(_skillLvl);
-		writeD(_sp);
-		writeD(_chance);
+		this.writeD(this._unk); // ?
+		this.writeD(this._skillId);
+		this.writeD(this._skillLvl);
+		this.writeD(this._sp);
+		this.writeD(this._chance);
 
-		writeD(2);
-		writeD(57); // adena
-		writeD(_adenaCount); // adena count ?
-		if (_bookId > 0)
+		this.writeD(2);
+		this.writeD(57); // adena
+		this.writeD(this._adenaCount); // adena count ?
+		if (this._bookId > 0)
 		{
-			writeD(_bookId); // book
-			writeD(1); // book count
+			this.writeD(this._bookId); // book
+			this.writeD(1); // book count
 		}
 		else
 		{
-			writeD(SkillTreeTable.NORMAL_ENCHANT_BOOK); // book
-			writeD(0); // book count
+			this.writeD(SkillTreeTable.NORMAL_ENCHANT_BOOK); // book
+			this.writeD(0); // book count
 		}
 	}
 }

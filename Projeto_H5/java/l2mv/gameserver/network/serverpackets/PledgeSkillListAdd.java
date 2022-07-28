@@ -7,15 +7,15 @@ public class PledgeSkillListAdd extends L2GameServerPacket
 
 	public PledgeSkillListAdd(int skillId, int skillLevel)
 	{
-		_skillId = skillId;
-		_skillLevel = skillLevel;
+		this._skillId = skillId;
+		this._skillLevel = skillLevel;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x3b);
-		writeD(_skillId);
-		writeD(_skillLevel);
+		this.writeEx(0x3b);
+		this.writeD(this._skillId);
+		this.writeD(this._skillLevel);
 	}
 }

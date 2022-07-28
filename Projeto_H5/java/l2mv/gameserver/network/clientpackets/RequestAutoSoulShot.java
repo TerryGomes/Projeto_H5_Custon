@@ -18,29 +18,29 @@ public class RequestAutoSoulShot extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_itemId = readD();
-		_isEnable = readD() == 1;
+		this._itemId = this.readD();
+		this._isEnable = this.readD() == 1;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = this.getClient().getActiveChar();
 		if ((activeChar == null) || activeChar.getPrivateStoreType() != Player.STORE_PRIVATE_NONE || activeChar.isDead())
 		{
 			return;
 		}
 
-		final ItemInstance item = activeChar.getInventory().getItemByItemId(_itemId);
+		final ItemInstance item = activeChar.getInventory().getItemByItemId(this._itemId);
 		if (item == null)
 		{
 			return;
 		}
 
-		if (_isEnable)
+		if (this._isEnable)
 		{
-			activeChar.addAutoSoulShot(_itemId);
-			activeChar.sendPacket(new ExAutoSoulShot(_itemId, true));
+			activeChar.addAutoSoulShot(this._itemId);
+			activeChar.sendPacket(new ExAutoSoulShot(this._itemId, true));
 			activeChar.sendPacket(new SystemMessage2(SystemMsg.THE_AUTOMATIC_USE_OF_S1_HAS_BEEN_ACTIVATED).addString(item.getName()));
 			final IItemHandler handler = item.getTemplate().getHandler();
 			if (handler != null)
@@ -50,8 +50,8 @@ public class RequestAutoSoulShot extends L2GameClientPacket
 		}
 		else
 		{
-			activeChar.removeAutoSoulShot(_itemId);
-			activeChar.sendPacket(new ExAutoSoulShot(_itemId, false));
+			activeChar.removeAutoSoulShot(this._itemId);
+			activeChar.sendPacket(new ExAutoSoulShot(this._itemId, false));
 			activeChar.sendPacket(new SystemMessage2(SystemMsg.THE_AUTOMATIC_USE_OF_S1_HAS_BEEN_DEACTIVATED).addString(item.getName()));
 		}
 	}

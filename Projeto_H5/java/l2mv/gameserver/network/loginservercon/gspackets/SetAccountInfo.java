@@ -10,21 +10,21 @@ public class SetAccountInfo extends SendablePacket
 
 	public SetAccountInfo(String account, int size, int[] deleteChars)
 	{
-		_account = account;
-		_size = size;
-		_deleteChars = deleteChars;
+		this._account = account;
+		this._size = size;
+		this._deleteChars = deleteChars;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0x05);
-		writeS(_account);
-		writeC(_size);
-		writeD(_deleteChars.length);
-		for (int i : _deleteChars)
+		this.writeC(0x05);
+		this.writeS(this._account);
+		this.writeC(this._size);
+		this.writeD(this._deleteChars.length);
+		for (int i : this._deleteChars)
 		{
-			writeD(i);
+			this.writeD(i);
 		}
 	}
 }

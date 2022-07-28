@@ -11,7 +11,7 @@ public class RequestPCCafeCouponUse extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_unknown = readS();
+		this._unknown = this.readS();
 	}
 
 	@Override

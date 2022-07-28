@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="UTF-16"?>
+<?xml-stylesheet type="text/xml" href="eventdata.xsl" ?>
+<L2EventData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="urn:L2EventDataNamespace"
+             xsi:schemaLocation="urn:L2EventDataNamespace eventdata.xsd">
+
+<!-- g_2011_christmas 크리스마스 트리 축제 2011 정홍섭 -->
+  <DropEvent Name="g_2011_christmas" Register="true">
+    <Drop Tick="60">
+      <DropTimes>
+        <Period Start="2011-01-26T18:00:00" End="2011-12-30T07:00:00"/>
+      </DropTimes>
+      <Items DropSequence="fix" DropProb="100.0">
+        <Item Name="g_santagirl_red_sock" Amount="160" Prob="100"/>
+      </Items>
+      <TimeVariables>
+        <TimeVariable Start="0" End="2" Variable="3"/>
+        <TimeVariable Start="2" End="18" Variable="1"/>
+        <TimeVariable Start="18" End="24" Variable="3"/>
+      </TimeVariables>
+    </Drop>
+
+    <NPC Tick="60" Start="2011-01-26T18:00:00" End="2011-12-30T07:00:00">
+      <SpawnTimes MakerEventName="g_2011_christmas">
+        <SpawnTime Start="2011-01-26T18:00:00" End="2011-12-30T07:00:00"/>
+      </SpawnTimes>
+    </NPC>
+  </DropEvent>
+
+<!-- g_2011_christmas 행복한 케이크 이벤트 2011 NCJ10주년 정홍섭 -->
+  <DropEvent Name="g_cake_event" Register="true">
+    <Drop Tick="10">
+      <TicksPerPlayer>
+        <TickValue MinPlayer="0" MaxPlayer="1500" Variable="30"/>
+        <TickValue MinPlayer="1501" MaxPlayer="2000" Variable="25"/>
+        <TickValue MinPlayer="2001" MaxPlayer="2500" Variable="20"/>
+        <TickValue MinPlayer="2501" MaxPlayer="3000" Variable="18"/>
+        <TickValue MinPlayer="3001" MaxPlayer="3500" Variable="15"/>
+        <TickValue MinPlayer="3501" MaxPlayer="4500" Variable="12"/>
+        <TickValue MinPlayer="4501" MaxPlayer="9999" Variable="10"/>
+      </TicksPerPlayer>
+      <DropTimes>
+        <Period Start="2011-10-01T00:00:00" End="2011-11-30T23:59:59"/>
+      </DropTimes>
+      <Items DropSequence="fix" DropProb="100.0">
+        <Item Name="ev_happy_dark_chocolate" Amount="10" Prob="100.0"/>
+        <Item Name="ev_happy_white_chocolate" Amount="10" Prob="100.0"/>
+        <Item Name="ev_happy_whipped_cream" Amount="5" Prob="100.0"/>
+      </Items>
+	 <TimeVariables>
+	  <TimeVariable Start="0" End="24" Variable="1" /> 
+	 </TimeVariables>
+    </Drop>
+
+    <NPC Tick="60" Start="2011-10-01T00:00:00" End="2011-11-30T23:59:59">
+      <SpawnTimes MakerEventName="g_cake_event">
+        <SpawnTime Start="2011-10-01T00:00:00" End="2011-11-30T23:59:59"/>
+      </SpawnTimes>
+    </NPC>
+</DropEvent>
+<WorldEvent Name="ev_happy_cake" Register="true" EventId="20110323" >  
+      <EventTimes>
+           <Period Start="2011-10-01T00:00:00" End="2011-11-30T23:59:59"/>
+      </EventTimes>
+</WorldEvent>
+
+<!-- event_watermelon 왕수박 이벤트 _090819 김이영 -->
+  <DropEvent Name="event_watermelon" Register="true">
+    <Drop Tick="60">
+      <DropTimes>
+        <Period Start="2009-08-24T09:40:00" End="2009-08-31T10:00:00"/>
+      </DropTimes>
+      <Items DropSequence="fix">
+        <Item Name="bind_small_watermelon_seed" Amount="50" Prob="100.0"/>
+        <Item Name="bind_honey_watermelon_seed" Amount="1" Prob="100.0"/>
+        <Item Name="gourd_nectar1" Amount="359" Prob="100.0"/>
+      </Items>
+      <TimeVariables>
+        <TimeVariable Start="0" End="2" Variable="3"/>
+        <TimeVariable Start="2" End="18" Variable="1"/>
+        <TimeVariable Start="18" End="24" Variable="3"/>
+      </TimeVariables>
+    </Drop>
+
+    <NPC Tick="60" Start="2009-08-24T09:40:00" End="2009-09-09T07:00:00">
+      <SpawnTimes MakerEventName="ev_watermelon1">
+        <SpawnTime Start="2009-08-24T09:40:00" End="2009-09-09T07:00:00"/>
+      </SpawnTimes>
+    </NPC>
+  </DropEvent>
+  
+   <!-- event_julyseven 칠월칠석 프로모션 "오작교 지킴이" 견우의 사랑 주문서 드랍 _090826 김이영 -->
+  <DropEvent Name="event_julyseven2" Register="true">
+    <Drop Tick="3600">
+      <DropTimes>
+        <Period Start="2009-08-26T14:00:00" End="2009-09-23T07:00:00"/>
+      </DropTimes>
+      <Items DropSequence="fix">
+        <Item Name="ev_altair_enchant_scroll" Amount="33" Prob="100.0"/>
+      </Items>
+      <TimeVariables>
+        <TimeVariable Start="0" End="2" Variable="3"/>
+        <TimeVariable Start="2" End="18" Variable="1"/>
+        <TimeVariable Start="18" End="24" Variable="3"/>
+      </TimeVariables>
+    </Drop>
+
+    <NPC Tick="60" Start="2009-08-26T14:00:00" End="2009-10-28T07:00:00">
+      <SpawnTimes MakerEventName="event_julyseven2">
+        <SpawnTime Start="2009-08-26T14:00:00" End="2009-10-28T07:00:00"/>
+      </SpawnTimes>
+    </NPC>
+  </DropEvent>
+  
+ <DropEvent Name="ai_event_pierre_baguette" Register="true">
+ <Drop Tick="10">
+ <DropTimes>
+  <Period Start="2009-09-20T10:00:00" End="2009-09-23T07:00:00" /> 
+  </DropTimes>
+ <Items DropSequence="fix">
+  <Item Name="event_herb_of_cream" Amount="5" Prob="100.0" /> 
+  <Item Name="event_herb_of_cheesecake" Amount="12" Prob="100.0" /> 
+  <Item Name="event_herb_of_baguette" Amount="15" Prob="100.0" /> 
+  </Items>
+ <TimeVariables>
+  <TimeVariable Start="0" End="2" Variable="2" /> 
+  <TimeVariable Start="2" End="18" Variable="1" /> 
+  <TimeVariable Start="18" End="24" Variable="2" /> 
+  </TimeVariables>
+  </Drop>
+  </DropEvent>
+
+   <!-- event_six_party 6주년 큐브 이벤트 "6주년 파티 매니저_[event_six_party_manager]" _090930 김이영 -->
+
+  <DropEvent Name="event_six_party2" Register="true">
+    <Drop Tick="3600">
+      <DropTimes>
+        <Period Start="2009-09-18T18:00:00" End="2009-10-28T07:00:00"/>
+      </DropTimes>
+      <Items DropSequence="fix">
+        <Item Name="ev_altair_enchant_scroll" Amount="33" Prob="0"/>
+      </Items>
+      <TimeVariables>
+        <TimeVariable Start="0" End="2" Variable="3"/>
+        <TimeVariable Start="2" End="18" Variable="1"/>
+        <TimeVariable Start="18" End="24" Variable="3"/>
+      </TimeVariables>
+    </Drop>
+ 
+    <NPC Tick="60" Start="2009-09-18T14:00:00" End="2009-10-28T07:00:00">
+      <SpawnTimes MakerEventName="event_six_party1">
+        <SpawnTime Start="2009-09-18T14:00:00" End="2009-10-28T07:00:00"/>
+      </SpawnTimes>
+    </NPC>
+  </DropEvent>
+
+  <!-- event_halloween 할로윈 이벤트 _091028 황석윤 -->
+  
+  <DropEvent Name="event_hw5" Register="true">
+    <Drop Tick="60">
+      <DropTimes>
+        <Period Start="2009-10-28T08:00:00" End="2009-11-11T07:00:00"/>
+      </DropTimes>
+      <Items DropSequence="fix">
+        <Item Name="ev_scroll_of_wooldie" Amount="100" Prob="100.0"/>
+        <Item Name="ev_scroll_of_berdandi" Amount="100" Prob="100.0"/>
+      </Items>
+      <TimeVariables>
+        <TimeVariable Start="0" End="2" Variable="3"/>
+        <TimeVariable Start="2" End="18" Variable="1"/>
+        <TimeVariable Start="18" End="24" Variable="3"/>
+      </TimeVariables>
+    </Drop>
+    <NPC Tick="60" Start="2009-10-28T08:00:00" End="2009-11-25T07:00:00">
+      <SpawnTimes MakerEventName="event_hw5">
+        <SpawnTime Start="2009-10-28T08:00:00" End="2009-11-25T07:00:00"/>
+      </SpawnTimes>
+    </NPC>
+  </DropEvent>
+
+  <!-- event_save_tiger 백호살려라_100118 문성현 -->
+  <DropEvent Name="ev_save_tiger" Register="true">
+    <Drop Tick="20">
+      <DropTimes>
+        <Period Start="2010-02-01T07:00:00" End="2010-02-24T07:00:00"/>
+      </DropTimes>
+      <Items DropSequence="fix" DropProb="100.0">
+        <Item Name="ev_scroll_of_tiger_c" Amount="50" Prob="100.0"/>
+        <Item Name="ev_scroll_of_tiger_d" Amount="25" Prob="100.0"/>
+        <Item Name="vitamin_of_cupid_event1" Amount="100" Prob="100.0"/>
+      </Items>
+      <TimeVariables>
+        <TimeVariable Start="0" End="2" Variable="1"/>
+        <TimeVariable Start="2" End="18" Variable="1"/>
+        <TimeVariable Start="18" End="24" Variable="4"/>
+      </TimeVariables>
+    </Drop>
+    <NPC Tick="60" Start="2010-02-01T07:00:00" End="2010-02-24T07:00:00">
+      <SpawnTimes MakerEventName="ev_save_tiger">
+        <SpawnTime Start="2010-02-01T07:00:00" End="2010-02-24T07:00:00"/>
+      </SpawnTimes>
+    </NPC>
+  </DropEvent>
+
+  <!-- event_gd1_item_give GD1 운명의 힘, 장착 아이템 지급 이벤트 _110501 배윤수 -->
+  <DropEvent Name="event_gd1_give_item5" Register="true">
+    <Drop Tick="60">
+      <DropTimes>
+        <Period Start="2011-05-26T08:00:00" End="2011-05-27T16:00:00"/>
+      </DropTimes>
+      <Items DropSequence="fix">
+        <Item Name="ev_altair_enchant_scroll" Amount="33" Prob="0"/>
+      </Items>
+      <TimeVariables>
+        <TimeVariable Start="0" End="2" Variable="3"/>
+        <TimeVariable Start="2" End="18" Variable="1"/>
+        <TimeVariable Start="18" End="24" Variable="3"/>
+      </TimeVariables>
+    </Drop>
+
+    <NPC Tick="60" Start="2011-05-26T08:00:00" End="2011-05-27T16:00:00">
+      <SpawnTimes MakerEventName="event_gd1_give_item5">
+        <SpawnTime Start="2011-05-26T08:00:00" End="2011-05-27T16:00:00"/>
+      </SpawnTimes>
+    </NPC>
+  </DropEvent>
+
+  <!-- tersi_event  GD1 테르시의 빛 이벤트  -->
+  <AgathionDropEvent Name="tersi_event" AgathionId="32" AgathionLevel="1" NeedAgathionCount="500" Register="true">
+    <Drop Tick="60">
+      <DropTimes>
+        <Period Start="2011-07-20T08:00:00" End="2011-08-10T16:00:00"/>
+      </DropTimes>
+      <Items DropSequence="fix" DropProb="100.0">
+	<Item Name="tersi_light_fragment" Amount="1500" CondProb="2.0,20.0,20.0,40.0"/>
+      </Items>
+      <TimeVariables>
+        <TimeVariable Start="0" End="2" Variable="1"/>
+        <TimeVariable Start="2" End="18" Variable="1"/>
+        <TimeVariable Start="18" End="24" Variable="4"/>
+      </TimeVariables>
+    </Drop>
+
+  <NPC Tick="60" Start="2011-07-20T08:00:00" End="2011-08-10T08:00:00">
+    <SpawnTimes MakerEventName="tersi_event">
+      <SpawnTime Start="2011-07-20T08:00:00" End="2011-08-10T08:00:00"/>
+    </SpawnTimes>
+  </NPC>
+  </AgathionDropEvent>
+
+  <CoretimeTeleport Name="CoretimeTeleport" Register="true" Tick="0" Start="2009-01-01T00:00:00" End="2019-12-31T23:59:59">
+    <Coretime Start="20:00:00" End="23:59:59" PriceRatio="50"/>
+    <WeekDay Start="1" End="6"/>
+  </CoretimeTeleport>
+
+  <FishingSetting Name="FishingSetting" Register="true" Tick="10" Start="2009-01-01T00:00:00" End="2019-12-31T23:59:59" EventMinutes="10080" BreaktimeMinutes="240" RecordTime="1" RewardTime="1">
+    <Prizes>
+      <Prize ItemName="adena" Amount="800000"/>
+      <Prize ItemName="adena" Amount="500000"/>
+      <Prize ItemName="adena" Amount="300000"/>
+      <Prize ItemName="adena" Amount="200000"/>
+      <Prize ItemName="adena" Amount="100000"/>
+    </Prizes>
+  </FishingSetting>
+
+  <PCCafeCouponEvent Name="PCCafeCouponEvent" Register="false" Tick="60" Ordinal="-1">
+    <EventPeriod>
+      <Event Start="2009-01-01T00:00:00" End="2009-12-31T23:59:59"/>
+      <AddedEvent Start="2009-03-25T00:00:00" End="2009-12-31T23:59:59"/>
+    </EventPeriod>
+    <CouponItems>
+      <CouponItem Level="20" ItemName="falchion"/>
+      <CouponItem Level="40" ItemName="bastard_sword"/>
+      <CouponItem Level="52" ItemName="tsurugi"/>
+      <CouponItem Level="61" ItemName="sword_of_damascus"/>
+      <CouponItem Level="76" ItemName="god's_blade"/>
+    </CouponItems>
+  </PCCafeCouponEvent>
+
+  <PCCafeSetting Name="PCCafeSetting" Register="true" Tick="60" SettingSec="300">
+    <UsingPeriods>
+      <Period Start="2009-01-01T00:00:00" End="2019-04-08T23:59:59"/>
+    </UsingPeriods>
+    <PCCafe Point="100" RandomPointProb="0">
+      <GettingPeriod Start="2009-01-01T00:00:00" End="2019-12-31T23:59:59"/>
+    </PCCafe>
+    <HomePCCafe Point="100" RandomPointProb="0" GettingSet="false" GettingMaxSet="false" GettingMaxCount="36">
+      <GettingPeriod Start="2009-01-01T00:00:00" End="2019-12-31T23:59:59"/>
+    </HomePCCafe>
+    <DailyPCCafe Point="1000">
+      <GettingPeriod Start="2009-03-25T00:00:00" End="2009-06-03T23:59:59"/>
+    </DailyPCCafe>
+  </PCCafeSetting>
+
+  <VoteSystem Name="VoteSystem" Register="true" Tick="60" Start="1900-01-01T00:00:00" End="2037-12-31T23:59:59" GetVoteCount="3600" BonusTimeLimit="28800" BonusRate="100" PlayTime="14400" Value="4">
+  </VoteSystem>
+
+  <WorldEvent Name="event_hw5_world" Register="true" EventId="20091031" >  
+      <EventTimes>
+           <Period Start="2009-10-28T08:00:00" End="2009-11-19T00:01:00"/>
+      </EventTimes>
+     <RankingCheck>
+          <RankingCheckTime Time="23:59:58"/>  
+     </RankingCheck>
+  </WorldEvent> 
+
+  
+</L2EventData>

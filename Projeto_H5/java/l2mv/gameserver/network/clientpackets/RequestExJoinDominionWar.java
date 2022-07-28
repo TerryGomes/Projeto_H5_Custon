@@ -24,21 +24,21 @@ public class RequestExJoinDominionWar extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_dominionId = readD();
-		_clanRegistration = readD() == 1;
-		_isRegistration = readD() == 1;
+		this._dominionId = this.readD();
+		this._clanRegistration = this.readD() == 1;
+		this._isRegistration = this.readD() == 1;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		Dominion dominion = ResidenceHolder.getInstance().getResidence(Dominion.class, _dominionId);
+		Dominion dominion = ResidenceHolder.getInstance().getResidence(Dominion.class, this._dominionId);
 		if (dominion == null)
 		{
 			return;
@@ -77,17 +77,17 @@ public class RequestExJoinDominionWar extends L2GameClientPacket
 			}
 		}
 
-		if (_isRegistration)
+		if (this._isRegistration)
 		{
 			// check whether you can include - from the first 6 months of the character...
 			// If Regan as a mercenary on clan / single regatta in stock
-			if ((clanReg > 0) || (!_clanRegistration && ((clanReg > 0) || (playerReg > 0))))
+			if ((clanReg > 0) || (!this._clanRegistration && ((clanReg > 0) || (playerReg > 0))))
 			{
 				player.sendPacket(SystemMsg.YOUVE_ALREADY_REQUESTED_A_TERRITORY_WAR_IN_ANOTHER_TERRITORY_ELSEWHERE);
 				return;
 			}
 
-			if (_clanRegistration)
+			if (this._clanRegistration)
 			{
 				if (!player.hasPrivilege(Privilege.CS_FS_SIEGE_WAR))
 				{
@@ -116,12 +116,12 @@ public class RequestExJoinDominionWar extends L2GameClientPacket
 		}
 		else
 		{
-			if ((_clanRegistration && (clanReg != dominion.getId())) || (!_clanRegistration && (playerReg != dominion.getId())))
+			if ((this._clanRegistration && (clanReg != dominion.getId())) || (!this._clanRegistration && (playerReg != dominion.getId())))
 			{
 				return;
 			}
 
-			if (_clanRegistration)
+			if (this._clanRegistration)
 			{
 				if (!player.hasPrivilege(Privilege.CS_FS_SIEGE_WAR))
 				{
@@ -144,6 +144,6 @@ public class RequestExJoinDominionWar extends L2GameClientPacket
 			}
 		}
 
-		player.sendPacket(new ExReplyRegisterDominion(dominion, true, _isRegistration, _clanRegistration));
+		player.sendPacket(new ExReplyRegisterDominion(dominion, true, this._isRegistration, this._clanRegistration));
 	}
 }

@@ -32,54 +32,54 @@ public class PlayerAuthResponse extends ReceivablePacket
 	@Override
 	public void readImpl()
 	{
-		account = readS();
-		authed = readC() == 1;
-		if (authed)
+		this.account = this.readS();
+		this.authed = this.readC() == 1;
+		if (this.authed)
 		{
-			playOkId1 = readD();
-			playOkId2 = readD();
-			loginOkId1 = readD();
-			loginOkId2 = readD();
-			bonus = readF();
-			bonusExpire = readD();
+			this.playOkId1 = this.readD();
+			this.playOkId2 = this.readD();
+			this.loginOkId1 = this.readD();
+			this.loginOkId2 = this.readD();
+			this.bonus = this.readF();
+			this.bonusExpire = this.readD();
 		}
-		_serverId = readD();
-		hwid = readS();
+		this._serverId = this.readD();
+		this.hwid = this.readS();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		final SessionKey skey = new SessionKey(loginOkId1, loginOkId2, playOkId1, playOkId2);
-		final GameClient client = AuthServerCommunication.getInstance().removeWaitingClient(account);
+		final SessionKey skey = new SessionKey(this.loginOkId1, this.loginOkId2, this.playOkId1, this.playOkId2);
+		final GameClient client = AuthServerCommunication.getInstance().removeWaitingClient(this.account);
 		if (client == null)
 		{
 			return;
 		}
 
-		if (authed && client.getSessionKey().equals(skey))
+		if (this.authed && client.getSessionKey().equals(skey))
 		{
 			client.setAuthed(true);
 			client.setState(GameClient.GameClientState.AUTHED);
 			switch (Config.SERVICES_RATE_TYPE)
 			{
 			case Bonus.NO_BONUS:
-				bonus = 0;
-				bonusExpire = 0;
+				this.bonus = 0;
+				this.bonusExpire = 0;
 				break;
 			case Bonus.BONUS_GLOBAL_ON_GAMESERVER:
-				int[] bonuses = AccountBonusDAO.getInstance().select(account);
-				bonus = bonuses[0];
-				bonusExpire = bonuses[1];
+				int[] bonuses = AccountBonusDAO.getInstance().select(this.account);
+				this.bonus = bonuses[0];
+				this.bonusExpire = bonuses[1];
 				break;
 			}
-			client.setBonus((int) bonus);
-			client.setBonusExpire(bonusExpire);
-			client.setServerId(_serverId);
+			client.setBonus((int) this.bonus);
+			client.setBonusExpire(this.bonusExpire);
+			client.setServerId(this._serverId);
 
 			if (ConfigHolder.getBool("EnableMerge"))
 			{
-				DataMerge.getInstance().checkMergeToComplete(account);
+				DataMerge.getInstance().checkMergeToComplete(this.account);
 			}
 
 			GameClient oldClient = AuthServerCommunication.getInstance().addAuthedClient(client);
@@ -98,7 +98,7 @@ public class PlayerAuthResponse extends ReceivablePacket
 				}
 			}
 
-			sendPacket(new PlayerInGame(client.getLogin()));
+			this.sendPacket(new PlayerInGame(client.getLogin()));
 
 			CharacterSelectionInfo csi = new CharacterSelectionInfo(client.getLogin(), client.getSessionKey().playOkID1);
 			client.sendPacket(csi);

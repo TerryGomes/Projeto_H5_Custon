@@ -6,14 +6,14 @@ public class JoinPledge extends L2GameServerPacket
 
 	public JoinPledge(int pledgeId)
 	{
-		_pledgeId = pledgeId;
+		this._pledgeId = pledgeId;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x2d);
+		this.writeC(0x2d);
 
-		writeD(_pledgeId);
+		this.writeD(this._pledgeId);
 	}
 }

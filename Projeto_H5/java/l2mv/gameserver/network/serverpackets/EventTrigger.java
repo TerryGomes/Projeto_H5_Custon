@@ -11,15 +11,15 @@ public class EventTrigger extends L2GameServerPacket
 
 	public EventTrigger(int trapId, boolean active)
 	{
-		_trapId = trapId;
-		_active = active;
+		this._trapId = trapId;
+		this._active = active;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xCF);
-		writeD(_trapId); // trap object id
-		writeC(_active ? 1 : 0); // trap activity 1 or 0
+		this.writeC(0xCF);
+		this.writeD(this._trapId); // trap object id
+		this.writeC(this._active ? 1 : 0); // trap activity 1 or 0
 	}
 }

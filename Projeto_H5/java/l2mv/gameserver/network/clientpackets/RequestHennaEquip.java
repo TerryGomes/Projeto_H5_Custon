@@ -16,19 +16,19 @@ public class RequestHennaEquip extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_symbolId = readD();
+		this._symbolId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		Henna temp = HennaHolder.getInstance().getHenna(_symbolId);
+		Henna temp = HennaHolder.getInstance().getHenna(this._symbolId);
 		if (temp == null || !temp.isForThisClass(player))
 		{
 			player.sendPacket(SystemMsg.THE_SYMBOL_CANNOT_BE_DRAWN);

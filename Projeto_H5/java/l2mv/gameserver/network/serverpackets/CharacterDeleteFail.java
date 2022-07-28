@@ -9,13 +9,13 @@ public class CharacterDeleteFail extends L2GameServerPacket
 
 	public CharacterDeleteFail(int error)
 	{
-		_error = error;
+		this._error = error;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x1e);
-		writeD(_error);
+		this.writeC(0x1e);
+		this.writeD(this._error);
 	}
 }

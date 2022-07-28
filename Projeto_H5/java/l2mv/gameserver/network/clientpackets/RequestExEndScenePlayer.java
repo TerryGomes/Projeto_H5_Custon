@@ -9,18 +9,18 @@ public class RequestExEndScenePlayer extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_movieId = readD();
+		this._movieId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
-		if (!activeChar.isInMovie() || activeChar.getMovieId() != _movieId)
+		if (!activeChar.isInMovie() || activeChar.getMovieId() != this._movieId)
 		{
 			activeChar.sendActionFailed();
 			return;

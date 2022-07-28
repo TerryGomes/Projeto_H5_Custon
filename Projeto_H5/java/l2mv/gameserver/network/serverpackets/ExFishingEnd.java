@@ -14,15 +14,15 @@ public class ExFishingEnd extends L2GameServerPacket
 
 	public ExFishingEnd(Player character, boolean win)
 	{
-		_charId = character.getObjectId();
-		_win = win;
+		this._charId = character.getObjectId();
+		this._win = win;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x1f);
-		writeD(_charId);
-		writeC(_win ? 1 : 0);
+		this.writeEx(0x1f);
+		this.writeD(this._charId);
+		this.writeC(this._win ? 1 : 0);
 	}
 }

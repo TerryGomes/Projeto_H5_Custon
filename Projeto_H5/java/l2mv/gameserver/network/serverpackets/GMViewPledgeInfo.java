@@ -23,77 +23,77 @@ public class GMViewPledgeInfo extends L2GameServerPacket
 			{
 				continue;
 			}
-			char_name = member.getName();
-			clan_level = member.getLevel();
-			clan_id = member.getClassId();
-			clan_crest_id = member.isOnline() ? member.getObjectId() : 0;
-			rep = member.getSponsor() != 0 ? 1 : 0;
-			infos.add(new PledgeMemberInfo(char_name, clan_level, clan_id, clan_crest_id, member.getSex(), 1, rep));
+			this.char_name = member.getName();
+			this.clan_level = member.getLevel();
+			this.clan_id = member.getClassId();
+			this.clan_crest_id = member.isOnline() ? member.getObjectId() : 0;
+			this.rep = member.getSponsor() != 0 ? 1 : 0;
+			this.infos.add(new PledgeMemberInfo(this.char_name, this.clan_level, this.clan_id, this.clan_crest_id, member.getSex(), 1, this.rep));
 		}
 
-		char_name = activeChar.getName();
-		clan_id = clan.getClanId();
-		clan_name = clan.getName();
-		leader_name = clan.getLeaderName();
-		clan_crest_id = clan.getCrestId();
-		clan_level = clan.getLevel();
-		hasCastle = clan.getCastle();
-		hasHideout = clan.getHasHideout();
-		hasFortress = clan.getHasFortress();
-		rank = clan.getRank();
-		rep = clan.getReputationScore();
-		ally_id = clan.getAllyId();
+		this.char_name = activeChar.getName();
+		this.clan_id = clan.getClanId();
+		this.clan_name = clan.getName();
+		this.leader_name = clan.getLeaderName();
+		this.clan_crest_id = clan.getCrestId();
+		this.clan_level = clan.getLevel();
+		this.hasCastle = clan.getCastle();
+		this.hasHideout = clan.getHasHideout();
+		this.hasFortress = clan.getHasFortress();
+		this.rank = clan.getRank();
+		this.rep = clan.getReputationScore();
+		this.ally_id = clan.getAllyId();
 		if (clan.getAlliance() != null)
 		{
-			ally_name = clan.getAlliance().getAllyName();
-			ally_crest_id = clan.getAlliance().getAllyCrestId();
+			this.ally_name = clan.getAlliance().getAllyName();
+			this.ally_crest_id = clan.getAlliance().getAllyCrestId();
 		}
 		else
 		{
-			ally_name = "";
-			ally_crest_id = 0;
+			this.ally_name = "";
+			this.ally_crest_id = 0;
 		}
-		atWar = clan.isAtWar();
+		this.atWar = clan.isAtWar();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x96);
+		this.writeC(0x96);
 
-		writeS(char_name);
-		writeD(clan_id);
-		writeD(0x00);
-		writeS(clan_name);
-		writeS(leader_name);
+		this.writeS(this.char_name);
+		this.writeD(this.clan_id);
+		this.writeD(0x00);
+		this.writeS(this.clan_name);
+		this.writeS(this.leader_name);
 
-		writeD(clan_crest_id);
-		writeD(clan_level);
-		writeD(hasCastle);
-		writeD(hasHideout);
-		writeD(hasFortress);
-		writeD(rank);
-		writeD(rep);
-		writeD(0);
-		writeD(0);
-		writeD(ally_id);
-		writeS(ally_name);
-		writeD(ally_crest_id);
-		writeD(atWar);
-		writeD(0); // Territory castle ID
+		this.writeD(this.clan_crest_id);
+		this.writeD(this.clan_level);
+		this.writeD(this.hasCastle);
+		this.writeD(this.hasHideout);
+		this.writeD(this.hasFortress);
+		this.writeD(this.rank);
+		this.writeD(this.rep);
+		this.writeD(0);
+		this.writeD(0);
+		this.writeD(this.ally_id);
+		this.writeS(this.ally_name);
+		this.writeD(this.ally_crest_id);
+		this.writeD(this.atWar);
+		this.writeD(0); // Territory castle ID
 
-		writeD(infos.size());
-		for (PledgeMemberInfo _info : infos)
+		this.writeD(this.infos.size());
+		for (PledgeMemberInfo _info : this.infos)
 		{
-			writeS(_info._name);
-			writeD(_info.level);
-			writeD(_info.class_id);
-			writeD(_info.sex);
-			writeD(_info.race);
-			writeD(_info.online);
-			writeD(_info.sponsor);
+			this.writeS(_info._name);
+			this.writeD(_info.level);
+			this.writeD(_info.class_id);
+			this.writeD(_info.sex);
+			this.writeD(_info.race);
+			this.writeD(_info.online);
+			this.writeD(_info.sponsor);
 		}
-		infos.clear();
+		this.infos.clear();
 	}
 
 	static class PledgeMemberInfo
@@ -103,13 +103,13 @@ public class GMViewPledgeInfo extends L2GameServerPacket
 
 		public PledgeMemberInfo(String __name, int _level, int _class_id, int _online, int _sex, int _race, int _sponsor)
 		{
-			_name = __name;
-			level = _level;
-			class_id = _class_id;
-			online = _online;
-			sex = _sex;
-			race = _race;
-			sponsor = _sponsor;
+			this._name = __name;
+			this.level = _level;
+			this.class_id = _class_id;
+			this.online = _online;
+			this.sex = _sex;
+			this.race = _race;
+			this.sponsor = _sponsor;
 		}
 	}
 }

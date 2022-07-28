@@ -6,15 +6,15 @@ public class ExAskCoupleAction extends L2GameServerPacket
 
 	public ExAskCoupleAction(int objectId, int socialId)
 	{
-		_objectId = objectId;
-		_socialId = socialId;
+		this._objectId = objectId;
+		this._socialId = socialId;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xBB);
-		writeD(_socialId);
-		writeD(_objectId);
+		this.writeEx(0xBB);
+		this.writeD(this._socialId);
+		this.writeD(this._objectId);
 	}
 }

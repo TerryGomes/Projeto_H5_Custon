@@ -6,13 +6,13 @@ public class ExNavitAdventPointInfo extends L2GameServerPacket
 
 	public ExNavitAdventPointInfo(int points)
 	{
-		_points = points;
+		this._points = points;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0xDF);
-		writeD(_points);
+		this.writeEx(0xDF);
+		this.writeD(this._points);
 	}
 }

@@ -23,23 +23,23 @@ public class ExReplySentPost extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xAD);
+		this.writeEx(0xAD);
 
-		writeD(mail.getMessageId()); // id письма
-		writeD(mail.isPayOnDelivery() ? 1 : 0); // 1 - письмо с запросом оплаты, 0 - просто письмо
+		this.writeD(this.mail.getMessageId()); // id письма
+		this.writeD(this.mail.isPayOnDelivery() ? 1 : 0); // 1 - письмо с запросом оплаты, 0 - просто письмо
 
-		writeS(mail.getReceiverName()); // кому
-		writeS(mail.getTopic()); // топик
-		writeS(mail.getBody()); // тело
+		this.writeS(this.mail.getReceiverName()); // кому
+		this.writeS(this.mail.getTopic()); // топик
+		this.writeS(this.mail.getBody()); // тело
 
-		writeD(mail.getAttachments().size()); // количество приложенных вещей
-		for (ItemInstance item : mail.getAttachments())
+		this.writeD(this.mail.getAttachments().size()); // количество приложенных вещей
+		for (ItemInstance item : this.mail.getAttachments())
 		{
-			writeItemInfo(item);
-			writeD(item.getObjectId());
+			this.writeItemInfo(item);
+			this.writeD(item.getObjectId());
 		}
 
-		writeQ(mail.getPrice()); // для писем с оплатой - цена
-		writeD(0); // ?
+		this.writeQ(this.mail.getPrice()); // для писем с оплатой - цена
+		this.writeD(0); // ?
 	}
 }

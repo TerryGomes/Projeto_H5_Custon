@@ -13,25 +13,25 @@ public class ExAirShipTeleportList extends L2GameServerPacket
 
 	public ExAirShipTeleportList(ClanAirShip ship)
 	{
-		_fuel = ship.getCurrentFuel();
-		_airports = ship.getDock().getTeleportList();
+		this._fuel = ship.getCurrentFuel();
+		this._airports = ship.getDock().getTeleportList();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x9A);
-		writeD(_fuel); // current fuel
-		writeD(_airports.size());
+		this.writeEx(0x9A);
+		this.writeD(this._fuel); // current fuel
+		this.writeD(this._airports.size());
 
-		for (int i = 0; i < _airports.size(); i++)
+		for (int i = 0; i < this._airports.size(); i++)
 		{
-			BoatPoint point = _airports.get(i);
-			writeD(i - 1); // AirportID
-			writeD(point.getFuel()); // need fuel
-			writeD(point.x); // Airport x
-			writeD(point.y); // Airport y
-			writeD(point.z); // Airport z
+			BoatPoint point = this._airports.get(i);
+			this.writeD(i - 1); // AirportID
+			this.writeD(point.getFuel()); // need fuel
+			this.writeD(point.x); // Airport x
+			this.writeD(point.y); // Airport y
+			this.writeD(point.z); // Airport z
 		}
 	}
 }

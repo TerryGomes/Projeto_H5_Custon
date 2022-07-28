@@ -24,21 +24,21 @@ public class AuthLogin extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_loginName = readS(32).toLowerCase();
-		_playKey2 = readD();
-		_playKey1 = readD();
-		_loginKey1 = readD();
-		_loginKey2 = readD();
+		this._loginName = this.readS(32).toLowerCase();
+		this._playKey2 = this.readD();
+		this._playKey1 = this.readD();
+		this._loginKey1 = this.readD();
+		this._loginKey2 = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		GameClient client = getClient();
+		GameClient client = this.getClient();
 
-		SessionKey key = new SessionKey(_loginKey1, _loginKey2, _playKey1, _playKey2);
+		SessionKey key = new SessionKey(this._loginKey1, this._loginKey2, this._playKey1, this._playKey2);
 		client.setSessionId(key);
-		client.setLoginName(_loginName);
+		client.setLoginName(this._loginName);
 
 		if (Shutdown.getInstance().getMode() != Shutdown.ShutdownMode.NONE && Shutdown.getInstance().getSeconds() <= 15)
 		{

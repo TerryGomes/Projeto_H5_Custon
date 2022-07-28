@@ -52,11 +52,11 @@ public class CastleSiegeInfo extends L2GameServerPacket
 		long siegeTimeMillis = castle.getSiegeDate().getTimeInMillis();
 		if (siegeTimeMillis == 0)
 		{
-			_nextTimeMillis = siegeEvent.getNextSiegeTimes();
+			this._nextTimeMillis = siegeEvent.getNextSiegeTimes();
 		}
 		else
 		{
-			_startTime = (int) (siegeTimeMillis / 1000);
+			this._startTime = (int) (siegeTimeMillis / 1000);
 		}
 	}
 
@@ -64,24 +64,24 @@ public class CastleSiegeInfo extends L2GameServerPacket
 	{
 		this((Residence) ch, player);
 
-		_startTime = (int) (ch.getSiegeDate().getTimeInMillis() / 1000);
+		this._startTime = (int) (ch.getSiegeDate().getTimeInMillis() / 1000);
 	}
 
 	protected CastleSiegeInfo(Residence residence, Player player)
 	{
-		_id = residence.getId();
-		_ownerObjectId = residence.getOwnerId();
+		this._id = residence.getId();
+		this._ownerObjectId = residence.getOwnerId();
 		Clan owner = residence.getOwner();
 		if (owner != null)
 		{
-			_isLeader = player.isGM() || owner.getLeaderId(Clan.SUBUNIT_MAIN_CLAN) == player.getObjectId();
-			_ownerName = owner.getName();
-			_leaderName = owner.getLeaderName(Clan.SUBUNIT_MAIN_CLAN);
+			this._isLeader = player.isGM() || owner.getLeaderId(Clan.SUBUNIT_MAIN_CLAN) == player.getObjectId();
+			this._ownerName = owner.getName();
+			this._leaderName = owner.getLeaderName(Clan.SUBUNIT_MAIN_CLAN);
 			Alliance ally = owner.getAlliance();
 			if (ally != null)
 			{
-				_allyId = ally.getAllyId();
-				_allyName = ally.getAllyName();
+				this._allyId = ally.getAllyId();
+				this._allyName = ally.getAllyName();
 			}
 		}
 	}
@@ -89,19 +89,19 @@ public class CastleSiegeInfo extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0xC9);
-		writeD(_id);
-		writeD(_isLeader ? 0x01 : 0x00);
-		writeD(_ownerObjectId);
-		writeS(_ownerName); // Clan Name
-		writeS(_leaderName); // Clan Leader Name
-		writeD(_allyId); // Ally ID
-		writeS(_allyName); // Ally Name
-		writeD((int) (Calendar.getInstance().getTimeInMillis() / 1000));
-		writeD((int) _startTime);
-		if (_startTime == 0) // If zero is the cycle
+		this.writeC(0xC9);
+		this.writeD(this._id);
+		this.writeD(this._isLeader ? 0x01 : 0x00);
+		this.writeD(this._ownerObjectId);
+		this.writeS(this._ownerName); // Clan Name
+		this.writeS(this._leaderName); // Clan Leader Name
+		this.writeD(this._allyId); // Ally ID
+		this.writeS(this._allyName); // Ally Name
+		this.writeD((int) (Calendar.getInstance().getTimeInMillis() / 1000));
+		this.writeD((int) this._startTime);
+		if (this._startTime == 0) // If zero is the cycle
 		{
-			writeDD(_nextTimeMillis, true);
+			this.writeDD(this._nextTimeMillis, true);
 		}
 	}
 }

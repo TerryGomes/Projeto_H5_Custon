@@ -10,13 +10,13 @@ public class AnswerPartyLootModification extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_answer = readD();
+		this._answer = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -25,7 +25,7 @@ public class AnswerPartyLootModification extends L2GameClientPacket
 		Party party = activeChar.getParty();
 		if (party != null)
 		{
-			party.answerLootChangeRequest(activeChar, _answer == 1);
+			party.answerLootChangeRequest(activeChar, this._answer == 1);
 		}
 	}
 }

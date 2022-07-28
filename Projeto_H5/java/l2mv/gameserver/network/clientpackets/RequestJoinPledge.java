@@ -17,14 +17,14 @@ public class RequestJoinPledge extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
-		_pledgeType = readD();
+		this._objectId = this.readD();
+		this._pledgeType = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null || activeChar.getClan() == null)
 		{
 			return;
@@ -56,7 +56,7 @@ public class RequestJoinPledge extends L2GameClientPacket
 			return;
 		}
 
-		if (_objectId == activeChar.getObjectId())
+		if (this._objectId == activeChar.getObjectId())
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_ASK_YOURSELF_TO_APPLY_TO_A_CLAN);
 			return;
@@ -68,7 +68,7 @@ public class RequestJoinPledge extends L2GameClientPacket
 			return;
 		}
 
-		GameObject object = activeChar.getVisibleObject(_objectId);
+		GameObject object = activeChar.getVisibleObject(this._objectId);
 		if (object == null || !object.isPlayer())
 		{
 			// Synerge - Support for sending invitations to fake players
@@ -106,15 +106,15 @@ public class RequestJoinPledge extends L2GameClientPacket
 			return;
 		}
 
-		if (_pledgeType == Clan.SUBUNIT_ACADEMY && (member.getLevel() > 40 || member.getClassId().getLevel() > 2))
+		if (this._pledgeType == Clan.SUBUNIT_ACADEMY && (member.getLevel() > 40 || member.getClassId().getLevel() > 2))
 		{
 			activeChar.sendPacket(SystemMsg.TO_JOIN_A_CLAN_ACADEMY_CHARACTERS_MUST_BE_LEVEL_40_OR_BELOW_NOT_BELONG_ANOTHER_CLAN_AND_NOT_YET_COMPLETED_THEIR_2ND_CLASS_TRANSFER);
 			return;
 		}
 
-		if (clan.getUnitMembersSize(_pledgeType) >= clan.getSubPledgeLimit(_pledgeType))
+		if (clan.getUnitMembersSize(this._pledgeType) >= clan.getSubPledgeLimit(this._pledgeType))
 		{
-			if (_pledgeType == 0)
+			if (this._pledgeType == 0)
 			{
 				activeChar.sendPacket(new SystemMessage2(SystemMsg.S1_IS_FULL_AND_CANNOT_ACCEPT_ADDITIONAL_CLAN_MEMBERS_AT_THIS_TIME).addString(clan.getName()));
 			}
@@ -126,7 +126,7 @@ public class RequestJoinPledge extends L2GameClientPacket
 		}
 
 		Request request = new Request(L2RequestType.CLAN, activeChar, member).setTimeout(10000L);
-		request.set("pledgeType", _pledgeType);
+		request.set("pledgeType", this._pledgeType);
 		member.sendPacket(new AskJoinPledge(activeChar.getObjectId(), activeChar.getClan().getName()));
 	}
 }

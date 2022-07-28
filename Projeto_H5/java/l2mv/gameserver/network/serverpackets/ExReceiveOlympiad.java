@@ -23,13 +23,13 @@ public abstract class ExReceiveOlympiad extends L2GameServerPacket
 			OlympiadManager manager = Olympiad._manager;
 			if (manager != null)
 			{
-				_arenaList = new ArrayList<ArenaInfo>();
+				this._arenaList = new ArrayList<ArenaInfo>();
 				for (int i = 0; i < Olympiad.STADIUMS.length; i++)
 				{
 					OlympiadGame game = manager.getOlympiadInstance(i);
 					if (game != null && game.getState() > 0)
 					{
-						_arenaList.add(new ArenaInfo(i, game.getState(), game.getType().ordinal(), game.getTeamName1(), game.getTeamName2()));
+						this._arenaList.add(new ArenaInfo(i, game.getState(), game.getType().ordinal(), game.getTeamName1(), game.getTeamName2()));
 					}
 				}
 			}
@@ -38,22 +38,22 @@ public abstract class ExReceiveOlympiad extends L2GameServerPacket
 		public MatchList(List<ArenaInfo> arenaList)
 		{
 			super(0);
-			_arenaList = arenaList;
+			this._arenaList = arenaList;
 		}
 
 		@Override
 		protected void writeImpl()
 		{
 			super.writeImpl();
-			writeD(_arenaList.size());
-			writeD(0x00); // unknown
-			for (ArenaInfo arena : _arenaList)
+			this.writeD(this._arenaList.size());
+			this.writeD(0x00); // unknown
+			for (ArenaInfo arena : this._arenaList)
 			{
-				writeD(arena._id);
-				writeD(arena._matchType);
-				writeD(arena._status);
-				writeS(arena._name1);
-				writeS(arena._name2);
+				this.writeD(arena._id);
+				this.writeD(arena._matchType);
+				this.writeD(arena._status);
+				this.writeS(arena._name1);
+				this.writeS(arena._name2);
 			}
 		}
 
@@ -65,11 +65,11 @@ public abstract class ExReceiveOlympiad extends L2GameServerPacket
 
 			public ArenaInfo(int id, int status, int match_type, String name1, String name2)
 			{
-				_id = id;
-				_status = status;
-				_matchType = match_type;
-				_name1 = name1;
-				_name2 = name2;
+				this._id = id;
+				this._status = status;
+				this._matchType = match_type;
+				this._name1 = name1;
+				this._name2 = name2;
 			}
 		}
 	}
@@ -84,15 +84,15 @@ public abstract class ExReceiveOlympiad extends L2GameServerPacket
 		public MatchResult(boolean tie, String winnerName)
 		{
 			super(1);
-			_tie = tie;
-			_name = winnerName;
+			this._tie = tie;
+			this._name = winnerName;
 		}
 
 		public void addPlayer(TeamType team, TeamMember member, int gameResultPoints)
 		{
 			int points = Config.OLYMPIAD_OLDSTYLE_STAT ? 0 : member.getStat().getInteger(Olympiad.POINTS, 0);
 
-			addPlayer(team, member.getName(), member.getClanName(), member.getClanId(), member.getClassId(), points, gameResultPoints, (int) member.getDamage());
+			this.addPlayer(team, member.getName(), member.getClanName(), member.getClanId(), member.getClassId(), points, gameResultPoints, (int) member.getDamage());
 		}
 
 		public void addPlayer(TeamType team, String name, String clanName, int clanId, int classId, int points, int resultPoints, int damage)
@@ -100,10 +100,10 @@ public abstract class ExReceiveOlympiad extends L2GameServerPacket
 			switch (team)
 			{
 			case RED:
-				_teamOne.add(new PlayerInfo(name, clanName, clanId, classId, points, resultPoints, damage));
+				this._teamOne.add(new PlayerInfo(name, clanName, clanId, classId, points, resultPoints, damage));
 				break;
 			case BLUE:
-				_teamTwo.add(new PlayerInfo(name, clanName, clanId, classId, points, resultPoints, damage));
+				this._teamTwo.add(new PlayerInfo(name, clanName, clanId, classId, points, resultPoints, damage));
 				break;
 			}
 		}
@@ -112,31 +112,31 @@ public abstract class ExReceiveOlympiad extends L2GameServerPacket
 		protected void writeImpl()
 		{
 			super.writeImpl();
-			writeD(_tie);
-			writeS(_name);
-			writeD(1);
-			writeD(_teamOne.size());
-			for (PlayerInfo playerInfo : _teamOne)
+			this.writeD(this._tie);
+			this.writeS(this._name);
+			this.writeD(1);
+			this.writeD(this._teamOne.size());
+			for (PlayerInfo playerInfo : this._teamOne)
 			{
-				writeS(playerInfo._name);
-				writeS(playerInfo._clanName);
-				writeD(playerInfo._clanId);
-				writeD(playerInfo._classId);
-				writeD(playerInfo._damage);
-				writeD(playerInfo._currentPoints);
-				writeD(playerInfo._gamePoints);
+				this.writeS(playerInfo._name);
+				this.writeS(playerInfo._clanName);
+				this.writeD(playerInfo._clanId);
+				this.writeD(playerInfo._classId);
+				this.writeD(playerInfo._damage);
+				this.writeD(playerInfo._currentPoints);
+				this.writeD(playerInfo._gamePoints);
 			}
-			writeD(2);
-			writeD(_teamTwo.size());
-			for (PlayerInfo playerInfo : _teamTwo)
+			this.writeD(2);
+			this.writeD(this._teamTwo.size());
+			for (PlayerInfo playerInfo : this._teamTwo)
 			{
-				writeS(playerInfo._name);
-				writeS(playerInfo._clanName);
-				writeD(playerInfo._clanId);
-				writeD(playerInfo._classId);
-				writeD(playerInfo._damage);
-				writeD(playerInfo._currentPoints);
-				writeD(playerInfo._gamePoints);
+				this.writeS(playerInfo._name);
+				this.writeS(playerInfo._clanName);
+				this.writeD(playerInfo._clanId);
+				this.writeD(playerInfo._classId);
+				this.writeD(playerInfo._damage);
+				this.writeD(playerInfo._currentPoints);
+				this.writeD(playerInfo._gamePoints);
 			}
 		}
 
@@ -148,13 +148,13 @@ public abstract class ExReceiveOlympiad extends L2GameServerPacket
 
 			public PlayerInfo(String name, String clanName, int clanId, int classId, int currentPoints, int gamePoints, int damage)
 			{
-				_name = name;
-				_clanName = clanName;
-				_clanId = clanId;
-				_classId = classId;
-				_currentPoints = currentPoints;
-				_gamePoints = gamePoints;
-				_damage = damage;
+				this._name = name;
+				this._clanName = clanName;
+				this._clanId = clanId;
+				this._classId = classId;
+				this._currentPoints = currentPoints;
+				this._gamePoints = gamePoints;
+				this._damage = damage;
 			}
 		}
 	}
@@ -163,13 +163,13 @@ public abstract class ExReceiveOlympiad extends L2GameServerPacket
 
 	public ExReceiveOlympiad(int type)
 	{
-		_type = type;
+		this._type = type;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xD4);
-		writeD(_type);
+		this.writeEx(0xD4);
+		this.writeD(this._type);
 	}
 }

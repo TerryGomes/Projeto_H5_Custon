@@ -24,16 +24,16 @@ public class AddTradeItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_tradeId = readD(); // 1 ?
-		_objectId = readD();
-		_amount = readQ();
+		this._tradeId = this.readD(); // 1 ?
+		this._objectId = this.readD();
+		this._amount = this.readQ();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player parthner1 = getClient().getActiveChar();
-		if (parthner1 == null || _amount < 1)
+		Player parthner1 = this.getClient().getActiveChar();
+		if (parthner1 == null || this._amount < 1)
 		{
 			return;
 		}
@@ -80,14 +80,14 @@ public class AddTradeItem extends L2GameClientPacket
 			return;
 		}
 
-		ItemInstance item = parthner1.getInventory().getItemByObjectId(_objectId);
+		ItemInstance item = parthner1.getInventory().getItemByObjectId(this._objectId);
 		if (item == null || !item.canBeTraded(parthner1))
 		{
 			parthner1.sendPacket(SystemMsg.THIS_ITEM_CANNOT_BE_TRADED_OR_SOLD);
 			return;
 		}
 
-		long count = Math.min(_amount, item.getCount());
+		long count = Math.min(this._amount, item.getCount());
 
 		List<TradeItem> tradeList = parthner1.getTradeList();
 		TradeItem tradeItem = null;
@@ -96,7 +96,7 @@ public class AddTradeItem extends L2GameClientPacket
 		{
 			for (TradeItem ti : parthner1.getTradeList())
 			{
-				if (ti.getObjectId() == _objectId)
+				if (ti.getObjectId() == this._objectId)
 				{
 					count = SafeMath.addAndCheck(count, ti.getCount());
 					count = Math.min(count, item.getCount());

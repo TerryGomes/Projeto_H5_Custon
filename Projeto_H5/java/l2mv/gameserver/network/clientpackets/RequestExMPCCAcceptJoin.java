@@ -18,14 +18,14 @@ public class RequestExMPCCAcceptJoin extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_response = _buf.hasRemaining() ? readD() : 0;
-		_unk = _buf.hasRemaining() ? readD() : 0;
+		this._response = this._buf.hasRemaining() ? this.readD() : 0;
+		this._unk = this._buf.hasRemaining() ? this.readD() : 0;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -60,7 +60,7 @@ public class RequestExMPCCAcceptJoin extends L2GameClientPacket
 			return;
 		}
 
-		if (_response == 0)
+		if (this._response == 0)
 		{
 			request.cancel();
 			requestor.sendPacket(new SystemMessage2(SystemMsg.C1_HAS_DECLINED_THE_CHANNEL_INVITATION).addString(activeChar.getName()));

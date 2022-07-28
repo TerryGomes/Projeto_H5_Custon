@@ -21,20 +21,20 @@ public class RequestExRefundItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_listId = readD();
-		_count = readD();
-		if (_count * 4 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		this._listId = this.readD();
+		this._count = this.readD();
+		if (this._count * 4 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1)
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
-		_items = new int[_count];
-		for (int i = 0; i < _count; i++)
+		this._items = new int[this._count];
+		for (int i = 0; i < this._count; i++)
 		{
-			_items[i] = readD();
-			if (ArrayUtils.indexOf(_items, _items[i]) < i)
+			this._items[i] = this.readD();
+			if (ArrayUtils.indexOf(this._items, this._items[i]) < i)
 			{
-				_count = 0;
+				this._count = 0;
 				break;
 			}
 		}
@@ -43,8 +43,8 @@ public class RequestExRefundItem extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || _count == 0)
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar == null || this._count == 0)
 		{
 			return;
 		}
@@ -87,7 +87,7 @@ public class RequestExRefundItem extends L2GameClientPacket
 			long totalPrice = 0;
 
 			List<ItemInstance> refundList = new ArrayList<ItemInstance>();
-			for (int objId : _items)
+			for (int objId : this._items)
 			{
 				ItemInstance item = activeChar.getRefund().getItemByObjectId(objId);
 				if (item == null)

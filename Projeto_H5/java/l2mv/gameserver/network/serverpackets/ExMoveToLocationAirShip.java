@@ -10,22 +10,22 @@ public class ExMoveToLocationAirShip extends L2GameServerPacket
 
 	public ExMoveToLocationAirShip(Boat boat)
 	{
-		_objectId = boat.getObjectId();
-		_origin = boat.getLoc();
-		_destination = boat.getDestination();
+		this._objectId = boat.getObjectId();
+		this._origin = boat.getLoc();
+		this._destination = boat.getDestination();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x65);
-		writeD(_objectId);
+		this.writeEx(0x65);
+		this.writeD(this._objectId);
 
-		writeD(_destination.x);
-		writeD(_destination.y);
-		writeD(_destination.z);
-		writeD(_origin.x);
-		writeD(_origin.y);
-		writeD(_origin.z);
+		this.writeD(this._destination.x);
+		this.writeD(this._destination.y);
+		this.writeD(this._destination.z);
+		this.writeD(this._origin.x);
+		this.writeD(this._origin.y);
+		this.writeD(this._origin.z);
 	}
 }

@@ -22,9 +22,9 @@ public class ExShowSellCropList extends L2GameServerPacket
 
 	public ExShowSellCropList(Player player, int manorId, List<CropProcure> crops)
 	{
-		_manorId = manorId;
-		_castleCrops = new TreeMap<Integer, CropProcure>();
-		_cropsItems = new TreeMap<Integer, ItemInstance>();
+		this._manorId = manorId;
+		this._castleCrops = new TreeMap<Integer, CropProcure>();
+		this._cropsItems = new TreeMap<Integer, ItemInstance>();
 
 		List<Integer> allCrops = Manor.getInstance().getAllCrops();
 		for (int cropId : allCrops)
@@ -32,15 +32,15 @@ public class ExShowSellCropList extends L2GameServerPacket
 			ItemInstance item = player.getInventory().getItemByItemId(cropId);
 			if (item != null)
 			{
-				_cropsItems.put(cropId, item);
+				this._cropsItems.put(cropId, item);
 			}
 		}
 
 		for (CropProcure crop : crops)
 		{
-			if (_cropsItems.containsKey(crop.getId()) && crop.getAmount() > 0)
+			if (this._cropsItems.containsKey(crop.getId()) && crop.getAmount() > 0)
 			{
-				_castleCrops.put(crop.getId(), crop);
+				this._castleCrops.put(crop.getId(), crop);
 			}
 		}
 
@@ -49,39 +49,39 @@ public class ExShowSellCropList extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeEx(0x2c);
+		this.writeEx(0x2c);
 
-		writeD(_manorId); // manor id
-		writeD(_cropsItems.size()); // size
+		this.writeD(this._manorId); // manor id
+		this.writeD(this._cropsItems.size()); // size
 
-		for (ItemInstance item : _cropsItems.values())
+		for (ItemInstance item : this._cropsItems.values())
 		{
-			writeD(item.getObjectId()); // Object id
-			writeD(item.getItemId()); // crop id
-			writeD(Manor.getInstance().getSeedLevelByCrop(item.getItemId())); // seed level
+			this.writeD(item.getObjectId()); // Object id
+			this.writeD(item.getItemId()); // crop id
+			this.writeD(Manor.getInstance().getSeedLevelByCrop(item.getItemId())); // seed level
 
-			writeC(1);
-			writeD(Manor.getInstance().getRewardItem(item.getItemId(), 1)); // reward 1 id
+			this.writeC(1);
+			this.writeD(Manor.getInstance().getRewardItem(item.getItemId(), 1)); // reward 1 id
 
-			writeC(1);
-			writeD(Manor.getInstance().getRewardItem(item.getItemId(), 2)); // reward 2 id
+			this.writeC(1);
+			this.writeD(Manor.getInstance().getRewardItem(item.getItemId(), 2)); // reward 2 id
 
-			if (_castleCrops.containsKey(item.getItemId()))
+			if (this._castleCrops.containsKey(item.getItemId()))
 			{
-				CropProcure crop = _castleCrops.get(item.getItemId());
-				writeD(_manorId); // manor
-				writeQ(crop.getAmount()); // buy residual
-				writeQ(crop.getPrice()); // buy price
-				writeC(crop.getReward()); // reward
+				CropProcure crop = this._castleCrops.get(item.getItemId());
+				this.writeD(this._manorId); // manor
+				this.writeQ(crop.getAmount()); // buy residual
+				this.writeQ(crop.getPrice()); // buy price
+				this.writeC(crop.getReward()); // reward
 			}
 			else
 			{
-				writeD(0xFFFFFFFF); // manor
-				writeQ(0); // buy residual
-				writeQ(0); // buy price
-				writeC(0); // reward
+				this.writeD(0xFFFFFFFF); // manor
+				this.writeQ(0); // buy residual
+				this.writeQ(0); // buy price
+				this.writeC(0); // reward
 			}
-			writeQ(item.getCount()); // my crops
+			this.writeQ(item.getCount()); // my crops
 		}
 	}
 }

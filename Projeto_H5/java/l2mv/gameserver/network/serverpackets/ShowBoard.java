@@ -71,9 +71,9 @@ public class ShowBoard extends L2GameServerPacket
 
 	public ShowBoard()
 	{
-		_id = "0";
-		_isShow = false;
-		_htmlCode = null;
+		this._id = "0";
+		this._isShow = false;
+		this._htmlCode = null;
 	}
 
 	public ShowBoard(String htmlCode, String id, Player player)
@@ -81,55 +81,55 @@ public class ShowBoard extends L2GameServerPacket
 		if (htmlCode != null && htmlCode.length() > 8180) // html code must not exceed 8192 bytes
 		{
 			_log.warn("Html '" + htmlCode + "' is too long! this will crash the client!");
-			_htmlCode = "<html><body>Html was too long</body></html>";
+			this._htmlCode = "<html><body>Html was too long</body></html>";
 			return;
 		}
-		_id = id;
-		_isShow = true;
+		this._id = id;
+		this._isShow = true;
 
 		if (player.getSessionVar("add_fav") != null)
 		{
-			_addFav = "bypass _bbsaddfav_List";
+			this._addFav = "bypass _bbsaddfav_List";
 		}
 
-		_htmlCode = htmlCode;
+		this._htmlCode = htmlCode;
 	}
 
 	public ShowBoard(List<String> arg)
 	{
-		_id = "1002";
-		_htmlCode = null;
-		_arg = arg;
+		this._id = "1002";
+		this._htmlCode = null;
+		this._arg = arg;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x7b);
-		writeC(_isShow ? 0x01 : 0x00); // c4 1 to show community 00 to hide
-		writeS("bypass _bbshome");
-		writeS("bypass _bbsgetfav");
-		writeS("bypass _bbsloc");
-		writeS("bypass _bbsclan");
-		writeS("bypass _bbsmemo");
-		writeS("bypass _maillist_0_1_0_");
-		writeS("bypass _friendlist_0_");
-		writeS(_addFav);
-		String str = _id + "\u0008";
-		if (!_id.equals("1002"))
+		this.writeC(0x7b);
+		this.writeC(this._isShow ? 0x01 : 0x00); // c4 1 to show community 00 to hide
+		this.writeS("bypass _bbshome");
+		this.writeS("bypass _bbsgetfav");
+		this.writeS("bypass _bbsloc");
+		this.writeS("bypass _bbsclan");
+		this.writeS("bypass _bbsmemo");
+		this.writeS("bypass _maillist_0_1_0_");
+		this.writeS("bypass _friendlist_0_");
+		this.writeS(this._addFav);
+		String str = this._id + "\u0008";
+		if (!this._id.equals("1002"))
 		{
-			if (_htmlCode != null)
+			if (this._htmlCode != null)
 			{
-				str += _htmlCode;
+				str += this._htmlCode;
 			}
 		}
 		else
 		{
-			for (String arg : _arg)
+			for (String arg : this._arg)
 			{
 				str += arg + " \u0008";
 			}
 		}
-		writeS(str);
+		this.writeS(str);
 	}
 }

@@ -13,41 +13,41 @@ public class PetStatusUpdate extends L2GameServerPacket
 
 	public PetStatusUpdate(Summon summon)
 	{
-		type = summon.getSummonType();
-		obj_id = summon.getObjectId();
-		_loc = summon.getLoc();
-		title = summon.getTitle();
-		curHp = (int) summon.getCurrentHp();
-		maxHp = summon.getMaxHp();
-		curMp = (int) summon.getCurrentMp();
-		maxMp = summon.getMaxMp();
-		curFed = summon.getCurrentFed();
-		maxFed = summon.getMaxFed();
-		level = summon.getLevel();
-		exp = summon.getExp();
-		exp_this_lvl = summon.getExpForThisLevel();
-		exp_next_lvl = summon.getExpForNextLevel();
+		this.type = summon.getSummonType();
+		this.obj_id = summon.getObjectId();
+		this._loc = summon.getLoc();
+		this.title = summon.getTitle();
+		this.curHp = (int) summon.getCurrentHp();
+		this.maxHp = summon.getMaxHp();
+		this.curMp = (int) summon.getCurrentMp();
+		this.maxMp = summon.getMaxMp();
+		this.curFed = summon.getCurrentFed();
+		this.maxFed = summon.getMaxFed();
+		this.level = summon.getLevel();
+		this.exp = summon.getExp();
+		this.exp_this_lvl = summon.getExpForThisLevel();
+		this.exp_next_lvl = summon.getExpForNextLevel();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xb6);
-		writeD(type);
-		writeD(obj_id);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeS(title);
-		writeD(curFed);
-		writeD(maxFed);
-		writeD(curHp);
-		writeD(maxHp);
-		writeD(curMp);
-		writeD(maxMp);
-		writeD(level);
-		writeQ(exp);
-		writeQ(exp_this_lvl);// 0% absolute value
-		writeQ(exp_next_lvl);// 100% absolute value
+		this.writeC(0xb6);
+		this.writeD(this.type);
+		this.writeD(this.obj_id);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
+		this.writeS(this.title);
+		this.writeD(this.curFed);
+		this.writeD(this.maxFed);
+		this.writeD(this.curHp);
+		this.writeD(this.maxHp);
+		this.writeD(this.curMp);
+		this.writeD(this.maxMp);
+		this.writeD(this.level);
+		this.writeQ(this.exp);
+		this.writeQ(this.exp_this_lvl);// 0% absolute value
+		this.writeQ(this.exp_next_lvl);// 100% absolute value
 	}
 }

@@ -27,15 +27,15 @@ public class RequestRecipeShopMakeDo extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_manufacturerId = readD();
-		_recipeId = readD();
-		_price = readQ();
+		this._manufacturerId = this.readD();
+		this._recipeId = this.readD();
+		this._price = this.readQ();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player buyer = getClient().getActiveChar();
+		Player buyer = this.getClient().getActiveChar();
 		if (buyer == null)
 		{
 			return;
@@ -71,7 +71,7 @@ public class RequestRecipeShopMakeDo extends L2GameClientPacket
 			return;
 		}
 
-		Player manufacturer = (Player) buyer.getVisibleObject(_manufacturerId);
+		Player manufacturer = (Player) buyer.getVisibleObject(this._manufacturerId);
 		if (manufacturer == null || manufacturer.getPrivateStoreType() != Player.STORE_PRIVATE_MANUFACTURE || !manufacturer.isInRangeZ(buyer, Creature.INTERACTION_DISTANCE))
 		{
 			buyer.sendActionFailed();
@@ -81,11 +81,11 @@ public class RequestRecipeShopMakeDo extends L2GameClientPacket
 		Recipe recipeList = null;
 		for (ManufactureItem mi : manufacturer.getCreateList())
 		{
-			if (mi.getRecipeId() == _recipeId)
+			if (mi.getRecipeId() == this._recipeId)
 			{
-				if (_price == mi.getCost())
+				if (this._price == mi.getCost())
 				{
-					recipeList = RecipeHolder.getInstance().getRecipeByRecipeId(_recipeId);
+					recipeList = RecipeHolder.getInstance().getRecipeByRecipeId(this._recipeId);
 					break;
 				}
 			}
@@ -106,7 +106,7 @@ public class RequestRecipeShopMakeDo extends L2GameClientPacket
 			return;
 		}
 
-		if (!manufacturer.findRecipe(_recipeId))
+		if (!manufacturer.findRecipe(this._recipeId))
 		{
 			buyer.sendActionFailed();
 			return;
@@ -115,16 +115,16 @@ public class RequestRecipeShopMakeDo extends L2GameClientPacket
 		if (manufacturer.getCurrentMp() < recipeList.getMpCost())
 		{
 			manufacturer.sendPacket(SystemMsg.NOT_ENOUGH_MP);
-			buyer.sendPacket(SystemMsg.NOT_ENOUGH_MP, new RecipeShopItemInfo(buyer, manufacturer, _recipeId, _price, success));
+			buyer.sendPacket(SystemMsg.NOT_ENOUGH_MP, new RecipeShopItemInfo(buyer, manufacturer, this._recipeId, this._price, success));
 			return;
 		}
 
 		buyer.getInventory().writeLock();
 		try
 		{
-			if (buyer.getAdena() < _price)
+			if (buyer.getAdena() < this._price)
 			{
-				buyer.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA, new RecipeShopItemInfo(buyer, manufacturer, _recipeId, _price, success));
+				buyer.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA, new RecipeShopItemInfo(buyer, manufacturer, this._recipeId, this._price, success));
 				return;
 			}
 
@@ -141,14 +141,14 @@ public class RequestRecipeShopMakeDo extends L2GameClientPacket
 
 				if (item == null || recipe.getQuantity() > item.getCount())
 				{
-					buyer.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_MATERIALS_TO_PERFORM_THAT_ACTION, new RecipeShopItemInfo(buyer, manufacturer, _recipeId, _price, success));
+					buyer.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_MATERIALS_TO_PERFORM_THAT_ACTION, new RecipeShopItemInfo(buyer, manufacturer, this._recipeId, this._price, success));
 					return;
 				}
 			}
 
-			if (!buyer.reduceAdena(_price, false, "RecipeShopBuy"))
+			if (!buyer.reduceAdena(this._price, false, "RecipeShopBuy"))
 			{
-				buyer.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA, new RecipeShopItemInfo(buyer, manufacturer, _recipeId, _price, success));
+				buyer.sendPacket(SystemMsg.YOU_DO_NOT_HAVE_ENOUGH_ADENA, new RecipeShopItemInfo(buyer, manufacturer, this._recipeId, this._price, success));
 				return;
 			}
 
@@ -162,14 +162,14 @@ public class RequestRecipeShopMakeDo extends L2GameClientPacket
 				}
 			}
 
-			long tax = TradeHelper.getTax(manufacturer, _price);
+			long tax = TradeHelper.getTax(manufacturer, this._price);
 			if (tax > 0)
 			{
-				_price -= tax;
+				this._price -= tax;
 				manufacturer.sendMessage(new CustomMessage("trade.HavePaidTax", manufacturer).addNumber(tax));
 			}
 
-			manufacturer.addAdena(_price, "RecipeShopReward");
+			manufacturer.addAdena(this._price, "RecipeShopReward");
 		}
 		finally
 		{
@@ -213,13 +213,13 @@ public class RequestRecipeShopMakeDo extends L2GameClientPacket
 			sm = new SystemMessage2(SystemMsg.C1_HAS_FAILED_TO_CREATE_S2_AT_THE_PRICE_OF_S3_ADENA);
 			sm.addString(manufacturer.getName());
 			sm.addItemName(recipeList.getItemId());
-			sm.addInteger(_price);
+			sm.addInteger(this._price);
 			buyer.sendPacket(sm);
 
 			sm = new SystemMessage2(SystemMsg.YOUR_ATTEMPT_TO_CREATE_S2_FOR_C1_AT_THE_PRICE_OF_S3_ADENA_HAS_FAILED);
 			sm.addString(buyer.getName());
 			sm.addItemName(recipeList.getItemId());
-			sm.addInteger(_price);
+			sm.addInteger(this._price);
 			manufacturer.sendPacket(sm);
 
 			// Synerge - Add a new craft failed only for recipes with less than 100% rate
@@ -233,14 +233,14 @@ public class RequestRecipeShopMakeDo extends L2GameClientPacket
 			sm.addString(manufacturer.getName());
 			sm.addItemName(recipeList.getItemId());
 			sm.addInteger(recipeList.getCount() * successCount);
-			sm.addInteger(_price);
+			sm.addInteger(this._price);
 			buyer.sendPacket(sm);
 
 			sm = new SystemMessage2(SystemMsg.S2_S3_HAVE_BEEN_SOLD_TO_C1_FOR_S4_ADENA);
 			sm.addString(buyer.getName());
 			sm.addItemName(recipeList.getItemId());
 			sm.addInteger(recipeList.getCount() * successCount);
-			sm.addInteger(_price);
+			sm.addInteger(this._price);
 			manufacturer.sendPacket(sm);
 
 			// Synerge - Add a new craft succeed only for recipes with less than 100% rate
@@ -252,13 +252,13 @@ public class RequestRecipeShopMakeDo extends L2GameClientPacket
 			sm = new SystemMessage2(SystemMsg.C1_CREATED_S2_AFTER_RECEIVING_S3_ADENA);
 			sm.addString(manufacturer.getName());
 			sm.addItemName(recipeList.getItemId());
-			sm.addInteger(_price);
+			sm.addInteger(this._price);
 			buyer.sendPacket(sm);
 
 			sm = new SystemMessage2(SystemMsg.S2_IS_SOLD_TO_C1_FOR_THE_PRICE_OF_S3_ADENA);
 			sm.addString(buyer.getName());
 			sm.addItemName(recipeList.getItemId());
-			sm.addInteger(_price);
+			sm.addInteger(this._price);
 			manufacturer.sendPacket(sm);
 
 			// Synerge - Add a new craft succeed only for recipes with less than 100% rate
@@ -267,6 +267,6 @@ public class RequestRecipeShopMakeDo extends L2GameClientPacket
 		}
 
 		buyer.sendChanges();
-		buyer.sendPacket(new RecipeShopItemInfo(buyer, manufacturer, _recipeId, _price, success));
+		buyer.sendPacket(new RecipeShopItemInfo(buyer, manufacturer, this._recipeId, this._price, success));
 	}
 }

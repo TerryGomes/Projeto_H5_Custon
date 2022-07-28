@@ -18,8 +18,8 @@ public class RequestSendMsnChatLog extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		unk = readS();
-		unk2 = readS();
-		unk3 = readD();
+		this.unk = this.readS();
+		this.unk2 = this.readS();
+		this.unk3 = this.readD();
 	}
 }

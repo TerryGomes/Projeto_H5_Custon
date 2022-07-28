@@ -18,24 +18,24 @@ public class SkillList extends L2GameServerPacket
 
 	public SkillList(Player p)
 	{
-		_skills = new ArrayList<Skill>(p.getAllSkills());
-		canEnchant = p.getTransformation() == 0;
-		activeChar = p;
+		this._skills = new ArrayList<Skill>(p.getAllSkills());
+		this.canEnchant = p.getTransformation() == 0;
+		this.activeChar = p;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x5f);
-		writeD(_skills.size());
+		this.writeC(0x5f);
+		this.writeD(this._skills.size());
 
-		for (Skill temp : _skills)
+		for (Skill temp : this._skills)
 		{
-			writeD(temp.isActive() || temp.isToggle() ? 0 : 1); // deprecated? клиентом игнорируется
-			writeD(temp.getDisplayLevel());
-			writeD(temp.getDisplayId());
-			writeC(activeChar.isUnActiveSkill(temp.getId()) ? 0x01 : 0x00); // иконка скилла серая если не 0
-			writeC(canEnchant ? SkillTreeTable.isEnchantable(temp) : 0); // для заточки: если 1 скилл можно точить
+			this.writeD(temp.isActive() || temp.isToggle() ? 0 : 1); // deprecated? клиентом игнорируется
+			this.writeD(temp.getDisplayLevel());
+			this.writeD(temp.getDisplayId());
+			this.writeC(this.activeChar.isUnActiveSkill(temp.getId()) ? 0x01 : 0x00); // иконка скилла серая если не 0
+			this.writeC(this.canEnchant ? SkillTreeTable.isEnchantable(temp) : 0); // для заточки: если 1 скилл можно точить
 		}
 	}
 }

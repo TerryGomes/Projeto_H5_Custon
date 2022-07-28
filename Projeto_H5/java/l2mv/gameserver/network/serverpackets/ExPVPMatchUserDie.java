@@ -14,22 +14,22 @@ public class ExPVPMatchUserDie extends L2GameServerPacket
 	public ExPVPMatchUserDie(UndergroundColiseumBattleEvent e)
 	{
 		UCTeamObject team = e.getFirstObject(TeamType.BLUE.name());
-		_blueKills = team.getKills();
+		this._blueKills = team.getKills();
 		team = e.getFirstObject(TeamType.RED.name());
-		_redKills = team.getKills();
+		this._redKills = team.getKills();
 	}
 
 	public ExPVPMatchUserDie(int blueKills, int redKills)
 	{
-		_blueKills = blueKills;
-		_redKills = redKills;
+		this._blueKills = blueKills;
+		this._redKills = redKills;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x7F);
-		writeD(_blueKills);
-		writeD(_redKills);
+		this.writeEx(0x7F);
+		this.writeD(this._blueKills);
+		this.writeD(this._redKills);
 	}
 }

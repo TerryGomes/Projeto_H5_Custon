@@ -14,7 +14,7 @@ public class PlayerInGame extends SendablePacket
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0x03);
-		writeS(account);
+		this.writeC(0x03);
+		this.writeS(this.account);
 	}
 }

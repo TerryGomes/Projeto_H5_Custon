@@ -9,17 +9,17 @@ public class ExSubPledgeSkillAdd extends L2GameServerPacket
 
 	public ExSubPledgeSkillAdd(int type, int id, int level)
 	{
-		_type = type;
-		_id = id;
-		_level = level;
+		this._type = type;
+		this._id = id;
+		this._level = level;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x76);
-		writeD(_type);
-		writeD(_id);
-		writeD(_level);
+		this.writeEx(0x76);
+		this.writeD(this._type);
+		this.writeD(this._id);
+		this.writeD(this._level);
 	}
 }

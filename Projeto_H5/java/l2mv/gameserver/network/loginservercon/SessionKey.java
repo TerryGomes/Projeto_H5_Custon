@@ -11,10 +11,10 @@ public class SessionKey
 
 	public SessionKey(int loginOK1, int loginOK2, int playOK1, int playOK2)
 	{
-		playOkID1 = playOK1;
-		playOkID2 = playOK2;
-		loginOkID1 = loginOK1;
-		loginOkID2 = loginOK2;
+		this.playOkID1 = playOK1;
+		this.playOkID2 = playOK2;
+		this.loginOkID1 = loginOK1;
+		this.loginOkID2 = loginOK2;
 
 		int hashCode = playOK1;
 		hashCode *= 17;
@@ -41,7 +41,7 @@ public class SessionKey
 		if (o.getClass() == this.getClass())
 		{
 			final SessionKey skey = (SessionKey) o;
-			return playOkID1 == skey.playOkID1 && playOkID2 == skey.playOkID2 && loginOkID1 == skey.loginOkID1 && loginOkID2 == skey.loginOkID2;
+			return this.playOkID1 == skey.playOkID1 && this.playOkID2 == skey.playOkID2 && this.loginOkID1 == skey.loginOkID1 && this.loginOkID2 == skey.loginOkID2;
 		}
 		return false;
 	}
@@ -49,12 +49,12 @@ public class SessionKey
 	@Override
 	public int hashCode()
 	{
-		return hashCode;
+		return this.hashCode;
 	}
 
 	@Override
 	public String toString()
 	{
-		return new StringBuilder().append("[playOkID1: ").append(playOkID1).append(" playOkID2: ").append(playOkID2).append(" loginOkID1: ").append(loginOkID1).append(" loginOkID2: ").append(loginOkID2).append("]").toString();
+		return new StringBuilder().append("[playOkID1: ").append(this.playOkID1).append(" playOkID2: ").append(this.playOkID2).append(" loginOkID1: ").append(this.loginOkID1).append(" loginOkID2: ").append(this.loginOkID2).append("]").toString();
 	}
 }

@@ -36,26 +36,26 @@ public class AbnormalStatusUpdate extends L2GameServerPacket
 
 	public AbnormalStatusUpdate()
 	{
-		_effects = new ArrayList<Effect>();
+		this._effects = new ArrayList<Effect>();
 	}
 
 	public void addEffect(int skillId, int dat, int duration)
 	{
-		_effects.add(new Effect(skillId, dat, duration));
+		this._effects.add(new Effect(skillId, dat, duration));
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x85);
+		this.writeC(0x85);
 
-		writeH(_effects.size());
+		this.writeH(this._effects.size());
 
-		for (Effect temp : _effects)
+		for (Effect temp : this._effects)
 		{
-			writeD(temp.skillId);
-			writeH(temp.dat);
-			writeD(temp.duration);
+			this.writeD(temp.skillId);
+			this.writeH(temp.dat);
+			this.writeD(temp.duration);
 		}
 	}
 }

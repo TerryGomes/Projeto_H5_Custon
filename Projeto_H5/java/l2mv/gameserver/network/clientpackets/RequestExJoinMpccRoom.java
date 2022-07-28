@@ -11,19 +11,19 @@ public class RequestExJoinMpccRoom extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_roomId = readD();
+		this._roomId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if ((player == null) || (player.getMatchingRoom() != null))
 		{
 			return;
 		}
 
-		MatchingRoom room = MatchingRoomManager.getInstance().getMatchingRoom(MatchingRoom.CC_MATCHING, _roomId);
+		MatchingRoom room = MatchingRoomManager.getInstance().getMatchingRoom(MatchingRoom.CC_MATCHING, this._roomId);
 		if (room == null)
 		{
 			return;

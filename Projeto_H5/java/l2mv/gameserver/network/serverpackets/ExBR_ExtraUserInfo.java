@@ -10,17 +10,17 @@ public class ExBR_ExtraUserInfo extends L2GameServerPacket
 
 	public ExBR_ExtraUserInfo(Player cha)
 	{
-		_objectId = cha.getObjectId();
-		_effect3 = cha.getAbnormalEffect3();
-		_lectureMark = cha.getLectureMark();
+		this._objectId = cha.getObjectId();
+		this._effect3 = cha.getAbnormalEffect3();
+		this._lectureMark = cha.getLectureMark();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xDA);
-		writeD(_objectId); // object id of player
-		writeD(_effect3); // event effect id
-		writeC(_lectureMark);
+		this.writeEx(0xDA);
+		this.writeD(this._objectId); // object id of player
+		this.writeD(this._effect3); // event effect id
+		this.writeC(this._lectureMark);
 	}
 }

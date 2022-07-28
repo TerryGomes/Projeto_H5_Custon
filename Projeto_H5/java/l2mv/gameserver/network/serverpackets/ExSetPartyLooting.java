@@ -7,15 +7,15 @@ public class ExSetPartyLooting extends L2GameServerPacket
 
 	public ExSetPartyLooting(int result, int mode)
 	{
-		_result = result;
-		_mode = mode;
+		this._result = result;
+		this._mode = mode;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xC0);
-		writeD(_result);
-		writeD(_mode);
+		this.writeEx(0xC0);
+		this.writeD(this._result);
+		this.writeD(this._mode);
 	}
 }

@@ -16,17 +16,17 @@ public class AttackRequest extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
-		_originX = readD();
-		_originY = readD();
-		_originZ = readD();
-		_attackId = readC();
+		this._objectId = this.readD();
+		this._originX = this.readD();
+		this._originY = this.readD();
+		this._originZ = this.readD();
+		this._attackId = this.readC();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -40,7 +40,7 @@ public class AttackRequest extends L2GameClientPacket
 			return;
 		}
 
-		GameObject target = activeChar.getVisibleObject(_objectId);
+		GameObject target = activeChar.getVisibleObject(this._objectId);
 		if ((target == null) || activeChar.isPendingOlyEnd())
 		{
 			activeChar.sendActionFailed();

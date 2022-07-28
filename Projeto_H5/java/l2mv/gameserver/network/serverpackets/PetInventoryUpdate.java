@@ -21,38 +21,38 @@ public class PetInventoryUpdate extends L2GameServerPacket
 
 	public PetInventoryUpdate addNewItem(ItemInstance item)
 	{
-		addItem(item).setLastChange(ADDED);
+		this.addItem(item).setLastChange(ADDED);
 		return this;
 	}
 
 	public PetInventoryUpdate addModifiedItem(ItemInstance item)
 	{
-		addItem(item).setLastChange(MODIFIED);
+		this.addItem(item).setLastChange(MODIFIED);
 		return this;
 	}
 
 	public PetInventoryUpdate addRemovedItem(ItemInstance item)
 	{
-		addItem(item).setLastChange(REMOVED);
+		this.addItem(item).setLastChange(REMOVED);
 		return this;
 	}
 
 	private ItemInfo addItem(ItemInstance item)
 	{
 		ItemInfo info;
-		_items.add(info = new ItemInfo(item));
+		this._items.add(info = new ItemInfo(item));
 		return info;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xb4);
-		writeH(_items.size());
-		for (ItemInfo temp : _items)
+		this.writeC(0xb4);
+		this.writeH(this._items.size());
+		for (ItemInfo temp : this._items)
 		{
-			writeH(temp.getLastChange());
-			writeItemInfo(temp);
+			this.writeH(temp.getLastChange());
+			this.writeItemInfo(temp);
 		}
 	}
 }

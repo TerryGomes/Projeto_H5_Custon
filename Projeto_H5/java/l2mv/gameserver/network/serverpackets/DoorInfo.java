@@ -20,17 +20,17 @@ public class DoorInfo extends L2GameServerPacket
 	// @Deprecated
 	public DoorInfo(DoorInstance door)
 	{
-		obj_id = door.getObjectId();
-		door_id = door.getDoorId();
-		view_hp = door.isHPVisible() ? 1 : 0;
+		this.obj_id = door.getObjectId();
+		this.door_id = door.getDoorId();
+		this.view_hp = door.isHPVisible() ? 1 : 0;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x4C);
-		writeD(obj_id);
-		writeD(door_id);
-		writeD(view_hp); // отображать ли хп у двери или стены
+		this.writeC(0x4C);
+		this.writeD(this.obj_id);
+		this.writeD(this.door_id);
+		this.writeD(this.view_hp); // отображать ли хп у двери или стены
 	}
 }

@@ -5,6 +5,6 @@ public class SunSet extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x13);
+		this.writeC(0x13);
 	}
 }

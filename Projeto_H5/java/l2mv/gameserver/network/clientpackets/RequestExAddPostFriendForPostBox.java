@@ -21,47 +21,47 @@ public class RequestExAddPostFriendForPostBox extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS(Config.CNAME_MAXLEN);
+		this._name = this.readS(Config.CNAME_MAXLEN);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		int targetObjectId = CharacterDAO.getInstance().getObjectIdByName(_name);
+		int targetObjectId = CharacterDAO.getInstance().getObjectIdByName(this._name);
 		if (targetObjectId == 0)
 		{
-			player.sendPacket(new ExConfirmAddingPostFriend(_name, ExConfirmAddingPostFriend.NAME_IS_NOT_EXISTS));
+			player.sendPacket(new ExConfirmAddingPostFriend(this._name, ExConfirmAddingPostFriend.NAME_IS_NOT_EXISTS));
 			return;
 		}
 
-		if (_name.equalsIgnoreCase(player.getName()))
+		if (this._name.equalsIgnoreCase(player.getName()))
 		{
-			player.sendPacket(new ExConfirmAddingPostFriend(_name, ExConfirmAddingPostFriend.NAME_IS_NOT_REGISTERED));
+			player.sendPacket(new ExConfirmAddingPostFriend(this._name, ExConfirmAddingPostFriend.NAME_IS_NOT_REGISTERED));
 			return;
 		}
 
 		IntObjectMap<String> postFriend = player.getPostFriends();
 		if (postFriend.size() >= Player.MAX_POST_FRIEND_SIZE)
 		{
-			player.sendPacket(new ExConfirmAddingPostFriend(_name, ExConfirmAddingPostFriend.LIST_IS_FULL));
+			player.sendPacket(new ExConfirmAddingPostFriend(this._name, ExConfirmAddingPostFriend.LIST_IS_FULL));
 			return;
 		}
 
 		if (postFriend.containsKey(targetObjectId))
 		{
-			player.sendPacket(new ExConfirmAddingPostFriend(_name, ExConfirmAddingPostFriend.ALREADY_ADDED));
+			player.sendPacket(new ExConfirmAddingPostFriend(this._name, ExConfirmAddingPostFriend.ALREADY_ADDED));
 			return;
 		}
 
 		CharacterPostFriendDAO.getInstance().insert(player, targetObjectId);
 		postFriend.put(targetObjectId, CharacterDAO.getNameByObjectId(targetObjectId));
 
-		player.sendPacket(new SystemMessage2(SystemMsg.S1_WAS_SUCCESSFULLY_ADDED_TO_YOUR_CONTACT_LIST).addString(_name), new ExConfirmAddingPostFriend(_name, ExConfirmAddingPostFriend.SUCCESS));
+		player.sendPacket(new SystemMessage2(SystemMsg.S1_WAS_SUCCESSFULLY_ADDED_TO_YOUR_CONTACT_LIST).addString(this._name), new ExConfirmAddingPostFriend(this._name, ExConfirmAddingPostFriend.SUCCESS));
 	}
 }

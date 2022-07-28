@@ -9,13 +9,13 @@ public class SendTradeDone extends L2GameServerPacket
 
 	private SendTradeDone(int num)
 	{
-		_response = num;
+		this._response = num;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x1c);
-		writeD(_response);
+		this.writeC(0x1c);
+		this.writeD(this._response);
 	}
 }

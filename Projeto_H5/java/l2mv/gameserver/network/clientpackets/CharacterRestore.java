@@ -11,17 +11,17 @@ public class CharacterRestore extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_charSlot = readD();
+		this._charSlot = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		GameClient client = getClient();
+		GameClient client = this.getClient();
 
-		client.markRestoredChar(_charSlot);
+		client.markRestoredChar(this._charSlot);
 		CharacterSelectionInfo cl = new CharacterSelectionInfo(client.getLogin(), client.getSessionKey().playOkID1);
-		sendPacket(cl);
+		this.sendPacket(cl);
 		client.setCharSelection(cl.getCharInfo());
 	}
 }

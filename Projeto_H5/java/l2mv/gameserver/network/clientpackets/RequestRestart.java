@@ -23,7 +23,7 @@ public class RequestRestart extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 
 		if (activeChar == null)
 		{
@@ -117,15 +117,15 @@ public class RequestRestart extends L2GameClientPacket
 			return;
 		}
 
-		if (getClient() != null)
+		if (this.getClient() != null)
 		{
-			getClient().setState(GameClientState.AUTHED);
+			this.getClient().setState(GameClientState.AUTHED);
 		}
 		activeChar.restart();
 		// send char list
-		CharacterSelectionInfo cl = new CharacterSelectionInfo(getClient().getLogin(), getClient().getSessionKey().playOkID1);
-		sendPacket(RestartResponse.OK, cl);
-		getClient().setCharSelection(cl.getCharInfo());
+		CharacterSelectionInfo cl = new CharacterSelectionInfo(this.getClient().getLogin(), this.getClient().getSessionKey().playOkID1);
+		this.sendPacket(RestartResponse.OK, cl);
+		this.getClient().setCharSelection(cl.getCharInfo());
 	}
 
 	// Synerge - This packet can be used while the character is blocked

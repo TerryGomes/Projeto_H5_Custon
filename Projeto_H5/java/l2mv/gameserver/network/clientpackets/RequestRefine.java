@@ -25,17 +25,17 @@ public final class RequestRefine extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_targetItemObjId = readD();
-		_refinerItemObjId = readD();
-		_gemstoneItemObjId = readD();
-		_gemstoneCount = readQ();
+		this._targetItemObjId = this.readD();
+		this._refinerItemObjId = this.readD();
+		this._gemstoneItemObjId = this.readD();
+		this._gemstoneCount = this.readQ();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || _gemstoneCount < 1)
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar == null || this._gemstoneCount < 1)
 		{
 			return;
 		}
@@ -52,9 +52,9 @@ public final class RequestRefine extends L2GameClientPacket
 			return;
 		}
 
-		ItemInstance targetItem = activeChar.getInventory().getItemByObjectId(_targetItemObjId);
-		ItemInstance refinerItem = activeChar.getInventory().getItemByObjectId(_refinerItemObjId);
-		ItemInstance gemstoneItem = activeChar.getInventory().getItemByObjectId(_gemstoneItemObjId);
+		ItemInstance targetItem = activeChar.getInventory().getItemByObjectId(this._targetItemObjId);
+		ItemInstance refinerItem = activeChar.getInventory().getItemByObjectId(this._refinerItemObjId);
+		ItemInstance gemstoneItem = activeChar.getInventory().getItemByObjectId(this._gemstoneItemObjId);
 
 		if (targetItem == null || refinerItem == null || gemstoneItem == null || activeChar.getLevel() < 46)
 		{
@@ -62,7 +62,7 @@ public final class RequestRefine extends L2GameClientPacket
 			return;
 		}
 
-		if (TryAugmentItem(activeChar, targetItem, refinerItem, gemstoneItem))
+		if (this.TryAugmentItem(activeChar, targetItem, refinerItem, gemstoneItem))
 		{
 			int stat12 = 0x0000FFFF & targetItem.getAugmentationId();
 			int stat34 = targetItem.getAugmentationId() >> 16;
@@ -87,7 +87,7 @@ public final class RequestRefine extends L2GameClientPacket
 			return false;
 		}
 
-		long modifyGemstoneCount = _gemstoneCount;
+		long modifyGemstoneCount = this._gemstoneCount;
 		int lifeStoneLevel = ItemFunctions.getLifeStoneLevel(lifeStoneId);
 		int lifeStoneGrade = isAccessoryLifeStone ? 0 : ItemFunctions.getLifeStoneGrade(lifeStoneId);
 
@@ -291,7 +291,7 @@ public final class RequestRefine extends L2GameClientPacket
 		}
 
 		// consume the life stone
-		if (!player.getInventory().destroyItemByObjectId(_gemstoneItemObjId, modifyGemstoneCount, "Refine") || !player.getInventory().destroyItemByObjectId(_refinerItemObjId, 1L, "Refine"))
+		if (!player.getInventory().destroyItemByObjectId(this._gemstoneItemObjId, modifyGemstoneCount, "Refine") || !player.getInventory().destroyItemByObjectId(this._refinerItemObjId, 1L, "Refine"))
 		{
 			return false;
 		}

@@ -7,7 +7,7 @@ public class PingResponse extends SendablePacket
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0xff);
-		writeQ(System.currentTimeMillis());
+		this.writeC(0xff);
+		this.writeQ(System.currentTimeMillis());
 	}
 }

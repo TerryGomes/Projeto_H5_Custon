@@ -31,25 +31,25 @@ public final class BuyListSeed extends L2GameServerPacket
 
 	public BuyListSeed(NpcTradeList list, int manorId, long currentMoney)
 	{
-		_money = currentMoney;
-		_manorId = manorId;
-		_list = list.getItems();
+		this._money = currentMoney;
+		this._manorId = manorId;
+		this._list = list.getItems();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xe9);
+		this.writeC(0xe9);
 
-		writeQ(_money); // current money
-		writeD(_manorId); // manor id
+		this.writeQ(this._money); // current money
+		this.writeD(this._manorId); // manor id
 
-		writeH(_list.size()); // list length
+		this.writeH(this._list.size()); // list length
 
-		for (TradeItem item : _list)
+		for (TradeItem item : this._list)
 		{
-			writeItemInfo(item);
-			writeQ(item.getOwnersPrice());
+			this.writeItemInfo(item);
+			this.writeQ(item.getOwnersPrice());
 		}
 	}
 }

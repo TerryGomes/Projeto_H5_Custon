@@ -7,14 +7,14 @@ public class ExOlympiadMode extends L2GameServerPacket
 
 	public ExOlympiadMode(int mode)
 	{
-		_mode = mode;
+		this._mode = mode;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x7c);
+		this.writeEx(0x7c);
 
-		writeC(_mode);
+		this.writeC(this._mode);
 	}
 }

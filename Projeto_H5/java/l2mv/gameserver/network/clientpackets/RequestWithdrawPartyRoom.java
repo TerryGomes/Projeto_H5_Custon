@@ -17,13 +17,13 @@ public class RequestWithdrawPartyRoom extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_roomId = readD();
+		this._roomId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -37,7 +37,7 @@ public class RequestWithdrawPartyRoom extends L2GameClientPacket
 			return;
 		}
 
-		if (room.getId() != _roomId || room.getType() != MatchingRoom.PARTY_MATCHING || (room.getLeader() == player))
+		if (room.getId() != this._roomId || room.getType() != MatchingRoom.PARTY_MATCHING || (room.getLeader() == player))
 		{
 			return;
 		}

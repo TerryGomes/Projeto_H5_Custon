@@ -14,14 +14,14 @@ public class ExBR_BuyProduct extends L2GameServerPacket
 
 	public ExBR_BuyProduct(int result)
 	{
-		_result = result;
+		this._result = result;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xD8);
+		this.writeEx(0xD8);
 
-		writeD(_result);
+		this.writeD(this._result);
 	}
 }

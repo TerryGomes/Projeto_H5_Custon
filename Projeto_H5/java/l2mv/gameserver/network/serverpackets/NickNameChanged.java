@@ -9,15 +9,15 @@ public class NickNameChanged extends L2GameServerPacket
 
 	public NickNameChanged(Creature cha)
 	{
-		objectId = cha.getObjectId();
-		title = cha.getTitle();
+		this.objectId = cha.getObjectId();
+		this.title = cha.getTitle();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0xCC);
-		writeD(objectId);
-		writeS(title);
+		this.writeC(0xCC);
+		this.writeD(this.objectId);
+		this.writeS(this.title);
 	}
 }

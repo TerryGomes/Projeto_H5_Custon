@@ -13,25 +13,25 @@ public class RequestSaveKeyMapping extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		int length = readD();
-		if (length > _buf.remaining() || length > Short.MAX_VALUE || length < 0)
+		int length = this.readD();
+		if (length > this._buf.remaining() || length > Short.MAX_VALUE || length < 0)
 		{
-			_data = null;
+			this._data = null;
 			return;
 		}
-		_data = new byte[length];
-		readB(_data);
+		this._data = new byte[length];
+		this.readB(this._data);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || _data == null)
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar == null || this._data == null)
 		{
 			return;
 		}
-		activeChar.setKeyBindings(_data);
+		activeChar.setKeyBindings(this._data);
 		activeChar.sendPacket(new ExUISetting(activeChar));
 	}
 }

@@ -6,13 +6,13 @@ public class ShowXMasSeal extends L2GameServerPacket
 
 	public ShowXMasSeal(int item)
 	{
-		_item = item;
+		this._item = item;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0xf8);
-		writeD(_item);
+		this.writeC(0xf8);
+		this.writeD(this._item);
 	}
 }

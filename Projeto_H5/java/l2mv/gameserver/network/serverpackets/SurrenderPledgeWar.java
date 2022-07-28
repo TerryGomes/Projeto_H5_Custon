@@ -7,15 +7,15 @@ public class SurrenderPledgeWar extends L2GameServerPacket
 
 	public SurrenderPledgeWar(String pledge, String charName)
 	{
-		_pledgeName = pledge;
-		_char = charName;
+		this._pledgeName = pledge;
+		this._char = charName;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x67);
-		writeS(_pledgeName);
-		writeS(_char);
+		this.writeC(0x67);
+		this.writeS(this._pledgeName);
+		this.writeS(this._char);
 	}
 }

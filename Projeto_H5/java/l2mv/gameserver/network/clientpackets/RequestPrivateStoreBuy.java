@@ -19,27 +19,27 @@ public class RequestPrivateStoreBuy extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_sellerId = readD();
-		_count = readD();
-		if (_count * 20 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		this._sellerId = this.readD();
+		this._count = this.readD();
+		if (this._count * 20 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1)
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
 
-		_items = new int[_count];
-		_itemQ = new long[_count];
-		_itemP = new long[_count];
+		this._items = new int[this._count];
+		this._itemQ = new long[this._count];
+		this._itemP = new long[this._count];
 
-		for (int i = 0; i < _count; i++)
+		for (int i = 0; i < this._count; i++)
 		{
-			_items[i] = readD();
-			_itemQ[i] = readQ();
-			_itemP[i] = readQ();
+			this._items[i] = this.readD();
+			this._itemQ[i] = this.readQ();
+			this._itemP[i] = this.readQ();
 
-			if (_itemQ[i] < 1 || _itemP[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
+			if (this._itemQ[i] < 1 || this._itemP[i] < 1 || ArrayUtils.indexOf(this._items, this._items[i]) < i)
 			{
-				_count = 0;
+				this._count = 0;
 				break;
 			}
 		}
@@ -48,8 +48,8 @@ public class RequestPrivateStoreBuy extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player buyer = getClient().getActiveChar();
-		if (buyer == null || _count == 0)
+		Player buyer = this.getClient().getActiveChar();
+		if (buyer == null || this._count == 0)
 		{
 			return;
 		}
@@ -84,7 +84,7 @@ public class RequestPrivateStoreBuy extends L2GameClientPacket
 			return;
 		}
 
-		Player seller = (Player) buyer.getVisibleObject(_sellerId);
+		Player seller = (Player) buyer.getVisibleObject(this._sellerId);
 		if (seller == null || seller.getPrivateStoreType() != Player.STORE_PRIVATE_SELL && seller.getPrivateStoreType() != Player.STORE_PRIVATE_SELL_PACKAGE || !seller.isInRangeZ(buyer, Creature.INTERACTION_DISTANCE))
 		{
 			buyer.sendPacket(SystemMsg.THE_ATTEMPT_TO_TRADE_HAS_FAILED);
@@ -92,6 +92,6 @@ public class RequestPrivateStoreBuy extends L2GameClientPacket
 			return;
 		}
 
-		TradeHelper.buyFromStore(seller, buyer, _count, _items, _itemQ, _itemP);
+		TradeHelper.buyFromStore(seller, buyer, this._count, this._items, this._itemQ, this._itemP);
 	}
 }

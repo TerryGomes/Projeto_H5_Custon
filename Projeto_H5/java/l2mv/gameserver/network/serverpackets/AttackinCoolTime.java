@@ -6,6 +6,6 @@ public class AttackinCoolTime extends L2GameServerPacket
 	protected void writeImpl()
 	{
 		// just trigger - без аргументов
-		writeC(0x03);
+		this.writeC(0x03);
 	}
 }

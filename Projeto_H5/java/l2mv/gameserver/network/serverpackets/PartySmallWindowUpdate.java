@@ -10,32 +10,32 @@ public class PartySmallWindowUpdate extends L2GameServerPacket
 
 	public PartySmallWindowUpdate(Player member)
 	{
-		obj_id = member.getObjectId();
-		obj_name = member.getName();
-		curCp = (int) member.getCurrentCp();
-		maxCp = member.getMaxCp();
-		curHp = (int) member.getCurrentHp();
-		maxHp = member.getMaxHp();
-		curMp = (int) member.getCurrentMp();
-		maxMp = member.getMaxMp();
-		level = member.getLevel();
-		class_id = member.getClassId().getId();
+		this.obj_id = member.getObjectId();
+		this.obj_name = member.getName();
+		this.curCp = (int) member.getCurrentCp();
+		this.maxCp = member.getMaxCp();
+		this.curHp = (int) member.getCurrentHp();
+		this.maxHp = member.getMaxHp();
+		this.curMp = (int) member.getCurrentMp();
+		this.maxMp = member.getMaxMp();
+		this.level = member.getLevel();
+		this.class_id = member.getClassId().getId();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x52);
+		this.writeC(0x52);
 		// dSdddddddd
-		writeD(obj_id);
-		writeS(obj_name);
-		writeD(curCp);
-		writeD(maxCp);
-		writeD(curHp);
-		writeD(maxHp);
-		writeD(curMp);
-		writeD(maxMp);
-		writeD(level);
-		writeD(class_id);
+		this.writeD(this.obj_id);
+		this.writeS(this.obj_name);
+		this.writeD(this.curCp);
+		this.writeD(this.maxCp);
+		this.writeD(this.curHp);
+		this.writeD(this.maxHp);
+		this.writeD(this.curMp);
+		this.writeD(this.maxMp);
+		this.writeD(this.level);
+		this.writeD(this.class_id);
 	}
 }

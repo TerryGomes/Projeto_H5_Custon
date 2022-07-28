@@ -25,14 +25,14 @@ public final class RequestExEnchantSkillRouteChange extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_skillId = readD();
-		_skillLvl = readD();
+		this._skillId = this.readD();
+		this._skillLvl = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -67,14 +67,14 @@ public final class RequestExEnchantSkillRouteChange extends L2GameClientPacket
 			return;
 		}
 
-		EnchantSkillLearn sl = SkillTreeTable.getSkillEnchant(_skillId, _skillLvl);
+		EnchantSkillLearn sl = SkillTreeTable.getSkillEnchant(this._skillId, this._skillLvl);
 		if (sl == null)
 		{
 			return;
 		}
 
-		int slevel = activeChar.getSkillDisplayLevel(_skillId);
-		if ((slevel == -1) || slevel <= sl.getBaseLevel() || slevel % 100 != _skillLvl % 100)
+		int slevel = activeChar.getSkillDisplayLevel(this._skillId);
+		if ((slevel == -1) || slevel <= sl.getBaseLevel() || slevel % 100 != this._skillLvl % 100)
 		{
 			return;
 		}
@@ -105,15 +105,15 @@ public final class RequestExEnchantSkillRouteChange extends L2GameClientPacket
 		Functions.removeItem(activeChar, 57, requiredAdena, "SkillRouteChange");
 		activeChar.addExpAndSp(0, -1 * requiredSp);
 
-		int levelPenalty = Rnd.get(Math.min(4, _skillLvl % 100));
+		int levelPenalty = Rnd.get(Math.min(4, this._skillLvl % 100));
 
-		_skillLvl -= levelPenalty;
-		if (_skillLvl % 100 == 0)
+		this._skillLvl -= levelPenalty;
+		if (this._skillLvl % 100 == 0)
 		{
-			_skillLvl = sl.getBaseLevel();
+			this._skillLvl = sl.getBaseLevel();
 		}
 
-		Skill skill = SkillTable.getInstance().getInfo(_skillId, SkillTreeTable.convertEnchantLevel(sl.getBaseLevel(), _skillLvl, sl.getMaxLevel()));
+		Skill skill = SkillTable.getInstance().getInfo(this._skillId, SkillTreeTable.convertEnchantLevel(sl.getBaseLevel(), this._skillLvl, sl.getMaxLevel()));
 
 		// claww fix sub
 		if (!SkillAcquireHolder.getInstance().isSkillPossible(activeChar, skill))
@@ -130,26 +130,26 @@ public final class RequestExEnchantSkillRouteChange extends L2GameClientPacket
 		if (levelPenalty == 0)
 		{
 			SystemMessage2 sm = new SystemMessage2(SystemMsg.S1S_AUCTION_HAS_ENDED);
-			sm.addSkillName(_skillId, _skillLvl);
+			sm.addSkillName(this._skillId, this._skillLvl);
 			activeChar.sendPacket(sm);
 		}
 		else
 		{
 			SystemMessage2 sm = new SystemMessage2(SystemMsg.S1S2S_AUCTION_HAS_ENDED);
-			sm.addSkillName(_skillId, _skillLvl);
+			sm.addSkillName(this._skillId, this._skillLvl);
 			sm.addInteger(levelPenalty);
 			activeChar.sendPacket(sm);
 		}
 
-		Log.add(activeChar.getName() + "|Successfully changed route|" + _skillId + "|" + slevel + "|to+" + _skillLvl + "|" + levelPenalty, "enchant_skills");
+		Log.add(activeChar.getName() + "|Successfully changed route|" + this._skillId + "|" + slevel + "|to+" + this._skillLvl + "|" + levelPenalty, "enchant_skills");
 
-		activeChar.sendPacket(new ExEnchantSkillInfo(_skillId, activeChar.getSkillDisplayLevel(_skillId)), new ExEnchantSkillResult(1));
-		RequestExEnchantSkill.updateSkillShortcuts(activeChar, _skillId, _skillLvl);
+		activeChar.sendPacket(new ExEnchantSkillInfo(this._skillId, activeChar.getSkillDisplayLevel(this._skillId)), new ExEnchantSkillResult(1));
+		RequestExEnchantSkill.updateSkillShortcuts(activeChar, this._skillId, this._skillLvl);
 
 		// Synerge - In retail server there is a bug when you enchant a skill, its reuse gets reset if you try to use it from a macro.
 		if (!Config.ALLOW_MACROS_ENCHANT_BUG)
 		{
-			TimeStamp oldSkillReuse = activeChar.getSkillReuses().stream().filter(ts -> ts.getId() == _skillId).findFirst().orElse(null);
+			TimeStamp oldSkillReuse = activeChar.getSkillReuses().stream().filter(ts -> ts.getId() == this._skillId).findFirst().orElse(null);
 			if (oldSkillReuse != null)
 			{
 				activeChar.disableSkill(skill, oldSkillReuse.getReuseCurrent());

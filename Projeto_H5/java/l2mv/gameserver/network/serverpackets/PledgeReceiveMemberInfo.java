@@ -8,19 +8,19 @@ public class PledgeReceiveMemberInfo extends L2GameServerPacket
 
 	public PledgeReceiveMemberInfo(UnitMember member)
 	{
-		_member = member;
+		this._member = member;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x3e);
+		this.writeEx(0x3e);
 
-		writeD(_member.getPledgeType());
-		writeS(_member.getName());
-		writeS(_member.getTitle());
-		writeD(_member.getPowerGrade());
-		writeS(_member.getSubUnit().getName());
-		writeS(_member.getRelatedName()); // apprentice/sponsor name if any
+		this.writeD(this._member.getPledgeType());
+		this.writeS(this._member.getName());
+		this.writeS(this._member.getTitle());
+		this.writeD(this._member.getPowerGrade());
+		this.writeS(this._member.getSubUnit().getName());
+		this.writeS(this._member.getRelatedName()); // apprentice/sponsor name if any
 	}
 }

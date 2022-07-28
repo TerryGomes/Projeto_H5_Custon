@@ -18,7 +18,7 @@ public class RequestExShowNewUserPetition extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null || !Config.EX_NEW_PETITION_SYSTEM)
 		{
 			return;

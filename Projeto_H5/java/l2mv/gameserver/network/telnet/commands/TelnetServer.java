@@ -19,7 +19,7 @@ public class TelnetServer implements TelnetCommandHolder
 
 	public TelnetServer()
 	{
-		_commands.add(new TelnetCommand("version", "ver")
+		this._commands.add(new TelnetCommand("version", "ver")
 		{
 			@Override
 			public String getUsage()
@@ -34,7 +34,7 @@ public class TelnetServer implements TelnetCommandHolder
 			}
 		});
 
-		_commands.add(new TelnetCommand("uptime")
+		this._commands.add(new TelnetCommand("uptime")
 		{
 			@Override
 			public String getUsage()
@@ -49,7 +49,7 @@ public class TelnetServer implements TelnetCommandHolder
 			}
 		});
 
-		_commands.add(new TelnetCommand("restart")
+		this._commands.add(new TelnetCommand("restart")
 		{
 			@Override
 			public String getUsage()
@@ -105,7 +105,7 @@ public class TelnetServer implements TelnetCommandHolder
 			}
 		});
 
-		_commands.add(new TelnetCommand("shutdown")
+		this._commands.add(new TelnetCommand("shutdown")
 		{
 			@Override
 			public String getUsage()
@@ -161,7 +161,7 @@ public class TelnetServer implements TelnetCommandHolder
 			}
 		});
 
-		_commands.add(new TelnetCommand("abort")
+		this._commands.add(new TelnetCommand("abort")
 		{
 
 			@Override
@@ -183,6 +183,6 @@ public class TelnetServer implements TelnetCommandHolder
 	@Override
 	public Set<TelnetCommand> getCommands()
 	{
-		return _commands;
+		return this._commands;
 	}
 }

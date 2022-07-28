@@ -18,18 +18,18 @@ public class NpcSay extends NpcStringContainer
 	public NpcSay(NpcInstance npc, ChatType chatType, NpcString npcString, String... params)
 	{
 		super(npcString, params);
-		_objId = npc.getObjectId();
-		_id = npc.getNpcId();
-		_type = chatType.ordinal();
+		this._objId = npc.getObjectId();
+		this._id = npc.getNpcId();
+		this._type = chatType.ordinal();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x30);
-		writeD(_objId);
-		writeD(_type);
-		writeD(1000000 + _id);
-		writeElements();
+		this.writeC(0x30);
+		this.writeD(this._objId);
+		this.writeD(this._type);
+		this.writeD(1000000 + this._id);
+		this.writeElements();
 	}
 }

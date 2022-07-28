@@ -16,19 +16,19 @@ public class RequestExShowStepTwo extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_petitionGroupId = readC();
+		this._petitionGroupId = this.readC();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null || !Config.EX_NEW_PETITION_SYSTEM)
 		{
 			return;
 		}
 
-		PetitionMainGroup group = PetitionGroupHolder.getInstance().getPetitionGroup(_petitionGroupId);
+		PetitionMainGroup group = PetitionGroupHolder.getInstance().getPetitionGroup(this._petitionGroupId);
 		if (group == null)
 		{
 			return;

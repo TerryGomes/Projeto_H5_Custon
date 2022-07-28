@@ -12,6 +12,6 @@ public final class RequestStatus extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		getClient().close(new SendStatus());
+		this.getClient().close(new SendStatus());
 	}
 }

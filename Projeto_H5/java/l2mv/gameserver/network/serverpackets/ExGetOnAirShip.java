@@ -11,19 +11,19 @@ public class ExGetOnAirShip extends L2GameServerPacket
 
 	public ExGetOnAirShip(Player cha, Boat boat, Location loc)
 	{
-		_playerObjectId = cha.getObjectId();
-		_boatObjectId = boat.getObjectId();
-		_loc = loc;
+		this._playerObjectId = cha.getObjectId();
+		this._boatObjectId = boat.getObjectId();
+		this._loc = loc;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x63);
-		writeD(_playerObjectId);
-		writeD(_boatObjectId);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
+		this.writeEx(0x63);
+		this.writeD(this._playerObjectId);
+		this.writeD(this._boatObjectId);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
 	}
 }

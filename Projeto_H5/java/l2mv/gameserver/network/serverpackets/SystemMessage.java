@@ -4632,18 +4632,18 @@ public class SystemMessage extends L2GameServerPacket
 
 	public SystemMessage(SystemMsg msg)
 	{
-		_messageId = msg.getId();
+		this._messageId = msg.getId();
 	}
 
 	public SystemMessage(int messageId)
 	{
-		_messageId = messageId;
+		this._messageId = messageId;
 	}
 
 	public SystemMessage(String msg)
 	{
 		this(S1);
-		addString(msg);
+		this.addString(msg);
 	}
 
 	public static SystemMessage obtainItemsByMail(ItemInstance item)
@@ -4653,19 +4653,19 @@ public class SystemMessage extends L2GameServerPacket
 
 	public SystemMessage addString(String text)
 	{
-		args.add(new Arg(TYPE_TEXT, StringUtils.defaultString(text)));
+		this.args.add(new Arg(TYPE_TEXT, StringUtils.defaultString(text)));
 		return this;
 	}
 
 	public SystemMessage addNumber(int number)
 	{
-		args.add(new Arg(TYPE_NUMBER, number));
+		this.args.add(new Arg(TYPE_NUMBER, number));
 		return this;
 	}
 
 	public SystemMessage addNumber(long number)
 	{
-		args.add(new Arg(TYPE_LONG, number));
+		this.args.add(new Arg(TYPE_LONG, number));
 		return this;
 	}
 
@@ -4676,49 +4676,49 @@ public class SystemMessage extends L2GameServerPacket
 	{
 		if (cha == null)
 		{
-			return addString(StringUtils.EMPTY);
+			return this.addString(StringUtils.EMPTY);
 		}
 
 		if (cha.isDoor())
 		{
-			return addDoorName(((DoorInstance) cha).getDoorId());
+			return this.addDoorName(((DoorInstance) cha).getDoorId());
 		}
 
 		if (cha.getNpcId() <= 0)
 		{
-			return addString(cha.getName());
+			return this.addString(cha.getName());
 		}
 
-		return addNpcName(cha.getNpcId());
+		return this.addNpcName(cha.getNpcId());
 	}
 
 	public SystemMessage addDoorName(int id)
 	{
-		args.add(new Arg(TYPE_DOOR_NAME, new Integer(id)));
+		this.args.add(new Arg(TYPE_DOOR_NAME, new Integer(id)));
 		return this;
 	}
 
 	public SystemMessage addNpcName(int id)
 	{
-		args.add(new Arg(TYPE_NPC_NAME, new Integer(1000000 + id)));
+		this.args.add(new Arg(TYPE_NPC_NAME, new Integer(1000000 + id)));
 		return this;
 	}
 
 	public SystemMessage addItemName(int id)
 	{
-		args.add(new Arg(TYPE_ITEM_NAME, id));
+		this.args.add(new Arg(TYPE_ITEM_NAME, id));
 		return this;
 	}
 
 	public SystemMessage addZoneName(Location loc)
 	{
-		args.add(new Arg(TYPE_ZONE_NAME, loc));
+		this.args.add(new Arg(TYPE_ZONE_NAME, loc));
 		return this;
 	}
 
 	public SystemMessage addSkillName(int id, int level)
 	{
-		args.add(new Arg(TYPE_SKILL_NAME, new int[]
+		this.args.add(new Arg(TYPE_SKILL_NAME, new int[]
 		{
 			id,
 			level
@@ -4733,7 +4733,7 @@ public class SystemMessage extends L2GameServerPacket
 	 */
 	public SystemMessage addElemntal(int type)
 	{
-		args.add(new Arg(TYPE_ELEMENT_NAME, type));
+		this.args.add(new Arg(TYPE_ELEMENT_NAME, type));
 		return this;
 	}
 
@@ -4744,7 +4744,7 @@ public class SystemMessage extends L2GameServerPacket
 	 */
 	public SystemMessage addSystemString(int type)
 	{
-		args.add(new Arg(TYPE_SYSTEM_STRING, type));
+		this.args.add(new Arg(TYPE_SYSTEM_STRING, type));
 		return this;
 	}
 
@@ -4755,7 +4755,7 @@ public class SystemMessage extends L2GameServerPacket
 	 */
 	public SystemMessage addInstanceName(int type)
 	{
-		args.add(new Arg(TYPE_INSTANCE_NAME, type));
+		this.args.add(new Arg(TYPE_INSTANCE_NAME, type));
 		return this;
 	}
 
@@ -4770,33 +4770,33 @@ public class SystemMessage extends L2GameServerPacket
 	 */
 	public SystemMessage addFortId(int number)
 	{
-		args.add(new Arg(TYPE_CASTLE_NAME, number));
+		this.args.add(new Arg(TYPE_CASTLE_NAME, number));
 		return this;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		writeC(0x62);
+		this.writeC(0x62);
 
-		writeD(_messageId);
-		writeD(args.size());
-		for (Arg e : args)
+		this.writeD(this._messageId);
+		this.writeD(this.args.size());
+		for (Arg e : this.args)
 		{
-			writeD(e.type);
+			this.writeD(e.type);
 
 			switch (e.type)
 			{
 			case TYPE_TEXT:
 			case TYPE_PLAYER_NAME:
 			{
-				writeS((String) e.obj);
+				this.writeS((String) e.obj);
 				break;
 			}
 			case TYPE_NUMBER:
@@ -4808,34 +4808,34 @@ public class SystemMessage extends L2GameServerPacket
 			case TYPE_INSTANCE_NAME:
 			case TYPE_DOOR_NAME:
 			{
-				writeD(((Number) e.obj).intValue());
+				this.writeD(((Number) e.obj).intValue());
 				break;
 			}
 			case TYPE_SKILL_NAME:
 			{
 				int[] skill = (int[]) e.obj;
-				writeD(skill[0]); // id
-				writeD(skill[1]); // level
+				this.writeD(skill[0]); // id
+				this.writeD(skill[1]); // level
 				break;
 			}
 			case TYPE_LONG:
 			{
-				writeQ((Long) e.obj);
+				this.writeQ((Long) e.obj);
 				break;
 			}
 			case TYPE_ZONE_NAME:
 			{
 				Location coord = (Location) e.obj;
-				writeD(coord.x);
-				writeD(coord.y);
-				writeD(coord.z);
+				this.writeD(coord.x);
+				this.writeD(coord.y);
+				this.writeD(coord.z);
 				break;
 			}
 			case TYPE_UNKNOWN_8:
 			{
-				writeD(0x00); // ?
-				writeH(0x00); // ?
-				writeH(0x00); // ?
+				this.writeD(0x00); // ?
+				this.writeH(0x00); // ?
+				this.writeH(0x00); // ?
 				break;
 			}
 			}
@@ -4849,8 +4849,8 @@ public class SystemMessage extends L2GameServerPacket
 
 		private Arg(int _type, Object _obj)
 		{
-			type = _type;
-			obj = _obj;
+			this.type = _type;
+			this.obj = _obj;
 		}
 	}
 }

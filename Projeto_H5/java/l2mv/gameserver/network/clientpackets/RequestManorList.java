@@ -18,6 +18,6 @@ public class RequestManorList extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		sendPacket(new ExSendManorList());
+		this.sendPacket(new ExSendManorList());
 	}
 }

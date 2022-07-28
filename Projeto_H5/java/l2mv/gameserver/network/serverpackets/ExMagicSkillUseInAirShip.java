@@ -10,6 +10,6 @@ public class ExMagicSkillUseInAirShip extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x73);
+		this.writeEx(0x73);
 	}
 }

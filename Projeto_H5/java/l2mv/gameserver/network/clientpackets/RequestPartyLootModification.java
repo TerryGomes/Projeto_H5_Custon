@@ -10,24 +10,24 @@ public class RequestPartyLootModification extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_mode = (byte) readD();
+		this._mode = (byte) this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if ((activeChar == null) || _mode < 0 || _mode > Party.ITEM_ORDER_SPOIL)
+		Player activeChar = this.getClient().getActiveChar();
+		if ((activeChar == null) || this._mode < 0 || this._mode > Party.ITEM_ORDER_SPOIL)
 		{
 			return;
 		}
 
 		Party party = activeChar.getParty();
-		if (party == null || _mode == party.getLootDistribution() || party.getLeader() != activeChar)
+		if (party == null || this._mode == party.getLootDistribution() || party.getLeader() != activeChar)
 		{
 			return;
 		}
 
-		party.requestLootChange(_mode);
+		party.requestLootChange(this._mode);
 	}
 }

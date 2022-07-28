@@ -9,13 +9,13 @@ public class JoinParty extends L2GameServerPacket
 
 	public JoinParty(int response)
 	{
-		_response = response;
+		this._response = response;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x3A);
-		writeD(_response);
+		this.writeC(0x3A);
+		this.writeD(this._response);
 	}
 }

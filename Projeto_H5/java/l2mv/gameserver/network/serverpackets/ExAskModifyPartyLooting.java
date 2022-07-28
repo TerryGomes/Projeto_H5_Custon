@@ -7,15 +7,15 @@ public class ExAskModifyPartyLooting extends L2GameServerPacket
 
 	public ExAskModifyPartyLooting(String name, int mode)
 	{
-		_requestor = name;
-		_mode = mode;
+		this._requestor = name;
+		this._mode = mode;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xBF);
-		writeS(_requestor);
-		writeD(_mode);
+		this.writeEx(0xBF);
+		this.writeS(this._requestor);
+		this.writeD(this._mode);
 	}
 }

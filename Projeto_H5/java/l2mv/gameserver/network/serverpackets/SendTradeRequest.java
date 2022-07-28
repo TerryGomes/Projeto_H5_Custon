@@ -6,13 +6,13 @@ public class SendTradeRequest extends L2GameServerPacket
 
 	public SendTradeRequest(int senderId)
 	{
-		_senderId = senderId;
+		this._senderId = senderId;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x70);
-		writeD(_senderId);
+		this.writeC(0x70);
+		this.writeD(this._senderId);
 	}
 }

@@ -15,13 +15,13 @@ public class RequestOustFromPartyRoom extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
+		this._objectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 
 		MatchingRoom room = player.getMatchingRoom();
 		if (room == null || room.getType() != MatchingRoom.PARTY_MATCHING || (room.getLeader() != player))
@@ -29,7 +29,7 @@ public class RequestOustFromPartyRoom extends L2GameClientPacket
 			return;
 		}
 
-		Player member = GameObjectsStorage.getPlayer(_objectId);
+		Player member = GameObjectsStorage.getPlayer(this._objectId);
 		if ((member == null) || (member == room.getLeader()))
 		{
 			return;

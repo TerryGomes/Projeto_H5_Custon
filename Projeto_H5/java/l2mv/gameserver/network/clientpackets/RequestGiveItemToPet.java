@@ -15,15 +15,15 @@ public class RequestGiveItemToPet extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
-		_amount = readQ();
+		this._objectId = this.readD();
+		this._amount = this.readQ();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || _amount < 1)
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar == null || this._amount < 1)
 		{
 			return;
 		}
@@ -59,7 +59,7 @@ public class RequestGiveItemToPet extends L2GameClientPacket
 			return;
 		}
 
-		if ((_objectId == pet.getControlItemObjId()) || activeChar.isInStoreMode())
+		if ((this._objectId == pet.getControlItemObjId()) || activeChar.isInStoreMode())
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -68,15 +68,15 @@ public class RequestGiveItemToPet extends L2GameClientPacket
 		PetInventory petInventory = pet.getInventory();
 		PcInventory playerInventory = activeChar.getInventory();
 
-		ItemInstance item = playerInventory.getItemByObjectId(_objectId);
-		if (item == null || item.getCount() < _amount || !item.canBeDropped(activeChar, false))
+		ItemInstance item = playerInventory.getItemByObjectId(this._objectId);
+		if (item == null || item.getCount() < this._amount || !item.canBeDropped(activeChar, false))
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		int slots = 0;
-		long weight = item.getTemplate().getWeight() * _amount;
+		long weight = item.getTemplate().getWeight() * this._amount;
 		if (!item.getTemplate().isStackable() || pet.getInventory().getItemByItemId(item.getItemId()) == null)
 		{
 			slots = 1;
@@ -94,7 +94,7 @@ public class RequestGiveItemToPet extends L2GameClientPacket
 			return;
 		}
 
-		petInventory.addItem(playerInventory.removeItemByObjectId(_objectId, _amount, "GiveItemToPet"), "GiveItemToPet");
+		petInventory.addItem(playerInventory.removeItemByObjectId(this._objectId, this._amount, "GiveItemToPet"), "GiveItemToPet");
 
 		pet.sendChanges();
 		activeChar.sendChanges();

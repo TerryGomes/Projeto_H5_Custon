@@ -15,13 +15,13 @@ public class RequestStopPledgeWar extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_pledgeName = readS(32);
+		this._pledgeName = this.readS(32);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -39,7 +39,7 @@ public class RequestStopPledgeWar extends L2GameClientPacket
 			return;
 		}
 
-		Clan clan = ClanTable.getInstance().getClanByName(_pledgeName);
+		Clan clan = ClanTable.getInstance().getClanByName(this._pledgeName);
 
 		if (clan == null)
 		{

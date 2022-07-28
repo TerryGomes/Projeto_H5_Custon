@@ -17,47 +17,47 @@ public class PledgeShowInfoUpdate extends L2GameServerPacket
 
 	public PledgeShowInfoUpdate(Clan clan)
 	{
-		clan_id = clan.getClanId();
-		clan_level = clan.getLevel();
-		HasCastle = clan.getCastle();
-		HasHideout = clan.getHasHideout();
-		HasFortress = clan.getHasFortress();
-		clan_rank = clan.getRank();
-		clan_rep = clan.getReputationScore();
-		crest_id = clan.getCrestId();
-		ally_id = clan.getAllyId();
-		atwar = clan.isAtWar();
-		_territorySide = clan.getWarDominion();
-		_isDisbanded = clan.isPlacedForDisband();
+		this.clan_id = clan.getClanId();
+		this.clan_level = clan.getLevel();
+		this.HasCastle = clan.getCastle();
+		this.HasHideout = clan.getHasHideout();
+		this.HasFortress = clan.getHasFortress();
+		this.clan_rank = clan.getRank();
+		this.clan_rep = clan.getReputationScore();
+		this.crest_id = clan.getCrestId();
+		this.ally_id = clan.getAllyId();
+		this.atwar = clan.isAtWar();
+		this._territorySide = clan.getWarDominion();
+		this._isDisbanded = clan.isPlacedForDisband();
 		Alliance ally = clan.getAlliance();
 		if (ally != null)
 		{
-			ally_name = ally.getAllyName();
-			ally_crest = ally.getAllyCrestId();
+			this.ally_name = ally.getAllyName();
+			this.ally_crest = ally.getAllyCrestId();
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x8e);
+		this.writeC(0x8e);
 		// sending empty data so client will ask all the info in response ;)
-		writeD(clan_id);
-		writeD(crest_id);
-		writeD(clan_level);
-		writeD(HasCastle);
-		writeD(HasHideout);
-		writeD(HasFortress);
-		writeD(clan_rank);// displayed in the "tree" view (with the clan skills)
-		writeD(clan_rep);
-		writeD(_isDisbanded ? 3 : 0);
-		writeD(0);
-		writeD(ally_id); // c5
-		writeS(ally_name); // c5
-		writeD(ally_crest); // c5
-		writeD(atwar); // c5
+		this.writeD(this.clan_id);
+		this.writeD(this.crest_id);
+		this.writeD(this.clan_level);
+		this.writeD(this.HasCastle);
+		this.writeD(this.HasHideout);
+		this.writeD(this.HasFortress);
+		this.writeD(this.clan_rank);// displayed in the "tree" view (with the clan skills)
+		this.writeD(this.clan_rep);
+		this.writeD(this._isDisbanded ? 3 : 0);
+		this.writeD(0);
+		this.writeD(this.ally_id); // c5
+		this.writeS(this.ally_name); // c5
+		this.writeD(this.ally_crest); // c5
+		this.writeD(this.atwar); // c5
 
-		writeD(0x00);
-		writeD(_territorySide);
+		this.writeD(0x00);
+		this.writeD(this._territorySide);
 	}
 }

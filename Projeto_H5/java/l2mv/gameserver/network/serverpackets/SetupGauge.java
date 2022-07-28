@@ -14,19 +14,19 @@ public class SetupGauge extends L2GameServerPacket
 
 	public SetupGauge(Creature character, int dat1, int time)
 	{
-		_charId = character.getObjectId();
-		_dat1 = dat1;// color 0-blue 1-red 2-cyan 3-
-		_time = time;
+		this._charId = character.getObjectId();
+		this._dat1 = dat1;// color 0-blue 1-red 2-cyan 3-
+		this._time = time;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x6b);
-		writeD(_charId);
-		writeD(_dat1);
-		writeD(_time);
+		this.writeC(0x6b);
+		this.writeD(this._charId);
+		this.writeD(this._dat1);
+		this.writeD(this._time);
 
-		writeD(_time); // c2
+		this.writeD(this._time); // c2
 	}
 }

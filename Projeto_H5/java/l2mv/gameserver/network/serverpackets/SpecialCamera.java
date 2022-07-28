@@ -15,46 +15,46 @@ public class SpecialCamera extends L2GameServerPacket
 
 	public SpecialCamera(int id, int dist, int yaw, int pitch, int time, int duration)
 	{
-		_id = id;
-		_dist = dist;
-		_yaw = yaw;
-		_pitch = pitch;
-		_time = time;
-		_duration = duration;
-		_turn = 0;
-		_rise = 0;
-		_widescreen = 0;
-		_unknown = 0;
+		this._id = id;
+		this._dist = dist;
+		this._yaw = yaw;
+		this._pitch = pitch;
+		this._time = time;
+		this._duration = duration;
+		this._turn = 0;
+		this._rise = 0;
+		this._widescreen = 0;
+		this._unknown = 0;
 	}
 
 	public SpecialCamera(int id, int dist, int yaw, int pitch, int time, int duration, int turn, int rise, int widescreen, int unk)
 	{
-		_id = id;
-		_dist = dist;
-		_yaw = yaw;
-		_pitch = pitch;
-		_time = time;
-		_duration = duration;
-		_turn = turn;
-		_rise = rise;
-		_widescreen = widescreen;
-		_unknown = unk;
+		this._id = id;
+		this._dist = dist;
+		this._yaw = yaw;
+		this._pitch = pitch;
+		this._time = time;
+		this._duration = duration;
+		this._turn = turn;
+		this._rise = rise;
+		this._widescreen = widescreen;
+		this._unknown = unk;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xd6);
+		this.writeC(0xd6);
 		// ddddddddddd
-		writeD(_id); // object id
-		writeD(_dist); // расстояние до объекта
-		writeD(_yaw); // North=90, south=270, east=0, west=180
-		writeD(_pitch); // > 0:looks up,pitch < 0:looks down (угол наклона)
-		writeD(_time); // faster that small value is
-		writeD(_duration); // время анимации
-		writeD(_turn);
-		writeD(_rise);
-		writeD(_widescreen);
-		writeD(_unknown);
+		this.writeD(this._id); // object id
+		this.writeD(this._dist); // расстояние до объекта
+		this.writeD(this._yaw); // North=90, south=270, east=0, west=180
+		this.writeD(this._pitch); // > 0:looks up,pitch < 0:looks down (угол наклона)
+		this.writeD(this._time); // faster that small value is
+		this.writeD(this._duration); // время анимации
+		this.writeD(this._turn);
+		this.writeD(this._rise);
+		this.writeD(this._widescreen);
+		this.writeD(this._unknown);
 	}
 }

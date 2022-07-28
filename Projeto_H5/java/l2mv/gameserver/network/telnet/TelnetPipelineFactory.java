@@ -35,7 +35,7 @@ public class TelnetPipelineFactory implements ChannelPipelineFactory
 		pipeline.addLast("encoder", new StringEncoder(Charset.forName(Config.TELNET_DEFAULT_ENCODING)));
 
 		// and then business logic.
-		pipeline.addLast("handler", handler);
+		pipeline.addLast("handler", this.handler);
 
 		return pipeline;
 	}

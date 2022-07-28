@@ -9,13 +9,13 @@ public class ExResponseShowContents extends L2GameServerPacket
 
 	public ExResponseShowContents(String contents)
 	{
-		_contents = contents;
+		this._contents = contents;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xB0);
-		writeS(_contents);
+		this.writeEx(0xB0);
+		this.writeS(this._contents);
 	}
 }

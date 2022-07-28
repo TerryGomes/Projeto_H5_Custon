@@ -15,20 +15,20 @@ public class ShortCutInit extends ShortCutPacket
 	public ShortCutInit(Player pl)
 	{
 		Collection<ShortCut> shortCuts = pl.getAllShortCuts();
-		_shortCuts = new ArrayList<ShortcutInfo>(shortCuts.size());
+		this._shortCuts = new ArrayList<ShortcutInfo>(shortCuts.size());
 		for (ShortCut shortCut : shortCuts)
 		{
-			_shortCuts.add(convert(pl, shortCut));
+			this._shortCuts.add(convert(pl, shortCut));
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x45);
-		writeD(_shortCuts.size());
+		this.writeC(0x45);
+		this.writeD(this._shortCuts.size());
 
-		for (ShortcutInfo sc : _shortCuts)
+		for (ShortcutInfo sc : this._shortCuts)
 		{
 			sc.write(this);
 		}

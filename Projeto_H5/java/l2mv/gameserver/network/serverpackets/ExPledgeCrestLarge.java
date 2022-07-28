@@ -7,18 +7,18 @@ public class ExPledgeCrestLarge extends L2GameServerPacket
 
 	public ExPledgeCrestLarge(int crestId, byte[] data)
 	{
-		_crestId = crestId;
-		_data = data;
+		this._crestId = crestId;
+		this._data = data;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x1b);
+		this.writeEx(0x1b);
 
-		writeD(0x00);
-		writeD(_crestId);
-		writeD(_data.length);
-		writeB(_data);
+		this.writeD(0x00);
+		this.writeD(this._crestId);
+		this.writeD(this._data.length);
+		this.writeB(this._data);
 	}
 }

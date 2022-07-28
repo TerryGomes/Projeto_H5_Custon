@@ -10,24 +10,24 @@ public class ExJumpToLocation extends L2GameServerPacket
 
 	public ExJumpToLocation(int objectId, Location from, Location to)
 	{
-		_objectId = objectId;
-		_current = from;
-		_destination = to;
+		this._objectId = objectId;
+		this._current = from;
+		this._destination = to;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x88);
+		this.writeEx(0x88);
 
-		writeD(_objectId);
+		this.writeD(this._objectId);
 
-		writeD(_destination.x);
-		writeD(_destination.y);
-		writeD(_destination.z);
+		this.writeD(this._destination.x);
+		this.writeD(this._destination.y);
+		this.writeD(this._destination.z);
 
-		writeD(_current.x);
-		writeD(_current.y);
-		writeD(_current.z);
+		this.writeD(this._current.x);
+		this.writeD(this._current.y);
+		this.writeD(this._current.z);
 	}
 }

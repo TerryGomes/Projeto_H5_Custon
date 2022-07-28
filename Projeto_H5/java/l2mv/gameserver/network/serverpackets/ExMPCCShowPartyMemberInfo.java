@@ -16,27 +16,27 @@ public class ExMPCCShowPartyMemberInfo extends L2GameServerPacket
 
 	public ExMPCCShowPartyMemberInfo(Party party)
 	{
-		members = new ArrayList<PartyMemberInfo>();
+		this.members = new ArrayList<PartyMemberInfo>();
 		for (Player _member : party.getMembers())
 		{
-			members.add(new PartyMemberInfo(_member.getName(), _member.getObjectId(), _member.getClassId().getId()));
+			this.members.add(new PartyMemberInfo(_member.getName(), _member.getObjectId(), _member.getClassId().getId()));
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x4b);
-		writeD(members.size()); // Количество членов в пати
+		this.writeEx(0x4b);
+		this.writeD(this.members.size()); // Количество членов в пати
 
-		for (PartyMemberInfo member : members)
+		for (PartyMemberInfo member : this.members)
 		{
-			writeS(member.name); // Имя члена пати
-			writeD(member.object_id); // object Id члена пати
-			writeD(member.class_id); // id класса члена пати
+			this.writeS(member.name); // Имя члена пати
+			this.writeD(member.object_id); // object Id члена пати
+			this.writeD(member.class_id); // id класса члена пати
 		}
 
-		members.clear();
+		this.members.clear();
 	}
 
 	static class PartyMemberInfo
@@ -46,9 +46,9 @@ public class ExMPCCShowPartyMemberInfo extends L2GameServerPacket
 
 		public PartyMemberInfo(String _name, int _object_id, int _class_id)
 		{
-			name = _name;
-			object_id = _object_id;
-			class_id = _class_id;
+			this.name = _name;
+			this.object_id = _object_id;
+			this.class_id = _class_id;
 		}
 	}
 }

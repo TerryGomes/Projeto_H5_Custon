@@ -13,7 +13,7 @@ public class RequestDuelSurrender extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;

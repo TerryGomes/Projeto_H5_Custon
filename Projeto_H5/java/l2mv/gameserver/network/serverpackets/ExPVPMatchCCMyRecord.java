@@ -11,13 +11,13 @@ public class ExPVPMatchCCMyRecord extends L2GameServerPacket
 
 	public ExPVPMatchCCMyRecord(KrateisCubePlayerObject player)
 	{
-		_points = player.getPoints();
+		this._points = player.getPoints();
 	}
 
 	@Override
 	public void writeImpl()
 	{
-		writeEx(0x8A);
-		writeD(_points);
+		this.writeEx(0x8A);
+		this.writeD(this._points);
 	}
 }

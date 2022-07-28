@@ -14,18 +14,18 @@ public class RequestPackageSendableItemList extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
+		this._objectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		player.sendPacket(new PackageSendableList(_objectId, player));
+		player.sendPacket(new PackageSendableList(this._objectId, player));
 	}
 }

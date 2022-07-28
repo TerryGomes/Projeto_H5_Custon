@@ -11,13 +11,13 @@ public class ExRpItemLink extends L2GameServerPacket
 
 	public ExRpItemLink(ItemInfo item)
 	{
-		_item = item;
+		this._item = item;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x6c);
-		writeItemInfo(_item);
+		this.writeEx(0x6c);
+		this.writeItemInfo(this._item);
 	}
 }

@@ -9,15 +9,15 @@ public class ExBR_PremiumState extends L2GameServerPacket
 
 	public ExBR_PremiumState(Player activeChar, boolean state)
 	{
-		_objectId = activeChar.getObjectId();
-		_state = state ? 1 : 0;
+		this._objectId = activeChar.getObjectId();
+		this._state = state ? 1 : 0;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xD9);
-		writeD(_objectId);
-		writeC(_state);
+		this.writeEx(0xD9);
+		this.writeD(this._objectId);
+		this.writeC(this._state);
 	}
 }

@@ -15,18 +15,18 @@ public class FinishRotatingC extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_degree = readD();
-		_unknown = readD();
+		this._degree = this.readD();
+		this._unknown = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
-		activeChar.broadcastPacket(new FinishRotating(activeChar, _degree, 0));
+		activeChar.broadcastPacket(new FinishRotating(activeChar, this._degree, 0));
 	}
 }

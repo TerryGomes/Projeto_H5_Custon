@@ -35,37 +35,37 @@ public class AcquireSkillList extends L2GameServerPacket
 
 	public AcquireSkillList(AcquireType type, int size)
 	{
-		_skills = new ArrayList<Skill>(size);
-		_type = type;
+		this._skills = new ArrayList<Skill>(size);
+		this._type = type;
 	}
 
 	public void addSkill(int id, int nextLevel, int maxLevel, int Cost, int requirements, int subUnit)
 	{
-		_skills.add(new Skill(id, nextLevel, maxLevel, Cost, requirements, subUnit));
+		this._skills.add(new Skill(id, nextLevel, maxLevel, Cost, requirements, subUnit));
 	}
 
 	public void addSkill(int id, int nextLevel, int maxLevel, int Cost, int requirements)
 	{
-		_skills.add(new Skill(id, nextLevel, maxLevel, Cost, requirements, 0));
+		this._skills.add(new Skill(id, nextLevel, maxLevel, Cost, requirements, 0));
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x90);
-		writeD(_type.ordinal());
-		writeD(_skills.size());
+		this.writeC(0x90);
+		this.writeD(this._type.ordinal());
+		this.writeD(this._skills.size());
 
-		for (Skill temp : _skills)
+		for (Skill temp : this._skills)
 		{
-			writeD(temp.id);
-			writeD(temp.nextLevel);
-			writeD(temp.maxLevel);
-			writeD(temp.cost);
-			writeD(temp.requirements);
-			if (_type == AcquireType.SUB_UNIT)
+			this.writeD(temp.id);
+			this.writeD(temp.nextLevel);
+			this.writeD(temp.maxLevel);
+			this.writeD(temp.cost);
+			this.writeD(temp.requirements);
+			if (this._type == AcquireType.SUB_UNIT)
 			{
-				writeD(temp.subUnit);
+				this.writeD(temp.subUnit);
 			}
 		}
 	}

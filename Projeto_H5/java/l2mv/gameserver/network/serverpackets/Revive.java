@@ -14,13 +14,13 @@ public class Revive extends L2GameServerPacket
 
 	public Revive(GameObject obj)
 	{
-		_objectId = obj.getObjectId();
+		this._objectId = obj.getObjectId();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x01);
-		writeD(_objectId);
+		this.writeC(0x01);
+		this.writeD(this._objectId);
 	}
 }

@@ -20,12 +20,12 @@ public class RequestPledgeReorganizeMember extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_replace = readD();
-		_subjectName = readS(16);
-		_targetUnit = readD();
-		if (_replace > 0)
+		this._replace = this.readD();
+		this._subjectName = this.readS(16);
+		this._targetUnit = this.readD();
+		if (this._replace > 0)
 		{
-			_replaceName = readS();
+			this._replaceName = this.readS();
 		}
 	}
 
@@ -34,7 +34,7 @@ public class RequestPledgeReorganizeMember extends L2GameClientPacket
 	{
 		// _log.warn("Received RequestPledgeReorganizeMember("+_arg1+","+_arg2+","+_arg3+","+_arg4+") from player "+getClient().getActiveChar().getName());
 
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -54,7 +54,7 @@ public class RequestPledgeReorganizeMember extends L2GameClientPacket
 			return;
 		}
 
-		UnitMember subject = clan.getAnyMember(_subjectName);
+		UnitMember subject = clan.getAnyMember(this._subjectName);
 		if (subject == null)
 		{
 			activeChar.sendMessage(new CustomMessage("l2mv.gameserver.clientpackets.RequestPledgeReorganizeMember.NotInYourClan", activeChar));
@@ -62,21 +62,21 @@ public class RequestPledgeReorganizeMember extends L2GameClientPacket
 			return;
 		}
 
-		if (subject.getPledgeType() == _targetUnit)
+		if (subject.getPledgeType() == this._targetUnit)
 		{
 			activeChar.sendMessage(new CustomMessage("l2mv.gameserver.clientpackets.RequestPledgeReorganizeMember.AlreadyInThatCombatUnit", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (_targetUnit != 0 && clan.getSubUnit(_targetUnit) == null)
+		if (this._targetUnit != 0 && clan.getSubUnit(this._targetUnit) == null)
 		{
 			activeChar.sendMessage(new CustomMessage("l2mv.gameserver.clientpackets.RequestPledgeReorganizeMember.NoSuchCombatUnit", activeChar));
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		if (clan.isAcademy(_targetUnit))
+		if (clan.isAcademy(this._targetUnit))
 		{
 			activeChar.sendMessage(new CustomMessage("l2mv.gameserver.clientpackets.RequestPledgeReorganizeMember.AcademyViaInvitation", activeChar));
 			activeChar.sendActionFailed();
@@ -95,16 +95,16 @@ public class RequestPledgeReorganizeMember extends L2GameClientPacket
 
 		UnitMember replacement = null;
 
-		if (_replace > 0)
+		if (this._replace > 0)
 		{
-			replacement = clan.getAnyMember(_replaceName);
+			replacement = clan.getAnyMember(this._replaceName);
 			if (replacement == null)
 			{
 				activeChar.sendMessage(new CustomMessage("l2mv.gameserver.clientpackets.RequestPledgeReorganizeMember.CharacterNotBelongClan", activeChar));
 				activeChar.sendActionFailed();
 				return;
 			}
-			if (replacement.getPledgeType() != _targetUnit)
+			if (replacement.getPledgeType() != this._targetUnit)
 			{
 				activeChar.sendMessage(new CustomMessage("l2mv.gameserver.clientpackets.RequestPledgeReorganizeMember.CharacterNotBelongCombatUnit", activeChar));
 				activeChar.sendActionFailed();
@@ -119,9 +119,9 @@ public class RequestPledgeReorganizeMember extends L2GameClientPacket
 		}
 		else
 		{
-			if (clan.getUnitMembersSize(_targetUnit) >= clan.getSubPledgeLimit(_targetUnit))
+			if (clan.getUnitMembersSize(this._targetUnit) >= clan.getSubPledgeLimit(this._targetUnit))
 			{
-				if (_targetUnit == Clan.SUBUNIT_MAIN_CLAN)
+				if (this._targetUnit == Clan.SUBUNIT_MAIN_CLAN)
 				{
 					activeChar.sendPacket(new SystemMessage2(SystemMsg.S1_IS_FULL_AND_CANNOT_ACCEPT_ADDITIONAL_CLAN_MEMBERS_AT_THIS_TIME).addString(clan.getName()));
 				}
@@ -161,7 +161,7 @@ public class RequestPledgeReorganizeMember extends L2GameClientPacket
 
 		oldUnit = subject.getSubUnit();
 
-		oldUnit.replace(subject.getObjectId(), _targetUnit);
+		oldUnit.replace(subject.getObjectId(), this._targetUnit);
 
 		clan.broadcastToOnlineMembers(new PledgeShowMemberListUpdate(subject));
 

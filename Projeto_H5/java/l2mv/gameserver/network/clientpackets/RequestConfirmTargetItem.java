@@ -13,14 +13,14 @@ public class RequestConfirmTargetItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_itemObjId = readD(); // object_id шмотки
+		this._itemObjId = this.readD(); // object_id шмотки
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		ItemInstance item = activeChar.getInventory().getItemByObjectId(_itemObjId);
+		Player activeChar = this.getClient().getActiveChar();
+		ItemInstance item = activeChar.getInventory().getItemByObjectId(this._itemObjId);
 
 		if (item == null)
 		{
@@ -45,13 +45,7 @@ public class RequestConfirmTargetItem extends L2GameClientPacket
 			return;
 		}
 
-		else if (item.isNotAugmented())
-		{
-			activeChar.sendPacket(SystemMsg.THIS_IS_NOT_A_SUITABLE_ITEM);
-			return;
-		}
-		// TODO: can do better? : currently: using isdestroyable() as a check for hero / cursed weapons
-		else if (!item.canBeAugmented(activeChar, item.isAccessory()))
+		else if (item.isNotAugmented() || !item.canBeAugmented(activeChar, item.isAccessory()))
 		{
 			activeChar.sendPacket(SystemMsg.THIS_IS_NOT_A_SUITABLE_ITEM);
 			return;
@@ -93,6 +87,6 @@ public class RequestConfirmTargetItem extends L2GameClientPacket
 			activeChar.sendActionFailed();
 			return;
 		}
-		activeChar.sendPacket(new ExPutItemResultForVariationMake(_itemObjId), SystemMsg.SELECT_THE_CATALYST_FOR_AUGMENTATION);
+		activeChar.sendPacket(new ExPutItemResultForVariationMake(this._itemObjId), SystemMsg.SELECT_THE_CATALYST_FOR_AUGMENTATION);
 	}
 }

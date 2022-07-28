@@ -36,7 +36,7 @@ public class TelnetPerfomance implements TelnetCommandHolder
 
 	public TelnetPerfomance()
 	{
-		_commands.add(new TelnetCommand("pool", "p")
+		this._commands.add(new TelnetCommand("pool", "p")
 		{
 			@Override
 			public String getUsage()
@@ -76,7 +76,7 @@ public class TelnetPerfomance implements TelnetCommandHolder
 
 		});
 
-		_commands.add(new TelnetCommand("mem", "m")
+		this._commands.add(new TelnetCommand("mem", "m")
 		{
 			@Override
 			public String getUsage()
@@ -94,7 +94,7 @@ public class TelnetPerfomance implements TelnetCommandHolder
 			}
 		});
 
-		_commands.add(new TelnetCommand("heap")
+		this._commands.add(new TelnetCommand("heap")
 		{
 
 			@Override
@@ -108,11 +108,11 @@ public class TelnetPerfomance implements TelnetCommandHolder
 			{
 				StringBuilder sb = new StringBuilder();
 
-				if ((args.length == 0) || args[0].isEmpty())
+				if (((args.length == 0) || args[0].isEmpty()) || (!args[0].equals("dump") && !args[0].equals("d")))
 				{
 					return null;
 				}
-				else if (args[0].equals("dump") || args[0].equals("d"))
+				else
 				{
 					try
 					{
@@ -131,16 +131,12 @@ public class TelnetPerfomance implements TelnetCommandHolder
 						sb.append("Exception: " + e.getMessage() + "!\n");
 					}
 				}
-				else
-				{
-					return null;
-				}
 
 				return sb.toString();
 			}
 
 		});
-		_commands.add(new TelnetCommand("threads", "t")
+		this._commands.add(new TelnetCommand("threads", "t")
 		{
 			@Override
 			public String getUsage()
@@ -179,7 +175,7 @@ public class TelnetPerfomance implements TelnetCommandHolder
 			}
 		});
 
-		_commands.add(new TelnetCommand("gc")
+		this._commands.add(new TelnetCommand("gc")
 		{
 			@Override
 			public String getUsage()
@@ -197,7 +193,7 @@ public class TelnetPerfomance implements TelnetCommandHolder
 			}
 		});
 
-		_commands.add(new TelnetCommand("net", "ns")
+		this._commands.add(new TelnetCommand("net", "ns")
 		{
 			@Override
 			public String getUsage()
@@ -217,7 +213,7 @@ public class TelnetPerfomance implements TelnetCommandHolder
 
 		});
 
-		_commands.add(new TelnetCommand("pathfind", "pfs")
+		this._commands.add(new TelnetCommand("pathfind", "pfs")
 		{
 
 			@Override
@@ -238,7 +234,7 @@ public class TelnetPerfomance implements TelnetCommandHolder
 
 		});
 
-		_commands.add(new TelnetCommand("dbstats", "ds")
+		this._commands.add(new TelnetCommand("dbstats", "ds")
 		{
 
 			@Override
@@ -329,7 +325,7 @@ public class TelnetPerfomance implements TelnetCommandHolder
 
 		});
 
-		_commands.add(new TelnetCommand("aistats", "as")
+		this._commands.add(new TelnetCommand("aistats", "as")
 		{
 
 			@Override
@@ -355,7 +351,7 @@ public class TelnetPerfomance implements TelnetCommandHolder
 			}
 
 		});
-		_commands.add(new TelnetCommand("effectstats", "es")
+		this._commands.add(new TelnetCommand("effectstats", "es")
 		{
 
 			@Override
@@ -386,6 +382,6 @@ public class TelnetPerfomance implements TelnetCommandHolder
 	@Override
 	public Set<TelnetCommand> getCommands()
 	{
-		return _commands;
+		return this._commands;
 	}
 }

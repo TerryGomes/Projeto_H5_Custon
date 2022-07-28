@@ -8,18 +8,18 @@ public class PledgePowerGradeList extends L2GameServerPacket
 
 	public PledgePowerGradeList(RankPrivs[] privs)
 	{
-		_privs = privs;
+		this._privs = privs;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x3c);
-		writeD(_privs.length);
-		for (RankPrivs element : _privs)
+		this.writeEx(0x3c);
+		this.writeD(this._privs.length);
+		for (RankPrivs element : this._privs)
 		{
-			writeD(element.getRank());
-			writeD(element.getParty());
+			this.writeD(element.getRank());
+			this.writeD(element.getParty());
 		}
 	}
 }

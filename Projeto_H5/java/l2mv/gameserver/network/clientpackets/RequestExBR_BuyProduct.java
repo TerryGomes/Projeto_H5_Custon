@@ -17,21 +17,21 @@ public class RequestExBR_BuyProduct extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_productId = readD();
-		_count = readD();
+		this._productId = this.readD();
+		this._count = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 
-		if ((activeChar == null) || _count > 99 || _count < 0)
+		if ((activeChar == null) || this._count > 99 || this._count < 0)
 		{
 			return;
 		}
 
-		ProductItem product = ProductHolder.getInstance().getProduct(_productId);
+		ProductItem product = ProductHolder.getInstance().getProduct(this._productId);
 		if (product == null)
 		{
 			activeChar.sendPacket(new ExBR_BuyProduct(ExBR_BuyProduct.RESULT_WRONG_PRODUCT));
@@ -44,7 +44,7 @@ public class RequestExBR_BuyProduct extends L2GameClientPacket
 			return;
 		}
 
-		int totalPoints = product.getPoints() * _count;
+		int totalPoints = product.getPoints() * this._count;
 
 		if (totalPoints < 0)
 		{
@@ -66,7 +66,7 @@ public class RequestExBR_BuyProduct extends L2GameClientPacket
 			totalWeight += com.getWeight();
 		}
 
-		totalWeight *= _count; // увеличиваем вес согласно количеству
+		totalWeight *= this._count; // увеличиваем вес согласно количеству
 
 		int totalCount = 0;
 
@@ -78,7 +78,7 @@ public class RequestExBR_BuyProduct extends L2GameClientPacket
 				activeChar.sendPacket(new ExBR_BuyProduct(ExBR_BuyProduct.RESULT_WRONG_PRODUCT));
 				return; // what
 			}
-			totalCount += item.isStackable() ? 1 : com.getCount() * _count;
+			totalCount += item.isStackable() ? 1 : com.getCount() * this._count;
 		}
 
 		if (!activeChar.getInventory().validateCapacity(totalCount) || !activeChar.getInventory().validateWeight(totalWeight))
@@ -91,7 +91,7 @@ public class RequestExBR_BuyProduct extends L2GameClientPacket
 
 		for (ProductItemComponent $comp : product.getComponents())
 		{
-			activeChar.getInventory().addItem($comp.getItemId(), $comp.getCount() * _count, "RequestExBR_BuyProduct");
+			activeChar.getInventory().addItem($comp.getItemId(), $comp.getCount() * this._count, "RequestExBR_BuyProduct");
 		}
 
 		activeChar.sendPacket(new ExBR_GamePoint(activeChar));

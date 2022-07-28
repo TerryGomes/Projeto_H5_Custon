@@ -27,24 +27,24 @@ public class ExHeroList extends L2GameServerPacket
 
 	public ExHeroList()
 	{
-		_heroList = Hero.getInstance().getHeroes();
+		this._heroList = Hero.getInstance().getHeroes();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x79);
+		this.writeEx(0x79);
 
-		writeD(_heroList.size());
-		for (StatsSet hero : _heroList.values())
+		this.writeD(this._heroList.size());
+		for (StatsSet hero : this._heroList.values())
 		{
-			writeS(hero.getString(Olympiad.CHAR_NAME));
-			writeD(hero.getInteger(Olympiad.CLASS_ID));
-			writeS(hero.getString(Hero.CLAN_NAME, StringUtils.EMPTY));
-			writeD(hero.getInteger(Hero.CLAN_CREST, 0));
-			writeS(hero.getString(Hero.ALLY_NAME, StringUtils.EMPTY));
-			writeD(hero.getInteger(Hero.ALLY_CREST, 0));
-			writeD(hero.getInteger(Hero.COUNT));
+			this.writeS(hero.getString(Olympiad.CHAR_NAME));
+			this.writeD(hero.getInteger(Olympiad.CLASS_ID));
+			this.writeS(hero.getString(Hero.CLAN_NAME, StringUtils.EMPTY));
+			this.writeD(hero.getInteger(Hero.CLAN_CREST, 0));
+			this.writeS(hero.getString(Hero.ALLY_NAME, StringUtils.EMPTY));
+			this.writeD(hero.getInteger(Hero.ALLY_CREST, 0));
+			this.writeD(hero.getInteger(Hero.COUNT));
 		}
 	}
 }

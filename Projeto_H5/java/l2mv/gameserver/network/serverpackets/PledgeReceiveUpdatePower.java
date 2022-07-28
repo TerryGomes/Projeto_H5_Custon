@@ -6,13 +6,13 @@ public class PledgeReceiveUpdatePower extends L2GameServerPacket
 
 	public PledgeReceiveUpdatePower(int privs)
 	{
-		_privs = privs;
+		this._privs = privs;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x42);
-		writeD(_privs); // Filler??????
+		this.writeEx(0x42);
+		this.writeD(this._privs); // Filler??????
 	}
 }

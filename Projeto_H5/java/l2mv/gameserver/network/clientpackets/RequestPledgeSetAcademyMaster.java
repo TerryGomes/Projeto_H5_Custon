@@ -18,15 +18,15 @@ public class RequestPledgeSetAcademyMaster extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_mode = readD();
-		_sponsorName = readS(16);
-		_apprenticeName = readS(16);
+		this._mode = this.readD();
+		this._sponsorName = this.readS(16);
+		this._apprenticeName = this.readS(16);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -40,8 +40,8 @@ public class RequestPledgeSetAcademyMaster extends L2GameClientPacket
 
 		if ((activeChar.getClanPrivileges() & Clan.CP_CL_APPRENTICE) == Clan.CP_CL_APPRENTICE)
 		{
-			UnitMember sponsor = activeChar.getClan().getAnyMember(_sponsorName);
-			UnitMember apprentice = activeChar.getClan().getAnyMember(_apprenticeName);
+			UnitMember sponsor = activeChar.getClan().getAnyMember(this._sponsorName);
+			UnitMember apprentice = activeChar.getClan().getAnyMember(this._apprenticeName);
 			if (sponsor != null && apprentice != null)
 			{
 				if (apprentice.getPledgeType() != Clan.SUBUNIT_ACADEMY || sponsor.getPledgeType() == Clan.SUBUNIT_ACADEMY)
@@ -49,7 +49,7 @@ public class RequestPledgeSetAcademyMaster extends L2GameClientPacket
 					return; // hack?
 				}
 
-				if (_mode == 1)
+				if (this._mode == 1)
 				{
 					if (sponsor.hasApprentice())
 					{

@@ -18,33 +18,33 @@ public class RequestExManageMpccRoom extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_id = readD(); // id
-		_memberSize = readD(); // member size
-		_minLevel = readD(); // min level
-		_maxLevel = readD(); // max level
-		readD(); // lootType
-		_topic = readS(); // topic
+		this._id = this.readD(); // id
+		this._memberSize = this.readD(); // member size
+		this._minLevel = this.readD(); // min level
+		this._maxLevel = this.readD(); // max level
+		this.readD(); // lootType
+		this._topic = this.readS(); // topic
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
 		MatchingRoom room = player.getMatchingRoom();
-		if (room == null || room.getId() != _id || room.getType() != MatchingRoom.CC_MATCHING || (room.getLeader() != player))
+		if (room == null || room.getId() != this._id || room.getType() != MatchingRoom.CC_MATCHING || (room.getLeader() != player))
 		{
 			return;
 		}
 
-		room.setTopic(_topic);
-		room.setMaxMemberSize(_memberSize);
-		room.setMinLevel(_minLevel);
-		room.setMaxLevel(_maxLevel);
+		room.setTopic(this._topic);
+		room.setMaxMemberSize(this._memberSize);
+		room.setMinLevel(this._minLevel);
+		room.setMaxLevel(this._maxLevel);
 		room.sendPacket(room.infoRoomPacket());
 
 		player.sendPacket(SystemMsg.THE_COMMAND_CHANNEL_MATCHING_ROOM_INFORMATION_WAS_EDITED);

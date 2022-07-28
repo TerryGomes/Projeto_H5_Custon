@@ -22,73 +22,73 @@ public class PledgeShowMemberListAll extends L2GameServerPacket
 
 	public PledgeShowMemberListAll(Clan clan, SubUnit sub)
 	{
-		_pledgeType = sub.getType();
-		_clanObjectId = clan.getClanId();
-		_unitName = sub.getName();
-		_leaderName = sub.getLeaderName();
-		_clanCrestId = clan.getCrestId();
-		_level = clan.getLevel();
-		_hasCastle = clan.getCastle();
-		_hasClanHall = clan.getHasHideout();
-		_hasFortress = clan.getHasFortress();
-		_rank = clan.getRank();
-		_reputation = clan.getReputationScore();
-		_atClanWar = clan.isAtWarOrUnderAttack();
-		_territorySide = clan.getWarDominion();
-		_isDisbanded = clan.isPlacedForDisband();
+		this._pledgeType = sub.getType();
+		this._clanObjectId = clan.getClanId();
+		this._unitName = sub.getName();
+		this._leaderName = sub.getLeaderName();
+		this._clanCrestId = clan.getCrestId();
+		this._level = clan.getLevel();
+		this._hasCastle = clan.getCastle();
+		this._hasClanHall = clan.getHasHideout();
+		this._hasFortress = clan.getHasFortress();
+		this._rank = clan.getRank();
+		this._reputation = clan.getReputationScore();
+		this._atClanWar = clan.isAtWarOrUnderAttack();
+		this._territorySide = clan.getWarDominion();
+		this._isDisbanded = clan.isPlacedForDisband();
 
 		Alliance ally = clan.getAlliance();
 
 		if (ally != null)
 		{
-			_allianceObjectId = ally.getAllyId();
-			_allianceName = ally.getAllyName();
-			_allianceCrestId = ally.getAllyCrestId();
+			this._allianceObjectId = ally.getAllyId();
+			this._allianceName = ally.getAllyName();
+			this._allianceCrestId = ally.getAllyCrestId();
 		}
 
-		_members = new ArrayList<PledgePacketMember>(sub.size());
+		this._members = new ArrayList<PledgePacketMember>(sub.size());
 
 		for (UnitMember m : sub.getUnitMembers())
 		{
-			_members.add(new PledgePacketMember(m));
+			this._members.add(new PledgePacketMember(m));
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x5a);
+		this.writeC(0x5a);
 
-		writeD(_pledgeType == Clan.SUBUNIT_MAIN_CLAN ? 0 : 1);
-		writeD(_clanObjectId);
-		writeD(_pledgeType);
-		writeS(_unitName);
-		writeS(_leaderName);
-		writeD(_clanCrestId); // crest id .. is used again
-		writeD(_level);
-		writeD(_hasCastle);
-		writeD(_hasClanHall);
-		writeD(_hasFortress);
-		writeD(_rank);
-		writeD(_reputation);
-		writeD(_isDisbanded ? 3 : 0);
-		writeD(0x00);
-		writeD(_allianceObjectId);
-		writeS(_allianceName);
-		writeD(_allianceCrestId);
-		writeD(_atClanWar);
-		writeD(_territorySide);// territory Id
+		this.writeD(this._pledgeType == Clan.SUBUNIT_MAIN_CLAN ? 0 : 1);
+		this.writeD(this._clanObjectId);
+		this.writeD(this._pledgeType);
+		this.writeS(this._unitName);
+		this.writeS(this._leaderName);
+		this.writeD(this._clanCrestId); // crest id .. is used again
+		this.writeD(this._level);
+		this.writeD(this._hasCastle);
+		this.writeD(this._hasClanHall);
+		this.writeD(this._hasFortress);
+		this.writeD(this._rank);
+		this.writeD(this._reputation);
+		this.writeD(this._isDisbanded ? 3 : 0);
+		this.writeD(0x00);
+		this.writeD(this._allianceObjectId);
+		this.writeS(this._allianceName);
+		this.writeD(this._allianceCrestId);
+		this.writeD(this._atClanWar);
+		this.writeD(this._territorySide);// territory Id
 
-		writeD(_members.size());
-		for (PledgePacketMember m : _members)
+		this.writeD(this._members.size());
+		for (PledgePacketMember m : this._members)
 		{
-			writeS(m._name);
-			writeD(m._level);
-			writeD(m._classId);
-			writeD(m._sex);
-			writeD(m._race);
-			writeD(m._online);
-			writeD(m._hasSponsor ? 1 : 0);
+			this.writeS(m._name);
+			this.writeD(m._level);
+			this.writeD(m._classId);
+			this.writeD(m._sex);
+			this.writeD(m._race);
+			this.writeD(m._online);
+			this.writeD(m._hasSponsor ? 1 : 0);
 		}
 	}
 
@@ -104,13 +104,13 @@ public class PledgeShowMemberListAll extends L2GameServerPacket
 
 		public PledgePacketMember(UnitMember m)
 		{
-			_name = m.getName();
-			_level = m.getLevel();
-			_classId = m.getClassId();
-			_sex = m.getSex();
-			_race = 0; // TODO m.getRace()
-			_online = m.isOnline() ? m.getObjectId() : 0;
-			_hasSponsor = m.getSponsor() != 0;
+			this._name = m.getName();
+			this._level = m.getLevel();
+			this._classId = m.getClassId();
+			this._sex = m.getSex();
+			this._race = 0; // TODO m.getRace()
+			this._online = m.isOnline() ? m.getObjectId() : 0;
+			this._hasSponsor = m.getSponsor() != 0;
 		}
 	}
 }

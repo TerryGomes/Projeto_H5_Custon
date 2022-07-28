@@ -8,13 +8,13 @@ public class ExDuelStart extends L2GameServerPacket
 
 	public ExDuelStart(DuelEvent e)
 	{
-		_duelType = e.getDuelType();
+		this._duelType = e.getDuelType();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x4e);
-		writeD(_duelType);
+		this.writeEx(0x4e);
+		this.writeD(this._duelType);
 	}
 }

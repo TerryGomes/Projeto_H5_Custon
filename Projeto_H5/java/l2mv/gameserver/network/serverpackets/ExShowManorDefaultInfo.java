@@ -31,25 +31,25 @@ public class ExShowManorDefaultInfo extends L2GameServerPacket
 
 	public ExShowManorDefaultInfo()
 	{
-		_crops = Manor.getInstance().getAllCrops();
+		this._crops = Manor.getInstance().getAllCrops();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x25);
-		writeC(0);
-		writeD(_crops.size());
-		for (int cropId : _crops)
+		this.writeEx(0x25);
+		this.writeC(0);
+		this.writeD(this._crops.size());
+		for (int cropId : this._crops)
 		{
-			writeD(cropId); // crop Id
-			writeD(Manor.getInstance().getSeedLevelByCrop(cropId)); // level
-			writeD(Manor.getInstance().getSeedBasicPriceByCrop(cropId)); // seed price
-			writeD(Manor.getInstance().getCropBasicPrice(cropId)); // crop price
-			writeC(1); // rewrad 1 Type
-			writeD(Manor.getInstance().getRewardItem(cropId, 1)); // Rewrad 1 Type Item Id
-			writeC(1); // rewrad 2 Type
-			writeD(Manor.getInstance().getRewardItem(cropId, 2)); // Rewrad 2 Type Item Id
+			this.writeD(cropId); // crop Id
+			this.writeD(Manor.getInstance().getSeedLevelByCrop(cropId)); // level
+			this.writeD(Manor.getInstance().getSeedBasicPriceByCrop(cropId)); // seed price
+			this.writeD(Manor.getInstance().getCropBasicPrice(cropId)); // crop price
+			this.writeC(1); // rewrad 1 Type
+			this.writeD(Manor.getInstance().getRewardItem(cropId, 1)); // Rewrad 1 Type Item Id
+			this.writeC(1); // rewrad 2 Type
+			this.writeD(Manor.getInstance().getRewardItem(cropId, 2)); // Rewrad 2 Type Item Id
 		}
 	}
 }

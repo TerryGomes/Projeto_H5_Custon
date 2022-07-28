@@ -9,13 +9,13 @@ public class ShowCalc extends L2GameServerPacket
 
 	public ShowCalc(int calculatorId)
 	{
-		_calculatorId = calculatorId;
+		this._calculatorId = calculatorId;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xe2);
-		writeD(_calculatorId);
+		this.writeC(0xe2);
+		this.writeD(this._calculatorId);
 	}
 }

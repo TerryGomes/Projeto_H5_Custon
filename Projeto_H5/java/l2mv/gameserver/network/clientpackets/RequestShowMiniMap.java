@@ -16,7 +16,7 @@ public class RequestShowMiniMap extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -29,6 +29,6 @@ public class RequestShowMiniMap extends L2GameClientPacket
 			return;
 		}
 
-		sendPacket(new ShowMiniMap(activeChar, 0));
+		this.sendPacket(new ShowMiniMap(activeChar, 0));
 	}
 }

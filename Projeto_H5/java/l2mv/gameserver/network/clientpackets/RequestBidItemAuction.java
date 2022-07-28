@@ -19,28 +19,28 @@ public final class RequestBidItemAuction extends L2GameClientPacket
 	@Override
 	protected final void readImpl()
 	{
-		_instanceId = readD();
-		_bid = readQ();
+		this._instanceId = this.readD();
+		this._bid = this.readQ();
 	}
 
 	@Override
 	protected final void runImpl()
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
 		final ItemInstance adena = activeChar.getInventory().getItemByItemId(57);
-		if (adena == null || _bid < 0 || _bid > adena.getCount())
+		if (adena == null || this._bid < 0 || this._bid > adena.getCount())
 		{
 			return;
 		}
 
-		final ItemAuctionInstance instance = ItemAuctionManager.getInstance().getManagerInstance(_instanceId);
+		final ItemAuctionInstance instance = ItemAuctionManager.getInstance().getManagerInstance(this._instanceId);
 		final NpcInstance broker = activeChar.getLastNpc();
-		if (broker == null || broker.getNpcId() != _instanceId || activeChar.getDistance(broker.getX(), broker.getY()) > Creature.INTERACTION_DISTANCE)
+		if (broker == null || broker.getNpcId() != this._instanceId || activeChar.getDistance(broker.getX(), broker.getY()) > Creature.INTERACTION_DISTANCE)
 		{
 			return;
 		}
@@ -50,7 +50,7 @@ public final class RequestBidItemAuction extends L2GameClientPacket
 			final ItemAuction auction = instance.getCurrentAuction();
 			if (auction != null)
 			{
-				auction.registerBid(activeChar, _bid);
+				auction.registerBid(activeChar, this._bid);
 			}
 		}
 	}

@@ -24,109 +24,109 @@ public class NpcInfoPoly extends L2GameServerPacket
 
 	public NpcInfoPoly(Player cha)
 	{
-		_obj = cha;
-		_npcId = cha.getPolyId();
-		NpcTemplate template = NpcHolder.getInstance().getTemplate(_npcId);
-		_rhand = 0;
-		_lhand = 0;
-		_isSummoned = false;
-		colRadius = template.collisionRadius;
-		colHeight = template.collisionHeight;
-		_x = _obj.getX();
-		_y = _obj.getY();
-		_z = _obj.getZ();
-		_rhand = template.rhand;
-		_lhand = template.lhand;
-		_heading = cha.getHeading();
-		_mAtkSpd = cha.getMAtkSpd();
-		_pAtkSpd = cha.getPAtkSpd();
-		_runSpd = cha.getRunSpeed();
-		_walkSpd = cha.getWalkSpeed();
-		_swimRunSpd = _flRunSpd = _flyRunSpd = _runSpd;
-		_swimWalkSpd = _flWalkSpd = _flyWalkSpd = _walkSpd;
-		_isRunning = cha.isRunning();
-		_isInCombat = cha.isInCombat();
-		_isAlikeDead = cha.isAlikeDead();
-		_name = cha.getName();
-		_title = cha.getTitle();
-		_abnormalEffect = cha.getAbnormalEffect();
-		_abnormalEffect2 = cha.getAbnormalEffect2();
-		_team = cha.getTeam();
+		this._obj = cha;
+		this._npcId = cha.getPolyId();
+		NpcTemplate template = NpcHolder.getInstance().getTemplate(this._npcId);
+		this._rhand = 0;
+		this._lhand = 0;
+		this._isSummoned = false;
+		this.colRadius = template.collisionRadius;
+		this.colHeight = template.collisionHeight;
+		this._x = this._obj.getX();
+		this._y = this._obj.getY();
+		this._z = this._obj.getZ();
+		this._rhand = template.rhand;
+		this._lhand = template.lhand;
+		this._heading = cha.getHeading();
+		this._mAtkSpd = cha.getMAtkSpd();
+		this._pAtkSpd = cha.getPAtkSpd();
+		this._runSpd = cha.getRunSpeed();
+		this._walkSpd = cha.getWalkSpeed();
+		this._swimRunSpd = this._flRunSpd = this._flyRunSpd = this._runSpd;
+		this._swimWalkSpd = this._flWalkSpd = this._flyWalkSpd = this._walkSpd;
+		this._isRunning = cha.isRunning();
+		this._isInCombat = cha.isInCombat();
+		this._isAlikeDead = cha.isAlikeDead();
+		this._name = cha.getName();
+		this._title = cha.getTitle();
+		this._abnormalEffect = cha.getAbnormalEffect();
+		this._abnormalEffect2 = cha.getAbnormalEffect2();
+		this._team = cha.getTeam();
 
 		if (cha.isInFightClub())
 		{
 			AbstractFightClub fightClubEvent = cha.getFightClubEvent();
-			_name = fightClubEvent.getVisibleName(cha, _name, false);
-			_title = fightClubEvent.getVisibleTitle(cha, _title, false);
+			this._name = fightClubEvent.getVisibleName(cha, this._name, false);
+			this._title = fightClubEvent.getVisibleTitle(cha, this._title, false);
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		writeC(0x0c);
-		writeD(_obj.getObjectId());
-		writeD(_npcId + 1000000); // npctype id
-		writeD(0x00);// _activeChar.getKarma() > 0 ? 1 : 0
-		writeD(_x);
-		writeD(_y);
-		writeD(_z);
-		writeD(_heading);
-		writeD(0x00);
-		writeD(_mAtkSpd);
-		writeD(_pAtkSpd);
-		writeD(_runSpd);
-		writeD(_walkSpd);
-		writeD(_swimRunSpd/* 0x32 */); // swimspeed
-		writeD(_swimWalkSpd/* 0x32 */); // swimspeed
-		writeD(_flRunSpd);
-		writeD(_flWalkSpd);
-		writeD(_flyRunSpd);
-		writeD(_flyWalkSpd);
-		writeF(1/* _cha.getProperMultiplier() */);
-		writeF(1/* _cha.getAttackSpeedMultiplier() */);
-		writeF(colRadius);
-		writeF(colHeight);
-		writeD(_rhand); // right hand weapon
-		writeD(0); // chest
-		writeD(_lhand); // left hand weapon
-		writeC(1); // name above char 1=true ... ??
-		writeC(_isRunning ? 1 : 0);
-		writeC(_isInCombat ? 1 : 0);
-		writeC(_isAlikeDead ? 1 : 0);
-		writeC(_isSummoned ? 2 : 0); // invisible ?? 0=false 1=true 2=summoned (only works if model has a summon animation)
-		writeD(-1); // High Five NPCString ID
-		writeS(_name);
-		writeD(-1); // High Five NPCString ID
-		writeS(_title);// gmSeeInvis ? "Invisible" : _activeChar.getAppearance().getVisibleTitle()
-		writeD(0);// _activeChar.getAppearance().getTitleColor() - 0 - client default
-		writeD(0); // pvp flag
-		writeD(0000); // hmm karma ??
+		this.writeC(0x0c);
+		this.writeD(this._obj.getObjectId());
+		this.writeD(this._npcId + 1000000); // npctype id
+		this.writeD(0x00);// _activeChar.getKarma() > 0 ? 1 : 0
+		this.writeD(this._x);
+		this.writeD(this._y);
+		this.writeD(this._z);
+		this.writeD(this._heading);
+		this.writeD(0x00);
+		this.writeD(this._mAtkSpd);
+		this.writeD(this._pAtkSpd);
+		this.writeD(this._runSpd);
+		this.writeD(this._walkSpd);
+		this.writeD(this._swimRunSpd/* 0x32 */); // swimspeed
+		this.writeD(this._swimWalkSpd/* 0x32 */); // swimspeed
+		this.writeD(this._flRunSpd);
+		this.writeD(this._flWalkSpd);
+		this.writeD(this._flyRunSpd);
+		this.writeD(this._flyWalkSpd);
+		this.writeF(1/* _cha.getProperMultiplier() */);
+		this.writeF(1/* _cha.getAttackSpeedMultiplier() */);
+		this.writeF(this.colRadius);
+		this.writeF(this.colHeight);
+		this.writeD(this._rhand); // right hand weapon
+		this.writeD(0); // chest
+		this.writeD(this._lhand); // left hand weapon
+		this.writeC(1); // name above char 1=true ... ??
+		this.writeC(this._isRunning ? 1 : 0);
+		this.writeC(this._isInCombat ? 1 : 0);
+		this.writeC(this._isAlikeDead ? 1 : 0);
+		this.writeC(this._isSummoned ? 2 : 0); // invisible ?? 0=false 1=true 2=summoned (only works if model has a summon animation)
+		this.writeD(-1); // High Five NPCString ID
+		this.writeS(this._name);
+		this.writeD(-1); // High Five NPCString ID
+		this.writeS(this._title);// gmSeeInvis ? "Invisible" : _activeChar.getAppearance().getVisibleTitle()
+		this.writeD(0);// _activeChar.getAppearance().getTitleColor() - 0 - client default
+		this.writeD(0); // pvp flag
+		this.writeD(0000); // hmm karma ??
 
-		writeD(_abnormalEffect);
+		this.writeD(this._abnormalEffect);
 
-		writeD(0000); // clan id
-		writeD(0000); // crest id
-		writeD(0000); // ally id
-		writeD(0000); // all crest
-		writeC(0000); // is Flying 2 / 0
-		writeC(_team.ordinal()); // Team
-		writeF(colRadius); // colRadius
-		writeF(colHeight); // colHeight
-		writeD(0x00); // enchant effect
-		writeD(0x00); // is Flying again?
-		writeD(0x00);
-		writeD(0x00); // CT1.5 Pet form and skills, Color effect
+		this.writeD(0000); // clan id
+		this.writeD(0000); // crest id
+		this.writeD(0000); // ally id
+		this.writeD(0000); // all crest
+		this.writeC(0000); // is Flying 2 / 0
+		this.writeC(this._team.ordinal()); // Team
+		this.writeF(this.colRadius); // colRadius
+		this.writeF(this.colHeight); // colHeight
+		this.writeD(0x00); // enchant effect
+		this.writeD(0x00); // is Flying again?
+		this.writeD(0x00);
+		this.writeD(0x00); // CT1.5 Pet form and skills, Color effect
 
-		writeC(0x01); // targetable
-		writeC(0x01); // show name
-		writeD(_abnormalEffect2);
-		writeD(0x00);
+		this.writeC(0x01); // targetable
+		this.writeC(0x01); // show name
+		this.writeD(this._abnormalEffect2);
+		this.writeD(0x00);
 	}
 }

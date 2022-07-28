@@ -19,25 +19,25 @@ public class PrivateStoreListSell extends L2GameServerPacket
 	 */
 	public PrivateStoreListSell(Player buyer, Player seller)
 	{
-		_sellerId = seller.getObjectId();
-		_adena = buyer.getAdena();
-		_package = seller.getPrivateStoreType() == Player.STORE_PRIVATE_SELL_PACKAGE;
-		_sellList = seller.getSellList();
+		this._sellerId = seller.getObjectId();
+		this._adena = buyer.getAdena();
+		this._package = seller.getPrivateStoreType() == Player.STORE_PRIVATE_SELL_PACKAGE;
+		this._sellList = seller.getSellList();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xA1);
-		writeD(_sellerId);
-		writeD(_package ? 1 : 0);
-		writeQ(_adena);
-		writeD(_sellList.size());
-		for (TradeItem si : _sellList)
+		this.writeC(0xA1);
+		this.writeD(this._sellerId);
+		this.writeD(this._package ? 1 : 0);
+		this.writeQ(this._adena);
+		this.writeD(this._sellList.size());
+		for (TradeItem si : this._sellList)
 		{
-			writeItemInfo(si);
-			writeQ(si.getOwnersPrice());
-			writeQ(si.getStorePrice());
+			this.writeItemInfo(si);
+			this.writeQ(si.getOwnersPrice());
+			this.writeQ(si.getStorePrice());
 		}
 	}
 }

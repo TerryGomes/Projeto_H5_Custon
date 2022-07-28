@@ -15,10 +15,10 @@ public class PartySpelled extends L2GameServerPacket
 
 	public PartySpelled(Playable activeChar, boolean full)
 	{
-		_objId = activeChar.getObjectId();
-		_type = activeChar.isPet() ? 1 : activeChar.isSummon() ? 2 : 0;
+		this._objId = activeChar.getObjectId();
+		this._type = activeChar.isPet() ? 1 : activeChar.isSummon() ? 2 : 0;
 		// 0 - L2Player // 1 - петы // 2 - саммоны
-		_effects = new ArrayList<Effect>();
+		this._effects = new ArrayList<Effect>();
 		if (full)
 		{
 			l2mv.gameserver.model.Effect[] effects = activeChar.getEffectList().getAllFirstEffects();
@@ -36,21 +36,21 @@ public class PartySpelled extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xf4);
-		writeD(_type);
-		writeD(_objId);
-		writeD(_effects.size());
-		for (Effect temp : _effects)
+		this.writeC(0xf4);
+		this.writeD(this._type);
+		this.writeD(this._objId);
+		this.writeD(this._effects.size());
+		for (Effect temp : this._effects)
 		{
-			writeD(temp._skillId);
-			writeH(temp._level);
-			writeD(temp._duration);
+			this.writeD(temp._skillId);
+			this.writeH(temp._level);
+			this.writeD(temp._duration);
 		}
 	}
 
 	public void addPartySpelledEffect(int skillId, int level, int duration)
 	{
-		_effects.add(new Effect(skillId, level, duration));
+		this._effects.add(new Effect(skillId, level, duration));
 	}
 
 	static class Effect
@@ -61,9 +61,9 @@ public class PartySpelled extends L2GameServerPacket
 
 		public Effect(int skillId, int level, int duration)
 		{
-			_skillId = skillId;
-			_level = level;
-			_duration = duration;
+			this._skillId = skillId;
+			this._level = level;
+			this._duration = duration;
 		}
 	}
 }

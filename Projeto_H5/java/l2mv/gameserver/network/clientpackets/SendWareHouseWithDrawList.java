@@ -26,21 +26,21 @@ public class SendWareHouseWithDrawList extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_count = readD();
-		if (_count * 12 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		this._count = this.readD();
+		if (this._count * 12 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1)
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
-		_items = new int[_count];
-		_itemQ = new long[_count];
-		for (int i = 0; i < _count; i++)
+		this._items = new int[this._count];
+		this._itemQ = new long[this._count];
+		for (int i = 0; i < this._count; i++)
 		{
-			_items[i] = readD(); // item object id
-			_itemQ[i] = readQ(); // count
-			if (_itemQ[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
+			this._items[i] = this.readD(); // item object id
+			this._itemQ[i] = this.readQ(); // count
+			if (this._itemQ[i] < 1 || ArrayUtils.indexOf(this._items, this._items[i]) < i)
 			{
-				_count = 0;
+				this._count = 0;
 				break;
 			}
 		}
@@ -49,8 +49,8 @@ public class SendWareHouseWithDrawList extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || _count == 0)
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar == null || this._count == 0)
 		{
 			return;
 		}
@@ -142,16 +142,16 @@ public class SendWareHouseWithDrawList extends L2GameClientPacket
 			long weight = 0;
 			int slots = 0;
 
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < this._count; i++)
 			{
-				ItemInstance item = warehouse.getItemByObjectId(_items[i]);
-				if (item == null || item.getCount() < _itemQ[i])
+				ItemInstance item = warehouse.getItemByObjectId(this._items[i]);
+				if (item == null || item.getCount() < this._itemQ[i])
 				{
 					activeChar.sendPacket(SystemMsg.INCORRECT_ITEM_COUNT);
 					return;
 				}
 
-				weight = SafeMath.addAndCheck(weight, SafeMath.mulAndCheck(item.getTemplate().getWeight(), _itemQ[i]));
+				weight = SafeMath.addAndCheck(weight, SafeMath.mulAndCheck(item.getTemplate().getWeight(), this._itemQ[i]));
 				if (!item.isStackable() || inventory.getItemByItemId(item.getItemId()) == null) // вещь требует слота
 				{
 					slots++;
@@ -170,9 +170,9 @@ public class SendWareHouseWithDrawList extends L2GameClientPacket
 				return;
 			}
 
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < this._count; i++)
 			{
-				ItemInstance item = warehouse.removeItemByObjectId(_items[i], _itemQ[i], null, null);
+				ItemInstance item = warehouse.removeItemByObjectId(this._items[i], this._itemQ[i], null, null);
 				activeChar.getInventory().addItem(item, logType);
 			}
 		}

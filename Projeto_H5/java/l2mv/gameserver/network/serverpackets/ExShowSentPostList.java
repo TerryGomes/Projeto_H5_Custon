@@ -23,27 +23,27 @@ public class ExShowSentPostList extends L2GameServerPacket
 
 	public ExShowSentPostList(Player cha)
 	{
-		mails = MailDAO.getInstance().getSentMailByOwnerId(cha.getObjectId());
-		CollectionUtils.eqSort(mails);
+		this.mails = MailDAO.getInstance().getSentMailByOwnerId(cha.getObjectId());
+		CollectionUtils.eqSort(this.mails);
 	}
 
 	// d dx[dSSddddd]
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xAC);
-		writeD((int) (System.currentTimeMillis() / 1000L));
-		writeD(mails.size()); // количество писем
-		for (Mail mail : mails)
+		this.writeEx(0xAC);
+		this.writeD((int) (System.currentTimeMillis() / 1000L));
+		this.writeD(this.mails.size()); // количество писем
+		for (Mail mail : this.mails)
 		{
-			writeD(mail.getMessageId()); // уникальный id письма
-			writeS(mail.getTopic()); // топик
-			writeS(mail.getReceiverName()); // получатель
-			writeD(mail.isPayOnDelivery() ? 1 : 0); // если тут 1 то письмо требует оплаты
-			writeD(mail.getExpireTime()); // время действительности письма
-			writeD(mail.isUnread() ? 1 : 0); // ?
-			writeD(mail.getType() == Mail.SenderType.NORMAL ? 0 : 1); // returnable
-			writeD(mail.getAttachments().isEmpty() ? 0 : 1); // 1 - письмо с приложением, 0 - просто письмо
+			this.writeD(mail.getMessageId()); // уникальный id письма
+			this.writeS(mail.getTopic()); // топик
+			this.writeS(mail.getReceiverName()); // получатель
+			this.writeD(mail.isPayOnDelivery() ? 1 : 0); // если тут 1 то письмо требует оплаты
+			this.writeD(mail.getExpireTime()); // время действительности письма
+			this.writeD(mail.isUnread() ? 1 : 0); // ?
+			this.writeD(mail.getType() == Mail.SenderType.NORMAL ? 0 : 1); // returnable
+			this.writeD(mail.getAttachments().isEmpty() ? 0 : 1); // 1 - письмо с приложением, 0 - просто письмо
 		}
 	}
 }

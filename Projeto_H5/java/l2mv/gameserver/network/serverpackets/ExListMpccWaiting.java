@@ -25,8 +25,8 @@ public class ExListMpccWaiting extends L2GameServerPacket
 		int firstNot = page * PAGE_SIZE;
 		int i = 0;
 		Collection<MatchingRoom> all = MatchingRoomManager.getInstance().getMatchingRooms(MatchingRoom.CC_MATCHING, location, allLevels, player);
-		_fullSize = all.size();
-		_list = new ArrayList<MatchingRoom>(PAGE_SIZE);
+		this._fullSize = all.size();
+		this._list = new ArrayList<MatchingRoom>(PAGE_SIZE);
 		for (MatchingRoom c : all)
 		{
 			if (i < first || i >= firstNot)
@@ -34,7 +34,7 @@ public class ExListMpccWaiting extends L2GameServerPacket
 				continue;
 			}
 
-			_list.add(c);
+			this._list.add(c);
 			i++;
 		}
 	}
@@ -42,20 +42,20 @@ public class ExListMpccWaiting extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeEx(0x9C);
-		writeD(_fullSize);
-		writeD(_list.size());
-		for (MatchingRoom room : _list)
+		this.writeEx(0x9C);
+		this.writeD(this._fullSize);
+		this.writeD(this._list.size());
+		for (MatchingRoom room : this._list)
 		{
-			writeD(room.getId());
-			writeS(room.getTopic());
-			writeD(room.getPlayers().size());
-			writeD(room.getMinLevel());
-			writeD(room.getMaxLevel());
-			writeD(1); // min group
-			writeD(room.getMaxMembersSize()); // max group
+			this.writeD(room.getId());
+			this.writeS(room.getTopic());
+			this.writeD(room.getPlayers().size());
+			this.writeD(room.getMinLevel());
+			this.writeD(room.getMaxLevel());
+			this.writeD(1); // min group
+			this.writeD(room.getMaxMembersSize()); // max group
 			Player leader = room.getLeader();
-			writeS(leader == null ? StringUtils.EMPTY : leader.getName());
+			this.writeS(leader == null ? StringUtils.EMPTY : leader.getName());
 		}
 	}
 }

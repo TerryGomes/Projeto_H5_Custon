@@ -17,19 +17,19 @@ public class RequestAddExpandQuestAlarm extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_questId = readD();
+		this._questId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		Quest quest = QuestManager.getQuest(_questId);
+		Quest quest = QuestManager.getQuest(this._questId);
 		if (quest == null)
 		{
 			return;

@@ -17,39 +17,39 @@ public class ProtocolVersion extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_protocol = readD();
+		this._protocol = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		if (_protocol == -2)
+		if (this._protocol == -2)
 		{
-			_client.closeNow(false);
+			this._client.closeNow(false);
 			return;
 		}
-		else if (_protocol == -3)
+		else if (this._protocol == -3)
 		{
-			_log.info("Status request from IP : " + getClient().getIpAddr());
-			getClient().close(new SendStatus());
+			_log.info("Status request from IP : " + this.getClient().getIpAddr());
+			this.getClient().close(new SendStatus());
 			return;
 		}
-		else if (_protocol < Config.MIN_PROTOCOL_REVISION || _protocol > Config.MAX_PROTOCOL_REVISION)
+		else if (this._protocol < Config.MIN_PROTOCOL_REVISION || this._protocol > Config.MAX_PROTOCOL_REVISION)
 		{
-			_log.warn("Unknown protocol revision : " + _protocol + ", client : " + _client);
-			getClient().close(new KeyPacket(null));
+			_log.warn("Unknown protocol revision : " + this._protocol + ", client : " + this._client);
+			this.getClient().close(new KeyPacket(null));
 			return;
 		}
 
-		_client.setRevision(_protocol);
+		this._client.setRevision(this._protocol);
 
-		Log.reachedProtocolVersion(_client, _client.getHWID());
-		sendPacket(new KeyPacket(_client.enableCrypt()));
+		Log.reachedProtocolVersion(this._client, this._client.getHWID());
+		this.sendPacket(new KeyPacket(this._client.enableCrypt()));
 	}
 
 	@Override
 	public String getType()
 	{
-		return getClass().getSimpleName();
+		return this.getClass().getSimpleName();
 	}
 }

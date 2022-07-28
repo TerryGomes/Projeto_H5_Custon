@@ -6,13 +6,13 @@ public class PledgeShowMemberListDelete extends L2GameServerPacket
 
 	public PledgeShowMemberListDelete(String playerName)
 	{
-		_player = playerName;
+		this._player = playerName;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x5d);
-		writeS(_player);
+		this.writeC(0x5d);
+		this.writeS(this._player);
 	}
 }

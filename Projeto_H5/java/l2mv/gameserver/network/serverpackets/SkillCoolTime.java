@@ -15,7 +15,7 @@ public class SkillCoolTime extends L2GameServerPacket
 	public SkillCoolTime(Player player)
 	{
 		Collection<TimeStamp> list = player.getSkillReuses();
-		_list = new ArrayList<Skill>(list.size());
+		this._list = new ArrayList<Skill>(list.size());
 		for (TimeStamp stamp : list)
 		{
 			if (!stamp.hasNotPassed())
@@ -32,22 +32,22 @@ public class SkillCoolTime extends L2GameServerPacket
 			sk.level = skill.getLevel();
 			sk.reuseBase = (int) Math.round(stamp.getReuseBasic() / 1000.);
 			sk.reuseCurrent = (int) Math.round(stamp.getReuseCurrent() / 1000.);
-			_list.add(sk);
+			this._list.add(sk);
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xc7); // packet type
-		writeD(_list.size()); // Size of list
-		for (int i = 0; i < _list.size(); i++)
+		this.writeC(0xc7); // packet type
+		this.writeD(this._list.size()); // Size of list
+		for (int i = 0; i < this._list.size(); i++)
 		{
-			Skill sk = _list.get(i);
-			writeD(sk.skillId); // Skill Id
-			writeD(sk.level); // Skill Level
-			writeD(sk.reuseBase); // Total reuse delay, seconds
-			writeD(sk.reuseCurrent); // Time remaining, seconds
+			Skill sk = this._list.get(i);
+			this.writeD(sk.skillId); // Skill Id
+			this.writeD(sk.level); // Skill Level
+			this.writeD(sk.reuseBase); // Total reuse delay, seconds
+			this.writeD(sk.reuseCurrent); // Time remaining, seconds
 		}
 	}
 

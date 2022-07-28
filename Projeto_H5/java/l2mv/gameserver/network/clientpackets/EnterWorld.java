@@ -6,7 +6,6 @@ import org.apache.commons.lang3.tuple.Pair;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2mv.gameserver.fandc.datatables.OfflineBuffersTable;
 import l2mv.gameserver.Announcements;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.ThreadPoolManager;
@@ -14,6 +13,7 @@ import l2mv.gameserver.dao.MailDAO;
 import l2mv.gameserver.data.StringHolder;
 import l2mv.gameserver.data.htm.HtmCache;
 import l2mv.gameserver.data.xml.holder.ResidenceHolder;
+import l2mv.gameserver.fandc.datatables.OfflineBuffersTable;
 import l2mv.gameserver.hwid.HwidEngine;
 import l2mv.gameserver.hwid.HwidGamer;
 import l2mv.gameserver.instancemanager.AutoHuntingManager;
@@ -24,6 +24,8 @@ import l2mv.gameserver.instancemanager.PlayerMessageStack;
 import l2mv.gameserver.instancemanager.QuestManager;
 import l2mv.gameserver.listener.actor.player.OnAnswerListener;
 import l2mv.gameserver.listener.actor.player.impl.ReviveAnswerListener;
+import l2mv.gameserver.masteriopack.rankpvpsystem.RPSConfig;
+import l2mv.gameserver.masteriopack.rankpvpsystem.RankPvpSystem;
 import l2mv.gameserver.model.Creature;
 import l2mv.gameserver.model.Effect;
 import l2mv.gameserver.model.GameObjectsStorage;
@@ -100,8 +102,6 @@ import l2mv.gameserver.utils.Log;
 import l2mv.gameserver.utils.Strings;
 import l2mv.gameserver.utils.TimeUtils;
 import l2mv.gameserver.utils.TradeHelper;
-import l2mv.gameserver.masteriopack.rankpvpsystem.RPSConfig;
-import l2mv.gameserver.masteriopack.rankpvpsystem.RankPvpSystem;
 
 public class EnterWorld extends L2GameClientPacket
 {
@@ -119,7 +119,7 @@ public class EnterWorld extends L2GameClientPacket
 	protected void runImpl()
 	{
 		long lastAccess = 0;
-		final GameClient client = getClient();
+		final GameClient client = this.getClient();
 		Player activeChar = client.getActiveChar();
 
 		if (activeChar == null || Config.AUTH_SERVER_GM_ONLY && !activeChar.isGM())
@@ -420,7 +420,7 @@ public class EnterWorld extends L2GameClientPacket
 			}
 		}
 
-		sendPacket(new L2FriendList(activeChar), new QuestList(activeChar), new ExBasicActionList(activeChar), new EtcStatusUpdate(activeChar));
+		this.sendPacket(new L2FriendList(activeChar), new QuestList(activeChar), new ExBasicActionList(activeChar), new EtcStatusUpdate(activeChar));
 
 		activeChar.checkHpMessages(activeChar.getMaxHp(), activeChar.getCurrentHp());
 		activeChar.checkDayNightMessages();
@@ -440,7 +440,7 @@ public class EnterWorld extends L2GameClientPacket
 
 				if (castingSkill != null && castingTarget != null && castingTarget.isCreature() && activeChar.getAnimationEndTime() > 0L)
 				{
-					sendPacket(new MagicSkillUse(activeChar, castingTarget, castingSkill.getId(), castingSkill.getLevel(), (int) (animationEndTime - System.currentTimeMillis()), 0));
+					this.sendPacket(new MagicSkillUse(activeChar, castingTarget, castingSkill.getId(), castingSkill.getLevel(), (int) (animationEndTime - System.currentTimeMillis()), 0));
 				}
 			}
 
@@ -451,12 +451,12 @@ public class EnterWorld extends L2GameClientPacket
 
 			if (activeChar.isMoving || activeChar.isFollow)
 			{
-				sendPacket(activeChar.movePacket());
+				this.sendPacket(activeChar.movePacket());
 			}
 
 			if (activeChar.getMountNpcId() != 0)
 			{
-				sendPacket(new Ride(activeChar));
+				this.sendPacket(new Ride(activeChar));
 			}
 
 			if (activeChar.isFishing())
@@ -477,21 +477,21 @@ public class EnterWorld extends L2GameClientPacket
 		{
 			if (activeChar.getPrivateStoreType() == Player.STORE_PRIVATE_BUY)
 			{
-				sendPacket(new PrivateStoreMsgBuy(activeChar));
+				this.sendPacket(new PrivateStoreMsgBuy(activeChar));
 			}
 			else if (activeChar.getPrivateStoreType() == Player.STORE_PRIVATE_SELL || activeChar.getPrivateStoreType() == Player.STORE_PRIVATE_SELL_PACKAGE)
 			{
-				sendPacket(new PrivateStoreMsgSell(activeChar));
+				this.sendPacket(new PrivateStoreMsgSell(activeChar));
 			}
 			else if (activeChar.getPrivateStoreType() == Player.STORE_PRIVATE_MANUFACTURE)
 			{
-				sendPacket(new RecipeShopMsg(activeChar));
+				this.sendPacket(new RecipeShopMsg(activeChar));
 			}
 		}
 
 		if (activeChar.isDead())
 		{
-			sendPacket(new Die(activeChar));
+			this.sendPacket(new Die(activeChar));
 		}
 
 		activeChar.unsetVar("offline");
@@ -546,12 +546,12 @@ public class EnterWorld extends L2GameClientPacket
 		}
 		PlayerMessageStack.getInstance().CheckMessages(activeChar);
 
-		sendPacket(ClientSetTime.STATIC, new ExSetCompassZoneCode(activeChar));
+		this.sendPacket(ClientSetTime.STATIC, new ExSetCompassZoneCode(activeChar));
 
 		Pair<Integer, OnAnswerListener> entry = activeChar.getAskListener(false);
 		if (entry != null && entry.getValue() instanceof ReviveAnswerListener)
 		{
-			sendPacket(new ConfirmDlg(SystemMsg.C1_IS_MAKING_AN_ATTEMPT_TO_RESURRECT_YOU_IF_YOU_CHOOSE_THIS_PATH_S2_EXPERIENCE_WILL_BE_RETURNED_FOR_YOU, 0).addString("Other player").addString("some"));
+			this.sendPacket(new ConfirmDlg(SystemMsg.C1_IS_MAKING_AN_ATTEMPT_TO_RESURRECT_YOU_IF_YOU_CHOOSE_THIS_PATH_S2_EXPERIENCE_WILL_BE_RETURNED_FOR_YOU, 0).addString("Other player").addString("some"));
 		}
 
 		if (activeChar.isCursedWeaponEquipped())
@@ -596,7 +596,7 @@ public class EnterWorld extends L2GameClientPacket
 
 			if (activeChar.getPet() != null)
 			{
-				sendPacket(new PetInfo(activeChar.getPet()));
+				this.sendPacket(new PetInfo(activeChar.getPet()));
 			}
 
 			if (activeChar.isInParty())
@@ -605,19 +605,19 @@ public class EnterWorld extends L2GameClientPacket
 				// sends new member party window for all members
 				// we do all actions before adding member to a list, this speeds
 				// things up a little
-				sendPacket(new PartySmallWindowAll(activeChar.getParty(), activeChar));
+				this.sendPacket(new PartySmallWindowAll(activeChar.getParty(), activeChar));
 
 				for (Player member : activeChar.getParty().getMembers())
 				{
 					if (member != activeChar)
 					{
-						sendPacket(new PartySpelled(member, true));
+						this.sendPacket(new PartySpelled(member, true));
 						if ((memberPet = member.getPet()) != null)
 						{
-							sendPacket(new PartySpelled(memberPet, true));
+							this.sendPacket(new PartySpelled(memberPet, true));
 						}
 
-						sendPacket(RelationChanged.update(activeChar, member, activeChar));
+						this.sendPacket(RelationChanged.update(activeChar, member, activeChar));
 					}
 				}
 
@@ -625,20 +625,20 @@ public class EnterWorld extends L2GameClientPacket
 				// the CC
 				if (activeChar.getParty().isInCommandChannel())
 				{
-					sendPacket(ExMPCCOpen.STATIC);
+					this.sendPacket(ExMPCCOpen.STATIC);
 				}
 			}
 
 			for (int shotId : activeChar.getAutoSoulShot())
 			{
-				sendPacket(new ExAutoSoulShot(shotId, true));
+				this.sendPacket(new ExAutoSoulShot(shotId, true));
 			}
 
 			for (Effect e : activeChar.getEffectList().getAllFirstEffects())
 			{
 				if (e.getSkill().isToggle())
 				{
-					sendPacket(new MagicSkillLaunched(activeChar.getObjectId(), e.getSkill().getId(), e.getSkill().getLevel(), activeChar));
+					this.sendPacket(new MagicSkillLaunched(activeChar.getObjectId(), e.getSkill().getId(), e.getSkill().getLevel(), activeChar));
 				}
 			}
 
@@ -854,7 +854,7 @@ public class EnterWorld extends L2GameClientPacket
 		activeChar.sendPacket(new ExReceiveShowPostFriend(activeChar));
 		activeChar.getNevitSystem().onEnterWorld();
 
-		checkNewMail(activeChar);
+		this.checkNewMail(activeChar);
 
 		String lastAccessDate = TimeUtils.convertDateToString(lastAccess * 1000);
 
@@ -987,7 +987,7 @@ public class EnterWorld extends L2GameClientPacket
 		{
 			if (mail.isUnread())
 			{
-				sendPacket(ExNoticePostArrived.STATIC_FALSE);
+				this.sendPacket(ExNoticePostArrived.STATIC_FALSE);
 				break;
 			}
 		}

@@ -15,18 +15,18 @@ public class PackageToList extends L2GameServerPacket
 
 	public PackageToList(Player player)
 	{
-		_characters = player.getAccountChars();
+		this._characters = player.getAccountChars();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0xC8);
-		writeD(_characters.size());
-		for (Map.Entry<Integer, String> entry : _characters.entrySet())
+		this.writeC(0xC8);
+		this.writeD(this._characters.size());
+		for (Map.Entry<Integer, String> entry : this._characters.entrySet())
 		{
-			writeD(entry.getKey());
-			writeS(entry.getValue());
+			this.writeD(entry.getKey());
+			this.writeS(entry.getValue());
 		}
 	}
 }

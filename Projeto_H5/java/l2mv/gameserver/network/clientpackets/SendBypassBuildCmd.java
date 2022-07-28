@@ -10,25 +10,25 @@ public class SendBypassBuildCmd extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_command = readS();
+		this._command = this.readS();
 
-		if (_command != null)
+		if (this._command != null)
 		{
-			_command = _command.trim();
+			this._command = this._command.trim();
 		}
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 
 		if (activeChar == null || activeChar.isBlocked())
 		{
 			return;
 		}
 
-		String cmd = _command;
+		String cmd = this._command;
 
 		if (!cmd.contains("admin_"))
 		{

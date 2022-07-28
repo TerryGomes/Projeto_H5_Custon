@@ -17,44 +17,44 @@ public class PledgeShowMemberListUpdate extends L2GameServerPacket
 
 	public PledgeShowMemberListUpdate(Player player)
 	{
-		_name = player.getName();
-		_lvl = player.getLevel();
-		_classId = player.getClassId().getId();
-		_sex = player.getSex();
-		_objectId = player.getObjectId();
-		_isOnline = player.isOnline() ? 1 : 0;
-		_pledgeType = player.getPledgeType();
+		this._name = player.getName();
+		this._lvl = player.getLevel();
+		this._classId = player.getClassId().getId();
+		this._sex = player.getSex();
+		this._objectId = player.getObjectId();
+		this._isOnline = player.isOnline() ? 1 : 0;
+		this._pledgeType = player.getPledgeType();
 		SubUnit subUnit = player.getSubUnit();
-		UnitMember member = subUnit == null ? null : subUnit.getUnitMember(_objectId);
+		UnitMember member = subUnit == null ? null : subUnit.getUnitMember(this._objectId);
 		if (member != null)
 		{
-			_isApprentice = member.hasSponsor() ? 1 : 0;
+			this._isApprentice = member.hasSponsor() ? 1 : 0;
 		}
 	}
 
 	public PledgeShowMemberListUpdate(UnitMember cm)
 	{
-		_name = cm.getName();
-		_lvl = cm.getLevel();
-		_classId = cm.getClassId();
-		_sex = cm.getSex();
-		_objectId = cm.getObjectId();
-		_isOnline = cm.isOnline() ? 1 : 0;
-		_pledgeType = cm.getPledgeType();
-		_isApprentice = cm.hasSponsor() ? 1 : 0;
+		this._name = cm.getName();
+		this._lvl = cm.getLevel();
+		this._classId = cm.getClassId();
+		this._sex = cm.getSex();
+		this._objectId = cm.getObjectId();
+		this._isOnline = cm.isOnline() ? 1 : 0;
+		this._pledgeType = cm.getPledgeType();
+		this._isApprentice = cm.hasSponsor() ? 1 : 0;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x5b);
-		writeS(_name);
-		writeD(_lvl);
-		writeD(_classId);
-		writeD(_sex);
-		writeD(_objectId);
-		writeD(_isOnline); // 1=online 0=offline
-		writeD(_pledgeType);
-		writeD(_isApprentice); // does a clan member have a sponsor
+		this.writeC(0x5b);
+		this.writeS(this._name);
+		this.writeD(this._lvl);
+		this.writeD(this._classId);
+		this.writeD(this._sex);
+		this.writeD(this._objectId);
+		this.writeD(this._isOnline); // 1=online 0=offline
+		this.writeD(this._pledgeType);
+		this.writeD(this._isApprentice); // does a clan member have a sponsor
 	}
 }

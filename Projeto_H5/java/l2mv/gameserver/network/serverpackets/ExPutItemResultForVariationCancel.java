@@ -16,22 +16,22 @@ public class ExPutItemResultForVariationCancel extends L2GameServerPacket
 
 	public ExPutItemResultForVariationCancel(ItemInstance item)
 	{
-		_itemObjectId = item.getObjectId();
-		_itemId = item.getItemId();
-		_aug1 = 0x0000FFFF & item.getAugmentationId();
-		_aug2 = item.getAugmentationId() >> 16;
-		_price = RequestRefineCancel.getRemovalPrice(item.getTemplate());
+		this._itemObjectId = item.getObjectId();
+		this._itemId = item.getItemId();
+		this._aug1 = 0x0000FFFF & item.getAugmentationId();
+		this._aug2 = item.getAugmentationId() >> 16;
+		this._price = RequestRefineCancel.getRemovalPrice(item.getTemplate());
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x57);
-		writeD(_itemObjectId);
-		writeD(_itemId);
-		writeD(_aug1);
-		writeD(_aug2);
-		writeQ(_price);
-		writeD(0x01);
+		this.writeEx(0x57);
+		this.writeD(this._itemObjectId);
+		this.writeD(this._itemId);
+		this.writeD(this._aug1);
+		this.writeD(this._aug2);
+		this.writeQ(this._price);
+		this.writeD(0x01);
 	}
 }

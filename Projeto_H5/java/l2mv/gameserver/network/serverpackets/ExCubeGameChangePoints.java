@@ -14,19 +14,19 @@ public class ExCubeGameChangePoints extends L2GameServerPacket
 
 	public ExCubeGameChangePoints(int timeLeft, int bluePoints, int redPoints)
 	{
-		_timeLeft = timeLeft;
-		_bluePoints = bluePoints;
-		_redPoints = redPoints;
+		this._timeLeft = timeLeft;
+		this._bluePoints = bluePoints;
+		this._redPoints = redPoints;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x98);
-		writeD(0x02);
+		this.writeEx(0x98);
+		this.writeD(0x02);
 
-		writeD(_timeLeft);
-		writeD(_bluePoints);
-		writeD(_redPoints);
+		this.writeD(this._timeLeft);
+		this.writeD(this._bluePoints);
+		this.writeD(this._redPoints);
 	}
 }

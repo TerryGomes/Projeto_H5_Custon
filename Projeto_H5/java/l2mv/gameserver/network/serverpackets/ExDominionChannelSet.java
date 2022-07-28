@@ -9,13 +9,13 @@ public class ExDominionChannelSet extends L2GameServerPacket
 
 	public ExDominionChannelSet(int active)
 	{
-		_active = active;
+		this._active = active;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x96);
-		writeD(_active);
+		this.writeEx(0x96);
+		this.writeD(this._active);
 	}
 }

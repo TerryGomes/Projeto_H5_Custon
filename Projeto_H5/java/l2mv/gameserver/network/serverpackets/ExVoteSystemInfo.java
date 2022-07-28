@@ -9,21 +9,21 @@ public class ExVoteSystemInfo extends L2GameServerPacket
 
 	public ExVoteSystemInfo(Player player)
 	{
-		_receivedRec = player.getRecomLeft();
-		_givingRec = player.getRecomHave();
-		_time = player.getRecomBonusTime();
-		_bonusPercent = player.getRecomBonus();
-		_showTimer = !player.isRecomTimerActive() || player.isHourglassEffected();
+		this._receivedRec = player.getRecomLeft();
+		this._givingRec = player.getRecomHave();
+		this._time = player.getRecomBonusTime();
+		this._bonusPercent = player.getRecomBonus();
+		this._showTimer = !player.isRecomTimerActive() || player.isHourglassEffected();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xC9);
-		writeD(_receivedRec); // полученые реки
-		writeD(_givingRec); // отданые реки
-		writeD(_time); // таймер скок секунд осталось
-		writeD(_bonusPercent); // процент бонуса
-		writeD(_showTimer ? 0x01 : 0x00); // если ноль то таймера нету 1 - пишет чтоли "Работает"
+		this.writeEx(0xC9);
+		this.writeD(this._receivedRec); // полученые реки
+		this.writeD(this._givingRec); // отданые реки
+		this.writeD(this._time); // таймер скок секунд осталось
+		this.writeD(this._bonusPercent); // процент бонуса
+		this.writeD(this._showTimer ? 0x01 : 0x00); // если ноль то таймера нету 1 - пишет чтоли "Работает"
 	}
 }

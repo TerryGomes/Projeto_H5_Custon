@@ -24,14 +24,14 @@ public class RequestJoinParty extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS(Config.CNAME_MAXLEN);
-		_itemDistribution = readD();
+		this._name = this.readS(Config.CNAME_MAXLEN);
+		this._itemDistribution = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -49,13 +49,13 @@ public class RequestJoinParty extends L2GameClientPacket
 			return;
 		}
 
-		Player target = World.getPlayer(_name);
+		Player target = World.getPlayer(this._name);
 		if (target == null)
 		{
 			// Synerge - Support for sending invitations to fake players
-			if (FakePlayersTable.isRealTimeFakePlayerExist(_name))
+			if (FakePlayersTable.isRealTimeFakePlayerExist(this._name))
 			{
-				activeChar.sendPacket(new SystemMessage2(SystemMsg.C1_HAS_BEEN_INVITED_TO_THE_PARTY).addString(FakePlayersTable.getRealTimeFakePlayerRealName(_name)));
+				activeChar.sendPacket(new SystemMessage2(SystemMsg.C1_HAS_BEEN_INVITED_TO_THE_PARTY).addString(FakePlayersTable.getRealTimeFakePlayerRealName(this._name)));
 				return;
 			}
 
@@ -122,8 +122,8 @@ public class RequestJoinParty extends L2GameClientPacket
 			// Synerge - Support for GM forcing his way in a party like a scumbag :)
 			if (activeChar.isGM() && target.isInParty() && target.getParty().getMemberCount() < 9)
 			{
-				new Request(L2RequestType.PARTY, target, activeChar).setTimeout(10000L).set("itemDistribution", _itemDistribution);
-				activeChar.sendPacket(new AskJoinParty(target.getName(), _itemDistribution));
+				new Request(L2RequestType.PARTY, target, activeChar).setTimeout(10000L).set("itemDistribution", this._itemDistribution);
+				activeChar.sendPacket(new AskJoinParty(target.getName(), this._itemDistribution));
 				activeChar.sendPacket(new SystemMessage2(SystemMsg.C1_HAS_BEEN_INVITED_TO_THE_PARTY).addName(activeChar));
 			}
 			activeChar.sendPacket(problem);
@@ -191,9 +191,9 @@ public class RequestJoinParty extends L2GameClientPacket
 			}
 		}
 
-		new Request(L2RequestType.PARTY, activeChar, target).setTimeout(10000L).set("itemDistribution", _itemDistribution);
+		new Request(L2RequestType.PARTY, activeChar, target).setTimeout(10000L).set("itemDistribution", this._itemDistribution);
 
-		target.sendPacket(new AskJoinParty(activeChar.getName(), _itemDistribution));
+		target.sendPacket(new AskJoinParty(activeChar.getName(), this._itemDistribution));
 		activeChar.sendPacket(new SystemMessage2(SystemMsg.C1_HAS_BEEN_INVITED_TO_THE_PARTY).addName(target));
 	}
 }

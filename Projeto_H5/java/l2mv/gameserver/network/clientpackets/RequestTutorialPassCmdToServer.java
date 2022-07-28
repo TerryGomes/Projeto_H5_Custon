@@ -25,13 +25,13 @@ public class RequestTutorialPassCmdToServer extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_bypass = readS();
+		this._bypass = this.readS();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -41,13 +41,13 @@ public class RequestTutorialPassCmdToServer extends L2GameClientPacket
 
 		if (player.isInFightClub())
 		{
-			FightClubEventManager.getInstance().requestEventPlayerMenuBypass(player, _bypass);
+			FightClubEventManager.getInstance().requestEventPlayerMenuBypass(player, this._bypass);
 		}
 		// Synerge - Achievements system
-		else if (Config.ENABLE_ACHIEVEMENTS && _bypass.startsWith("_bbs_achievements"))
+		else if (Config.ENABLE_ACHIEVEMENTS && this._bypass.startsWith("_bbs_achievements"))
 		{
-			String[] cm = _bypass.split(" ");
-			if (_bypass.startsWith("_bbs_achievements_cat"))
+			String[] cm = this._bypass.split(" ");
+			if (this._bypass.startsWith("_bbs_achievements_cat"))
 			{
 				int page = 0;
 				if (cm.length < 1)
@@ -63,11 +63,11 @@ public class RequestTutorialPassCmdToServer extends L2GameClientPacket
 			}
 			else
 			{
-				Achievements.getInstance().onBypass(player, _bypass, cm);
+				Achievements.getInstance().onBypass(player, this._bypass, cm);
 			}
 		}
 		// Synerge - Support for handling bbs events on tutorial windows
-		else if (_bypass.startsWith("_bbs"))
+		else if (this._bypass.startsWith("_bbs"))
 		{
 			if (!Config.COMMUNITYBOARD_ENABLED)
 			{
@@ -75,18 +75,18 @@ public class RequestTutorialPassCmdToServer extends L2GameClientPacket
 			}
 			else
 			{
-				String[] cm = _bypass.split(" ");
+				String[] cm = this._bypass.split(" ");
 				final ICommunityBoardHandler handler = CommunityBoardManager.getInstance().getCommunityHandler(cm[0]);
 				if (handler != null)
 				{
-					handler.onBypassCommand(player, _bypass);
+					handler.onBypassCommand(player, this._bypass);
 				}
 			}
 		}
 		// Synerge - Support for handling scripts events on tutorial windows
-		else if (_bypass.startsWith("scripts_"))
+		else if (this._bypass.startsWith("scripts_"))
 		{
-			String command = _bypass.substring(8).trim();
+			String command = this._bypass.substring(8).trim();
 			String[] word = command.split("\\s+");
 			String[] args = command.substring(word[0].length()).trim().split("\\s+");
 			String[] path = word[0].split(":");
@@ -110,7 +110,7 @@ public class RequestTutorialPassCmdToServer extends L2GameClientPacket
 			}
 		}
 		// Synerge - Support to use the bypasshandler on tutorial windows
-		else if (BypassHandler.getInstance().useBypassCommandHandler(player, _bypass))
+		else if (BypassHandler.getInstance().useBypassCommandHandler(player, this._bypass))
 		{
 
 		}
@@ -120,13 +120,13 @@ public class RequestTutorialPassCmdToServer extends L2GameClientPacket
 
 			if (tutorial != null)
 			{
-				player.processQuestEvent(tutorial.getName(), _bypass, null);
+				player.processQuestEvent(tutorial.getName(), this._bypass, null);
 			}
 		}
 
 		if (Config.ALLOW_MAIL_OPTION)
 		{
-			AccountEmail.onBypass(player, _bypass);
+			AccountEmail.onBypass(player, this._bypass);
 		}
 	}
 

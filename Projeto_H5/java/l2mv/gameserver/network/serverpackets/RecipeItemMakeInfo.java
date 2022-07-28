@@ -16,22 +16,22 @@ public class RecipeItemMakeInfo extends L2GameServerPacket
 
 	public RecipeItemMakeInfo(Player player, Recipe recipeList, int status)
 	{
-		_id = recipeList.getId();
-		_isDwarvenRecipe = recipeList.isDwarvenRecipe();
-		_status = status;
-		_curMP = (int) player.getCurrentMp();
-		_maxMP = player.getMaxMp();
+		this._id = recipeList.getId();
+		this._isDwarvenRecipe = recipeList.isDwarvenRecipe();
+		this._status = status;
+		this._curMP = (int) player.getCurrentMp();
+		this._maxMP = player.getMaxMp();
 		//
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xdd);
-		writeD(_id); // ID рецепта
-		writeD(_isDwarvenRecipe ? 0x00 : 0x01);
-		writeD(_curMP);
-		writeD(_maxMP);
-		writeD(_status); // итог крафта; 0xFFFFFFFF нет статуса, 0 удача, 1 провал
+		this.writeC(0xdd);
+		this.writeD(this._id); // ID рецепта
+		this.writeD(this._isDwarvenRecipe ? 0x00 : 0x01);
+		this.writeD(this._curMP);
+		this.writeD(this._maxMP);
+		this.writeD(this._status); // итог крафта; 0xFFFFFFFF нет статуса, 0 удача, 1 провал
 	}
 }

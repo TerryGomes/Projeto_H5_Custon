@@ -10,9 +10,9 @@ public class ExBR_ProductList extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xD6);
+		this.writeEx(0xD6);
 		Collection<ProductItem> items = ProductHolder.getInstance().getAllItems();
-		writeD(items.size());
+		this.writeD(items.size());
 
 		for (ProductItem template : items)
 		{
@@ -21,19 +21,19 @@ public class ExBR_ProductList extends L2GameServerPacket
 				continue;
 			}
 
-			writeD(template.getProductId()); // product id
-			writeH(template.getCategory()); // category 1 - enchant 2 - supplies 3 - decoration 4 - package 5 - other
-			writeD(template.getPoints()); // points
-			writeD(template.getTabId()); // show tab 2-th group - 1 показывает окошко про итем
-			writeD((int) (template.getStartTimeSale() / 1000)); // start sale unix date in seconds
-			writeD((int) (template.getEndTimeSale() / 1000)); // end sale unix date in seconds
-			writeC(127); // day week (127 = not daily goods)
-			writeC(template.getStartHour()); // start hour
-			writeC(template.getStartMin()); // start min
-			writeC(template.getEndHour()); // end hour
-			writeC(template.getEndMin()); // end min
-			writeD(0); // stock
-			writeD(-1); // max stock
+			this.writeD(template.getProductId()); // product id
+			this.writeH(template.getCategory()); // category 1 - enchant 2 - supplies 3 - decoration 4 - package 5 - other
+			this.writeD(template.getPoints()); // points
+			this.writeD(template.getTabId()); // show tab 2-th group - 1 показывает окошко про итем
+			this.writeD((int) (template.getStartTimeSale() / 1000)); // start sale unix date in seconds
+			this.writeD((int) (template.getEndTimeSale() / 1000)); // end sale unix date in seconds
+			this.writeC(127); // day week (127 = not daily goods)
+			this.writeC(template.getStartHour()); // start hour
+			this.writeC(template.getStartMin()); // start min
+			this.writeC(template.getEndHour()); // end hour
+			this.writeC(template.getEndMin()); // end min
+			this.writeD(0); // stock
+			this.writeD(-1); // max stock
 		}
 	}
 }

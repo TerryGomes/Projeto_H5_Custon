@@ -14,16 +14,16 @@ public class KickPlayer extends ReceivablePacket
 	@Override
 	public void readImpl()
 	{
-		account = readS();
+		this.account = this.readS();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		GameClient client = AuthServerCommunication.getInstance().removeWaitingClient(account);
+		GameClient client = AuthServerCommunication.getInstance().removeWaitingClient(this.account);
 		if (client == null)
 		{
-			client = AuthServerCommunication.getInstance().removeAuthedClient(account);
+			client = AuthServerCommunication.getInstance().removeAuthedClient(this.account);
 		}
 		if (client == null)
 		{

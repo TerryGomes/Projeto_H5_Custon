@@ -10,36 +10,36 @@ public class RequestSaveInventoryOrder extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		int size = readD();
+		int size = this.readD();
 		if (size > 125)
 		{
 			size = 125;
 		}
-		if (size * 8 > _buf.remaining() || size < 1)
+		if (size * 8 > this._buf.remaining() || size < 1)
 		{
-			_items = null;
+			this._items = null;
 			return;
 		}
-		_items = new int[size][2];
+		this._items = new int[size][2];
 		for (int i = 0; i < size; i++)
 		{
-			_items[i][0] = readD(); // item id
-			_items[i][1] = readD(); // slot
+			this._items[i][0] = this.readD(); // item id
+			this._items[i][1] = this.readD(); // slot
 		}
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		if (_items == null)
+		if (this._items == null)
 		{
 			return;
 		}
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
-		activeChar.getInventory().sort(_items);
+		activeChar.getInventory().sort(this._items);
 	}
 }

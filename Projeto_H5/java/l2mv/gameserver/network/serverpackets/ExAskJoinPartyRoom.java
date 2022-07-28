@@ -10,15 +10,15 @@ public class ExAskJoinPartyRoom extends L2GameServerPacket
 
 	public ExAskJoinPartyRoom(String charName, String roomName)
 	{
-		_charName = charName;
-		_roomName = roomName;
+		this._charName = charName;
+		this._roomName = roomName;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x35);
-		writeS(_charName);
-		writeS(_roomName);
+		this.writeEx(0x35);
+		this.writeS(this._charName);
+		this.writeS(this._roomName);
 	}
 }

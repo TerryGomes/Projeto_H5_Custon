@@ -83,7 +83,7 @@ public class ExSearchOrc extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x45);
-		writeB(_test);
+		this.writeEx(0x45);
+		this.writeB(_test);
 	}
 }

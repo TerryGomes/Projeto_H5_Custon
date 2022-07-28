@@ -8,18 +8,18 @@ public class FinishRotating extends L2GameServerPacket
 
 	public FinishRotating(Creature player, int degree, int speed)
 	{
-		_charId = player.getObjectId();
-		_degree = degree;
-		_speed = speed;
+		this._charId = player.getObjectId();
+		this._degree = degree;
+		this._speed = speed;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x61);
-		writeD(_charId);
-		writeD(_degree);
-		writeD(_speed);
-		writeD(0x00); // ??
+		this.writeC(0x61);
+		this.writeD(this._charId);
+		this.writeD(this._degree);
+		this.writeD(this._speed);
+		this.writeD(0x00); // ??
 	}
 }

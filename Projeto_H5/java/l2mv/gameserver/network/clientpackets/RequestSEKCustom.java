@@ -10,8 +10,8 @@ public class RequestSEKCustom extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		SlotNum = readD();
-		Direction = readD();
+		this.SlotNum = this.readD();
+		this.Direction = this.readD();
 	}
 
 	@Override

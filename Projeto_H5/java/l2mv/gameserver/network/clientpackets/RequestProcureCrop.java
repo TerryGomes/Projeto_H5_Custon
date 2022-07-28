@@ -34,23 +34,23 @@ public class RequestProcureCrop extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_manorId = readD();
-		_count = readD();
-		if (_count * 16 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		this._manorId = this.readD();
+		this._count = this.readD();
+		if (this._count * 16 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1)
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
-		_items = new int[_count];
-		_itemQ = new long[_count];
-		for (int i = 0; i < _count; i++)
+		this._items = new int[this._count];
+		this._itemQ = new long[this._count];
+		for (int i = 0; i < this._count; i++)
 		{
-			readD(); // service
-			_items[i] = readD();
-			_itemQ[i] = readQ();
-			if (_itemQ[i] < 1)
+			this.readD(); // service
+			this._items[i] = this.readD();
+			this._itemQ[i] = this.readQ();
+			if (this._itemQ[i] < 1)
 			{
-				_count = 0;
+				this._count = 0;
 				return;
 			}
 		}
@@ -59,8 +59,8 @@ public class RequestProcureCrop extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || _count == 0)
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar == null || this._count == 0)
 		{
 			return;
 		}
@@ -92,7 +92,7 @@ public class RequestProcureCrop extends L2GameClientPacket
 			return;
 		}
 
-		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, _manorId);
+		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, this._manorId);
 		if (castle == null)
 		{
 			return;
@@ -103,10 +103,10 @@ public class RequestProcureCrop extends L2GameClientPacket
 
 		try
 		{
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < this._count; i++)
 			{
-				int itemId = _items[i];
-				long count = _itemQ[i];
+				int itemId = this._items[i];
+				long count = this._itemQ[i];
 
 				CropProcure crop = castle.getCrop(itemId, CastleManorManager.PERIOD_CURRENT);
 				if (crop == null)
@@ -153,12 +153,12 @@ public class RequestProcureCrop extends L2GameClientPacket
 				return;
 			}
 
-			_procureList = castle.getCropProcure(CastleManorManager.PERIOD_CURRENT);
+			this._procureList = castle.getCropProcure(CastleManorManager.PERIOD_CURRENT);
 
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < this._count; i++)
 			{
-				int itemId = _items[i];
-				long count = _itemQ[i];
+				int itemId = this._items[i];
+				long count = this._itemQ[i];
 
 				int rewardItemId = Manor.getInstance().getRewardItem(itemId, castle.getCrop(itemId, CastleManorManager.PERIOD_CURRENT).getReward());
 				long rewardItemCount = Manor.getInstance().getRewardAmountPerCrop(castle.getId(), itemId, castle.getCropRewardType(itemId));
@@ -183,7 +183,7 @@ public class RequestProcureCrop extends L2GameClientPacket
 		catch (ArithmeticException ae)
 		{
 			// TODO audit
-			_count = 0;
+			this._count = 0;
 		}
 		finally
 		{

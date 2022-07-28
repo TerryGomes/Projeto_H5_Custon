@@ -20,43 +20,43 @@ public class CharacterDelete extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_charSlot = readD();
+		this._charSlot = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		int clan = clanStatus();
-		int online = onlineStatus();
+		int clan = this.clanStatus();
+		int online = this.onlineStatus();
 		if (clan > 0 || online > 0)
 		{
 			if (clan == 2)
 			{
-				sendPacket(new CharacterDeleteFail(CharacterDeleteFail.REASON_CLAN_LEADERS_MAY_NOT_BE_DELETED));
+				this.sendPacket(new CharacterDeleteFail(CharacterDeleteFail.REASON_CLAN_LEADERS_MAY_NOT_BE_DELETED));
 			}
 			else if (clan == 1)
 			{
-				sendPacket(new CharacterDeleteFail(CharacterDeleteFail.REASON_YOU_MAY_NOT_DELETE_CLAN_MEMBER));
+				this.sendPacket(new CharacterDeleteFail(CharacterDeleteFail.REASON_YOU_MAY_NOT_DELETE_CLAN_MEMBER));
 			}
 			else if (online > 0)
 			{
-				sendPacket(new CharacterDeleteFail(CharacterDeleteFail.REASON_DELETION_FAILED));
+				this.sendPacket(new CharacterDeleteFail(CharacterDeleteFail.REASON_DELETION_FAILED));
 			}
 			return;
 		}
 
-		GameClient client = getClient();
-		client.markToDeleteChar(_charSlot);
-		sendPacket(new CharacterDeleteSuccess());
+		GameClient client = this.getClient();
+		client.markToDeleteChar(this._charSlot);
+		this.sendPacket(new CharacterDeleteSuccess());
 
 		CharacterSelectionInfo cl = new CharacterSelectionInfo(client.getLogin(), client.getSessionKey().playOkID1);
-		sendPacket(cl);
+		this.sendPacket(cl);
 		client.setCharSelection(cl.getCharInfo());
 	}
 
 	private int clanStatus()
 	{
-		int obj = getClient().getObjectIdForSlot(_charSlot);
+		int obj = this.getClient().getObjectIdForSlot(this._charSlot);
 		if (obj == -1)
 		{
 			return 0;
@@ -74,7 +74,7 @@ public class CharacterDelete extends L2GameClientPacket
 
 	private int onlineStatus()
 	{
-		int obj = getClient().getObjectIdForSlot(_charSlot);
+		int obj = this.getClient().getObjectIdForSlot(this._charSlot);
 		if (obj == -1)
 		{
 			return 0;

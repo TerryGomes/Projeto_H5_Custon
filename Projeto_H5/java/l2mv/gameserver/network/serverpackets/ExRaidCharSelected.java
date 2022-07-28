@@ -5,7 +5,7 @@ public class ExRaidCharSelected extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xB5);
+		this.writeEx(0xB5);
 		// just a trigger
 	}
 }

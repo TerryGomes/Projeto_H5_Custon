@@ -15,18 +15,18 @@ public class ExCubeGameChangeTeam extends L2GameServerPacket
 
 	public ExCubeGameChangeTeam(Player player, boolean fromRedTeam)
 	{
-		_objectId = player.getObjectId();
-		_fromRedTeam = fromRedTeam;
+		this._objectId = player.getObjectId();
+		this._fromRedTeam = fromRedTeam;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x97);
-		writeD(0x05);
+		this.writeEx(0x97);
+		this.writeD(0x05);
 
-		writeD(_objectId);
-		writeD(_fromRedTeam ? 0x01 : 0x00);
-		writeD(_fromRedTeam ? 0x00 : 0x01);
+		this.writeD(this._objectId);
+		this.writeD(this._fromRedTeam ? 0x01 : 0x00);
+		this.writeD(this._fromRedTeam ? 0x00 : 0x01);
 	}
 }

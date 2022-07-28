@@ -7,15 +7,15 @@ public class StartPledgeWar extends L2GameServerPacket
 
 	public StartPledgeWar(String pledge, String charName)
 	{
-		_pledgeName = pledge;
-		_char = charName;
+		this._pledgeName = pledge;
+		this._char = charName;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x63);
-		writeS(_char);
-		writeS(_pledgeName);
+		this.writeC(0x63);
+		this.writeS(this._char);
+		this.writeS(this._pledgeName);
 	}
 }

@@ -14,14 +14,14 @@ public final class RequestPetition extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_content = readS();
-		_type = readD();
+		this._content = this.readS();
+		this._type = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -35,17 +35,17 @@ public final class RequestPetition extends L2GameClientPacket
 				return;
 			}
 
-			PetitionSubGroup subGroup = group.getSubGroup(_type);
+			PetitionSubGroup subGroup = group.getSubGroup(this._type);
 			if (subGroup == null)
 			{
 				return;
 			}
 
-			subGroup.getHandler().handle(player, _type, _content);
+			subGroup.getHandler().handle(player, this._type, this._content);
 		}
 		else
 		{
-			PetitionManager.getInstance().handle(player, _type, _content);
+			PetitionManager.getInstance().handle(player, this._type, this._content);
 		}
 	}
 }

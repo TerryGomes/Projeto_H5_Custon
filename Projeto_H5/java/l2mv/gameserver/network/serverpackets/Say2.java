@@ -19,10 +19,10 @@ public class Say2 extends NpcStringContainer
 	public Say2(int objectId, ChatType type, SysString st, SystemMsg sm)
 	{
 		super(NpcString.NONE);
-		_objectId = objectId;
-		_type = type;
-		_sysString = st;
-		_systemMsg = sm;
+		this._objectId = objectId;
+		this._type = type;
+		this._sysString = st;
+		this._systemMsg = sm;
 	}
 
 	public Say2(Creature creature, ChatType type, String text)
@@ -38,35 +38,35 @@ public class Say2 extends NpcStringContainer
 	public Say2(int objectId, ChatType type, String charName, NpcString npcString, String... params)
 	{
 		super(npcString, params);
-		_objectId = objectId;
-		_type = type;
-		_charName = charName;
-		_text = params[0];
+		this._objectId = objectId;
+		this._type = type;
+		this._charName = charName;
+		this._text = params[0];
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x4A);
-		writeD(_objectId);
-		writeD(_type.ordinal());
-		switch (_type)
+		this.writeC(0x4A);
+		this.writeD(this._objectId);
+		this.writeD(this._type.ordinal());
+		switch (this._type)
 		{
 		case SYSTEM_MESSAGE:
-			writeD(_sysString.getId());
-			writeD(_systemMsg.getId());
+			this.writeD(this._sysString.getId());
+			this.writeD(this._systemMsg.getId());
 			break;
 		default:
-			writeS(_charName);
-			writeElements();
+			this.writeS(this._charName);
+			this.writeElements();
 			break;
 		}
-		writeS(_text);
+		this.writeS(this._text);
 
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player != null)
 		{
-			player.broadcastSnoop(_type.ordinal(), _charName, _text);
+			player.broadcastSnoop(this._type.ordinal(), this._charName, this._text);
 		}
 	}
 }

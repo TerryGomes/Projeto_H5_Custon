@@ -13,7 +13,7 @@ public class ServerObjectInfo extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0x92);
+		this.writeC(0x92);
 		// TODO ddSdddddffffdddd ServerObjectInfo ID:%d, ClassID:%d, CanBeAttacked:%d, X:%d, Y:%d, Z:%d
 	}
 }

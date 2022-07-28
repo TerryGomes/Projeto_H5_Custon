@@ -39,18 +39,18 @@ public class ExStartScenePlayer extends L2GameServerPacket
 
 	public ExStartScenePlayer(int sceneId)
 	{
-		_sceneId = sceneId;
+		this._sceneId = sceneId;
 	}
 
 	public ExStartScenePlayer(SceneMovie scene)
 	{
-		_sceneId = scene.getId();
+		this._sceneId = scene.getId();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x99);
-		writeD(_sceneId);
+		this.writeEx(0x99);
+		this.writeD(this._sceneId);
 	}
 }

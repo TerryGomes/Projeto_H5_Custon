@@ -20,12 +20,12 @@ public abstract class TelnetCommand implements Comparable<TelnetCommand>
 
 	public String getCommand()
 	{
-		return command;
+		return this.command;
 	}
 
 	public String[] getAcronyms()
 	{
-		return acronyms;
+		return this.acronyms;
 	}
 
 	public abstract String getUsage();
@@ -39,7 +39,7 @@ public abstract class TelnetCommand implements Comparable<TelnetCommand>
 
 	public boolean equals(String command)
 	{
-		for (String acronym : acronyms)
+		for (String acronym : this.acronyms)
 		{
 			if (command.equals(acronym))
 			{
@@ -52,7 +52,7 @@ public abstract class TelnetCommand implements Comparable<TelnetCommand>
 	@Override
 	public String toString()
 	{
-		return command;
+		return this.command;
 	}
 
 	@Override
@@ -64,7 +64,7 @@ public abstract class TelnetCommand implements Comparable<TelnetCommand>
 		}
 		if (o instanceof TelnetCommand)
 		{
-			return command.equals(((TelnetCommand) o).command);
+			return this.command.equals(((TelnetCommand) o).command);
 		}
 		return false;
 	}
@@ -72,6 +72,6 @@ public abstract class TelnetCommand implements Comparable<TelnetCommand>
 	@Override
 	public int compareTo(TelnetCommand o)
 	{
-		return command.compareTo(o.command);
+		return this.command.compareTo(o.command);
 	}
 }

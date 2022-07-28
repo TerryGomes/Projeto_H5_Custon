@@ -23,19 +23,19 @@ public class ExShowBaseAttributeCancelWindow extends L2GameServerPacket
 			{
 				continue;
 			}
-			_items.add(item);
+			this._items.add(item);
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x74);
-		writeD(_items.size());
-		for (ItemInstance item : _items)
+		this.writeEx(0x74);
+		this.writeD(this._items.size());
+		for (ItemInstance item : this._items)
 		{
-			writeD(item.getObjectId());
-			writeQ(getAttributeRemovePrice(item));
+			this.writeD(item.getObjectId());
+			this.writeQ(getAttributeRemovePrice(item));
 		}
 	}
 

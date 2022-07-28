@@ -17,32 +17,32 @@ public class ExShowSeedInfo extends L2GameServerPacket
 
 	public ExShowSeedInfo(int manorId, List<SeedProduction> seeds)
 	{
-		_manorId = manorId;
-		_seeds = seeds;
+		this._manorId = manorId;
+		this._seeds = seeds;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x23); // SubId
-		writeC(0);
-		writeD(_manorId); // Manor ID
-		writeD(0);
-		writeD(_seeds.size());
-		for (SeedProduction seed : _seeds)
+		this.writeEx(0x23); // SubId
+		this.writeC(0);
+		this.writeD(this._manorId); // Manor ID
+		this.writeD(0);
+		this.writeD(this._seeds.size());
+		for (SeedProduction seed : this._seeds)
 		{
-			writeD(seed.getId()); // Seed id
+			this.writeD(seed.getId()); // Seed id
 
-			writeQ(seed.getCanProduce()); // Left to buy
-			writeQ(seed.getStartProduce()); // Started amount
-			writeQ(seed.getPrice()); // Sell Price
-			writeD(Manor.getInstance().getSeedLevel(seed.getId())); // Seed Level
+			this.writeQ(seed.getCanProduce()); // Left to buy
+			this.writeQ(seed.getStartProduce()); // Started amount
+			this.writeQ(seed.getPrice()); // Sell Price
+			this.writeD(Manor.getInstance().getSeedLevel(seed.getId())); // Seed Level
 
-			writeC(1); // reward 1 Type
-			writeD(Manor.getInstance().getRewardItemBySeed(seed.getId(), 1)); // Reward 1 Type Item Id
+			this.writeC(1); // reward 1 Type
+			this.writeD(Manor.getInstance().getRewardItemBySeed(seed.getId(), 1)); // Reward 1 Type Item Id
 
-			writeC(1); // reward 2 Type
-			writeD(Manor.getInstance().getRewardItemBySeed(seed.getId(), 2)); // Reward 2 Type Item Id
+			this.writeC(1); // reward 2 Type
+			this.writeD(Manor.getInstance().getRewardItemBySeed(seed.getId(), 2)); // Reward 2 Type Item Id
 		}
 	}
 }

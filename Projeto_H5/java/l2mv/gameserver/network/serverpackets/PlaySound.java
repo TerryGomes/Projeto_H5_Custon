@@ -31,26 +31,26 @@ public class PlaySound extends L2GameServerPacket
 
 	public PlaySound(Type type, String soundFile, int c, int objectId, int x, int y, int z)
 	{
-		_type = type;
-		_soundFile = soundFile;
-		_hasCenterObject = c;
-		_objectId = objectId;
-		_x = x;
-		_y = y;
-		_z = z;
+		this._type = type;
+		this._soundFile = soundFile;
+		this._hasCenterObject = c;
+		this._objectId = objectId;
+		this._x = x;
+		this._y = y;
+		this._z = z;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x9e);
+		this.writeC(0x9e);
 		// dSdddddd
-		writeD(_type.ordinal()); // 0 for quest and ship, c4 toturial = 2
-		writeS(_soundFile);
-		writeD(_hasCenterObject); // 0 for quest; 1 for ship;
-		writeD(_objectId); // 0 for quest; objectId of ship
-		writeD(_x); // x
-		writeD(_y); // y
-		writeD(_z); // z
+		this.writeD(this._type.ordinal()); // 0 for quest and ship, c4 toturial = 2
+		this.writeS(this._soundFile);
+		this.writeD(this._hasCenterObject); // 0 for quest; 1 for ship;
+		this.writeD(this._objectId); // 0 for quest; objectId of ship
+		this.writeD(this._x); // x
+		this.writeD(this._y); // y
+		this.writeD(this._z); // z
 	}
 }

@@ -24,8 +24,8 @@ public class GameServerProxyRequest extends ReceivablePacket
 	@Override
 	public void readImpl()
 	{
-		accountName = readS();
-		ipName = readS();
+		this.accountName = this.readS();
+		this.ipName = this.readS();
 	}
 
 	@Override
@@ -33,13 +33,13 @@ public class GameServerProxyRequest extends ReceivablePacket
 	{
 		try
 		{
-			final InetAddress clientIp = InetAddress.getByName(ipName);
-			final InetAddress proxy = chooseProxy(clientIp);
-			AuthServerCommunication.getInstance().sendPacket(new GameServerProxyResponse(accountName, proxy.getHostAddress()));
+			final InetAddress clientIp = InetAddress.getByName(this.ipName);
+			final InetAddress proxy = this.chooseProxy(clientIp);
+			AuthServerCommunication.getInstance().sendPacket(new GameServerProxyResponse(this.accountName, proxy.getHostAddress()));
 		}
 		catch (UnknownHostException e)
 		{
-			GameServerProxyRequest.LOG.error("Error while getting Proxy for " + ipName + " " + accountName, e);
+			GameServerProxyRequest.LOG.error("Error while getting Proxy for " + this.ipName + " " + this.accountName, e);
 		}
 	}
 
@@ -50,7 +50,7 @@ public class GameServerProxyRequest extends ReceivablePacket
 		{
 			for (Map.Entry<ProxyRequirement, InetAddress> proxy : proxies.entrySet())
 			{
-				if (proxy.getKey().matches(accountName, playerIPAddress))
+				if (proxy.getKey().matches(this.accountName, playerIPAddress))
 				{
 					return proxy.getValue();
 				}

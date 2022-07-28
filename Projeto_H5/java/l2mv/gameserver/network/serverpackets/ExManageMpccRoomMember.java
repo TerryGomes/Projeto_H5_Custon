@@ -18,21 +18,21 @@ public class ExManageMpccRoomMember extends L2GameServerPacket
 
 	public ExManageMpccRoomMember(int type, MatchingRoom room, Player target)
 	{
-		_type = type;
-		_memberInfo = (new MpccRoomMemberInfo(target, room.getMemberType(target)));
+		this._type = type;
+		this._memberInfo = (new MpccRoomMemberInfo(target, room.getMemberType(target)));
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x9E);
-		writeD(_type);
-		writeD(_memberInfo.objectId);
-		writeS(_memberInfo.name);
-		writeD(_memberInfo.level);
-		writeD(_memberInfo.classId);
-		writeD(_memberInfo.location);
-		writeD(_memberInfo.memberType);
+		this.writeEx(0x9E);
+		this.writeD(this._type);
+		this.writeD(this._memberInfo.objectId);
+		this.writeS(this._memberInfo.name);
+		this.writeD(this._memberInfo.level);
+		this.writeD(this._memberInfo.classId);
+		this.writeD(this._memberInfo.location);
+		this.writeD(this._memberInfo.memberType);
 	}
 
 	static class MpccRoomMemberInfo
@@ -46,12 +46,12 @@ public class ExManageMpccRoomMember extends L2GameServerPacket
 
 		public MpccRoomMemberInfo(Player member, int type)
 		{
-			objectId = member.getObjectId();
-			name = member.getName();
-			classId = member.getClassId().ordinal();
-			level = member.getLevel();
-			location = MatchingRoomManager.getInstance().getLocation(member);
-			memberType = type;
+			this.objectId = member.getObjectId();
+			this.name = member.getName();
+			this.classId = member.getClassId().ordinal();
+			this.level = member.getLevel();
+			this.location = MatchingRoomManager.getInstance().getLocation(member);
+			this.memberType = type;
 		}
 	}
 }

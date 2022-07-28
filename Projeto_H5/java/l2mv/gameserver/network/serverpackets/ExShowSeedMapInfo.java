@@ -34,27 +34,27 @@ public class ExShowSeedMapInfo extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xA1);
-		writeD(ENTRANCES.length);
+		this.writeEx(0xA1);
+		this.writeD(ENTRANCES.length);
 		for (Location loc : ENTRANCES)
 		{
-			writeD(loc.x);
-			writeD(loc.y);
-			writeD(loc.z);
+			this.writeD(loc.x);
+			this.writeD(loc.y);
+			this.writeD(loc.z);
 			switch (loc.h)
 			{
 			case 1: // Seed of Destruction
 				if (SoDManager.isAttackStage())
 				{
-					writeD(2771);
+					this.writeD(2771);
 				}
 				else
 				{
-					writeD(2772);
+					this.writeD(2772);
 				}
 				break;
 			case 2: // Seed of Immortality
-				writeD(SoIManager.getCurrentStage() + 2765);
+				this.writeD(SoIManager.getCurrentStage() + 2765);
 				break;
 			}
 		}

@@ -28,6 +28,6 @@ public class NewCharacter extends L2GameClientPacket
 		ct.addChar(CharTemplateHolder.getInstance().getTemplate(ClassId.maleSoldier, false));
 		ct.addChar(CharTemplateHolder.getInstance().getTemplate(ClassId.femaleSoldier, false));
 
-		sendPacket(ct);
+		this.sendPacket(ct);
 	}
 }

@@ -18,30 +18,30 @@ public class ExShowCastleInfo extends L2GameServerPacket
 		int id, tax, nextSiege;
 
 		List<Castle> castles = ResidenceHolder.getInstance().getResidenceList(Castle.class);
-		_infos = new ArrayList<CastleInfo>(castles.size());
+		this._infos = new ArrayList<CastleInfo>(castles.size());
 		for (Castle castle : castles)
 		{
 			ownerName = ClanTable.getInstance().getClanName(castle.getOwnerId());
 			id = castle.getId();
 			tax = castle.getTaxPercent();
 			nextSiege = (int) (castle.getSiegeDate().getTimeInMillis() / 1000);
-			_infos.add(new CastleInfo(ownerName, id, tax, nextSiege));
+			this._infos.add(new CastleInfo(ownerName, id, tax, nextSiege));
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x14);
-		writeD(_infos.size());
-		for (CastleInfo info : _infos)
+		this.writeEx(0x14);
+		this.writeD(this._infos.size());
+		for (CastleInfo info : this._infos)
 		{
-			writeD(info._id);
-			writeS(info._ownerName);
-			writeD(info._tax);
-			writeD(info._nextSiege);
+			this.writeD(info._id);
+			this.writeS(info._ownerName);
+			this.writeD(info._tax);
+			this.writeD(info._nextSiege);
 		}
-		_infos.clear();
+		this._infos.clear();
 	}
 
 	private static class CastleInfo
@@ -51,10 +51,10 @@ public class ExShowCastleInfo extends L2GameServerPacket
 
 		public CastleInfo(String ownerName, int id, int tax, int nextSiege)
 		{
-			_ownerName = ownerName;
-			_id = id;
-			_tax = tax;
-			_nextSiege = nextSiege;
+			this._ownerName = ownerName;
+			this._id = id;
+			this._tax = tax;
+			this._nextSiege = nextSiege;
 		}
 	}
 }

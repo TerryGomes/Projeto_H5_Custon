@@ -22,29 +22,29 @@ public final class RequestExCubeGameReadyAnswer extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_arena = readD() + 1;
-		_answer = readD();
+		this._arena = this.readD() + 1;
+		this._answer = this.readD();
 	}
 
 	@Override
 	public void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
-		switch (_answer)
+		switch (this._answer)
 		{
 		case 0:
 			// Cancel
 			break;
 		case 1:
 			// OK or Time Over
-			HandysBlockCheckerManager.getInstance().increaseArenaVotes(_arena);
+			HandysBlockCheckerManager.getInstance().increaseArenaVotes(this._arena);
 			break;
 		default:
-			_log.warn("Unknown Cube Game Answer ID: " + _answer);
+			_log.warn("Unknown Cube Game Answer ID: " + this._answer);
 			break;
 		}
 	}

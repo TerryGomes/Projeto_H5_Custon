@@ -17,18 +17,18 @@ public class RequestWriteHeroWords extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_heroWords = readS();
+		this._heroWords = this.readS();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		final Player player = getClient().getActiveChar();
-		if (player == null || !player.isHero() || _heroWords == null || _heroWords.length() > 300)
+		final Player player = this.getClient().getActiveChar();
+		if (player == null || !player.isHero() || this._heroWords == null || this._heroWords.length() > 300)
 		{
 			return;
 		}
 
-		Hero.getInstance().setHeroMessage(player.getObjectId(), _heroWords);
+		Hero.getInstance().setHeroMessage(player.getObjectId(), this._heroWords);
 	}
 }

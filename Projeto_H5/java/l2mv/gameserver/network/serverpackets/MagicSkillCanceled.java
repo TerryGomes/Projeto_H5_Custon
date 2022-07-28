@@ -7,13 +7,13 @@ public class MagicSkillCanceled extends L2GameServerPacket
 
 	public MagicSkillCanceled(int objectId)
 	{
-		_objectId = objectId;
+		this._objectId = objectId;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x49);
-		writeD(_objectId);
+		this.writeC(0x49);
+		this.writeD(this._objectId);
 	}
 }

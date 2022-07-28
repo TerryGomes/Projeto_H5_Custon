@@ -15,21 +15,21 @@ public class StopMove extends L2GameServerPacket
 
 	public StopMove(Creature cha)
 	{
-		_objectId = cha.getObjectId();
-		_x = cha.getX();
-		_y = cha.getY();
-		_z = cha.getZ();
-		_heading = cha.getHeading();
+		this._objectId = cha.getObjectId();
+		this._x = cha.getX();
+		this._y = cha.getY();
+		this._z = cha.getZ();
+		this._heading = cha.getHeading();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x47);
-		writeD(_objectId);
-		writeD(_x);
-		writeD(_y);
-		writeD(_z);
-		writeD(_heading);
+		this.writeC(0x47);
+		this.writeD(this._objectId);
+		this.writeD(this._x);
+		this.writeD(this._y);
+		this.writeD(this._z);
+		this.writeD(this._heading);
 	}
 }

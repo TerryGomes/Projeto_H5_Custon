@@ -22,13 +22,13 @@ public class RequestExRejectPost extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		postId = readD();
+		this.postId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -76,7 +76,7 @@ public class RequestExRejectPost extends L2GameClientPacket
 			return;
 		}
 
-		Mail mail = MailDAO.getInstance().getReceivedMailByMailId(activeChar.getObjectId(), postId);
+		Mail mail = MailDAO.getInstance().getReceivedMailByMailId(activeChar.getObjectId(), this.postId);
 		if (mail != null)
 		{
 			if (mail.getType() != Mail.SenderType.NORMAL || mail.getAttachments().isEmpty())

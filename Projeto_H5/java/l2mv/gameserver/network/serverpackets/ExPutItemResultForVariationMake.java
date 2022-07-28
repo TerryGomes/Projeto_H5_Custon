@@ -8,17 +8,17 @@ public class ExPutItemResultForVariationMake extends L2GameServerPacket
 
 	public ExPutItemResultForVariationMake(int itemObjId)
 	{
-		_itemObjId = itemObjId;
-		_unk1 = 1;
-		_unk2 = 1;
+		this._itemObjId = itemObjId;
+		this._unk1 = 1;
+		this._unk2 = 1;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x53);
-		writeD(_itemObjId);
-		writeD(_unk1);
-		writeD(_unk2);
+		this.writeEx(0x53);
+		this.writeD(this._itemObjId);
+		this.writeD(this._unk1);
+		this.writeD(this._unk2);
 	}
 }

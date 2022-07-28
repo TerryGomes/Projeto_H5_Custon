@@ -15,24 +15,24 @@ public class RequestModifyBookMarkSlot extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		slot = readD();
-		name = readS(32);
-		icon = readD();
-		acronym = readS(4);
+		this.slot = this.readD();
+		this.name = this.readS(32);
+		this.icon = this.readD();
+		this.acronym = this.readS(4);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = this.getClient().getActiveChar();
 		if (activeChar != null)
 		{
-			final BookMark mark = activeChar.bookmarks.get(slot);
+			final BookMark mark = activeChar.bookmarks.get(this.slot);
 			if (mark != null)
 			{
-				mark.setName(name);
-				mark.setIcon(icon);
-				mark.setAcronym(acronym);
+				mark.setName(this.name);
+				mark.setIcon(this.icon);
+				mark.setAcronym(this.acronym);
 				activeChar.sendPacket(new ExGetBookMarkInfo(activeChar));
 			}
 		}

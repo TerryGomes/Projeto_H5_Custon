@@ -12,22 +12,22 @@ public class RequestCastleSiegeAttackerList extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_unitId = readD();
+		this._unitId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		Residence residence = ResidenceHolder.getInstance().getResidence(_unitId);
+		Residence residence = ResidenceHolder.getInstance().getResidence(this._unitId);
 		if (residence != null)
 		{
-			sendPacket(new CastleSiegeAttackerList(residence));
+			this.sendPacket(new CastleSiegeAttackerList(residence));
 		}
 	}
 }

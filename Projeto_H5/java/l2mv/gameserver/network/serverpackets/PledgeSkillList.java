@@ -20,18 +20,18 @@ public class PledgeSkillList extends L2GameServerPacket
 	public PledgeSkillList(Clan clan)
 	{
 		Collection<Skill> skills = clan.getSkills();
-		_allSkills = new ArrayList<SkillInfo>(skills.size());
+		this._allSkills = new ArrayList<SkillInfo>(skills.size());
 
 		for (Skill sk : skills)
 		{
-			_allSkills.add(new SkillInfo(sk.getId(), sk.getLevel()));
+			this._allSkills.add(new SkillInfo(sk.getId(), sk.getLevel()));
 		}
 
 		for (SubUnit subUnit : clan.getAllSubUnits())
 		{
 			for (Skill sk : subUnit.getSkills())
 			{
-				_unitSkills.add(new UnitSkillInfo(subUnit.getType(), sk.getId(), sk.getLevel()));
+				this._unitSkills.add(new UnitSkillInfo(subUnit.getType(), sk.getId(), sk.getLevel()));
 			}
 		}
 	}
@@ -39,21 +39,21 @@ public class PledgeSkillList extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x3a);
-		writeD(_allSkills.size());
-		writeD(_unitSkills.size());
+		this.writeEx(0x3a);
+		this.writeD(this._allSkills.size());
+		this.writeD(this._unitSkills.size());
 
-		for (SkillInfo info : _allSkills)
+		for (SkillInfo info : this._allSkills)
 		{
-			writeD(info._id);
-			writeD(info._level);
+			this.writeD(info._id);
+			this.writeD(info._level);
 		}
 
-		for (UnitSkillInfo info : _unitSkills)
+		for (UnitSkillInfo info : this._unitSkills)
 		{
-			writeD(info._type);
-			writeD(info._id);
-			writeD(info._level);
+			this.writeD(info._type);
+			this.writeD(info._id);
+			this.writeD(info._level);
 		}
 	}
 
@@ -63,8 +63,8 @@ public class PledgeSkillList extends L2GameServerPacket
 
 		public SkillInfo(int id, int level)
 		{
-			_id = id;
-			_level = level;
+			this._id = id;
+			this._level = level;
 		}
 	}
 
@@ -75,7 +75,7 @@ public class PledgeSkillList extends L2GameServerPacket
 		public UnitSkillInfo(int type, int id, int level)
 		{
 			super(id, level);
-			_type = type;
+			this._type = type;
 		}
 	}
 }

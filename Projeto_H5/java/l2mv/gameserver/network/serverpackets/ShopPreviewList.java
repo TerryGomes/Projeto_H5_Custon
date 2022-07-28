@@ -17,15 +17,15 @@ public class ShopPreviewList extends L2GameServerPacket
 
 	public ShopPreviewList(NpcTradeList list, Player player)
 	{
-		_listId = list.getListId();
-		_money = player.getAdena();
+		this._listId = list.getListId();
+		this._money = player.getAdena();
 		List<TradeItem> tradeList = list.getItems();
-		_itemList = new ArrayList<ItemInfo>(tradeList.size());
+		this._itemList = new ArrayList<ItemInfo>(tradeList.size());
 		for (TradeItem item : list.getItems())
 		{
 			if (item.getItem().isEquipable())
 			{
-				_itemList.add(item);
+				this._itemList.add(item);
 			}
 		}
 	}
@@ -33,20 +33,20 @@ public class ShopPreviewList extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xf5);
-		writeD(0x13c0); // ?
-		writeQ(_money);
-		writeD(_listId);
-		writeH(_itemList.size());
+		this.writeC(0xf5);
+		this.writeD(0x13c0); // ?
+		this.writeQ(this._money);
+		this.writeD(this._listId);
+		this.writeH(this._itemList.size());
 
-		for (ItemInfo item : _itemList)
+		for (ItemInfo item : this._itemList)
 		{
 			if (item.getItem().isEquipable())
 			{
-				writeD(item.getItemId());
-				writeH(item.getItem().getType2ForPackets()); // item type2
-				writeH(item.getItem().isEquipable() ? item.getItem().getBodyPart() : 0x00);
-				writeQ(getWearPrice(item.getItem()));
+				this.writeD(item.getItemId());
+				this.writeH(item.getItem().getType2ForPackets()); // item type2
+				this.writeH(item.getItem().isEquipable() ? item.getItem().getBodyPart() : 0x00);
+				this.writeQ(getWearPrice(item.getItem()));
 			}
 		}
 	}

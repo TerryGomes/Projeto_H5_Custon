@@ -19,7 +19,7 @@ public class RequestExRequestReceivedPostList extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player cha = getClient().getActiveChar();
+		Player cha = this.getClient().getActiveChar();
 		if (cha != null)
 		{
 			cha.sendItemList(true);

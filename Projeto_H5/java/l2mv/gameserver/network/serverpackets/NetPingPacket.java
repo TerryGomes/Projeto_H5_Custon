@@ -11,13 +11,13 @@ public class NetPingPacket extends L2GameServerPacket
 
 	public NetPingPacket(Player cha)
 	{
-		_clientId = cha.getObjectId();
+		this._clientId = cha.getObjectId();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0xD9);
-		writeD(_clientId);
+		this.writeC(0xD9);
+		this.writeD(this._clientId);
 	}
 }

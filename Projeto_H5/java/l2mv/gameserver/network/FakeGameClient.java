@@ -24,17 +24,17 @@ public class FakeGameClient extends GameClient
 	{
 		super(con);
 
-		fakePlayer = FakePlayersEngine.getNewFakePlayer();
-		if (fakePlayer == null)
+		this.fakePlayer = FakePlayersEngine.getNewFakePlayer();
+		if (this.fakePlayer == null)
 		{
 			return;
 		}
 
-		_state = GameClientState.CONNECTED;
+		this._state = GameClientState.CONNECTED;
 
-		onCreation();
-		setSessionId(new SessionKey(1, 2, 3, 4));
-		setLoginName(fakePlayer.getAccountName());
+		this.onCreation();
+		this.setSessionId(new SessionKey(1, 2, 3, 4));
+		this.setLoginName(this.fakePlayer.getAccountName());
 	}
 
 	private void onCreation()
@@ -44,19 +44,19 @@ public class FakeGameClient extends GameClient
 			@Override
 			public void run()
 			{
-				sendPacket(createPacket((byte) 0x0e).putInt(270));// ProtocolVersion
+				FakeGameClient.this.sendPacket(FakeGameClient.this.createPacket((byte) 0x0e).putInt(270));// ProtocolVersion
 
-				setState(GameClientState.AUTHED);
-				setCharSelection(CharacterSelectionInfo.loadCharacterSelectInfo(fakePlayer.getAccountName()));
-				setRevision(Config.MIN_PROTOCOL_REVISION);
+				FakeGameClient.this.setState(GameClientState.AUTHED);
+				FakeGameClient.this.setCharSelection(CharacterSelectionInfo.loadCharacterSelectInfo(FakeGameClient.this.fakePlayer.getAccountName()));
+				FakeGameClient.this.setRevision(Config.MIN_PROTOCOL_REVISION);
 
 				// We are in Lobby
-				sendPacket(createPacket((byte) 0x12).putInt(getCharSlot()));// CharacterSelected
-				sendPacket(createPacket((byte) 0xd0).putShort((short) 0x01));// RequestManorList
-				sendPacket(createPacket((byte) 0xd0).putShort((short) 0x3d));// RequestAllFortressInfo
-				sendPacket(createPacket((byte) 0xd0).putShort((short) 0x21));// RequestKeyMapping
-				sendPacket(createPacket((byte) 0x11));// EnterWorld
-				sendPacket(createPacket((byte) 0x65).putInt(fakePlayer.getClanId()));// RequestPledgeInfo
+				FakeGameClient.this.sendPacket(FakeGameClient.this.createPacket((byte) 0x12).putInt(FakeGameClient.this.getCharSlot()));// CharacterSelected
+				FakeGameClient.this.sendPacket(FakeGameClient.this.createPacket((byte) 0xd0).putShort((short) 0x01));// RequestManorList
+				FakeGameClient.this.sendPacket(FakeGameClient.this.createPacket((byte) 0xd0).putShort((short) 0x3d));// RequestAllFortressInfo
+				FakeGameClient.this.sendPacket(FakeGameClient.this.createPacket((byte) 0xd0).putShort((short) 0x21));// RequestKeyMapping
+				FakeGameClient.this.sendPacket(FakeGameClient.this.createPacket((byte) 0x11));// EnterWorld
+				FakeGameClient.this.sendPacket(FakeGameClient.this.createPacket((byte) 0x65).putInt(FakeGameClient.this.fakePlayer.getClanId()));// RequestPledgeInfo
 			}
 		}).start();
 	}
@@ -87,7 +87,7 @@ public class FakeGameClient extends GameClient
 
 	private int getCharSlot()
 	{
-		return getSlotForObjectId(fakePlayer.getObjectId());
+		return this.getSlotForObjectId(this.fakePlayer.getObjectId());
 	}
 
 	public static void setGamePacketHandler(GamePacketHandler handler)

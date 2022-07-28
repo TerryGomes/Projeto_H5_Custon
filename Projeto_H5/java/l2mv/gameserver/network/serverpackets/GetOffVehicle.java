@@ -11,19 +11,19 @@ public class GetOffVehicle extends L2GameServerPacket
 
 	public GetOffVehicle(Player cha, Boat boat, Location loc)
 	{
-		_playerObjectId = cha.getObjectId();
-		_boatObjectId = boat.getObjectId();
-		_loc = loc;
+		this._playerObjectId = cha.getObjectId();
+		this._boatObjectId = boat.getObjectId();
+		this._loc = loc;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x6f);
-		writeD(_playerObjectId);
-		writeD(_boatObjectId);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
+		this.writeC(0x6f);
+		this.writeD(this._playerObjectId);
+		this.writeD(this._boatObjectId);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
 	}
 }

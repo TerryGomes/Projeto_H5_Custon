@@ -23,17 +23,17 @@ public abstract class L2GameClientPacket extends ReceivablePacket<GameClient>
 	{
 		try
 		{
-			readImpl();
+			this.readImpl();
 			return true;
 		}
 		catch (BufferUnderflowException e)
 		{
-			_client.onPacketReadFail();
-			_log.error("Client: " + _client + " - Failed reading: " + getType() + " - Server Version: " + GameServer.getInstance().getVersion().getRevisionNumber() + " - " + e.getMessage());
+			this._client.onPacketReadFail();
+			_log.error("Client: " + this._client + " - Failed reading: " + this.getType() + " - Server Version: " + GameServer.getInstance().getVersion().getRevisionNumber() + " - " + e.getMessage());
 		}
 		catch (RuntimeException e)
 		{
-			_log.error("Client: " + _client + " - Failed reading: " + getType() + " - Server Version: " + GameServer.getInstance().getVersion().getRevisionNumber(), e);
+			_log.error("Client: " + this._client + " - Failed reading: " + this.getType() + " - Server Version: " + GameServer.getInstance().getVersion().getRevisionNumber(), e);
 		}
 
 		return false;
@@ -44,14 +44,14 @@ public abstract class L2GameClientPacket extends ReceivablePacket<GameClient>
 	@Override
 	public final void run()
 	{
-		GameClient client = getClient();
+		GameClient client = this.getClient();
 		try
 		{
-			runImpl();
+			this.runImpl();
 		}
 		catch (RuntimeException e)
 		{
-			_log.error("Client: " + client + " - Failed running: " + getType() + " - Server Version: " + GameServer.getInstance().getVersion().getRevisionNumber(), e);
+			_log.error("Client: " + client + " - Failed running: " + this.getType() + " - Server Version: " + GameServer.getInstance().getVersion().getRevisionNumber(), e);
 		}
 	}
 
@@ -59,28 +59,28 @@ public abstract class L2GameClientPacket extends ReceivablePacket<GameClient>
 
 	protected String readS(int len)
 	{
-		String ret = readS();
+		String ret = this.readS();
 		return ret.length() > len ? ret.substring(0, len) : ret;
 	}
 
 	protected void sendPacket(L2GameServerPacket packet)
 	{
-		getClient().sendPacket(packet);
+		this.getClient().sendPacket(packet);
 	}
 
 	protected void sendPacket(L2GameServerPacket... packets)
 	{
-		getClient().sendPacket(packets);
+		this.getClient().sendPacket(packets);
 	}
 
 	protected void sendPackets(List<L2GameServerPacket> packets)
 	{
-		getClient().sendPackets(packets);
+		this.getClient().sendPackets(packets);
 	}
 
 	public String getType()
 	{
-		return "[C] " + getClass().getSimpleName();
+		return "[C] " + this.getClass().getSimpleName();
 	}
 
 	/**

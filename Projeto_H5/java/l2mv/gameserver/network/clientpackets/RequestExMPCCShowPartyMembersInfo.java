@@ -11,13 +11,13 @@ public class RequestExMPCCShowPartyMembersInfo extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
+		this._objectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 
 		if (activeChar == null || !activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
 		{
@@ -27,7 +27,7 @@ public class RequestExMPCCShowPartyMembersInfo extends L2GameClientPacket
 		for (Party party : activeChar.getParty().getCommandChannel().getParties())
 		{
 			Player leader = party.getLeader();
-			if (leader != null && leader.getObjectId() == _objectId)
+			if (leader != null && leader.getObjectId() == this._objectId)
 			{
 				activeChar.sendPacket(new ExMPCCShowPartyMemberInfo(party));
 				break;

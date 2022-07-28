@@ -43,8 +43,8 @@ public class AuthServerCommunication extends Thread
 	private final Map<String, GameClient> authedClients = new HashMap<String, GameClient>();
 
 	private final ReadWriteLock lock = new ReentrantReadWriteLock();
-	private final Lock readLock = lock.readLock();
-	private final Lock writeLock = lock.writeLock();
+	private final Lock readLock = this.lock.readLock();
+	private final Lock writeLock = this.lock.writeLock();
 
 	private final ByteBuffer readBuffer = ByteBuffer.allocate(64 * 1024).order(ByteOrder.LITTLE_ENDIAN);
 	private final ByteBuffer writeBuffer = ByteBuffer.allocate(64 * 1024).order(ByteOrder.LITTLE_ENDIAN);
@@ -64,7 +64,7 @@ public class AuthServerCommunication extends Thread
 	{
 		try
 		{
-			selector = Selector.open();
+			this.selector = Selector.open();
 		}
 		catch (IOException e)
 		{
@@ -79,24 +79,24 @@ public class AuthServerCommunication extends Thread
 		SocketChannel channel = SocketChannel.open();
 		channel.configureBlocking(false);
 
-		key = channel.register(selector, SelectionKey.OP_CONNECT);
+		this.key = channel.register(this.selector, SelectionKey.OP_CONNECT);
 		channel.connect(new InetSocketAddress(Config.GAME_SERVER_LOGIN_HOST, Config.GAME_SERVER_LOGIN_PORT));
 	}
 
 	public void sendPacket(SendablePacket packet)
 	{
-		if (isShutdown())
+		if (this.isShutdown())
 		{
 			return;
 		}
 
 		boolean wakeUp;
 
-		sendLock.lock();
+		this.sendLock.lock();
 		try
 		{
-			sendQueue.add(packet);
-			wakeUp = enableWriteInterest();
+			this.sendQueue.add(packet);
+			wakeUp = this.enableWriteInterest();
 		}
 		catch (CancelledKeyException e)
 		{
@@ -104,20 +104,20 @@ public class AuthServerCommunication extends Thread
 		}
 		finally
 		{
-			sendLock.unlock();
+			this.sendLock.unlock();
 		}
 
 		if (wakeUp)
 		{
-			selector.wakeup();
+			this.selector.wakeup();
 		}
 	}
 
 	private boolean disableWriteInterest() throws CancelledKeyException
 	{
-		if (isPengingWrite.compareAndSet(true, false))
+		if (this.isPengingWrite.compareAndSet(true, false))
 		{
-			key.interestOps(key.interestOps() & ~SelectionKey.OP_WRITE);
+			this.key.interestOps(this.key.interestOps() & ~SelectionKey.OP_WRITE);
 			return true;
 		}
 		return false;
@@ -125,9 +125,9 @@ public class AuthServerCommunication extends Thread
 
 	private boolean enableWriteInterest() throws CancelledKeyException
 	{
-		if (!isPengingWrite.getAndSet(true))
+		if (!this.isPengingWrite.getAndSet(true))
 		{
-			key.interestOps(key.interestOps() | SelectionKey.OP_WRITE);
+			this.key.interestOps(this.key.interestOps() | SelectionKey.OP_WRITE);
 			return true;
 		}
 		return false;
@@ -135,12 +135,12 @@ public class AuthServerCommunication extends Thread
 
 	protected ByteBuffer getReadBuffer()
 	{
-		return readBuffer;
+		return this.readBuffer;
 	}
 
 	protected ByteBuffer getWriteBuffer()
 	{
-		return writeBuffer;
+		return this.writeBuffer;
 	}
 
 	@Override
@@ -151,19 +151,19 @@ public class AuthServerCommunication extends Thread
 		SelectionKey key;
 		int opts;
 
-		while (!shutdown)
+		while (!this.shutdown)
 		{
-			restart = false;
+			this.restart = false;
 
 			try
 			{
 				loop:
-				while (!isShutdown())
+				while (!this.isShutdown())
 				{
-					connect();
+					this.connect();
 
-					selector.select(5000L);
-					keys = selector.selectedKeys();
+					this.selector.select(5000L);
+					keys = this.selector.selectedKeys();
 					if (keys.isEmpty())
 					{
 						throw new IOException("Connection timeout.");
@@ -183,7 +183,7 @@ public class AuthServerCommunication extends Thread
 							switch (opts)
 							{
 							case SelectionKey.OP_CONNECT:
-								connect(key);
+								this.connect(key);
 								break loop;
 							}
 						}
@@ -196,10 +196,10 @@ public class AuthServerCommunication extends Thread
 				}
 
 				loop:
-				while (!isShutdown())
+				while (!this.isShutdown())
 				{
-					selector.select();
-					keys = selector.selectedKeys();
+					this.selector.select();
+					keys = this.selector.selectedKeys();
 					iterator = keys.iterator();
 
 					try
@@ -214,14 +214,14 @@ public class AuthServerCommunication extends Thread
 							switch (opts)
 							{
 							case SelectionKey.OP_WRITE:
-								write(key);
+								this.write(key);
 								break;
 							case SelectionKey.OP_READ:
-								read(key);
+								this.read(key);
 								break;
 							case SelectionKey.OP_READ | SelectionKey.OP_WRITE:
-								write(key);
-								read(key);
+								this.write(key);
+								this.read(key);
 								break;
 							}
 						}
@@ -238,7 +238,7 @@ public class AuthServerCommunication extends Thread
 				_log.error("AuthServer I/O error", e);
 			}
 
-			close();
+			this.close();
 
 			try
 			{
@@ -254,7 +254,7 @@ public class AuthServerCommunication extends Thread
 	private void read(SelectionKey key) throws IOException
 	{
 		final SocketChannel channel = (SocketChannel) key.channel();
-		final ByteBuffer buf = getReadBuffer();
+		final ByteBuffer buf = this.getReadBuffer();
 		final int count = channel.read(buf);
 		if (count == -1)
 		{
@@ -268,7 +268,7 @@ public class AuthServerCommunication extends Thread
 
 		buf.flip();
 
-		while (tryReadPacket(key, buf))
+		while (this.tryReadPacket(key, buf))
 		{
 			;
 		}
@@ -334,16 +334,16 @@ public class AuthServerCommunication extends Thread
 	private void write(SelectionKey key) throws IOException
 	{
 		SocketChannel channel = (SocketChannel) key.channel();
-		ByteBuffer buf = getWriteBuffer();
+		ByteBuffer buf = this.getWriteBuffer();
 
 		boolean done;
 
-		sendLock.lock();
+		this.sendLock.lock();
 		try
 		{
 			int i = 0;
 			SendablePacket sp;
-			while (i++ < 64 && (sp = sendQueue.poll()) != null)
+			while (i++ < 64 && (sp = this.sendQueue.poll()) != null)
 			{
 				final int headerPos = buf.position();
 				buf.position(headerPos + 2);
@@ -362,15 +362,15 @@ public class AuthServerCommunication extends Thread
 				buf.position(headerPos + dataSize + 2);
 			}
 
-			done = sendQueue.isEmpty();
+			done = this.sendQueue.isEmpty();
 			if (done)
 			{
-				disableWriteInterest();
+				this.disableWriteInterest();
 			}
 		}
 		finally
 		{
-			sendLock.unlock();
+			this.sendLock.unlock();
 		}
 		buf.flip();
 
@@ -388,9 +388,9 @@ public class AuthServerCommunication extends Thread
 
 		if (!done)
 		{
-			if (enableWriteInterest())
+			if (this.enableWriteInterest())
 			{
-				selector.wakeup();
+				this.selector.wakeup();
 			}
 		}
 	}
@@ -403,163 +403,163 @@ public class AuthServerCommunication extends Thread
 		key.interestOps(key.interestOps() & ~SelectionKey.OP_CONNECT);
 		key.interestOps(key.interestOps() | SelectionKey.OP_READ);
 
-		sendPacket(new AuthRequest());
+		this.sendPacket(new AuthRequest());
 	}
 
 	private void close()
 	{
-		restart = !shutdown;
+		this.restart = !this.shutdown;
 
-		sendLock.lock();
+		this.sendLock.lock();
 		try
 		{
-			sendQueue.clear();
+			this.sendQueue.clear();
 		}
 		finally
 		{
-			sendLock.unlock();
+			this.sendLock.unlock();
 		}
 
-		readBuffer.clear();
-		writeBuffer.clear();
+		this.readBuffer.clear();
+		this.writeBuffer.clear();
 
-		isPengingWrite.set(false);
+		this.isPengingWrite.set(false);
 
 		try
 		{
-			if (key != null)
+			if (this.key != null)
 			{
-				key.channel().close();
-				key.cancel();
+				this.key.channel().close();
+				this.key.cancel();
 			}
 		}
 		catch (IOException e)
 		{
 		}
 
-		writeLock.lock();
+		this.writeLock.lock();
 		try
 		{
-			waitingClients.clear();
+			this.waitingClients.clear();
 		}
 		finally
 		{
-			writeLock.unlock();
+			this.writeLock.unlock();
 		}
 	}
 
 	public void shutdown()
 	{
-		shutdown = true;
-		selector.wakeup();
+		this.shutdown = true;
+		this.selector.wakeup();
 	}
 
 	public boolean isShutdown()
 	{
-		return shutdown || restart;
+		return this.shutdown || this.restart;
 	}
 
 	public void restart()
 	{
-		restart = true;
-		selector.wakeup();
+		this.restart = true;
+		this.selector.wakeup();
 	}
 
 	public GameClient addWaitingClient(GameClient client)
 	{
-		writeLock.lock();
+		this.writeLock.lock();
 		try
 		{
-			return waitingClients.put(client.getLogin(), client);
+			return this.waitingClients.put(client.getLogin(), client);
 		}
 		finally
 		{
-			writeLock.unlock();
+			this.writeLock.unlock();
 		}
 	}
 
 	public GameClient removeWaitingClient(String account)
 	{
-		writeLock.lock();
+		this.writeLock.lock();
 		try
 		{
-			return waitingClients.remove(account);
+			return this.waitingClients.remove(account);
 		}
 		finally
 		{
-			writeLock.unlock();
+			this.writeLock.unlock();
 		}
 	}
 
 	public GameClient addAuthedClient(GameClient client)
 	{
-		writeLock.lock();
+		this.writeLock.lock();
 		try
 		{
-			return authedClients.put(client.getLogin(), client);
+			return this.authedClients.put(client.getLogin(), client);
 		}
 		finally
 		{
-			writeLock.unlock();
+			this.writeLock.unlock();
 		}
 	}
 
 	public GameClient removeAuthedClient(String login)
 	{
-		writeLock.lock();
+		this.writeLock.lock();
 		try
 		{
-			return authedClients.remove(login);
+			return this.authedClients.remove(login);
 		}
 		finally
 		{
-			writeLock.unlock();
+			this.writeLock.unlock();
 		}
 	}
 
 	public GameClient getAuthedClient(String login)
 	{
-		readLock.lock();
+		this.readLock.lock();
 		try
 		{
-			return authedClients.get(login);
+			return this.authedClients.get(login);
 		}
 		finally
 		{
-			readLock.unlock();
+			this.readLock.unlock();
 		}
 	}
 
 	public GameClient removeClient(GameClient client)
 	{
-		writeLock.lock();
+		this.writeLock.lock();
 		try
 		{
 			if (client.isAuthed())
 			{
-				return authedClients.remove(client.getLogin());
+				return this.authedClients.remove(client.getLogin());
 			}
 			else
 			{
-				return waitingClients.remove(client.getSessionKey());
+				return this.waitingClients.remove(client.getSessionKey());
 			}
 		}
 		finally
 		{
-			writeLock.unlock();
+			this.writeLock.unlock();
 		}
 	}
 
 	public String[] getAccounts()
 	{
-		readLock.lock();
+		this.readLock.lock();
 		try
 		{
-			return authedClients.keySet().toArray(new String[authedClients.size()]);
+			return this.authedClients.keySet().toArray(new String[this.authedClients.size()]);
 		}
 		finally
 		{
-			readLock.unlock();
+			this.readLock.unlock();
 		}
 	}
 }

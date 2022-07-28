@@ -13,22 +13,22 @@ public class RequestPledgeCrest extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_crestId = readD();
+		this._crestId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if ((activeChar == null) || (_crestId == 0))
+		Player activeChar = this.getClient().getActiveChar();
+		if ((activeChar == null) || (this._crestId == 0))
 		{
 			return;
 		}
-		byte[] data = CrestCache.getInstance().getPledgeCrest(_crestId);
+		byte[] data = CrestCache.getInstance().getPledgeCrest(this._crestId);
 		if (data != null)
 		{
-			PledgeCrest pc = new PledgeCrest(_crestId, data);
-			sendPacket(pc);
+			PledgeCrest pc = new PledgeCrest(this._crestId, data);
+			this.sendPacket(pc);
 		}
 	}
 }

@@ -7,6 +7,6 @@ public class ExClosePartyRoom extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x09);
+		this.writeEx(0x09);
 	}
 }

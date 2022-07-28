@@ -26,53 +26,53 @@ public class SetPrivateStoreBuyList extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_count = readD();
-		if (_count * 40 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		this._count = this.readD();
+		if (this._count * 40 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1)
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
 
-		_items = new int[_count];
-		_itemQ = new long[_count];
-		_itemP = new long[_count];
+		this._items = new int[this._count];
+		this._itemQ = new long[this._count];
+		this._itemP = new long[this._count];
 
-		for (int i = 0; i < _count; i++)
+		for (int i = 0; i < this._count; i++)
 		{
-			_items[i] = readD();
+			this._items[i] = this.readD();
 
-			readH();
-			readH();
+			this.readH();
+			this.readH();
 
-			_itemQ[i] = readQ();
-			_itemP[i] = readQ();
+			this._itemQ[i] = this.readQ();
+			this._itemP[i] = this.readQ();
 
-			if (_itemQ[i] < 1 || _itemP[i] < 1)
+			if (this._itemQ[i] < 1 || this._itemP[i] < 1)
 			{
-				_count = 0;
+				this._count = 0;
 				break;
 			}
 
 			// TODO Gracia Final
-			readC(); // FE
-			readD(); // FF 00 00 00
-			readD(); // 00 00 00 00
+			this.readC(); // FE
+			this.readD(); // FF 00 00 00
+			this.readD(); // 00 00 00 00
 
-			readC(); // Unknown 7 bytes
-			readC();
-			readC();
-			readC();
-			readC();
-			readC();
-			readC();
+			this.readC(); // Unknown 7 bytes
+			this.readC();
+			this.readC();
+			this.readC();
+			this.readC();
+			this.readC();
+			this.readC();
 		}
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player buyer = getClient().getActiveChar();
-		if (buyer == null || _count == 0)
+		Player buyer = this.getClient().getActiveChar();
+		if (buyer == null || this._count == 0)
 		{
 			return;
 		}
@@ -88,11 +88,11 @@ public class SetPrivateStoreBuyList extends L2GameClientPacket
 		try
 		{
 			loop:
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < this._count; i++)
 			{
-				int itemId = _items[i];
-				long count = _itemQ[i];
-				long price = _itemP[i];
+				int itemId = this._items[i];
+				long count = this._itemQ[i];
+				long price = this._itemP[i];
 
 				ItemTemplate item = ItemHolder.getInstance().getTemplate(itemId);
 

@@ -12,21 +12,21 @@ public class RequestAllyCrest extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_crestId = readD();
+		this._crestId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		if (_crestId == 0)
+		if (this._crestId == 0)
 		{
 			return;
 		}
-		byte[] data = CrestCache.getInstance().getAllyCrest(_crestId);
+		byte[] data = CrestCache.getInstance().getAllyCrest(this._crestId);
 		if (data != null)
 		{
-			AllianceCrest ac = new AllianceCrest(_crestId, data);
-			sendPacket(ac);
+			AllianceCrest ac = new AllianceCrest(this._crestId, data);
+			this.sendPacket(ac);
 		}
 	}
 }

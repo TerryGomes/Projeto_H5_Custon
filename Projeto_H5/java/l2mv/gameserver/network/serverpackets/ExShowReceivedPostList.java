@@ -25,31 +25,31 @@ public class ExShowReceivedPostList extends L2GameServerPacket
 
 	public ExShowReceivedPostList(Player cha)
 	{
-		mails = MailDAO.getInstance().getReceivedMailByOwnerId(cha.getObjectId());
-		CollectionUtils.eqSort(mails);
+		this.mails = MailDAO.getInstance().getReceivedMailByOwnerId(cha.getObjectId());
+		CollectionUtils.eqSort(this.mails);
 	}
 
 	// d dx[dSSddddddd]
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xAA);
-		writeD((int) (System.currentTimeMillis() / 1000L));
-		writeD(mails.size()); // number of letters
-		for (Mail mail : mails)
+		this.writeEx(0xAA);
+		this.writeD((int) (System.currentTimeMillis() / 1000L));
+		this.writeD(this.mails.size()); // number of letters
+		for (Mail mail : this.mails)
 		{
-			writeD(mail.getMessageId()); // a unique id letters
-			writeS(mail.getTopic()); // the topic
-			writeS(mail.getSenderName()); // sender
-			writeD(mail.isPayOnDelivery() ? 1 : 0); // 1 if there is a letter requires payment
-			writeD(mail.getExpireTime()); // time actually writing
-			writeD(mail.isUnread() ? 1 : 0); // the letter was not read - it can not be removed and it is highlighted in bright color
-			writeD(mail.getType() == Mail.SenderType.NORMAL ? 0 : 1); // returnable
-			writeD(mail.getAttachments().isEmpty() ? 0 : 1); // 1 - letter of application, 0 - a letter
+			this.writeD(mail.getMessageId()); // a unique id letters
+			this.writeS(mail.getTopic()); // the topic
+			this.writeS(mail.getSenderName()); // sender
+			this.writeD(mail.isPayOnDelivery() ? 1 : 0); // 1 if there is a letter requires payment
+			this.writeD(mail.getExpireTime()); // time actually writing
+			this.writeD(mail.isUnread() ? 1 : 0); // the letter was not read - it can not be removed and it is highlighted in bright color
+			this.writeD(mail.getType() == Mail.SenderType.NORMAL ? 0 : 1); // returnable
+			this.writeD(mail.getAttachments().isEmpty() ? 0 : 1); // 1 - letter of application, 0 - a letter
 			// TODO [VISTALL] returned
-			writeD(0x00); // if 1 and then the next option 1, then the sender will "****", if then 2 then the next parameter is ignored
-			writeD(mail.getType().ordinal()); // 1 - the sender is listed "**News Informer**"
-			writeD(0x00);
+			this.writeD(0x00); // if 1 and then the next option 1, then the sender will "****", if then 2 then the next parameter is ignored
+			this.writeD(mail.getType().ordinal()); // 1 - the sender is listed "**News Informer**"
+			this.writeD(0x00);
 		}
 	}
 }

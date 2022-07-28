@@ -14,59 +14,59 @@ public class ExEnchantSkillInfo extends L2GameServerPacket
 
 	public ExEnchantSkillInfo(int id, int level)
 	{
-		_routes = new ArrayList<Integer>();
-		_id = id;
-		_level = level;
+		this._routes = new ArrayList<Integer>();
+		this._id = id;
+		this._level = level;
 
 		// skill already enchanted?
-		if (_level > 100)
+		if (this._level > 100)
 		{
-			canDecrease = 1;
+			this.canDecrease = 1;
 			// get detail for next level
-			EnchantSkillLearn esd = SkillTreeTable.getSkillEnchant(_id, _level + 1);
+			EnchantSkillLearn esd = SkillTreeTable.getSkillEnchant(this._id, this._level + 1);
 
 			// if it exists add it
 			if (esd != null)
 			{
-				addEnchantSkillDetail(esd.getLevel());
-				_canAdd = 1;
+				this.addEnchantSkillDetail(esd.getLevel());
+				this._canAdd = 1;
 			}
 
-			for (EnchantSkillLearn el : SkillTreeTable.getEnchantsForChange(_id, _level))
+			for (EnchantSkillLearn el : SkillTreeTable.getEnchantsForChange(this._id, this._level))
 			{
-				addEnchantSkillDetail(el.getLevel());
+				this.addEnchantSkillDetail(el.getLevel());
 			}
 		}
 		else
 		{
 			// not already enchanted
-			for (EnchantSkillLearn esd : SkillTreeTable.getFirstEnchantsForSkill(_id))
+			for (EnchantSkillLearn esd : SkillTreeTable.getFirstEnchantsForSkill(this._id))
 			{
-				addEnchantSkillDetail(esd.getLevel());
-				_canAdd = 1;
+				this.addEnchantSkillDetail(esd.getLevel());
+				this._canAdd = 1;
 			}
 		}
 	}
 
 	public void addEnchantSkillDetail(int level)
 	{
-		_routes.add(level);
+		this._routes.add(level);
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x2a);
+		this.writeEx(0x2a);
 
-		writeD(_id);
-		writeD(_level);
-		writeD(_canAdd); // can add enchant
-		writeD(canDecrease); // can decrease enchant
+		this.writeD(this._id);
+		this.writeD(this._level);
+		this.writeD(this._canAdd); // can add enchant
+		this.writeD(this.canDecrease); // can decrease enchant
 
-		writeD(_routes.size());
-		for (Integer route : _routes)
+		this.writeD(this._routes.size());
+		for (Integer route : this._routes)
 		{
-			writeD(route);
+			this.writeD(route);
 		}
 	}
 }

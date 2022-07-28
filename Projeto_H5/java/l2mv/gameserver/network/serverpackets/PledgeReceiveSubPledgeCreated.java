@@ -9,19 +9,19 @@ public class PledgeReceiveSubPledgeCreated extends L2GameServerPacket
 
 	public PledgeReceiveSubPledgeCreated(SubUnit subPledge)
 	{
-		type = subPledge.getType();
-		_name = subPledge.getName();
-		leader_name = subPledge.getLeaderName();
+		this.type = subPledge.getType();
+		this._name = subPledge.getName();
+		this.leader_name = subPledge.getLeaderName();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x40);
+		this.writeEx(0x40);
 
-		writeD(0x01);
-		writeD(type);
-		writeS(_name);
-		writeS(leader_name);
+		this.writeD(0x01);
+		this.writeD(this.type);
+		this.writeS(this._name);
+		this.writeS(this.leader_name);
 	}
 }

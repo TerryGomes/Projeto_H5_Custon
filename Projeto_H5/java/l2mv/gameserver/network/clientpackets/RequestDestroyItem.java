@@ -24,14 +24,14 @@ public class RequestDestroyItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
-		_count = readQ();
+		this._objectId = this.readD();
+		this._count = this.readQ();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -61,14 +61,14 @@ public class RequestDestroyItem extends L2GameClientPacket
 			return;
 		}
 
-		long count = _count;
+		long count = this._count;
 
-		ItemInstance item = activeChar.getInventory().getItemByObjectId(_objectId);
+		ItemInstance item = activeChar.getInventory().getItemByObjectId(this._objectId);
 		if (item == null) // Support for GMs deleting items from alt+g inventory.
 		{
 			for (Player player : GameObjectsStorage.getAllPlayersForIterate()) // There is no way to get item by objectId!!! Or im very stupid to not know such.
 			{
-				if ((item = player.getInventory().getItemByObjectId(_objectId)) != null)
+				if ((item = player.getInventory().getItemByObjectId(this._objectId)) != null)
 				{
 					break;
 				}
@@ -105,7 +105,7 @@ public class RequestDestroyItem extends L2GameClientPacket
 			return;
 		}
 
-		if (_count > item.getCount())
+		if (this._count > item.getCount())
 		{
 			count = item.getCount();
 		}
@@ -125,7 +125,7 @@ public class RequestDestroyItem extends L2GameClientPacket
 
 		if (item.getOwnerId() == activeChar.getObjectId())
 		{
-			if (!activeChar.getInventory().destroyItemByObjectId(_objectId, count, "Delete"))
+			if (!activeChar.getInventory().destroyItemByObjectId(this._objectId, count, "Delete"))
 			{
 				activeChar.sendActionFailed();
 				return;
@@ -141,7 +141,7 @@ public class RequestDestroyItem extends L2GameClientPacket
 			if (owner != null)
 			{
 				// If item is successfully deleted, show updated target inventory.
-				if (owner.getInventory().destroyItemByObjectId(_objectId, count, "GMDelete"))
+				if (owner.getInventory().destroyItemByObjectId(this._objectId, count, "GMDelete"))
 				{
 					ItemInstance[] items = owner.getInventory().getItems();
 					int questSize = 0;

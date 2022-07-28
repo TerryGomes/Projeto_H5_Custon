@@ -17,16 +17,16 @@ public class ChangeMoveType extends L2GameServerPacket
 
 	public ChangeMoveType(Creature cha)
 	{
-		_chaId = cha.getObjectId();
-		_running = cha.isRunning();
+		this._chaId = cha.getObjectId();
+		this._running = cha.isRunning();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x28);
-		writeD(_chaId);
-		writeD(_running ? 1 : 0);
-		writeD(0); // c2
+		this.writeC(0x28);
+		this.writeD(this._chaId);
+		this.writeD(this._running ? 1 : 0);
+		this.writeD(0); // c2
 	}
 }

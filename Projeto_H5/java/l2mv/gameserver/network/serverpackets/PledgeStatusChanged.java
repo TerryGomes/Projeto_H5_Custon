@@ -15,21 +15,21 @@ public class PledgeStatusChanged extends L2GameServerPacket
 
 	public PledgeStatusChanged(Clan clan)
 	{
-		leader_id = clan.getLeaderId();
-		clan_id = clan.getClanId();
-		level = clan.getLevel();
+		this.leader_id = clan.getLeaderId();
+		this.clan_id = clan.getClanId();
+		this.level = clan.getLevel();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xCD);
-		writeD(leader_id);
-		writeD(clan_id);
-		writeD(0);
-		writeD(level);
-		writeD(0);
-		writeD(0);
-		writeD(0);
+		this.writeC(0xCD);
+		this.writeD(this.leader_id);
+		this.writeD(this.clan_id);
+		this.writeD(0);
+		this.writeD(this.level);
+		this.writeD(0);
+		this.writeD(0);
+		this.writeD(0);
 	}
 }

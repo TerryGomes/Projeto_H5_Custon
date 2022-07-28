@@ -15,14 +15,14 @@ public class Ex2ndPasswordCheck extends L2GameServerPacket
 
 	public Ex2ndPasswordCheck(int windowType)
 	{
-		_windowType = windowType;
+		this._windowType = windowType;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xE5);
-		writeD(_windowType);
-		writeD(0x00);
+		this.writeEx(0xE5);
+		this.writeD(this._windowType);
+		this.writeD(0x00);
 	}
 }

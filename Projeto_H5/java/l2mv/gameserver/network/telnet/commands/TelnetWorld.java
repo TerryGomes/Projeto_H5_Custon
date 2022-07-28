@@ -18,7 +18,7 @@ public class TelnetWorld implements TelnetCommandHolder
 
 	public TelnetWorld()
 	{
-		_commands.add(new TelnetCommand("find")
+		this._commands.add(new TelnetCommand("find")
 		{
 
 			@Override
@@ -66,7 +66,7 @@ public class TelnetWorld implements TelnetCommandHolder
 			}
 
 		});
-		_commands.add(new TelnetCommand("whois", "who")
+		this._commands.add(new TelnetCommand("whois", "who")
 		{
 
 			@Override
@@ -113,7 +113,7 @@ public class TelnetWorld implements TelnetCommandHolder
 			}
 
 		});
-		_commands.add(new TelnetCommand("gmlist", "gms")
+		this._commands.add(new TelnetCommand("gmlist", "gms")
 		{
 
 			@Override
@@ -150,6 +150,6 @@ public class TelnetWorld implements TelnetCommandHolder
 	@Override
 	public Set<TelnetCommand> getCommands()
 	{
-		return _commands;
+		return this._commands;
 	}
 }

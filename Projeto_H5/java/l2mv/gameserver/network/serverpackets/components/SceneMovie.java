@@ -113,22 +113,22 @@ public enum SceneMovie implements IStaticPacket
 	{
 		this.id = id;
 		this.duration = duration;
-		packet = new ExStartScenePlayer(this);
+		this.packet = new ExStartScenePlayer(this);
 	}
 
 	public int getId()
 	{
-		return id;
+		return this.id;
 	}
 
 	public int getDuration()
 	{
-		return duration;
+		return this.duration;
 	}
 
 	@Override
 	public L2GameServerPacket packet(Player player)
 	{
-		return packet;
+		return this.packet;
 	}
 }

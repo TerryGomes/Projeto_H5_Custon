@@ -13,31 +13,31 @@ public class RecipeBookItemList extends L2GameServerPacket
 
 	public RecipeBookItemList(Player player, boolean isDwarvenCraft)
 	{
-		_isDwarvenCraft = isDwarvenCraft;
-		_currentMp = (int) player.getCurrentMp();
+		this._isDwarvenCraft = isDwarvenCraft;
+		this._currentMp = (int) player.getCurrentMp();
 		if (isDwarvenCraft)
 		{
-			_recipes = player.getDwarvenRecipeBook();
+			this._recipes = player.getDwarvenRecipeBook();
 		}
 		else
 		{
-			_recipes = player.getCommonRecipeBook();
+			this._recipes = player.getCommonRecipeBook();
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xdc);
-		writeD(_isDwarvenCraft ? 0x00 : 0x01);
-		writeD(_currentMp);
+		this.writeC(0xdc);
+		this.writeD(this._isDwarvenCraft ? 0x00 : 0x01);
+		this.writeD(this._currentMp);
 
-		writeD(_recipes.size());
+		this.writeD(this._recipes.size());
 
-		for (Recipe recipe : _recipes)
+		for (Recipe recipe : this._recipes)
 		{
-			writeD(recipe.getId());
-			writeD(1); // ??
+			this.writeD(recipe.getId());
+			this.writeD(1); // ??
 		}
 	}
 }

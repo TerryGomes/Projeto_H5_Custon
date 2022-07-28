@@ -21,23 +21,23 @@ public class Attack extends L2GameServerPacket
 
 		Hit(GameObject target, int damage, boolean miss, boolean crit, boolean shld)
 		{
-			_targetId = target.getObjectId();
-			_damage = damage;
-			if (_soulshot)
+			this._targetId = target.getObjectId();
+			this._damage = damage;
+			if (Attack.this._soulshot)
 			{
-				_flags |= 0x10 | _grade;
+				this._flags |= 0x10 | Attack.this._grade;
 			}
 			if (crit)
 			{
-				_flags |= 0x20;
+				this._flags |= 0x20;
 			}
 			if (shld)
 			{
-				_flags |= 0x40;
+				this._flags |= 0x40;
 			}
 			if (miss)
 			{
-				_flags |= 0x80;
+				this._flags |= 0x80;
 			}
 		}
 	}
@@ -50,16 +50,16 @@ public class Attack extends L2GameServerPacket
 
 	public Attack(Creature attacker, Creature target, boolean ss, int grade)
 	{
-		_attackerId = attacker.getObjectId();
-		_soulshot = ss;
-		_grade = grade;
-		_x = attacker.getX();
-		_y = attacker.getY();
-		_z = attacker.getZ();
-		_tx = target.getX();
-		_ty = target.getY();
-		_tz = target.getZ();
-		hits = new Hit[0];
+		this._attackerId = attacker.getObjectId();
+		this._soulshot = ss;
+		this._grade = grade;
+		this._x = attacker.getX();
+		this._y = attacker.getY();
+		this._z = attacker.getZ();
+		this._tx = target.getX();
+		this._ty = target.getY();
+		this._tz = target.getZ();
+		this.hits = new Hit[0];
 	}
 
 	/**
@@ -68,15 +68,15 @@ public class Attack extends L2GameServerPacket
 	public void addHit(GameObject target, int damage, boolean miss, boolean crit, boolean shld)
 	{
 		// Get the last position in the hits table
-		int pos = hits.length;
+		int pos = this.hits.length;
 
 		// Create a new Hit object
 		Hit[] tmp = new Hit[pos + 1];
 
 		// Add the new Hit object to hits table
-		System.arraycopy(hits, 0, tmp, 0, hits.length);
+		System.arraycopy(this.hits, 0, tmp, 0, this.hits.length);
 		tmp[pos] = new Hit(target, damage, miss, crit, shld);
-		hits = tmp;
+		this.hits = tmp;
 	}
 
 	/**
@@ -84,34 +84,34 @@ public class Attack extends L2GameServerPacket
 	 */
 	public boolean hasHits()
 	{
-		return hits.length > 0;
+		return this.hits.length > 0;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 
 		boolean shouldSeeShots = !(activeChar != null && activeChar.isNotShowBuffAnim());
 
-		writeC(0x33);
+		this.writeC(0x33);
 
-		writeD(_attackerId);
-		writeD(hits[0]._targetId);
-		writeD(hits[0]._damage);
-		writeC(shouldSeeShots ? hits[0]._flags : 0);
-		writeD(_x);
-		writeD(_y);
-		writeD(_z);
-		writeH(hits.length - 1);
-		for (int i = 1; i < hits.length; i++)
+		this.writeD(this._attackerId);
+		this.writeD(this.hits[0]._targetId);
+		this.writeD(this.hits[0]._damage);
+		this.writeC(shouldSeeShots ? this.hits[0]._flags : 0);
+		this.writeD(this._x);
+		this.writeD(this._y);
+		this.writeD(this._z);
+		this.writeH(this.hits.length - 1);
+		for (int i = 1; i < this.hits.length; i++)
 		{
-			writeD(hits[i]._targetId);
-			writeD(hits[i]._damage);
-			writeC(shouldSeeShots ? hits[i]._flags : 0);
+			this.writeD(this.hits[i]._targetId);
+			this.writeD(this.hits[i]._damage);
+			this.writeC(shouldSeeShots ? this.hits[i]._flags : 0);
 		}
-		writeD(_tx);
-		writeD(_ty);
-		writeD(_tz);
+		this.writeD(this._tx);
+		this.writeD(this._ty);
+		this.writeD(this._tz);
 	}
 }

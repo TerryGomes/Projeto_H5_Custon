@@ -40,7 +40,7 @@ public class TelnetServerHandler extends SimpleChannelUpstreamHandler implements
 
 	public TelnetServerHandler()
 	{
-		_commands.add(new TelnetCommand("help", "h")
+		this._commands.add(new TelnetCommand("help", "h")
 		{
 			@Override
 			public String getUsage()
@@ -55,7 +55,7 @@ public class TelnetServerHandler extends SimpleChannelUpstreamHandler implements
 				{
 					StringBuilder sb = new StringBuilder();
 					sb.append("Available commands:\n");
-					for (TelnetCommand cmd : _commands)
+					for (TelnetCommand cmd : TelnetServerHandler.this._commands)
 					{
 						sb.append(cmd.getCommand()).append("\n");
 					}
@@ -75,33 +75,33 @@ public class TelnetServerHandler extends SimpleChannelUpstreamHandler implements
 			}
 		});
 
-		addHandler(new TelnetBan());
-		addHandler(new TelnetConfig());
-		addHandler(new TelnetDebug());
-		addHandler(new TelnetPerfomance());
-		addHandler(new TelnetSay());
-		addHandler(new TelnetServer());
-		addHandler(new TelnetStatus());
-		addHandler(new TelnetWorld());
+		this.addHandler(new TelnetBan());
+		this.addHandler(new TelnetConfig());
+		this.addHandler(new TelnetDebug());
+		this.addHandler(new TelnetPerfomance());
+		this.addHandler(new TelnetSay());
+		this.addHandler(new TelnetServer());
+		this.addHandler(new TelnetStatus());
+		this.addHandler(new TelnetWorld());
 	}
 
 	public void addHandler(TelnetCommandHolder handler)
 	{
 		for (TelnetCommand cmd : handler.getCommands())
 		{
-			_commands.add(cmd);
+			this._commands.add(cmd);
 		}
 	}
 
 	@Override
 	public Set<TelnetCommand> getCommands()
 	{
-		return _commands;
+		return this._commands;
 	}
 
 	private TelnetCommand getCommand(String command)
 	{
-		for (TelnetCommand cmd : _commands)
+		for (TelnetCommand cmd : this._commands)
 		{
 			if (cmd.equals(command))
 			{
@@ -114,7 +114,7 @@ public class TelnetServerHandler extends SimpleChannelUpstreamHandler implements
 
 	private String tryHandleCommand(String command, String[] args)
 	{
-		TelnetCommand cmd = getCommand(command);
+		TelnetCommand cmd = this.getCommand(command);
 
 		if (cmd == null)
 		{
@@ -204,7 +204,7 @@ public class TelnetServerHandler extends SimpleChannelUpstreamHandler implements
 					args.add(arg);
 				}
 
-				response = tryHandleCommand(command, args.toArray(new String[args.size()]));
+				response = this.tryHandleCommand(command, args.toArray(new String[args.size()]));
 			}
 		}
 

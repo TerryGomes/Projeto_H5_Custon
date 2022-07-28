@@ -13,17 +13,17 @@ public class Action extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
-		readD(); // x
-		readD(); // y
-		readD(); // z
-		_actionId = readC();// 0 for simple click 1 for shift click
+		this._objectId = this.readD();
+		this.readD(); // x
+		this.readD(); // y
+		this.readD(); // z
+		this._actionId = this.readC();// 0 for simple click 1 for shift click
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -35,7 +35,7 @@ public class Action extends L2GameClientPacket
 			return;
 		}
 
-		GameObject obj = activeChar.getVisibleObject(_objectId);
+		GameObject obj = activeChar.getVisibleObject(this._objectId);
 		if (obj == null)
 		{
 			activeChar.sendActionFailed();
@@ -67,6 +67,6 @@ public class Action extends L2GameClientPacket
 			return;
 		}
 
-		obj.onAction(activeChar, _actionId == 1);
+		obj.onAction(activeChar, this._actionId == 1);
 	}
 }

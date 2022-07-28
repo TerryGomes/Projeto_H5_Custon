@@ -41,25 +41,25 @@ public class RequestProcureCropList extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_count = readD();
-		if (_count * 20 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		this._count = this.readD();
+		if (this._count * 20 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1)
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
-		_items = new int[_count];
-		_crop = new int[_count];
-		_manor = new int[_count];
-		_itemQ = new long[_count];
-		for (int i = 0; i < _count; i++)
+		this._items = new int[this._count];
+		this._crop = new int[this._count];
+		this._manor = new int[this._count];
+		this._itemQ = new long[this._count];
+		for (int i = 0; i < this._count; i++)
 		{
-			_items[i] = readD();
-			_crop[i] = readD();
-			_manor[i] = readD();
-			_itemQ[i] = readQ();
-			if (_crop[i] < 1 || _manor[i] < 1 || _itemQ[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
+			this._items[i] = this.readD();
+			this._crop[i] = this.readD();
+			this._manor[i] = this.readD();
+			this._itemQ[i] = this.readQ();
+			if (this._crop[i] < 1 || this._manor[i] < 1 || this._itemQ[i] < 1 || ArrayUtils.indexOf(this._items, this._items[i]) < i)
 			{
-				_count = 0;
+				this._count = 0;
 				return;
 			}
 		}
@@ -68,8 +68,8 @@ public class RequestProcureCropList extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || _count == 0)
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar == null || this._count == 0)
 		{
 			return;
 		}
@@ -109,12 +109,12 @@ public class RequestProcureCropList extends L2GameClientPacket
 
 		try
 		{
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < this._count; i++)
 			{
-				int objId = _items[i];
-				int cropId = _crop[i];
-				int manorId = _manor[i];
-				long count = _itemQ[i];
+				int objId = this._items[i];
+				int cropId = this._crop[i];
+				int manorId = this._manor[i];
+				long count = this._itemQ[i];
 
 				ItemInstance item = activeChar.getInventory().getItemByObjectId(objId);
 				if (item == null || item.getCount() < count || item.getItemId() != cropId)
@@ -186,12 +186,12 @@ public class RequestProcureCropList extends L2GameClientPacket
 			}
 
 			// Proceed the purchase
-			for (int i = 0; i < _count; i++)
+			for (int i = 0; i < this._count; i++)
 			{
-				int objId = _items[i];
-				int cropId = _crop[i];
-				int manorId = _manor[i];
-				long count = _itemQ[i];
+				int objId = this._items[i];
+				int cropId = this._crop[i];
+				int manorId = this._manor[i];
+				long count = this._itemQ[i];
 
 				// check if player have correct items count
 				ItemInstance item = activeChar.getInventory().getItemByObjectId(objId);

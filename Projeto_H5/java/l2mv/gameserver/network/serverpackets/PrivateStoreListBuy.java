@@ -20,9 +20,9 @@ public class PrivateStoreListBuy extends L2GameServerPacket
 	 */
 	public PrivateStoreListBuy(Player seller, Player buyer)
 	{
-		_adena = seller.getAdena();
-		_buyerId = buyer.getObjectId();
-		_sellList = new ArrayList<TradeItem>();
+		this._adena = seller.getAdena();
+		this._buyerId = buyer.getObjectId();
+		this._sellList = new ArrayList<TradeItem>();
 		final List<TradeItem> buyList = buyer.getBuyList();
 		final ItemInstance[] items = seller.getInventory().getItems();
 		for (TradeItem bi : buyList)
@@ -33,7 +33,7 @@ public class PrivateStoreListBuy extends L2GameServerPacket
 				if (item.getItemId() == bi.getItemId() && item.canBeTraded(seller))
 				{
 					si = new TradeItem(item);
-					_sellList.add(si);
+					this._sellList.add(si);
 					si.setOwnersPrice(bi.getOwnersPrice());
 					si.setCount(bi.getCount());
 					si.setCurrentValue(Math.min(bi.getCount(), item.getCount()));
@@ -46,7 +46,7 @@ public class PrivateStoreListBuy extends L2GameServerPacket
 				si.setOwnersPrice(bi.getOwnersPrice());
 				si.setCount(bi.getCount());
 				si.setCurrentValue(0);
-				_sellList.add(si);
+				this._sellList.add(si);
 			}
 		}
 	}
@@ -54,18 +54,18 @@ public class PrivateStoreListBuy extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xBE);
+		this.writeC(0xBE);
 
-		writeD(_buyerId);
-		writeQ(_adena);
-		writeD(_sellList.size());
-		for (TradeItem si : _sellList)
+		this.writeD(this._buyerId);
+		this.writeQ(this._adena);
+		this.writeD(this._sellList.size());
+		for (TradeItem si : this._sellList)
 		{
-			writeItemInfo(si, si.getCurrentValue());
-			writeD(si.getObjectId());
-			writeQ(si.getOwnersPrice());
-			writeQ(si.getStorePrice());
-			writeQ(si.getCount()); // maximum possible tradecount
+			this.writeItemInfo(si, si.getCurrentValue());
+			this.writeD(si.getObjectId());
+			this.writeQ(si.getOwnersPrice());
+			this.writeQ(si.getStorePrice());
+			this.writeQ(si.getCount()); // maximum possible tradecount
 		}
 	}
 }

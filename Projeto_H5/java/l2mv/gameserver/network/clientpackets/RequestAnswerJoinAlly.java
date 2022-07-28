@@ -16,13 +16,13 @@ public class RequestAnswerJoinAlly extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_response = _buf.remaining() >= 4 ? readD() : 0;
+		this._response = this._buf.remaining() >= 4 ? this.readD() : 0;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -59,7 +59,7 @@ public class RequestAnswerJoinAlly extends L2GameClientPacket
 			return;
 		}
 
-		if (_response == 0)
+		if (this._response == 0)
 		{
 			request.cancel();
 			requestor.sendPacket(SystemMsg.YOU_HAVE_FAILED_TO_INVITE_A_CLAN_INTO_THE_ALLIANCE);

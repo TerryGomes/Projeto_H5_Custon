@@ -31,15 +31,15 @@ public class RequestJoinCastleSiege extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_id = readD();
-		_isAttacker = readD() == 1;
-		_isJoining = readD() == 1;
+		this._id = this.readD();
+		this._isAttacker = this.readD() == 1;
+		this._isJoining = this.readD() == 1;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -51,15 +51,15 @@ public class RequestJoinCastleSiege extends L2GameClientPacket
 			return;
 		}
 
-		Residence residence = ResidenceHolder.getInstance().getResidence(_id);
+		Residence residence = ResidenceHolder.getInstance().getResidence(this._id);
 
 		if (residence.getType() == ResidenceType.Castle)
 		{
-			registerAtCastle(player, (Castle) residence, _isAttacker, _isJoining);
+			registerAtCastle(player, (Castle) residence, this._isAttacker, this._isJoining);
 		}
-		else if (residence.getType() == ResidenceType.ClanHall && _isAttacker)
+		else if (residence.getType() == ResidenceType.ClanHall && this._isAttacker)
 		{
-			registerAtClanHall(player, (ClanHall) residence, _isJoining);
+			registerAtClanHall(player, (ClanHall) residence, this._isJoining);
 		}
 	}
 

@@ -9,16 +9,16 @@ public class ExBR_GamePoint extends L2GameServerPacket
 
 	public ExBR_GamePoint(Player player)
 	{
-		_objectId = player.getObjectId();
-		_points = player.getPremiumPoints();
+		this._objectId = player.getObjectId();
+		this._points = player.getPremiumPoints();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xD5);
-		writeD(_objectId);
-		writeQ(_points);
-		writeD(0x00); // ??
+		this.writeEx(0xD5);
+		this.writeD(this._objectId);
+		this.writeQ(this._points);
+		this.writeD(0x00); // ??
 	}
 }

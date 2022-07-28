@@ -7,15 +7,15 @@ public class PetDelete extends L2GameServerPacket
 
 	public PetDelete(int petId, int petnum)
 	{
-		_petId = petId;
-		_petnum = petnum;
+		this._petId = petId;
+		this._petnum = petnum;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xb7);
-		writeD(_petId);// dont really know what these two are since i never needed them
-		writeD(_petnum);
+		this.writeC(0xb7);
+		this.writeD(this._petId);// dont really know what these two are since i never needed them
+		this.writeD(this._petnum);
 	}
 }

@@ -22,21 +22,21 @@ public class RequestConfirmCastleSiegeWaitingList extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_unitId = readD();
-		_clanId = readD();
-		_approved = readD() == 1;
+		this._unitId = this.readD();
+		this._clanId = this.readD();
+		this._approved = this.readD() == 1;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if ((player == null) || (player.getClan() == null))
 		{
 			return;
 		}
 
-		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, _unitId);
+		Castle castle = ResidenceHolder.getInstance().getResidence(Castle.class, this._unitId);
 
 		if (castle == null || player.getClan().getCastle() != castle.getId())
 		{
@@ -46,10 +46,10 @@ public class RequestConfirmCastleSiegeWaitingList extends L2GameClientPacket
 
 		CastleSiegeEvent siegeEvent = castle.getSiegeEvent();
 
-		SiegeClanObject siegeClan = siegeEvent.getSiegeClan(CastleSiegeEvent.DEFENDERS_WAITING, _clanId);
+		SiegeClanObject siegeClan = siegeEvent.getSiegeClan(CastleSiegeEvent.DEFENDERS_WAITING, this._clanId);
 		if (siegeClan == null)
 		{
-			siegeClan = siegeEvent.getSiegeClan(CastleSiegeEvent.DEFENDERS, _clanId);
+			siegeClan = siegeEvent.getSiegeClan(CastleSiegeEvent.DEFENDERS, this._clanId);
 		}
 
 		if (siegeClan == null)
@@ -78,7 +78,7 @@ public class RequestConfirmCastleSiegeWaitingList extends L2GameClientPacket
 
 		siegeEvent.removeObject(siegeClan.getType(), siegeClan);
 
-		if (_approved)
+		if (this._approved)
 		{
 			siegeClan.setType(CastleSiegeEvent.DEFENDERS);
 		}

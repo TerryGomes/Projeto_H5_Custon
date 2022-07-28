@@ -7,15 +7,15 @@ public class ExDuelAskStart extends L2GameServerPacket
 
 	public ExDuelAskStart(String requestor, int isPartyDuel)
 	{
-		_requestor = requestor;
-		_isPartyDuel = isPartyDuel;
+		this._requestor = requestor;
+		this._isPartyDuel = isPartyDuel;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x4c);
-		writeS(_requestor);
-		writeD(_isPartyDuel);
+		this.writeEx(0x4c);
+		this.writeS(this._requestor);
+		this.writeD(this._isPartyDuel);
 	}
 }

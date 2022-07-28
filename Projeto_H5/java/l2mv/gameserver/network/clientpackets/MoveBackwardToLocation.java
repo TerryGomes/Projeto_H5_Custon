@@ -20,22 +20,22 @@ public class MoveBackwardToLocation extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_targetLoc.x = readD();
-		_targetLoc.y = readD();
-		_targetLoc.z = readD();
-		_originLoc.x = readD();
-		_originLoc.y = readD();
-		_originLoc.z = readD();
-		if (_buf.hasRemaining())
+		this._targetLoc.x = this.readD();
+		this._targetLoc.y = this.readD();
+		this._targetLoc.z = this.readD();
+		this._originLoc.x = this.readD();
+		this._originLoc.y = this.readD();
+		this._originLoc.z = this.readD();
+		if (this._buf.hasRemaining())
 		{
-			_moveMovement = readD();
+			this._moveMovement = this.readD();
 		}
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -71,7 +71,7 @@ public class MoveBackwardToLocation extends L2GameClientPacket
 			}
 			else
 			{
-				activeChar.sendPacket(new CharMoveToLocation(activeChar.getObjectId(), _originLoc, _targetLoc));
+				activeChar.sendPacket(new CharMoveToLocation(activeChar.getObjectId(), this._originLoc, this._targetLoc));
 			}
 
 			return;
@@ -87,26 +87,26 @@ public class MoveBackwardToLocation extends L2GameClientPacket
 			{
 				// Synerge - For some reason, the client does movements of 2k when using the keyboard, so we reduce it to something like 200 for each movement
 				final int MAX_MOVE_DISTANCE = 200;
-				Location targetLoc = _targetLoc;
-				int dx = (_targetLoc.getX() - _originLoc.getX());
-				int dy = (_targetLoc.getY() - _originLoc.getY());
-				int dz = (_targetLoc.getZ() - _originLoc.getZ());
+				Location targetLoc = this._targetLoc;
+				int dx = (this._targetLoc.getX() - this._originLoc.getX());
+				int dy = (this._targetLoc.getY() - this._originLoc.getY());
+				int dz = (this._targetLoc.getZ() - this._originLoc.getZ());
 				double distance = Math.sqrt(dx * dx + dy * dy + dz * dz);
 				if (distance > MAX_MOVE_DISTANCE)
 				{
 					final double divider = MAX_MOVE_DISTANCE / distance;
-					int x = _originLoc.getX() + (int) (divider * dx);
-					int y = _originLoc.getY() + (int) (divider * dy);
-					int z = _originLoc.getZ() + (int) (divider * dz);
+					int x = this._originLoc.getX() + (int) (divider * dx);
+					int y = this._originLoc.getY() + (int) (divider * dy);
+					int z = this._originLoc.getZ() + (int) (divider * dz);
 					// Unless he is trying to move the camera up or down on purpose, we just avoid moving the char among the z
-					if (Math.abs(_originLoc.getZ() - z) <= 50)
+					if (Math.abs(this._originLoc.getZ() - z) <= 50)
 					{
-						z = _originLoc.getZ();
+						z = this._originLoc.getZ();
 					}
 					targetLoc = new Location(x, y, z);
 				}
 
-				activeChar.sendPacket(new CharMoveToLocation(activeChar.getObjectId(), _originLoc, targetLoc));
+				activeChar.sendPacket(new CharMoveToLocation(activeChar.getObjectId(), this._originLoc, targetLoc));
 			}
 
 			return;
@@ -125,15 +125,15 @@ public class MoveBackwardToLocation extends L2GameClientPacket
 				activeChar.setTeleMode(0);
 			}
 			activeChar.sendActionFailed();
-			activeChar.teleToLocation(_targetLoc);
+			activeChar.teleToLocation(this._targetLoc);
 			return;
 		}
 
 		if (activeChar.isInFlyingTransform())
 		{
-			_targetLoc.z = Math.min(5950, Math.max(50, _targetLoc.z)); // В летающей трансформе нельзя летать ниже, чем 0, и выше, чем 6000
+			this._targetLoc.z = Math.min(5950, Math.max(50, this._targetLoc.z)); // В летающей трансформе нельзя летать ниже, чем 0, и выше, чем 6000
 		}
 
-		activeChar.moveToLocation(_targetLoc, 0, _moveMovement != 0 && !activeChar.getVarB("no_pf"));
+		activeChar.moveToLocation(this._targetLoc, 0, this._moveMovement != 0 && !activeChar.getVarB("no_pf"));
 	}
 }

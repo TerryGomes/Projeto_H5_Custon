@@ -14,14 +14,14 @@ public class ExEventMatchTeamInfo extends L2GameServerPacket
 
 	public ExEventMatchTeamInfo(List<Player> party, Player exclude)
 	{
-		leader_id = party.get(0).getObjectId();
-		loot = party.get(0).getParty().getLootDistribution();
+		this.leader_id = party.get(0).getObjectId();
+		this.loot = party.get(0).getParty().getLootDistribution();
 
 		for (Player member : party)
 		{
 			if (!member.equals(exclude))
 			{
-				members.add(new EventMatchTeamInfo(member));
+				this.members.add(new EventMatchTeamInfo(member));
 			}
 		}
 	}
@@ -29,7 +29,7 @@ public class ExEventMatchTeamInfo extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x1C);
+		this.writeEx(0x1C);
 		// TODO dcd[dSdddddddddd]
 	}
 
@@ -41,33 +41,33 @@ public class ExEventMatchTeamInfo extends L2GameServerPacket
 
 		public EventMatchTeamInfo(Player member)
 		{
-			_name = member.getName();
-			_id = member.getObjectId();
-			curCp = (int) member.getCurrentCp();
-			maxCp = member.getMaxCp();
-			curHp = (int) member.getCurrentHp();
-			maxHp = member.getMaxHp();
-			curMp = (int) member.getCurrentMp();
-			maxMp = member.getMaxMp();
-			level = member.getLevel();
-			class_id = member.getClassId().getId();
-			race_id = member.getRace().ordinal();
+			this._name = member.getName();
+			this._id = member.getObjectId();
+			this.curCp = (int) member.getCurrentCp();
+			this.maxCp = member.getMaxCp();
+			this.curHp = (int) member.getCurrentHp();
+			this.maxHp = member.getMaxHp();
+			this.curMp = (int) member.getCurrentMp();
+			this.maxMp = member.getMaxMp();
+			this.level = member.getLevel();
+			this.class_id = member.getClassId().getId();
+			this.race_id = member.getRace().ordinal();
 
 			Summon pet = member.getPet();
 			if (pet != null)
 			{
-				pet_id = pet.getObjectId();
-				pet_NpcId = pet.getNpcId() + 1000000;
-				pet_Name = pet.getName();
-				pet_curHp = (int) pet.getCurrentHp();
-				pet_maxHp = pet.getMaxHp();
-				pet_curMp = (int) pet.getCurrentMp();
-				pet_maxMp = pet.getMaxMp();
-				pet_level = pet.getLevel();
+				this.pet_id = pet.getObjectId();
+				this.pet_NpcId = pet.getNpcId() + 1000000;
+				this.pet_Name = pet.getName();
+				this.pet_curHp = (int) pet.getCurrentHp();
+				this.pet_maxHp = pet.getMaxHp();
+				this.pet_curMp = (int) pet.getCurrentMp();
+				this.pet_maxMp = pet.getMaxMp();
+				this.pet_level = pet.getLevel();
 			}
 			else
 			{
-				pet_id = 0;
+				this.pet_id = 0;
 			}
 		}
 	}

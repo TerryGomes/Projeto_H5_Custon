@@ -17,14 +17,14 @@ public class RequestDuelStart extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS(Config.CNAME_MAXLEN);
-		_duelType = readD();
+		this._name = this.readS(Config.CNAME_MAXLEN);
+		this._duelType = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -42,14 +42,14 @@ public class RequestDuelStart extends L2GameClientPacket
 			return;
 		}
 
-		Player target = World.getPlayer(_name);
+		Player target = World.getPlayer(this._name);
 		if (target == null || target == player)
 		{
 			player.sendPacket(SystemMsg.THERE_IS_NO_OPPONENT_TO_RECEIVE_YOUR_CHALLENGE_FOR_A_DUEL);
 			return;
 		}
 
-		DuelEvent duelEvent = EventHolder.getInstance().getEvent(EventType.PVP_EVENT, _duelType);
+		DuelEvent duelEvent = EventHolder.getInstance().getEvent(EventType.PVP_EVENT, this._duelType);
 		if ((duelEvent == null) || !duelEvent.canDuel(player, target, true) || target.isInFightClub())
 		{
 			return;

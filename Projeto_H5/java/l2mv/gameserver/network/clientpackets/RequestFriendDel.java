@@ -9,18 +9,18 @@ public class RequestFriendDel extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS(16);
+		this._name = this.readS(16);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		player.getFriendList().removeFriend(_name);
+		player.getFriendList().removeFriend(this._name);
 	}
 }

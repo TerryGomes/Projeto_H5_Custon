@@ -4,14 +4,14 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.commons.lang3.ArrayUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.graphbuilder.math.Expression;
 import com.graphbuilder.math.ExpressionParseException;
 import com.graphbuilder.math.ExpressionTree;
 import com.graphbuilder.math.VarMap;
-
-import org.apache.commons.lang3.ArrayUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import l2mv.gameserver.Config;
 import l2mv.gameserver.ConfigHolder;
@@ -61,15 +61,15 @@ public class Say2C extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_text = readS(Config.CHAT_MESSAGE_MAX_LEN);
-		_type = l2mv.commons.lang.ArrayUtils.valid(ChatType.VALUES, readD());
-		_target = _type == ChatType.TELL ? readS(Config.CNAME_MAXLEN) : null;
+		this._text = this.readS(Config.CHAT_MESSAGE_MAX_LEN);
+		this._type = l2mv.commons.lang.ArrayUtils.valid(ChatType.VALUES, this.readD());
+		this._target = this._type == ChatType.TELL ? this.readS(Config.CNAME_MAXLEN) : null;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -91,7 +91,7 @@ public class Say2C extends L2GameClientPacket
 		activeChar.isntAfk();
 
 		// Prims - Players that are blocked cannot use the chat or commands
-		if (_type == null || _text == null || _text.length() == 0 || activeChar.isBlocked())
+		if (this._type == null || this._text == null || this._text.length() == 0 || activeChar.isBlocked())
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -99,7 +99,7 @@ public class Say2C extends L2GameClientPacket
 
 		/**
 		_text = _text.replaceAll("\\\\n", "\n");
-		
+
 		if (_text.contains("\n"))
 		{
 			String[] lines = _text.split("\n");
@@ -115,9 +115,9 @@ public class Say2C extends L2GameClientPacket
 			}
 		}
 		 */
-		_text = _text.replaceAll("\\n", "").replaceAll("\n", "");
+		this._text = this._text.replaceAll("\\n", "").replaceAll("\n", "");
 
-		if (_text.length() == 0)
+		if (this._text.length() == 0)
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -128,7 +128,7 @@ public class Say2C extends L2GameClientPacket
 		{
 			if (activeChar.getVar("trivia") == "on")
 			{
-				final String answer = _text.trim();
+				final String answer = this._text.trim();
 				if (answer.length() > 0)
 				{
 					final Object[] objects =
@@ -141,20 +141,20 @@ public class Say2C extends L2GameClientPacket
 			}
 		}
 
-		Player receiver = World.getPlayer(_target);
-		if (activeChar.getLevel() <= Config.PM_REQUIRED_LEVEL && activeChar.getSubClasses().size() <= 1 && (_type == ChatType.TELL && (receiver == null || !receiver.isGM())))
+		Player receiver = World.getPlayer(this._target);
+		if (activeChar.getLevel() <= Config.PM_REQUIRED_LEVEL && activeChar.getSubClasses().size() <= 1 && (this._type == ChatType.TELL && (receiver == null || !receiver.isGM())))
 		{
 			activeChar.sendMessage("This PM Chat is allowed only for characters with level higher than " + Config.PM_REQUIRED_LEVEL + " to avoid spam!");
 			activeChar.sendActionFailed();
 			return;
 		}
-		if (activeChar.getLevel() <= Config.SHOUT_REQUIRED_LEVEL && activeChar.getSubClasses().size() <= 1 && ((_type == ChatType.SHOUT && (receiver == null || !receiver.isGM())) || _type == ChatType.TRADE))
+		if (activeChar.getLevel() <= Config.SHOUT_REQUIRED_LEVEL && activeChar.getSubClasses().size() <= 1 && ((this._type == ChatType.SHOUT && (receiver == null || !receiver.isGM())) || this._type == ChatType.TRADE))
 		{
 			activeChar.sendMessage("This Shouting Chat is allowed only for characters with level higher than " + Config.SHOUT_REQUIRED_LEVEL + " to avoid spam!");
 			activeChar.sendActionFailed();
 			return;
 		}
-		if (activeChar.getLevel() <= Config.CHATS_REQUIRED_LEVEL && activeChar.getSubClasses().size() <= 1 && (!_text.startsWith(".") || Config.NOT_USE_USER_VOICED) && (_type == ChatType.ALL && (receiver == null || !receiver.isGM())))
+		if (activeChar.getLevel() <= Config.CHATS_REQUIRED_LEVEL && activeChar.getSubClasses().size() <= 1 && (!this._text.startsWith(".") || Config.NOT_USE_USER_VOICED) && (this._type == ChatType.ALL && (receiver == null || !receiver.isGM())))
 		{
 			activeChar.sendMessage("This Chat is allowed only for characters with level higher than " + Config.CHATS_REQUIRED_LEVEL + " to avoid spam!");
 			activeChar.sendActionFailed();
@@ -163,7 +163,7 @@ public class Say2C extends L2GameClientPacket
 
 		if (Functions.isEventStarted("events.Viktorina.Viktorina"))
 		{
-			String answer = _text.trim();
+			String answer = this._text.trim();
 			if (answer.length() > 0)
 			{
 				Object[] objects =
@@ -175,9 +175,9 @@ public class Say2C extends L2GameClientPacket
 			}
 		}
 
-		if (_text.startsWith(".") && !Config.NOT_USE_USER_VOICED) // If available Voice Commands for configuration, process them
+		if (this._text.startsWith(".") && !Config.NOT_USE_USER_VOICED) // If available Voice Commands for configuration, process them
 		{
-			String fullcmd = _text.substring(1).trim();
+			String fullcmd = this._text.substring(1).trim();
 			String command = fullcmd.split("\\s+")[0];
 			String args = fullcmd.substring(command.length()).trim();
 
@@ -195,13 +195,13 @@ public class Say2C extends L2GameClientPacket
 			// return;
 
 			// Check again for min lvl if there is no voiced with that text
-			if (activeChar.getLevel() <= Config.CHATS_REQUIRED_LEVEL && activeChar.getSubClasses().size() <= 1 && (_type == ChatType.ALL && (receiver == null || !receiver.isGM())))
+			if (activeChar.getLevel() <= Config.CHATS_REQUIRED_LEVEL && activeChar.getSubClasses().size() <= 1 && (this._type == ChatType.ALL && (receiver == null || !receiver.isGM())))
 			{
 				return;
 			}
 
 			// Synerge - Dont show in the chat the command .donate or it would cause problems
-			if (_text.contains(".donate"))
+			if (this._text.contains(".donate"))
 			{
 				return;
 			}
@@ -228,15 +228,16 @@ public class Say2C extends L2GameClientPacket
 		 * }
 		 */
 
-		else if (_text.startsWith(".") && _text.endsWith("offline") && Config.SERVICES_OFFLINE_TRADE_ALLOW && Config.NOT_USE_USER_VOICED && !activeChar.isBlocked()) // Если войс
-																																										// комманды не
-																																										// доступны, но
-																																										// включен
-																																										// оффлайн трей,
-																																										// обрабатываем
-																																										// его
+		else if (this._text.startsWith(".") && this._text.endsWith("offline") && Config.SERVICES_OFFLINE_TRADE_ALLOW && Config.NOT_USE_USER_VOICED && !activeChar.isBlocked()) // Если
+																																												// войс
+		// комманды не
+		// доступны, но
+		// включен
+		// оффлайн трей,
+		// обрабатываем
+		// его
 		{
-			String fullcmd = _text.substring(1).trim();
+			String fullcmd = this._text.substring(1).trim();
 			String command = fullcmd.split("\\s+")[0];
 			String args = fullcmd.substring(command.length()).trim();
 
@@ -254,9 +255,9 @@ public class Say2C extends L2GameClientPacket
 			// return;
 		}
 
-		else if (_text.startsWith("==") && !activeChar.isBlocked())
+		else if (this._text.startsWith("==") && !activeChar.isBlocked())
 		{
-			String expression = _text.substring(2);
+			String expression = this._text.substring(2);
 			Expression expr = null;
 
 			if (!expression.isEmpty())
@@ -292,11 +293,11 @@ public class Say2C extends L2GameClientPacket
 			return;
 		}
 
-		if (Config.CHATFILTER_MIN_LEVEL > 0 && ArrayUtils.contains(Config.CHATFILTER_CHANNELS, _type.ordinal()) && activeChar.getLevel() < Config.CHATFILTER_MIN_LEVEL)
+		if (Config.CHATFILTER_MIN_LEVEL > 0 && ArrayUtils.contains(Config.CHATFILTER_CHANNELS, this._type.ordinal()) && activeChar.getLevel() < Config.CHATFILTER_MIN_LEVEL)
 		{
 			if (Config.CHATFILTER_WORK_TYPE == 1)
 			{
-				_type = ChatType.ALL;
+				this._type = ChatType.ALL;
 			}
 			else if (Config.CHATFILTER_WORK_TYPE == 2)
 			{
@@ -305,21 +306,21 @@ public class Say2C extends L2GameClientPacket
 			}
 		}
 
-		boolean globalchat = _type != ChatType.ALLIANCE && _type != ChatType.CLAN && _type != ChatType.PARTY;
+		boolean globalchat = this._type != ChatType.ALLIANCE && this._type != ChatType.CLAN && this._type != ChatType.PARTY;
 
 		if (Config.TRADE_CHATS_REPLACE && globalchat)
 		{
 			for (String s : Config.TRADE_WORDS)
 			{
-				if (_text.contains(s))
+				if (this._text.contains(s))
 				{
-					_type = ChatType.TRADE;
+					this._type = ChatType.TRADE;
 					break;
 				}
 			}
 		}
 
-		if ((globalchat || ArrayUtils.contains(Config.BAN_CHANNEL_LIST, _type.ordinal())) && activeChar.getNoChannel() != 0)
+		if ((globalchat || ArrayUtils.contains(Config.BAN_CHANNEL_LIST, this._type.ordinal())) && activeChar.getNoChannel() != 0)
 		{
 			if (activeChar.getNoChannelRemained() > 0 || activeChar.getNoChannel() < 0)
 			{
@@ -340,19 +341,19 @@ public class Say2C extends L2GameClientPacket
 
 		if (globalchat && !activeChar.isGM())
 		{
-			if (Config.ABUSEWORD_REPLACE && Config.containsAbuseWord(_text))
+			if (Config.ABUSEWORD_REPLACE && Config.containsAbuseWord(this._text))
 			{
 				for (Pattern regex : Config.ABUSEWORD_LIST)
 				{
-					_text = regex.matcher(_text).replaceAll(Config.ABUSEWORD_REPLACE_STRING);
+					this._text = regex.matcher(this._text).replaceAll(Config.ABUSEWORD_REPLACE_STRING);
 				}
 
 				activeChar.sendActionFailed();
 			}
-			else if (Config.ABUSEWORD_BANCHAT && Config.containsAbuseWord(_text))
+			else if (Config.ABUSEWORD_BANCHAT && Config.containsAbuseWord(this._text))
 			{
 				activeChar.sendMessage(new CustomMessage("common.ChatBanned", activeChar).addNumber(Config.ABUSEWORD_BANTIME * 60));
-				Log.add(activeChar + ": " + _text, "abuse");
+				Log.add(activeChar + ": " + this._text, "abuse");
 				activeChar.updateNoChannel(Config.ABUSEWORD_BANTIME * 60000);
 				activeChar.sendActionFailed();
 				return;
@@ -360,7 +361,7 @@ public class Say2C extends L2GameClientPacket
 		}
 
 		// Caching objects links
-		Matcher m = EX_ITEM_LINK_PATTERN.matcher(_text);
+		Matcher m = EX_ITEM_LINK_PATTERN.matcher(this._text);
 		ItemInstance item;
 		int objectId;
 
@@ -382,23 +383,23 @@ public class Say2C extends L2GameClientPacket
 		if (translit != null)
 		{
 			// Rule of transliteration references to objects
-			m = SKIP_ITEM_LINK_PATTERN.matcher(_text);
+			m = SKIP_ITEM_LINK_PATTERN.matcher(this._text);
 			StringBuilder sb = new StringBuilder();
 			int end = 0;
 			while (m.find())
 			{
-				sb.append(Strings.fromTranslit(_text.substring(end, end = m.start()), translit.equals("tl") ? 1 : 2));
-				sb.append(_text.substring(end, end = m.end()));
+				sb.append(Strings.fromTranslit(this._text.substring(end, end = m.start()), translit.equals("tl") ? 1 : 2));
+				sb.append(this._text.substring(end, end = m.end()));
 			}
 
-			_text = sb.append(Strings.fromTranslit(_text.substring(end, _text.length()), translit.equals("tl") ? 1 : 2)).toString();
+			this._text = sb.append(Strings.fromTranslit(this._text.substring(end, this._text.length()), translit.equals("tl") ? 1 : 2)).toString();
 		}
 
 		if (ConfigHolder.getBool("AllowSboutboxFromGame") && ConfigHolder.getBool("AllowForum") && ForumMembersHolder.getInstance().getMembersCount(ForumMemberGroup.NORMAL) > 0)
 		{
 			if (activeChar.getForumMember() == null)
 			{
-				if (org.apache.commons.lang3.ArrayUtils.contains(ConfigHolder.getArray("ShoutboxNoAccountChatTypes", ChatType.class), _type))
+				if (org.apache.commons.lang3.ArrayUtils.contains(ConfigHolder.getArray("ShoutboxNoAccountChatTypes", ChatType.class), this._type))
 				{
 					if (!ConfigHolder.getString("ShoutboxUsageNoAccountMsg").isEmpty())
 					{
@@ -411,46 +412,46 @@ public class Say2C extends L2GameClientPacket
 					}
 				}
 			}
-			else if (org.apache.commons.lang3.ArrayUtils.contains(ConfigHolder.getArray("ShoutboxFromGameChatTypes", ChatType.class), _type))
+			else if (org.apache.commons.lang3.ArrayUtils.contains(ConfigHolder.getArray("ShoutboxFromGameChatTypes", ChatType.class), this._type))
 			{
-				ShoutboxHandler.getInstance().newInGameShout(activeChar, _text);
+				ShoutboxHandler.getInstance().newInGameShout(activeChar, this._text);
 			}
 		}
 
 		// Synerge - Emotions system
-		int emotion = EmotionsTable.containsEmotion(_text);
+		int emotion = EmotionsTable.containsEmotion(this._text);
 		if (emotion != -1 && !World.getAroundPlayers(activeChar, 300, 300).isEmpty() && !activeChar.isInCombat() && !activeChar.isDead() && !activeChar.isCastingNow() && !activeChar.isSitting() && !activeChar.isNotShowEmotions())
 		{
 			activeChar.broadcastPacket(new SocialAction(activeChar.getObjectId(), emotion));
 		}
 
-		Log.logChat(_type, activeChar.getName(), _target, _text);
+		Log.logChat(this._type, activeChar.getName(), this._target, this._text);
 
 		Say2 cs;
 		if (activeChar.isInFightClub() && activeChar.getFightClubEvent().isHidePersonality())
 		{
-			cs = new Say2(0, _type, "Player", _text);
+			cs = new Say2(0, this._type, "Player", this._text);
 		}
 		else
 		{
-			cs = new Say2(activeChar.getObjectId(), _type, activeChar.getName(), _text);
+			cs = new Say2(activeChar.getObjectId(), this._type, activeChar.getName(), this._text);
 		}
 
-		switch (_type)
+		switch (this._type)
 		{
 		case TELL:
-			if ((receiver == null) && (Config.ALLOW_FAKE_PLAYERS) && (FakePlayersTable.getActiveFakePlayers().contains(_target.toLowerCase())))
+			if ((receiver == null) && (Config.ALLOW_FAKE_PLAYERS) && (FakePlayersTable.getActiveFakePlayers().contains(this._target.toLowerCase())))
 			{
-				cs = new Say2(activeChar.getObjectId(), _type, new StringBuilder().append("->").append(_target).toString(), _text);
+				cs = new Say2(activeChar.getObjectId(), this._type, new StringBuilder().append("->").append(this._target).toString(), this._text);
 				activeChar.sendPacket(cs);
 				return;
 			}
 
 			// Synerge - Support for fake players created on real time
-			if (receiver == null && FakePlayersTable.isRealTimeFakePlayerExist(_target))
+			if (receiver == null && FakePlayersTable.isRealTimeFakePlayerExist(this._target))
 			{
-				final String realName = FakePlayersTable.getRealTimeFakePlayerRealName(_target);
-				cs = new Say2(activeChar.getObjectId(), _type, new StringBuilder().append("->").append(realName).toString(), _text);
+				final String realName = FakePlayersTable.getRealTimeFakePlayerRealName(this._target);
+				cs = new Say2(activeChar.getObjectId(), this._type, new StringBuilder().append("->").append(realName).toString(), this._text);
 				activeChar.sendPacket(cs);
 				return;
 			}
@@ -464,15 +465,15 @@ public class Say2C extends L2GameClientPacket
 			{
 				if (!receiver.getMessageRefusal())
 				{
-					if (activeChar.antiFlood.canTell(receiver.getObjectId(), _text))
+					if (activeChar.antiFlood.canTell(receiver.getObjectId(), this._text))
 					{
 						receiver.sendPacket(cs);
 					}
 
 					checkAutoRecall(activeChar, receiver);
-					checkMessageCatcher(activeChar, receiver, _text);
+					checkMessageCatcher(activeChar, receiver, this._text);
 
-					cs = new Say2(activeChar.getObjectId(), _type, "->" + receiver.getName(), _text);
+					cs = new Say2(activeChar.getObjectId(), this._type, "->" + receiver.getName(), this._text);
 					activeChar.sendPacket(cs);
 				}
 				else
@@ -482,7 +483,7 @@ public class Say2C extends L2GameClientPacket
 			}
 			else if (receiver == null)
 			{
-				activeChar.sendPacket(new SystemMessage2(SystemMsg.S1_IS_NOT_CURRENTLY_LOGGED_IN).addString(_target), ActionFail.STATIC);
+				activeChar.sendPacket(new SystemMessage2(SystemMsg.S1_IS_NOT_CURRENTLY_LOGGED_IN).addString(this._target), ActionFail.STATIC);
 			}
 			else
 			{
@@ -501,7 +502,7 @@ public class Say2C extends L2GameClientPacket
 				return;
 			}
 
-			if (!activeChar.isGM() && !activeChar.antiFlood.canShout(_text))
+			if (!activeChar.isGM() && !activeChar.antiFlood.canShout(this._text))
 			{
 				activeChar.sendMessage("Shout chat is allowed once per 5 seconds.");
 				return;
@@ -530,7 +531,7 @@ public class Say2C extends L2GameClientPacket
 				return;
 			}
 
-			if (!activeChar.isGM() && !activeChar.antiFlood.canTrade(_text))
+			if (!activeChar.isGM() && !activeChar.antiFlood.canTrade(this._text))
 			{
 				activeChar.sendMessage("Trade chat is allowed once per 5 seconds.");
 				return;
@@ -550,7 +551,7 @@ public class Say2C extends L2GameClientPacket
 		case ALL:
 			if (activeChar.isCursedWeaponEquipped())
 			{
-				cs = new Say2(activeChar.getObjectId(), _type, activeChar.getTransformationName(), _text);
+				cs = new Say2(activeChar.getObjectId(), this._type, activeChar.getTransformationName(), this._text);
 			}
 
 			List<Player> list = null;
@@ -663,7 +664,7 @@ public class Say2C extends L2GameClientPacket
 				// The only limitation for the characters, um, let us say.
 				if (!activeChar.getPlayerAccess().CanAnnounce)
 				{
-					if (!activeChar.antiFlood.canHero(_text))
+					if (!activeChar.antiFlood.canHero(this._text))
 					{
 						activeChar.sendMessage("Hero chat is allowed once per 10 seconds.");
 						return;
@@ -686,7 +687,7 @@ public class Say2C extends L2GameClientPacket
 				return;
 			}
 
-			PetitionManager.getInstance().sendActivePetitionMessage(activeChar, _text);
+			PetitionManager.getInstance().sendActivePetitionMessage(activeChar, this._text);
 			break;
 		case BATTLEFIELD:
 			if (activeChar.isInFightClub())
@@ -719,11 +720,11 @@ public class Say2C extends L2GameClientPacket
 			}
 			break;
 		default:
-			_log.warn("Character " + activeChar.getName() + " used unknown chat type: " + _type.ordinal() + ".");
+			_log.warn("Character " + activeChar.getName() + " used unknown chat type: " + this._type.ordinal() + ".");
 		}
 
 		// Synerge - Part of the proxies system
-		activeChar.increaseWroteMessages(_type);
+		activeChar.increaseWroteMessages(this._type);
 	}
 
 	private static void checkAutoRecall(Player sender, Player receiver)

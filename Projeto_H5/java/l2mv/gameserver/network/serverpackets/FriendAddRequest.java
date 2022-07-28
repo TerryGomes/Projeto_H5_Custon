@@ -9,13 +9,13 @@ public class FriendAddRequest extends L2GameServerPacket
 
 	public FriendAddRequest(String requestorName)
 	{
-		_requestorName = requestorName;
+		this._requestorName = requestorName;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x83);
-		writeS(_requestorName);
+		this.writeC(0x83);
+		this.writeS(this._requestorName);
 	}
 }

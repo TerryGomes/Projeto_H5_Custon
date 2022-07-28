@@ -14,24 +14,24 @@ public class ExShowFortressMapInfo extends L2GameServerPacket
 
 	public ExShowFortressMapInfo(Fortress fortress)
 	{
-		_fortressId = fortress.getId();
-		_fortressStatus = fortress.getSiegeEvent().isInProgress();
+		this._fortressId = fortress.getId();
+		this._fortressStatus = fortress.getSiegeEvent().isInProgress();
 
 		FortressSiegeEvent siegeEvent = fortress.getSiegeEvent();
-		_commanders = siegeEvent.getBarrackStatus();
+		this._commanders = siegeEvent.getBarrackStatus();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x7d);
+		this.writeEx(0x7d);
 
-		writeD(_fortressId);
-		writeD(_fortressStatus);
-		writeD(_commanders.length);
-		for (boolean b : _commanders)
+		this.writeD(this._fortressId);
+		this.writeD(this._fortressStatus);
+		this.writeD(this._commanders.length);
+		for (boolean b : this._commanders)
 		{
-			writeD(b);
+			this.writeD(b);
 		}
 	}
 }

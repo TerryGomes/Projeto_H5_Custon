@@ -20,13 +20,13 @@ public class RequestExMPCCAskJoin extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS(16);
+		this._name = this.readS(16);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -50,7 +50,7 @@ public class RequestExMPCCAskJoin extends L2GameClientPacket
 			return;
 		}
 
-		Player target = World.getPlayer(_name);
+		Player target = World.getPlayer(this._name);
 
 		// Чар с таким именем не найден в мире
 		if (target == null)
@@ -102,12 +102,12 @@ public class RequestExMPCCAskJoin extends L2GameClientPacket
 				return;
 			}
 
-			sendInvite(activeChar, target);
+			this.sendInvite(activeChar, target);
 		}
 		else // СС еще не существует. Отсылаем запрос на инвайт и в случае согласия создаем канал
 		if (CommandChannel.checkAuthority(activeChar))
 		{
-			sendInvite(activeChar, target);
+			this.sendInvite(activeChar, target);
 		}
 	}
 

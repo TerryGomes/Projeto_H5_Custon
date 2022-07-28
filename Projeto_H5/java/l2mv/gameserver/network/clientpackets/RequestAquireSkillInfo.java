@@ -22,16 +22,16 @@ public class RequestAquireSkillInfo extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_id = readD();
-		_level = readD();
-		_type = ArrayUtils.valid(AcquireType.VALUES, readD());
+		this._id = this.readD();
+		this._level = this.readD();
+		this._type = ArrayUtils.valid(AcquireType.VALUES, this.readD());
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
-		if (player == null || player.getTransformation() != 0 || SkillTable.getInstance().getInfo(_id, _level) == null || _type == null)
+		Player player = this.getClient().getActiveChar();
+		if (player == null || player.getTransformation() != 0 || SkillTable.getInstance().getInfo(this._id, this._level) == null || this._type == null)
 		{
 			return;
 		}
@@ -42,12 +42,12 @@ public class RequestAquireSkillInfo extends L2GameClientPacket
 			return;
 		}
 
-		SkillLearn skillLearn = SkillAcquireHolder.getInstance().getSkillLearn(player, _id, _level, _type);
+		SkillLearn skillLearn = SkillAcquireHolder.getInstance().getSkillLearn(player, this._id, this._level, this._type);
 		if (skillLearn == null)
 		{
 			return;
 		}
 
-		sendPacket(new AcquireSkillInfo(_type, skillLearn));
+		this.sendPacket(new AcquireSkillInfo(this._type, skillLearn));
 	}
 }

@@ -14,19 +14,19 @@ public class GetItem extends L2GameServerPacket
 
 	public GetItem(ItemInstance item, int playerId)
 	{
-		_itemObjId = item.getObjectId();
-		_loc = item.getLoc();
-		_playerId = playerId;
+		this._itemObjId = item.getObjectId();
+		this._loc = item.getLoc();
+		this._playerId = playerId;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x17);
-		writeD(_playerId);
-		writeD(_itemObjId);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
+		this.writeC(0x17);
+		this.writeD(this._playerId);
+		this.writeD(this._itemObjId);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
 	}
 }

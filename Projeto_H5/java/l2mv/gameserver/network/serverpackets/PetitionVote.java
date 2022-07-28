@@ -6,6 +6,6 @@ public class PetitionVote extends L2GameServerPacket
 	protected void writeImpl()
 	{
 		// just trigger
-		writeC(0xFC);
+		this.writeC(0xFC);
 	}
 }

@@ -31,8 +31,8 @@ public class RequestEnchantItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
-		_catalystObjId = readD();
+		this._objectId = this.readD();
+		this._catalystObjId = this.readD();
 	}
 
 	public static void showEnchantAnimation(Player player, int enchantLevel)
@@ -46,7 +46,7 @@ public class RequestEnchantItem extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -94,8 +94,8 @@ public class RequestEnchantItem extends L2GameClientPacket
 		inventory.writeLock();
 		try
 		{
-			ItemInstance item = inventory.getItemByObjectId(_objectId);
-			ItemInstance catalyst = _catalystObjId > 0 ? inventory.getItemByObjectId(_catalystObjId) : null;
+			ItemInstance item = inventory.getItemByObjectId(this._objectId);
+			ItemInstance catalyst = this._catalystObjId > 0 ? inventory.getItemByObjectId(this._catalystObjId) : null;
 			ItemInstance scroll = player.getEnchantScroll();
 
 			if (item == null || scroll == null)

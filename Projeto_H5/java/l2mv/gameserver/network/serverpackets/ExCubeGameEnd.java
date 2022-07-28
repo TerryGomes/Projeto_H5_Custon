@@ -10,15 +10,15 @@ public class ExCubeGameEnd extends L2GameServerPacket
 
 	public ExCubeGameEnd(boolean isRedTeamWin)
 	{
-		_isRedTeamWin = isRedTeamWin;
+		this._isRedTeamWin = isRedTeamWin;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x98);
-		writeD(0x01);
+		this.writeEx(0x98);
+		this.writeD(0x01);
 
-		writeD(_isRedTeamWin ? 0x01 : 0x00);
+		this.writeD(this._isRedTeamWin ? 0x01 : 0x00);
 	}
 }

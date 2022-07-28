@@ -14,17 +14,17 @@ public class ExBaseAttributeCancelResult extends L2GameServerPacket
 
 	public ExBaseAttributeCancelResult(boolean result, ItemInstance item, Element element)
 	{
-		_result = result;
-		_objectId = item.getObjectId();
-		_element = element;
+		this._result = result;
+		this._objectId = item.getObjectId();
+		this._element = element;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x75);
-		writeD(_result);
-		writeD(_objectId);
-		writeD(_element.getId());
+		this.writeEx(0x75);
+		this.writeD(this._result);
+		this.writeD(this._objectId);
+		this.writeD(this._element.getId());
 	}
 }

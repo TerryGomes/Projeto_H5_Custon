@@ -14,9 +14,9 @@ public class MoveWithDelta extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_dx = readD();
-		_dy = readD();
-		_dz = readD();
+		this._dx = this.readD();
+		this._dy = this.readD();
+		this._dz = this.readD();
 	}
 
 	@Override

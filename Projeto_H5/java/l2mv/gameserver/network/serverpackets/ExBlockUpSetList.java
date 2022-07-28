@@ -7,9 +7,9 @@ public class ExBlockUpSetList extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x97);
-		writeD(BlockUpType);
-		switch (BlockUpType)
+		this.writeEx(0x97);
+		this.writeD(this.BlockUpType);
+		switch (this.BlockUpType)
 		{
 		case 0:
 			// dd

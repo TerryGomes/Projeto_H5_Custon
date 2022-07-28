@@ -17,6 +17,7 @@ import l2mv.gameserver.fandc.facebook.CompletedTasksHistory;
 import l2mv.gameserver.fandc.facebook.FacebookAutoAnnouncement;
 import l2mv.gameserver.fandc.facebook.FacebookProfilesHolder;
 import l2mv.gameserver.fandc.facebook.OfficialPostsHolder;
+import l2mv.gameserver.fandc.security.AntiFeedManager;
 import l2mv.gameserver.fandc.streaming.AFKStreamersHandler;
 import l2mv.gameserver.fandc.streaming.TwitchParser;
 import l2mv.gameserver.fandc.tournament.TournamentHolder;
@@ -63,6 +64,7 @@ import l2mv.gameserver.instancemanager.HellboundManager;
 import l2mv.gameserver.instancemanager.L2TopManager;
 import l2mv.gameserver.instancemanager.PetitionManager;
 import l2mv.gameserver.instancemanager.PlayerMessageStack;
+import l2mv.gameserver.instancemanager.QuestManager;
 import l2mv.gameserver.instancemanager.RaidBossSpawnManager;
 import l2mv.gameserver.instancemanager.SoDManager;
 import l2mv.gameserver.instancemanager.SoIManager;
@@ -226,12 +228,11 @@ public class GameServer
 		_log.info("Build date: .............................................................. " + version.getBuildDate());
 		_log.info("Compiler version: ........................................................ " + version.getBuildJdk());
 		_log.info("============================================================================");
-		
+
 		_instance = this;
 		_serverStarted = time();
 		_listeners = new GameServerListenerList();
 		new File(Config.DATAPACK_ROOT + "/log/").mkdir();
-
 
 		// Initialize config
 		Config.load();
@@ -307,6 +308,14 @@ public class GameServer
 		printSection("Vote Manager");
 		VoteManager.getInstance();
 		// FakePlayers.getInstance();
+
+		// add fixed
+		printSection("AntiFeedManager");
+		AntiFeedManager.getInstance();
+		printSection("QuestManager");
+		_log.info("QuestManager : loaded " + QuestManager.getQuests().size() + " quest's");
+		QuestManager.updateQuestNames();
+
 		FakePlayersTable.getInstance();
 		Strings.reload();
 		GameTimeController.getInstance();
@@ -385,7 +394,10 @@ public class GameServer
 			CoupleManager.getInstance();
 			_log.info("CoupleManager initialized");
 		}
+		printSection("ItemHandler");
 		ItemHandler.getInstance();
+		ItemHandler.getInstance().log(); // fixed
+
 		printSection("Admin Commands");
 		AdminCommandHandler.getInstance().log();
 		printSection("Players Commands");

@@ -17,8 +17,8 @@ public class GameServerProxyResponse extends SendablePacket
 	@Override
 	protected void writeImpl()
 	{
-		writeC(21);
-		writeS(accountName);
-		writeS(proxyIp);
+		this.writeC(21);
+		this.writeS(this.accountName);
+		this.writeS(this.proxyIp);
 	}
 }

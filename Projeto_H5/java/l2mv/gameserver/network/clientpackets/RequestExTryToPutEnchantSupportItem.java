@@ -14,22 +14,22 @@ public class RequestExTryToPutEnchantSupportItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_catalystId = readD();
-		_itemId = readD();
+		this._catalystId = this.readD();
+		this._itemId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
 		PcInventory inventory = activeChar.getInventory();
-		ItemInstance itemToEnchant = inventory.getItemByObjectId(_itemId);
-		ItemInstance catalyst = inventory.getItemByObjectId(_catalystId);
+		ItemInstance itemToEnchant = inventory.getItemByObjectId(this._itemId);
+		ItemInstance catalyst = inventory.getItemByObjectId(this._catalystId);
 
 		if (ItemFunctions.checkCatalyst(itemToEnchant, catalyst))
 		{

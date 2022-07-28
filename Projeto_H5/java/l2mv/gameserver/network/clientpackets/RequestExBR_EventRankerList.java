@@ -10,9 +10,9 @@ public class RequestExBR_EventRankerList extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		unk = readD();
-		unk2 = readD();
-		unk3 = readD();
+		this.unk = this.readD();
+		this.unk2 = this.readD();
+		this.unk3 = this.readD();
 	}
 
 	@Override

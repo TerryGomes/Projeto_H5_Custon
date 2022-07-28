@@ -17,17 +17,17 @@ public final class RequestWithDrawPremiumItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_itemNum = readD();
-		_charId = readD();
-		_itemcount = readQ();
+		this._itemNum = this.readD();
+		this._charId = this.readD();
+		this._itemcount = this.readQ();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = this.getClient().getActiveChar();
 
-		if ((activeChar == null) || (_itemcount <= 0) || (activeChar.getObjectId() != _charId) || activeChar.getPremiumItemList().isEmpty())
+		if ((activeChar == null) || (this._itemcount <= 0) || (activeChar.getObjectId() != this._charId) || activeChar.getPremiumItemList().isEmpty())
 		{
 			// audit
 			return;
@@ -43,36 +43,36 @@ public final class RequestWithDrawPremiumItem extends L2GameClientPacket
 			return;
 		}
 
-		PremiumItem _item = activeChar.getPremiumItemList().get(_itemNum);
+		PremiumItem _item = activeChar.getPremiumItemList().get(this._itemNum);
 		if (_item == null)
 		{
 			return;
 		}
 		boolean stackable = ItemHolder.getInstance().getTemplate(_item.getItemId()).isStackable();
-		if (_item.getCount() < _itemcount)
+		if (_item.getCount() < this._itemcount)
 		{
 			return;
 		}
 		if (!stackable)
 		{
-			for (int i = 0; i < _itemcount; i++)
+			for (int i = 0; i < this._itemcount; i++)
 			{
-				addItem(activeChar, _item.getItemId(), 1);
+				this.addItem(activeChar, _item.getItemId(), 1);
 			}
 		}
 		else
 		{
-			addItem(activeChar, _item.getItemId(), _itemcount);
+			this.addItem(activeChar, _item.getItemId(), this._itemcount);
 		}
-		if (_itemcount < _item.getCount())
+		if (this._itemcount < _item.getCount())
 		{
-			activeChar.getPremiumItemList().get(_itemNum).updateCount(_item.getCount() - _itemcount);
-			activeChar.updatePremiumItem(_itemNum, _item.getCount() - _itemcount);
+			activeChar.getPremiumItemList().get(this._itemNum).updateCount(_item.getCount() - this._itemcount);
+			activeChar.updatePremiumItem(this._itemNum, _item.getCount() - this._itemcount);
 		}
 		else
 		{
-			activeChar.getPremiumItemList().remove(_itemNum);
-			activeChar.deletePremiumItem(_itemNum);
+			activeChar.getPremiumItemList().remove(this._itemNum);
+			activeChar.deletePremiumItem(this._itemNum);
 		}
 
 		if (activeChar.getPremiumItemList().isEmpty())

@@ -250,15 +250,15 @@ public class RequestActionUse extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_actionId = readD();
-		_ctrlPressed = readD() == 1;
-		_shiftPressed = readC() == 1;
+		this._actionId = this.readD();
+		this._ctrlPressed = this.readD() == 1;
+		this._shiftPressed = this.readC() == 1;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -293,7 +293,7 @@ public class RequestActionUse extends L2GameClientPacket
 			}
 		}
 
-		Action action = Action.find(_actionId);
+		Action action = Action.find(this._actionId);
 		if (action == null)
 		{
 			// _log.warn("unhandled action type " + _actionId + " by player " + activeChar.getName());
@@ -309,7 +309,7 @@ public class RequestActionUse extends L2GameClientPacket
 		boolean usePet = action.type == 1 || action.type == 2;
 
 		// dont do anything if player is dead or confused
-		if (!usePet && (activeChar.isOutOfControl() || activeChar.isActionsDisabled()) && !(activeChar.isFakeDeath() && _actionId == 0))
+		if (!usePet && (activeChar.isOutOfControl() || activeChar.isActionsDisabled()) && !(activeChar.isFakeDeath() && this._actionId == 0))
 		{
 			activeChar.sendActionFailed();
 			return;
@@ -427,7 +427,7 @@ public class RequestActionUse extends L2GameClientPacket
 					return;
 				}
 			}
-			UseSkill(action.value);
+			this.UseSkill(action.value);
 			return;
 		}
 
@@ -527,12 +527,12 @@ public class RequestActionUse extends L2GameClientPacket
 				activeChar.standUp();
 				activeChar.broadcastCharInfo();
 			}
-			else if (!TradeHelper.checksIfCanOpenStore(activeChar, _actionId == 61 ? Player.STORE_PRIVATE_SELL_PACKAGE : Player.STORE_PRIVATE_SELL))
+			else if (!TradeHelper.checksIfCanOpenStore(activeChar, this._actionId == 61 ? Player.STORE_PRIVATE_SELL_PACKAGE : Player.STORE_PRIVATE_SELL))
 			{
 				activeChar.sendActionFailed();
 				return;
 			}
-			activeChar.sendPacket(new PrivateStoreManageListSell(activeChar, _actionId == 61));
+			activeChar.sendPacket(new PrivateStoreManageListSell(activeChar, this._actionId == 61));
 			break;
 		}
 		case 28: // Запрос на создание приватного магазина покупки
@@ -640,12 +640,12 @@ public class RequestActionUse extends L2GameClientPacket
 			}
 
 			// Sin Eater
-			if ((pet.getTemplate().getNpcId() == PetDataTable.SIN_EATER_ID) || (!_ctrlPressed && target.isCreature() && !((Creature) target).isAutoAttackable(pet)))
+			if ((pet.getTemplate().getNpcId() == PetDataTable.SIN_EATER_ID) || (!this._ctrlPressed && target.isCreature() && !((Creature) target).isAutoAttackable(pet)))
 			{
 				return;
 			}
 
-			if (_ctrlPressed && !target.isAttackable(pet))
+			if (this._ctrlPressed && !target.isAttackable(pet))
 			{
 				activeChar.sendPacket(SystemMsg.INVALID_TARGET);
 				return;
@@ -663,11 +663,11 @@ public class RequestActionUse extends L2GameClientPacket
 				return;
 			}
 
-			if ((!_ctrlPressed && target == activeChar) || (!Config.ALLOW_PET_ATTACK_MASTER && target == activeChar))
+			if ((!this._ctrlPressed && target == activeChar) || (!Config.ALLOW_PET_ATTACK_MASTER && target == activeChar))
 			{
 				return;
 			}
-			pet.getAI().Attack(target, _ctrlPressed, _shiftPressed);
+			pet.getAI().Attack(target, this._ctrlPressed, this._shiftPressed);
 			break;
 		case 17:
 		case 23: // Отмена действия у пета
@@ -711,11 +711,7 @@ public class RequestActionUse extends L2GameClientPacket
 					activeChar.setMount(0, 0, 0);
 				}
 			}
-			else if (activeChar.isMounted() || activeChar.isInBoat())
-			{
-				activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-			}
-			else if (activeChar.isDead())
+			else if ((activeChar.isMounted() || activeChar.isInBoat()) || activeChar.isDead())
 			{
 				activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
 			}
@@ -838,7 +834,7 @@ public class RequestActionUse extends L2GameClientPacket
 
 	private void UseSkill(int skillId)
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		Summon pet = activeChar.getPet();
 		if (pet == null)
 		{
@@ -867,9 +863,9 @@ public class RequestActionUse extends L2GameClientPacket
 		}
 
 		Creature aimingTarget = skill.getAimingTarget(pet, activeChar.getTarget());
-		if (skill.checkCondition(pet, aimingTarget, _ctrlPressed, _shiftPressed, true))
+		if (skill.checkCondition(pet, aimingTarget, this._ctrlPressed, this._shiftPressed, true))
 		{
-			pet.getAI().Cast(skill, aimingTarget, _ctrlPressed, _shiftPressed);
+			pet.getAI().Cast(skill, aimingTarget, this._ctrlPressed, this._shiftPressed);
 		}
 		else
 		{
@@ -883,13 +879,13 @@ public class RequestActionUse extends L2GameClientPacket
 
 		SocialTask(Player player)
 		{
-			_player = player;
+			this._player = player;
 		}
 
 		@Override
 		public void runImpl() throws Exception
 		{
-			_player.stopParalyzed();
+			this._player.stopParalyzed();
 		}
 	}
 }

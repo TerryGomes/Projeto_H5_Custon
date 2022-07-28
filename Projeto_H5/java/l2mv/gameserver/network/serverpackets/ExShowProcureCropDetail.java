@@ -21,16 +21,16 @@ public class ExShowProcureCropDetail extends L2GameServerPacket
 
 	public ExShowProcureCropDetail(int cropId)
 	{
-		_cropId = cropId;
-		_castleCrops = new TreeMap<Integer, CropProcure>();
+		this._cropId = cropId;
+		this._castleCrops = new TreeMap<Integer, CropProcure>();
 
 		List<Castle> castleList = ResidenceHolder.getInstance().getResidenceList(Castle.class);
 		for (Castle c : castleList)
 		{
-			CropProcure cropItem = c.getCrop(_cropId, CastleManorManager.PERIOD_CURRENT);
+			CropProcure cropItem = c.getCrop(this._cropId, CastleManorManager.PERIOD_CURRENT);
 			if (cropItem != null && cropItem.getAmount() > 0)
 			{
-				_castleCrops.put(c.getId(), cropItem);
+				this._castleCrops.put(c.getId(), cropItem);
 			}
 		}
 	}
@@ -38,18 +38,18 @@ public class ExShowProcureCropDetail extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeEx(0x78);
+		this.writeEx(0x78);
 
-		writeD(_cropId); // crop id
-		writeD(_castleCrops.size()); // size
+		this.writeD(this._cropId); // crop id
+		this.writeD(this._castleCrops.size()); // size
 
-		for (int manorId : _castleCrops.keySet())
+		for (int manorId : this._castleCrops.keySet())
 		{
-			CropProcure crop = _castleCrops.get(manorId);
-			writeD(manorId); // manor name
-			writeQ(crop.getAmount()); // buy residual
-			writeQ(crop.getPrice()); // buy price
-			writeC(crop.getReward()); // reward type
+			CropProcure crop = this._castleCrops.get(manorId);
+			this.writeD(manorId); // manor name
+			this.writeQ(crop.getAmount()); // buy residual
+			this.writeQ(crop.getPrice()); // buy price
+			this.writeC(crop.getReward()); // reward type
 		}
 	}
 }

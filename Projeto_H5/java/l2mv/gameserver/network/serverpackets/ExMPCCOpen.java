@@ -10,6 +10,6 @@ public class ExMPCCOpen extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x12);
+		this.writeEx(0x12);
 	}
 }

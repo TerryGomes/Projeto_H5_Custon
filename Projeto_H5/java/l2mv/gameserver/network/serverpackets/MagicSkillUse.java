@@ -24,59 +24,59 @@ public class MagicSkillUse extends L2GameServerPacket
 
 	public MagicSkillUse(Creature cha, Creature target, int skillId, int skillLevel, int hitTime, long reuseDelay)
 	{
-		_chaId = cha.getObjectId();
-		_targetId = target.getObjectId();
-		_skillId = skillId;
-		_skillLevel = skillLevel;
-		_hitTime = hitTime;
-		_reuseDelay = (int) reuseDelay;
-		_x = cha.getX();
-		_y = cha.getY();
-		_z = cha.getZ();
-		_tx = target.getX();
-		_ty = target.getY();
-		_tz = target.getZ();
+		this._chaId = cha.getObjectId();
+		this._targetId = target.getObjectId();
+		this._skillId = skillId;
+		this._skillLevel = skillLevel;
+		this._hitTime = hitTime;
+		this._reuseDelay = (int) reuseDelay;
+		this._x = cha.getX();
+		this._y = cha.getY();
+		this._z = cha.getZ();
+		this._tx = target.getX();
+		this._ty = target.getY();
+		this._tz = target.getZ();
 	}
 
 	public MagicSkillUse(Creature cha, int skillId, int skillLevel, int hitTime, long reuseDelay)
 	{
-		_chaId = cha.getObjectId();
-		_targetId = cha.getTargetId();
-		_skillId = skillId;
-		_skillLevel = skillLevel;
-		_hitTime = hitTime;
-		_reuseDelay = (int) reuseDelay;
-		_x = cha.getX();
-		_y = cha.getY();
-		_z = cha.getZ();
-		_tx = cha.getX();
-		_ty = cha.getY();
-		_tz = cha.getZ();
+		this._chaId = cha.getObjectId();
+		this._targetId = cha.getTargetId();
+		this._skillId = skillId;
+		this._skillLevel = skillLevel;
+		this._hitTime = hitTime;
+		this._reuseDelay = (int) reuseDelay;
+		this._x = cha.getX();
+		this._y = cha.getY();
+		this._z = cha.getZ();
+		this._tx = cha.getX();
+		this._ty = cha.getY();
+		this._tz = cha.getZ();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 
-		if (activeChar != null && activeChar.isNotShowBuffAnim() && activeChar.getObjectId() != _chaId)
+		if (activeChar != null && activeChar.isNotShowBuffAnim() && activeChar.getObjectId() != this._chaId)
 		{
 			return;
 		}
 
-		writeC(0x48);
-		writeD(_chaId);
-		writeD(_targetId);
-		writeD(_skillId);
-		writeD(_skillLevel);
-		writeD(_hitTime);
-		writeD(_reuseDelay);
-		writeD(_x);
-		writeD(_y);
-		writeD(_z);
-		writeD(0x00); // unknown
-		writeD(_tx);
-		writeD(_ty);
-		writeD(_tz);
+		this.writeC(0x48);
+		this.writeD(this._chaId);
+		this.writeD(this._targetId);
+		this.writeD(this._skillId);
+		this.writeD(this._skillLevel);
+		this.writeD(this._hitTime);
+		this.writeD(this._reuseDelay);
+		this.writeD(this._x);
+		this.writeD(this._y);
+		this.writeD(this._z);
+		this.writeD(0x00); // unknown
+		this.writeD(this._tx);
+		this.writeD(this._ty);
+		this.writeD(this._tz);
 	}
 }

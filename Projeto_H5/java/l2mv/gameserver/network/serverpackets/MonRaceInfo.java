@@ -17,41 +17,41 @@ public class MonRaceInfo extends L2GameServerPacket
 		 * 13765 -1 in middle of race
 		 * -1 0 to end the race
 		 */
-		_unknown1 = unknown1;
-		_unknown2 = unknown2;
-		_monsters = monsters;
-		_speeds = speeds;
+		this._unknown1 = unknown1;
+		this._unknown2 = unknown2;
+		this._monsters = monsters;
+		this._speeds = speeds;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xe3);
+		this.writeC(0xe3);
 
-		writeD(_unknown1);
-		writeD(_unknown2);
-		writeD(8);
+		this.writeD(this._unknown1);
+		this.writeD(this._unknown2);
+		this.writeD(8);
 
 		for (int i = 0; i < 8; i++)
 		{
 			// _log.info.println("MOnster "+(i+1)+" npcid "+_monsters[i].getNpcTemplate().getNpcId());
-			writeD(_monsters[i].getObjectId()); // npcObjectID
-			writeD(_monsters[i].getTemplate().npcId + 1000000); // npcID
-			writeD(14107); // origin X
-			writeD(181875 + 58 * (7 - i)); // origin Y
-			writeD(-3566); // origin Z
-			writeD(12080); // end X
-			writeD(181875 + 58 * (7 - i)); // end Y
-			writeD(-3566); // end Z
-			writeF(_monsters[i].getColHeight()); // coll. height
-			writeF(_monsters[i].getColRadius()); // coll. radius
-			writeD(120); // ?? unknown
+			this.writeD(this._monsters[i].getObjectId()); // npcObjectID
+			this.writeD(this._monsters[i].getTemplate().npcId + 1000000); // npcID
+			this.writeD(14107); // origin X
+			this.writeD(181875 + 58 * (7 - i)); // origin Y
+			this.writeD(-3566); // origin Z
+			this.writeD(12080); // end X
+			this.writeD(181875 + 58 * (7 - i)); // end Y
+			this.writeD(-3566); // end Z
+			this.writeF(this._monsters[i].getColHeight()); // coll. height
+			this.writeF(this._monsters[i].getColRadius()); // coll. radius
+			this.writeD(120); // ?? unknown
 			for (int j = 0; j < 20; j++)
 			{
-				writeC(_unknown1 == 0 ? _speeds[i][j] : 0);
+				this.writeC(this._unknown1 == 0 ? this._speeds[i][j] : 0);
 			}
-			writeD(0);
-			writeD(0x00); // ? GraciaFinal
+			this.writeD(0);
+			this.writeD(0x00); // ? GraciaFinal
 		}
 	}
 }

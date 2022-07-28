@@ -15,22 +15,22 @@ public class ExFishingStart extends L2GameServerPacket
 
 	public ExFishingStart(Creature character, int fishType, Location loc, boolean isNightLure)
 	{
-		_charObjId = character.getObjectId();
-		_fishType = fishType;
-		_loc = loc;
-		_isNightLure = isNightLure;
+		this._charObjId = character.getObjectId();
+		this._fishType = fishType;
+		this._loc = loc;
+		this._isNightLure = isNightLure;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x1e);
-		writeD(_charObjId);
-		writeD(_fishType); // fish type
-		writeD(_loc.x); // x poisson
-		writeD(_loc.y); // y poisson
-		writeD(_loc.z); // z poisson
-		writeC(_isNightLure ? 0x01 : 0x00); // 0 = day lure 1 = night lure
-		writeC(0x01); // result Button
+		this.writeEx(0x1e);
+		this.writeD(this._charObjId);
+		this.writeD(this._fishType); // fish type
+		this.writeD(this._loc.x); // x poisson
+		this.writeD(this._loc.y); // y poisson
+		this.writeD(this._loc.z); // z poisson
+		this.writeC(this._isNightLure ? 0x01 : 0x00); // 0 = day lure 1 = night lure
+		this.writeC(0x01); // result Button
 	}
 }

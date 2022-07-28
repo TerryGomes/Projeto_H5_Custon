@@ -19,28 +19,28 @@ public class ExFishingHpRegen extends L2GameServerPacket
 
 	public ExFishingHpRegen(Creature character, int time, int fishHP, int HPmode, int GoodUse, int anim, int penalty, int hpBarColor)
 	{
-		char_obj_id = character.getObjectId();
-		_time = time;
-		_fishHP = fishHP;
-		_HPmode = HPmode;
-		_GoodUse = GoodUse;
-		_Anim = anim;
-		_Penalty = penalty;
-		_hpBarColor = hpBarColor;
+		this.char_obj_id = character.getObjectId();
+		this._time = time;
+		this._fishHP = fishHP;
+		this._HPmode = HPmode;
+		this._GoodUse = GoodUse;
+		this._Anim = anim;
+		this._Penalty = penalty;
+		this._hpBarColor = hpBarColor;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x28);
-		writeD(char_obj_id);
-		writeD(_time);
-		writeD(_fishHP);
-		writeC(_HPmode); // 0 = HP stop, 1 = HP raise
-		writeC(_GoodUse); // 0 = none, 1 = success, 2 = failed
-		writeC(_Anim); // Anim: 0 = none, 1 = reeling, 2 = pumping
-		writeD(_Penalty); // Penalty
-		writeC(_hpBarColor); // 0 = normal hp bar, 1 = purple hp bar
+		this.writeEx(0x28);
+		this.writeD(this.char_obj_id);
+		this.writeD(this._time);
+		this.writeD(this._fishHP);
+		this.writeC(this._HPmode); // 0 = HP stop, 1 = HP raise
+		this.writeC(this._GoodUse); // 0 = none, 1 = success, 2 = failed
+		this.writeC(this._Anim); // Anim: 0 = none, 1 = reeling, 2 = pumping
+		this.writeD(this._Penalty); // Penalty
+		this.writeC(this._hpBarColor); // 0 = normal hp bar, 1 = purple hp bar
 
 	}
 }

@@ -7,6 +7,6 @@ public class ExNotifyPremiumItem extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x85);
+		this.writeEx(0x85);
 	}
 }

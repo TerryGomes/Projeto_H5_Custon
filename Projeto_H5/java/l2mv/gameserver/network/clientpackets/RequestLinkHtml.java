@@ -16,29 +16,29 @@ public class RequestLinkHtml extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_link = readS();
+		this._link = this.readS();
 	}
 
 	@Override
 	protected void runImpl()
 	{
 
-		Player actor = getClient().getActiveChar();
+		Player actor = this.getClient().getActiveChar();
 		if (actor == null)
 		{
 			return;
 		}
 
-		if (_link.contains("..") || !_link.endsWith(".htm"))
+		if (this._link.contains("..") || !this._link.endsWith(".htm"))
 		{
-			_log.warn("[RequestLinkHtml] hack? link contains prohibited characters: '" + _link + "', skipped");
+			_log.warn("[RequestLinkHtml] hack? link contains prohibited characters: '" + this._link + "', skipped");
 			return;
 		}
 		try
 		{
 			NpcHtmlMessage msg = new NpcHtmlMessage(0);
-			msg.setFile(String.valueOf(_link));
-			sendPacket(msg);
+			msg.setFile(String.valueOf(this._link));
+			this.sendPacket(msg);
 		}
 		catch (RuntimeException e)
 		{

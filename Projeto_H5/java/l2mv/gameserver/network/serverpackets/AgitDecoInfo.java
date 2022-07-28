@@ -57,23 +57,32 @@ public class AgitDecoInfo extends L2GameServerPacket
 
 	public AgitDecoInfo(ClanHall clanHall)
 	{
-		_id = clanHall.getId();
+		this._id = clanHall.getId();
 
-		hp_recovery = getHpRecovery(clanHall.isFunctionActive(ResidenceFunction.RESTORE_HP) ? clanHall.getFunction(ResidenceFunction.RESTORE_HP).getLevel() : 0);// hp recovery, 0 = 0, 1
-																																									// = 80, 120, 180, 2
-																																									// = 240, 300
-		mp_recovery = getMpRecovery(clanHall.isFunctionActive(ResidenceFunction.RESTORE_MP) ? clanHall.getFunction(ResidenceFunction.RESTORE_MP).getLevel() : 0);// mp recovery, 0 = 0, 1
-																																									// = 5, 15, 2 = 30,
-																																									// 40
-		exp_recovery = getExpRecovery(clanHall.isFunctionActive(ResidenceFunction.RESTORE_EXP) ? clanHall.getFunction(ResidenceFunction.RESTORE_EXP).getLevel() : 0);// exp recovery, 0 =
-																																										// 0, 1= 15, 2 =
-																																										// 25, 35, 50
-		teleport = clanHall.isFunctionActive(ResidenceFunction.TELEPORT) ? clanHall.getFunction(ResidenceFunction.TELEPORT).getLevel() : 0;// teleport, 0, 1, 2
-		curtains = clanHall.isFunctionActive(ResidenceFunction.CURTAIN) ? clanHall.getFunction(ResidenceFunction.CURTAIN).getLevel() : 0;// curtains, 0 = 0, 1 = 1, 2 = 2
-		itemCreate = clanHall.isFunctionActive(ResidenceFunction.ITEM_CREATE) ? _itCr8[clanHall.getFunction(ResidenceFunction.ITEM_CREATE).getLevel()] : 0;// item creation 0 = 0, 1 = 1,
-																																							// 2 = 2, 3
-		support = clanHall.isFunctionActive(ResidenceFunction.SUPPORT) ? _buff[clanHall.getFunction(ResidenceFunction.SUPPORT).getLevel()] : 0;// assist magic, 0 = 0, 1 = 3, 2 = 5, 7, 8
-		platform = clanHall.isFunctionActive(ResidenceFunction.PLATFORM) ? clanHall.getFunction(ResidenceFunction.PLATFORM).getLevel() : 0;// front platform, 0 = 0, 1 = 1, 2 = 2
+		this.hp_recovery = getHpRecovery(clanHall.isFunctionActive(ResidenceFunction.RESTORE_HP) ? clanHall.getFunction(ResidenceFunction.RESTORE_HP).getLevel() : 0);// hp recovery, 0 =
+																																										// 0, 1
+																																										// = 80, 120,
+																																										// 180, 2
+																																										// = 240, 300
+		this.mp_recovery = getMpRecovery(clanHall.isFunctionActive(ResidenceFunction.RESTORE_MP) ? clanHall.getFunction(ResidenceFunction.RESTORE_MP).getLevel() : 0);// mp recovery, 0 =
+																																										// 0, 1
+																																										// = 5, 15, 2 =
+																																										// 30,
+																																										// 40
+		this.exp_recovery = getExpRecovery(clanHall.isFunctionActive(ResidenceFunction.RESTORE_EXP) ? clanHall.getFunction(ResidenceFunction.RESTORE_EXP).getLevel() : 0);// exp
+																																											// recovery,
+																																											// 0 =
+																																											// 0, 1= 15,
+																																											// 2 =
+																																											// 25, 35, 50
+		this.teleport = clanHall.isFunctionActive(ResidenceFunction.TELEPORT) ? clanHall.getFunction(ResidenceFunction.TELEPORT).getLevel() : 0;// teleport, 0, 1, 2
+		this.curtains = clanHall.isFunctionActive(ResidenceFunction.CURTAIN) ? clanHall.getFunction(ResidenceFunction.CURTAIN).getLevel() : 0;// curtains, 0 = 0, 1 = 1, 2 = 2
+		this.itemCreate = clanHall.isFunctionActive(ResidenceFunction.ITEM_CREATE) ? _itCr8[clanHall.getFunction(ResidenceFunction.ITEM_CREATE).getLevel()] : 0;// item creation 0 = 0, 1
+																																								// = 1,
+		// 2 = 2, 3
+		this.support = clanHall.isFunctionActive(ResidenceFunction.SUPPORT) ? _buff[clanHall.getFunction(ResidenceFunction.SUPPORT).getLevel()] : 0;// assist magic, 0 = 0, 1 = 3, 2 = 5,
+																																					// 7, 8
+		this.platform = clanHall.isFunctionActive(ResidenceFunction.PLATFORM) ? clanHall.getFunction(ResidenceFunction.PLATFORM).getLevel() : 0;// front platform, 0 = 0, 1 = 1, 2 = 2
 	}
 
 	/**
@@ -101,25 +110,25 @@ public class AgitDecoInfo extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xfd);
-		writeD(_id); // clan hall id, во всяком случае всегда приходил 31.
-		writeC(hp_recovery);
-		writeC(mp_recovery); // Ковер
-		writeC(mp_recovery); // Статуя
-		writeC(exp_recovery);
-		writeC(teleport);
-		writeC(0); // кристалл? Что за хрень то :)?
-		writeC(curtains);
-		writeC(itemCreate);
-		writeC(support);
-		writeC(support); // Флаг
-		writeC(platform);
-		writeC(itemCreate);
-		writeD(0);
-		writeD(0);
-		writeD(0);
-		writeD(0);
-		writeD(0);
+		this.writeC(0xfd);
+		this.writeD(this._id); // clan hall id, во всяком случае всегда приходил 31.
+		this.writeC(this.hp_recovery);
+		this.writeC(this.mp_recovery); // Ковер
+		this.writeC(this.mp_recovery); // Статуя
+		this.writeC(this.exp_recovery);
+		this.writeC(this.teleport);
+		this.writeC(0); // кристалл? Что за хрень то :)?
+		this.writeC(this.curtains);
+		this.writeC(this.itemCreate);
+		this.writeC(this.support);
+		this.writeC(this.support); // Флаг
+		this.writeC(this.platform);
+		this.writeC(this.itemCreate);
+		this.writeD(0);
+		this.writeD(0);
+		this.writeD(0);
+		this.writeD(0);
+		this.writeD(0);
 	}
 
 	private static int getHpRecovery(int percent)

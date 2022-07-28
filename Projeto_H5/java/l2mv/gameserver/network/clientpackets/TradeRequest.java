@@ -23,13 +23,13 @@ public class TradeRequest extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
+		this._objectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -92,7 +92,7 @@ public class TradeRequest extends L2GameClientPacket
 			return;
 		}
 
-		GameObject target = activeChar.getVisibleObject(_objectId);
+		GameObject target = activeChar.getVisibleObject(this._objectId);
 		if (target == null || !target.isPlayer() || target == activeChar)
 		{
 			// Synerge - Support for sending invitations to fake players

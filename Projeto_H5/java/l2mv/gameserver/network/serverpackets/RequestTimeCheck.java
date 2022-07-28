@@ -5,7 +5,7 @@ public class RequestTimeCheck extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0xC1);
+		this.writeC(0xC1);
 		// TODO d
 	}
 }

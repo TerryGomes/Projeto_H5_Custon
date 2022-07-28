@@ -13,19 +13,19 @@ public class RequestDismissPartyRoom extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_roomId = readD(); // room id
+		this._roomId = this.readD(); // room id
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 		final MatchingRoom room = player.getMatchingRoom();
-		if (room == null || room.getId() != _roomId || room.getType() != MatchingRoom.PARTY_MATCHING || (room.getLeader() != player))
+		if (room == null || room.getId() != this._roomId || room.getType() != MatchingRoom.PARTY_MATCHING || (room.getLeader() != player))
 		{
 			return;
 		}

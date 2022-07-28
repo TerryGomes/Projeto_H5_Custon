@@ -15,29 +15,29 @@ public class ExCursedWeaponLocation extends L2GameServerPacket
 
 	public ExCursedWeaponLocation(List<CursedWeaponInfo> cursedWeaponInfo)
 	{
-		_cursedWeaponInfo = cursedWeaponInfo;
+		this._cursedWeaponInfo = cursedWeaponInfo;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x47);
+		this.writeEx(0x47);
 
-		if (_cursedWeaponInfo.isEmpty())
+		if (this._cursedWeaponInfo.isEmpty())
 		{
-			writeD(0);
+			this.writeD(0);
 		}
 		else
 		{
-			writeD(_cursedWeaponInfo.size());
-			for (CursedWeaponInfo w : _cursedWeaponInfo)
+			this.writeD(this._cursedWeaponInfo.size());
+			for (CursedWeaponInfo w : this._cursedWeaponInfo)
 			{
-				writeD(w._id);
-				writeD(w._status);
+				this.writeD(w._id);
+				this.writeD(w._status);
 
-				writeD(w._pos.x);
-				writeD(w._pos.y);
-				writeD(w._pos.z);
+				this.writeD(w._pos.x);
+				this.writeD(w._pos.y);
+				this.writeD(w._pos.z);
 			}
 		}
 	}
@@ -50,9 +50,9 @@ public class ExCursedWeaponLocation extends L2GameServerPacket
 
 		public CursedWeaponInfo(Location p, int ID, int status)
 		{
-			_pos = p;
-			_id = ID;
-			_status = status;
+			this._pos = p;
+			this._id = ID;
+			this._status = status;
 		}
 	}
 }

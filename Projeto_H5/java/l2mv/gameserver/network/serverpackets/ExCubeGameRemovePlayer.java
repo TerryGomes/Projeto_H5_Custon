@@ -15,19 +15,19 @@ public class ExCubeGameRemovePlayer extends L2GameServerPacket
 
 	public ExCubeGameRemovePlayer(Player player, boolean isRedTeam)
 	{
-		_objectId = player.getObjectId();
-		_isRedTeam = isRedTeam;
+		this._objectId = player.getObjectId();
+		this._isRedTeam = isRedTeam;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x97);
-		writeD(0x02);
+		this.writeEx(0x97);
+		this.writeD(0x02);
 
-		writeD(0xffffffff);
+		this.writeD(0xffffffff);
 
-		writeD(_isRedTeam ? 0x01 : 0x00);
-		writeD(_objectId);
+		this.writeD(this._isRedTeam ? 0x01 : 0x00);
+		this.writeD(this._objectId);
 	}
 }

@@ -13,20 +13,20 @@ public class Earthquake extends L2GameServerPacket
 
 	public Earthquake(Location loc, int intensity, int duration)
 	{
-		_loc = loc;
-		_intensity = intensity;
-		_duration = duration;
+		this._loc = loc;
+		this._intensity = intensity;
+		this._duration = duration;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xd3);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeD(_intensity);
-		writeD(_duration);
-		writeD(0x00); // Unknown
+		this.writeC(0xd3);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
+		this.writeD(this._intensity);
+		this.writeD(this._duration);
+		this.writeD(0x00); // Unknown
 	}
 }

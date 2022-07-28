@@ -7,15 +7,15 @@ public class StopAllianceWar extends L2GameServerPacket
 
 	public StopAllianceWar(String alliance, String charName)
 	{
-		_allianceName = alliance;
-		_char = charName;
+		this._allianceName = alliance;
+		this._char = charName;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xc4);
-		writeS(_allianceName);
-		writeS(_char);
+		this.writeC(0xc4);
+		this.writeS(this._allianceName);
+		this.writeS(this._char);
 	}
 }

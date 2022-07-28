@@ -16,18 +16,18 @@ public class L2FriendSay extends L2GameServerPacket
 
 	public L2FriendSay(String sender, String reciever, String message)
 	{
-		_sender = sender;
-		_receiver = reciever;
-		_message = message;
+		this._sender = sender;
+		this._receiver = reciever;
+		this._message = message;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x78);
-		writeD(0);
-		writeS(_receiver);
-		writeS(_sender);
-		writeS(_message);
+		this.writeC(0x78);
+		this.writeD(0);
+		this.writeS(this._receiver);
+		this.writeS(this._sender);
+		this.writeS(this._message);
 	}
 }

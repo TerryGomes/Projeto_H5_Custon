@@ -11,23 +11,23 @@ public class MoveToLocationInVehicle extends L2GameServerPacket
 
 	public MoveToLocationInVehicle(Player cha, Boat boat, Location origin, Location destination)
 	{
-		_playerObjectId = cha.getObjectId();
-		_boatObjectId = boat.getObjectId();
-		_origin = origin;
-		_destination = destination;
+		this._playerObjectId = cha.getObjectId();
+		this._boatObjectId = boat.getObjectId();
+		this._origin = origin;
+		this._destination = destination;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x7e);
-		writeD(_playerObjectId);
-		writeD(_boatObjectId);
-		writeD(_destination.x);
-		writeD(_destination.y);
-		writeD(_destination.z);
-		writeD(_origin.x);
-		writeD(_origin.y);
-		writeD(_origin.z);
+		this.writeC(0x7e);
+		this.writeD(this._playerObjectId);
+		this.writeD(this._boatObjectId);
+		this.writeD(this._destination.x);
+		this.writeD(this._destination.y);
+		this.writeD(this._destination.z);
+		this.writeD(this._origin.x);
+		this.writeD(this._origin.y);
+		this.writeD(this._origin.z);
 	}
 }

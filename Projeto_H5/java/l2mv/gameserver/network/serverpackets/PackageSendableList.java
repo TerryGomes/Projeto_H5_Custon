@@ -21,17 +21,17 @@ public class PackageSendableList extends L2GameServerPacket
 
 	public PackageSendableList(int objectId, Player cha)
 	{
-		_adena = cha.getAdena();
-		_targetObjectId = objectId;
+		this._adena = cha.getAdena();
+		this._targetObjectId = objectId;
 
 		ItemInstance[] items = cha.getInventory().getItems();
 		ArrayUtils.eqSort(items, Warehouse.ItemClassComparator.getInstance());
-		_itemList = new ArrayList<ItemInfo>(items.length);
+		this._itemList = new ArrayList<ItemInfo>(items.length);
 		for (ItemInstance item : items)
 		{
 			if (item.getTemplate().isFreightable())
 			{
-				_itemList.add(new ItemInfo(item));
+				this._itemList.add(new ItemInfo(item));
 			}
 		}
 	}
@@ -39,14 +39,14 @@ public class PackageSendableList extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xD2);
-		writeD(_targetObjectId);
-		writeQ(_adena);
-		writeD(_itemList.size());
-		for (ItemInfo item : _itemList)
+		this.writeC(0xD2);
+		this.writeD(this._targetObjectId);
+		this.writeQ(this._adena);
+		this.writeD(this._itemList.size());
+		for (ItemInfo item : this._itemList)
 		{
-			writeItemInfo(item);
-			writeD(item.getObjectId());
+			this.writeItemInfo(item);
+			this.writeD(item.getObjectId());
 		}
 	}
 }

@@ -13,7 +13,7 @@ public class RequestEx2ndPasswordVerify extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_password = readS();
+		this._password = this.readS();
 	}
 
 	@Override
@@ -24,6 +24,6 @@ public class RequestEx2ndPasswordVerify extends L2GameClientPacket
 			return;
 		}
 
-		getClient().getSecondaryAuth().checkPassword(_password, false);
+		this.getClient().getSecondaryAuth().checkPassword(this._password, false);
 	}
 }

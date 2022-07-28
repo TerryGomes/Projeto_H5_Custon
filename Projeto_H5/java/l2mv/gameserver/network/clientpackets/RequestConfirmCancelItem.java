@@ -13,20 +13,20 @@ public class RequestConfirmCancelItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_itemId = readD();
+		this._itemId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 
 //		if (!activeChar.checkLastAugmentNpc())
 //		{
 //			return;
 //		}
 //
-		ItemInstance item = activeChar.getInventory().getItemByObjectId(_itemId);
+		ItemInstance item = activeChar.getInventory().getItemByObjectId(this._itemId);
 
 		if (item == null)
 		{

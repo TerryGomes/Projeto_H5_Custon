@@ -19,62 +19,62 @@ public class MultiSellList extends L2GameServerPacket
 
 	public MultiSellList(MultiSellListContainer list, int page, int finished)
 	{
-		_list = list.getEntries();
-		_listId = list.getListId();
-		_page = page;
-		_finished = finished;
+		this._list = list.getEntries();
+		this._listId = list.getListId();
+		this._page = page;
+		this._finished = finished;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xD0);
-		writeD(_listId); // list id
-		writeD(_page); // page
-		writeD(_finished); // finished
-		writeD(Config.MULTISELL_SIZE); // size of pages
-		writeD(_list.size()); // list length
+		this.writeC(0xD0);
+		this.writeD(this._listId); // list id
+		this.writeD(this._page); // page
+		this.writeD(this._finished); // finished
+		this.writeD(Config.MULTISELL_SIZE); // size of pages
+		this.writeD(this._list.size()); // list length
 		List<MultiSellIngredient> ingredients;
-		for (MultiSellEntry ent : _list)
+		for (MultiSellEntry ent : this._list)
 		{
 			ingredients = fixIngredients(ent.getIngredients());
 
-			writeD(ent.getEntryId());
-			writeC(!ent.getProduction().isEmpty() && ent.getProduction().get(0).isStackable() ? 1 : 0); // stackable?
-			writeH(0x00); // unknown
-			writeD(0x00); // инкрустация
-			writeD(0x00); // инкрустация
+			this.writeD(ent.getEntryId());
+			this.writeC(!ent.getProduction().isEmpty() && ent.getProduction().get(0).isStackable() ? 1 : 0); // stackable?
+			this.writeH(0x00); // unknown
+			this.writeD(0x00); // инкрустация
+			this.writeD(0x00); // инкрустация
 
-			writeItemElements();
+			this.writeItemElements();
 
-			writeH(ent.getProduction().size());
-			writeH(ingredients.size());
+			this.writeH(ent.getProduction().size());
+			this.writeH(ingredients.size());
 
 			for (MultiSellIngredient prod : ent.getProduction())
 			{
 				int itemId = prod.getItemId();
 				ItemTemplate template = itemId > 0 ? ItemHolder.getInstance().getTemplate(prod.getItemId()) : null;
-				writeD(itemId);
-				writeD(itemId > 0 ? template.getBodyPart() : 0);
-				writeH(itemId > 0 ? template.getType2ForPackets() : 0);
-				writeQ(prod.getItemCount());
-				writeH(prod.getItemEnchant());
-				writeD(0x00); // инкрустация
-				writeD(0x00); // инкрустация
-				writeItemElements(prod);
+				this.writeD(itemId);
+				this.writeD(itemId > 0 ? template.getBodyPart() : 0);
+				this.writeH(itemId > 0 ? template.getType2ForPackets() : 0);
+				this.writeQ(prod.getItemCount());
+				this.writeH(prod.getItemEnchant());
+				this.writeD(0x00); // инкрустация
+				this.writeD(0x00); // инкрустация
+				this.writeItemElements(prod);
 			}
 
 			for (MultiSellIngredient i : ingredients)
 			{
 				int itemId = i.getItemId();
 				final ItemTemplate item = itemId > 0 ? ItemHolder.getInstance().getTemplate(i.getItemId()) : null;
-				writeD(itemId); // ID
-				writeH(itemId > 0 ? item.getType2() : 0xffff);
-				writeQ(i.getItemCount()); // Count
-				writeH(i.getItemEnchant()); // Enchant Level
-				writeD(0x00); // инкрустация
-				writeD(0x00); // инкрустация
-				writeItemElements(i);
+				this.writeD(itemId); // ID
+				this.writeH(itemId > 0 ? item.getType2() : 0xffff);
+				this.writeQ(i.getItemCount()); // Count
+				this.writeH(i.getItemEnchant()); // Enchant Level
+				this.writeD(0x00); // инкрустация
+				this.writeD(0x00); // инкрустация
+				this.writeItemElements(i);
 			}
 		}
 	}

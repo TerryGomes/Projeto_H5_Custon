@@ -25,13 +25,13 @@ public class RequestShowBoard extends L2GameClientPacket
 	@Override
 	public void readImpl()
 	{
-		_unknown = readD();
+		this._unknown = this.readD();
 	}
 
 	@Override
 	public void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null || activeChar.isBlocked() || activeChar.isCursedWeaponEquipped())
 		{
 			return;

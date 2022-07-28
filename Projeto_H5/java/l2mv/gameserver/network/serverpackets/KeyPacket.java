@@ -6,23 +6,23 @@ public class KeyPacket extends L2GameServerPacket
 
 	public KeyPacket(byte key[])
 	{
-		_key = key;
+		this._key = key;
 	}
 
 	@Override
 	public void writeImpl()
 	{
-		writeC(0x2E);
-		if (_key == null || _key.length == 0)
+		this.writeC(0x2E);
+		if (this._key == null || this._key.length == 0)
 		{
-			writeC(0x00);
+			this.writeC(0x00);
 			return;
 		}
-		writeC(0x01);
-		writeB(_key);
-		writeD(0x01);
-		writeD(0x00);
-		writeC(0x00);
-		writeD(0x00); // Seed (obfuscation key)
+		this.writeC(0x01);
+		this.writeB(this._key);
+		this.writeD(0x01);
+		this.writeD(0x00);
+		this.writeC(0x00);
+		this.writeD(0x00); // Seed (obfuscation key)
 	}
 }

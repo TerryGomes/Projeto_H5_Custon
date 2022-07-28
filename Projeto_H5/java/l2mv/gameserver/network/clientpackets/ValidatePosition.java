@@ -21,70 +21,70 @@ public class ValidatePosition extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_loc.x = readD();
-		_loc.y = readD();
-		_loc.z = readD();
-		_loc.h = readD();
-		_boatObjectId = readD();
+		this._loc.x = this.readD();
+		this._loc.y = this.readD();
+		this._loc.z = this.readD();
+		this._loc.h = this.readD();
+		this._boatObjectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if ((activeChar == null) || activeChar.isTeleporting() || activeChar.isInObserverMode())
 		{
 			return;
 		}
 
-		_lastClientPosition = activeChar.getLastClientPosition();
-		_lastServerPosition = activeChar.getLastServerPosition();
+		this._lastClientPosition = activeChar.getLastClientPosition();
+		this._lastServerPosition = activeChar.getLastServerPosition();
 
-		if (_lastClientPosition == null)
+		if (this._lastClientPosition == null)
 		{
-			_lastClientPosition = activeChar.getLoc();
+			this._lastClientPosition = activeChar.getLoc();
 		}
-		if (_lastServerPosition == null)
+		if (this._lastServerPosition == null)
 		{
-			_lastServerPosition = activeChar.getLoc();
+			this._lastServerPosition = activeChar.getLoc();
 		}
 
 		if (activeChar.getX() == 0 && activeChar.getY() == 0 && activeChar.getZ() == 0)
 		{
-			correctPosition(activeChar);
+			this.correctPosition(activeChar);
 			return;
 		}
 
 		if (activeChar.isInFlyingTransform())
 		{
 			// В летающей трансформе нельзя находиться на территории Aden
-			if (_loc.x > -166168)
+			if (this._loc.x > -166168)
 			{
 				activeChar.setTransformation(0);
 				return;
 			}
 
 			// В летающей трансформе нельзя летать ниже, чем 0, и выше, чем 6000
-			if (_loc.z <= 0 || _loc.z >= 6000)
+			if (this._loc.z <= 0 || this._loc.z >= 6000)
 			{
-				activeChar.teleToLocation(activeChar.getLoc().setZ(Math.min(5950, Math.max(50, _loc.z))));
+				activeChar.teleToLocation(activeChar.getLoc().setZ(Math.min(5950, Math.max(50, this._loc.z))));
 				return;
 			}
 		}
 
-		double diff = activeChar.getDistance(_loc.x, _loc.y);
-		int dz = Math.abs(_loc.z - activeChar.getZ());
-		int h = _lastServerPosition.z - activeChar.getZ();
+		double diff = activeChar.getDistance(this._loc.x, this._loc.y);
+		int dz = Math.abs(this._loc.z - activeChar.getZ());
+		int h = this._lastServerPosition.z - activeChar.getZ();
 
-		if (_boatObjectId > 0)
+		if (this._boatObjectId > 0)
 		{
-			Boat boat = BoatHolder.getInstance().getBoat(_boatObjectId);
+			Boat boat = BoatHolder.getInstance().getBoat(this._boatObjectId);
 			if (boat != null && activeChar.getBoat() == boat)
 			{
-				activeChar.setHeading(_loc.h);
+				activeChar.setHeading(this._loc.h);
 				boat.validateLocationPacket(activeChar);
 			}
-			activeChar.setLastClientPosition(_loc.setH(activeChar.getHeading()));
+			activeChar.setLastClientPosition(this._loc.setH(activeChar.getHeading()));
 			activeChar.setLastServerPosition(activeChar.getLoc());
 			return;
 		}
@@ -117,7 +117,7 @@ public class ValidatePosition extends L2GameClientPacket
 		{
 			activeChar.validateLocation(0);
 		}
-		else if (_loc.z < -30000 || _loc.z > 30000)
+		else if (this._loc.z < -30000 || this._loc.z > 30000)
 		{
 			if (activeChar.getIncorrectValidateCount() >= 3)
 			{
@@ -125,7 +125,7 @@ public class ValidatePosition extends L2GameClientPacket
 			}
 			else
 			{
-				correctPosition(activeChar);
+				this.correctPosition(activeChar);
 				activeChar.setIncorrectValidateCount(activeChar.getIncorrectValidateCount() + 1);
 			}
 		}
@@ -151,7 +151,7 @@ public class ValidatePosition extends L2GameClientPacket
 			activeChar.setIncorrectValidateCount(0);
 		}
 
-		activeChar.setLastClientPosition(_loc.setH(activeChar.getHeading()));
+		activeChar.setLastClientPosition(this._loc.setH(activeChar.getHeading()));
 		activeChar.setLastServerPosition(activeChar.getLoc());
 	}
 
@@ -162,27 +162,20 @@ public class ValidatePosition extends L2GameClientPacket
 			activeChar.sendMessage("Server loc: " + activeChar.getLoc());
 			activeChar.sendMessage("Correcting position...");
 		}
-		if (_lastServerPosition.x != 0 && _lastServerPosition.y != 0 && _lastServerPosition.z != 0)
+		if (this._lastServerPosition.x != 0 && this._lastServerPosition.y != 0 && this._lastServerPosition.z != 0)
 		{
-			if (GeoEngine.getNSWE(_lastServerPosition.x, _lastServerPosition.y, _lastServerPosition.z, activeChar.getGeoIndex()) == GeoEngine.NSWE_ALL)
+			if (GeoEngine.getNSWE(this._lastServerPosition.x, this._lastServerPosition.y, this._lastServerPosition.z, activeChar.getGeoIndex()) == GeoEngine.NSWE_ALL)
 			{
-				activeChar.teleToLocation(_lastServerPosition);
+				activeChar.teleToLocation(this._lastServerPosition);
 			}
 			else
 			{
 				activeChar.teleToClosestTown();
 			}
 		}
-		else if (_lastClientPosition.x != 0 && _lastClientPosition.y != 0 && _lastClientPosition.z != 0)
+		else if ((this._lastClientPosition.x != 0 && this._lastClientPosition.y != 0 && this._lastClientPosition.z != 0) && (GeoEngine.getNSWE(this._lastClientPosition.x, this._lastClientPosition.y, this._lastClientPosition.z, activeChar.getGeoIndex()) == GeoEngine.NSWE_ALL))
 		{
-			if (GeoEngine.getNSWE(_lastClientPosition.x, _lastClientPosition.y, _lastClientPosition.z, activeChar.getGeoIndex()) == GeoEngine.NSWE_ALL)
-			{
-				activeChar.teleToLocation(_lastClientPosition);
-			}
-			else
-			{
-				activeChar.teleToClosestTown();
-			}
+			activeChar.teleToLocation(this._lastClientPosition);
 		}
 		else
 		{

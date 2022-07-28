@@ -12,14 +12,14 @@ public class RequestQuestAbort extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_questID = readD();
+		this._questID = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		Quest quest = QuestManager.getQuest(_questID);
+		Player activeChar = this.getClient().getActiveChar();
+		Quest quest = QuestManager.getQuest(this._questID);
 		if (activeChar == null || quest == null || activeChar.isBlocked() || !quest.canAbortByPacket())
 		{
 			return;

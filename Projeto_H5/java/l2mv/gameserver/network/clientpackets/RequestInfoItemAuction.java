@@ -18,13 +18,13 @@ public final class RequestInfoItemAuction extends L2GameClientPacket
 	@Override
 	protected final void readImpl()
 	{
-		_instanceId = readD();
+		this._instanceId = this.readD();
 	}
 
 	@Override
 	protected final void runImpl()
 	{
-		final Player activeChar = getClient().getActiveChar();
+		final Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -32,7 +32,7 @@ public final class RequestInfoItemAuction extends L2GameClientPacket
 
 		activeChar.getAndSetLastItemAuctionRequest();
 
-		final ItemAuctionInstance instance = ItemAuctionManager.getInstance().getManagerInstance(_instanceId);
+		final ItemAuctionInstance instance = ItemAuctionManager.getInstance().getManagerInstance(this._instanceId);
 		if (instance == null)
 		{
 			return;
@@ -40,7 +40,7 @@ public final class RequestInfoItemAuction extends L2GameClientPacket
 
 		final ItemAuction auction = instance.getCurrentAuction();
 		NpcInstance broker = activeChar.getLastNpc();
-		if (auction == null || broker == null || broker.getNpcId() != _instanceId || activeChar.getDistance(broker.getX(), broker.getY()) > Creature.INTERACTION_DISTANCE)
+		if (auction == null || broker == null || broker.getNpcId() != this._instanceId || activeChar.getDistance(broker.getX(), broker.getY()) > Creature.INTERACTION_DISTANCE)
 		{
 			return;
 		}

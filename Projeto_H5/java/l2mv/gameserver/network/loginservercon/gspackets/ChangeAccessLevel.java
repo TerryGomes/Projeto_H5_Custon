@@ -18,9 +18,9 @@ public class ChangeAccessLevel extends SendablePacket
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0x11);
-		writeS(account);
-		writeD(level);
-		writeD(banExpire);
+		this.writeC(0x11);
+		this.writeS(this.account);
+		this.writeD(this.level);
+		this.writeD(this.banExpire);
 	}
 }

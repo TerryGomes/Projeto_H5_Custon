@@ -18,15 +18,15 @@ public class AnswerCoupleAction extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_actionId = readD();
-		_answer = readD();
-		_charObjId = readD();
+		this._actionId = this.readD();
+		this._answer = this.readD();
+		this._charObjId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -56,14 +56,14 @@ public class AnswerCoupleAction extends L2GameClientPacket
 			return;
 		}
 
-		if (requestor.getObjectId() != _charObjId || requestor.getRequest() != request)
+		if (requestor.getObjectId() != this._charObjId || requestor.getRequest() != request)
 		{
 			request.cancel();
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		switch (_answer)
+		switch (this._answer)
 		{
 		case -1: // refused
 			requestor.sendPacket(new SystemMessage2(SystemMsg.C1_IS_SET_TO_REFUSE_COUPLE_ACTIONS_AND_CANNOT_BE_REQUESTED_FOR_A_COUPLE_ACTION).addName(activeChar));
@@ -86,7 +86,7 @@ public class AnswerCoupleAction extends L2GameClientPacket
 				Location loc = requestor.applyOffset(activeChar.getLoc(), 25);
 				loc = GeoEngine.moveCheck(requestor.getX(), requestor.getY(), requestor.getZ(), loc.x, loc.y, requestor.getGeoIndex());
 				requestor.moveToLocation(loc, 0, false);
-				requestor.getAI().setNextAction(PlayableAI.nextAction.COUPLE_ACTION, activeChar, _actionId, true, false);
+				requestor.getAI().setNextAction(PlayableAI.nextAction.COUPLE_ACTION, activeChar, this._actionId, true, false);
 			}
 			finally
 			{

@@ -14,31 +14,31 @@ public class RequestExMoveToLocationInAirShip extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_boatObjectId = readD();
-		_pos.x = readD();
-		_pos.y = readD();
-		_pos.z = readD();
-		_originPos.x = readD();
-		_originPos.y = readD();
-		_originPos.z = readD();
+		this._boatObjectId = this.readD();
+		this._pos.x = this.readD();
+		this._pos.y = this.readD();
+		this._pos.z = this.readD();
+		this._originPos.x = this.readD();
+		this._originPos.y = this.readD();
+		this._originPos.z = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		Boat boat = BoatHolder.getInstance().getBoat(_boatObjectId);
+		Boat boat = BoatHolder.getInstance().getBoat(this._boatObjectId);
 		if ((boat == null) || player.isClanAirShipDriver())
 		{
 			player.sendActionFailed();
 			return;
 		}
 
-		boat.moveInBoat(player, _originPos, _pos);
+		boat.moveInBoat(player, this._originPos, this._pos);
 	}
 }

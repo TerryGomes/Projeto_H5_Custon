@@ -38,24 +38,24 @@ public class RequestMultiSellChoose extends L2GameClientPacket
 
 		public ItemData(int id, long count, ItemInstance item)
 		{
-			_id = id;
-			_count = count;
-			_item = item;
+			this._id = id;
+			this._count = count;
+			this._item = item;
 		}
 
 		public int getId()
 		{
-			return _id;
+			return this._id;
 		}
 
 		public long getCount()
 		{
-			return _count;
+			return this._count;
 		}
 
 		public ItemInstance getItem()
 		{
-			return _item;
+			return this._item;
 		}
 
 		@Override
@@ -68,30 +68,30 @@ public class RequestMultiSellChoose extends L2GameClientPacket
 
 			ItemData i = (ItemData) obj;
 
-			return (_id == i._id) && (_count == i._count) && (_item == i._item);
+			return (this._id == i._id) && (this._count == i._count) && (this._item == i._item);
 		}
 	}
 
 	@Override
 	protected void readImpl()
 	{
-		_listId = readD();
-		_entryId = readD();
-		_amount = readQ();
+		this._listId = this.readD();
+		this._entryId = this.readD();
+		this._amount = this.readQ();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if ((activeChar == null) || (_amount < 1))
+		Player activeChar = this.getClient().getActiveChar();
+		if ((activeChar == null) || (this._amount < 1))
 		{
 			return;
 		}
 
 		MultiSellListContainer list1 = activeChar.getMultisell();
 		// Check to see whether the replaced id
-		if ((list1 == null) || (list1.getListId() != _listId))
+		if ((list1 == null) || (list1.getListId() != this._listId))
 		{
 			// TODO audit
 			activeChar.sendActionFailed();
@@ -148,7 +148,7 @@ public class RequestMultiSellChoose extends L2GameClientPacket
 		MultiSellEntry entry = null;
 		for (MultiSellEntry $entry : list1.getEntries())
 		{
-			if ($entry.getEntryId() == _entryId)
+			if ($entry.getEntryId() == this._entryId)
 			{
 				entry = $entry;
 				break;
@@ -174,7 +174,7 @@ public class RequestMultiSellChoose extends L2GameClientPacket
 		inventory.writeLock();
 		try
 		{
-			long tax = SafeMath.mulAndCheck(entry.getTax(), _amount);
+			long tax = SafeMath.mulAndCheck(entry.getTax(), this._amount);
 
 			long slots = 0;
 			long weight = 0;
@@ -186,7 +186,7 @@ public class RequestMultiSellChoose extends L2GameClientPacket
 				}
 				ItemTemplate item = ItemHolder.getInstance().getTemplate(i.getItemId());
 
-				weight = SafeMath.addAndCheck(weight, SafeMath.mulAndCheck(SafeMath.mulAndCheck(i.getItemCount(), _amount), item.getWeight()));
+				weight = SafeMath.addAndCheck(weight, SafeMath.mulAndCheck(SafeMath.mulAndCheck(i.getItemCount(), this._amount), item.getWeight()));
 				if (item.isStackable())
 				{
 					if (inventory.getItemByItemId(i.getItemId()) == null)
@@ -196,7 +196,7 @@ public class RequestMultiSellChoose extends L2GameClientPacket
 				}
 				else
 				{
-					slots = SafeMath.addAndCheck(slots, _amount);
+					slots = SafeMath.addAndCheck(slots, this._amount);
 				}
 			}
 
@@ -227,7 +227,7 @@ public class RequestMultiSellChoose extends L2GameClientPacket
 				int ingridientItemId = ingridient.getItemId();
 				long ingridientItemCount = ingridient.getItemCount();
 				int ingridientEnchant = ingridient.getItemEnchant();
-				long totalAmount = !ingridient.getMantainIngredient() ? SafeMath.mulAndCheck(ingridientItemCount, _amount) : ingridientItemCount;
+				long totalAmount = !ingridient.getMantainIngredient() ? SafeMath.mulAndCheck(ingridientItemCount, this._amount) : ingridientItemCount;
 
 				switch (ingridientItemId)
 				{
@@ -284,7 +284,7 @@ public class RequestMultiSellChoose extends L2GameClientPacket
 					ItemTemplate template = ItemHolder.getInstance().getTemplate(ingridientItemId);
 					if (!template.isStackable())
 					{
-						for (int i = 0; i < (ingridientItemCount * _amount); i++)
+						for (int i = 0; i < (ingridientItemCount * this._amount); i++)
 						{
 							List<ItemInstance> list = inventory.getItemsByItemId(ingridientItemId);
 							// Если энчант имеет значение - то ищем вещи с точно таким энчантом
@@ -345,7 +345,7 @@ public class RequestMultiSellChoose extends L2GameClientPacket
 					{
 						if (ingridientItemId == 57)
 						{
-							totalPrice = SafeMath.addAndCheck(totalPrice, SafeMath.mulAndCheck(ingridientItemCount, _amount));
+							totalPrice = SafeMath.addAndCheck(totalPrice, SafeMath.mulAndCheck(ingridientItemCount, this._amount));
 						}
 						ItemInstance item = inventory.getItemByItemId(ingridientItemId);
 
@@ -454,26 +454,26 @@ public class RequestMultiSellChoose extends L2GameClientPacket
 							activeChar.sendMessage("The level of the clan must be at least the 5th!");
 							return;
 						}
-						activeChar.getClan().incReputation((int) (in.getItemCount() * _amount), false, "MultiSell");
-						activeChar.sendPacket(new SystemMessage(SystemMessage.YOUR_CLAN_HAS_ADDED_1S_POINTS_TO_ITS_CLAN_REPUTATION_SCORE).addNumber((int) (in.getItemCount() * _amount)));
+						activeChar.getClan().incReputation((int) (in.getItemCount() * this._amount), false, "MultiSell");
+						activeChar.sendPacket(new SystemMessage(SystemMessage.YOUR_CLAN_HAS_ADDED_1S_POINTS_TO_ITS_CLAN_REPUTATION_SCORE).addNumber((int) (in.getItemCount() * this._amount)));
 					}
 					else if (in.getItemId() == ItemTemplate.ITEM_ID_PC_BANG_POINTS)
 					{
-						activeChar.addPcBangPoints((int) (in.getItemCount() * _amount), false);
+						activeChar.addPcBangPoints((int) (in.getItemCount() * this._amount), false);
 					}
 					else if (in.getItemId() == ItemTemplate.ITEM_ID_FAME)
 					{
-						activeChar.setFame(activeChar.getFame() + (int) (in.getItemCount() * _amount), "MultiSell");
+						activeChar.setFame(activeChar.getFame() + (int) (in.getItemCount() * this._amount), "MultiSell");
 					}
 				}
 				else if (ItemHolder.getInstance().getTemplate(in.getItemId()).isStackable())
 				{
-					long total = SafeMath.mulAndLimit(in.getItemCount(), _amount);
+					long total = SafeMath.mulAndLimit(in.getItemCount(), this._amount);
 					ItemFunctions.addItem(activeChar, in.getItemId(), total, true, "Multisell");
 				}
 				else
 				{
-					for (int i = 0; i < _amount; i++)
+					for (int i = 0; i < this._amount; i++)
 					{
 						ItemInstance product = ItemFunctions.createItem(in.getItemId());
 

@@ -14,13 +14,13 @@ public class RequestAnswerJoinPledge extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_response = _buf.hasRemaining() ? readD() : 0;
+		this._response = this._buf.hasRemaining() ? this.readD() : 0;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -64,7 +64,7 @@ public class RequestAnswerJoinPledge extends L2GameClientPacket
 			return;
 		}
 
-		if (_response == 0)
+		if (this._response == 0)
 		{
 			request.cancel();
 			requestor.sendPacket(new SystemMessage2(SystemMsg.S1_DECLINED_YOUR_CLAN_INVITATION).addName(player));

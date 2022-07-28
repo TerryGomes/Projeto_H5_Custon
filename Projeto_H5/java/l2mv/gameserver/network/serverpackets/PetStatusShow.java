@@ -8,13 +8,13 @@ public class PetStatusShow extends L2GameServerPacket
 
 	public PetStatusShow(Summon summon)
 	{
-		_summonType = summon.getSummonType();
+		this._summonType = summon.getSummonType();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xb1);
-		writeD(_summonType);
+		this.writeC(0xb1);
+		this.writeD(this._summonType);
 	}
 }

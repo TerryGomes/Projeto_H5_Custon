@@ -11,6 +11,6 @@ public class ExAttackInAirShip extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x72);
+		this.writeEx(0x72);
 	}
 }

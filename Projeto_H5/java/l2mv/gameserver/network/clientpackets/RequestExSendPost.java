@@ -10,11 +10,11 @@ import org.apache.commons.lang3.ArrayUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2mv.gameserver.fandc.managers.MailManager;
 import l2mv.commons.dao.JdbcEntityState;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.dao.CharacterDAO;
 import l2mv.gameserver.database.mysql;
+import l2mv.gameserver.fandc.managers.MailManager;
 import l2mv.gameserver.handler.admincommands.impl.AdminMail;
 import l2mv.gameserver.model.GameObjectsStorage;
 import l2mv.gameserver.model.Player;
@@ -58,45 +58,45 @@ public class RequestExSendPost extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_recieverName = readS(35); // the recipient's name
-		_messageType = readD(); // Type the letters 0 1 simple request payment
-		_topic = readS(Byte.MAX_VALUE); // topic
-		_body = readS(Short.MAX_VALUE); // body
+		this._recieverName = this.readS(35); // the recipient's name
+		this._messageType = this.readD(); // Type the letters 0 1 simple request payment
+		this._topic = this.readS(Byte.MAX_VALUE); // topic
+		this._body = this.readS(Short.MAX_VALUE); // body
 
-		_count = readD(); // the number of attached items
-		if (_count * 12 + 4 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1) // TODO [G1ta0] audit
+		this._count = this.readD(); // the number of attached items
+		if (this._count * 12 + 4 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1) // TODO [G1ta0] audit
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
 
-		_items = new int[_count];
-		_itemQ = new long[_count];
+		this._items = new int[this._count];
+		this._itemQ = new long[this._count];
 
-		for (int i = 0; i < _count; i++)
+		for (int i = 0; i < this._count; i++)
 		{
-			_items[i] = readD(); // objectId
-			_itemQ[i] = readQ(); // the amount
-			if (_itemQ[i] < 1 || ArrayUtils.indexOf(_items, _items[i]) < i)
+			this._items[i] = this.readD(); // objectId
+			this._itemQ[i] = this.readQ(); // the amount
+			if (this._itemQ[i] < 1 || ArrayUtils.indexOf(this._items, this._items[i]) < i)
 			{
-				_count = 0;
+				this._count = 0;
 				return;
 			}
 		}
 
-		_price = readQ(); // price for letters requesting payment
+		this._price = this.readQ(); // price for letters requesting payment
 
-		if (_price < 0)
+		if (this._price < 0)
 		{
-			_count = 0;
-			_price = 0;
+			this._count = 0;
+			this._price = 0;
 		}
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -109,15 +109,15 @@ public class RequestExSendPost extends L2GameClientPacket
 		}
 
 		// Custom
-		if (activeChar.isGM() && _recieverName.equalsIgnoreCase(AdminMail.MAIL_ALL_TEXT))
+		if (activeChar.isGM() && this._recieverName.equalsIgnoreCase(AdminMail.MAIL_ALL_TEXT))
 		{
 			Map<Integer, Long> map = new HashMap<Integer, Long>();
-			if (_items != null && _items.length > 0)
+			if (this._items != null && this._items.length > 0)
 			{
-				for (int i = 0; i < _items.length; i++)
+				for (int i = 0; i < this._items.length; i++)
 				{
-					ItemInstance item = activeChar.getInventory().getItemByObjectId(_items[i]);
-					map.put(item.getItemId(), _itemQ[i]);
+					ItemInstance item = activeChar.getInventory().getItemByObjectId(this._items[i]);
+					map.put(item.getItemId(), this._itemQ[i]);
 				}
 			}
 
@@ -125,7 +125,7 @@ public class RequestExSendPost extends L2GameClientPacket
 			{
 				if (p != null && p.isOnline())
 				{
-					Functions.sendSystemMail(p, _topic, _body, map);
+					Functions.sendSystemMail(p, this._topic, this._body, map);
 				}
 			}
 
@@ -133,22 +133,22 @@ public class RequestExSendPost extends L2GameClientPacket
 			activeChar.sendPacket(SystemMsg.MAIL_SUCCESSFULLY_SENT);
 			return;
 		}
-		else if (activeChar.isGM() && _recieverName.equalsIgnoreCase(AdminMail.MAIL_LIST))
+		else if (activeChar.isGM() && this._recieverName.equalsIgnoreCase(AdminMail.MAIL_LIST))
 		{
 			Map<Integer, Long> map = new HashMap<>();
-			if (_items != null && _items.length > 0)
+			if (this._items != null && this._items.length > 0)
 			{
-				for (int i = 0; i < _items.length; i++)
+				for (int i = 0; i < this._items.length; i++)
 				{
-					ItemInstance item = activeChar.getInventory().getItemByObjectId(_items[i]);
-					map.put(item.getItemId(), _itemQ[i]);
+					ItemInstance item = activeChar.getInventory().getItemByObjectId(this._items[i]);
+					map.put(item.getItemId(), this._itemQ[i]);
 				}
 			}
 
 			int count = 0;
 			for (String name : AdminMail.getMailNicks(activeChar.getObjectId()))
 			{
-				boolean success = Functions.sendSystemMail(name, _topic, _body, map);
+				boolean success = Functions.sendSystemMail(name, this._topic, this._body, map);
 				if (!success)
 				{
 					activeChar.sendMessage("Mail couldn't be sent to " + name);
@@ -191,13 +191,13 @@ public class RequestExSendPost extends L2GameClientPacket
 			return;
 		}
 
-		if (activeChar.getName().equalsIgnoreCase(_recieverName))
+		if (activeChar.getName().equalsIgnoreCase(this._recieverName))
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_SEND_A_MAIL_TO_YOURSELF);
 			return;
 		}
 
-		if (_count > 0 && !activeChar.isInPeaceZone() && activeChar.getAccessLevel() <= 0)
+		if (this._count > 0 && !activeChar.isInPeaceZone() && activeChar.getAccessLevel() <= 0)
 		{
 			activeChar.sendPacket(SystemMsg.YOU_CANNOT_FORWARD_IN_A_NONPEACE_ZONE_LOCATION);
 			return;
@@ -215,7 +215,7 @@ public class RequestExSendPost extends L2GameClientPacket
 			return;
 		}
 
-		if (Config.containsAbuseWord(_body) || Config.containsAbuseWord(_topic))
+		if (Config.containsAbuseWord(this._body) || Config.containsAbuseWord(this._topic))
 		{
 			activeChar.sendMessage("Your mail containts prohibited words. Correct it and try again.");
 			return;
@@ -240,7 +240,7 @@ public class RequestExSendPost extends L2GameClientPacket
 			return;
 		}
 
-		if (_price > 0)
+		if (this._price > 0)
 		{
 			if (!activeChar.getPlayerAccess().UseTrade)
 			{
@@ -265,33 +265,33 @@ public class RequestExSendPost extends L2GameClientPacket
 		}
 
 		// looking for a goal and check bloklisty
-		if (activeChar.isInBlockList(_recieverName)) // those who do not blokliste helmet
+		if (activeChar.isInBlockList(this._recieverName)) // those who do not blokliste helmet
 		{
-			activeChar.sendPacket(new SystemMessage2(SystemMsg.YOU_HAVE_BLOCKED_C1).addString(_recieverName));
+			activeChar.sendPacket(new SystemMessage2(SystemMsg.YOU_HAVE_BLOCKED_C1).addString(this._recieverName));
 			return;
 		}
 
 		int recieverId;
-		Player target = World.getPlayer(_recieverName);
+		Player target = World.getPlayer(this._recieverName);
 		if (target != null)
 		{
 			recieverId = target.getObjectId();
-			_recieverName = target.getName();
+			this._recieverName = target.getName();
 			if (target.isInBlockList(activeChar)) // goal blocked senders
 			{
-				activeChar.sendPacket(new SystemMessage2(SystemMsg.C1_HAS_BLOCKED_YOU).addString(_recieverName));
+				activeChar.sendPacket(new SystemMessage2(SystemMsg.C1_HAS_BLOCKED_YOU).addString(this._recieverName));
 				return;
 			}
 		}
 		else
 		{
-			recieverId = CharacterDAO.getInstance().getObjectIdByName(_recieverName);
+			recieverId = CharacterDAO.getInstance().getObjectIdByName(this._recieverName);
 			if (recieverId > 0)
 			{
 				// TODO [G1ta0] adjust _recieverName
 				if (mysql.simple_get_int("target_Id", "character_blocklist", "obj_Id=" + recieverId + " AND target_Id=" + activeChar.getObjectId()) > 0) // goal blocked senders
 				{
-					activeChar.sendPacket(new SystemMessage2(SystemMsg.C1_HAS_BLOCKED_YOU).addString(_recieverName));
+					activeChar.sendPacket(new SystemMessage2(SystemMsg.C1_HAS_BLOCKED_YOU).addString(this._recieverName));
 					return;
 				}
 			}
@@ -303,15 +303,15 @@ public class RequestExSendPost extends L2GameClientPacket
 			return;
 		}
 
-		int expireTime = (_messageType == 1 ? 12 : 72) * 3600 + (int) (System.currentTimeMillis() / 1000L); // TODO [G1ta0] hardcoding time urgency mail
+		int expireTime = (this._messageType == 1 ? 12 : 72) * 3600 + (int) (System.currentTimeMillis() / 1000L); // TODO [G1ta0] hardcoding time urgency mail
 
-		if (_count > 8) // the client does not send more than 8 items
+		if (this._count > 8) // the client does not send more than 8 items
 		{
 			activeChar.sendPacket(SystemMsg.INCORRECT_ITEM_COUNT);
 			return;
 		}
 
-		long serviceCost = 100 + _count * 1000; // TODO [G1ta0] hardcoding price for mail
+		long serviceCost = 100 + this._count * 1000; // TODO [G1ta0] hardcoding price for mail
 
 		List<ItemInstance> attachments = new ArrayList<ItemInstance>();
 
@@ -325,13 +325,13 @@ public class RequestExSendPost extends L2GameClientPacket
 			}
 
 			// prepare attachement
-			if (_count > 0)
+			if (this._count > 0)
 			{
-				for (int i = 0; i < _count; i++)
+				for (int i = 0; i < this._count; i++)
 				{
-					ItemInstance item = activeChar.getInventory().getItemByObjectId(_items[i]);
+					ItemInstance item = activeChar.getInventory().getItemByObjectId(this._items[i]);
 
-					if (item == null || item.getCount() < _itemQ[i] || (item.getItemId() == ItemTemplate.ITEM_ID_ADENA && item.getCount() < _itemQ[i] + serviceCost) || !item.canBeTraded(activeChar))
+					if (item == null || item.getCount() < this._itemQ[i] || (item.getItemId() == ItemTemplate.ITEM_ID_ADENA && item.getCount() < this._itemQ[i] + serviceCost) || !item.canBeTraded(activeChar))
 					{
 						activeChar.sendPacket(SystemMsg.THE_ITEM_THAT_YOURE_TRYING_TO_SEND_CANNOT_BE_FORWARDED_BECAUSE_IT_ISNT_PROPER);
 						return;
@@ -350,11 +350,11 @@ public class RequestExSendPost extends L2GameClientPacket
 				return;
 			}
 
-			if (_count > 0)
+			if (this._count > 0)
 			{
-				for (int i = 0; i < _count; i++)
+				for (int i = 0; i < this._count; i++)
 				{
-					ItemInstance item = activeChar.getInventory().removeItemByObjectId(_items[i], _itemQ[i], "SendPost");
+					ItemInstance item = activeChar.getInventory().removeItemByObjectId(this._items[i], this._itemQ[i], "SendPost");
 
 					item.setOwnerId(activeChar.getObjectId());
 					item.setLocation(ItemLocation.MAIL);
@@ -374,7 +374,7 @@ public class RequestExSendPost extends L2GameClientPacket
 					if (item.getItemId() == ItemTemplate.ITEM_ID_ADENA && item.getCount() >= 1000000000)
 					{
 						_log.warn("=============================================================");
-						_log.warn("The player " + activeChar.getName() + " sent to " + _recieverName + " in a mail Adena (" + String.format(Locale.US, "%,d", item.getCount()).replace(',', '.') + "). Possible adena botter!!!");
+						_log.warn("The player " + activeChar.getName() + " sent to " + this._recieverName + " in a mail Adena (" + String.format(Locale.US, "%,d", item.getCount()).replace(',', '.') + "). Possible adena botter!!!");
 						_log.warn("=============================================================");
 					}
 				}
@@ -389,10 +389,10 @@ public class RequestExSendPost extends L2GameClientPacket
 		mail.setSenderId(activeChar.getObjectId());
 		mail.setSenderName(activeChar.getName());
 		mail.setReceiverId(recieverId);
-		mail.setReceiverName(_recieverName);
-		mail.setTopic(_topic);
-		mail.setBody(_body);
-		mail.setPrice(_messageType > 0 ? _price : 0);
+		mail.setReceiverName(this._recieverName);
+		mail.setTopic(this._topic);
+		mail.setBody(this._body);
+		mail.setPrice(this._messageType > 0 ? this._price : 0);
 		mail.setUnread(true);
 		mail.setType(Mail.SenderType.NORMAL);
 		mail.setExpireTime(expireTime);
@@ -416,6 +416,6 @@ public class RequestExSendPost extends L2GameClientPacket
 		// Prims - Add the new mail sent to the manager
 		MailManager.getInstance().addNewMailSent(activeChar);
 
-		ItemLogHandler.getInstance().addLog(activeChar, attachments, _recieverName, ItemActionType.MAIL);
+		ItemLogHandler.getInstance().addLog(activeChar, attachments, this._recieverName, ItemActionType.MAIL);
 	}
 }

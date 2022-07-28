@@ -12,18 +12,18 @@ public class RequestSetAllyCrest extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_length = readD();
-		if (_length == CrestCache.ALLY_CREST_SIZE && _length == _buf.remaining())
+		this._length = this.readD();
+		if (this._length == CrestCache.ALLY_CREST_SIZE && this._length == this._buf.remaining())
 		{
-			_data = new byte[_length];
-			readB(_data);
+			this._data = new byte[this._length];
+			this.readB(this._data);
 		}
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -34,9 +34,9 @@ public class RequestSetAllyCrest extends L2GameClientPacket
 		{
 			int crestId = 0;
 
-			if (_data != null)
+			if (this._data != null)
 			{
-				crestId = CrestCache.getInstance().saveAllyCrest(ally.getAllyId(), _data);
+				crestId = CrestCache.getInstance().saveAllyCrest(ally.getAllyId(), this._data);
 			}
 			else if (ally.hasAllyCrest())
 			{

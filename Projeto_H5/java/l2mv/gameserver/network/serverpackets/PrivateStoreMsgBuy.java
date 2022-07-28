@@ -15,15 +15,15 @@ public class PrivateStoreMsgBuy extends L2GameServerPacket
 	 */
 	public PrivateStoreMsgBuy(Player player)
 	{
-		_objId = player.getObjectId();
-		_name = StringUtils.defaultString(player.getBuyStoreName());
+		this._objId = player.getObjectId();
+		this._name = StringUtils.defaultString(player.getBuyStoreName());
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xBF);
-		writeD(_objId);
-		writeS(_name);
+		this.writeC(0xBF);
+		this.writeD(this._objId);
+		this.writeS(this._name);
 	}
 }

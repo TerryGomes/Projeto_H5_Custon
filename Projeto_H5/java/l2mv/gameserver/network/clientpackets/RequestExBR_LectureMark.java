@@ -17,25 +17,25 @@ public class RequestExBR_LectureMark extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_mark = readC();
+		this._mark = this.readC();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if ((player == null) || !Config.EX_LECTURE_MARK)
 		{
 			return;
 		}
 
-		switch (_mark)
+		switch (this._mark)
 		{
 		case INITIAL_MARK:
 		case EVANGELIST_MARK:
 		case OFF_MARK:
 			// TODO [VISTALL]check whether you can include - from the first 6 months of the chara
-			player.setLectureMark(_mark);
+			player.setLectureMark(this._mark);
 			player.broadcastUserInfo(true);
 			break;
 		}

@@ -10,19 +10,19 @@ public class RequestExBR_ProductInfo extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_productId = readD();
+		this._productId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		activeChar.sendPacket(new ExBR_ProductInfo(_productId));
+		activeChar.sendPacket(new ExBR_ProductInfo(this._productId));
 	}
 }

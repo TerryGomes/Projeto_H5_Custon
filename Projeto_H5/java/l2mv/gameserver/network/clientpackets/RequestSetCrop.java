@@ -30,23 +30,23 @@ public class RequestSetCrop extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_manorId = readD();
-		_count = readD();
-		if (_count * 21 > _buf.remaining() || _count > Short.MAX_VALUE || _count < 1)
+		this._manorId = this.readD();
+		this._count = this.readD();
+		if (this._count * 21 > this._buf.remaining() || this._count > Short.MAX_VALUE || this._count < 1)
 		{
-			_count = 0;
+			this._count = 0;
 			return;
 		}
-		_items = new long[_count * 4];
-		for (int i = 0; i < _count; i++)
+		this._items = new long[this._count * 4];
+		for (int i = 0; i < this._count; i++)
 		{
-			_items[i * 4 + 0] = readD();
-			_items[i * 4 + 1] = readQ();
-			_items[i * 4 + 2] = readQ();
-			_items[i * 4 + 3] = readC();
-			if (_items[i * 4 + 0] < 1 || _items[i * 4 + 1] < 0 || _items[i * 4 + 2] < 0)
+			this._items[i * 4 + 0] = this.readD();
+			this._items[i * 4 + 1] = this.readQ();
+			this._items[i * 4 + 2] = this.readQ();
+			this._items[i * 4 + 3] = this.readC();
+			if (this._items[i * 4 + 0] < 1 || this._items[i * 4 + 1] < 0 || this._items[i * 4 + 2] < 0)
 			{
-				_count = 0;
+				this._count = 0;
 				return;
 			}
 		}
@@ -55,8 +55,8 @@ public class RequestSetCrop extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || _count == 0)
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar == null || this._count == 0)
 		{
 			return;
 		}
@@ -67,7 +67,7 @@ public class RequestSetCrop extends L2GameClientPacket
 			return;
 		}
 
-		Castle caslte = ResidenceHolder.getInstance().getResidence(Castle.class, _manorId);
+		Castle caslte = ResidenceHolder.getInstance().getResidence(Castle.class, this._manorId);
 		if (caslte.getOwnerId() != activeChar.getClanId() // clan owns castle
 					|| (activeChar.getClanPrivileges() & Clan.CP_CS_MANOR_ADMIN) != Clan.CP_CS_MANOR_ADMIN) // has manor rights
 		{
@@ -75,13 +75,13 @@ public class RequestSetCrop extends L2GameClientPacket
 			return;
 		}
 
-		List<CropProcure> crops = new ArrayList<CropProcure>(_count);
-		for (int i = 0; i < _count; i++)
+		List<CropProcure> crops = new ArrayList<CropProcure>(this._count);
+		for (int i = 0; i < this._count; i++)
 		{
-			int id = (int) _items[i * 4 + 0];
-			long sales = _items[i * 4 + 1];
-			long price = _items[i * 4 + 2];
-			int type = (int) _items[i * 4 + 3];
+			int id = (int) this._items[i * 4 + 0];
+			long sales = this._items[i * 4 + 1];
+			long price = this._items[i * 4 + 2];
+			int type = (int) this._items[i * 4 + 3];
 			if (id > 0)
 			{
 				CropProcure s = CastleManorManager.getInstance().getNewCropProcure(id, sales, type, price, sales);

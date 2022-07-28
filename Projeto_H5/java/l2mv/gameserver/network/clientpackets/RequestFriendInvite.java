@@ -17,13 +17,13 @@ public class RequestFriendInvite extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS(16);
+		this._name = this.readS(16);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		checkAndAddFriend(getClient().getActiveChar(), _name);
+		checkAndAddFriend(this.getClient().getActiveChar(), this._name);
 	}
 
 	public static void checkAndAddFriend(Player activeChar, String name)

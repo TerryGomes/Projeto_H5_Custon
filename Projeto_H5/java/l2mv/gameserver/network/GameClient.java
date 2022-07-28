@@ -7,10 +7,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.lameguard.session.LameClientV195;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.lameguard.session.LameClientV195;
 
 import l2mv.commons.net.nio.impl.MMOClient;
 import l2mv.commons.net.nio.impl.MMOConnection;
@@ -66,20 +66,20 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 	{
 		super(con);
 
-		_state = GameClientState.CONNECTED;
-		_crypt = new GameCrypt();
+		this._state = GameClientState.CONNECTED;
+		this._crypt = new GameCrypt();
 		if (con != null)
 		{
-			_ip = con.getSocket().getInetAddress().getHostAddress();
+			this._ip = con.getSocket().getInetAddress().getHostAddress();
 		}
 	}
 
 	@Override
 	protected void onDisconnection()
 	{
-		setState(GameClientState.DISCONNECTED);
-		final Player player = getActiveChar();
-		setActiveChar(null);
+		this.setState(GameClientState.DISCONNECTED);
+		final Player player = this.getActiveChar();
+		this.setActiveChar(null);
 
 		if (player != null && player.getNetConnection() != null)
 		{
@@ -87,16 +87,16 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 			player.scheduleDelete();
 		}
 
-		if (getSessionKey() != null)
+		if (this.getSessionKey() != null)
 		{
-			if (isAuthed())
+			if (this.isAuthed())
 			{
-				AuthServerCommunication.getInstance().removeAuthedClient(getLogin());
-				AuthServerCommunication.getInstance().sendPacket(new PlayerLogout(getLogin()));
+				AuthServerCommunication.getInstance().removeAuthedClient(this.getLogin());
+				AuthServerCommunication.getInstance().sendPacket(new PlayerLogout(this.getLogin()));
 			}
 			else
 			{
-				AuthServerCommunication.getInstance().removeWaitingClient(getLogin());
+				AuthServerCommunication.getInstance().removeWaitingClient(this.getLogin());
 			}
 		}
 	}
@@ -110,14 +110,14 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 
 	public void markRestoredChar(int charSlot)
 	{
-		final int objId = getObjectIdForSlot(charSlot);
+		final int objId = this.getObjectIdForSlot(charSlot);
 		if (objId < 0)
 		{
 			return;
 		}
-		if (_activeChar != null && _activeChar.getObjectId() == objId)
+		if (this._activeChar != null && this._activeChar.getObjectId() == objId)
 		{
-			_activeChar.setDeleteTimer(0);
+			this._activeChar.setDeleteTimer(0);
 		}
 		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("UPDATE characters SET deletetime=0 WHERE obj_id=?"))
 		{
@@ -132,15 +132,15 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 
 	public void markToDeleteChar(int charSlot)
 	{
-		int objId = getObjectIdForSlot(charSlot);
+		int objId = this.getObjectIdForSlot(charSlot);
 		if (objId < 0)
 		{
 			return;
 		}
 
-		if ((_activeChar != null) && (_activeChar.getObjectId() == objId))
+		if ((this._activeChar != null) && (this._activeChar.getObjectId() == objId))
 		{
-			_activeChar.setDeleteTimer((int) (System.currentTimeMillis() / 1000));
+			this._activeChar.setDeleteTimer((int) (System.currentTimeMillis() / 1000));
 		}
 
 		try (Connection con = DatabaseFactory.getInstance().getConnection(); PreparedStatement statement = con.prepareStatement("UPDATE characters SET deletetime=? WHERE obj_id=?"))
@@ -158,12 +158,12 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 	public void deleteChar(int charslot)
 	{
 		// have to make sure active character must be nulled
-		if (_activeChar != null)
+		if (this._activeChar != null)
 		{
 			return;
 		}
 
-		int objid = getObjectIdForSlot(charslot);
+		int objid = this.getObjectIdForSlot(charslot);
 		if (objid == -1)
 		{
 			return;
@@ -209,7 +209,7 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 
 		if (character != null)
 		{
-			setActiveChar(character);
+			this.setActiveChar(character);
 		}
 		else
 		{
@@ -221,22 +221,22 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 
 	public int getObjectIdForSlot(int charslot)
 	{
-		if ((charslot < 0) || (charslot >= _charSlotMapping.size()))
+		if ((charslot < 0) || (charslot >= this._charSlotMapping.size()))
 		{
-			_log.warn(getLogin() + " tried to modify Character in slot " + charslot + " but no characters exits at that slot.");
+			_log.warn(this.getLogin() + " tried to modify Character in slot " + charslot + " but no characters exits at that slot.");
 			return -1;
 		}
-		return _charSlotMapping.get(charslot);
+		return this._charSlotMapping.get(charslot);
 	}
 
 	public int getSlotForObjectId(int objectId)
 	{
-		return _charSlotMapping.indexOf(objectId);
+		return this._charSlotMapping.indexOf(objectId);
 	}
 
 	public Player getActiveChar()
 	{
-		return _activeChar;
+		return this._activeChar;
 	}
 
 	/**
@@ -244,26 +244,26 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 	 */
 	public SessionKey getSessionKey()
 	{
-		return _sessionKey;
+		return this._sessionKey;
 	}
 
 	public String getLogin()
 	{
-		return _login;
+		return this._login;
 	}
 
 	public void setLoginName(String loginName)
 	{
-		_login = loginName;
+		this._login = loginName;
 		if (Config.SECOND_AUTH_ENABLED)
 		{
-			_secondaryAuth = new SecondaryPasswordAuth(this);
+			this._secondaryAuth = new SecondaryPasswordAuth(this);
 		}
 	}
 
 	public void setActiveChar(Player player)
 	{
-		_activeChar = player;
+		this._activeChar = player;
 		if (player != null)
 		{
 			player.setNetConnection(this);
@@ -272,23 +272,23 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 
 	public void setSessionId(SessionKey sessionKey)
 	{
-		_sessionKey = sessionKey;
+		this._sessionKey = sessionKey;
 	}
 
 	public void setCharSelection(CharSelectInfoPackage[] chars)
 	{
-		_charSlotMapping.clear();
+		this._charSlotMapping.clear();
 
 		for (CharSelectInfoPackage element : chars)
 		{
 			final int objectId = element.getObjectId();
-			_charSlotMapping.add(objectId);
+			this._charSlotMapping.add(objectId);
 		}
 	}
 
 	public int getRevision()
 	{
-		return revision;
+		return this.revision;
 	}
 
 	public void setRevision(int revision)
@@ -299,7 +299,7 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 	@Override
 	public boolean encrypt(ByteBuffer buf, int size)
 	{
-		_crypt.encrypt(buf.array(), buf.position(), size);
+		this._crypt.encrypt(buf.array(), buf.position(), size);
 		buf.position(buf.position() + size);
 		return true;
 	}
@@ -307,83 +307,83 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 	@Override
 	public boolean decrypt(ByteBuffer buf, int size)
 	{
-		final boolean ret = _crypt.decrypt(buf.array(), buf.position(), size);
+		final boolean ret = this._crypt.decrypt(buf.array(), buf.position(), size);
 		return ret;
 	}
 
 	public void sendPacket(L2GameServerPacket gsp)
 	{
-		if (isConnected())
+		if (this.isConnected())
 		{
-			getConnection().sendPacket(gsp);
+			this.getConnection().sendPacket(gsp);
 		}
 	}
 
 	public void sendPacket(L2GameServerPacket... gsp)
 	{
-		if (isConnected())
+		if (this.isConnected())
 		{
-			getConnection().sendPacket(gsp);
+			this.getConnection().sendPacket(gsp);
 		}
 	}
 
 	public void sendPackets(List<L2GameServerPacket> gsp)
 	{
-		if (isConnected())
+		if (this.isConnected())
 		{
-			getConnection().sendPackets(gsp);
+			this.getConnection().sendPackets(gsp);
 		}
 	}
 
 	public void close(L2GameServerPacket gsp)
 	{
-		if (isConnected())
+		if (this.isConnected())
 		{
-			getConnection().close(gsp);
+			this.getConnection().close(gsp);
 		}
 	}
 
 	public String getIpAddr()
 	{
-		return _ip;
+		return this._ip;
 	}
 
 	public byte[] enableCrypt()
 	{
 		byte[] key = BlowFishKeygen.getRandomKey();
-		_crypt.setKey(key);
+		this._crypt.setKey(key);
 
 		return key;
 	}
 
 	public int getBonus()
 	{
-		return _bonus;
+		return this._bonus;
 	}
 
 	public int getBonusExpire()
 	{
-		return _bonusExpire;
+		return this._bonusExpire;
 	}
 
 	public void setBonus(int bonus)
 	{
-		_bonus = bonus;
+		this._bonus = bonus;
 	}
 
 	public void setBonusExpire(int bonusExpire)
 	{
-		_bonusExpire = bonusExpire;
+		this._bonusExpire = bonusExpire;
 	}
 
 	public GameClientState getState()
 	{
-		return _state;
+		return this._state;
 	}
 
 	public void setState(GameClientState state)
 	{
-		_state = state;
+		this._state = state;
 	}
 
 	private int _failedPackets = 0;
@@ -391,41 +391,41 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 
 	public void onPacketReadFail()
 	{
-		if (_failedPackets++ >= 10)
+		if (this._failedPackets++ >= 10)
 		{
 			_log.warn("Too many client packet fails, connection closed : " + this);
-			closeNow(true);
+			this.closeNow(true);
 		}
 	}
 
 	public void onUnknownPacket()
 	{
-		if (_unknownPackets++ >= 10)
+		if (this._unknownPackets++ >= 10)
 		{
 			_log.warn("Too many client unknown packets, connection closed : " + this);
-			closeNow(true);
+			this.closeNow(true);
 		}
 	}
 
 	@Override
 	public String toString()
 	{
-		return _state + " IP: " + getIpAddr() + (_login == null ? "" : " Account: " + _login) + (_activeChar == null ? "" : " Player : " + _activeChar);
+		return this._state + " IP: " + this.getIpAddr() + (this._login == null ? "" : " Account: " + this._login) + (this._activeChar == null ? "" : " Player : " + this._activeChar);
 	}
 
 	public SecondaryPasswordAuth getSecondaryAuth()
 	{
-		return _secondaryAuth;
+		return this._secondaryAuth;
 	}
 
 	public void setGameGuardOk(boolean gameGuardOk)
 	{
-		_gameGuardOk = gameGuardOk;
+		this._gameGuardOk = gameGuardOk;
 	}
 
 	public boolean isGameGuardOk()
 	{
-		return _gameGuardOk;
+		return this._gameGuardOk;
 	}
 
 	private static byte[] _keyClientEn = new byte[8];
@@ -445,30 +445,30 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 	@Override
 	public void setInstanceCount(int i)
 	{
-		_instanceCount = i;
+		this._instanceCount = i;
 	}
 
 	@Override
 	public int getInstanceCount()
 	{
-		return _instanceCount;
+		return this._instanceCount;
 	}
 
 	@Override
 	public void setPatchVersion(int i)
 	{
-		_systemVer = i;
+		this._systemVer = i;
 	}
 
 	@Override
 	public int getPatchVersion()
 	{
-		return _systemVer;
+		return this._systemVer;
 	}
 
 	public String getFileId()
 	{
-		return _fileId;
+		return this._fileId;
 	}
 
 	private boolean _isProtected;
@@ -476,39 +476,39 @@ public class GameClient extends MMOClient<MMOConnection<GameClient>> implements 
 	@Override
 	public void setProtected(boolean isProtected)
 	{
-		_isProtected = isProtected;
+		this._isProtected = isProtected;
 	}
 
 	@Override
 	public boolean isProtected()
 	{
-		return _isProtected;
+		return this._isProtected;
 	}
 
 	@Override
 	public void setHWID(String hwid)
 	{
-		_HWID = hwid;
+		this._HWID = hwid;
 	}
 
 	@Override
 	public String getHWID()
 	{
-		return _HWID;
+		return this._HWID;
 	}
 
 	public void setFileId(String fileId)
 	{
-		_fileId = fileId;
+		this._fileId = fileId;
 	}
 
 	public int getServerId()
 	{
-		return _serverId;
+		return this._serverId;
 	}
 
 	public void setServerId(int serverId)
 	{
-		_serverId = serverId;
+		this._serverId = serverId;
 	}
 }

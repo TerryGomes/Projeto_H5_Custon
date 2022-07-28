@@ -29,15 +29,15 @@ public class SocialAction extends L2GameServerPacket
 
 	public SocialAction(int playerId, int actionId)
 	{
-		_playerId = playerId;
-		_actionId = actionId;
+		this._playerId = playerId;
+		this._actionId = actionId;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x27);
-		writeD(_playerId);
-		writeD(_actionId);
+		this.writeC(0x27);
+		this.writeD(this._playerId);
+		this.writeD(this._actionId);
 	}
 }

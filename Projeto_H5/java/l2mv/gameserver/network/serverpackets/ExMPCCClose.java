@@ -10,6 +10,6 @@ public class ExMPCCClose extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x13);
+		this.writeEx(0x13);
 	}
 }

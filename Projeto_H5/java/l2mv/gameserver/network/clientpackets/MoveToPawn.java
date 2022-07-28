@@ -15,31 +15,31 @@ public class MoveToPawn extends L2GameServerPacket
 
 	public MoveToPawn(GameObject cha, GameObject target, int distance)
 	{
-		_charObjId = cha.getObjectId();
-		_targetId = target.getObjectId();
-		_distance = distance;
-		_x = cha.getX();
-		_y = cha.getY();
-		_z = cha.getZ();
-		_tx = target.getX();
-		_ty = target.getY();
-		_tz = target.getZ();
+		this._charObjId = cha.getObjectId();
+		this._targetId = target.getObjectId();
+		this._distance = distance;
+		this._x = cha.getX();
+		this._y = cha.getY();
+		this._z = cha.getZ();
+		this._tx = target.getX();
+		this._ty = target.getY();
+		this._tz = target.getZ();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x72);
+		this.writeC(0x72);
 
-		writeD(_charObjId);
-		writeD(_targetId);
-		writeD(_distance);
+		this.writeD(this._charObjId);
+		this.writeD(this._targetId);
+		this.writeD(this._distance);
 
-		writeD(_x);
-		writeD(_y);
-		writeD(_z);
-		writeD(_tx);
-		writeD(_ty);
-		writeD(_tz);
+		this.writeD(this._x);
+		this.writeD(this._y);
+		this.writeD(this._z);
+		this.writeD(this._tx);
+		this.writeD(this._ty);
+		this.writeD(this._tz);
 	}
 }

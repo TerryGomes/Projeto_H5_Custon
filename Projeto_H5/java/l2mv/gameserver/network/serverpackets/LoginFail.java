@@ -18,13 +18,13 @@ public class LoginFail extends L2GameServerPacket
 
 	public LoginFail(int reason)
 	{
-		_reason = reason;
+		this._reason = reason;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x0a);
-		writeD(_reason);
+		this.writeC(0x0a);
+		this.writeD(this._reason);
 	}
 }

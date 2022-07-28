@@ -17,29 +17,29 @@ public class RequestGiveNickName extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_target = readS(Config.CNAME_MAXLEN);
-		_title = readS();
+		this._target = this.readS(Config.CNAME_MAXLEN);
+		this._title = this.readS();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		if (!_title.isEmpty() && !Util.isMatchingRegexp(_title, Config.CLAN_TITLE_TEMPLATE))
+		if (!this._title.isEmpty() && !Util.isMatchingRegexp(this._title, Config.CLAN_TITLE_TEMPLATE))
 		{
 			activeChar.sendMessage("Incorrect title.");
 			return;
 		}
 
 		// Дворяне могут устанавливать/менять себе title
-		if (activeChar.isNoble() && _target.matches(activeChar.getName()))
+		if (activeChar.isNoble() && this._target.matches(activeChar.getName()))
 		{
-			activeChar.setTitle(_title);
+			activeChar.setTitle(this._title);
 			activeChar.sendPacket(SystemMsg.YOUR_TITLE_HAS_BEEN_CHANGED);
 			activeChar.broadcastPacket(new NickNameChanged(activeChar));
 			return;
@@ -56,10 +56,10 @@ public class RequestGiveNickName extends L2GameClientPacket
 			return;
 		}
 
-		UnitMember member = activeChar.getClan().getAnyMember(_target);
+		UnitMember member = activeChar.getClan().getAnyMember(this._target);
 		if (member != null)
 		{
-			member.setTitle(_title);
+			member.setTitle(this._title);
 			if (member.isOnline())
 			{
 				member.getPlayer().sendPacket(SystemMsg.YOUR_TITLE_HAS_BEEN_CHANGED);

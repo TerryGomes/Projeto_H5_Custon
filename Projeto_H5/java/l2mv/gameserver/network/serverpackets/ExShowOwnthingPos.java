@@ -31,7 +31,7 @@ public class ExShowOwnthingPos extends L2GameServerPacket
 				Location loc = wardObject.getWardLocation();
 				if (loc != null)
 				{
-					_wardList.add(new WardInfo(dominionId, loc.x, loc.y, loc.z));
+					this._wardList.add(new WardInfo(dominionId, loc.x, loc.y, loc.z));
 				}
 			}
 		}
@@ -40,14 +40,14 @@ public class ExShowOwnthingPos extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x93);
-		writeD(_wardList.size());
-		for (WardInfo wardInfo : _wardList)
+		this.writeEx(0x93);
+		this.writeD(this._wardList.size());
+		for (WardInfo wardInfo : this._wardList)
 		{
-			writeD(wardInfo.dominionId);
-			writeD(wardInfo._x);
-			writeD(wardInfo._y);
-			writeD(wardInfo._z);
+			this.writeD(wardInfo.dominionId);
+			this.writeD(wardInfo._x);
+			this.writeD(wardInfo._y);
+			this.writeD(wardInfo._z);
 		}
 	}
 
@@ -57,10 +57,10 @@ public class ExShowOwnthingPos extends L2GameServerPacket
 
 		public WardInfo(int territoryId, int x, int y, int z)
 		{
-			dominionId = territoryId;
-			_x = x;
-			_y = y;
-			_z = z;
+			this.dominionId = territoryId;
+			this._x = x;
+			this._y = y;
+			this._z = z;
 		}
 	}
 }

@@ -11,10 +11,10 @@ public class RequestExGetOffAirShip extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_x = readD();
-		_y = readD();
-		_z = readD();
-		_id = readD();
+		this._x = this.readD();
+		this._y = this.readD();
+		this._z = this.readD();
+		this._id = this.readD();
 	}
 
 	@Override

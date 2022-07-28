@@ -17,29 +17,29 @@ public class ExStorageMaxCount extends L2GameServerPacket
 
 	public ExStorageMaxCount(Player player)
 	{
-		_inventory = player.getInventoryLimit();
-		_warehouse = player.getWarehouseLimit();
-		_clan = Config.WAREHOUSE_SLOTS_CLAN;
-		_privateBuy = _privateSell = player.getTradeLimit();
-		_recipeDwarven = player.getDwarvenRecipeLimit();
-		_recipeCommon = player.getCommonRecipeLimit();
-		_inventoryExtraSlots = player.getBeltInventoryIncrease();
-		_questItemsLimit = Config.QUEST_INVENTORY_MAXIMUM;
+		this._inventory = player.getInventoryLimit();
+		this._warehouse = player.getWarehouseLimit();
+		this._clan = Config.WAREHOUSE_SLOTS_CLAN;
+		this._privateBuy = this._privateSell = player.getTradeLimit();
+		this._recipeDwarven = player.getDwarvenRecipeLimit();
+		this._recipeCommon = player.getCommonRecipeLimit();
+		this._inventoryExtraSlots = player.getBeltInventoryIncrease();
+		this._questItemsLimit = Config.QUEST_INVENTORY_MAXIMUM;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x2f);
+		this.writeEx(0x2f);
 
-		writeD(_inventory);
-		writeD(_warehouse);
-		writeD(_clan);
-		writeD(_privateSell);
-		writeD(_privateBuy);
-		writeD(_recipeDwarven);
-		writeD(_recipeCommon);
-		writeD(_inventoryExtraSlots); // belt inventory slots increase count
-		writeD(_questItemsLimit); // quests list by off 100 maximum
+		this.writeD(this._inventory);
+		this.writeD(this._warehouse);
+		this.writeD(this._clan);
+		this.writeD(this._privateSell);
+		this.writeD(this._privateBuy);
+		this.writeD(this._recipeDwarven);
+		this.writeD(this._recipeCommon);
+		this.writeD(this._inventoryExtraSlots); // belt inventory slots increase count
+		this.writeD(this._questItemsLimit); // quests list by off 100 maximum
 	}
 }

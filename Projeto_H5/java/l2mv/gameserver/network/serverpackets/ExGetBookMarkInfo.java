@@ -13,28 +13,28 @@ public class ExGetBookMarkInfo extends L2GameServerPacket
 
 	public ExGetBookMarkInfo(Player player)
 	{
-		bookmarksCapacity = player.bookmarks.getCapacity();
-		bookmarks = player.bookmarks.toArray();
+		this.bookmarksCapacity = player.bookmarks.getCapacity();
+		this.bookmarks = player.bookmarks.toArray();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x84);
+		this.writeEx(0x84);
 
-		writeD(0x00); // должно быть 0
-		writeD(bookmarksCapacity);
-		writeD(bookmarks.length);
+		this.writeD(0x00); // должно быть 0
+		this.writeD(this.bookmarksCapacity);
+		this.writeD(this.bookmarks.length);
 		int slotId = 0;
-		for (BookMark bookmark : bookmarks)
+		for (BookMark bookmark : this.bookmarks)
 		{
-			writeD(++slotId);
-			writeD(bookmark.x);
-			writeD(bookmark.y);
-			writeD(bookmark.z);
-			writeS(bookmark.getName());
-			writeD(bookmark.getIcon());
-			writeS(bookmark.getAcronym());
+			this.writeD(++slotId);
+			this.writeD(bookmark.x);
+			this.writeD(bookmark.y);
+			this.writeD(bookmark.z);
+			this.writeS(bookmark.getName());
+			this.writeD(bookmark.getIcon());
+			this.writeS(bookmark.getAcronym());
 		}
 	}
 }

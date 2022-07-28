@@ -9,15 +9,15 @@ public class SetSummonRemainTime extends L2GameServerPacket
 
 	public SetSummonRemainTime(Summon summon)
 	{
-		_curFed = summon.getCurrentFed();
-		_maxFed = summon.getMaxFed();
+		this._curFed = summon.getCurrentFed();
+		this._maxFed = summon.getMaxFed();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xD1);
-		writeD(_maxFed);
-		writeD(_curFed);
+		this.writeC(0xD1);
+		this.writeD(this._maxFed);
+		this.writeD(this._curFed);
 	}
 }

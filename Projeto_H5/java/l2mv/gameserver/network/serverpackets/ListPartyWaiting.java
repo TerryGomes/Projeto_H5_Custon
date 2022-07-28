@@ -20,18 +20,18 @@ public class ListPartyWaiting extends L2GameServerPacket
 	{
 		int first = (page - 1) * 64;
 		int firstNot = page * 64;
-		_rooms = new ArrayList<MatchingRoom>();
+		this._rooms = new ArrayList<MatchingRoom>();
 
 		int i = 0;
 		List<MatchingRoom> temp = MatchingRoomManager.getInstance().getMatchingRooms(MatchingRoom.PARTY_MATCHING, region, allLevels, activeChar);
-		_fullSize = temp.size();
+		this._fullSize = temp.size();
 		for (MatchingRoom room : temp)
 		{
 			if (i < first || i >= firstNot)
 			{
 				continue;
 			}
-			_rooms.add(room);
+			this._rooms.add(room);
 			i++;
 		}
 	}
@@ -39,26 +39,26 @@ public class ListPartyWaiting extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x9c);
-		writeD(_fullSize);
-		writeD(_rooms.size());
+		this.writeC(0x9c);
+		this.writeD(this._fullSize);
+		this.writeD(this._rooms.size());
 
-		for (MatchingRoom room : _rooms)
+		for (MatchingRoom room : this._rooms)
 		{
-			writeD(room.getId()); // room id
-			writeS(room.getLeader() == null ? "None" : room.getLeader().getName());
-			writeD(room.getLocationId());
-			writeD(room.getMinLevel()); // min level
-			writeD(room.getMaxLevel()); // max level
-			writeD(room.getMaxMembersSize()); // max members coun
-			writeS(room.getTopic()); // room name
+			this.writeD(room.getId()); // room id
+			this.writeS(room.getLeader() == null ? "None" : room.getLeader().getName());
+			this.writeD(room.getLocationId());
+			this.writeD(room.getMinLevel()); // min level
+			this.writeD(room.getMaxLevel()); // max level
+			this.writeD(room.getMaxMembersSize()); // max members coun
+			this.writeS(room.getTopic()); // room name
 
 			Collection<Player> players = room.getPlayers();
-			writeD(players.size()); // members count
+			this.writeD(players.size()); // members count
 			for (Player player : players)
 			{
-				writeD(player.getClassId().getId());
-				writeS(player.getName());
+				this.writeD(player.getClassId().getId());
+				this.writeS(player.getName());
 			}
 		}
 	}

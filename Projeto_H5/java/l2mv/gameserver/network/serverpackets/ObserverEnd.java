@@ -9,15 +9,15 @@ public class ObserverEnd extends L2GameServerPacket
 
 	public ObserverEnd(Location loc)
 	{
-		_loc = loc;
+		this._loc = loc;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xec);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
+		this.writeC(0xec);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
 	}
 }

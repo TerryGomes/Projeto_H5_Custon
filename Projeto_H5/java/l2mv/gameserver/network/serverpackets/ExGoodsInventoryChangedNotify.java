@@ -11,6 +11,6 @@ public class ExGoodsInventoryChangedNotify extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xE2);
+		this.writeEx(0xE2);
 	}
 }

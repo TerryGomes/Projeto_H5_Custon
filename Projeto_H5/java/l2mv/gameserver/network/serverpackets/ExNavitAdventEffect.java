@@ -6,13 +6,13 @@ public class ExNavitAdventEffect extends L2GameServerPacket
 
 	public ExNavitAdventEffect(int time)
 	{
-		_time = time;
+		this._time = time;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0xE0);
-		writeD(_time);
+		this.writeEx(0xE0);
+		this.writeD(this._time);
 	}
 }

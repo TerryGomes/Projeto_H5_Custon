@@ -15,20 +15,20 @@ public class RequestExListMpccWaiting extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_listId = readD();
-		_locationId = readD();
-		_allLevels = readD() == 1;
+		this._listId = this.readD();
+		this._locationId = this.readD();
+		this._allLevels = this.readD() == 1;
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
-		player.sendPacket(new ExListMpccWaiting(player, _listId, _locationId, _allLevels));
+		player.sendPacket(new ExListMpccWaiting(player, this._listId, this._locationId, this._allLevels));
 	}
 }

@@ -10,18 +10,18 @@ public class VehicleInfo extends L2GameServerPacket
 
 	public VehicleInfo(Boat boat)
 	{
-		_boatObjectId = boat.getObjectId();
-		_loc = boat.getLoc();
+		this._boatObjectId = boat.getObjectId();
+		this._loc = boat.getLoc();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x60);
-		writeD(_boatObjectId);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeD(_loc.h);
+		this.writeC(0x60);
+		this.writeD(this._boatObjectId);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
+		this.writeD(this._loc.h);
 	}
 }

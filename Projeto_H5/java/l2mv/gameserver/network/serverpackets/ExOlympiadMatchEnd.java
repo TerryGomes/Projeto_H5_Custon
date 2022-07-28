@@ -7,6 +7,6 @@ public class ExOlympiadMatchEnd extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x2D);
+		this.writeEx(0x2D);
 	}
 }

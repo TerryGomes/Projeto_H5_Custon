@@ -10,21 +10,21 @@ public class ExChangePostState extends L2GameServerPacket
 
 	public ExChangePostState(boolean receivedBoard, int type, Mail... n)
 	{
-		_receivedBoard = receivedBoard;
-		_mails = n;
-		_changeId = type;
+		this._receivedBoard = receivedBoard;
+		this._mails = n;
+		this._changeId = type;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xB3);
-		writeD(_receivedBoard ? 1 : 0);
-		writeD(_mails.length);
-		for (Mail mail : _mails)
+		this.writeEx(0xB3);
+		this.writeD(this._receivedBoard ? 1 : 0);
+		this.writeD(this._mails.length);
+		for (Mail mail : this._mails)
 		{
-			writeD(mail.getMessageId()); // postId
-			writeD(_changeId); // state
+			this.writeD(mail.getMessageId()); // postId
+			this.writeD(this._changeId); // state
 		}
 	}
 }

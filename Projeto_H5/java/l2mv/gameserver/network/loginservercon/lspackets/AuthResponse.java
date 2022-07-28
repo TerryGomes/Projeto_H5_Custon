@@ -18,21 +18,21 @@ public class AuthResponse extends ReceivablePacket
 	@Override
 	protected void readImpl()
 	{
-		_serverId = readC();
-		_serverName = readS();
+		this._serverId = this.readC();
+		this._serverName = this.readS();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		_log.info("Registered on authserver as " + _serverId + " [" + _serverName + "]");
+		_log.info("Registered on authserver as " + this._serverId + " [" + this._serverName + "]");
 
-		sendPacket(new OnlineStatus(true));
+		this.sendPacket(new OnlineStatus(true));
 
 		String[] accounts = AuthServerCommunication.getInstance().getAccounts();
 		for (String account : accounts)
 		{
-			sendPacket(new PlayerInGame(account));
+			this.sendPacket(new PlayerInGame(account));
 		}
 	}
 }

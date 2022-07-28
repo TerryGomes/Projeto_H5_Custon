@@ -34,13 +34,13 @@ public class ExSendManorList extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x22);
+		this.writeEx(0x22);
 		Collection<Castle> residences = ResidenceHolder.getInstance().getResidenceList(Castle.class);
-		writeD(residences.size());
+		this.writeD(residences.size());
 		for (Residence castle : residences)
 		{
-			writeD(castle.getId());
-			writeS(castle.getName().toLowerCase());
+			this.writeD(castle.getId());
+			this.writeS(castle.getName().toLowerCase());
 		}
 	}
 }

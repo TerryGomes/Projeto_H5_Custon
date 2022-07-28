@@ -24,51 +24,51 @@ public class Die extends L2GameServerPacket
 
 	public Die(Creature cha)
 	{
-		_objectId = cha.getObjectId();
-		_fake = !cha.isDead();
+		this._objectId = cha.getObjectId();
+		this._fake = !cha.isDead();
 
 		if (cha.isMonster())
 		{
-			_sweepable = ((MonsterInstance) cha).isSweepActive();
+			this._sweepable = ((MonsterInstance) cha).isSweepActive();
 		}
 		else if (cha.isPlayer() && GmEventManager.getInstance().canResurrect(cha.getPlayer()))
 		{
 			Player player = (Player) cha;
-			put(RestartType.FIXED, player.getPlayerAccess().ResurectFixed || ((player.getInventory().getCountOf(10649) > 0 || player.getInventory().getCountOf(13300) > 0) && !player.isOnSiegeField()));
-			put(RestartType.AGATHION, player.isAgathionResAvailable());
-			put(RestartType.TO_VILLAGE, true);
+			this.put(RestartType.FIXED, player.getPlayerAccess().ResurectFixed || ((player.getInventory().getCountOf(10649) > 0 || player.getInventory().getCountOf(13300) > 0) && !player.isOnSiegeField()));
+			this.put(RestartType.AGATHION, player.isAgathionResAvailable());
+			this.put(RestartType.TO_VILLAGE, true);
 
 			Clan clan = player.getClan();
 			if (clan != null)
 			{
-				put(RestartType.TO_CLANHALL, clan.getHasHideout() > 0);
-				put(RestartType.TO_CASTLE, clan.getCastle() > 0);
-				put(RestartType.TO_FORTRESS, clan.getHasFortress() > 0);
+				this.put(RestartType.TO_CLANHALL, clan.getHasHideout() > 0);
+				this.put(RestartType.TO_CASTLE, clan.getCastle() > 0);
+				this.put(RestartType.TO_FORTRESS, clan.getHasFortress() > 0);
 			}
 
 			for (GlobalEvent e : cha.getEvents())
 			{
-				e.checkRestartLocs(player, _types);
+				e.checkRestartLocs(player, this._types);
 			}
 			// If player is just leaving Fight club. to Giran timer is taking care of him
 			if (!player.isInFightClub() && player.getReflection().getId() == ReflectionManager.FIGHT_CLUB_REFLECTION_ID)
 			{
-				_types.clear();
+				this._types.clear();
 			}
 
 			if (player.isInTournament())
 			{
-				_types.clear();
+				this._types.clear();
 			}
 
 			if (ActiveBattleManager.clearRestartTypes(player))
 			{
-				_types.clear();
+				this._types.clear();
 			}
 
 			if (player.getVar("isPvPevents") != null)
 			{
-				isPvPevents = true;
+				this.isPvPevents = true;
 			}
 		}
 	}
@@ -76,33 +76,33 @@ public class Die extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		if (_fake)
+		if (this._fake)
 		{
 			return;
 		}
 
-		writeC(0x00);
-		writeD(_objectId);
-		writeD(get(RestartType.TO_VILLAGE)); // to nearest village
-		writeD(get(RestartType.TO_CLANHALL)); // to hide away
-		writeD(get(RestartType.TO_CASTLE)); // to castle
-		writeD(get(RestartType.TO_FLAG));// to siege HQ
-		writeD(_sweepable ? 0x01 : 0x00); // sweepable (blue glow)
-		writeD(get(RestartType.FIXED));// FIXED
-		writeD(get(RestartType.TO_FORTRESS));// fortress
-		writeC(0); // show die animation
-		writeD(get(RestartType.AGATHION));// agathion ress button
-		writeD(0x00); // additional free space
+		this.writeC(0x00);
+		this.writeD(this._objectId);
+		this.writeD(this.get(RestartType.TO_VILLAGE)); // to nearest village
+		this.writeD(this.get(RestartType.TO_CLANHALL)); // to hide away
+		this.writeD(this.get(RestartType.TO_CASTLE)); // to castle
+		this.writeD(this.get(RestartType.TO_FLAG));// to siege HQ
+		this.writeD(this._sweepable ? 0x01 : 0x00); // sweepable (blue glow)
+		this.writeD(this.get(RestartType.FIXED));// FIXED
+		this.writeD(this.get(RestartType.TO_FORTRESS));// fortress
+		this.writeC(0); // show die animation
+		this.writeD(this.get(RestartType.AGATHION));// agathion ress button
+		this.writeD(0x00); // additional free space
 	}
 
 	private void put(RestartType t, boolean b)
 	{
-		_types.put(t, b);
+		this._types.put(t, b);
 	}
 
 	private boolean get(RestartType t)
 	{
-		Boolean b = _types.get(t);
+		Boolean b = this._types.get(t);
 		return b != null && b;
 	}
 }

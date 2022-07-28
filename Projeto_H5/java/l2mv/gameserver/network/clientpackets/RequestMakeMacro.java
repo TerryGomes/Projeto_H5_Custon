@@ -33,12 +33,12 @@ public class RequestMakeMacro extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		int _id = readD();
-		String _name = readS(32);
-		String _desc = readS(64);
-		String _acronym = readS(4);
-		int _icon = readC();
-		int _count = readC();
+		int _id = this.readD();
+		String _name = this.readS(32);
+		String _desc = this.readS(64);
+		String _acronym = this.readS(4);
+		int _icon = this.readC();
+		int _count = this.readC();
 		if (_count > 12)
 		{
 			_count = 12;
@@ -46,20 +46,20 @@ public class RequestMakeMacro extends L2GameClientPacket
 		L2MacroCmd[] commands = new L2MacroCmd[_count];
 		for (int i = 0; i < _count; i++)
 		{
-			int entry = readC();
-			int type = readC(); // 1 = skill, 3 = action, 4 = shortcut
-			int d1 = readD(); // skill or page number for shortcuts
-			int d2 = readC();
-			String command = readS().replace(";", "").replace(",", "");
+			int entry = this.readC();
+			int type = this.readC(); // 1 = skill, 3 = action, 4 = shortcut
+			int d1 = this.readD(); // skill or page number for shortcuts
+			int d2 = this.readC();
+			String command = this.readS().replace(";", "").replace(",", "");
 			commands[i] = new L2MacroCmd(entry, type, d1, d2, command);
 		}
-		_macro = new Macro(_id, _icon, _name, _desc, _acronym, commands);
+		this._macro = new Macro(_id, _icon, _name, _desc, _acronym, commands);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -71,18 +71,18 @@ public class RequestMakeMacro extends L2GameClientPacket
 			return;
 		}
 
-		if (_macro.name.length() == 0)
+		if (this._macro.name.length() == 0)
 		{
 			activeChar.sendPacket(SystemMsg.ENTER_THE_NAME_OF_THE_MACRO);
 			return;
 		}
 
-		if (_macro.descr.length() > 32)
+		if (this._macro.descr.length() > 32)
 		{
 			activeChar.sendPacket(SystemMsg.MACRO_DESCRIPTIONS_MAY_CONTAIN_UP_TO_32_CHARACTERS);
 			return;
 		}
 
-		activeChar.registerMacro(_macro);
+		activeChar.registerMacro(this._macro);
 	}
 }

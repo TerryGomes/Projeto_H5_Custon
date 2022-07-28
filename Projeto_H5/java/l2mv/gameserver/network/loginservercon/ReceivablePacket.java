@@ -18,7 +18,7 @@ public abstract class ReceivablePacket extends l2mv.commons.net.nio.ReceivablePa
 	@Override
 	protected ByteBuffer getByteBuffer()
 	{
-		return getClient().getReadBuffer();
+		return this.getClient().getReadBuffer();
 	}
 
 	@Override
@@ -26,7 +26,7 @@ public abstract class ReceivablePacket extends l2mv.commons.net.nio.ReceivablePa
 	{
 		try
 		{
-			readImpl();
+			this.readImpl();
 		}
 		catch (RuntimeException e)
 		{
@@ -40,7 +40,7 @@ public abstract class ReceivablePacket extends l2mv.commons.net.nio.ReceivablePa
 	{
 		try
 		{
-			runImpl();
+			this.runImpl();
 		}
 		catch (RuntimeException e)
 		{
@@ -54,6 +54,6 @@ public abstract class ReceivablePacket extends l2mv.commons.net.nio.ReceivablePa
 
 	protected void sendPacket(SendablePacket sp)
 	{
-		getClient().sendPacket(sp);
+		this.getClient().sendPacket(sp);
 	}
 }

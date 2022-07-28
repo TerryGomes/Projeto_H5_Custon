@@ -22,24 +22,24 @@ public class RequestBBSwrite extends L2GameClientPacket
 	@Override
 	public void readImpl()
 	{
-		_url = readS();
-		_arg1 = readS();
-		_arg2 = readS();
-		_arg3 = readS();
-		_arg4 = readS();
-		_arg5 = readS();
+		this._url = this.readS();
+		this._arg1 = this.readS();
+		this._arg2 = this.readS();
+		this._arg3 = this.readS();
+		this._arg4 = this.readS();
+		this._arg5 = this.readS();
 	}
 
 	@Override
 	public void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		ICommunityBoardHandler handler = CommunityBoardManager.getInstance().getCommunityHandler(_url);
+		ICommunityBoardHandler handler = CommunityBoardManager.getInstance().getCommunityHandler(this._url);
 		if (handler != null)
 		{
 			if (!Config.COMMUNITYBOARD_ENABLED)
@@ -48,7 +48,7 @@ public class RequestBBSwrite extends L2GameClientPacket
 			}
 			else
 			{
-				handler.onWriteCommand(activeChar, _url, _arg1, _arg2, _arg3, _arg4, _arg5);
+				handler.onWriteCommand(activeChar, this._url, this._arg1, this._arg2, this._arg3, this._arg4, this._arg5);
 			}
 		}
 	}

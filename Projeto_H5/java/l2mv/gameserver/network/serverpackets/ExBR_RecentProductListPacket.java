@@ -5,7 +5,7 @@ public class ExBR_RecentProductListPacket extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xDC);
+		this.writeEx(0xDC);
 		// TODO dx[dhddddcccccdd]
 	}
 }

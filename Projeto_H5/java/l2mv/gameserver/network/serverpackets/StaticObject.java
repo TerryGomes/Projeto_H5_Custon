@@ -20,48 +20,48 @@ public class StaticObject extends L2GameServerPacket
 
 	public StaticObject(StaticObjectInstance obj)
 	{
-		_staticObjectId = obj.getUId();
-		_objectId = obj.getObjectId();
-		_type = 0;
-		_isTargetable = 1;
-		_meshIndex = obj.getMeshIndex();
-		_isClosed = 0;
-		_isEnemy = 0;
-		_maxHp = 0;
-		_currentHp = 0;
-		_showHp = 0;
-		_damageGrade = 0;
+		this._staticObjectId = obj.getUId();
+		this._objectId = obj.getObjectId();
+		this._type = 0;
+		this._isTargetable = 1;
+		this._meshIndex = obj.getMeshIndex();
+		this._isClosed = 0;
+		this._isEnemy = 0;
+		this._maxHp = 0;
+		this._currentHp = 0;
+		this._showHp = 0;
+		this._damageGrade = 0;
 	}
 
 	public StaticObject(DoorInstance door, Player player)
 	{
-		_staticObjectId = door.getDoorId();
-		_objectId = door.getObjectId();
-		_type = 1;
-		_isTargetable = door.getTemplate().isTargetable() ? 1 : 0;
-		_meshIndex = 1;
-		_isClosed = door.isOpen() ? 0 : 1; // opened 0 /closed 1
-		_isEnemy = door.isAutoAttackable(player) ? 1 : 0;
-		_currentHp = (int) door.getCurrentHp();
-		_maxHp = door.getMaxHp();
-		_showHp = door.isHPVisible() ? 1 : 0; // TODO [G1ta0] статус двери для осаждающих
-		_damageGrade = door.getDamage();
+		this._staticObjectId = door.getDoorId();
+		this._objectId = door.getObjectId();
+		this._type = 1;
+		this._isTargetable = door.getTemplate().isTargetable() ? 1 : 0;
+		this._meshIndex = 1;
+		this._isClosed = door.isOpen() ? 0 : 1; // opened 0 /closed 1
+		this._isEnemy = door.isAutoAttackable(player) ? 1 : 0;
+		this._currentHp = (int) door.getCurrentHp();
+		this._maxHp = door.getMaxHp();
+		this._showHp = door.isHPVisible() ? 1 : 0; // TODO [G1ta0] статус двери для осаждающих
+		this._damageGrade = door.getDamage();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x9f);
-		writeD(_staticObjectId);
-		writeD(_objectId);
-		writeD(_type);
-		writeD(_isTargetable);
-		writeD(_meshIndex);
-		writeD(_isClosed);
-		writeD(_isEnemy);
-		writeD(_currentHp);
-		writeD(_maxHp);
-		writeD(_showHp);
-		writeD(_damageGrade);
+		this.writeC(0x9f);
+		this.writeD(this._staticObjectId);
+		this.writeD(this._objectId);
+		this.writeD(this._type);
+		this.writeD(this._isTargetable);
+		this.writeD(this._meshIndex);
+		this.writeD(this._isClosed);
+		this.writeD(this._isEnemy);
+		this.writeD(this._currentHp);
+		this.writeD(this._maxHp);
+		this.writeD(this._showHp);
+		this.writeD(this._damageGrade);
 	}
 }

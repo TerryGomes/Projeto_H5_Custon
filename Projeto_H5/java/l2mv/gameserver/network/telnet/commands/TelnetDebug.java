@@ -25,7 +25,7 @@ public class TelnetDebug implements TelnetCommandHolder
 
 	public TelnetDebug()
 	{
-		_commands.add(new TelnetCommand("dumpnpc", "dnpc")
+		this._commands.add(new TelnetCommand("dumpnpc", "dnpc")
 		{
 			@Override
 			public String getUsage()
@@ -134,7 +134,7 @@ public class TelnetDebug implements TelnetCommandHolder
 
 		});
 
-		_commands.add(new TelnetCommand("asrestart")
+		this._commands.add(new TelnetCommand("asrestart")
 		{
 			@Override
 			public String getUsage()
@@ -156,6 +156,6 @@ public class TelnetDebug implements TelnetCommandHolder
 	@Override
 	public Set<TelnetCommand> getCommands()
 	{
-		return _commands;
+		return this._commands;
 	}
 }

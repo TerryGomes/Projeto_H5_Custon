@@ -8,14 +8,14 @@ public class ExUISetting extends L2GameServerPacket
 
 	public ExUISetting(Player player)
 	{
-		data = player.getKeyBindings();
+		this.data = player.getKeyBindings();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x70);
-		writeD(data.length);
-		writeB(data);
+		this.writeEx(0x70);
+		this.writeD(this.data.length);
+		this.writeB(this.data);
 	}
 }

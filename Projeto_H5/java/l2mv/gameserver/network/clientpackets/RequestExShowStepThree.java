@@ -13,13 +13,13 @@ public class RequestExShowStepThree extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_subId = readC();
+		this._subId = this.readC();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null || !Config.EX_NEW_PETITION_SYSTEM)
 		{
 			return;
@@ -31,7 +31,7 @@ public class RequestExShowStepThree extends L2GameClientPacket
 			return;
 		}
 
-		PetitionSubGroup subGroup = group.getSubGroup(_subId);
+		PetitionSubGroup subGroup = group.getSubGroup(this._subId);
 		if (subGroup == null)
 		{
 			return;

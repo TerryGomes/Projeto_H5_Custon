@@ -16,19 +16,19 @@ public class ExResponseShowStepOne extends L2GameServerPacket
 
 	public ExResponseShowStepOne(Player player)
 	{
-		_language = player.getLanguage();
+		this._language = player.getLanguage();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xAE);
+		this.writeEx(0xAE);
 		Collection<PetitionMainGroup> petitionGroups = PetitionGroupHolder.getInstance().getPetitionGroups();
-		writeD(petitionGroups.size());
+		this.writeD(petitionGroups.size());
 		for (PetitionMainGroup group : petitionGroups)
 		{
-			writeC(group.getId());
-			writeS(group.getName(_language));
+			this.writeC(group.getId());
+			this.writeS(group.getName(this._language));
 		}
 	}
 }

@@ -19,13 +19,13 @@ public class RequestExTryToPutEnchantTargetItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
+		this._objectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
@@ -39,7 +39,7 @@ public class RequestExTryToPutEnchantTargetItem extends L2GameClientPacket
 		}
 
 		PcInventory inventory = player.getInventory();
-		ItemInstance itemToEnchant = inventory.getItemByObjectId(_objectId);
+		ItemInstance itemToEnchant = inventory.getItemByObjectId(this._objectId);
 		ItemInstance scroll = player.getEnchantScroll();
 
 		if (itemToEnchant == null || scroll == null)

@@ -11,6 +11,6 @@ public class ExDominionWarEnd extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeEx(0xA4);
+		this.writeEx(0xA4);
 	}
 }

@@ -12,55 +12,55 @@ public class ExAirShipInfo extends L2GameServerPacket
 
 	public ExAirShipInfo(AirShip ship)
 	{
-		_objId = ship.getObjectId();
-		_loc = ship.getLoc();
-		_speed1 = ship.getRunSpeed();
-		_speed2 = ship.getRotationSpeed();
+		this._objId = ship.getObjectId();
+		this._loc = ship.getLoc();
+		this._speed1 = ship.getRunSpeed();
+		this._speed2 = ship.getRotationSpeed();
 		if (ship.isClanAirShip())
 		{
-			_fuel = ((ClanAirShip) ship).getCurrentFuel();
-			_maxFuel = ((ClanAirShip) ship).getMaxFuel();
+			this._fuel = ((ClanAirShip) ship).getCurrentFuel();
+			this._maxFuel = ((ClanAirShip) ship).getMaxFuel();
 			Player driver = ((ClanAirShip) ship).getDriver();
-			_driverObjId = driver == null ? 0 : driver.getObjectId();
-			_controlKey = ((ClanAirShip) ship).getControlKey().getObjectId();
+			this._driverObjId = driver == null ? 0 : driver.getObjectId();
+			this._controlKey = ((ClanAirShip) ship).getControlKey().getObjectId();
 		}
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x60);
+		this.writeEx(0x60);
 
-		writeD(_objId);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeD(_loc.h);
-		writeD(_driverObjId); // object id of player who control ship
-		writeD(_speed1);
-		writeD(_speed2);
-		writeD(_controlKey);
+		this.writeD(this._objId);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
+		this.writeD(this._loc.h);
+		this.writeD(this._driverObjId); // object id of player who control ship
+		this.writeD(this._speed1);
+		this.writeD(this._speed2);
+		this.writeD(this._controlKey);
 
-		if (_controlKey != 0)
+		if (this._controlKey != 0)
 		{
-			writeD(0x16e); // Controller X
-			writeD(0x00); // Controller Y
-			writeD(0x6b); // Controller Z
-			writeD(0x15c); // Captain X
-			writeD(0x00); // Captain Y
-			writeD(0x69); // Captain Z
+			this.writeD(0x16e); // Controller X
+			this.writeD(0x00); // Controller Y
+			this.writeD(0x6b); // Controller Z
+			this.writeD(0x15c); // Captain X
+			this.writeD(0x00); // Captain Y
+			this.writeD(0x69); // Captain Z
 		}
 		else
 		{
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
-			writeD(0x00);
+			this.writeD(0x00);
+			this.writeD(0x00);
+			this.writeD(0x00);
+			this.writeD(0x00);
+			this.writeD(0x00);
+			this.writeD(0x00);
 		}
 
-		writeD(_fuel); // current fuel
-		writeD(_maxFuel); // max fuel
+		this.writeD(this._fuel); // current fuel
+		this.writeD(this._maxFuel); // max fuel
 	}
 }

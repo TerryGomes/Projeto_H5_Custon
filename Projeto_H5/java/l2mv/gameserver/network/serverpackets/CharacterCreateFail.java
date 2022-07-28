@@ -10,13 +10,13 @@ public class CharacterCreateFail extends L2GameServerPacket
 
 	private CharacterCreateFail(int errorCode)
 	{
-		_error = errorCode;
+		this._error = errorCode;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x10);
-		writeD(_error);
+		this.writeC(0x10);
+		this.writeD(this._error);
 	}
 }

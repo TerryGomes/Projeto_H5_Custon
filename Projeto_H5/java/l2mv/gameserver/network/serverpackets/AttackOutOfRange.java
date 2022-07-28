@@ -6,6 +6,6 @@ public class AttackOutOfRange extends L2GameServerPacket
 	protected void writeImpl()
 	{
 		// just trigger - без аргументов
-		writeC(0x02);
+		this.writeC(0x02);
 	}
 }

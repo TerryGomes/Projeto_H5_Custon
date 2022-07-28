@@ -23,10 +23,10 @@ public class PrivateStoreManageListBuy extends L2GameServerPacket
 	 */
 	public PrivateStoreManageListBuy(Player buyer)
 	{
-		_buyerId = buyer.getObjectId();
-		_adena = buyer.getAdena();
-		_buyList0 = buyer.getBuyList();
-		_buyList = new ArrayList<TradeItem>();
+		this._buyerId = buyer.getObjectId();
+		this._adena = buyer.getAdena();
+		this._buyList0 = buyer.getBuyList();
+		this._buyList = new ArrayList<TradeItem>();
 
 		ItemInstance[] items = buyer.getInventory().getItems();
 		ArrayUtils.eqSort(items, ItemClassComparator.getInstance());
@@ -35,7 +35,7 @@ public class PrivateStoreManageListBuy extends L2GameServerPacket
 		{
 			if (item.canBeTraded(buyer) && item.getItemId() != ItemTemplate.ITEM_ID_ADENA)
 			{
-				_buyList.add(bi = new TradeItem(item));
+				this._buyList.add(bi = new TradeItem(item));
 				bi.setObjectId(0);
 			}
 		}
@@ -44,27 +44,27 @@ public class PrivateStoreManageListBuy extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xBD);
+		this.writeC(0xBD);
 		// section 1
-		writeD(_buyerId);
-		writeQ(_adena);
+		this.writeD(this._buyerId);
+		this.writeQ(this._adena);
 
 		// section2
-		writeD(_buyList.size());// for potential sells
-		for (TradeItem bi : _buyList)
+		this.writeD(this._buyList.size());// for potential sells
+		for (TradeItem bi : this._buyList)
 		{
-			writeItemInfo(bi);
-			writeQ(bi.getStorePrice());
+			this.writeItemInfo(bi);
+			this.writeQ(bi.getStorePrice());
 		}
 
 		// section 3
-		writeD(_buyList0.size());// count for any items already added for sell
-		for (TradeItem bi : _buyList0)
+		this.writeD(this._buyList0.size());// count for any items already added for sell
+		for (TradeItem bi : this._buyList0)
 		{
-			writeItemInfo(bi);
-			writeQ(bi.getOwnersPrice());
-			writeQ(bi.getStorePrice());
-			writeQ(bi.getCount());
+			this.writeItemInfo(bi);
+			this.writeQ(bi.getOwnersPrice());
+			this.writeQ(bi.getStorePrice());
+			this.writeQ(bi.getCount());
 		}
 	}
 }

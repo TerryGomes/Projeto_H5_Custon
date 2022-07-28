@@ -15,20 +15,20 @@ public class ExDominionWarStart extends L2GameServerPacket
 
 	public ExDominionWarStart(Player player)
 	{
-		_objectId = player.getObjectId();
+		this._objectId = player.getObjectId();
 		DominionSiegeEvent siegeEvent = player.getEvent(DominionSiegeEvent.class);
-		_territoryId = siegeEvent.getId();
-		_isDisguised = siegeEvent.getObjects(DominionSiegeEvent.DISGUISE_PLAYERS).contains(_objectId);
+		this._territoryId = siegeEvent.getId();
+		this._isDisguised = siegeEvent.getObjects(DominionSiegeEvent.DISGUISE_PLAYERS).contains(this._objectId);
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xA3);
-		writeD(_objectId);
-		writeD(1);
-		writeD(_territoryId); // territory Id
-		writeD(_isDisguised ? 1 : 0);
-		writeD(_isDisguised ? _territoryId : 0); // territory Id
+		this.writeEx(0xA3);
+		this.writeD(this._objectId);
+		this.writeD(1);
+		this.writeD(this._territoryId); // territory Id
+		this.writeD(this._isDisguised ? 1 : 0);
+		this.writeD(this._isDisguised ? this._territoryId : 0); // territory Id
 	}
 }

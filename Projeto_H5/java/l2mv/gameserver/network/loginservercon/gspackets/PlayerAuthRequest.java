@@ -13,21 +13,21 @@ public class PlayerAuthRequest extends SendablePacket
 
 	public PlayerAuthRequest(GameClient client)
 	{
-		account = client.getLogin();
-		playOkID1 = client.getSessionKey().playOkID1;
-		playOkID2 = client.getSessionKey().playOkID2;
-		loginOkID1 = client.getSessionKey().loginOkID1;
-		loginOkID2 = client.getSessionKey().loginOkID2;
+		this.account = client.getLogin();
+		this.playOkID1 = client.getSessionKey().playOkID1;
+		this.playOkID2 = client.getSessionKey().playOkID2;
+		this.loginOkID1 = client.getSessionKey().loginOkID1;
+		this.loginOkID2 = client.getSessionKey().loginOkID2;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0x02);
-		writeS(account);
-		writeD(playOkID1);
-		writeD(playOkID2);
-		writeD(loginOkID1);
-		writeD(loginOkID2);
+		this.writeC(0x02);
+		this.writeS(this.account);
+		this.writeD(this.playOkID1);
+		this.writeD(this.playOkID2);
+		this.writeD(this.loginOkID1);
+		this.writeD(this.loginOkID2);
 	}
 }

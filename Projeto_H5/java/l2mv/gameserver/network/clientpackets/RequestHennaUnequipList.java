@@ -13,13 +13,13 @@ public class RequestHennaUnequipList extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_symbolId = readD(); // ?
+		this._symbolId = this.readD(); // ?
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;

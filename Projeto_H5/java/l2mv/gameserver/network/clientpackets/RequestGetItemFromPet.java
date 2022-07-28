@@ -22,16 +22,16 @@ public class RequestGetItemFromPet extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
-		_amount = readQ();
-		_unknown = readD(); // = 0 for most trades
+		this._objectId = this.readD();
+		this._amount = this.readQ();
+		this._unknown = this.readD(); // = 0 for most trades
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
-		if (activeChar == null || _amount < 1)
+		Player activeChar = this.getClient().getActiveChar();
+		if (activeChar == null || this._amount < 1)
 		{
 			return;
 		}
@@ -70,15 +70,15 @@ public class RequestGetItemFromPet extends L2GameClientPacket
 		PetInventory petInventory = pet.getInventory();
 		PcInventory playerInventory = activeChar.getInventory();
 
-		ItemInstance item = petInventory.getItemByObjectId(_objectId);
-		if (item == null || item.getCount() < _amount || item.isEquipped())
+		ItemInstance item = petInventory.getItemByObjectId(this._objectId);
+		if (item == null || item.getCount() < this._amount || item.isEquipped())
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
 		int slots = 0;
-		long weight = item.getTemplate().getWeight() * _amount;
+		long weight = item.getTemplate().getWeight() * this._amount;
 		if (!item.getTemplate().isStackable() || activeChar.getInventory().getItemByItemId(item.getItemId()) == null)
 		{
 			slots = 1;
@@ -96,7 +96,7 @@ public class RequestGetItemFromPet extends L2GameClientPacket
 			return;
 		}
 
-		playerInventory.addItem(petInventory.removeItemByObjectId(_objectId, _amount, "Pet " + activeChar.toString(), "GetItemFromPet"), "GiveItemToPet");
+		playerInventory.addItem(petInventory.removeItemByObjectId(this._objectId, this._amount, "Pet " + activeChar.toString(), "GetItemFromPet"), "GiveItemToPet");
 
 		pet.sendChanges();
 		activeChar.sendChanges();

@@ -23,22 +23,22 @@ public class RequestGMCommand extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_targetName = readS();
-		_command = readD();
+		this._targetName = this.readS();
+		this._command = this.readD();
 		// readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
-		Player target = World.getPlayer(_targetName);
+		Player player = this.getClient().getActiveChar();
+		Player target = World.getPlayer(this._targetName);
 		if (player == null || target == null || !player.getPlayerAccess().CanViewChar)
 		{
 			return;
 		}
 
-		switch (_command)
+		switch (this._command)
 		{
 		case 1:
 			player.sendPacket(new GMViewCharacterInfo(target));

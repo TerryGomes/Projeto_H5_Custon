@@ -25,58 +25,58 @@ public class SSQStatus extends L2GameServerPacket
 
 	public SSQStatus(Player player, int recordPage)
 	{
-		_player = player;
-		_page = recordPage;
-		period = SevenSigns.getInstance().getCurrentPeriod();
+		this._player = player;
+		this._page = recordPage;
+		this.period = SevenSigns.getInstance().getCurrentPeriod();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xfb);
+		this.writeC(0xfb);
 
-		writeC(_page);
-		writeC(period); // current period?
+		this.writeC(this._page);
+		this.writeC(this.period); // current period?
 
-		switch (_page)
+		switch (this._page)
 		{
 		case 1:
 			// [ddd cc dd ddd c ddd c] // ddd cc QQ QQQ c QQQ c
-			writeD(SevenSigns.getInstance().getCurrentCycle());
+			this.writeD(SevenSigns.getInstance().getCurrentCycle());
 
-			switch (period)
+			switch (this.period)
 			{
 			case SevenSigns.PERIOD_COMP_RECRUITING:
-				writeD(1183);
+				this.writeD(1183);
 				break;
 			case SevenSigns.PERIOD_COMPETITION:
-				writeD(1176);
+				this.writeD(1176);
 				break;
 			case SevenSigns.PERIOD_COMP_RESULTS:
-				writeD(1184);
+				this.writeD(1184);
 				break;
 			case SevenSigns.PERIOD_SEAL_VALIDATION:
-				writeD(1177);
+				this.writeD(1177);
 				break;
 			}
 
-			switch (period)
+			switch (this.period)
 			{
 			case SevenSigns.PERIOD_COMP_RECRUITING:
 			case SevenSigns.PERIOD_COMP_RESULTS:
-				writeD(1287);
+				this.writeD(1287);
 				break;
 			case SevenSigns.PERIOD_COMPETITION:
 			case SevenSigns.PERIOD_SEAL_VALIDATION:
-				writeD(1286);
+				this.writeD(1286);
 				break;
 			}
 
-			writeC(SevenSigns.getInstance().getPlayerCabal(_player));
-			writeC(SevenSigns.getInstance().getPlayerSeal(_player));
+			this.writeC(SevenSigns.getInstance().getPlayerCabal(this._player));
+			this.writeC(SevenSigns.getInstance().getPlayerSeal(this._player));
 
-			writeQ(SevenSigns.getInstance().getPlayerStoneContrib(_player));
-			writeQ(SevenSigns.getInstance().getPlayerAdenaCollect(_player));
+			this.writeQ(SevenSigns.getInstance().getPlayerStoneContrib(this._player));
+			this.writeQ(SevenSigns.getInstance().getPlayerAdenaCollect(this._player));
 
 			long dawnStoneScore = SevenSigns.getInstance().getCurrentStoneScore(SevenSigns.CABAL_DAWN);
 			long dawnFestivalScore = SevenSigns.getInstance().getCurrentFestivalScore(SevenSigns.CABAL_DAWN);
@@ -103,76 +103,76 @@ public class SSQStatus extends L2GameServerPacket
 			long duskPercent = Math.round(duskTotalScore * 110. / totalOverallScore);
 
 			/* DUSK */
-			writeQ(duskStoneScoreProp); // Seal Stone Score
-			writeQ(duskFestivalScore); // Festival Score
-			writeQ(duskTotalScore); // Total Score
+			this.writeQ(duskStoneScoreProp); // Seal Stone Score
+			this.writeQ(duskFestivalScore); // Festival Score
+			this.writeQ(duskTotalScore); // Total Score
 
-			writeC((int) duskPercent); // Dusk %
+			this.writeC((int) duskPercent); // Dusk %
 
 			/* DAWN */
-			writeQ(dawnStoneScoreProp); // Seal Stone Score
-			writeQ(dawnFestivalScore); // Festival Score
-			writeQ(dawnTotalScore); // Total Score
+			this.writeQ(dawnStoneScoreProp); // Seal Stone Score
+			this.writeQ(dawnFestivalScore); // Festival Score
+			this.writeQ(dawnTotalScore); // Total Score
 
-			writeC((int) dawnPercent); // Dawn %
+			this.writeC((int) dawnPercent); // Dawn %
 			break;
 		case 2:
 			// c cc ccc [cdQc(S) Qc]
-			writeH(/* SevenSigns.getInstance().isSealValidationPeriod() ? 0 : */1);
-			writeC(5); // Total number of festivals
+			this.writeH(/* SevenSigns.getInstance().isSealValidationPeriod() ? 0 : */1);
+			this.writeC(5); // Total number of festivals
 
 			for (int i = 0; i < 5; i++)
 			{
-				writeC(i + 1); // Current client-side festival ID
-				writeD(SevenSignsFestival.FESTIVAL_LEVEL_SCORES[i]);
+				this.writeC(i + 1); // Current client-side festival ID
+				this.writeD(SevenSignsFestival.FESTIVAL_LEVEL_SCORES[i]);
 
 				long duskScore = SevenSignsFestival.getInstance().getHighestScore(SevenSigns.CABAL_DUSK, i);
 				long dawnScore = SevenSignsFestival.getInstance().getHighestScore(SevenSigns.CABAL_DAWN, i);
 
 				// Dusk Score \\
-				writeQ(duskScore);
+				this.writeQ(duskScore);
 
 				StatsSet highScoreData = SevenSignsFestival.getInstance().getHighestScoreData(SevenSigns.CABAL_DUSK, i);
 
 				if (duskScore > 0)
 				{
 					String[] partyMembers = highScoreData.getString("names").split(",");
-					writeC(partyMembers.length);
+					this.writeC(partyMembers.length);
 					for (String partyMember : partyMembers)
 					{
-						writeS(partyMember);
+						this.writeS(partyMember);
 					}
 				}
 				else
 				{
-					writeC(0);
+					this.writeC(0);
 				}
 
 				// Dawn Score \\
-				writeQ(dawnScore);
+				this.writeQ(dawnScore);
 
 				highScoreData = SevenSignsFestival.getInstance().getHighestScoreData(SevenSigns.CABAL_DAWN, i);
 
 				if (dawnScore > 0)
 				{
 					String[] partyMembers = highScoreData.getString("names").split(",");
-					writeC(partyMembers.length);
+					this.writeC(partyMembers.length);
 					for (String partyMember : partyMembers)
 					{
-						writeS(partyMember);
+						this.writeS(partyMember);
 					}
 				}
 				else
 				{
-					writeC(0);
+					this.writeC(0);
 				}
 			}
 			break;
 		case 3:
 			// ccc [cccc]
-			writeC(10); // Minimum limit for winning cabal to retain their seal
-			writeC(35); // Minimum limit for winning cabal to claim a seal
-			writeC(3); // Total number of seals
+			this.writeC(10); // Minimum limit for winning cabal to retain their seal
+			this.writeC(35); // Minimum limit for winning cabal to claim a seal
+			this.writeC(3); // Total number of seals
 
 			int totalDawnProportion = 1;
 			int totalDuskProportion = 1;
@@ -192,25 +192,25 @@ public class SSQStatus extends L2GameServerPacket
 				int dawnProportion = SevenSigns.getInstance().getSealProportion(i, SevenSigns.CABAL_DAWN);
 				int duskProportion = SevenSigns.getInstance().getSealProportion(i, SevenSigns.CABAL_DUSK);
 
-				writeC(i);
-				writeC(SevenSigns.getInstance().getSealOwner(i));
-				writeC(duskProportion * 100 / totalDuskProportion);
-				writeC(dawnProportion * 100 / totalDawnProportion);
+				this.writeC(i);
+				this.writeC(SevenSigns.getInstance().getSealOwner(i));
+				this.writeC(duskProportion * 100 / totalDuskProportion);
+				this.writeC(dawnProportion * 100 / totalDawnProportion);
 			}
 			break;
 		case 4:
 			// c cc [cc (ccD)] CT 2.3 update
 
 			int winningCabal = SevenSigns.getInstance().getCabalHighestScore();
-			writeC(winningCabal); // Overall predicted winner
-			writeC(3); // Total number of seals
+			this.writeC(winningCabal); // Overall predicted winner
+			this.writeC(3); // Total number of seals
 
 			int dawnTotalPlayers = SevenSigns.getInstance().getTotalMembers(SevenSigns.CABAL_DAWN);
 			int duskTotalPlayers = SevenSigns.getInstance().getTotalMembers(SevenSigns.CABAL_DUSK);
 
 			for (int i = 1; i < 4; i++)
 			{
-				writeC(i);
+				this.writeC(i);
 
 				int dawnSealPlayers = SevenSigns.getInstance().getSealProportion(i, SevenSigns.CABAL_DAWN);
 				int duskSealPlayers = SevenSigns.getInstance().getSealProportion(i, SevenSigns.CABAL_DUSK);
@@ -220,54 +220,54 @@ public class SSQStatus extends L2GameServerPacket
 
 				if (Math.max(dawnProp, duskProp) < 10) // печать будет потеряна если занята
 				{
-					writeC(SevenSigns.CABAL_NULL);
+					this.writeC(SevenSigns.CABAL_NULL);
 					if (curSealOwner == SevenSigns.CABAL_NULL)
 					{ // печать останется свободной
-						writeD(SystemMessage.SINCE_THE_SEAL_WAS_NOT_OWNED_DURING_THE_PREVIOUS_PERIOD_AND_SINCE_LESS_THAN_35_PERCENT_OF_PEOPLE_HAVE_VOTED);
+						this.writeD(SystemMessage.SINCE_THE_SEAL_WAS_NOT_OWNED_DURING_THE_PREVIOUS_PERIOD_AND_SINCE_LESS_THAN_35_PERCENT_OF_PEOPLE_HAVE_VOTED);
 					}
 					else
 					{ // печать останется свободной
 						// печать будет освобождена
-						writeD(SystemMessage.ALTHOUGH_THE_SEAL_WAS_OWNED_DURING_THE_PREVIOUS_PERIOD_BECAUSE_LESS_THAN_10_PERCENT_OF_PEOPLE_HAVE_VOTED);
+						this.writeD(SystemMessage.ALTHOUGH_THE_SEAL_WAS_OWNED_DURING_THE_PREVIOUS_PERIOD_BECAUSE_LESS_THAN_10_PERCENT_OF_PEOPLE_HAVE_VOTED);
 					}
 				}
 				else if (Math.max(dawnProp, duskProp) < 35) // печать будет сохранена если занята
 				{
-					writeC(curSealOwner);
+					this.writeC(curSealOwner);
 					if (curSealOwner == SevenSigns.CABAL_NULL)
 					{ // печать останется свободной
-						writeD(SystemMessage.SINCE_THE_SEAL_WAS_NOT_OWNED_DURING_THE_PREVIOUS_PERIOD_AND_SINCE_LESS_THAN_35_PERCENT_OF_PEOPLE_HAVE_VOTED);
+						this.writeD(SystemMessage.SINCE_THE_SEAL_WAS_NOT_OWNED_DURING_THE_PREVIOUS_PERIOD_AND_SINCE_LESS_THAN_35_PERCENT_OF_PEOPLE_HAVE_VOTED);
 					}
 					else
 					{ // печать останется свободной
 						// печать будет сохранена
-						writeD(SystemMessage.SINCE_THE_SEAL_WAS_OWNED_DURING_THE_PREVIOUS_PERIOD_AND_10_PERCENT_OR_MORE_PEOPLE_HAVE_VOTED);
+						this.writeD(SystemMessage.SINCE_THE_SEAL_WAS_OWNED_DURING_THE_PREVIOUS_PERIOD_AND_10_PERCENT_OR_MORE_PEOPLE_HAVE_VOTED);
 					}
 				}
 				else if (dawnProp == duskProp) // ничья, печать не получит никто
 				{
-					writeC(SevenSigns.CABAL_NULL);
-					writeD(SystemMessage.IF_CURRENT_TRENDS_CONTINUE_IT_WILL_END_IN_A_TIE);
+					this.writeC(SevenSigns.CABAL_NULL);
+					this.writeD(SystemMessage.IF_CURRENT_TRENDS_CONTINUE_IT_WILL_END_IN_A_TIE);
 				}
 				else
 				// у кого-то есть перевес
 				{
 					int sealWinning = dawnProp > duskProp ? SevenSigns.CABAL_DAWN : SevenSigns.CABAL_DUSK;
-					writeC(sealWinning);
+					this.writeC(sealWinning);
 					if (sealWinning == curSealOwner)
 					{ // состояние не изменится
-						writeD(SystemMessage.SINCE_THE_SEAL_WAS_OWNED_DURING_THE_PREVIOUS_PERIOD_AND_10_PERCENT_OR_MORE_PEOPLE_HAVE_VOTED);
+						this.writeD(SystemMessage.SINCE_THE_SEAL_WAS_OWNED_DURING_THE_PREVIOUS_PERIOD_AND_10_PERCENT_OR_MORE_PEOPLE_HAVE_VOTED);
 					}
 					else
 					{ // состояние не изменится
 						// состояние изменится
-						writeD(SystemMessage.ALTHOUGH_THE_SEAL_WAS_NOT_OWNED_SINCE_35_PERCENT_OR_MORE_PEOPLE_HAVE_VOTED);
+						this.writeD(SystemMessage.ALTHOUGH_THE_SEAL_WAS_NOT_OWNED_SINCE_35_PERCENT_OR_MORE_PEOPLE_HAVE_VOTED);
 					}
 				}
 			}
 
 			break;
 		}
-		_player = null;
+		this._player = null;
 	}
 }

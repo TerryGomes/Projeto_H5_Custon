@@ -11,21 +11,21 @@ public class VehicleDeparture extends L2GameServerPacket
 
 	public VehicleDeparture(Boat boat)
 	{
-		_boatObjId = boat.getObjectId();
-		_moveSpeed = boat.getMoveSpeed();
-		_rotationSpeed = boat.getRotationSpeed();
-		_loc = boat.getDestination();
+		this._boatObjId = boat.getObjectId();
+		this._moveSpeed = boat.getMoveSpeed();
+		this._rotationSpeed = boat.getRotationSpeed();
+		this._loc = boat.getDestination();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x6c);
-		writeD(_boatObjId);
-		writeD(_moveSpeed);
-		writeD(_rotationSpeed);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
+		this.writeC(0x6c);
+		this.writeD(this._boatObjId);
+		this.writeD(this._moveSpeed);
+		this.writeD(this._rotationSpeed);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
 	}
 }

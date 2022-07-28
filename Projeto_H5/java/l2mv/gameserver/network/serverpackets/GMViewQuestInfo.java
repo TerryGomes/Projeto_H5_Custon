@@ -10,32 +10,32 @@ public class GMViewQuestInfo extends L2GameServerPacket
 
 	public GMViewQuestInfo(Player cha)
 	{
-		_cha = cha;
+		this._cha = cha;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x99);
-		writeS(_cha.getName());
+		this.writeC(0x99);
+		this.writeS(this._cha.getName());
 
-		Quest[] quests = _cha.getAllActiveQuests();
+		Quest[] quests = this._cha.getAllActiveQuests();
 
 		if (quests.length == 0)
 		{
-			writeH(0);
-			writeH(0);
+			this.writeH(0);
+			this.writeH(0);
 			return;
 		}
 
-		writeH(quests.length);
+		this.writeH(quests.length);
 		for (Quest q : quests)
 		{
-			writeD(q.getQuestIntId());
-			QuestState qs = _cha.getQuestState(q.getName());
-			writeD(qs == null ? 0 : qs.getInt("cond"));
+			this.writeD(q.getQuestIntId());
+			QuestState qs = this._cha.getQuestState(q.getName());
+			this.writeD(qs == null ? 0 : qs.getInt("cond"));
 		}
 
-		writeH(0); // количество элементов типа: ddQd , как-то связано с предметами
+		this.writeH(0); // количество элементов типа: ddQd , как-то связано с предметами
 	}
 }

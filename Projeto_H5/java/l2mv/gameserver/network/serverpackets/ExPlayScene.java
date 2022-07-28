@@ -9,7 +9,7 @@ public class ExPlayScene extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x5c);
-		writeD(0x00); // Kamael
+		this.writeEx(0x5c);
+		this.writeD(0x00); // Kamael
 	}
 }

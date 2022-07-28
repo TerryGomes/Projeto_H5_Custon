@@ -10,22 +10,22 @@ public class ExStopMoveInAirShip extends L2GameServerPacket
 
 	public ExStopMoveInAirShip(Player cha)
 	{
-		char_id = cha.getObjectId();
-		boat_id = cha.getBoat().getObjectId();
-		_loc = cha.getInBoatPosition();
-		char_heading = cha.getHeading();
+		this.char_id = cha.getObjectId();
+		this.boat_id = cha.getBoat().getObjectId();
+		this._loc = cha.getInBoatPosition();
+		this.char_heading = cha.getHeading();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x6E);
+		this.writeEx(0x6E);
 
-		writeD(char_id);
-		writeD(boat_id);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeD(char_heading);
+		this.writeD(this.char_id);
+		this.writeD(this.boat_id);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
+		this.writeD(this.char_heading);
 	}
 }

@@ -9,18 +9,18 @@ public class PetItemList extends L2GameServerPacket
 
 	public PetItemList(PetInstance cha)
 	{
-		items = cha.getInventory().getItems();
+		this.items = cha.getInventory().getItems();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xb3);
-		writeH(items.length);
+		this.writeC(0xb3);
+		this.writeH(this.items.length);
 
-		for (ItemInstance item : items)
+		for (ItemInstance item : this.items)
 		{
-			writeItemInfo(item);
+			this.writeItemInfo(item);
 		}
 	}
 }

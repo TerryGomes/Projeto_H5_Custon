@@ -14,14 +14,14 @@ public class ExNoticePostArrived extends L2GameServerPacket
 
 	public ExNoticePostArrived(int useAnim)
 	{
-		_anim = useAnim;
+		this._anim = useAnim;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xA9);
+		this.writeEx(0xA9);
 
-		writeD(_anim); // 0 - просто показать уведомление, 1 - с красивой анимацией
+		this.writeD(this._anim); // 0 - просто показать уведомление, 1 - с красивой анимацией
 	}
 }

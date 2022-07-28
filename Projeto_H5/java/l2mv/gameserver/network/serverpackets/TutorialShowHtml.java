@@ -31,25 +31,25 @@ public class TutorialShowHtml extends L2GameServerPacket
 
 	public TutorialShowHtml(String html)
 	{
-		_html = html;
+		this._html = html;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;
 		}
 
 		// Player name replace
-		_html = playername.matcher(_html).replaceAll(player.getName());
+		this._html = playername.matcher(this._html).replaceAll(player.getName());
 
 		// Player class name replace
-		_html = playerClassName.matcher(_html).replaceAll(player.getClassId().getName());
+		this._html = playerClassName.matcher(this._html).replaceAll(player.getClassId().getName());
 
-		writeC(0xa6);
-		writeS(_html);
+		this.writeC(0xa6);
+		this.writeS(this._html);
 	}
 }

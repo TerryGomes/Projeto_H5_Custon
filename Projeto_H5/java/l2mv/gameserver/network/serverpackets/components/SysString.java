@@ -19,12 +19,12 @@ public enum SysString
 
 	SysString(int i)
 	{
-		_id = i;
+		this._id = i;
 	}
 
 	public int getId()
 	{
-		return _id;
+		return this._id;
 	}
 
 	public static SysString valueOf2(String id)

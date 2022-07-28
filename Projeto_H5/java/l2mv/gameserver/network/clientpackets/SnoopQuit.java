@@ -13,18 +13,18 @@ public class SnoopQuit extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_snoopID = readD();
+		this._snoopID = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player player = (Player) GameObjectsStorage.findObject(_snoopID);
+		Player player = (Player) GameObjectsStorage.findObject(this._snoopID);
 		if (player == null)
 		{
 			return;
 		}
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;

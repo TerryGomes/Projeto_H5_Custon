@@ -7,15 +7,15 @@ public class StartAllianceWar extends L2GameServerPacket
 
 	public StartAllianceWar(String alliance, String charName)
 	{
-		_allianceName = alliance;
-		_char = charName;
+		this._allianceName = alliance;
+		this._char = charName;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xc2);
-		writeS(_char);
-		writeS(_allianceName);
+		this.writeC(0xc2);
+		this.writeS(this._char);
+		this.writeS(this._allianceName);
 	}
 }

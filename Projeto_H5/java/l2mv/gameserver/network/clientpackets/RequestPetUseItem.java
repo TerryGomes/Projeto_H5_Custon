@@ -19,13 +19,13 @@ public class RequestPetUseItem extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_objectId = readD();
+		this._objectId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -51,7 +51,7 @@ public class RequestPetUseItem extends L2GameClientPacket
 			return;
 		}
 
-		ItemInstance item = pet.getInventory().getItemByObjectId(_objectId);
+		ItemInstance item = pet.getInventory().getItemByObjectId(this._objectId);
 
 		if (item == null || item.getCount() < 1)
 		{

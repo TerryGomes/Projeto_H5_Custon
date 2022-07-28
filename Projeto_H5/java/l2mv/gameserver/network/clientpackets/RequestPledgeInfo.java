@@ -12,23 +12,23 @@ public class RequestPledgeInfo extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_clanId = readD();
+		this._clanId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
-		if (_clanId < 10000000)
+		if (this._clanId < 10000000)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
-		Clan clan = ClanTable.getInstance().getClan(_clanId);
+		Clan clan = ClanTable.getInstance().getClan(this._clanId);
 		if (clan == null)
 		{
 			// Util.handleIllegalPlayerAction(activeChar, "RequestPledgeInfo[40]", "Clan data for clanId " + _clanId + " is missing", 1);

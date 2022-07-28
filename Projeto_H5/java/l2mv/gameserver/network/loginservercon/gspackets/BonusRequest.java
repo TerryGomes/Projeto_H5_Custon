@@ -18,9 +18,9 @@ public class BonusRequest extends SendablePacket
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0x10);
-		writeS(account);
-		writeF(bonus);
-		writeD(bonusExpire);
+		this.writeC(0x10);
+		this.writeS(this.account);
+		this.writeF(this.bonus);
+		this.writeD(this.bonusExpire);
 	}
 }

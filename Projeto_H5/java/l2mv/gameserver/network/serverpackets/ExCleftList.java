@@ -13,9 +13,9 @@ public class ExCleftList extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x94);
-		writeD(CleftType);
-		switch (CleftType)
+		this.writeEx(0x94);
+		this.writeD(this.CleftType);
+		switch (this.CleftType)
 		{
 		case CleftType_Total:
 			// dd (MinMemberCount:%d bBalancedMatch:%d)

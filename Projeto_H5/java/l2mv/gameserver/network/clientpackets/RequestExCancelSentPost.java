@@ -25,13 +25,13 @@ public class RequestExCancelSentPost extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		postId = readD();
+		this.postId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -79,7 +79,7 @@ public class RequestExCancelSentPost extends L2GameClientPacket
 			return;
 		}
 
-		Mail mail = MailDAO.getInstance().getSentMailByMailId(activeChar.getObjectId(), postId);
+		Mail mail = MailDAO.getInstance().getSentMailByMailId(activeChar.getObjectId(), this.postId);
 		if (mail != null)
 		{
 			if (mail.getAttachments().isEmpty())

@@ -9,15 +9,15 @@ public class Ex2ndPasswordAck extends L2GameServerPacket
 
 	public Ex2ndPasswordAck(int response)
 	{
-		_response = response;
+		this._response = response;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xE7);
-		writeC(0x00);
-		writeD(_response == WRONG_PATTERN ? 0x01 : 0x00);
-		writeD(0x00);
+		this.writeEx(0xE7);
+		this.writeC(0x00);
+		this.writeD(this._response == WRONG_PATTERN ? 0x01 : 0x00);
+		this.writeD(0x00);
 	}
 }

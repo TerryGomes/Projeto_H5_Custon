@@ -7,16 +7,16 @@ public class ExAutoSoulShot extends L2GameServerPacket
 
 	public ExAutoSoulShot(int itemId, boolean type)
 	{
-		_itemId = itemId;
-		_type = type;
+		this._itemId = itemId;
+		this._type = type;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x0c);
+		this.writeEx(0x0c);
 
-		writeD(_itemId);
-		writeD(_type ? 1 : 0);
+		this.writeD(this._itemId);
+		this.writeD(this._type ? 1 : 0);
 	}
 }

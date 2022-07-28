@@ -16,8 +16,8 @@ public class PetitionVote extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_type = readD();
-		_unk1 = readD();
-		_petitionText = readS(4096);
+		this._type = this.readD();
+		this._unk1 = this.readD();
+		this._petitionText = this.readS(4096);
 	}
 }

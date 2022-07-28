@@ -14,24 +14,24 @@ public class GMViewSkillInfo extends L2GameServerPacket
 
 	public GMViewSkillInfo(Player cha)
 	{
-		_charName = cha.getName();
-		_skills = cha.getAllSkills();
-		_targetChar = cha;
+		this._charName = cha.getName();
+		this._skills = cha.getAllSkills();
+		this._targetChar = cha;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x97);
-		writeS(_charName);
-		writeD(_skills.size());
-		for (Skill skill : _skills)
+		this.writeC(0x97);
+		this.writeS(this._charName);
+		this.writeD(this._skills.size());
+		for (Skill skill : this._skills)
 		{
-			writeD(skill.isPassive() ? 1 : 0);
-			writeD(skill.getDisplayLevel());
-			writeD(skill.getId());
-			writeC(_targetChar.isUnActiveSkill(skill.getId()) ? 0x01 : 0x00);
-			writeC(SkillTable.getInstance().getMaxLevel(skill.getId()) > 100 ? 1 : 0);
+			this.writeD(skill.isPassive() ? 1 : 0);
+			this.writeD(skill.getDisplayLevel());
+			this.writeD(skill.getId());
+			this.writeC(this._targetChar.isUnActiveSkill(skill.getId()) ? 0x01 : 0x00);
+			this.writeC(SkillTable.getInstance().getMaxLevel(skill.getId()) > 100 ? 1 : 0);
 		}
 	}
 }

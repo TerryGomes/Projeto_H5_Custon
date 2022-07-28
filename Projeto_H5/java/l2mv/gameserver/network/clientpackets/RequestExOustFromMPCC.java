@@ -15,19 +15,19 @@ public class RequestExOustFromMPCC extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_name = readS(16);
+		this._name = this.readS(16);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null || !activeChar.isInParty() || !activeChar.getParty().isInCommandChannel())
 		{
 			return;
 		}
 
-		Player target = World.getPlayer(_name);
+		Player target = World.getPlayer(this._name);
 
 		// Чар с таким имененм не найден в мире
 		if (target == null)

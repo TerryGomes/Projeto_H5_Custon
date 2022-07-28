@@ -13,14 +13,14 @@ public class RequestRecipeShopMakeInfo extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_manufacturerId = readD();
-		_recipeId = readD();
+		this._manufacturerId = this.readD();
+		this._recipeId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -32,7 +32,7 @@ public class RequestRecipeShopMakeInfo extends L2GameClientPacket
 			return;
 		}
 
-		Player manufacturer = (Player) activeChar.getVisibleObject(_manufacturerId);
+		Player manufacturer = (Player) activeChar.getVisibleObject(this._manufacturerId);
 		if (manufacturer == null || manufacturer.getPrivateStoreType() != Player.STORE_PRIVATE_MANUFACTURE || !manufacturer.isInRangeZ(activeChar, Creature.INTERACTION_DISTANCE))
 		{
 			activeChar.sendActionFailed();
@@ -42,7 +42,7 @@ public class RequestRecipeShopMakeInfo extends L2GameClientPacket
 		long price = -1;
 		for (ManufactureItem i : manufacturer.getCreateList())
 		{
-			if (i.getRecipeId() == _recipeId)
+			if (i.getRecipeId() == this._recipeId)
 			{
 				price = i.getCost();
 				break;
@@ -55,6 +55,6 @@ public class RequestRecipeShopMakeInfo extends L2GameClientPacket
 			return;
 		}
 
-		activeChar.sendPacket(new RecipeShopItemInfo(activeChar, manufacturer, _recipeId, price, 0xFFFFFFFF));
+		activeChar.sendPacket(new RecipeShopItemInfo(activeChar, manufacturer, this._recipeId, price, 0xFFFFFFFF));
 	}
 }

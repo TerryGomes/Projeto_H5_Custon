@@ -8,20 +8,20 @@ public class PledgeShowMemberListAdd extends L2GameServerPacket
 
 	public PledgeShowMemberListAdd(UnitMember member)
 	{
-		_member = new PledgePacketMember(member);
+		this._member = new PledgePacketMember(member);
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x5c);
-		writeS(_member._name);
-		writeD(_member._level);
-		writeD(_member._classId);
-		writeD(_member._sex);
-		writeD(_member._race);
-		writeD(_member._online);
-		writeD(_member._pledgeType);
+		this.writeC(0x5c);
+		this.writeS(this._member._name);
+		this.writeD(this._member._level);
+		this.writeD(this._member._classId);
+		this.writeD(this._member._sex);
+		this.writeD(this._member._race);
+		this.writeD(this._member._online);
+		this.writeD(this._member._pledgeType);
 	}
 
 	private class PledgePacketMember
@@ -36,13 +36,13 @@ public class PledgeShowMemberListAdd extends L2GameServerPacket
 
 		public PledgePacketMember(UnitMember m)
 		{
-			_name = m.getName();
-			_level = m.getLevel();
-			_classId = m.getClassId();
-			_sex = m.getSex();
-			_race = 0; // TODO m.getRace()
-			_online = m.isOnline() ? m.getObjectId() : 0;
-			_pledgeType = m.getPledgeType();
+			this._name = m.getName();
+			this._level = m.getLevel();
+			this._classId = m.getClassId();
+			this._sex = m.getSex();
+			this._race = 0; // TODO m.getRace()
+			this._online = m.isOnline() ? m.getObjectId() : 0;
+			this._pledgeType = m.getPledgeType();
 		}
 	}
 }

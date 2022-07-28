@@ -22,19 +22,19 @@ public class RequestExRequestReceivedPost extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		postId = readD(); // id письма
+		this.postId = this.readD(); // id письма
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		Mail mail = MailDAO.getInstance().getReceivedMailByMailId(activeChar.getObjectId(), postId);
+		Mail mail = MailDAO.getInstance().getReceivedMailByMailId(activeChar.getObjectId(), this.postId);
 		if (mail != null)
 		{
 			if (mail.isUnread())

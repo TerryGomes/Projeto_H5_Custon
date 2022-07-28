@@ -16,23 +16,23 @@ public class PrivateStoreMsgSell extends L2GameServerPacket
 	 */
 	public PrivateStoreMsgSell(Player player)
 	{
-		_objId = player.getObjectId();
-		_pkg = player.getPrivateStoreType() == Player.STORE_PRIVATE_SELL_PACKAGE;
-		_name = StringUtils.defaultString(player.getSellStoreName());
+		this._objId = player.getObjectId();
+		this._pkg = player.getPrivateStoreType() == Player.STORE_PRIVATE_SELL_PACKAGE;
+		this._name = StringUtils.defaultString(player.getSellStoreName());
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		if (_pkg)
+		if (this._pkg)
 		{
-			writeEx(0x80);
+			this.writeEx(0x80);
 		}
 		else
 		{
-			writeC(0xA2);
+			this.writeC(0xA2);
 		}
-		writeD(_objId);
-		writeS(_name);
+		this.writeD(this._objId);
+		this.writeS(this._name);
 	}
 }

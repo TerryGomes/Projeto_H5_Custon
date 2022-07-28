@@ -27,13 +27,13 @@ public class TradeDone extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_response = readD();
+		this._response = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player parthner1 = getClient().getActiveChar();
+		Player parthner1 = this.getClient().getActiveChar();
 		if (parthner1 == null)
 		{
 			return;
@@ -71,7 +71,7 @@ public class TradeDone extends L2GameClientPacket
 			return;
 		}
 
-		if (_response == 0)
+		if (this._response == 0)
 		{
 			request.cancel();
 			parthner1.sendPacket(SendTradeDone.FAIL);

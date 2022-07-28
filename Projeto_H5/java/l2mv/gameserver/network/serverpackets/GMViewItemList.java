@@ -12,26 +12,26 @@ public class GMViewItemList extends L2GameServerPacket
 
 	public GMViewItemList(Player cha, ItemInstance[] items, int size)
 	{
-		_size = size;
-		_items = items;
-		_name = cha.getName();
-		_limit = cha.getInventoryLimit();
+		this._size = size;
+		this._items = items;
+		this._name = cha.getName();
+		this._limit = cha.getInventoryLimit();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x9a);
-		writeS(_name);
-		writeD(_limit); // c4?
-		writeH(1); // show window ??
+		this.writeC(0x9a);
+		this.writeS(this._name);
+		this.writeD(this._limit); // c4?
+		this.writeH(1); // show window ??
 
-		writeH(_size);
-		for (ItemInstance temp : _items)
+		this.writeH(this._size);
+		for (ItemInstance temp : this._items)
 		{
 			if (!temp.getTemplate().isQuest())
 			{
-				writeItemInfo(temp);
+				this.writeItemInfo(temp);
 			}
 		}
 	}

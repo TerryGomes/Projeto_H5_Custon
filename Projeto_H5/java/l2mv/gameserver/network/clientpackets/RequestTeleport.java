@@ -7,18 +7,18 @@ public class RequestTeleport extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		unk = readD();
-		_type = readD();
-		if (_type == 2)
+		this.unk = this.readD();
+		this._type = this.readD();
+		if (this._type == 2)
 		{
-			unk2 = readD();
-			unk3 = readD();
+			this.unk2 = this.readD();
+			this.unk3 = this.readD();
 		}
-		else if (_type == 3)
+		else if (this._type == 3)
 		{
-			unk2 = readD();
-			unk3 = readD();
-			unk4 = readD();
+			this.unk2 = this.readD();
+			this.unk3 = this.readD();
+			this.unk4 = this.readD();
 		}
 	}
 

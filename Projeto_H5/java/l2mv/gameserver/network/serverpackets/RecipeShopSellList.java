@@ -13,27 +13,27 @@ public class RecipeShopSellList extends L2GameServerPacket
 
 	public RecipeShopSellList(Player buyer, Player manufacturer)
 	{
-		objId = manufacturer.getObjectId();
-		curMp = (int) manufacturer.getCurrentMp();
-		maxMp = manufacturer.getMaxMp();
-		adena = buyer.getAdena();
-		createList = manufacturer.getCreateList();
+		this.objId = manufacturer.getObjectId();
+		this.curMp = (int) manufacturer.getCurrentMp();
+		this.maxMp = manufacturer.getMaxMp();
+		this.adena = buyer.getAdena();
+		this.createList = manufacturer.getCreateList();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xdf);
-		writeD(objId);
-		writeD(curMp);// Creator's MP
-		writeD(maxMp);// Creator's MP
-		writeQ(adena);
-		writeD(createList.size());
-		for (ManufactureItem mi : createList)
+		this.writeC(0xdf);
+		this.writeD(this.objId);
+		this.writeD(this.curMp);// Creator's MP
+		this.writeD(this.maxMp);// Creator's MP
+		this.writeQ(this.adena);
+		this.writeD(this.createList.size());
+		for (ManufactureItem mi : this.createList)
 		{
-			writeD(mi.getRecipeId());
-			writeD(0x00); // unknown
-			writeQ(mi.getCost());
+			this.writeD(mi.getRecipeId());
+			this.writeD(0x00); // unknown
+			this.writeQ(mi.getCost());
 		}
 	}
 }

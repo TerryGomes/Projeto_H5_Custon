@@ -15,19 +15,19 @@ public class StartRotatingC extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_degree = readD();
-		_side = readD();
+		this._degree = this.readD();
+		this._side = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
-		activeChar.setHeading(_degree);
-		activeChar.broadcastPacket(new StartRotating(activeChar, _degree, _side, 0));
+		activeChar.setHeading(this._degree);
+		activeChar.broadcastPacket(new StartRotating(activeChar, this._degree, this._side, 0));
 	}
 }

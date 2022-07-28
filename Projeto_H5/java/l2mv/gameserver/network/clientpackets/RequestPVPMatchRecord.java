@@ -16,7 +16,7 @@ public class RequestPVPMatchRecord extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		final Player player = getClient().getActiveChar();
+		final Player player = this.getClient().getActiveChar();
 		if (player == null)
 		{
 			return;

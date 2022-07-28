@@ -20,13 +20,13 @@ public class RequestGetBossRecord extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_bossID = readD(); // always 0?
+		this._bossID = this.readD(); // always 0?
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		int totalPoints = 0;
 		int ranking = 0;
 

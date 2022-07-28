@@ -13,21 +13,21 @@ public class NetPing extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		playerId = readD();
-		ping = readD();
-		mtu = readD();
+		this.playerId = this.readD();
+		this.ping = this.readD();
+		this.mtu = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		activeChar.setPing(ping);
+		activeChar.setPing(this.ping);
 	}
 
 	@Override

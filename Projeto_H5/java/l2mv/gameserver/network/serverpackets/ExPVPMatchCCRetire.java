@@ -7,6 +7,6 @@ public class ExPVPMatchCCRetire extends L2GameServerPacket
 	@Override
 	public void writeImpl()
 	{
-		writeEx(0x8B);
+		this.writeEx(0x8B);
 	}
 }

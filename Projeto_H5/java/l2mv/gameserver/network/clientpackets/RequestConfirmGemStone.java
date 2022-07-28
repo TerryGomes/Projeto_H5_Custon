@@ -22,24 +22,24 @@ public class RequestConfirmGemStone extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_targetItemObjId = readD();
-		_refinerItemObjId = readD();
-		_gemstoneItemObjId = readD();
-		_gemstoneCount = readQ();
+		this._targetItemObjId = this.readD();
+		this._refinerItemObjId = this.readD();
+		this._gemstoneItemObjId = this.readD();
+		this._gemstoneCount = this.readQ();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		if (_gemstoneCount <= 0)
+		if (this._gemstoneCount <= 0)
 		{
 			return;
 		}
 
-		Player activeChar = getClient().getActiveChar();
-		ItemInstance targetItem = activeChar.getInventory().getItemByObjectId(_targetItemObjId);
-		ItemInstance refinerItem = activeChar.getInventory().getItemByObjectId(_refinerItemObjId);
-		ItemInstance gemstoneItem = activeChar.getInventory().getItemByObjectId(_gemstoneItemObjId);
+		Player activeChar = this.getClient().getActiveChar();
+		ItemInstance targetItem = activeChar.getInventory().getItemByObjectId(this._targetItemObjId);
+		ItemInstance refinerItem = activeChar.getInventory().getItemByObjectId(this._refinerItemObjId);
+		ItemInstance gemstoneItem = activeChar.getInventory().getItemByObjectId(this._gemstoneItemObjId);
 
 //		if (!activeChar.checkLastAugmentNpc())
 //		{
@@ -74,42 +74,42 @@ public class RequestConfirmGemStone extends L2GameClientPacket
 			switch (itemGrade)
 			{
 			case C:
-				if (_gemstoneCount != 200 || gemstoneItemId != GEMSTONE_D)
+				if (this._gemstoneCount != 200 || gemstoneItemId != GEMSTONE_D)
 				{
 					activeChar.sendPacket(SystemMsg.GEMSTONE_QUANTITY_IS_INCORRECT);
 					return;
 				}
 				break;
 			case B:
-				if (_gemstoneCount != 300 || gemstoneItemId != GEMSTONE_D)
+				if (this._gemstoneCount != 300 || gemstoneItemId != GEMSTONE_D)
 				{
 					activeChar.sendPacket(SystemMsg.GEMSTONE_QUANTITY_IS_INCORRECT);
 					return;
 				}
 				break;
 			case A:
-				if (_gemstoneCount != 200 || gemstoneItemId != GEMSTONE_C)
+				if (this._gemstoneCount != 200 || gemstoneItemId != GEMSTONE_C)
 				{
 					activeChar.sendPacket(SystemMsg.GEMSTONE_QUANTITY_IS_INCORRECT);
 					return;
 				}
 				break;
 			case S:
-				if (_gemstoneCount != 250 || gemstoneItemId != GEMSTONE_C)
+				if (this._gemstoneCount != 250 || gemstoneItemId != GEMSTONE_C)
 				{
 					activeChar.sendPacket(SystemMsg.GEMSTONE_QUANTITY_IS_INCORRECT);
 					return;
 				}
 				break;
 			case S80:
-				if (_gemstoneCount != 250 || gemstoneItemId != GEMSTONE_B)
+				if (this._gemstoneCount != 250 || gemstoneItemId != GEMSTONE_B)
 				{
 					activeChar.sendPacket(SystemMsg.GEMSTONE_QUANTITY_IS_INCORRECT);
 					return;
 				}
 				break;
 			case S84:
-				if (_gemstoneCount != 250 || gemstoneItemId != GEMSTONE_B)
+				if (this._gemstoneCount != 250 || gemstoneItemId != GEMSTONE_B)
 				{
 					activeChar.sendPacket(SystemMsg.GEMSTONE_QUANTITY_IS_INCORRECT);
 					return;
@@ -122,28 +122,28 @@ public class RequestConfirmGemStone extends L2GameClientPacket
 			switch (itemGrade)
 			{
 			case C:
-				if (_gemstoneCount != 20 || gemstoneItemId != GEMSTONE_D)
+				if (this._gemstoneCount != 20 || gemstoneItemId != GEMSTONE_D)
 				{
 					activeChar.sendPacket(SystemMsg.GEMSTONE_QUANTITY_IS_INCORRECT);
 					return;
 				}
 				break;
 			case B:
-				if (_gemstoneCount != 30 || gemstoneItemId != GEMSTONE_D)
+				if (this._gemstoneCount != 30 || gemstoneItemId != GEMSTONE_D)
 				{
 					activeChar.sendPacket(SystemMsg.GEMSTONE_QUANTITY_IS_INCORRECT);
 					return;
 				}
 				break;
 			case A:
-				if (_gemstoneCount != 20 || gemstoneItemId != GEMSTONE_C)
+				if (this._gemstoneCount != 20 || gemstoneItemId != GEMSTONE_C)
 				{
 					activeChar.sendPacket(SystemMsg.GEMSTONE_QUANTITY_IS_INCORRECT);
 					return;
 				}
 				break;
 			case S:
-				if (_gemstoneCount != 25 || gemstoneItemId != GEMSTONE_C)
+				if (this._gemstoneCount != 25 || gemstoneItemId != GEMSTONE_C)
 				{
 					activeChar.sendPacket(SystemMsg.GEMSTONE_QUANTITY_IS_INCORRECT);
 					return;
@@ -151,20 +151,20 @@ public class RequestConfirmGemStone extends L2GameClientPacket
 				break;
 			case S80:
 				// Icarus
-				if (targetItem.getTemplate().getCrystalCount() == 10394 && (_gemstoneCount != 36 || gemstoneItemId != GEMSTONE_B))
+				if (targetItem.getTemplate().getCrystalCount() == 10394 && (this._gemstoneCount != 36 || gemstoneItemId != GEMSTONE_B))
 				{
 					activeChar.sendPacket(SystemMsg.GEMSTONE_QUANTITY_IS_INCORRECT);
 					return;
 				}
 				// Dynasty
-				else if (_gemstoneCount != 28 || gemstoneItemId != GEMSTONE_B)
+				else if (this._gemstoneCount != 28 || gemstoneItemId != GEMSTONE_B)
 				{
 					activeChar.sendPacket(SystemMsg.GEMSTONE_QUANTITY_IS_INCORRECT);
 					return;
 				}
 				break;
 			case S84:
-				if (_gemstoneCount != 36 || gemstoneItemId != GEMSTONE_B)
+				if (this._gemstoneCount != 36 || gemstoneItemId != GEMSTONE_B)
 				{
 					activeChar.sendPacket(SystemMsg.GEMSTONE_QUANTITY_IS_INCORRECT);
 					return;
@@ -173,6 +173,6 @@ public class RequestConfirmGemStone extends L2GameClientPacket
 			}
 		}
 
-		activeChar.sendPacket(new ExPutCommissionResultForVariationMake(_gemstoneItemObjId, _gemstoneCount), SystemMsg.PRESS_THE_AUGMENT_BUTTON_TO_BEGIN);
+		activeChar.sendPacket(new ExPutCommissionResultForVariationMake(this._gemstoneItemObjId, this._gemstoneCount), SystemMsg.PRESS_THE_AUGMENT_BUTTON_TO_BEGIN);
 	}
 }

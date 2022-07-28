@@ -12,17 +12,17 @@ public class ShowTownMap extends L2GameServerPacket
 
 	public ShowTownMap(String texture, int x, int y)
 	{
-		_texture = texture;
-		_x = x;
-		_y = y;
+		this._texture = texture;
+		this._x = x;
+		this._y = y;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xea);
-		writeS(_texture);
-		writeD(_x);
-		writeD(_y);
+		this.writeC(0xea);
+		this.writeS(this._texture);
+		this.writeD(this._x);
+		this.writeD(this._y);
 	}
 }

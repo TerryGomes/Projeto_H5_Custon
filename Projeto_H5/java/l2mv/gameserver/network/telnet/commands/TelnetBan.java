@@ -13,7 +13,7 @@ public class TelnetBan implements TelnetCommandHolder
 
 	public TelnetBan()
 	{
-		_commands.add(new TelnetCommand("kick")
+		this._commands.add(new TelnetCommand("kick")
 		{
 			@Override
 			public String getUsage()
@@ -44,6 +44,6 @@ public class TelnetBan implements TelnetCommandHolder
 	@Override
 	public Set<TelnetCommand> getCommands()
 	{
-		return _commands;
+		return this._commands;
 	}
 }

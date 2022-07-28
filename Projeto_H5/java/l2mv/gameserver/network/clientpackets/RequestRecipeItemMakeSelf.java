@@ -27,13 +27,13 @@ public class RequestRecipeItemMakeSelf extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_recipeId = readD();
+		this._recipeId = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -51,7 +51,7 @@ public class RequestRecipeItemMakeSelf extends L2GameClientPacket
 			return;
 		}
 
-		Recipe recipeList = RecipeHolder.getInstance().getRecipeByRecipeId(_recipeId);
+		Recipe recipeList = RecipeHolder.getInstance().getRecipeByRecipeId(this._recipeId);
 
 		if (recipeList == null || recipeList.getRecipes().length == 0)
 		{
@@ -65,7 +65,7 @@ public class RequestRecipeItemMakeSelf extends L2GameClientPacket
 			return;
 		}
 
-		if (!activeChar.findRecipe(_recipeId))
+		if (!activeChar.findRecipe(this._recipeId))
 		{
 			activeChar.sendPacket(SystemMsg.PLEASE_REGISTER_A_RECIPE, ActionFail.STATIC);
 			return;

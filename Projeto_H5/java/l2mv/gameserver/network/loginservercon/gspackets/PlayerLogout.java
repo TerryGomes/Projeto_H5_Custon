@@ -14,7 +14,7 @@ public class PlayerLogout extends SendablePacket
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0x04);
-		writeS(account);
+		this.writeC(0x04);
+		this.writeS(this.account);
 	}
 }

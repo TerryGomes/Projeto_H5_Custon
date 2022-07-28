@@ -8,7 +8,7 @@ public class RequestCreatePledge extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_pledgename = readS(64);
+		this._pledgename = this.readS(64);
 	}
 
 	@Override

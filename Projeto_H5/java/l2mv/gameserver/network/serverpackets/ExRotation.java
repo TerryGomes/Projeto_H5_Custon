@@ -6,15 +6,15 @@ public class ExRotation extends L2GameServerPacket
 
 	public ExRotation(int charId, int degree)
 	{
-		_charObjId = charId;
-		_degree = degree;
+		this._charObjId = charId;
+		this._degree = degree;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xC1);
-		writeD(_charObjId);
-		writeD(_degree);
+		this.writeEx(0xC1);
+		this.writeD(this._charObjId);
+		this.writeD(this._degree);
 	}
 }

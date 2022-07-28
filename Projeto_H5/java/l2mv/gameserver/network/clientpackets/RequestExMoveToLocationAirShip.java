@@ -14,23 +14,23 @@ public class RequestExMoveToLocationAirShip extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_moveType = readD();
-		switch (_moveType)
+		this._moveType = this.readD();
+		switch (this._moveType)
 		{
 		case 4: // AirShipTeleport
-			_param1 = readD() + 1;
+			this._param1 = this.readD() + 1;
 			break;
 		case 0: // Free move
-			_param1 = readD();
-			_param2 = readD();
+			this._param1 = this.readD();
+			this._param2 = this.readD();
 			break;
 		case 2: // Up
-			readD(); // ?
-			readD(); // ?
+			this.readD(); // ?
+			this.readD(); // ?
 			break;
 		case 3: // Down
-			readD(); // ?
-			readD(); // ?
+			this.readD(); // ?
+			this.readD(); // ?
 			break;
 		}
 	}
@@ -38,7 +38,7 @@ public class RequestExMoveToLocationAirShip extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		Player player = getClient().getActiveChar();
+		Player player = this.getClient().getActiveChar();
 		if (player == null || player.getBoat() == null || !player.getBoat().isClanAirShip())
 		{
 			return;
@@ -47,17 +47,17 @@ public class RequestExMoveToLocationAirShip extends L2GameClientPacket
 		ClanAirShip airship = (ClanAirShip) player.getBoat();
 		if (airship.getDriver() == player)
 		{
-			switch (_moveType)
+			switch (this._moveType)
 			{
 			case 4: // AirShipTeleport
-				airship.addTeleportPoint(player, _param1);
+				airship.addTeleportPoint(player, this._param1);
 				break;
 			case 0: // Free move
 				if (!airship.isCustomMove())
 				{
 					break;
 				}
-				airship.moveToLocation(airship.getLoc().setX(_param1).setY(_param2), 0, false);
+				airship.moveToLocation(airship.getLoc().setX(this._param1).setY(this._param2), 0, false);
 				break;
 			case 2: // Up
 				if (!airship.isCustomMove())

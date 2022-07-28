@@ -10,29 +10,29 @@ public class ExBR_ProductInfo extends L2GameServerPacket
 
 	public ExBR_ProductInfo(int id)
 	{
-		_productId = ProductHolder.getInstance().getProduct(id);
+		this._productId = ProductHolder.getInstance().getProduct(id);
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		if (_productId == null)
+		if (this._productId == null)
 		{
 			return;
 		}
 
-		writeEx(0xD7);
+		this.writeEx(0xD7);
 
-		writeD(_productId.getProductId()); // product id
-		writeD(_productId.getPoints()); // points
-		writeD(_productId.getComponents().size()); // size
+		this.writeD(this._productId.getProductId()); // product id
+		this.writeD(this._productId.getPoints()); // points
+		this.writeD(this._productId.getComponents().size()); // size
 
-		for (ProductItemComponent com : _productId.getComponents())
+		for (ProductItemComponent com : this._productId.getComponents())
 		{
-			writeD(com.getItemId()); // item id
-			writeD(com.getCount()); // quality
-			writeD(com.getWeight()); // weight
-			writeD(com.isDropable() ? 1 : 0); // 0 - dont drop/trade
+			this.writeD(com.getItemId()); // item id
+			this.writeD(com.getCount()); // quality
+			this.writeD(com.getWeight()); // weight
+			this.writeD(com.isDropable() ? 1 : 0); // 0 - dont drop/trade
 		}
 	}
 }

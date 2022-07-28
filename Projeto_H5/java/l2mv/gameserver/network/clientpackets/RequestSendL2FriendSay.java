@@ -21,14 +21,14 @@ public class RequestSendL2FriendSay extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_message = readS();// readS(2048);
-		_reciever = readS();// readS(16);
+		this._message = this.readS();// readS(2048);
+		this._reciever = this.readS();// readS(16);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -44,7 +44,7 @@ public class RequestSendL2FriendSay extends L2GameClientPacket
 			activeChar.updateNoChannel(0);
 		}
 
-		Player targetPlayer = World.getPlayer(_reciever);
+		Player targetPlayer = World.getPlayer(this._reciever);
 		if (targetPlayer == null)
 		{
 			activeChar.sendPacket(SystemMsg.THAT_PLAYER_IS_NOT_ONLINE);
@@ -62,9 +62,9 @@ public class RequestSendL2FriendSay extends L2GameClientPacket
 			return;
 		}
 
-		Log.logChat(ChatType.L2FRIEND, activeChar.getName(), _reciever, _message);
+		Log.logChat(ChatType.L2FRIEND, activeChar.getName(), this._reciever, this._message);
 
-		L2FriendSay frm = new L2FriendSay(activeChar.getName(), _reciever, _message);
+		L2FriendSay frm = new L2FriendSay(activeChar.getName(), this._reciever, this._message);
 		targetPlayer.sendPacket(frm);
 	}
 }

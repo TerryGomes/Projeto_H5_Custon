@@ -16,25 +16,25 @@ public class RequestRecipeItemMakeInfo extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_id = readD();
+		this._id = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
 		}
 
-		Recipe recipeList = RecipeHolder.getInstance().getRecipeByRecipeId(_id);
+		Recipe recipeList = RecipeHolder.getInstance().getRecipeByRecipeId(this._id);
 		if (recipeList == null)
 		{
 			activeChar.sendActionFailed();
 			return;
 		}
 
-		sendPacket(new RecipeItemMakeInfo(activeChar, recipeList, 0xffffffff));
+		this.sendPacket(new RecipeItemMakeInfo(activeChar, recipeList, 0xffffffff));
 	}
 }

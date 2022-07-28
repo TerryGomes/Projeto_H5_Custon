@@ -31,9 +31,9 @@ public class ShortBuffStatusUpdate extends L2GameServerPacket
 
 	public ShortBuffStatusUpdate(Effect effect)
 	{
-		_skillId = effect.getSkill().getDisplayId();
-		_skillLevel = effect.getSkill().getDisplayLevel();
-		_skillDuration = effect.getTimeLeft();
+		this._skillId = effect.getSkill().getDisplayId();
+		this._skillLevel = effect.getSkill().getDisplayLevel();
+		this._skillDuration = effect.getTimeLeft();
 	}
 
 	/**
@@ -41,17 +41,17 @@ public class ShortBuffStatusUpdate extends L2GameServerPacket
 	 */
 	public ShortBuffStatusUpdate()
 	{
-		_skillId = 0;
-		_skillLevel = 0;
-		_skillDuration = 0;
+		this._skillId = 0;
+		this._skillLevel = 0;
+		this._skillDuration = 0;
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xfa); // Packet type
-		writeD(_skillId); // skill id??? CD 04 00 00 = skill 1229, hex 4CD
-		writeD(_skillLevel); // Skill Level??? 07 00 00 00 = casted by heal 7 lvl.
-		writeD(_skillDuration); // DURATION???? 0F 00 00 00 = 15 sec = overlord's heal
+		this.writeC(0xfa); // Packet type
+		this.writeD(this._skillId); // skill id??? CD 04 00 00 = skill 1229, hex 4CD
+		this.writeD(this._skillLevel); // Skill Level??? 07 00 00 00 = casted by heal 7 lvl.
+		this.writeD(this._skillDuration); // DURATION???? 0F 00 00 00 = 15 sec = overlord's heal
 	}
 }

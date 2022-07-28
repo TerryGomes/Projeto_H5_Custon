@@ -29,14 +29,14 @@ public class OnWrongAccountPassword extends ReceivablePacket
 	@Override
 	public void readImpl()
 	{
-		accountName = readS();
-		passwordWrote = readS();
+		this.accountName = this.readS();
+		this.passwordWrote = this.readS();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		final List<Integer> charIds = CharacterDAO.getCharIdsFromAccount(accountName);
+		final List<Integer> charIds = CharacterDAO.getCharIdsFromAccount(this.accountName);
 		for (Integer charId : charIds)
 		{
 			if (Config.gmlist.containsKey(charId))
@@ -44,7 +44,7 @@ public class OnWrongAccountPassword extends ReceivablePacket
 				final Player onlineGM = GameObjectsStorage.getPlayer(charId);
 				if (onlineGM != null)
 				{
-					final IStaticPacket packet = new Say2(0, OnWrongAccountPassword.CHAT_TYPE_FOR_GM, "WARNING", "Someone is trying to enter your Account and wrote Wrong Password(" + passwordWrote + ")!");
+					final IStaticPacket packet = new Say2(0, OnWrongAccountPassword.CHAT_TYPE_FOR_GM, "WARNING", "Someone is trying to enter your Account and wrote Wrong Password(" + this.passwordWrote + ")!");
 					final List<IStaticPacket> spamList = new ArrayList<IStaticPacket>(10);
 					for (int i = 0; i < SPAM_MSG_COUNT_TO_GM; ++i)
 					{
@@ -56,7 +56,7 @@ public class OnWrongAccountPassword extends ReceivablePacket
 				{
 					final String charName = CharacterDAO.getNameByObjectId(charId);
 					final SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy hh:mm");
-					Functions.sendSystemMail(charName, "WARNING", "Someone tried to enter your Account(at " + dateFormat.format(new Date()) + ") and wrote Wrong Password(" + passwordWrote + ")!", Collections.emptyMap());
+					Functions.sendSystemMail(charName, "WARNING", "Someone tried to enter your Account(at " + dateFormat.format(new Date()) + ") and wrote Wrong Password(" + this.passwordWrote + ")!", Collections.emptyMap());
 				}
 			}
 			else
@@ -68,7 +68,7 @@ public class OnWrongAccountPassword extends ReceivablePacket
 					{
 						return;
 					}
-					final IStaticPacket packet = new Say2(0, Config.NORMAL_PLAYER_MSG_TYPE_ON_WRONG_ACCOUNT, StringHolder.getNotNull(onlinePlayer, "Security.SomeoneEnteringAccountPMOnlineTitle", new Object[0]), StringHolder.getNotNull(onlinePlayer, "Security.SomeoneEnteringAccountPMOnlineBody", passwordWrote));
+					final IStaticPacket packet = new Say2(0, Config.NORMAL_PLAYER_MSG_TYPE_ON_WRONG_ACCOUNT, StringHolder.getNotNull(onlinePlayer, "Security.SomeoneEnteringAccountPMOnlineTitle", new Object[0]), StringHolder.getNotNull(onlinePlayer, "Security.SomeoneEnteringAccountPMOnlineBody", this.passwordWrote));
 					onlinePlayer.sendPacket(packet);
 				}
 				else
@@ -81,7 +81,7 @@ public class OnWrongAccountPassword extends ReceivablePacket
 					final SimpleDateFormat dateFormat = new SimpleDateFormat("dd.MM.yyyy hh:mm");
 					final Language lang = CharacterDAO.getLanguage(charId);
 					final String title = StringHolder.getNotNull(lang, "Security.SomeoneEnteringAccountMailOfflineTitle", new Object[0]);
-					final String body = StringHolder.getNotNull(lang, "Security.SomeoneEnteringAccountMailOfflineBody", dateFormat.format(new Date()), passwordWrote);
+					final String body = StringHolder.getNotNull(lang, "Security.SomeoneEnteringAccountMailOfflineBody", dateFormat.format(new Date()), this.passwordWrote);
 					Functions.sendSystemMail(charName, title, body, Collections.emptyMap());
 				}
 			}

@@ -5,7 +5,7 @@ public class FlySelfDestination extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x43);
+		this.writeEx(0x43);
 		// TODO dddd
 	}
 }

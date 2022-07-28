@@ -18,29 +18,29 @@ public class ExMpccRoomMember extends L2GameServerPacket
 
 	public ExMpccRoomMember(MatchingRoom room, Player player)
 	{
-		_type = room.getMemberType(player);
-		_members = new ArrayList<MpccRoomMemberInfo>(room.getPlayers().size());
+		this._type = room.getMemberType(player);
+		this._members = new ArrayList<MpccRoomMemberInfo>(room.getPlayers().size());
 
 		for (Player member : room.getPlayers())
 		{
-			_members.add(new MpccRoomMemberInfo(member, room.getMemberType(member)));
+			this._members.add(new MpccRoomMemberInfo(member, room.getMemberType(member)));
 		}
 	}
 
 	@Override
 	public void writeImpl()
 	{
-		writeEx(0x9F);
-		writeD(_type);
-		writeD(_members.size());
-		for (MpccRoomMemberInfo member : _members)
+		this.writeEx(0x9F);
+		this.writeD(this._type);
+		this.writeD(this._members.size());
+		for (MpccRoomMemberInfo member : this._members)
 		{
-			writeD(member.objectId);
-			writeS(member.name);
-			writeD(member.level);
-			writeD(member.classId);
-			writeD(member.location);
-			writeD(member.memberType);
+			this.writeD(member.objectId);
+			this.writeS(member.name);
+			this.writeD(member.level);
+			this.writeD(member.classId);
+			this.writeD(member.location);
+			this.writeD(member.memberType);
 		}
 	}
 
@@ -55,12 +55,12 @@ public class ExMpccRoomMember extends L2GameServerPacket
 
 		public MpccRoomMemberInfo(Player member, int type)
 		{
-			objectId = member.getObjectId();
-			name = member.getName();
-			classId = member.getClassId().ordinal();
-			level = member.getLevel();
-			location = MatchingRoomManager.getInstance().getLocation(member);
-			memberType = type;
+			this.objectId = member.getObjectId();
+			this.name = member.getName();
+			this.classId = member.getClassId().ordinal();
+			this.level = member.getLevel();
+			this.location = MatchingRoomManager.getInstance().getLocation(member);
+			this.memberType = type;
 		}
 	}
 }

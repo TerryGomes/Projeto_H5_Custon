@@ -26,7 +26,7 @@ public class TelnetStatus implements TelnetCommandHolder
 
 	public TelnetStatus()
 	{
-		_commands.add(new TelnetCommand("status", "s")
+		this._commands.add(new TelnetCommand("status", "s")
 		{
 
 			@Override
@@ -76,7 +76,7 @@ public class TelnetStatus implements TelnetCommandHolder
 	@Override
 	public Set<TelnetCommand> getCommands()
 	{
-		return _commands;
+		return this._commands;
 	}
 
 	public static String getGameTime()

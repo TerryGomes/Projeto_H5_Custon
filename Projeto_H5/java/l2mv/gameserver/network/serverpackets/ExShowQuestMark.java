@@ -6,13 +6,13 @@ public class ExShowQuestMark extends L2GameServerPacket
 
 	public ExShowQuestMark(int questId)
 	{
-		_questId = questId;
+		this._questId = questId;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x21);
-		writeD(_questId);
+		this.writeEx(0x21);
+		this.writeD(this._questId);
 	}
 }

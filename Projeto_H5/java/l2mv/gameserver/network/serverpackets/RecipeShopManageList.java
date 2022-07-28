@@ -17,23 +17,23 @@ public class RecipeShopManageList extends L2GameServerPacket
 
 	public RecipeShopManageList(Player seller, boolean isDwarvenCraft)
 	{
-		sellerId = seller.getObjectId();
-		adena = seller.getAdena();
-		isDwarven = isDwarvenCraft;
-		if (isDwarven)
+		this.sellerId = seller.getObjectId();
+		this.adena = seller.getAdena();
+		this.isDwarven = isDwarvenCraft;
+		if (this.isDwarven)
 		{
-			recipes = seller.getDwarvenRecipeBook();
+			this.recipes = seller.getDwarvenRecipeBook();
 		}
 		else
 		{
-			recipes = seller.getCommonRecipeBook();
+			this.recipes = seller.getCommonRecipeBook();
 		}
-		createList = seller.getCreateList();
-		for (ManufactureItem mi : createList)
+		this.createList = seller.getCreateList();
+		for (ManufactureItem mi : this.createList)
 		{
 			if (!seller.findRecipe(mi.getRecipeId()))
 			{
-				createList.remove(mi);
+				this.createList.remove(mi);
 			}
 		}
 	}
@@ -41,23 +41,23 @@ public class RecipeShopManageList extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xde);
-		writeD(sellerId);
-		writeD((int) Math.min(adena, Integer.MAX_VALUE)); // FIXME не менять на writeQ, в текущем клиенте там все еще D (видимо баг NCSoft)
-		writeD(isDwarven ? 0x00 : 0x01);
-		writeD(recipes.size());
+		this.writeC(0xde);
+		this.writeD(this.sellerId);
+		this.writeD((int) Math.min(this.adena, Integer.MAX_VALUE)); // FIXME не менять на writeQ, в текущем клиенте там все еще D (видимо баг NCSoft)
+		this.writeD(this.isDwarven ? 0x00 : 0x01);
+		this.writeD(this.recipes.size());
 		int i = 1;
-		for (Recipe recipe : recipes)
+		for (Recipe recipe : this.recipes)
 		{
-			writeD(recipe.getId());
-			writeD(i++);
+			this.writeD(recipe.getId());
+			this.writeD(i++);
 		}
-		writeD(createList.size());
-		for (ManufactureItem mi : createList)
+		this.writeD(this.createList.size());
+		for (ManufactureItem mi : this.createList)
 		{
-			writeD(mi.getRecipeId());
-			writeD(0x00); // ??
-			writeQ(mi.getCost());
+			this.writeD(mi.getRecipeId());
+			this.writeD(0x00); // ??
+			this.writeQ(mi.getCost());
 		}
 	}
 }

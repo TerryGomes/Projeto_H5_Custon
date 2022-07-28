@@ -13,7 +13,7 @@ public class TelnetConfig implements TelnetCommandHolder
 
 	public TelnetConfig()
 	{
-		_commands.add(new TelnetCommand("config", "control")
+		this._commands.add(new TelnetCommand("config", "control")
 		{
 			@Override
 			public String getUsage()
@@ -52,6 +52,6 @@ public class TelnetConfig implements TelnetCommandHolder
 	@Override
 	public Set<TelnetCommand> getCommands()
 	{
-		return _commands;
+		return this._commands;
 	}
 }

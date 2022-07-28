@@ -9,13 +9,13 @@ public class ExEnchantSkillResult extends L2GameServerPacket
 
 	public ExEnchantSkillResult(int result)
 	{
-		_result = result;
+		this._result = result;
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0xA7);
-		writeD(_result);
+		this.writeEx(0xA7);
+		this.writeD(this._result);
 	}
 }

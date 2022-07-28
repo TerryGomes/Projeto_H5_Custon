@@ -15,15 +15,15 @@ public class HennaEquipList extends L2GameServerPacket
 
 	public HennaEquipList(Player player)
 	{
-		_adena = player.getAdena();
-		_emptySlots = player.getHennaEmptySlots();
+		this._adena = player.getAdena();
+		this._emptySlots = player.getHennaEmptySlots();
 
 		List<Henna> list = HennaHolder.getInstance().generateList(player);
 		for (Henna element : list)
 		{
 			if (player.getInventory().getItemByItemId(element.getDyeId()) != null)
 			{
-				_hennas.add(element);
+				this._hennas.add(element);
 			}
 		}
 	}
@@ -31,30 +31,30 @@ public class HennaEquipList extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0xee);
+		this.writeC(0xee);
 
-		writeQ(_adena);
-		writeD(_emptySlots);
-		if (_hennas.size() != 0)
+		this.writeQ(this._adena);
+		this.writeD(this._emptySlots);
+		if (this._hennas.size() != 0)
 		{
-			writeD(_hennas.size());
-			for (Henna henna : _hennas)
+			this.writeD(this._hennas.size());
+			for (Henna henna : this._hennas)
 			{
-				writeD(henna.getSymbolId()); // symbolid
-				writeD(henna.getDyeId()); // itemid of dye
-				writeQ(henna.getDrawCount());
-				writeQ(henna.getPrice());
-				writeD(1); // meet the requirement or not
+				this.writeD(henna.getSymbolId()); // symbolid
+				this.writeD(henna.getDyeId()); // itemid of dye
+				this.writeQ(henna.getDrawCount());
+				this.writeQ(henna.getPrice());
+				this.writeD(1); // meet the requirement or not
 			}
 		}
 		else
 		{
-			writeD(0x01);
-			writeD(0x00);
-			writeD(0x00);
-			writeQ(0x00);
-			writeQ(0x00);
-			writeD(0x00);
+			this.writeD(0x01);
+			this.writeD(0x00);
+			this.writeD(0x00);
+			this.writeQ(0x00);
+			this.writeQ(0x00);
+			this.writeD(0x00);
 		}
 	}
 }

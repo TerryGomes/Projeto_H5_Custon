@@ -18,19 +18,19 @@ public class ExMPCCPartyInfoUpdate extends L2GameServerPacket
 	 */
 	public ExMPCCPartyInfoUpdate(Party party, int mode)
 	{
-		_party = party;
-		_mode = mode;
-		_count = _party.size();
-		_leader = _party.getLeader();
+		this._party = party;
+		this._mode = mode;
+		this._count = this._party.size();
+		this._leader = this._party.getLeader();
 	}
 
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x5b);
-		writeS(_leader.getName());
-		writeD(_leader.getObjectId());
-		writeD(_count);
-		writeD(_mode); // mode 0 = Remove Party, 1 = AddParty, maybe more...
+		this.writeEx(0x5b);
+		this.writeS(this._leader.getName());
+		this.writeD(this._leader.getObjectId());
+		this.writeD(this._count);
+		this.writeD(this._mode); // mode 0 = Remove Party, 1 = AddParty, maybe more...
 	}
 }

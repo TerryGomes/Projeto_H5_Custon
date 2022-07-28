@@ -13,13 +13,13 @@ public class RequestStartPledgeWar extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_pledgeName = readS(32);
+		this._pledgeName = this.readS(32);
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -44,7 +44,7 @@ public class RequestStartPledgeWar extends L2GameClientPacket
 			return;
 		}
 
-		Clan targetClan = ClanTable.getInstance().getClanByName(_pledgeName);
+		Clan targetClan = ClanTable.getInstance().getClanByName(this._pledgeName);
 		if (targetClan == null)
 		{
 			activeChar.sendPacket(SystemMsg.A_CLAN_WAR_CANNOT_BE_DECLARED_AGAINST_A_CLAN_THAT_DOES_NOT_EXIST, ActionFail.STATIC);

@@ -11,22 +11,22 @@ public class PledgeReceivePowerInfo extends L2GameServerPacket
 
 	public PledgeReceivePowerInfo(UnitMember member)
 	{
-		PowerGrade = member.getPowerGrade();
-		member_name = member.getName();
+		this.PowerGrade = member.getPowerGrade();
+		this.member_name = member.getName();
 		if (member.isClanLeader())
 		{
-			privs = Clan.CP_ALL;
+			this.privs = Clan.CP_ALL;
 		}
 		else
 		{
 			RankPrivs temp = member.getClan().getRankPrivs(member.getPowerGrade());
 			if (temp != null)
 			{
-				privs = temp.getPrivs();
+				this.privs = temp.getPrivs();
 			}
 			else
 			{
-				privs = 0;
+				this.privs = 0;
 			}
 		}
 	}
@@ -34,9 +34,9 @@ public class PledgeReceivePowerInfo extends L2GameServerPacket
 	@Override
 	protected final void writeImpl()
 	{
-		writeEx(0x3d);
-		writeD(PowerGrade);
-		writeS(member_name);
-		writeD(privs);
+		this.writeEx(0x3d);
+		this.writeD(this.PowerGrade);
+		this.writeS(this.member_name);
+		this.writeD(this.privs);
 	}
 }

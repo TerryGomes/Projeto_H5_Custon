@@ -10,18 +10,18 @@ public class VehicleCheckLocation extends L2GameServerPacket
 
 	public VehicleCheckLocation(Boat instance)
 	{
-		_boatObjectId = instance.getObjectId();
-		_loc = instance.getLoc();
+		this._boatObjectId = instance.getObjectId();
+		this._loc = instance.getLoc();
 	}
 
 	@Override
 	protected final void writeImpl()
 	{
-		writeC(0x6d);
-		writeD(_boatObjectId);
-		writeD(_loc.x);
-		writeD(_loc.y);
-		writeD(_loc.z);
-		writeD(_loc.h);
+		this.writeC(0x6d);
+		this.writeD(this._boatObjectId);
+		this.writeD(this._loc.x);
+		this.writeD(this._loc.y);
+		this.writeD(this._loc.z);
+		this.writeD(this._loc.h);
 	}
 }

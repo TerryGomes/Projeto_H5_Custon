@@ -25,14 +25,14 @@ public final class RequestExEnchantSkillUntrain extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_skillId = readD();
-		_skillLvl = readD();
+		this._skillId = this.readD();
+		this._skillLvl = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null)
 		{
 			return;
@@ -67,13 +67,13 @@ public final class RequestExEnchantSkillUntrain extends L2GameClientPacket
 			return;
 		}
 
-		int oldSkillLevel = activeChar.getSkillDisplayLevel(_skillId);
-		if ((oldSkillLevel == -1) || _skillLvl != (oldSkillLevel - 1) || (_skillLvl / 100) != (oldSkillLevel / 100))
+		int oldSkillLevel = activeChar.getSkillDisplayLevel(this._skillId);
+		if ((oldSkillLevel == -1) || this._skillLvl != (oldSkillLevel - 1) || (this._skillLvl / 100) != (oldSkillLevel / 100))
 		{
 			return;
 		}
 
-		EnchantSkillLearn sl = SkillTreeTable.getSkillEnchant(_skillId, oldSkillLevel);
+		EnchantSkillLearn sl = SkillTreeTable.getSkillEnchant(this._skillId, oldSkillLevel);
 		if (sl == null)
 		{
 			return;
@@ -81,14 +81,14 @@ public final class RequestExEnchantSkillUntrain extends L2GameClientPacket
 
 		Skill newSkill;
 
-		if (_skillLvl % 100 == 0)
+		if (this._skillLvl % 100 == 0)
 		{
-			_skillLvl = sl.getBaseLevel();
-			newSkill = SkillTable.getInstance().getInfo(_skillId, _skillLvl);
+			this._skillLvl = sl.getBaseLevel();
+			newSkill = SkillTable.getInstance().getInfo(this._skillId, this._skillLvl);
 		}
 		else
 		{
-			newSkill = SkillTable.getInstance().getInfo(_skillId, SkillTreeTable.convertEnchantLevel(sl.getBaseLevel(), _skillLvl, sl.getMaxLevel()));
+			newSkill = SkillTable.getInstance().getInfo(this._skillId, SkillTreeTable.convertEnchantLevel(sl.getBaseLevel(), this._skillLvl, sl.getMaxLevel()));
 		}
 
 		if (newSkill == null)
@@ -114,28 +114,28 @@ public final class RequestExEnchantSkillUntrain extends L2GameClientPacket
 		activeChar.addExpAndSp(0, sl.getCost()[1] * sl.getCostMult());
 		activeChar.addSkill(newSkill, true);
 
-		if (_skillLvl > 100)
+		if (this._skillLvl > 100)
 		{
 			SystemMessage sm = new SystemMessage(SystemMessage.Untrain_of_enchant_skill_was_successful_Current_level_of_enchant_skill_S1_has_been_decreased_by_1);
-			sm.addSkillName(_skillId, _skillLvl);
+			sm.addSkillName(this._skillId, this._skillLvl);
 			activeChar.sendPacket(sm);
 		}
 		else
 		{
 			SystemMessage sm = new SystemMessage(SystemMessage.Untrain_of_enchant_skill_was_successful_Current_level_of_enchant_skill_S1_became_0_and_enchant_skill_will_be_initialized);
-			sm.addSkillName(_skillId, _skillLvl);
+			sm.addSkillName(this._skillId, this._skillLvl);
 			activeChar.sendPacket(sm);
 		}
 
-		Log.add(activeChar.getName() + "|Successfully untranes|" + _skillId + "|to+" + _skillLvl + "|---", "enchant_skills");
+		Log.add(activeChar.getName() + "|Successfully untranes|" + this._skillId + "|to+" + this._skillLvl + "|---", "enchant_skills");
 
-		activeChar.sendPacket(new ExEnchantSkillInfo(_skillId, newSkill.getDisplayLevel()), ExEnchantSkillResult.SUCCESS, new SkillList(activeChar));
-		RequestExEnchantSkill.updateSkillShortcuts(activeChar, _skillId, _skillLvl);
+		activeChar.sendPacket(new ExEnchantSkillInfo(this._skillId, newSkill.getDisplayLevel()), ExEnchantSkillResult.SUCCESS, new SkillList(activeChar));
+		RequestExEnchantSkill.updateSkillShortcuts(activeChar, this._skillId, this._skillLvl);
 
 		// Synerge - In retail server there is a bug when you enchant a skill, its reuse gets reset if you try to use it from a macro.
 		if (!Config.ALLOW_MACROS_ENCHANT_BUG)
 		{
-			TimeStamp oldSkillReuse = activeChar.getSkillReuses().stream().filter(ts -> ts.getId() == _skillId).findFirst().orElse(null);
+			TimeStamp oldSkillReuse = activeChar.getSkillReuses().stream().filter(ts -> ts.getId() == this._skillId).findFirst().orElse(null);
 			if (oldSkillReuse != null)
 			{
 				activeChar.disableSkill(newSkill, oldSkillReuse.getReuseCurrent());

@@ -77,7 +77,7 @@ public class SystemMessage2 extends SysMsgContainer<SystemMessage2>
 	@Override
 	protected void writeImpl()
 	{
-		writeC(0x62);
-		writeElements();
+		this.writeC(0x62);
+		this.writeElements();
 	}
 }

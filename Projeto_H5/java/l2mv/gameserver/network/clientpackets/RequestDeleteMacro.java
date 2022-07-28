@@ -12,17 +12,17 @@ public class RequestDeleteMacro extends L2GameClientPacket
 	@Override
 	protected void readImpl()
 	{
-		_id = readD();
+		this._id = this.readD();
 	}
 
 	@Override
 	protected void runImpl()
 	{
-		Player activeChar = getClient().getActiveChar();
+		Player activeChar = this.getClient().getActiveChar();
 		if (activeChar == null || activeChar.isBlocked())
 		{
 			return;
 		}
-		activeChar.deleteMacro(_id);
+		activeChar.deleteMacro(this._id);
 	}
 }

@@ -17,12 +17,12 @@ public class RequestEx2ndPasswordCheck extends L2GameClientPacket
 	@Override
 	protected void runImpl()
 	{
-		if (!Config.SECOND_AUTH_ENABLED || getClient().getSecondaryAuth().isAuthed())
+		if (!Config.SECOND_AUTH_ENABLED || this.getClient().getSecondaryAuth().isAuthed())
 		{
-			sendPacket(new Ex2ndPasswordCheck(Ex2ndPasswordCheck.PASSWORD_OK));
+			this.sendPacket(new Ex2ndPasswordCheck(Ex2ndPasswordCheck.PASSWORD_OK));
 			return;
 		}
 
-		getClient().getSecondaryAuth().openDialog();
+		this.getClient().getSecondaryAuth().openDialog();
 	}
 }

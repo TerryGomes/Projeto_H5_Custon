@@ -14,17 +14,17 @@ public class ExShowFortressSiegeInfo extends L2GameServerPacket
 
 	public ExShowFortressSiegeInfo(Fortress fortress)
 	{
-		_fortressId = fortress.getId();
+		this._fortressId = fortress.getId();
 
 		FortressSiegeEvent siegeEvent = fortress.getSiegeEvent();
-		_commandersMax = siegeEvent.getBarrackStatus().length;
+		this._commandersMax = siegeEvent.getBarrackStatus().length;
 		if (fortress.getSiegeEvent().isInProgress())
 		{
-			for (int i = 0; i < _commandersMax; i++)
+			for (int i = 0; i < this._commandersMax; i++)
 			{
 				if (siegeEvent.getBarrackStatus()[i])
 				{
-					_commandersCurrent++;
+					this._commandersCurrent++;
 				}
 			}
 		}
@@ -33,9 +33,9 @@ public class ExShowFortressSiegeInfo extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		writeEx(0x17);
-		writeD(_fortressId);
-		writeD(_commandersMax);
-		writeD(_commandersCurrent);
+		this.writeEx(0x17);
+		this.writeD(this._fortressId);
+		this.writeD(this._commandersMax);
+		this.writeD(this._commandersCurrent);
 	}
 }
