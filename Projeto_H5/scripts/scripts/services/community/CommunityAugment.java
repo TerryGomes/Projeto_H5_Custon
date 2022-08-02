@@ -346,7 +346,7 @@ public class CommunityAugment implements ScriptFile, ICommunityBoardHandler
 
 	private void load()
 	{
-		final File localFile = new File("config/CommunityPvP/life_stone_community.xml");
+		final File localFile = new File("config/CommunityBoardTerryMaster/life_stone_community.xml");
 		if (!localFile.exists())
 		{
 			_log.error("CommunityLS : File life_stone_community.xml not found!");

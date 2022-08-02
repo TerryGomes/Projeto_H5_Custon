@@ -752,7 +752,7 @@ public class Donations extends Functions
 			show("Service is disabled.", player);
 			return;
 		}
-		player.sendPacket(new NpcHtmlMessage(0).setFile("scripts/services/communityPVP/pages/Donate/OlfStore.htm"));
+		player.sendPacket(new NpcHtmlMessage(0).setFile("scripts/services/CommunityBoardTerryMaster/pages/Donate/OlfStore.htm"));
 	}
 
 	// Synerge - Function to buy Olf Shirt +X
@@ -840,7 +840,7 @@ public class Donations extends Functions
 			show("Service is disabled.", player);
 			return;
 		}
-		player.sendPacket(new NpcHtmlMessage(0).setFile("scripts/services/communityPVP/pages/Donate/ClanLevel.htm"));
+		player.sendPacket(new NpcHtmlMessage(0).setFile("scripts/services/CommunityBoardTerryMaster/pages/Donate/ClanLevel.htm"));
 	}
 
 	public void buy_nobless()
@@ -998,7 +998,7 @@ public class Donations extends Functions
 			show("Service is disabled.", player);
 			return;
 		}
-		player.sendPacket(new NpcHtmlMessage(0).setFile("scripts/services/communityPVP/pages/Donate/ClanSkills.htm"));
+		player.sendPacket(new NpcHtmlMessage(0).setFile("scripts/services/CommunityBoardTerryMaster/pages/Donate/ClanSkills.htm"));
 	}
 
 	// Synerge - Function to give clan skills

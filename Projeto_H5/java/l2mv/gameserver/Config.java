@@ -3584,7 +3584,7 @@ public class Config
 	public static boolean ALLOW_SENDING_IMAGES;
 	public static boolean COMMUNITYBOARD_CLAN_ENABLED;
 	public static boolean USE_BBS_PROF_IS_COMBAT;
-	public static final String BOARD_MANAGER_CONFIG_FILE = "config/CommunityPvP/board_manager.ini";
+	public static final String BOARD_MANAGER_CONFIG_FILE = "config/CommunityBoardTerryMaster/board_manager.ini";
 
 	public static void loadCommunityPvPboardsettings()
 	{
@@ -3605,7 +3605,7 @@ public class Config
 		Config.USE_BBS_PROF_IS_COMBAT = CommunityPvPboardSettings.getProperty("NoUserEmCombat", false);
 	}
 
-	public static final String BUFFER_MANAGER_CONFIG_FILE = "config/CommunityPvP/buffer_manager.ini";
+	public static final String BUFFER_MANAGER_CONFIG_FILE = "config/CommunityBoardTerryMaster/buffer_manager.ini";
 	/** Settings of CommunityBoard Buffer */
 	public static boolean BBS_PVP_BUFFER_ENABLED;
 	public static boolean BBS_PVP_BUFER_ONE_BUFF_PET;
@@ -3712,7 +3712,7 @@ public class Config
 
 	}
 
-	public static final String CLASS_MASTER_CONFIG_FILE = "config/CommunityPvP/class_master.ini";
+	public static final String CLASS_MASTER_CONFIG_FILE = "config/CommunityBoardTerryMaster/class_master.ini";
 	public static String CLASS_MASTERS_PRICE;
 	public static int CLASS_MASTERS_PRICE_ITEM;
 	public static List<Integer> ALLOW_CLASS_MASTERS_LIST = new ArrayList<Integer>();
@@ -3748,7 +3748,7 @@ public class Config
 		Config.BBS_PVP_SUB_MANAGER_PIACE = CommunityPvPClassSettings.getProperty("AllowBBSSubManagerPiace", false);
 	}
 
-	public static final String SHOP_MANAGER_CONFIG_FILE = "config/CommunityPvP/shop_manager.ini";
+	public static final String SHOP_MANAGER_CONFIG_FILE = "config/CommunityBoardTerryMaster/shop_manager.ini";
 	public static boolean BBS_PVP_ALLOW_SELL;
 	public static boolean BBS_PVP_ALLOW_BUY;
 	public static boolean BBS_PVP_ALLOW_AUGMENT;
@@ -3762,7 +3762,7 @@ public class Config
 		Config.BBS_PVP_ALLOW_AUGMENT = CommunityPvPshopSettings.getProperty("CommunityAugmentEnable", false);
 	}
 
-	public static final String TELEPORT_MANAGER_CONFIG_FILE = "config/CommunityPvP/teleport_manager.ini";
+	public static final String TELEPORT_MANAGER_CONFIG_FILE = "config/CommunityBoardTerryMaster/teleport_manager.ini";
 	public static boolean BBS_PVP_TELEPORT_ENABLED;
 	public static int BBS_PVP_TELEPORT_POINT_PRICE;
 	public static int BBS_PVP_TELEPORT_MAX_POINT_COUNT;
@@ -4325,7 +4325,7 @@ public class Config
 		Config.OLY_SHOW_OPPONENT_PERSONALITY = olympSettings.getProperty("OlympiadShowOpponentPersonality", false);
 	}
 
-	public static final String ENCHANT_CB_CONFIG_FILE = "config/CommunityPvP/EnchantCB.ini";
+	public static final String ENCHANT_CB_CONFIG_FILE = "config/CommunityBoardTerryMaster/EnchantCB.ini";
 	public static boolean ENCHANT_ENABLED;
 	public static int ENCHANTER_ITEM_ID;
 	public static int MAX_ENCHANT;
@@ -4377,7 +4377,7 @@ public class Config
 
 	}
 
-	public static final String RANKING_CB_CONFIG_FILE = "config/CommunityPvP/ranking.ini";
+	public static final String RANKING_CB_CONFIG_FILE = "config/CommunityBoardTerryMaster/ranking.ini";
 	public static int SERVER_RANKING_REWARD_ITEM_ID;
 	public static int[] SERVER_RANKING_REWARD_ITEM_COUNT;
 
@@ -4394,7 +4394,7 @@ public class Config
 		});
 	}
 
-	public static final String AUGMENT_CB_CONFIG_FILE = "config/CommunityPvP/augment.ini";
+	public static final String AUGMENT_CB_CONFIG_FILE = "config/CommunityBoardTerryMaster/augment.ini";
 	public static boolean ALLOW_CB_AUGMENTATION;
 	public static int COMMUNITY_AUGMENTATION_MIN_LEVEL;
 	public static boolean COMMUNITY_AUGMENTATION_ALLOW_JEWELRY;
@@ -4408,7 +4408,7 @@ public class Config
 		Config.COMMUNITY_AUGMENTATION_ALLOW_JEWELRY = augmentCBSetting.getProperty("AllowJewelryyAugmentation", false);
 	}
 
-	public static final String ACADEMY_CB_CONFIG_FILE = "config/CommunityPvP/academy.ini";
+	public static final String ACADEMY_CB_CONFIG_FILE = "config/CommunityBoardTerryMaster/academy.ini";
 	// Community Academy
 	public static boolean ENABLE_COMMUNITY_ACADEMY;
 	public static String SERVICES_ACADEMY_REWARD;

@@ -421,7 +421,7 @@ public class SchemeBufferInstance extends NpcInstance
 
 	private static String main(Player player)
 	{
-		String dialog = HtmCache.getInstance().getNotNull("scripts/services/communityPVP/buffer_main.htm", player);
+		String dialog = HtmCache.getInstance().getNotNull("scripts/services/CommunityBoardTerryMaster/buffer_main.htm", player);
 
 		final String bottonA, bottonB, bottonC;
 		if (isPetBuff(player))
@@ -479,7 +479,7 @@ public class SchemeBufferInstance extends NpcInstance
 	{
 		int pageN = Integer.parseInt(page);
 		int schemeId = Integer.parseInt(scheme);
-		String dialog = HtmCache.getInstance().getNotNull("scripts/services/communityPVP/buffer_scheme_buffs.htm", player);
+		String dialog = HtmCache.getInstance().getNotNull("scripts/services/CommunityBoardTerryMaster/buffer_scheme_buffs.htm", player);
 
 		int[] buffCount = getBuffCount(player, schemeId);
 		int TOTAL_BUFF = buffCount[0];
@@ -762,7 +762,7 @@ public class SchemeBufferInstance extends NpcInstance
 	private static String getDeleteSchemePage(Player player)
 	{
 		StringBuilder builder = new StringBuilder();
-		String dialog = HtmCache.getInstance().getNotNull("scripts/services/communityPVP/buffer_scheme_delete.htm", player);
+		String dialog = HtmCache.getInstance().getNotNull("scripts/services/CommunityBoardTerryMaster/buffer_scheme_delete.htm", player);
 
 		for (PlayerScheme scheme : player.getBuffSchemes())
 		{
@@ -780,7 +780,7 @@ public class SchemeBufferInstance extends NpcInstance
 
 	private static String buildHtml(String buffType, Player player)
 	{
-		String html = HtmCache.getInstance().getNotNull("scripts/services/communityPVP/buffer_scheme_indbuffs.htm", player);
+		String html = HtmCache.getInstance().getNotNull("scripts/services/CommunityBoardTerryMaster/buffer_scheme_indbuffs.htm", player);
 
 		final List<SingleBuff> availableBuffs = new ArrayList<>();
 		boolean canAddBuff;
@@ -925,7 +925,7 @@ public class SchemeBufferInstance extends NpcInstance
 	private static String getEditSchemePage(Player player)
 	{
 		StringBuilder builder = new StringBuilder();
-		String dialog = HtmCache.getInstance().getNotNull("scripts/services/communityPVP/buffer_scheme_menu.htm", player);
+		String dialog = HtmCache.getInstance().getNotNull("scripts/services/CommunityBoardTerryMaster/buffer_scheme_menu.htm", player);
 
 		// builder.append("<html><head><title>").append(TITLE_NAME).append("</title></head><body><br><center><img src=\"L2UI_CH3.herotower_deco\" width=256 height=32><br><font
 		// name=\"hs12\" color=LEVEL>Select a scheme that you would like to manage:</font><br><br>");
@@ -974,7 +974,7 @@ public class SchemeBufferInstance extends NpcInstance
 	{
 		final PlayerScheme scheme = player.getBuffSchemeById(schemeId);
 		int[] buffCount = getBuffCount(player, schemeId);
-		String dialog = HtmCache.getInstance().getNotNull("scripts/services/communityPVP/buffer_scheme_options.htm", player);
+		String dialog = HtmCache.getInstance().getNotNull("scripts/services/CommunityBoardTerryMaster/buffer_scheme_options.htm", player);
 
 		if (isPetBuff(player))
 		{
@@ -1044,7 +1044,7 @@ public class SchemeBufferInstance extends NpcInstance
 
 	private static String createScheme(Player player, int iconId)
 	{
-		String dialog = HtmCache.getInstance().getNotNull("scripts/services/communityPVP/buffer_scheme_create.htm", player);
+		String dialog = HtmCache.getInstance().getNotNull("scripts/services/CommunityBoardTerryMaster/buffer_scheme_create.htm", player);
 
 		if (isPetBuff(player))
 		{
@@ -1104,7 +1104,7 @@ public class SchemeBufferInstance extends NpcInstance
 
 	private static String changeSchemeIcon(Player player, int schemeId)
 	{
-		String dialog = HtmCache.getInstance().getNotNull("scripts/services/communityPVP/buffer_scheme_change_icon.htm", player);
+		String dialog = HtmCache.getInstance().getNotNull("scripts/services/CommunityBoardTerryMaster/buffer_scheme_change_icon.htm", player);
 
 		if (isPetBuff(player))
 		{
@@ -2499,7 +2499,7 @@ public class SchemeBufferInstance extends NpcInstance
 		// Synerge - Main page for changing scheme name
 		else if (eventParam0.equalsIgnoreCase("changeName_1"))
 		{
-			String dialog = HtmCache.getInstance().getNotNull("scripts/services/communityPVP/buffer_scheme_change_name.htm", player);
+			String dialog = HtmCache.getInstance().getNotNull("scripts/services/CommunityBoardTerryMaster/buffer_scheme_change_name.htm", player);
 
 			if (isPetBuff(player))
 			{

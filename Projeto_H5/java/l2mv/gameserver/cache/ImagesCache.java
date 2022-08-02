@@ -1,12 +1,16 @@
 package l2mv.gameserver.cache;
 
 import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -122,7 +126,7 @@ public class ImagesCache
 		return files;
 	}
 
-	private static File resizeImage(File file)
+	private static BufferedImage resizeImage(File file)
 	{
 		BufferedImage image;
 		try
@@ -180,28 +184,16 @@ public class ImagesCache
 				}
 			}
 		}
-		if ((resizedWidth != width) || (resizedHeight != height))
+		if(resizedWidth != width || resizedHeight != height)
 		{
-			for (int x = 0; x < resizedWidth; x++)
-			{
-				for (int y = 0; y < resizedHeight; y++)
-				{
-					image.setRGB(x, y, Color.BLACK.getRGB());
-				}
-			}
-			String filename = file.getName();
-			String format = filename.substring(filename.lastIndexOf("."));
-			try
-			{
-				ImageIO.write(image, format, file);
-			}
-			catch (IOException e)
-			{
-				_log.error("ImagesChache: Error while resizing " + file.getName() + " image.", e);
-				return null;
-			}
+			BufferedImage resizedImage = new BufferedImage(resizedWidth, resizedHeight, image.getType());
+			Graphics2D g = resizedImage.createGraphics();
+			g.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
+			g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), Color.BLACK, null);
+			g.dispose(); 
+			return resizedImage;
 		}
-		return file;
+		return image;
 	}
 
 	/**
@@ -262,6 +254,16 @@ public class ImagesCache
 		return html;
 	}
 
+	public Map<Integer, byte[]> get_images()
+	{
+		return _images;
+	}
+
+	public Map<String, Integer> get_imagesId()
+	{
+		return _imagesId;
+	}
+
 	/**
 	 * Getting end of Image File Name(name is always numbers)
 	 * @param charArray whole text
@@ -302,6 +304,45 @@ public class ImagesCache
 		}
 
 		return false;
+	}
+
+	private final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
+	private final Lock readLock = lock.readLock();
+	private final Lock writeLock = lock.writeLock();
+
+	public int getImageId(String val)
+	{
+		int imageId = -1;
+
+		readLock.lock();
+		try
+		{
+			if (_imagesId.get(val.toLowerCase()) != null)
+				imageId = _imagesId.get(val.toLowerCase());
+		}
+		finally
+		{
+			readLock.unlock();
+		}
+
+		return imageId;
+	}
+
+	public byte[] getImage(int imageId)
+	{
+		byte[] image = null;
+
+		readLock.lock();
+		try
+		{
+			image = _images.get(imageId);
+		}
+		finally
+		{
+			readLock.unlock();
+		}
+
+		return image;
 	}
 
 	public static ImagesCache getInstance()
