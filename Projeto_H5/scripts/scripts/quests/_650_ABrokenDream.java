@@ -68,24 +68,16 @@ public class _650_ABrokenDream extends Quest implements ScriptFile
 		if (cond == 0)
 		{
 			QuestState OceanOfDistantStar = st.getPlayer().getQuestState(_117_OceanOfDistantStar.class);
-			if (OceanOfDistantStar != null)
+			if ((OceanOfDistantStar != null) && OceanOfDistantStar.isCompleted())
 			{
-				if (OceanOfDistantStar.isCompleted())
+				if (st.getPlayer().getLevel() < 39)
 				{
-					if (st.getPlayer().getLevel() < 39)
-					{
-						st.exitCurrentQuest(true);
-						htmltext = "ghost_of_railroadman_q0650_0102.htm";
-					}
-					else
-					{
-						htmltext = "ghost_of_railroadman_q0650_0101.htm";
-					}
+					st.exitCurrentQuest(true);
+					htmltext = "ghost_of_railroadman_q0650_0102.htm";
 				}
 				else
 				{
-					htmltext = "ghost_of_railroadman_q0650_0104.htm";
-					st.exitCurrentQuest(true);
+					htmltext = "ghost_of_railroadman_q0650_0101.htm";
 				}
 			}
 			else

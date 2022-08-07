@@ -533,11 +533,7 @@ public class _270_TheOneWhoEndsSilence extends Quest implements ScriptFile
 		int cond = st.getCond();
 		if (cond == 1)
 		{
-			if (ArrayUtils.contains(LowMobs, npc.getNpcId()) && Rnd.chance(40))
-			{
-				st.giveItems(TatteredMonkClothes, 1, true);
-			}
-			else if (ArrayUtils.contains(HighMobs, npc.getNpcId()))
+			if ((ArrayUtils.contains(LowMobs, npc.getNpcId()) && Rnd.chance(40)) || ArrayUtils.contains(HighMobs, npc.getNpcId()))
 			{
 				st.giveItems(TatteredMonkClothes, 1, true);
 			}

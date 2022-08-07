@@ -615,17 +615,13 @@ public abstract class Inventory extends ItemContainer
 		case ItemTemplate.SLOT_R_EAR:
 		case ItemTemplate.SLOT_L_EAR | ItemTemplate.SLOT_R_EAR:
 		{
-			if (_paperdoll[PAPERDOLL_LEAR] == null)
+			if ((_paperdoll[PAPERDOLL_LEAR] == null) || (_paperdoll[PAPERDOLL_REAR] != null))
 			{
 				setPaperdollItem(PAPERDOLL_LEAR, item);
-			}
-			else if (_paperdoll[PAPERDOLL_REAR] == null)
-			{
-				setPaperdollItem(PAPERDOLL_REAR, item);
 			}
 			else
 			{
-				setPaperdollItem(PAPERDOLL_LEAR, item);
+				setPaperdollItem(PAPERDOLL_REAR, item);
 			}
 			break;
 		}
@@ -633,17 +629,13 @@ public abstract class Inventory extends ItemContainer
 		case ItemTemplate.SLOT_R_FINGER:
 		case ItemTemplate.SLOT_L_FINGER | ItemTemplate.SLOT_R_FINGER:
 		{
-			if (_paperdoll[PAPERDOLL_LFINGER] == null)
+			if ((_paperdoll[PAPERDOLL_LFINGER] == null) || (_paperdoll[PAPERDOLL_RFINGER] != null))
 			{
 				setPaperdollItem(PAPERDOLL_LFINGER, item);
-			}
-			else if (_paperdoll[PAPERDOLL_RFINGER] == null)
-			{
-				setPaperdollItem(PAPERDOLL_RFINGER, item);
 			}
 			else
 			{
-				setPaperdollItem(PAPERDOLL_LFINGER, item);
+				setPaperdollItem(PAPERDOLL_RFINGER, item);
 			}
 			break;
 		}
@@ -661,15 +653,7 @@ public abstract class Inventory extends ItemContainer
 		{
 			// handle full armor
 			ItemInstance chest = getPaperdollItem(PAPERDOLL_CHEST);
-			if (chest != null && chest.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR)
-			{
-				setPaperdollItem(PAPERDOLL_CHEST, null);
-			}
-			else if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_FORMAL_WEAR)
-			{
-				setPaperdollItem(PAPERDOLL_CHEST, null);
-			}
-			else if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_A)
+			if ((chest != null && chest.getBodyPart() == ItemTemplate.SLOT_FULL_ARMOR) || (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_FORMAL_WEAR) || (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_A))
 			{
 				setPaperdollItem(PAPERDOLL_CHEST, null);
 			}
@@ -726,19 +710,7 @@ public abstract class Inventory extends ItemContainer
 		}
 
 		case ItemTemplate.SLOT_FEET:
-			if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_FORMAL_WEAR)
-			{
-				setPaperdollItem(PAPERDOLL_CHEST, null);
-			}
-			else if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_A)
-			{
-				setPaperdollItem(PAPERDOLL_CHEST, null);
-			}
-			else if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_B)
-			{
-				setPaperdollItem(PAPERDOLL_CHEST, null);
-			}
-			else if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_CHRISTMAS_UNIFORM)
+			if ((getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_FORMAL_WEAR) || (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_A) || (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_B) || (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_CHRISTMAS_UNIFORM))
 			{
 				setPaperdollItem(PAPERDOLL_CHEST, null);
 			}
@@ -786,19 +758,7 @@ public abstract class Inventory extends ItemContainer
 			break;
 
 		case ItemTemplate.SLOT_GLOVES:
-			if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_FORMAL_WEAR)
-			{
-				setPaperdollItem(PAPERDOLL_CHEST, null);
-			}
-			else if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_A)
-			{
-				setPaperdollItem(PAPERDOLL_CHEST, null);
-			}
-			else if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_B)
-			{
-				setPaperdollItem(PAPERDOLL_CHEST, null);
-			}
-			else if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_CHRISTMAS_UNIFORM)
+			if ((getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_FORMAL_WEAR) || (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_A) || (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_B) || (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_CHRISTMAS_UNIFORM))
 			{
 				setPaperdollItem(PAPERDOLL_CHEST, null);
 			}
@@ -846,19 +806,7 @@ public abstract class Inventory extends ItemContainer
 			break;
 
 		case ItemTemplate.SLOT_HEAD:
-			if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_FORMAL_WEAR)
-			{
-				setPaperdollItem(PAPERDOLL_CHEST, null);
-			}
-			else if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_A)
-			{
-				setPaperdollItem(PAPERDOLL_CHEST, null);
-			}
-			else if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_B)
-			{
-				setPaperdollItem(PAPERDOLL_CHEST, null);
-			}
-			else if (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_CHRISTMAS_UNIFORM)
+			if ((getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_FORMAL_WEAR) || (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_A) || (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_SCHOOL_UNIFORM_B) || (getPaperdollItemId(PAPERDOLL_CHEST) == ItemTemplate.ITEM_ID_CHRISTMAS_UNIFORM))
 			{
 				setPaperdollItem(PAPERDOLL_CHEST, null);
 			}

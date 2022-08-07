@@ -11,7 +11,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2mv.commons.crypt.CryptUtil;
+//import l2mv.commons.crypt.CryptUtil;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.scripts.Functions;
@@ -107,27 +107,27 @@ public class HtmCache
 		}
 	}
 
-	@SuppressWarnings("unused")
-	private String getContent(File file, String encoding) throws IOException
-	{
-		InputStream stream = CryptUtil.decryptOnDemand(new ByteArrayInputStream(FileUtils.readFileToString(file, encoding).getBytes()));
-		@SuppressWarnings("resource")
-		FileInputStream _stream = new FileInputStream(file);
-		StringBuilder builder = new StringBuilder();
-		if ((byte) _stream.read() == 0x00)
-		{
-			byte[] buffer = new byte[1024];
-			int num;
-			while ((num = stream.read(buffer)) >= 0)
-			{
-				String tmp = new String(buffer, encoding);
-				builder.append(tmp, 0, num);
-			}
-			return builder.toString();
-		}
-
-		return FileUtils.readFileToString(file, "UTF-8");
-	}
+//	@SuppressWarnings("unused")
+//	private String getContent(File file, String encoding) throws IOException
+//	{
+//		InputStream stream = CryptUtil.decryptOnDemand(new ByteArrayInputStream(FileUtils.readFileToString(file, encoding).getBytes()));
+//		@SuppressWarnings("resource")
+//		FileInputStream _stream = new FileInputStream(file);
+//		StringBuilder builder = new StringBuilder();
+//		if ((byte) _stream.read() == 0x00)
+//		{
+//			byte[] buffer = new byte[1024];
+//			int num;
+//			while ((num = stream.read(buffer)) >= 0)
+//			{
+//				String tmp = new String(buffer, encoding);
+//				builder.append(tmp, 0, num);
+//			}
+//			return builder.toString();
+//		}
+//
+//		return FileUtils.readFileToString(file, "UTF-8");
+//	}
 
 	public void putContent(Language lang, File f, String rootPath) throws IOException
 	{

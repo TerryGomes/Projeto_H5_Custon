@@ -346,7 +346,6 @@ public final class NpcTemplate extends CharTemplate
 		return faction;
 	}
 
-
 	public void addSkill(Skill skill)
 	{
 		if (_skills.isEmpty())

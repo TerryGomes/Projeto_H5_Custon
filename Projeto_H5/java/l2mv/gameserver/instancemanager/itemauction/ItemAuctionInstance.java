@@ -224,12 +224,7 @@ public class ItemAuctionInstance
 
 			for (ItemAuction auction : auctions)
 			{
-				if (auction.getAuctionState() == ItemAuctionState.STARTED)
-				{
-					currentAuction = auction;
-					break;
-				}
-				else if (auction.getStartingTime() <= currentTime)
+				if ((auction.getAuctionState() == ItemAuctionState.STARTED) || (auction.getStartingTime() <= currentTime))
 				{
 					currentAuction = auction;
 					break;

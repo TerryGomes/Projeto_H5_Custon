@@ -2,7 +2,10 @@ package l2mv.gameserver.network.clientpackets;
 
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.model.pledge.ClanWar;
+import l2mv.gameserver.model.pledge.ClanWar.ClanWarPeriod;
 import l2mv.gameserver.network.serverpackets.ActionFail;
+import l2mv.gameserver.network.serverpackets.SystemMessage2;
 import l2mv.gameserver.network.serverpackets.components.SystemMsg;
 import l2mv.gameserver.tables.ClanTable;
 
@@ -74,7 +77,30 @@ public class RequestStartPledgeWar extends L2GameClientPacket
 			activeChar.sendPacket(SystemMsg.A_CLAN_WAR_CAN_ONLY_BE_DECLARED_IF_THE_CLAN_IS_LEVEL_3_OR_ABOVE_AND_THE_NUMBER_OF_CLAN_MEMBERS_IS_FIFTEEN_OR_GREATER, ActionFail.STATIC);
 			return;
 		}
+		ClanWar war = clan.getClanWar(targetClan);
+		if (war != null)
+		{
+			if (war.getAttackerClan() == clan)
+			{
+				activeChar.sendPacket(new SystemMessage2(SystemMsg.YOU_HAVE_ALREADY_BEEN_AT_WAR_WITH_THE_S1_CLAN_5_DAYS_MUST_PASS_BEFORE_YOU_CAN_DECLARE_WAR_AGAIN).addString(targetClan.getName()));
+				activeChar.sendActionFailed();
+				return;
+			}
 
-		ClanTable.getInstance().startClanWar(activeChar.getClan(), targetClan);
+			if (war.getPeriod() == ClanWarPeriod.PEACE)
+			{
+				activeChar.sendPacket(new SystemMessage2(SystemMsg.YOU_HAVE_ALREADY_BEEN_AT_WAR_WITH_THE_S1_CLAN_5_DAYS_MUST_PASS_BEFORE_YOU_CAN_CHALLENGE_THIS_CLAN_AGAIN).addString(targetClan.getName()));
+				activeChar.sendActionFailed();
+				return;
+			}
+
+			war.accept(clan);
+		}
+		else
+		{
+			new ClanWar(clan, targetClan, ClanWarPeriod.NEW, (int) (System.currentTimeMillis() / 1000L), 0, 0, 0);
+		}
+
+		// ClanTable.getInstance().startClanWar(activeChar.getClan(), targetClan);
 	}
 }

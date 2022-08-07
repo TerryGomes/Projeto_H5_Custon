@@ -65,24 +65,17 @@ public class BoatWayEvent extends GlobalEvent
 		L2GameServerPacket startPacket = _boat.startPacket();
 		for (Player player : _boat.getPlayers())
 		{
-			if (_ticketId > 0)
+			if ((_ticketId <= 0) || player.consumeItem(_ticketId, 1))
 			{
-				if (player.consumeItem(_ticketId, 1))
+				if (startPacket != null)
 				{
-					if (startPacket != null)
-					{
-						player.sendPacket(startPacket);
-					}
-				}
-				else
-				{
-					player.sendPacket(SystemMsg.YOU_DO_NOT_POSSESS_THE_CORRECT_TICKET_TO_BOARD_THE_BOAT);
-					_boat.oustPlayer(player, _returnLoc, true);
+					player.sendPacket(startPacket);
 				}
 			}
-			else if (startPacket != null)
+			else
 			{
-				player.sendPacket(startPacket);
+				player.sendPacket(SystemMsg.YOU_DO_NOT_POSSESS_THE_CORRECT_TICKET_TO_BOARD_THE_BOAT);
+				_boat.oustPlayer(player, _returnLoc, true);
 			}
 		}
 

@@ -1,6 +1,7 @@
 package l2mv.commons.data.xml;
 
 import java.io.File;
+import java.io.FileInputStream;
 
 public abstract class AbstractFileParser<H extends AbstractHolder> extends AbstractParser<H>
 {
@@ -35,8 +36,8 @@ public abstract class AbstractFileParser<H extends AbstractHolder> extends Abstr
 
 		try
 		{
-			parseCrypted(file);
-			// parseDocument(new FileInputStream(file), file.getName());
+			//parseCrypted(file);
+			 parseDocument(new FileInputStream(file), file.getName());
 		}
 		catch (Exception e)
 		{

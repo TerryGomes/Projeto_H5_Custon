@@ -225,11 +225,7 @@ public class _105_SkirmishWithOrcs extends Quest implements ScriptFile
 		int cond = st.getCond();
 		if (cond == 1 && st.getQuestItemsCount(KabooChiefs1stTorque) == 0)
 		{
-			if (npcId == KabooChiefUoph && st.getQuestItemsCount(Kendells1stOrder) > 0)
-			{
-				st.giveItems(KabooChiefs1stTorque, 1, false);
-			}
-			else if (npcId == KabooChiefKracha && st.getQuestItemsCount(Kendells2stOrder) > 0)
+			if ((npcId == KabooChiefUoph && st.getQuestItemsCount(Kendells1stOrder) > 0) || (npcId == KabooChiefKracha && st.getQuestItemsCount(Kendells2stOrder) > 0))
 			{
 				st.giveItems(KabooChiefs1stTorque, 1, false);
 			}
@@ -250,11 +246,7 @@ public class _105_SkirmishWithOrcs extends Quest implements ScriptFile
 		}
 		else if (cond == 3 && st.getQuestItemsCount(KabooChiefs2stTorque) == 0)
 		{
-			if (npcId == KabooChiefTurel && st.getQuestItemsCount(Kendells5stOrder) > 0)
-			{
-				st.giveItems(KabooChiefs2stTorque, 1, false);
-			}
-			else if (npcId == KabooChiefRoko && st.getQuestItemsCount(Kendells6stOrder) > 0)
+			if ((npcId == KabooChiefTurel && st.getQuestItemsCount(Kendells5stOrder) > 0) || (npcId == KabooChiefRoko && st.getQuestItemsCount(Kendells6stOrder) > 0))
 			{
 				st.giveItems(KabooChiefs2stTorque, 1, false);
 			}

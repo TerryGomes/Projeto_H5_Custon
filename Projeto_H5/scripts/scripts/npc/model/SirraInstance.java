@@ -36,11 +36,11 @@ public class SirraInstance extends NpcInstance
 	public String getHtmlPath(int npcId, int val, Player player)
 	{
 		String htmlpath = null;
-		if (ArrayUtils.contains(questInstances, getReflection().getInstancedZoneId()))
+		if (ArrayUtils.contains(questInstances, getReflection().getInstancedZoneId()) || !ArrayUtils.contains(warInstances, getReflection().getInstancedZoneId()))
 		{
 			htmlpath = "default/32762.htm";
 		}
-		else if (ArrayUtils.contains(warInstances, getReflection().getInstancedZoneId()))
+		else
 		{
 			DoorInstance door = getReflection().getDoor(23140101);
 			if (door.isOpen())
@@ -51,10 +51,6 @@ public class SirraInstance extends NpcInstance
 			{
 				htmlpath = "default/32762_closed.htm";
 			}
-		}
-		else
-		{
-			htmlpath = "default/32762.htm";
 		}
 		return htmlpath;
 	}

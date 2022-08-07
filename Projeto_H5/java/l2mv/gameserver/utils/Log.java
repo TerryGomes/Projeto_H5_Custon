@@ -78,6 +78,9 @@ public class Log
 	public static final String FreightDeposit = "FreightDeposit";
 	public static final String ClanWarehouseDeposit = "ClanWarehouseDeposit";
 	public static final String ClanWarehouseWithdraw = "ClanWarehouseWithdraw";
+	public static final String ClanChangeLeaderRequestAdd = "ClanChangeLeaderRequestAdd";
+	public static final String ClanChangeLeaderRequestDone = "ClanChangeLeaderRequestDone";
+	public static final String ClanChangeLeaderRequestCancel = "ClanChangeLeaderRequestCancel";
 
 	public static void logServerShutdown()
 	{

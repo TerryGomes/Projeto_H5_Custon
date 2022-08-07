@@ -47,6 +47,7 @@ import l2mv.gameserver.model.pledge.SubUnit;
 import l2mv.gameserver.model.pledge.UnitMember;
 import l2mv.gameserver.model.quest.Quest;
 import l2mv.gameserver.network.GameClient;
+import l2mv.gameserver.network.GameClient.GameClientState;
 import l2mv.gameserver.network.serverpackets.ChangeWaitType;
 import l2mv.gameserver.network.serverpackets.ClientSetTime;
 import l2mv.gameserver.network.serverpackets.ConfirmDlg;
@@ -264,6 +265,11 @@ public class EnterWorld extends L2GameClientPacket
 			activeChar.setRunning();
 			activeChar.standUp();
 			activeChar.startTimers();
+		}
+
+		if (client.getState() == GameClientState.ENTER_GAME)
+		{
+			client.setState(GameClientState.IN_GAME);
 		}
 
 		boolean isPremium = activeChar.hasBonus();

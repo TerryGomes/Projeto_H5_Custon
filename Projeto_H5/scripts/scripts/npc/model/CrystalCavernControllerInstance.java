@@ -27,34 +27,27 @@ public class CrystalCavernControllerInstance extends NpcInstance
 	public String getHtmlPath(int npcId, int val, Player player)
 	{
 		String htmlpath = null;
-		if (val == 0)
+		if ((val == 0) && (player.isInParty() && player.getParty().getLeader() == player))
 		{
-			if (player.isInParty() && player.getParty().getLeader() == player)
+			if (getNpcId() == 32280)
 			{
-				if (getNpcId() == 32280)
-				{
-					htmlpath = "default/32280-2.htm";
-				}
-				else if (getNpcId() == 32278)
-				{
-					htmlpath = "default/32278.htm";
-				}
-				else if (getNpcId() == 32276)
-				{
-					htmlpath = "default/32276.htm";
-				}
-				else if (getNpcId() == 32279)
-				{
-					htmlpath = "default/32279.htm";
-				}
-				else if (getNpcId() == 32277)
-				{
-					htmlpath = "default/32277.htm";
-				}
+				htmlpath = "default/32280-2.htm";
 			}
-			else
+			else if (getNpcId() == 32278)
 			{
-				htmlpath = "default/32280-1.htm";
+				htmlpath = "default/32278.htm";
+			}
+			else if (getNpcId() == 32276)
+			{
+				htmlpath = "default/32276.htm";
+			}
+			else if (getNpcId() == 32279)
+			{
+				htmlpath = "default/32279.htm";
+			}
+			else if (getNpcId() == 32277)
+			{
+				htmlpath = "default/32277.htm";
 			}
 		}
 		else

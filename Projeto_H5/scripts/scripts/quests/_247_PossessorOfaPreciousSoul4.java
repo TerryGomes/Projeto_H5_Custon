@@ -75,15 +75,7 @@ public class _247_PossessorOfaPreciousSoul4 extends Quest implements ScriptFile
 				st.getPlayer().teleToLocation(143230, 44030, -3030);
 				return htmltext;
 			}
-			else if (event.equals("lady_of_the_lake_q0247_02.htm"))
-			{
-				return htmltext;
-			}
-			else if (event.equals("lady_of_the_lake_q0247_03.htm"))
-			{
-				return htmltext;
-			}
-			else if (event.equals("lady_of_the_lake_q0247_04.htm"))
+			else if (event.equals("lady_of_the_lake_q0247_02.htm") || event.equals("lady_of_the_lake_q0247_03.htm") || event.equals("lady_of_the_lake_q0247_04.htm"))
 			{
 				return htmltext;
 			}

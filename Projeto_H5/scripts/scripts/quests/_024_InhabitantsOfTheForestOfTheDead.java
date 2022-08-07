@@ -72,16 +72,9 @@ public class _024_InhabitantsOfTheForestOfTheDead extends Quest implements Scrip
 			if (cond == 0)
 			{
 				QuestState LidiasHeart = qs.getPlayer().getQuestState(_023_LidiasHeart.class);
-				if (LidiasHeart != null)
+				if ((LidiasHeart != null) && LidiasHeart.isCompleted())
 				{
-					if (LidiasHeart.isCompleted())
-					{
-						htmltext = "31389-01.htm";
-					}
-					else
-					{
-						htmltext = "31389-02.htm"; // Если 23 квест не пройден
-					}
+					htmltext = "31389-01.htm";
 				}
 				else
 				{

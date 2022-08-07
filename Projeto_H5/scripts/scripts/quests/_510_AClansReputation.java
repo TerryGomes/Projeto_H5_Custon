@@ -68,12 +68,7 @@ public class _510_AClansReputation extends Quest implements ScriptFile
 		String htmltext = "<html><body>You are either not on a quest that involves this NPC, or you don't meet this NPC's minimum quest requirements.</body></html>";
 		Player player = st.getPlayer();
 		Clan clan = player.getClan();
-		if (player.getClan() == null || !player.isClanLeader())
-		{
-			st.exitCurrentQuest(true);
-			htmltext = "31331-0.htm";
-		}
-		else if (player.getClan().getLevel() < 5)
+		if ((player.getClan() == null || !player.isClanLeader()) || (player.getClan().getLevel() < 5))
 		{
 			st.exitCurrentQuest(true);
 			htmltext = "31331-0.htm";

@@ -129,12 +129,7 @@ public class WorkshopGatekeeperInstance extends NpcInstance
 			int npcId = getNpcId();
 			if (doorRecharge == 0 || doorRecharge <= System.currentTimeMillis())
 			{
-				if (player.getClassId() == ClassId.maestro)
-				{
-					openDoor(npcId);
-					player.sendPacket(new NpcHtmlMessage(player, this).setHtml("Tully Gatekeeper:<br><br>Doors are opened."));
-				}
-				else if (Rnd.chance(60)) // unknown
+				if ((player.getClassId() == ClassId.maestro) || Rnd.chance(60))
 				{
 					openDoor(npcId);
 					player.sendPacket(new NpcHtmlMessage(player, this).setHtml("Tully Gatekeeper:<br><br>Doors are opened."));

@@ -156,12 +156,7 @@ public class _509_TheClansPrestige extends Quest implements ScriptFile
 		String htmltext = "noquest";
 		Clan clan = st.getPlayer().getClan();
 
-		if (clan == null)
-		{
-			st.exitCurrentQuest(true);
-			htmltext = "31331-0a.htm";
-		}
-		else if (clan.getLeader().getPlayer() != st.getPlayer())
+		if ((clan == null) || (clan.getLeader().getPlayer() != st.getPlayer()))
 		{
 			st.exitCurrentQuest(true);
 			htmltext = "31331-0a.htm";

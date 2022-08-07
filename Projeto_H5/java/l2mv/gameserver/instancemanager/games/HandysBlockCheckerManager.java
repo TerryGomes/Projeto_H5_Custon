@@ -239,12 +239,7 @@ public final class HandysBlockCheckerManager
 		{
 			boolean isFromRed = holder._redPlayers.contains(player);
 
-			if (isFromRed && holder.getBlueTeamSize() == 6)
-			{
-				player.sendMessage("The team is full");
-				return;
-			}
-			else if (!isFromRed && holder.getRedTeamSize() == 6)
+			if ((isFromRed && holder.getBlueTeamSize() == 6) || (!isFromRed && holder.getRedTeamSize() == 6))
 			{
 				player.sendMessage("The team is full");
 				return;

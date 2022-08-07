@@ -11,7 +11,6 @@ import org.apache.commons.lang3.math.NumberUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2mv.gameserver.fandc.managers.GmEventManager;
 import l2mv.commons.annotations.Nullable;
 import l2mv.commons.geometry.Polygon;
 import l2mv.commons.lang.ArrayUtils;
@@ -20,6 +19,7 @@ import l2mv.commons.util.Rnd;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.ThreadPoolManager;
 import l2mv.gameserver.cache.Msg;
+import l2mv.gameserver.fandc.managers.GmEventManager;
 import l2mv.gameserver.geodata.GeoEngine;
 import l2mv.gameserver.instancemanager.games.HandysBlockCheckerManager;
 import l2mv.gameserver.instancemanager.games.HandysBlockCheckerManager.ArenaParticipantsHolder;
@@ -1193,29 +1193,12 @@ public abstract class Skill extends StatTemplate implements Cloneable
 						}
 					}
 
-					if (activeChar.isInZone(ZoneType.SIEGE) && target.isInZone(ZoneType.SIEGE))
+					if ((activeChar.isInZone(ZoneType.SIEGE) && target.isInZone(ZoneType.SIEGE)) || (activeChar.isInZonePvP() && target.isInZonePvP()))
 					{
 						return null;
 					}
 
-					if (activeChar.isInZonePvP() && target.isInZonePvP())
-					{
-						return null;
-					}
-
-					if (player.atMutualWarWith(pcTarget))
-					{
-						return null;
-					}
-					if (isForceUse())
-					{
-						return null;
-					}
-					if (pcTarget.getPvpFlag() != 0)
-					{
-						return null;
-					}
-					if (pcTarget.getKarma() > 0)
+					if (player.atMutualWarWith(pcTarget) || isForceUse() || (pcTarget.getPvpFlag() != 0) || (pcTarget.getKarma() > 0))
 					{
 						return null;
 					}

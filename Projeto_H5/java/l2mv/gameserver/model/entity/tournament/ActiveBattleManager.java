@@ -287,16 +287,9 @@ public final class ActiveBattleManager
 				finalCleanBattleInstance(battleInstance);
 				TeleportToTownThread.scheduleTeleportToTown(battleInstance);
 			}
-			if (!winnerTeam.getOnlinePlayers().isEmpty())
+			if (!winnerTeam.getOnlinePlayers().isEmpty() && (battleInstance != null))
 			{
-				if (battleInstance != null)
-				{
-					showScreenMsgAll(battleInstance, TournamentExitListener.getWonBattleMessageToShow(winnerTeam));
-				}
-				else if (ConfigHolder.getBool("TournamentGlobalNotificationStartBattle"))
-				{
-					showGlobalNotification(null, TournamentExitListener.getWonBattleGlobalMessageToShow(winnerTeam));
-				}
+				showScreenMsgAll(battleInstance, TournamentExitListener.getWonBattleMessageToShow(winnerTeam));
 			}
 			else if (ConfigHolder.getBool("TournamentGlobalNotificationStartBattle"))
 			{

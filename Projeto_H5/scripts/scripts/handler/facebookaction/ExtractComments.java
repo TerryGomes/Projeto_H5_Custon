@@ -12,6 +12,7 @@ import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2mv.commons.annotations.Nullable;
 import l2mv.gameserver.fandc.facebook.ActionsAwaitingOwner;
 import l2mv.gameserver.fandc.facebook.ActionsExtractingManager;
 import l2mv.gameserver.fandc.facebook.ActionsExtractor;
@@ -23,7 +24,6 @@ import l2mv.gameserver.fandc.facebook.FacebookProfilesHolder;
 import l2mv.gameserver.fandc.facebook.OfficialPost;
 import l2mv.gameserver.fandc.facebook.OfficialPostsHolder;
 import l2mv.gameserver.fandc.facebook.action.Comment;
-import l2mv.commons.annotations.Nullable;
 import l2mv.gameserver.scripts.ScriptFile;
 
 public class ExtractComments implements ScriptFile, ActionsExtractor

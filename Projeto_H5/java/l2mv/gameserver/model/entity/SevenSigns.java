@@ -515,11 +515,7 @@ public class SevenSigns
 
 			if (daysToChange == 7)
 			{
-				if (_calendar.get(Calendar.HOUR_OF_DAY) < PERIOD_START_HOUR)
-				{
-					daysToChange = 0;
-				}
-				else if (_calendar.get(Calendar.HOUR_OF_DAY) == PERIOD_START_HOUR && _calendar.get(Calendar.MINUTE) < PERIOD_START_MINS)
+				if ((_calendar.get(Calendar.HOUR_OF_DAY) < PERIOD_START_HOUR) || (_calendar.get(Calendar.HOUR_OF_DAY) == PERIOD_START_HOUR && _calendar.get(Calendar.MINUTE) < PERIOD_START_MINS))
 				{
 					daysToChange = 0;
 				}

@@ -8,13 +8,13 @@ import java.util.StringTokenizer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2mv.gameserver.fandc.academy.AcademyList;
-import l2mv.gameserver.fandc.academy.AcademyRewards;
 import gnu.trove.map.hash.TIntObjectHashMap;
 import javolution.util.FastMap;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.data.htm.HtmCache;
 import l2mv.gameserver.data.xml.holder.ItemHolder;
+import l2mv.gameserver.fandc.academy.AcademyList;
+import l2mv.gameserver.fandc.academy.AcademyRewards;
 import l2mv.gameserver.handler.bbs.CommunityBoardManager;
 import l2mv.gameserver.handler.bbs.ICommunityBoardHandler;
 import l2mv.gameserver.listener.actor.player.impl.AcademyAnswerListener;

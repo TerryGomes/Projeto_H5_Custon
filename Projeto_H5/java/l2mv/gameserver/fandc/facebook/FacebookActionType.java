@@ -4,11 +4,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.Map;
 
+import l2mv.gameserver.ConfigHolder;
+import l2mv.gameserver.data.StringHolder;
 import l2mv.gameserver.fandc.facebook.action.Comment;
 import l2mv.gameserver.fandc.facebook.action.Like;
 import l2mv.gameserver.fandc.facebook.action.Post;
-import l2mv.gameserver.ConfigHolder;
-import l2mv.gameserver.data.StringHolder;
 import l2mv.gameserver.utils.Language;
 
 public enum FacebookActionType

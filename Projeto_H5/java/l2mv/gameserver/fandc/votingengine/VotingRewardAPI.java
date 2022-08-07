@@ -23,8 +23,8 @@ import java.util.concurrent.ScheduledFuture;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2mv.gameserver.fandc.votingengine.VotingSettings.MessageType;
 import l2mv.gameserver.Config;
+import l2mv.gameserver.fandc.votingengine.VotingSettings.MessageType;
 import l2mv.gameserver.handler.voicecommands.IVoicedCommandHandler;
 import l2mv.gameserver.handler.voicecommands.VoicedCommandHandler;
 import l2mv.gameserver.model.GameObjectsStorage;

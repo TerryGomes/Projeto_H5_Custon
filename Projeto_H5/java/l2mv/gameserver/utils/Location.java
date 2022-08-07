@@ -416,11 +416,7 @@ public class Location extends Point3D implements SpawnRange, Serializable
 		Location defloc = null;
 		for (Location loc : locs)
 		{
-			if (defloc == null)
-			{
-				defloc = loc;
-			}
-			else if (creature.getDistance(loc) < creature.getDistance(defloc))
+			if ((defloc == null) || (creature.getDistance(loc) < creature.getDistance(defloc)))
 			{
 				defloc = loc;
 			}

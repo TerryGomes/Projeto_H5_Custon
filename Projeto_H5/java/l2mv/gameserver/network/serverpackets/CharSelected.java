@@ -59,7 +59,6 @@ public class CharSelected extends L2GameServerPacket
 		this.writeD(this._loc.x);
 		this.writeD(this._loc.y);
 		this.writeD(this._loc.z);
-
 		this.writeF(this.curHp);
 		this.writeF(this.curMp);
 		this.writeD(this._sp);
@@ -88,18 +87,6 @@ public class CharSelected extends L2GameServerPacket
 		this.writeH(0x00); // c3
 		this.writeH(0x00); // c3
 		this.writeD(0x00); // c3
-		// writeD(0x00); //c3 InspectorBin for 528 client
-		// writeD(0x00); //c3
-		// writeD(0x00); //c3
-		// writeD(0x00); //c3
-		// writeD(0x00); //c3
-		// writeD(0x00); //c3
-		// writeD(0x00); //c3
-		// writeD(0x00); //c3
-		// writeD(0x00); //c3
 
-		// writeD(0x00); //c5
-		// writeD(0x00); //c5
-		// writeD(0x00); //c5
 	}
 }

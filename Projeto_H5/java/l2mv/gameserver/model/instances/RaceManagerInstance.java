@@ -268,13 +268,9 @@ public class RaceManagerInstance extends NpcInstance
 		{
 			showMonsterInfo(player);
 		}
-		else if (command.equals("calculateWin"))
+		else if (command.equals("calculateWin") || command.equals("viewHistory"))
 		{
 			// displayCalculateWinnings(player);
-		}
-		else if (command.equals("viewHistory"))
-		{
-			// displayHistory(player);
 		}
 		else
 		{

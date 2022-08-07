@@ -79,7 +79,7 @@ public class AuthServer
 
 		try
 		{
-			if (Config.LOGIN_HOST.equalsIgnoreCase("*"))
+			if (Config.LOGIN_HOST.equalsIgnoreCase("127.0.0.1"))
 			{
 				ss = new ServerSocket(Config.PORT_LOGIN);
 			}

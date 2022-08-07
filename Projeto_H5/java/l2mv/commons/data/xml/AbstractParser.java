@@ -6,7 +6,7 @@ import java.io.InputStream;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 
-import l2mv.commons.crypt.CryptUtil;
+//import l2mv.commons.crypt.CryptUtil;
 import l2mv.commons.data.xml.helpers.ErrorHandlerImpl;
 import l2mv.commons.data.xml.helpers.SimpleDTDEntityResolver;
 import l2mv.commons.logging.LoggerObject;
@@ -40,10 +40,10 @@ public abstract class AbstractParser<H extends AbstractHolder> extends LoggerObj
 		readData(document.getRootElement());
 	}
 
-	protected void parseCrypted(File file) throws Exception
-	{
-		parseDocument(CryptUtil.decryptOnDemand(file), file.getName());
-	}
+//	protected void parseCrypted(File file) throws Exception
+//	{
+//		parseDocument(CryptUtil.decryptOnDemand(file), file.getName());
+//	}
 
 	protected abstract void readData(Element rootElement) throws Exception;
 

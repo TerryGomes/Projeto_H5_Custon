@@ -29,7 +29,6 @@ import org.napile.primitive.maps.impl.CHashIntObjectMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2mv.gameserver.fandc.managers.GmEventManager;
 import gnu.trove.set.hash.TIntHashSet;
 import l2mv.commons.lang.reference.HardReference;
 import l2mv.commons.lang.reference.HardReferences;
@@ -46,6 +45,7 @@ import l2mv.gameserver.ai.CtrlIntention;
 import l2mv.gameserver.ai.DefaultAI;
 import l2mv.gameserver.ai.PlayableAI.nextAction;
 import l2mv.gameserver.data.xml.holder.EventHolder;
+import l2mv.gameserver.fandc.managers.GmEventManager;
 import l2mv.gameserver.geodata.GeoEngine;
 import l2mv.gameserver.geodata.GeoMove;
 import l2mv.gameserver.instancemanager.DimensionalRiftManager;

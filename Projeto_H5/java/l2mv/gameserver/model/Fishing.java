@@ -368,11 +368,7 @@ public class Fishing
 		}
 
 		int mode;
-		if (skillType == SkillType.REELING && !GameTimeController.getInstance().isNowNight())
-		{
-			mode = 1;
-		}
-		else if (skillType == SkillType.PUMPING && GameTimeController.getInstance().isNowNight())
+		if ((skillType == SkillType.REELING && !GameTimeController.getInstance().isNowNight()) || (skillType == SkillType.PUMPING && GameTimeController.getInstance().isNowNight()))
 		{
 			mode = 1;
 		}

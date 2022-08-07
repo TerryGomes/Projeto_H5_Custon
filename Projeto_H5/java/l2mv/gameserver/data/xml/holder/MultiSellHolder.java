@@ -15,7 +15,7 @@ import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
 import gnu.trove.map.hash.TIntObjectHashMap;
-import l2mv.commons.crypt.CryptUtil;
+//import l2mv.commons.crypt.CryptUtil;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.model.base.MultiSellEntry;
@@ -208,7 +208,8 @@ public class MultiSellHolder
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			factory.setValidating(false);
 			factory.setIgnoringComments(true);
-			doc = factory.newDocumentBuilder().parse(CryptUtil.decryptOnDemand(f));
+			doc = factory.newDocumentBuilder().parse(f);
+//			doc = factory.newDocumentBuilder().parse(CryptUtil.decryptOnDemand(f));
 		}
 		catch (IOException | ParserConfigurationException | SAXException e)
 		{

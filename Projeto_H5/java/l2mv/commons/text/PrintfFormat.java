@@ -926,25 +926,18 @@ public class PrintfFormat
 				setFieldWidth();
 				setPrecision();
 				setOptionalHL();
-				if (setConversionCharacter())
+				if (setConversionCharacter() && (pos == fmtArg.length()))
 				{
-					if (pos == fmtArg.length())
+					if (leadingZeros && leftJustify)
 					{
-						if (leadingZeros && leftJustify)
+						leadingZeros = false;
+					}
+					if (precisionSet && leadingZeros)
+					{
+						if (conversionCharacter == 'd' || conversionCharacter == 'i' || conversionCharacter == 'o' || conversionCharacter == 'x')
 						{
 							leadingZeros = false;
 						}
-						if (precisionSet && leadingZeros)
-						{
-							if (conversionCharacter == 'd' || conversionCharacter == 'i' || conversionCharacter == 'o' || conversionCharacter == 'x')
-							{
-								leadingZeros = false;
-							}
-						}
-					}
-					else
-					{
-						throw new IllegalArgumentException("Malformed conversion specification=" + fmtArg);
 					}
 				}
 				else
@@ -2756,11 +2749,7 @@ public class PrintfFormat
 			{
 				nBlanks = 0;
 			}
-			if (leadingSign)
-			{
-				n++;
-			}
-			else if (leadingSpace)
+			if (leadingSign || leadingSpace)
 			{
 				n++;
 			}

@@ -5,6 +5,8 @@ import java.io.IOException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2mv.gameserver.ConfigHolder;
+import l2mv.gameserver.data.htm.HtmCache;
 import l2mv.gameserver.fandc.facebook.ActionsExtractingManager;
 import l2mv.gameserver.fandc.facebook.ActiveTask;
 import l2mv.gameserver.fandc.facebook.ActiveTasksHandler;
@@ -14,8 +16,6 @@ import l2mv.gameserver.fandc.facebook.FacebookActionType;
 import l2mv.gameserver.fandc.facebook.FacebookDatabaseHandler;
 import l2mv.gameserver.fandc.facebook.OfficialPost;
 import l2mv.gameserver.fandc.facebook.OfficialPostsHolder;
-import l2mv.gameserver.ConfigHolder;
-import l2mv.gameserver.data.htm.HtmCache;
 import l2mv.gameserver.handler.admincommands.AdminCommandHandler;
 import l2mv.gameserver.handler.admincommands.IAdminCommandHandler;
 import l2mv.gameserver.model.GameObjectsStorage;

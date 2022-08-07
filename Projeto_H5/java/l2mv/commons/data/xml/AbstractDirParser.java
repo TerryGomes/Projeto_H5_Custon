@@ -1,6 +1,7 @@
 package l2mv.commons.data.xml;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.util.Collection;
 
 import org.apache.commons.io.FileUtils;
@@ -51,7 +52,9 @@ public abstract class AbstractDirParser<H extends AbstractHolder> extends Abstra
 					{
 						try
 						{
-							parseCrypted(f);
+							
+							parseDocument(new FileInputStream(f), f.getName());
+							//parseCrypted(f);
 						}
 						catch (Exception e)
 						{

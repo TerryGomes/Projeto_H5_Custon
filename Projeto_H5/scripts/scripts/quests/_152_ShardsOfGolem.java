@@ -97,11 +97,7 @@ public class _152_ShardsOfGolem extends Quest implements ScriptFile
 				htmltext = "30035-02.htm";
 				st.exitCurrentQuest(true);
 			}
-			else if (cond == 1 && st.getQuestItemsCount(HARRYS_RECEIPT1) != 0)
-			{
-				htmltext = "30035-05.htm";
-			}
-			else if (cond == 2 && st.getQuestItemsCount(HARRYS_RECEIPT2) != 0)
+			else if ((cond == 1 && st.getQuestItemsCount(HARRYS_RECEIPT1) != 0) || (cond == 2 && st.getQuestItemsCount(HARRYS_RECEIPT2) != 0))
 			{
 				htmltext = "30035-05.htm";
 			}

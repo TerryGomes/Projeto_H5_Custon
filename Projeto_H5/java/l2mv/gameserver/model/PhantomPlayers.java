@@ -1082,12 +1082,8 @@ public class PhantomPlayers
 		{ // Spellcraft
 			mastery = 0;
 		}
-		else if (player.getSkillLevel(231) > 0)
+		else if ((player.getSkillLevel(231) > 0) || (player.getSkillLevel(232) > 0))
 		{ // Warrior Heavy Armor Mastery
-			mastery = 2;
-		}
-		else if (player.getSkillLevel(232) > 0)
-		{ // Tank Heavy Armor Mastery
 			mastery = 2;
 		}
 		else if (player.getSkillLevel(227) > 0) // Warrior Light Armor Mastery
@@ -1314,16 +1310,7 @@ public class PhantomPlayers
 			if (item.isWeapon() && ((WeaponTemplate) item.getTemplate()).getItemType() == weaponType)
 			{
 				// Item grade is lesser than S, but still the best one there
-				if (item.getTemplate().getItemGrade().ordinal() < 5 && item.getTemplate().getItemGrade().ordinal() == player.getGrade())
-				{
-					if (!item.isEquipped())
-					{
-						player.getInventory().equipItem(item);
-					}
-					return;
-				}
-				// S grade or above and compatitable - equip.
-				else if (item.getTemplate().getItemGrade().externalOrdinal == 5 && item.getTemplate().getItemGrade().ordinal() <= player.getGrade())
+				if ((item.getTemplate().getItemGrade().ordinal() < 5 && item.getTemplate().getItemGrade().ordinal() == player.getGrade()) || (item.getTemplate().getItemGrade().externalOrdinal == 5 && item.getTemplate().getItemGrade().ordinal() <= player.getGrade()))
 				{
 					if (!item.isEquipped())
 					{
@@ -1422,12 +1409,7 @@ public class PhantomPlayers
 								weaplist.add(wpn.getItemId());
 								break;
 							}
-							else if (skill.getId() == 3013 || skill.getId() == 3011) // Special Ability: Health
-							{
-								weaplist.add(wpn.getItemId());
-								break;
-							}
-							else if (wpn.getItemType() == weaponType && weaponType == WeaponType.DUAL)
+							else if ((skill.getId() == 3013 || skill.getId() == 3011) || (wpn.getItemType() == weaponType && weaponType == WeaponType.DUAL)) // Special Ability: Health
 							{
 								weaplist.add(wpn.getItemId());
 								break;

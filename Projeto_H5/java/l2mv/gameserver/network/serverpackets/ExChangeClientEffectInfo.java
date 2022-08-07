@@ -12,7 +12,7 @@ public class ExChangeClientEffectInfo extends L2GameServerPacket
 	@Override
 	protected void writeImpl()
 	{
-		this.writeEx(0xC1);
+		this.writeEx(0xC2);
 		this.writeD(0);
 		this.writeD(this._state);
 	}

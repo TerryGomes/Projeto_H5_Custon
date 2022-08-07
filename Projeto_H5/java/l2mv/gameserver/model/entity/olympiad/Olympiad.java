@@ -127,11 +127,7 @@ public class Olympiad
 		switch (_period)
 		{
 		case 0:
-			if (_olympiadEnd == 0)
-			{
-				OlympiadDatabase.setNewOlympiadEnd();
-			}
-			else if (_olympiadEnd < Calendar.getInstance().getTimeInMillis() && _validationEnd <= Calendar.getInstance().getTimeInMillis() + 10 * 1000)
+			if ((_olympiadEnd == 0) || (_olympiadEnd < Calendar.getInstance().getTimeInMillis() && _validationEnd <= Calendar.getInstance().getTimeInMillis() + 10 * 1000))
 			{
 				OlympiadDatabase.setNewOlympiadEnd();
 			}

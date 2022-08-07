@@ -348,9 +348,9 @@ public class ConfigParser
 					}
 
 					final boolean restInNextLine = valueFromLine.endsWith("\\");
-					if (valueFromLine.contains("//!"))
+					if (valueFromLine.contains(COMMENT_START_TEXT))
 					{
-						valueFromLine = valueFromLine.substring(0, valueFromLine.indexOf("//!"));
+						valueFromLine = valueFromLine.substring(0, valueFromLine.indexOf(COMMENT_START_TEXT));
 					}
 					else if (restInNextLine)
 					{

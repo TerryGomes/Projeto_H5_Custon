@@ -22,8 +22,8 @@ import java.net.URL;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2mv.gameserver.fandc.votingengine.VotingSettings.MessageType;
 import l2mv.gameserver.Config;
+import l2mv.gameserver.fandc.votingengine.VotingSettings.MessageType;
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.utils.ItemFunctions;
 

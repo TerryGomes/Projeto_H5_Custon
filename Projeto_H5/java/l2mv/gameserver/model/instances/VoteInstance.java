@@ -19,13 +19,13 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.StringTokenizer;
 
+import l2mv.commons.util.Rnd;
 import l2mv.gameserver.kara.vote.Site;
 import l2mv.gameserver.kara.vote.SiteTemplate;
 import l2mv.gameserver.kara.vote.Vote;
 import l2mv.gameserver.kara.vote.VoteBuff;
 import l2mv.gameserver.kara.vote.VoteManager;
 import l2mv.gameserver.kara.vote.VoteReward;
-import l2mv.commons.util.Rnd;
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2mv.gameserver.templates.npc.NpcTemplate;

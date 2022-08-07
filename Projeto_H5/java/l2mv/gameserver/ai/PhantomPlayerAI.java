@@ -864,17 +864,9 @@ public class PhantomPlayerAI extends PlayerAI implements OnAiEventListener, OnMa
 						continue;
 					}
 				}
-				if (getActor().checkTarget(tgt))
+				if (getActor().checkTarget(tgt) || (Location.getDistance(getActor(), tgt) >= 2000) || !GeoEngine.canSeeTarget(getActor(), tgt, false))
 				{
 					// if (phantom.getLevel() - tgt.getLevel() > 5)
-					lowPriorityTargets.add(tgt);
-				}
-				else if (Location.getDistance(getActor(), tgt) >= 2000)
-				{ // CheckTarget failed due to distance.
-					lowPriorityTargets.add(tgt);
-				}
-				else if (!GeoEngine.canSeeTarget(getActor(), tgt, false)) // CheckTarget failed due to geodata check.
-				{
 					lowPriorityTargets.add(tgt);
 				}
 			}
@@ -1918,11 +1910,7 @@ public class PhantomPlayerAI extends PlayerAI implements OnAiEventListener, OnMa
 		{
 			if (item.isWeapon() && ((WeaponTemplate) item.getTemplate()).getItemType() == weaponType)
 			{
-				if (topWeapon == null)
-				{
-					topWeapon = item;
-				}
-				else if (topWeapon.getTemplate().getReferencePrice() < item.getTemplate().getReferencePrice()) // A lazy way to find the better weapon
+				if ((topWeapon == null) || (topWeapon.getTemplate().getReferencePrice() < item.getTemplate().getReferencePrice()))
 				{
 					topWeapon = item;
 				}
@@ -1936,11 +1924,7 @@ public class PhantomPlayerAI extends PlayerAI implements OnAiEventListener, OnMa
 			{
 				if (item.isWeapon())
 				{
-					if (topWeapon == null)
-					{
-						topWeapon = item;
-					}
-					else if (topWeapon.getTemplate().getReferencePrice() < item.getTemplate().getReferencePrice()) // A lazy way to find the better weapon
+					if ((topWeapon == null) || (topWeapon.getTemplate().getReferencePrice() < item.getTemplate().getReferencePrice()))
 					{
 						topWeapon = item;
 					}

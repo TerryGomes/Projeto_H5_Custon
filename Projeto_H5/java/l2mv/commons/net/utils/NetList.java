@@ -7,16 +7,9 @@ public final class NetList extends ArrayList<Net>
 {
 	private static final long serialVersionUID = 4266033257195615387L;
 
-	public boolean isInRange(String address)
+	public boolean isInRange(final String address)
 	{
-		for (Net net : this)
-		{
-			if (net.isInRange(address))
-			{
-				return true;
-			}
-		}
-		return false;
+		return stream().anyMatch(net -> net.isInRange(address));
 	}
 
 	@Override

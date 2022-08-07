@@ -1,7 +1,7 @@
 package l2mv.gameserver.listener.actor.player.impl;
 
-import l2mv.gameserver.fandc.academy.AcademyList;
 import l2mv.commons.lang.reference.HardReference;
+import l2mv.gameserver.fandc.academy.AcademyList;
 import l2mv.gameserver.listener.actor.player.OnAnswerListener;
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.model.Request;

@@ -115,19 +115,14 @@ public class CaptchaImage implements OnDeathListener
 				// Hack: use location heading as insertTime
 				final int locationInsertTime = (int) (System.currentTimeMillis() / 1000); // Will cause bug on 03:14:07 UTC on Tuesday, 19 January 2038 :)
 				final Location lastKillLoc = _lastKillLocations.get(player.getObjectId());
-				if (lastKillLoc == null)
+				if ((lastKillLoc == null) || !lastKillLoc.equals(player.getLoc()))
 				{
 					_lastKillLocations.put(player.getObjectId(), player.getLoc().setH(locationInsertTime).setR(0));
-				}
-				else if (lastKillLoc.equals(player.getLoc()))
-				{
-					_lastKillLocations.put(player.getObjectId(), lastKillLoc.setR(lastKillLoc.r + 1)); // Superhack: Use location's reflection as a count for how many times its put
-																										// :D:D:D
 				}
 				else
 				{
-					// Different location, put it.
-					_lastKillLocations.put(player.getObjectId(), player.getLoc().setH(locationInsertTime).setR(0));
+					_lastKillLocations.put(player.getObjectId(), lastKillLoc.setR(lastKillLoc.r + 1)); // Superhack: Use location's reflection as a count for how many times its put
+																										// :D:D:D
 				}
 				// Location isnt changed for 1 minute.
 				if (lastKillLoc != null && locationInsertTime - lastKillLoc.h >= Config.CAPTCHA_SAME_LOCATION_DELAY)

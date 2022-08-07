@@ -229,7 +229,7 @@ public class VoteMain
 		{
 			player.sendMessage("Due to your multiple failures in voting you lost your chance to vote today");
 		}
-		else if (((lastVoteHopzone + voteDelay) < System.currentTimeMillis()) && (getTries(player) > 0))
+		else if ((((lastVoteHopzone + voteDelay) < System.currentTimeMillis()) && (getTries(player) > 0)) || ((getTries(player) <= 0) && ((lastVoteHopzone + voteDelay) < System.currentTimeMillis())))
 		{
 			for (Player j : GameObjectsStorage.getAllPlayersForIterate())
 			{
@@ -244,23 +244,6 @@ public class VoteMain
 			player.sendMessage("Go fast on the site and vote on the hopzone banner!");
 			player.sendMessage("You have " + Config.SECS_TO_VOTE + " seconds.Hurry!");
 			ThreadPoolManager.getInstance().schedule(new hopvotetask(player), Config.SECS_TO_VOTE * 1000);
-		}
-		else if ((getTries(player) <= 0) && ((lastVoteHopzone + voteDelay) < System.currentTimeMillis()))
-		{
-			for (Player j : GameObjectsStorage.getAllPlayersForIterate())
-			{
-				if (j.isVoting())
-				{
-					player.sendMessage("Someone is already voting.Wait for your turn please!");
-					return;
-				}
-			}
-
-			player.setIsVoting(true);
-			player.sendMessage("Go fast on the site and vote on the hopzone banner!");
-			player.sendMessage("You have " + Config.SECS_TO_VOTE + " seconds.Hurry!");
-			ThreadPoolManager.getInstance().schedule(new hopvotetask(player), Config.SECS_TO_VOTE * 1000);
-
 		}
 		else
 		{
@@ -330,22 +313,7 @@ public class VoteMain
 		{
 			player.sendMessage("Due to your multiple failures in voting you lost your chance to vote today");
 		}
-		else if ((getTries(player) <= 0) && ((lastVoteTopzone + voteDelay) < System.currentTimeMillis()))
-		{
-			for (Player j : GameObjectsStorage.getAllPlayersForIterate())
-			{
-				if (j.isVoting())
-				{
-					player.sendMessage("Someone is already voting.Wait for your turn please!");
-					return;
-				}
-			}
-			player.setIsVoting(true);
-			player.sendMessage("Go fast on the site and vote on the topzone banner!");
-			player.sendMessage((new StringBuilder()).append("You have ").append(Config.SECS_TO_VOTE).append(" seconds.Hurry!").toString());
-			ThreadPoolManager.getInstance().schedule(new topvotetask(player), Config.SECS_TO_VOTE * 1000);
-		}
-		else if (((lastVoteTopzone + voteDelay) < System.currentTimeMillis()) && (getTries(player) > 0))
+		else if (((getTries(player) <= 0) && ((lastVoteTopzone + voteDelay) < System.currentTimeMillis())) || (((lastVoteTopzone + voteDelay) < System.currentTimeMillis()) && (getTries(player) > 0)))
 		{
 			for (Player j : GameObjectsStorage.getAllPlayersForIterate())
 			{

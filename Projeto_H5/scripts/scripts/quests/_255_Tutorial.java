@@ -693,12 +693,7 @@ public class _255_Tutorial extends Quest implements ScriptFile, OnPlayerEnterLis
 						break;
 					}
 				}
-				else if (level == 18 && player.getQuestState("_10276_MutatedKaneusGludio") == null)
-				{
-					st.showQuestionMark(36);
-					st.playSound(SOUND_TUTORIAL);
-				}
-				else if (level == 28 && player.getQuestState("_10277_MutatedKaneusDion") == null)
+				else if ((level == 18 && player.getQuestState("_10276_MutatedKaneusGludio") == null) || (level == 28 && player.getQuestState("_10277_MutatedKaneusDion") == null))
 				{
 					st.showQuestionMark(36);
 					st.playSound(SOUND_TUTORIAL);

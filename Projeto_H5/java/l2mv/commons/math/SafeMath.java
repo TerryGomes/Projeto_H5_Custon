@@ -40,26 +40,18 @@ public class SafeMath
 		}
 		else if (a < 0)
 		{
-			if (b < 0)
+			// check for negative overflow
+			if ((b >= 0) || (Integer.MIN_VALUE - b <= a))
 			{
-				// check for negative overflow
-				if (Integer.MIN_VALUE - b <= a)
-				{
-					ret = a + b;
-				}
-				else if (limit)
-				{
-					ret = Integer.MIN_VALUE;
-				}
-				else
-				{
-					throw new ArithmeticException(msg);
-				}
+				ret = a + b;
+			}
+			else if (limit)
+			{
+				ret = Integer.MIN_VALUE;
 			}
 			else
 			{
-				// opposite sign addition is always safe
-				ret = a + b;
+				throw new ArithmeticException(msg);
 			}
 		}
 		else // check for positive overflow
@@ -111,26 +103,18 @@ public class SafeMath
 		}
 		else if (a < 0)
 		{
-			if (b < 0)
+			// check for negative overflow
+			if ((b >= 0) || (Long.MIN_VALUE - b <= a))
 			{
-				// check for negative overflow
-				if (Long.MIN_VALUE - b <= a)
-				{
-					ret = a + b;
-				}
-				else if (limit)
-				{
-					ret = Long.MIN_VALUE;
-				}
-				else
-				{
-					throw new ArithmeticException(msg);
-				}
+				ret = a + b;
+			}
+			else if (limit)
+			{
+				ret = Long.MIN_VALUE;
 			}
 			else
 			{
-				// opposite sign addition is always safe
-				ret = a + b;
+				throw new ArithmeticException(msg);
 			}
 		}
 		else // check for positive overflow

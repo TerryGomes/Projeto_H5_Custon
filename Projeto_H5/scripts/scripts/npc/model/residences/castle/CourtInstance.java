@@ -31,11 +31,7 @@ public class CourtInstance extends NpcInstance
 			return;
 		}
 		int condition = validateCondition(player);
-		if (condition <= COND_ALL_FALSE)
-		{
-			return;
-		}
-		else if (condition == COND_BUSY_BECAUSE_OF_SIEGE)
+		if ((condition <= COND_ALL_FALSE) || (condition == COND_BUSY_BECAUSE_OF_SIEGE))
 		{
 			return;
 		}

@@ -47,12 +47,7 @@ public class HandysBlock extends DefaultAI
 			{
 				ArenaParticipantsHolder holder = HandysBlockCheckerManager.getInstance().getHolder(arena);
 
-				if (holder.getPlayerTeam(player) == 0 && !actor.isRed())
-				{
-					actor.changeColor();
-					increaseTeamPointsAndSend(player, holder.getEvent());
-				}
-				else if (holder.getPlayerTeam(player) == 1 && actor.isRed())
+				if ((holder.getPlayerTeam(player) == 0 && !actor.isRed()) || (holder.getPlayerTeam(player) == 1 && actor.isRed()))
 				{
 					actor.changeColor();
 					increaseTeamPointsAndSend(player, holder.getEvent());

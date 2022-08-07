@@ -84,16 +84,9 @@ public class _036_MakeASewingKit extends Quest implements ScriptFile
 			if (st.getPlayer().getLevel() >= 60)
 			{
 				QuestState fwear = st.getPlayer().getQuestState(_037_PleaseMakeMeFormalWear.class);
-				if (fwear != null && fwear.getState() == STARTED)
+				if ((fwear != null && fwear.getState() == STARTED) && (fwear.getCond() == 6))
 				{
-					if (fwear.getCond() == 6)
-					{
-						htmltext = "head_blacksmith_ferris_q0036_0101.htm";
-					}
-					else
-					{
-						st.exitCurrentQuest(true);
-					}
+					htmltext = "head_blacksmith_ferris_q0036_0101.htm";
 				}
 				else
 				{

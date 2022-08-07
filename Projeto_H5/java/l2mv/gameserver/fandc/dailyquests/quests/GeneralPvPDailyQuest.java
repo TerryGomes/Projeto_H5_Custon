@@ -14,8 +14,8 @@
  */
 package l2mv.gameserver.fandc.dailyquests.quests;
 
-import l2mv.gameserver.fandc.dailyquests.AbstractDailyQuest;
 import l2mv.gameserver.Config;
+import l2mv.gameserver.fandc.dailyquests.AbstractDailyQuest;
 import l2mv.gameserver.listener.actor.OnDeathListener;
 import l2mv.gameserver.model.Creature;
 import l2mv.gameserver.model.Player;

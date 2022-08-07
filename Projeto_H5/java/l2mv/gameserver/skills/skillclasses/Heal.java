@@ -83,15 +83,10 @@ public class Heal extends Skill
 				// Player holding a cursed weapon can't be healed and can't heal
 				if (target != activeChar)
 				{
-					if (target.isPlayer() && target.isCursedWeaponEquipped())
+					if ((target.isPlayer() && target.isCursedWeaponEquipped()) || (activeChar.isPlayer() && activeChar.isCursedWeaponEquipped()))
 					{
 						continue;
 					}
-					else if (activeChar.isPlayer() && activeChar.isCursedWeaponEquipped())
-					{
-						continue;
-					}
-					// Fight club check
 					else if (activeChar.isPlayable() && activeChar.getPlayer().isInFightClub())
 					{
 						if (!activeChar.getPlayer().getFightClubEvent().canUsePositiveMagic(activeChar, target))
@@ -139,11 +134,7 @@ public class Heal extends Skill
 					Player owner = target.getPlayer();
 					if (owner != null)
 					{
-						if (activeChar == target)
-						{
-							owner.sendMessage(new CustomMessage("YOU_HAVE_RESTORED_S1_HP_OF_YOUR_PET", owner).addNumber(Math.round(addToHp)));
-						}
-						else if (owner == activeChar)
+						if ((activeChar == target) || (owner == activeChar))
 						{
 							owner.sendMessage(new CustomMessage("YOU_HAVE_RESTORED_S1_HP_OF_YOUR_PET", owner).addNumber(Math.round(addToHp)));
 						}

@@ -774,20 +774,13 @@ public class MonsterInstance extends NpcInstance
 		}
 
 		// заспойлен этим игроком, и смерть наступила не более 20 секунд назад
-		if (getDeadTime() < 15000L)
+		if ((getDeadTime() >= 15000L) || (player.getObjectId() == spoilerId))
 		{
-			if (player.getObjectId() == spoilerId)
-			{
-				return true;
-			}
-			else
-			{
-				return false;
-			}
+			return true;
 		}
 		else
 		{
-			return true;
+			return false;
 		}
 	}
 

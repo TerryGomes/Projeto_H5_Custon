@@ -5,7 +5,6 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-import l2mv.gameserver.fandc.managers.GmEventManager;
 import l2mv.commons.lang.reference.HardReference;
 import l2mv.commons.util.Rnd;
 import l2mv.commons.util.concurrent.atomic.AtomicState;
@@ -13,6 +12,7 @@ import l2mv.gameserver.Config;
 import l2mv.gameserver.ai.CtrlEvent;
 import l2mv.gameserver.ai.CtrlIntention;
 import l2mv.gameserver.cache.Msg;
+import l2mv.gameserver.fandc.managers.GmEventManager;
 import l2mv.gameserver.geodata.GeoEngine;
 import l2mv.gameserver.model.AggroList.AggroInfo;
 import l2mv.gameserver.model.Skill.SkillTargetType;
@@ -97,19 +97,7 @@ public abstract class Playable extends Creature
 
 		if (skill != null)
 		{
-			if (skill.altUse())
-			{
-				return false;
-			}
-			if (skill.getTargetType() == SkillTargetType.TARGET_FEEDABLE_BEAST)
-			{
-				return false;
-			}
-			if (skill.getTargetType() == SkillTargetType.TARGET_UNLOCKABLE)
-			{
-				return false;
-			}
-			if (skill.getTargetType() == SkillTargetType.TARGET_CHEST)
+			if (skill.altUse() || (skill.getTargetType() == SkillTargetType.TARGET_FEEDABLE_BEAST) || (skill.getTargetType() == SkillTargetType.TARGET_UNLOCKABLE) || (skill.getTargetType() == SkillTargetType.TARGET_CHEST))
 			{
 				return false;
 			}
@@ -125,11 +113,7 @@ public abstract class Playable extends Creature
 		{
 			return false;
 		}
-		if (getPlayer().isInFightClub())
-		{
-			return false;
-		}
-		if (isInZone(ZoneType.SIEGE) && target.isInZone(ZoneType.SIEGE))
+		if (getPlayer().isInFightClub() || (isInZone(ZoneType.SIEGE) && target.isInZone(ZoneType.SIEGE)))
 		{
 			return false;
 		}
@@ -607,11 +591,7 @@ public abstract class Playable extends Creature
 			{
 				return true;
 			}
-			if ((player.getKarma() > 0) || (player.getPvpFlag() != 0))
-			{
-				return true;
-			}
-			if (witchCtrl && (player.getPvpFlag() > 0))
+			if ((player.getKarma() > 0) || (player.getPvpFlag() != 0) || (witchCtrl && (player.getPvpFlag() > 0)))
 			{
 				return true;
 			}

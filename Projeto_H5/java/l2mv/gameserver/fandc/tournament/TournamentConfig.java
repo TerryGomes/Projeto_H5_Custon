@@ -8,9 +8,9 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import l2mv.commons.configuration.ExProperties;
 import l2mv.gameserver.fandc.tournament.model.ItemHolder;
 import l2mv.gameserver.fandc.tournament.model.RewardHolder;
-import l2mv.commons.configuration.ExProperties;
 import l2mv.gameserver.utils.Location;
 
 public class TournamentConfig

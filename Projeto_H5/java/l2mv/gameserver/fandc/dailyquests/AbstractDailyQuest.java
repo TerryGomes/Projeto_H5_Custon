@@ -24,11 +24,11 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 
+import l2mv.gameserver.data.htm.HtmCache;
 import l2mv.gameserver.fandc.dailyquests.drops.Droplist;
 import l2mv.gameserver.fandc.dailyquests.drops.DroplistGroup;
 import l2mv.gameserver.fandc.dailyquests.drops.DroplistItem;
 import l2mv.gameserver.fandc.security.AntiFeedManager;
-import l2mv.gameserver.data.htm.HtmCache;
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.model.Zone.ZoneType;
 import l2mv.gameserver.model.quest.QuestState;
@@ -274,15 +274,7 @@ public abstract class AbstractDailyQuest extends AbstractDPScript
 
 	public boolean canStartQuest(Player player)
 	{
-		if (player.getLevel() < getMinLevel())
-		{
-			return false;
-		}
-		else if (player.getLevel() > getMaxLevel())
-		{
-			return false;
-		}
-		else if (isInReuse(player.getHWID()))
+		if ((player.getLevel() < getMinLevel()) || (player.getLevel() > getMaxLevel()) || isInReuse(player.getHWID()))
 		{
 			return false;
 		}

@@ -255,7 +255,7 @@ public class CommunityDropCalculator implements ScriptFile, ICommunityBoardHandl
 //		else
 //			html = html.replace("%goToNpc%", "<button value=\"Go to Npc\" action=\"bypass _dropMonsterDetailsByItem_"+monsterId+"_3\" width=200 height=30 back=\"L2UI_CT1.OlympiadWnd_DF_Fight1None_Down\" fore=\"L2UI_ct1.OlympiadWnd_DF_Fight1None\">");
 
-		ImagesCache.getInstance().sendUsedImages(html, player);
+		html = ImagesCache.getInstance().sendUsedImages(html, player);
 		ShowBoard.separateAndSend(html, player);
 	}
 
@@ -347,7 +347,7 @@ public class CommunityDropCalculator implements ScriptFile, ICommunityBoardHandl
 //		else
 //			html = html.replace("%goToNpc%", "<button value=\"Go to Npc\" action=\"bypass _dropMonsterDetailsByName_" + monsterId + "_3\" width=200 height=30 back=\"L2UI_CT1.OlympiadWnd_DF_Fight1None_Down\" fore=\"L2UI_ct1" + ".OlympiadWnd_DF_Fight1None\">");
 
-		ImagesCache.getInstance().sendUsedImages(html, player);
+		html = ImagesCache.getInstance().sendUsedImages(html, player);
 		ShowBoard.separateAndSend(html, player);
 	}
 

@@ -592,12 +592,7 @@ public class RankPvpSystem
 	private void shoutComboKill(long killTime)
 	{
 		// create new combo instance if not exists:
-		if (_killer.getRPSCookie().getComboKill() == null)
-		{
-			_killer.getRPSCookie().setComboKill(new RPSHtmlComboKill());
-		}
-		// reset old combo if kill reseter enabled
-		else if (RPSConfig.COMBO_KILL_RESETER > 0 && (killTime - _killer.getRPSCookie().getComboKill().getLastKillTime()) > RPSConfig.COMBO_KILL_RESETER * 1000)
+		if ((_killer.getRPSCookie().getComboKill() == null) || (RPSConfig.COMBO_KILL_RESETER > 0 && (killTime - _killer.getRPSCookie().getComboKill().getLastKillTime()) > RPSConfig.COMBO_KILL_RESETER * 1000))
 		{
 			_killer.getRPSCookie().setComboKill(new RPSHtmlComboKill());
 		}

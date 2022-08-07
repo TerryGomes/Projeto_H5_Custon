@@ -774,7 +774,7 @@ public final class VillageMasterInstance extends NpcInstance
 
 		clan.setDissolvedClanTime(System.currentTimeMillis() + Clan.DISBAND_TIME);
 		clan.updateClanInDB();
-		ClanTable.getInstance().scheduleRemoveClan(clan.getClanId(), clan.getDissolvedClanTime());
+		// ClanTable.getInstance().scheduleRemoveClan(clan.getClanId(), clan.getDissolvedClanTime());
 		clan.broadcastClanStatus(true, true, false);
 		player.sendMessage("Your clan has been scheduled for disband!");
 	}

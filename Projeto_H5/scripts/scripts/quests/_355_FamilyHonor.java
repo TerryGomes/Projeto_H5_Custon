@@ -74,11 +74,7 @@ public class _355_FamilyHonor extends Quest implements ScriptFile
 			st.takeItems(BUST_OF_ANCIENT_GODDESS, count);
 			st.giveItems(WORK_OF_BERONA, count);
 		}
-		else if (event.equals("patrin_q0355_01.htm"))
-		{
-			return htmltext;
-		}
-		else if (event.equals("patrin_q0355_01a.htm"))
+		else if (event.equals("patrin_q0355_01.htm") || event.equals("patrin_q0355_01a.htm"))
 		{
 			return htmltext;
 		}

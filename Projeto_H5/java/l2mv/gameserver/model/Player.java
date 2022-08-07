@@ -47,17 +47,6 @@ import org.napile.primitive.maps.impl.CHashIntObjectMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2mv.gameserver.fandc.academy.AcademyList;
-import l2mv.gameserver.fandc.datatables.OfflineBuffersTable;
-import l2mv.gameserver.fandc.facebook.FacebookProfile;
-import l2mv.gameserver.fandc.facebook.FacebookProfilesHolder;
-import l2mv.gameserver.fandc.managers.GmEventManager;
-import l2mv.gameserver.fandc.managers.OfflineBufferManager;
-//import fandc.pc.PcStats;
-//import fandc.templates.Ranking;
-import l2mv.gameserver.fandc.security.AntiFeedManager;
-import l2mv.gameserver.fandc.tournament.model.AbstractTournament;
-import l2mv.gameserver.fandc.tournament.model.enums.TournamentPhase;
 import javolution.util.FastList;
 import javolution.util.FastMap;
 import l2mv.commons.annotations.Nullable;
@@ -97,6 +86,17 @@ import l2mv.gameserver.data.xml.holder.ResidenceHolder;
 import l2mv.gameserver.data.xml.holder.SkillAcquireHolder;
 import l2mv.gameserver.database.DatabaseFactory;
 import l2mv.gameserver.database.mysql;
+import l2mv.gameserver.fandc.academy.AcademyList;
+import l2mv.gameserver.fandc.datatables.OfflineBuffersTable;
+import l2mv.gameserver.fandc.facebook.FacebookProfile;
+import l2mv.gameserver.fandc.facebook.FacebookProfilesHolder;
+import l2mv.gameserver.fandc.managers.GmEventManager;
+import l2mv.gameserver.fandc.managers.OfflineBufferManager;
+//import fandc.pc.PcStats;
+//import fandc.templates.Ranking;
+import l2mv.gameserver.fandc.security.AntiFeedManager;
+import l2mv.gameserver.fandc.tournament.model.AbstractTournament;
+import l2mv.gameserver.fandc.tournament.model.enums.TournamentPhase;
 import l2mv.gameserver.handler.bbs.CommunityBoardManager;
 import l2mv.gameserver.handler.bbs.ICommunityBoardHandler;
 import l2mv.gameserver.handler.bypass.BypassHandler;
@@ -121,6 +121,7 @@ import l2mv.gameserver.listener.actor.player.OnAnswerListener;
 import l2mv.gameserver.listener.actor.player.impl.ReviveAnswerListener;
 import l2mv.gameserver.listener.actor.player.impl.ScriptAnswerListener;
 import l2mv.gameserver.listener.actor.player.impl.SummonAnswerListener;
+import l2mv.gameserver.masteriopack.rankpvpsystem.RPSCookie;
 import l2mv.gameserver.model.GameObjectTasks.EndSitDownTask;
 import l2mv.gameserver.model.GameObjectTasks.EndStandUpTask;
 import l2mv.gameserver.model.GameObjectTasks.HourlyTask;
@@ -215,6 +216,7 @@ import l2mv.gameserver.model.matching.MatchingRoom;
 import l2mv.gameserver.model.petition.PetitionMainGroup;
 import l2mv.gameserver.model.pledge.Alliance;
 import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.model.pledge.ClanWar;
 import l2mv.gameserver.model.pledge.Privilege;
 import l2mv.gameserver.model.pledge.RankPrivs;
 import l2mv.gameserver.model.pledge.SubUnit;
@@ -356,7 +358,6 @@ import l2mv.gameserver.utils.SqlBatch;
 import l2mv.gameserver.utils.Strings;
 import l2mv.gameserver.utils.TeleportUtils;
 import l2mv.gameserver.utils.Util;
-import l2mv.gameserver.masteriopack.rankpvpsystem.RPSCookie;
 
 @SuppressWarnings("serial")
 public final class Player extends Playable implements PlayerGroup
@@ -3349,18 +3350,11 @@ public final class Player extends Playable implements PlayerGroup
 		{
 			player.getAI().Attack(this, false, shift);
 		}
-		else if (player != this)
+		else if ((player != this) && (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW))
 		{
-			if (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
+			if (!shift)
 			{
-				if (!shift)
-				{
-					player.getAI().setIntention(CtrlIntention.AI_INTENTION_FOLLOW, this, Config.FOLLOW_RANGE);
-				}
-				else
-				{
-					player.sendPacket(ActionFail.STATIC);
-				}
+				player.getAI().setIntention(CtrlIntention.AI_INTENTION_FOLLOW, this, Config.FOLLOW_RANGE);
 			}
 			else
 			{
@@ -4387,6 +4381,7 @@ public final class Player extends Playable implements PlayerGroup
 		if (AntiFeedManager.getInstance().check(killer, this))
 		{
 			killer.setPvpKills(killer.getPvpKills() + 1);
+
 			getRPSCookie().runPvpTask(killer, this);
 		}
 	}
@@ -4431,6 +4426,43 @@ public final class Player extends Playable implements PlayerGroup
 //
 //				killer.getPlayer().addPlayerStats(Ranking.STAT_TOP_ARENA_KILLS);
 //			}
+
+			// Processing Karma/PKCount/PvPCount for killer
+			if (killer.isPlayer()) // addon if killer is clone instance should do also this method.
+			{
+				final Player pk = killer.getPlayer();
+				boolean war = atMutualWarWith(pk);
+
+				// TODO [VISTALL] fix it
+				if (war /*
+						 * || _clan.getSiege() != null && _clan.getSiege() == pk.getClan().getSiege() && (_clan.isDefender() && pk.getClan().isAttacker() || _clan.isAttacker() &&
+						 * pk.getClan().isDefender())
+						 */)
+				{
+					ClanWar clanWar = _clan.getClanWar(pk.getClan());
+					if (clanWar != null)
+					{
+						clanWar.onKill(pk, this);
+					}
+				}
+
+				if (isOnSiegeField())
+				{
+					return;
+				}
+
+				Castle castle = getCastle();
+				if (getPvpFlag() > 0 || war || castle != null)
+				{
+					pk.setPvpKills(pk.getPvpKills() + 1);
+				}
+				else
+				{
+					doKillInPeace(pk);
+				}
+
+				pk.sendChanges();
+			}
 
 			return;
 		}
@@ -14076,7 +14108,7 @@ public final class Player extends Playable implements PlayerGroup
 	}
 
 	/** ----------------- End Hit Man System -------------------
-	
+
 	 * @return
 	 * */
 	public boolean isInAwayingMode()
@@ -14165,11 +14197,7 @@ public final class Player extends Playable implements PlayerGroup
 				continue;
 			}
 
-			if (!hwidOnly && getIP().equalsIgnoreCase(player.getIP()))
-			{
-				maxBoxesAllowed--;
-			}
-			else if (getHWID().equalsIgnoreCase(player.getHWID()))
+			if ((!hwidOnly && getIP().equalsIgnoreCase(player.getIP())) || getHWID().equalsIgnoreCase(player.getHWID()))
 			{
 				maxBoxesAllowed--;
 			}

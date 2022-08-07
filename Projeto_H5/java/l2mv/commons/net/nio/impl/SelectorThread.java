@@ -337,11 +337,7 @@ public class SelectorThread<T extends MMOClient> extends Thread
 				{
 				}
 			}
-			else if (result == 0)
-			{
-				closeConnectionImpl(con);
-			}
-			else if (result == -1)
+			else if ((result == 0) || (result == -1))
 			{
 				closeConnectionImpl(con);
 			}

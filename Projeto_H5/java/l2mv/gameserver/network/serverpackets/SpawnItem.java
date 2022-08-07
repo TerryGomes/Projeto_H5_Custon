@@ -40,7 +40,6 @@ public class SpawnItem extends L2GameServerPacket
 		this.writeC(0x05);
 		this.writeD(this._objectId);
 		this.writeD(this._itemId);
-
 		this.writeD(this._x);
 		this.writeD(this._y);
 		this.writeD(this._z + Config.CLIENT_Z_SHIFT);

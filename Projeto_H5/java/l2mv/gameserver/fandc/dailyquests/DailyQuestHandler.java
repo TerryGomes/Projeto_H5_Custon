@@ -20,6 +20,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
+import l2mv.gameserver.Config;
 import l2mv.gameserver.fandc.dailyquests.drops.DroplistGroup;
 import l2mv.gameserver.fandc.dailyquests.drops.DroplistItem;
 import l2mv.gameserver.fandc.dailyquests.quests.ClassSpecificPvPDailyQuest;
@@ -27,7 +28,6 @@ import l2mv.gameserver.fandc.dailyquests.quests.EnchantingDailyQuest;
 import l2mv.gameserver.fandc.dailyquests.quests.FishingDailyQuest;
 import l2mv.gameserver.fandc.dailyquests.quests.GeneralPvPDailyQuest;
 import l2mv.gameserver.fandc.dailyquests.quests.PKHunterDailyQuest;
-import l2mv.gameserver.Config;
 import l2mv.gameserver.handler.bbs.ICommunityBoardHandler;
 import l2mv.gameserver.listener.actor.player.OnAnswerListener;
 import l2mv.gameserver.listener.actor.player.OnPlayerEnterListener;

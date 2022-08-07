@@ -47,11 +47,7 @@ public class LidiaVonHellmann extends SiegeGuardFighter
 
 		super.onEvtAttacked(attacker, damage);
 
-		if (Rnd.chance(0.22))
-		{
-			addTaskCast(attacker, DRAIN_SKILL);
-		}
-		else if (actor.getCurrentHpPercents() < 20 && Rnd.chance(0.22))
+		if (Rnd.chance(0.22) || (actor.getCurrentHpPercents() < 20 && Rnd.chance(0.22)))
 		{
 			addTaskCast(attacker, DRAIN_SKILL);
 		}

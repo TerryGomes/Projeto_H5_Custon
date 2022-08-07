@@ -16,12 +16,12 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2mv.gameserver.fandc.datatables.EnchantNamesTable;
 import gnu.trove.list.array.TIntArrayList;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.ThreadPoolManager;
 import l2mv.gameserver.data.htm.HtmCache;
 import l2mv.gameserver.database.DatabaseFactory;
+import l2mv.gameserver.fandc.datatables.EnchantNamesTable;
 import l2mv.gameserver.instancemanager.ReflectionManager;
 import l2mv.gameserver.listener.actor.player.OnAnswerListener;
 import l2mv.gameserver.model.Creature;

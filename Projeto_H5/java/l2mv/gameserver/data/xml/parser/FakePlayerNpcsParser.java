@@ -14,7 +14,7 @@ import org.dom4j.Element;
 import org.dom4j.io.OutputFormat;
 import org.dom4j.io.XMLWriter;
 
-import l2mv.commons.crypt.CryptUtil;
+//import l2mv.commons.crypt.CryptUtil;
 import l2mv.commons.data.xml.AbstractFileParser;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.data.xml.holder.FakePlayerNpcsHolder;
@@ -66,7 +66,8 @@ public final class FakePlayerNpcsParser extends AbstractFileParser<FakePlayerNpc
 
 	public void saveNewTemplate(FakePlayerTemplate template) throws IOException, DocumentException
 	{
-		final Document document = _reader.read(CryptUtil.decryptOnDemand(getXMLFile()));
+		final Document document = _reader.read(getXMLFile());
+//		final Document document = _reader.read(CryptUtil.decryptOnDemand(getXMLFile()));
 		writeTemplateToDocument(document, template);
 		final OutputFormat format = OutputFormat.createPrettyPrint();
 		final XMLWriter writer = new XMLWriter(new FileOutputStream(getXMLFile()), format);

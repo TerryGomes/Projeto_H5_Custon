@@ -199,19 +199,7 @@ public class Furnace extends Fighter
 		if (_lastAttackTime != 0 && _lastAttackTime + NextAtack < System.currentTimeMillis())
 		{
 
-			if (actor.getTitle() == "Furnace of Magic Power")
-			{
-				changestate(actor, 2);
-			}
-			else if (actor.getTitle() == "Furnace of Fighting Spirit")
-			{
-				changestate(actor, 2);
-			}
-			else if (actor.getTitle() == "Furnace of Protection")
-			{
-				changestate(actor, 2);
-			}
-			else if (actor.getTitle() == "Furnace of Balance")
+			if ((actor.getTitle() == "Furnace of Magic Power") || (actor.getTitle() == "Furnace of Fighting Spirit") || (actor.getTitle() == "Furnace of Protection") || (actor.getTitle() == "Furnace of Balance"))
 			{
 				changestate(actor, 2);
 			}

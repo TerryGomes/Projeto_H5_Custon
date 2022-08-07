@@ -96,7 +96,7 @@ public final class ConfigHolder extends AbstractHolder
 		final String string = value.getString();
 		if (string == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getString"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getString"));
 		}
 		return string;
 	}
@@ -118,7 +118,7 @@ public final class ConfigHolder extends AbstractHolder
 		final File filePath = value.getFilePath();
 		if (filePath == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getFilePath"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getFilePath"));
 		}
 		return filePath;
 	}
@@ -128,13 +128,13 @@ public final class ConfigHolder extends AbstractHolder
 	{
 		if (name == null)
 		{
-			throw new IllegalArgumentException(String.format("Argument for @NotNull parameter '%s' of %s.%s must not be null", "name", "l2f/gameserver/ConfigHolder", "getPattern"));
+			throw new IllegalArgumentException(String.format("Argument for @NotNull parameter '%s' of %s.%s must not be null", "name", "l2mv/gameserver/ConfigHolder", "getPattern"));
 		}
 		final DynamicConfig value = getInstance().getOrLoad(name, Pattern.class);
 		final Pattern pattern = value.getPattern();
 		if (pattern == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getPattern"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getPattern"));
 		}
 		return pattern;
 	}
@@ -146,7 +146,7 @@ public final class ConfigHolder extends AbstractHolder
 		final Location location = value.getLocation();
 		if (location == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getLocation"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getLocation"));
 		}
 		return location;
 	}
@@ -158,7 +158,7 @@ public final class ConfigHolder extends AbstractHolder
 		final ChatType chatType = value.getClassType(ChatType.class);
 		if (chatType == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getChatType"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getChatType"));
 		}
 		return chatType;
 	}
@@ -170,7 +170,7 @@ public final class ConfigHolder extends AbstractHolder
 		final E classType = value.getClassType(type);
 		if (classType == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getEnum"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getEnum"));
 		}
 		return classType;
 	}
@@ -182,7 +182,7 @@ public final class ConfigHolder extends AbstractHolder
 		final ServerType serverType = value.getClassType(ServerType.class);
 		if (serverType == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getServerType"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getServerType"));
 		}
 		return serverType;
 	}
@@ -194,7 +194,7 @@ public final class ConfigHolder extends AbstractHolder
 		final AbnormalEffect abnormalEffect = value.getClassType(AbnormalEffect.class);
 		if (abnormalEffect == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getAbnormalEffect"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getAbnormalEffect"));
 		}
 		return abnormalEffect;
 	}
@@ -206,7 +206,7 @@ public final class ConfigHolder extends AbstractHolder
 		final int[][] multiIntArray = value.getMultiIntArray();
 		if (multiIntArray == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getMultiIntArray"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getMultiIntArray"));
 		}
 		return multiIntArray;
 	}
@@ -218,7 +218,7 @@ public final class ConfigHolder extends AbstractHolder
 		final long[][] multiLongArray = value.getMultiLongArray();
 		if (multiLongArray == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getMultiLongArray"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getMultiLongArray"));
 		}
 		return multiLongArray;
 	}
@@ -230,7 +230,7 @@ public final class ConfigHolder extends AbstractHolder
 		final double[][] multiDoubleArray = value.getMultiDoubleArray();
 		if (multiDoubleArray == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getMultiDoubleArray"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getMultiDoubleArray"));
 		}
 		return multiDoubleArray;
 	}
@@ -242,7 +242,7 @@ public final class ConfigHolder extends AbstractHolder
 		final String[][] multiStringArray = value.getMultiStringArray();
 		if (multiStringArray == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getMultiStringArray"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getMultiStringArray"));
 		}
 		return multiStringArray;
 	}
@@ -259,7 +259,7 @@ public final class ConfigHolder extends AbstractHolder
 		final E[][] array2 = value.getClassType((Class<E[][]>) array);
 		if (array2 == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getMultiArray"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getMultiArray"));
 		}
 		return array2;
 	}
@@ -271,7 +271,7 @@ public final class ConfigHolder extends AbstractHolder
 		final int[] intArray = value.getIntArray();
 		if (intArray == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getIntArray"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getIntArray"));
 		}
 		return intArray;
 	}
@@ -283,7 +283,7 @@ public final class ConfigHolder extends AbstractHolder
 		final long[] longArray = value.getLongArray();
 		if (longArray == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getLongArray"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getLongArray"));
 		}
 		return longArray;
 	}
@@ -295,7 +295,7 @@ public final class ConfigHolder extends AbstractHolder
 		final double[] doubleArray = value.getDoubleArray();
 		if (doubleArray == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getDoubleArray"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getDoubleArray"));
 		}
 		return doubleArray;
 	}
@@ -307,7 +307,7 @@ public final class ConfigHolder extends AbstractHolder
 		final boolean[] booleanArray = value.getBooleanArray();
 		if (booleanArray == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getBooleanArray"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getBooleanArray"));
 		}
 		return booleanArray;
 	}
@@ -319,7 +319,7 @@ public final class ConfigHolder extends AbstractHolder
 		final String[] stringArray = value.getStringArray();
 		if (stringArray == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getStringArray"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getStringArray"));
 		}
 		return stringArray;
 	}
@@ -336,7 +336,7 @@ public final class ConfigHolder extends AbstractHolder
 		final E[] array2 = value.getClassType((Class<E[]>) array);
 		if (array2 == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getArray"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getArray"));
 		}
 		return array2;
 	}
@@ -363,7 +363,7 @@ public final class ConfigHolder extends AbstractHolder
 		final Map<E, T> map = value.getClassType(Map.class);
 		if (map == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getMap"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getMap"));
 		}
 		return map;
 	}
@@ -375,7 +375,7 @@ public final class ConfigHolder extends AbstractHolder
 		final Map.Entry<E, T> entry = value.getClassType(Map.Entry.class);
 		if (entry == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getMapEntry"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getMapEntry"));
 		}
 		return entry;
 	}
@@ -387,7 +387,7 @@ public final class ConfigHolder extends AbstractHolder
 		final StatsSet set = value.getClassType(StatsSet.class);
 		if (set == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getStatsSet"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getStatsSet"));
 		}
 		return set;
 	}
@@ -399,7 +399,7 @@ public final class ConfigHolder extends AbstractHolder
 		final List<StatsSet> list = value.getClassType(List.class);
 		if (list == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getStatsSetList"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getStatsSetList"));
 		}
 		return list;
 	}
@@ -410,7 +410,7 @@ public final class ConfigHolder extends AbstractHolder
 		final SelectorConfig selectorConfig = this.selectorConfig;
 		if (selectorConfig == null)
 		{
-			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getSelectorConfig"));
+			throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getSelectorConfig"));
 		}
 		return selectorConfig;
 	}
@@ -425,7 +425,7 @@ public final class ConfigHolder extends AbstractHolder
 			final DynamicConfig dynamicConfig = convertedConfig;
 			if (dynamicConfig == null)
 			{
-				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getOrLoad"));
+				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getOrLoad"));
 			}
 			return dynamicConfig;
 		}
@@ -436,7 +436,7 @@ public final class ConfigHolder extends AbstractHolder
 			final DynamicConfig dynamicConfig2 = obj;
 			if (dynamicConfig2 == null)
 			{
-				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getOrLoad"));
+				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getOrLoad"));
 			}
 			return dynamicConfig2;
 		}
@@ -452,7 +452,7 @@ public final class ConfigHolder extends AbstractHolder
 			final DynamicConfig dynamicConfig = convertedConfig;
 			if (dynamicConfig == null)
 			{
-				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getOrLoadMap"));
+				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getOrLoadMap"));
 			}
 			return dynamicConfig;
 		}
@@ -463,7 +463,7 @@ public final class ConfigHolder extends AbstractHolder
 			final DynamicConfig dynamicConfig2 = obj;
 			if (dynamicConfig2 == null)
 			{
-				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getOrLoadMap"));
+				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getOrLoadMap"));
 			}
 			return dynamicConfig2;
 		}
@@ -479,7 +479,7 @@ public final class ConfigHolder extends AbstractHolder
 			final DynamicConfig dynamicConfig = convertedConfig;
 			if (dynamicConfig == null)
 			{
-				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getOrLoadMapEntry"));
+				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getOrLoadMapEntry"));
 			}
 			return dynamicConfig;
 		}
@@ -490,7 +490,7 @@ public final class ConfigHolder extends AbstractHolder
 			final DynamicConfig dynamicConfig2 = obj;
 			if (dynamicConfig2 == null)
 			{
-				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getOrLoadMapEntry"));
+				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getOrLoadMapEntry"));
 			}
 			return dynamicConfig2;
 		}
@@ -506,7 +506,7 @@ public final class ConfigHolder extends AbstractHolder
 			final DynamicConfig dynamicConfig = convertedConfig;
 			if (dynamicConfig == null)
 			{
-				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getOrLoadStatsSet"));
+				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getOrLoadStatsSet"));
 			}
 			return dynamicConfig;
 		}
@@ -517,7 +517,7 @@ public final class ConfigHolder extends AbstractHolder
 			final DynamicConfig dynamicConfig2 = obj;
 			if (dynamicConfig2 == null)
 			{
-				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "getOrLoadStatsSet"));
+				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "getOrLoadStatsSet"));
 			}
 			return dynamicConfig2;
 		}
@@ -547,7 +547,7 @@ public final class ConfigHolder extends AbstractHolder
 			final DynamicConfig dynamicConfig = new DynamicConfig(object, name);
 			if (dynamicConfig == null)
 			{
-				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "loadObject"));
+				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "loadObject"));
 			}
 			return dynamicConfig;
 		}
@@ -571,7 +571,7 @@ public final class ConfigHolder extends AbstractHolder
 			final DynamicConfig dynamicConfig = new DynamicConfig(object, name);
 			if (dynamicConfig == null)
 			{
-				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "loadMap"));
+				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "loadMap"));
 			}
 			return dynamicConfig;
 		}
@@ -603,7 +603,7 @@ public final class ConfigHolder extends AbstractHolder
 			final DynamicConfig dynamicConfig = new DynamicConfig(object, name);
 			if (dynamicConfig == null)
 			{
-				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "loadMapEntry"));
+				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "loadMapEntry"));
 			}
 			return dynamicConfig;
 		}
@@ -635,7 +635,7 @@ public final class ConfigHolder extends AbstractHolder
 			final DynamicConfig dynamicConfig = new DynamicConfig(object, name);
 			if (dynamicConfig == null)
 			{
-				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "loadStatsSet"));
+				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "loadStatsSet"));
 			}
 			return dynamicConfig;
 		}
@@ -667,7 +667,7 @@ public final class ConfigHolder extends AbstractHolder
 			final DynamicConfig dynamicConfig = new DynamicConfig(object, name);
 			if (dynamicConfig == null)
 			{
-				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2f/gameserver/ConfigHolder", "loadStatsSetList"));
+				throw new IllegalStateException(String.format("@NotNull method %s.%s must not return null", "l2mv/gameserver/ConfigHolder", "loadStatsSetList"));
 			}
 			return dynamicConfig;
 		}

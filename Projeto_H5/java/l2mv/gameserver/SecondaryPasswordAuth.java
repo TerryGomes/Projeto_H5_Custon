@@ -348,15 +348,7 @@ public class SecondaryPasswordAuth
 				char curCh = password.charAt(i);
 				char nxtCh = password.charAt(i + 1);
 
-				if (curCh + 1 == nxtCh)
-				{
-					return false;
-				}
-				else if (curCh - 1 == nxtCh)
-				{
-					return false;
-				}
-				else if (curCh == nxtCh)
+				if ((curCh + 1 == nxtCh) || (curCh - 1 == nxtCh) || (curCh == nxtCh))
 				{
 					return false;
 				}
@@ -366,11 +358,7 @@ public class SecondaryPasswordAuth
 				String toChk = password.substring(i + 1);
 				StringBuffer chkEr = new StringBuffer(password.substring(i, i + 2));
 
-				if (toChk.contains(chkEr))
-				{
-					return false;
-				}
-				else if (toChk.contains(chkEr.reverse()))
+				if (toChk.contains(chkEr) || toChk.contains(chkEr.reverse()))
 				{
 					return false;
 				}

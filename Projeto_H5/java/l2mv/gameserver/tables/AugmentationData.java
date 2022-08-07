@@ -24,7 +24,7 @@ import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
 import gnu.trove.list.array.TDoubleArrayList;
-import l2mv.commons.crypt.CryptUtil;
+//import l2mv.commons.crypt.CryptUtil;
 import l2mv.commons.util.Rnd;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.model.Options;
@@ -248,11 +248,8 @@ public class AugmentationData
 		}
 	}
 
-	@SuppressWarnings(
-	{
-		"unchecked",
-		"resource"
-	})
+
+	@SuppressWarnings("unchecked")
 	private final void load()
 	{
 		// Load the skillmap
@@ -267,19 +264,21 @@ public class AugmentationData
 			factory.setIgnoringComments(true);
 
 			File file = new File(Config.DATAPACK_ROOT, "data/stats/augmentation/augmentation_skillmap.xml");
-			FileInputStream stream = new FileInputStream(file);
-			InputStream output;
-			if ((byte) stream.read() == 0x00)
-			{
-				byte[] bytes = new byte[0];
-				output = new ByteArrayInputStream(bytes);
-				output = CryptUtil.decrypt(stream, output);
-			}
-			else
-			{
-				output = new FileInputStream(file);
-			}
-			Document doc = factory.newDocumentBuilder().parse(output);
+//			FileInputStream stream = new FileInputStream(file);
+//			InputStream output;
+//			if ((byte) stream.read() == 0x00)
+//			{
+//				byte[] bytes = new byte[0];
+//				output = new ByteArrayInputStream(bytes);
+//				output = CryptUtil.decrypt(stream, output);
+//			}
+//			else
+//			{
+//				output = new FileInputStream(file);
+//			}
+//			Document doc = factory.newDocumentBuilder().parse(output);
+			
+			Document doc = factory.newDocumentBuilder().parse(file);
 			for (Node n = doc.getFirstChild(); n != null; n = n.getNextSibling())
 			{
 				if ("list".equalsIgnoreCase(n.getNodeName()))
@@ -320,12 +319,7 @@ public class AugmentationData
 								}
 							}
 
-							if (skillId == 0)
-							{
-								badAugmantData++;
-								continue;
-							}
-							else if (skillLvL == 0)
+							if ((skillId == 0) || (skillLvL == 0))
 							{
 								badAugmantData++;
 								continue;
@@ -392,19 +386,22 @@ public class AugmentationData
 				factory.setIgnoringComments(true);
 
 				File file = new File(Config.DATAPACK_ROOT, "data/stats/augmentation/augmentation_stats" + i + ".xml");
-				FileInputStream stream = new FileInputStream(file);
-				InputStream output;
-				if ((byte) stream.read() == 0x00)
-				{
-					byte[] bytes = new byte[0];
-					output = new ByteArrayInputStream(bytes);
-					output = CryptUtil.decrypt(stream, output);
-				}
-				else
-				{
-					output = new FileInputStream(file);
-				}
-				Document doc = factory.newDocumentBuilder().parse(output);
+
+				
+				Document doc = factory.newDocumentBuilder().parse(file);
+				//				FileInputStream stream = new FileInputStream(file);
+				//				InputStream output;
+//				if ((byte) stream.read() == 0x00)
+//				{
+//					byte[] bytes = new byte[0];
+//					output = new ByteArrayInputStream(bytes);
+//					output = CryptUtil.decrypt(stream, output);
+//				}
+//				else
+//				{
+//					output = new FileInputStream(file);
+//				}
+//				Document doc = factory.newDocumentBuilder().parse(output);
 
 				for (Node n = doc.getFirstChild(); n != null; n = n.getNextSibling())
 				{
@@ -478,20 +475,20 @@ public class AugmentationData
 				factory.setIgnoringComments(true);
 
 				File file = new File(Config.DATAPACK_ROOT, "data/stats/augmentation/augmentation_jewel_stats" + i + ".xml");
-				FileInputStream stream = new FileInputStream(file);
-				InputStream output;
-				if ((byte) stream.read() == 0x00)
-				{
-					byte[] bytes = new byte[0];
-					output = new ByteArrayInputStream(bytes);
-					output = CryptUtil.decrypt(stream, output);
-				}
-				else
-				{
-					output = new FileInputStream(file);
-				}
-				Document doc = factory.newDocumentBuilder().parse(output);
-
+//				FileInputStream stream = new FileInputStream(file);
+//				InputStream output;
+//				if ((byte) stream.read() == 0x00)
+//				{
+//					byte[] bytes = new byte[0];
+//					output = new ByteArrayInputStream(bytes);
+//					output = CryptUtil.decrypt(stream, output);
+//				}
+//				else
+//				{
+//					output = new FileInputStream(file);
+//				}
+//				Document doc = factory.newDocumentBuilder().parse(output);
+				Document doc = factory.newDocumentBuilder().parse(file);
 				for (Node n = doc.getFirstChild(); n != null; n = n.getNextSibling())
 				{
 					if ("list".equalsIgnoreCase(n.getNodeName()))

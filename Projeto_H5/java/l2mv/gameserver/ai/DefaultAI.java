@@ -395,11 +395,7 @@ public class DefaultAI extends CharacterAI
 			{
 				return false;
 			}
-			if (target.isPlayer() && !target.getPlayer().isActive())
-			{
-				return false;
-			}
-			if (actor.isMonster() && target.isInZonePeace())
+			if ((target.isPlayer() && !target.getPlayer().isActive()) || (actor.isMonster() && target.isInZonePeace()))
 			{
 				return false;
 			}

@@ -17,7 +17,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
-import l2mv.commons.crypt.CryptUtil;
+//import l2mv.commons.crypt.CryptUtil;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.model.items.TradeItem;
 import l2mv.gameserver.templates.item.ItemTemplate;
@@ -53,7 +53,8 @@ public class BuyListHolder
 			DocumentBuilderFactory factory1 = DocumentBuilderFactory.newInstance();
 			factory1.setValidating(false);
 			factory1.setIgnoringComments(true);
-			Document doc1 = factory1.newDocumentBuilder().parse(CryptUtil.decryptOnDemand(filelists));
+			Document doc1 = factory1.newDocumentBuilder().parse((filelists));
+//			Document doc1 = factory1.newDocumentBuilder().parse(CryptUtil.decryptOnDemand(filelists));
 
 			int counterFiles = 0;
 			int counterItems = 0;
@@ -71,7 +72,8 @@ public class BuyListHolder
 							DocumentBuilderFactory factory2 = DocumentBuilderFactory.newInstance();
 							factory2.setValidating(false);
 							factory2.setIgnoringComments(true);
-							Document doc2 = factory2.newDocumentBuilder().parse(CryptUtil.decryptOnDemand(file));
+						//	Document doc2 = factory2.newDocumentBuilder().parse(CryptUtil.decryptOnDemand(file));
+							Document doc2 = factory2.newDocumentBuilder().parse(file);
 							counterFiles++;
 
 							for (Node n2 = doc2.getFirstChild(); n2 != null; n2 = n2.getNextSibling())

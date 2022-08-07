@@ -5233,10 +5233,27 @@ public class Config
 		Config.TWITCH_REWARD = parseItemsList(Twitchsettings.getProperty("TwitchReward", "6393,10"));
 	}
 
+	public static int CLAN_WAR_MINIMUM_CLAN_LEVEL;
+	public static int CLAN_WAR_MINIMUM_PLAYERS_DECLARE;
+	public static int CLAN_WAR_PREPARATION_DAYS_PERIOD;
+	public static int CLAN_WAR_REPUTATION_SCORE_PER_KILL;
+	public static final String CLAN_WAR_CONFIG_FILE = "config/mod/ClanWar.ini";
+
+	public static void loadClanWarSettings()
+	{
+		final ExProperties ClanWarSettings = load(CLAN_WAR_CONFIG_FILE);
+		CLAN_WAR_MINIMUM_CLAN_LEVEL = ClanWarSettings.getProperty("CLAN_WAR_MINIMUM_CLAN_LEVEL", 3);
+		CLAN_WAR_MINIMUM_PLAYERS_DECLARE = ClanWarSettings.getProperty("CLAN_WAR_MINIMUM_PLAYERS_DECLARE", 15);
+		CLAN_WAR_PREPARATION_DAYS_PERIOD = ClanWarSettings.getProperty("CLAN_WAR_PREPARATION_DAYS_PERIOD", 3);
+		CLAN_WAR_REPUTATION_SCORE_PER_KILL = ClanWarSettings.getProperty("CLAN_WAR_REPUTATION_SCORE_PER_KILL", 1);
+
+	}
+
 	public static void load()
 	{
 		// Twitch fix
 		loadTwitchSettings();
+		loadClanWarSettings();
 
 		loadServerConfig();
 		loadTelnetConfig();

@@ -37,22 +37,15 @@ public class MatchScoutInstance extends CTBBossInstance
 				damage = ((damage / getMaxHp()) / 0.05) * 10;
 			}
 		}
-		else if (getCurrentHpPercents() > 30)
+		else if ((getCurrentHpPercents() > 30) && Rnd.chance(90))
 		{
-			if (Rnd.chance(90))
+			if (attacker.isPlayer())
 			{
-				if (attacker.isPlayer())
-				{
-					damage = ((damage / getMaxHp()) / 0.05) * 100;
-				}
-				else
-				{
-					damage = ((damage / getMaxHp()) / 0.05) * 10;
-				}
+				damage = ((damage / getMaxHp()) / 0.05) * 100;
 			}
 			else
 			{
-				_massiveDamage = System.currentTimeMillis() + 5000L;
+				damage = ((damage / getMaxHp()) / 0.05) * 10;
 			}
 		}
 		else

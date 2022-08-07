@@ -9,21 +9,6 @@ import java.util.Date;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2mv.gameserver.fandc.datatables.EnchantNamesTable;
-//import fandc.datatables.CharacterMonthlyRanking;
-import l2mv.gameserver.fandc.datatables.OfflineBuffersTable;
-import l2mv.gameserver.fandc.facebook.ActionsExtractingManager;
-import l2mv.gameserver.fandc.facebook.CompletedTasksHistory;
-import l2mv.gameserver.fandc.facebook.FacebookAutoAnnouncement;
-import l2mv.gameserver.fandc.facebook.FacebookProfilesHolder;
-import l2mv.gameserver.fandc.facebook.OfficialPostsHolder;
-import l2mv.gameserver.fandc.security.AntiFeedManager;
-import l2mv.gameserver.fandc.streaming.AFKStreamersHandler;
-import l2mv.gameserver.fandc.streaming.TwitchParser;
-import l2mv.gameserver.fandc.tournament.TournamentHolder;
-import l2mv.gameserver.fandc.votingengine.VotingRewardAPI;
-import l2mv.gameserver.kara.twitch.TwitchManager;
-import l2mv.gameserver.kara.vote.VoteManager;
 import l2mv.commons.lang.StatsUtils;
 import l2mv.commons.listener.Listener;
 import l2mv.commons.listener.ListenerList;
@@ -47,6 +32,19 @@ import l2mv.gameserver.database.LoginDatabaseFactory;
 import l2mv.gameserver.database.merge.ClanDataMerge;
 import l2mv.gameserver.database.merge.DataMerge;
 import l2mv.gameserver.donation.DonationReader;
+import l2mv.gameserver.fandc.datatables.EnchantNamesTable;
+//import fandc.datatables.CharacterMonthlyRanking;
+import l2mv.gameserver.fandc.datatables.OfflineBuffersTable;
+import l2mv.gameserver.fandc.facebook.ActionsExtractingManager;
+import l2mv.gameserver.fandc.facebook.CompletedTasksHistory;
+import l2mv.gameserver.fandc.facebook.FacebookAutoAnnouncement;
+import l2mv.gameserver.fandc.facebook.FacebookProfilesHolder;
+import l2mv.gameserver.fandc.facebook.OfficialPostsHolder;
+import l2mv.gameserver.fandc.security.AntiFeedManager;
+import l2mv.gameserver.fandc.streaming.AFKStreamersHandler;
+import l2mv.gameserver.fandc.streaming.TwitchParser;
+import l2mv.gameserver.fandc.tournament.TournamentHolder;
+import l2mv.gameserver.fandc.votingengine.VotingRewardAPI;
 import l2mv.gameserver.geodata.GeoEngine;
 import l2mv.gameserver.handler.admincommands.AdminCommandHandler;
 import l2mv.gameserver.handler.items.ItemHandler;
@@ -76,12 +74,15 @@ import l2mv.gameserver.instancemanager.games.MiniGameScoreManager;
 import l2mv.gameserver.instancemanager.itemauction.ItemAuctionManager;
 import l2mv.gameserver.instancemanager.naia.NaiaCoreManager;
 import l2mv.gameserver.instancemanager.naia.NaiaTowerManager;
+import l2mv.gameserver.kara.twitch.TwitchManager;
+import l2mv.gameserver.kara.vote.VoteManager;
 import l2mv.gameserver.listener.GameListener;
 import l2mv.gameserver.listener.game.OnAbortShutdownListener;
 import l2mv.gameserver.listener.game.OnConfigsReloaded;
 import l2mv.gameserver.listener.game.OnShutdownCounterStartListener;
 import l2mv.gameserver.listener.game.OnShutdownListener;
 import l2mv.gameserver.listener.game.OnStartListener;
+import l2mv.gameserver.masteriopack.rankpvpsystem.RPSConfig;
 import l2mv.gameserver.model.PhantomPlayers;
 import l2mv.gameserver.model.World;
 import l2mv.gameserver.model.entity.Hero;
@@ -123,7 +124,6 @@ import l2mv.gameserver.utils.Debug;
 import l2mv.gameserver.utils.Strings;
 import l2mv.gameserver.vote.RuVoteEngine;
 import l2mv.gameserver.vote.VoteMain;
-import l2mv.gameserver.masteriopack.rankpvpsystem.RPSConfig;
 import net.sf.ehcache.CacheManager;
 
 public class GameServer
@@ -566,12 +566,15 @@ public class GameServer
 		printSection("");
 		_log.info(">>>>>>>>>>>>>>> GameServer Started <<<<<<<<<<<<<<");
 		_log.info("Maximum Numbers of Connected Players: " + Config.MAXIMUM_ONLINE_USERS);
-		String memUsage = new StringBuilder().append(StatsUtils.getMemUsage()).toString();
-		for (String line : memUsage.split("\n"))
+
+		GameServer._log.info("====================================================================");
+		final String memUsage = new StringBuilder().append(StatsUtils.getMemUsage()).toString();
+		for (final String line : memUsage.split("\n"))
 		{
-			_log.info(line);
+			GameServer._log.info(line);
 		}
-		_log.info("=================================================");
+		GameServer._log.info("====================================================================");
+
 		AuthServerCommunication.getInstance().start();
 		server_started = new Date();
 	}

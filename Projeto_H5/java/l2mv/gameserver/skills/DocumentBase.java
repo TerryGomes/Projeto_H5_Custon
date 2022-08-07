@@ -23,7 +23,7 @@ import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.xml.sax.SAXException;
 
-import l2mv.commons.crypt.CryptUtil;
+//import l2mv.commons.crypt.CryptUtil;
 import l2mv.gameserver.model.Skill;
 import l2mv.gameserver.skills.effects.EffectTemplate;
 import l2mv.gameserver.stats.StatTemplate;
@@ -111,42 +111,67 @@ abstract class DocumentBase
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			factory.setValidating(false);
 			factory.setIgnoringComments(true);
-			FileInputStream stream = new FileInputStream(file);
-			InputStream output;
-			if ((byte) stream.read() == 0x00)
-			{
-				byte[] bytes = new byte[0];
-				output = new ByteArrayInputStream(bytes);
-				output = CryptUtil.decrypt(stream, output);
-			}
-			else
-			{
-				output = new FileInputStream(file);
-			}
-			doc = factory.newDocumentBuilder().parse(output);
+			doc = factory.newDocumentBuilder().parse(file);
 		}
-		catch (FileNotFoundException e)
-		{
-			_log.error("Didn't find " + file, e);
-			return null;
-		}
-		catch (IOException | ParserConfigurationException | SAXException e)
+		catch (Exception e)
 		{
 			_log.error("Error loading file " + file, e);
 			return null;
 		}
-
 		try
 		{
 			parseDocument(doc);
 		}
-		catch (RuntimeException e)
+		catch (Exception e)
 		{
 			_log.error("Error in file " + file, e);
 			return null;
 		}
 		return doc;
 	}
+//	{
+//		Document doc;
+//		try
+//		{
+//			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+//			factory.setValidating(false);
+//			factory.setIgnoringComments(true);
+//			FileInputStream stream = new FileInputStream(file);
+//			InputStream output;
+//			if ((byte) stream.read() == 0x00)
+//			{
+//				byte[] bytes = new byte[0];
+//				output = new ByteArrayInputStream(bytes);
+//				output = CryptUtil.decrypt(stream, output);
+//			}
+//			else
+//			{
+//				output = new FileInputStream(file);
+//			}
+//			doc = factory.newDocumentBuilder().parse(output);
+//		}
+//		catch (FileNotFoundException e)
+//		{
+//			_log.error("Didn't find " + file, e);
+//			return null;
+//		}
+//		catch (IOException | ParserConfigurationException | SAXException e)
+//		{
+//			_log.error("Error loading file " + file, e);
+//			return null;
+//		}
+//
+//		try
+//		{
+//			parseDocument(doc);
+//		}
+//		catch (RuntimeException e)
+//		{
+//			_log.error("Error in file " + file, e);
+//			return null;
+//		}
+//		return doc;
+//	}
 
 	protected abstract void parseDocument(Document doc);
 

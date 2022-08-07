@@ -1316,15 +1316,7 @@ public class AdminEditChar implements IAdminCommandHandler
 				if (availSub == PlayerClass.Inspector)
 				{
 					// doombringer(berserker)
-					if (!(player.getSubClasses().containsKey(131) || player.getSubClasses().containsKey(127)))
-					{
-						availSubs.remove(availSub);
-					}
-					else if (!(player.getSubClasses().containsKey(132) || player.getSubClasses().containsKey(133) || player.getSubClasses().containsKey(128) || player.getSubClasses().containsKey(129)))
-					{
-						availSubs.remove(availSub);
-					}
-					else if (!(player.getSubClasses().containsKey(134) || player.getSubClasses().containsKey(130)))
+					if (!(player.getSubClasses().containsKey(131) || player.getSubClasses().containsKey(127)) || !(player.getSubClasses().containsKey(132) || player.getSubClasses().containsKey(133) || player.getSubClasses().containsKey(128) || player.getSubClasses().containsKey(129)) || !(player.getSubClasses().containsKey(134) || player.getSubClasses().containsKey(130)))
 					{
 						availSubs.remove(availSub);
 					}

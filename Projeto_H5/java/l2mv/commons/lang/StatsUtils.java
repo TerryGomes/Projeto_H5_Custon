@@ -57,11 +57,11 @@ public final class StatsUtils
 		StringBuilder list = new StringBuilder();
 
 		list.append("AllowedMemory: ........... ").append((int) maxMem).append(" KB").append("\n\r");
-		list.append("     Allocated: .......... ").append((int) allocatedMem).append(" KB (").append(((double) Math.round(allocatedMem / maxMem * 1000000) / 10000)).append("%)").append("\n\r");
-		list.append("     Non-Allocated: ...... ").append((int) nonAllocatedMem).append(" KB (").append((double) Math.round(nonAllocatedMem / maxMem * 1000000) / 10000).append("%)").append("\n\r");
+		list.append("Allocated: ............... ").append((int) allocatedMem).append(" KB (").append(((double) Math.round(allocatedMem / maxMem * 1000000) / 10000)).append("%)").append("\n\r");
+		list.append("Non-Allocated: ........... ").append((int) nonAllocatedMem).append(" KB (").append((double) Math.round(nonAllocatedMem / maxMem * 1000000) / 10000).append("%)").append("\n\r");
 		list.append("AllocatedMemory: ......... ").append((int) allocatedMem).append(" KB").append("\n");
-		list.append("     Used: ............... ").append((int) usedMem).append(" KB (").append((double) Math.round(usedMem / maxMem * 1000000) / 10000).append("%)").append("\n\r");
-		list.append("     Unused (cached): .... ").append((int) cachedMem).append(" KB (").append((double) Math.round(cachedMem / maxMem * 1000000) / 10000).append("%)").append("\n\r");
+		list.append("Used: .................... ").append((int) usedMem).append(" KB (").append((double) Math.round(usedMem / maxMem * 1000000) / 10000).append("%)").append("\n\r");
+		list.append("Unused (cached): ......... ").append((int) cachedMem).append(" KB (").append((double) Math.round(cachedMem / maxMem * 1000000) / 10000).append("%)").append("\n\r");
 		list.append("UseableMemory: ........... ").append((int) useableMem).append(" KB (").append((double) Math.round(useableMem / maxMem * 1000000) / 10000).append("%)").append("\n\r");
 
 		return list;
@@ -78,8 +78,8 @@ public final class StatsUtils
 		long totalCount = threadMXbean.getTotalStartedThreadCount();
 
 		list.append("Live: .................... ").append(threadCount).append(" threads").append("\n\r");
-		list.append("     Non-Daemon: ......... ").append(nonDaemonCount).append(" threads").append("\n\r");
-		list.append("     Daemon: ............. ").append(daemonCount).append(" threads").append("\n\r");
+		list.append("Non-Daemon: .............. ").append(nonDaemonCount).append(" threads").append("\n\r");
+		list.append("Daemon: .................. ").append(daemonCount).append(" threads").append("\n\r");
 		list.append("Peak: .................... ").append(peakCount).append(" threads").append("\n\r");
 		list.append("Total started: ........... ").append(totalCount).append(" threads").append("\n\r");
 		list.append("=================================================").append("\n\r");

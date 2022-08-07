@@ -967,11 +967,7 @@ public abstract class SagasSuperclass extends Quest
 			{
 				if (st.getQuestItemsCount(Items[0]) > 0)
 				{
-					if (Items[11] == 0)
-					{
-						htmltext = "1-03.htm";
-					}
-					else if (st.getQuestItemsCount(Items[11]) > 0)
+					if ((Items[11] == 0) || (st.getQuestItemsCount(Items[11]) > 0))
 					{
 						htmltext = "1-03.htm";
 					}

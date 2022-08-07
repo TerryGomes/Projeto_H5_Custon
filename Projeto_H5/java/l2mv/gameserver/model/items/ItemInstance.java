@@ -735,12 +735,7 @@ public final class ItemInstance extends GameObject implements JdbcEntity
 			return false;
 		}
 
-		if (getAttachment() != null && (getAttachment() instanceof FlagItemAttachment) && !((FlagItemAttachment) getAttachment()).canBeLost())
-		{
-			return false;
-		}
-
-		if (!player.getPermissions().canLoseItem(this, false))
+		if ((getAttachment() != null && (getAttachment() instanceof FlagItemAttachment) && !((FlagItemAttachment) getAttachment()).canBeLost()) || !player.getPermissions().canLoseItem(this, false))
 		{
 			return false;
 		}

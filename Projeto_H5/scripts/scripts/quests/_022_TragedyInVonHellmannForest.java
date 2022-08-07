@@ -228,16 +228,9 @@ public class _022_TragedyInVonHellmannForest extends Quest implements ScriptFile
 			case 0:
 			{
 				QuestState hiddenTruth = st.getPlayer().getQuestState(_021_HiddenTruth.class);
-				if (hiddenTruth != null)
+				if ((hiddenTruth != null) && hiddenTruth.isCompleted())
 				{
-					if (hiddenTruth.isCompleted())
-					{
-						htmltext = "31334-01.htm";
-					}
-					else
-					{
-						htmltext = "<html><head><body>You not complite quest Hidden Truth...</body></html>";
-					}
+					htmltext = "31334-01.htm";
 				}
 				else
 				{

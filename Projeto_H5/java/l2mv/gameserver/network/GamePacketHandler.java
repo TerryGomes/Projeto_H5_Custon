@@ -36,7 +36,7 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 				switch (id)
 				{
 				case 0x00:
-					msg = new RequestStatus();
+					msg = new RequestStatus(); // RequestGameStart
 					break parada;
 				case 0x0e:
 					msg = new ProtocolVersion();
@@ -101,6 +101,50 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 					client.onUnknownPacket();
 					break parada;
 				}
+
+			case ENTER_GAME:
+				switch (id)
+				{
+				case 0x00:
+					msg = new Logout();
+					break parada;
+				case 0x11:
+					msg = new EnterWorld();
+					break parada;
+				case 0xb1:
+					msg = new NetPing();
+					break parada;
+				case 0xcb:
+					// msg = new ReplyGameGuardQuery();
+					break parada;
+				case 0xd0:
+					int id3 = buf.getShort() & 0xffff;
+					switch (id3)
+					{
+					case 0x01:
+						msg = new RequestManorList();
+						break parada;
+					case 0x21:
+						msg = new RequestKeyMapping();
+						break parada;
+					case 0x3E:
+						msg = new RequestAllAgitInfo();
+						break parada;
+					case 0x3C:
+						msg = new RequestAllCastleInfo();
+						break parada;
+					case 0x3D:
+						msg = new RequestAllFortressInfo();
+						break parada;
+					default:
+						client.onUnknownPacket();
+						break parada;
+					}
+				default:
+					client.onUnknownPacket();
+					break parada;
+				}
+
 			case IN_GAME:
 				switch (id)
 				{
@@ -110,70 +154,50 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 				case 0x01:
 					msg = new AttackRequest();
 					break parada;
-				case 0x02:
-					// msg = new ?();
-					break parada;
 				case 0x03:
 					msg = new RequestStartPledgeWar();
 					break parada;
 				case 0x04:
-					// msg = new ?();
+					msg = new RequestReplyStartPledgeWar();
 					break parada;
 				case 0x05:
 					msg = new RequestStopPledgeWar();
 					break parada;
 				case 0x06:
-					// msg = RequestSCCheck(); // ? Format: cdx
+					msg = new RequestReplyStopPledgeWar();
 					break parada;
 				case 0x07:
-					// msg = new ReplyGameGuardQuery();
-					// здесь совсем другой пакет ResponseAuthGameGuard[cddddd] (c) Drin
+					msg = new RequestSurrenderPledgeWar();
 					break parada;
 				case 0x08:
-					// msg = new ?();
+					msg = new RequestReplySurrenderPledgeWar();
 					break parada;
 				case 0x09:
 					msg = new RequestSetPledgeCrest();
 					break parada;
-				case 0x0a:
-					// msg = new ?();
-					break parada;
 				case 0x0b:
 					msg = new RequestGiveNickName();
-					break parada;
-				case 0x0c:
-					// wtf???
-					break parada;
-				case 0x0d:
-					// wtf???
 					break parada;
 				case 0x0f:
 					msg = new MoveBackwardToLocation();
 					break parada;
 				case 0x10:
-					// msg = new Say(); Format: cS // старый ?
+					// msg = new Say(); Format: cS // verificar ?
 					break parada;
 				case 0x11:
 					msg = new EnterWorld();
-					break parada;
-				case 0x12:
-					// wtf???
 					break parada;
 				case 0x14:
 					msg = new RequestItemList();
 					break parada;
 				case 0x15:
-					// msg = new RequestEquipItem(); // старый?
-					// Format: cdd server id = %d Slot = %d
+					// msg = new RequestEquipItem(); // // verificar ?
 					break parada;
 				case 0x16:
-					// msg = new RequestUnEquipItem();
+					msg = new RequestUnEquipItem();
 					break parada;
 				case 0x17:
 					msg = new RequestDropItem();
-					break parada;
-				case 0x18:
-					// msg = new ?();
 					break parada;
 				case 0x19:
 					msg = new UseItem();
@@ -187,20 +211,8 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 				case 0x1c:
 					msg = new TradeDone();
 					break parada;
-				case 0x1d:
-					// msg = new ?();
-					break parada;
-				case 0x1e:
-					// msg = new ?();
-					break parada;
 				case 0x1f:
 					msg = new Action();
-					break parada;
-				case 0x20:
-					// msg = new ?();
-					break parada;
-				case 0x21:
-					// msg = new ?();
 					break parada;
 				case 0x22:
 					// msg = new RequestLinkHtml();
@@ -226,14 +238,8 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 				case 0x29:
 					msg = new RequestOustPledgeMember();
 					break parada;
-				case 0x2a:
-					// msg = new ?();
-					break parada;
 				case 0x2c:
 					msg = new RequestGetItemFromPet();
-					break parada;
-				case 0x2d:
-					// RequestDismissParty
 					break parada;
 				case 0x2e:
 					msg = new RequestAllyInfo();
@@ -242,19 +248,16 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 					msg = new RequestCrystallizeItem();
 					break parada;
 				case 0x30:
-					// RequestPrivateStoreManage, устарел
+					// msg = new RequestPrivateStoreSellManageList(); // RequestPrivateStoreManage, устарел verificar
 					break parada;
 				case 0x31:
 					msg = new SetPrivateStoreSellList();
-					break parada;
-				case 0x32:
-					// RequestPrivateStoreManageCancel, устарел
 					break parada;
 				case 0x33:
 					msg = new RequestTeleport();
 					break parada;
 				case 0x34:
-					// msg = new RequestSocialAction();
+					// msg = new RequestSocialAction();SocialAction
 					break parada;
 				case 0x35:
 					// ChangeMoveType, устарел
@@ -266,7 +269,7 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 					msg = new RequestSellItem();
 					break parada;
 				case 0x38:
-					msg = new RequestMagicSkillList();
+					msg = new RequestMagicSkillList();// UserAck
 					break parada;
 				case 0x39:
 					msg = new RequestMagicSkillUse();
@@ -287,7 +290,7 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 					msg = new RequestShortCutReg();
 					break parada;
 				case 0x3e:
-					// msg = new RequestShortCutUse(); // Format: cddc ?
+					// msg = new RequestShortCutUse(); // verificar
 					break parada;
 				case 0x3f:
 					msg = new RequestShortCutDel();
@@ -296,7 +299,7 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 					msg = new RequestBuyItem();
 					break parada;
 				case 0x41:
-					// msg = new RequestDismissPledge(); //Format: c ?
+					// msg = new RequestDismissPledge(); //verificar
 					break parada;
 				case 0x42:
 					msg = new RequestJoinParty();
@@ -322,47 +325,14 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 				case 0x49:
 					msg = new Say2C();
 					break parada;
-				// -- maybe GM packet's
-				case 0x4a:
-					id2 = buf.get() & 0xff;
-					switch (id2)
-					{
-					case 0x00:
-						// msg = new SendCharacterInfo(); // Format: S
-						break parada;
-					case 0x01:
-						// msg = new SendSummonCmd(); // Format: S
-						break parada;
-					case 0x02:
-						// msg = new SendServerStatus(); // Format: (noargs)
-						break parada;
-					case 0x03:
-						// msg = new SendL2ParamSetting(); // Format: dd
-						break parada;
-					default:
-						client.onUnknownPacket();
-						break parada;
-					}
-				case 0x4b:
-					// msg = new ?();
-					break parada;
-				case 0x4c:
-					// msg = new ?();
-					break parada;
 				case 0x4d:
 					msg = new RequestPledgeMemberList();
 					break parada;
-				case 0x4e:
-					// msg = new ?();
-					break parada;
 				case 0x4f:
-					// msg = new RequestMagicItem(); // Format: c ?
+					// msg = new RequestMagicItem(); // verificar
 					break parada;
 				case 0x50:
 					msg = new RequestSkillList(); // trigger
-					break parada;
-				case 0x51:
-					// msg = new ?();
 					break parada;
 				case 0x52:
 					msg = new MoveWithDelta();
@@ -397,9 +367,6 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 				case 0x5c:
 					msg = new FinishRotatingC();
 					break parada;
-				case 0x5d:
-					// msg = new ?();
-					break parada;
 				case 0x5e:
 					msg = new RequestShowBoard();
 					break parada;
@@ -409,17 +376,11 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 				case 0x60:
 					msg = new RequestDestroyItem();
 					break parada;
-				case 0x61:
-					// msg = new ?();
-					break parada;
 				case 0x62:
 					msg = new RequestQuestList();
 					break parada;
 				case 0x63:
 					msg = new RequestQuestAbort(); // RequestDestroyQuest();
-					break parada;
-				case 0x64:
-					// msg = new ?();
 					break parada;
 				case 0x65:
 					msg = new RequestPledgeInfo();
@@ -430,14 +391,11 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 				case 0x67:
 					msg = new RequestPledgeCrest();
 					break parada;
-				case 0x68:
-					// msg = new ?();
-					break parada;
 				case 0x69:
-					// msg = new ?();
+					// msg = new RequestSurrenderPersonally(); // verificar
 					break parada;
 				case 0x6a:
-					// msg = new ?();
+					// msg = new RequestFriendInfoList(); //verificar
 					break parada;
 				case 0x6b:
 					msg = new RequestSendL2FriendSay();
@@ -481,9 +439,6 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 				case 0x78:
 					msg = new RequestFriendAddReply();
 					break parada;
-				case 0x79:
-					msg = new RequestFriendList();
-					break parada;
 				case 0x7a:
 					msg = new RequestFriendDel();
 					break parada;
@@ -505,14 +460,11 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 				case 0x81:
 					msg = new RequestPartyMatchDetail();
 					break parada;
-				case 0x82:
-					msg = new RequestPrivateStoreList();
-					break parada;
 				case 0x83:
 					msg = new RequestPrivateStoreBuy();
 					break parada;
 				case 0x84:
-					// msg = new ReviveReply(); // format: cd ?
+					// msg = new RequestReviveReply(); // verificar
 					break parada;
 				case 0x85:
 					msg = new RequestTutorialLinkHtml();
@@ -542,15 +494,12 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 					msg = new RequestAnswerJoinAlly();
 					break parada;
 				case 0x8e:
-					// Команда /allyleave - выйти из альянса
 					msg = new RequestWithdrawAlly();
 					break parada;
 				case 0x8f:
-					// Команда /allydismiss - выгнать клан из альянса
 					msg = new RequestOustAlly();
 					break parada;
 				case 0x90:
-					// Команда /allydissolve - распустить альянс
 					msg = new RequestDismissAlly();
 					break parada;
 				case 0x91:
@@ -584,7 +533,7 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 					msg = new SetPrivateStoreBuyList();
 					break parada;
 				case 0x9b:
-					//
+					// msg = new ReplyStopAllianceWar();
 					break parada;
 				case 0x9c:
 					msg = new RequestPrivateStoreQuitBuy();
@@ -592,32 +541,14 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 				case 0x9d:
 					msg = new SetPrivateStoreMsgBuy();
 					break parada;
-				case 0x9e:
-					//
-					break parada;
 				case 0x9f:
 					msg = new RequestPrivateStoreBuySellList();
 					break parada;
 				case 0xa0:
 					msg = new RequestTimeCheck();
 					break parada;
-				case 0xa1:
-					// msg = new ThirdPartyProgramUsage();
-					break parada;
-				case 0xa2:
-					// msg = new ?();
-					break parada;
-				case 0xa3:
-					// msg = new ?();
-					break parada;
-				case 0xa4:
-					// msg = new ?();
-					break parada;
-				case 0xa5:
-					// msg = new ?();
-					break parada;
 				case 0xa6:
-					// msg = new RequestSkillCoolTime(); //Deprecated ?
+					msg = new RequestSkillCoolTime(); // Deprecated ? verificar
 					break parada;
 				case 0xa7:
 					msg = new RequestPackageSendableItemList();
@@ -629,7 +560,7 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 					msg = new RequestBlock();
 					break parada;
 				case 0xaa:
-					// msg = new RequestCastleSiegeInfo(); // format: cd ?
+					// msg = new RequestCastleSiegeInfo(); // verificar
 					break parada;
 				case 0xab:
 					msg = new RequestCastleSiegeAttackerList();
@@ -674,7 +605,7 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 					msg = new RequestRecipeItemMakeSelf();
 					break parada;
 				case 0xb9:
-					// msg = new RequestRecipeShopManageList(); deprecated // format: c
+					// msg = new RequestRecipeShopManageList(); deprecated // verificar
 					break parada;
 				case 0xba:
 					msg = new RequestRecipeShopMessageSet();
@@ -724,9 +655,6 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 				case 0xc9:
 					msg = new PetitionVote();
 					break parada;
-				case 0xca:
-					// msg = new ?();
-					break parada;
 				case 0xcb:
 					// msg = new GameGuardReply();
 					break parada;
@@ -746,9 +674,6 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 					int id3 = buf.getShort() & 0xffff;
 					switch (id3)
 					{
-					case 0x00:
-						// msg = new ?();
-						break parada;
 					case 0x01:
 						msg = new RequestManorList();
 						break parada;
@@ -825,8 +750,7 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 						msg = new RequestPCCafeCouponUse();
 						break parada;
 					case 0x1a:
-						// msg = new ?();
-						// format: (ch)b, b - array размером в 64 байта
+						// msg = new RequestExOrcMove(); // verificar
 						break parada;
 					case 0x1b:
 						msg = new RequestDuelStart();
@@ -835,13 +759,14 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 						msg = new RequestDuelAnswerStart();
 						break parada;
 					case 0x1d:
-						msg = new RequestTutorialClientEvent(); // RequestExSetTutorial();
-						// Format: d / требует отладки, ИМХО, это совсем другой пакет (с) Drin
+						msg = new RequestTutorialClientEvent();
 						break parada;
 					case 0x1e:
 						msg = new RequestExRqItemLink(); // chat item links
 						break parada;
 					case 0x1f:
+						// msg = new RequestCannotMoveAnymoreAirShip(); verificar
+
 						// CanNotMoveAnymore(AirShip)
 						// format: (ch)ddddd
 						break parada;
@@ -912,7 +837,10 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 						msg = new RequestEnchantItemAttribute();
 						break parada;
 					case 0x36:
-						// RequestGotoLobby - случается при многократном нажатии кнопки "вход"
+						msg = new RequestExGetOnAirShip(); // verificar
+						break parada;
+					case 0x37:
+						msg = new RequestExGetOffAirShip(); // verificar
 						break parada;
 					case 0x38:
 						msg = new RequestExMoveToLocationAirShip();
@@ -959,7 +887,6 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 					case 0x46:
 						msg = new RequestExEnchantSkillInfoDetail();
 						break parada;
-					/* case 0x47: ? */
 					case 0x48:
 						msg = new RequestFortressMapInfo();
 						break parada;
@@ -1113,7 +1040,10 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 						msg = new RequestExShowStepThree();
 						break parada;
 					case 0x73:
-						// msg = new ExRaidReserveResult();
+						// msg = new RequestExConnectToRaidServer(); //ExRaidReserveResult verificar
+						break parada;
+					case 0x74:
+						// msg = new RequestExReturnFromRaidServer(); //ExRaidReserveResult verificar
 						break parada;
 					case 0x75:
 						msg = new RequestExRefundItem();
@@ -1137,7 +1067,7 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 						msg = new RequestExBR_EventRankerList();
 						break parada;
 					case 0x7C:
-						// msg = new RequestAskMemberShip();
+						// msg = new RequestAskMemberShip(); // verificar
 						break parada;
 					case 0x7D:
 						msg = new RequestAddExpandQuestAlarm();
@@ -1145,83 +1075,60 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 					case 0x7E:
 						msg = new RequestVoteNew();
 						break parada;
-					case 0x7F:
-						_log.info("D0:7F");
-						break parada;
-					case 0x80:
-						_log.info("D0:80");
-						break parada;
-					case 0x81:
-						_log.info("D0:81");
-						break parada;
-					case 0x82:
-						_log.info("D0:82");
-						break parada;
 					case 0x83:
 						int id5 = buf.getInt();
 						switch (id5)
 						{
-						/*
-						 * TODO:
-						 * case 0x01:
-						 * //msg = new RequestExAgitInitialize chd 0x01
-						 * break parada;
-						 * case 0x02:
-						 * //msg = new RequestExAgitDetailInfo chdcd 0x02
-						 * break parada;
-						 * case 0x03:
-						 * //msg = new RequestExMyAgitState chd 0x03
-						 * break parada;
-						 * case 0x04:
-						 * //msg = new RequestExRegisterAgitForBidStep1 chd 0x04
-						 * break parada;
-						 * case 0x05:
-						 * //msg = new RequestExRegisterAgitForBidStep2 chddQd 0x05
-						 * //msg = new RequestExRegisterAgitForBidStep3 chddQd 0x05 -no error? 0x05
-						 * break parada;
-						 * case 0x07:
-						 * //msg = new RequestExConfirmCancelRegisteringAgit chd 0x07
-						 * break parada;
-						 * case 0x08:
-						 * //msg = new RequestExProceedCancelRegisteringAgit chd 0x08
-						 * break parada;
-						 * case 0x09:
-						 * //msg = new RequestExConfirmCancelAgitBid chdd 0x09
-						 * break parada;
-						 * case 0x10:
-						 * //msg = new RequestExReBid chdd 0x10
-						 * break parada;
-						 * case 0x11:
-						 * //msg = new RequestExAgitListForLot chd 0x11
-						 * break parada;
-						 * case 0x12:
-						 * //msg = new RequestExApplyForAgitLotStep1 chdc 0x12
-						 * break parada;
-						 * case 0x13:
-						 * //msg = new RequestExApplyForAgitLotStep2 chdc 0x13
-						 * break parada;
-						 * case 0x14:
-						 * //msg = new RequestExAgitListForBid chdd 0x14
-						 * break parada;
-						 * case 0x0D:
-						 * //msg = new RequestExApplyForBidStep1 chdd 0x0D
-						 * break parada;
-						 * case 0x0E:
-						 * //msg = new RequestExApplyForBidStep2 chddQ 0x0E
-						 * break parada;
-						 * case 0x0F:
-						 * //msg = new RequestExApplyForBidStep3 chddQ 0x0F
-						 * break parada;
-						 * case 0x09:
-						 * //msg = new RequestExConfirmCancelAgitLot chdc 0x09
-						 * break parada;
-						 * case 0x0A:
-						 * //msg = new RequestExProceedCancelAgitLot chdc 0x0A
-						 * break parada;
-						 * case 0x0A:
-						 * //msg = new RequestExProceedCancelAgitBid chdd 0x0A
-						 * break parada;
-						 */
+						case 0x01:
+							// msg = new RequestExAgitInitialize(); //msg = new RequestExAgitInitialize chd 0x01
+							break parada;
+						case 0x02:
+							// msg = new RequestExAgitDetailInfo();// msg = new RequestExAgitDetailInfo chdcd 0x02
+							break parada;
+						case 0x03:
+							// msg = new RequestExMyAgitState();// msg = new RequestExMyAgitState chd 0x03
+							break parada;
+						case 0x04:
+							// msg = new RequestExRegisterAgitForBidStep1();// msg = new RequestExRegisterAgitForBidStep1 chd 0x04
+							break parada;
+						case 0x05:
+							// msg = new RequestExRegisterAgitForBidStep3(); // msg = new RequestExRegisterAgitForBidStep1(); break parada;
+						case 0x07:
+							// msg = new RequestExConfirmCancelRegisteringAgit();// msg = new RequestExConfirmCancelRegisteringAgit chd 0x07
+							break parada;
+						case 0x08:
+							// msg = new RequestExProceedCancelRegisteringAgit();// msg = new RequestExProceedCancelRegisteringAgit chd 0x08
+							break parada;
+						case 0x09:
+							// msg = new RequestExConfirmCancelAgitLot(); // msg = new RequestExConfirmCancelAgitBid chdd 0x09
+							break parada;
+						case 0x0A:
+							// msg = new RequestExProceedCancelAgitLot(); // msg = new RequestExApplyForBidStep1 chdd 0x0D
+							break parada;
+						case 0x0D:
+							// msg = new RequestExApplyForBidStep1(); // msg = new RequestExApplyForBidStep2 chddQ 0x0E
+							break parada;
+						case 0x0E:
+							// msg = new RequestExApplyForBidStep2(); // msg = new RequestExApplyForBidStep3 chddQ 0x0F
+							break parada;
+						case 0x0F:
+							// msg = new RequestExApplyForBidStep3(); // msg = new RequestExConfirmCancelAgitLot chdc 0x09
+							break parada;
+						case 0x10:
+							// msg = new RequestExReBid(); // msg = new RequestExProceedCancelAgitLot chdc 0x0A
+							break parada;
+						case 0x11:
+							// msg = new RequestExAgitListForLot(); // msg = new RequestExProceedCancelAgitBid chdd 0x0A
+							break parada;
+						case 0x12:
+							// msg = new RequestExApplyForAgitLotStep1(); // msg = new RequestExProceedCancelAgitBid chdd 0x0A
+							break parada;
+						case 0x13:
+							// msg = new RequestExApplyForAgitLotStep2(); // msg = new RequestExProceedCancelAgitBid chdd 0x0A
+							break parada;
+						case 0x14:
+							// msg = new RequestExAgitListForBid(); // msg = new RequestExProceedCancelAgitBid chdd 0x0A
+							break parada;
 						}
 						break parada;
 					case 0x84:
@@ -1267,7 +1174,10 @@ public final class GamePacketHandler implements IPacketHandler<GameClient>, ICli
 						msg = new RequestGoodsInventoryInfo();
 						break parada;
 					case 0x92:
-						// msg = new RequestUseGoodsInventoryItem();
+						// msg = new RequestUseGoodsInventoryItem(); // verificar
+						break parada;
+					case 0x96:
+						// msg = new RequestHardWareInfo(); // verificar
 						break parada;
 					default:
 						client.onUnknownPacket();

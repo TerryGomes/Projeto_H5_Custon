@@ -130,7 +130,7 @@ public class ClanDataMerge
 			mergeClanSubpledges(oldServerCon, newServerCon);
 			mergeClanSubpledgesSkills(oldServerCon, newServerCon);
 			mergeClanItems(oldServerCon, newServerCon);
-			updateClanTable();
+			// updateClanTable();
 			saveMergedClanIds(oldServerCon);
 			ServerVariables.set(ConfigHolder.getString("MergeClansOverVariable"), "Success");
 			LOG.info(oldClanIdNewClanId + " Clans successfully Merged!");
@@ -298,13 +298,13 @@ public class ClanDataMerge
 		}
 	}
 
-	private void updateClanTable()
-	{
-		for (Integer newClanId : oldClanIdNewClanId.values())
-		{
-			ClanTable.getInstance().restoreClan(newClanId);
-		}
-	}
+//	private void updateClanTable()
+//	{
+//		for (Integer newClanId : oldClanIdNewClanId.values())
+//		{
+//			ClanTable.getInstance().restoreClan(newClanId);
+//		}
+//	}
 
 	private void saveMergedClanIds(Connection oldServerCon) throws SQLException
 	{

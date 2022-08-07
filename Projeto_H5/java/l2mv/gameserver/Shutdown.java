@@ -9,8 +9,6 @@ import java.util.TimerTask;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import l2mv.gameserver.fandc.streaming.StreamDatabaseHandler;
-import l2mv.gameserver.kara.vote.VoteManager;
 import l2mv.commons.net.nio.impl.SelectorThread;
 import l2mv.commons.time.cron.SchedulingPattern;
 import l2mv.commons.time.cron.SchedulingPattern.InvalidPatternException;
@@ -18,10 +16,14 @@ import l2mv.gameserver.dao.DatabaseBackupManager;
 import l2mv.gameserver.database.DatabaseFactory;
 import l2mv.gameserver.database.ForumDatabaseFactory;
 import l2mv.gameserver.database.merge.MergeDatabaseFactory;
+import l2mv.gameserver.fandc.streaming.StreamDatabaseHandler;
 import l2mv.gameserver.hwid.HwidEngine;
 import l2mv.gameserver.instancemanager.CoupleManager;
 import l2mv.gameserver.instancemanager.CursedWeaponsManager;
 import l2mv.gameserver.instancemanager.games.FishingChampionShipManager;
+import l2mv.gameserver.kara.vote.VoteManager;
+import l2mv.gameserver.masteriopack.rankpvpsystem.PvpTable;
+import l2mv.gameserver.masteriopack.rankpvpsystem.RPSConfig;
 import l2mv.gameserver.model.GameObjectsStorage;
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.model.entity.Hero;
@@ -32,9 +34,8 @@ import l2mv.gameserver.network.GameClient;
 import l2mv.gameserver.network.loginservercon.AuthServerCommunication;
 import l2mv.gameserver.network.serverpackets.SystemMessage;
 import l2mv.gameserver.scripts.Scripts;
+import l2mv.gameserver.tables.ClanTable;
 import l2mv.gameserver.utils.Util;
-import l2mv.gameserver.masteriopack.rankpvpsystem.PvpTable;
-import l2mv.gameserver.masteriopack.rankpvpsystem.RPSConfig;
 
 public class Shutdown extends Thread
 {
@@ -306,6 +307,16 @@ public class Shutdown extends Thread
 		catch (RuntimeException e)
 		{
 			_log.error("Error while saving Heroes! ", e);
+		}
+
+		try
+		{
+			ClanTable.getInstance().storeClanWars();
+			System.out.println("Clan War: Data saved.");
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
 		}
 
 		try

@@ -5,8 +5,8 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.locks.Lock;
@@ -16,25 +16,25 @@ import java.util.regex.Pattern;
 
 import javax.imageio.ImageIO;
 
-import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.map.TIntObjectMap;
+import gnu.trove.map.hash.TIntObjectHashMap;
+import l2mv.commons.formats.dds.DDSConverter;
 import l2mv.gameserver.Config;
-import l2mv.gameserver.idfactory.IdFactory;
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.network.serverpackets.PledgeCrest;
 import l2mv.gameserver.utils.Util;
-import l2mv.gameserver.vote.DDSConverter;
 
 /**
- * Class containing Map of Images sent from Server to Client Images are located in ./data/images/id_by_name They are sent to client by PledgeCrest packet
- */
+ * @author Bonux
+ **/
 public class ImagesCache
 {
 	private static final Logger _log = LoggerFactory.getLogger(ImagesCache.class);
-
-	private static final int[] SIZES =
+	private static final int[] SIZES = new int[]
 	{
 		1,
 		2,
@@ -48,82 +48,96 @@ public class ImagesCache
 		512,
 		1024
 	};
-	private static final int MAX_SIZE = SIZES[(SIZES.length - 1)];
-
+	private static final int MAX_SIZE = SIZES[SIZES.length - 1];
 	private static final String CREST_IMAGE_KEY_WORD = "Crest.crest_";
-	public static final Pattern HTML_PATTERN = Pattern.compile("%image:(.*?)%", 32);
+	public static final Pattern HTML_PATTERN = Pattern.compile("%image:(.*?)%", Pattern.DOTALL);
 
-	private final Map<Integer, byte[]> _images = new HashMap<>();
-	private final Map<String, Integer> _imagesId = new HashMap<String, Integer>();
+	private final static ImagesCache _instance = new ImagesCache();
 
-	public ImagesCache()
+	public final static ImagesCache getInstance()
 	{
-		loadImages();
+		return _instance;
 	}
 
-	/**
-	 * Loading all the images from ./data/images/id_by_name Path and adding them to images map
-	 */
-	private void loadImages()
-	{
-		final Map<Integer, File> imagesToLoad = getImagesToLoad();
-		for (Map.Entry<Integer, File> image : imagesToLoad.entrySet())
-		{
-			File file = image.getValue();
-			byte[] data = DDSConverter.convertToDDS(file).array();
-			_images.put(image.getKey(), data);
-			_imagesId.put(file.getName().toLowerCase(), image.getKey());
-		}
+	private final Map<String, Integer> _imagesId = new HashMap<>();
+	/** Получение изображения по ID */
+	private final TIntObjectMap<byte[]> _images = new TIntObjectHashMap<>();
 
-		_log.info("Loaded " + imagesToLoad.size() + " Images!");
+	/** Блокировка для чтения/записи объектов из "кэша" */
+	private final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
+	private final Lock readLock = this.lock.readLock();
+	private final Lock writeLock = this.lock.writeLock();
+
+	private ImagesCache()
+	{
+		this.load();
 	}
 
-	/**
-	 * Getting Map<Id, File> of all .png files from ./data/images/id_by_name Path
-	 * @return Getting map of all images
-	 */
-	private static Map<Integer, File> getImagesToLoad()
+	public void load()
 	{
-		final Map<Integer, File> files = new HashMap<>();
+		_log.info("ImagesCache: Loading images...");
 
-		final File folder = new File(Config.DATAPACK_ROOT + "/data/images");
-		if (!folder.exists())
+		File dir = new File(Config.DATAPACK_ROOT, "/data/images");
+		if (!dir.exists() || !dir.isDirectory())
 		{
-			_log.error("Path \"./data/images\" doesn't exist!", new FileNotFoundException());
-			return files;
+			_log.info("ImagesCache: Files missing, loading aborted.");
+			return;
 		}
 
-		for (File file : folder.listFiles())
+		int count = this.loadImagesDir(dir);
+
+		_log.info("ImagesCache: Loaded " + count + " images");
+	}
+
+	private int loadImagesDir(File dir)
+	{
+		int count = 0;
+		for (File file : dir.listFiles())
 		{
-			for (File newFile : (file.isDirectory() ? file.listFiles() : new File[]
+			if (file.isDirectory())
 			{
-				file
-			}))
-			{
-				if ((newFile.getName().endsWith(".jpg") || newFile.getName().endsWith(".png") || newFile.getName().endsWith(".bmp")))
-				{
-					// newFile = resizeImage(newFile);
-
-					int id = -1;
-					try
-					{
-						final String name = FilenameUtils.getBaseName(newFile.getName());
-						id = Integer.parseInt(name);
-					}
-					catch (Exception e)
-					{
-						id = IdFactory.getInstance().getNextId();
-					}
-
-					if (id != -1)
-					{
-						files.put(id, newFile);
-					}
-				}
+				count += this.loadImagesDir(file);
+				continue;
 			}
-		}
 
-		return files;
+			if (!checkImageFormat(file))
+			{
+				continue;
+			}
+
+			String fileName = file.getName();
+
+			if (this._imagesId.containsKey(fileName.toLowerCase()))
+			{
+				_log.warn("Duplicate image name \"" + fileName + "\". Replacing with " + file.getPath());
+				continue;
+			}
+
+			BufferedImage image = resizeImage(file);
+			if (image == null)
+			{
+				continue;
+			}
+
+			try
+			{
+				ByteBuffer buffer = DDSConverter.convertToDxt1NoTransparency(image);
+				byte[] array = buffer.array();
+				int imageId = Math.abs(new HashCodeBuilder(15, 87).append(fileName).append(array).toHashCode());
+
+				this._imagesId.put(fileName.toLowerCase(), imageId);
+				this._images.put(imageId, array);
+			}
+			catch (Exception e)
+			{
+				_log.error("ImagesChache: Error while loading " + fileName + " (" + image.getWidth() + "x" + image.getHeight() + ") image.", e);
+			}
+
+			// _log.info("ImagesCache: Loaded " + fileName + " (" + image.getWidth() + "x" + image.getHeight() + ") image.");
+
+			count++;
+		}
+		return count;
 	}
 
 	private static BufferedImage resizeImage(File file)
@@ -133,9 +147,9 @@ public class ImagesCache
 		{
 			image = ImageIO.read(file);
 		}
-		catch (IOException e)
+		catch (IOException ioe)
 		{
-			_log.error("ImagesChache: Error while resizing " + file.getName() + " image.", e);
+			_log.error("ImagesCache: Error while resizing " + file.getName() + " image.");
 			return null;
 		}
 
@@ -143,57 +157,107 @@ public class ImagesCache
 		{
 			return null;
 		}
+
 		int width = image.getWidth();
 		int height = image.getHeight();
 
-		boolean resizeWidth = true;
+		int resizedWidth = width;
 		if (width > MAX_SIZE)
 		{
-			image = image.getSubimage(0, 0, MAX_SIZE, height);
-			resizeWidth = false;
+			resizedWidth = MAX_SIZE;
+		}
+		else
+		{
+			for (int size : SIZES)
+			{
+				if (size < width)
+				{
+					continue;
+				}
+
+				resizedWidth = size;
+				break;
+			}
 		}
 
-		boolean resizeHeight = true;
+		int resizedHeight = height;
 		if (height > MAX_SIZE)
 		{
-			image = image.getSubimage(0, 0, width, MAX_SIZE);
-			resizeHeight = false;
+			resizedHeight = MAX_SIZE;
+		}
+		else
+		{
+			for (int size : SIZES)
+			{
+				if (size < height)
+				{
+					continue;
+				}
+
+				resizedHeight = size;
+				break;
+			}
 		}
 
-		int resizedWidth = width;
-		if (resizeWidth)
-		{
-			for (int size : SIZES)
-			{
-				if (size >= width)
-				{
-					resizedWidth = size;
-					break;
-				}
-			}
-		}
-		int resizedHeight = height;
-		if (resizeHeight)
-		{
-			for (int size : SIZES)
-			{
-				if (size >= height)
-				{
-					resizedHeight = size;
-					break;
-				}
-			}
-		}
-		if(resizedWidth != width || resizedHeight != height)
+		if (resizedWidth != width || resizedHeight != height)
 		{
 			BufferedImage resizedImage = new BufferedImage(resizedWidth, resizedHeight, image.getType());
 			Graphics2D g = resizedImage.createGraphics();
 			g.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BILINEAR);
 			g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), Color.BLACK, null);
-			g.dispose(); 
+			g.dispose();
 			return resizedImage;
 		}
 		return image;
+	}
+
+	public int getImageId(String val)
+	{
+		int imageId = -1;
+
+		this.readLock.lock();
+		try
+		{
+			if (this._imagesId.get(val.toLowerCase()) != null)
+			{
+				imageId = this._imagesId.get(val.toLowerCase());
+			}
+		}
+		finally
+		{
+			this.readLock.unlock();
+		}
+
+		return imageId;
+	}
+
+	public byte[] getImage(int imageId)
+	{
+		byte[] image = null;
+
+		this.readLock.lock();
+		try
+		{
+			image = this._images.get(imageId);
+		}
+		finally
+		{
+			this.readLock.unlock();
+		}
+
+		return image;
+	}
+
+	private static boolean checkImageFormat(File file)
+	{
+		String filename = file.getName();
+		int dotPos = filename.lastIndexOf(".");
+		String format = filename.substring(dotPos);
+		if (format.endsWith(".jpg") || format.endsWith(".png") || format.endsWith(".bmp"))
+		{
+			return true;
+		}
+		return false;
 	}
 
 	/**
@@ -210,15 +274,20 @@ public class ImagesCache
 		}
 
 		// We must also replace all the crests_1 on the html to fit the current player serverid, or he wont be able to see the images
-		html = html.replaceAll("Crest.crest_1_", "Crest.crest_" + +player.getNetConnection().getServerId() + "_");
+		html = html.replaceAll("Crest.crest_1_", "Crest.crest_" + player.getNetConnection().getServerId() + "_");
 
 		// We must first replace all the images to crests format, things like %image:serverImage% to Crest.crest_1_32423
 		Matcher m = HTML_PATTERN.matcher(html);
 		while (m.find())
 		{
 			final String imageName = m.group(1);
-			final int imageId = _imagesId.get(imageName);
-			html = html.replaceAll("%image:" + imageName + "%", "Crest.crest_" + player.getNetConnection().getServerId() + "_" + imageId);
+			final int imageId = ImagesCache.getInstance().getImageId(imageName);
+			html = html.replaceAll("%image:" + imageName + "%", "Crest.crest_" + player.getNetConnection().getServerId() + Config.REQUEST_ID + "_" + imageId);
+			byte[] image = ImagesCache.getInstance().getImage(imageId);
+			if (image != null)
+			{
+				player.sendPacket(new PledgeCrest(imageId, image));
+			}
 		}
 
 		final char[] charArray = html.toCharArray();
@@ -254,35 +323,6 @@ public class ImagesCache
 		return html;
 	}
 
-	public Map<Integer, byte[]> get_images()
-	{
-		return _images;
-	}
-
-	public Map<String, Integer> get_imagesId()
-	{
-		return _imagesId;
-	}
-
-	/**
-	 * Getting end of Image File Name(name is always numbers)
-	 * @param charArray whole text
-	 * @param start place
-	 * @return whole name
-	 */
-	private static int getFileNameEnd(char[] charArray, int start)
-	{
-		int stop = start;
-		for (; stop < charArray.length; stop++)
-		{
-			if (!Util.isInteger(charArray[stop]))
-			{
-				return stop;
-			}
-		}
-		return stop;
-	}
-
 	/**
 	 * Sending Image as PledgeCrest to a player If image was already sent once to the player, it's skipping this part Saved images data is in player Quick Vars as Key: "Image"+imageId Value: true
 	 * @param player that will receive image
@@ -306,52 +346,22 @@ public class ImagesCache
 		return false;
 	}
 
-	private final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
-	private final Lock readLock = lock.readLock();
-	private final Lock writeLock = lock.writeLock();
-
-	public int getImageId(String val)
+	/**
+	 * Getting end of Image File Name(name is always numbers)
+	 * @param charArray whole text
+	 * @param start place
+	 * @return whole name
+	 */
+	private static int getFileNameEnd(char[] charArray, int start)
 	{
-		int imageId = -1;
-
-		readLock.lock();
-		try
+		int stop = start;
+		for (; stop < charArray.length; stop++)
 		{
-			if (_imagesId.get(val.toLowerCase()) != null)
-				imageId = _imagesId.get(val.toLowerCase());
+			if (!Util.isInteger(charArray[stop]))
+			{
+				return stop;
+			}
 		}
-		finally
-		{
-			readLock.unlock();
-		}
-
-		return imageId;
-	}
-
-	public byte[] getImage(int imageId)
-	{
-		byte[] image = null;
-
-		readLock.lock();
-		try
-		{
-			image = _images.get(imageId);
-		}
-		finally
-		{
-			readLock.unlock();
-		}
-
-		return image;
-	}
-
-	public static ImagesCache getInstance()
-	{
-		return ImagesCacheHolder.instance;
-	}
-
-	private static class ImagesCacheHolder
-	{
-		protected static final ImagesCache instance = new ImagesCache();
+		return stop;
 	}
 }

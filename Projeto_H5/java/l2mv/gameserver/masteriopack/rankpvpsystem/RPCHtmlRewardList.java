@@ -15,9 +15,9 @@ package l2mv.gameserver.masteriopack.rankpvpsystem;
 import java.util.Map;
 
 import l2mv.gameserver.data.xml.holder.ItemHolder;
+import l2mv.gameserver.masteriopack.rankpvpsystem.RewardTable.Reward;
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
-import l2mv.gameserver.masteriopack.rankpvpsystem.RewardTable.Reward;
 
 /**
  * @author Masterio

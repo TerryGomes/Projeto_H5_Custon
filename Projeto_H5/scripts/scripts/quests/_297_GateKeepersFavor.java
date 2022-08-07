@@ -66,11 +66,7 @@ public class _297_GateKeepersFavor extends Quest implements ScriptFile
 					htmltext = "gatekeeper_wirphy_q0297_01.htm";
 				}
 			}
-			else if (cond == 1 && st.getQuestItemsCount(STARSTONE) < 20)
-			{
-				htmltext = "gatekeeper_wirphy_q0297_04.htm";
-			}
-			else if (cond == 2 && st.getQuestItemsCount(STARSTONE) < 20)
+			else if ((cond == 1 && st.getQuestItemsCount(STARSTONE) < 20) || (cond == 2 && st.getQuestItemsCount(STARSTONE) < 20))
 			{
 				htmltext = "gatekeeper_wirphy_q0297_04.htm";
 			}

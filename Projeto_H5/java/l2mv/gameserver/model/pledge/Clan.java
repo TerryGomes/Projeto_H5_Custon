@@ -18,6 +18,8 @@ import org.napile.primitive.maps.impl.CTreeIntObjectMap;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import gnu.trove.set.TIntSet;
+import gnu.trove.set.hash.TIntHashSet;
 import l2mv.commons.collections.JoinedIterator;
 import l2mv.commons.dbutils.DbUtils;
 import l2mv.gameserver.Config;
@@ -155,6 +157,8 @@ public class Clan implements Iterable<UnitMember>
 	public static final int SUBUNIT_KNIGHT2 = 1002;
 	public static final int SUBUNIT_KNIGHT3 = 2001;
 	public static final int SUBUNIT_KNIGHT4 = 2002;
+	private final List<ClanWar> _clanWars = new ArrayList<ClanWar>();
+	private final TIntSet _atWarAttackers = new TIntHashSet();
 
 	private final static ClanReputationComparator REPUTATION_COMPARATOR = new ClanReputationComparator();
 	/** Number of places in the table of ranks clans */
@@ -2230,6 +2234,80 @@ public class Clan implements Iterable<UnitMember>
 
 		return level / size;
 	}
+
+	public List<ClanWar> getClanWars()
+	{
+		return _clanWars;
+	}
+
+	public ClanWar getClanWar(Clan clan)
+	{
+		for (ClanWar war : _clanWars)
+		{
+			if (war.getAttackerClan() == clan || war.getOpposingClan() == clan)
+			{
+				return war;
+			}
+		}
+		return null;
+	}
+
+	public void addClanWar(ClanWar war)
+	{
+		if (_clanWars.contains(war) || (war.getAttackerClan() != this && war.getOpposingClan() != this))
+		{
+			return;
+		}
+
+		updateClanWarStatus(war);
+
+		_clanWars.add(war);
+	}
+
+	public void removeClanWar(ClanWar war)
+	{
+		if (!_clanWars.contains(war) || (war.getAttackerClan() != this && war.getOpposingClan() != this))
+		{
+			return;
+		}
+
+		_clanWars.remove(war);
+
+		updateClanWarStatus(war);
+	}
+
+	public void updateClanWarStatus(ClanWar war)
+	{
+		if (war.getPeriod() == ClanWar.ClanWarPeriod.MUTUAL)
+		{
+			if (this != war.getOpposingClan())
+			{
+				_atWarWith.add(war.getOpposingClan().getClanId(), null);
+
+				_atWarAttackers.add(war.getAttackerClan().getClanId());
+			}
+			else if (this != war.getAttackerClan())
+			{
+				_atWarWith.add(war.getAttackerClan().getClanId(), null);
+				_atWarAttackers.add(war.getAttackerClan().getClanId());
+			}
+		}
+		else if (war.getPeriod() == ClanWar.ClanWarPeriod.PEACE)
+		{
+			if (this != war.getOpposingClan())
+			{
+				_atWarWith.remove(war.getOpposingClan().getClanId());
+				_atWarAttackers.remove(war.getOpposingClan().getClanId());
+			}
+			else if (this != war.getAttackerClan())
+			{
+				_atWarWith.remove(war.getAttackerClan().getClanId());
+				_atWarAttackers.remove(war.getAttackerClan().getClanId());
+			}
+		}
+		broadcastClanStatus(true, true, true);
+	}
+
 	// /**
 	// * @param obj
 	// * @return

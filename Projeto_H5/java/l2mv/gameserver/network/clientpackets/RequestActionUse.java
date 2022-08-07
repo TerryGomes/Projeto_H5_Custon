@@ -719,15 +719,7 @@ public class RequestActionUse extends L2GameClientPacket
 			{
 				activeChar.sendPacket(SystemMsg.A_DEAD_STRIDER_CANNOT_BE_RIDDEN);
 			}
-			else if (activeChar.isInDuel())
-			{
-				activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-			}
-			else if (activeChar.isInCombat() || pet.isInCombat())
-			{
-				activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
-			}
-			else if (activeChar.isFishing())
+			else if (activeChar.isInDuel() || (activeChar.isInCombat() || pet.isInCombat()) || activeChar.isFishing())
 			{
 				activeChar.sendPacket(SystemMsg.YOU_CANNOT_BOARD_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
 			}

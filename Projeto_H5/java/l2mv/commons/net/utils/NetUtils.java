@@ -17,15 +17,4 @@ public class NetUtils
 		return PRIVATE.isInRange(address);
 	}
 
-	/*
-	 * public static Boolean CheckSubNet(String paramString, AdvIP paramAdvIP)
-	 * {
-	 * String[] arrayOfString1 = paramString.split("\\.");
-	 * String[] arrayOfString2 = paramAdvIP.bitmask.split("\\.");
-	 * String str = "";
-	 * for (int i = 0; i < arrayOfString1.length; i++)
-	 * str = str + (Integer.valueOf(arrayOfString1[i]).intValue() & Integer.valueOf(arrayOfString2[i]).intValue()) + ".";
-	 * return Boolean.valueOf(str.equals(paramAdvIP.ipmask.replace("\\.", "") + "."));
-	 * }
-	 */
 }

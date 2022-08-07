@@ -202,7 +202,7 @@ public class MasterOfEnchanting extends Functions implements ScriptFile, OnPlaye
 				{
 					L2ItemInstance item = ItemTable.getInstance().createItem(drop[0], killer.getPlayer().getObjectId(), 0, "Master of Enchanting");
 					((L2NpcInstance) cha).dropItem(killer.getPlayer(), item);
-	
+
 					break;
 				}
 			for (int[] drop : _energydrop)
@@ -210,7 +210,7 @@ public class MasterOfEnchanting extends Functions implements ScriptFile, OnPlaye
 				{
 					L2ItemInstance item = ItemTable.getInstance().createItem(drop[0], killer.getPlayer().getObjectId(), 0, "Master of Enchanting");
 					((L2NpcInstance) cha).dropItem(killer.getPlayer(), item);
-	
+
 					break;
 				}
 		}

@@ -72,17 +72,9 @@ public class _157_RecoverSmuggled extends Quest implements ScriptFile
 		}
 		if (npcId == 30005 && st.getCond() == 0)
 		{
-			if (st.getCond() < 15)
+			if ((st.getCond() < 15) && (st.getPlayer().getLevel() >= 5))
 			{
-				if (st.getPlayer().getLevel() >= 5)
-				{
-					htmltext = "30005-03.htm";
-				}
-				else
-				{
-					htmltext = "30005-02.htm";
-					st.exitCurrentQuest(true);
-				}
+				htmltext = "30005-03.htm";
 			}
 			else
 			{

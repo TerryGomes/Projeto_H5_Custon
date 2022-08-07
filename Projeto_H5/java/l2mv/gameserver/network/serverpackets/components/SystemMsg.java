@@ -4588,21 +4588,12 @@ public enum SystemMsg implements IStaticPacket
 	YOU_HAVE_BEEN_REPORTED_AS_AN_ILLEGAL_PROGRAM_USER_SO_YOUR_ACTIONS_WILL_BE_RESTRICTED_FOR_180_MINUTES_(2479),
 	// Message: You have been reported as an illegal program user, so movement is prohibited for 120 minutes.
 	YOU_HAVE_BEEN_REPORTED_AS_AN_ILLEGAL_PROGRAM_USER_SO_MOVEMENT_IS_PROHIBITED_FOR_120_MINUTES(2480), C1_HAS_BEEN_REPORTED_AS_AN_ILLEGAL_PROGRAM_USER_AND_HAS_BEEN_INVESTIGATED(2481), // Персонаж
-																																														// $c1
-																																														// сообщил
-																																														// о
-																																														// том,
-																																														// что
-																																														// Вы
-																																														// используете
-																																														// нелегальную
-																																														// программу,
-																																														// поэтому
-																																														// Вы
-																																														// не
-																																														// сможете
-																																														// получить
-																																														// награду.
+	LINE_490(490), // получить
+	S1_HAS_DECLARED_A_CLAN_WAR_CLAN_WAR_STARTS_IN_3_DAYS(1561),
+
+	A_CLAN_WAR_WITH_CLAN_S1_HAS_STARTED(215), YOU_HAVE_DECLARED_A_CLAN_WAR_WITH_S1_CLAN_WAR_STARTS_IN_3_DAYS(1562), BECAUSE_C1_WAS_KILLED_BY_A_CLAN_MEMBER_OF_S2_CLAN_FAME_POINTS_DECREASED_BY_1(3811), BECAUSE_A_CLAN_MEMBER_OF_S1_WAS_KILLED_BY_C2_CLAN_FAME_POINTS_INCREASED_BY_1(3812),
+
+	// награду.
 	C1_HAS_BEEN_REPORTED_AS_AN_ILLEGAL_PROGRAM_USER_AND_CANNOT_JOIN_A_PARTY(2482), // Персонаж $c1 сообщил о том, что Вы используете нелегальную программу, поэтому Вы не можете вступить
 																					// в группу.
 	YOU_HAVE_BEEN_REPORTED_AS_AN_ILLEGAL_PROGRAM_USER_AND_CHATTING_IS_NOT_ALLOWED(2483), // Получено сообщение о том, что Вы используете нелегальную программу, поэтому чат запрещен.
@@ -4663,6 +4654,7 @@ public enum SystemMsg implements IStaticPacket
 			this._size = 0;
 			this._message = new SystemMessage2(this);
 		}
+
 	}
 
 	public int getId()

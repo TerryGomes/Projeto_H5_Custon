@@ -2,6 +2,7 @@ package l2mv.gameserver.network.clientpackets;
 
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.model.pledge.Clan;
+import l2mv.gameserver.model.pledge.ClanWar;
 import l2mv.gameserver.model.pledge.UnitMember;
 import l2mv.gameserver.network.serverpackets.ActionFail;
 import l2mv.gameserver.network.serverpackets.SystemMessage2;
@@ -62,6 +63,12 @@ public class RequestStopPledgeWar extends L2GameClientPacket
 			}
 		}
 
-		ClanTable.getInstance().stopClanWar(playerClan, clan);
+		// ClanTable.getInstance().stopClanWar(playerClan, clan);
+
+		ClanWar war = playerClan.getClanWar(clan);
+		if (war != null)
+		{
+			war.cancel(playerClan);
+		}
 	}
 }

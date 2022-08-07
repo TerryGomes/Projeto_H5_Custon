@@ -7,7 +7,6 @@ import java.security.AccessController;
 import java.security.PrivilegedAction;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
 import javax.tools.Diagnostic;
 import javax.tools.Diagnostic.Kind;

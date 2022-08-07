@@ -184,16 +184,9 @@ public abstract class Summon extends Playable
 		{
 			player.getAI().Attack(this, false, shift);
 		}
-		else if (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW)
+		else if ((player.getAI().getIntention() != CtrlIntention.AI_INTENTION_FOLLOW) && !shift)
 		{
-			if (!shift)
-			{
-				player.getAI().setIntention(CtrlIntention.AI_INTENTION_FOLLOW, this, Config.FOLLOW_RANGE);
-			}
-			else
-			{
-				player.sendActionFailed();
-			}
+			player.getAI().setIntention(CtrlIntention.AI_INTENTION_FOLLOW, this, Config.FOLLOW_RANGE);
 		}
 		else
 		{

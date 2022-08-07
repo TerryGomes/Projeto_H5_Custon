@@ -82,11 +82,7 @@ public class MatchingRoomManager
 		List<MatchingRoom> res = new ArrayList<MatchingRoom>();
 		for (MatchingRoom room : _holder[type]._rooms.values())
 		{
-			if (region > 0 && room.getLocationId() != region)
-			{
-				continue;
-			}
-			else if (region == -2 && room.getLocationId() != MatchingRoomManager.getInstance().getLocation(activeChar))
+			if ((region > 0 && room.getLocationId() != region) || (region == -2 && room.getLocationId() != MatchingRoomManager.getInstance().getLocation(activeChar)))
 			{
 				continue;
 			}

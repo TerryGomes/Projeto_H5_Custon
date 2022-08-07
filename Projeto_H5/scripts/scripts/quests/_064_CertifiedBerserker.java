@@ -198,13 +198,7 @@ public class _064_CertifiedBerserker extends Quest implements ScriptFile
 			{
 				htmltext = "32215-01.htm";
 			}
-			else if (cond == 3)
-			{
-				htmltext = "32215-02.htm";
-				st.takeItems(BREKA_ORC_HEAD, -1);
-				st.setCond(4);
-			}
-			else if (cond > 1 && st.getQuestItemsCount(BREKA_ORC_HEAD) == 20)
+			else if ((cond == 3) || (cond > 1 && st.getQuestItemsCount(BREKA_ORC_HEAD) == 20))
 			{
 				htmltext = "32215-02.htm";
 				st.takeItems(BREKA_ORC_HEAD, -1);
@@ -235,12 +229,7 @@ public class _064_CertifiedBerserker extends Quest implements ScriptFile
 			{
 				htmltext = "32252-01.htm";
 			}
-			else if (cond == 6)
-			{
-				htmltext = "32252-02.htm";
-				st.setCond(7);
-			}
-			else if (cond > 4 && st.getQuestItemsCount(MESSAGE_PLATE) == 1)
+			else if ((cond == 6) || (cond > 4 && st.getQuestItemsCount(MESSAGE_PLATE) == 1))
 			{
 				htmltext = "32252-02.htm";
 				st.setCond(7);

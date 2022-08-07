@@ -17,10 +17,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import l2mv.gameserver.model.Player;
 import l2mv.gameserver.masteriopack.rankpvpsystem.RPSConfig;
 import l2mv.gameserver.masteriopack.rankpvpsystem.Rank;
 import l2mv.gameserver.masteriopack.rankpvpsystem.RankTable;
+import l2mv.gameserver.model.Player;
 
 /**
  * This class contains all of the rank images as buffered files.
