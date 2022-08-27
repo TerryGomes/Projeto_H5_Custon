@@ -2,7 +2,7 @@
 Projeto H5 Customizado
 
 <ul>
-======   [ Fixeds ] ======  
+<h2>======   [ Fixeds ] ======</h2>  
 <li>Configs / Arrumando </li>
 <li>JAVA 17/18 -version</li>
 <li>Proteção / IP [Script/LofinServer/GameServer] <= Configurado para 127.0.0.1</li>
