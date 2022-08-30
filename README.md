@@ -6,6 +6,7 @@
  A source privada terá atualização para comércio, <br>
  a source compartilhada só terá atualização conforme o <br>
  o feedback das pessoas que a utilizarem...
+ A base são a mesmas.
 </p>
 
 <p>Obs: Todas as caracteristicas descritas já foram testadas no jogo <br>
