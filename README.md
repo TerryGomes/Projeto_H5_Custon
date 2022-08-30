@@ -5,6 +5,7 @@
 <a href="https://l2multverso.com.br/" alt="Site Multverso" >Nosso Site MultVerso CURSOS & PROJETOS </a>
 
 <h3>Unico projeto Free na net com Protocol Fixado 273</h3>
+<h3> Aceitamos doações pix: +55 21 98292-1391 / Zap</h3>
 <p>
  A source privada terá atualização para comércio, <br>
  a source compartilhada só terá atualização conforme o <br>
@@ -12,7 +13,7 @@
  A base é a mesmas.
 </p>
 
-<p>Obs: Todas as caracteristicas descritas já foram testadas no jogo <br>
+<p>Obs: Todas as caracteristicas descritas já foram testadas no jogo, <br>
 temos muito mais coisas para testar e novidades.
 </p>
 <ul>
