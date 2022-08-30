@@ -5,7 +5,7 @@
 
 <a href="https://l2multverso.com.br/" alt="Site Multverso" >Nosso Site MultVerso CURSOS & PROJETOS </a>
 
-<h3>Unico projeto Free na net com Protocol Fixado 273</h3>
+<h3>Único projeto Free na net com Protocol Fixado 273</h3>
 <h3> Aceitamos doações pix: +55 21 98292-1391 / Zap</h3>
 <p>
  A source privada terá atualização para comércio, <br>
