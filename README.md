@@ -1,12 +1,20 @@
 <h1>Source MultVerso High Five</h1>
 
+<h2>Temos 1 Source compartilhada & 1 privada</h2>
+
+<p>
+ A source privada terá atualização para comércio, <br>
+ a source compartilhada só terá atualização conforme o <br>
+ o feedback das pessoas que a utilizarem...
+</p>
+
 <p>Obs: Todas as caracteristicas descritas já foram testadas no jogo <br>
 temos muito mais coisas para testar e novidades.
 </p>
 <ul>
 <h3>======   [ Fixeds ] ======</h3>  
 <li>Configs / Arrumando </li>
-<li>JAVA 17/18 -version</li>
+<li>JAVA 17/18 version</li>
 <li>controle de IP</li>
 <li>Banco de Imagens  MOBS / BOSS / ITENS</li>
 <li>Community board search imagens e funções .</li>
