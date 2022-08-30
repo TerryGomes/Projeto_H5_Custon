@@ -3,7 +3,7 @@
 <h2>Temos 1 Source compartilhada & 1 privada</h2>
 
 
-<a href="https://l2multverso.com.br/" alt+"Site Multverso" >Nosso Site MultVerso CURSOS & PROJETOS </a>
+<a href="https://l2multverso.com.br/" alt="Site Multverso" >Nosso Site MultVerso CURSOS & PROJETOS </a>
 
 <p>
  A source privada terá atualização para comércio, <br>
