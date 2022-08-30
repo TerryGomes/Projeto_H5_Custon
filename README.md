@@ -27,11 +27,8 @@
 <li>Events Info.</li>
 <li>Vote Info.</li>
 <li>Shop / simples.</li>
-  
 </ul>
 
-
-</ul>
 
 <ul>
 <h3>======   [ Mods APIs ] ======</h3>  
@@ -49,12 +46,35 @@
 <li>Party Marching.</li>
 <li>Forge Controle.</li>
 <li>Daily Quest.</li>
-  
-</ul>
+ </ul>
 
 
+<ul>
+<h3>======   [ Eventos ] ======</h3>  
+<li>Phantons funcionando  Ataques / Farms.</li>
+<li>TvT.</li>
+<li>Ctf</li>
+<li>Last Hero.</li>
+<li>GvG.</li>
+<li>Korean Style.</li>
+<li>Kartilia.</li>
+ </ul>
 
-
+<ul>
+<h3>======   [ Serviços ] ======</h3>  
+<li>Buffer Vip.</li>
+<li>Buffer Simples.</li>
+<li>Ctf</li>
+<li>Teleporte.</li>
+<li>Exclusivo Shop.</li>
+<li>Blacksmith Cutom.</li>
+<li>Sysmbols Shop.</li>
+ <li>Prêmio Conta.</li>
+<li>WareHouse.</li>
+<li>Visualizar Local [fica assistindo eventos e instancias]</li>
+<li>Pc Point / Shop.</li>
+<li>Sistema de cores.</li>
+ </ul>
 
 
 
