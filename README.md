@@ -1,5 +1,8 @@
 <h1>Source MultVerso High Five</h1>
 
+<p>Obs: Todas as caracteristicas descritas já foram testadas no jogo <br>
+temos muito mais coisas para testar e novidades.
+</p>
 <ul>
 <h3>======   [ Fixeds ] ======</h3>  
 <li>Configs / Arrumando </li>
