@@ -1,0 +1,84 @@
+<html noscrollbar>
+<body>
+<title>Admin Panel</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td align=center>
+		<br>
+			<table cellpadding=0 cellspacing=-5 width=260>
+				<tr>
+					<td><button value="Main" action="bypass -h admin_admin" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Events" action="bypass -h admin_show_html events/events.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Chars" action="bypass -h admin_char_manage" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Server" action="bypass -h admin_server admserver.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="GM Shop" action="bypass -h admin_gmshop" width=65 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+		<br><br>
+			<table cellpadding=0 cellspacing=-2 width=280>
+				<tr>
+					<td align=center><button action="bypass -h admin_show_html teleports/town.htm" value="Towns" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button action="bypass -h admin_show_html teleports/townarea.htm" value="Town Area's" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				<tr>
+					<td align=center><button action="bypass -h admin_show_html teleports/castle.htm" value="Castle" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button action="bypass -h admin_show_html teleports/fort.htm" value="Fortress" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				<tr>
+					<td align=center><button action="bypass -h admin_show_html teleports/sevensigns.htm" value="Seven Signs" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button action="bypass -h admin_show_html teleports/instance.htm" value="Instances" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				<tr>
+					<td align=center><button action="bypass -h admin_show_html teleports/raid.htm" value="Raidboss" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button action="bypass -h admin_show_html teleports/arena.htm" value="Arenas" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				<tr>
+					<td align=center><button action="bypass -h admin_show_html teleports/location/primeval.htm" value="Primeval Area" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button action="bypass -h admin_show_html teleports/clanhall/clanhall.htm" value="Conquerable Halls" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				<tr>
+					<td align=center><button action="bypass -h admin_show_html teleports/location/hellbound.htm" value="Hellbound Area" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button action="bypass -h admin_show_html teleports/location/gracia.htm" value="Gracia Area" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				<tr>
+					<td align=center><button action="bypass -h admin_show_html teleports/others.htm" value="Other Ports" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button action="bypass -h admin_show_html teleports/epilogue.htm" value="Epilogue" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+				<tr>
+					<td align=center><button action="bypass -h admin_show_html teleports/freya.htm" value="Freya" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center><button action="bypass -h admin_show_html teleports/hf.htm" value="High Five" width=130 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td align=center></td>
+				</tr>
+			</table>
+		<br>
+		<center>
+	<button value="Additional Movement Options" action="bypass -h admin_tele" width=200 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"><br>
+		<br1>Move to the NPC\Player<br1>
+			<table width=280>
+				<tr>
+					<td width=27>NPC:</td>
+					<td><edit var="npc_id" width=55></td>
+					<td><button value="Go" action="bypass -h admin_tonpc $npc_id" width=35 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td width=37>Player:</td>
+					<td><edit var="charname" width=55></td>
+					<td><button value="Go" action="bypass -h admin_goto_char_menu $charname" width=35 height=22 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<br>
+				<br1>Move to the given coordinates<br1>
+			<table width=280>
+				<tr>
+					<td width=15>X:</td>
+					<td><edit var="char_cord_x" width=55></td>
+					<td width=15>Y:</td>
+					<td><edit var="char_cord_y" width=55></td>
+					<td width=15>Z:</td>
+					<td><edit var="char_cord_z" width=55></td>
+					<td><button value="Go" action="bypass -h admin_move_to $char_cord_x $char_cord_y $char_cord_z" width=35 height=21 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+		</center>
+		<br>
+		</td>
+	</tr>
+</table>

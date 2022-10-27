@@ -1,0 +1,55 @@
+<html noscrollbar>
+<body>
+<title>Poll System</title>
+<table border=0 cellpadding=0 cellspacing=0 width=292 height=358 background="l2ui_ct1.Windows_DF_TooltipBG">
+	<tr>
+		<td align=center>
+		<br>
+			<table cellpadding=0 cellspacing=-5 width=260>
+				<tr>
+					<td><button value="Main" action="bypass -h admin_admin" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Events" action="bypass -h admin_show_html events/events.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Chars" action="bypass -h admin_char_manage" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="Server" action="bypass -h admin_server admserver.htm" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+					<td><button value="GM Shop" action="bypass -h admin_gmshop" width=60 height=23 back="L2UI_ct1.button_df" fore="L2UI_ct1.button_df"></td>
+				</tr>
+			</table>
+			<br><br><br>
+			<table width=260>
+				<tr>
+					<td align=center><font color="LEVEL">Current Question:</font></td>
+				</tr>
+				<tr>
+					<td align=center><font color="LEVEL">%question%</font></td>
+				</tr>
+			</table>
+			<br>
+			<table width=260>
+				<tr>
+					<td align=center><font color="LEVEL">End In:</font></td>
+					<td align=center><font color="LEVEL">%endDate%</font></td>
+				</tr>
+			</table>
+			<br><br>
+			<table width=260>
+				<tr>
+					<td align=center><font color="LEVEL">%quietStartPause%</font></td>
+					<td align=center><font color="LEVEL">%startEndAndAnnounce%</font></td>
+				</tr>
+			</table>
+			<br><br>
+			<table cellpadding=0 cellspacing=-2 width=260>
+				<tr>
+					<td align=center><button value="Check answers" action="bypass -h admin_poll_current_answers" width=120 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td align=center><button value="Change question" action="bypass -h admin_poll_set_question" width=120 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+				<tr>
+					<td align=center><button value="Change time" action="bypass -h admin_poll_set_time" width=120 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+					<td align=center><button value="Delete Poll" action="bypass -h admin_poll_delete" width=120 height=30 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

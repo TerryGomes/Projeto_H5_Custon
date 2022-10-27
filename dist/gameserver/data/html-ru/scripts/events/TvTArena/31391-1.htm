@@ -1,0 +1,20 @@
+<br>
+<font color="7CFC00">Арена №</font><font color=FF0000>2</font>
+<br>
+<table>
+<tr><td>Ставка (1 - 500) <edit var="price" width=80></td></tr>
+<tr><td></td></tr>
+<tr><td>Размер команд (1-12):</td></tr>
+<tr><td>1 команда: <edit var="team1count" width=80></td><td>2 команда: <edit var="team2count" width=80></td></tr>
+<tr><td></td></tr>
+<tr><td>Уровни:</td></tr>
+<tr><td>1 команда:</td></tr>
+<tr><td>Мин: <edit var="min1" width=80></td><td>Макс: <edit var="max1" width=80></td></tr>
+<tr><td></td></tr>
+<tr><td>2 команда:</td></tr>
+<tr><td>Мин: <edit var="min2" width=80></td><td>Макс: <edit var="max2" width=80></td></tr>
+<tr><td></td></tr>
+<tr><td>Время до начала (1-10мин): <edit var="time" width=80></td></tr>
+<tr><td></td></tr>
+<tr><td><button value=Ok action="bypass -h scripts_events.TvTArena.TvTArena2:check1 $price $team1count $team2count $min1 $max1 $min2 $max2 $time" width=80 height=15></td></tr>
+</table>

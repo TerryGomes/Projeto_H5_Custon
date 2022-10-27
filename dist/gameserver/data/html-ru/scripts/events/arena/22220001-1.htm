@@ -1,0 +1,17 @@
+<table>
+<tr><td>rate (10k - 100kk) <edit var="price" width=80></td></tr>
+<tr><td></td></tr>
+<tr><td>Team Size (1-5):</td></tr>
+<tr><td>1 Team: <edit var="team1count" width=80></td><td>2 Team: <edit var="team2count" width=80></td></tr>
+<tr><td></td></tr>
+<tr><td>levels:</td></tr>
+<tr><td>1 Team:</td></tr>
+<tr><td>Min: <edit var="min1" width=80></td><td>Max: <edit var="max1" width=80></td></tr>
+<tr><td></td></tr>
+<tr><td>2 Team:</td></tr>
+<tr><td>Min: <edit var="min2" width=80></td><td>Max: <edit var="max2" width=80></td></tr>
+<tr><td></td></tr>
+<tr><td>Time to first (1-10m): <edit var="time" width=80></td></tr>
+<tr><td></td></tr>
+<tr><td><button value="OK" action="bypass -h scripts_events.arena.GiranArena:check1 $price $team1count $team2count $min1 $max1 $min2 $max2 $time" width=80 height=15 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.Button_DF"></td></tr>
+</table>

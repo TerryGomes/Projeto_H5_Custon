@@ -1,0 +1,91 @@
+<html><title>Gm Event</title>
+<body>
+	<center>
+		%eventName%
+		<br>
+		<font color=FFCC99>Config</font>
+		<br>
+		<table width=240 align=center>
+			<tr>
+				<td>
+					Min Level: <font color=LEVEL>(%minLvl%)</font>
+				</td>
+				<td>
+					<edit var="minlvl" width=80 height=15>
+				</td>
+				<td>
+					<button value="Apply" action="bypass -h admin_gmevent setminlvl $minlvl" width=50 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Max Level: <font color=LEVEL>(%maxLvl%)</font>
+				</td>
+				<td>
+					<edit var="maxLvl" width=80 height=15>
+				</td>
+				<td>
+					<button value="Apply" action="bypass -h admin_gmevent setmaxlvl $maxLvl" width=50 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Min Time: <font color=LEVEL>(%minTime%)</font>
+				</td>
+				<td>
+					<edit var="minTime" width=80 height=15>
+				</td>
+				<td>
+					<button value="Apply" action="bypass -h admin_gmevent setmintime $minTime" width=50 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Max Time: <font color=LEVEL>(%maxTime%)</font>
+				</td>
+				<td>
+					<edit var="maxTime" width=80 height=15>
+				</td>
+				<td>
+					<button value="Apply" action="bypass -h admin_gmevent setmaxtime $maxTime" width=50 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>
+				</td>
+			</tr>
+		</table>
+		<table width=240 align=center>
+			<tr>
+				<td>
+					Is PvP Event: <font color=LEVEL>(%isPvPEvent%)</font>
+				</td>
+				<td>
+					<button %pvpButton% width=70 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Is Peace Event: <font color=LEVEL>(%isPeaceEvent%)</font>
+				</td>
+				<td>
+					<button %peaceButton% width=70 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Is Auto Res: <font color=LEVEL>(%isAutoRes%)</font>
+				</td>
+				<td>
+					<button %resButton% width=70 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<br>
+		<font color=FFCC99>Functions</font>
+		<br>
+		%startEvent%
+		<button value="Stop Event" action="bypass -h admin_gmevent stop" width=140 height=20 back=L2UI_ct1.button_df fore=L2UI_ct1.button_df>
+		<br>
+		<br>
+	</center>
+</body>
+</html>

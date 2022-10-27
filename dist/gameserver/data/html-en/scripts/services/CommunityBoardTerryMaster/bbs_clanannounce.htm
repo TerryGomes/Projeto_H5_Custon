@@ -1,0 +1,68 @@
+<html noscrollbar>
+<head>
+	<title>Clan Notice Management Menu</title>
+</head>
+<body>
+<br>
+<table width=20>
+	<tr>
+		<td>
+		</td>
+	</tr>
+</table>
+<table border=0 width=770 height=485 background="L2UI_CT1.Windows_DF_TooltipBG">
+	<tr>
+		<td width=760 height=20 align=center>
+			<font color="FFFFFF" name="hs12">Manage Clan Announcements</font>
+		</td>
+	</tr>
+	<tr>
+		<td width=760 height=50 align=center>
+			<font name="hs12" color="FFFFFF">Every Clan member will see this notice, while logging into game.</font>
+		</td>
+	</tr>
+	<tr>
+		<td align=center>
+			<table background="l2ui_ct1.Windows_DF_TooltipBG" height=50 width=760>
+				<tr>
+					<td align=center>
+						Clan notice Status:
+					</td>
+					<td width=100 align=center>
+						%off%
+					</td>
+					<td width=100 align=center>
+						 %on%
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td align=center>
+			<font name="hs12">Edit notice content:</font>
+			<br>
+		</td>
+	</tr>
+	<tr>
+		<td align=center>
+			<MultiEdit var="Content" width=700 height=80>
+		</td>
+	</tr>
+	<tr>
+		<td align=center>
+			<br>
+			<button value="Confirm Clan Notice" action="Write _announcepledgewrite_%flag% 0 0 Content Content Content" back="l2ui_ct1.button.button_df_small_down" width=200 height=25 fore="l2ui_ct1.button.button_df_small">
+			<br>
+		</td>
+	</tr>
+	<tr>
+		<td align=center>
+			<br>
+				<button action="bypass _bbsclan" value="Back" width=150 height=25 back="L2UI_CT1.Button_DF_Down" fore="L2UI_CT1.button_df">
+			<br>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
