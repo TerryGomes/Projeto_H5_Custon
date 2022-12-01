@@ -19,7 +19,7 @@ import l2mv.commons.util.Rnd;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.ThreadPoolManager;
 import l2mv.gameserver.cache.Msg;
-import l2mv.gameserver.fandc.managers.GmEventManager;
+import l2mv.gameserver.multverso.managers.GmEventManager;
 import l2mv.gameserver.geodata.GeoEngine;
 import l2mv.gameserver.instancemanager.games.HandysBlockCheckerManager;
 import l2mv.gameserver.instancemanager.games.HandysBlockCheckerManager.ArenaParticipantsHolder;

@@ -3,7 +3,7 @@ package l2mv.gameserver.network.serverpackets;
 import java.util.HashMap;
 import java.util.Map;
 
-import l2mv.gameserver.fandc.managers.GmEventManager;
+import l2mv.gameserver.multverso.managers.GmEventManager;
 import l2mv.gameserver.instancemanager.ReflectionManager;
 import l2mv.gameserver.model.Creature;
 import l2mv.gameserver.model.Player;

@@ -13,7 +13,7 @@ import l2mv.gameserver.dao.MailDAO;
 import l2mv.gameserver.data.StringHolder;
 import l2mv.gameserver.data.htm.HtmCache;
 import l2mv.gameserver.data.xml.holder.ResidenceHolder;
-import l2mv.gameserver.fandc.datatables.OfflineBuffersTable;
+import l2mv.gameserver.multverso.datatables.OfflineBuffersTable;
 import l2mv.gameserver.hwid.HwidEngine;
 import l2mv.gameserver.hwid.HwidGamer;
 import l2mv.gameserver.instancemanager.AutoHuntingManager;

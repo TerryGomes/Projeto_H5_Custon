@@ -45,7 +45,7 @@ import l2mv.gameserver.ai.CtrlIntention;
 import l2mv.gameserver.ai.DefaultAI;
 import l2mv.gameserver.ai.PlayableAI.nextAction;
 import l2mv.gameserver.data.xml.holder.EventHolder;
-import l2mv.gameserver.fandc.managers.GmEventManager;
+import l2mv.gameserver.multverso.managers.GmEventManager;
 import l2mv.gameserver.geodata.GeoEngine;
 import l2mv.gameserver.geodata.GeoMove;
 import l2mv.gameserver.instancemanager.DimensionalRiftManager;

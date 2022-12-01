@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 
 import l2mv.gameserver.Config;
 import l2mv.gameserver.data.xml.holder.MultiSellHolder;
-import l2mv.gameserver.fandc.managers.OfflineBufferManager;
+import l2mv.gameserver.multverso.managers.OfflineBufferManager;
 import l2mv.gameserver.handler.admincommands.AdminCommandHandler;
 import l2mv.gameserver.handler.bypass.BypassHandler;
 import l2mv.gameserver.handler.voicecommands.IVoicedCommandHandler;

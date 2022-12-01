@@ -3,7 +3,7 @@ package l2mv.gameserver.network.clientpackets;
 import org.apache.commons.lang3.tuple.Pair;
 
 import l2mv.commons.lang.ArrayUtils;
-import l2mv.gameserver.fandc.managers.GmEventManager;
+import l2mv.gameserver.multverso.managers.GmEventManager;
 import l2mv.gameserver.instancemanager.ReflectionManager;
 import l2mv.gameserver.listener.actor.player.OnAnswerListener;
 import l2mv.gameserver.listener.actor.player.impl.ReviveAnswerListener;

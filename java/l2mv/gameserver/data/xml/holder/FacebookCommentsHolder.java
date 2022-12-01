@@ -21,10 +21,10 @@ import l2mv.gameserver.Config;
 import l2mv.gameserver.ConfigHolder;
 import l2mv.gameserver.GameServer;
 import l2mv.gameserver.ThreadPoolManager;
-import l2mv.gameserver.fandc.facebook.ActiveTask;
-import l2mv.gameserver.fandc.facebook.FacebookAction;
-import l2mv.gameserver.fandc.facebook.FacebookIdentityType;
-import l2mv.gameserver.fandc.facebook.OfficialPost;
+import l2mv.gameserver.multverso.facebook.ActiveTask;
+import l2mv.gameserver.multverso.facebook.FacebookAction;
+import l2mv.gameserver.multverso.facebook.FacebookIdentityType;
+import l2mv.gameserver.multverso.facebook.OfficialPost;
 import l2mv.gameserver.listener.game.OnConfigsReloaded;
 import l2mv.gameserver.utils.Log;
 

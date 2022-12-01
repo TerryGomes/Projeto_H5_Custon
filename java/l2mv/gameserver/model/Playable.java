@@ -12,7 +12,7 @@ import l2mv.gameserver.Config;
 import l2mv.gameserver.ai.CtrlEvent;
 import l2mv.gameserver.ai.CtrlIntention;
 import l2mv.gameserver.cache.Msg;
-import l2mv.gameserver.fandc.managers.GmEventManager;
+import l2mv.gameserver.multverso.managers.GmEventManager;
 import l2mv.gameserver.geodata.GeoEngine;
 import l2mv.gameserver.model.AggroList.AggroInfo;
 import l2mv.gameserver.model.Skill.SkillTargetType;

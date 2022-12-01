@@ -14,7 +14,7 @@ import l2mv.commons.dao.JdbcEntityState;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.dao.CharacterDAO;
 import l2mv.gameserver.database.mysql;
-import l2mv.gameserver.fandc.managers.MailManager;
+import l2mv.gameserver.multverso.managers.MailManager;
 import l2mv.gameserver.handler.admincommands.impl.AdminMail;
 import l2mv.gameserver.model.GameObjectsStorage;
 import l2mv.gameserver.model.Player;

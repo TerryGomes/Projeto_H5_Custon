@@ -21,7 +21,7 @@ import l2mv.gameserver.Config;
 import l2mv.gameserver.ThreadPoolManager;
 import l2mv.gameserver.data.htm.HtmCache;
 import l2mv.gameserver.database.DatabaseFactory;
-import l2mv.gameserver.fandc.datatables.EnchantNamesTable;
+import l2mv.gameserver.multverso.datatables.EnchantNamesTable;
 import l2mv.gameserver.instancemanager.ReflectionManager;
 import l2mv.gameserver.listener.actor.player.OnAnswerListener;
 import l2mv.gameserver.model.Creature;

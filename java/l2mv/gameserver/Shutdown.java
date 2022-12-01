@@ -16,7 +16,7 @@ import l2mv.gameserver.dao.DatabaseBackupManager;
 import l2mv.gameserver.database.DatabaseFactory;
 import l2mv.gameserver.database.ForumDatabaseFactory;
 import l2mv.gameserver.database.merge.MergeDatabaseFactory;
-import l2mv.gameserver.fandc.streaming.StreamDatabaseHandler;
+import l2mv.gameserver.multverso.streaming.StreamDatabaseHandler;
 import l2mv.gameserver.hwid.HwidEngine;
 import l2mv.gameserver.instancemanager.CoupleManager;
 import l2mv.gameserver.instancemanager.CursedWeaponsManager;

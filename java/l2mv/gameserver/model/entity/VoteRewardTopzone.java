@@ -14,7 +14,7 @@ import javolution.util.FastMap;
 import l2mv.gameserver.Announcements;
 import l2mv.gameserver.Config;
 import l2mv.gameserver.ThreadPoolManager;
-import l2mv.gameserver.fandc.votingengine.VotingSettings;
+import l2mv.gameserver.multverso.votingengine.VotingSettings;
 import l2mv.gameserver.model.GameObjectsStorage;
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.utils.ItemFunctions;

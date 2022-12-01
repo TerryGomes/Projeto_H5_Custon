@@ -1,7 +1,7 @@
 package l2mv.gameserver.model.instances;
 
-import l2mv.gameserver.fandc.tournament.TournamentHolder;
-import l2mv.gameserver.fandc.tournament.model.AbstractTournament;
+import l2mv.gameserver.multverso.tournament.TournamentHolder;
+import l2mv.gameserver.multverso.tournament.model.AbstractTournament;
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2mv.gameserver.templates.npc.NpcTemplate;

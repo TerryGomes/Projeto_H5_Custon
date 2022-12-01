@@ -27,7 +27,7 @@ import l2mv.gameserver.utils.Location;
 import l2mv.gameserver.utils.PositionUtils;
 import l2mv.gameserver.utils.ReflectionUtils;
 
-@SuppressWarnings("unused")
+
 public class FightClubArena extends FightClubManager implements OnDeathListener, OnPlayerExitListener
 {
 	private static final int[] doors = new int[]

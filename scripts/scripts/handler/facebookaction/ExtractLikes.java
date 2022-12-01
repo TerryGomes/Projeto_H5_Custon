@@ -10,17 +10,17 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 import l2mv.commons.annotations.Nullable;
-import l2mv.gameserver.fandc.facebook.ActionsAwaitingOwner;
-import l2mv.gameserver.fandc.facebook.ActionsExtractingManager;
-import l2mv.gameserver.fandc.facebook.ActionsExtractor;
-import l2mv.gameserver.fandc.facebook.CompletedTasksHistory;
-import l2mv.gameserver.fandc.facebook.FacebookAction;
-import l2mv.gameserver.fandc.facebook.FacebookActionType;
-import l2mv.gameserver.fandc.facebook.FacebookProfile;
-import l2mv.gameserver.fandc.facebook.FacebookProfilesHolder;
-import l2mv.gameserver.fandc.facebook.OfficialPost;
-import l2mv.gameserver.fandc.facebook.OfficialPostsHolder;
-import l2mv.gameserver.fandc.facebook.action.Like;
+import l2mv.gameserver.multverso.facebook.ActionsAwaitingOwner;
+import l2mv.gameserver.multverso.facebook.ActionsExtractingManager;
+import l2mv.gameserver.multverso.facebook.ActionsExtractor;
+import l2mv.gameserver.multverso.facebook.CompletedTasksHistory;
+import l2mv.gameserver.multverso.facebook.FacebookAction;
+import l2mv.gameserver.multverso.facebook.FacebookActionType;
+import l2mv.gameserver.multverso.facebook.FacebookProfile;
+import l2mv.gameserver.multverso.facebook.FacebookProfilesHolder;
+import l2mv.gameserver.multverso.facebook.OfficialPost;
+import l2mv.gameserver.multverso.facebook.OfficialPostsHolder;
+import l2mv.gameserver.multverso.facebook.action.Like;
 import l2mv.gameserver.scripts.ScriptFile;
 
 public class ExtractLikes implements ScriptFile, ActionsExtractor
