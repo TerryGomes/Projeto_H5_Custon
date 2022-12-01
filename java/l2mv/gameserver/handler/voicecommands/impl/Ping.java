@@ -12,7 +12,7 @@ public class Ping extends Functions implements IVoicedCommandHandler
 {
 	private static final String[] COMMANDS =
 	{
-		// "ping"
+		"ping"
 	};
 
 	@Override

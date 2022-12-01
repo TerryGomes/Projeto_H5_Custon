@@ -32,7 +32,9 @@ public class AdminGathering implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_gathering_ask_peace, admin_gathering_ask_outside, admin_gathering_reward
+		admin_gathering_ask_peace,
+		admin_gathering_ask_outside,
+		admin_gathering_reward
 	}
 
 	@Override

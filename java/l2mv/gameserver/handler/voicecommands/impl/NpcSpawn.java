@@ -1,7 +1,5 @@
 package l2mv.gameserver.handler.voicecommands.impl;
 
-import static l2mv.gameserver.handler.voicecommands.IVoicedCommandHandler._log;
-
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -29,23 +27,23 @@ public class NpcSpawn extends Functions implements IVoicedCommandHandler
 {
 	private static final int[] CLANHALL_NPC_IDS =
 	{
-		37031,
-		37032,
-		37033,
-		37034,
-		37035,
-		37036,
-		37037,
-		37038,
-		37039,
-		37040,
-		32323,
-		30120
+//		37031,
+//		37032,
+//		37033,
+//		37034,
+//		37035,
+//		37036,
+//		37037,
+//		37038,
+//		37039,
+//		37040,
+//		32323,
+//		30120
 	};
 
 	private static final String[] COMMANDS =
 	{
-		"npcspawn"
+//		"npcspawn"
 	};
 
 	@Override

@@ -25,7 +25,13 @@ public class AdminEnchant implements IAdminCommandHandler
 		admin_setrf, // 5
 		admin_seten, // 3
 		admin_setun, // 0
-		admin_setba, admin_setha, admin_setdha, admin_setlbr, admin_setrbr, admin_setbelt, admin_enchant
+		admin_setba,
+		admin_setha,
+		admin_setdha,
+		admin_setlbr,
+		admin_setrbr,
+		admin_setbelt,
+		admin_enchant
 	}
 
 	@Override

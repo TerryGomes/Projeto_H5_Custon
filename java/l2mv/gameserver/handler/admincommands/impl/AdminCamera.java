@@ -10,7 +10,8 @@ public class AdminCamera implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_freelook, admin_cinematic
+		admin_freelook,
+		admin_cinematic
 	}
 
 	@Override

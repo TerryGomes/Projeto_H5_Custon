@@ -28,7 +28,9 @@ public class AdminFakePlayers implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_create_fake_players, admin_setup_fake_player, admin_clone
+		admin_create_fake_players,
+		admin_setup_fake_player,
+		admin_clone
 	}
 
 	@Override

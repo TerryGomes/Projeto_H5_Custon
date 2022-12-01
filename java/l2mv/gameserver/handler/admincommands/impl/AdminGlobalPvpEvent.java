@@ -11,7 +11,8 @@ public class AdminGlobalPvpEvent implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_start_global_pvp_event, admin_stop_global_pvp_event
+		admin_start_global_pvp_event,
+		admin_stop_global_pvp_event
 	}
 
 	@Override

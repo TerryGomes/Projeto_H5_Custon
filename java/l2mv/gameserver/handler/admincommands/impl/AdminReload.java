@@ -44,7 +44,29 @@ public class AdminReload implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_reload, admin_reload_config, admin_reload_multisell, admin_reload_gmaccess, admin_reload_htm, admin_reload_qs, admin_reload_qs_help, admin_reload_skills, admin_reload_npc, admin_reload_spawn, admin_reload_fish, admin_reload_abuse, admin_reload_translit, admin_reload_shops, admin_reload_static, admin_reload_pets, admin_reload_locale, admin_reload_nobles, admin_reload_im, admin_reload_events, admin_reload_fc_maps, admin_reload_changelog, admin_reload_premium
+		admin_reload,
+		admin_reload_config,
+		admin_reload_multisell,
+		admin_reload_gmaccess,
+		admin_reload_htm,
+		admin_reload_qs,
+		admin_reload_qs_help,
+		admin_reload_skills,
+		admin_reload_npc,
+		admin_reload_spawn,
+		admin_reload_fish,
+		admin_reload_abuse,
+		admin_reload_translit,
+		admin_reload_shops,
+		admin_reload_static,
+		admin_reload_pets,
+		admin_reload_locale,
+		admin_reload_nobles,
+		admin_reload_im,
+		admin_reload_events,
+		admin_reload_fc_maps,
+		admin_reload_changelog,
+		admin_reload_premium
 	}
 
 	@Override

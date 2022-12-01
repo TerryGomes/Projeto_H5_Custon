@@ -41,8 +41,35 @@ public class AdminEditChar implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_edit_character, admin_character_actions, admin_current_player, admin_nokarma, admin_setkarma, admin_character_list, admin_show_characters, admin_find_character, admin_save_modifications, admin_rec, admin_settitle, admin_setclass, admin_setname, admin_setsex, admin_setcolor, admin_add_exp_sp_to_character, admin_add_exp_sp, admin_sethero, admin_setnoble, admin_trans, admin_setsubclass, admin_setfame, admin_addfame, admin_setbday, admin_setpassword, admin_setsecondary,
-		admin_give_item, admin_add_bang, admin_set_bang
+		admin_edit_character,
+		admin_character_actions,
+		admin_current_player,
+		admin_nokarma,
+		admin_setkarma,
+		admin_character_list,
+		admin_show_characters,
+		admin_find_character,
+		admin_save_modifications,
+		admin_rec,
+		admin_settitle,
+		admin_setclass,
+		admin_setname,
+		admin_setsex,
+		admin_setcolor,
+		admin_add_exp_sp_to_character,
+		admin_add_exp_sp,
+		admin_sethero,
+		admin_setnoble,
+		admin_trans,
+		admin_setsubclass,
+		admin_setfame,
+		admin_addfame,
+		admin_setbday,
+		admin_setpassword,
+		admin_setsecondary,
+		admin_give_item,
+		admin_add_bang,
+		admin_set_bang
 	}
 
 	@Override

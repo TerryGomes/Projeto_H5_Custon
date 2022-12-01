@@ -10,7 +10,9 @@ public class AdminHellbound implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_hbadd, admin_hbsub, admin_hbset,
+		admin_hbadd,
+		admin_hbsub,
+		admin_hbset,
 	}
 
 	@Override

@@ -19,7 +19,16 @@ public class AdminPoll implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_poll, admin_poll_set_question, admin_poll_set_answers, admin_poll_set_time, admin_poll_start, admin_poll_end, admin_poll_current_answers, admin_poll_delete_answer, admin_poll_add_new_answer, admin_poll_delete
+		admin_poll,
+		admin_poll_set_question,
+		admin_poll_set_answers,
+		admin_poll_set_time,
+		admin_poll_start,
+		admin_poll_end,
+		admin_poll_current_answers,
+		admin_poll_delete_answer,
+		admin_poll_add_new_answer,
+		admin_poll_delete
 	}
 
 	@Override

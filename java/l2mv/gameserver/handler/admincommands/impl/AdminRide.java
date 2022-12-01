@@ -8,7 +8,13 @@ public class AdminRide implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_ride, admin_ride_wyvern, admin_ride_strider, admin_unride, admin_wr, admin_sr, admin_ur
+		admin_ride,
+		admin_ride_wyvern,
+		admin_ride_strider,
+		admin_unride,
+		admin_wr,
+		admin_sr,
+		admin_ur
 	}
 
 	@Override

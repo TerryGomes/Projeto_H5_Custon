@@ -28,7 +28,11 @@ public class AdminServer implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_server, admin_check_actor, admin_setvar, admin_set_ai_interval, admin_spawn2
+		admin_server,
+		admin_check_actor,
+		admin_setvar,
+		admin_set_ai_interval,
+		admin_spawn2
 	}
 
 	@Override

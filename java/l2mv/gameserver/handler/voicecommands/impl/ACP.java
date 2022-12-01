@@ -85,7 +85,7 @@ public class ACP implements IVoicedCommandHandler
 			else
 			{
 				userAcpMap.remove(activeChar.toString()) // here we get thread and remove it from map
-							.interrupt(); // and interrupt it
+																																.interrupt(); // and interrupt it
 				activeChar.sendMessage("[ACP]: System has been disabled!");
 			}
 		}

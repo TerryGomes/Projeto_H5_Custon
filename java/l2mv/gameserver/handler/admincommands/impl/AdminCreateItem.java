@@ -22,7 +22,18 @@ public class AdminCreateItem implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_itemcreate, admin_create_item, admin_create_item_all, admin_create_item_hwid, admin_create_item_char, admin_create_item_target, admin_create_item_range, admin_ci, admin_spreaditem, admin_add_pp, admin_add_pcp, admin_create_item_element
+		admin_itemcreate,
+		admin_create_item,
+		admin_create_item_all,
+		admin_create_item_hwid,
+		admin_create_item_char,
+		admin_create_item_target,
+		admin_create_item_range,
+		admin_ci,
+		admin_spreaditem,
+		admin_add_pp,
+		admin_add_pcp,
+		admin_create_item_element
 	}
 
 	@SuppressWarnings("rawtypes")

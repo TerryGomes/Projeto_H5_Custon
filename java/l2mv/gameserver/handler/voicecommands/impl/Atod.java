@@ -7,7 +7,10 @@ import l2mv.gameserver.scripts.Functions;
 
 public class Atod extends Functions implements IVoicedCommandHandler
 {
-	private static final String[] COMMANDS = {};
+	private static final String[] COMMANDS =
+	{
+		"openatod",
+	};
 
 	@Override
 	public boolean useVoicedCommand(String command, Player activeChar, String params)

@@ -10,7 +10,12 @@ public class AdminPolymorph implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_polyself, admin_polymorph, admin_poly, admin_unpolyself, admin_unpolymorph, admin_unpoly
+		admin_polyself,
+		admin_polymorph,
+		admin_poly,
+		admin_unpolyself,
+		admin_unpolymorph,
+		admin_unpoly
 	}
 
 	@Override

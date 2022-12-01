@@ -17,7 +17,14 @@ public class AdminMenu implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_char_manage, admin_teleport_character_to_menu, admin_recall_char_menu, admin_goto_char_menu, admin_kick_menu, admin_kill_menu, admin_ban_menu, admin_unban_menu
+		admin_char_manage,
+		admin_teleport_character_to_menu,
+		admin_recall_char_menu,
+		admin_goto_char_menu,
+		admin_kick_menu,
+		admin_kill_menu,
+		admin_ban_menu,
+		admin_unban_menu
 	}
 
 	@Override

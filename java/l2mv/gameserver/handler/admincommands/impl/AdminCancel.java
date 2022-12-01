@@ -12,7 +12,8 @@ public class AdminCancel implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_cancel, admin_cleanse
+		admin_cancel,
+		admin_cleanse
 	}
 
 	@Override

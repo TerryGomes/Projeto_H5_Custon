@@ -12,7 +12,13 @@ public class AdminCursedWeapons implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_cw_info, admin_cw_remove, admin_cw_goto, admin_cw_reload, admin_cw_add, admin_cw_drop, admin_cw_increase
+		admin_cw_info,
+		admin_cw_remove,
+		admin_cw_goto,
+		admin_cw_reload,
+		admin_cw_add,
+		admin_cw_drop,
+		admin_cw_increase
 	}
 
 	@Override

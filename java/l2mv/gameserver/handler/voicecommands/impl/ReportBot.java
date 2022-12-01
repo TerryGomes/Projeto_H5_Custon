@@ -10,9 +10,9 @@ import l2mv.gameserver.network.serverpackets.components.CustomMessage;
 
 public class ReportBot implements IVoicedCommandHandler
 {
-	private static final String[] COMMANDS = new String[]
+	private static final String[] COMMANDS =
 	{
-		/* "report" */
+		"report"
 	};
 
 	@Override
@@ -33,7 +33,7 @@ public class ReportBot implements IVoicedCommandHandler
 			activeChar.sendMessage(new CustomMessage("l2mv.gameserver.handler.voicecommands.impl.randomcommands.message4", activeChar));
 			return false;
 		}
-		final StringBuilder sb = new StringBuilder();
+		final StringBuffer sb = new StringBuffer();
 		for (String other : paramSplit)
 		{
 			other = other.replace("Bot", "");

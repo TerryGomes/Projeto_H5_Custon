@@ -15,7 +15,10 @@ public class AdminClanHall implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_clanhall, admin_clanhallset, admin_clanhalldel, admin_clanhallteleportself
+		admin_clanhall,
+		admin_clanhallset,
+		admin_clanhalldel,
+		admin_clanhallteleportself
 	}
 
 	@Override

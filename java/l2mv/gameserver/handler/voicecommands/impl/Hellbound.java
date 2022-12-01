@@ -7,7 +7,10 @@ import l2mv.gameserver.scripts.Functions;
 
 public class Hellbound extends Functions implements IVoicedCommandHandler
 {
-	private static final String[] _commandList = {};
+	private static final String[] _commandList =
+	{
+		"hellbound"
+	};
 
 	@Override
 	public String[] getVoicedCommandList()

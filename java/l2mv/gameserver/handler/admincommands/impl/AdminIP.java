@@ -19,7 +19,13 @@ public class AdminIP implements IAdminCommandHandler
 {
 	private enum Commands
 	{
-		admin_charip, admin_ip, admin_show_hwids_over, admin_show_hwid_info, admin_show_ips_over, admin_show_ip_info, admin_real_online
+		admin_charip,
+		admin_ip,
+		admin_show_hwids_over,
+		admin_show_hwid_info,
+		admin_show_ips_over,
+		admin_show_ip_info,
+		admin_real_online
 	}
 
 	@Override

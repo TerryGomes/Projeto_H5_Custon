@@ -29,7 +29,10 @@ public class AdminManor implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_manor, admin_manor_reset, admin_manor_save, admin_manor_disable
+		admin_manor,
+		admin_manor_reset,
+		admin_manor_save,
+		admin_manor_disable
 	}
 
 	@Override

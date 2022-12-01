@@ -7,7 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import l2mv.gameserver.Config;
-import l2mv.gameserver.fandc.dailyquests.DailyQuestHandler;
+import l2mv.gameserver.multverso.dailyquests.DailyQuestHandler;
 import l2mv.gameserver.templates.StatsSet;
 
 public class CommunityBoardManager

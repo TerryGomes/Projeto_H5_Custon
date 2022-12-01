@@ -12,7 +12,12 @@ public class AdminPetition implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_view_petitions, admin_view_petition, admin_accept_petition, admin_reject_petition, admin_reset_petitions, admin_force_peti
+		admin_view_petitions,
+		admin_view_petition,
+		admin_accept_petition,
+		admin_reject_petition,
+		admin_reset_petitions,
+		admin_force_peti
 	}
 
 	@Override

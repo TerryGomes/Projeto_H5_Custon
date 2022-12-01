@@ -10,7 +10,16 @@ import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
 public class Security implements IVoicedCommandHandler
 {
 
-	private static final String[] _commandList = {};
+	private static final String[] _commandList =
+	{
+		"lock",
+		"lockIp",
+		"lockHwid",
+		"unlockIp",
+		"unlockHwid",
+		"Allowed",
+		"Prohibited"
+	};
 
 	@Override
 	public boolean useVoicedCommand(String command, Player activeChar, String target)

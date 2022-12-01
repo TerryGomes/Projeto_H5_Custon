@@ -30,7 +30,11 @@ public class AdminCheckBot implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_checkbots, admin_readbot, admin_markbotreaded, admin_punish_bot, admin_set_report_points
+		admin_checkbots,
+		admin_readbot,
+		admin_markbotreaded,
+		admin_punish_bot,
+		admin_set_report_points
 	}
 
 	@Override

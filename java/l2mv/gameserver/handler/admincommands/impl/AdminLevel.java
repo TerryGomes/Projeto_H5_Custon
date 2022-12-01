@@ -14,7 +14,10 @@ public class AdminLevel implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_add_level, admin_addLevel, admin_set_level, admin_setLevel,
+		admin_add_level,
+		admin_addLevel,
+		admin_set_level,
+		admin_setLevel,
 	}
 
 	@Override

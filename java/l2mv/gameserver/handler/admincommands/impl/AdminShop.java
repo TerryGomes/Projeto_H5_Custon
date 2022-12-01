@@ -14,7 +14,11 @@ public class AdminShop implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_buy, admin_gmshop, admin_tax, admin_taxclear, admin_restore_offline_stores
+		admin_buy,
+		admin_gmshop,
+		admin_tax,
+		admin_taxclear,
+		admin_restore_offline_stores
 	}
 
 	@SuppressWarnings("rawtypes")

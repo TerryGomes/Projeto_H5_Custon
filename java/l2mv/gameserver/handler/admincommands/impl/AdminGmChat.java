@@ -12,7 +12,11 @@ public class AdminGmChat implements IAdminCommandHandler, OnPlayerEnterListener
 {
 	private static enum Commands
 	{
-		admin_gmchat, admin_snoop, admin_unsnoop, admin_global_on, admin_global_off
+		admin_gmchat,
+		admin_snoop,
+		admin_unsnoop,
+		admin_global_on,
+		admin_global_off
 	}
 
 	@Override

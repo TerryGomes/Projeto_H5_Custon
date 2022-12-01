@@ -11,7 +11,13 @@ import l2mv.gameserver.scripts.Functions;
  */
 public class Teleport implements IVoicedCommandHandler
 {
-	private static final String[] _commandList = {};
+	private static final String[] _commandList =
+	{
+		"pvp",
+		"farm",
+		"farm_hard",
+		"farm_low"
+	};
 
 	@Override
 	public boolean useVoicedCommand(String command, Player activeChar, String args)

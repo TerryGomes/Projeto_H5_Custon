@@ -14,7 +14,10 @@ public class AdminMammon implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_find_mammon, admin_show_mammon, admin_hide_mammon, admin_list_spawns
+		admin_find_mammon,
+		admin_show_mammon,
+		admin_hide_mammon,
+		admin_list_spawns
 	}
 
 	List<Integer> npcIds = new ArrayList<Integer>();

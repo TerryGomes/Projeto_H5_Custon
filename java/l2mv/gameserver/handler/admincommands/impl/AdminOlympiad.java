@@ -22,7 +22,13 @@ public class AdminOlympiad implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_oly_save, admin_add_oly_points, admin_oly_start, admin_add_hero, admin_oly_stop, admin_olympiad_stop_period, admin_olympiad_start_period
+		admin_oly_save,
+		admin_add_oly_points,
+		admin_oly_start,
+		admin_add_hero,
+		admin_oly_stop,
+		admin_olympiad_stop_period,
+		admin_olympiad_start_period
 	}
 
 	@Override

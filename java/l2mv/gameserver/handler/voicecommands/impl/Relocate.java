@@ -14,7 +14,7 @@ import l2mv.gameserver.utils.Location;
 public class Relocate extends Functions implements IVoicedCommandHandler
 {
 
-	private static final String[] _commandList = {};
+	private static final String[] _commandList = {"km-all-to-me"};
 
 	@Override
 	public String[] getVoicedCommandList()

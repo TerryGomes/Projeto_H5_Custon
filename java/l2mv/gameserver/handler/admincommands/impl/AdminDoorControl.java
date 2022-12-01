@@ -11,7 +11,8 @@ public class AdminDoorControl implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_open, admin_close,
+		admin_open,
+		admin_close,
 	}
 
 	@Override

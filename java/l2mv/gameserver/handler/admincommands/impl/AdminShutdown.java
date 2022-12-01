@@ -20,7 +20,11 @@ public class AdminShutdown implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_shutdown, admin_shutdown_seconds, admin_restart_seconds, admin_restart_abort, admin_start_backup
+		admin_shutdown,
+		admin_shutdown_seconds,
+		admin_restart_seconds,
+		admin_restart_abort,
+		admin_start_backup
 	}
 
 	@Override

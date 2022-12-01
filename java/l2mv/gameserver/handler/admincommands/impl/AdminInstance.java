@@ -20,7 +20,14 @@ public class AdminInstance implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_instance, admin_instance_id, admin_collapse, admin_reset_reuse, admin_reset_reuse_all, admin_set_reuse, admin_clean_files, admin_addtiatkill
+		admin_instance,
+		admin_instance_id,
+		admin_collapse,
+		admin_reset_reuse,
+		admin_reset_reuse_all,
+		admin_set_reuse,
+		admin_clean_files,
+		admin_addtiatkill
 	}
 
 	@Override

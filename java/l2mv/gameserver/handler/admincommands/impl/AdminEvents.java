@@ -22,7 +22,9 @@ public class AdminEvents implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_event_draw, admin_events, admin_start_event
+		admin_event_draw,
+		admin_events,
+		admin_start_event
 	}
 
 	@Override

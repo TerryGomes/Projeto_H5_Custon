@@ -36,7 +36,11 @@ public class AdminChangeAccessLevel implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_changelvl, admin_moders, admin_moders_add, admin_moders_del, admin_penalty
+		admin_changelvl,
+		admin_moders,
+		admin_moders_add,
+		admin_moders_del,
+		admin_penalty
 	}
 
 	@Override

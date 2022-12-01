@@ -2,11 +2,11 @@ package l2mv.gameserver.handler.admincommands.impl;
 
 import java.util.StringTokenizer;
 
-import l2mv.gameserver.fandc.managers.GmEventManager;
-import l2mv.gameserver.fandc.managers.GmEventManager.EventParameter;
-import l2mv.gameserver.fandc.managers.GmEventManager.StateEnum;
 import l2mv.gameserver.handler.admincommands.IAdminCommandHandler;
 import l2mv.gameserver.model.Player;
+import l2mv.gameserver.multverso.managers.GmEventManager;
+import l2mv.gameserver.multverso.managers.GmEventManager.EventParameter;
+import l2mv.gameserver.multverso.managers.GmEventManager.StateEnum;
 import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
 
 /**

@@ -13,7 +13,8 @@ public class AdminKill implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_kill, admin_damage,
+		admin_kill,
+		admin_damage,
 	}
 
 	@Override

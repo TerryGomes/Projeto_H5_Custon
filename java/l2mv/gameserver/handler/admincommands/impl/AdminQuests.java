@@ -16,7 +16,8 @@ public class AdminQuests implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_quests, admin_quest
+		admin_quests,
+		admin_quest
 	}
 
 	@Override

@@ -14,7 +14,9 @@ public class AdminDisconnect implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_disconnect, admin_kick, admin_kick_count
+		admin_disconnect,
+		admin_kick,
+		admin_kick_count
 	}
 
 	@Override

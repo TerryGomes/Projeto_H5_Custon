@@ -12,7 +12,15 @@ public class AdminGeodata implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_geo_z, admin_geo_type, admin_geo_nswe, admin_geo_los, admin_geo_load, admin_geo_dump, admin_geo_trace, admin_geo_map, admin_geogrid
+		admin_geo_z,
+		admin_geo_type,
+		admin_geo_nswe,
+		admin_geo_los,
+		admin_geo_load,
+		admin_geo_dump,
+		admin_geo_trace,
+		admin_geo_map,
+		admin_geogrid
 	}
 
 	@Override

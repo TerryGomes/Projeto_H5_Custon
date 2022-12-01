@@ -12,7 +12,10 @@ import l2mv.gameserver.scripts.Functions;
  */
 public class res extends Functions implements IVoicedCommandHandler
 {
-	private static final String[] _commandList = {};
+	private static final String[] _commandList =
+	{
+		"res"
+	};
 
 	@Override
 	public boolean useVoicedCommand(String command, Player activeChar, String target)

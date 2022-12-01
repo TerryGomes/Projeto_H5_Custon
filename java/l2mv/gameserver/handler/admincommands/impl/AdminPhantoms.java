@@ -31,7 +31,23 @@ public class AdminPhantoms implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_phantoms, admin_phantoms_ai, admin_phantoms_enable, admin_phantoms_disable, admin_phantoms_terminate, admin_phantoms_spawner, admin_phantoms_spawner_here, admin_phantoms_stop_spawner, admin_phantoms_stop_spawners, admin_phantoms_stop_spawning, admin_phantoms_spawn, admin_phantoms_spawnnew, admin_phantoms_reset, admin_phantoms_spawn_new, admin_phantoms_spawn_level_gear, admin_phantoms_spawn_withclan, admin_getphantomcount
+		admin_phantoms,
+		admin_phantoms_ai,
+		admin_phantoms_enable,
+		admin_phantoms_disable,
+		admin_phantoms_terminate,
+		admin_phantoms_spawner,
+		admin_phantoms_spawner_here,
+		admin_phantoms_stop_spawner,
+		admin_phantoms_stop_spawners,
+		admin_phantoms_stop_spawning,
+		admin_phantoms_spawn,
+		admin_phantoms_spawnnew,
+		admin_phantoms_reset,
+		admin_phantoms_spawn_new,
+		admin_phantoms_spawn_level_gear,
+		admin_phantoms_spawn_withclan,
+		admin_getphantomcount
 	}
 
 	String charName = "";

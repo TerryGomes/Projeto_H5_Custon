@@ -14,7 +14,12 @@ import l2mv.gameserver.scripts.Functions;
  */
 public class Help extends Functions implements IVoicedCommandHandler
 {
-	private static final String[] _commandList = {};
+	private static final String[] _commandList =
+	{
+		"help",
+		"whereis",
+		"exp"
+	};
 
 	@Override
 	public boolean useVoicedCommand(String command, Player activeChar, String args)

@@ -13,7 +13,8 @@ public class AdminPSPoints implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_addpoints, admin_delpoints
+		admin_addpoints,
+		admin_delpoints
 	}
 
 	@Override

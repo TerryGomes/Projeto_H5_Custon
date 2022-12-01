@@ -30,8 +30,41 @@ public class AdminTeleport implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_show_moves, admin_show_moves_other, admin_show_teleport, admin_teleport_to_character, admin_teleportto, admin_teleport_to, admin_move_to, admin_moveto, admin_teleport, admin_teleport_character, admin_recall, admin_recallparty, admin_recallcc, admin_recallinstance, admin_recallserver, admin_recallserverforce, admin_walk, admin_recall_npc, admin_gonorth, admin_gosouth, admin_goeast, admin_goto, admin_gowest, admin_goup, admin_godown, admin_tele, admin_teleto, admin_tele_to,
-		admin_instant_move, admin_tonpc, admin_to_npc, admin_toobject, admin_setref, admin_getref, admin_autorecall
+		admin_show_moves,
+		admin_show_moves_other,
+		admin_show_teleport,
+		admin_teleport_to_character,
+		admin_teleportto,
+		admin_teleport_to,
+		admin_move_to,
+		admin_moveto,
+		admin_teleport,
+		admin_teleport_character,
+		admin_recall,
+		admin_recallparty,
+		admin_recallcc,
+		admin_recallinstance,
+		admin_recallserver,
+		admin_recallserverforce,
+		admin_walk,
+		admin_recall_npc,
+		admin_gonorth,
+		admin_gosouth,
+		admin_goeast,
+		admin_goto,
+		admin_gowest,
+		admin_goup,
+		admin_godown,
+		admin_tele,
+		admin_teleto,
+		admin_tele_to,
+		admin_instant_move,
+		admin_tonpc,
+		admin_to_npc,
+		admin_toobject,
+		admin_setref,
+		admin_getref,
+		admin_autorecall
 	}
 
 	@Override

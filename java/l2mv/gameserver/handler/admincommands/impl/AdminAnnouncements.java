@@ -23,7 +23,19 @@ public class AdminAnnouncements implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_list_announcements, admin_announce_announcements, admin_add_announcement, admin_del_announcement, admin_announce, admin_a, admin_announce_menu, admin_crit_announce, admin_c, admin_cc, admin_toscreen, admin_s, admin_reload_announcements
+		admin_list_announcements,
+		admin_announce_announcements,
+		admin_add_announcement,
+		admin_del_announcement,
+		admin_announce,
+		admin_a,
+		admin_announce_menu,
+		admin_crit_announce,
+		admin_c,
+		admin_cc,
+		admin_toscreen,
+		admin_s,
+		admin_reload_announcements
 	}
 
 	@Override

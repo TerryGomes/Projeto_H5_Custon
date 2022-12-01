@@ -7,9 +7,7 @@ import l2mv.gameserver.handler.usercommands.IUserCommandHandler;
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.model.pledge.Alliance;
 import l2mv.gameserver.model.pledge.Clan;
-import l2mv.gameserver.model.pledge.ClanWar;
-import l2mv.gameserver.model.pledge.ClanWar.ClanWarPeriod;
-import l2mv.gameserver.network.serverpackets.SystemMessage;
+import l2mv.gameserver.network.serverpackets.SystemMessage2;
 import l2mv.gameserver.network.serverpackets.components.SystemMsg;
 
 /**
@@ -28,9 +26,7 @@ public class ClanWarsList implements IUserCommandHandler
 	public boolean useUserCommand(int id, Player activeChar)
 	{
 		if (id != COMMAND_IDS[0] && id != COMMAND_IDS[1] && id != COMMAND_IDS[2])
-		{
 			return false;
-		}
 
 		Clan clan = activeChar.getClan();
 		if (clan == null)
@@ -39,71 +35,28 @@ public class ClanWarsList implements IUserCommandHandler
 			return false;
 		}
 
-		SystemMessage sm;
+		SystemMessage2 sm;
 		List<Clan> data = new ArrayList<Clan>();
 		if (id == 88)
 		{
 			// attack list
 			activeChar.sendPacket(SystemMsg.CLANS_YOUVE_DECLARED_WAR_ON);
-
-			for (ClanWar war : clan.getClanWars())
-			{
-				if (war.getPeriod() != ClanWarPeriod.PREPARATION || !war.isAttacker(clan))
-				{
-					continue;
-				}
-
-				Clan opposingClan = war.getOpposingClan();
-				if (opposingClan == null)
-				{
-					continue;
-				}
-
-				data.add(opposingClan);
-			}
+			data = clan.getEnemyClans();
 		}
 		else if (id == 89)
 		{
 			// under attack list
 			activeChar.sendPacket(SystemMsg.CLANS_THAT_HAVE_DECLARED_WAR_ON_YOU);
-
-			for (ClanWar war : clan.getClanWars())
-			{
-				if (war.getPeriod() != ClanWarPeriod.PREPARATION || !war.isOpposing(clan))
-				{
-					continue;
-				}
-
-				Clan attackerClan = war.getAttackerClan();
-				if (attackerClan == null)
-				{
-					continue;
-				}
-
-				data.add(attackerClan);
-			}
+			data = clan.getAttackerClans();
 		}
 		else
 		// id = 90
 		{
 			// war list
 			activeChar.sendPacket(SystemMsg.WAR_LIST);
-
-			for (ClanWar war : clan.getClanWars())
-			{
-				if (war.getPeriod() != ClanWarPeriod.MUTUAL)
-				{
-					continue;
-				}
-
-				Clan opposingClan = war.getOpposingClan();
-				if (opposingClan == null)
-				{
-					continue;
-				}
-
-				data.add(opposingClan);
-			}
+			for (Clan c : clan.getEnemyClans())
+				if (clan.getAttackerClans().contains(c))
+					data.add(c);
 		}
 
 		for (Clan c : data)
@@ -111,17 +64,13 @@ public class ClanWarsList implements IUserCommandHandler
 			String clanName = c.getName();
 			Alliance alliance = c.getAlliance();
 			if (alliance != null)
-			{
-				sm = new SystemMessage(SystemMessage.S1_S2_ALLIANCE).addString(clanName).addString(alliance.getAllyName());
-			}
+				sm = new SystemMessage2(SystemMsg._S1_S2_ALLIANCE).addString(clanName).addString(alliance.getAllyName());
 			else
-			{
-				sm = new SystemMessage(SystemMessage.S1_NO_ALLIANCE_EXISTS).addString(clanName);
-			}
+				sm = new SystemMessage2(SystemMsg._S1_NO_ALLIANCE_EXISTS).addString(clanName);
 			activeChar.sendPacket(sm);
 		}
 
-		activeChar.sendPacket(SystemMsg.LINE_490);
+		activeChar.sendPacket(SystemMsg.__EQUALS__);
 		return true;
 	}
 

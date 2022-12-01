@@ -33,7 +33,9 @@ public class AdminPremium implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_setpremium, admin_removepremium, admin_premiumall
+		admin_setpremium,
+		admin_removepremium,
+		admin_premiumall
 	}
 
 	@Override

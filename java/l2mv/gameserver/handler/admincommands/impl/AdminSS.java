@@ -8,7 +8,9 @@ public class AdminSS implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_ssq_change, admin_ssq_time, admin_ssq_cabal,
+		admin_ssq_change,
+		admin_ssq_time,
+		admin_ssq_cabal,
 	}
 
 	@Override

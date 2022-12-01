@@ -17,7 +17,8 @@ public class AdminMail implements IAdminCommandHandler
 
 	private enum Commands
 	{
-		admin_add_mail, admin_remove_mail
+		admin_add_mail,
+		admin_remove_mail
 	}
 
 	@Override

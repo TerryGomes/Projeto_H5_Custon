@@ -9,7 +9,10 @@ public class AdminChat implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_clear_chat, admin_show_message_colors, admin_show_message_colors3, admin_catch_pms
+		admin_clear_chat,
+		admin_show_message_colors,
+		admin_show_message_colors3,
+		admin_catch_pms
 	}
 
 	@Override

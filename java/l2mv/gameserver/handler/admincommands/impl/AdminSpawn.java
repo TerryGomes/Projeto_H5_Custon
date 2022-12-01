@@ -33,7 +33,17 @@ public class AdminSpawn implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_show_spawns, admin_spawn, admin_spawn_monster, admin_spawn_index, admin_spawn1, admin_setheading, admin_setai, admin_setaiparam, admin_dumpparams, admin_generate_loc, admin_dumpspawn
+		admin_show_spawns,
+		admin_spawn,
+		admin_spawn_monster,
+		admin_spawn_index,
+		admin_spawn1,
+		admin_setheading,
+		admin_setai,
+		admin_setaiparam,
+		admin_dumpparams,
+		admin_generate_loc,
+		admin_dumpspawn
 	}
 
 	@Override
@@ -278,13 +288,13 @@ public class AdminSpawn implements IAdminCommandHandler
 			_log.info("(0,'" + name + "'," + max_x + "," + min_y + "," + min_z + "," + max_z + ",0),");
 
 			_log.info("delete from spawnlist where npc_templateid in (" + id + ", " + id2 + ")" + //
-						" and locx <= " + min_x + //
-						" and locy <= " + min_y + //
-						" and locz <= " + min_z + //
-						" and locx >= " + max_x + //
-						" and locy >= " + max_y + //
-						" and locz >= " + max_z + //
-						";");
+																															" and locx <= " + min_x + //
+																															" and locy <= " + min_y + //
+																															" and locz <= " + min_z + //
+																															" and locx >= " + max_x + //
+																															" and locy >= " + max_y + //
+																															" and locz >= " + max_z + //
+																															";");
 			break;
 		case admin_dumpspawn:
 			st = new StringTokenizer(fullString, " ");

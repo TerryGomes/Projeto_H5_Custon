@@ -14,7 +14,8 @@ public class AdminRepairChar implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_restore, admin_repair
+		admin_restore,
+		admin_repair
 	}
 
 	@Override

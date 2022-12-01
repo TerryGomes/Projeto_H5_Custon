@@ -12,7 +12,8 @@ public class AdminHeal implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_heal, admin_healclan
+		admin_heal,
+		admin_healclan
 	}
 
 	@Override

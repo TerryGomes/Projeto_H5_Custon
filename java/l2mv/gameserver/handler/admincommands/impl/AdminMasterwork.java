@@ -23,7 +23,8 @@ public class AdminMasterwork implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_masterwork, admin_create_masterwork
+		admin_masterwork,
+		admin_create_masterwork
 	}
 
 	@Override

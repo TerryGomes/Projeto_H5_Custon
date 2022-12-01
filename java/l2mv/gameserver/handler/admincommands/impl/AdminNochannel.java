@@ -12,7 +12,8 @@ public class AdminNochannel implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_nochannel, admin_nc
+		admin_nochannel,
+		admin_nc
 	}
 
 	@Override

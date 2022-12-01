@@ -33,7 +33,23 @@ public class AdminSkill implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_show_skills, admin_remove_skills, admin_skill_list, admin_skill_index, admin_add_skill, admin_remove_skill, admin_get_skills, admin_reset_skills, admin_give_all_skills, admin_show_effects, admin_debug_stats, admin_remove_cooldown, admin_resetreuse, admin_people_having_effect, admin_buff, admin_show_skill, admin_give_all_clan_skills
+		admin_show_skills,
+		admin_remove_skills,
+		admin_skill_list,
+		admin_skill_index,
+		admin_add_skill,
+		admin_remove_skill,
+		admin_get_skills,
+		admin_reset_skills,
+		admin_give_all_skills,
+		admin_show_effects,
+		admin_debug_stats,
+		admin_remove_cooldown,
+		admin_resetreuse,
+		admin_people_having_effect,
+		admin_buff,
+		admin_show_skill,
+		admin_give_all_clan_skills
 	}
 
 	private static Skill[] adminSkills;

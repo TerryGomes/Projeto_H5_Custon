@@ -7,19 +7,19 @@ import org.slf4j.LoggerFactory;
 
 import l2mv.gameserver.ConfigHolder;
 import l2mv.gameserver.data.htm.HtmCache;
-import l2mv.gameserver.fandc.facebook.ActionsExtractingManager;
-import l2mv.gameserver.fandc.facebook.ActiveTask;
-import l2mv.gameserver.fandc.facebook.ActiveTasksHandler;
-import l2mv.gameserver.fandc.facebook.CompletedTask;
-import l2mv.gameserver.fandc.facebook.CompletedTasksHistory;
-import l2mv.gameserver.fandc.facebook.FacebookActionType;
-import l2mv.gameserver.fandc.facebook.FacebookDatabaseHandler;
-import l2mv.gameserver.fandc.facebook.OfficialPost;
-import l2mv.gameserver.fandc.facebook.OfficialPostsHolder;
 import l2mv.gameserver.handler.admincommands.AdminCommandHandler;
 import l2mv.gameserver.handler.admincommands.IAdminCommandHandler;
 import l2mv.gameserver.model.GameObjectsStorage;
 import l2mv.gameserver.model.Player;
+import l2mv.gameserver.multverso.facebook.ActionsExtractingManager;
+import l2mv.gameserver.multverso.facebook.ActiveTask;
+import l2mv.gameserver.multverso.facebook.ActiveTasksHandler;
+import l2mv.gameserver.multverso.facebook.CompletedTask;
+import l2mv.gameserver.multverso.facebook.CompletedTasksHistory;
+import l2mv.gameserver.multverso.facebook.FacebookActionType;
+import l2mv.gameserver.multverso.facebook.FacebookDatabaseHandler;
+import l2mv.gameserver.multverso.facebook.OfficialPost;
+import l2mv.gameserver.multverso.facebook.OfficialPostsHolder;
 import l2mv.gameserver.network.serverpackets.ShowBoard;
 
 public class AdminFacebook implements IAdminCommandHandler
@@ -28,7 +28,18 @@ public class AdminFacebook implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_facebook, admin_fb_set_message_approval, admin_fb_official_posts, admin_fb_official_post_edit_panel, admin_fb_add_rewarded_action, admin_fb_remove_rewarded_action, admin_reset_facebook_delay, admin_recheck_task_completed, admin_has_fb_task, admin_expire_fb_task, admin_clear_negative_balance, admin_reload_fb_posts
+		admin_facebook,
+		admin_fb_set_message_approval,
+		admin_fb_official_posts,
+		admin_fb_official_post_edit_panel,
+		admin_fb_add_rewarded_action,
+		admin_fb_remove_rewarded_action,
+		admin_reset_facebook_delay,
+		admin_recheck_task_completed,
+		admin_has_fb_task,
+		admin_expire_fb_task,
+		admin_clear_negative_balance,
+		admin_reload_fb_posts
 	}
 
 	@Override

@@ -170,7 +170,7 @@
  * {
  * _mail.setTopic("You are temporarly blocked from using .donate");
  * _mail.
- * setBody(" Hello, \\n You tries  \\n Remember: \\n After 3 wrong tries you will have reuse for 3 minutes on this command! \\n Contact us: \\n Skype: apocalyps.eu \\n E-Mail: admin@fandc.ro "
+ * setBody(" Hello, \\n You tries  \\n Remember: \\n After 3 wrong tries you will have reuse for 3 minutes on this command! \\n Contact us: \\n Skype: apocalyps.eu \\n E-Mail: admin@MultVerso.ro "
  * );
  * }
  * }

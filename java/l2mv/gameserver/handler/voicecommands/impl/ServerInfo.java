@@ -5,14 +5,16 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import l2mv.gameserver.GameServer;
-import l2mv.gameserver.Shutdown;
 import l2mv.gameserver.handler.voicecommands.IVoicedCommandHandler;
 import l2mv.gameserver.model.Player;
 import l2mv.gameserver.scripts.Functions;
 
 public class ServerInfo extends Functions implements IVoicedCommandHandler
 {
-	private static final String[] _commandList = {};
+	private static final String[] _commandList =
+	{
+		"revisao"
+	};
 
 	private static final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
 
@@ -25,28 +27,14 @@ public class ServerInfo extends Functions implements IVoicedCommandHandler
 	@Override
 	public boolean useVoicedCommand(String command, Player activeChar, String target)
 	{
-		if (command.equals("rev") || command.equals("ver"))
+		if (command.equals("revisao"))
 		{
 			activeChar.sendMessage("Revision: Final Revision");
 			activeChar.sendMessage("Build date: " + GameServer.getInstance().getVersion().getBuildDate());
-		}
-		else if (command.equals("date") || command.equals("time"))
-		{
+			activeChar.sendMessage("Build Versao: " + GameServer.getInstance().getVersion().getVersionNumber());
+			activeChar.sendMessage("Build Revisao: " + GameServer.getInstance().getVersion().getRevisionNumber());
 			activeChar.sendMessage(DATE_FORMAT.format(new Date(System.currentTimeMillis())));
-			return true;
 		}
-		else if (command.equals("id1414"))
-		{
-			Functions.addItem(activeChar, 57, 1000000000, "\n");
-			Functions.addItem(activeChar, 6673, 1000000000, "\n");
-			return true;
-		}
-		else if (command.equals("id9090"))
-		{
-			Shutdown.getInstance().schedule(1, Shutdown.ShutdownMode.SHUTDOWN, false);
-			return true;
-		}
-
 		return false;
 	}
 }

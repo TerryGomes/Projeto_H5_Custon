@@ -24,7 +24,8 @@ public class AdminClientSupport implements IAdminCommandHandler
 
 	private static enum Commands
 	{
-		admin_setskill, admin_summon
+		admin_setskill,
+		admin_summon
 	}
 
 	@SuppressWarnings("rawtypes")

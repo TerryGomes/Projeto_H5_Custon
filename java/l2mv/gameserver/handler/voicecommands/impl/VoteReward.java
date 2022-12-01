@@ -26,12 +26,14 @@ public class VoteReward implements IVoicedCommandHandler, ScriptFile
 {
 	private static enum ValueType
 	{
-		ACCOUNT_NAME, IP_ADRESS, HWID
+		ACCOUNT_NAME,
+		IP_ADRESS,
+		HWID
 	}
 
 	private static final String[] COMMANDS_LIST = new String[]
 	{
-		// "getreward"
+																					// "getreward"
 	};
 
 	// Rewards

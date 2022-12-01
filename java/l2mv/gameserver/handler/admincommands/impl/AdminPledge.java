@@ -25,7 +25,9 @@ public class AdminPledge implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_pledge, admin_restore_cwh, admin_clanwh
+		admin_pledge,
+		admin_restore_cwh,
+		admin_clanwh
 	}
 
 	@Override

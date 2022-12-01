@@ -12,10 +12,10 @@
  */
 package l2mv.gameserver.handler.voicecommands.impl;
 
-import l2mv.gameserver.fandc.managers.GmEventManager;
-import l2mv.gameserver.fandc.managers.GmEventManager.StateEnum;
 import l2mv.gameserver.handler.voicecommands.IVoicedCommandHandler;
 import l2mv.gameserver.model.Player;
+import l2mv.gameserver.multverso.managers.GmEventManager;
+import l2mv.gameserver.multverso.managers.GmEventManager.StateEnum;
 import l2mv.gameserver.network.serverpackets.NpcHtmlMessage;
 import l2mv.gameserver.scripts.Functions;
 

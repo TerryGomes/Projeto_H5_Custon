@@ -17,7 +17,11 @@ public class AdminZone implements IAdminCommandHandler
 {
 	private static enum Commands
 	{
-		admin_zone_check, admin_region, admin_pos, admin_vis_count, admin_domain
+		admin_zone_check,
+		admin_region,
+		admin_pos,
+		admin_vis_count,
+		admin_domain
 	}
 
 	@Override
