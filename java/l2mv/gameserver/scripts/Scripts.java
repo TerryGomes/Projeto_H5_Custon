@@ -118,10 +118,10 @@ public class Scripts
 	 */
 	public void init()
 	{
-		if ((!Config.EXTERNAL_HOSTNAME.equalsIgnoreCase("127.0.0.1")) && (!Config.EXTERNAL_HOSTNAME.equalsIgnoreCase("178.33.90.147")))
-		{
-			return;
-		}
+//		if ((!Config.EXTERNAL_HOSTNAME.equalsIgnoreCase("127.0.0.1")) && (!Config.EXTERNAL_HOSTNAME.equalsIgnoreCase("178.33.90.147")))
+//		{
+//			return;
+//		}
 		for (Class<?> clazz : _classes.values())
 		{
 			addHandlers(clazz);

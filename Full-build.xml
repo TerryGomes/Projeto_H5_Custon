@@ -50,7 +50,7 @@
 	<target name="compile-commons" depends="init">
 		<delete dir="${build.classes}" />
 		<mkdir dir="${build.classes}" />
-		<javac srcdir="${src.commons}" destdir="${build.classes}" optimize="on" debug="${debug}" source="18" target="18" includeantruntime="false" encoding="UTF-8" nowarn="true" classpath="${build.classpath}">
+		<javac srcdir="${src.commons}" destdir="${build.classes}" optimize="on" debug="${debug}" source="17" target="17" includeantruntime="false" encoding="UTF-8" nowarn="true" classpath="${build.classpath}">
 			<compilerarg value="-Xlint:all,-serial" />
 		</javac>
 	</target>
@@ -73,7 +73,7 @@
 	<target name="compile-gameserver" depends="commons-jar">
 		<delete dir="${build.classes}" />
 		<mkdir dir="${build.classes}" />
-		<javac srcdir="${src.gameserver}" optimize="on" destdir="${build.classes}" debug="${debug}" source="18" target="18" includeantruntime="false" encoding="UTF-8" nowarn="true" classpath="${build.classpath}:${build}/commons.jar:${build}/loginserver.jar">
+		<javac srcdir="${src.gameserver}" optimize="on" destdir="${build.classes}" debug="${debug}" source="17" target="17" includeantruntime="false" encoding="UTF-8" nowarn="true" classpath="${build.classpath}:${build}/commons.jar:${build}/loginserver.jar">
 			<compilerarg value="-Xlint:all,-serial,-path" />
 		</javac>
 	</target>
@@ -150,7 +150,7 @@
 		</copy>
 		<delete dir="${build.classes}" />
 		<mkdir dir="${build.classes}" />
-		<javac destdir="${build.classes}" optimize="on" debug="on" source="18" target="18" encoding="UTF-8" includeantruntime="false" nowarn="true">
+		<javac destdir="${build.classes}" optimize="on" debug="on" source="17" target="17" encoding="UTF-8" includeantruntime="false" nowarn="true">
 			<compilerarg value="-Xlint:unchecked" />
 			<src path="${src.scripts}" />
 			<classpath refid="classpath" />
@@ -174,7 +174,7 @@
 	<target name="compile-loginserver" depends="commons-jar">
 		<delete dir="${build.classes}" />
 		<mkdir dir="${build.classes}" />
-		<javac srcdir="${src.loginserver}" optimize="on" destdir="${build.classes}" debug="${debug}" source="18" target="18" includeantruntime="false" encoding="UTF-8" nowarn="off" classpath="${build.classpath}:${build}/commons.jar">
+		<javac srcdir="${src.loginserver}" optimize="on" destdir="${build.classes}" debug="${debug}" source="17" target="17" includeantruntime="false" encoding="UTF-8" nowarn="off" classpath="${build.classpath}:${build}/commons.jar">
 			<compilerarg value="-Xlint:all,-serial" />
 		</javac>
 	</target> 

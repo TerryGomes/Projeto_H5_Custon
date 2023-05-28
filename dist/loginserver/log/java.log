@@ -13,3 +13,39 @@
 [03.07.22 07:27:31:188] ERROR gameservercon.GameServerCommunication: Gameserver I/O error: Connection reset
 [03.07.22 07:27:31:189]  INFO gameservercon.GameServerConnection: Connection with gameserver 1 [Bartz] lost.
 [03.07.22 07:27:31:189]  INFO gameservercon.GameServerConnection: Setting gameserver down.
+[26.04.23 23:26:56:538]  INFO loginserver.Config: Loaded 127 server names
+[26.04.23 23:28:14:280]  INFO loginserver.Config: Loaded 127 server names
+[26.04.23 23:28:14:507] ERROR versioning.Version: Unable to get soft information
+File name 'F:\GITHUB\PROJETOS\Projeto_H5_Custon\Projeto_H5_Custon\bin' isn't a valid jar
+java.io.FileNotFoundException: F:\GITHUB\PROJETOS\Projeto_H5_Custon\Projeto_H5_Custon\bin (Acesso negado)
+	at java.base/java.io.RandomAccessFile.open0(Native Method)
+	at java.base/java.io.RandomAccessFile.open(RandomAccessFile.java:344)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:259)
+	at java.base/java.io.RandomAccessFile.<init>(RandomAccessFile.java:213)
+	at java.base/java.util.zip.ZipFile$Source.<init>(ZipFile.java:1312)
+	at java.base/java.util.zip.ZipFile$Source.get(ZipFile.java:1277)
+	at java.base/java.util.zip.ZipFile$CleanableResource.<init>(ZipFile.java:709)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:243)
+	at java.base/java.util.zip.ZipFile.<init>(ZipFile.java:172)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:347)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:318)
+	at java.base/java.util.jar.JarFile.<init>(JarFile.java:284)
+	at l2mv.commons.versioning.Version.<init>(Version.java:26)
+	at l2mv.loginserver.AuthServer.<init>(AuthServer.java:36)
+	at l2mv.loginserver.AuthServer.main(AuthServer.java:117)
+[26.04.23 23:28:14:508]  INFO loginserver.AuthServer: ============================================================================
+[26.04.23 23:28:14:508]  INFO loginserver.AuthServer: Nome: ............................................... LOGIN SERVER
+[26.04.23 23:28:14:508]  INFO loginserver.AuthServer: Project Revision: ................................... LII [MultVerso]
+[26.04.23 23:28:14:508]  INFO loginserver.AuthServer: Update: ............................................. High Five: Part 5
+[26.04.23 23:28:14:508]  INFO loginserver.AuthServer: Numero da Revision:.................................. -1
+[26.04.23 23:28:14:508]  INFO loginserver.AuthServer: Build Revision: ..................................... exported
+[26.04.23 23:28:14:508]  INFO loginserver.AuthServer: Build date: ......................................... 
+[26.04.23 23:28:14:508]  INFO loginserver.AuthServer: Compiler version: ................................... 
+[26.04.23 23:28:14:508]  INFO loginserver.AuthServer: ============================================================================
+[26.04.23 23:28:14:508]  INFO loginserver.Config: Loaded whirlpool2 as default crypt.
+[26.04.23 23:28:14:854]  INFO loginserver.Config: Cached 10 KeyPairs for RSA communication
+[26.04.23 23:28:14:878]  INFO loginserver.Config: Stored 20 keys for Blowfish communication
+[26.04.23 23:28:14:898]  INFO loginserver.GameServerManager: Loaded 1 registered GameServer(s).
+[26.04.23 23:28:14:945]  INFO loginserver.AuthServer: Listening for gameservers on 127.0.0.1:9014
+[26.04.23 23:28:14:945]  INFO loginserver.AuthServer: Listening for clients on 127.0.0.1:2106
+[26.04.23 23:28:14:945]  INFO loginserver.AuthServer: Login Server will automatically restart in 7200 seconds!
